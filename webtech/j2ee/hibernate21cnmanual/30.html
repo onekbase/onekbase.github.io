@@ -1,0 +1,275 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="29.html"> 上一页</a><a href="31.html"> 下一页</a></div>
+<h2>Chapter 9. 父子关系(Parent Child   Relationships)</h2>
+<p>刚刚接触Hibernate的人大多是从父子关系（parent / child type   relationship）的建模入手的。父子关系的建模有两种方法。比较简便、直观的方法就是在实体类Parent和Child之间建立&lt;one-to-many&gt;的关联关系，从Parent指向Child，对新手来说尤其如此。但还有另一种方法，就是将Child声明为一个&lt;composite-element&gt;（组合元素）。   可以看出在Hibernate中使用一对多关联比composite element更接近于通常parent /   child关系的语义。下面我们会阐述如何使用<em>双向可级联的一对多关联(bidirectional one to   many association with cascades)</em>去建立有效、优美的parent / child关系。这一点也不难！ </p>
+<h2>9.1. 关于collections</h2>
+<p>在Hibernate下，实体类将collection作为自己的一个逻辑单元，而不是被容纳的多个实体。这非常重要！它主要体现为以下几点： </p>
+<ul type="disc">
+  <li>
+    <p>当删除或增加collection中对象的时候，拥有这个collection的实体对象的版本值会递增。 </p>
+  </li>
+  <li>
+    <p>如果一个从collection中移除的对象是一个值类型(value type)的实例，比如composite   element，那么这个对象的持久化状态将会终止，其在数据库中对应的记录会被删除。同样的，向collection增加一个value   type的实例将会使之立即被持久化。 </p>
+  </li>
+  <li>
+    <p>另一方面，如果从一对多或多对多关联的collection中移除一个实体，在缺省情况下这个对象并不会被删除。这个行为是完全合乎逻辑的－－改变一个实体的内部状态不应该使与它关联的实体消失掉！同样的，向collection增加一个实体不会使之被持久化。 </p>
+  </li>
+</ul>
+<p>实际上，向Collection增加一个实体的缺省动作只是在两个实体之间创建一个连接而已，同样移除的时候也只是删除连接。这种处理对于所有的情况都是合适的。不适合所有情况的其实是父子关系本身，因为子对象是否存在依赖于父对象的生存周期。 </p>
+<h2><a name="9-2" id="9-2"></a>9.2. 双向的一对多关系(Bidirectional one to   many)</h2>
+<p>让我们从一个简单的例子开始，假设要实现一个从类Parent到类Child的一对多关系。 </p>
+<pre class="code">&lt;set name=&quot;children&quot;&gt;
+    &lt;key column=&quot;parent_id&quot;/&gt;
+    &lt;one-to-many class=&quot;Child&quot;/&gt;
+&lt;/set&gt;</pre>
+<p>如果我们运行下面的代码</p>
+<pre class="code">Parent p = .....;
+Child c = new Child();
+p.getChildren().add(c);
+session.save(c);
+session.flush();</pre>
+<p>Hibernate就会产生下面的两条SQL语句: </p>
+<ul type="disc">
+  <li>
+    <p>一条INSERT语句，用于创建对象c对应的数据库记录</p>
+  </li>
+  <li>
+    <p>一条UPDATE语句，用于创建从对象p到对象c的连接 </p>
+  </li>
+</ul>
+<p>这样做不仅效率低，而且违反了列parent_id非空的限制。 </p>
+<p>底层的原因是，对象p到对象c的连接（外键parent_id）没有被当作是Child对象状态的一部分，也没有在INSERT的时候被创建。解决的办法是，在Child一端设置映射。 </p>
+<pre class="code">&lt;many-to-one name=&quot;parent&quot; column=&quot;parent_id&quot; not-null=&quot;true&quot;/&gt;</pre>
+<p>（我们还需要为类Child添加parent属性） </p>
+<p>现在实体Child在管理连接的状态，为了使collection不更新连接，我们使用inverse属性。 </p>
+<pre class="code">&lt;set name=&quot;children&quot; inverse=&quot;true&quot;&gt;
+    &lt;key column=&quot;parent_id&quot;/&gt;
+    &lt;one-to-many class=&quot;Child&quot;/&gt;
+&lt;/set&gt;</pre>
+<p>下面的代码是用来添加一个新的Child</p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+Child c = new Child();
+c.setParent(p);
+p.getChildren().add(c);
+session.save(c);
+session.flush();</pre>
+<p>现在，只会有一条INSERT语句被执行！ </p>
+<p>为了让事情变得井井有条，可以为Parent加一个addChild()方法。 </p>
+<pre class="code">public void addChild(Child c) {
+    c.setParent(this);
+    children.add(c);
+}</pre>
+<p>现在，添加Child的代码就是这样</p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+Child c = new Child();
+p.addChild(c);
+session.save(c);
+session.flush();</pre>
+<h2><span class="code"><a name="9-3" id="9-3"></a></span>9.3. 级联（Cascades）</h2>
+<p>对每个对象调用save()方法很麻烦，我们可以用级联来解决这个问题。 </p>
+<pre class="code">&lt;set name=&quot;children&quot; inverse=&quot;true&quot; cascade=&quot;all&quot;&gt;
+    &lt;key column=&quot;parent_id&quot;/&gt;
+    &lt;one-to-many class=&quot;Child&quot;/&gt;
+&lt;/set&gt;</pre>
+<p>配置级联以后，代码就可以这样写： </p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+Child c = new Child();
+p.addChild(c);
+session.flush();</pre>
+<p>同样的，保存或删除Parent对象的时候并不需要遍历其子对象。 下面的代码会删除对象p及其所有子对象对应的数据库记录。 </p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+session.delete(p);
+session.flush();</pre>
+<p>然而，这段代码 </p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+Child c = (Child) p.getChildren().iterator().next();
+p.getChildren().remove(c);
+c.setParent(null);
+session.flush();</pre>
+<p>不会从数据库删除c；它只会删除与p之间的连接（并且会导致违反NOT NULL约束，在这个例子中）。你需要明确调用Child的delete()方法。 </p>
+<pre class="code">Parent p = (Parent) session.load(Parent.class, pid);
+Child c = (Child) p.getChildren().iterator().next();
+p.getChildren().remove(c);
+session.delete(c);
+session.flush();</pre>
+<p>在我们的例子中，如果我们规定没有父对象的话，子对象就不应该存在，如果将子对象从collection中移除，实际上我们是想删除它。要实现这种要求，就必须使用cascade=&quot;all-delete-orphan&quot;。 </p>
+<pre class="code">&lt;set name=&quot;children&quot; inverse=&quot;true&quot; cascade=&quot;all-delete-orphan&quot;&gt;
+    &lt;key column=&quot;parent_id&quot;/&gt;
+    &lt;one-to-many class=&quot;Child&quot;/&gt;
+&lt;/set&gt;</pre>
+<p>注意：即使在collection一方的映射中指定inverse=&quot;true&quot;，在遍历collection的时候级联操作仍然会执行。如果你想要通过级联进行子对象的插入、删除、更新操作，就必须把它加到collection中，只调用setParent()是不够的。 </p>
+<div class="rpindex"><a href="31.html"> 下一页</a><a href="29.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

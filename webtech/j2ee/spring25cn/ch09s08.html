@@ -1,0 +1,225 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="transaction-application-server-integration"></a>9.8.&#160;与特定应用服务器集成</h2></div></div></div>
+<p>一般来说，Spring的事务抽象与应用服务器是无关的。此外，使用Spring的 <code class="classname">JtaTransactionManager</code> 类时，
+	一种可选的方式是通过JNDI查询获得JTA <code class="interfacename">UserTransaction</code> 和 <code class="interfacename">TransactionManager</code> 对象，
+	其中后者可以被设置为自动探测，这时针对不同的应用服务器有不同的方式。能够直接访问 <code class="interfacename">TransactionManager</code>，
+	确实在很大程度上增强了事务语义，可以参考 <code class="classname">JtaTransactionManager</code> 类的javadoc获得更多细节。</p>
+<p>当在J2EE应用服务器上运行时，Spring的<code class="classname">JtaTransactionManager</code>是一个标准的选择，它在已知的所有通用服务器上都能正常工作。
+	它的一些诸如事务挂起等高级功能也可以在无须特殊配置的情况下在已知的许多服务器上工作（包括 GlassFish、JBoss、Geronimo和Oracle OC4J），
+	然而，为了完全支持事务挂起等高级功能，Spring为IBM WebSphere 、BEA WebLogic以及Oracle OC4J提供了特殊支持。我们会在后面的章节中讨论这个话题.</p>
+<p><span class="emphasis"><em>在标准的场景中，包括 WebLogic、WebSphere和OC4J，请考虑简单的使用<code class="literal">'&lt;tx:jta-transaction-manager/&gt;'</code>配置元素。
+    </em></span> 它会自动检测底层所使用的服务器以此来选择最合适的事务管理器。 
+	这意味着你不需要显式的为服务器配置特殊的适配器（就像在后面的部分讨论的那样），选择会自动完成，
+	并且如果找不到的话会启用标准的 <code class="classname">JtaTransactionManager</code>来管理。
+	 </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="transaction-application-server-integration-websphere"></a>9.8.1.&#160;IBM WebSphere</h3></div></div></div>
+<p>在WebSphere 6.0以及后续版本中，推荐使用的Spring JTA 事务管理器是<code class="classname">WebSphereUowTransactionManager</code>。
+	  这个适配器充分利用了WebSphere应用服务器 （6.0.2.19 以及更高的版本和6.1.0.9以及更高的版本）中提供的 <code class="interfacename">UOWManager</code> API。
+	  通过使用这个适配器，Spring驱动的事务挂起（<code class="literal">PROPAGATION_REQUIRES_NEW</code>发起的挂起/恢复）得到了IBM的官方支持。
+	  </p>
+<p>在WebSphere 5.1环境下，你可以使用Spring的 <code class="classname">WebSphereTransactionManagerFactoryBean</code> 类。 
+	  这是一个工厂类，通过WebSphere的 <code class="literal">静态</code> 访问方法获取到JTA <code class="literal">TransactionManager</code> 实例。
+	  一旦通过工厂bean获取到JTA <code class="interfacename">TransactionManager</code> 实例，
+	  就可以使用该实例装配一个Spring的 <code class="classname">JtaTransactionManager</code> bean，
+	  它封装了JTA <code class="interfacename">UserTransaction</code>，提供增强的事务语义。请参考相关javadoc以获得完整信息。</p>
+<p><span class="emphasis"><em>请注意<code class="classname">WebSphereTransactionManagerFactoryBean</code>虽然可以在WAS 5.1和6.0上正常工作，但是并没有得到官方的正式支持。
+	 </em></span> 如果需要运行在WAS6.0或者更高的版本上，请参考上面的<code class="classname">WebSphereUowTransactionManager</code>部分。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="transaction-application-server-integration-weblogic"></a>9.8.2.&#160;BEA WebLogic</h3></div></div></div>
+<p>在一个使用WebLogic 8.1或更高版本的环境中，你一般会优先选用特定于WebLogic的 <code class="classname">WebLogicJtaTransactionManager</code> 类。 
+		来取代<code class="classname">JtaTransactionManager</code> 类。在WebLogic环境中，该类提供了对Spring事务定义的完全支持，超过了标准的JTA语义。
+		它的特性包括：支持事务名，支持为每个事务定义隔离级别，以及在任何环境下正确地恢复事务的能力。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="transaction-application-server-integration-oc4j"></a>9.8.3.&#160;Oracle OC4J</h3></div></div></div>
+<p>Spring为OC4J 10.1.3以及更高的版本提供了一个特殊的适配器：
+	  <code class="classname">OC4JJtaTransactionManager</code>。这个适配器跟前面的<code class="classname">WebLogicJtaTransactionManager</code>很类似，
+	  在OC4J上提供类似的辅助功能：事务名称和针对每个事务不同的独立等级。 </p>
+<p>请注意所有的 JTA 功能，包括事务挂起，都可以很好的通过Spring的 <code class="classname">JtaTransactionManager</code>在 OC4J 工作。
+	  特殊的<code class="classname">OC4JJtaTransactionManager</code>提供了比标准JTA更多的超值功能。 </p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

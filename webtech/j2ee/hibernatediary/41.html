@@ -1,0 +1,254 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="40.html"> 上一页</a><a href="42.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip:&nbsp;一对多</a></h1>
+    在 <a href="39.html">多对一</a> 中，User对Room是多对一的关系，User实例维护着对Room实例的参考，如果将这个关系反过来，由Room实例维护对多个User实例的数据，就是一对多的关系。<br />
+    <br />
+    具体来说，可以设计User类别如下：<br />
+<h5>User.java</h5>
+    <pre class="code">package onlyfun.caterpillar;<br /><br />public class User {<br />    private Integer id;<br />    private String name;<br />    <br />    public User() {<br />    }<br /><br />    public Integer getId() {<br />        return id;<br />    }<br /><br />    public void setId(Integer id) {<br />        this.id = id;<br />    }<br /><br />    public String getName() {<br />        return name;<br />    }<br /><br />    public void setName(String name) {<br />        this.name = name;<br />    }<br />}</pre>
+    而在Room类别中，使用Set来记录多个User：<br />
+<h5>Room.java</h5>
+    <pre class="code">package onlyfun.caterpillar; <br /><br />import java.util.Set;<br /><br />public class Room { <br />    private Integer id; <br />    private String address;<br />    private Set users;<br />    <br />    public Room() {<br />    }<br />    <br />    public Integer getId() { <br />        return id; <br />    } <br />    public void setId(Integer id) { <br />        this.id = id; <br />    }    <br />    <br />    public String getAddress() { <br />        return address; <br />    }<br />    <br />    public void setAddress(String address) { <br />        this.address = address; <br />    }<br /><br />    public Set getUsers() {<br />        return users;<br />    }<br /><br />    public void setUsers(Set users) {<br />        this.users = users;<br />    } <br />    <br />    public void addUser(User user) {<br />        users.add(user);        <br />    }<br />    <br />    public void removeUser(User user) {<br />        users.remove(user);<br />    }<br />}</pre>
+    这种方式即所谓单向一对多关系，也就是Room实例知道User实例的存在，而User实例则没有意识到Room实例。<br />
+    <br />
+    （在&nbsp;<a href="39.html">多对一</a> 中，则是单向多对一关系，即User知道Room的存在，但Room不知道User的存在。）<br />
+    <br />
+    在映射文件上，先来看看User.hbm.xml：<br />
+ <h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br />        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;java.lang.Integer&quot;&gt; <br />            &lt;generator class=&quot;native&quot;/&gt; <br />        &lt;/id&gt; <br /><br />        &lt;property name=&quot;name&quot; column=&quot;name&quot; type=&quot;java.lang.String&quot;/&gt; <br />        <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    在单向关系中，被参考的对象其映像文件就如单一实体一样的配置，接下来看看Room.hbm.xml，使用&lt;one-to-many&gt;卷标配置一对多：<br />
+<h5>Room.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.Room&quot; table=&quot;room&quot;&gt; <br />        &lt;id name=&quot;id&quot; column=&quot;id&quot;&gt; <br />            &lt;generator class=&quot;native&quot;/&gt; <br />        &lt;/id&gt; <br /><br />        &lt;property name=&quot;address&quot; <br />                  column=&quot;address&quot; <br />                  type=&quot;java.lang.String&quot;/&gt; <br />                  <br />        &lt;set name=&quot;users&quot; table=&quot;user&quot; cascade=&quot;all&quot;&gt;<br />            &lt;key column=&quot;room_id&quot;/&gt;<br />            &lt;one-to-many class=&quot;onlyfun.caterpillar.User&quot;/&gt;<br />        &lt;/set&gt;<br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    接着您可以如下储存对象：<br />
+    <pre  class="code">User user1 = new User();
+user1.setName(&quot;bush&quot;); 
+ 
+User user2 = new User(); 
+user2.setName(&quot;caterpillar&quot;); 
+ 
+User user3 = new User(); 
+user3.setName(&quot;momor&quot;); 
+
+Room room1 = new Room(); 
+room1.setUsers(new HashSet());
+room1.setAddress(&quot;NTU-M8-419&quot;);
+room1.addUser(user1);
+room1.addUser(user2);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Room room2 = new Room();
+room2.setUsers(new HashSet());
+room2.setAddress(&quot;NTU-G3-302&quot;);
+room2.addUser(user3);
+
+Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+ 
+session.save(room1); &nbsp;// cascade 操作
+session.save(room2); 
+ 
+tx.commit();
+session.close();</pre>
+    数据库中将储存以下的表格：<br />
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2" id="table1">
+<tbody>
+  <tr>
+    <td style="background-color: rgb(0, 0, 0);"><small>mysql&gt; select * from user;<br />
++----+--------------+-----------+<br />
+| id &nbsp;&nbsp; | name&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; | room_id |<br />
++----+-------------+------------+<br />
+|&nbsp; 1 &nbsp; &nbsp;| bush&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 |<br />
+|&nbsp; 2 &nbsp; &nbsp;| caterpillar |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 |<br />
+|&nbsp; 3 &nbsp; &nbsp;| momor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 |<br />
++----+-------------+------------+<br />
+3 rows in set (0.01 sec)<br />
+<br />
+mysql&gt; select * from room;<br />
++----+------------------+<br />
+| id &nbsp;&nbsp; | address&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |<br />
++----+------------------+<br />
+|&nbsp; 1 &nbsp;&nbsp; | NTU-M8-419 |<br />
+|&nbsp; 2 &nbsp;&nbsp; | NTU-G3-302 &nbsp;|<br />
++----+------------------+<br />
+2 rows in set (0.00 sec)</small><br />
+</td>
+  </tr>
+</tbody>
+    </table>
+   
+
+<div class="rpindex"><a href="42.html"> 下一页</a><a href="40.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

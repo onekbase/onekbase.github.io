@@ -1,0 +1,349 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="38.html"> 上一页</a><a href="40.html"> 下一页</a></div>
+<h2>12.2. 第二层缓存(The   Second Level Cache)s</h2>
+<p>HibernateSession是事务级别的持久化数据缓存。再为每个类或者每个集合配置一个集群或者JVM级别(SessionFactory级别)的缓存也是有可能的。你甚至可以插入一个集群的缓存。要小心，缓存永远不会知道其他进程可能对持久化仓库（数据库）进行的修改（即使他们可能设定为经常对缓存的数据进行失效）。 </p>
+<p>默认情况下，Hibernate使用EHCache进行JVM级别的缓存。但是，对JCS的支持现在已经被废弃了，未来版本的Hibernate将会去掉它。通过hibernate.cache.provider_class属性，你也可以指定其他缓存，只要其实现了net.sf.hibernate.cache.CacheProvider接口。 </p>
+<p><strong>Table 12.1. Cache Providers</strong></p>
+<table summary="Cache Providers" border="1">
+  <colgroup>
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th align="left">Cache</th>
+      <th align="left">Provider class</th>
+      <th align="left">Type</th>
+      <th align="left">Cluster Safe</th>
+      <th align="left">Query Cache Supported</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">Hashtable (not intended for production use)</td>
+      <td align="left">net.sf.hibernate.cache.HashtableCacheProvider</td>
+      <td align="left">memory</td>
+      <td align="left"> </td>
+      <td align="left">yes</td>
+    </tr>
+    <tr>
+      <td align="left">EHCache</td>
+      <td align="left">net.sf.ehcache.hibernate.Provider</td>
+      <td align="left">memory, disk</td>
+      <td align="left"> </td>
+      <td align="left">yes</td>
+    </tr>
+    <tr>
+      <td align="left">OSCache</td>
+      <td align="left">net.sf.hibernate.cache.OSCacheProvider</td>
+      <td align="left">memory, disk</td>
+      <td align="left"> </td>
+      <td align="left">yes</td>
+    </tr>
+    <tr>
+      <td align="left">SwarmCache</td>
+      <td align="left">net.sf.hibernate.cache.SwarmCacheProvider</td>
+      <td align="left">clustered (ip multicast)</td>
+      <td align="left">yes (clustered invalidation)</td>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left">JBoss TreeCache</td>
+      <td align="left">net.sf.hibernate.cache.TreeCacheProvider</td>
+      <td align="left">clustered (ip multicast), transactional</td>
+      <td align="left">yes (replication)</td>
+      <td align="left"> </td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="12-2-1" id="12-2-1"></a>12.2.1. 映射(Mapping)</h3>
+<p>类或者集合映射的&lt;cache&gt;元素可能有下列形式： </p>
+<pre class="code">&lt;cache                                                      <span class="co"><img src="images/callouts/1.png" alt="(1)" /></span>
+                usage=&quot;transactional|read-write|nonstrict-read-write|read-only&quot; /&gt;</pre>
+<table summary="Callout list" border="0">
+  <tbody>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="1" src="images/callouts/1.png" border="0" /></td>
+      <td valign="top" align="left"><p>usage 指定了缓存策略： transactional,   read-write, nonstrict-read-write   或者 read-only </p></td>
+    </tr>
+  </tbody>
+</table>
+<p>另外 (推荐首选?), 你可以在hibernate.cfg.xml中指定&lt;class-cache&gt; 和 &lt;collection-cache&gt; 元素。 </p>
+<p>usage属性指明了<em>缓存并发策略（cache   concurrency strategy）</em>。 </p>
+<h3><a name="12-2-2" id="12-2-2"></a>12.2.2. 只读缓存</h3>
+<p>如果你的应用程序需要读取一个持久化类的实例，但是并不打算修改它们，可以使用read-only   缓存。这是最简单，也是实用性最好的策略。甚至在集群中，它也能完美地运作。 </p>
+<pre class="code">&lt;class name=&quot;eg.Immutable&quot; mutable=&quot;false&quot;&gt;
+    ....
+    &lt;jcs-cache usage=&quot;read-only&quot;/&gt;
+&lt;/class&gt;</pre>
+<h3><a name="12-2-3" id="12-2-3"></a>12.2.3. 读/写缓存</h3>
+<p>如果应用程序需要更新数据，可能read-write缓存比较合适。如果需要可序列化事务隔离级别（serializable transaction   isolation level），这种缓存决不能使用。如果在JTA环境中使用这种缓存，你必须指定hibernate.transaction.manager_lookup_class属性的值，给出得到JTA TransactionManager的策略。在其它环境中，你必须确保在Session.close()或者Session.disconnect()调用前，事务已经结束了。   如果你要在集群环境下使用这一策略，你必须确保底层的缓存实现支持锁定(locking)。内置的缓存提供器<em>并不</em>支持。 </p>
+<pre class="code">&lt;class name=&quot;eg.Cat&quot; .... &gt;
+    &lt;jcs-cache usage=&quot;read-write&quot;/&gt;
+    ....
+    &lt;set name=&quot;kittens&quot; ... &gt;
+        &lt;jcs-cache usage=&quot;read-write&quot;/&gt;
+        ....
+    &lt;/set&gt;
+&lt;/class&gt;</pre>
+<h3><a name="12-2-4" id="12-2-4"></a>12.2.4. 不严格的读/写缓存</h3>
+<p>如果程序偶尔需要更新数据（也就是说，出现两个事务同时更新同一个条目的现象很不常见），也不需要十分严格的事务隔离，可能适用nonstrict-read-write缓存。如果在JTA环境中使用这种缓存，你必须指定hibernate.transaction.manager_lookup_class属性的值，给出得到JTA TransactionManager的策略。在其它环境中，你必须确保在Session.close()或者Session.disconnect()调用前，事务已经结束了。 </p>
+<h3><a name="12-2-5" id="12-2-5"></a>12.2.5. 事务缓存（transactional）</h3>
+<p>transactional缓存策略提供了对全事务缓存提供,比如JBoss   TreeCache的支持。这样的缓存只能用于JTA环境，你必须指定hibernate.transaction.manager_lookup_class。 </p>
+<p>没有一种缓存提供器能够支持所有的缓存并发策略。下面的表列出每种提供器与各种并发策略的兼容性。 </p>
+<p><strong>Table 12.2. 缓存并发策略支持(Cache Concurrency Strategy   Support)</strong></p>
+<table summary="缓存并发策略支持(Cache Concurrency Strategy Support)" border="1">
+  <colgroup>
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  <col align="left" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th align="left">Cache</th>
+      <th align="left">read-only</th>
+      <th align="left">nonstrict-read-write</th>
+      <th align="left">read-write</th>
+      <th align="left">transactional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">Hashtable (not intended for production use)</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left">EHCache</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left">OSCache</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left">SwarmCache</td>
+      <td align="left">yes</td>
+      <td align="left">yes</td>
+      <td align="left"> </td>
+      <td align="left"> </td>
+    </tr>
+    <tr>
+      <td align="left">JBoss TreeCache</td>
+      <td align="left">yes</td>
+      <td align="left"> </td>
+      <td align="left"> </td>
+      <td align="left">yes</td>
+    </tr>
+  </tbody>
+</table>
+<h2><a name="12-3" id="12-3"></a>12.3. 管理Session缓存</h2>
+<p>不管何时你传递一个对象给save(), update()或者   saveOrUpdate() ,或者不管何时你使用load(),   find(), iterate()或者filter()取得一个对象的时候,该对象被加入到Session的内部缓存中。当后继的flush()被调用时，对象的状态会和数据库进行同步。如果你在处理大量对象并且需要有效的管理内存的时候，你可能不希望发生这种同步，evict()方法可以从缓存中去掉对象和它的集合。 </p>
+<pre class="code">Iterator cats = sess.iterate(&quot;from eg.Cat as cat&quot;); //a huge result set
+while ( cats.hasNext() ) {
+    Cat cat = (Cat) iter.next();
+    doSomethingWithACat(cat);
+    sess.evict(cat);
+}</pre>
+<p>Session也提供了一个contains()方法来判断是否一个实例处于这个session的缓存中。 </p>
+<p>要把所有的对象从session缓存中完全清除，请调用Session.clear()。 </p>
+<p>For the JVM-level JCS cache, there are methods defined   on SessionFactory for evicting the cached state of an   instance, entire class, collection instance or entire collection role. </p>
+<p>对于第二层缓存来说，在SessionFactory中定义了一些方法来从缓存中清除一个实例、整个类、集合实例或者整个集合。 </p>
+<h2><a name="12-4" id="12-4"></a>12.4. 查询缓存(Query   Cache)</h2>
+<p>查询结果集也可以被缓存。只有当经常使用同样的参数进行查询时，这才会有些用处。要使用查询缓存，首先你要打开它，设置hibernate.cache.use_query_cache=true这个属性。这样会创建两个缓存区域——一个保存查询结果集(net.sf.hibernate.cache.QueryCache),另一个保存最近查询的表的时间戳(net.sf.hibernate.cache.UpdateTimestampsCache)。请注意查询缓存并不缓存结果集中包含实体的状态；它只缓存标识符属性的值和值类型的结果。所以查询缓存通常会和第二层缓存一起使用。 </p>
+<p>大多数查询并不会从缓存中获得什么好处，所以默认查询是不进行缓存的。要进行缓存，调用 Query.setCacheable(true)。这个调用会让查询在执行时去从缓存中查找结果，或者把结果集放到缓存去。 </p>
+<p>如果你要对查询缓存的失效政策进行精确的控制，你必须调用Query.setCacheRegion()来为每个查询指定一个命名的缓存区域。 </p>
+<pre class="code">List blogs = sess.createQuery(&quot;from Blog blog where blog.blogger = :blogger order by blog.datetime desc&quot;)
+    .setEntity(&quot;blogger&quot;, blogger)
+    .setMaxResults(15)
+    .setCacheable(true)
+    .setCacheRegion(&quot;frontpages&quot;)
+    .list();</pre>
+<div class="rpindex"><a href="40.html"> 下一页</a><a href="38.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,335 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>Hibernate-one-to-one单向映射</h1>
+<h2>one-to-one</h2>
+<p>one-to-one是一对一映射关系，如人和身份证之间的关系，一个人只能有一个身份证号，一个身份证号只能属于一个人。</p>
+<p>一对一又可分为单向映射和双向映射，映射实现可以分为主键映射和外键映射。结合一下就成了四种：</p>
+<ol>
+<li>一对一单向主键映射。</li>
+<li>一对一双向主键映射。</li>
+<li>一对一单向外键映射。</li>
+<li>一对一双向外键映射。</li>
+</ol>
+<h3>一对一单向主键映射</h3>
+<p>一对一单向主键映射实现思想是让一个表的主键为关联的外键，因为外键是另一个表的主键并且为一，所以可以作为主键来用。</p>
+<p>如人和身份证的关系，人必定有一个外键关联身份证表主键，可以这个外键作为人的主键。这样就形成了人用身份证表的主键作为自己主键的特殊形式。</p>
+<h4>身份证类</h4>
+<pre class="brush:java">package com.iteedu.hibernate;
+
+public class IdCard {
+	private int id;
+	private String cardNo;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCardNo() {
+		return cardNo;
+	}
+
+	public void setCardNo(String cardNo) {
+		this.cardNo = cardNo;
+	}
+}</pre>
+<h4>&nbsp;身份证类映射文件</h4>
+<pre class="brush:xml">&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"&gt;
+&lt;hibernate-mapping&gt;
+	&lt;class name="com.iteedu.hibernate. IdCard" table="t_idcard"&gt;
+		&lt;id name="id"&gt;
+			&lt;generator class="native"/&gt;
+		&lt;/id&gt;
+		&lt;property name="cardNo"/&gt;
+	&lt;/class&gt;
+&lt;/hibernate-mapping&gt;</pre>
+<h4>Person类</h4>
+<pre class="brush:java">package com.iteedu.hibernate;
+
+public class Person {
+	private int id;
+	private String name;
+	private IdCard idCard; 
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public IdCard getIdCard() {
+		return idCard;
+	}
+
+	public void setIdCard(IdCard idCard) {
+		this.idCard = idCard;
+	}
+}</pre>
+<h4>&nbsp;Person类映射文件</h4>
+<pre class="brush:xml">&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"&gt;
+&lt;hibernate-mapping&gt;
+	&lt;class name="com.iteedu.hibernate.Person" table="t_person"&gt;
+		&lt;id name="id"&gt;
+            &lt;!-- person的主键来源idCard，也就是共享idCard的主键 --&gt;
+			&lt;generator class="foreign"&gt;
+				&lt;param name="property"&gt;idCard&lt;/param&gt;
+			&lt;/generator&gt;
+		&lt;/id&gt;
+		&lt;property name="name"/&gt;
+		&lt;one-to-one name="idCard" constrained="true"/&gt;
+	&lt;/class&gt;
+&lt;/hibernate-mapping&gt;</pre>
+<p>由于Person的主键为身份证的主键所以要用foreign，foreign使用另外一个相关联的对象的标识符。通常和&lt;one-to-one&gt;联合起来使用。</p>
+<p>one-to-one标签的含义，指示hibernate怎么加载它的关联对象，默认根据主键加载， constrained=”true”，&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 表明当前主键上存在一个约束，person的主键作为外键参照了idCard。</p>
+<h4>调用示例</h4>
+<pre class="brush:java">session.beginTransaction();
+
+IdCard idCard = new IdCard();
+idCard.setCardNo("21341341234123");
+
+Person person = new Person();
+person.setName("ITEEDU");
+person.setIdCard(idCard);
+
+//不会出现TransientObjectException异常
+//因为一对一主键关联映射中，默认了cascade属性
+session.save(person);</pre>
+<h4>&nbsp;一对一双向主键映射</h4>
+<p>在IdCard中添加Person属性：</p>
+<pre class="brush:java">private Person person;
+public Person getPerson() {
+	return person;
+}
+
+public void setPerson(Person person) {
+	this.person = person;
+}</pre>
+<p>在配制文件中加入关联：</p>
+<pre class="brush:xml">&lt;one-to-one name="person"/&gt;</pre>
+<p>这样加载card时就会加载人员信息了。</p>
+<pre class="brush:java">session.beginTransaction();
+IdCard idCard = (IdCard)session.load(IdCard.class, 1);
+System.out.println("idcard.cardNo=" + idCard.getCardNo());
+System.out.println("idcard.person.name=" + idCard.getPerson().getName());
+session.getTransaction().commit();</pre>
+<h4>&nbsp;一对一单向外键关联</h4>
+<p>一对唯一外键关联映射是多对一关联映射的特例，可以通过限制many-to-one来实现的。mang-to-one中的关联外键是可以重复的，如多个人属于一个组。如果限制其唯一性就形成了一对一关系，因为没有一个身份证id关联多个人。</p>
+<p>采用&lt;many-to-one&gt;标签，指定多的一端的unique=true，这样就限制了多的一端的多重性为一。通过这种手段映射一对一唯一外键关联。</p>
+<p>实现如下：</p>
+<pre class="brush:xml">&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"&gt;
+&lt;hibernate-mapping&gt;
+	&lt;class name="com.iteedu.hibernate.Person" table="t_person"&gt;
+		&lt;id name="id"&gt;
+			&lt;generator class="native"/&gt;
+		&lt;/id&gt;
+		&lt;property name="name"/&gt;
+		&lt;many-to-one name="idCard" unique="true"/&gt;
+	&lt;/class&gt;
+&lt;/hibernate-mapping&gt;</pre>
+<p>注意：主键id不能再用foreign了。</p>
+<h3>一对一双向外键关联</h3>
+<p>一对一唯一外键关联双向，需要在另一端（idcard），添加&lt;one-to-one&gt;标签，指示hibernate如何加载其关联对象，默认根据主键加载person，外键关联映射中，因为两个实体采用的是person的外键维护的关系，所以不能指定主键加载person，而要根据person的外键加载。</p>
+<p>修改IdCard相关文件。</p>
+<h4>添加Person属性：</h4>
+<pre class="brush:java">private Person person;
+public Person getPerson() {
+	return person;
+}
+
+public void setPerson(Person person) {
+	this.person = person;
+}</pre>
+<h4>&nbsp;映射文件添加：</h4>
+<pre class="brush:xml">&lt;one-to-one name="person" property-ref="idCard"/&gt;</pre>
+<p>其中property-ref为指定关联类的属性名，这个属性将会和本类的主键相对应。如果没有指定，会使用对方关联类的主键。</p>
+<p>注意：不是数据库中的列名，是类中的属性名。</p>
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

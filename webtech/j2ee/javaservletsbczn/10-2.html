@@ -1,0 +1,1041 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="10-1.html"> 上一页</a><a href="11-1.html"> 下一页</a></div>
+    <h1>第10章 applet与servlet的通信(下)</h1>
+    <h2>10.5 Java 1.1中的新特性：序列化</h2>
+    <p>　　使用JDK1.1，我们有了一个用于编发在客户和服务器之间的数据操作的新选择：序列化。序列化是这样的一个方法，它储备（序列化）和提取（反序列化）一个对象的内部状态而不用考虑这个对象的内部结构。也就是说，Java虚拟机处理一个对象所有属性的记录，并可以通过这些储存的信息在稍后重新创建这个对象。JavaSoft将序列化加入到JDK中，使得远程方法调用（Remote 
+      Method Invocation,RMI)能够在客户和服务器间传递对象。我们将接受这种内嵌的功能并将它用于我们的遂道客户和服务器的新版本中。<br>
+      在离开这个论题之前，我们要注意使用序列化过程中的一些缺陷：<br>
+      ·并不是所有的对象都是可序列化的。为了实现序列化，一个对象必须实现java.io.Serializable接口。要记住序列化的主要目的就是要保存一个对象的所有状态信息以确保在稍后重新建立这个对象。对于一些类型的对象这样做并没有什么意义（像数据库连接、文件打开句柄等）。<br>
+      ·序列化极大地增加了一个请求/响应包的大小。序列化一个对象不只要记录下它的所有属性，而且还要获取版本信息和类文件信息。这可能没有引起你的特别注意，但是附加数据将会在运行中受到一些影响。<br>
+      ·在对象被反序列化时，如果一个版本的对象反序列化与它以前的版本有所不同，就会发生序列化错误。一个这方面的例子就是，在客户端有一个新版本对象的拷贝，而在服务器上有这个对象的旧的（遗失）的版本。<br>
+      ·一些浏览器（特别是一些老版本）不能很好地支持序列化。要记住序列化是一个JDK1.1的特性。除非浏览器声明可以支持JDK1.1，它也不会很好地支持序列化。</p>
+    <h3> <a name="1051" id="1051"></a>10.5.1 使用ObjectOutputStream和ObjectInputStream </h3>
+    <p>　　为了举例说明在JDK的1.1及其以后的版本中是如何编发数据的，让我们来看一个简单的客户应用程序。它使用java.io.ObjectOutputStream发送请求数据并利用java.io.ObjectInputStream读取响应数据。这个程序与我们前面所见的TestDataStream应用程序功能基本一致。原样照抄，我们的客户应用程序流程如下：<br>
+      1.建立一个HTTP连接。<br>
+      2.格式化请求数据。<br>
+      3.向服务器发送请求。<br>
+      4.读取响应数据。<br>
+      5.关闭HTTP连接。<br>
+      服务器只是简单地读取请求数据并将这些数据回显示，返回给客户端。<br>
+      图10.17列出了客户应用程序的完整代码。为了调用这个应用程序，你必须提供出servlet程序的URL地址，就像下面的一样：<br>
+      java.javaservlets.tunnel.TestObjectStream<br>
+      http://larryboy/servlet/javaservlets.tunnel.ObjectStreamEcho<br>
+      注意命令最好分成两行，这样可提高代码的可读性；当然，它也可以放在一行之中。我们将使用“larryboy”服务器来调用在javaservlets.tunnel包中的servlet程序ObjectStreamEcho。在图10.18中显示了这个应用程序的输出情况。</p>
+    <pre class="code">　package javaservlets.tunnel;
+
+import java.io.*;
+
+/**
+* This application shows how to read data from and write data
+* to a servlet using object input/output streams.
+*/
+
+public class TestObjectStream
+{
+/**
+* Application entry point. This application requires
+* one parameter, which is the servlet URL
+*/
+public static void main(String args[])
+{
+// Make sure we have an argument for the servlet URL
+if (args.length == 0) {
+System.out.println("\nServlet URL must be specified");
+return;
+}
+
+try {
+
+System.out.println("Attempting to connect to " + args[0]);
+
+// Get the server URL 
+java.net.URL url = new java.net.URL(args[0]);
+
+// Attempt to connect to the host
+java.net.URLConnection con = url.openConnection();
+
+// Initialize the connection
+con.setUseCaches(false);
+con.setDoOutput(true);
+con.setDoInput(true);
+
+// Data will always be written to a byte array buffer so
+// that we can tell the server the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the data to our buffer
+ObjectOutputStream out = new ObjectOutputStream(byteOut);
+
+System.out.println("Writing test objects");
+
+// Write the test data
+out.writeObject(new Boolean(true));
+out.writeObject(new Byte((byte) 1));
+out.writeObject(new Character((char) 2));
+out.writeObject(new Short((short) 3));
+out.writeObject(new Integer(4));
+out.writeObject(new Float(5));
+out.writeObject(new Double(6));
+out.writeObject("Hello, Karl");
+
+// Flush the data to the buffer
+out.flush();
+
+// Get our buffer to be sent
+byte buf[] = byteOut.toByteArray();
+
+// Set the content that we are sending
+con.setRequestProperty("Content-type","application/octet-stream");
+
+// Set the length of the data buffer we are sending
+con.setRequestProperty("Content-length","" + buf.length);
+
+// Get the output stream to the server and send our data buffer
+DataOutputStream dataOut = new DataOutputStream(con.getOutputStream());
+//out.write(buf, 0, buf.length);
+dataOut.write(buf);
+
+// Flush the output stream and close it
+dataOut.flush();
+dataOut.close();
+
+System.out.println("Reading response");
+
+// Get the input stream we can use to read the response
+ObjectInputStream in = new ObjectInputStream(con.getInputStream());
+
+// Read the data from the server
+Boolean booleanValue = (Boolean) in.readObject();
+Byte byteValue = (Byte) in.readObject();
+Character charValue = (Character) in.readObject();
+Short shortValue = (Short) in.readObject();
+Integer intValue = (Integer) in.readObject();
+Float floatValue = (Float) in.readObject();
+Double doubleValue = (Double) in.readObject();
+String stringValue = (String) in.readObject();
+
+// Close the input stream
+in.close();
+
+System.out.println("Data read: " +
+booleanValue + " " +
+byteValue + " " +
+((int) charValue.charValue()) + " " +
+shortValue + " " +
+intValue + " " +
+floatValue + " " +
+doubleValue + " " +
+stringValue);
+}
+catch (Exception ex) {
+ex.printStackTrace();
+} 
+} 
+}　</pre>
+    <p>　　Attempting to connect to http://larryboy/servlet/<br>
+      javaservlets.tunnel.ObjectStreamEcho<br>
+      Writing test objects<br>
+      Reading response<br>
+      Data read:true 1 2 3 4 5.0 6.0 Hello,Karl</p>
+    <p>　　与TestdataStream应用程序相同，数据要被写入到一个内存缓冲区中。注意，我们是如何使用在ObjectInputStream类中的WriteObject方法的。下面的是在JDK文档中对“writeObject”的描述：将指定的类写入到ObjectOutputStream中。对象的类、类标记、类的非瞬时值和非静态域和它的所有的子类型都要被写入其中。使用wrietObject和readObject可以完成一个类的基本序列化任务。被这个对象所引用的对象被阶段地写入，这样一个对象的完整的等价图就可以通过ObjectInputStream重新构建。<br>
+      上面的意思就是“writeObject”将对象序列化并输入到输出流中，而这些数据一定要使用ObjectInputStream类中的readObject方法来反序列化。一个对象的读取与写入要遵循同样的规则。然而，序列化与我们早先见到的简单的编发相比具有明显的优势：你可以读取一个一般的对象并在对象上反映出它是属于什么样的类型（例如使用比较运算符“instanceof”）。<br>
+      用于读取响应并回显示数据的servlet程序与我们以前所见到的程序非常相似。作为数据输入、输出流的替代，我们将使用对象输入、输出流。图10.10列出了servlet程序ObjectStreamEcho的源代码。</p>
+    <pre class="code">　package javaservlets.tunnel;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* This servlet shows how to read data from and write data
+* to a client using object input/output streams.
+*/
+
+public class ObjectStreamEcho extends HttpServlet
+{
+/**
+* Services the HTTP request
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void service(HttpServletRequest req,HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Get the input stream for reading data from the client
+ObjectInputStream in = new ObjectInputStream(req.getInputStream());
+
+// We'll be sending binary data back to the client so
+// set the content type appropriately
+resp.setContentType("application/octet-stream");
+
+// Data will always be written to a byte array buffer so
+// that we can tell the client the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the
+// data to our buffer
+ObjectOutputStream out = new ObjectOutputStream(byteOut);
+
+// Read the objects from the client.
+try {
+Boolean booleanValue = (Boolean) in.readObject();
+Byte byteValue = (Byte) in.readObject();
+Character charValue = (Character) in.readObject();
+Short shortValue = (Short) in.readObject();
+Integer intValue = (Integer) in.readObject();
+Float floatValue = (Float) in.readObject();
+Double doubleValue = (Double) in.readObject();
+String stringValue = (String) in.readObject();
+
+// Write the data to our internal buffer.
+out.writeObject(booleanValue);
+out.writeObject(byteValue);
+out.writeObject(charValue);
+out.writeObject(shortValue);
+out.writeObject(intValue);
+out.writeObject(floatValue);
+out.writeObject(doubleValue);
+out.writeObject(stringValue);
+}
+catch (ClassNotFoundException ex) {
+// Serialization can throw a ClassNotFoundException.
+ex.printStackTrace();
+}
+
+// Flush the contents of the output stream to the byte array
+out.flush();
+
+// Get the buffer that is holding our response
+byte[] buf = byteOut.toByteArray();
+
+// Notify the client how much data is being sent
+resp.setContentLength(buf.length);
+
+// Send the buffer to the client
+ServletOutputStream servletOut = resp.getOutputStream();
+
+// Wrap up
+servletOut.write(buf);
+servletOut.close();
+}
+}</pre>
+    <h3><a name="1052" id="1052"></a>10.5.2 序列化遂道客户类</h3>
+    <p>　　使用序列化来编写实现我们的遂道客户的客户程序同样是十分简单易懂的。 这个遂道客户和我们的“lite”客户的实际不同是所使用的输入、输出流的类型。由于你已经很有远见地将输入、输出流的创建部分从基本类代码中分离出来（做得好！），基本的遂道类并不需要作任何改动。</p>
+    <pre class="code"> 　package javaservlets.tunnel.client;
+
+import java.io.*;
+
+/**
+* This class implements the necessary TunnelClientInterface
+* methods for a JDK 1.1 tunneled client. The marshaling of
+* data is done with serialization.
+*/
+
+public abstract class TunnelClient extends BaseTunnelClient
+{
+
+/**
+* Gets an input stream to be used for reading data
+* from the connection. The lite version uses a standard
+* data input stream for reading data.
+*
+* @param in Input stream from the connection URL
+* @return Input stream to read data from the connection
+*/
+public DataInput _getInputStream(InputStream in)
+throws IOException
+{
+// Create a new DataInputStream for reading data from the connection.
+return new ObjectInputStream(in);
+}
+
+/**
+* Gets an output stream to be used for writing data to
+* an internal buffer. The buffer will be written to the
+* connection. The lite version uses a standard data
+* output stream for writing data.
+*
+* @param buffer Buffer to hold the output data
+* @return Output stream to write data to the buffer
+*/
+public DataOutput _getOutputStream(ByteArrayOutputStream buffer)
+throws IOException
+{
+// Create a new DataOutputStream for writing data to the buffer.
+return new ObjectOutputStream(buffer);
+}
+
+/**
+* Flushes the any buffered data to the output stream
+*
+* @param out Output stream to flush
+*/
+public void _flush(DataOutput out) throws IOException
+{
+// Flush the data to the buffer
+((ObjectOutputStream) out).flush();
+}
+
+/**
+* Closes the input stream
+*
+* @param in Input stream to close
+*/
+public void _close(DataInput in) throws IOException
+{
+((ObjectInputStream) in).close();
+}
+}　</pre>
+    <h3><a name="1053" id="1053"></a>10.5.3 序列化遂道服务器类</h3>
+    <p>　　与你所预料的相同，除了对象所使用的输入、输出流的类型不同以外，使用序列化的遂道服务器的实现与相应的“lite”版本完全相同。</p>
+    <pre class="code">　package javaservlets.tunnel.server;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* This is the base object to be extended by server objects
+* that are using HTTP tunneling.
+*/
+
+public abstract class TunnelServer extends BaseTunnelServlet
+{
+/**
+* Creates an input stream to be used to read data
+* sent from the client.
+*
+* @param servletInput Servlet input stream from the servlet request header
+* @return Input stream to read data from the client
+*/
+public DataInput _getInputStream(ServletInputStream servletInput)
+throws IOException
+{
+// Create a new DataInputStream for reading data from the client.
+return new ObjectInputStream(servletInput);
+}
+
+/**
+* Closes the input stream
+*
+* @param in Input stream to close
+*/
+public void _close(DataInput in) throws IOException
+{
+((ObjectInputStream) in).close();
+}
+
+/**
+* Gets an output stream to be used for writing data to
+* an internal buffer. The buffer will be written to the client
+*
+* @param buffer Buffer to hold the output data
+* @return Output stream to write data to the buffer
+*/
+public DataOutput _getOutputStream(ByteArrayOutputStream buffer)
+throws IOException
+{
+// Create a new DataOutputStream for writing data to the buffer.
+return new ObjectOutputStream(buffer);
+}
+
+/**
+* Flushes the any buffered data to the output stream
+*
+* @param out Output stream to flush
+*/
+public void _flush(DataOutput out) throws IOException
+{
+// Flush the data to the buffer
+((ObjectOutputStream) out).flush();
+} 
+}　</pre>
+    <h3><a name="1054" id="1054"></a>10.5.4 遂道技术的例子：RemoteIndy </h3>
+    <p>　　为了更好地说明Java序列化的使用方法，让我们开发一个简单的applet程序，这个程序将使用HTTP遂道技术来调用服务器端的一个用于从数据库中获取数据的对象中的方法。这个数据库维护每年的Indianapolis 
+      500赛事表，每一行记录了年份、冠军姓名和冠军赛车平均时速。</p>
+    <p>　　编写服务器接口<br>
+      让我们从编写一个描述服务器的接口开始我们的编写工作，这个接口可用于我们的服务器端对象的实现。通过服务器，也就是方法、变量类型和服务器对象的返回类型，我们的服务器对象的将提供下列的服务：<br>
+      ·初始化——调用initialize方法将建立一个数据库的连接并准备使对象处于就绪状态。<br>
+      ·查询——query方法将接收一个单一的参数，这个参数将用于创建一个SQL WHERE子句以从数据库中选取数据。返回给调用者的是一个包含选取数据的对象。<br>
+      ·关闭——调用close方法将关闭数据库连接并在服务器对象中执行所有必要的清除任务。<br>
+      图10.22显示了Indy接口的代码列表。注意query方法返回一个IndyRecord对象。IndyRecord对象包含了数据库中每一列的公有属性。</p>
+    <pre class="code">　package javaservlets.tunnel;
+
+/**
+* This interface defines the methods available for
+* performing queries on the Indianapolis 500 database
+*/
+
+public interface IndyInterface
+{
+/**
+* Connects to the database.
+*
+* @return True if the database connection was established
+*/
+boolean connect();
+
+/**
+* Closes the database connection
+*/
+void close();
+
+/**
+* Given the year return the corresponding Indianapolis 500 record
+*
+* @param year Year of the race
+* @return Indy 500 record or null if not found
+*/
+IndyRecord query(int year);
+
+}
+
+package javaservlets.tunnel;
+
+/**
+* This object encapsulates a single Indianapolis 500 record
+*/
+
+public class IndyRecord implements java.io.Serializable
+{
+public int year;
+public String driver;
+public double speed;
+}　</pre>
+    <p> 　　记住它是实现了java.io.Serializable接口；这样做就可以使Java直接序列化和反序列化对象。<br>
+      注意，由于JavaBeans的需要，IndyRecord类要对每一个属性给出get和set方法。在这里，我将属性设置为公用属性，这样你就可以直接地获取它们的值。</p>
+    <p>　　编写服务器对象<br>
+      编写服务器对象的美妙之处就是通过使用HTTP遂道技术你不需要知道（或是关心）将要使用什么对象。我们所需要关注的只是实现接口。图10.24显示了Indy对象的实现情况。</p>
+    <pre class="code"> 　package javaservlets.tunnel;
+
+import java.sql.*;
+
+/**
+* Implements the IndyInterface to provide query capabilities
+* into the Indianapolis 500 database.
+*/
+
+public class Indy implements IndyInterface
+{
+// The JDBC Connection
+Connection m_connection = null;
+
+// A prepared statement to use to query the database
+PreparedStatement m_ps = null;
+
+/**
+* Connects to the database.
+*
+* @return True if the database connection was established
+*/
+public boolean connect()
+{
+boolean rc = false;
+
+try {
+
+// Load the Bridge
+Class.forName("sun.jdbc.odbc.JdbcOdbcDriver").newInstance();
+
+// Connect to the Access database
+m_connection = DriverManager.getConnection("jdbc:odbc:MyAccessDataSource");
+
+// Go ahead and create a prepared statement
+m_ps = m_connection.prepareStatement("SELECT Year, Driver, AvgSpeed from IndyWinners " +
+"WHERE Year = ?");
+
+rc = true;
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+
+return rc;
+}
+
+/**
+* Closes the database connection
+*/
+public void close()
+{
+// Close the connection if it was opened
+if (m_connection != null) {
+try {
+m_connection.close();
+}
+catch (SQLException ex) {
+ex.printStackTrace();
+}
+m_connection = null;
+}
+}
+
+/**
+* Given the year return the corresponding Indianapolis 500 record
+*
+* @param year Year of the race
+* @return Indy 500 record or null if not found
+*/
+public IndyRecord query(int year)
+{
+IndyRecord record = null;
+
+try {
+
+// Set the year parameter
+m_ps.setInt(1, year);
+
+// Execute the query
+ResultSet rs = m_ps.executeQuery();
+
+// Make sure a record exists
+if (rs.next()) {
+
+// Create a new IndyRecord object
+record = new IndyRecord();
+
+// Set the values
+record.year = rs.getInt(1);
+record.driver = rs.getString(2);
+record.speed = rs.getDouble(3);
+}
+rs.close();
+}
+catch (SQLException ex) {
+ex.printStackTrace();
+record = null;
+}
+
+return record;
+}
+
+}　</pre>
+    <p>　　要注意connect方法是通过使用JDBC-ODBC桥和一个Access数据库来创建一个数据库连接的。一个JDBC PreparedStatement对象也同时被创建。为你要使用多次的查询预备一个SLQL声明是提高性能的一个很好的方法。在我们的例子中，我们将一遍一遍地重复执行在不同年份值的情况下的相同的查询操作（这会在query方法中实现）。<br>
+      我们还要注意就是在query方法中数据是怎样从SELECT语句的结果中收集到的。你可能会按顺序获取数据。这样每一行只会被获取一次。一些JDBC驱动对执行这方面的请求上要求非常的严格，特别是这个JDBC-ODBC桥（承袭了ODBC函数的作风）。<br>
+      close方法只是简单地确认数据库连接已经完全停止。一定要确认你关闭了数据库，这样你的对象才不会出现不希望的内存泄漏或浪费服务器上的资源。 </p>
+    <p>　　编写客户代理<br>
+      客户代理户负着将方法和参数数据编发发送到服务器并从响应流中读取返回值的任务。要知道我们已经在基本客户对象中作了大量的工作，因此客户代理非常简单。构造函数获取基本的servlet程序URL（例如http://larryboy/servlet/）并初始化一个新的服务器端对象。客户代理实现的其余工作就是大量的重复性的工作；因此，在这里我只提供了query方法。</p>
+    <pre class="code">　　package javaservlets.tunnel;
+
+import java.io.*;
+import javaservlets.tunnel.client.*;
+
+/**
+* This class implements the client for tunneling calls to the Indy object.
+*/
+
+public class RemoteIndyClient
+extends TunnelClient
+implements IndyInterface
+{
+
+/**
+* Constructs a new RemoteMathLiteClient for the
+* given URL. The URL should contain the location of
+* servlet scripts (i.e. http://larryboy/servlet/).
+*/
+public RemoteIndyClient(String url)
+throws TunnelException, IOException
+{
+// Append the remote server name
+url += "RemoteIndyServer";
+
+// Set the URL
+_setURL(new java.net.URL(url));
+
+// Initialize the client and server
+_initialize(); 
+}
+
+/**
+* Connects to the database.
+*
+* @return True if the database connection was established
+*/
+public boolean connect()
+{
+boolean rc = false;
+try {
+// Create an internal buffer
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+// Create an object stream to write the request
+ObjectOutputStream out = (ObjectOutputStream) _createHeader(baos, 0);
+
+// Invoke the method and read the response
+ObjectInputStream in = (ObjectInputStream) _invokeMethod(baos.toByteArray());
+
+// Read the return value
+Boolean b = (Boolean) in.readObject();
+rc = b.booleanValue();
+
+// Wrap up
+out.close();
+in.close();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+
+return rc;
+}
+
+/**
+* Closes the database connection
+*/
+public void close()
+{
+try {
+// Create an internal buffer
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+// Create an object stream to write the request
+ObjectOutputStream out = (ObjectOutputStream) _createHeader(baos, 1);
+
+// Invoke the method
+_invokeMethod(baos.toByteArray());
+
+// Wrap up
+out.close();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+
+
+/**
+* Given the year return the corresponding Indianapolis 500 record
+*
+* @param year Year of the race
+* @return Indy 500 record or null if not found
+*/
+public IndyRecord query(int year)
+{
+IndyRecord record = null;
+try {
+// Create an internal buffer
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+// Create an object stream to write the request
+ObjectOutputStream out = (ObjectOutputStream) _createHeader(baos, 2);
+
+// Write the parameters
+out.writeObject(new Integer(year));
+// Invoke the method and read the response
+ObjectInputStream in = (ObjectInputStream) _invokeMethod(baos.toByteArray());
+
+// Read the return value
+record = (IndyRecord) in.readObject();
+
+// Wrap up
+out.close();
+in.close();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+return record;
+}
+}</pre>
+    <p>　　要注意方法序号对于方法是惟一的并被用来创建方法头。我们还要注意的就是如何通过对象输入、输出流来处理与服务器之间的发送和返回数据的。</p>
+    <p> 　　编写服务器代码存根<br>
+      服务器代码存根（这也是会被调用的servlet程序）实现了_getNewInstance和_invokeMethod例程。_getNewInstance方法将返回一个Indy对象的实例，这个实例将与Web服务器上的HTTP会话对象保持持续联系。<br>
+      _invokeMethod方法需要传入下列参数：一个服务器对象的实例（从HTTP会话中获得），服务器对象中待调用的方法的方法序号，一个用于读入参数的输入流，一个用于返回参数的输出流。在图10.26中列出了RemoteIndyServer的代码。 </p>
+    <pre class="code">　package javaservlets.tunnel;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import javaservlets.tunnel.server.*;
+
+/**
+* This class implements the server for tunneling remote Indy method calls
+*/
+
+public class RemoteIndyServer
+extends TunnelServer
+{
+/**
+* Creates a new instance of the server object. 
+*
+* @return Instance of the server object
+*/
+public Object _getNewInstance()
+throws ServletException
+{
+return new Indy();
+}
+
+/**
+* Invokes the method for the ordinal given. If the method
+* throws an exception it will be sent to the client. 
+*
+* @param Object Server object
+* @param ordinal Method ordinal
+* @param in Input stream to read additional parameters
+* @param out Output stream to write return values
+*/
+public void _invokeMethod(Object serverObject, int ordinal,
+DataInput in, DataOutput out)
+throws Exception
+{
+// Cast the server object
+Indy indy = (Indy) serverObject;
+
+// Cast the input/output streams
+ObjectInputStream objectIn = (ObjectInputStream) in;
+ObjectOutputStream objectOut = (ObjectOutputStream) out;
+
+// Evaluate the ordinal
+switch (ordinal) {
+case 0: // connect
+boolean b0 = indy.connect();
+objectOut.writeObject(new Boolean(b0));
+break;
+
+case 1: // close
+indy.close();
+break;
+
+case 2: // query
+Integer i2 = (Integer) objectIn.readObject();
+IndyRecord record = indy.query(i2.intValue());
+objectOut.writeObject(record);
+break;
+
+default:
+throw new Exception("Invalid ordinal: " + ordinal);
+}
+}
+}</pre>
+    <p>　　编写applet程序<br>
+      现在是使用远程方法编写一个简单applet程序的时候了，这个applet程序使用了客户代理。其中的大部分工作是用来格式化显示的；调用远程对象方法的操作只不过就是实例化一个新的客户代理并在Indy接口上发出Java方法调用。图10.27列出了applet程序Indy的具体代码。</p>
+    <pre class="code">package javaservlets.tunnel;
+
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
+
+/**
+* This applet demonstrates how to use the tunnel clients
+* to perform remote method calls using serialization
+*/
+
+public class IndyApplet
+extends Applet
+implements ActionListener
+{
+// Define our global components
+TextField year = new TextField(10);
+TextField driver = new TextField(20);
+TextField speed = new TextField(10);
+Button query = new Button("Query");
+IndyInterface indy;
+
+/**
+* Initialize the applet
+*/
+public void init()
+{
+// Don't allow the results to be edited
+driver.setEditable(false);
+speed.setEditable(false);
+
+// Use a grid bag layout
+GridBagLayout gridbag = new GridBagLayout();
+GridBagConstraints gbcon = new GridBagConstraints();
+setLayout(gridbag);
+
+// Setup the reusable constraint
+gbcon.weightx = 1.0;
+gbcon.weighty = 0.0;
+gbcon.anchor = gbcon.CENTER;
+gbcon.fill = gbcon.NONE;
+gbcon.gridwidth = gbcon.REMAINDER;
+
+// Add listeners
+query.addActionListener(this);
+
+// Add the components
+add(new Label("Enter the year:"));
+gridbag.setConstraints(year, gbcon);
+add(year);
+
+add(new Label("Press to query:"));
+gridbag.setConstraints(query, gbcon);
+add(query);
+
+add(new Label("Driver(s):"));
+gridbag.setConstraints(driver, gbcon);
+add(driver);
+
+add(new Label("Average Speed:"));
+gridbag.setConstraints(speed, gbcon);
+add(speed);
+
+// Create an instance of our remote object
+try {
+indy = new RemoteIndyClient(getCodeBase() + "servlet/");
+
+// Open the database connection
+boolean rc = indy.connect();
+if (!rc) {
+System.out.println("Connection not initialized");
+indy = null;
+}
+
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+
+/**
+* Called when the applet is being destroyed
+*/
+public void destroy()
+{
+// If the remote object was created close the connection
+if (indy != null) {
+indy.close();
+indy = null;
+}
+}
+
+/**
+* Process an action
+*/
+public void actionPerformed(ActionEvent event)
+{
+Object o = event.getSource();
+
+// Figure out which component caused the event
+if (o == query) {
+
+// If the indy object was not created, get out
+if (indy == null) {
+return;
+}
+
+// Clear the display fields
+driver.setText("");
+speed.setText("");
+
+// Get the year entered by the user
+int n = 0;
+try {
+n = Integer.parseInt(year.getText());
+}
+catch (Exception ex) {
+}
+
+// Get the indy record
+IndyRecord r = indy.query(n);
+
+// Populate
+if (r != null) {
+driver.setText(r.driver);
+speed.setText("" + r.speed);
+}
+
+}
+}
+}　　</pre>
+    <p>　　注意这个applet程序实现了ActionListener接口，这样我们就必须要实现actionPerformed方法。通过将这个applet程序注册为一个按钮的事件响应(addActionListener)，actionPerformed方法将在按钮被按下时被调用。这样我们就可以运行我们的查询，它将从数据库返回所需的结果。 </p>
+    <p>　　观察它的运行情况<br>
+      把servlet程序RemoteIndyServer加入到Web服务器中（通过别名的方式）并编写一个简单的HTML页面来调用我们的applet程序。做完这些事情后，我们就可以对它进行测试。不要忘记将applet程序和它所需的所有的类放置在你的Web服务器上，这样客户端浏览器才能调用到它们（或者阅读第12章来学习如何自动地创建描述applet程序的存档文件）。输入了年份后，按Query按钮将会所一个方法调用传送给servlet并返回结果。</p>
+    <pre class="code">　&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Indy Applet&lt;/TITLE>
+&lt;/HEAD>
+&lt;BODY>
+&lt;dir>
+&lt;h2>Simple applet that makes remote method calls
+using HTTP tunneling to query an Indianapolis 500 database.&lt;/h2>
+&lt;/dir>
+&lt;center>
+&lt;HR>
+&lt;APPLET WIDTH=300
+HEIGHT=200
+NAME="IndyApplet"
+CODE="javaservlets.tunnel.IndyApplet">&lt;/APPLET>
+&lt;/center> 
+&lt;/BODY>
+&lt;/HTML>　</pre>
+    <h2><a name="106" id="106"></a>10.6 小结 </h2>
+    <p>　　在这一章中，我们讨论了如何使用HTTP遂道技术来调用远程方法。我们了解了可适用于所有JDK版本的数据编发方式（也就是我们的“lite”版本），同时我们也了解了可用于JDK1.1及更高版本的特殊的数据组织方式。通过这种方式，客户和服务器可以在同一个基本类的基础上进行开发，这就使得在编写客户代理和服务器代码存根方面变得更容易。我们还编写了一些 
+      applet程序来测试开发出来的这些远程对象。这些applet程序通过Internet可以非常容易地被开发出来。<br>
+      在下一章中，我们将通过自动化程序开发远程对象。你会了解到编写客户代理和服务器代码存根是有一定重复的。我们将开发一个应用程序。通过使用Java映射提取方法、参数和服务器对象的返回类型，它将自动地产生这些类的源代码。
+    <div class="rpindex"><a href="11-1.html"> 下一页</a><a href="10-1.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

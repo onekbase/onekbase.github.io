@@ -1,0 +1,233 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="7.html"> 上一页</a><a href="9.html"> 下一页</a></div>
+<!-- Copyright ?2005. Spidersoft Ltd -->
+<h1><a href="index.html">Spring Gossip: 自动绑定</a></h1>
+接续 <a href="7.html">属性参考</a> 的内容。<br>
+<br>
+直接指定值或是使用&lt;ref&gt;直接指定参考至其它的Bean，Spring也支持隐式的自动绑定，您可以透过类型（byType）或名称（byName）将Bean绑定至其它Bean上对应的属性，下面是个byType的例子： <br>
+<h5>beans-config.xml</h5>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br><br>&lt;beans&gt;  <br>    &lt;bean id="dateBean" class="java.util.Date"/&gt;<br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean" <span style="font-weight: bold;"><br>          autowire="byType"</span>&gt; <br>        &lt;property name="helloWord"&gt; <br>            &lt;value&gt;Hello!&lt;/value&gt; <br>        &lt;/property&gt; <br>    &lt;/bean&gt; <br>&lt;/beans&gt;</pre>
+在定义档中，并没有指定helloBean的Date属性，而是透过自动绑定，由于autowire指定了byType，所以会根据helloBean的
+Date属性所接受的型态，判断是否有类似的型态对象，并将之绑定至helloBean的Date属性上，如果byType无法完成绑定，则丢出
+org.springrframework.beans.factory.UnsatisfiedDependencyExcpetion例外。<br>
+<br>
+您也可以指定byName来绑定，则Spring会根据bean的别名与属性名称是否符合来进行自动绑定，举个例子来说，如果是byName而Date属性要完成依赖注入的话，则必须修改一下第一个Bean的id值为date： <br>
+
+    <h5>beans-config.xml</h5>
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br><br>&lt;beans&gt;  <br>    &lt;bean id=<span style="font-weight: bold;">"date"</span> class="java.util.Date"/&gt;<br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean" <br>          <span style="font-weight: bold;">autowire="byName"</span>&gt; <br>        &lt;property name="helloWord"&gt; <br>            &lt;value&gt;Hello!&lt;/value&gt; <br>        &lt;/property&gt; <br>    &lt;/bean&gt; <br>&lt;/beans&gt;</pre>
+
+如果byName无法完成绑定，则属性维持未绑定状态。<br>
+<br>
+<span class="postbody"></span>在建构方法上，也可以尝试进行自动绑定，例如若HelloBean.java修改如下：<br>
+
+    <h5>HelloBean.java</h5>
+
+<pre class="code">package onlyfun.caterpillar; <br><br>import java.util.Date; <br><br>public class HelloBean { <br>    private String helloWord; <br>    private Date date; <br>    <br>    public HelloBean() {<br>    }<br>    <br>    public HelloBean(Date date) {<br>        this.date = date;<br>    }<br>    <br>    public void setHelloWord(String helloWord) { <br>        this.helloWord = helloWord; <br>    } <br>    public String getHelloWord() { <br>        return helloWord; <br>    } <br>    public void setDate(Date date) { <br>        this.date = date; <br>    }    <br>    public Date getDate() { <br>        return date; <br>    } <br>}</pre>
+
+您可以如下定义beans-config.xml：<br>
+
+    <h5>beans-config.xml</h5>
+
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br><br>&lt;beans&gt;  <br>    &lt;bean id="date" class="java.util.Date"/&gt;<br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean" <br>          <span style="font-weight: bold;">autowire="constructor"</span>&gt; <br>        &lt;property name="helloWord"&gt; <br>            &lt;value&gt;Hello!&lt;/value&gt; <br>        &lt;/property&gt; <br>    &lt;/bean&gt;<br>&lt;/beans&gt;</pre>
+
+由于autowire设定为constructor，在建立绑定关系时，Spring容器会试图比对容器中的Bean及相关的建构方法，在型态上是否有符
+合，如果有的话，则选用该建构方法来建立Bean实例，例如上例中，HelloBean的带参数建构方法与date这个Bean的型态相符，于是选用该建
+构方法来建构实例，并将date这个Bean注入给它，如果无法完成绑定，则丢出
+org.springframework.beans.factory.UnsatisfiedDependencyException例外。<br>
+<br>
+还想再偷懒的话。就使用autodetect，例如：<br>
+
+    <h5>beans-config.xml</h5>
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br><br>&lt;beans&gt;  <br>    &lt;bean id="date" class="java.util.Date"/&gt;<br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean" <br>          <span style="font-weight: bold;">autowire="autodetect"</span>&gt; <br>        &lt;property name="helloWord"&gt; <br>            &lt;value&gt;Hello!&lt;/value&gt; <br>        &lt;/property&gt; <br>    &lt;/bean&gt;<br>&lt;/beans&gt;</pre>
+
+使用autodetect时，会尝试使用constructor，然后使用byType，哪一个先符合就先用。<br>
+<br>
+隐式的自动绑定没办法从定义档中，清楚的看到是否每个属性都完成设定，我们可以加入相依检查，在&lt;bean&gt;上加入dependency-
+check，有四种相依检查方式：simple、objects、all、none。第一个只检查简单的属性，像是原生（primitive）数据型态或
+字符串对象，objects检查对象属性，all则检查全部的属性，none是预设，表示不检查相依性，例如：<br>
+
+    <h5>beans-config.xml</h5>
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br><br>&lt;beans&gt;  <br>    &lt;bean id="date" class="java.util.Date"/&gt;<br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean" <br>          autowire="autodetect"  <br>          <span style="font-weight: bold;">dependency-check="all"</span>&gt; <br>        &lt;property name="helloWord"&gt; <br>            &lt;value&gt;Hello!&lt;/value&gt; <br>        &lt;/property&gt; <br>    &lt;/bean&gt;<br>&lt;/beans&gt;</pre>
+
+如果相依检查发现有未完成的依赖关系，则运行时会丢出org.springframework.beans.factory.UnsatisfiedDependencyException。<br>
+<br>
+
+<div class="rpindex"><a href="9.html"> 下一页</a><a href="7.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

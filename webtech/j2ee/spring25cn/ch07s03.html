@@ -1,0 +1,463 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-api-advice"></a>7.3.&#160;Spring的通知API</h2></div></div></div>
+<p>现在让我们看一下SPring AOP是怎样处理通知的。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-api-advice-lifecycle"></a>7.3.1.&#160;通知的生命周期</h3></div></div></div>
+<p>每个通知都是一个Spring bean。一个通知实例既可以被所有被通知的对象共享，也可以被每个被通知对象独占。
+        这根据设置<span class="emphasis"><em>类共享（per-class）</em></span>或<span class="emphasis"><em>基于实例（per-instance）</em></span>的参数来决定。</p>
+<p>类共享通知经常会被用到。它很适合用作通用的通知例如事务通知器（advisor）。这些通知器不依赖于代理对象的状态也不会向代理对象添加新的状态；
+        它们仅仅在方法和参数上起作用。
+        </p>
+<p>基于实例的通知很适合用作导入器来支持混合类型（mixin）。在这种情况下，通知向代理对象添加状态。</p>
+<p>在同一个AOP代理里混合使用类共享和基于实例的通知是可能的。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-api-advice-types"></a>7.3.2.&#160;Spring里的通知类型</h3></div></div></div>
+<p>Spring自带了多种通知类型，而且它们也可以被扩展来支持各种通知类型。让我们先看看基本概念和标准的通知类型。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-advice-around"></a>7.3.2.1.&#160;拦截环绕通知</h4></div></div></div>
+<p>在Spring中最基础的通知类型是<span class="emphasis"><em>拦截环绕通知</em></span>（interception around advice）。</p>
+<p>Spring里使用方法拦截的环绕通知兼容AOP联盟接口。实现环绕通知的MethodInterceptor应当实现下面的接口：</p>
+<pre class="code">public interface MethodInterceptor extends Interceptor {
+                
+                Object invoke(MethodInvocation invocation) throws Throwable;
+            }</pre>
+<p><code class="methodname">invoke()</code>方法的<code class="classname">MethodInvocation</code>参数暴露了被调用的方法；
+                目标连接点；AOP代理以及传递给方法的参数。<code class="methodname">invoke()</code>方法应该返回调用的结果：即连接点的返回值。
+            </p>
+<p>一个简单的<code class="classname">MethodInterceptor</code>实现看起来像下面这样：</p>
+<pre class="code">public class DebugInterceptor implements MethodInterceptor {
+                
+                public Object invoke(MethodInvocation invocation) throws Throwable {
+                System.out.println("Before: invocation=[" + invocation + "]");
+                Object rval = invocation.proceed();
+                System.out.println("Invocation returned");
+                return rval;
+                }
+            }</pre>
+<p>注意对MethodInvocation中<code class="methodname">proceed()</code>方法的调用。
+            这个方法继续运行指向连接点的拦截器链并返回proceed()的结果。大多数拦截器会调用这个方法，返回一个值。
+            然而，一个类似任意环绕通知的MethodInterceptor，可以返回一个不同的值或者抛出一个异常而不是调用proceed方法。
+            但除非你有很好的理由，否则不要考虑这样做！</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>MethodInterceptor提供了与其它AOP联盟兼容实现的互操作性。本节的剩下部分将讨论其它的通知类型，
+            	它们实现了通用的AOP概念，但是以一种Spring风格的方式来实现的。使用最通用的通知类型还有一个好处，
+            	固定使用MethodInterceptor环绕通知可以让你在其它的AOP框架里运行你所定制的切面。
+            	要注意现在切入点还不能和其它框架进行互操作，AOP联盟目前还没有定义切入点接口。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-advice-before"></a>7.3.2.2.&#160;前置通知</h4></div></div></div>
+<p>一个更简单的通知类型是<span class="bold"><strong>前置通知</strong></span>（before advice）。
+            它不需要<code class="literal">MethodInvocation</code>对象，因为它只是在进入方法之前被调用。</p>
+<p>前置通知的一个主要优点是它不需要调用<code class="literal">proceed()</code>方法，
+            因此就不会发生无意间运行拦截器链失败的情况。</p>
+<p>下面是<code class="literal">MethodBeforeAdvice</code> 接口。
+            （Spring的API设计能够为类中的成员变量提供前置通知，虽然通常对象会被应用于成员变量拦截之上，但看起来Spring并不打算实现这个功能。）
+            </p>
+<pre class="code">public interface MethodBeforeAdvice extends BeforeAdvice {
+                
+                void before(Method m, Object[] args, Object target) throws Throwable;
+            }</pre>
+<p>注意返回值的类型是<code class="literal">void</code>。前置通知可以在连接点执行之前插入自定义行为，但是不能修改连接点的返回值。
+            如果一个前置通知抛出异常，这将中止拦截器链的进一步执行。异常将沿着拦截器链向回传播。
+            如果异常是非强制检查的（unchecked）或者已经被包含在被调用方法的throws声明中，它将被直接返回给客户端；
+            否则它将由AOP代理包装在一个非强制检查异常中返回。</p>
+<p>这是一个Spring前置通知的例子，它计算所有方法被调用的次数：</p>
+<pre class="code">public class CountingBeforeAdvice implements MethodBeforeAdvice {
+                
+                private int count;
+                
+                public void before(Method m, Object[] args, Object target) throws Throwable {
+                ++count;
+                }
+                
+                public int getCount() { 
+                return count; 
+                }
+            }</pre>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>前置通知可以和任何切入点一起使用。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-advice-throws"></a>7.3.2.3.&#160;异常通知</h4></div></div></div>
+<p>如果连接点抛出异常，<span class="bold"><strong>异常通知（throws advice）</strong></span>将在连接点返回后被调用。
+                Spring提供类型检查的异常通知（typed throws advice），这意味着<code class="literal">org.springframework.aop.ThrowsAdvice</code>接口不包含任何方法：
+                它只是一个标记接口用来标识所给对象实现了一个或者多个针对特定类型的异常通知方法。这些方法应当满足下面的格式: </p>
+<pre class="code">afterThrowing([Method, args, target], subclassOfThrowable) </pre>
+<p>只有最后一个参数是必须的。根据异常通知方法对方法及参数的需求，方法的签名可以有一个或者四个参数。
+            下面是一些异常通知的例子。</p>
+<p>当一个<code class="literal">RemoteException</code>（包括它的子类）被抛出时，下面的通知会被调用：</p>
+<pre class="code">public class RemoteThrowsAdvice implements ThrowsAdvice {
+
+    public void afterThrowing(RemoteException ex) throws Throwable {
+                <em class="lineannotation"><span class="lineannotation">// Do something with remote exception</span></em>
+    }
+            }</pre>
+<p>当一个<span class="emphasis"><em>ServletException</em></span>被抛出，下面的通知将被调用。
+            和上面的通知不同，它声明了4个参数，因此它可以访问被调用的方法，方法的参数以及目标对象：</p>
+<pre class="code">public class ServletThrowsAdviceWithArguments implements ThrowsAdvice {
+
+    public void afterThrowing(Method m, Object[] args, Object target, ServletException ex) {
+                <em class="lineannotation"><span class="lineannotation">// Do something with all arguments</span></em>
+    }
+            }</pre>
+<p>最后一个例子说明怎样在同一个类里使用两个方法来处理
+            <code class="literal">RemoteException</code>和<code class="literal">ServletException</code>。可以在一个类里组合任意数量的异常通知方法。</p>
+<pre class="code">public static class CombinedThrowsAdvice implements ThrowsAdvice {
+                
+                public void afterThrowing(RemoteException ex) throws Throwable {
+                // Do something with remote exception
+                }
+                
+                public void afterThrowing(Method m, Object[] args, Object target, ServletException ex) {
+                // Do something with all arguments
+                }
+            }</pre>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>异常通知可以和任何切入点一起使用。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-advice-after-returning"></a>7.3.2.4.&#160;后置通知</h4></div></div></div>
+<p>Spring中的后置通知（After Returning advice）必须实现
+                <span class="emphasis"><em>org.springframework.aop.AfterReturningAdvice</em></span>
+            接口，像下面显示的那样：</p>
+<pre class="code">public interface AfterReturningAdvice extends Advice {
+                
+                void afterReturning(Object returnValue, Method m, Object[] args, Object target) 
+                throws Throwable;
+            }</pre>
+<p>后置通知可以访问返回值（但不能进行修改），被调用方法，方法参数以及目标对象。</p>
+<p>下面的后置通知计算所有运行成功（没有抛出异常）的方法调用：</p>
+<pre class="code">public class CountingAfterReturningAdvice implements AfterReturningAdvice {
+                
+                private int count;
+                
+                public void afterReturning(Object returnValue, Method m, Object[] args, Object target)
+                throws Throwable {
+                ++count;
+                }
+                
+                public int getCount() {
+                return count;
+                }
+            }</pre>
+<p>这个通知不改变执行路径。如果抛出异常，它将沿着拦截器链被抛出而不是返回被调用方法的执行结果。</p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>后置通知可以和任何切入点一起使用。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-advice-introduction"></a>7.3.2.5.&#160;引入通知</h4></div></div></div>
+<p>Spring 把引入通知（introduction advice）作为一种特殊的拦截通知进行处理。</p>
+<p>引入通知需要一个<code class="literal">IntroductionAdvisor</code>,
+            和一个<code class="literal">IntroductionInterceptor</code>, 后者实现下面的接口：</p>
+<pre class="code">public interface IntroductionInterceptor extends MethodInterceptor {
+                
+                boolean implementsInterface(Class intf);
+            }</pre>
+<p>继承自AOP联盟<code class="literal">MethodInterceptor</code> 接口的<code class="literal">invoke() </code>方法，必须确保实现引入：
+            也就是说，如果被调用的方法位于一个已经被引入接口里，这个引入拦截器将负责完成对这个方法的调用--因为它不能调用<code class="literal">proceed()</code>方法。</p>
+<p>引入通知不能和任何切入点一起使用，因为它是应用在类级别而不是方法级别。
+                你只能通过<code class="literal">IntroductionAdvisor</code>来使用引入通知，这个接口包括下面的方法：
+            </p>
+<pre class="code">public interface IntroductionAdvisor extends Advisor, IntroductionInfo {
+                
+                ClassFilter getClassFilter();
+                
+                void validateInterfaces() throws IllegalArgumentException;
+                }
+                
+                public interface IntroductionInfo {
+                
+                Class[] getInterfaces();
+            }</pre>
+<p>这里没有<code class="interfacename">MethodMatcher</code>接口，因此也就没有
+            <code class="interfacename">Pointcut</code>与引入通知相关联。这里只进行类过滤。</p>
+<p><code class="literal">getInterfaces()</code>方法返回这个通知器所引入的接口。</p>
+<p><code class="literal">validateInterfaces()</code>方法将被内部使用来查看被引入的接口是否能够由配置的<code class="literal">IntroductionInterceptor</code>来实现。</p>
+<p>让我们看看从Spring测试集里拿来的一个简单例子。让我们假设我们希望把下面的接口引入给一个或者多个对象：</p>
+<p>
+                </p>
+<pre class="code">public interface Lockable {
+                    void lock();
+                    void unlock();
+                    boolean locked();
+                }</pre>
+<p>
+            </p>
+<p>这里描述了一个<span class="bold"><strong>混合类型</strong></span>（mixin）。我们希望不论原本对象是什么类型，都把这个被通知对象转换为Lockable接口并可以调用lock和unlock 方法。
+                如果我们调用lock() 方法，我们希望所有的setter 方法抛出一个<code class="literal">LockedException</code>异常。
+            这样我们就可以加入一个方面来确保对象在得到通知之前是不可修改的：一个关于AOP的好例子。</p>
+<p>首先，我们需要一个<code class="literal">IntroductionInterceptor</code>来做些粗活。这里，我们扩展了
+                <code class="literal">org.springframework.aop.support.DelegatingIntroductionInterceptor</code>这个方便的类。
+                我们能够直接实现IntroductionInterceptor接口，
+                但在这个例子里使用<code class="literal">DelegatingIntroductionInterceptor</code>是最好的选择。
+            </p>
+<p>
+                <code class="literal">DelegatingIntroductionInterceptor</code>设计为把一个引入托管给一个实现这个接口的类，
+                这通过隐藏拦截的使用来实现。托管可以被设置到任何具有构造器方法的类；这里使用缺省托管(即使用无参构造器)。
+                因此在下面这个例子里，托管者将是<code class="literal">DelegatingIntroductionInterceptor</code>的子类
+                <code class="literal">LockMixin</code>。
+                当一个托管实现被提供，<code class="literal">DelegatingIntroductionInterceptor</code>实例将查找托管所实现的所有接口
+                （除了IntroductionInterceptor之外），并为这些接口的介绍提供支持。子类例如<code class="literal">LockMixin</code>
+                可以调用<code class="literal">suppressInterface(Class intf) </code>方法来禁止那些不应该被暴露的接口。
+                然而，不论<code class="literal">IntroductionInterceptor</code>支持多少接口，
+                <code class="literal">IntroductionAdvisor</code>的使用将控制哪些接口真正被暴露。
+                一个被引入的接口将覆盖目标对象实现的相同接口。
+            </p>
+<p>这样LockMixin就继承了<code class="literal">DelegatingIntroductionInterceptor</code>并实现了Lockable接口。
+            这里父类会自动选择Lockable接口并提供引入支持，因此我们不需要配置它。用这种方法我们能够引入任意数量的接口。
+            </p>
+<p>注意<code class="literal">locked</code>实例变量的用法。这有效地向目标对象增加了额外状态。</p>
+<p>
+                </p>
+<pre class="code">public class LockMixin extends DelegatingIntroductionInterceptor 
+                    implements Lockable {
+                    
+                    private boolean locked;
+                    
+                    public void lock() {
+                    this.locked = true;
+                    }
+                    
+                    public void unlock() {
+                    this.locked = false;
+                    }
+                    
+                    public boolean locked() {
+                    return this.locked;
+                    }
+                    
+                    public Object invoke(MethodInvocation invocation) throws Throwable {
+                    if (locked() &amp;&amp; invocation.getMethod().getName().indexOf("set") == 0)
+                    throw new LockedException();
+                    return super.invoke(invocation);
+                    }
+                    
+                }</pre>
+<p>
+            </p>
+<p>覆盖<code class="literal">invoke()</code>方法通常是不必要的：<code class="literal">DelegatingIntroductionInterceptor</code>就已经够用了（如果一个方法被引入，这个实现将调用实际的托管方法，否则它将直接处理连接点）。在当前这个例子里，我们需要增加一个检查：如果处于加锁（locked）状态，没有setter方法可以被调用。
+            </p>
+<p>引入通知器的要求是很简单的。它的全部要求只是保持一个特定的<code class="literal">LockMixin</code>实例，
+                并说明被通知的接口 - 在这个例子里，只有一个<code class="literal">Lockable</code>接口。
+                更复杂的例子中也许会引用一个引入拦截器的（可以被定义为一个原型）：
+                在这种情况下，不需要对<code class="literal">LockMixin</code>进行相关配置，
+                因此我们可以简单的用<code class="literal">new</code>关键字来创建它。
+            </p>
+<p>
+                </p>
+<pre class="code">public class LockMixinAdvisor extends DefaultIntroductionAdvisor {
+                    
+                    public LockMixinAdvisor() {
+                    super(new LockMixin(), Lockable.class);
+                    }
+                }</pre>
+<p>
+            </p>
+<p>我们可以很容易应用这个通知器：它不需要配置。
+                （然而，下面<span class="emphasis"><em>是</em></span>必须记住的：不可以在没有<span class="emphasis"><em>IntroductionAdvisor</em></span>的情况下使用<code class="literal">IntroductionInterceptor</code>。）
+                通常的引入通知器必须是基于实例的，因为它是有状态的。因此，对于每个被通知对象我们需要一个不同
+                实例的<code class="literal">LockMixinAdvisor</code>和<code class="literal">LockMixin</code>。
+                这种情况下通知器保存了被通知对象的部分状态。
+            </p>
+<p>
+                我们能够通过使用<code class="literal">Advised.addAdvisor() </code>的编程方式来应用通知器，或者像其它通知器那样（也是推荐的方式）在XML里进行配置。全部的代理创建选择（包括“自动代理创建器”）将在下面进行讨论，
+                看看如何正确地处理引入和有状态混合类型。
+            </p>
+</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

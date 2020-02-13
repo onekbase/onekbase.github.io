@@ -1,0 +1,252 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="5.html"> 上一页</a><a href="7.html"> 下一页</a></div>
+<h1><a href="index.html">Spring Gossip:&nbsp;Type 2 IoC、Type 3 IoC</a></h1>
+在 <a href="4.html">第一个 Spring 程序</a> 中利用Bean的Setter完成依赖注入，Spring鼓励的是Setter injection，也就是Type 2，但也允许您使用Type
+3的Constructor
+injection，使用Setter或Constructor来注入依赖关系视您的需求而定，这边先来看看如何使用Constructor
+injection，首先看看HelloBean： <br>
+
+    <h5>HelloBean.java</h5>
+
+<pre class="code">package onlyfun.caterpillar; <br><br>public class HelloBean {<br>    private String name;<br>    private String helloWord;<br><br>    public HelloBean() {<br>    }<br>    <br>    public HelloBean(String name, String helloWord) {<br>        this.name = name;<br>        this.helloWord = helloWord;<br>    }<br>    <br>    public void setName(String name) {<br>        this.name = name;<br>    }<br>    public String getName() {<br>        return name;<br>    }<br><br>    public void setHelloWord(String helloWord) { <br>        this.helloWord = helloWord; <br>    } <br>    public String getHelloWord() { <br>        return helloWord; <br>    } <br>}</pre>
+<br>
+注意建构函式的两个参数顺序，在Bean定义文件中设定时必须指定参数的顺序，如下所示：<br>
+
+    <h5>beans-config.xml</h5>
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br>&lt;beans&gt; <br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean"&gt; <br>        &lt;constructor-arg index="0"&gt;<br>            &lt;value&gt;Justin&lt;/value&gt;<br>        &lt;/constructor-arg&gt; <br>        &lt;constructor-arg index="1"&gt;<br>            &lt;value&gt;caterpillar&lt;/value&gt;<br>        &lt;/constructor-arg&gt; <br>    &lt;/bean&gt; <br>&lt;/beans&gt;</pre>
+<br>
+在Bean的定义档案中，使用&lt;constructor-arg&gt;来表示将使用Constructor
+injection，由于使用Constructor injection时并不如Setter
+injection时拥有setXXX()这样易懂的名称，所以必须指定参数的位置索引，index属性就是用于指定对象将注入至建构函式中的哪一个参
+数，参数的顺序指定中，第一个参数的索引值是0，第二个是1，依此类推。<br>
+<br>
+来看看测试程序：<br>
+
+    <h5>SpringDemo.java</h5>
+
+<pre class="code">package onlyfun.caterpillar; <br><br>import org.springframework.context.ApplicationContext;<br>import org.springframework.context.support.FileSystemXmlApplicationContext; <br><br>public class SpringDemo { <br>    public static void main(String[] args) { <br>        ApplicationContext context = <br>            new FileSystemXmlApplicationContext("beans-config.xml");<br>         <br>        HelloBean hello = <br>            (HelloBean) context.getBean("helloBean");<br>        System.out.print("name: ");<br>        System.out.println(hello.getName());<br>        System.out.print("word: ");<br>        System.out.println(hello.getHelloWord()); <br>    } <br>}</pre>
+<br>
+实际的执行结果如下：<br>
+<pre class="code">资 讯: Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@12b6651]
+2005/10/17 下午 09:08:50 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in factory [org.springframework.beans.factory.support.DefaultListableBeanFactory defining beans [helloBean]; root of BeanFactory hierarchy]
+name: Justin
+word: caterpillar</pre>
+<p><br>
+  这边的例子在Bean上使用具有两个参数的建构函式作范例，如果建构函式上只有一个参数，则不必指定index属性，例如建构函式上若只有一个name参数，则可以在Bean定义档中如下设定：</p>
+<pre class="code">...
+&lt;bean ...&gt;
+	&lt;constructor-arg&gt;
+		&lt;value&gt;Justin&lt;/value&gt;
+	&lt;/constructor-arg&gt;
+&lt;/bean&gt;
+...
+</pre>
+ 另一个例子是若有两个以上的参数，而参数型态各不相同的话，例如若HelloBean是这么定义的：<br>
+
+    <h5>HelloBean.java</h5>
+
+<pre class="code">package onlyfun.caterpillar; <br><br>public class HelloBean {<br>    private String name;<br>    private Integer age;<br><br>    public HelloBean() {<br>    }<br>    <br>    public HelloBean(String name, Integer age) {<br>        this.name = name;<br>        this.age = age;<br>    }<br>    <br>    public void setName(String name) {<br>        this.name = name;<br>    }<br>    public String getName() {<br>        return name;<br>    }<br><br>    public void setAge(Integer age) { <br>        this.age = age; <br>    } <br>    public Integer getAge() { <br>        return age; <br>    } <br>}</pre>
+<br>
+这次在Bean定义档的&lt;constructor-arg&gt;上，可以使用type来指定建构函式上的参数型态，例如：<br>
+
+    <h5>beans-config.xml</h5>
+
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt; <br>&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" <br>  "http://www.springframework.org/dtd/spring-beans.dtd"&gt; <br>&lt;beans&gt; <br>    &lt;bean id="helloBean" <br>          class="onlyfun.caterpillar.HelloBean"&gt; <br>        &lt;constructor-arg type="java.lang.String"&gt;<br>            &lt;value&gt;Justin&lt;/value&gt;<br>        &lt;/constructor-arg&gt; <br>        &lt;constructor-arg type="java.lang.Integer"&gt;<br>            &lt;value&gt;20&lt;/value&gt;<br>        &lt;/constructor-arg&gt; <br>    &lt;/bean&gt; <br>&lt;/beans&gt;</pre>
+<br>
+简单的将SpringDemo类别改为以下：<br>
+
+    <h5>SpringDemo.java</h5>
+
+<pre class="code">package onlyfun.caterpillar; <br><br>import org.springframework.context.ApplicationContext;<br>import org.springframework.context.support.FileSystemXmlApplicationContext; <br><br>public class SpringDemo { <br>    public static void main(String[] args) { <br>        ApplicationContext context = <br>            new FileSystemXmlApplicationContext("beans-config.xml");<br>         <br>        HelloBean hello = <br>            (HelloBean) context.getBean("helloBean");<br>        System.out.print("name: ");<br>        System.out.println(hello.getName());<br>        System.out.print("word: ");<br>        System.out.println(hello.getAge()); <br>    } <br>}</pre>
+<br>
+执行结果如下所示：
+<pre class="code">...
+name: Justin
+word: 20
+...</pre>
+
+至于要使用Constructor或Setter来完成依赖注入这个问题，其实就等于在讨论一个古老的问题，要在对象建立时就准备好所有的资源，或是在对象建立好后，使用Setter来进行设定。 <br>
+<br>
+使用Constructor的好处之一是，您可以在建构对象的同时一并完成依赖关系的建立，对象一建立则所有的一切也就准备好了，但如果要建立的对象关系很多，使用Constructor
+injection会在建构函式上留下一长串的参数，且不易记忆，这时使用Setter会是个不错的选择，另一方面，Setter可以有明确的名称可以了解注入的对象
+会是什么，像是setXXX()这样的名称会比记忆Constructor上某个参数位置代表某个对象来得好。 <br>
+<br>
+然而使用Setter由于提供了setXXX()方法，所以不能保证相关的数据成员或资源在执行时期不会被更改设定，所以如果您想要让一些数据成员或资源变为只读或是私有，使用Constructor injection会是个简单的选择。 <br>
+
+<div class="rpindex"><a href="7.html"> 下一页</a><a href="5.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

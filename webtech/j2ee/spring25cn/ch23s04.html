@@ -1,0 +1,334 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="scheduling-task-executor"></a>23.4.&#160;Spring<code class="interfacename">TaskExecutor</code>抽象</h2></div></div></div>
+<p>
+			Spring 2.0 为执行器(Executor)处理引入了一个新的抽象层。Executor是Java 5的名词，用来表示线程池的概念。
+			之所以用这个奇怪的名词，是因为实际上不能保证底层实现的确是一个池。实际上，很多情况下，executor只是单线程。
+			Spring的抽象层帮助你把线程池引入到Java 1.3和1.4环境中，同时隐藏了 1.3, 1.4, 5, 和 Java EE环境中线程池实现的差异。
+		</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="scheduling-task-executor-interface"></a>23.4.1.&#160;<code class="interfacename">TaskExecutor</code>接口</h3></div></div></div>
+<p>
+				Spring的<code class="interfacename">TaskExecutor</code>接口等同于<code class="classname">java.util.concurrent.Executor</code>接口。
+				实际上，它存在的主要原因是为了在使用线程池的时候，将对Java 5的依赖抽象出来。
+				这个接口只有一个方法<code class="classname">execute(Runnable task)</code>，它根据线程池的语义和配置，来接受一个执行任务。
+		</p>
+<p>
+				最初创建<code class="interfacename">TaskExecutor</code>是为了在需要时给其他Spring组件提供一个线程池的抽象。
+				例如<code class="classname">ApplicationEventMulticaster</code>组件、JMS的 <code class="classname">AbstractMessageListenerContainer</code>和对Quartz的整合都使用了<code class="interfacename">TaskExecutor</code>抽象来提供线程池。
+				当然，如果你的bean需要线程池行为，你也可以使用这个抽象层。
+		</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="scheduling-task-executor-types"></a>23.4.2.&#160;<code class="interfacename">TaskExecutor</code>类型</h3></div></div></div>
+<p>
+				在Spring发行包中预定义了一些<code class="interfacename">TaskExecutor</code>实现。有了它们，你甚至不需要再自行实现了。
+			</p>
+<div class="itemizedlist"><ul type="disc">
+<li>
+<p>
+						<code class="classname">SimpleAsyncTaskExecutor</code>
+类
+					</p>
+<p>
+					这个实现不重用任何线程，或者说它每次调用都启动一个新线程。但是，它还是支持对并发总数设限，当超过线程并发总数限制时，阻塞新的调用，直到有位置被释放。如果你需要真正的池，请继续往下看。
+					</p>
+</li>
+<li>
+<p><a name="syncTaskExecutor"></a>
+						<code class="classname">SyncTaskExecutor</code>类
+					</p>
+<p>
+						这个实现不会异步执行。相反，每次调用都在发起调用的线程中执行。它的主要用处是在不需要多线程的时候，比如简单的test case。
+					</p>
+</li>
+<li>
+<p><a name="concurrentTaskExecutor"></a>
+						<code class="classname">ConcurrentTaskExecutor</code>
+类
+					</p>
+<p>
+					这个实现是对Java 5 <code class="classname">java.util.concurrent.Executor</code>类的包装。有另一个备选, <code class="classname">ThreadPoolTaskExecutor</code>类，它暴露了<code class="classname">Executor</code>的配置参数作为bean属性。很少需要使用<code class="classname">ConcurrentTaskExecutor</code>, 但是如果<a href="ch23s04.html#threadPoolTaskExecutor"><code class="classname">ThreadPoolTaskExecutor</code></a>不敷所需，<code class="classname">ConcurrentTaskExecutor</code>是另外一个备选。
+					</p>
+</li>
+<li>
+<p><a name="simpleThreadPoolTaskExecutor"></a>
+						<code class="classname">SimpleThreadPoolTaskExecutor</code>
+类
+					</p>
+<p>
+						这个实现实际上是Quartz的<code class="classname">SimpleThreadPool</code>类的子类，它会监听Spring的生命周期回调。当你有线程池，需要在Quartz和非Quartz组件中共用时，这是它的典型用处。
+					</p>
+</li>
+<li>
+<p><a name="threadPoolTaskExecutor"></a>
+						<code class="classname">ThreadPoolTaskExecutor</code>
+类
+					</p>
+<div class="sidebar">
+<p class="title"><b></b></p>
+<p>
+							它不支持任何对<code class="classname">java.util.concurrent</code>包的替换或者下行移植。Doug Lea和Dawid Kurzyniec对<code class="classname">java.util.concurrent</code>的实现都采用了不同的包结构，导致它们无法正确运行。
+						</p>
+</div>
+<p>
+					这个实现只能在Java 5环境中使用，但是却是这个环境中最常用的。它暴露的bean properties可以用来配置一个<code class="classname">java.util.concurrent.ThreadPoolExecutor</code>，把它包装到一个<code class="interfacename">TaskExecutor</code>中。如果你需要更加先进的类，比如<code class="classname">ScheduledThreadPoolExecutor</code>,我们建议你使用<a href="ch23s04.html#concurrentTaskExecutor"><code class="classname">ConcurrentTaskExecutor</code></a>来替代。
+                    </p>
+</li>
+<li>
+<p>
+						<code class="classname">TimerTaskExecutor</code>类
+					</p>
+<p>
+						这个实现使用一个<code class="classname">TimerTask</code>作为其背后的实现。它和<a href="ch23s04.html#syncTaskExecutor"><code class="classname">SyncTaskExecutor</code></a>的不同在于，方法调用是在一个独立的线程中进行的，虽然在那个线程中是同步的。
+					</p>
+</li>
+<li>
+<p>
+						<code class="classname">WorkManagerTaskExecutor</code>类
+					</p>
+<div class="sidebar">
+<p class="title"><b></b></p>
+<p>
+							CommonJ 是BEA和IBM联合开发的一套规范。这些规范并非Java EE的标准，但它是BEA和IBM的应用服务器实现的共同标准
+						</p>
+</div>
+<p>
+					这个实现使用了CommonJ WorkManager作为其底层实现，是在Spring context中配置CommonJ WorkManager应用的最重要的类。和<a href="ch23s04.html#simpleThreadPoolTaskExecutor"><code class="classname">SimpleThreadPoolTaskExecutor</code></a>类似，这个类实现了WorkManager接口，因此可以直接作为WorkManager使用。
+					</p>
+</li>
+</ul></div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="scheduling-task-executor-usage"></a>23.4.3.&#160;使用<code class="interfacename">TaskExecutor</code></h3></div></div></div>
+<p>
+				Spring的<code class="interfacename">TaskExecutor</code>实现作为一个简单的JavaBeans使用。在下面的示例中，我们定义一个bean,使用 <code class="classname">ThreadPoolTaskExecutor</code>来异步打印出一系列字符串。
+			</p>
+<pre class="code">import org.springframework.core.task.TaskExecutor;
+
+public class TaskExecutorExample {
+
+  private class MessagePrinterTask implements Runnable {
+
+    private String message;
+
+    public MessagePrinterTask(String message) {
+      this.message = message;
+    }
+
+    public void run() {
+      System.out.println(message);
+    }
+
+  }
+
+  private TaskExecutor taskExecutor;
+
+  public TaskExecutorExample(TaskExecutor taskExecutor) {
+    this.taskExecutor = taskExecutor;
+  }
+
+  public void printMessages() {
+    for(int i = 0; i &lt; 25; i++) {
+      taskExecutor.execute(new MessagePrinterTask("Message" + i));
+    }
+  }
+}</pre>
+<p>
+				可以看到，无需你自己从池中获取一个线程来执行，你把自己的<code class="classname">Runnable</code>类加入到队列中去，<code class="interfacename">TaskExecutor</code>使用它自己的内置规则来决定何时应该执行任务。
+			</p>
+<p>
+				为了配置<code class="interfacename">TaskExecutor</code>使用的规则，暴露了简单的bean properties。
+			</p>
+<pre class="code">&lt;bean id="taskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor"&gt;
+  &lt;property name="corePoolSize" value="5" /&gt;
+  &lt;property name="maxPoolSize" value="10" /&gt;
+  &lt;property name="queueCapacity" value="25" /&gt;
+&lt;/bean&gt;
+
+&lt;bean id="taskExecutorExample" class="TaskExecutorExample"&gt;
+  &lt;constructor-arg ref="taskExecutor" /&gt;
+&lt;/bean&gt;</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

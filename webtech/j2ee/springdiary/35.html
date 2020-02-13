@@ -1,0 +1,285 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="34.html"> 上一页</a><a href="36.html"> 下一页</a></div>
+<h1>IntroductionInterceptor </h1>
+<p> 对于之前介绍过的Before Advice、After Advice、Around Advice、Throw Advice，从使用者的角度 来看，它们“影响了目标物件上某些方法的行为”，例如让某些方法看来似乎增加了一些记录的动  作。 </p>
+<p> Introduction是个特别的Advice，从使用者的角度来看，它“影响了目标物件的行为定义，直接增 加了目标物件的职责（具体来说就是增加了可  操作的方法）”，例如让某个已定义好的物件，在  不修改该物件之类别档案的情况下，却可以增加一些额外的操作方法到物件之上。 </p>
+<p> 就Java程式语言类别设计的观点来说，动态为物件增加可操作的方法显得不可思议，事实上在 
+  Spring AOP中，您可以透过实作org.springframework.aop.IntroductionInterceptor来实现Introduction。 </p>
+<p> IntroductionInterceptor 继承 了 MethodInterceptor 与 DynamicIntroductionAdvice 介面 ， 其中 
+  implementsInterface()方法（继承自DynamicIntroductionAdvice）如果返回true的话，表示目前的 IntroductionInterceptor实作了给定的介面（也就是要额外增加行为的介面），此时您要使用invoke() 呼叫介面上的方法，让目 标物件执行额外的行为，您不可能使用MethodInvocation的proceed()  方法，因为您要执行的是物件上原来没有的行为，呼叫  proceed()方法没有意义。 </p>
+<p> 从文字上来理解Introduction会比较抽象，举个实际的例子来说，假设您的系统中已经有以下的 类别： </p>
+<h5> •      ISome.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+
+public interface ISome {
+	public void doSome();
+}</pre>
+<h5> •      Some.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+public class Some implements ISome {
+	public void doSome() { System.out.println("原来物件的职责。。。");
+	}
+}
+</pre>
+<p> 您希望在不修改原始档案的情况下，为 Some  类别增加一些可操作的方法，也许您甚至连原始码 
+  档案都没有，只有.class 档案，您唯一知道的也许是他们的 API 说明，在不对它们作出修改的情  况下，您希望 Some  类别可以增加 doOther()方法。 </p>
+<p> 在 Spring 中，您可以藉由实作 IntroductionInterceptor 介面来完成上面的任务，首先您为 doOther() 
+  方法建立介面： </p>
+<h5> •      IOther.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+public interface IOther {
+	public void doOther();
+}</pre>
+<p> 接着 定义 一个 OtherIntroduction    类别 实作 IntroductionInterceptor   介面 ，并 在实 作 
+  IntroductionInterceptor 介面的同时，也实作 IOther 介面，例如： </p>
+<h5> •      OtherIntroduction.java </h5>
+<pre class="code">package onlyfun.caterpillar;
+import org.aopalliance.intercept.MethodInvocation;
+import org.springframework.aop.IntroductionInterceptor;
+public class OtherIntroduction
+implements IntroductionInterceptor, IOther {
+	// 是否实作自 IOther 介面
+	public boolean implementsInterface(Class clazz) {
+		return clazz.isAssignableFrom(IOther.class);
+	}
+	public Object invoke(MethodInvocation methodInvocation)
+	throws Throwable {
+		// 如果呼叫的方法来自 IOther 介面的定义
+		if(implementsInterface(
+		methodInvocation.getMethod().getDeclaringClass())) {
+			// 呼叫执行额外加入（mixin）的行为
+			return methodInvocation.getMethod().
+			invoke(this, methodInvocation.getArguments());
+		}
+		else {
+			return methodInvocation.proceed();
+		}
+	}
+	public void doOther() { System.out.println("增加的职责。。。");
+	}
+}</pre>
+<p> 接 着您要在  Bean    定义档中将  Introduction    缝合 至  Some    物件之上，使用 
+org.springframework.aop.support.DefaultIntroductionAdvisor 就可以了，例如：</p>
+<h5> •      beans‐config.xml</h5>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN" "http://www.springframework.org/dtd/spring-beans.dtd"&gt;
+&lt;beans&gt;
+	&lt;bean id="some" class="onlyfun.caterpillar.Some"/&gt;
+	&lt;bean id="otherIntroduction" class="onlyfun.caterpillar.OtherIntroduction"/&gt;
+	&lt;bean id="otherAdvisor"
+		class="org.springframework.aop.support.DefaultIntroductionAdvisor"&gt;
+		&lt;constructor-arg index="0"&gt;
+			&lt;ref bean="otherIntroduction"/&gt;
+		&lt;/constructor-arg&gt;
+		&lt;constructor-arg index="1"&gt;
+			&lt;value&gt;onlyfun.caterpillar.IOther&lt;/value&gt;
+		&lt;/constructor-arg&gt;
+	&lt;/bean&gt;
+	&lt;bean id="proxyFactoryBean" class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+		&lt;property name="proxyInterfaces"&gt;
+			&lt;value&gt;onlyfun.caterpillar.ISome&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="target"&gt;
+			&lt;ref bean="some"/&gt;
+		&lt;/property&gt;
+		&lt;property name="interceptorNames"&gt;
+			&lt;list&gt;
+				&lt;value&gt;otherAdvisor&lt;/value&gt;
+			&lt;/list&gt;
+		&lt;/property&gt;
+	&lt;/bean&gt;
+&lt;/beans&gt;</pre>
+<p>  DefaultIntroductionAdvisor 在建构时，需要给它 IntroductionInterceptor 的实例，以及所要代理额 外行为的介面，现在，来撰写一个简单的程式测试，从这个程式当中，您可以更进一步了解何谓 为物件额外增加行为： </p>
+<h5> •      SpringAOPDemo.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context. support.FileSystemXmlApplicationContext;
+public class SpringAOPDemo {
+	public static void main(String[] args) { ApplicationContext context =
+		new FileSystemXmlApplicationContext( "beans-config.xml");
+		ISome some =
+		(ISome) context.getBean("proxyFactoryBean");
+		some.doSome();
+		// 看来好像 some 物件动态增加了职责
+
+		((IOther) some).doOther();
+	}
+}</pre>
+<p>  对于 some 所参考的物件来说，它原先并不会有 doOther()方法可供操作，然而透过 Spring AOP 的 Introduction 机制，现在 some 所参考的物件多了 doOther()方法可以操作。
+</p>
+
+<div class="rpindex"><a href="36.html"> 下一页</a><a href="34.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,205 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="27.html"> 上一页</a><a href="29.html"> 下一页</a></div>
+    <h1><a href="index.html">Struts Gossip: 设置 Validator 框架</a></h1>
+    <br />
+    <div id="wikitext">在使用 <a class="wikilink" href="8.html">ActionForm</a> 时，我们将窗体数据的一些验证工作放在validate()方法中，虽然这是一个可行的方法，然而在ActionForm中撰写特定的验证逻辑会降低
+      ActionForm的重用性，并产生维护上的麻烦，如果要改变验证逻辑，就必须修改原始程序并重新编译。<br />
+      <br />
+      另一方面，验证工作可以分作客户端与伺服端的工作，客户端可以使用JavaScript作一些基本的字段验证，像是是否填写所有的字段，字段格式是否正确
+      等等，而为了避免客户端直接跳过页面直接请求，伺服端也必须作验证的工作，客户端与伺服端的验证工作可以互相合作。 <cite class="urllink"><br />
+      <br />
+      <a style="font-weight: bold;" href="http://jakarta.apache.org/commons/index.html">Jakarta Commons Validator</a></cite> 框架可以将验证逻辑移至ActionForm之外，辅助Struts开发人员使用或自订客户端与伺服端的验证工作。Validator与Struts包装在一起，要在Struts中使用Validator框架，必须有commons-validator.jar与
+      jakarta-oro.jar两个类别库档案，请将它们复制到应用程序的WEB-INF/lib目录下，而Struts的其它类别库档案commons
+      -beanutils.jar、commons-logging.jar、commons-collections.jar、commons-
+      digester.jar也是必须的，请确定它们都在/WEB-INF/lib目录之下。 <br />
+      <br />
+      Validator的XML设定可以从struts-blank.war中取得，请将validation.xml与validator-
+      rules.xml两个设定档案复制至/WEB-INF的目录下，您也可以设一个专门用来管理设定档案的目录。 <br />
+      <br />
+      Validator是以 <a class="wikilink" href="17.html">Plugin 界面</a> 的方式来扩充ActionServlet的功能，所以您必须在struts-config.xml中告诉ActionServlet使用这个
+      plugin：
+      <br />
+      <pre class="code">... <br /> &lt;plug-in <br />    className=&quot;org.apache.struts.validator.ValidatorPlugIn&quot;&gt; <br />    &lt;set-property <br />        property=&quot;pathnames&quot;<br />        value=&quot;/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml&quot;/&gt; <br /> &lt;/plug-in&gt;<br />...   </pre>
+      pathname设定了validation.xml与validator-rules.xml设定文件的位置，ActionServlet初始时，会一并
+      初始Validator框架，加载相关的验证器与验证规则。 <br />
+      <br />
+      Validator框架包使用Struts预设的讯息资源包，建议您复制struts-blank中的
+      application.properties至WEB-INF/classes/resources/中，这个讯息资源包中有一些Validator所
+      预设使用的key-value对应设定。 <br />
+      <br />
+      在下载的Struts档案中，webapps目录下有一个
+      struts-validator.war，当中包括一些Validator框架的使用范例，您可以将之复制至Servlet
+      Container的webapps下，启动之后会自动解压缩并完成部署，您可以先看看当中所实作的验证功能。<br />
+    </div>
+    <br />
+    <div class="rpindex"><a href="29.html"> 下一页</a><a href="27.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

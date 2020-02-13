@@ -1,0 +1,527 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="beans-beans"></a>5.4.&#160;Bean处理和<code class="interfacename">BeanWrapper</code></h2></div></div></div>
+<p><code class="literal">org.springframework.beans</code>包遵循Sun发布的JavaBean标准。JavaBean是一个简单的含有一个默认无参数构造函数的Java类， 这个类中的属性遵循一定的命名规范，且具有setter和getter方法。例如，某个类拥有一个叫做<code class="literal">bingoMadness</code>的属性，并同时具有与该属性对应的setter方法：<code class="methodname">setBingoMadness(..)</code>和getter方法：<code class="methodname">getBingoMadness()</code>。如果你需要了解JavaBean规范的详细信息可以访问Sun的网站 (<a href="" target="_top">java.sun.com/products/javabeans</a>)。</p>
+<p>这个包中的一个非常重要的类就是<code class="interfacename">BeanWrapper</code>接口以及它对应的实现(<code class="classname">BeanWrapperImpl</code>)。根据JavaDoc中的说明，<code class="interfacename">BeanWrapper</code>提供了设置和获取属性值（单个的或者是批量的），获取属性描述信息、查询只读或者可写属性等功能。不仅如此，<code class="interfacename">BeanWrapper</code>还支持嵌套属性，你可以不受嵌套深度限制对子属性的值进行设置。所以，<code class="interfacename">BeanWrapper</code>无需任何辅助代码就可以支持标准JavaBean的<code class="interfacename">PropertyChangeListeners</code>和<code class="interfacename">VetoableChangeListeners</code>。除此之外，<code class="interfacename">BeanWrapper</code>还提供了设置索引属性的支持。通常情况下，我们不在应用程序中直接使用<code class="interfacename">BeanWrapper</code>而是使用<code class="interfacename">DataBinder</code> 和<code class="interfacename">BeanFactory</code>。</p>
+<p><code class="interfacename">BeanWrapper</code>这个名字本身就暗示了它的功能：<span class="emphasis"><em>封装了一个bean的行为</em></span>，诸如设置和获取属性值等。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-beans-conventions"></a>5.4.1.&#160;设置和获取属性值以及嵌套属性</h3></div></div></div>
+<p>设置和获取属性可以通过使用重载的<code class="literal">setPropertyValue(s)</code>和<code class="literal">getPropertyValue(s)</code>方法来完成。在Spring自带的JavaDoc中对它们有详细的描述。值得一提的是，在这其中存在一些针对对象属性的潜在约定规则。下面是一些例子：</p>
+<div class="table">
+<a name="beans-beans-conventions-properties-tbl"></a><p class="title"><b>表&#160;5.1.&#160;属性示例</b></p>
+<div class="table-contents"><table summary="属性示例" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>表达式</th>
+<th>说明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code class="literal">name</code></td>
+<td>表明属性name与方法<code class="methodname">getName()</code> 或 <code class="methodname">isName()</code> 及<code class="methodname"> setName(..)</code>相对应。</td>
+</tr>
+<tr>
+<td><code class="literal">account.name</code></td>
+<td>指向属性account的嵌套属性name，与之对应的是getAccount().setName()和getAccount().getName()</td>
+</tr>
+<tr>
+<td><code class="literal">account[2]</code></td>
+<td>指向索引属性account的第三个元素，索引属性可能是一个数组（array），列表（list）或其它天然有序的容器。</td>
+</tr>
+<tr>
+<td><code class="literal">account[COMPANYNAME]</code></td>
+<td>指向一个Map实体account中以COMPANYNAME作为键值（key）所对应的值</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>在下面的例子中你将看到一些使用<code class="interfacename">BeanWrapper</code>设置属性的例子。</p>
+<p><span class="emphasis"><em>如果你不打算直接使用<code class="interfacename">BeanWrapper</code>，这部分不是很重要。如果你仅仅使用<code class="interfacename">DataBinder</code>和<code class="interfacename">BeanFactory</code>或者他们的扩展实现，你可以跳过这部分直接阅读<code class="interfacename">PropertyEditor</code>的部分。</em></span></p>
+<p>考虑下面两个类：</p>
+<pre class="code">public class Company {
+    private String name;
+    private Employee managingDirector;
+
+    public String getName()	{ 
+        return this.name; 
+    }
+    public void setName(String name) { 
+        this.name = name; 
+    } 
+    public Employee getManagingDirector() { 
+        return this.managingDirector; 
+    }
+    public void setManagingDirector(Employee managingDirector) {
+        this.managingDirector = managingDirector;
+    }
+}</pre>
+<pre class="code">public class Employee {
+    private String name;
+    private float salary;
+
+    public String getName()	{
+        return this.name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public float getSalary() {
+        return salary;
+    }
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
+}</pre>
+<p>下面的代码片断展示了如何获取和设置上面两个示例类 <code class="literal">Companies</code>和<code class="literal">Employees</code>的属性：</p>
+<pre class="code">BeanWrapper company = BeanWrapperImpl(new Company());
+<em class="lineannotation"><span class="lineannotation">// setting the company name..</span></em>
+company.setPropertyValue("name", "Some Company Inc.");
+<em class="lineannotation"><span class="lineannotation">// ... can also be done like this:</span></em>
+PropertyValue value = new PropertyValue("name", "Some Company Inc.");
+company.setPropertyValue(value);
+
+<em class="lineannotation"><span class="lineannotation">// ok, let's create the director and tie it to the company:</span></em>
+BeanWrapper jim = BeanWrapperImpl(new Employee());
+jim.setPropertyValue("name", "Jim Stravinsky");
+company.setPropertyValue("managingDirector", jim.getWrappedInstance());
+
+<em class="lineannotation"><span class="lineannotation">// retrieving the salary of the managingDirector through the company</span></em>
+Float salary = (Float) company.getPropertyValue("managingDirector.salary");</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-beans-conversion"></a>5.4.2.&#160;内建的<span class="interface">PropertyEditor</span>实现</h3></div></div></div>
+<p>Spring大量使用了<code class="interfacename">PropertyEditor</code>以在<code class="classname">Object</code>和 <code class="classname">String</code>之间进行有效地转化。仔细想想，有时换一种方式来展示属性的确要比直接用对象自身更容易让人理解。例如，<code class="classname">Date</code>可以表示成人们易读的方式（如<code class="classname">String</code>的方式，'<code class="literal">2007-14-09</code>'），与此同时我们可以将这种人们比较容易理解的形式转化为原有的原始Date类型（甚至对于任何人们输入的可理解的日期形式都可以转化成相应的<code class="classname">Date</code>对象）。要做到这点，可以通过<span class="emphasis"><em>注册一个用户定制编辑器</em></span>（类型为<code class="interfacename">java.beans.PropertyEditor</code>）来完成。注册一个用户自定义的编辑器可以告诉<code class="interfacename">BeanWrapper</code>我们将要把属性转换为哪种类型。正如在先前章节提到的，另外一种选择是在特定的IoC 容器中完成注册。你可以从Sun提供的<code class="literal">java.beans</code>包的JavaDoc中了解到更多<code class="literal">PropertyEditors</code>的细节。</p>
+<p>属性编辑器主要应用在以下两个方面：
+			</p>
+<div class="itemizedlist"><ul type="disc" compact>
+<li><p>使用<code class="literal">PropertyEditors</code><span class="emphasis"><em>设置Bean属性</em></span>。当你在XML文件中声明的bean的属性类型为java.lang.String时，Spring将使用<code class="classname">ClassEditor</code>将String解析成Class对象（如果setter方法需要一个<code class="classname">Class</code>参数的话）。</p></li>
+<li><p>在Spring MVC架构中使用各种<code class="literal">PropertyEditors</code>来<span class="emphasis"><em>解析HTTP请求中的参数</em></span>。你可以用各种<code class="classname">CommandController</code>的子类来进行手工绑定。</p></li>
+</ul></div>
+<p>
+        </p>
+<p>Spring提供了许多内建的<code class="literal">PropertyEditors</code>可以简化我们的工作。下面的列表列出了所有Spring自带的<code class="interfacename">PropertyEditor</code>，它们都位于<code class="literal">org.springframework.beans.<code class="interfacename">PropertyEditor</code>s</code>包内。它们中的大多数已经默认在<code class="interfacename">BeanWrapperImpl</code>的实现类中注册好了。作为可配置的选项，你也可以注册你自己的属性编辑器实现去覆盖那些默认编辑器。</p>
+<div class="table">
+<a name="beans-beans-property-editors-tbl"></a><p class="title"><b>表&#160;5.2.&#160;内建的<code class="literal">PropertyEditors</code></b></p>
+<div class="table-contents"><table summary="内建的PropertyEditors" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>类名</th>
+<th>说明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code class="classname">ByteArrayPropertyEditor</code></td>
+<td>byte数组编辑器。字符串将被简单转化成他们相应的byte形式。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。</td>
+</tr>
+<tr>
+<td><code class="classname">ClassEditor</code></td>
+<td>
+                将以字符串形式出现的类名解析成为真实的Class对象或者其他相关形式。当这个Class没有被找到，会抛出一个<code class="classname">IllegalArgumentException</code>的异常，在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">CustomBooleanEditor</code></td>
+<td>
+                为<code class="classname">Boolean</code>类型属性定制的属性编辑器。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了，但可以被用户自定义的编辑器实例覆盖其行为。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">CustomCollectionEditor</code></td>
+<td>
+                集合(<code class="interfacename">Collection</code>)编辑器，将任何源集合(<code class="interfacename">Collection</code>)转化成目标的集合类型的对象。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">CustomDateEditor</code></td>
+<td>
+                为java.util.Date类型定制的属性编辑器，支持用户自定义的DateFormat。默认没有被<code class="interfacename">BeanWrapper</code>Impl注册，需要用户通过指定恰当的format类型来注册。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">CustomNumberEditor</code></td>
+<td>
+                为<code class="classname">Integer</code>， <code class="classname">Long</code>， <code class="classname">Float</code>， <code class="classname">Double</code>等Number的子类定制的属性编辑器。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了，但可以被用户自己定义的编辑器实例覆盖其行为。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">FileEditor</code></td>
+<td> 
+                能够将字符串转化成<code class="classname">java.io.File</code>对象，在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">InputStreamEditor</code></td>
+<td>
+                一个单向的属性编辑器，能够把文本字符串转化成<code class="interfacename">InputStream</code>（通过<code class="classname">ResourceEditor</code>和 <code class="interfacename">Resource</code>作为中介），因而<code class="interfacename">InputStream</code>属性可以直接被设置成字符串。注意在默认情况下，这个属性编辑器不会为你关闭<code class="interfacename">InputStream</code>。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">LocaleEditor</code></td>
+<td>在String对象和<code class="classname">Locale</code> 对象之间互相转化。（String的形式为[语言]_[国家]_[变量]，这与Local对象的toString()方法得到的结果相同）在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">PatternEditor</code></td>
+<td>可以将字符串转化为JDK 1.5的
+                <code class="classname">Pattern</code>对象，反之亦然。</td>
+</tr>
+<tr>
+<td><code class="classname">PropertiesEditor</code></td>
+<td>
+                能将String转化为<code class="classname">Properties</code>对象（由JavaDoc规定的java.lang.Properties类型的格式）。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">StringTrimmerEditor</code></td>
+<td>
+                一个用于修剪(trim)String类型的属性编辑器，具有将一个空字符串转化为<code class="literal">null</code>值的选项。默认没有注册，必须由用户在需要的时候自行注册。
+                </td>
+</tr>
+<tr>
+<td><code class="classname">URLEditor</code></td>
+<td>
+                能将String表示的URL转化为一个具体的<code class="classname">URL</code>对象。在<code class="classname">BeanWrapperImpl</code>中已经默认注册好了。
+                </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>Spring使用<code class="interfacename">java.beans.PropertyEditorManager</code>来为可能需要的属性编辑器设置查询路径。查询路径同时包含了<code class="literal">sun.bean.editors</code>，这个包中定义了很多<code class="interfacename">PropertyEditor</code>的具体实现，包括<code class="classname">Font</code>、<code class="classname">Color</code>以及绝大多数的基本类型的具体实现。同样值得注意的是，标准的JavaBean基础构架能够自动识别<code class="interfacename">PropertyEditor</code>类（无需做额外的注册工作），前提条件是，类和处理这个类的Editor位于同一级包结构，而Editor的命名遵循了在类名后加了“Editor”的规则。举例来说，当<code class="classname">FooEditor</code>和<code class="classname">Foo</code>在同一级别包下的时候，<code class="classname">FooEditor</code>能够识别<code class="classname">Foo</code>类并作为它的<code class="interfacename">PropertyEditor</code>。</p>
+<pre class="code">com
+  chank
+    pop
+      Foo
+      FooEditor   <em class="lineannotation"><span class="lineannotation">// the <code class="interfacename">PropertyEditor</code> for the <code class="classname">Foo</code> class</span></em></pre>
+<p>注意，你同样可以使用标准的<code class="interfacename">BeanInfo</code> JavaBean机制(详情见<a href="" target="_top">这里</a>)。在下面的例子中，你可以看到一个通过使用<code class="interfacename">BeanInfo</code>机制来为相关类的属性明确定义一个或者多个<code class="interfacename">PropertyEditor</code>实例。</p>
+<pre class="code">com
+  chank
+    pop
+      Foo
+      FooBeanInfo   <em class="lineannotation"><span class="lineannotation">// the <code class="interfacename">BeanInfo</code> for the <code class="classname">Foo</code> class</span></em></pre>
+<p>下面就是<code class="classname">FooBeanInfo</code>类的源码，它将<code class="classname">CustomNumberEditor</code>与<code class="classname">Foo</code>中的<code class="literal">age</code>属性联系在了一起。</p>
+<pre class="code">public class FooBeanInfo extends SimpleBeanInfo {
+      
+    public PropertyDescriptor[] getPropertyDescriptors() {
+        try {
+            final PropertyEditor numberPE = new CustomNumberEditor(Integer.class, true);
+            PropertyDescriptor ageDescriptor = new PropertyDescriptor("age", Foo.class) {
+                public PropertyEditor createPropertyEditor(Object bean) {
+                    return numberPE;
+                };
+            };
+            return new PropertyDescriptor[] { ageDescriptor };
+        }
+        catch (IntrospectionException ex) {
+            throw new Error(ex.toString());
+        }
+    }
+}</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-beans-conversion-customeditor-registration"></a>5.4.2.1.&#160;注册用户自定义的<code class="interfacename">PropertyEditor</code></h4></div></div></div>
+<p>当以一个字符串值来设置bean属性时，Spring IoC 容器最终使用标准的JavaBean <code class="literal">PropertyEditor</code>来将这些字符串转化成复杂的数据类型。Spring预先注册了一些<code class="literal">PropertyEditor</code>(举例来说，将一个以字符串表示的Class转化成<code class="classname">Class</code>对象)。除此之外，Java标准的JavaBean <code class="interfacename">PropertyEditor</code>会识别在同一包结构下的类和它对应的命名恰当的Editor，并自动将其作为这个类的的Editor。</p>
+<p>如果你想注册自己定义的<code class="literal">PropertyEditor</code>，那么有几种不同的机制供君选择。其中，最原始的手工方式是在你有一个<code class="interfacename">BeanFactory</code>的引用实例时，使用<code class="interfacename">ConfigurableBeanFactory</code>的<code class="methodname">registerCustomEditor()</code>方法。当然，通常这种方法不够方便，因而并不推荐使用。另外一个简便的方法是使用一个称之为<code class="classname">CustomEditorConfigurer</code>的特殊的bean factory后置处理器。尽管bean factory的后置处理器可以半手工化的与<code class="interfacename">BeanFactory</code>实现一起使用，但是它存在着一个嵌套属性的建立方式。因此，强烈推荐的一种做法是与<code class="interfacename">ApplicationContext</code>一起来使用它。这样就能使之与其他的bean一样以类似的方式部署同时被容器所感知并使用。</p>
+<p>注意所有的bean factory和application context都会自动地使用一系列的内置属性编辑器，通过<code class="interfacename">BeanWrapper</code>来处理属性的转化。在<a href="ch05s04.html#beans-beans-conversion" title="5.4.2.&#160;内建的PropertyEditor实现">这里</a>列出一些在<code class="interfacename">BeanWrapper</code>中注册的标准的属性编辑器。除此之外，<code class="literal">ApplicationContext</code>覆盖了一些默认行为，并为之增加了许多编辑器来处理在某种意义上合适于特定的application context类型的资源查找。</p>
+<p>标准的JavaBean的<code class="interfacename">PropertyEditor</code>实例将以String表示的值转化成实际复杂的数据类型。<code class="classname">CustomEditorConfigurer</code>作为一个bean factory的后置处理器，能够便捷地将一些额外的<code class="interfacename">PropertyEditor</code>实例加入到<code class="interfacename">ApplicationContext</code>中去。</p>
+<p>考虑用户定义的类<code class="classname">ExoticType</code>和<code class="classname">DependsOnExoticType</code>，其中，后者需要将前者设置为它的属性：</p>
+<pre class="code">package example;
+		
+public class ExoticType {
+
+    private String name;
+
+    public ExoticType(String name) {
+        this.name = name;
+    }
+}
+
+public class DependsOnExoticType { 
+   
+    private ExoticType type;
+
+    public void setType(ExoticType type) {
+        this.type = type;
+    }
+}</pre>
+<p>在一切建立起来以后，我们希望通过指定一个字符串来设置type属性的值，然后<code class="interfacename">PropertyEditor</code>将在幕后帮你将其转化为实际的<code class="classname">ExoticType</code>对象：</p>
+<pre class="code">&lt;bean id="sample" class="example.DependsOnExoticType"&gt;
+    &lt;property name="type" value="aNameForExoticType"/&gt;
+&lt;/bean&gt;</pre>
+<p><code class="interfacename">PropertyEditor</code>的实现看上去就像这样：</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// converts string representation to <code class="classname">ExoticType</code> object</span></em>
+package example;
+
+public class ExoticTypeEditor extends PropertyEditorSupport {
+
+    private String format;
+
+    public void setFormat(String format) {
+        this.format = format;
+    }
+    
+    public void setAsText(String text) {
+        if (format != null &amp;&amp; format.equals("upperCase")) {
+            text = text.toUpperCase();
+        }
+        ExoticType type = new ExoticType(text);
+        setValue(type);
+    }
+}</pre>
+<p>最后，我们通过使用<code class="classname">CustomEditorConfigurer</code>来为<code class="interfacename">ApplicationContext</code>注册一个新的<code class="interfacename">PropertyEditor</code>，这样，我们就可以在任何需要的地方使用它了：</p>
+<pre class="code">&lt;bean class="org.springframework.beans.factory.config.CustomEditorConfigurer"&gt;
+  &lt;property name="customEditors"&gt;
+    &lt;map&gt;
+      &lt;entry key="example.ExoticType"&gt;
+        &lt;bean class="example.ExoticTypeEditor"&gt;
+          &lt;property name="format" value="upperCase"/&gt;
+        &lt;/bean&gt;
+      &lt;/entry&gt;
+    &lt;/map&gt;
+  &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-beans-conversion-customeditor-registration-per"></a>5.4.2.1.1.&#160;使用<code class="interfacename">PropertyEditorRegistrars</code></h5></div></div></div>
+<p>
+			将属性编辑器注册到Spring容器的另一种方式是创建并使用<code class="interfacename">PropertyEditorRegistrar</code>。
+			当你在不同情况下（如编写一个相应的注册器然后在多种情况下重用它）需要使用相同的属性编辑器时该接口特别有用。
+			<code class="literal">PropertyEditorRegistrars</code>与<code class="interfacename">PropertyEditorRegistry</code>接口协同工作，
+			<code class="interfacename">PropertyEditorRegistry</code>是一个由Spring的<code class="interfacename">BeanWrapper</code>
+			（及<code class="interfacename">DataBinder</code>）实现的一个接口。
+			当与<code class="classname">CustomEditorConfigurer</code>
+			（在<a href="ch05s04.html#beans-beans-conversion-customeditor-registration" title="5.4.2.1.&#160;注册用户自定义的PropertyEditor">此处</a>曾介绍过）协同使用时，
+			<code class="literal">PropertyEditorRegistrars</code>尤为方便，
+			<code class="classname">CustomEditorConfigurer</code>会暴露一个叫做<code class="methodname">setPropertyEditorRegistrars(..)</code>的方法：
+			在这种情况下<code class="interfacename">DataBinder</code>和Spring MVC <code class="interfacename">Controllers</code>会很容易地共享加到<code class="classname">CustomEditorConfigurer</code>中的<code class="literal">PropertyEditorRegistrars</code>。
+			此外，自定义编辑器无需再进行同步了：每次创建bean时<code class="interfacename">PropertyEditorRegistrar</code>都会创建一个新的<code class="interfacename">PropertyEditor</code>。
+			</p>
+<p>通过示例最能说明<code class="interfacename">PropertyEditorRegistrar</code>的优点了。首先，你需要创建你自己的<code class="interfacename">PropertyEditorRegistrar</code>实现：</p>
+<pre class="code">package com.foo.editors.spring;
+
+public final class CustomPropertyEditorRegistrar implements PropertyEditorRegistrar {
+
+    public void registerCustomEditors(PropertyEditorRegistry registry) {
+
+        <em class="lineannotation"><span class="lineannotation">// it is expected that new <code class="interfacename">PropertyEditor</code> instances are created</span></em>
+        registry.registerCustomEditor(ExoticType.class, new ExoticTypeEditor());
+
+        <em class="lineannotation"><span class="lineannotation">// you could register as many custom property editors as are required here...</span></em>
+    }
+}</pre>
+<p><code class="classname">org.springframework.beans.support.ResourceEditorRegistrar</code>是另一个<code class="interfacename">PropertyEditorRegistrar</code>实现的范例。请注意在<code class="methodname">registerCustomEditors(..)</code>方法的实现中，它是如何创建每个属性编辑器的实例的。</p>
+<p>接下来我们配置一个<code class="classname">CustomEditorConfigurer</code>，然后将<code class="classname">CustomPropertyEditorRegistrar</code>实例注入其中：</p>
+<pre class="code">&lt;bean class="org.springframework.beans.factory.config.CustomEditorConfigurer"&gt;
+    &lt;property name="propertyEditorRegistrars"&gt;
+        &lt;list&gt;
+            &lt;ref bean="customPropertyEditorRegistrar"/&gt;
+        &lt;/list&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean id="customPropertyEditorRegistrar" class="com.foo.editors.spring.CustomPropertyEditorRegistrar"/&gt;</pre>
+<p>最后，稍微偏离一下本章的主题，对于使用了<a href="ch13.html" title="第&#160;13&#160;章&#160;Web MVC framework Web框架">Spring的MVC web框架</a>的应用来说，与数据绑定<code class="interfacename">Controllers</code> （例如<code class="classname">SimpleFormController</code>）一同使用<code class="interfacename">PropertyEditorRegistrars</code>会非常便捷。在下面的例子中，<code class="methodname">initBinder(..)</code>方法的实现使用了<code class="interfacename">PropertyEditorRegistrar</code>：</p>
+<pre class="code">public final class RegisterUserController extends SimpleFormController {
+
+    private final PropertyEditorRegistrar customPropertyEditorRegistrar;
+
+    public RegisterUserController(PropertyEditorRegistrar propertyEditorRegistrar) {
+        this.customPropertyEditorRegistrar = propertyEditorRegistrar;
+    }
+
+    protected void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) throws Exception {
+        <span class="bold"><strong>this.customPropertyEditorRegistrar.registerCustomEditors(binder);</strong></span>
+    }
+
+    <em class="lineannotation"><span class="lineannotation">// other methods to do with registering a <code class="classname">User</code></span></em>
+}</pre>
+<p>这种注册<code class="interfacename">PropertyEditor</code>的形式使得代码非常简练（<code class="methodname">initBinder(..)</code>的实现就一行代码而已！），同时它使得通用的<code class="interfacename">PropertyEditor</code>注册代码可被封装到一个类中，然后在需要时被多个<code class="interfacename">Controllers</code>共享。</p>
+</div>
+</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,923 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="8.html"> 上一页</a><a href="9-2.html"> 下一页</a></div>
+    <h1>第9章 在servlet中使用JDBC(上)
+      </p>
+    </h1>
+    <p>　　servlet的典型应用之一就是访问服务器上的信息。有研究表明，百分之八十以上的应用程序使用了保存在关系数据库中的数据。在本章中，我们将讨论JDBC的使用以及如何在servlet中使用数据库信息。JDBC是JavaSoft的一个用于连接数据库、操纵数据的一个API规范。</p>
+    <h2>9.1 JDBC概述</h2>
+    <p>　　什么是JDBC呢？简单的说，JDBC实现了Java的数据库互连，它是一个定义了以下内容的一个API规范。<br>
+      ·如何在Java applet、应用程序或者servlet中与数据源交互<br>
+      ·如何使用JDBC驱动程序<br>
+      ·如何编写JDBC驱动程序<br>
+      专门有讲解JDBC驱动程序的著作(实际上，我就写过这么一本)，而在本书中，我只想在一章中介绍一些JDBC的基本知识。相信在阅读过这个简要的概述之后，你就可以开始开发数据相关的Java应用程序了。<br>
+      JDBC这个项目是在1995年底启动的，负责人是JavaSoft的Rick Cattel和Graham Hamilton。JDBC 
+      API是在X/Open CLI(调用层接口)的基础上研制的，X/Open CLI定义了在使用数据库系统的时候，客户和服务器如何进行交互。非常有趣的是，Microsoft的开放数据库系统互连(ODBC)也是基于X/Open 
+      CLI的，所以你可以认为它们是一对堂兄弟。JavaSoft广泛听取了主要数据库厂商的意见，以形成JDBC规范。事实上，对于所有的新API规范的制订也包括JDBC，JavaSoft坚持下列过程。<br>
+      1、将新的API和API的主要改动提交给主要的厂商进行讨论。在规范指定过程中这一步的存在，显示了JavaSoft的成熟和智慧。他们认识到他们可能不是某个领域的专家，所以他们要找这些专家来讨论。这不但使规范更加稳定和强大，而且可以确保这些厂商会买进这些规范，因为是他们帮助创建的规范。这一步会经过多次反复，历时长达数月。<br>
+      2、在经过厂商研究讨论之后，公开并出版规范以便公众讨论，任何人都可以从Interent上下载规范，讨论它，并提出自己的意见和建议。这一步通常会用几个月的时间，而且会有准确的截止日期。<br>
+      3、在经过公众讨论，并且进行了必要的调整之后，这个规范才会被发布并加入到下一版本的JDK中。公众的意见和建议仍然会被接受，以便形成未来的修订版本。 <br>
+      JDBC规范的制订就经加了上述过程，终于在1996年6月发布在java.sql包中。由于这个API已经经过讨论，所以在它发布的时候，已经得到了主要的厂商的参与和认可。</p>
+    <h3><a name="911" id="911"></a>9.1.1 互操作性：JDBC的关键</h3>
+    <p>　　JDBC的一个主要卖点就是数据库的互操作性。这到底意味着什么呢？这意味着通过使用JDBC API来进行数据库访问，你可以在不修改应用程序的情况下，改变所使用的数据库驱动程序(或数据库引擎)。更进一步说，在编写应用程序的时候，你可以不了解某个数据库系统的细节，你只要按照标准的JDBC 
+      API规范来做，并且安装与你所用的数据库相对应的JDBC驱动程序就可以了。如图9.1所示。所有的与某个数据库系统接口的数据库实现的细节由JDBC驱动程序开发商来完成。<br>
+      请记住JDBC API规划是一个双行线，它不但定义了应用程序开发人员如何操作数据库，而且定义了如何编写JDBC驱动程序以保证互操作性。在这个方面，JavaSoft开发了JDBC驱动程序认证套件，这个软件确保了JDBC坚持规范并且以可预期的方式工作。</p>
+    <p>　　　　┌─────────────────┐<br>
+      │ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，│<br>
+      │ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ│<br>
+      └────────┬────────┘ <br>
+      ┌────────┴────────┐<br>
+      │　　　　　ＪＤＢＣ　ＡＰＩ　　　　│<br>
+      └────────┬────────┘ <br>
+      ┌────────┴────────┐<br>
+      │　　　　　ＪＤＢＣ　ＡＰＩ　　　　│<br>
+      │　ＤＲＩＶＥＲ　ＭＡＮＡＧＥＲ　　│<br>
+      └───┬────┬────┬───┘ <br>
+      ┌─┘　　　　│　　　　└──┐ <br>
+      ┌───┴──┐┌──┴───┐┌──┴───┐ <br>
+      │　ＪＤＢＣ　││　ＪＤＢＣ　││　ＪＤＢＣ　│<br>
+      │ＤＲＩＶＥＲ││ＤＲＩＶＥＲ││ＤＲＩＶＥＲ│<br>
+      └───┬──┘└──┬───┘└──┬───┘ <br>
+      ╭┴╮　　　　╭┴╮　　　　　╭┴╮ <br>
+      ╰─╯　　　　╰─╯　　　　　╰─╯ <br>
+      │　│　　　　│　│　　　　　│　│<br>
+      ╰─╯　　　　╰─╯　　　　　╰─╯<br>
+      ODBC　　　　 ORACLE　　　　　SYBASE<br>
+      图9.1 JDBC互操作性</p>
+    <h3><a name="912" id="912"></a>9.1.2 JDBC-ODBC桥</h3>
+    <p>　　如前所述，Microsoft的ODBC规范和JDBC同是在X/Open CLI的基础上得来的，它们也都使用同样的数据库语言SQL。SQL是结构化查询语言(Structured 
+      Query Language)的缩写，不过自从形成这个缩写之后，它就成了一个三个辅音构成的没有元音的词汇。SQL定义了如何用数据定义语言(Data 
+      Definition Languare,DDL)来定义和维护数据库以及如何用数据操纵语言(Data Manipulation Language,DML)来读取和更改数据。<br>
+      1996年时ODBC具备而JDBC不具备的就是ODBC得到了业界的接受。那时，ODBC就已经成为数据库访问的事实上的工业标准并且在业界得到广泛的使用。不但Microsoft的数据库产品提供了ODBC驱动程序，所有主要的数据库厂商(如ORACLE，Sybase，Informix等等)也都在他们的产品中加入了ODBC驱动程序。那么JavaSoft如何利用各公司在ODBC上的现有的投资，并使其中的一部分加入到JDBC王国呢？答案就是JDBC-ODBC桥。<br>
+      JDBC-ODBC桥是一个JDBC驱动程序，这个驱动程序使用本地(C语言)库来调用现有的ODBC驱动程序以访问数据库引擎。作为JDBC-ODBC桥的作者，我经常被问及如何以及为什么要开发JDBC-ODBC桥。</p>
+    <h5>　　内幕</h5>
+    <p><br>
+      如前所述，JDBC API经历了JavaSoft规范的讨论过程。早在厂商讨论阶段(1995年底)，JDBC规范就被发送给INTERSOLV,INTERSOLV目前仍是领先的ODBC驱动程序厂商。那时，我正是ODBC组的一员，而且刚刚完成FoxPro的ODBC驱动程序。幸运的是我早就开始学习Java，并在业余时间制作了一些应用程序(那时Java还很年轻，只有很少的几个公司拥有Java编程的资料)。我的老板找到我，要求我研究一下这个叫做JDBC的新的数据库访问规范，我正求之不得呢！我记得最初的草案是0.20版，模糊地构成了我们现在所看到JDBC。<br>
+      INTERSOLV对能在Java世界出名非常感兴趣，于是就达成了制作一个使用现有的ODBC驱动程序的JDBC驱动程序的JDBC驱动程序的协议。作为这一开发工作(加上一年的技术支持)的交换，JavaSoft必须公开宣布JavaSoft和INTERSOLV的合作关系。实际上，并没有开发费用。听上去是不是JavaSoft占了便宜？自从我开始研究这个规范，我就决定开发这个JDBC-ODBC桥了。我在1996年月3月开始了这项工作，并且在于月完成了这个桥，尽管过程中API不断改变，而且多次修订。<br>
+      JavaSoft开发这个桥的主要目的是免费的将它提供给JDBC程序员，使他们可以立刻开始编写JDBC应用程序，换句话说就是给JDBC程序员下钩，以期JDBC得到广泛接受。时间证明JavaSoft的计划得到了回报。</p>
+    <h5>　　限制</h5>
+    <p> 在使用JDBC-ODBC桥的时候会有许多限制，我们必须牢记在心：<br>
+      ·这个桥从来没有被当作任何软件的一部分，它不被JavaSoft正式支持，它仅仅是一个开发原型或者一个市场工具，我了解到许多公司使用在关键业务应用程序中这个桥，但是，我奉劝大家尽可能使用你所使用的数据库所提供的JDBC驱动程序。<br>
+      ·这个桥使用了本地代码(C语言)，这意味着严重的限制。这个桥不能被不被信任的applet所使用，而且所有的本地库必须在每一台机器上安装和设置。其中不光包括这个桥的本地库(JdbcOdbc.dll或者JdbcOdbc.so)。而且还包括所有的ODBC库，ODBC驱动程序以及所有ODBC驱动程序所需的库。所有这些软件都配置好之后，你还必须配置ODBC以建立新的数据源。这样的安装过程与Java零安装的模型相去甚远。<br>
+      ·由于这个桥使用了现有的ODBC驱动程序，所以使用它时你可能遇到任何ODBC驱动程序的bug。<br>
+      ·你的ODBC驱动程序做不了的事，使用了ODBC的桥也做不了。许多人认为使用这个桥加上他们喜爱的ODBC驱动程序会使ODBC驱动程序支持Web，并且魔术般使数据库可以在Internet上访问，这显然是不正确的。一定要记住，ODBC驱动程序在客户机上运行，而它访问数据库的方式是无法改变的。<br>
+      说了这么多，这个桥仍然是访问某种数据库如(Microsoft Access)的惟一方法。许多数据库只提供了ODBC驱动程序而没有提供相应的JDBC驱动程序。在这种情况下，JDBC-ODBC桥将是取得数据的惟一途径，除非你打算自己编写JDBC驱动程序。</p>
+    <h3> <a name="913" id="913"></a>9.1.3 JDBC驱动程序的类型</h3>
+    <p>　　JavaSoft定义了四种JDBC驱动程序的基本类型。理解各种类型的特征是非常重要的，这样我们才可以选出最适合我们需求的那种类型。你在购买JDBC驱动程序时被问到的第一个问题很可能是你需要哪种类型的？</p>
+    <h3>　　类型1:JDBC-ODBC桥</h3>
+    <p><br>
+      正如我们已经看到的，JDBC-ODBC桥是作为JavaSoft的JDK(1.1版起)的一部分提供的。这个桥是sun.jdbc.odbc包的一部分，提供Java虚拟机的厂商不被要求必须移植这个包。请记住这个桥使用了本地的ODBC方法所以限制了它的使用。如图9.2所示。</p>
+    <p>　　　　　　　　　　┌──────────────────┐<br>
+      ╭│ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，　│<br>
+      ││ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ　│<br>
+      ＪＡＶＡ　│└────────┬─────────┘ <br>
+      ＣＯＤＥ〈　　　　　　　　　　│ <br>
+      │┌────────┴─────────┐<br>
+      ││　　　ＪＤＢＣ－ＯＤＢＣ　　　　　　│<br>
+      ╰│　　　　　　ＢＲＩＤＧＥ　　　　　　│<br>
+      └────────┬─────────┘ <br>
+      ┌────────┴─────────┐<br>
+      ╭│　　　　ＪＤＢＣ－ＯＤＢＣ　　　　　│<br>
+      ＮＡＴＩＶＥ　││　　　　　ＬＩＢＲＡＲＹ　　　　　　│<br>
+      ＣＯＤＥ　〈　└────────┬─────────┘ <br>
+      │┌────────┴─────────┐<br>
+      ╰│　　　　ＯＤＢＣ　ＤＲＩＶＥＲ　　　│<br>
+      └────────┬─────────┘<br>
+      ╭┴╮ <br>
+      ╰─╯ <br>
+      │　│DATABASE<br>
+      ╰─╯<br>
+      图9.2 类型1:JDBC-ODBC桥</p>
+    <p>　　你可能在下列情况下使用这个桥：<br>
+      ·快速的系统原型。<br>
+      ·第三方数据库系统(如第13章所述)<br>
+      ·提供了ODBC驱动程序但没有提供JDBC驱动程序的数据库系统。<br>
+      ·你已经使用了ODBC驱动程序的低成本数据库解决方案。</p>
+    <h3>　　类型2：Java到本地API</h3>
+    <p> Java到本地API驱动程序利用由开发商提供的本地库来直接与数据库通信（见图9.3)。由于使用了本地库，所以，这类驱动程序有许多和JDBC-ODBC桥一样的限制。最严重的限制是它不能被不可信任的applet所使用。另外，还注意，由于JDBC驱动程序使用了本地库，所以这些库都必须在每一台使用这个驱动程序的机器上安装和配置。大多数主要数据库厂商在他们的产品中提供类型2的JDBC驱动程序。<br>
+      在下列情况下，你可以考虑使用Java到本地API驱动程序：<br>
+      ·代替JDBC-ODBC桥——类型2的驱动程序性能会比桥略好，因为它们直接与数据库接口。<br>
+      ·当你已经使用了一种提供了类型2驱动程序的主流数据库（ORACLE，Informix，Sybase等等)作为一种低成本的数据库解决方案，许多厂商将类型2的驱动程序捆绑在他们的产品中。</p>
+    <p>　　　　　　　　　　┌─────────────────┐<br>
+      ╭│ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，│<br>
+      ││ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ│<br>
+      ＪＡＶＡ　│└───────┬─────────┘ <br>
+      ＣＯＤＥ〈　　　　　　　　　│<br>
+      │┌───────┴─────────┐<br>
+      ││　　　　　　ＴＹＰＥ２　　　　　　│<br>
+      ╰│　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　　│<br>
+      └───────┬─────────┘ <br>
+      ╭┌───────┴─────────┐<br>
+      ＮＡＴＩＶＥ　││　　ＮＡＴＩＶＥ　ＤＡＴＡＢＡＳＥ│<br>
+      ＣＯＤＥ　　││　　　　　ＬＩＢＲＡＲＹ　　　　　│<br>
+      ╰└───────┬─────────┘ <br>
+      ╭┴╮ <br>
+      ╰─╯ <br>
+      │　│DATABASE<br>
+      ╰─╯<br>
+      图9. 类型2:Java到本地API</p>
+    <h3>　　类型3：Java到专有网络协议</h3>
+    <p> 这种类型的JDBC驱动程序具有最大的灵活性。典型地，它可以用在一个第三方的解决方案中（我们将在第13章中进一步探讨），而且可以在Internet上使用。类型3的驱动程序是纯Java的，而且可以通过驱动程序厂商所创建的专有网络协议来和某种中间件来通信（见图9.4）。这个中间件通常位于Web服务器或者数据库服务器上，并且可以和数据库进行通信。类型3的驱动程序通常是由那些与特定数据库产品无关的公司开发的，而且由于它们所提供的好处，所以相对昂贵。 </p>
+    <p>　　　　　　　　　　┌─────────────────┐<br>
+      ╭│ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，│<br>
+      ││ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ│<br>
+      ＪＡＶＡ　│└───────┬─────────┘ <br>
+      ＣＯＤＥ〈　　　　　　　　　│<br>
+      │┌───────┴─────────┐<br>
+      ││　　　　　　ＴＹＰＥ３　　　　　　│<br>
+      ╰│　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　　│<br>
+      └───────┬─────────┘<br>
+      ＰＲＯＰＲＩＥＴＡＲＹ　　　　　│　　　　　　　　　ＩＮＴＥＲＮＥＴ<br>
+      ＮＡＴＷＯＲＫ　　　　　　　　└┐ 　————————————————<br>
+      ＰＲＯＴＯＣＯＬ　　　　　　　　　│  <br>
+      ┌────────┴────────┐<br>
+      ╭│　　　　　　　ＪＡＶＡ　　　　　　│<br>
+      ＪＡＶＡ　　││　　　　　ＭＩＤＤＬＥＷＡＲＥ　　│<br>
+      ＣＯＤＥ　〈　└────────┬────────┘ <br>
+      │┌────────┴────────┐<br>
+      ╰│　　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　│<br>
+      └────────┬────────┘<br>
+      ╭┴╮ <br>
+      ╰─╯ <br>
+      │　│DATABASE<br>
+      ╰─╯<br>
+      图9.4 Java到专有网络协议</p>
+    <p>　　在下列情况下，你可以考虑使用ava到专用有网络协议驱动程序：<br>
+      ·基于Web的applet，它们不需要任何安装或者软件配置。<br>
+      ·安全的系统，这里数据库被保护在一个中间件后面。<br>
+      ·灵活的解决方案，如果你使用了许多不同的数据库产品——通过JDBC，这个中间件软件通常具有到任何数据库产品的接口。<br>
+      ·客户要求驱动程序比较小——类型3的驱动程序的大小是所有四种类型中最小的。</p>
+    <p>　　类型4：Java到本地数据库协议<br>
+      类型4的JDBC驱动程序也是纯Java驱动程序，它通过自己的本地协议直接与数据库引擎进行通信（见图9.5）。通过本地的通信协议，这种驱动程序可以具备在Internet上装配的能力。与其他类型的驱动程序相比，类型4的驱动程序的优点在于它的性能，在客户和数据库引擎之间没有任何本地代码或者中间件。 </p>
+    <p>　　　　　　　　　　┌─────────────────┐<br>
+      ╭│ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，│<br>
+      ││ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ│<br>
+      ＪＡＶＡ　│└───────┬─────────┘ <br>
+      ＣＯＤＥ〈　　　　　　　　　│<br>
+      │┌───────┴─────────┐<br>
+      ││　　　　　　ＴＹＰＥ４　　　　　　│<br>
+      ╰│　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　　│<br>
+      └───────┬─────────┘<br>
+      ＮＡＴＩＶＥ　　　　　　　　│　　　　　　　　　ＩＮＴＥＲＮＥＴ<br>
+      ＤＡＴＡＢＡＳＥ　　　　　　　└┐ 　————————————————<br>
+      ＰＲＯＴＯＣＯＬ　　　　　　　　│  <br>
+      ╭┌────────┴────────┐<br>
+      ＮＡＴＩＶＥ││　　　　ＤＡＴＡＢＡＳＥ　　　　　│<br>
+      ＣＯＤＥ　││　　　　　ＥＮＧＩＮＥ　　　　　　│<br>
+      ╰└────────┬────────┘<br>
+      ╭┴╮ <br>
+      ╰─╯ <br>
+      │　│DATABASE<br>
+      ╰─╯<br>
+      图9.5 Java到本地数据库协议</p>
+    <p>　　在下列情况下，你可以考虑使用Java到本地数据库协议驱动程序：<br>
+      ·严格要求高性能。<br>
+      ·只使用一种数据库产品的环境——如果你不必考虑对多种数据库系统的支持，那么类型4的驱动程序可能正是你所需的那种。<br>
+      ·基于Web的applet，取决于这种驱动程序的能力。</p>
+    <p>　　应该使用的是...<br>
+      如果你略过了前面的内容，想要马上找出那种可以解决所有问题的驱动程序，那么你一定会十分失望。因为答案是取决于实际情况。由于有对数据库的多种需求，所以有四种类型的JDBC驱动程序。你必须权衡你的需求和各种类型的驱动程序的能力，这样才能找出最适合你需要的那种类型。<br>
+      不过看来关于选择哪种类型的驱动程序，这里的确有一些混乱。类型4的驱动程序不会因为它具有最大的类型号就比其他的三种类型更好。只有实际中你特定的需求才能决定你应该使用哪种类型的JDBC驱动程序。 </p>
+    <h3><a name="914" id="914"></a>9.1.4 基本的JDBC流程</h3>
+    <p>　　所有的JDBC应用程序都具有下面的基本流程：<br>
+      1、建立到数据库的连接。<br>
+      2、执行SQL语句。<br>
+      3、处理结果。<br>
+      4、从数据库断开连接。<br>
+      下面我们就来仔细看一看每一个步骤。</p>
+    <p> 　　建立到数据库的连接<br>
+      通过JDBC使用数据库的第一步就是建立一个连接。JDBC连接是由URL指定的，它的格式如下：<br>
+      jdbc:&lt;subprotocol&gt;:&lt;subname&gt;<br>
+      其中subprotocol是被请求的数据库连接的类型（如ODBC，ORACLE，Informix等等），而subname提供了所要建立的连接的一些附加信息。当JDBC驱动程序管理器收到一个连接的URL时，所有已知的JDBC驱动程序会被询问是否可以为这个URL服务。请求一个通过JDBC-ODBC桥到叫做MyData的ODBC数据源的连接的例子如下：<br>
+      Connection con = DriverManage.getconnection(&quot;jdbc:odbc:MyData&quot;);<br>
+      看上去一切都很顺利，但是JDBC驱动程序管理器是怎么知道哪些JDBC驱动程序在当前的系统中可用呢？有两种机制可以通知驱动程序管理器一个JDBC驱动程序可以使用：sql.drivers属性和JDBC驱动程序注册。<br>
+      驱动程序管理器引用sql.drivers系统属性来取得当前系统中可用的JDBC驱动程序列表。这个系统属性包含一些用冒号隔开的JDBC驱动程序的类名，通过这个类名，驱动程序管理器可以试图满足一个连接请求。<br>
+      使用驱动程序注册更为常见。这种方法使你对你要使用的JDBC驱动程序有更多的控制。所有的JDBC驱动程序在实例化的时候都必须在驱动程序管理器中注册自己，注册可以通过下列两个方法来实现：<br>
+      1.Class.forName(&quot;foo.Driver&quot;).newInstance();<br>
+      2.new foo.Driver();<br>
+      我个人比较喜欢使用Class.forName()这种方法，不过这两种方法的效果是相同的。JDBC驱动程序用驱动程序管理器注册自己，这样，它就可以为连接请求服务了。</p>
+    <p>　　执行SQL语句<br>
+      在数据库连接成功建立之后，我们就可以执行那些完成实际工作的SQL语句了。在执行SQL语句之前，我们必须首先创建一个语句对象，这个对象提供了到特定数据库SQL引擎的接口。有下列三种不同类型的语句对象：<br>
+      1.Statement——基本的语句对象，它提供了直接在数据库中执行SQL语句的方法。对于那些只执行一次的查询以及DDL语句如CREATE 
+      TABLE，DROP TABLE等等来说，statement对象就足够了。<br>
+      2.Prepared statement——这种语句对象用于那些需要执行多次，每次仅仅是数据取值不同的SQL语句，它还提供了一些方法，以便指出语句所使用的输入参数。<br>
+      3.Callable statement——这种语句对象被用来访问数据库中的存储过程。它提供了一些方法来指定语句所使用的输入输出参数。
+      下面是一个用语句类来执行SQL SELECT语句的一个例子： </p>
+    <pre class="code">Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery("SELECT * FROM MyTable");</pre>
+    <p>　　处理结果<br>
+      在执行了一个SQL语句之后，我们必须处理得到的结果。有些语句仅仅返回一个整形数，指出受到影响的行数（比如UPDATE和DELETE语句）。SQL查询（SELECT语句）返回一个含有查询结果的结果集。结果集由行和列组成，各列数据可以通过相应数据库类型的一系列get方法（如getString，getInt，getDate等等）来取得。在取得了一行数据的所有数据之后，我们可以调用next()方法来移到结果集中的下一条记录。JDBC规范的1.1版只允许forward-onle(只向前)型的游标，而在JDBC2.0中有更健壮的游标控制功能，我们可以向后移动游标而且可以将游标移动到指定行。</p>
+    <p>　　从数据库断开连接<br>
+      在结果集、语句和连接对象用完以后，我们必须正确地关闭它们。连接对象、结果集对象以及所有的语句对象都有close()方法，通过调用这个方法，我们可以确保正确释放与特定数据库系统相关的所有资源。<br>
+      有些开发者喜欢将引用乱放，然后用一个垃圾收集程序专门负责正确清除对象。我强烈建议大家在使用了JDBC驱动程序之后调用close()方法。这样可以尽可能的减少由于挂起的对象残留在数据库系统中而造成的内存泄漏。 </p>
+    <h3><a name="915" id="915"></a>9.1.5 JDBC的一个例子：SimpleQuery</h3>
+    <p>　　为了说明使用JDBC的所有必要的基本步骤，我们先来看一个非常简单的Java应用程序，这个应用程序通过JDBC-ODBC桥连接到Microsoft 
+      Access数据库上，执行一个对雇员数据库如果你在使用Win/95或者NT你可以安装它），我们自行要配置ODBC数据源。对于Win/95和NT，可以简单地利用一个ODBC管理工具来建立数据源；如果你使用的是UNIX平台，那你不得不编辑配置文件odbc.ini，手工加入这个数据源（请注意没有UNIX的Access 
+      ODBC驱动程序）。在控制面板(Start|Settings)中选择ＯＤＢＣ来启动ＯＤＢＣ管理程序。图9.6显示了ＯＤＢＣ管理器的界面。<br>
+      选择Add...按钮以加入新数据源，然后会列出你的系统中所有已经安装了的ODBC驱动程序（从配置文件odbcinst.ini中取得）。图9.7是这一屏幕的例子。<br>
+      在选择了ODBC驱动程序之后（比如Microsoft Access），一个与所选的驱动程序相关的配置程序被调用。图9.8显示的是Microsoft 
+      Access的配置屏幕。<br>
+      我们需要输入数据源的名字以及其他一些指定数据库所需的相关信息。这里，我们把MyAccessDataSource作为数据源的名字，数据库文件是MyData.mdb。MyData.mdb含有一个已经建立了的雇员表，你可以在随书光盘中找到它。你还可以找到一个叫做javaservlets.db.BuildEmployee的Java应用程序，这个程序可以建立MyData.mdb数据库。BuildEmployee应用程序是通用的JDBC编程的一个很好的例子，它没有假设所使用的数据库而且通过DatabaseMetaData来取得所用数据库的信息。<br>
+      图9.9显示了SimpleQuery应用程序的源程序。这个应用程序把Access数据库中的Employee表的数据读出来输出到标准输出上。正如你看到的一样，完成了四个步骤——建立连接，执行SQL语句，处理结束，从数据库断开连接。 <br>
+      图9.10显示了执行这个应用程序得到的结果。 </p>
+    <pre class="code">　public class SimpleQuery
+{
+/**
+* <p>Main entry point for the application
+*/
+public static void main(String args[])
+{
+try {
+
+// Perform the simple query and display the results
+performQuery();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+
+public static void performQuery() throws Exception
+{
+// The name of the JDBC driver to use
+String driverName = "sun.jdbc.odbc.JdbcOdbcDriver";
+
+// The JDBC connection URL
+String connectionURL = "jdbc:odbc:MyAccessDataSource";
+
+// The JDBC Connection object
+Connection con = null;
+
+// The JDBC Statement object
+Statement stmt = null;
+
+// The SQL statement to execute
+String sqlStatement =
+"SELECT Empno, Name, Position FROM Employee";
+
+// The JDBC ResultSet object
+ResultSet rs = null;
+
+try {
+
+System.out.println("Registering " + driverName);
+
+// Create an instance of the JDBC driver so that it has
+// a chance to register itself
+Class.forName(driverName).newInstance();
+
+System.out.println("Connecting to " + connectionURL);
+
+// Create a new database connection. We're assuming that
+// additional properties (such as username and password)
+// are not necessary
+con = DriverManager.getConnection(connectionURL);
+
+// Create a statement object that we can execute queries
+// with
+stmt = con.createStatement();
+
+// Execute the query
+rs = stmt.executeQuery(sqlStatement);
+
+// Process the results. First dump out the column
+// headers as found in the ResultSetMetaData
+ResultSetMetaData rsmd = rs.getMetaData();
+
+int columnCount = rsmd.getColumnCount();
+
+System.out.println("");
+String line = "";
+for (int i = 0; i < columnCount; i++) {
+if (i > 0) {
+line += ", ";
+}
+
+// Note that the column index is 1-based
+line += rsmd.getColumnLabel(i + 1);
+}
+System.out.println(line);
+
+// Count the number of rows
+int rowCount = 0;
+
+// Now walk through the entire ResultSet and get each
+// row
+while (rs.next()) {
+rowCount++;
+
+// Dump out the values of each row
+line = "";
+for (int i = 0; i < columnCount; i++) {
+if (i > 0) {
+line += ", ";
+}
+
+// Note that the column index is 1-based
+line += rs.getString(i + 1);
+}
+System.out.println(line);
+}
+
+System.out.println("" + rowCount + " rows, " +
+columnCount + " columns");
+}
+finally {
+
+// Always clean up properly!
+if (rs != null) {
+rs.close();
+}
+if (stmt != null) {
+stmt.close();
+}
+if (con != null) {
+con.close();
+}
+}
+}
+
+}　</pre>
+    图9.9 SimpleQuery.java代码清单
+    <p>　　java javaservlets.db.SimpleQuery<br>
+      Registering sun.jdbc.odbc.JdbcOdbcDriver<br>
+      Connectiong to jdbc:odbc:MyAccessDataSource<br>
+      Empno,Name,Position<br>
+      1,Nebby K. Nezzer,President<br>
+      2,Mr.Lunt,Foreman<br>
+      3,Rack,Jr.Executive<br>
+      4,Shack,Jr.Executive<br>
+      5,Benny,Jr.Executive<br>
+      6,George,Security Guard<br>
+      7,Laura,Delivery Driver<br>
+      7,rows,3,columns<br>
+      图9.10 SimpleQuery输出</p>
+    <h2><a name="92" id="92"></a>9.2 JDBC Servlet：EmployeeList</h2>
+    <p>　　我们已经大致了解了JDBC，下面我们就来创建一个简单的servlet来使用我们刚刚学到的知识。有了SimpleQuery应用程序，编写一个使用JDBC的servlet并不是一件难事。我们仍然要遵守那四个基本步骤——连接、执行、处理和关闭。实际的不同在于我们如何处理数据。在EmployeeList中，我们不是将信息打印到标准输出设备上（控制台），而是将这些数据格式化成HTML然后发送客户端。<br>
+      图9.11显示了这个servlet的源程序。它利用JDBC来取得我们的秘密公司Nezzer's Chocolate Factory的所有雇员的信息。我们得到的结果集被格式化为HTML表格并返回给客户端。</p>
+    <pre class="code">　package javaservlets.db;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+/**
+* &lt;p>This is a simple servlet that will use JDBC to gather all
+* of the employee information from a database and format it
+* into an HTML table.
+*/
+
+public class EmployeeList extends HttpServlet
+{
+/**
+* &lt;p>Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Create a PrintWriter to write the response
+java.io.PrintWriter out =
+new java.io.PrintWriter(resp.getOutputStream());
+
+// Print the HTML header
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Employee List&lt;/title>");
+out.println("&lt;/head>");
+out.println("&lt;h2>&lt;center>");
+out.println("Employees for Nezzer's Chocolate Factory");
+out.println("&lt;/center>&lt;/h2>");
+out.println("&lt;br>");
+
+// Create any addition properties necessary for connecting
+// to the database, such as user and password
+java.util.Properties props = new java.util.Properties();
+props.put("user", "karlmoss");
+props.put("password", "larryboy");
+
+query("sun.jdbc.odbc.JdbcOdbcDriver",
+"jdbc:odbc:MyAccessDataSource",
+props,
+"SELECT Empno, Name, Position FROM Employee",
+out);
+
+// Wrap up
+out.println("&lt;/html>");
+out.flush();
+out.close();
+}
+
+/**
+* &lt;p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+}
+
+/**
+* &lt;p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+super.destroy();
+}
+
+/**
+* &lt;p>Given the JDBC driver name, URL, and query string,
+* execute the query and format the results into an
+* HTML table
+*
+* @param driverName JDBC driver name
+* @param connectionURL JDBC connection URL
+* @param props Addition connection properties, such as user
+* and password
+* @param query SQL query to execute
+* @param out PrintWriter to use to output the query results
+* @return true if the query was successful
+*/
+
+private boolean query(String driverName,
+String connectionURL,
+java.util.Properties props,
+String query,
+java.io.PrintWriter out)
+{
+boolean rc = true;
+
+// The JDBC Connection object
+Connection con = null;
+
+// The JDBC Statement object
+Statement stmt = null;
+
+// The JDBC ResultSet object
+ResultSet rs = null;
+
+// Keep stats for how long it takes to execute
+// the query
+long startMS = System.currentTimeMillis();
+
+// Keep the number of rows in the ResultSet
+int rowCount = 0;
+
+try {
+
+// Create an instance of the JDBC driver so that it has
+// a chance to register itself
+Class.forName(driverName).newInstance();
+
+// Create a new database connection.
+con = DriverManager.getConnection(connectionURL, props);
+
+// Create a statement object that we can execute queries
+// with
+stmt = con.createStatement();
+
+// Execute the query
+rs = stmt.executeQuery(query);
+
+// Format the results into an HTML table
+rowCount = formatTable(rs, out);
+
+}
+catch (Exception ex) {
+// Send the error back to the client
+out.println("Exception!");
+ex.printStackTrace(out);
+rc = false;
+}
+finally {
+try {
+// Always close properly
+if (rs != null) {
+rs.close();
+}
+if (stmt != null) {
+stmt.close();
+}
+if (con != null) {
+con.close();
+}
+}
+catch (Exception ex) {
+// Ignore any errors here
+}
+}
+
+// If we queried the table successfully, output some
+// statistics
+if (rc) {
+long elapsed = System.currentTimeMillis() - startMS;
+out.println("&lt;br>&lt;i>" + rowCount + " rows in " +
+elapsed + "ms&lt;/i>");
+}
+
+return rc;
+}
+
+/**
+* &lt;p>Given a JDBC ResultSet, format the results into
+* an HTML table
+*
+* @param rs JDBC ResultSet
+* @param out PrintWriter to use to output the table
+* @return The number of rows in the ResultSet
+*/
+
+private int formatTable(java.sql.ResultSet rs,
+java.io.PrintWriter out)
+throws Exception
+{
+int rowCount = 0;
+
+// Create the table
+out.println("&lt;center>&lt;table border>");
+
+// Process the results. First dump out the column
+// headers as found in the ResultSetMetaData
+ResultSetMetaData rsmd = rs.getMetaData();
+
+int columnCount = rsmd.getColumnCount();
+
+// Start the table row
+out.println("&lt;tr>");
+
+for (int i = 0; i &lt; columnCount; i++) {
+
+// Create each table header. Note that the column index
+// is 1-based
+out.println("&lt;th>" +
+rsmd.getColumnLabel(i + 1) +
+"&lt;/th>");
+}
+
+// End the table row
+out.println("&lt;/tr>");
+
+// Now walk through the entire ResultSet and get each
+// row
+while (rs.next()) {
+rowCount++;
+
+// Start a table row
+out.println("&lt;tr>");
+
+// Dump out the values of each row
+for (int i = 0; i &lt; columnCount; i++) {
+
+// Create the table data. Note that the column index
+// is 1-based
+out.println("&lt;td>" +
+rs.getString(i + 1) +
+"&lt;/td>");
+}
+
+// End the table row
+out.println("&lt;/tr>");
+}
+// End the table
+out.println("&lt;/table>&lt;/center>");
+
+return rowCount;
+}
+}　　</pre>
+    图9.11 EmployeeList.java代码清单
+    </p>
+    <p> 　　在NT的servlet引擎中使用JDBC-ODBC桥会有一个潜在的gotcha。ODBC有用户DSN(数据源名称)和系统 
+      DSN（参照图9.6的显示）。系统DSN只能被那些作为NT服务的应用程序所使用，而用户DSN可以被其他应用程序访问。大多数servlet引擎被安装为NT服务，所以只能访问系统DSN信息，所以一定要正确地配置你的ODBC数据源。如果你想看一看你都配置了什么，你可以翻到第15章，那里我们会编写一个列出servlet引擎可以访问所有ODBC数据源名称的servlet。<br>
+      请注意EmployeeList包含有两个非常通用的处理JDBC信息的方法：query()和formatTable()。query()方法的参数指定了JDBC用来初始化JDBC驱动程序，建立连接，执行查询所需的一切。然后，formattable()方法取得查询结果(一个结果集对象)并创建含有所有数据的HTML表格。<br>
+      你可能还注意到处理HTML请求的总时间也被加入到输出之中。后面，我们用连接池来提高性能的时候，我们将要使用这个时间作为基准。<br>
+      图9.12显示了EmployeeList servlet的运行结果。不要忘记在Web服务器上正确地配置这个servlet。我使用的是JRun，所以我得给这个servlet加一个别名。<br>
+      在Web上发布数据是不是很容易？我希望你也开始认识到使用servlet的实际效力以及将现在的应用程序转到servlet框架下是多么轻松。</p>
+    <h3><a name="921" id="921"></a>9.2.1 限制</h3>
+    <p>　　关于我们的EmployeeList servlet，我们一定要记住下面一些问题：<br>
+      ·它只在小数据量时才能正常工作。如果你要面对的是有成百上千条记录的表，那么在一个HTML表格中显示所有的数据显然是不适当的。这不但会花费许多时间，而且从用户的角度讲意义也不大。<br>
+      ·表中所有列中的数据在放到HTML表格里之前都被转化为字符串。对于图像之类的二进制数据来说，这也是不恰当的。<br>
+      ·对于每一个GET请求，servlet都要建立一个新的数据库连接。执行数据库连接是非常耗时的操作，效率很低。实际上，为每一个新请求创建新的数据库连接会使一个Web服务器很快陷入阻塞。<br>
+      下面我们就来看一看如何解决这些限制。</p>
+    <p>　　将输出分成多个页面<br>
+      如果你要返回给用户大量数据，你一定不要将所有数据放在一个页面上。这不但使用户难于操作这些数据，而且生成和下载HTML页面也会浪费大量的时间。 
+      解决这个问题的一个办法就是将数据分别输出到多个页面之中，用户通过按下Next按钮来查看下一部分数据。如果你用过Web上的搜索引擎，你就会熟悉这是如何工作的。<br>
+      下面是将servlet的输出分为多个页面的计划：<br>
+      1.连接到数据库并提交一个查询。<br>
+      2.处理查询的结果，在每一页中输出的行数不超过最大行数。<br>
+      3.如果超过了最大行数，那么就在页面的底部加上一个Next按钮，并且在HTML文档中嵌入被用来在Next按钮按下的时候重新定位结果集的信息。<br>
+      4.Next按钮被按下时，执行一个新的查询，结果集的游标被重新定位到我们上次结束的地方。处理结果如前。<br>
+      我们来看看IndyList servlet，这个servlet列出了Indianapolis 500历史上所有的优胜者。基本的代码和EmployeeList 
+      servlet相似(见图9.11)，所以这里我只指出主要的不同。<br>
+      首先，我们需要限制处理结果集时显示的最大行数。图9.13显示了实现这一功能所需的代码。请注意如果我们必须限制行数，那么我们就必须在HTML中加入一个Submit按钮。这个按钮被按下时，servlet被再次提交。一个hidden域被加到页面中，这个域记录了页中显示数据的上一年的年份。年份是这个表的惟一键，我们可以在再次调用时将年份作为起始点。当显示表中数据的最后一页的时候，Next按钮就不会被生成了。</p>
+    <pre class="code"> /**
+　　* &lt;p>Given a JDBC ResultSet, format the results into
+　　* an HTML table
+　　*
+　　* @param rs JDBC ResultSet
+　　* @param out PrintWriter to use to output the table
+　　* @param uri Requesting URI
+　　* @return The number of rows in the ResultSet
+　　*/
+
+　　private int formatTable(java.sql.ResultSet rs,
+　　　java.io.PrintWriter out,
+　　　String uri)
+　　　throws Exception
+　　{
+　　　int rowsPerPage = 10;
+　　　int rowCount = 0;
+
+　　　// Keep track of the last year found
+　　　String lastYear = "";
+
+　　　// This will be true if there is still more data in the
+　　　// table
+　　　boolean more = false;
+
+　　　// Create the table
+　　　out.println("&lt;center>&lt;table border>");
+　
+　　　// Process the results. First dump out the column
+　　　// headers as found in the ResultSetMetaData
+　　　ResultSetMetaData rsmd = rs.getMetaData();
+
+　　　int columnCount = rsmd.getColumnCount();
+
+　　　// Start the table row
+　　　out.println("&lt;tr>");
+　
+　　　for (int i = 0; i &lt; columnCount; i++) {
+
+　　　　// Create each table header. Note that the column index
+　　　　// is 1-based
+　　　　out.println("&lt;th>" +
+　　　　　rsmd.getColumnLabel(i + 1) +
+　　　　　"&lt;/th>");
+　　　　}
+
+　　　　// End the table row
+　　　　out.println("&lt;/tr>");
+
+　　　　// Now walk through the entire ResultSet and get each
+　　　　// row
+　　　　while (rs.next()) {
+　　　　　rowCount++;
+
+　　　　　// Start a table row
+　　　　　out.println("&lt;tr>");
+
+　　　　　// Dump out the values of each row
+　　　　　for (int i = 0; i &lt; columnCount; i++) {
+　　
+　　　　　　// Create the table data. Note that the column index
+　　　　　　// is 1-based
+　　　　　　String data = rs.getString(i + 1);
+　　　　　　out.println("&lt;td>" + data + "&lt;/td>");
+
+　　　　　　// If this is the year column, cache it
+　　　　　　if (i == 0) {
+　　　　　　　lastYear = data;
+　　　　　　}
+　　　　　}
+
+　　　　　// End the table row
+　　　　　out.println("&lt;/tr>");
+
+　　　　　// If we are keeping track of the maximum number of
+　　　　　// rows per page and we have exceeded that count
+　　　　　// break out of the loop
+　　　　　if ((rowsPerPage > 0) &&
+　　　　　　(rowCount >= rowsPerPage)) {
+　　　　　　　// Find out if there are any more rows after this one
+　　　　　　　more = rs.next();
+　　　　　　　break;
+　　　　　}
+　　　　}
+
+　　　　// End the table
+　　　　out.println("&lt;/table>&lt;/center>");
+
+　　　　if (more) {
+
+　　　　　// Create a 'Next' button
+　　　　　out.println("&lt;form method=POST action=\"" +
+　　　　　　uri + "\">");
+　　　　　out.println("&lt;center>");
+　　　　　out.println("&lt;input type=submit value=\"Next " +
+　　　　　　rowsPerPage + " rows\">");
+　　　　　out.println("&lt;/center>");
+　　　　　// Page was filled. Put in the last year that we saw
+　　　　　out.println("&lt;input type=hidden name=lastYear value=" +
+　　　　　　lastYear + ">");
+　　　　　out.println("&lt;/form>");
+　　　　}
+
+　　　　return rowCount;
+　　　}
+}</pre>
+    图9.13 IndeyList.java中设置运行结果的代码清单
+    
+    servlet的统一资源指示器(Uniform Resource Indicator,URI)可以从servlet被调用时给出的HTTP请求对象中获得。
+    当按下Next按钮的时候，我们要能够从我们结束的地方开始。使用这个处理结果集时产生的hidden域，我们可以创建一个新的带WHERE从句的SQL语句来返回正确的数据。图9.14显示了取得hidden域值所需要的代码。
+    
+    //Get the last year shown on the page that
+    //called us. Remember that we are sorting
+    //the years in descending order.
+    String lastYear="9999";
+    String lastYear=req.getParameter("lastYear");
+    if(lastYear==null){
+    //No year was found;must be the first page.
+    lastYear="9999";
+    } 
+    图9.14　获取一个参数值的Java代码
+    </p>
+    <p>　　我使用hidden域的值来生成SQL语句：<br>
+      SELECT * from IndyWinners where year&lt;lastYear order by Year 
+      desc<br>
+      lastYear的缺省值是9999，所以如果没有设置这个参数(当servlet第一次被调用时)，所有年份的数据都被选出。否则，只查找那些lastYear以前的年份的情况。请注意我将数据按年降序排列，所以选显示新近的优胜者。这样的查询实际上效率不高而且可能是不准确的。每一次按下Next按钮，就会执行一个新的查询，如果数据库引擎不缓存上一次查询结果的话，这实在是太费时了。另外，如果碰巧其他用户悠了这个表——添加、删除或是修改了某一行，那么新的查询将会显示出这些变化。理想情况下，我们只有一个结果集，我们可以用它来前后移动以适应用户请求。不幸的是，JDBC1.x只允许向前移动。不过JDBC2.0将允许驱动程序利用扩展的游标支持，这样这个任务就可以实现了。<br>
+      还要注意到这种办法只在表有惟一键的时候才起作用(我们的例子中是年份)。我们必须能够惟一标识我们显示的上一行，这样我们才能取得上一次结束的地方。实现这一点，最简单的办法是用惟一的行标识符，例如ORACLE的ROWID。这个ROWID在所有表中都有，而且你可将它惟一地用于引用行。你可以用DatabaseMetaData.getBestRowIdentifier()来查询当前数据库中是否存在某种惟一标识符。如果不存在记录的惟一标识符，那么你就得设计你的表使之具有一个惟一键。由于我使用的Microsoft 
+      Access不支持惟一的行标识符，所以我使用了你惟一的年份这一列。 <br>
+      图9.15显示了这个查询的第一页，图9.16显示了Next按钮按下之后显示的结果。
+    <div class="rpindex"><a href="9-2.html"> 下一页</a><a href="8.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

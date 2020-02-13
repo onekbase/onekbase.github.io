@@ -1,0 +1,664 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="15.html"> 上一页</a></div>
+    <h1>第16章 使用servlet和RMI
+      </p>
+    </h1>
+    <p> 　　在本章中我们主要看一看如何在servlet环境中使用Java的RMI接口。RMI使Java应用程序可以无缝地调用其他虚拟机上的对象，这个虚拟机可以和Java应用程序在同一个主机上，也可以在不同的主机上。</p>
+    <h2>16.1 挑战： 访问其他Java服务器</h2>
+    <p>　　servlet是一个在Web服务器上使用Java的重要方法，但是如果我们想要访问网络中其他运行着Java的服务器呢？答案当然就是使用RMI。RMI使你可以让指定的服务器上的某些Java对象可以被任何其他Java进程调用。而无论这个Java进程是否和这些Java对象在同一台主机上。如图16.1所示。<br>
+      ┌─────────┐┌─────────┐<br>
+      ╭───────╮ＨＴＴＰ　ＲＥＱＵＥＳＴ　│┌───────┐││┌───────┐│<br>
+      │　ＷＥＢ　　　│─────────────→│ＳＥＲＶＬＥＴ│←→│　　ＲＭＩ　　││<br>
+      │ＢＲＯＷＳＥＲ│←────────────┼│　　　　　　　││││ＳＥＲＶＥＲ　││<br>
+      │　　　　　　　│ＨＴＴＰ　ＲＥＳＰＯＮＳＥ│└───────┘││└───────┘│　<br>
+      ╰┬─────┬╯　　　　　　　　　　　　　│　　　　↑　　　　││　　　　　　　　　│　<br>
+      ╭──┴─────┴───╮　　　　　　　　　　│　　　　↓　　　　││　　　　　　　　　│<br>
+      ╱　∴∷∷∷∷∷∷∷∷∷∷∴　╲　　　　　　　　　│┌───────┐││　　　　　　　　　│<br>
+      ╰────────────────┘　　　　　　　　││　　ＲＭＩ　　│││　　　　　　　　　│<br>
+      ││ＳＥＲＶＥＲ　│││　　　　　　　　　│<br>
+      │└───────┘││　　　　　　　　　│<br>
+      └─────────┘└─────────┘<br>
+      ＷＥＢ　ＳＥＲＶＥＲ　　　　ＳＥＲＶＥＲ</p>
+    <p>　　　　　　　　图16.1 servlet和RMI</p>
+    <p>　　如果你对分布对象技术有所了解，那么你可能会问：为什么不使用其他一些技术，比如CORBA(Common Object Request 
+      Broker Architecture)呢？CORBA是用来解决同样的一个问题的，不过CORBA可以在更广泛的范围中使用；CORBA支持用不同的语言编写的分布对象，既然我们已经在客户端(我们的servlet)使用了Java，那么在服务器端，我们显然不必担心使用其他语言编写的对象。另外，CORBA要求你必须使用某种对象请求代理(ORB，Object 
+      Request Broker)来在网络上为对象请求服务。ORB只能从第三方获得(如Inprise的 VisiBroker)；而使用RMI所需的一切，都被作为标准JDK的一部分且免费发布。</p>
+    <h2><a name="162" id="162"></a>16.2 RMI概述</h2>
+    <p>　　RMI是一套由JavaSoft开发的API，它允许在远程方式中使用对象，这里我们指的是在不同的虚拟机上使用Java对象。Java也支持socket，socket非常灵活而且使用于一般的通信。然而，socket要求客户端和服务器实现某种编发数据的协议(正如我们在第10章中开发HTTP遂道所做的)，如果这种协议不是复杂，那么让系统来自动地处理可能是一个更好的办法。通过RMI，Java在非常核心的层次上就支持了分布对象技术。RMI通过使用序列化来处理有关数据编发的问题，这样，我们就可以在远程方式下编写和使用对象，而不必知道它们实际上是远程的对象。<br>
+      先主我们看一看在RMI规范中定义的RMI最初的目标吧：<br>
+      ·无缝地支持在不同的Java虚拟机上的远程对象的使用。<br>
+      ·支持服务器到客户机的回调。<br>
+      ·用一种自然的方式在Java语言中集成分布对象模型，同时保持Java语言中的对象的主要语法。<br>
+      ·使编写可靠的分布应用程序尽可能的简单。<br>
+      ·保持Java运行环境所提供的安全性。<br>
+      在这些目标中，最重要的是使RMI尽可能的易用以及使RMI成为Java语言的一种十分自然的扩展。为了说明这些目标实现得多么成功，我们马上就来开发一个使用RMI的servlet。</p>
+    <h2><a name="163" id="163"></a>16.3 RMI的例子：CustomerInfo</h2>
+    <p>　　CustometInfo servlet使用RMI连接到一个远程服务器上，然后执行一个取得客户信息的数据库查询。在取得这个远程对象的实例之后，servlet并不知道或者并不关心这些方法是在另外的虚拟机上执行的。这当然非常符合使RMI用起来很自然的那个目标。不过servlet是怎样与远程对象交互的呢？答案是通过一个标准的Java接口。</p>
+    <h3> <a name="1631" id="1631"></a>16.3.1 定义远程接口</h3>
+    <p>　　就像我们在HTTP遂道过程中定义服务器端服务一样，RMI要求创建一个接口来定义将要在远程主机上调用的方法。下面是定义远程接口的一些要求：<br>
+      ·接口必须被声明为public。<br>
+      ·接口必须扩展RMI的基本接口java.rmi.Remote。java.rmi.Remote接口并没有定义任何方法。它仅仅是指出这个对象可以被远程调用。<br>
+      ·接口中定义的每一个方法都必须能够产生java.rmi.RemoteException。<br>
+      CustomerInfo对象仅仅包含一个方法，这个方法返回服务器上取得的所有信息。图16.2显示了这个接口的定义。</p>
+    <pre class="code">　package javaservlets.rmi.server;
+
+/**
+* <p>This interface defines the remote methods available for
+* the Customer object.
+*/
+
+public interface CustomerInterface
+extends java.rmi.Remote
+{
+
+/**
+* <p>Retrieves the customer data for the given customer ID
+* number. If the customer is not found a null value will be
+* returned.
+*
+* @param id Customer ID number
+* @return CustomerData object containing all of the customer
+* data or null if not found
+*/
+CustomerData getCustomerData(String id)
+throws java.rmi.RemoteException, java.sql.SQLException;
+}　</pre>
+　
+图16.2 CustomerInterface.java代码清单
+    <p>　　请注意上述对接口的所有要求，CustomerInterface被声明为public，它扩展了java.rmi.Remote接口，而且所有的方法都可以产生java.rmi.RemoteException。另外，还要注意这个方法的返回值是一个叫做CustomerData的对象。这个可以序列化的对象包含了所有的客户信息。它在服务器上创建，然后这个对象的一个副本通过RMI连接序列化，并在客户端重建。在客户端这个重建了的对象就可以直接使用了。图16.3显示了CustomerData类的定义。</p>
+    <pre class="code">package javaservlets.rmi.server;
+
+/**
+* <p>This class holds the data for a customer
+*/
+
+public class CustomerData
+implements java.io.Serializable
+{
+// The customer ID number
+public String id;
+
+// The customer name
+public String name;
+
+// The current customer balance
+public java.math.BigDecimal balance;
+}　</pre>
+    图16.3 CustomerData.java代码清单
+    <h3><a name="1632" id="1632"></a>16.3.2 编写服务器实现</h3>
+    <p>　　现在，远程接口已经定义好了，你可以实现这里面的每个方法。图16.4显示了Customer的代码。</p>
+    <pre class="code">　package javaservlets.rmi.server;
+
+      
+
+      /**
+
+      * <p>The server implementation for CustomerInterface. This
+
+      * object will be instantiated remotely via RMI.
+
+      */
+    　　public class Customer
+
+      extends java.rmi.server.UnicastRemoteObject
+
+      implements CustomerInterface
+
+      {
+
+      // Database connection
+
+      java.sql.Connection m_con;
+
+
+     　　　// Prepared Statement
+
+      java.sql.PreparedStatement m_ps;
+
+      
+
+      // JDBC driver to register
+
+      static String m_driver = "sun.jdbc.odbc.JdbcOdbcDriver";
+
+
+     　　　// Connection URL
+
+      static String m_url = "jdbc:odbc:MyAccessDataSource";
+
+      
+
+      /**
+
+      * <p>Default constructor.
+
+      *
+
+      * @param con JDBC Connection to use for the query
+
+      */
+
+      public Customer(java.sql.Connection con)
+
+      throws java.rmi.RemoteException, java.sql.SQLException
+
+      {
+
+      super();
+
+      m_con = con;
+
+
+     　　　　// Create a prepared statement for us to use
+
+      String sql = "SELECT Custno, Name, Balance from Customer 
+      " +
+
+      "WHERE Custno = ?";
+
+
+     　　　　m_ps = con.prepareStatement(sql);
+
+      }
+
+      
+
+      /**
+
+      * <p>Retrieves the customer data for the given customer 
+      ID
+
+      * number. If the customer is not found a null value will be
+
+      * returned.
+
+      *
+
+      * @param id Customer ID number
+
+      * @return CustomerData object containing all of the customer
+
+      * data or null if not found
+
+      */
+
+      public CustomerData getCustomerData(String id)
+
+      throws java.rmi.RemoteException, java.sql.SQLException
+
+      {
+
+      CustomerData data = null;
+
+      
+
+      System.out.println("Customer query for " + id);
+
+      
+
+      // Set the customer ID
+
+      m_ps.setInt(1, Integer.parseInt(id));
+
+      
+
+      // Execute the query
+
+      java.sql.ResultSet rs = m_ps.executeQuery();
+
+
+     　　　　// Get the results. If there are no results available,
+
+      // return null to the client
+
+      if (rs.next()) {
+
+
+     　　　　　// A row exists. Create a new CustomerData object and
+
+      // fill it in
+
+      data = new CustomerData();
+
+      data.id = rs.getString(1);
+
+      data.name = rs.getString(2);
+
+      data.balance = rs.getBigDecimal(3, 2);
+
+      }
+
+
+     　　　　// Close the ResultSet
+
+      rs.close();
+
+      
+
+      return data;
+
+      }
+
+
+     　　　/**
+
+      * <p>Main entry point for the remote object. This method
+
+      * will bootstrap the object and register it with the
+
+      * RMI registry.
+
+      */
+
+      public static void main(String args[])
+
+      {
+
+      // Install the default RMI security manager
+
+      System.setSecurityManager(new java.rmi.RMISecurityManager());
+
+      
+
+      try {
+
+
+     　　　　　// Register the JDBC driver
+
+      Class.forName(m_driver).newInstance();
+
+
+     　　　　　System.out.println("Opening database connection");
+
+      
+
+      // Create a new JDBC connection
+
+      java.sql.Connection con =
+
+      java.sql.DriverManager.getConnection(m_url);
+
+      
+
+      // Create a new instance of the server object
+
+      Customer cust = new Customer(con);
+
+
+     　　　　　// Bind the object to the RMI registry. If the object is
+
+      // already bound it will be replaced
+
+      java.rmi.Naming.rebind("/Customer", cust);
+
+
+     　　　　　System.out.println("Customer server object ready.");
+
+      }
+
+      catch (Exception ex) {
+
+
+     　　　　　// Display any errors
+
+      ex.printStackTrace();
+
+      }
+
+      }
+
+      }　</pre>
+    图16.4 Customer.java清单
+    <p>　　请注意，在main()方法(这是应用程序的入口)中安装了一个新的安全管理器。你可能会认为无须关心任何安全问题，因为你在你的虚拟机上是与外界隔离的，然而，使用RMI的时候，你可能会在网上从客户端加载一些类，使用RMISecurityManager可以确保你不会从客户端下载任何可能会影响系统安全的东西。如果在应用程序启动的时候没有设置安全管理器，那么RMI将只加载那些在当前的CLASSPATH中的本地文件。<br>
+      你可能还注意到我们将应用程序绑定到了RMI名字空间，这样对象就可以被外界了解了。RMI系统提供了一种基于URL的注册机制——被称为rmiregistry，通过它你可以用下列格式将一个应用程序绑定到特定的URL上；</p>
+    <p>　　//[host name&gt;[:&lt;prot number&gt;]]/&lt;object name&gt;<br>
+      其中：<br>
+      &lt;host name&gt;如果被忽略，那么缺省是当前主机。<br>
+      &lt;port name&gt;如果忽略，那么缺省是1099。如果给出了端口号，那么rmiregistry进程也必须使用同一端口。<br>
+      &lt;object name&gt;是远程对象的外部名称。这个名字不必和对象的实际名称相同。<br>
+      实现这个servlet对象时的另外一个要求是要定义一个构造函数。这个构造函数可以产生java.rmi.RemoteException；这是由于RMI会试图在其构造函数中输出远程对象，而且如果通信资源不可用，那么就可能会失败。 </p>
+    <h3><a name="1633" id="1633"></a>16.3.3 生成代码存根(Stub)和框架(Skeleton) </h3>
+    <p>　　在对象可以被远程使用之前，我们必须执行RMI编译程序。这个叫做rmic的编译程序会使用全类名并生成两个新类：代码存根和框架。客户端使用代码存根来编发所有服务器上方法的参数，尽管实际上你不必了解这一过程。而服务器使用框架来解编客户端请求的方法的参数并实际调用这些方法。在这些方法执行结束之后，框架将返回值聚集起来并返回给客户端，而代码相隔根解编服务器返回的数据，然后将返回值返回给调用的过程。<br>
+      rmic命令的格式如下：<br>
+      rmic [-d &lt;root directory&gt;]&lt;server class&gt;<br>
+      其中：<br>
+      &lt;root directory&gt;是你的包的根路径。如果你没有在这个根路径中运行rmic，那么你必须用-d选项指定这个参数，这样rmic才会知道生成的类应该放在什么地方。<br>
+      &lt;server class&gt;服务器实现的全类名。<br>
+      为了生成这个Customer对象的代码存根和框架，在类文件所在目录中要使用下面的命令：<br>
+      rmic -d ../../..javaservlets.rmi.server.Customer<br>
+      这个命令会产生下面两个文件：<br>
+      ·Customer_stub.class——客户端的代码存根，它被用来编发请求数据。<br>
+      ·Customer_skel.class——服务器端的框架，它被用来解编请求的数据。</p>
+    <h3><a name="1634" id="1634"></a>16.3.4 编写使用远程对象的客户程序 </h3>
+    <p>　　在我们的例子中，使用远程对象的客户端实际上是一个servlet。这个servlet本身和我们以前开发的servlet非常相似，除了以下两点不同：<br>
+      ·远程对象使用Naming.lookup()服务来解析。我们给出了远程对象的外部名称，然后在目标主机的rmiregistry中查找它。<br>
+      ·所有对远程方法的调用都可能会产生一个远程异常。</p>
+    <p>　　图16.5显示了CustomerInfo servlet的源程序。这个servlet连接到一个远程Java主机，调用一个方法来取得特定客户的所有信息，然后将这些信息格式化到一个HTML页面中显示。</p>
+    <pre class="code">package javaservlets.rmi;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javaservlets.rmi.server.*;
+
+/**
+* &lt;p>This is a simple servlet that will return customer
+* information. Note that this servlet implements the
+* SingleThreadModel interface which will force the Web browser
+* to synchronize all requests
+*/
+
+public class CustomerInfo
+extends HttpServlet
+implements SingleThreadModel
+{
+/**
+* &lt;p>Performs the HTTP POST operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+
+public void doPost(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+
+// Create a PrintWriter to write the response
+java.io.PrintWriter out =
+new java.io.PrintWriter(resp.getOutputStream());
+
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Print the HTML header
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Customer Balance Information&lt;/title>");
+out.println("&lt;/head>");
+
+// Get the Customer id
+String id = null;
+String values[] = req.getParameterValues("CustomerID");
+if (values != null) {
+id = values[0];
+}
+
+// The target host. Change to 'rmi://yourhost/' when the
+// server runs on a remote machine
+String host = "";
+
+try {
+
+// Attempt to bind to the remote host and get the
+// instance of the Customer object
+CustomerInterface cust = (CustomerInterface)
+java.rmi.Naming.lookup(host + "Customer");
+
+// We have an instance of the remote object. Get the
+// customer information
+CustomerData data = cust.getCustomerData(id);
+
+// Format the HTML
+out.println("The current balance for " + data.name +
+" is $" + data.balance);
+}
+catch (Exception ex) {
+
+// Turn exceptions into a servlet exception
+ex.printStackTrace();
+throw new ServletException(ex.getMessage());
+}
+
+// Wrap up
+out.println("&lt;/html>");
+out.flush();
+out.close();
+}
+
+/**
+* &lt;p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+}
+
+/**
+* &lt;p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+super.destroy();
+}
+}　　</pre>
+    图16.6 CustomerInfo.java代码清单
+    <p>　　你可能会注意到CustomerInfo servlet还实现了SingleThreadModel接口。这个接口并没有定义任何方法，相反的，它仅仅是指明这个servlet不是线程安全的，而且所有对它的请求都必须同步。这样，servlet引擎会保证不会有两个客户会话同一时刻使用这个对象。由于我们的RMI例子只有一个远程虚拟机上的服务器对象的实例，而我们正在使用的数据库可能也不是线程安全的，所以使用SingleThreadModel是非常重要的。</p>
+    <h3><a name="1635" id="1635"></a>16.3.5 启动服务器 </h3>
+    <p>　　使用远程对象之前，远程对象需要加载并在系统中注册。如前所述，名字到远程对象的映射是通过rmiregistry来实现的，这个由JavaSoft提供的应用程序必须运行在服务器上。为此，我们必须启动rmiregistry应用程序。<br>
+      (Win95/NT) start rmiregistry<br>
+      (Unix) rmiregistry&amp;<br>
+      上述命令将会启动一个绑定在缺省的1099端口的新的RMI名字服务。如果有在这个端口上的请求，rmiregistry将会查找指定的对象名称，然后，如果找到了就将一个实例句柄返回给客户端。远程对象又是如何与名字服务相关联的呢？如果你还记得服务器对象的实例的话，就会发现我们创建的main()方法中将一个外部名称和实际的远程对象实例绑定在一起：</p>
+    <p>　　java.rmi.Naming.rebind(&quot;/Custormer&quot;,cust);</p>
+    <p>　　因此，远程对象(一个Java应用程序)的执行，将会使这个远程对象实例化并在rmiregistry中注册。</p>
+    <pre class="code">java javaservlets.rmi.server.Customer
+Opening database commection
+Customer server object ready　　</pre>
+    现在，Customer对象就绑定在外部名称“/Customer”上而且可以使用了。
+    <h3><a name="1636" id="1636"></a>16.3.6 编写执行这个servlet的HTML</h3>
+    <p>　　我们创建一个简单的HTML表单来调用这个servlet。如图16.6所示，在这个表单中，我们输入客户的ID号。用户在输入客户ID之后，可以按下Perform 
+      Query按钮，产生对servlet的调用。</p>
+    <pre class="code">　&lt;html>
+&lt;head>
+&lt;title>Customer Balance Inquiry&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;h1>&lt;center>Customer Balance Inquiry&lt;/center>&lt;/h1>
+&lt;hr>&lt;br>
+
+&lt;form method=POST action="http://larryboy/servlet/CustomerInfo">
+&lt;center>
+Customer ID:&lt;input type=text name=CustomerID size=10>&lt;br>
+&lt;br>
+&lt;input type=submit value="Perform Query">
+&lt;/center>
+&lt;/form>
+
+&lt;/body>
+&lt;/html>　</pre>
+    图16.6 CustomerInfo.html清单
+    <h3><a name="1637" id="1637"></a>16.3.7 看看它做得怎样 </h3>
+    <p>　　将CustomerInfo servlet加入到Web服务器的设置中并将这个HTML文件放在文档目录之后，我们就可以试一下了，另外，千万不要忘记这个servlet还要使用一个RMI代码存根。图16.7显示了第一次加载这个表单时的页面，而图16.8显示了一次查询的结果。<br>
+      在屏幕后面发生很多事情，这样我们的客户信息才被显示出来。<br>
+      ·在用户提交查询请求的时候，一个HTML POST被产生，客户ID被嵌入这个请求之中，并和请求一起发送到Web服务器。<br>
+      ·Web服务器识别出这是一个servlet请求，并调用CustomerInfo servlet。<br>
+      ·CustomerInof servlet进行RMI名字查找并试图加载一个远程customer对象。<br>
+      ·rmiregistry进程，这个进程应该已经启动并且绑定在端1099上，接收到名字查询的请求并定位customer对象。这个customer对象必须加载在服务器上，这样它才会将自己注册到rmiregistry中。<br>
+      ·一个远程customer对象的句柄被返回给servlet。<br>
+      ·servlet调用customer接口中的方法。对这些方法的调用被传给代码存根，代码存根编发了对服务器请求，服务器上有一个框架，这个框架解编对服务器上方法的请求并调用实际customer对象的方法。服务器端的实现被调用，客户数据库被查询，查询的结果保存在一个客户数据对象中，框架将这个对象返回给客户端。代码存根负责取得服务器的返回值并将返回的数据发送给调用程序。<br>
+      服务这个查询请求费了不少周折。不过我认为你会同意JavaSoft使通过RMI使用分布对象十分容易——特别是提供了rmic和rmiregistry这样的工具。JavaSoft实现了他们设计RMI时的所有目标了吗？我想他们做到了，而且如果你曾经使用过其他的分布对象技术(比如CORBA)，我打赌在客户端和服务器都使用Java的时候，你也会坚持使用RMI。</p>
+    <h2><a name="164" id="164"></a>16.4 将一个servlet变成一个RMI </h2>
+    <p>　服务器在这里，我不打算讨论如何将一个servlet修改成为RMI或者CORBA服务器对象，Inprise有很不错的说明而且Live 
+      Software指定了一系列白皮书来描述如何做这件事情。你可以在http://www.inprise.com/jbuilder/papers/jb2servlet/jb2servlet2.html中找到这些论文。尽管这些论文详细描述了如何使用JBuilder来转化servlet，不过你也可以将这些信息利用在其他任何开发环境。</p>
+    <h2><a name="165" id="165"></a>16.5 使RMI更为简单 </h2>
+    <p>　　回到第11章，我们开发一系列Java代码生成器，我们可以用它来对任何接口生成实现以及客户代理和服务器端代码相存根。不难想象，我们也可以使它适用RMI。在主机上存储这些对象使一般的服务器对象成为主机，而不是成为servlet。</p>
+    <h2><a name="166" id="166"></a>16.6 小结</h2>
+    <p>　　在本章中，我们大致了解了RMI以及如何在servlet中使用分布对象。我们定义了可以通过标准的Java接口使用的服务器端方法并且实现了它们。我们还讨论了如何将一个服务器对象用rmiregistry注册，以便通过外部名称进行访问。我们还开发了一个简单的servlet，这个servlet查找远程对象，然后调用远程方法。我相信你已经了解使用Java，RMI和servlet来实现分布计
+    <div class="rpindex"><a href="15.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

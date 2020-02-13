@@ -1,0 +1,1046 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="9-1.html"> 上一页</a><a href="10-1.html"> 下一页</a></div>
+    <h2><a name="93" id="93"></a>9.3 连接池 </h2>
+    <p>　　正如前面我提到的，建立连接是代价最大的操作之一。根据你所使用的数据库引擎，连接会执行协议握手、验证用户信息、打开磁盘文件、创建内存高速缓存等等工作。既然我们不能低估建立连接所消耗的时间，那么我们可以预先分配一些连接以便使用。通过在一个单独的线程中创建这个连接池，我们可以使其他的进程提高性能并使主程序(一个servlet)取得下一个可用连接而无需等待。 <br>
+      使用连接池有许多好处：你可以监视连接的使用情况，限制允许的最大连接数量，为恶意的连接建立超时参数等等。 </p>
+    <h2><a name="931" id="931"></a>9.3.1 编写ConnectionPool对象</h2>
+    <p>　　我们来看一看我命名为ConnectionPool的连接池的实现吧。这个连接池的属性是通过配置文件获得的，缺省情况下，这个文件是ConnectionPool.cfg(见图9.17)。这些属性包括：</p>
+    <pre class="code">　#ConnectionPool.cfg
+JDBCDriver=sun.jdbc.odbc.JdbcOdbcDriver
+JDBCConnectionURL=jdbc:odbc:MyAccessDataSource
+ConnectionPoolSize=5
+ConnectionPoolMax=100
+ConnectionUseCount=5
+ConnectionTimeout=2
+User=karl
+Password=larryboy　</pre>
+    图9.17 连接池配置文件
+    <p>　　·JDBCDriver——连接池所使用的JDBC驱动程序的类名。例子中我们用的是JDBC-ODBC桥。<br>
+      ·JDBCConnectionURL——建立连接所用的URL。例子中我们创建了一个通过JDBC-ODBC桥连接到数据源MyAccessDataSource上的ODBC连接。<br>
+      ·ConnectionPoolSize——连接池的最少连接。ConnectionPool对象将会确保连接池中至少有这么多连接。<br>
+      ·ConnectionPoolMax——连接池的最大连接。不过请注意，连接池的实际大小可能还与所用的ODBC驱动程序有关。<br>
+      ·ConnectionUseCount——如果非零，那么这是连接在关闭之前可以使用的最大次数。在关闭之后，新的连接被建立以取代它。有些JDBC驱动程序在无限的重复使用连接的时候会出现一些问题，这个参数就是为了解决这样的问题。<br>
+      ·ConnectionTimeout——如果非零，那么这是连接保持空闲(没有用户使用)的最大时间。之后，连接将会被终止，而新的连接被建立以取代它。这个参数可以防止僵死连接。 <br>
+      ·其他属性——在配置文件中还有一些其他属性如用户名和口令等等，在建立连接时，这些属性必须传给JDBC驱动程序。<br>
+      图9.18显示了用来创建最初的连接池的代码(完整的源程序可以在随书光盘上找到，它位于javaservlets.jdbc包中)。 </p>
+    <pre class="code">　/**
+* <p>Creates the initial connection pool. A timer thread
+* is also created so that connection timeouts can be
+* handled.
+*
+* @return true if the pool was created
+*/
+private void createPool() throws Exception
+{
+// Sanity check our properties
+if (m_JDBCDriver == null) {
+throw new Exception("JDBCDriver property not found");
+}
+if (m_JDBCConnectionURL == null) {
+throw new Exception("JDBCConnectionURL property not found");
+}
+if (m_ConnectionPoolSize < 0) {
+throw new Exception("ConnectionPoolSize property not found");
+}
+if (m_ConnectionPoolSize == 0) {
+throw new Exception("ConnectionPoolSize invalid");
+}
+if (m_ConnectionPoolMax < m_ConnectionPoolSize) {
+trace("WARNING - ConnectionPoolMax is invalid and will " +
+"be ignored");
+m_ConnectionPoolMax = -1;
+}
+if (m_ConnectionTimeout < 0) {
+// Set the default to 30 minutes
+m_ConnectionTimeout = 30;
+}
+
+// Dump the parameters we are going to use for the pool.
+// We don't know what type of servlet environment we will
+// be running in - this may go to the console or it
+// may be redirected to a log file
+trace("JDBCDriver = " + m_JDBCDriver);
+trace("JDBCConnectionURL = " + m_JDBCConnectionURL);
+trace("ConnectionPoolSize = " + m_ConnectionPoolSize);
+trace("ConnectionPoolMax = " + m_ConnectionPoolMax);
+trace("ConnectionUseCount = " + m_ConnectionUseCount);
+trace("ConnectionTimeout = " + m_ConnectionTimeout +
+" seconds");
+
+// Also dump any additional JDBC properties
+java.util.Enumeration enum = m_JDBCProperties.keys();
+while (enum.hasMoreElements()) {
+String key = (String) enum.nextElement();
+String value = m_JDBCProperties.getProperty(key);
+trace("(JDBC Property) " + key + " = " + value);
+}
+
+// Attempt to create a new instance of the specified
+// JDBC driver. Well behaved drivers will register
+// themselves with the JDBC DriverManager when they
+// are instantiated
+trace("Registering " + m_JDBCDriver);
+java.sql.Driver d = (java.sql.Driver)
+Class.forName(m_JDBCDriver).newInstance();
+
+// Create the vector for the pool
+m_pool = new java.util.Vector();
+
+// Bring the pool to the minimum size
+fillPool(m_ConnectionPoolSize);
+}
+
+/**
+* <p>Adds a new connection to the pool
+*
+* @return Index of the new pool entry, or -1 if an
+* error has occurred
+*/
+private int addConnection()
+{
+int index = -1;
+
+try {
+// Calculate the new size of the pool
+int size = m_pool.size() + 1;
+
+// Create a new entry
+fillPool(size);
+
+// Set the index pointer to the new connection if one
+// was created
+if (size == m_pool.size()) {
+index = size - 1;
+}
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+return index;
+}
+
+/**
+* <p>Brings the pool to the given size
+*/
+private synchronized void fillPool(int size) throws Exception
+{
+boolean useProperties = true;
+String userID = null;
+String password = null;
+
+// If the only properties present are the user id and
+// password, get the connection using them instead of
+// the properties object
+if (m_JDBCProperties != null) {
+
+// Make sure there are only 2 properties, and they are
+// the user id and password
+if (m_JDBCProperties.size() == 2) {
+userID =
+getPropertyIgnoreCase(m_JDBCProperties, "user");
+password =
+getPropertyIgnoreCase(m_JDBCProperties, "password");
+
+// If all we've got is a user id and password then
+// don't use the properties
+if ((userID != null) && (password != null)) {
+useProperties = false;
+}
+}
+
+}
+
+// Loop while we need to create more connections
+while (m_pool.size() < size) {
+
+ConnectionObject co = new ConnectionObject();
+
+// Create the connection
+if (useProperties) {
+co.con = DriverManager.getConnection(m_JDBCConnectionURL,
+m_JDBCProperties);
+}
+else {
+co.con = DriverManager.getConnection(m_JDBCConnectionURL,
+userID, password);
+}
+
+// Do some sanity checking on the first connection in
+// the pool
+if (m_pool.size() == 0) {
+
+// Get the maximum number of simultaneous connections
+// as reported by the JDBC driver
+java.sql.DatabaseMetaData md = co.con.getMetaData();
+m_MaxConnections = md.getMaxConnections();
+}
+
+// Give a warning if the size of the pool will exceed
+// the maximum number of connections allowed by the
+// JDBC driver
+if ((m_MaxConnections > 0) &&
+(size > m_MaxConnections)) {
+trace("WARNING: Size of pool will exceed safe maximum of " +
+m_MaxConnections);
+}
+
+// Clear the in use flag
+co.inUse = false;
+
+// Set the last access time
+touch(co);
+
+m_pool.addElement(co);
+}
+}　  </pre>
+    图9.18 创建一个初始连接池
+    <p>　　正如你所看到的，所有的连接被保存在一个称作ConnectionObjdect的包装对象中，这个对象中还有使用计数以及上一次访问时间等信息。ConnectionObject被保存在全局向量中。请注意我们是怎样使用DatabaseMetaData来查询JDBC驱动程序同时允许的最大连接数量的。另外，还要注意我们创建了一个计时器线程，它可以回调ConnectionPool对象，这样就可以处理连接的超时和一般的日常工作了。检查那些在连接池外关闭的连接是最重要的事情之一。应用程序可能会不适当地关闭一个连接。可以通过在每一个时钟周期(20秒)检查所有的连接来确保它们仍然打开。如果一个连接已经关闭，那么就将它从连接池中删除并创建一个新的连接取代它。 <br>
+      图9.19显示了最重要的getConnection方法，这个方法在连接池中找出一个可用的连接(必要时创建一个新连接)，并将这个连接返回给调用程序。 </p>
+    <pre class="code"> /**
+* <p>Gets an available JDBC Connection. Connections will be
+* created if necessary, up to the maximum number of connections
+* as specified in the configuration file.
+*
+* @return JDBC Connection, or null if the maximum
+* number of connections has been exceeded
+*/
+public synchronized java.sql.Connection getConnection()
+{
+// If there is no pool it must have been destroyed
+if (m_pool == null) {
+return null;
+}
+
+java.sql.Connection con = null;
+ConnectionObject connectionObject = null;
+int poolSize = m_pool.size();
+
+// Get the next available connection
+for (int i = 0; i < poolSize; i++) {
+
+// Get the ConnectionObject from the pool
+ConnectionObject co = (ConnectionObject)
+m_pool.elementAt(i);
+
+// If this is a valid connection and it is not in use,
+// grab it
+if (co.isAvailable()) {
+connectionObject = co;
+break;
+}
+}
+
+// No more available connections. If we aren't at the
+// maximum number of connections, create a new entry
+// in the pool
+if (connectionObject == null) {
+if ((m_ConnectionPoolMax < 0) ||
+((m_ConnectionPoolMax > 0) &&
+(poolSize < m_ConnectionPoolMax))) {
+
+// Add a new connection.
+int i = addConnection();
+
+// If a new connection was created, use it
+if (i >= 0) {
+connectionObject = (ConnectionObject)
+m_pool.elementAt(i);
+}
+}
+else {
+trace("Maximum number of connections exceeded");
+}
+}
+
+// If we have a connection, set the last time accessed,
+// the use count, and the in use flag
+if (connectionObject != null) {
+connectionObject.inUse = true;
+connectionObject.useCount++;
+touch(connectionObject);
+con = connectionObject.con;
+}
+
+return con;
+}　</pre>
+    图9.19 getConnection 源代码
+    <p>　　图9.20显示了close方法。用ConnectionPool的close方法来关闭连接(不一定真的关闭这个连接)，这个连接可以被放到连接池中以备下次使用。</p>
+    <p> 　　/**<br>
+      * Places the connection back into the connection pool,<br>
+      * or closes the connection if the maximum use count has<br>
+      * been reached<br>
+      *<br>
+      * @param Connection object to close<br>
+      */<br>
+      public synchronized void close(java.sql.Connection con)<br>
+      {<br>
+      // Find the connection in the pool<br>
+      int index = find(con);<br>
+      <br>
+      if (index != -1) {<br>
+      ConnectionObject co = (ConnectionObject)<br>
+      m_pool.elementAt(index);<br>
+      <br>
+      // If the use count exceeds the max, remove it from<br>
+      // the pool.<br>
+      if ((m_ConnectionUseCount &gt; 0) &amp;&amp;<br>
+      (co.useCount &gt;= m_ConnectionUseCount)) {<br>
+      trace(&quot;Connection use count exceeded&quot;);<br>
+      removeFromPool(index);<br>
+      }<br>
+      else {<br>
+      // Clear the use count and reset the time last used<br>
+      touch(co);<br>
+      co.inUse = false;<br>
+      }<br>
+      }<br>
+      }<br>
+      图9.20 close源代码</p>
+    <p>　　ConnectionPool的例子：本地连接池<br>
+      现在我们将这个ConnectionPool对象嵌入到一个servlet中去。我们重新编写前面提到的EmployeeList 
+      servlet，让它使用ConnectionPool——我们称之为FastEmployeeList1。首先我们需要定义一个ConnectionPool的实例变量，以保存连接池的本地副本(如图9.21所示)。 </p>
+    <pre class="code">　package javaservlets.db;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+/**
+* <p>This is a simple servlet that will use JDBC to gather all
+* of the employee information from a database and format it
+* into an HTML table. This servlet uses a local connection
+* pool.
+*/
+
+public class FastEmployeeList1 extends HttpServlet
+{
+// Our connection pool. Note that instance variables are
+// actually global to all clients since there is only
+// one instance of the servlet that has multiple threads
+// of execution
+javaservlets.jdbc.ConnectionPool m_connectionPool;　</pre>
+    图9.21 定义一个初始变量
+    </p>
+    <p>　　尽管在实例变量的上面已经有了许多注释，仍然有必要在这里重复一下：你可以考虑将这个实例变量分配为全局变量以便在servlet中使用。原由是在一个servlet实例中可能会执行着多个线程。<br>
+      现在我们重写servlet的init和destroy方法来创建和销毁连接池(见图9.22)。 </p>
+    <pre class="code"> /**
+* <p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+
+// Create our connection pool
+m_connectionPool = new javaservlets.jdbc.ConnectionPool();
+
+// Initialize the connection pool. This will start all
+// of the connections as specified in the connection
+// pool configuration file
+try {
+m_connectionPool.initialize();
+}
+catch (Exception ex) {
+// Convert the exception
+ex.printStackTrace();
+throw new ServletException
+("Unable to initialize connection pool");
+}
+}
+
+/**
+* <p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+// Tear down our connection pool if it was created
+if (m_connectionPool != null) {
+m_connectionPool.destroy();
+}
+super.destroy();
+}　　</pre>
+    图9.22 重写int和destroy方法
+    </p>
+    <p>　　接下来，我们仅仅是将原来的代码改为用ConnectionPool对象来取得连接，而不是向JDBC驱动程序管理器请求一个新连接，在查询结束之后，我们还要调用ConnectionPool对象的close方法，以释放我们所使用的连接。如图9.23所示。 </p>
+    <pre class="code"> 　try {
+
+// Get an available connection from our connection pool
+con = m_connectionPool.getConnection();
+
+// Create a statement object that we can execute queries
+// with
+stmt = con.createStatement();
+
+// Execute the query
+rs = stmt.executeQuery(query);
+
+// Format the results into an HTML table
+rowCount = formatTable(rs, out);
+
+}
+catch (Exception ex) {
+// Send the error back to the client
+out.println("Exception!");
+ex.printStackTrace(out);
+rc = false;
+}
+finally {
+try {
+// Always close properly
+if (rs != null) {
+rs.close();
+}
+if (stmt != null) {
+stmt.close();
+}
+if (con != null) {
+// Put the connection back into the pool
+m_connectionPool.close(con);
+}
+}
+catch (Exception ex) {
+// Ignore any errors here
+}
+}　</pre>
+    图9.23 使用ConnectionPool对象
+    </p>
+    <p>　　这个servlet被编译并配置到你的Web服务器上之后，你就可以看到与原来的EmployeeList相比，它的性能得到了显著的提高。如图9.24所示。回头看一看图9.12，请注意和图9.24比较查询所用的时间。真是了不得！(注：不用连接池的时间是：7 
+      rows in 3510ms，用连接池的是：7 rows in 60ms)<br>
+      建立连接池所需的所有时间都花在servlet的init方法中。请注意init方法只在servlet第一次加载时调用一次，你还可以配置你的Web服务器，使它在系统启动时就加载这个servlet，这样，就是第一个用户也不必等待连接池的创建了。 </p>
+    <p>　　ConnectionPool的例子：全局连接池<br>
+      还能更好一点吗？前面的例子使用的连接池对于servlet来说是本地的，现在我们来看一种使连接池对所有servlet都可用的办法。为了实现这种办法，我们编写一个简单的servlet，这个servlet拥有连接池，而且会在系统启动时被加载。其他在同一Java虚拟机上运行的servlet都可以通过标准的API调用来引用这个servlet。<br>
+      图 9.25 显示了这个负责连接池的servlet(ConnectionServlet)的源程序。</p>
+    <pre class="code">　package javaservlets.db;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+/**
+* This is a simple servlet that holds a global connection
+* pool.
+*/
+
+public class ConnectionServlet extends HttpServlet
+{
+// Our connection pool. 
+javaservlets.jdbc.ConnectionPool m_connectionPool;
+
+/**
+* Get a JDBC connection from the pool
+*
+* @return JDBC connection
+*/
+public java.sql.Connection getConnection() throws Exception
+{
+java.sql.Connection con = null;
+if (m_connectionPool != null) {
+con = m_connectionPool.getConnection();
+}
+return con;
+}
+
+/**
+* Closes the given JDBC connection
+*
+* @param con JDBC Connection
+*/
+public void close(java.sql.Connection con)
+{
+if (m_connectionPool != null) {
+m_connectionPool.close(con);
+}
+}
+/**
+* Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+
+// Create our connection pool
+m_connectionPool = new javaservlets.jdbc.ConnectionPool();
+
+// Initialize the connection pool. This will start all
+// of the connections as specified in the connection
+// pool configuration file
+try {
+m_connectionPool.initialize();
+//("javaservlets.db.FastEmployeeList.cfg");
+}
+catch (Exception ex) {
+// Convert the exception
+ex.printStackTrace();
+throw new ServletException
+("Unable to initialize connection pool");
+}
+}
+
+/**
+* <p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+// Tear down our connection pool if it was created
+if (m_connectionPool != null) {
+m_connectionPool.destroy();
+}
+super.destroy();
+}
+
+}　</pre>
+    图9.25 ConnectionServlet的源代码
+    <p>　　再次重申，我们在init方法中创建连接池并在destroy方法中销毁它。请注意这两个方法都被加入到可以公共访问的getConnection和close方法中。<br>
+      新的ConnectionServlet servlet用起来非常容易。我们所做的就是用名字查找这个servlet然后取得它的一个引用(见图9.26)。
+    <pre class="code">//Get the ConnectionServlet that holds the
+//connection pool
+ServletConfig config = getServletConfig();
+ServletContext context = config.getServletContext();
+Servlet servlet = context.getServlet("ConnectionServlet");
+if(servlet==null){
+throw new ServletException("ConnectionServlet not started");
+}
+ConnectionServlet conServlet = (ConnectionServlet)servlet;</pre>
+    图9.26 引用其他servlet程序
+    <p>　　这个称作FastEmployeeList2的servlet的其他部分和FastEmployeeList1一模一样。你在Web服务器上配置这个ConnectioonServlet 
+      servlet的时候，你一定要在系统启动时加载它，否则，对getServlet的调用就会失败。<br>
+      图9.27 显示了FastEmployeeList2的输出。</p>
+    <h3><a name="932" id="932"></a>9.3.2 版本2.1的共享资源</h3>
+    <p>　　如果你用的是Java Servlet Development Kit版本2.1或者更高版本，前面我们用来取得全局连接池的方法就不行了。这是因为由于状态和安全上的考虑，getServlet方法已经被弃用了。调用getServlet的时候，所要找的servlet可能处在未知的状态。比如，如果ConnectionServlet用了很长时间才创建了连接池，那么我们在它初始化结束之前对它的引用就会造成不可预期的结果。另外，也考虑到允许任何servlet访问在同一servlet引擎上运行的其他servlet的所有方法所带来的安全方面的风险。<br>
+      真的没有希望了吗？并非如此。尽管不能访问所有正在运行的servlet，servlet现在可以显式地将任何它想要共享的资源放到当前的servlet上下文中。servlet当然也就可以将它自己的引用放在上下文中，这样我们就可以解决不能使用getServlet调用所带来的问题了。值得注意的是大多数servlet引擎为所有正在运行的servlet只提供一个上下文，而支持虚拟主机的引擎会为每一个主机维护不同的上下文。servlet引擎也可以将一个上下文赋给一组servlet。 <br>
+      修改ConnectionServlet以使用属性是非常简单的，如图9.28所示，请注意在初始化连接池之后，我们用一个预定义的键将一个ConnectionServlet的引用放在servlet的上下文中。</p>
+    <pre class="code">　/**
+* This is a simple servlet that holds a global connection
+* pool. The Servlet context is used to store a named attribute
+* (this servlet) so that other servlets have access to the
+* connection pool
+*/
+
+public class ConnectionServlet_21 extends HttpServlet
+{
+// Our connection pool. 
+javaservlets.jdbc.ConnectionPool m_connectionPool;
+
+// Context attribute key
+public static String KEY = "javaservlets.db.ConnectionServlet_21";
+
+/**
+* <p>Get a JDBC connection from the pool
+*
+* @return JDBC connection
+*/
+public java.sql.Connection getConnection() throws Exception
+{
+java.sql.Connection con = null;
+if (m_connectionPool != null) {
+con = m_connectionPool.getConnection();
+}
+return con;
+}
+
+/**
+* <p>Closes the given JDBC connection
+*
+* @param con JDBC Connection
+*/
+public void close(java.sql.Connection con)
+{
+if (m_connectionPool != null) {
+m_connectionPool.close(con);
+}
+}
+
+/**
+* <p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+
+// Create our connection pool
+m_connectionPool = new javaservlets.jdbc.ConnectionPool();
+
+// Initialize the connection pool. This will start all
+// of the connections as specified in the connection
+// pool configuration file
+try {
+m_connectionPool.initialize();
+}
+catch (Exception ex) {
+// Convert the exception
+ex.printStackTrace();
+throw new ServletException
+("Unable to initialize connection pool");
+}
+
+// Add this servlet to the context so that other servlets
+// can find us
+getServletContext().setAttribute(KEY, this);
+}
+
+/**
+* <p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+// Remove the attribute from the context
+getServletContext().removeAttribute(KEY);
+
+// Tear down our connection pool if it was created
+if (m_connectionPool != null) {
+m_connectionPool.destroy();
+}
+super.destroy();
+}
+
+}　</pre>
+    图9.28 ConnectionServlet_21基于JDSK2.1的源代码
+    <p>　　既然有ConnectionServlet(包含了连接池)的引用被放在上下文中，我们就可以修改FastEmployeeList2 
+      servlet，用getAttribute方法来取得它。如图9.29所示。</p>
+    <pre class="code"> //Get the ConnectionServlet that holds the
+//connection pool
+ServletConfig config = getServletConfig();
+ServletContext context = config.getServletContext();
+Object o = context.getAttribute(ConnectionServlet_21.KEY);
+if(o==null){
+throw new ServletException("ConnectionServlet not started");
+}
+ConnectionServlet_21 conServlet = (ConnectionServlet_21)o;　　</pre>
+    图9.29 在JDSK2.1中获得资源
+    <h2><a name="94" id="94"></a>9.4 使用图像</h2>
+    <p>　　所有Web页面的一个重要的特征就是包括图像在内的可视的内容。前面我们所用到的employee表中就有一列保存了每一个雇员的图像。将这些图像加入到Web中非常容易，仅仅是从JDBC中读取图像信息，设置HTTP响应首部，然后将原始数据发送到客户端就可以了。客户端负责在浏览器中正确地显示这些图像。 </p>
+    <h3><a name="941" id="941"></a>9.4.1 使用图像的例子：ImageServer</h3>
+    <p>　　为了处理数据库中的图像信息，我们来看一看这个叫做ImageServer的servlet。这个servlet接收一个指定了图像位置的参数然后将图像返回给客户端。我们已经看到了如何使用连接池，使用连接池可以保证我们获得足够的性能。这个servlet的主要逻辑包括执行查询、读取二进制数据、向输出流中写入数据，而客户端的工作正好相反。如图9.30所示。</p>
+    <pre class="code">　package javaservlets.db;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.sql.*;
+
+/**
+* <p>This servlet will query the database for a stored binary
+* image, read it, and return it to the client.
+*/
+
+public class ImageServer extends HttpServlet
+{
+// Our connection pool. Note that instance variables are
+// actually global to all clients since there is only
+// one instance of the servlet that has multiple threads
+// of execution
+javaservlets.jdbc.ConnectionPool m_connectionPool;
+
+/**
+* <p>Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Get the table to query
+String tableName = req.getParameter("table");
+
+// Get the column to query
+String columnName = req.getParameter("column");
+
+// Get the 'where' clause for the query
+String whereClause = req.getParameter("where");
+
+// Attempt to get the image
+getImage(resp, tableName, columnName, whereClause);
+}
+
+/**
+* <p>Reads the database for an image and outputs that image
+* to the client
+*
+* @param resp The response from the servlet
+* @param table The name of the table containing the data
+* @param column The column name of the stored image
+* @param where The SQL where clause to uniquely identify
+* the row
+*/
+private void getImage(HttpServletResponse resp,
+String table, String column,
+String where)
+throws java.io.IOException
+{
+
+// Format the SQL string
+String sql = "select " + column + " from " + table +
+" where " + where;
+
+// The JDBC Connection object
+Connection con = null;
+
+// The JDBC Statement object
+Statement stmt = null;
+
+// The JDBC ResultSet object
+ResultSet rs = null;
+
+try {
+
+// Get an available connection from our connection pool
+con = m_connectionPool.getConnection();
+
+// Create a statement object that we can execute queries
+// with
+stmt = con.createStatement();
+
+// Execute the query
+rs = stmt.executeQuery(sql);
+
+// If this is an empty result set, send back a nice
+// error message
+if (!rs.next()) {
+resp.setContentType("text/html");
+// Create a PrintWriter to write the response
+java.io.PrintWriter pout =
+new java.io.PrintWriter(resp.getOutputStream());
+
+pout.println("No matching record found");
+pout.flush();
+pout.close();
+}
+
+// We have results! Read the image and write it to
+// our output stream
+resp.setContentType("image/gif");
+
+// Get the output stream
+javax.servlet.ServletOutputStream out =
+resp.getOutputStream();
+
+// Get an input stream to the stored image
+java.io.InputStream in = rs.getBinaryStream(1);
+
+// Some database systems may not be able to tell us
+// how big the data actuall is. Let's read all of it
+// into a buffer.
+java.io.ByteArrayOutputStream baos =
+new java.io.ByteArrayOutputStream();
+
+byte b[] = new byte[1024];
+while (true) {
+int bytes = in.read(b);
+
+// If there was nothing read, get out of loop
+if (bytes == -1) {
+break;
+}
+
+// Write the buffer to our byte array
+baos.write(b, 0, bytes);
+}
+
+// Now we have the entire image in the buffer. Get
+// the length and write it to the output stream
+b = baos.toByteArray();
+
+resp.setContentLength(b.length);
+out.write(b, 0, b.length);
+out.flush();
+out.close();
+}
+catch (Exception ex) {
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Create a PrintWriter to write the response
+java.io.PrintWriter pout =
+new java.io.PrintWriter(resp.getOutputStream());
+
+pout.println("Exception!");
+ex.printStackTrace(pout);
+pout.flush();
+pout.close();
+}
+finally {
+try {
+// Always close properly
+if (rs != null) {
+rs.close();
+}
+if (stmt != null) {
+stmt.close();
+}
+if (con != null) {
+// Put the connection back into the pool
+m_connectionPool.close(con);
+}
+}
+catch (Exception ex) {
+// Ignore any errors here
+}
+}
+
+}
+
+/**
+* <p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+
+// Create our connection pool
+m_connectionPool = new javaservlets.jdbc.ConnectionPool();
+
+// Initialize the connection pool. This will start all
+// of the connections as specified in the connection
+// pool configuration file
+try {
+m_connectionPool.initialize();
+}
+catch (Exception ex) {
+// Convert the exception
+ex.printStackTrace();
+throw new ServletException
+("Unable to initialize connection pool");
+}
+}
+
+/**
+* <p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+
+public void destroy()
+{
+// Tear down our connection pool if it was created
+if (m_connectionPool != null) {
+m_connectionPool.destroy();
+}
+super.destroy();
+}
+
+}　</pre>
+    图9.30 处理数据库中的图像
+    <p>　　请注意我们是如何设置应答的内容类型的。如果发生了异常，内容类型被设置成text/html，这样，我们就可以给客户端发送可理解的信息。如果正确地读入了图像信息，那么内容类型就被设置为image/gif，这样，客户端就可以知道接下来的数据是图像信息。内容类型必须在所有数据之前被写入输出流。我们还必须设置原始的图像数据的大小。取得图像数据大小最可靠的办法是将这个二进制列的全部内容都读到一个ByteArrayOutputStream中，这个ByteArrayOutputStream可以将所有数据缓存在一个字节数组中，当所有的数据都读出来的时候，我们设置内容的长度并且将这个缓冲输出到输出流中。<br>
+      ImageServlet servlet有三个参数：<br>
+      1.table——要查询的数据库表的名称<br>
+      2.column——包括图像信息的列的名称<br>
+      3.where——确定要读取的记录的SQL WHERE从句<br>
+      下面是调用ImageServlet的一个例子：<br>
+      servlet/ImageServlet?table=Employee&amp;column=Picture&amp;where=Empno=1<br>
+      请注意参数和servlet名字之间用?号隔开，而参数和参数之间用&amp;号隔开。 </p>
+    <h3><a name="942" id="942"></a>9.4.2 在EmployeeList中加入图像</h3>
+    <p>　　既然我们已经有了可以返回图像的sevlet，我们就可以升级我们的EmployeeList，使它可以包含一个到雇员图像的一个链接。这个新的servlet被叫做EmployeeList2，在随书光盘中可以找到它的完整代码。图9.31显示了用来在HTML表格中插入一行的Java代码。点击的时候，会调用ImageServlet，而ImageServlet将图像信息返回。
+    <pre class="code">//Add a special column in the table for the picture
+out.println("&lt;td>Click");
+out.println("&lt;a href=/servlet/ImageServer?" +
+"talbe=Employee&amp"+
+"column=Picture&amp"+
+"where=Empno="+empno+">here&lt;/a>");
+out.println("&lt;/td>");</pre>
+    图9.31 使用servlet程序ImageServer
+    <p> 　　请注意作为参数分割符的&amp;被替换为&amp;amp。这是因为&amp;是HTML用来指出字符实体插入点的保留字符。为了绕过这个问题，我们不得不将所有的&amp;都用它的字符实体&amp;#38或者&amp;amp来代替。<br>
+      将ImageServer和EmployeeList正确地配置在Web服务器上之后，调用EmployeeList2就会产生如图9.32的结果。<br>
+      请注意在表格中的每一行中都有一个到雇员图像的链接。图9.33显示了单击某一栏所产生的结果。请注意在浏览器的地址域中所显示的完整的URL。</p>
+    <h2> <a name="95" id="95"></a>9.5 小结</h2>
+    <p>　　我们在本章中介绍了许多基础知识。JDBC不是一个小话题，不过我希望你现在可以明确的知道它是什么？JDBC驱动程序有哪些类型，以及编写JDBC应用程序的基本步骤。我希望你还能够体会到使用servlet在Web上发布数据库信息是多么的容易。JDBC可真是个令人激动的东西！<br>
+      我们还介绍了提高可用性和性能的两种方法——将输出分在多页中显示以及使用连接池。这两种技术都是建设工业强度JDBC Web解决方案的重要基石。<br>
+      在下一章中，我们将离开静态HTML页的世界，去看一看动态的Java applet世界。我们将看到如何通过HTTP遂道技术在applet中调用servlet的方法。
+    <div class="rpindex"><a href="10-1.html"> 下一页</a><a href="9-1.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

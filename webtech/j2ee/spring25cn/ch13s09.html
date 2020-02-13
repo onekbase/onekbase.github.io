@@ -1,0 +1,663 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="mvc-formtaglib"></a>13.9.&#160;使用Spring的表单标签库</h2></div></div></div>
+<p>从2.0版本开始，如果使用JSP和Spring Web MVC的话，Spring提供了一套支持数据绑定的标签集合，用于处理表单元素。
+    每个标签所支持的属性集合和与其对应的HTML标签相同，这就让这些标签看起来很熟悉，而且用起来很直观。
+    由这些标签库生成的HTML页面符合HTML 4.01/XHTML 1.0标准。
+    </p>
+<p>与其它表单/输入标签库不同，Spring的表单标签库与Spring Web MVC集成在一起，
+    使标签可以使用命令对象（command object）和你的控制器处理的参考数据（reference data）。
+    就像下面这些例子展示的一样，表单标签让JSP更易于开发、阅读和维护。
+    </p>
+<p>让我们进入表单标签的领域，并通过一个例子研究每个标签如何使用。
+    当某些标签需要更进一步的解释时，我们已经把所生成的HTML片段也一起列了进来。
+    </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-configuration"></a>13.9.1.&#160;配置</h3></div></div></div>
+<p>Spring的表单标签库包含在<code class="literal">spring.jar</code>中。
+      这个库的描述符（descriptor)叫做<code class="literal">spring-form.tld</code>。
+      </p>
+<p>要使用这个库中的标签，在JSP页面的开头加入下面声明：</p>
+<pre class="code">&lt;%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %&gt;</pre>
+<p>在上面的声明中，<code class="literal">form</code>就是为想要使用的这个库中的标签所确定的标签命名前缀。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-formtag"></a>13.9.2.&#160;<code class="literal">form</code>标签</h3></div></div></div>
+<p>这个标签会生成一个HTML的“form”标签，同时为内部标签的绑定暴露了一个绑定路径（binding path）。
+      它把命令对象（command object）放在<code class="literal">PageContext</code>中，这样内部的标签就可以访问这个命令对象了。
+      <span class="emphasis"><em>这个库中的其他标签都是<code class="literal">form</code>标签的嵌套标签</em></span>。
+      </p>
+<p>假设我们有一个叫做<code class="classname">User</code>的领域对象，它是一个JavaBean，
+      拥有诸如<code class="literal">firstName</code>和<code class="literal">lastName</code>这样的属性。
+      我们将把它当作返回<code class="literal">form.jsp</code>的表单控制器的表单支持对象（form backing object)。
+      下面是一个<code class="literal">form.jsp</code>可能的样子的例子：
+      </p>
+<pre class="code">&lt;form:form&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="firstName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="lastName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+<p>上面<code class="literal">firstName</code>和<code class="literal">lastName</code>的值是从由页面控制器放置在<code class="interfacename">PageContext</code>中的命令对象中得到的。
+      请继续读下去来看几个关于如何使用<code class="literal">form</code>标签的内部标签的例子。
+      </p>
+<p>生成的HTML看起来就是一个标准的form：</p>
+<pre class="code">&lt;form method="POST"&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+          &lt;td&gt;First Name:&lt;/td&gt;
+          &lt;td&gt;&lt;input name="firstName" type="text" value="Harry"/&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Last Name:&lt;/td&gt;
+          &lt;td&gt;&lt;input name="lastName" type="text" value="Potter"/&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td colspan="2"&gt;
+            &lt;input type="submit" value="Save Changes" /&gt;
+          &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form&gt;</pre>
+<p>上面的JSP有一个预设前提，就是表单支持对象（form backing）的变量名是“<code class="literal">command</code>”。
+      如果你将这个表单支持对象用其他名称加以定义（这可算是一种最佳实践），你就可以将这个命名变量绑定到表单上，如下例所示：
+      </p>
+<pre class="code">&lt;form:form <em class="lineannotation"><span class="lineannotation"><span class="bold"><strong>commandName="user"</strong></span></span></em>&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="firstName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="lastName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-inputtag"></a>13.9.3.&#160;<code class="literal">input</code>标签</h3></div></div></div>
+<p>这个标签生成一个“text”类型的HTML“input”标签。
+      关于这个标签的示例，请见<a href="ch13s09.html#mvc-formtaglib-formtag" title="13.9.2.&#160;form标签">第&#160;13.9.2&#160;节 “<code class="literal">form</code>标签”</a>。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-checkboxtag"></a>13.9.4.&#160;<code class="literal">checkbox</code>标签</h3></div></div></div>
+<p>这个标签生成一个“checkbox”类型的HTML“input”标签。</p>
+<p>让我们假设我们的<code class="classname">User</code>有比如新闻订阅和其他一组业余爱好这样的偏好。
+      下面就是一个<code class="classname">Preferences</code>类的例子：
+      </p>
+</div>
+<pre class="code">public class Preferences {
+
+    private boolean receiveNewsletter;
+
+    private String[] interests;
+
+    private String favouriteWord;
+
+    public boolean isReceiveNewsletter() {
+        return receiveNewsletter;
+    }
+
+    public void setReceiveNewsletter(boolean receiveNewsletter) {
+        this.receiveNewsletter = receiveNewsletter;
+    }
+
+    public String[] getInterests() {
+        return interests;
+    }
+
+    public void setInterests(String[] interests) {
+        this.interests = interests;
+    }
+
+    public String getFavouriteWord() {
+        return favouriteWord;
+    }
+
+    public void setFavouriteWord(String favouriteWord) {
+        this.favouriteWord = favouriteWord;
+    }
+}</pre>
+<p><code class="literal">form.jsp</code>如下：</p>
+<pre class="code">&lt;form:form&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Subscribe to newsletter?:&lt;/td&gt;
+            <em class="lineannotation"><span class="lineannotation">&lt;%-- Approach 1: Property is of type <code class="classname">java.lang.Boolean</code> --%&gt;</span></em>
+            &lt;td&gt;&lt;form:checkbox path="preferences.receiveNewsletter"/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Interests:&lt;/td&gt;
+            &lt;td&gt;
+                <em class="lineannotation"><span class="lineannotation">&lt;%-- Approach 2: Property is of an array or of type <code class="interfacename">java.util.Collection</code> --%&gt;</span></em>
+                Quidditch: &lt;form:checkbox path="preferences.interests" value="Quidditch"/&gt;
+                Herbology: &lt;form:checkbox path="preferences.interests" value="Herbology"/&gt;
+                Defence Against the Dark Arts: &lt;form:checkbox path="preferences.interests"
+                    value="Defence Against the Dark Arts"/&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Favourite Word:&lt;/td&gt;
+            &lt;td&gt;
+                <em class="lineannotation"><span class="lineannotation">&lt;%-- Approach 3: Property is of type <code class="classname">java.lang.Object</code> --%&gt;</span></em>
+                Magic: &lt;form:checkbox path="preferences.favouriteWord" value="Magic"/&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+<p>有三种<code class="literal">checkbox</code>标签的使用方法满足你对checkbox的需求。</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>第一种用法：若绑定值是<code class="literal">java.lang.Boolean</code>类型，则值为<code class="literal">true</code>时，<code class="literal">input(checkbox)</code>就标记为选中。其<code class="literal">value</code>属性对应于<code class="literal">setValue(Object)</code>值的属性的解析值。</p></li>
+<li><p>第二种用法：若绑定值是<code class="literal">array</code>或<code class="interfacename">java.util.Collection</code>类型，则当设定的<code class="literal">setValue(Object)</code>值出现在绑定的<code class="interfacename">Collection</code>中时，<code class="literal">input(checkbox)</code>就标记为选中。</p></li>
+<li><p>第三种用法：若绑定值为其他类型，则当设定的<code class="literal">setValue(Object)</code>与其绑定值相等时，<code class="literal">input(checkbox)</code>才标记为选中。</p></li>
+</ul></div>
+<p>注意，不管使用哪种方法，生成的HTML结构都是相同的。下面是包含一些checkbox的HTML片段：</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Interests:&lt;/td&gt;
+    &lt;td&gt;
+        Quidditch: &lt;input name="preferences.interests" type="checkbox" value="Quidditch"/&gt;
+        &lt;input type="hidden" value="1" name="_preferences.interests"/&gt;
+        Herbology: &lt;input name="preferences.interests" type="checkbox" value="Herbology"/&gt;
+        &lt;input type="hidden" value="1" name="_preferences.interests"/&gt;
+        Defence Against the Dark Arts: &lt;input name="preferences.interests" type="checkbox"
+            value="Defence Against the Dark Arts"/&gt;
+        &lt;input type="hidden" value="1" name="_preferences.interests"/&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>也许没有注意到的是在每个checkbox背后还隐藏了其他字段（field）。
+    当一个HTML页面中的checkbox<span class="emphasis"><em>没有</em></span>被选中时，它的值不会在表单提交时作为HTTP请求参数的一部分发送到服务器端，
+    因此我们需要给这个HTML的奇怪动作想出一个变通方案，来让Spring的表单数据绑定可以工作。
+    <code class="literal">checkbox</code>标签遵循了Spring现有的惯例，就是对于每个checkbox都包含了一个下划线（"_"），再跟上一个隐藏参数。
+    这样一来，就相当于告诉Spring“<span class="quote">
+        <span class="emphasis"><em>这个checkbox在表单中是可见的，并且希望表单数据将要被绑定到的对象能够反映出任意的checkbox的状态</em></span></span>”。
+        </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-checkboxestag"></a>13.9.5.&#160;<code class="literal">checkboxes</code>标签</h3></div></div></div>
+<p>这个标签生成多个“checkbox”类型的HTML“input”标签。</p>
+<p>这一节建立在上一节<code class="classname">checkbox</code>标签的例子之上。
+      有时倾向于并不在JSP页面中列出全部可能的业余爱好，而是想在运行时提供一个可用选项的清单，并把它传递给相应标签。
+      这就是<code class="classname">checkboxes</code>标签的目标。
+      传入一个<code class="classname">Array</code>、<code class="classname">List</code>，或者<code class="classname">Map</code>，
+      并把可用选项包含在“items”属性中。典型的情况是，这个绑定的属性是一个集合，这样它才能持有用户选择的多个值。
+      下面是使用了这个标签的JSP的一个例子：</p>
+</div>
+<pre class="code">&lt;form:form&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Interests:&lt;/td&gt;
+            &lt;td&gt;
+                <em class="lineannotation"><span class="lineannotation">&lt;%-- Property is of an array or of type <code class="interfacename">java.util.Collection</code> --%&gt;</span></em>
+                &lt;form:checkboxes path="preferences.interests" items="${interestList}"/&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+<p>这个例子假定了“interestList”是一个<code class="classname">List</code>，作为模型属性它包含了用于被选择的字符串的值。
+    而在使用一个<code class="classname">Map</code>的情况下，map条目的键被用作值，map条目的值被用作显示的文本标记。
+    也可以使用一个定制的对象，提供“itemValue”属性存放值，“itemLabel”属性存放文本标记。
+    </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-radiobuttontag"></a>13.9.6.&#160;<code class="literal">radiobutton</code>标签</h3></div></div></div>
+<p>这个标签生成一个“radio”类型的HTML“input”标签。</p>
+<p>一个典型用法是把多个标签实例绑定到同一属性上，但它们有不同的值。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Sex:&lt;/td&gt;
+    &lt;td&gt;Male: &lt;form:radiobutton path="sex" value="M"/&gt; &lt;br/&gt;
+        Female: &lt;form:radiobutton path="sex" value="F"/&gt; &lt;/td&gt;
+&lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-radiobuttonstag"></a>13.9.7.&#160;<code class="literal">radiobuttons</code>标签</h3></div></div></div>
+<p>这个标签生成多个“radio”类型的HTML“input”标签。</p>
+<p>正像上面提到的<code class="classname">checkboxes</code>标签，你可能希望传入一个运行时的变量作为可用的选项。
+      这种用法下就需要使用<code class="classname">radiobuttons</code>标签。
+      传入一个<code class="classname">Array</code>、<code class="classname">List</code>，或者<code class="classname">Map</code>，
+      并把可用选项包含在“items”属性中。在使用<code class="classname">Map</code>的情况下，map条目的键被用作值，
+      map条目的值被用作显示的文本标记。也可以使用一个定制的对象，提供“itemValue”属性存放值，“itemLabel”属性存放文本标记。
+      </p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Sex:&lt;/td&gt;
+    &lt;td&gt;&lt;form:radiobuttons path="sex" items="${sexOptions}"/&gt;&lt;/td&gt;
+&lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-passwordtag"></a>13.9.8.&#160;<code class="literal">password</code>标签</h3></div></div></div>
+<p>这个标签生成一个“password”类型的HTML“input”标签，并赋以绑定的值。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Password:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;form:password path="password" /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>请注意默认情况下，口令的值<span class="emphasis"><em>不会</em></span>被显示出来。
+      如果一定要显示口令的值，就把“<code class="literal">showPassword</code>”属性的值置为true。
+      </p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Password:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;form:password path="password" value="^76525bvHGq" showPassword="true" /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-selecttag"></a>13.9.9.&#160;<code class="literal">select</code>标签</h3></div></div></div>
+<p>这个标签生成一个HTML“select”元素。它支持被选中的选项的数据绑定，
+      也支持使用嵌套的<code class="literal">option</code>和<code class="literal">options</code>标签。
+      </p>
+<p>我们假设有一个<code class="classname">User</code>拥有多项专长。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Skills:&lt;/td&gt;
+    &lt;td&gt;&lt;form:select path="skills" items="${skills}"/&gt;&lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>如果这个<code class="literal">User</code>的专长是草药学，那么“Skills”这一行的HTML源代码就如下所示：</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Skills:&lt;/td&gt;
+    &lt;td&gt;&lt;select name="skills" multiple="true"&gt;
+        &lt;option value="Potions"&gt;Potions&lt;/option&gt;
+        &lt;option value="Herbology" selected="selected"&gt;Herbology&lt;/option&gt;
+        &lt;option value="Quidditch"&gt;Quidditch&lt;/option&gt;&lt;/select&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-optiontag"></a>13.9.10.&#160;<code class="literal">option</code>标签</h3></div></div></div>
+<p>这个标签生成一个HTML的“option”。根据绑定的值，它会恰当的设置“selected”属性。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;House:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;form:select path="house"&gt;
+            &lt;form:option value="Gryffindor"/&gt;
+            &lt;form:option value="Hufflepuff"/&gt;
+            &lt;form:option value="Ravenclaw"/&gt;
+            &lt;form:option value="Slytherin"/&gt;
+        &lt;/form:select&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>如果这个<code class="literal">User</code>的宿舍在Gryffindor（Gryffindor是哈利·波特在Hogwarts的宿舍——译者注），
+      那么“House”这一行的HTML源代码就如下所示：</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;House:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;select name="house"&gt;
+            &lt;option value="Gryffindor" selected="selected"&gt;Gryffindor&lt;/option&gt;
+            &lt;option value="Hufflepuff"&gt;Hufflepuff&lt;/option&gt;
+            &lt;option value="Ravenclaw"&gt;Ravenclaw&lt;/option&gt;
+            &lt;option value="Slytherin"&gt;Slytherin&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/td&gt;
+ &lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-optionstag"></a>13.9.11.&#160;<code class="literal">options</code>标签</h3></div></div></div>
+<p>这个标签生成一个HTML的“option”标签的列表。根据绑定的值，它会恰当的设置“selected”属性。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Country:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;form:select path="country"&gt;
+            &lt;form:option value="-" label="--Please Select"/&gt;
+            &lt;form:options items="${countryList}" itemValue="code" itemLabel="name"/&gt;
+        &lt;/form:select&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>如果这个<code class="literal">User</code>生活在英国，那么“Country”这一行的HTML源代码就如下所示：</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Country:&lt;/td&gt;
+    &lt;td&gt;
+        &lt;select name="country"&gt;
+            &lt;option value="-"&gt;--Please Select&lt;/option&gt;
+            &lt;option value="AT"&gt;Austria&lt;/option&gt;
+            &lt;option value="UK" selected="selected"&gt;United Kingdom&lt;/option&gt;
+            &lt;option value="US"&gt;United States&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;</pre>
+<p>上面的例子展示了结合使用<code class="literal">option</code>标签和<code class="literal">options</code>标签产生相同的标准HTML，
+      也让你在JSP中显式的指定一个值只用于显示目的（在它所处的位置），例如例子中的默认字符串：“--Please Select”。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-textAreatag"></a>13.9.12.&#160;<code class="literal">textarea</code>标签</h3></div></div></div>
+<p>这个标签生成一个HTML的“textarea”。</p>
+<pre class="code">&lt;tr&gt;
+    &lt;td&gt;Notes:&lt;/td&gt;
+    &lt;td&gt;&lt;form:textarea path="notes" rows="3" cols="20" /&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;form:errors path="notes" /&gt;&lt;/td&gt;
+&lt;/tr&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-hiddeninputtag"></a>13.9.13.&#160;<code class="literal">hidden</code>标签</h3></div></div></div>
+<p>这个标签使用绑定的值生成类型为“hidden”的HTML“input”标签。
+      在生成的HTML代码中，input标签的值和表单支持对象相应属性的值保持一致。
+      如果要提交一个未绑定的值，就只能使用类型为“hidden”的HTML <code class="literal">input</code>标签了。
+      </p>
+<pre class="code">&lt;form:hidden path="house" /&gt;
+</pre>
+<p>如果我们选择以隐藏形式提交“house”的值，HTML代码将如下所示：</p>
+<pre class="code">&lt;input name="house" type="hidden" value="Gryffindor"/&gt;
+</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-formtaglib-errorstag"></a>13.9.14.&#160;<code class="literal">errors</code>标签</h3></div></div></div>
+<p>这个标签通过一个HTML“span”标签展现字段的错误。它提供了访问由你的控制器或者与你的控制器关联的任何验证器产生的错误的途径。</p>
+<p>假设我们想要在表单提交时显示所有与<code class="literal">firstName</code>和<code class="literal">lastName</code>字段有关的错误。
+      我们为<code class="classname">User</code>类的实例编写了名为<code class="classname">UserValidator</code>的验证器。
+      </p>
+<pre class="code">public class UserValidator implements Validator {
+
+    public boolean supports(Class candidate) {
+        return User.class.isAssignableFrom(candidate);
+    }
+
+    public void validate(Object obj, Errors errors) {
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "firstName", "required", "Field is required.");
+        ValidationUtils.rejectIfEmptyOrWhitespace(errors, "lastName", "required", "Field is required.");
+    }
+}</pre>
+<p><code class="literal">form.jsp</code>将如下所示：</p>
+<pre class="code">&lt;form:form&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="firstName" /&gt;&lt;/td&gt;
+            <em class="lineannotation"><span class="lineannotation">&lt;%-- Show errors for firstName field --%&gt;</span></em>
+            &lt;td&gt;&lt;form:errors path="firstName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="lastName" /&gt;&lt;/td&gt;
+            <em class="lineannotation"><span class="lineannotation">&lt;%-- Show errors for lastName field --%&gt;</span></em>
+            &lt;td&gt;&lt;form:errors path="lastName"  /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+<p>如果我们提交的表单的<code class="literal">firstName</code>和<code class="literal">lastName</code>字段均为空值，
+      HTML页面将如下所示：</p>
+<pre class="code">&lt;form method="POST"&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;input name="firstName" type="text" value=""/&gt;&lt;/td&gt;
+            <em class="lineannotation"><span class="lineannotation">&lt;%-- Associated errors to firstName field displayed --%&gt;</span></em>
+            &lt;td&gt;&lt;span name="firstName.errors"&gt;Field is required.&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;input name="lastName" type="text" value=""/&gt;&lt;/td&gt;
+            <em class="lineannotation"><span class="lineannotation">&lt;%-- Associated errors to lastName field displayed --%&gt;</span></em>
+            &lt;td&gt;&lt;span name="lastName.errors"&gt;Field is required.&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form&gt;</pre>
+<p>如果我们想要显示一个指定页面上的所有错误清单，又该如何呢？
+      下面的例子展示了<code class="literal">errors</code>标签也支持一些基本的通配符功能。
+      </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><code class="literal">path="*"</code>：显示所有错误</p></li>
+<li><p><code class="literal">path="lastName*"</code>：显示所有与<code class="literal">lastName</code>字段有关的错误</p></li>
+</ul></div>
+<p>下面的例子将会在页面头部显示一个错误清单，后面则在每个字段旁边显示该字段特有的错误：</p>
+<pre class="code">&lt;form:form&gt;
+    &lt;form:errors path="*" cssClass="errorBox" /&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="firstName" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;form:errors path="firstName" /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;form:input path="lastName" /&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;form:errors path="lastName"  /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/form:form&gt;</pre>
+<p>HTML代码将如下所示：</p>
+<pre class="code">&lt;form method="POST"&gt;
+    &lt;span name="*.errors" class="errorBox"&gt;Field is required.&lt;br/&gt;Field is required.&lt;/span&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;First Name:&lt;/td&gt;
+            &lt;td&gt;&lt;input name="firstName" type="text" value=""/&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;span name="firstName.errors"&gt;Field is required.&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;Last Name:&lt;/td&gt;
+            &lt;td&gt;&lt;input name="lastName" type="text" value=""/&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;span name="lastName.errors"&gt;Field is required.&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;
+                &lt;input type="submit" value="Save Changes" /&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+&lt;/form&gt;</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

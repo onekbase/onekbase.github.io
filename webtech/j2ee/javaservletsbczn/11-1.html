@@ -1,0 +1,1046 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+
+<div class="lpindex">
+<a href="index.html">首页</a><a href="10-2.html"> 上一页</a><a href="11-2.html"> 下一页</a></div>
+<h1>第11章 编写servlet程序的自动化applet程序(上)  </h1>
+<p>　　在上一章，我们学习了如何使用HTTP和Java Servlet程序调用方法。在这一章中，我们将进行进一步学习并使用计算机自动地生成客户端和服务器的用于产生远程方法调用的必要的程序代码。这就是我们称之为“强力编程”的技术，它就是让计算机为你编写程序的一种程序。</p>
+<h2><b>11.1 编写客户程序总是大同小异</b></h2>
+<p>　　在上一章，你应该已经了解到编写客户代理是一件重复性的工作。原样照搬，每一个方法的基本步骤如下：<br>
+              　　1.创建一个新的内存缓冲区来保存数据流内容。<br>
+              　　2.调用一个辅助方法创建包头。<br>
+              　　3.调用一个辅助方法将请求包发送给服务器。这个方法将返回一个输入流，通过它我们可以读取所有来自服务器的返回值。<br>
+              　　这些步骤在“lite”和HTTP遂道的正规版本中是一致的。但要记住“lite”版本使用的是基本的数据输入、输出流并能够被所有版本的JDK（包括1.0.2）使用。图11.1显示了一个使用“lite”遂道的单一方法调用，而图11.2显示了一个使用正规遂道的单一方法调用。</p>
+            <pre class="code">/**
+* Adds two numbers
+*/
+//注：原的文的double类型是int
+public double add(double a, double b)
+{
+double n = 0;
+try {
+// Create an internal buffer
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+// Create an output stream to write the request
+DataOutputStream out =
+(DataOutputStream) _createHeader(baos, 0);
+
+// Output the parameters
+out.writeDouble(a);
+out.writeDouble(b);
+
+// Invoke the method and read the response
+DataInputStream in =
+(DataInputStream) _invokeMethod(baos.toByteArray());
+
+// Read the return value
+n = in.readDouble();
+
+// Wrap up
+out.close();
+in.close();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+return n;
+}
+图11.1 一个单一的在客户端的“lite”HTTP遂道方法调用
+
+/**
+* Given the year return the corresponding Indianapolis
+* 500 record
+*
+* @param year Year of the race
+* @return Indy 500 record or null if not found
+*/
+public IndyRecord query(int year)
+{
+IndyRecord record = null;
+
+try {
+
+// Set the year parameter
+m_ps.setInt(1, year);
+
+// Execute the query
+ResultSet rs = m_ps.executeQuery();
+
+// Make sure a record exists
+if (rs.next()) {
+
+// Create a new IndyRecord object
+record = new IndyRecord();
+
+// Set the values
+record.year = rs.getInt(1);
+record.driver = rs.getString(2);
+record.speed = rs.getDouble(3);
+}
+rs.close();
+}
+catch (SQLException ex) {
+ex.printStackTrace();
+record = null;
+}
+
+return record;
+}</pre>
+图11.2 一个客户端上的单一HTTP遂道方法调用
+            <p>　　实际方法调用的生成并不重要，重要的地方是每一种类型客户端的操作流程。辅助方法在第10章中已经编写完成，我们在这里将重新利用他们。            </p>
+            <h2><b><a name="112" id="112"></a>11.2 编写服务器应用程序总是大同</b><b>小异</b></h2>
+            <p>　　与客户代理相同，编写服务器端代码存根的工作也是枯燥并且重复性很强的。整理一下你的记忆，基本的服务器端的运行步骤如下：<br>
+              　　1.创建一个用于读取来自客户端请求的输入流。<br>
+              　　2.从会话中获得服务器端对象的实例。<br>
+              　　3.建立响应头。<br>
+              　　4.创建一个内存缓冲区保存响应数据。<br>
+              　　5.读取方法序号确定在服务器对象中调用哪一个方法。<br>
+              　　6.调用相应方法。服务器执行部分将评估方法序号，读取所需参数并调用相应的方法。方法一旦被调用完毕，服务器执行部分将所有返回值写入输出流以返回给客户端。<br>
+              　　7.将响应缓冲区发送给客户端。<br>
+              　　我们在第10章中实现的基本类已经实现了大部分的工作，因此我们所需要关注的只是服务器的执行部分。图11.3显示了“lite”遂道的服务器执行部分，图11.4显示了正规遂道下的执行部分。</p>
+            <pre class="code">/**
+* Invokes the method for the ordinal given. If the method
+* throws an exception it will be sent to the client. 
+*
+* @param Object Server object
+* @param ordinal Method ordinal
+* @param in Input stream to read additional parameters
+* @param out Output stream to write return values
+*/
+public void _invokeMethod(Object serverObject, int ordinal,
+DataInput in, DataOutput out)
+throws Exception
+{
+// Cast the server object
+Math math = (Math) serverObject;
+
+// Cast the input/output streams
+DataInputStream dataIn = (DataInputStream) in;
+DataOutputStream dataOut = (DataOutputStream) out;
+
+// Evaluate the ordinal
+switch (ordinal) {
+case 0: // add
+double a0 = dataIn.readDouble();
+double b0 = dataIn.readDouble();
+double n0 = math.add(a0, b0);
+out.writeDouble(n0);
+break;
+
+case 1: // subtract
+double a1 = dataIn.readDouble();
+double b1 = dataIn.readDouble();
+double n1 = math.subtract(a1, b1);
+out.writeDouble(n1);
+break;
+
+case 2: // multiply
+double a2 = dataIn.readDouble();
+double b2 = dataIn.readDouble();
+double n2 = math.multiply(a2, b2);
+out.writeDouble(n2);
+break;
+
+default:
+throw new Exception("Invalid ordinal: " + ordinal);
+}
+} 　</pre>
+              　　　　图11.3 “lite”HTTP遂道的服务器执行部分<br>
+            </p>
+            <pre class="code">/**
+* Invokes the method for the ordinal given. If the method
+* throws an exception it will be sent to the client. 
+*
+* @param Object Server object
+* @param ordinal Method ordinal
+* @param in Input stream to read additional parameters
+* @param out Output stream to write return values
+*/
+public void _invokeMethod(Object serverObject, int ordinal,
+DataInput in, DataOutput out)
+throws Exception
+{
+// Cast the server object
+Indy indy = (Indy) serverObject;
+
+// Cast the input/output streams
+ObjectInputStream objectIn = (ObjectInputStream) in;
+ObjectOutputStream objectOut = (ObjectOutputStream) out;
+
+// Evaluate the ordinal
+switch (ordinal) {
+case 0: // connect
+boolean b0 = indy.connect();
+objectOut.writeObject(new Boolean(b0));
+break;
+
+case 1: // close
+indy.close();
+break;
+
+case 2: // query
+Integer i2 = (Integer) objectIn.readObject();
+IndyRecord record = indy.query(i2.intValue());
+objectOut.writeObject(record);
+break;
+
+default:
+throw new Exception("Invalid ordinal: " + ordinal);
+}
+}</pre>
+           
+              　　　　图11.4 HTTP遂道的服务器执行部分
+            <p>　　同样，实际方法调用的生成并不重要。注意，两种类型服务器执行部分的主要区别就是它们所使用的输入、输出流的类型不同。这些类型规定了如何在客户和服务器之间整理数据。与客户端的实现相同，我们将重新使用在第10章中开发的那些基本类。</p>
+    <h2><a name="113" id="113"></a>11.3 让Java为你编写客户端和服务器  </h2>
+            <p>　　由于在编写客户端和服务器遂道代码的时候有大量重复性的编程工作，可不可以让别人替你编写这类代码？除了其他的人，另外的东西如何，比如你的计算机？让我们列出需要发生的几个步骤，再看看我们是否可以给每个问题提出一个解决方法。<br>
+              　　1.要被传送的方法所调用的服务器端对象必须要被定义。<br>
+              　　2.必须定义一个新的进程，它可以解释服务器端对象并可以列举出所有要被调用的方法。<br>
+              　　3.对于每一个被调用的方法，都要产生相应的遂道代码。<br>
+              　　第一步非常容易。在上一章中，我们讨论了如何使用Java接口来描述服务器上可用的特定的对象。接口将每种可利用方法的属性（名称、参数和返回值）描述给外部消费者（比如一个applet程序）。通过在客户端使用接口，我们不需要知道（或关心）实际的执行部分，不管它是实际对象还是某种类型的客户代理。<br>
+              　　第二步看起来似乎是一个不可能的任务。但到了本章结束，你就会认为它太简单了。从1.1版本开始，JavaSoft在JDK中加入了一些Reflection 
+              API的调用。Reflection API在java.lang.reflect包中，它允许应用程序考察其他类的内部结构。使用Reflection你能够得到一个所有构造函数、方法所有类属性的列表就像是在不工作状态调用方法。Reflection 
+              API是动态的而不是静态的，在那里你可以看到在运行状态下类的信息而不是编译状态下类的信息。我认为Reflection API是Java语言的最为强大的一个功能，它给予了你在其他高级语言中无法得到的能力（比如C语言）。因此，在下一节我们将开始学习使用Reflcetion 
+              API技术。<br>
+              　　第三步包括生成Java代码并把它存到磁盘文件中。这并不是一个很困难的任务，因此我们将学习通过创建一个作为生成源代码的基础的模板文件来使工作更加容易。稍后你就会看到，我们将创建一些不同的源代码实现“lite”和正规HTTP遂道版本的客户端和服务器。</p>
+            <h3><b><a name="1131" id="1131"></a>11.3.1 使用Reflection API:ShowClass</b></h3>
+            <p>　　如前所述，JDK（从1.1版本开始)中包含的Reflection API使得Java应用程序可以收集其他Java类的信息。你可能没有认识到，在每个类中都建立了Reflection 
+              API；它的出发点是java.lang.Class，这是所有Java类的基础。表11.1列出了作为Reflection API的一部分的java.lang.Class中部分方法的列表。</p>
+            <p> 　　　　　<b>表11.1在java.lang.Class中的Reflection 方法</b><br>
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
+              　　　　<b>方法</b>　　　　　<b>描述</b><br>
+              　　───────────────────────────────── <br>
+              　　getConstructors　返回一个描述当前类中公用构造函数的Constructor<br>
+              　　　　　　　　　　　对象的数组。它包含所有公共的和继承的构造函数<br>
+              　　getDeclaredConstructors　返回一个描述当前类中公用构造函数的<br>
+              　　　　　　　　　　　　　　　 Constructor对象的数组<br>
+              　　getDeclaredFields　返回一个描述当前类中声明域的Field对象的数据<br>
+              　　getDeclaredMethods返回一个描述当前类中声明方法的Method对象的数组<br>
+              　　getFields　返回一个描述当前类中域的Field对象的数组。它包含所有声<br>
+              　　　　　　　　明的和继承的域<br>
+              　　getInterfaces　返回一个描述当前类所继承和实现的所有接口的<br>
+              　　　　　　　　　　Class对象的数组<br>
+              　　getMethods　返回一个描述当前类中方法的Method对象的数组。它包含<br>
+              　　　　　　　　所有声明的和继承的方法<br>
+              　　getModifiers　返回一个编码整数描述Java语言中的修饰符(如<br>
+              　　　　　　　　　abstract，public，class，interface等)<br>
+              　　getName　返回当前类的完整修饰符名称<br>
+              　　getPackage　返回当前类所在包<br>
+              　　getSuperclass　返回一个描述当前类的父类的Class对象，对于<br>
+              　　　　　　　　　　java.lang.Object则返回null<br>
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
+            </p>
+            <p>　　就像你所看到的一样，只要你有一个对某个类对象的引用你就可以发现所有你希望知道的东西。但要注意，对于大多数浏览器，Reflection 
+              API被认为是违反安全规则的，因此你应该限制它在applet中的使用。<br>
+              　　为了更好地讲解Reflecion API，让我们开发一个简单的应用程序——ShowClass，它可以取代Java实用工具javap。javap实用工具显示一个所给类的父类、接口和方法的信息。使用Reflection 
+              API来收集这些信息是轻而易举的事情。<br>
+              　　让我们看一下ShowClass应用程序的基本流程：<br>
+              　　1.从命令行参数中获得要操作的类名。<br>
+              　　2.使用类名得到一个Class对象。<br>
+              　　3.获得这个类的所有父类列表。<br>
+              　　4.获得被这个类继承和实现的所有接口的列表。<br>
+              　　5.获得这个类的所有声明域的列表。<br>
+              　　6.获得这个类的所有声明方法的列表<br>
+              　　7.显示所有信息。<br>
+              　　图11.5显示了收集和显示所有类信息的主要方法。记住有关ShowClass应用程序的完整代码可以在随书配套光盘中找到。</p>
+            <pre class="code"> 　/**
+* Given a class name display the classes extended,
+* interfaces implemented, and declared methods
+*
+* @param className Name of the class to process
+*/
+public void go(String className)
+{
+try {
+// Attempt to load the given class
+
+Class c = Class.forName(className);
+
+// Get the list of classes that it extends
+java.util.Vector extendList = getSuperClasses(c);
+
+// Get the list of interfaces that this class implements
+java.util.Vector interfaceList = getInterfaces(c);
+
+// Get the list of declared fields for this class
+java.util.Vector fields = getFields(c);
+
+// Get the list of declared constructors for this class
+java.util.Vector ctors = getConstructors(c);
+
+// Get the list of declared methods for this class
+java.util.Vector methods = getMethods(c);
+
+// Display the class information
+System.out.println("\n" +
+getModifierString(c.getModifiers()) +
+" " + c.getName());
+
+// Display the extend list
+String indent = " ";
+for (int i = 0; i < extendList.size(); i++) {
+if (i == 0) {
+System.out.println(" extends:");
+}
+System.out.println(indent +
+((String) extendList.elementAt(i)));
+indent += " ";
+}
+
+// Display the implements list
+for (int i = 0; i < interfaceList.size(); i++) {
+if (i == 0) {
+System.out.println(" implements:");
+}
+System.out.println(" " +
+((String) interfaceList.elementAt(i)));
+}
+
+// Display the fields
+for (int i = 0; i < fields.size(); i++) {
+if (i == 0) {
+System.out.println(" Fields:");
+}
+System.out.println(" " + ((String) fields.elementAt(i)));
+}
+
+// Display the constructors
+for (int i = 0; i < ctors.size(); i++) {
+if (i == 0) {
+System.out.println(" Constructors:");
+}
+System.out.println(" " + ((String) ctors.elementAt(i)));
+}
+
+// Display the methods
+for (int i = 0; i < methods.size(); i++) {
+if (i == 0) {
+System.out.println(" Methods:");
+}
+System.out.println(" " + ((String) methods.elementAt(i)));
+}
+
+}
+catch (ClassNotFoundException ex) {
+System.out.println("Class '" + className + "' not found.");
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}</pre>
+图11.5 ShowClass应用程序的主例程
+
+要了解一个Class对象是怎样通过使用Class.forName()方法创建的，这个方法将尝试在当前的CLASSPATH上定位所给的类。如果所给类名定位失败，那么就会抛出一个ClassNotFountException异常。一旦class对象被创建，我们就可以使用Reflection API来收集类信息。图11.6显示了获得类的所有父类的方法。
+
+            <pre class="code">
+/**
+* 
+
+Return a list of all of the super classes for the given
+* class
+*
+* @param c Class to check
+* @return List of super classes
+*/
+public java.util.Vector getSuperClasses(Class c)
+{
+java.util.Vector list = new java.util.Vector();
+
+// Get the first super class
+c = c.getSuperclass();
+
+// Loop while a class exists
+while (c != null) {
+
+// Add the super class name to the list
+list.addElement(c.getName());
+
+// Get the next super class
+c = c.getSuperclass();
+}
+return list;
+}
+</pre>
+图11.6 获得一个父类列表
+
+要了解我们是如何持续地调用getSuperclass()直到一个空值(null)被返回，这个空值意味着我们已经到达了最基本的对象。我们将使用同样的循环来得到所有继承并被实现了的接口(见图11.7)。
+
+<pre class="code">
+/**
+*Returns a list containing all of the interfaces names
+* implemented by the given class. This includes not only
+* the interfaces implemented by the class, but all interfaces
+* implemented by any super classes as well
+*
+* @param c Class to check
+* @return List of implemented interfaces
+*/
+public java.util.Vector getInterfaces(Class c)
+{
+// Keep a hashtable of all of the implemented interfaces
+java.util.Hashtable list = new java.util.Hashtable();
+
+// Loop while a class exists
+while (c != null) {
+
+// Get the interfaces for this class
+getInterfaces(c, list);
+
+// Get the next super class
+c = c.getSuperclass();
+}
+
+// Return a vector with the sorted list
+return sort(list);
+}
+
+/**
+* Get the interfaces implemented for the given
+* class. This routine will be called recursively
+*
+* @param c Class to check
+* @param list Hashtable containing the list of all of the
+* implemented interfaces. Do not allow duplicates.
+*/
+public void getInterfaces(Class c, java.util.Hashtable list)
+{
+// If the class given is an interface add it to the list
+if (c.isInterface()) {
+// Remove if duplicate
+list.remove(c.getName());
+list.put(c.getName(), c.getName());
+}
+
+// Get the interfaces implemented for the class
+Class interfaces[] = c.getInterfaces();
+
+// Loop for each interface
+for (int i = 0; i < interfaces.length; i++) {
+
+// Get the interfaces extended for this interface
+getInterfaces(interfaces[i], list);
+}
+}
+</pre>
+            <p>图11.7 获得一个实现接口列表
+            </p>
+            <p>　　对于同层的每一个类，所有继承并实现了的接口都被收集起来。这一步是十分复杂的，因为每一个接口也有可能继承其他的接口；因此getInterfaces()方法被重复调用。<br>
+              　　接下来，我们需要得到类中所有声明域的列表，这段代码显示在图11.8中。</p>
+            <pre class="code"> 　/**
+* <p>Returns a sorted list of declared fields for the
+* given class
+*
+* @param c Class to check
+* @return List of declared fields
+*/
+public java.util.Vector getFields(Class c)
+{
+java.util.Hashtable list = new java.util.Hashtable();
+
+// Get the list of declared fields
+java.lang.reflect.Field f[] = c.getDeclaredFields();
+
+// Loop for each field
+for (int i = 0; i < f.length; i++) {
+
+// Get the name, type, and modifiers
+String name = f[i].getName();
+String type = f[i].getType().getName();
+String modifiers = getModifierString(f[i].getModifiers());
+
+// Save in hashtable; the key is the field name
+list.put(name, modifiers + " " + decodeType(type)
++ " " + name);
+}
+
+return sort(list);
+}</pre>
+              　　　　图11.8 获得一个声明域列表</p>
+            <p>　　这里要注意的就是如何从域对象中获得Java修饰符并把它们转换为字符串。getModifierString()方法简单地使用静态Modifier.toString()方法将通过getModifiers()返回整数值转换成Java语言表示法。<br>
+              　　图11.9 列出了获取类中所有声明方法的必要代码。</p>
+            <pre class="code"> /**
+* <p>Returns the list of declared contructors for the class
+*
+* @param c Class to check
+* @return List of declared constructors
+*/
+public java.util.Vector getConstructors(Class c)
+{
+java.util.Hashtable list = new java.util.Hashtable();
+
+// Get the list of declared constructors
+java.lang.reflect.Constructor ctors[] =
+c.getDeclaredConstructors();
+
+// Loop for each constructor
+for (int i = 0; i < ctors.length; i++) {
+
+// Get the name, modifiers, and parameter types
+String name = ctors[i].getName();
+String modifiers = getModifierString(ctors[i].getModifiers());
+String params =
+getParameterString(ctors[i].getParameterTypes());
+
+// Save in the Hashtable; the key is the parameter list
+// since it will be unique
+list.put(params, modifiers + " " +
+name + "(" + params + ")");
+}
+return sort(list);
+}　　</pre>
+              　　　　图11.9 获得一个声明方法列表</p>
+            <p>　　这里没什么困难的。我们使用Reflection API得到公用的并遍历了整个列表获得我们感兴趣的信息。在图11.10中显示了我们的应用程序的运行情况，它列出了类java.io.DataOutputStream的内容。</p>
+            <pre class="code">　java javaservlets.reflect.ShowClass java.io.DataOutputStream
+public synchronized java.io.DataOutputStream
+extends:
+java.io.FilterOutputStream
+java.io.OutputStream
+java.lang.Object
+implements:
+java.io.DataOutput
+Fields:
+protected int written
+Constructors:
+public java.io.DataOutputStream(java.io.OutputStream)
+Methods:
+public void flush()
+public final int size()
+public synchronized void write(byte[],int,int)
+public synchronized void write(int)
+public final void writeBoolean(boolean)
+public final void writeByte(int)
+public final void writeBytes(java.lang.String)
+public final void writeChar(int)
+public final void writeChars(java.lang.String)
+public final void writeDouble(double)
+public final void writeFloat(float)
+public final void writeInt(int)
+public final void writeLong(long)
+public final void writeShort(int)
+public final void writeUTF(java.lang.String)
+图11.10 使用java.io.DataOutputStream的ShowClass输出　　</pre>
+            <h3><b><a name="1132" id="1132"></a>11.3.2 编写ServletGen</b></h3>
+            <p>　　现在，作为使用Reflection API专家的你，是将这项技术实际应用于辅助自动生成对HTTP遂道必须的客户端和服务器端代码的实现中的时候了。我们已经深入地学习了客户端和服务器代码并清楚它们是如何重复地被编写。在服务器对象的接口，我们将使用Reflection 
+              API技术来确定被调用的方法并产生适当的Java源代码。</p>
+            <p>　　<b>使用模板</b><br>
+              　　我发现以某些类型的模板开始编写源代码是一件非常美妙的事情。模板是一个规格的文本文件，它可以按照需要进行编辑并包含一些特殊标识符来指示代码生成器将特定的代码片段插入到指定的位置。这样做不仅可以减少代码生成器中的硬代码信息，而且这样做大大提高了代码的可维护性和可读性。<br>
+              　　图11.11显示了我们将使用的客户代理模板实际上，我们将使用4个不同的模板(“lite”和正规遂道的客户端和服务器)，但由于它们几乎完全一致，我们将只注意其中的一个模板。</p>
+            <pre class="code">　/*
+* @(#)%CLIENT_NAME%
+*
+* Generated by %GENERATOR_NAME%
+* on %TIMESTAMP%
+*
+* This software is provided WITHOUT WARRANTY either expressed or
+* implied.
+*
+*/
+
+%PACKAGE_STATEMENT%
+
+import java.io.*;
+import javaservlets.tunnel.client.*;
+
+/**
+* This class implements the client for tunneling
+* calls to the %OBJECT_NAME% object.
+*/
+
+public class %CLIENT_NAME%
+#extends %SUPER_CLASS%
+#implements %INTERFACE_NAME%
+{
+
+#/**
+# * Constructs a new %CLIENT_NAME% for the
+# * given URL. This will create a new %OBJECT_NAME%
+# * object on the server as well.
+# */
+#public %CLIENT_NAME%(String url)
+##throws TunnelException, IOException
+#{
+##// Append the package name if necessary
+###url += "%PACKAGE_NAME%";
+##// Set the URL
+##_setURL(new java.net.URL(url));
+
+##// Initialize the client and server
+##_initialize(); 
+#}
+#%METHODS%
+}</pre>
+图11.11 客户端代理模板
+            <p>　　要注意在每一行开始处的符号“#”。代码生成器将把这些符号用适当的制表符来替换。一些人更喜欢一个制表符（“\t”），而另一些人更倾向于使用一些空格符。你可以定制使用你所喜欢的方式的代码生成器。这里缺省的是空格，因为这正是我喜欢使用的方式。<br>
+              　　你还要注意一些特殊标识符（开关和结尾的“%”号）。这些标识符是代码生成器的指示，它们用来控制将什么类型的代码插入到源文件中。表11.2列出了所有的有效标识符和将什么类型插入到相应位置。</p>
+            <p> 　　　　　　　　　<b>表11.2 代码生成器标识符</b><br>
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
+              　　　　<b>标识符</b>　　　　　<b>描述</b><br>
+              　　───────────────────────────────── <br>
+              　　CLIENT_NAME　　　　客户代理名称<br>
+              　　GENERATOR_NAME　　　创建源代码的代码生成器的名称<br>
+              　　INTERFACE_NAME　　　继承的接口名称<br>
+              　　METHODS　　　　　　代码生成中每个方法的插入点<br>
+              　　OBJECT_NAME　　　　接收遂道方法调用的服务器对象名称<br>
+              　　PACKAGE_STATEMENT　如果生成的类是一个包的一部分，这就是<br>
+              　　　　　　　　　　　　“package”声明。如果生成的类不在一个包中，<br>
+              　　　　　　　　　　　　这里就不会生成任何东西<br>
+              　　SERVER_NAME　　　　服务器端代码存根的名称<br>
+              　　SUPER_CLASS　　　　这个类所继承的父类名称<br>
+              　　TIMESTAMP　　　　　代码生成时的日期和时间<br>
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+            <p> 　　<b>编写基本代码生成器</b><br>
+              　　在更进一步学习之前，让我们看一下我们的新代码生成器的基本流程：<br>
+              　　1.打开模板文件。<br>
+              　　2.创建一个临时缓冲区保存生成的源代码。<br>
+              　　3.从模板文件中读取每一行并搜索标识符。<br>
+              　　4.如果找到了一个标识符，则生成相应的代码。<br>
+              　　5.当达到了模板文件的结尾，包含源代码的临时缓冲区就被写在磁盘中。<br>
+              　　照常，我喜欢从编写提供公用函数的基本类开始，特别是由于我们将创建4个生成器。这个名为BaseCodeGen的基本类将实现下列功能：打开并读取模板文件。处理标识符，将最终的源文件存入磁盘；图11.12列出了实现这些步骤的主要处理方法。</p>
+            <pre class="code"> /**
+*Generates the source file.
+*/
+public void generate()
+throws java.io.IOException
+{
+// Attempt to open the template file
+java.io.BufferedReader in = openTemplate();
+
+// The target output file
+java.io.PrintWriter outFile = null;
+
+// Create a new in-memory output stream that will hold
+// the contents of the generated file. We will not create
+// the output file until all processing has completed.
+java.io.ByteArrayOutputStream baos =
+new java.io.ByteArrayOutputStream();
+java.io.PrintWriter out = new java.io.PrintWriter(baos);
+
+try {
+
+// Process the template file. Read each line until
+// the end of file
+String line;
+
+while (true) {
+
+// Read the next line
+line = in.readLine();
+
+// readLine returns null if EOF
+if (line == null) {
+break;
+}
+
+// Strip off any indentation characters
+int numIndent = 0;
+while ((line.length() > 0) && line.startsWith(m_indentPattern)) {
+numIndent++;
+line = line.substring(m_indentPattern.length());
+}
+
+// Process any embedded tags
+process(line, numIndent, out);
+}
+
+// Flush the output stream
+out.flush();
+
+// Processing is complete. Write the generated source
+// code.
+String fileName = stripPackage(getObjectName());
+fileName = getTargetName(fileName) + ".java";
+System.out.println("Writing " + fileName);
+java.io.FileOutputStream fos =
+new java.io.FileOutputStream(fileName);
+outFile = new java.io.PrintWriter(fos);
+
+// Turn our buffered output stream into an input stream
+java.io.ByteArrayInputStream bais =
+new java.io.ByteArrayInputStream(baos.toByteArray());
+java.io.InputStreamReader isr =
+new java.io.InputStreamReader(bais);
+java.io.BufferedReader br =
+new java.io.BufferedReader(isr);
+
+// Read the contents of our buffer and dump it to the
+// output file
+while (true) {
+
+// Read the next line
+line = br.readLine();
+
+// readLine returns null when EOF is reached
+if (line == null) {
+break;
+}
+
+// Output the line
+outFile.println(line);
+}
+
+}
+finally {
+// Always close properly
+if (in != null) {
+in.close();
+}
+if (outFile != null) {
+outFile.close();
+}
+}
+}　</pre>
+              　　　　图11.12 BaserCodeGen中的主要处理方法</p>
+            <p>　　从模板文件中读出的每一行都传送给process()方法处理，这个方法搜索并处理所有的标识符，并将输出行存入内存缓冲区。process()和processTag()方法如图11.13所示。</p>
+            <pre class="code"> /**
+*Processes the given line. This involves scanning the line
+* for any embedded tags. If no tags exist the line will be
+* printed to the output stream.
+*
+* @param line Line from the template file
+* @param numIndent Number of indentations (tabs)
+* @param out Print writer
+*/
+protected void process(String line, int numIndent,
+java.io.PrintWriter out)
+throws java.io.IOException
+{
+// Look for tags until all have been processed
+while (line != null) {
+
+// Search for the tag pattern
+int begPos = line.indexOf(m_tagPattern);
+
+// If no tag pattern exists, exit
+if (begPos < 0) {
+break;
+}
+
+// We have a starting tag pattern; look for an ending
+// tag pattern
+int endPos = line.indexOf(m_tagPattern, begPos + 1);
+
+// No ending tag pattern, exit
+if (endPos < 0) {
+break;
+}
+
+// Get the tag name
+String tag = line.substring(begPos + 1, endPos);
+
+// Process the tag
+line = processTag(line, tag, begPos, numIndent, out);
+}
+
+// If the line is not null it must be written to the
+// output stream
+if (line != null) {
+out.println(indent(numIndent) + line);
+}
+}
+
+/**
+* <p>Process the tag for the given line. This method may be
+* overridden; just be sure to call super.processTag().
+*
+* @param line Line from the template file
+* @param tag Tag name
+* @param pos Starting position of the tag in the line
+* @param numIndent Number of indentations (tabs)
+* @param out Print writer
+* @return Line after tag replacement or null if the replacement
+* was written directly to the output stream
+*/
+protected String processTag(String line, String tag, int pos,
+int numIndent,
+java.io.PrintWriter out)
+throws java.io.IOException
+{
+// Replacement code for the tag
+String code = null;
+
+if (tag.equals("GENERATOR_NAME")) {
+code = getClass().getName();
+}
+else if (tag.equals("TIMESTAMP")) {
+code = new java.util.Date().toString();
+}
+else if (tag.equals("CLIENT_NAME")) {
+String objectName = getObjectName();
+
+// Strip off the package name
+objectName = stripPackage(objectName);
+
+// Get the name of the client
+code = getClientName(objectName);
+}
+else if (tag.equals("SERVER_NAME")) {
+String objectName = getObjectName();
+
+// Strip off the package name
+objectName = stripPackage(objectName);
+
+// Get the name of the server
+code = getServerName(objectName);
+}
+else if (tag.equals("PACKAGE_NAME")) {
+code = getPackageName(getInterfaceName());
+if (code == null) {
+code = "";
+}
+else if (code.length() > 0) {
+code += ".";
+}
+}
+else if (tag.equals("PACKAGE_STATEMENT")) {
+// Assume that the code is going in the same package
+// as the interface
+String p = getPackageName(getInterfaceName());
+
+// No package. Do not output a line
+if (p.length() == 0) {
+line = null;
+}
+else {
+code = "package " + p + ";";
+}
+}
+else if (tag.equals("OBJECT_NAME")) {
+code = getObjectName();
+}
+else if (tag.equals("SUPER_CLASS")) {
+code = getSuperclass();
+}
+else if (tag.equals("INTERFACE_NAME")) {
+code = getInterfaceName();
+}
+else if (tag.equals("METHODS")) {
+
+// Process the interface methods
+processMethods(numIndent, out);
+
+// All code was written directly to the output stream
+line = null;
+}
+else {
+// Unknown tag
+System.out.println("WARNING: Unknown tag '" + tag + "'");
+code = "&lt;UNKNOWN TAG " + tag + ">";
+}
+
+// If a code replacement was created, replace it in the
+// line
+if (code != null) {
+line = line.substring(0, pos) + code +
+line.substring(pos + tag.length() + 2);
+} 
+return line;
+}　　</pre>
+              　　　　图11.13 处理模板的行和标识符
+            <p>　　要注意标识符是如何被处理的；绝大多数都是通过抽象方法的调用来获取附加信息这种方法处理的。这些抽象方法被调用以获取附加的信息，它们必须被最后的代码生成器（我们稍候就会看到）实现。有一个例外就是方法标识符，它使用Reflection 
+              API技术获得服务器对象接口的所有方法（见图11.14）。</p>
+            <pre class="code"> 　/**
+* Process the METHOD tag. This involves reflecting upon
+* the interface and generating proxy code for each method
+*
+* @param numIndent Number of indentations (tabs)
+* @param out Print writer
+*/
+protected void processMethods(int numIndent,
+java.io.PrintWriter out)
+throws java.io.IOException
+{
+// Get the interface class
+Class c = getInterfaceClass();
+
+// Get all of the methods for the interface
+java.lang.reflect.Method methods[] = c.getMethods();
+
+// Loop for each method in the interface
+for (int i = 0; i < methods.length; i++) {
+
+// Only generate code for public methods
+int modifiers = methods[i].getModifiers();
+if (!java.lang.reflect.Modifier.isPublic(modifiers)) {
+continue;
+}
+
+// Generate the code for the method
+codeMethod(methods[i], numIndent, out);
+}
+}</pre>
+图11.14 处理方法标识符
+            <p>　　还要注意，代码生成器需要一个定义服务器对象的接口。所有接口的方法都可以通过Reflection API技术获得，并且每一个方法都将会被用来生成适应的代码。
+<div class="rpindex"><a href="11-2.html"> 下一页</a><a href="10-2.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

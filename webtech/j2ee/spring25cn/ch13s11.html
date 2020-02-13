@@ -1,0 +1,354 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="mvc-coc"></a>13.11.&#160;惯例优先原则（convention over configuration）</h2></div></div></div>
+<p>对于很多项目来说，严格遵从已有惯例和使用合理的缺省选项大概是这些项目需要的……现在Spring Web MVC明确的支持了这种惯例优先原则的主旨。
+    这意味着，如果建立了一套命名规范，诸如此类，就可以<span class="emphasis"><em>显著地</em></span>减少系统所需配置项目的数量，
+    来建立处理器映射、视图解析器、<code class="classname">ModelAndView</code>实例，等等。
+    这为快速原型开发提供了很大方便。同时提供了一定程度的（通常是好事情）代码库的一致性，进而可以从中选择并发展为成型产品。
+    </p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>Spring分发版本包含了一个展现了惯例优先原则支持的Web应用程序，我们将在这一节描述这一原则。
+      这个应用程序可以在<code class="literal">samples/showcases/mvc-convention</code>目录中找到。
+      </p>
+</div>
+<p>惯例优先原则支持体现在MVC的三个核心领域：模型、视图和控制器。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-coc-ccnhm"></a>13.11.1.&#160;对控制器的支持：<code class="classname">ControllerClassNameHandlerMapping</code></h3></div></div></div>
+<p><code class="classname">ControllerClassNameHandlerMapping</code>类是<code class="interfacename">HandlerMapping</code>接口的一个实现。
+      它使用惯例来确定请求的URL和用于处理它们的<code class="interfacename">Controller</code>实例间的映射关系。
+      </p>
+<p>举个例子，考虑下面的（直观的）<code class="interfacename">Controller</code>实现，
+      请特别注意这个类的<span class="emphasis"><em>名称</em></span>。
+      </p>
+<pre class="code">public class <span class="bold"><strong>ViewShoppingCartController</strong></span> implements Controller {
+
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
+        <em class="lineannotation"><span class="lineannotation">// the implementation is not hugely important for this example...</span></em>
+    }
+}</pre>
+<p>下面是与之伴随的Spring Web MVC配置文件的一个片段：</p>
+<pre class="code">&lt;bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/&gt;
+                
+&lt;bean id="<span class="bold"><strong>viewShoppingCart</strong></span>" class="x.y.z.ViewShoppingCartController"&gt;
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- inject dependencies as required... --&gt;</span></em>
+&lt;/bean&gt;</pre>
+<p><code class="classname">ControllerClassNameHandlerMapping</code>在它的应用上下文中找出所有不同的处理器（handler）（或<code class="interfacename">Controller</code>）bean，
+      并去掉名称中的<code class="literal">Controller</code>，来定义它的处理器映射。</p>
+<p>让我们看更多的例子，这样其中的中心思想就马上就清楚了。</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><code class="classname">WelcomeController</code>映射到“<code class="literal">/welcome*</code>”请求URL</p></li>
+<li><p><code class="classname">HomeController</code>映射到“<code class="literal">/home*</code>”请求URL</p></li>
+<li><p><code class="classname">IndexController</code>映射到“<code class="literal">/index*</code>”请求URL</p></li>
+<li><p><code class="classname">RegisterController</code>映射到“<code class="literal">/register*</code>”请求URL</p></li>
+<li>
+<p><code class="classname">DisplayShoppingCartController</code>映射到“<code class="literal">/displayshoppingcart*</code>请求URL</p>
+<p><span class="emphasis"><em>（注意大小写——全部小写——对于驼峰式大小写（第一个词的首字母小写，随后的每个词首字母大写）的<code class="interfacename">Controller</code>类名。）</em></span></p>
+</li>
+</ul></div>
+<p>当控制器是<code class="classname">MultiActionController</code>处理器类时，生成的映射就（有一点点）更为复杂，但幸而没有更难理解。
+      下面例子中的几个<code class="interfacename">Controller</code>名字假设都是<code class="classname">MultiActionController</code>的实现。
+      </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><code class="classname">AdminController</code>映射到“<code class="literal">/admin<span class="bold"><strong>/*</strong></span></code>”请求URL</p></li>
+<li><p><code class="classname">CatalogController</code>映射到“<code class="literal">/catalog<span class="bold"><strong>/*</strong></span></code>”请求URL</p></li>
+</ul></div>
+<p>如果遵循漂亮而且标准的规范把你的<code class="interfacename">Controller</code>实现命名为<code class="literal">xxx<span class="bold"><strong>Controller</strong></span></code>，
+      那么<code class="classname">ControllerClassNameHandlerMapping</code>将使你免于忍受必须首先定义它们，
+      然后还要维护<span class="emphasis"><em>冗——长——的——</em></span><code class="classname">SimpleUrlHandlerMapping</code>（或者类似的东西）的枯燥。
+      </p>
+<p><code class="classname">ControllerClassNameHandlerMapping</code>是<code class="classname">AbstractHandlerMapping</code>的子类，
+      从而使你能够像对待大量其他<code class="interfacename">HandlerMapping</code>实现一样的定义<code class="interfacename">HandlerInterceptor</code>实例和其他任何东西。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-coc-modelmap"></a>13.11.2.&#160;对模型的支持：<code class="classname">ModelMap</code>（<code class="classname">ModelAndView</code>）</h3></div></div></div>
+<p><code class="classname">ModelMap</code>类首先是一个绚丽的<code class="interfacename">Map</code>实现，
+      它可以使新增的将要显示在<code class="interfacename">View</code>中（或上）的对象也遵循同一命名规范。
+      考虑下面的<code class="interfacename">Controller</code>实现，注意对象被加入<code class="classname">ModelAndView</code>，
+      而并没有指定任何名称。</p>
+<pre class="code">public class DisplayShoppingCartController implements Controller {
+
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
+        
+        List cartItems = <em class="lineannotation"><span class="lineannotation">// get a <code class="interfacename">List</code> of <code class="classname">CartItem</code> objects</span></em>
+        User user = <em class="lineannotation"><span class="lineannotation">// get the <code class="classname">User</code> doing the shopping</span></em>
+        
+        ModelAndView mav = new ModelAndView("displayShoppingCart"); <em class="lineannotation"><span class="lineannotation">&lt;-- the logical view name</span></em>
+
+        mav.addObject(cartItems); <em class="lineannotation"><span class="lineannotation">&lt;-- look ma, no name, just the object</span></em>
+        mav.addObject(user); <em class="lineannotation"><span class="lineannotation">&lt;-- and again ma!</span></em>
+
+        return mav;
+    }
+}</pre>
+<p><code class="classname">ModelAndView</code>类使用的<code class="classname">ModelMap</code>类是一个自定义的<code class="interfacename">Map</code>的实现。
+      当有一个新对象加入的时候，它就被用于为这个对象自动生成一个键。
+      决定某个加入的对象的名字的策略是，当它是一个标量对象（scalar object），比如<code class="classname">User</code>时，
+      就使用这个对象所属类的简短类名。下面的几个例子中，几个为标量对象生成的名字被加入<code class="classname">ModelMap</code>实例中。</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>将会为一个新增的<code class="classname">x.y.User</code>实例生成“<code class="literal">user</code>”作为名称</p></li>
+<li><p>将会为一个新增的<code class="classname">x.y.Registration</code>实例生成“<code class="literal">registration</code>”作为名称</p></li>
+<li><p>将会为一个新增的<code class="classname">x.y.Foo</code>实例生成“<code class="literal">foo</code>”作为名称</p></li>
+<li><p>将会为一个新增的<code class="classname">java.util.HashMap</code>实例生成“<code class="literal">hashMap</code>”作为名字（在这个情形下你可能想要让名字更加明确一些，因为“<code class="literal">hashMap</code>不太直观）。</p></li>
+<li><p>新增<code class="literal">null</code>将会导致抛出一个<code class="classname">IllegalArgumentException</code>。
+          如果正在加入的这个（或这些）对象可能潜在的是<code class="literal">null</code>的话，就要让名字更明确一些。</p></li>
+</ul></div>
+<div class="sidebar">
+<p class="title"><b>什么？不能自动生成复数？</b></p>
+<p>Spring Web MVC的惯例优先原则的支持内容中不包括自动生成复数。
+        这就是说，当加入一个<code class="classname">Person</code>对象的<code class="interfacename">List</code>到一个<code class="classname">ModelAndView</code>时，
+        不要指望生成的名字会是“people”。</p>
+<p>这是经过一系列讨论之后作出的决定，最后“<span class="quote">最小惊讶原则（Principle of Least Surprise）</span>”胜出。</p>
+</div>
+<p>在加入一个<code class="interfacename">Set</code>、<code class="interfacename">List</code>或者对象数组之后，
+      生成名称的策略是深入这个集合，取出集合中第一个对象的简短类名，并使用这个名称并在后面加上<code class="literal">List</code>。
+      一些例子将会让集合的名称生成方式更清晰……</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>将会为一个新增的包含了一个或多个<code class="classname">x.y.User</code>元素的<code class="classname">x.y.User[]</code>实例生成“<code class="literal">userList</code>”作为名称</p></li>
+<li><p>将会为一个新增的包含了一个或多个<code class="classname">x.y.User</code>元素的<code class="classname">x.y.Foo[]</code>实例生成“<code class="literal">fooList</code>”作为名称</p></li>
+<li><p>将会为一个新增的包含了一个或多个<code class="classname">x.y.User</code>元素的<code class="classname">java.util.ArrayList</code>实例生成“<code class="literal">userList</code>”作为名称</p></li>
+<li><p>将会为一个新增的包含了一个或多个<code class="classname">x.y.Foo</code>元素的<code class="classname">java.util.HashSet</code>实例生成“<code class="literal">fooList</code>”作为名称</p></li>
+<li><p>一个<span class="bold"><strong>空</strong></span><code class="classname">java.util.ArrayList</code>根本不会被加入（也就是说，<code class="methodname">addObject(..)</code>调用其实什么都没做）。</p></li>
+</ul></div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-coc-r2vnt"></a>13.11.3.&#160;对视图的支持：<code class="interfacename">RequestToViewNameTranslator</code></h3></div></div></div>
+<p><code class="interfacename">RequestToViewNameTranslator</code>接口的功能是当没有显式的提供这样一个逻辑视图名称的时候，
+      确定一个逻辑的<code class="interfacename">View</code>名称。
+      这个接口只有一个实现，精明的命名为<code class="classname">DefaultRequestToViewNameTranslator</code>。
+      </p>
+<p>为了解释<code class="classname">DefaultRequestToViewNameTranslator</code>将请求的URL映射到逻辑的视图名的方式，
+      最好还是求助于一个例子。</p>
+<pre class="code">public class RegistrationController implements Controller {
+                
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) {
+        <em class="lineannotation"><span class="lineannotation">// process the request...</span></em>
+        ModelAndView mav = new ModelAndView();
+        <em class="lineannotation"><span class="lineannotation">// add <span class="bold"><strong>data</strong></span> as necessary to the model...</span></em>
+        return mav;
+        <em class="lineannotation"><span class="lineannotation">// notice that no <code class="interfacename">View</code> or logical view name has been set</span></em>
+    }
+}</pre>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd"&gt;
+&lt;beans&gt;
+
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- this bean with the well known name generates view names for us --&gt;</span></em>
+    &lt;bean id="viewNameTranslator" class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator"/&gt;
+
+    &lt;bean class="x.y.RegistrationController"&gt;
+        <em class="lineannotation"><span class="lineannotation">&lt;!-- inject dependencies as necessary --&gt;</span></em>
+    &lt;/bean&gt;
+    
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- maps request URLs to Controller names --&gt;</span></em>
+    &lt;bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/&gt;
+
+    &lt;bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"&gt;
+        &lt;property name="prefix" value="/WEB-INF/jsp/"/&gt;
+        &lt;property name="suffix" value=".jsp"/&gt;
+    &lt;/bean&gt;
+
+&lt;/beans&gt;
+</pre>
+<p>请注意，在这个<code class="literal">handleRequest(..)</code>方法的实现中，
+      没有在返回的<code class="classname">ModelAndView</code>上设置任何的<code class="interfacename">View</code>或者逻辑视图名称。
+      而是把从请求的URL生成一个<span class="emphasis"><em>逻辑视图名称</em></span>的任务交给了<code class="classname">DefaultRequestToViewNameTranslator</code>。
+      在上面这个<code class="classname">RegistrationController</code>与<code class="classname">ControllerClassNameHandlerMapping</code>联合使用的例子中，
+      一个“<code class="literal">http://localhost/registration.html</code>”请求URL将会由<code class="classname">DefaultRequestToViewNameTranslator</code>生成一个“<code class="literal">registration</code>”逻辑视图名称。
+      这个逻辑视图名称接下来就会被<code class="classname">InternalResourceViewResolver</code> bean解析为“<code class="literal">/WEB-INF/jsp/registration.jsp</code>”视图。
+      </p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>甚至不需要显式的定义一个<code class="classname">DefaultRequestToViewNameTranslator</code> bean。
+        如果<code class="classname">DefaultRequestToViewNameTranslator</code>的缺省设置符合你的要求，
+        就可以依赖这样一个事实，Spring Web MVC的<code class="classname">DispatcherServlet</code>将会在没有显式配置的情况下自动的生成这个类的一个实例。
+        </p>
+</div>
+<p>当然，如果需要修改缺省设置，那么就需要显式的配置自己的<code class="classname">DefaultRequestToViewNameTranslator</code> bean。
+      关于可以设置的各种属性的细节，请参阅<code class="classname">DefaultRequestToViewNameTranslator</code>的相当详细的Javadoc。
+      </p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

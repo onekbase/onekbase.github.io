@@ -1,0 +1,240 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-api-advised"></a>7.8.&#160;操作被通知对象</h2></div></div></div>
+<p>在创建了AOP代理之后，你能够使用<code class="literal">org.springframework.aop.framework.Advised</code>接口对它们进行管理。
+    任何AOP代理都能够被转型为这个接口，不论它实现了哪些其它接口。这个接口包括下面的方法：</p>
+<pre class="code">Advisor[] getAdvisors();
+        
+        void addAdvice(Advice advice) throws AopConfigException;
+        
+        void addAdvice(int pos, Advice advice) 
+        throws AopConfigException;
+        
+        void addAdvisor(Advisor advisor) throws AopConfigException;
+        
+        void addAdvisor(int pos, Advisor advisor) throws AopConfigException;
+        
+        int indexOf(Advisor advisor);
+        
+        boolean removeAdvisor(Advisor advisor) throws AopConfigException;
+        
+        void removeAdvisor(int index) throws AopConfigException;
+        
+        boolean replaceAdvisor(Advisor a, Advisor b) throws AopConfigException;
+        
+    boolean isFrozen();</pre>
+<p><code class="literal">getAdvisors()</code>方法将为每个已经被加入工厂的通知器，拦截器或者其它通知类型返回一个通知器。如果你曾经添加一个通知器，那么所返回的通知器将是你加入的对象。
+        如果你曾经加入一个拦截器或者其它通知类型，Spring将把它们包装在一个通知器里，后者使用一个永远返回true的切入点。因此如果你曾经加入一个<code class="literal">MethodInterceptor</code>，
+        返回的通知器将是一个<code class="literal">DefaultPointcutAdvisor</code>，它可以返回你加入的<code class="literal">MethodInterceptor</code>和一个匹配所有类和方法的切入点。
+    </p>
+<p><code class="literal">addAdvisor()</code>方法可以用来添加任何通知器。通常保存切入点和通知的通知器是<code class="literal">DefaultPointcutAdvisor</code>，它可以用于任何通知或切入点（但不包括引入类型）。</p>
+<p>缺省情况下，你可以加入或移除通知器或者拦截器甚至当代理已经被创建之后。唯一的限制是无法加入或者移除一个引入通知器，因为工厂中获得的已有代理不能显示接口的改变（你可以通过从工厂里获取一个新的代理来避免这个问题）。</p>
+<p>下面是一个简单的例子，它把一个AOP代理转型为<code class="literal">Advised</code>接口，检查并操作它的通知：</p>
+<p>
+        </p>
+<pre class="code">Advised advised = (Advised) myObject;
+            Advisor[] advisors = advised.getAdvisors();
+            int oldAdvisorCount = advisors.length;
+            System.out.println(oldAdvisorCount + " advisors");
+            
+            // Add an advice like an interceptor without a pointcut
+            // Will match all proxied methods
+            // Can use for interceptors, before, after returning or throws advice
+            advised.addAdvice(new DebugInterceptor());
+            
+            // Add selective advice using a pointcut
+            advised.addAdvisor(new DefaultPointcutAdvisor(mySpecialPointcut, myAdvice));
+            
+            assertEquals("Added two advisors",
+        oldAdvisorCount + 2, advised.getAdvisors().length);</pre>
+<p>
+    </p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>在一个实际运行的系统里，修改一个业务对象上的通知是否明智是个问题，虽然无疑在某些情况下这样做是合理的。然而这在开发中是很有用的：
+            例如，在测试的时候。对于希望测试的方法调用，有时我发现把测试代码加入到一个拦截器或者其它通知里是非常有用的。
+        （例如，通知可以与目标方法存在于同一个事务里，在把事务标记为回滚之前可以用SQL来检查数据库是否被正确的更新了。）</p>
+</div>
+<p>依赖于你怎样创建代理，你通常可以设置一个
+        <code class="literal">frozen</code>标志，在这种情况下
+        <code class="literal">Advised</code>的<code class="literal">isFrozen()</code>方法将返回true，任何增加或者移除通知的修改都会导致一个<code class="literal">AopConfigException</code>异常。
+    在某些情况下这种冻结被通知对象状态的能力是很有用的：例如，防止调用代码来移除一个进行安全检查的拦截器。在Spring 1.1中它也被用来允许激进优化，如果已经知道不需要运行时对通知进行修改的话。 </p>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

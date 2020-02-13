@@ -1,0 +1,571 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="cci-using"></a>21.3.&#160;使用Spring的 CCI访问支持</h2></div></div></div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-record-creator"></a>21.3.1.&#160;记录转换</h3></div></div></div>
+<p>
+   对JCA CCI支持的一个目标是提供方便的机制来操作CCI记录。
+   开发人员可以通过使用Spring的 <code class="classname">CciTemplate</code> 来指定创建记录并从记录中提取数据的策略。
+   如果你不想在应用程序中直接操作记录，可以使用下面的接口来配置用于输入输出记录的策略。
+   </p>
+<p>
+    为了创建一个输入 <code class="interfacename">Record</code>，开发人员可以使用 <code class="interfacename">RecordCreator</code> 接口的一个特定实现。
+   </p>
+<pre class="code">public interface RecordCreator {
+
+ Record createRecord(RecordFactory recordFactory) throws ResourceException, DataAccessException;
+}</pre>
+<p>
+   正如你所看到的一样， <code class="literal">createRecord(..)</code> 方法接收一个 <code class="interfacename">RecordFactory</code> 实例作为参数，
+   该参数对应于所使用的 <code class="interfacename">ConnectionFactory</code> 的 <code class="interfacename">RecordFactory</code> 接口。
+   它能被用于创建 <code class="interfacename">IndexedRecord</code> 或者 <code class="interfacename">MappedRecord</code> 的实例。
+   下面的例子展示了如何使用 <code class="interfacename">RecordFactory</code> 接口和索引（indexed）/映射（mapped）记录。
+   </p>
+<pre class="code">public class MyRecordCreator implements RecordCreator {
+
+ public Record createRecord(RecordFactory recordFactory) throws ResourceException {
+  IndexedRecord input = recordFactory.createIndexedRecord("input");
+  input.add(new Integer(id));
+  return input;
+ }
+}</pre>
+<p>
+   一个输出 <code class="interfacename">Record</code> 接口能被用于从EIS收回数据。
+   因此，一个 <code class="interfacename">RecordExtractor</code> 接口的特定实现可以被传给Spring的 <code class="classname">CciTemplate</code> ，
+   用来从输出 <code class="interfacename">Record</code> 接口中提取数据。
+   </p>
+<pre class="code">public interface RecordExtractor {
+
+ Object extractData(Record record) throws ResourceException, SQLException, DataAccessException;
+}</pre>
+<p>下面的例子展示了如何使用 <code class="interfacename">RecordExtractor</code> 接口。</p>
+<pre class="code">public class MyRecordExtractor implements RecordExtractor {
+
+ public Object extractData(Record record) throws ResourceException {
+  CommAreaRecord commAreaRecord = (CommAreaRecord) record;
+  String str = new String(commAreaRecord.toByteArray());
+  String field1 = string.substring(0,6);
+  String field2 = string.substring(6,1);
+  return new OutputObject(Long.parseLong(field1), field2);
+ }
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-using-template"></a>21.3.2.&#160;<code class="classname">CciTemplate</code>类</h3></div></div></div>
+<p>
+   <code class="classname">CciTemplate</code> 类是 CCI 核心支持包（<code class="literal">org.springframework.jca.cci.core</code>）中主要的类。
+   它简化了CCI的使用，因为它会处理资源的创建和释放。这有助于避免常见的错误，比如总是忘记关闭连接。
+   它关注连接和交互对象的生命周期，从而使应用程序的代码可以专注于处理从应用程序数据中生成输入记录和从输出记录中提取应用程序数据。</p>
+<p>JCA CCI规范定义了两个不同的方法来在EIS上调用操作。CCI <code class="interfacename">Interaction</code> 接口提供两个 <code class="literal">execute</code> 方法的签名：</p>
+<pre class="code">public interface javax.resource.cci.Interaction {
+ ...
+ boolean execute(InteractionSpec spec, Record input, Record output) throws ResourceException;
+
+ Record execute(InteractionSpec spec, Record input) throws ResourceException;
+ ...
+}</pre>
+<p>依赖于模板方法的调用，<code class="classname">CciTemplate</code> 类可以知道 interaction上的哪个 <code class="literal">execute</code> 方法被调用。
+   在任何情况下，都必须有一个正确初始化过的 <code class="interfacename">InteractionSpec</code> 实例。</p>
+<p><code class="literal">CciTemplate.execute(..)</code>可以以下列两种方式使用：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>在提供直接的 <code class="interfacename">Record</code> 参数的情况下，只需要传递输入记录给 CCI ，
+	 而返回的对象就是对应的 CCI 输出记录。</p></li>
+<li><p>
+     在提供使用记录映射的应用对象的情况下，你需要提供相应的 <code class="interfacename">RecordCreator</code> 和 <code class="interfacename">RecordExtractor</code> 实例。</p></li>
+</ul></div>
+<p>第一种方法将使用下面的模板方法。这些模板方法将直接对应到 <code class="interfacename">Interaction</code> 接口。</p>
+<pre class="code">public class CciTemplate implements CciOperations {
+
+ public Record execute(InteractionSpec spec, Record inputRecord)
+   throws DataAccessException { ... }
+
+ public void execute(InteractionSpec spec, Record inputRecord, Record outputRecord)
+   throws DataAccessException { ... }
+
+}</pre>
+<p>第二种方法需要我们以参数的方式指定创建记录和记录提取的策略。
+	   使用前面记录转化一节中描述的接口。对应的 <code class="classname">CciTemplate</code> 方法如下：</p>
+<pre class="code">public class CciTemplate implements CciOperations {
+
+ public Record execute(InteractionSpec spec, RecordCreator inputCreator)
+   throws DataAccessException { ... }
+
+ public Object execute(InteractionSpec spec, Record inputRecord, RecordExtractor outputExtractor)
+   throws DataAccessException { ... }
+
+ public Object execute(InteractionSpec spec, RecordCreator creator, RecordExtractor extractor)
+   throws DataAccessException { ... }
+
+}</pre>
+<p>
+   除非在模板上设置 <code class="literal">outputRecordCreator</code> 属性（参见下一部分），
+   不然每个方法都将调用CCI <code class="interfacename">Interaction</code> 中相应的含有两个参数：
+   <code class="interfacename">InteractionSpec</code> 和输入 <code class="interfacename">Record</code>的 <code class="literal">execute</code> 方法，
+   并接收一个输出 <code class="interfacename">Record</code> 作为返回值。</p>
+<p>通过 <code class="literal">createIndexRecord(..)</code> 和 <code class="literal">createMappedRecord(..)</code> 方法，
+   <code class="classname">CciTemplate</code> 在 <code class="interfacename">RecordCreator</code> 实现类外部也提供了创建
+   <code class="literal">IndexRecord</code> 和 <code class="literal">MappedRecord</code>。
+   还可以用来在DAO实现内创建记录实例并传入到相应的 <code class="literal">CciTemplate.execute(..)</code> 方法。</p>
+<pre class="code">public class CciTemplate implements CciOperations {
+
+ public IndexedRecord createIndexedRecord(String name) throws DataAccessException { ... }
+
+ public MappedRecord createMappedRecord(String name) throws DataAccessException { ... }
+
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-using-dao"></a>21.3.3.&#160;DAO支持</h3></div></div></div>
+<p>
+   Spring的 CCI 支持为 DAO 提供了一个抽象类，支持 <code class="interfacename">ConnectionFactory</code>
+   或 <code class="classname">CciTemplate</code> 实例的注入。这个类的名字是 <code class="classname">CciDaoSupport</code>：
+   它提供了简单的 <code class="literal">setConnectionFactory</code> 和 <code class="literal">setCciTemplate</code> 方法。
+   在内部，该类将为传入的 <code class="interfacename">ConnectionFactory</code> 创建一个 <code class="classname">CciTemplate</code> 实例，
+   并把它暴露给子类中具体的数据访问实现使用。</p>
+<pre class="code">public abstract class CciDaoSupport {
+
+ public void setConnectionFactory(ConnectionFactory connectionFactory) { ... }
+ public ConnectionFactory getConnectionFactory() { ... }
+
+ public void setCciTemplate(CciTemplate cciTemplate) { ... }
+ public CciTemplate getCciTemplate() { ... }
+
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="automatic-output-generation"></a>21.3.4.&#160;自动输出记录生成</h3></div></div></div>
+<p>
+   如果所用的连接器只支持以输入输出记录作为参数的 <code class="literal">Interaction.execute(..)</code> 方法
+   （就是说，它要求传入期望的输出记录而不是返回适当的输出记录），
+   你可以设定 <code class="classname">CciTemplate</code> 类的 <code class="literal">outputRecordCreator</code> 属性来自动生成一个输出记录，
+   当接收到响应时JCA连接器（JCA connector）将填充该记录并返回给模板的调用者。
+   </p>
+<p>
+   因为这个目的，这个属性只持有 <code class="interfacename">RecordCreator</code> 接口的一个实现。
+   <code class="interfacename">RecordCreator</code> 接口已经在 <a href="ch21s03.html#cci-record-creator" title="21.3.1.&#160;记录转换">第&#160;21.3.1&#160;节 “记录转换”</a> 进行了讨论。
+	<code class="literal">outputRecordCreator</code> 属性必须直接在 <code class="classname">CciTemplate</code> 中指定，可以在应用代码中做到这一点。</p>
+<pre class="code">cciTemplate.setOutputRecordCreator(new EciOutputRecordCreator());</pre>
+<p>或者如果 <code class="classname">CciTemplate</code> 被配置为一个专门的bean实例，那么outputRecordCreator还可以在Spring文件中配置（推荐的做法）：</p>
+<pre class="code">&lt;bean id="eciOutputRecordCreator" class="eci.EciOutputRecordCreator"/&gt;
+
+&lt;bean id="cciTemplate" class="org.springframework.jca.cci.core.CciTemplate"&gt;
+ &lt;property name="connectionFactory" ref="eciConnectionFactory"/&gt;
+ &lt;property name="outputRecordCreator" ref="eciOutputRecordCreator"/&gt;
+&lt;/bean&gt;</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>因为 <code class="classname">CciTemplate</code> 类是线程安全的，所以它通常被配置为一个共享实例。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="template-summary"></a>21.3.5.&#160;总结</h3></div></div></div>
+<p>下表总结了 <code class="classname">CciTemplate</code> 类和在 CCI <code class="interfacename">Interaction</code>
+   接口上调用相应方法的机制： </p>
+<div class="table">
+<a name="cci-interaction-execute-methods"></a><p class="title"><b>表&#160;21.1.&#160;Usage of <code class="interfacename">Interaction</code> execute methods</b></p>
+<div class="table-contents"><table summary="Usage of Interaction execute methods" border="1">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th align="center">CciTemplate method signature</th>
+<th align="center">CciTemplate outputRecordCreator
+        property</th>
+<th align="center">execute method called on the CCI
+        Interaction</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+<td align="center">not set</td>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+<td align="center">set</td>
+<td align="center">boolean execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+<td align="center">not set</td>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+<td align="center">set</td>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        RecordCreator)</td>
+<td align="center">not set</td>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        RecordCreator)</td>
+<td align="center">set</td>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec, Record,
+        RecordExtractor)</td>
+<td align="center">not set</td>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec, Record,
+        RecordExtractor)</td>
+<td align="center">set</td>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        RecordCreator, RecordExtractor)</td>
+<td align="center">not set</td>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Record execute(InteractionSpec,
+        RecordCreator, RecordExtractor)</td>
+<td align="center">set</td>
+<td align="center">void execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p><br class="table-break"></p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-straight"></a>21.3.6.&#160;直接使用一个CCI <code class="interfacename">Connection</code>接口和<code class="interfacename">Interaction</code>接口</h3></div></div></div>
+<p>
+	   类似于 <code class="classname">JdbcTemplate</code> 类和 <code class="classname">JmsTemplate</code> 类的操作方式，
+	   <code class="classname">CciTemplate</code> 类同样提供直接操作CCI 连接和交互的可能性。
+	   比如说如果你想对一个CCI连接执行多种操作，这就会很有用。
+	</p>
+<p>
+ <code class="interfacename">ConnectionCallback</code> 接口提供以CCI <code class="interfacename">Connection</code> 作为参数，
+ 为了在它上面执行自定义动作，添加了创建 <code class="interfacename">Connection</code> 的CCI <code class="interfacename">ConnectionFactory</code>。
+	后者在获取相关 <code class="interfacename">RecordFactory</code> 实例和创建indexed/mapped records时很有用。例如：</p>
+<pre class="code">public interface ConnectionCallback {
+
+ Object doInConnection(Connection connection, ConnectionFactory connectionFactory)
+   throws ResourceException, SQLException, DataAccessException;
+}</pre>
+<p>
+	<code class="interfacename">InteractionCallback</code> 接口提供 CCI <code class="interfacename">Interaction</code> 接口，
+	为了在它上面执行自定义动作，请添加相应的CCI <code class="interfacename">ConnectionFactory</code>。</p>
+<pre class="code">public interface InteractionCallback {
+
+ Object doInInteraction(Interaction interaction, ConnectionFactory connectionFactory)
+   throws ResourceException, SQLException, DataAccessException;
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p><code class="interfacename">InteractionSpec</code> 对象还可以在多个template调用之间被共享或者在每个回调方法内重新创建，
+    这完全取决于 DAO 的实现。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-template-example"></a>21.3.7.&#160;<code class="classname">CciTemplate</code> 使用示例</h3></div></div></div>
+<p>在本章节中，我们将展示如何使用 <code class="classname">CciTemplate</code> 和IBM CICS ECI连接器在ECI模式下访问一个CICS.</p>
+<p>首先，必须在CCI <code class="interfacename">InteractionSpec</code> 进行一些初始化以指定访问哪个CICS程序以及如何进行交互。</p>
+<pre class="code">ECIInteractionSpec interactionSpec = new ECIInteractionSpec();
+interactionSpec.setFunctionName("MYPROG");
+interactionSpec.setInteractionVerb(ECIInteractionSpec.SYNC_SEND_RECEIVE);</pre>
+<p>然后，程序通过Spring的模板使用 CCI 并在自定义对象和 CCI  <code class="literal">Records</code> 之间指定映射。</p>
+<pre class="code">public class MyDaoImpl extends CciDaoSupport implements MyDao {
+
+ public OutputObject getData(InputObject input) {
+  ECIInteractionSpec interactionSpec = ...;
+
+  OutputObject output = (ObjectOutput) getCciTemplate().execute(interactionSpec,
+    new RecordCreator() {
+     public Record createRecord(RecordFactory recordFactory) throws ResourceException {
+      return new CommAreaRecord(input.toString().getBytes());
+     }
+    },
+    new RecordExtractor() {
+     public Object extractData(Record record) throws ResourceException {
+      CommAreaRecord commAreaRecord = (CommAreaRecord)record;
+      String str = new String(commAreaRecord.toByteArray());
+      String field1 = string.substring(0,6);
+      String field2 = string.substring(6,1);
+      return new OutputObject(Long.parseLong(field1), field2);
+     }
+    });
+
+  return output;
+ }
+}</pre>
+<p>正如之前讨论的那样，callbacks 可以被用来直接在 CCI 连接或交互上操作。</p>
+<pre class="code">public class MyDaoImpl extends CciDaoSupport implements MyDao {
+
+ public OutputObject getData(InputObject input) {
+  ObjectOutput output = (ObjectOutput) getCciTemplate().execute(
+    new ConnectionCallback() {
+     public Object doInConnection(Connection connection, ConnectionFactory factory)
+       throws ResourceException {
+
+      <em class="lineannotation"><span class="lineannotation">// do something...</span></em>
+     }
+    });
+  }
+  return output;
+ }
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>当getCciTemplate().execute参数是 <code class="interfacename">ConnectionCallback</code> 时，
+   所用的 <code class="interfacename">Connection</code> 将被 <code class="classname">CciTemplate</code> 管理和关闭，
+   但是任何在连接上建立的交互都必须被callback实现类所管理。</p>
+</div>
+<p>
+			对于一个更特殊的callback，你可以实现一个 <code class="interfacename">InteractionCallback</code> 。
+			这样传入的 <code class="interfacename">Interaction</code> 将会被 <code class="classname">CciTemplate</code> 管理和关闭。
+			</p>
+<pre class="code">public class MyDaoImpl extends CciDaoSupport implements MyDao {
+
+ public String getData(String input) {
+  ECIInteractionSpec interactionSpec = ...;
+
+  String output = (String) getCciTemplate().execute(interactionSpec,
+    new InteractionCallback() {
+     public Object doInInteraction(Interaction interaction, ConnectionFactory factory)
+       throws ResourceException {
+      Record input = new CommAreaRecord(inputString.getBytes());
+      Record output = new CommAreaRecord();
+      interaction.execute(holder.getInteractionSpec(), input, output);
+      return new String(output.toByteArray());
+     }
+    });
+
+  return output;
+ }
+}</pre>
+<p>在上面的例子中，非托管模式（non-managed）下对应的spring beans的配置会像下面这样：</p>
+<pre class="code">&lt;bean id="managedConnectionFactory" class="com.ibm.connector2.cics.ECIManagedConnectionFactory"&gt;
+ &lt;property name="serverName" value="TXSERIES"/&gt;
+ &lt;property name="connectionURL" value="local:"/&gt;
+ &lt;property name="userName" value="CICSUSER"/&gt;
+ &lt;property name="password" value="CICS"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="connectionFactory" class="org.springframework.jca.support.LocalConnectionFactoryBean"&gt;
+ &lt;property name="managedConnectionFactory" ref="managedConnectionFactory"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="mypackage.MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+<p>在托管模式（managed mode）（也就是说，在一个J2EE环境）下，配置可能如下所示：</p>
+<pre class="code">&lt;bean id="connectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
+ &lt;property name="jndiName" value="eis/cicseci"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

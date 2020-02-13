@@ -1,0 +1,1006 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+  <div class="lpindex"><a href="index.html">首页</a><a href="12.html"> 上一页</a><a href="13-2.html"> 下一页</a></div>
+    <h1>第13章　制作第三方的JDBC驱动程序(上)</h1>
+    <p>　　在第10章中，我们讨论了如何使用HTTP遂道来进行远程方法调用，在本章中，我们将要进一步讨论这个问题，并且创建一个可以很容易地在Internet上配置的JDBC驱动程序。我们的目标是开发一个纯Java的JDBC驱动程序，它可以下载到客户端，然后连接到服务器上的servlet进程，接下来这个servlet进程将会使用我们选择的JDBC驱动程序。所有这些客户端和服务器之间的通信都是通过HTTP遂道技术实现的。</p>
+    <h2>13.1 JDBC驱动程序类型</h2>
+    <p>　　JavaSoft定义了四种类型的JDBC驱动程序。在讨论第三方的驱动程序之前，我们先来重温一下这引起由JavaSoft定义的类型：<br>
+      1.类型1:JDBC-ODBC桥——正如我们在第9章中看到的，JDBC-ODBC桥是作为JavaSoft的SDK的一部分来提供的。JDBC-ODBC桥是包sun.jdbc.odbc的一部分，不过其他Java虚拟机的开发商可能不支持这个包。请记住JDBC-ODBC桥使用本地的ODBC方法以及这种用法的限制——最严重的限制之一就是我们不能在一个applet中使用它。<br>
+      2.类型2：Java到本地API——Java到本地API驱动程序使用由开发商提供的本地库来直接与数据库通信。<br>
+      3.类型3：Java到私有网络协议——这种类型的JDBC驱动程序最具有灵活性。这种类型经常是在存在第三方的情况下，而且还可以在Internet上展开。类型3的驱动程序完全由Java编写，通过在私有网络协议上的某种中间件来进行通信。<br>
+      4.类型4：Java本地数据库协议——类型4的JDBC驱动程序是纯Java的驱动程序，它通过本地协议直接与数据库引擎通信。<br>
+    我们将要开发的是一个类型3的JDBC驱动程序。它是一个纯Java的驱动程序，并且使用私有网络协议——HTTP遂道来与服务器上的中间件——一系列servlet对象通信。图13.1显示的是类型3的JDBC驱动程序的各个组成部分。</p>
+    <h2><a name="132" id="132"></a>13.2 挑战：轻量级的JDBC驱动程序</h2>
+    <p>　　我们的任务是开发一个轻量级的类型3 JDBC驱动程序。这个驱动程序可以容易地在Internet上使用，甚至可以通过防火墙。在这里，轻量级是说这个驱动程序要尽可能的小，以便在提供全功能的JDBC实现的时候将下载时间减少得最少。现在回忆一下类型3的JDBC驱动程序应该具有的一些属性：</p>
+    <p>　　　　　　　　　　┌─────────────────┐<br>
+      ╭│ＪＡＶＡ　ＡＰＰＬＩＣＡＴＩＯＮ，│<br>
+      ││ＡＰＰＬＥＴ，ＯＲ　ＳＥＲＶＬＥＴ│<br>
+      ＪＡＶＡ　│└───────┬─────────┘ <br>
+      ＣＯＤＥ〈　　　　　　　　　│<br>
+      │┌───────┴─────────┐<br>
+      ││　　　　　　ＴＹＰＥ３　　　　　　│<br>
+      ╰│　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　　│<br>
+      └───────┬─────────┘<br>
+      ＰＲＯＰＲＩＥＴＡＲＹ　　　　　│　　　　　　　　　ＩＮＴＥＲＮＥＴ<br>
+      ＮＡＴＷＯＲＫ　　　　　　　　└┐ 　————————————————<br>
+      ＰＲＯＴＯＣＯＬ　　　　　　　　　│  <br>
+      ┌────────┴────────┐<br>
+      ╭│　　　　　　　ＪＡＶＡ　　　　　　│<br>
+      ＪＡＶＡ　　││　　　　　ＭＩＤＤＬＥＷＡＲＥ　　│<br>
+      ＣＯＤＥ　〈　└────────┬────────┘ <br>
+      │┌────────┴────────┐<br>
+      ╰│　　　　ＪＤＢＣ　ＤＲＩＶＥＲ　　│<br>
+      └────────┬────────┘<br>
+      ╭┴╮ <br>
+      ╰─╯ <br>
+      │　│DATABASE<br>
+      ╰─╯<br>
+      图9.4 类型3的JDBC驱动程序</p>
+    <p> 　　·全Java——客户端的JDBC实现必须是百分之百的纯Java程序，这种特性使得驱动程序可以在Internet上使用而无须考虑在客户端上预先安装和配置软件。<br>
+      ·与服务器的通信是通过私有网络协议——在客户端和服务器之间的通信典型的是通过TCP/IP或者HTTP协议来实现的。<br>
+      ·使用服务器端的应用程序来处理客户端的请求，然后使用服务器上的JDBC驱动程序来给请求提供服务。现在你可能会猜到这里我们的服务进程也包括servlet。<br>
+      图13.2显示了我们将要制作的这个类型3的JDBC驱动程序的各个组成部分，这个驱动程序的名字是SQLServlet。</p>
+    <h2><a name="133" id="133"></a>13.3 JDBC的难点</h2>
+    <p> 　　在我们开始编写SQLServlet这个JDBC驱动程序之前，先来看一看一些难点：<br>
+      ·远程方法调用——我们已经知道如何在客户端捕获一个JDBC方法调用，通知服务器端对JDBC驱动程序进行相同的调用，然后返回结果。在第10章中我们已经看到如何使用HTTP遂道来调用远程方法，在SQLServlet中，我们也将使用这种办法。 <br>
+      · 编发查询结果——在第10章中的HTTP遂道的实现已经说明了如何通过Java序列化来编发数据，看上去这是解决编发数据的好办法，不过，遗憾的是JDBC规范中的大部分类，特别是ResultSet类都不是可序列化的，这意味着我们不能依赖Java自动编发这些对象。初看起来，这的确很奇怪，不过考虑到结果集中可能存在成百上千行数据，我们很可能并不想将所有的数据都无条件地发送到客户端。我们需要做的是用自己的方法编发结果数据。<br>
+      ·性能——HTTP遂道技术为我们提供了一种调用远程方法的可靠手段，它也成为影响性能的关键因素。考虑到HTTP协议是一个无连接协议，客户端发送每一个请求的时候必须重新建立连接。为了提高我们的JDBC驱动程序的性能，我们必须十分小心地使用数据调整缓存和绑定方法的调用，以减少我们实际提交远程方法调用的次数。减少我们不得不提交的远程调用的次数会大大提高应用程序的性能。<br>
+      ·单调乏味的代码——根据经验（我已经开发了七个不同的JDBC驱动程序）存在着相当多的单调乏味的代码工作，特别是在实现像DatabaseMetaData这样的接口的时候，这个接口定义了130多个方法。 </p>
+    <h2><a name="134" id="134"></a>13.4 编写SQLServlet</h2>
+    <p>　　如果回过去看一看图13.2，我们就会注意到SQLServlet这个JDBC驱动程序是由服务器端和客户端两个方面的程序实现组成的。客户端将会使用标准的JDBC调用，使用HTTP遂道，通过servlet调用一个服务器上的方法；而服务器将对目标数据库调用相应的JDBC方法，并且返回结果。<br>
+      SQLServlet源程序的完整代码可以在本书配套光盘中找到。 </p>
+    <h3> <a name="1341" id="1341"></a>13.4.1 JDBC API的实现</h3>
+    <p>　　JDBC规范提供了一系列必须由驱动程序开发人员实现的Java接口。一个JDBC应用程序是用这些接口编写的，而不是某个驱动程序的实现。由于所有的JDBC驱动程序都必须实现这些相同的接口，它们才可以进行交换；至少在理论上，客户端程序可以无须考虑数据库的不同。<br>
+      图13.3显示了在JDBC API中定义的所有接口以信它们之间的关系。我们将介绍主要的接口并讨论SQLServlet驱动程序的实现。请注意这一节仅仅是增加了JDBC规范，而不是要替换它。<br>
+      图13.3 JDBC接口</p>
+    <p> 　　驱动程序<br>
+      驱动程序接口是所有JDBC驱动程序的入口点。在这里，建立一个到数据库的连接以进行其他工作。从设计上讲，这个类非常小，目的是使JDBC驱动程序可以预先在系统中注册，以便驱动程序管理器仅仅通过给出的URL就选定应该使用的驱动程序。确定驱动程序是否可以为某个URL服务的惟一方法是为每一个JDBC驱动程序都初始化驱动程序对象的实例，然后调用acceptsURL()方法。为了使找到正确的JDBC驱动程序所需的时间达到最小，每一个驱动程序对象都应该尽可能的小以便尽快加载。<br>
+      那么如何注册一个驱动程序呢？每一个JDBC驱动程序在实例化的过程中向驱动程序管理器(Driver Manager)注册，注册可以使用缺省的前面的构造函数或者一个静态的构造函数。图13.4显示了SQLServlet 
+      JDBC驱动程序在缺省的构造函数中注册部分的代码。</p>
+    <pre class="code">　/**
+* <p>Default constructor. This constructor will register
+* the SQLServlet driver with the JDBC DriverManager.
+* 文件名：Driver.java
+*/
+public Driver()
+throws java.sql.SQLException
+{
+if (isTracing()) {
+trace("Attempting to register");
+}
+
+// Attempt to register this driver with the JDBC
+// DriverManager. If it fails an exception will be thrown
+java.sql.DriverManager.registerDriver(this);
+}　</pre>
+    <p>
+    图13.4 使用DriverManager注册</p>
+    <p>　　如图13.5所示，SQLServlet驱动程序的注册可以简单地通过创建一个驱动程序实例来完成。</p>
+   　<pre class="code">//Register the SQLServlet driver
+javaservlets.SQLServlet.Driver d=
+new javaservlets.SQLServlet.Driver();
+//Alternate way to register a JDBC driver
+String driverName = "javaservlets.SQLServlet.Driver";
+Class.forName(driverName).newInstance();</pre>
+    图13.5 注册SQLServlet驱动程序\
+    <p> 　　正如刚才提到的，驱动程序管理器使用acceptsURL()方法来确定一个驱动程序是否支持指定的URL。一个JDBC URL的一般格式是：<br>
+      jdbc:subprotocol:subname<br>
+      其中：<br>
+      jdbc指出这里要使用JDBC驱动程序。<br>
+      subprotocol是特定数据库所支持的连接机制(请注意这个机制可能为多种驱动程序所支持)。<br>
+      subname是由JDBC驱动程序定义的附加的连接信息。<br>
+      我们的SQLSevlet:&lt;code base&gt;@&lt;driver name&gt;:&lt;connection 
+      URL&gt;<br>
+      其中：<br>
+      jdbc指出这里要使用JDBC驱动程序。 <br>
+      SQLServlet是指定的连接机制子协议。<br>
+      &lt;code base&gt;是服务器上applet被卸载的位置。<br>
+      &lt;driver name&gt;是在服务器是注册的JDBC驱动程序的名字。<br>
+      &lt;connection URL&gt;是服务器使用的完整的连接URL。<br>
+      大多数接口是易于实现的，而且几乎都是可以与客户端无关。我们通过创建一个新的数据库连接来和服务器通信。正如我们在第10章中看到的，所有的服务器端的服务都是用接口定义的。图13.6显示了一个驱动程序的接口，它定义了客户端可以使用的一些方法。</p>
+    <pre class="code">　package javaservlets.SQLServlet.server;
+
+/**
+* <p>This is the server-side driver object used by SQLServlet.
+*/
+
+public interface DriverInterface
+{
+/**
+* <p>Attempt to establish a connection to the given
+* URL.
+*
+* @param driverName Optional JDBC driver name to register
+* @param url The URL of the database to connect to
+* @param info A list of arbitrary String tag/value pairs as
+* connection arguments; normally at least a "user" and
+* "password" property will be included
+* @return A database connection handle
+*/
+int connect(String driverName,
+String url,
+java.util.Properties info)
+throws java.sql.SQLException; 
+}　</pre>
+      图13.6 DriverInterface.java代码清单
+    <p>　　这样给出一个JDBC驱动程序名称，一个JDBC连接URL，以及一些可选的连接属性，对connect方法的调用将会在服务器上创建一个新的JDBC连接并返回其句柄。为什么返回一个句柄而不是一个连接对象呢？一个简单的原因就是连接对象不能被序列化的，所以不能使用Java序列化的办法来编发数据。在JDK1.1的HTTP遂道协议中，我们恰 
+      恰是使用序列化技术来实现的。相反的，我们使用一个引用这个服务器端的连接对象的句柄，然后当我们需要使用它时再查找它。图13.7显示了服务器端的connect()方法，这个方法试图建立一个数据库连接并返回连接的句柄。</p>
+    <pre class="code"> /**
+* <p>Attempt to establish a connection to the given
+* URL.
+*
+* @param driverName Optional JDBC driver name to register
+* @param url The URL of the database to connect to
+* @param info A list of arbitrary String tag/value pairs as
+* connection arguments; normally at least a "user" and
+* "password" property will be included
+* @return A database connection handle
+* 源自DriverObject.java文件
+* /
+public int connect(String driverName,
+String url,
+java.util.Properties info)
+throws java.sql.SQLException
+{
+int handle = 0;
+
+// If a driver was given, register it
+if ((driverName != null) && (driverName.length() > 0)) {
+
+try {
+
+// Create a new instance of the driver so that it
+// will register itself
+Class.forName(driverName).newInstance();
+
+}
+catch (Exception ex) {
+
+// Print the error and convert to an SQLException
+ex.printStackTrace();
+throw new java.sql.SQLException("Unable to register " +
+driverName);
+}
+
+// Ask the DriverManager to create a connection. An
+// exception will be thrown if a connection cannot
+// be made
+java.sql.Connection con =
+java.sql.DriverManager.getConnection(url, info);
+
+// Got a connection?
+if (con != null) {
+handle = addConnection(con);
+}
+}
+
+return handle;
+}　</pre>
+      图13.7 服务器connect方法
+    <p>　　请注意连接句柄被保存在一个公有静态向量中，这样它就可以很容易的被服务器上的所有对象访问。集中管理所有的连接对象的好的一面是，我们可以编写某种数据库监视应用程序来记录连接的个数，建立连接的时间之类的情况。<br>
+      在调用remote()方法来在服务器上创建新的数据库连接之前，我们先要实例化客户端的代理，接下来，这个代理创建一个新的服务器端对象，通过这个对象来与数据库直接通信。所有这些工作使用了我们在第10章中详细讨论了的HTTP遂道技术，图13.8显示了在客户端创建一个驱动程序代理所需的代码。</p>
+    <pre class="code"> /**
+* <p>Creates a new DriverObject. For testing purposes if the
+* code base is null a local version is created.
+*
+* @return A DriverObject instance
+*/
+protected DriverInterface newDriverObject()
+throws java.sql.SQLException
+{
+DriverInterface di = null;
+
+if (isTracing()) {
+trace("Creating new DriverObject");
+}
+
+try {
+if (getCodeBase() == null) {
+
+// Attempt to create a new local version of the driver
+// object
+di = (DriverInterface) Class.forName(
+"javaservlets.SQLServlet.server.DriverObject")
+.newInstance();
+}
+else {
+
+// Create a new driver object proxy
+di = (DriverInterface)
+new RemoteDriverObjectClient(getCodeBase(),
+isUsePackage());
+}
+}
+catch (Exception ex) {
+
+// Convert all exceptions into a SQLException
+throw new java.sql.SQLException(ex.getMessage());
+}
+
+return di;
+}　</pre>
+      图13.8 实例化客户端代理驱动器
+      这段代码有几点需要说明。首先如果连接URL中的code base为空，那么就会直接使用服务器端对象。这是在不使用Web服务器而进行本地测试的一个好办法。这也更加显示出使用基于接口的编程方法的魅力——实际实现可以在不影响调用程序的情况下进行修改，在我们的例子中是通过HTTP的远程对象和本地对象。第二，请注意在创建一个本地对象的实例的时候，使用了Class.forName().newInstance()。这是一个重要的细节，因为我们将会使用CreateArchive实用工具(第12章)来为应用程序(applet)创建一个存档。通过调用Class.forName()对象可以不必考虑类的从属关系，从而无须在存档中保存。第三，请注意isTracing()和trace()方法的用法。这些方法确定了在当前JDBC驱动程序管理器是否激活了一个输出流，以及在这个流存在的时候向它输出调试信息。 <br>
+      那么这个驱动程序的代理是怎么得来的呢？回忆一下第11章中我们开发的那个代码生成工具，那个程序可以自动地创建必要的客户代理的服务器代码相隔根以实现HTTP遂道，下面的代码就是用来生成Driver对象的遂道的。为了提高可读性，我们把这个命令分别写在几行中。<br>
+      java javaservlets,CodeGen.ServletGen<br>
+      -ijavaservlets.SQLServlet.server.DriverInterface<br>
+      -cjavaservlets.SQLServlet.server.DriverObject <br>
+      -i开关指出了接口，而-c开关指出了所要使用的服务器端的类。这个命令将生成两个Java源文件。<br>
+      1.RemoteDriverObjectClient.java——这个文件是实现HTTP遂道的安托房地产开发公司端代理的代码。这个类实现了DriverInterface接口。<br>
+      2.RemoteDriverObjectServer.java——这个文件是与客户端代理通信的服务器端的代码存根。其中实现了一个Java 
+      servlet，这个servlet必须加入到你的Web服务器设置中去。<br>
+      再重申一下，建立一个远程数据库连接的一般处理流程序如下：<br>
+      1.注册SQLServlet JDBC驱动程序。这是通过实例化一个新的驱动程序对象来实现的。驱动程序被注册之后，JDBC驱动程序管理器就会将这个SQLServlet驱动程序加载，以便响应某个URL的getConnection()请求。<br>
+      2.在getConnection()方法中一个新的客户端代理会被实例化。这个代理会调用这个生成的servlet，接下来，这个servlet会在服务器上创建一个新的驱动程序对象。之后，客户端和服务器对象通过HTTP遂道进行通信。<br>
+      3.getConnection()方法会在客户端代理中被调用(定义在DriverInterface)。它的参数被编发成为服务器端对象，在服务器上，真正调用实际的方法。<br>
+      4.一旦一个数据库连接在服务器上建立，这个连接对象就会被放在一个表中，而这个连接的句柄被返回给客户端。客户端程序可以使用这个句柄来引用该连接。 <br>
+      我们为SQLSevlet JDBC驱动程序所创建的所有对象都遵从上述流程。</p>
+    <p>　　连接<br>
+      连接接口表示了这个数据源的一个会话。通过这个接口，我们可以创建statement对象来执行SQL语句或者通过DatabaseMteaData接口收集这个数据库的附加信息。DatabaseMetaData接口将在下一节中讨论。<br>
+      请记住当驱动程序创建一个新的连接的时候，实际上它是在服务器上创建了一个连接对象然后给这个新对象赋一个句柄。驱动程序必须使用这个连接句柄来引用服务器上实际的连接对象。在所有这些之前，我们必须首先定义服务器端的连接对象所要提供的服务。如图13.9所示。</p>
+    <pre class="code">　package javaservlets.SQLServlet.server;
+
+/**
+* <p>This is the server-side connection object used by SQLServlet.
+*/
+
+public interface ConnectionInterface
+{
+/**
+* <p>Sets the connection handle
+*
+* @param handle Connection handle
+*/
+void setHandle(int handle);
+
+/**
+* <p>Creates a new Statement object
+*/
+int createStatement() throws java.sql.SQLException;
+
+/**
+* <p>Returns the native SQL string as known by the driver
+*
+* @param sql Input SQL statement
+* @return The converted SQL statement
+*/
+String getNativeSQL(String sql) throws java.sql.SQLException;
+
+/**
+* <p>Closes and frees the connection
+*/
+void close() throws java.sql.SQLException;
+
+/**
+* <p>Gets the DatabaseMetaData
+*
+* @return Data cache containing static meta data information
+*/
+DBMD getMetaData() throws java.sql.SQLException;
+
+/**
+* <p>Sets the auto-commit mode
+*
+* @param autoCommit true to turn on auto-commit mode
+*/
+void setAutoCommit(boolean autoCommit) throws java.sql.SQLException;
+
+/**
+* <p>Gets the auto-commit mode
+*
+* @return true if auto-commit mode is on
+*/
+boolean getAutoCommit() throws java.sql.SQLException;
+
+/**
+* <p>Commits the current transaction
+*/
+void commit() throws java.sql.SQLException;
+
+/**
+* <p>Rolls back (cancels) the current transaction
+*/
+void rollback() throws java.sql.SQLException;
+
+/**
+* <p>Sets the read-only flag for the database. Note that
+* this is only a suggestion to the database and may have
+* no effect
+*
+* @param readOnly true if the database should be read-only
+*/
+void setReadOnly(boolean readOnly) throws java.sql.SQLException;
+
+/**
+* <p>Gets the read-only flag
+*
+* @return true if the database is read-only
+*/
+boolean isReadOnly() throws java.sql.SQLException;
+
+/**
+* <p>Sets the database catalog name
+*
+* @param catalog Catalog name
+*/
+void setCatalog(String catalog) throws java.sql.SQLException;
+
+/**
+* <p>Gets the current database catalog name
+*
+* @return The current catalog
+*/
+String getCatalog() throws java.sql.SQLException;
+
+/**
+* <p>Attempts to set the current transaction isolation level
+*
+* @param level Transaction isolation level
+*/
+void setTransactionIsolation(int level)
+throws java.sql.SQLException;
+
+/**
+* <p>Gets the current transaction isolation level
+*
+* @return The current transaction isolation level
+*/
+int getTransactionIsolation() throws java.sql.SQLException;
+
+/**
+* <p>Get any warnings for the connection
+*
+* @return The first warning in a possible chain of warnings
+*/
+java.sql.SQLWarning getWarnings() throws java.sql.SQLException;
+
+/**
+* <p>Clears warnings
+*/
+void clearWarnings() throws java.sql.SQLException;
+
+}　</pre>
+      图13.9 ConnectionInterface.java代码清单</p>
+    <p>　　在连接接口中定义的大部分方法都仅仅是简单地直接调用JDBC API方法。值得注意的是，在创建一个新连接的时候，createStatement()方法返回一个服务器端的statement对象的句柄，而这是不可序列化的。<br>
+      图13.10显示了创建客户端连接代理的代码。请注意在创建了代理之后，给这个连接对象设置了句柄，这样，服务器就可以用这个句柄来与实际的连接对象相联系了。</p>
+    <p> 　　/**<br>
+      * &lt;p&gt;Creates a new ConnectionObject. For testing purposes 
+      if the<br>
+      * code base is null a local version is created.<br>
+      *<br>
+      * @return A ConnectionObject instance<br>
+    <pre class="code">* 原代码文件：Connection.java
+*/
+protected ConnectionInterface newConnectionObject()
+throws java.sql.SQLException
+{
+ConnectionInterface ci = null;
+
+if (isTracing()) {
+trace("Creating new ConnectionObject");
+}
+
+try {
+if (getCodeBase() == null) {
+
+// Attempt to create a new local version of the connection
+// object
+ci = (ConnectionInterface) Class.forName(
+"javaservlets.SQLServlet.server.ConnectionObject")
+.newInstance();
+}
+else {
+
+// Create a new connection object proxy
+ci = (ConnectionInterface)
+new RemoteConnectionObjectClient(getCodeBase(),
+isUsePackage());
+}
+}
+catch (Exception ex) {
+
+// Convert all exceptions into a SQLException
+throw new java.sql.SQLException(ex.getMessage());
+}
+
+// Set the handle on the connection
+ci.setHandle(m_handle);
+
+return ci;
+}</pre>
+      图13.10 客户端代理连接
+  
+    <p>　　createStatement()方法和驱动程序对象的getConnection()方法类似，服务器上创建一个statement对象，然后这个对象的句柄被返回给客户程序。更有趣的是getMetaData()方法以及我们如何在客户端缓存数据以提高性能。由于大多数DatabaseMetaData信息在数据库连接的生命期中是静态的，所以我们可以在服务器上准备好所有这些信息然后在一个单独的传输过程中将它们传给客户端。我们需要创建一个可序列化的对象来封装这些静态信息。这个对象就是DBMD，图13.11显示了它的代码。</p>
+    <p> 　　package javaservlets.SQLServlet.server;<br>
+      <br>
+      /**<br>
+      * &lt;p&gt;This class represents the DatabaseMetaData for a Connection.<br>
+      * Only static meta data (data that will not changed for the<br>
+      * lifetime of a connection) will be stored here.<br>
+    <pre class="code">* 原文件：ConnectionObject.java
+*/
+
+public class DBMD
+implements java.io.Serializable
+{
+// Our DatabaseMetaData object on the server. By defining the
+// object as transient it will not be serialized when written
+// to the client
+transient public java.sql.DatabaseMetaData m_dbmd;
+
+// Server-side connection handle
+public int m_handle;
+
+public DBMD(java.sql.DatabaseMetaData dbmd, int handle)
+{
+m_dbmd = dbmd;
+m_handle = handle;
+}
+
+// Can all the procedures returned by getProcedures be called
+// be the current user?
+public boolean proceduresAreCallable;
+
+// Can all of the tables returned by getTables have data
+// selected?
+public boolean tablesAreSelectable;
+
+// The url for the database
+public String url;
+
+// The current user name
+public String userName;
+
+(continued...)
+}</pre>
+      图13.11 DBMD.java部分代码清单
+    <p>　　这个对象在服务器上实例化，它的public属性将使用服务器端的DatabaseMetaData方法的结果来设置，然后这个对象会被在一个传输过程中返回给客户程序，在客户端，所有这些方法可以直接被访问。由于我们使用的是相对比较慢的HTTP协议，所以有可能尽量使用高速缓存技术就变得特别重要。<br>
+      图13.12显示了服务器端连接对象的getMetaData()方法。请注意首先必须要找到客户端提供的句柄所对应的那个连接对象。实际上，这个连接对象被保存在一个连接保持(connection 
+      holder)对象中，这个连接保持对象还保存了一些DatabaseMetaData高速缓存和statement对象之类的其他信息。在找到这个连接之后，我们检查一下是否已经创建了metadata高速缓存，如果没有，那么就用从DatabaseMetaData对象取得的结果来创建一个新的高速缓存，然后将metadata高速缓存返回给客户端。请记住DBMD对象是可序列化的，因此它可以被编发。</p>
+    <pre class="code"> 　/**
+* <p>Gets the DatabaseMetaData
+*
+* @return Data cache containing static meta data information
+*/
+public DBMD getMetaData() throws java.sql.SQLException
+{
+// Find the ConnectionHolder for the connection handle
+ConnectionHolder holder = getHolder();
+
+// Get the cached data
+DBMD dbmd = holder.getDatabaseMetaData();
+
+if (dbmd == null) {
+
+// No data cache yet; create a new DatabaseMetaData object
+java.sql.DatabaseMetaData metadata =
+holder.getConnection().getMetaData();
+
+// Create a new data cache
+dbmd = new DBMD(metadata, m_handle);
+
+// Now get all of the static values and place them into
+// the data cache
+dbmd.proceduresAreCallable =
+metadata.allProceduresAreCallable();
+dbmd.tablesAreSelectable =
+metadata.allTablesAreSelectable();
+dbmd.url = metadata.getURL();
+dbmd.userName = metadata.getUserName();
+(continued...)
+//Cache the data
+holder.setDatabaseMetaData(dbmd);
+}
+return dbmd;
+}　</pre>
+      图13.12 服务器端getMetaData()方法</p>
+    <p>　　服务器端连接对象的其他部分基本上是JDBC API方法到连接接口方法的一一映射。图13.13显示了说明这些方法是如何实现的的一个例子。</p>
+    <pre class="code"> 　/**
+* <p>Sets the read-only flag for the database. Note that
+* this is only a suggestion to the database and may have
+* no effect
+*
+* @param readOnly true if the database should be read-only
+*/
+public void setReadOnly(boolean readOnly)
+throws java.sql.SQLException
+{
+// Find the ConnectionHolder for the connection handle
+ConnectionHolder holder = getHolder();
+
+// Set the read-only flag
+holder.getConnection().setReadOnly(readOnly);
+}
+
+/**
+* <p>Gets the read-only flag
+*
+* @return true if the database is read-only
+*/
+public boolean isReadOnly() throws java.sql.SQLException
+{
+// Find the ConnectionHolder for the connection handle
+ConnectionHolder holder = getHolder();
+
+// Get the read-only flag
+return holder.getConnection().isReadOnly();
+}　</pre>
+      图13.13 连接对象方法
+    <p>　　对于这个驱动程序对象，我们需要生成客户端代理和服务器端的代码相隔根，这样方法的调用才能够被遂道化。<br>
+    <pre class="code">java javaservlets.CodeGen.ServletGen
+-ijavaservlets.SQLServlet.server.ConnectionInterface
+-cjavaservlets.SQLServlet.server.ConnectionObject</pre>
+    <p>　　请记住RemoteConnectionObjectServer对象是一个servlet，它必须配置在Web服务器上。 </p>
+    <p>　　DatabaseMetaData<br>
+      具有超过130个方法的DatabaseMetaData接口无疑是JDBC API的重心。它提供了数据库所支持的选项以及一些目录信息诸如表、列、存储过程等等。<br>
+      正如我们在前面所看到的，在我们所讨论的连接中，大部分DatabaseMetaData是经过高速缓存的，而且返回给客户程序的是封装后的DBMD对象。因此，这个描述了服务器端方法的接口很容易管理。我们需要定义的仅仅是那些极少的返回动态信息方法。换句话说，就是那些被其他用户所修改的服务器数据。图13.14显示了DatabaseMetaDataInterface接口的完整代码。</p>
+    <pre class="code">　package javaservlets.SQLServlet.server;
+
+/**
+* <p>This is the server-side DatabaseMetaData object used by
+* SQLServlet.
+*/
+
+public interface DatabaseMetaDataInterface
+{
+/**
+* <p>Sets the connection handles
+*
+* @param conHandle Connection handle
+*/
+void setHandle(int conHandle);
+
+/**
+* <p>Is the database read-only?
+*
+* @return true if the database is read-only
+*/
+boolean isReadOnly() throws java.sql.SQLException;
+
+/**
+* <p>Is CONVERT between the given SQL types supported?
+*
+* @param fromType The SQL type to convert from
+* @param toType The SQL type to convert to
+* @return true if the conversion is supported
+*/
+boolean supportsConvert(int fromType, int toType)
+throws java.sql.SQLException;
+
+/**
+* <p>Does the database support the given transaction isolation
+* level?
+*
+* @param level The transaction isolation level
+* @return true if the isolation level is supported
+*/
+boolean supportsTransactionIsolationLevel(int level)
+throws java.sql.SQLException;
+
+/**
+* Get a description of tables available in a catalog.
+*
+* Only table descriptions matching the catalog, schema, table
+* name and type criteria are returned. They are ordered by
+* TABLE_TYPE, TABLE_SCHEM and TABLE_NAME.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name or null for all
+* @param tableNamePattern A table name pattern
+* @param types List of table types to include
+* @return ResultSet handle
+*/
+int getTables(String catalog, String schemaPattern,
+String tableNamePattern, String types[])
+throws java.sql.SQLException;
+
+/**
+* <p>Get the schema names available in this database. The
+* results are ordered by schema name.
+*
+* @returns ResultSet handle
+*/
+int getSchemas() throws java.sql.SQLException;
+
+/**
+* <p>Get a description of stored procedures available in a
+* catalog.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name pattern or null for all
+* @param procedureNamePattern Procedure name pattern or null for
+* all
+* @return ResultSet handle
+*/
+int getProcedures(String catalog, String schemaPattern,
+String procedureNamePattern)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a catalog's stored procedure parameters
+* and result columns.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name pattern or null for all
+* @param procedureNamePattern Procedure name pattern or null for
+* all
+* @param columnNamePattern Column name pattern or null for all
+* @return ResultSet handle
+*/
+int getProcedureColumns(String catalog,
+String schemaPattern,
+String procedureNamePattern,
+String columnNamePattern)
+throws java.sql.SQLException;
+
+/**
+* <p>Get the catalog names available in this database. The
+* results are ordered by catalog name.
+*
+* @return ResultSet handle
+*/
+int getCatalogs() throws java.sql.SQLException;
+
+/**
+* <p>Get the table types available in this database. The results
+* are ordered by table type.
+*
+* @return ResultSet handle
+*/
+int getTableTypes() throws java.sql.SQLException;
+
+/**
+* <p>Get a description of table columns available in a catalog.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name or null for all
+* @param tableNamePattern A table name pattern
+* @param columnNamePattern A column name pattern
+* @return ResultSet handle
+*/
+int getColumns(String catalog, String schemaPattern,
+String tableNamePattern, String columnNamePattern)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of the access rights for a table's columns.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name or null for all
+* @param tableNamePattern A table name pattern
+* @param columnNamePattern A column name pattern
+* @return ResultSet handle
+*/
+int getColumnPrivileges(String catalog,
+String schema,
+String table,
+String columnNamePattern)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of the access rights for each table
+* available in a catalog.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name or null for all
+* @param tableNamePattern A table name pattern
+* @return ResultSet handle
+*/
+int getTablePrivileges(String catalog, String schemaPattern,
+String tableNamePattern)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a table's optimal set of columns that
+* uniquely identifies a row. They are ordered by SCOPE.
+*
+* @param catalog Catalog name or null for all
+* @param schema Schema name or null for all
+* @param table Table name
+* @param scope The scope if interest
+* @param nullable Include columns that are nullable?
+* @return ResultSet handle
+*/
+int getBestRowIdentifier(String catalog, String schema,
+String table, int scope,
+boolean nullable)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a table's columns that are automatically
+* updated when any value in a row is updated.
+*
+* @param catalog Catalog name or null for all
+* @param schema Schema name or null for all
+* @param table Table name
+* @return ResultSet handle
+*/
+int getVersionColumns(String catalog, String schema, String table)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a table's primary key columns. They
+* are ordered by COLUMN_NAME.
+*
+* @param catalog Catalog name or null for all
+* @param schema Schema name or null for all
+* @param table Table name
+* @return ResultSet handle
+*/
+int getPrimaryKeys(String catalog, String schema, String table)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of the primary key columns that are
+* referenced by a table's foreign key columns (the primary keys
+* imported by a table). They are ordered by PKTABLE_CAT,
+* PKTABLE_SCHEM, PKTABLE_NAME, and KEY_SEQ.
+*
+* @param catalog Catalog name or null for all
+* @param schema Schema name or null for all
+* @param table Table name
+* @return ResultSet handle
+*/
+int getImportedKeys(String catalog, String schema, String table)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a foreign key columns that reference a
+* table's primary key columns (the foreign keys exported by a
+* table). They are ordered by FKTABLE_CAT, FKTABLE_SCHEM,
+* FKTABLE_NAME, and KEY_SEQ.
+*
+* Column definitions, parameters, and return value are the
+* same as getImportedKeys.
+*/
+int getExportedKeys(String catalog, String schema, String table)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of the foreign key columns in the foreign
+* key table that reference the primary key columns of the
+* primary key table (describe how one table imports another's
+* key.) This should normally return a single foreign key/primary
+* key pair (most tables only import a foreign key from a table
+* once.) They are ordered by FKTABLE_CAT, FKTABLE_SCHEM,
+* FKTABLE_NAME, and KEY_SEQ.
+*
+* Column definitions are the same as getImportedKeys.
+*/
+int getCrossReference(String primaryCatalog,
+String primarySchema,
+String primaryTable,
+String foreignCatalog,
+String foreignSchema,
+String foreignTable)
+throws java.sql.SQLException;
+
+/**
+* <p>Get a description of all the standard SQL types supported by
+* this database. They are ordered by DATA_TYPE and then by how
+* closely the data type maps to the corresponding JDBC SQL type.
+*
+* @return ResultSet handle
+*/
+int getTypeInfo() throws java.sql.SQLException;
+
+/**
+* <p>Get a description of a table's indices and statistics.
+* They are ordered by NON_UNIQUE, TYPE, INDEX_NAME, and
+* ORDINAL_POSITION.
+*
+* @param catalog Catalog name or null for all
+* @param schema Schema name or null for all
+* @param table Table name
+* @param unique when true, returns only unique indices
+* @param approximate when true, results are allowed to reflect
+* approximate (or out of data) values
+* @return ResultSet handle
+*/
+int getIndexInfo(String catalog, String schema, String table,
+boolean unique, boolean approximate)
+throws java.sql.SQLException;
+
+}　</pre>
+      图13.14 DatabaseMetaDataInterface.java代码清单
+    <p>　　在客户端创建DatabaseMetaData对象就和我们已经看到的驱动程序对象和连接对象一样。客户端代理被实例化，然后创建服务器上的“真正”对象，最后将这个对象的句柄返回给客户端。服务器上的实现也和我们已经看到的大同小异，如图13.15所示。首先，对客户端提供的句柄来确定连接保存对象。这个对象中含有到实际的DatabaseMetaData对象的引用。通过DatabaseMetaData对象，我们可以调用适当的方法。接下来，我们调用这些方法，如果返回的结果不可以序列化，就保存这个返回对象然后将它的句柄返回给客户端。下面我们来看看结果集对象是如何被处理的。<br>
+      同样，客户端代理和服务器端代码存根必须被生成，而servlet必须配置在Web服务器上。</p>
+    <pre class="code"> /**
+* Get a description of tables available in a catalog.
+*
+* Only table descriptions matching the catalog, schema, table
+* name and type criteria are returned. They are ordered by
+* TABLE_TYPE, TABLE_SCHEM and TABLE_NAME.
+*
+* @param catalog Catalog name or null for all
+* @param schemaPattern Schema name or null for all
+* @param tableNamePattern A table name pattern
+* @param types List of table types to include
+* @return ResultSet handle
+*/
+public int getTables(String catalog, String schemaPattern,
+String tableNamePattern, String types[])
+throws java.sql.SQLException
+{
+// Find the ConnectionHolder for the connection handle
+ConnectionHolder holder = getHolder();
+
+java.sql.ResultSet rs =
+holder.getMetaData().getTables(catalog, schemaPattern,
+tableNamePattern, types);
+
+// Create a dummy statement object
+StatementHolder stmtHolder = holder.addDummyStatement();
+return stmtHolder.setResultSet(rs);
+}　</pre>
+      图13.15 服务器端getTables()方法    
+    <div class="rpindex"><a href="13-2.html"> 下一页</a><a href="12.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,369 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-autoproxy"></a>7.9.&#160;使用“自动代理（autoproxy）”功能</h2></div></div></div>
+<p>到目前为止我们已经考虑了如何使用<code class="literal">ProxyFactoryBean</code>或者类似的工厂bean来显式创建AOP代理。</p>
+<p>Spring也允许我们使用“自动代理”的bean定义，可以自动对被选中的bean定义进行代理。
+    这建立在Spring的“bean post processor”功能上，后者允许在容器加载时修改任何bean的定义。</p>
+<p>在这个模型下，你在你的XML bean定义文件中建立一些特定的bean定义来配置自动代理功能。
+    这允许你仅仅声明那些将被自动代理的适当目标：你不需要使用<code class="literal">ProxyFactoryBean</code>。</p>
+<p>有两种方式可以做到这点：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>使用一个引用当前上下文中特定bean的自动代理创建器。</p></li>
+<li><p>一个专用自动代理的创建需要被单独考虑；自动代理创建由源代码级别的元数据属性驱动。</p></li>
+</ul></div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-autoproxy-choices"></a>7.9.1.&#160;自动代理bean定义</h3></div></div></div>
+<p><code class="literal">org.springframework.aop.framework.autoproxy</code>包提供了下列标准自动代理创建器。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-autoproxy"></a>7.9.1.1.&#160;BeanNameAutoProxyCreator</h4></div></div></div>
+<p>BeanNameAutoProxyCreator为名字匹配字符串或者通配符的bean自动创建AOP代理。</p>
+<p>
+                </p>
+<pre class="code">&lt;bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator"&gt;
+                    &lt;property name="beanNames"&gt;&lt;value&gt;jdk*,onlyJdk&lt;/value&gt;&lt;/property&gt;
+                    &lt;property name="interceptorNames"&gt;
+                    &lt;list&gt;
+                    &lt;value&gt;myInterceptor&lt;/value&gt;
+                    &lt;/list&gt;
+                    &lt;/property&gt;
+                &lt;/bean&gt;</pre>
+<p>
+            </p>
+<p>和<code class="literal">ProxyFactoryBean</code>一样，这里有一个<code class="literal">interceptorNames</code>属性而不是一个拦截器的列表，这允许使用原型（prototype）通知器。这里的“拦截器”可以是通知器或任何通知类型。</p>
+<p>与通常的自动代理一样，使用<code class="literal">BeanNameAutoProxyCreator</code>的主要目的是把相同的配置一致地应用到多个对象，
+            并且使用最少量的配置。一个流行的选择是把声明式事务应用到多个对象上。</p>
+<p>那些名字匹配的Bean定义，例如上面的例子里的“jdkMyBean”和“onlyJdk”，本身只是目标类的普通bean定义。一个AOP对象将被<code class="literal">BeanNameAutoProxyCreator</code>自动创建。
+            相同的通知将被应用到全部匹配的bean上。注意如果通知器被使用（而不是像上面例子里那样使用拦截器），对于不同bean可以应用不同的切入点。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-autoproxy-default"></a>7.9.1.2.&#160;DefaultAdvisorAutoProxyCreator</h4></div></div></div>
+<p>一个更加通用而且强大得多的自动代理创建器是<code class="literal">DefaultAdvisorAutoProxyCreator</code>。它自动应用当前上下文中适当的通知器，无需在自动代理通知器的bean定义中包括bean的名字。
+            比起<code class="literal">BeanNameAutoProxyCreator</code>，它提供了同样关于一致性配置的优点而避免了前者的重复性。</p>
+<p>使用这个功能将涉及：</p>
+<div class="itemizedlist"><ul type="disc">
+<li>
+<p>Specifying a <code class="literal">DefaultAdvisorAutoProxyCreator</code> bean
+                    definition.</p>
+<p>说明一个
+                    <code class="literal">DefaultAdvisorAutoProxyCreator</code>的bean定义</p>
+</li>
+<li><p>在同一个或者相关的上下文中说明任意数量的通知器。注意这些<span class="emphasis"><em>必须</em></span>是通知器而不仅仅是拦截器或者其它通知。
+                        这点是必要的因为必须有一个切入点被评估，以便检查每个通知候选bean定义的合适性。
+                    </p></li>
+</ul></div>
+<p><code class="literal">DefaultAdvisorAutoProxyCreator</code>将自动评估包括在每个通知器中的切入点，
+            来看看它应当应用哪个（如果有的话）通知到每个业务对象（例如例子里的“businessObject1”和“businessObject2”）。</p>
+<p>这意味着可以向每个业务对象应用任意数量的通知器。
+            对于一个业务对象，如果所有通知器中的切入点都无法匹配它的任意方法，这个对象将不会被代理。当为新的业务对象加入bean定义时，如果有必要它们将自动被代理。</p>
+<p>通常自动代理的好处是它让调用者或者被依赖对象不能得到一个没有通知过的对象。
+                在这个ApplicationContext上调用getBean("businessObject1")将返回一个AOP代理，而不是目标业务对象。（前面显示的“内部bean”也提供了同样的优点。）
+            </p>
+<p>
+                </p>
+<pre class="code">&lt;bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/&gt;
+                    
+                    &lt;bean class="org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor"&gt;
+                    &lt;property name="transactionInterceptor" ref="transactionInterceptor"/&gt;
+                    &lt;/bean&gt;
+                    
+                    &lt;bean id="customAdvisor" class="com.mycompany.MyAdvisor"/&gt;
+                    
+                    &lt;bean id="businessObject1" class="com.mycompany.BusinessObject1"&gt;
+                    &lt;!-- Properties omitted --&gt;
+                    &lt;/bean&gt;
+                    
+                    &lt;bean id="businessObject2" class="com.mycompany.BusinessObject2"/&gt;
+                </pre>
+<p>
+            </p>
+<p>如果你想要把相同的通知一致性地应用到许多业务对象上，<code class="literal">DefaultAdvisorAutoProxyCreator</code>是非常有用的。
+                一旦框架的定义已经完成，你可以简单地加入新的业务对象而不必包括特定的代理配置。你也可以很容易的去掉额外的切面--例如，跟踪或者性能监视切面--仅仅对配置作很小的修改。
+            </p>
+<p>DefaultAdvisorAutoProxyCreator支持过滤（通过使用一个命名约定让只有特定的通知器被评估，允许在同一个工厂里使用多个不同配置的AdvisorAutoProxyCreator）和排序。通知器可以实现<code class="literal">org.springframework.core.Ordered</code>接口来确保以正确的顺序被应用。
+                上面例子里的TransactionAttributeSourceAdvisor 有一个可配置的序号值；缺省情况下是没有排序的。
+            </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-api-autoproxy-abstract"></a>7.9.1.3.&#160;AbstractAdvisorAutoProxyCreator</h4></div></div></div>
+<p>这是DefaultAdvisorAutoProxyCreator的父类。如果在某些情况下框架提供的<code class="literal">DefaultAdvisorAutoProxyCreator</code>不能满足你的需要，你可以通过继承这个类来创建你自己的自动代理创建器。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-autoproxy-metadata"></a>7.9.2.&#160;使用元数据驱动的自动代理</h3></div></div></div>
+<p>一个非常重要的自动代理类型是由元数据驱动的。这提供了一种和.NET <code class="literal">ServicedComponents</code>相似的编程模型。
+            作为使用类似EJB里的XML描述符的替代，对于事务管理和其它企业服务的配置都将被保存在源代码级别的属性里。
+        </p>
+<p>在这个情况下，你使用<code class="literal">DefaultAdvisorAutoProxyCreator</code>和可以理解元数据属性的通知器。
+        元数据被保存在候选通知器的切入点部分中，而不是在自动代理创建类本身。</p>
+<p>这是一个<code class="literal">DefaultAdvisorAutoProxyCreator</code>的特殊例子，它本身没有什么特别。（元数据的相关代码保存在通知器的切入点里，而不是AOP框架里）。 </p>
+<p>JPetStore示例应用程序的<code class="literal">/attributes</code> 目录显示了如何使用参数驱动的自动代理。在这个例子里，不需要使用<code class="literal">TransactionProxyFactoryBean</code>。因为使用了元数据相关的切入点，
+        所以简单在业务对象上定义事务属性就足够了。在<code class="literal">/WEB-INF/declarativeServices.xml</code>里的bean定义包括了下面的片断，注意这是通用的，可以被用在JPetStore以外的地方：</p>
+<p>
+            </p>
+<pre class="code">&lt;bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/&gt;
+                
+                &lt;bean class="org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor"&gt;
+                &lt;property name="transactionInterceptor" ref="transactionInterceptor"/&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="transactionInterceptor"
+                class="org.springframework.transaction.interceptor.TransactionInterceptor"&gt;
+                &lt;property name="transactionManager" ref="transactionManager"/&gt;
+                &lt;property name="transactionAttributeSource"&gt;
+                &lt;bean class="org.springframework.transaction.interceptor.AttributesTransactionAttributeSource"&gt;
+                &lt;property name="attributes" ref="attributes"/&gt;
+                &lt;/bean&gt;
+                &lt;/property&gt;
+                &lt;/bean&gt;
+                
+            &lt;bean id="attributes" class="org.springframework.metadata.commons.CommonsAttributes"/&gt;</pre>
+<p>
+        </p>
+<p><code class="literal">DefaultAdvisorAutoProxyCreator</code> bean定义（名字是不重要的，因此甚至可以在定义里省略它）将在当前应用程序上下文中查找所有合适的切入点。在这个例子里，<code class="literal">TransactionAttributeSourceAdvisor</code>类型的“transactionAdvisor”bean定义将应用到带有一个事务属性的类或方法上。
+            TransactionAttributeSourceAdvisor的构造器依赖于一个TransactionInterceptor。这个例子里通过自动织入解决了这个问题。<code class="literal">AttributesTransactionAttributeSource</code>依赖于一个<code class="literal">org.springframework.metadata.Attributes</code>接口的实现。
+            在这个代码片断里，“attributes”bean使用Jakarta Commons Attributes API来获取属性信息以满足这个要求。（应用程序代码必须已经使用Commons Attribut来es的编译任务编译过了。）
+        </p>
+<p>JPetStore示例应用程序的 <code class="literal">/annotation</code> 目录包括了一个由JDK 1.5+注解驱动的自动代理的模拟例子。
+            下面的配置允许自动检测Spring的<code class="literal">Transactional</code>注解，这可以为包含注解的bean提供隐式代理：
+        </p>
+<p>
+            </p>
+<pre class="code">&lt;bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/&gt;
+                
+                &lt;bean class="org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor"&gt;
+                &lt;property name="transactionInterceptor" ref="transactionInterceptor"/&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="transactionInterceptor"
+                class="org.springframework.transaction.interceptor.TransactionInterceptor"&gt;
+                &lt;property name="transactionManager" ref="transactionManager"/&gt;
+                &lt;property name="transactionAttributeSource"&gt;
+                &lt;bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/&gt;
+                &lt;/property&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>这里定义的<code class="literal">TransactionInterceptor</code>依赖于一个<code class="literal">PlatformTransactionManager</code>定义，
+            后者没有被包括在这个通用的文件里（虽然它可以被包括在这里）因为它在应用程序的事务需求规范中指定（在这个例子里使用JTA，而在其它情况下，可以是Hibernate，JDO或者JDBC）：
+        </p>
+<pre class="code">&lt;bean id="transactionManager" 
+        class="org.springframework.transaction.jta.JtaTransactionManager"/&gt;</pre>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>如果你只需要声明式事务管理，使用这些通用的XML定义将导致Spring自动代理所有带有事务属性的类或者方法。你将不需要直接使用AOP工作，
+            这个编程模型和.NET的ServicedComponents相似。</p>
+</div>
+<p>这个架构是可以扩展的。可以在自定义属性的基础上进行自动代理。你所需要做的是：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>定义你自己的自定义属性</p></li>
+<li><p>使用必要的通知说明一个通知器，也包括一个切入点，后者可以被类或者方法上的自定义属性触发。
+                    你也许能够使用已有的通知，而仅仅实现一个能够处理自定义属性的静态切入点。
+                </p></li>
+</ul></div>
+<p>可以让这些通知器对于每个被通知对象（例如，mixins）都是唯一的：仅仅需要在bean定义中被定义为原型而不是单例。
+            例如，在上面所显示的Spring测试集中的<code class="literal">LockMixin</code>引入拦截器可以和一个属性驱动的切入点联合定位一个mixin，
+            像这里显示的这样。我们使用通用的<code class="literal">DefaultPointcutAdvisor</code>，使用JavaBean属性进行配置：
+        </p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="lockMixin" class="org.springframework.aop.LockMixin"
+                scope="prototype"/&gt;
+                
+                &lt;bean id="lockableAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor"
+                scope="prototype"&gt;
+                &lt;property name="pointcut" ref="myAttributeAwarePointcut"/&gt;
+                &lt;property name="advice" ref="lockMixin"/&gt;
+                &lt;/bean&gt;
+                
+            &lt;bean id="anyBean" class="anyclass" ...</pre>
+<p>
+        </p>
+<p>如果参数相关的切入点匹配<code class="literal">anyBean</code>或其它bean定义里的任何方法，mixin将被应用。
+            注意<code class="literal">lockMixin</code>和<code class="literal">lockableAdvisor</code>的定义都是原型。
+            <code class="literal">myAttributeAwarePointcut</code>切入点可以是个单例，因为它没有为单个被通知对象保持状态。
+        </p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

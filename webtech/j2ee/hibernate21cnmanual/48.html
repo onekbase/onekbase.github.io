@@ -1,0 +1,401 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="47.html"> 上一页</a><a href="49.html"> 下一页</a></div>
+<h2>19.2. 代码生成（Code   Generation）</h2>
+<p>Hibernate代码生成器可以用来为Hibernate映射文件生成Java实现类的骨架。这个工具在Hibernate   Extensions发行包中提供（需要单独下载）。 </p>
+<p>hbm2java解析映射文件，生成可工作的Java源代码文件。使用hbm2java，你可以“只”提供.hbm文件，不用担心要去手工编写Java文件。 </p>
+<p>java -cp <em>hibernate_classpaths</em> net.sf.hibernate.tool.hbm2java.CodeGenerator <em>options mapping_files</em> </p>
+<p><strong>Table 19.5. 代码生成器命令行选项</strong></p>
+<table summary="代码生成器命令行选项" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--output=<em>output_dir</em></td>
+      <td>生成代码输出的根目录</td>
+    </tr>
+    <tr>
+      <td>--config=<em>config_file</em></td>
+      <td>可选的hvm2java配置文件</td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="19-2-1" id="19-2-1"></a>19.2.1. 配置文件(可选)</h3>
+<p>配置文件提供了配置生成源代码的多个&quot;渲染器(renders)&quot;的途径,也可以声明在全局范围生效的&lt;meta&gt;属性。详情请参见&lt;meta&gt;属性的部分。 </p>
+<pre class="code">&lt;codegen&gt;
+    &lt;meta attribute=&quot;implements&quot;&gt;codegen.test.IAuditable&lt;/meta&gt;
+    &lt;generate renderer=&quot;net.sf.hibernate.tool.hbm2java.BasicRenderer&quot;/&gt;
+    &lt;generate
+        package=&quot;autofinders.only&quot;
+        suffix=&quot;Finder&quot;
+        renderer=&quot;net.sf.hibernate.tool.hbm2java.FinderRenderer&quot;/&gt;
+&lt;/codegen&gt;</pre>
+<p>这个配置文件声明了一个全局的meta(元）属性“implements”，指定了两个渲染器，默认渲染器(BadicRender)和生成Finder（参见下面的“基本Finder   生成器”）的渲染器。 </p>
+<p>定义第二个渲染器需要一个包名和后缀属性。 </p>
+<p>包名属性指定生成后的源代码应该保存的位置，覆盖在.hbm文件中指定的包范围。 </p>
+<p>后缀属性指定生成的文件的后缀。比如说，如果有一个Foo.java文件，应该变成FooFinder.java。 </p>
+<h3><a name="19-2-2" id="19-2-2"></a>19.2.2. meta属性</h3>
+<p>&lt;meta&gt;标签时对hbm.xml文件进行的简单注解，工具可以用这个位置来保存/阅读和Hibernate内核不是直接相关的一些信息。 </p>
+<p>你可以用&lt;meta&gt;标签来告诉hbm2java只生成&quot;protectd&quot; </p>
+<p>下面的例子： </p>
+<pre class="code">&lt;class name=&quot;Person&quot;&gt;
+    &lt;meta attribute=&quot;class-description&quot;&gt;
+        Javadoc for the Person class
+        @author Frodo
+    &lt;/meta&gt;
+    &lt;meta attribute=&quot;implements&quot;&gt;IAuditable&lt;/meta&gt;
+    &lt;id name=&quot;id&quot; type=&quot;long&quot;&gt;
+        &lt;meta attribute=&quot;scope-set&quot;&gt;protected&lt;/meta&gt;
+        &lt;generator class=&quot;increment&quot;/&gt;
+    &lt;/id&gt;
+    &lt;property name=&quot;name&quot; type=&quot;string&quot;&gt;
+        &lt;meta attribute=&quot;field-description&quot;&gt;The name of the person&lt;/meta&gt;
+    &lt;/property&gt;
+&lt;/class&gt;</pre>
+<p>会生成类似下面的输出（为了有助于理解，节选部分代码）。注意Javadoc注释和声明成protected的set方法： </p>
+<pre class="code">// default package
+
+import java.io.Serializable;
+import org.apache.commons.lang.builder.EqualsBuilder;
+import org.apache.commons.lang.builder.HashCodeBuilder;
+import org.apache.commons.lang.builder.ToStringBuilder;
+
+/** 
+ *         Javadoc for the Person class
+ *         @author Frodo
+ *     
+ */
+public class Person implements Serializable, IAuditable {
+
+    /** identifier field */
+    public Long id;
+
+    /** nullable persistent field */
+    public String name;
+
+    /** full constructor */
+    public Person(java.lang.String name) {
+        this.name = name;
+    }
+
+    /** default constructor */
+    public Person() {
+    }
+
+    public java.lang.Long getId() {
+        return this.id;
+    }
+
+    protected void setId(java.lang.Long id) {
+        this.id = id;
+    }
+
+    /** 
+     * The name of the person
+     */
+    public java.lang.String getName() {
+        return this.name;
+    }
+
+    public void setName(java.lang.String name) {
+        this.name = name;
+    }
+
+}</pre>
+<p><strong>Table 19.6. 支持的meta标签</strong></p>
+<table summary="支持的meta标签" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>属性</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>class-description</td>
+      <td>插入到类的javadoc说明去</td>
+    </tr>
+    <tr>
+      <td>field-description</td>
+      <td>插入到field/property的javadoc说明去</td>
+    </tr>
+    <tr>
+      <td>interface</td>
+      <td>如果是true,生成interface而非class</td>
+    </tr>
+    <tr>
+      <td>implements</td>
+      <td>类要实现的接口</td>
+    </tr>
+    <tr>
+      <td>extends</td>
+      <td>类要继承的超类(若是subclass,则忽略该属性)</td>
+    </tr>
+    <tr>
+      <td>generated-class</td>
+      <td>重新指定要生成的类名</td>
+    </tr>
+    <tr>
+      <td>scope-class</td>
+      <td>class的scope</td>
+    </tr>
+    <tr>
+      <td>scope-set</td>
+      <td>set方法的scope</td>
+    </tr>
+    <tr>
+      <td>scope-get</td>
+      <td>get方法的scope</td>
+    </tr>
+    <tr>
+      <td>scope-field</td>
+      <td>实际属性字段(field)的scope</td>
+    </tr>
+    <tr>
+      <td>use-in-tostring</td>
+      <td>在toString()中包含此属性</td>
+    </tr>
+    <tr>
+      <td>bound</td>
+      <td>为属性增加propertyChangeListener支持</td>
+    </tr>
+    <tr>
+      <td>constrained</td>
+      <td>为属性增加vetoChangeListener支持</td>
+    </tr>
+    <tr>
+      <td>gen-property</td>
+      <td>如果是false,不会生成属性(谨慎使用)</td>
+    </tr>
+    <tr>
+      <td>property-type</td>
+      <td>覆盖属性的默认值.如果值是标签,则指定一个具体的类型而非Object(Use this with any tag's to specify the   concrete type instead of just Object.)</td>
+    </tr>
+    <tr>
+      <td>finder-method</td>
+      <td>参见下面的&quot;Basic finder generator&quot;</td>
+    </tr>
+    <tr>
+      <td>session-method</td>
+      <td>参见下面的&quot;Basic finder generator&quot;</td>
+    </tr>
+  </tbody>
+</table>
+<p>通过&lt;meta&gt;标签定义的属性在一个hbm.xml文件中是默认&quot;继承&quot;的。 </p>
+<p>这究竟是什么意思？如果你希望你所有的类都实现IAuditable接口，那么你只需要加一个&lt;meta attribute=&quot;implements&quot;&gt;IAuditable&lt;/meta&gt;   在你hml.xml文件的开头，就在&lt;hibernate-mapping&gt;后面。现在所有在hbm.xml文件中定义的类都会实现IAuditable了！（除了那些也特别指定了&quot;implements&quot;元属性的类，因为本地指定的元标签总是会覆盖任何继承的元标签）。 </p>
+<p>注意，这条规则对<em>所有</em> 的&lt;meta&gt;标签都有效。也就是说它可以用来指定所有的字段都被声明成protected的，而非默认的private。这可以通过在&lt;class&gt;后面&lt;meta   attribute=&quot;scope-field&quot;&gt;protected&lt;/meta&gt;指定，那么这个类所有的field都会变成protected。 </p>
+<p>如果你不想让&lt;meta&gt;标签继承，你可以简单的在标签属性上指明inherit=&quot;false&quot;，比如&lt;meta   attribute=&quot;scope-class&quot; inherit=&quot;false&quot;&gt;public   abstract&lt;/meta&gt;，这样&quot;class-scope&quot;就只会对当前类起作用，不会对其子类生效。 </p>
+<h3><a name="19-2-3" id="19-2-3"></a>19.2.3. 基本的finder生成器（Basic finder   generator）</h3>
+<p>目前可以让hbm2java为Hibernate属性生成基本的finder。这需要在hbm.xml文件中做两件事情。 </p>
+<p>首先是要标记出你希望生成finder的字段。你可以通过在property标签中的meta 块来定义： </p>
+<pre class="code">&lt;property name=&quot;name&quot; column=&quot;name&quot; type=&quot;string&quot;&gt;
+     &lt;meta attribute=&quot;finder-method&quot;&gt;findByName&lt;/meta&gt;
+&lt;/property&gt;</pre>
+<p>find方法的名字就是meta标签中间的文字。 </p>
+<p>第二件事是为hbm2java建立下面格式的配置文件： </p>
+<pre class="code">&lt;codegen&gt;
+    &lt;generate renderer=&quot;net.sf.hibernate.tool.hbm2java.BasicRenderer&quot;/&gt;
+    &lt;generate suffix=&quot;Finder&quot; renderer=&quot;net.sf.hibernate.tool.hbm2java.FinderRenderer&quot;/&gt;
+&lt;/codegen&gt;</pre>
+<p>然后用参数去调用：hbm2java --config=xxx.xml，xxx.xml就是你刚才创建的配置文件的名字。 </p>
+<p>有个可选的参数,作为一个在class级别的meta标签，格式如下： </p>
+<pre class="code">&lt;meta attribute=&quot;session-method&quot;&gt;
+    com.whatever.SessionTable.getSessionTable().getSession();
+&lt;/meta&gt;</pre>
+<p>他是用来管理你如何使用<em>Thread Local   Session</em>模式(在Hibernate 网站的Design Patterns部分有文档）得到session的。 </p>
+<h3><a name="19-2-4" id="19-2-4"></a>19.2.4. 基于Velocity的渲染器/生成器(Velocity based   renderer/generator)</h3>
+<p>目前可以使用velocity作为渲染机制的一个替代方案。下面的config.xml文件显示了如果配置hbm2java来使用velocity渲染器。 </p>
+<pre class="code">
+    &lt;codegen&gt;
+     &lt;generate renderer=&quot;net.sf.hibernate.tool.hbm2java.VelocityRenderer&quot;&gt;
+      &lt;param name=&quot;template&quot;&gt;pojo.vm&lt;/param&gt;
+     &lt;/generate&gt;
+    &lt;/codegen&gt;</pre>
+<p>名为template的参数是指向你希望你使用velocity   macro文件的资源路径。这个文件必须在hbm2java的classpath中。所以要记住把pojo.vm所在的路径加入到你ant任务或者shell脚本中去。（默认的位置是./tools/src/velocity) </p>
+<p>注意，当前的pojo.vm只生成java   beans最基本的部分。他还没有默认的渲染器那么完整，也没有那么多功能——特别是大部分meta标签还不支持。 </p>
+<div class="rpindex"><a href="49.html"> 下一页</a><a href="47.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

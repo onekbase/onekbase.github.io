@@ -1,0 +1,354 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>Spring声明式事务管理简介</h1>
+<h3>概述</h3>
+<p>在理解Spring的声明式事务管理方面最重要的概念是：Spring的事务管理是通过AOP代理实现的。其中的事务通知由元数据（目前基于XML或注解）驱动。代理对象与事务元数据结合产生了一个AOP代理，它使用一个PlatformTransactionManager实现品配合TransactionInterceptor，在方法调用前后实施事务。</p>
+<p>事务语义封装在&lt;tx:advice/&gt;定义中，用&lt;aop:advisor&gt;标签在&lt;/aop:config&gt;中施加到指定切入点(&lt;aop:pointcut&gt;)。</p>
+<p>&lt;aop:advisor&gt;标签是&lt;/aop:config&gt;的直接子标签，所以&lt;aop:pointcut&gt;也要定义在&lt;/aop:config&gt;中。</p>
+<p>示例：</p>
+<pre class="brush:xml">&lt;!-- 配置事务的传播特性 --&gt;
+&lt;tx:advice id="txAdvice" transaction-manager=" txManager"&gt;
+	&lt;tx:attributes&gt;
+		&lt;tx:method name="add*" propagation="REQUIRED" /&gt;
+		&lt;tx:method name="del*" propagation="REQUIRED" /&gt;
+		&lt;tx:method name="modify*" propagation="REQUIRED" /&gt;
+		&lt;tx:method name="*" read-only="true" /&gt;
+	&lt;/tx:attributes&gt;
+&lt;/tx:advice&gt;
+
+&lt;!-- 那些类的哪些方法参与事务 --&gt;
+&lt;aop:config&gt;
+	&lt;aop:pointcut id="allManagerMethod"
+		expression="execution(* com.iteedu.manager.*.*(..))" /&gt;
+	&lt;aop:advisor pointcut-ref="allManagerMethod" advice-ref="txAdvice" /&gt;
+&lt;/aop:config&gt;</pre>
+<p>如果 PlatformTransactionManager bean的名字是 ‘transactionManager’ 的话，事务通知（&lt;tx:advice/&gt;）中的 ‘transaction-manager’ 属性可以忽略。否则你则需要像上例那样明确指定。</p>
+<p>想为不同组的对象设置 完全不同 的事务语义。在Spring中，你可以通过定义各自特定的 &lt;aop:advisor/&gt; 元素，每个advisor采用不同的 ‘pointcut’ 和 ‘advice-ref’ 属性，来达到目的。</p>
+<h3>transaction-manager</h3>
+<p>每种框架都有自己的transaction-manager，创建方法也各不相同。下列常用两个。</p>
+<h4>hibernate</h4>
+<pre class="brush:xml">&lt;!-- 配置sessionFactory --&gt;
+&lt;bean id="sessionFactory"
+	class="org.springframework.orm.hibernate3.LocalSessionFactoryBean"&gt;
+	&lt;property name="configLocation"&gt;
+		&lt;value&gt;classpath:hibernate.cfg.xml&lt;/value&gt;
+	&lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;!-- 配置事务管理器 --&gt;
+&lt;bean id=" txManager "
+	class="org.springframework.orm.hibernate3.HibernateTransactionManager"&gt;
+	&lt;property name="sessionFactory"&gt;
+		&lt;ref bean="sessionFactory" /&gt;
+	&lt;/property&gt;
+&lt;/bean&gt;</pre>
+<h4>jdbc</h4>
+<pre class="brush:xml">&lt;!-- 配置数据源--&gt;
+&lt;bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+	destroy-method="close"&gt;
+	&lt;property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" /&gt;
+	&lt;property name="url" value="jdbc:oracle:thin:@rj-t42:1521:elvis" /&gt;
+	&lt;property name="username" value="scott" /&gt;
+	&lt;property name="password" value="tiger" /&gt;
+&lt;/bean&gt;
+&lt;!-- 配置事务管理器 --&gt;
+&lt;bean id="txManager"
+	class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
+	&lt;property name="dataSource" ref="dataSource" /&gt;
+&lt;/bean&gt;</pre>
+<p>&nbsp;</p>
+<h3>Advisors</h3>
+<p>“advisors”这个概念来自Spring1.2对AOP的支持，在AspectJ中是没有等价的概念。 advisor就像一个小的自包含的切面，这个切面只有一个通知。 切面自身通过一个bean表示，并且必须实现一个通知接口。</p>
+<p>Spring 2.0 通过 <code>&lt;aop:advisor&gt;</code> 元素来支持advisor 概念。它大多数情况下会和transactional advice一起使用，transactional advice在Spring 2.0中有自己的命名空间。</p>
+<h3>&lt;tx:advice/&gt; 有关的设置</h3>
+<p>&lt;tx:advice/&gt;标签只接受&lt;tx:attributes /&gt;标签作为其子元素。</p>
+<p>凭借&lt;tx:attributes /&gt;标签我们可以用更加简练的方式创建transactionAttributes属性表达式。</p>
+<p>&lt;tx:attributes /&gt;标签只接受&lt;tx:method /&gt;标签作为其子元素。</p>
+<h4>&lt;tx:method/&gt; 有关的设置</h4>
+<p>&nbsp;</p>
+<table border="1" cellpadding="0" summary="<tx:method/> 有关的设置">
+<thead>
+<tr>
+<td>
+<p align="center"><strong>属性</strong></p>
+</td>
+<td>
+<p align="center"><strong>默认值</strong></p>
+</td>
+<td>
+<p align="center"><strong>描述</strong></p>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p align="left">name</p>
+</td>
+<td></td>
+<td>
+<p align="left">与事务属性关联的方法名。通配符（*）可以用来指定一批关联到相同的事务属性的方法。 如：’get*’、’handle*’、’on*Event’等等。</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">propagation</p>
+</td>
+<td>
+<p align="left">REQUIRED</p>
+</td>
+<td>
+<p align="left">事务传播行为</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">isolation</p>
+</td>
+<td>
+<p align="left">DEFAULT</p>
+</td>
+<td>
+<p align="left">事务隔离级别</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">timeout</p>
+</td>
+<td>
+<p align="left">-1</p>
+</td>
+<td>
+<p align="left">事务超时的时间（以秒为单位）</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">read-only</p>
+</td>
+<td>
+<p align="left">false</p>
+</td>
+<td>
+<p align="left">事务是否只读？</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">rollback-for</p>
+</td>
+<td></td>
+<td>
+<p align="left">将被触发进行回滚的 Exception(s)；以逗号分开。 如：’MyBusinessException,ServletException’</p>
+</td>
+</tr>
+<tr>
+<td>
+<p align="left">no-rollback-for</p>
+</td>
+<td></td>
+<td>
+<p align="left"><em>不</em> 被触发进行回滚的 Exception(s)；以逗号分开。 &nbsp; 如：’MyBusinessException,ServletException’</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>了解事务的几种传播特性</h3>
+<h4>PROPAGATION_REQUIRED</h4>
+<p>如果存在一个事务，则支持当前事务。如果没有事务则开启</p>
+<h4>PROPAGATION_SUPPORTS</h4>
+<p>如果存在一个事务，支持当前事务。如果没有事务，则非事务的执行</p>
+<h4>PROPAGATION_MANDATORY</h4>
+<p>如果已经存在一个事务，支持当前事务。如果没有一个活动的事务，则抛出异常。</p>
+<h4>PROPAGATION_REQUIRES_NEW</h4>
+<p>总是开启一个新的事务。如果一个事务已经存在，则将这个存在的事务挂起。</p>
+<h4>PROPAGATION_NOT_SUPPORTED</h4>
+<p>总是非事务地执行，并挂起任何存在的事务。</p>
+<h4>PROPAGATION_NEVER</h4>
+<p>总是非事务地执行，如果存在一个活动事务，则抛出异常</p>
+<h4>PROPAGATION_NESTED</h4>
+<p>如果一个活动的事务存在，则运行在一个嵌套的事务中. 如果没有活动事务, 则按TransactionDefinition.PROPAGATION_REQUIRED 属性执行</p>
+<h3>Spring事务的隔离级别</h3>
+<h4>ISOLATION_DEFAULT</h4>
+<p>这是一个PlatfromTransactionManager默认的隔离级别，使用数据库默认的事务隔离级别.</p>
+<p>另外四个与JDBC的隔离级别相对应</p>
+<h4>ISOLATION_READ_UNCOMMITTED</h4>
+<p>这是事务最低的隔离级别，它充许令外一个事务可以看到这个事务未提交的数据。</p>
+<p>这种隔离级别会产生脏读，不可重复读和幻像读。</p>
+<h4>ISOLATION_READ_COMMITTED</h4>
+<p>保证一个事务修改的数据提交后才能被另外一个事务读取。另外一个事务不能读取该事务未提交的数据</p>
+<h4>ISOLATION_REPEATABLE_READ</h4>
+<p>这种事务隔离级别可以防止脏读，不可重复读。但是可能出现幻像读。</p>
+<p>它除了保证一个事务不能读取另一个事务未提交的数据外，还保证了避免下面的情况产生(不可重复读)。</p>
+<h4>ISOLATION_SERIALIZABLE</h4>
+<p>这是花费最高代价但是最可靠的事务隔离级别。事务被处理为顺序执行。</p>
+<p>除了防止脏读，不可重复读外，还避免了幻像读。</p>
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

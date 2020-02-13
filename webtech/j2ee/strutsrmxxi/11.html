@@ -1,0 +1,238 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="10.html"> 上一页</a><a href="12.html"> 下一页</a></div>
+    <h1>第五章Struts 高级特性 </h1>
+    <h2>5.1 验证</h2>
+    <p>仅当在下列情况下才会在表单bean  中对用户输入进行验证：<br />
+        表单bean 覆盖超类的验证方法<br />
+       Struts 配置文件中的&lt;action&gt;元素的验证属性显式地或者缺省设置为TRUE。表单bean 没有关于应用程序的业务逻辑的信息；因此该bean 提供的验证仅限于一些相对简单的问题，例如，用户是否在每个必填字段中都输入了数据？<br />
+      Struts 框架的各种部件使得可以进行验证Struts 配置文件中的以下&lt;action&gt;子元素将导致使用表单bean registerForm:</p>
+    <pre class="code">&lt;action path=“/register”
+	type=“strutsEGL.RegisterAction”
+	name=“registerForm”
+	input=“/register.jsp”
+	scope=“request”
+	&lt;forward name=“success”path=“/home.do”/&gt;
+	&lt;forward name=“failure”path=“/register.jsp”/&gt;
+&lt;/action&gt;
+    </pre>
+    <p>如果缺少验证属性，则意味着当ActionServlet  接收到来自HTML 表单对
+      “/register”的请求时，ActionServlet 将在接收用户数据的表单bean 中调用验证方
+      法。此验证在ActionServlet  访问操作类之前进行。如果丢失了该方法，不会发
+      生任何错误，在该情况下，验证总是会成功。<br />
+        如果发生了错误，则表单bean 的验证方法将举例说明错误类并将错误条目添加
+      至该类。registerForm  的验证方法的一个子集为如下所示:</p>
+    <pre class="code">
+ ActionErrors errors=new ActionErrors()；
+    If (username= =unll║username.equals(“”))
+    {
+    errors.add(“register”,
+    newActionError(“error. Register.username”))；
+    }
+    if (openingBalance&lt;0.01)
+    {
+    errors.add(“register”,
+    newActionError(“error. register. balance”));
+    }
+    return errors;
+</pre>
+    <p>errors.add 方法包括两个参数：<br />
+      property<br />
+      用来标识错误类别的Java 字符串。<br />
+      如果想要在特定的输入字段或输入字段的子集发生错误时标识该错误，则指定属性值。例如，指定诸如“username”之类的值的优点在于：报告了错误的JSP 中，可以在屏幕上靠近发生错误的字段的位置显示有关特定HTML 字段的错误消息，但是，要指示所有错误都属于同一类别，可以对属<br />
+      性参数指定以下常量：<br />
+      ActionErrors.GLOBAL_ERROR<br />
+      error<br />
+      包含从属性文件派生的“键－字符串”对的键的ActionError 对象。当配置ActionError 对象时，最多可以包括要代入字符串中用来替代｛0｝、<br />
+      ｛1｝等的四个值。<br />
+      如果从验证方法返回了错误，则ActionServlet 指导对在&lt;action&gt;元素的输入属性中指定的对象或JSP 进行处理；在本例中，将处理register.jsp.<br />
+       JSP register.jsp. 包括用于显示从验证方法派生的任何错误消息的以下标记：<br />
+      &lt;html:errors/&gt;<br />
+      如果在未发生输入错误的情况下调用JSP，则该标记不显示任何内容，而在JSP 中将继续进行处理。但是，如果因发生验证故障而调用了JSP，则为用户显示的内容将受到属性文件中是否包括下列键的影响：<br />
+      ―  errors.header，它导致在所有错误消息前面显示一个字符串；或者<br />
+      ―  errors.footer，它导致在所有错误消息后面显示一个字符串；或者<br />
+      ―  errors.hiader，和errors.footer  两者<br />
+      例如，在ApplicationResources.properties  中，errors.header  和errors.footer  的“键－字符串”对以及先前显示的这两个消息键为如下所示，它们各自都在单独的一行上（但是分成了多行显示以便于您复查）：</p>
+    <pre class="code">errors.header=
+&lt;p class=“errors”&gt;
+	The Action failed because of the following  reason(s):
+	&lt;ul class=“errors”&gt;
+		error.register.username=&lt;li&gt;you must enter  a User ID.
+			error.register.balance=
+			&lt;li&gt;Your account must start with a  positive balance.
+			Errors.footer=&lt;/ul&gt;&lt;/p&gt;</pre>
+    <p>如果在注册时用户对用户名输入了空白，对余额输入零，则用户将接收到一个包括两个错误的列表的屏幕：<br />
+      The Action failed because of the following  reason(s):<br />
+      o You must enter a User ID.<br />
+      o Your account must start with a positive  balance.<br />
+      可以为标记&lt;html:errors/&gt;指定属性以支持国际化或者只显示有关指定了给定属性值的错误的信息。通过使用相异属性值，可以在相邻的不同字段中显示每条错误消息而不是将所有错误置于单个列表中。</p>
+    <div class="rpindex"><a href="12.html"> 下一页</a><a href="10.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

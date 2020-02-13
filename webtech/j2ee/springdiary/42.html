@@ -1,0 +1,222 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="41.html"> 上一页</a><a href="43.html"> 下一页</a></div>
+<h1>使用 JdbcTemplate </h1>
+<p> 在 DataSource 注入 中， UserDAO中直接使用JDBC 来实作insert()与find() 方法，当中要处理 
+  Connection的取得、Statement的建立、例外的 处理、Statement的关闭、Connection的关闭等， 对于一个基本的JDBC存取，这些流程是大同小异的，每一次您都必须作这样的流程着实令  人厌 烦，Spring 提供了 org.springframework.jdbc.core.JdbcTemplate 类别，它被设计为执行绪安全 
+（Thread‐safe），当中所 提供的一些操作方法封装了类似以上的流程，例如DataSourceDemo专案 中的UserDAO类别可以简单的使用JdbcTemplate来改写， 要建立JdbcTemplate的实例，必须要有 一个DataSource物件作为建构时的物件：</p>
+<pre class="code">JdbcTemplate  jdbcTemplate = new JdbcTemplate(dataSource); </pre>
+<p> 来改写一下DataSource 注入 中UserDAO的内容实作，您可以看到使用JdbcTemplate时在程式的 撰写流程上会有什么样的改进： </p>
+<h5> •      UserDAO.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+import java.util.Iterator; 
+import java.util.List; 
+import java.util.Map;
+import javax.sql.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
+public class UserDAO implements IUserDAO {
+	private JdbcTemplate jdbcTemplate;
+	public void setDataSource(DataSource dataSource) {
+		jdbcTemplate = new JdbcTemplate(dataSource);
+	}
+	public void insert(User user) { 
+		String name = user.getName();
+		int age = user.getAge().intValue();
+		jdbcTemplate.update("INSERT INTO user (name,age) "+ "VALUES('" + name + "'," + age + ")");
+	}
+	public User find(Integer id) {
+		List rows = jdbcTemplate.queryForList("SELECT * FROM user WHERE id=" + id.intValue());
+		Iterator it = rows.iterator();
+		if(it.hasNext()) {
+			Map userMap = (Map) it.next();
+			Integer i = new Integer(userMap.get("id").toString()); 
+			String name = userMap.get("name").toString();
+			Integer age =	new Integer(userMap.get("age").toString());
+			User user = new User(); 
+			user.setId(i); 
+			user.setName(name); 
+			user.setAge(age);
+			return user;
+		}
+		return null;
+	}
+}
+</pre>
+<p> 只要改写UserDAO就可以了，其它的程式与设定档都不用变动，Spring的JdbcTemplate一如其名称 
+  所示的，主要是藉由 Template Method模式 来实现JDBC的处理流程封装。 </p>
+Spring的Jdbc封装等功能基本上可以独立于Spring来使用，除了JdbcTemplate之外，Spring还提供了 其它的Template 类别，像是对Hibernate、JDO、ibatis等的Template实现，另外，在交易处理方面，  Spring提供了编程式与宣告式的交易管理功 能，大大的简化了持久层程式的复杂度，并提供了 更好的维护性。
+
+<div class="rpindex"><a href="43.html"> 下一页</a><a href="41.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

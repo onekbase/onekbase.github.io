@@ -1,0 +1,434 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="part" lang="zh-cn">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="spring-core"></a>部分&#160;I.&#160;核心技术</h1></div></div></div>
+<div class="partintro" lang="zh-cn">
+<div></div>
+<p>
+				这个开发手册的第一部分描述了Spring Framework所有使用到的技术领域。
+			</p>
+<p>
+				首先是Spring Framework中的控制翻转（IoC）容器。在完整的阐述了Spring Framework的IoC容器后紧跟的是对Spring的面向方面编程（AOP）技术的全面说明。
+				Spring Framework拥有自己的AOP框架，这个框架在概念上是十分容易理解的，而且它成功地实现了在Java企业级开发中对AOP需求的80%左右。
+			</p>
+<p>
+				开发手册中还描述了Spring与AspectJ的集成方法。
+				（当前来说,AspectJ是Java企业级开发领域中特性最多、最成熟的AOP实现。）
+			</p>
+<p>
+			    最后，Spring小组提倡在软件开发中运用测试驱动开发（TDD）方法，所以在最后涵盖了Spring对集成测试的支持（包括单元测试的最佳实践）。
+			    Spring小组发现正确使用IoC可以让单元测试和集成测试更容易进行（在类中定义setter方法和适当的构造方法让java类更容易地与测试联系起来，
+			    而不用设置服务定位注册或类似的东西）……希望仅专注于测试的"同学"们，这一章一定会让你有所收获。
+			</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><a href="ch03.html" title="第&#160;3&#160;章&#160;IoC(控制反转)容器">第&#160;3&#160;章 <i>IoC(控制反转)容器</i></a></p></li>
+<li><p><a href="ch04.html" title="第&#160;4&#160;章&#160;资源">第&#160;4&#160;章 <i>资源</i></a></p></li>
+<li><p><a href="ch05.html" title="第&#160;5&#160;章&#160;校验，数据绑定，BeanWrapper，与属性编辑器">第&#160;5&#160;章 <i>校验，数据绑定，<code class="interfacename">BeanWrapper</code>，与<code class="literal">属性编辑器</code></i></a></p></li>
+<li><p><a href="ch06.html" title="第&#160;6&#160;章&#160;使用Spring进行面向切面编程（AOP）">第&#160;6&#160;章 <i>使用Spring进行面向切面编程（AOP）</i></a></p></li>
+<li><p><a href="ch07.html" title="第&#160;7&#160;章&#160;Spring AOP APIs">第&#160;7&#160;章 <i>Spring AOP APIs</i></a></p></li>
+<li><p><a href="ch08.html" title="第&#160;8&#160;章&#160;测试">第&#160;8&#160;章 <i>测试</i></a></p></li>
+</ul></div>
+<div class="toc">
+<p><b>目录</b></p>
+<dl>
+<dt><span class="chapter"><a href="ch03.html">3. IoC(控制反转)容器</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03.html#beans-introduction">3.1. 简介</a></span></dt>
+<dt><span class="section"><a href="ch03s02.html">3.2. 基本原理 - 容器和bean</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s02.html#beans-factory">3.2.1. 容器</a></span></dt>
+<dt><span class="section"><a href="ch03s02.html#beans-factory-instantiation">3.2.2. 实例化容器</a></span></dt>
+<dt><span class="section"><a href="ch03s02.html#beans-definition">3.2.3. 多种bean</a></span></dt>
+<dt><span class="section"><a href="ch03s02.html#beans-factory-client">3.2.4. 使用容器</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s03.html">3.3. 依赖</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-collaborators">3.3.1. 注入依赖</a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-properties-detailed">3.3.2. 依赖配置详解</a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-dependson">3.3.3. 使用<code class="literal">depends-on</code></a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-lazy-init">3.3.4. 延迟初始化bean</a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-autowire">3.3.5. 自动装配（autowire）协作者</a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-dependencies">3.3.6. 依赖检查</a></span></dt>
+<dt><span class="section"><a href="ch03s03.html#beans-factory-method-injection">3.3.7. 方法注入</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s04.html">3.4. Bean的作用域</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s04.html#beans-factory-scopes-singleton">3.4.1. Singleton作用域</a></span></dt>
+<dt><span class="section"><a href="ch03s04.html#beans-factory-scopes-prototype">3.4.2. Prototype作用域</a></span></dt>
+<dt><span class="section"><a href="ch03s04.html#beans-factory-scopes-sing-prot-interaction">3.4.3. Singleton beans和prototype-bean的依赖</a></span></dt>
+<dt><span class="section"><a href="ch03s04.html#beans-factory-scopes-other">3.4.4. 其他作用域</a></span></dt>
+<dt><span class="section"><a href="ch03s04.html#beans-factory-scopes-custom">3.4.5. 自定义作用域</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s05.html">3.5. 定制bean特性</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s05.html#beans-factory-lifecycle">3.5.1. 生命周期回调</a></span></dt>
+<dt><span class="section"><a href="ch03s05.html#beans-factory-aware">3.5.2. 了解自己</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s06.html">3.6. bean定义的继承</a></span></dt>
+<dt><span class="section"><a href="ch03s07.html">3.7. 容器扩展点</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s07.html#beans-factory-extension-bpp">3.7.1. 用<code class="literal">BeanPostProcessor</code>定制bean</a></span></dt>
+<dt><span class="section"><a href="ch03s07.html#beans-factory-extension-factory-postprocessors">3.7.2. 用<code class="literal">BeanFactoryPostProcessor</code>定制配置元数据</a></span></dt>
+<dt><span class="section"><a href="ch03s07.html#beans-factory-extension-factorybean">3.7.3. 使用<code class="literal">FactoryBean</code>定制实例化逻辑</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s08.html">3.8. The <code class="interfacename">ApplicationContext</code></a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s08.html#context-introduction-ctx-vs-beanfactory">3.8.1. <code class="interfacename">BeanFactory</code> 还是
+      <code class="interfacename">ApplicationContext</code>?</a></span></dt>
+<dt><span class="section"><a href="ch03s08.html#context-functionality-messagesource">3.8.2. 利用<code class="literal">MessageSource</code>实现国际化</a></span></dt>
+<dt><span class="section"><a href="ch03s08.html#context-functionality-events">3.8.3. 事件</a></span></dt>
+<dt><span class="section"><a href="ch03s08.html#context-functionality-resources">3.8.4. 底层资源的访问</a></span></dt>
+<dt><span class="section"><a href="ch03s08.html#context-create">3.8.5. <code class="interfacename">ApplicationContext</code>在WEB应用中的实例化</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s09.html">3.9. 粘合代码和可怕的singleton</a></span></dt>
+<dt><span class="section"><a href="ch03s10.html">3.10. 以J2EE RAR文件的形式部署Spring ApplicationContext</a></span></dt>
+<dt><span class="section"><a href="ch03s11.html">3.11. 基于注解（Annotation-based）的配置</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s11.html#beans-autowired-annotation">3.11.1. <code class="interfacename">@Autowired</code></a></span></dt>
+<dt><span class="section"><a href="ch03s11.html#beans-autowired-annotation-qualifiers">3.11.2. 基于注解的自动连接微调</a></span></dt>
+<dt><span class="section"><a href="ch03s11.html#beans-custom-autowire-configurer">3.11.3. <code class="classname">CustomAutowireConfigurer</code></a></span></dt>
+<dt><span class="section"><a href="ch03s11.html#beans-resource-annotation">3.11.4. <code class="interfacename">@Resource</code></a></span></dt>
+<dt><span class="section"><a href="ch03s11.html#beans-postconstruct-and-predestroy-annotations">3.11.5. <code class="interfacename">@PostConstruct</code> 与 <code class="interfacename">@PreDestroy</code></a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s12.html">3.12. 对受管组件的Classpath扫描</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch03s12.html#beans-stereotype-annotations">3.12.1. <code class="interfacename">@Component</code>和更多典型化注解</a></span></dt>
+<dt><span class="section"><a href="ch03s12.html#beans-scanning-autodetection">3.12.2. 自动检测组件</a></span></dt>
+<dt><span class="section"><a href="ch03s12.html#beans-scanning-filters">3.12.3. 使用过滤器自定义扫描</a></span></dt>
+<dt><span class="section"><a href="ch03s12.html#beans-scanning-name-generator">3.12.4. 自动检测组件的命名</a></span></dt>
+<dt><span class="section"><a href="ch03s12.html#beans-scanning-scope-resolver">3.12.5. 为自动检测的组件提供一个作用域</a></span></dt>
+<dt><span class="section"><a href="ch03s12.html#beans-scanning-qualifiers">3.12.6. 用注解提供限定符元数据</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch03s13.html">3.13. 注册一个<code class="interfacename">LoadTimeWeaver</code></a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch04.html">4. 资源</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch04.html#resources-introduction">4.1. 简介</a></span></dt>
+<dt><span class="section"><a href="ch04s02.html">4.2. <code class="interfacename">Resource</code>接口</a></span></dt>
+<dt><span class="section"><a href="ch04s03.html">4.3. 内置 <code class="interfacename">Resource</code> 实现</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-urlresource">4.3.1. 
+				<code class="classname">UrlResource</code>
+			</a></span></dt>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-classpathresource">4.3.2. <code class="classname">ClassPathResource</code></a></span></dt>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-filesystemresource">4.3.3. <code class="classname">FileSystemResource</code></a></span></dt>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-servletcontextresource">4.3.4. 
+				<code class="classname">ServletContextResource</code>
+			</a></span></dt>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-inputstreamresource">4.3.5. <code class="classname">InputStreamResource</code></a></span></dt>
+<dt><span class="section"><a href="ch04s03.html#resources-implementations-bytearrayresource">4.3.6. <code class="classname">ByteArrayResource</code></a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch04s04.html">4.4. <code class="interfacename">ResourceLoader</code>接口</a></span></dt>
+<dt><span class="section"><a href="ch04s05.html">4.5. <code class="interfacename">ResourceLoaderAware</code> 接口</a></span></dt>
+<dt><span class="section"><a href="ch04s06.html">4.6. 把<code class="interfacename">Resource</code>作为属性来配置</a></span></dt>
+<dt><span class="section"><a href="ch04s07.html">4.7. Application context 和<code class="interfacename">Resource</code> 路径</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch04s07.html#resources-app-ctx-construction">4.7.1. 构造application context</a></span></dt>
+<dt><span class="section"><a href="ch04s07.html#resources-app-ctx-wildcards-in-resource-paths">4.7.2. Application context构造器中资源路径的通配符</a></span></dt>
+<dt><span class="section"><a href="ch04s07.html#resources-filesystemresource-caveats">4.7.3. <code class="classname">FileSystemResource</code> 说明</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch05.html">5. 校验，数据绑定，<code class="interfacename">BeanWrapper</code>，与<code class="literal">属性编辑器</code></a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch05.html#validation-introduction">5.1. 简介</a></span></dt>
+<dt><span class="section"><a href="ch05s02.html">5.2. 使用Spring的<code class="interfacename">Validator</code>接口进行校验</a></span></dt>
+<dt><span class="section"><a href="ch05s03.html">5.3. 从错误代码到错误信息</a></span></dt>
+<dt><span class="section"><a href="ch05s04.html">5.4. Bean处理和<code class="interfacename">BeanWrapper</code></a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch05s04.html#beans-beans-conventions">5.4.1. 设置和获取属性值以及嵌套属性</a></span></dt>
+<dt><span class="section"><a href="ch05s04.html#beans-beans-conversion">5.4.2. 内建的<span class="interface">PropertyEditor</span>实现</a></span></dt>
+</dl></dd>
+</dl></dd>
+<dt><span class="chapter"><a href="ch06.html">6. 使用Spring进行面向切面编程（AOP）</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06.html#aop-introduction">6.1. 简介</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06.html#aop-introduction-defn">6.1.1. AOP概念</a></span></dt>
+<dt><span class="section"><a href="ch06.html#aop-introduction-spring-defn">6.1.2. Spring AOP的功能和目标</a></span></dt>
+<dt><span class="section"><a href="ch06.html#aop-introduction-proxies">6.1.3. AOP代理</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch06s02.html">6.2. @AspectJ支持</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06s02.html#aop-aspectj-support">6.2.1. 启用@AspectJ支持</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-at-aspectj">6.2.2. 声明一个切面</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-pointcuts">6.2.3. 声明一个切入点（pointcut）</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-advice">6.2.4. 声明通知</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-introductions">6.2.5. 引入（Introduction）</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-instantiation-models">6.2.6. 切面实例化模型</a></span></dt>
+<dt><span class="section"><a href="ch06s02.html#aop-ataspectj-example">6.2.7. 例子</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch06s03.html">6.3. 基于Schema的AOP支持</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-declaring-an-aspect">6.3.1. 声明一个切面</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-pointcuts">6.3.2. 声明一个切入点</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-advice">6.3.3. 声明通知</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-introductions">6.3.4. 引入</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-instatiation-models">6.3.5. 切面实例化模型</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-advisors">6.3.6. Advisor</a></span></dt>
+<dt><span class="section"><a href="ch06s03.html#aop-schema-example">6.3.7. 例子</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch06s04.html">6.4. AOP声明风格的选择</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06s04.html#aop-spring-or-aspectj">6.4.1. Spring AOP还是完全用AspectJ？</a></span></dt>
+<dt><span class="section"><a href="ch06s04.html#aop-ataspectj-or-xml">6.4.2. Spring AOP中使用@AspectJ还是XML？</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch06s05.html">6.5. 混合切面类型</a></span></dt>
+<dt><span class="section"><a href="ch06s06.html">6.6. 代理机制</a></span></dt>
+<dd><dl><dt><span class="section"><a href="ch06s06.html#aop-understanding-aop-proxies">6.6.1. 理解AOP代理</a></span></dt></dl></dd>
+<dt><span class="section"><a href="ch06s07.html">6.7. 以编程方式创建@AspectJ代理</a></span></dt>
+<dt><span class="section"><a href="ch06s08.html">6.8. 在Spring应用中使用AspectJ</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch06s08.html#aop-atconfigurable">6.8.1. 在Spring中使用AspectJ进行domain object的依赖注入</a></span></dt>
+<dt><span class="section"><a href="ch06s08.html#aop-ajlib-other">6.8.2. Spring中其他的AspectJ切面</a></span></dt>
+<dt><span class="section"><a href="ch06s08.html#aop-aj-configure">6.8.3. 使用Spring IoC来配置AspectJ的切面</a></span></dt>
+<dt><span class="section"><a href="ch06s08.html#aop-aj-ltw">6.8.4. 在Spring应用中使用AspectJ加载时织入（LTW）</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch06s09.html">6.9. 更多资源</a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch07.html">7. Spring AOP APIs</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07.html#aop-api-introduction">7.1. 简介</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html">7.2. Spring中的切入点API</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07s02.html#aop-api-concepts">7.2.1. 概念</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html#aop-api-pointcut-ops">7.2.2. 切入点运算</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html#aop-api-pointcuts-aspectj">7.2.3. AspectJ切入点表达式</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html#aop-api-pointcuts-impls">7.2.4. 便利的切入点实现</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html#aop-api-pointcuts-superclasses">7.2.5. 切入点的超类</a></span></dt>
+<dt><span class="section"><a href="ch07s02.html#aop-api-pointcuts-custom">7.2.6. 自定义切入点</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch07s03.html">7.3. Spring的通知API</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07s03.html#aop-api-advice-lifecycle">7.3.1. 通知的生命周期</a></span></dt>
+<dt><span class="section"><a href="ch07s03.html#aop-api-advice-types">7.3.2. Spring里的通知类型</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch07s04.html">7.4. Spring里的Advisor API</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html">7.5. 使用ProxyFactoryBean创建AOP代理</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07s05.html#aop-pfb-1">7.5.1. 基础</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html#aop-pfb-2">7.5.2. JavaBean属性</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html#aop-pfb-proxy-types">7.5.3. 基于JDK和CGLIB的代理</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html#aop-api-proxying-intf">7.5.4. 对接口进行代理</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html#aop-api-proxying-class">7.5.5. 对类进行代理</a></span></dt>
+<dt><span class="section"><a href="ch07s05.html#aop-global-advisors">7.5.6. 使用“全局”通知器</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch07s06.html">7.6. 简化代理定义</a></span></dt>
+<dt><span class="section"><a href="ch07s07.html">7.7. 使用ProxyFactory通过编程创建AOP代理</a></span></dt>
+<dt><span class="section"><a href="ch07s08.html">7.8. 操作被通知对象</a></span></dt>
+<dt><span class="section"><a href="ch07s09.html">7.9. 使用“自动代理（autoproxy）”功能</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07s09.html#aop-autoproxy-choices">7.9.1. 自动代理bean定义</a></span></dt>
+<dt><span class="section"><a href="ch07s09.html#aop-autoproxy-metadata">7.9.2. 使用元数据驱动的自动代理</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch07s10.html">7.10. 使用TargetSource</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch07s10.html#aop-ts-swap">7.10.1. 热交换目标源</a></span></dt>
+<dt><span class="section"><a href="ch07s10.html#aop-ts-pool">7.10.2. 池化目标源</a></span></dt>
+<dt><span class="section"><a href="ch07s10.html#aop-ts-prototype">7.10.3. 原型目标源</a></span></dt>
+<dt><span class="section"><a href="ch07s10.html#aop-ts-threadlocal">7.10.4. <code class="classname">ThreadLocal</code>目标源</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch07s11.html">7.11. 定义新的<code class="interfacename">Advice</code>类型</a></span></dt>
+<dt><span class="section"><a href="ch07s12.html">7.12. 更多资源</a></span></dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch08.html">8. 测试</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch08.html#testing-introduction">8.1. 简介</a></span></dt>
+<dt><span class="section"><a href="ch08s02.html">8.2. 单元测试</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch08s02.html#mock-objects">8.2.1. Mock对象</a></span></dt>
+<dt><span class="section"><a href="ch08s02.html#unit-testing-support-classes">8.2.2. 单元测试支持类</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch08s03.html">8.3. 集成测试</a></span></dt>
+<dd><dl>
+<dt><span class="section"><a href="ch08s03.html#integration-testing-overview">8.3.1. 概览</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#integration-testing-which-framework">8.3.2. 使用哪个支持框架</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#integration-testing-common-goals">8.3.3. 通用目标</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#integration-testing-support-jdbc">8.3.4. JDBC测试支持</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#integration-testing-common-annotations">8.3.5. 常用注解</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#junit38-legacy-support">8.3.6. JUnit 3.8遗留支持</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#testcontext-framework">8.3.7. Spring TestContext Framework</a></span></dt>
+<dt><span class="section"><a href="ch08s03.html#testing-examples-petclinic">8.3.8. PetClinic示例</a></span></dt>
+</dl></dd>
+<dt><span class="section"><a href="ch08s04.html">8.4. 更多资源</a></span></dt>
+</dl></dd>
+</dl>
+</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

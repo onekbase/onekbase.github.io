@@ -1,0 +1,949 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="11-2.html"> 上一页</a><a href="13-1.html"> 下一页</a></div>
+            <h1>第12章 简化发布处理：自动JAR文件创建
+            </h1>
+            <p>　　在这一章里，我们将从servlet的编程中先停下来，看一看怎样能够使你的applet的分布处理更加容易。对一个applet进行发布处理的最艰难的一步，不仅仅是正确的封装成为一个压缩的ZIP文件或者JAR文件，而是开发一个类文件从属关系的检验程序和把任何从属关系加入到一个ZIP或者JAR文件之中的问题。</p>
+            <h2>12.1 找到类文件从属关系</h2>
+            <p> 　　要找到一个给定类文件的所有从属关系，我们确实需要检查由Java虚拟机所定义的内部类结构。Java虚拟机规范描述了如下的一个类文件：一个8位的字节流。所有的16位，32位和64位数分别由读入两个，四个和八个连接的8位字节来构造。多字节的数据条目总是按照尾部先存的顺序来存储，也就是说后面的字节先存储。正如我们所要看到的，所有的类引用都保存在类文件之中，而我们所要做的全部事情就是找到它们。表12.1显示了我们所要考察的最基本的类文件结构。<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+              　　　　条目　　　　　长度<br />
+              　　───────────────────────────────── <br />
+              　　幻数(Magic)　　　　　　　　　　　4<br />
+              　　次版本(Minor version)　　　　　　2<br />
+              　　主版本(Majorversion)　　　　　　　2<br />
+              　　常量池计数(Constant pool count)　2<br />
+              　　常量池(Constant pool)　　　　　可变长<br />
+              　　访问标志(Access flags)　　　　　2<br />
+              　　当前类(This class)　　　　　　　　2<br />
+              　　父类(Super class)　　　　　　　　2<br />
+              　　接口计数(Interfaces count)　　　2<br />
+              　　接口(Interfaces)　　　　　　2*Interface count<br />
+              　　域计数(Field count)　　　　　2<br />
+              　　域(Fields)　　　　　　　　　　可变长<br />
+              　　方法计数(Method count)　　　　2<br />
+              　　方法(Methods)　　　　　　　　可变长<br />
+              　　属性计数(Attribute count)　　2<br />
+              　　属性(Attributes)　　　　　　可变长<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+    </p>
+            <h3> <a name="1211" id="1211"></a>12.1.1 进一步考察类文件结构</h3>
+            <p>　　现在让我们来进一步考察类文件结构中的每一个条目。一旦我们理解了这些结构是怎样配合起来的，就会很容易地遍历该结构并且找出有价值的信息。</p>
+            <p>　　幻数(Magic)<br />
+    　　这个条目包含了一个所有的Java类文件都通用的幻数。这个幻数的值总是0xCAFEBASE(十六进制)</p>
+            <p>　　次版本和主版本(Minor Version 和 Major Version)<br />
+    　　次版本和主版本条目的取值是创建类文件的编译器的次版本号和主版本号。例如Sun的JDK的1.0.2版本和1.1版本，次版本号就是3，主版本号就是45。唯有Sun公司才能定义新版本号的意义。</p>
+            <p>　　常量池计数(Constant Pool Count)<br />
+    　　常量池计数的计数值必须要大于零，它定义了常量池表的表项的数目。请注意常量池计数包括了常量池表项在0值的索引，但是表项并不包括在类文件中并且被保留下来为Java虚拟机内部使用。</p>
+            <p>　　常量池(Constant Pool)<br />
+    　　常量池是一个表项数变长的表。从索引值1直到常量池计数的每一个表项都是可变长的变量。每个表项的格式由一个打头的标记字节所定义，正如表12.2所示。</p>
+            <p>　　　　　　　　　　　表12.2 常量池标记数值<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+              　　常量类型　　　　　　　　　　　值 <br />
+              　　─────────────────────────────────<br />
+              　　CONSTANT_Utf8 　　　　　　　　1<br />
+              　　CONSTANT_Integer　　　　　　　3<br />
+              　　CONSTANT_Float　　　　　　　　4<br />
+              　　CONSTANT_Long 　　　　　　　　5<br />
+              　　CONSTANT_Double 　　　　　　　6<br />
+              　　CONSTANT_Class　　　　　　　　7<br />
+              　　CONSTANT_String 　　　　　　　8<br />
+              　　CONSTANT_Fieldref 　　　　　　9<br />
+              　　CONSTANT_Methodref 　　　　　10<br />
+              　　CONSTANT_InterfaceMethodref 11<br />
+              　　CONSTANT_NameAndType 　　　　12 <br />
+    　　─────────────────────────────────</p>
+            <p>　　<i>CONSTANT_Utf8</i><br />
+              　　CONSTANT_Utf8表项代表了一个常量字符串值。Uft8字符串是被编码的，这样一来，只包含非空的ASCII字符的字符序列可以只用每个字符一个字节来表示。16位的字符也可以表示。表12.3显示了CONSTANT_Utf8表项的结构。 
+    </p>
+            <p>　　　　　　　　　　表12.3 CONSTANT_Utf8表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+              　　条目　长度　　　　　　　注　释 <br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　1　　　　　　　　CONSTANT_Utf8，值等于1<br />
+              　　Length　 2　　　　　　　　随后的字节数组的字节数。字符串是非空结<br />
+              　　　　　　　　　　　　　　　束的<br />
+              　　Bytes　　由Length来定长　字符串的字节数<br />
+    　　─────────────────────────────────</p>
+            <p>　　<i>CONSTANT_Integer</i><br />
+              　　CONSTANT_Integer表项代表一个四字节的整数常量，表12.4显示了CONSTANT_Integer表项的结构。 
+    </p>
+            <p>　　　　　　　　　　表12.4 CONSTANT_Integer表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+              　　条目　长度　　　　　　　注　释<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　1　　　　　CONSTANT_Integer，值等于3<br />
+              　　Bytes　4　　　　　Int常量的值。字节是按照尾部先存的顺序存储的<br />
+    　　─────────────────────────────────</p>
+            <p>　　<i>CONSTANT_Float</i><br />
+    　　CONSTANT_Float表项代表一个四字节的浮点数常量。表12.5显示了CONSTANT_Float表项的结构。</p>
+            <p>　　　　　　　　　　表12.5 CONSTANT_Float表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　1　　　CONSTANT_Float，值等于4<br />
+              　　Bytes　4　　　浮点数类型常量的值。按照IEEE 754单精度浮点数位格式<br />
+              　　　　　　　　　标准存储<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　<i>CONSTANT_Long</i><br />
+    　　CONSTANT_Long表项代表一个八字节的长类型常量。表12.6显示了CONSTANT_Long表项的结构</p>
+            <p>　　　　　　　　　　表12.6 CONSTANT_Long表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　1　　　CONSTANT_Long，值等于5<br />
+              　　Bytes　8　　　长类型常量的值。字节是按照尾部先存的顺序存储的<br />
+    　　─────────────────────────────────</p>
+            <p>　　CONTANT_Long表项和CONSTANT_Double表项实际上占用了两个常量池表项。下面的常量池表项被视为非法，一定不能使用。</p>
+            <p>　　<i>CONSTANT_Double</i><br />
+    　　CONSTANT_Double表项代表一个八字节的双精度类型常量。表12.7显示了CONSTANT_Double表项的结构。</p>
+            <p>　　　　　　　表12.7 CONSTANT_Double表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　1　　　CONSTANT_Double，值等于6<br />
+              　　Bytes　8　　　双精度类型常量的值。按照IEEE 754双精度浮点数位格式<br />
+              　　　　　　　　　标准存储<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　CONSTANT_Double表项占用了两个常量池表项；要了解更多的信息，请参看CONSTANT_Long。<br />
+              　　CONSTANT_Class<br />
+    　　CONSTANT_Class表项代表一个类或者接口。CONSTANT_Class表项包含一个指回常量池中CONSTANT_Utf8表项的索引指针。在索引表项找到的字符串是一个类或者接口的名字。表12.8显示了CONSTANT_Class表项的结构。</p>
+            <p>　　　　　　　　　　表12.8 CONSTANT_Class表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　1　　CONSTANT_Class，值等于7<br />
+              　　Name Index　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　CONSTANT_Utf8类型并且代表一个类或者接口的名字<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　<i>CONSTANT_String</i><br />
+    　　CONSTANT_String表项代表一个字符串常量。CONSTANT_String表项包含一个指回常量池中CONSTANT_Utf8表项的索引指针。表12.9显示了CONSTANT_String表项的结构。</p>
+            <p>　　　　　　　　　　表12.９ CONSTANT_Class表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　　　1　　CONSTANT_String，值等于8<br />
+              　　String Index　　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　　CONSTANT_Utf8类型并且代表一个字符串常量<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　<i>CONSTANT_Fieldref</i><br />
+              　　CONSTANT_Fieldref表项代表类中的一个域。CONSTANT_Fieldref表项包含一个指回常量池中声明该域的CONSTANT_Class表项的索引指针和一个定义该域的名字和描述符的CONSTANT_NameAndType表项的索引指针。表 
+    12.10显示了CONSTANT_Fieldref表项的结构。</p>
+            <p>　　　　　　　　　　表12.10 CONSTANT_Fieldref表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　　1　　CONSTANT_Fieldref，值等于9<br />
+              　　Class Index　　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　CONSTANT_Class类型并且代表一个类或者接口的声<br />
+              　　　　　　　　　　　　明类型<br />
+              　　Name and Type　2　合法的常量池的索引。索引中的表项必须是<br />
+              　　Index　　　　　　　CONSTANT_NameAndType类型，并且代表一个域的<br />
+              　　　　　　　　　　　　名字和域的描述符<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　<i>CONSTANT_Methodref</i><br />
+    　　CONSTANT_Methodref表项代表一个类的方法。CONSTANT_Methodref表项包含一个指回常量池中声明该方法的CONSTANT_Class表项的索引指针和一个定义该方法的名字和描述符的CONSTANT_NameAndType表项的索引指针。表12.11显示了CONSTANT_Methodref表项的结构。</p>
+            <p>　　　　　　　　　　表12.11 CONSTANT_Methodref表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　　1　　CONSTANT_Methodref，值等于10<br />
+              　　Class Index　　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　CONSTANT_Class类型，并且代表一个类或者接口<br />
+              　　　　　　　　　　　　的声明类型<br />
+              　　Name and Type　2　合法的常量池的索引。索引中的表项必须是<br />
+              　　Index　　　　　　　CONSTANT_NameAndType类型，并且代表一个域的<br />
+              　　　　　　　　　　　　名字和域的描述符<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　CONSTANT_InterfaceMethodref<br />
+    　　CONSTANT_InterfaceMethodref表项代表一个定义在接口中的方法。CONSTANT_InterfaceMethodref表项包含一个指回常量池中声明该方法的CONSTANT_Class表项索引指针和一个定义该方法的名字和描述符的CONSTANT_NameAndType表项的索引指针。表12.12显示了CONSTANT_InterfaceMethodref表项的结构。</p>
+            <p>　　　　　　　　　　表12.12 CONSTANT_InterfaceMethodref表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　　1　　CONSTANT_InterfaceMethodref，值等于11<br />
+              　　Class Index　　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　CONSTANT_Class类型，并且代表一个类或者接口<br />
+              　　　　　　　　　　　　的声明类型<br />
+              　　Name and Type　2　合法的常量池的索引。索引中的表项必须是<br />
+              　　Index　　　　　　　　　　CONSTANT_NameAndType类型，并且代表一个域的<br />
+              　　　　　　　　　　　　名字和域的描述符<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　CONSTANT_NameAndType<br />
+    　　CONSTANT_NameAndType表项代表一个域或者方法名字和类型。请注意该域或者方法所属的类或者接口并没有被指出。CONSTANT_Fieldref，CONSTANT_Methodref和CONSTANT_InterfaceMethodref表项用来将类或者接口绑定到方法名字和类型上。表12.13显示了CONSTANT_NameAndType表项的结构。</p>
+            <p>　　　　　　　　　　表12.13 CONSTANT_NameAndType表项<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　条目　　　　　　　长度　　　　注　释 　　<br />
+              　　─────────────────────────────────<br />
+              　　Tag　　　　　　　　1　　CONSTANT_NameAndType，值等于12<br />
+              　　Class Index　　　　2　　合法常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　　　　CONSTANT_Utf8类型，并且代表一个合法的<br />
+              　　　　　　　　　　　　　　　Java方法或者域的名字<br />
+              　　Descript or Index　2　合法的常量池的索引。索引中的表项必须是<br />
+              　　　　　　　　　　　　　　CONSTANT_Utf8类型，并且代表一个域的<br />
+              　　　　　　　　　　　　　　Java方法或者域的描述符<br />
+    　　─────────────────────────────────</p>
+            <p>　　访问标志(Access Flags)<br />
+    　　访问标志的值指出了类或者接口声明的修改者。表12.14显示了访问标志修改者的取值。 </p>
+            
+            
+            <p>　　　　　　　　　表12.14 类和接口的修改者标志<br />
+              　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+               　　标志　　　　　　值　　　　注释<br />
+              　　─────────────────────────────────<br />
+              　　ACC_PUBLIC 　　0x0001　　公有类或者接口<br />
+              　　ACC_FINAL　　　0x0010　　常量类；不允许子类 <br />
+              　　ACC_SUPER　　　0x0020　　指针特别对父类的方法<br />
+              　　ACC_INTERFACE 　0x0200　接口<br />
+              　　ACC_ABSTRACT 　0x0400　　抽象类或者接口，不可以被示例<br />
+    　　─────────────────────────────────</p>
+            
+            <p>　　当前类(This Class)<br />
+    　　This Class表项必须是常量池中的一个合法的索引。索引中的表项必须是CONSTANT_Class类型，并且代表当前类所定义的类或者接口。</p>
+            <p>　　父类(Superclass)<br />
+    　　Superclass表项必须是常量池中的一个合法的索引。索引中的表项必须是CONSTANT_Class类型，并且代表　当前类的父类。唯一的例外就是java.lang.Object，它的父类索引是0。</p>
+            <p>　　接口计数(Interface Count)<br />
+    　　Interface Count定义了接口表的表项数目，接口表定义了当前类或者接口的直接父接口。</p>
+            <p>　　接口表(Interface Table)<br />
+    　　Interface Table包含一个合法的常量池索引指针的数组。每一个接口表的表项必须引用一个CONSTANT_Class表项并且代表一个当前类或者接口的直接父接口。</p>
+            <p>　　域计数(Field Count)<br />
+    　　Field Count定义了域表(Field Table)的表项数目，域表定义当前类或者接口的每一个域。</p>
+            <p> 　　域表(Field Table)<br />
+    　　域表包含一个表项数可变长的数组，该数组表示当前类或者接口的每一个域。域表并不包括从父类或者父接口继承的那些域；它只包含定义在当前类或者接口的那些域。由于我们还用不到域表，我将把它留到Java虚拟机规范中去解释每一个域表表项的内容。</p>
+            <p> 　　方法计数(Method Count)<br />
+    　　Method Count定义了方法表(Method Table)的表项数，方法表定义了当前类或者接口的每一个方法。</p>
+            <p>　　方法表(Method Table)<br />
+    　　方法表包含一个表项数可变长的数组，该数组表示当前类或者接口的每一个方法。方法表并不包括从父类或者父接口继承的那些方法；它只包含定义在当前类或者接口的那些方法。和域表一样，我们还用不到方法表，我同样将把它留到Java虚拟机规范中去解释每一个表项的内容。</p>
+            <p>　　属性计数(Attribute Count)<br />
+    　　Attribute Count定义了属性表(Attribute Table)的表项数，属性表定义了当前类或者接口的每一个属性。</p>
+            <p>　　属性表(Attribute Table)<br />
+    　　属性表包含一个表项数可变长的数组，该数组表示当前类或者接口的每一个属性。这些属性给出了有关类文件的附加信息，比如源文件(SourceFile)，例外(Exceptions)，和线数表(LineNumberTable)。同样，我们还用不到属性表，我也将把它留到Java虚拟机规范中去解释细节。</p>
+            <h3><a name="a" id="a"></a>12.1.2 一个找从属关系的算法</h3>
+            <p>　　现在我们已经对类文件的内容有了牢固的掌握，我们可以容易地找出从属关系。我们认为一个从属关系就是在常量池中找到的任何一个类引用。下面的表就是一个找到类引用的基本算法：<br />
+              　　1.打开读到类文件。<br />
+              　　2.取得常量池中的表项数。<br />
+              　　3.读常量池，维护一个类文件和字符串引用的列表。请注意类文件引用实际上是一个指回常量池的索引。索引所指向的常量池表项是一个给出类或者接口名字的字符串。<br />
+              　　4.对于每一个类文件引用，找到包含类文件名的相应的字符串常量。<br />
+              　　5.对于每一个找到的类文件，重复第1步到第5步。<br />
+    　　在下面的几节里，我们将走完上述步骤的每一步，并且看一看在我们用到的从属关系检查程序中相应的Java代码。 </p>
+            <h2><a name="122" id="122"></a>12.2 打开和读取一个类文件</h2>
+            <p>　　我们的从属关系检查程序的第一个挑战看上去好像是一个非常简单的进程。我们所要做的就是打开一个类文件；那能有多难呢？你有可能试图把一个文件当作一个资源并且用ClassLoader.getSystemResourceAsStream()方法来返回一个我们易读的输入流。不幸的是，作为一种安全尺度，类装入器(Class 
+              Loader)禁止类文件按照这种方式读取；你可能也不想人们能够直接从Internet上读取你的类文件，是吗？<br />
+    　　好的，如果你不想把类文件当作一个系统资源来对待，那么怎样来打开一个类文件呢？其实这一点很好做到，只要你总能够保证类文件在你的本地文件结构中被找到。但是，那些从CLASSPATH从一个压缩的ZIP或者JAR文件载入的类应该怎么办呢？这是一个很通用的方法，对于包和发布的类来说——毕竟，这就是我们想要做的事情！为了可靠地打开一个类文件，而不管它的物理定位是何处，我们都通过CLASSPATH来寻找一个类，或者在目录中，或者在每个CLASSPATH元素的存档中(ZIP或者JAR)。</p>
+            <pre class="code"> /**
+* Given a class name, open it and return a buffer with
+* the contents. The class is loaded from
+* the current CLASSPATH setting
+* 源文件名：RollCall.java
+*/
+
+protected byte[] openResource(String name)
+throws Exception
+{
+byte buf[] = null;
+
+// Get the defined classpath
+
+String classPath = System.getProperty("java.class.path");
+int beginIndex = 0;
+int endIndex = classPath.indexOf(";");
+
+// Walk through the classpath
+
+while (true) {
+String element = "";
+
+if (endIndex == -1) {
+// No ending semicolon
+element = classPath.substring(beginIndex);
+}
+else {
+element = classPath.substring(beginIndex, endIndex);
+}
+
+// We've got an element from the classpath. Look for
+// the resource here
+
+buf = openResource(name, element);
+
+// Got it! Exit the loop
+
+if (buf != null) {
+break;
+}
+
+if (endIndex == -1) {
+break;
+}
+beginIndex = endIndex + 1;
+endIndex = classPath.indexOf(";", beginIndex);
+}
+
+return buf;
+}
+
+/**
+* Given a resource name and path, open the resource and
+* return a buffer with the contents. Returns null if
+* not found
+*/
+
+protected byte[] openResource(String name,
+String path)
+throws Exception
+{
+byte buf[] = null;
+
+// If the path is a zip or jar file, look inside for the
+// resource
+
+String lPath = path.toLowerCase();
+if (lPath.endsWith(".zip") ||
+lPath.endsWith(".jar")) {
+
+buf = openResourceFromJar(name, path);
+}
+else {
+
+// Not a zip or jar file. Look for the resource as
+// a file
+
+String fullName = path;
+
+// Put in the directory separator if necessary
+
+if (!path.endsWith("\\") &&
+!path.endsWith("/")) {
+fullName += "/";
+}
+fullName += name;
+
+java.io.File f = new java.io.File(fullName);
+
+// Check to make sure the file exists and it truely
+// is a file
+
+if (f.exists() &&
+f.isFile()) {
+
+// Create an input stream and read the file
+
+java.io.FileInputStream fi = new java.io.FileInputStream(f);
+long length = f.length();
+buf = new byte[(int) length];
+fi.read(buf);
+fi.close();
+}
+}
+
+return buf;
+}
+
+/**
+* Given a resource name and jar file name, open the jar file
+* and return a buffer containing the contents. Returns null
+* if the jar file could not be found or the resource could
+* not be found
+*/
+
+protected byte[] openResourceFromJar(String name,
+String jarFile)
+throws Exception
+{
+byte buf[] = null;
+
+java.io.File f = new java.io.File(jarFile);
+java.util.zip.ZipFile zip = null;
+
+// Make sure the file exists before opening it
+
+if (f.exists() &&
+f.isFile()) {
+
+// Open the zip file
+
+zip = new java.util.zip.ZipFile(f);
+
+// Is the entry in the zip file?
+
+java.util.zip.ZipEntry entry = zip.getEntry(name);
+
+// If found, read the corresponding buffer for the entry
+
+if (entry != null) {
+java.io.InputStream in = zip.getInputStream(entry);
+
+// Get the number of bytes available
+
+int len = (int) entry.getSize();
+
+// Read the contents of the class
+buf = new byte[len];
+in.read(buf, 0, len);
+in.close();
+}
+}
+
+if (zip != null) {
+zip.close();
+}
+return buf;
+}　</pre>
+    <h2><a name="123" id="123"></a>12.3 读取常量池中的表项数    </h2>
+<p>　　既然我们已经打开并且读取了类文件中的内容，我们就可以开始处理这些未加工的字节流了。第一步是读取类文件的头部并且判断常量池中的表项数。因为类文件的头部是一个固定长度的结构(见表12.1)，我们就可以对头部做一些基本的验证并且直接读取数值。</p>
+    <pre class="code"> // Create a DataInputStream using the buffer. This will
+// make reading the buffer very easy
+// 源文件名：RollCall.java
+
+java.io.ByteArrayInputStream bais =
+new java.io.ByteArrayInputStream(buf);
+
+java.io.DataInputStream in = new java.io.DataInputStream(bais);
+
+// Read the magic number. It should be 0xCAFEBABE
+
+int magic = in.readInt();
+if (magic != 0xCAFEBABE) {
+throw new Exception("Invalid magic number in " + className);
+}
+
+// Validate the version numbers
+
+short minor = in.readShort();
+short major = in.readShort();
+if ((minor != 3) &&
+(major != 45)) {
+// The VM specification defines 3 as the minor version
+// and 45 as the major version for 1.1
+throw new Exception("Invalid version number in " + className);
+}
+
+// Get the number of items in the constant pool
+
+short count = in.readShort();　　</pre>
+            <h3> <a name="1231" id="1231"></a>12.3.1 处理常量池</h3>
+            <p>　　下面一步，我们可以处理常量池中的每一个表项。我们将跳过常量池中的大多数信息；我们只对CONSTANT_Class(表12.8)和CONSTANT_Utf8(表12.3)表项感兴趣。</p>
+    <pre class="code"> // 源文件名：RollCall.java
+// We'll keep a vector containing an entry for each
+// CONSTANT_Class tag in the constant pool. The value
+// in the vector will be an Integer object containing
+// the name index of the class name
+
+java.util.Vector classInfo = new java.util.Vector();
+
+// We'll also keep a HashTable containing an entry for
+// each CONSTANT_String. The key will be the index
+// of the entry (relative to 1), while the element
+// will be the String value.
+
+java.util.Hashtable utf8 = new java.util.Hashtable();
+
+// Now walk through the constant pool looking for class
+// constants. All other constants are ignored, but we
+// still need to understand the format so that they
+// can be skipped.
+
+for (int i = 1; i < count; i++) {
+// Read the tag
+byte tag = in.readByte();
+
+switch (tag) {
+case 7: // CONSTANT_Class
+// Save the constant pool index for the class name
+short nameIndex = in.readShort();
+classInfo.addElement(new Integer(nameIndex));
+break;
+case 9: // CONSTANT_Fieldref
+case 10: // CONSTANT_Methodref
+case 11: // CONSTANT_InterfaceMethodref
+// Skip past the structure
+in.skipBytes(4);
+break;
+case 8: // CONSTANT_String
+// Skip past the string index
+in.skipBytes(2);
+break;
+case 3: // CONSTANT_Integer
+case 4: // CONSTANT_Float
+// Skip past the data
+in.skipBytes(4);
+break;
+case 5: // CONSTANT_Long
+case 6: // CONSTANT_Double
+// Skip past the data
+in.skipBytes(8);
+
+// As dictated by the Java Virtual Machine specification,
+// CONSTANT_Long and CONSTANT_Double consume two
+// constant pool entries.
+i++;
+
+break;
+case 12: // CONSTANT_NameAndType
+// Skip past the structure
+in.skipBytes(4);
+break;
+case 1: // CONSTANT_Utf8
+String s = in.readUTF();
+utf8.put(new Integer(i), s);
+break;
+default:
+System.out.println("WARNING: Unknown constant tag (" +
+tag + "@" + i + " of " + count +
+") in " + className);
+}
+}　　</pre>
+            <p>　　请注意，即使我们只使用CONSTANT_Class和CONSTANT_Utf8表项，我们仍然需要理解其他表项的格式才能正确地跳过它们。特别需要注意CONSTANT_Long和CONSTANT_Double表项，它们每个都要占用两个表项空间；我们必须确保正确地将池计数进行了前跳。</p>
+            <h3> <a name="1232" id="1232"></a>12.3.2 找到所有的类名字</h3>
+            <p>　　在前面一节里，我们已经读出了常量池表，并且维护了一个所有CONSTANT_Class和CONSTANT_Utf8表项的列表。记住CONSTANT_Class表项包含一个合法的常量池索引，它指向类或者索引的名字。由于常量池表项的顺序并没有在Java虚拟机规范中规定，我们必须在进行任何更进一步的处理之前，读出所有的表项。既然整个常量池都被读出了，我们就可以再回到我们的CONSTANT_Class表项的列表，找到相对应的CONSTANT_Utf8表项。</p>
+            <pre class="code"> // 原文件是：RollCall.java
+// Now we can walk through our vector of class name
+// index values and get the actual class name
+
+for (int i = 0; i < classInfo.size(); i++) {
+Integer index = (Integer) classInfo.elementAt(i);
+String s = (String) utf8.get(index);
+
+// Look for arrays. Only process arrays of objects
+
+if (s.startsWith("[")) {
+// Strip off all of the array indicators
+while (s.startsWith("[")) {
+s = s.substring(1);
+}
+// Only use the array if it is an object. If it is,
+// the next character will be an 'L'
+
+if (!s.startsWith("L")) {
+continue;
+}
+
+// Strip off the leading 'L' and trailing ';'
+s = s.substring(1, s.length() - 1);
+}
+
+// Append the .class
+s += ".class";
+//Now we have the full class or interface name in 's'
+}　　</pre>
+              　　　　请注意，类名字的数组包含一个Java数组类型的描述符，需要特别对待。例如，类名字代表一个一维的类对象数组。<br />
+              　　Object[]<br />
+              　　按照Java数组类型的描述符来表示：<br />
+              　　[Ljava.lang.Object;<br />
+                  　　现在我们已经对我们找到的每一个类名字执行了附加的处理。根据我们的意图，我们还需要把每一个文件做成一个新的存档(压缩的ZIP或者JAR文件)。并且，对我们找到的每一个新类名字，还要对它递归检查类文件从属关系。这样做过以后，我们就可以从我们的原始类找到所有的从属关系。让我们稍微退回一点，看看怎样创建一个新的ZIP或者JAR文件。这两种存档文件都有相同的格式，除了JAR(Java 
+    ARchive的缩写)文件可以有一个明晰文件，正如JavaBeans规范中所定义的，明晰文件列出了JAR中所有合法的beans。我们将假定JAR中没有beans，这样我们将忽略创建一个明晰。</p>
+    <pre class="code"> // Attempt to create the archive if one was given
+// 原文件：RollCall.java
+
+if (m_archive != null) {
+System.out.println("Creating archive " + m_archive);
+java.io.File f = new java.io.File(m_archive);
+java.io.FileOutputStream fo =
+new java.io.FileOutputStream(f);
+
+// A new file was created. Create our zip output stream
+
+m_archiveStream = new java.util.zip.ZipOutputStream(fo);
+}　　</pre>
+            <p>　　类java.util.zip.ZipOutputStream使得创建一个压缩的存档文件变得非常简单。我们所要做的事情就是创建一个新的java.util.zip.ZipEntry对象，代表一个存档的头部，然后写入数据。</p>
+    <pre class="code">/*
+* 原文件：RollCall.java
+* Adds the given buffer to the archive with the given
+* name
+*/
+
+private void addToArchive(String name, byte buf[])
+throws Exception
+{
+// Create a zip entry
+
+java.util.zip.ZipEntry entry = new java.util.zip.ZipEntry(name);
+entry.setSize(buf.length);
+
+// Add the next entry
+
+m_archiveStream.putNextEntry(entry);
+
+// Write the contents out as well
+
+m_archiveStream.write(buf, 0, buf.length);
+m_archiveStream.closeEntry();
+}
+
+ 　　</pre>
+    <h2><a name="124" id="124"></a>12.4 合而为一：CreateArchive应用程序</h2>
+    <p> 　　我们已经得到了所有的必要例程来找到一个给定的类的所有从属关系，让我们将它们合而为一，通过编写一个CreateArchive——一个简单的应用程序，将接收一个要被检查的类文件的列表，也接收一个要创建的存档的名字，后者是可选择的。CreateArchive将使用RollCall类，该类将读出类文件并且为我们创建存档；我们在这一章里一直都在看RollCall.java的各部分。与别处一样，你可以在本书配套CD-ROM中找到完整的源代码。<br />
+    　　CreateArchive应用程序把将要检查的一个或者多个类文件作为它的参数(去掉.class扩展名)，并且可以增加“-a”选项来指定将创建的存档的名字。如果没有指定存档，从属关系只是简单地显示出来。</p>
+            <pre class="code">package javaservlets.rollcall;
+
+/**
+* 文件名：CreateArchive.java
+* <p>This simple application will use the RollCall class to
+* find all of the class file dependency for a given set of
+* classes. If an archive file is specified it will be created
+* and all of the dependent files will be added.
+*/
+
+public class CreateArchive
+{
+public static void main(String args[])
+{
+// Create a new object and process
+
+CreateArchive ca = new CreateArchive();
+ca.create(args);
+}
+
+public void create(String args[])
+{
+// Get a list of all of the class files to check. Any
+// arguments given without a switch '-' will be considered
+// a class file
+
+String files[] = getFiles(args);
+
+if (files == null) {
+System.out.println("No class files specified");
+showHelp();
+return;
+}
+
+// Get the archive to create, if given
+
+String archive = getArg(args, "-a");
+
+// Create a new RollCall object
+
+RollCall rollCall = new RollCall();
+
+try {
+
+// Set the class files to check
+
+rollCall.setClasses(files);
+
+// Set the archive to create
+
+rollCall.setArchive(archive);
+
+// Check all strings, if necessary
+rollCall.setCheckStrings(isArg(args, "-c"));
+
+// Perform the check and create the archive, if necessary.
+
+rollCall.start();
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+...
+}　</pre>
+            <p>　　值得一提的是，当我们运行CreateArchive的时候，所有的java.*类都会被过滤出来。你没有必要去分配这些类，因此它们被明确地排除掉(不要说你的存档将会非常的大，如果你在即使最简单的类里面也包括了所有的java.*类的话)。<br />
+    　　让我们来试验一下。作为一个简单的测试，我们运行CreateArchive并以它自己作为输入类文件：</p>
+            <pre class="code">　java javaservlets.rollcall.CreateArchive
+javaservlets.rollcall.CreateArchive　</pre>
+              　　你应该得到下面的输出：<br />
+              　　javaservlets.rollcall.CreateArchive.class<br />
+              　　　javaservlets.rollcall.RollCall.class<br />
+              　　你也可以试着用一个-a选项来运行CreateArchive，指定要创建的存档文件：<br />
+              　　java javaservlets.rollcall.CreateArchive<br />
+              　　　javaservlets.rollcall.CreateArchive -atemp.jar<br />
+              　　你应该得到下面的输出：<br />
+              　　　<pre class="code">Creating temp.jar
+javaservlets.rollcall.CreateArchive.class
+javaservlets.rollcall.RollCall.class
+temp.jar created. </pre>
+              <h2><a name="125" id="125"></a>12.5 发布一个Applet              </h2>
+              <p>　　我们已经有了自己的CreateArchive实用工具，它可以为一系列给定的类文件找到所有的从属关系，让我们来试试。我们将创建一个非常简单的applet，它使用另外一个实现一个接口的基本类。连锁效果就是我们的applet将有三个从属关系：一个类，一个接口和applet自身。我们将从写一个简单的类开始，这个类实现了一个接口，接口带有一个能返回一个字符串值的方法。</p>
+            <pre class="code">　package javaservlets.rollcall.test;
+
+/**
+* <p>This is a simple interface used for testing CreateArchive
+* 来自SimpleInterface.java
+*/
+
+public interface SimpleInterface
+{
+String getString();
+}
+
+package javaservlets.rollcall.test;
+
+/**
+* <p>This is a simple class used for testing CreateArchive
+* 来自SimpleClass.java
+*/
+
+public class SimpleClass implements SimpleInterface
+{
+public String getString()
+{
+return "I loaded all of my classes from an archive!";
+}
+}
+
+我们所要做的就是创建一个简单的TextField来保存对我们的简单类的方法调用的结果。
+
+package javaservlets.rollcall.test;
+
+/**
+* <p>This is a simple applet for testing CreateArchive. A
+* distribution archive will be created and used to load this
+* applet.
+*/
+
+public class SimpleApplet extends java.applet.Applet
+{
+// Define our fields
+
+java.awt.TextField output = new java.awt.TextField();
+
+/*
+* <p>init is called when the applet is loaded
+*/
+
+public void init()
+{
+// Add components
+
+add(output);
+
+// Use our simple class to get some data. Set the
+// results in the output text field.
+
+SimpleClass sc = new SimpleClass();
+output.setText(sc.getString());
+}
+}　</pre>
+            <p>　　让我们继续往下做，为简单的applet创建一个存档，这样它就可以容易的被发布了。<br />
+    　<pre class="code">java javaservlets.rollcall.CreateArchive
+javaservlets.rollcall.test.SimpleApplet
+-aSimpleApplet.zip</pre>
+              你应该得到下面的输出：<br />
+              　　<pre class="code">Creating archive SimpleApplet.zip
+javaservlets.rollcall.test.SimpleApplet.class
+javaservlets.rollcall.test.SimpleClass.class
+javaservlets.rollcall.test.SimpleInterface.class
+SimpleApplet.zip created. </pre>
+              <p>　　SimpleApplet.zip现在包含了执行我们简单的applet的所有必要的类文件。记住没有java.*文件被包含，但是这些将成为浏览器的虚拟机的一部分。在我们可以用我们的applet之前，需要创建一个HTML文件来正确装载这个applet。</p>
+    <pre class="code">　&lt;html>
+&lt;head>
+&lt;title>SimpleApplet - Simple applet for testing archives&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;h1>&lt;center>SimpleApplet&lt;/center>&lt;/h1>&lt;br>
+This is a simple applet to demonstrate the loading of class files
+from an archive. The archive was generated by the CreateArchive
+utility.
+&lt;hr>
+&lt;center>
+&lt;applet code=javaservlets.rollcall.test.SimpleApplet
+width=400
+height=100
+archive=SimpleApplet.zip>
+&lt;/applet>
+&lt;/center>
+&lt;hr>
+&lt;/body>
+&lt;/html>　</pre>
+                <p>　　请注意在applet标记上的“archive=”选项。它指定了用来搜索applet的存档，在我们这种情况下，该存档就是由CreateArchive创建的SimpleApplet.zip文件。让我们继续往下试一试。我们将使用Netscape 
+                  Navigator来执行applet，当然你也可以使用任何支持Java1.1的浏览器。为了使之成为一个合法的测试，一定要确保这个简单的类文件不在你的CLASSPATH目录中，这样才能保证从存档中加载这个applet。将SimpleApplet.zip和SimpleApplet.html放在你的Web服务器的WWW根目录中。</p>
+                <h2><a name="126" id="126"></a>12.6 一些缺陷</h2>
+                <p>　　我可不希望你看完了这一章却不知道我们的这个程序检验程序的那些缺陷：<br />
+              　　·如果你试图检查的在显示地通过Class.forName(&quot;&lt;class&gt;&quot;)加载了其他类，那么这个从属检验程序的算法就不能得到被调用的类的名称。这是因为我们仅仅检查了CONSTANT_Class常量；而Class.frName()方法中的命名类创建了一个CONSTANT_Utf8常量(为这个命名类)。你可以扩展这个从属检查算法，使之将每一个CONSTANT_Utf8常量都当作类名来处理并且试图将它们加载。<br />
+    　　·如果你所谋略检查的类使用了其他系统资源——如语音或者图像文件，那么这个从属检验程序也不能发现它们。你可以扩展这个从属检验程序，使之检查每一个CONSTANT_Utf8常量是否是书籍的文件扩展名(如.wav，.giv和.jpg等)，并且将它们也加入到从属关系中。</p>
+            <h2><a name="127" id="127"></a>12.7 小结</h2>
+            <p>　　在本章中，我们看到了如何开发一个Java应用来发现某个指定的类的所有的从属关系并且创建一个存档文件(压缩过后ZIP或是JAR)，这个存档可以用来简单而快速地发布applet应用程序。为了发现类文件的从属关系，我们不但要加载这个类文件，而且还要读入它并处理这个原始的字节流。为了处理这个字节流，我们需要检查Java虚拟机规范所定义类文件的格式。初看起来这一切好像很复杂，不过我希望看到如何使用类结构之后，你可以认识到实际上这十分简单。<br />
+      　　在下一章中，我们将要回到servlet的开发。我们将要编写一个JDBC驱动程序，这个驱动程序可以在Internet上使用。这个叫做SQLServlet的JDBC驱动程序将使用我们在第10章和第11章所看到的HTTP遂道技术。</td>
+      </tr>
+      </tbody> 
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</p>
+            <div class="rpindex"><a href="13-1.html"> 下一页</a><a href="11-2.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

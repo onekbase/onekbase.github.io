@@ -1,0 +1,514 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="mvc-annotation"></a>13.12.&#160;基于注解的控制器配置</h2></div></div></div>
+<p>现时对于一些类型的配置数据有一个趋势，就是偏爱注解方式而不是XML文件。为了方便实现，Spring现在（从2.5开始）提供了使用注解配置MVC框架下的组件的支持。</p>
+<p>Spring 2.5为MVC控制器引入了一种基于注解的编程模型，在其中使用诸如<code class="interfacename">@RequestMapping</code>、<code class="interfacename">@RequestParam</code>、<code class="interfacename">@ModelAttribute</code>，等等。
+    这种注解支持在Servlet MVC和Portlet MVC中均可使用。通过这种方式实现的控制器不必由特定的基类继承而来，或者实现特定的接口。
+    更进一步的，它们通常并不直接依赖于Servlet或Portlet API，虽然如果需要，它们可以方便的访问Servlet或Portlet的功能。</p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>Spring发行版本附带了<span class="emphasis"><em>PetClinic</em></span>示例，它是一个在简单的表单处理的上下文中，
+      利用了本节中说明的注解支持的Web应用程序。
+      可以在“<code class="literal">samples/petclinic</code>”目录中找到<span class="emphasis"><em>PetClinic</em></span>应用程序。</p>
+<p>另外一个建立在基于注解的Web MVC上的示例应用程序，请见<span class="emphasis"><em>imagedb</em></span>。
+      这个示例集中在无状态的multi-action控制器，包括多段文件上传的处理。
+      可以在“<code class="literal">samples/imagedb</code>”目录找到<span class="emphasis"><em>imagedb</em></span>应用程序。</p>
+</div>
+<p>下面的章节记录了这些注解以及通常如何使用它们。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-setup"></a>13.12.1.&#160;建立dispatcher实现注解支持</h3></div></div></div>
+<p>只有对应的<code class="interfacename">HandlerMapping</code>（为了实现类型级别的注解）和/或<code class="interfacename">HandlerAdapter</code>（为了实现方法级别的注解）出现在dispatcher中时，
+      <span class="emphasis"><em><code class="interfacename">@RequestMapping</code>才会被处理。
+      </em></span>这在<code class="classname">DispatcherServlet</code>和<code class="classname">DispatcherPortlet</code>中都是缺省的行为。
+      </p>
+<p>然而，如果是在定义自己的<code class="interfacename">HandlerMappings</code>或<code class="interfacename">HandlerAdapters</code>，
+      就需要确保一个对应的自定义的<code class="classname">DefaultAnnotationHandlerMapping</code>和/或<code class="classname">AnnotationMethodHandlerAdapter</code>同样被定义——假设想要使用<code class="interfacename">@RequestMapping</code>。</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"&gt;
+
+    &lt;bean class="org.springframework.web.servlet.mvc.DefaultAnnotationHandlerMapping"/&gt;
+
+    &lt;bean class="org.springframework.web.servlet.mvc.AnnotationMethodHandlerAdapter"/&gt;
+
+    ... (controller bean definitions) ...
+
+&lt;/beans&gt;
+</pre>
+<p>如果你想要自定义映射策略，显式的定义一个<code class="classname">DefaultAnnotationHandlerMapping</code>和/或<code class="classname">AnnotationMethodHandlerAdapter</code>也有实际意义。
+      例如，指定一个自定义的<code class="interfacename">PathMatcher</code>或者<code class="interfacename">WebBindingInitializer</code>（见下面）。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-controller"></a>13.12.2.&#160;使用<code class="interfacename">@Controller</code>定义一个控制器</h3></div></div></div>
+<p>注解<code class="interfacename">@Controller</code>指明一个特定的类承担<span class="emphasis"><em>控制器</em></span>的职责，
+      而没有扩展任何控制器基类或者引用Servlet API的必要。当然，如果需要还是可以引用特定Servlet功能。</p>
+<p>注解<code class="interfacename">@Controller</code>的基本目标是担任所注解的类的原型的角色，指明它的职责。
+      Dispatcher将会在这样被注解的类中扫描映射的方法，探测注解<code class="interfacename">@RequestMapping</code>（见下一节）。
+      </p>
+<p>所注解的控制器bean可以被显式定义，这个过程是在dispatcher的上下文中使用一个标准的Spring bean定义完成的。
+      然而，<code class="interfacename">@Controller</code>原型也允许自动探测，就像Spring 2.5对探测组件的类以及为它们自动注册bean定义的普遍支持一样。</p>
+<p>要实现对这样的所注解的控制器的自动探测，必须要向配置中加入组件扫描的部分。
+      通过使用在下面的XML片段中所展示出的<span class="emphasis"><em>spring-context</em></span> schema，这很容易实现：</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-2.5.xsd"&gt;
+
+    &lt;context:component-scan base-package="org.springframework.samples.petclinic.web"/&gt;
+
+    ...
+
+&lt;/beans&gt;
+</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-requestmapping"></a>13.12.3.&#160;使用<code class="interfacename">@RequestMapping</code>映射请求</h3></div></div></div>
+<p>注解<code class="interfacename">@RequestMapping</code>被用于映射如“/editPet.do”这样的URL到一个完整的类或者一个特定的处理方法。
+      典型的，顶层的注解映射一个特定的请求路径（或者路径模式）到一个表单控制器，另外的方法一级的注解可以缩小这个主要映射的范围，包括对于一个特定的HTTP请求方法（“GET/POST”）或者特定的HTTP请求参数。</p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p><code class="interfacename">@RequestMapping</code>在类型一级也可以被用于<code class="interfacename">Controller</code>接口的普通实现。
+        在这种情况下，请求处理的代码会遵循传统的<code class="literal">handleRequest</code>模样，而控制器的映射将会通过一个<code class="interfacename">@RequestMapping</code>注解体现。
+        这对于预先构建的<code class="interfacename">Controller</code>基类，诸如<code class="classname">SimpleFormController</code>，也一样有效。
+        </p>
+<p>在下面的讨论中，我们将会关注基于通过注解实现的处理方法的控制器。</p>
+</div>
+<p>下面是一个使用了这种注解的表单控制器的例子，它选自PetClinic：</p>
+<pre class="code">@Controller
+<span class="bold"><strong>@RequestMapping("/editPet.do")</strong></span>
+@SessionAttributes("pet")
+public class EditPetForm {
+
+	private final Clinic clinic;
+
+	@Autowired
+	public EditPetForm(Clinic clinic) {
+		this.clinic = clinic;
+	}
+
+	@ModelAttribute("types")
+	public Collection&lt;PetType&gt; populatePetTypes() {
+		return this.clinic.getPetTypes();
+	}
+
+	<span class="bold"><strong>@RequestMapping(method = RequestMethod.GET)</strong></span>
+	public String setupForm(@RequestParam("petId") int petId, ModelMap model) {
+		Pet pet = this.clinic.loadPet(petId);
+		model.addAttribute("pet", pet);
+		return "petForm";
+	}
+
+	<span class="bold"><strong>@RequestMapping(method = RequestMethod.POST)</strong></span>
+	public String processSubmit(@ModelAttribute("pet") Pet pet, BindingResult result, 
+			SessionStatus status) {
+		new PetValidator().validate(pet, result);
+		if (result.hasErrors()) {
+			return "petForm";
+		}
+		else {
+			this.clinic.storePet(pet);
+			status.setComplete();
+			return "redirect:owner.do?ownerId=" + pet.getOwner().getId();
+		}
+	}
+
+}
+</pre>
+<p>对于一个传统的multi-action控制器，由于控制器会响应多个URL，URL就通常被直接映射到方法上。
+      下面是一个使用了<code class="classname">@RequestMapping</code>的multi-action控制器的例子，它选自PetClinic：</p>
+<pre class="code">@Controller
+public class ClinicController {
+
+	private final Clinic clinic;
+
+	@Autowired
+	public ClinicController(Clinic clinic) {
+		this.clinic = clinic;
+	}
+
+	/**
+	 * Custom handler for the welcome view.
+	 * Note that this handler relies on the RequestToViewNameTranslator to
+	 * determine the logical view name based on the request URL: "/welcome.do"
+	 * -&gt; "welcome".
+	 */
+	<span class="bold"><strong>@RequestMapping("/welcome.do")</strong></span>
+	public void welcomeHandler() {
+	}
+
+	/**
+	 * Custom handler for displaying vets.
+	 * Note that this handler returns a plain {@link ModelMap} object instead of
+	 * a ModelAndView, thus leveraging convention-based model attribute names.
+	 * It relies on the RequestToViewNameTranslator to determine the logical
+	 * view name based on the request URL: "/vets.do" -&gt; "vets".
+	 *
+	 * @return a ModelMap with the model attributes for the view
+	 */
+	<span class="bold"><strong>@RequestMapping("/vets.do")</strong></span>
+	public ModelMap vetsHandler() {
+		return new ModelMap(this.clinic.getVets());
+	}
+
+	/**
+	 * Custom handler for displaying an owner.
+	 * Note that this handler returns a plain {@link ModelMap} object instead of
+	 * a ModelAndView, thus leveraging convention-based model attribute names.
+	 * It relies on the RequestToViewNameTranslator to determine the logical
+	 * view name based on the request URL: "/owner.do" -&gt; "owner".
+	 *
+	 * @param ownerId the ID of the owner to display
+	 * @return a ModelMap with the model attributes for the view
+	 */
+	<span class="bold"><strong>@RequestMapping("/owner.do")</strong></span>
+	public ModelMap ownerHandler(@RequestParam("ownerId") int ownerId) {
+		return new ModelMap(this.clinic.loadOwner(ownerId));
+	}
+
+}
+</pre>
+<p>
+      
+      使用<code class="classname">@RequestMapping</code>注解的处理器方法允许具有非常灵活的外观。
+      它们可以拥有下面类型的参数，在任意的顺序下（除非是对于验证结果，它需要紧跟在对应的命令对象后面，如果需要）：
+
+      </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>请求和/或响应对象（Servlet API或者Portlet API）。
+          可以选择任何特定的请求/响应类型，例如，ServletRequest/HttpServletRequest或者PortletRequest/ActionRequest/RenderRequest。
+          注意那个Portlet的例子里，一个被显式声明了的action/render参数被用于映射特定的请求类型到一个处理方法（在没有提供其他信息来区分action和render requests的情况下）。</p></li>
+<li><p>会话对象（Servlet API或者Portlet API）：不管是HttpSession还是PortletSession。
+          一个此种类型的参数将会保证出现一个对应的会话。这样就造成，这样一个参数永远也不可以是null。
+          <span class="emphasis"><em>注意会话访问可以并不是线程安全的，特别是在Servlet环境中：如果允许多个请求同时访问一个会话，就考虑把<code class="classname">AnnotationMethodHandlerAdapter</code>的“synchronizeOnSession”旗标置为“true”</em></span></p></li>
+<li><p><code class="classname">org.springframework.web.context.request.WebRequest</code>或<code class="classname">org.springframework.web.context.request.NativeWebRequest</code>。
+          允许像访问请求/会话属性一样的访问一般的请求参数，而不是锁定在原生的Servlet/Portlet API上。</p></li>
+<li><p><code class="classname">java.util.Locale</code>用于当前请求区域属性（由可用的最接近的区域属性解析器决定，也就是，
+          在Servlet环境中配置好的<code class="interfacename">LocaleResolver</code>以及在Portlet环境中的portal locale）。</p></li>
+<li><p><code class="classname">java.io.InputStream</code>/<code class="classname">java.io.Reader</code>用于访问请求的内容。
+          这将是Servlet/Portlet API暴露出的天然的InputStream/Reader。</p></li>
+<li><p><code class="classname">java.io.OutputStream</code>/<code class="classname">java.io.Writer</code>用于生成响应的内容。
+          这将是Servlet/Portlet API暴露出的天然的OutputStream/Writer。</p></li>
+<li><p>以<code class="classname">@RequestParam</code>注解的参数用于访问特定的Servlet/Portlet请求参数。
+          参数的值将被转换为声明的方法参数类型。</p></li>
+<li><p><code class="interfacename">java.util.Map</code>/<code class="interfacename">org.springframework.ui.Model</code>/<code class="classname">org.springframework.ui.ModelMap</code>用于充实将被暴露到Web视图的隐含模型。</p></li>
+<li><p>绑定参数到的命令/表单对象：带有自定义的类型转换的bean属性或者域，依赖于<code class="classname">@InitBinder</code>方法和/或HandlerAdapter配置——参见<code class="classname">AnnotationMethodHandlerAdapter</code>的“<code class="literal">webBindingInitializer</code>”属性。
+          这样的命令对象，包括它们的验证结果，将会暴露为模型属性，默认的会在属性注解中使用非限定的命令类名（例如，对于类型“mypackage.OrderAddress”使用“orderAddress”）。
+          为声明一个特定的模型属性名称指定一个参数级别的<code class="classname">ModelAttribute</code>注解。</p></li>
+<li><p><code class="classname">org.springframework.validation.Errors</code>/<code class="classname">org.springframework.validation.BindingResult</code>验证结果用于前面的一个命令/表单对象（前面紧接的参数）。</p></li>
+<li><p><code class="classname">org.springframework.web.bind.support.SessionStatus</code>状态处理用于把表单处理过程标记为已完成（触发会话属性的清理，这些会话属性是在句柄类型级别由<code class="classname">@SessionAttributes</code>注解指示出的）。</p></li>
+</ul></div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-requestparam"></a>13.12.4.&#160;使用<code class="classname">@RequestParam</code>绑定请求参数到方法参数</h3></div></div></div>
+<p><code class="classname">@RequestParam</code>注解是用于在控制器中绑定请求参数到方法参数。</p>
+<p>下面取自PetClinic实例程序的代码片段说明了这种用法：</p>
+<pre class="code">@Controller
+@RequestMapping("/editPet.do")
+@SessionAttributes("pet")
+public class EditPetForm {
+
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+
+	@RequestMapping(method = RequestMethod.GET)
+	public String setupForm(<span class="bold"><strong>@RequestParam("petId") int petId</strong></span>, ModelMap model) {
+		Pet pet = this.clinic.loadPet(petId);
+		model.addAttribute("pet", pet);
+		return "petForm";
+	}
+
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+</pre>
+<p>使用这个注解的参数默认是必需的，但是可以把<code class="interfacename">@RequestParam</code>的<code class="literal">required</code>属性置为<code class="literal">false</code>从而让这个参数可选（例如，<code class="literal">@RequestParam(value="id", required="false")</code>）。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-modelattrib"></a>13.12.5.&#160;使用<code class="classname">@ModelAttribute</code>提供一个从模型到数据的链接</h3></div></div></div>
+<p><code class="classname">@ModelAttribute</code>在控制器中有两种使用场景。
+      当作为一个方法参数时，<code class="classname">@ModelAttribute</code>用于映射一个模型属性到特定的注解的方法参数（见下面的<code class="literal">processSubmit()</code>方法）。
+      这是控制器获得持有表单数据的对象引用的方法。另外，这个参数也可以被声明为特定类型的表单支持对象，而不是一般的<code class="classname">java.lang.Object</code>，这就增加了类型安全性。</p>
+<p><code class="classname">@ModelAttribute</code>也用于在方法级别为模型提供<span class="emphasis"><em>引用数据</em></span>（见下面的<code class="literal">populatePetTypes()</code>方法）。
+      在这种用法中，方法编写可以包含与上面描述的<code class="classname">@RequestMapping</code>注解相同的类型。</p>
+<p><span class="emphasis"><em>注意：</em></span>使用<code class="classname">@ModelAttribute</code>注解的方法将会在选定的使用<code class="classname">@RequestMapping</code>注解的方法<span class="emphasis"><em>之前</em></span>执行。
+      它们有效的使用特定的属性预先填充隐含的模型，这些属性常常来自一个数据库。
+      这样一个属性也就可以通过在选定的方法中使用<code class="classname">@ModelAttribute</code>注解的句柄方法参数来访问了，潜在的可以应用绑定和验证。</p>
+<p>下面的代码片段展示了此注解的这两种用法：</p>
+<pre class="code">@Controller
+@RequestMapping("/editPet.do")
+@SessionAttributes("pet")
+public class EditPetForm {
+
+	<em class="lineannotation"><span class="lineannotation">// ...</span></em>
+
+	<span class="bold"><strong>@ModelAttribute("types")</strong></span>
+	public Collection&lt;PetType&gt; populatePetTypes() {
+		return this.clinic.getPetTypes();
+	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public String processSubmit(<span class="bold"><strong>@ModelAttribute("pet") Pet pet</strong></span>, BindingResult result,
+			SessionStatus status) {
+		new PetValidator().validate(pet, result);
+		if (result.hasErrors()) {
+			return "petForm";
+		}
+		else {
+			this.clinic.storePet(pet);
+			status.setComplete();
+			return "redirect:owner.do?ownerId=" + pet.getOwner().getId();
+		}
+	}
+
+}
+</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-sessionattrib"></a>13.12.6.&#160;使用<code class="classname">@SessionAttributes</code>指定存储在会话中的属性</h3></div></div></div>
+<p>类型级别的<code class="classname">@SessionAttributes</code>注解使用一个特定的句柄声明会话属性。
+      这通常会列出模型属性的名称，这些属性应被透明的保存在会话或者对话存储中，用于在后续的请求之间作为表单支持beans。</p>
+<p>下面的代码片段展示了此注解的这种用法：</p>
+<pre class="code">@Controller
+@RequestMapping("/editPet.do")
+<span class="bold"><strong>@SessionAttributes("pet")</strong></span>
+public class EditPetForm {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}
+</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mvc-ann-webdatabinder"></a>13.12.7.&#160;自定义<code class="classname">WebDataBinder</code>初始化</h3></div></div></div>
+<p>为了通过Spring的<code class="classname">WebDataBinder</code>使用PropertyEditors等自定义请求参数绑定，可以或者使用<code class="interfacename">@InitBinder</code>——在控制器之内的注解的方法，
+      或者通过提供一个定制的<code class="interfacename">WebBindingInitializer</code>把配置具体化。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="mvc-ann-initbinder"></a>13.12.7.1.&#160;使用<code class="interfacename">@InitBinder</code>自定义数据绑定</h4></div></div></div>
+<p>使用<code class="interfacename">@InitBinder</code>注解控制器方法，可以在控制器类内部直接配置Web数据绑定。
+        <code class="interfacename">@InitBinder</code>指定初始化<code class="classname">WebDataBinder</code>的方法，
+        后者被用于填充注解的句柄方法的命令和表单对象参数。</p>
+<p>这个init-binder方法支持<code class="interfacename">@RequestMapping</code>支持的全部参数，除了命令/表单对象和对应的验证结果对象。
+        Init-binder方法必须没有返回值。因此，它们常被声明为<code class="literal">void</code>。
+        典型的参数，包括 <code class="classname">WebDataBinder</code>以及<code class="interfacename">WebRequest</code>或者<code class="classname">java.util.Locale</code>，允许代码注册上下文特定的编辑器。</p>
+<p>下面的例子说明了<code class="interfacename">@InitBinder</code>的用法，为所有的<code class="classname">java.util.Date</code>表单属性配置一个<code class="classname">CustomDateEditor</code>。</p>
+<pre class="code">@Controller
+public class MyFormController {
+
+    <span class="bold"><strong>@InitBinder</strong></span>
+    public void initBinder(WebDataBinder binder) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        dateFormat.setLenient(false);
+        binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, false));
+    }
+
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}
+
+</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="mvc-ann-webbindinginitializer"></a>13.12.7.2.&#160;配置一个定制的<code class="interfacename">WebBindingInitializer</code></h4></div></div></div>
+<p>为了外化数据绑定初始化的过程，可以提供一个<code class="interfacename">WebBindingInitializer</code>接口的自定义实现。
+        通过为一个<code class="classname">AnnotationMethodHandlerAdapter</code>提供一个定制的bean配置可以使它启用，这样就覆盖了默认配置。</p>
+<p>下面取自PetClinic应用的例子展示了一个使用<code class="interfacename">WebBindingInitializer</code>接口的自定义实现的配置——<code class="classname">org.springframework.samples.petclinic.web.ClinicBindingInitializer</code>，
+        完成多个PetClinic控制器都需要的PropertyEditors的配置。</p>
+<pre class="code">&lt;bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"&gt;
+    &lt;property name="cacheSeconds" value="0" /&gt;
+    &lt;property name="webBindingInitializer"&gt;
+        &lt;bean class="org.springframework.samples.petclinic.web.ClinicBindingInitializer" /&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,394 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="12.html"> 上一页</a><a href="14.html"> 下一页</a></div>
+    <p><strong>StuCourAction.java</strong><br />
+      该程序完成了学生登陆成功后选课处理过程。</p>
+    <pre class="code">package action;
+import db.dbConn;
+import java.sql.*;
+import java.util.Vector;
+import javax.servlet.http.*;
+import org.apache.struts.action.*;
+public class StuCourForm extends  org.apache.struts.action.Action {
+	public  ActionForward execute(ActionMapping mapping, ActionForm form,
+	HttpServletRequest request, HttpServletResponse response)
+	throws Exception {
+		String prompt = null;
+		DynaActionForm StuCourForm = (DynaActionForm)form;
+		dbConn javaBean = new dbConn();
+		HttpSession session = request.getSession();
+		//将表单中的数据添加到Vector对象中；
+		String cno = StuCourForm.getString("Cno");
+		Vector&lt;String&gt; Cno = new Vector(1, 1);
+		Cno.add(cno);
+		//查询数据库得到该用户已经选过的课程；
+		String SNO = (String) session.getAttribute("Sno");
+		String SQL = "SELECT Cno From csinfo where Sno='" + SNO +  "'";
+		ResultSet rs = (ResultSet) javaBean.executeQuery(SQL);
+		Vector&lt;String&gt; oldCNO = new Vector(1, 1);
+		while (rs.next()) {
+			oldCNO.add(rs.getString("Cno"));
+		}
+		int insert = 1;//全局变量：当=1时，所选课程插入数据库；当=0时，不插入也相当于没选择成功；
+		//防止用户没有选课就提交了；
+		if  (cno == null) {
+			insert = 0;
+			request.setAttribute("msg", "您还未选课!请马上选课！");
+			prompt = "StuCour_failure";
+		}
+		//判断课程是否重复被同一个用户多次选了。
+		if  (Cno != null && !oldCNO.isEmpty()) {?  //注意：oldCNO是一个记录组对象，判空时，不可用！=null
+			for (int i = 0; i &lt; Cno.capacity(); i++) {
+				for (int j = 0; j &lt; oldCNO.capacity(); j++) {
+					if  (oldCNO.get(j).equals(Cno.get(i))) {
+						session.setAttribute("Cno", Cno.get(i));
+						insert = 0;
+						request.setAttribute("msg", "您已经选过此课程啦!");
+						prompt = "StuCour_failure";
+						break;//跳出第一个FOR循环；
+					}
+				}
+				if (insert == 0) {
+					break;//跳出第二个FOR循环；
+				}
+			}
+		}
+		//选课成功插入数据库中的csinfo表中；
+		if (insert == 1) {
+			for (int i = 0; i &lt; Cno.capacity(); i++) {
+				javaBean.executeUpdate("insert into csinfo(Sno,Cno) values('"  + SNO + "','" + Cno.get(i) + "')");
+			}
+			session.setAttribute("SCNO", Cno);
+		prompt = "StuCour_success";}
+		return mapping.findForward(prompt);
+	}
+}
+</pre>
+    <p>AlterPassW.jsp<br />
+      该程序完成了修改密码的处理过程。</p>
+    <pre class="code">package action;<br />import org.apache.struts.action.*;<br />import db.dbConn;<br />import javax.servlet.http.*;<br />public class AlterPassW extends org.apache.struts.action.Action  {<br />	public  ActionForward execute(ActionMapping mapping, ActionForm form,<br />	HttpServletRequest request, HttpServletResponse response)<br />	throws Exception {<br />		DynaActionForm alterForm=(DynaActionForm)form;<br />		dbConn javaBean=new dbConn();<br />		HttpSession session = request.getSession();<br />		String prompt=null;<br />		String oldk=alterForm.getString(&quot;oldk&quot;);<br />		String newk1=alterForm.getString(&quot;newk1&quot;);<br />		String newk2=alterForm.getString(&quot;newk2&quot;);<br />		if  (newk1 != null &amp; newk2 != null) {<br />			String key = (String) session.getAttribute(&quot;Key&quot;);<br />			String Sno = (String) session.getAttribute(&quot;Sno&quot;);<br />			if ((newk1.equals(newk2) &amp;&amp; oldk.equals(key))) {<br />				javaBean.executeUpdate(&quot;Update stuinfo Set keys='&quot; + newk1 +  &quot;'&quot; + &quot;Where Sno='&quot; + Sno + &quot;'&quot;);<br />				request.setAttribute(&quot;msgg&quot;, &quot;恭喜您密码修改成功!&quot;);<br />				prompt=&quot;alter_success&quot;;<br />			}<br />			else {<br />				request.setAttribute(&quot;msgg&quot;,  &quot;抱歉未修改成功!&quot;);<br />				prompt=&quot;alter_failure&quot;;<br />			}<br />		}<br />		return mapping.findForward(prompt);<br />	}<br />}</pre>
+    <p>DelStuAction.jsp<br />
+      管理员删除学生信息的处理过程：</p>
+    <pre class="code"><br />package action;<br />import org.apache.struts.action.ActionForm;<br />import org.apache.struts.action.ActionMapping;<br />import org.apache.struts.action.ActionForward;<br />import db.dbConn;<br />import java.sql.*;<br />import javax.servlet.http.*;<br />import org.apache.struts.action.DynaActionForm;<br />public class DelStuAction extends org.apache.struts.action.Action  {<br />	public  ActionForward execute(ActionMapping mapping, ActionForm form,<br />	HttpServletRequest request, HttpServletResponse response)<br />	throws Exception {<br />		dbConn javaBean = new dbConn();<br />		DynaActionForm delStuForm = (DynaActionForm) form;<br />		String sno = delStuForm.getString(&quot;sno&quot;);<br />		String prompt = null;<br />		if  (sno != null) {<br />			ResultSet rs = javaBean.executeQuery(&quot;SELECT * From stuinfo where  Sno='&quot; + sno + &quot;'&quot;);<br />			if (rs.next()==true) {<br />				javaBean.executeUpdate(&quot;delete from stuinfo where Sno=&quot; +  &quot;'&quot; + sno + &quot;'&quot;);<br />				request.setAttribute(&quot;msgs&quot;, &quot;删除成功!&quot;);<br />				prompt = &quot;delStu_success&quot;;<br />			} else {<br />				request.setAttribute(&quot;msgs&quot;, &quot;删除失败!&quot;);<br />				prompt = &quot;delStu_failure&quot;;<br />			}<br />		}<br />		return mapping.findForward(prompt);<br />	}<br />}
+</pre>
+    <p>DelCourAction.jsp<br />
+      该程序完成了管理员删除课程信息的处理过程：</p>
+    <pre class="code">package action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionForward;
+import db.dbConn;
+import java.sql.*;
+import javax.servlet.http.*;
+import org.apache.struts.action.DynaActionForm;
+public class DelCourAction extends org.apache.struts.action.Action  {
+	public  ActionForward execute(ActionMapping mapping, ActionForm form,
+	HttpServletRequest request, HttpServletResponse response)
+	throws Exception {
+		dbConn javaBean = new dbConn();
+		DynaActionForm delStuForm = (DynaActionForm) form;
+		String cno = delStuForm.getString("cno");
+		String prompt = null;
+		if  (cno != null) {
+			ResultSet rs = javaBean.executeQuery("SELECT * From courinfo where  Cno='" + cno + "'");
+			if (rs.next()==true) {
+				javaBean.executeUpdate("delete from courinfo where Cno=" +  "'" + cno + "'");
+				request.setAttribute("msgc", "删除成功!");
+				prompt = "delCour_success";
+			} else {
+				request.setAttribute("msgc",  "删除失败!");
+				prompt = "delCour_failure";
+			}
+		}
+		return mapping.findForward(prompt);
+	}
+}
+</pre>
+    <p>DelScAction.jsp<br />
+      该程序完成了管理员删除选课记录信息的过程：</p>
+    <pre class="code">
+package action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionForward;
+import db.dbConn;
+import java.sql.*;
+import javax.servlet.http.*;
+import org.apache.struts.action.DynaActionForm;
+public class DelScAction extends org.apache.struts.action.Action  {
+	public  ActionForward execute(ActionMapping mapping, ActionForm form,
+	HttpServletRequest request, HttpServletResponse response)
+	throws Exception {
+		dbConn javaBean = new dbConn();
+		DynaActionForm delStuForm = (DynaActionForm) form;
+		String sno = delStuForm.getString("snod");
+		String cno = delStuForm.getString("cnod");
+		String prompt = null;
+		if  (cno != null) {
+			ResultSet rs = javaBean.executeQuery("select* from csinfo where  Sno=" + "'" + sno + "'and Cno=" + "'" + cno  + "'");
+			if (rs.next()==true) {
+				javaBean.executeUpdate("delete from csinfo where Sno=" +  "'" + sno + "'and Cno=" + "'" + cno +  "'");
+				request.setAttribute("msgsc",  "删除成功!");
+				prompt = "delSC_success";
+			} else {
+				request.setAttribute("msgsc", "删除失败!");
+				prompt = "delSC_failure";
+			}
+		}
+		return mapping.findForward(prompt);
+	}
+}
+
+</pre>
+    <p>AddSAction.jsp<br />
+      该程序完成了管理员添加学生信息的处理过程：</p>
+    <pre class="code">package action;<br />import java.io.UnsupportedEncodingException;<br />import org.apache.struts.action.ActionForm;<br />import org.apache.struts.action.ActionMapping;<br />import org.apache.struts.action.ActionForward;<br />import db.dbConn;<br />import java.sql.*;<br />import javax.servlet.http.*;<br />import org.apache.struts.action.DynaActionForm;<br />public class AddSAction extends  org.apache.struts.action.Action {<br />	public  String getStrs(String strs) throws UnsupportedEncodingException {<br />		byte str[] = strs.getBytes(&quot;ISO-8859-1&quot;);<br />		strs = new String(str, &quot;GB2312&quot;);////? 表单信息乱码处理；<br />		return strs;<br />	}<br />	public  ActionForward execute(ActionMapping mapping, ActionForm form,<br />	HttpServletRequest request, HttpServletResponse response)<br />	throws Exception {<br />		DynaActionForm addSForm = (DynaActionForm) form;<br />		dbConn javaBean = new dbConn();<br />		String prompt = null;<br />		String sno = getStrs(addSForm.getString(&quot;STno&quot;));<br />		String sname = getStrs(addSForm.getString(&quot;STname&quot;));<br />		String sex = getStrs(addSForm.getString(&quot;STsex&quot;));<br />		String sdept = getStrs(addSForm.getString(&quot;STdept&quot;));<br />		String sage = getStrs(addSForm.getString(&quot;STage&quot;));<br />		if  (sno != null &amp;&amp; sname != null) {<br />			Integer judge = javaBean.executeUpdate(&quot;insert into  stuinfo(Sno,Sname,Ssex,Sdept,Sage)values('&quot; + sno + &quot;','&quot; +  sname + &quot;','&quot; + sex + &quot;','&quot; + sdept + &quot;','&quot; +  sage + &quot;')&quot;);<br />			if (judge != 0) {?? // 返回的是所影响的行数；<br />				request.setAttribute(&quot;msgGs&quot;, &quot;学生信息增加成功!&quot;);<br />				prompt = &quot;addS_success&quot;;<br />			} else {<br />				request.setAttribute(&quot;msgGs&quot;, &quot;抱歉!学生信息未增加成功！&quot;);<br />				prompt = &quot;addS_failure&quot;;<br />			}<br />		}<br />		return mapping.findForward(prompt);<br />	}<br />}</pre>
+    <p>AddCourAction.jsp<br />
+      该程序完成了管理员添加课程信息的处理过程：</p>
+    <pre class="code">package action;
+import java.io.UnsupportedEncodingException;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionForward;
+import db.dbConn;
+import javax.servlet.http.*;
+import org.apache.struts.action.DynaActionForm;
+public class AddCourAction extends  org.apache.struts.action.Action {
+	public  String getStrs(String strs) throws UnsupportedEncodingException {
+		?  byte str[] = strs.getBytes("ISO-8859-1");
+		strs = new String(str, "GB2312");////? 表单信息乱码处理；
+		return strs;
+	}
+	public  ActionForward execute(ActionMapping mapping, ActionForm form,
+	HttpServletRequest request, HttpServletResponse response)
+	throws Exception {
+		String prompt = null;
+		DynaActionForm addCForm = (DynaActionForm) form;
+		String cno = getStrs(addCForm.getString("CTno"));
+		String cname = getStrs(addCForm.getString("CTname"));
+		String credit = getStrs(addCForm.getString("CTcredit"));
+		dbConn javaBean = new dbConn();
+		if  (cno != null && cname != null) {
+			Integer judge = javaBean.executeUpdate("insert into courinfo(Cno,Cname,Ccredit)values('"  + cno + "','" + cname + "','" + credit + "')");
+			if (judge != 0) {?? // 返回的是所影响的行数；
+				request.setAttribute("msgGc", "课程信息增加成功!");
+				prompt = "addCour_success";
+			} else {
+				request.setAttribute("msgGc",  "抱歉!课程信息未增加成功！");
+				prompt = "addCour_failure";
+			}
+		}
+		return mapping.findForward(prompt);
+	}
+}  </pre>
+    <p>AddSCAction.jsp<br />
+      该过程完成了管理员添加学生选课后，成绩出来后，评分数的处理过程：</p>
+    <pre class="code">package action;
+import java.io.UnsupportedEncodingException;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionForward;
+import db.dbConn;
+import javax.servlet.http.*;
+import org.apache.struts.action.DynaActionForm;
+public class AddSCAction extends  org.apache.struts.action.Action {
+	public  String getStrs(String strs) throws UnsupportedEncodingException {
+		byte str[] = strs.getBytes("ISO-8859-1");
+		strs = new String(str, "GB2312");//? 表单信息乱码处理；
+		return strs;
+	}
+	public  ActionForward execute(ActionMapping mapping, ActionForm form,
+	HttpServletRequest request, HttpServletResponse response)
+	throws Exception {
+		DynaActionForm addSCForm = (DynaActionForm) form;
+		dbConn javaBean = new dbConn();
+		String prompt = null;
+		HttpSession session = request.getSession();
+		String score = getStrs(addSCForm.getString("CScore"));
+		String sno = (String) session.getAttribute("Gsno");
+		String  cno = (String) session.getAttribute("Gcno");//从数据库中找出分数是空的记录；
+		if  (sno != null && cno != null && score != null) {
+			Integer judge = javaBean.executeUpdate("update csinfo set  Grade='" + score + "'where Sno='" + sno + "'and Cno='"  + cno + "'");
+			if (judge != 0) {
+				request.setAttribute("msgGsc", "分数增加成功!");
+				prompt = "addSC_success";
+			} else {
+				request.setAttribute("msgGsc", "抱歉!分数未增加成功！");
+				prompt = "addSC_failure";
+			}
+		}
+		return mapping.findForward(prompt);
+	}
+}   </pre>
+    <p>到此为止，所有的页面代码都处理完毕。<br />
+      只要读者有心，按照上述六步走下来了，完成学生选课系统，体验web struts项目的心愿即将实现！</p>
+    <div class="rpindex"><a href="14.html"> 下一页</a><a href="12.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

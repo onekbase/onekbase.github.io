@@ -1,0 +1,251 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="46.html"> 上一页</a><a href="48.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip:&nbsp;Query 快取</a></h1>
+    Hibernate的 <a href="6.html">Session level 快取</a> 会在使用Session的load()方法时起作用，在设定条件进行查询时，无法使用快取的功能，现在考虑一种情况，您的数据库表格中的数据很少变动，在
+    使用Query查询数据时，如果表格内容没有变动，您希望能重用上一次查询的结果，除非表格内容有变动才向数据库查询。<br />
+    <br />
+    您可以开启Query的快取功能，因为要使用Query的快取功能必须在两次查询时所使用的SQL相同，且两次查询之间表格没有任何数据变动下才有意义，
+    所以Hibernate预设是关闭这个功能的，如果您觉得符合这两个条件，那么可以试着开启Query快取功能来看看效能上有无改进。<br />
+    <br />
+    先来看看下面的查询程序片段：<br />
+    <pre class="code">Session session = sessionFactory.openSession();
+
+String hql = &quot;from User&quot;;
+
+Query query = session.createQuery(hql);
+List users = query.list();
+
+for(int i = 0; i &lt; users.size(); i++) {
+&nbsp;&nbsp;&nbsp; User user = (User) users.get(i);
+&nbsp; &nbsp; System.out.println(user.getName());
+}
+
+query = session.createQuery(hql);
+users = query.list();
+
+for(int i = 0; i &lt; users.size(); i++) {
+&nbsp;&nbsp;&nbsp; User user = (User) users.get(i);
+&nbsp; &nbsp; System.out.println(user.getName());
+}
+
+session.close();</pre>
+    在不启用Query快取的情况下，Hibernate会使用两次SQL向数据库查询数据：<br />
+    <pre class="code">Hibernate: select user0_.id as id, user0_.name as name0_, user0_.age as age0_ from user user0_
+momor
+caterpillar
+Hibernate: select user0_.id as id, user0_.name as name0_, user0_.age as age0_ from user user0_
+momor
+caterpillar</pre>
+    如果打算启用Query快取功能，首先在hibernate.cfg.xml中设定hibernate.cache.use_query_cache属性：<br />
+<h5>hibernate.cfg.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-configuration PUBLIC<br />	&quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;<br />	&quot;http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;<br />	<br />&lt;hibernate-configuration&gt; <br /><br />    &lt;session-factory&gt; <br />        .... <br /><br />        &lt;property name=&quot;hibernate.cache.use_query_cache&quot;&gt;true&lt;/property&gt; <br />        ....<br />        <br />    &lt;/session-factory&gt; <br /><br />&lt;/hibernate-configuration&gt;</pre>
+    然后在每次建立Query实例时，执行setCacheable(true)：<br />
+    <pre class="code">Session session = sessionFactory.openSession();
+
+String hql = &quot;from User&quot;;
+
+Query query = session.createQuery(hql);
+// 使用Query快取
+query.setCacheable(true);
+List users = query.list();
+
+for(int i = 0; i &lt; users.size(); i++) {
+&nbsp;&nbsp;&nbsp; User user = (User) users.get(i);
+&nbsp; &nbsp; System.out.println(user.getName());
+}
+
+query = session.createQuery(hql);
+// 使用Query快取
+query.setCacheable(true);
+users = query.list();
+
+for(int i = 0; i &lt; users.size(); i++) {
+&nbsp;&nbsp;&nbsp; User user = (User) users.get(i);
+&nbsp; &nbsp; System.out.println(user.getName());
+}
+
+session.close();</pre>
+    Hibernate在启用Query快取后，会保留执行过的查询SQL与查询结果，在下一次查询时会看看SQL是否相同，并看看对应的数据库表格是否有变
+    动（Update/Delete/Insert），如果SQL相同且数据库也没有变动，则将Query快取中的查询结果返回，上面的程序片段将使用一次
+    SQL查询，第二次查询时直接返回快取中的结果：<br />
+    <pre class="code">Hibernate: select user0_.id as id, user0_.name as name0_, user0_.age as age0_ from user user0_
+momor
+caterpillar
+momor
+caterpillar</pre>
+
+<div class="rpindex"><a href="48.html"> 下一页</a><a href="46.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

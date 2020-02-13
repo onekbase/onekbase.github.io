@@ -1,0 +1,208 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>tomcat的三种部署方式</h1>
+<p>在Tomcat5中提出了Context descriptor这个概念，且为其配置了一个专有目录，而不像Tomcat4那样大杂烩一般地放置在$appBase目录下。</p>
+<p>Context descriptor是一个只包含Context元素的xml格式的部署文件，其中Context元素与server.xml中的Context元素配置相同。</p>
+<p>对于一个给定的主机，Context descriptor放置在$CATALINA_HOME/conf/[enginename]/[hostname]/目录下面。</p>
+<p>Tomcat5默认安装时，在$CATALINA_HOME/conf/Catalina/localhost目录中有admin.xml和manager.xml，是两个管理工具的部署描述符文件。而这两个文件在Tomcat4中是放置在$CATALINA_HOME/webapps目录下面的。</p>
+<p>使用方法：</p>
+<p>在$CATALINA_HOME/conf/[enginename]/[hostname]/目录下新建xxx.xml文档</p>
+<p>在xxx.xml文档中配置如下</p>
+<pre class="brush:xml">&lt;Context docBase="${catalina.home}/server/webapps/host-manager"
+         privileged="true" antiResourceLocking="false" antiJARLocking="false"&gt;
+&lt;/Context&gt;</pre>
+<p>注：docBase也可以设置为[eclipse的workplace]/[project]/webroot</p>
+<h2>静态部署</h2>
+<p>静态部署是指在Tomcat运行之前就把相关的Web应用程序放置到合适的目录，在Tomcat启动的时候自动来部署这些应用程序。</p>
+<p>如果&rdquo;deployOnStartup&rdquo;属性值为true，那么在Tomcat启动时，在$appBase目录下的web应用程序将被自动部署。部署的过程如下：</p>
+<ol>
+  <li>Context元素声明的Web应用程序将被首先部署，这包括server.xml和context  descriptor文件中的Context元素所指的应用程序;</li>
+  <li>部署扩展目录形式的Web应用程序；</li>
+  <li>部署WAR形式的Web应用程序;</li>
+</ol>
+<p align="left">Tomcat5对于静态方式的部署的增强主要就是：</p>
+<ol>
+  <li>对于context descriptor方式的应用程序的部署。</li>
+  <li>如果扩展目录方式的应用程序对应有一个WAR文件，且WAR是更新过的，扩展目录将被自动删除，Web应用程序将被从WAR文件中重新部署。</li>
+</ol>
+<p align="left">在Tomcat4中，即使WAR文件已更新也无法被重新部署，仍然会使用旧的扩展目录方式的Web应用程序，除非你自己手动删除目录，而且还要重启Tomcat。</p>
+<h2>动态部署</h2>
+<p align="left">动态部署是指在Tomcat已经运行以后在不重启服务器的情况下部署应用程序的方式。</p>
+<p align="left">如果虚拟主机的&rdquo;autoDeploy&rdquo;属性值为true，则主机会在需要的时候试图去部署和更新应用程序。这是由虚拟主机在后台运行的一个负责自动加载的处理线程来完成的，它的工作流程如下：</p>
+<ol>
+  <li>部署新放入$appBase目录的War方式的应用程序。</li>
+  <li>部署新放入$appBase目录的扩展目录方式的应用程序。</li>
+  <li>如果一个扩展目录方式的应用程序对应的War文件更新了，则删除此目录，从War文件中重新解开并部署。如果&rdquo;unpackWARs&rdquo;属性值为false，则不解开，从War文件中直接运行。不用自己删除扩展目录，也不用重启服务器 。</li>
+  <li>如果应用程序的/WEB-INF/web.xml文件被改变，则重新部署这个应用。</li>
+  <li>如果应用程序对应的Context元素配置发生了改变，则重新部署这个应用。这包括server.xml或者上下文描述符文件中的Context元素。</li>
+  <li>如果$CATALINA_HOME/conf/[enginename]/[hostname]/目录下增加了上下文描述符文件，则重新部署这个应用。</li>
+</ol>
+<p>看来Tomcat5在动态部署上花费了不少功夫，其中的亮点主要就是如果我们修改了web.xml、server.xml配置文件，增加了上下文描述符文件，动态更新了War文件时都可以实现应用程序的自动部署和更新，而不用重新启动Tomcat服务器，在Tomcat4中都是必须重新启动服务器的，这是一个非常喜人的变化。</p>
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

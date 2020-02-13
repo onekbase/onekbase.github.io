@@ -1,0 +1,297 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="20.html"> 上一页</a><a href="22.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip: 数据识别（Data Identity）</a></h1>
+    讨论一下对象识别问题，对数据库而言，其识别一笔数据唯一性的方式是根据主键值，如果手上有两份数据，它们拥有同样的主键值，则它们在数据库中代表同一个
+    字段的数据。对Java而言，要识别两个对象是否为同一个对象有两种方式，一种是根据对象是否拥有同样的内存位置来决定，在Java语法中就是透过==
+    运算来比较，一种是根据equals()、hasCode()中的定义。 <br />
+    <br />
+    先探讨第一种Java的识别方式在Hibernate中该注意的地方，在Hibernate中，如果是在同一个session中根据相同查询所得到的相同数据，则它们会拥有相同的Java识别，举个实际的例子来说明： <br />
+    <pre class="code">Session session = sessions.openSession();
+Object obj1 = session.load(User.class, new Integer(1)); 
+Object obj2 = session.load(User.class, new Integer(1)); 
+session.close(); 
+
+System.out.println(obj1 == obj2);</pre>
+    上面这个程序片段将会显示true的结果，表示obj1与obj2是参考至同一对象，但如果是以下的情况则会显示false： <br />
+    <pre class="code">Session session1 = sessions.openSession(); 
+Object obj1 = session1.load(User.class,&nbsp;new Integer(1)); 
+session1.close(); 
+
+Session session2 =
+sessions.openSession(); 
+Object obj2 = session2.load(User.class,  &nbsp;new Integer(1)); 
+session2.close(); 
+
+System.out.println(obj1 == obj2); </pre>
+    原因可以参考 <a href="6.html">简介快取（Session Level）</a> 。<br />
+    <br />
+    Hibernate并不保证不同时间所取得的数据对象，其是否参考至内存的同一位置，使用==来比较两个对象的数据是否代表数据库中的同一笔数据是不可
+    行的，事实上就算在Java程序中也不会这么比较两个对象是否相同，要比较两个对象是否相同，会透过equals()方法，而Object预设的
+    equals()本身即比较对象的内存参考，如果您要有必要比较透过查询后两个对象的数据是否相同（例如当对象被储存至Set时）您必须实作
+    equals()与hashCode()。 <br />
+    <br />
+    一个实作equals()与hashCode()的方法是根据数据库的identity，方法之一是透过getId()方法取得对象的id值并加以比较，例如若id的型态是String，一个实作的例子如下： <br />
+    <pre class="code">public class User { 
+&nbsp; &nbsp; .... 
+
+&nbsp; &nbsp; public boolean equals(Object o) {
+&nbsp; &nbsp; &nbsp; &nbsp; if(this == o) return true; 
+&nbsp; &nbsp; &nbsp; &nbsp; if(id == null || !(o
+instanceof User)) return false; 
+
+&nbsp; &nbsp; &nbsp; &nbsp; final User user == (User) o;
+&nbsp; &nbsp; &nbsp; &nbsp; return this.id.equals(user.getId()); 
+&nbsp; &nbsp; } 
+
+&nbsp; &nbsp; public
+int hashCode() { 
+&nbsp; &nbsp; &nbsp; &nbsp; return id == null ? System.identityHashCode(this) :
+id.hashcode(); 
+&nbsp; &nbsp; } 
+} </pre>
+这个例子取自于Hibernate in
+Action第123页的范例，然而这是个不被鼓励的例子，因为当一个对象被new出来而还没有save()时，它并不会被赋予id值，这时候就不适用这个方法。     <br />
+    <br />
+    另一个比较被采用的方法是根据对象中真正包括的的属性值来作比较，在 <a href="http://www.hibernate.org/hib_docs/v3/reference/en/html/">Hibernate官方参考手册</a> 中给了一个例子： <br />
+    <pre class="code">public class Cat { 
+
+&nbsp; &nbsp; ... 
+&nbsp; &nbsp; public boolean equals(Object other) {
+&nbsp; &nbsp; &nbsp; &nbsp; if (this == other) return true; 
+&nbsp; &nbsp; &nbsp; &nbsp; if (!(other instanceof
+Cat)) return false; 
+
+&nbsp; &nbsp; &nbsp; &nbsp; final Cat cat = (Cat) other; 
+
+&nbsp; &nbsp; &nbsp; &nbsp;
+if (!getName().equals(cat.getName())) return false; 
+&nbsp; &nbsp; &nbsp; &nbsp; if
+(!getBirthday().equals(cat.getBirthday())) return false; 
+
+&nbsp; &nbsp; &nbsp; &nbsp; return
+true; 
+&nbsp; &nbsp; } 
+
+&nbsp; &nbsp; public int hashCode() { 
+&nbsp; &nbsp; &nbsp; &nbsp; int result;
+&nbsp; &nbsp; &nbsp; &nbsp; result = getName().hashCode(); 
+&nbsp; &nbsp; &nbsp; &nbsp; result = 29 * result +
+getBirthday().hashCode(); 
+&nbsp; &nbsp; &nbsp; &nbsp; return result; 
+&nbsp; &nbsp; } 
+
+}
+这个例子不是简单的比较id属性，而是一个根据商务键值（Business
+key）实作equals()与hasCode()的例子，当然留下的问题就是您如何在实作时利用相关的商务键值，这就要根据您实际的商务需求来决定了。     <br />
+    <br />
+    愿意的话，还可以使用org.apache.commons.lang.builder.EqualsBuilder与
+    org.apache.commons.lang.builder.HashCodeBuilder来协助定义equals()与hashCode()，
+    例如：<br />
+    <pre class="code">package onlyfun.caterpillar;
+import org.apache.commons.lang.builder.EqualsBuilder; 
+import org.apache.commons.lang.builder.HashCodeBuilder; 
+
+public class User { 
+&nbsp; &nbsp; &nbsp;....
+&nbsp;&nbsp;&nbsp; public boolean equals(Object obj) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(obj == this) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(!(obj instanceof User)) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; User user = (User) obj;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return new EqualsBuilder()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.append(this.name, user.getName())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+.append(this.phone, user.getPhone())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .isEquals();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; public int hashCode() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return new HashCodeBuilder()
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .append(this.name)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .append(this.phone)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .toHashCode();
+&nbsp;&nbsp;&nbsp; }
+}</pre>
+
+<div class="rpindex"><a href="22.html"> 下一页</a><a href="20.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

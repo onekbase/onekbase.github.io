@@ -1,0 +1,742 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="jdbc-core"></a>11.2.&#160;利用JDBC核心类控制JDBC的基本操作和错误处理</h2></div></div></div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-JdbcTemplate"></a>11.2.1.&#160;<code class="classname">JdbcTemplate</code>类</h3></div></div></div>
+<p>
+			<code class="classname">JdbcTemplate</code>是core包的核心类。它替我们完成了资源的创建以及释放工作，从而简化了我们对JDBC的使用。
+			它还可以帮助我们避免一些常见的错误，比如忘记关闭数据库连接。
+			JdbcTemplate将完成JDBC核心处理流程，比如SQL语句的创建、执行，而把SQL语句的生成以及查询结果的提取工作留给我们的应用代码。
+			它可以完成SQL查询、更新以及调用存储过程，可以对<code class="interfacename">ResultSet</code>进行遍历并加以提取。
+			它还可以捕获JDBC异常并将其转换成<code class="literal">org.springframework.dao</code>包中定义的，通用的，信息更丰富的异常。
+		</p>
+<p>
+			使用JdbcTemplate进行编码只需要根据明确定义的一组契约来实现回调接口。
+			<code class="interfacename">PreparedStatementCreator</code>回调接口通过给定的<code class="interfacename">Connection</code>创建一个PreparedStatement，包含SQL和任何相关的参数。
+			<code class="literal">CallableStatementCreateor</code>实现同样的处理，只不过它创建的是CallableStatement。
+			<code class="literal">RowCallbackHandler</code>接口则从数据集的每一行中提取值。
+		</p>
+<p>
+			我们可以在DAO实现类中通过传递一个<code class="interfacename">DataSource</code>引用来完成JdbcTemplate的实例化，也可以在Spring的IoC容器中配置一个JdbcTemplate的bean并赋予DAO实现类作为一个实例。
+			需要注意的是<code class="interfacename">DataSource</code>在Spring的IoC容器中总是配制成一个bean，第一种情况下，<code class="interfacename">DataSource</code> bean将传递给service，第二种情况下<code class="interfacename">DataSource</code> bean传递给JdbcTemplate bean。
+		</p>
+<p>
+			最后，JdbcTemplate中使用的所有SQL将会以“DEBUG”级别记入日志（一般情况下日志的category是<code class="classname">JdbcTemplate</code>相应的全限定类名，不过如果需要对<code class="classname">JdbcTemplate</code>进行定制的话，可能是它的子类名）。
+		</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="jdbc-JdbcTemplate-examples"></a>11.2.1.1.&#160;一些示例</h4></div></div></div>
+<p>
+		下面是一些使用<code class="classname">JdbcTemplate</code>类的示例。（这些示例并不是完整展示所有的<code class="classname">JdbcTemplate</code>所暴露出来的功能。请查看与之相关的Javadoc）。
+		</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="jdbc-JdbcTemplate-examples-query"></a>11.2.1.1.1.&#160;查询（SELECT）</h5></div></div></div>
+<p>一个简单的例子用于展示如何获取一个表中的所有行数。</p>
+<pre class="code">int rowCount = this.jdbcTemplate.queryForInt("select count(0) from t_accrual");</pre>
+<p>一个简单的例子展示如何进行参数绑定。</p>
+<pre class="code">int countOfActorsNamedJoe = this.jdbcTemplate.queryForInt(
+        "select count(0) from t_actors where first_name = ?", new Object[]{"Joe"});</pre>
+<p>查询一个<code class="classname">String</code>。</p>
+<pre class="code">String surname = (String) this.jdbcTemplate.queryForObject(
+        "select surname from t_actor where id = ?", 
+        new Object[]{new Long(1212)}, String.class);</pre>
+<p>查询并将结果记录为一个简单的数据模型。</p>
+<pre class="code">Actor actor = (Actor) this.jdbcTemplate.queryForObject(
+    "select first_name, surname from t_actor where id = ?",
+    new Object[]{new Long(1212)},
+    new RowMapper() {
+
+        public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Actor actor = new Actor();
+            actor.setFirstName(rs.getString("first_name"));
+            actor.setSurname(rs.getString("surname"));
+            return actor;
+        }
+    });</pre>
+<p>查询并组装多个数据模型。</p>
+<pre class="code">Collection actors = this.jdbcTemplate.query(
+    "select first_name, surname from t_actor",
+    new RowMapper() {
+
+        public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Actor actor = new Actor();
+            actor.setFirstName(rs.getString("first_name"));
+            actor.setSurname(rs.getString("surname"));
+            return actor;
+        }
+    });</pre>
+<p>
+		如果最后2个示例中的代码出现在同一段程序中，我们有必要去掉这些重复的<code class="interfacename">RowMapper</code>匿名类代码，将这些代码抽取到一个单独的类中（通常是一个静态的内部类）。
+			这样，这个内部类就可以在DAO的方法中被共享。因而，最后2个示例写成如下的形式将更加好：
+		</p>
+<pre class="code">public Collection findAllActors() {
+    return this.jdbcTemplate.query( "select first_name, surname from t_actor", new ActorMapper());
+}
+
+private static final class ActorMapper implements RowMapper {
+
+    public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+        Actor actor = new Actor();
+        actor.setFirstName(rs.getString("first_name"));
+        actor.setSurname(rs.getString("surname"));
+        return actor;
+    }
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="jdbc-JdbcTemplate-examples-update"></a>11.2.1.1.2.&#160;更新（INSERT/UPDATE/DELETE）</h5></div></div></div>
+<pre class="code">this.jdbcTemplate.update(
+        "insert into t_actor (first_name, surname) values (?, ?)", 
+        new Object[] {"Leonor", "Watling"});</pre>
+<pre class="code">this.jdbcTemplate.update(
+        "update t_actor set weapon = ? where id = ?", 
+        new Object[] {"Banjo", new Long(5276)});</pre>
+<pre class="code">this.jdbcTemplate.update(
+        "delete from actor where id = ?",
+        new Object[] {new Long.valueOf(actorId)});</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="jdbc-JdbcTemplate-examples-other"></a>11.2.1.1.3.&#160;其他操作</h5></div></div></div>
+<p>
+			<code class="methodname">execute(..)</code>方法可以被用作执行任何类型的SQL，甚至是DDL语句。
+					这个方法的实现需要传入一个回调接口、需要绑定的参数数组等作为参数。
+			</p>
+<pre class="code">this.jdbcTemplate.execute("create table mytable (id integer, name varchar(100))");</pre>
+<p>调用一个简单的存储过程（更多复杂的存储过程支持请参见<a href="ch11s06.html#jdbc-StoredProcedure" title="11.6.4.&#160;StoredProcedure类">存储过程支持</a>）。</p>
+<pre class="code">this.jdbcTemplate.update(
+        "call SUPPORT.REFRESH_ACTORS_SUMMARY(?)", 
+        new Object[]{Long.valueOf(unionId)});</pre>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="jdbc-JdbcTemplate-idioms"></a>11.2.1.2.&#160;<code class="classname">JdbcTemplate</code> 的最佳实践</h4></div></div></div>
+<p>
+		<code class="classname">JdbcTemplate</code>类的实例是线程安全的实例。这一点非常重要，正因为如此，你可以配置一个简单的<code class="classname">JdbcTemplate</code>实例，并将这个“共享的”、“安全的”实例注入到不同的DAO类中去。
+			另外， <code class="classname">JdbcTemplate</code> 是有状态的，因为他所维护的<code class="interfacename">DataSource</code> 实例是有状态的，但是这种状态是无法变化的。
+		</p>
+<p>使用<code class="classname">JdbcTemplate</code>的一个常见的最佳实践（同时也是<a href="ch11s02.html#jdbc-SimpleJdbcTemplate" title="11.2.3.&#160;SimpleJdbcTemplate类"><code class="classname">SimpleJdbcTemplate</code></a>和<a href="ch11s02.html#jdbc-NamedParameterJdbcTemplate" title="11.2.2.&#160;NamedParameterJdbcTemplate类"><code class="classname">NamedParameterJdbcTemplate</code></a>
+        类的最佳实践）就是在Spring配置文件中配置一个<code class="interfacename">DataSource</code>实例，然后将这个共享的<code class="interfacename">DataSource</code>实例助于到你的DAO中去。
+        而<code class="classname">JdbcTemplate</code>的实例将在<code class="interfacename">DataSource</code>的setter方法中被创建。这样的话，DAO可能看上去像这样：</p>
+<pre class="code">public class JdbcCorporateEventDao implements CorporateEventDao {
+
+    private JdbcTemplate jdbcTemplate;
+
+    public void setDataSource(DataSource dataSource) {
+        <span class="bold"><strong>this.jdbcTemplate = new JdbcTemplate(dataSource);</strong></span>
+    }
+
+    <em class="lineannotation"><span class="lineannotation">// JDBC-backed implementations of the methods on the <code class="interfacename">CorporateEventDao</code> follow...</span></em>
+}</pre>
+<p>相关的配置看上去就像这样。</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"&gt;
+
+    &lt;bean id="corporateEventDao" class="com.example.JdbcCorporateEventDao"&gt;
+        &lt;property name="dataSource" ref="dataSource"/&gt;
+    &lt;/bean&gt;
+
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- the <code class="interfacename">DataSource</code> (parameterized for configuration via a <a href="ch03s07.html#beans-factory-placeholderconfigurer" title="3.7.2.1.&#160;PropertyPlaceholderConfigurer示例"><code class="classname">PropertyPlaceHolderConfigurer</code></a>) --&gt;</span></em>
+    &lt;bean id="dataSource" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource"&gt;
+        &lt;property name="driverClassName" value="${jdbc.driverClassName}"/&gt;
+        &lt;property name="url" value="${jdbc.url}"/&gt;
+        &lt;property name="username" value="${jdbc.username}"/&gt;
+        &lt;property name="password" value="${jdbc.password}"/&gt;
+    &lt;/bean&gt;
+
+&lt;/beans&gt;</pre>
+<p>
+		如果你使用Spring提供的<code class="classname">JdbcDaoSupport</code>类，并且你的那些基于JDBC的DAO都继承自这个类，那么你会自动地从<code class="classname">JdbcDaoSupport</code>类中继承了<code class="methodname">setDataSource(..)</code>方法。
+		是否将你的DAO类继承自这些类完全取决于你自己的决定，事实上这并不是必须的，如果你看一下<code class="classname">JdbcDaoSupport</code>类你会发现，这里只是提供了一个简便的方式而已。
+		</p>
+<p>
+        无论你是否使用上述这种初始化方式，都无需在执行某些SQL操作时多次创建一个<code class="classname">JdbcTemplate</code>实例。记住，一旦<code class="classname">JdbcTemplate</code>被创建，他是一个线程安全的对象。
+        一个你需要创建多次<code class="classname">JdbcTemplate</code>实例的理由可能在于，你的应用需要访问多个不同的数据库，从而需要不同的<code class="interfacename">DataSources</code>来创建不同的<code class="classname">JdbcTemplates</code>实例。
+        </p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-NamedParameterJdbcTemplate"></a>11.2.2.&#160;<code class="classname">NamedParameterJdbcTemplate</code>类</h3></div></div></div>
+<p>
+      <code class="classname">NamedParameterJdbcTemplate</code>类为JDBC操作增加了命名参数的特性支持，而不是传统的使用（<code class="literal">'?'</code>）作为参数的占位符。<code class="classname">NamedParameterJdbcTemplate</code>类对<code class="classname">JdbcTemplate</code>类进行了封装，
+      在底层，<code class="classname">JdbcTemplate</code>完成了多数的工作。这一个章节将主要描述<code class="classname">NamedParameterJdbcTemplate</code>类与<code class="classname">JdbcTemplate</code>类的一些区别，也就是使用命名参数进行JDBC操作。
+      </p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// some JDBC-backed DAO class...</span></em>
+private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+}
+
+public int countOfActorsByFirstName(String firstName) {
+
+    String sql = "select count(0) from T_ACTOR where first_name = :first_name";
+
+    SqlParameterSource namedParameters = new MapSqlParameterSource("first_name", firstName);
+
+    return namedParameterJdbcTemplate.queryForInt(sql, namedParameters);
+}</pre>
+<p>
+			注意这里在<code class="literal">'sql'</code>中使用了命名参数作为变量，而这个名称所对应的值被定义在传入的<code class="literal">'namedParameters'</code>
+中作为参数（也可以传入到<code class="classname">MapSqlParameterSource</code>中作为参数）。
+		</p>
+<p>
+			你也可以传入许多命名参数以及他们所对应的值，以<code class="interfacename">Map</code>的方式，作为键值对传入到<code class="classname">NamedParameterJdbcTemplate</code>中。
+      （其余的被<code class="interfacename">NamedParameterJdbcOperations</code>所暴露的接口以及<code class="classname">NamedParameterJdbcTemplate</code>实现类遵循了类似的方式，此处不包含相关内容）。
+      		</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// some JDBC-backed DAO class...</span></em>
+private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+}
+
+public int countOfActorsByFirstName(String firstName) {
+
+    String sql = "select count(0) from T_ACTOR where first_name = :first_name";
+
+    Map namedParameters = Collections.singletonMap("first_name", firstName);
+
+    return this.namedParameterJdbcTemplate.queryForInt(sql, namedParameters);
+}</pre>
+<p>
+		<code class="classname">NamedParameterJdbcTemplate</code>类所具备的另外一个比较好的特性就是可以接收<code class="interfacename">SqlParameterSource</code>作为传入参数 (这个类位于相同的包定义中)。
+			你已经在先前的一个例子中看到了这个接口的一个具体实现类。（
+<code class="classname">MapSqlParameterSource</code>类）。而<code class="interfacename">SqlParameterSource</code>
+			这个接口对于<code class="classname">NamedParameterJdbcTemplate</code>类的操作而言是一个传入的参数。<code class="classname">MapSqlParameterSource</code>只是一个非常简单的实现，使用了<code class="interfacename">java.util.Map</code>作为转接器， 
+			其中，Map中的Key表示参数名称，而Map中的Value表示参数值。
+		</p>
+<p>
+		另外一个<code class="interfacename">SqlParameterSource</code>
+的实现类是<code class="classname">BeanPropertySqlParameterSource</code>。这个类对传统的Java进行了封装（也就是那些符合<a href="" target="_top">JavaBean</a>标准的类），
+			并且使用了JavaBean的属性作为参数的名称和值。</p>
+<pre class="code">public class Actor {
+
+    private Long id;
+    private String firstName;
+    private String lastName;
+    
+    public String getFirstName() {
+        return this.firstName;
+    }
+    
+    public String getLastName() {
+        return this.lastName;
+    }
+    
+    public Long getId() {
+        return this.id;
+    }
+    
+    <em class="lineannotation"><span class="lineannotation">// setters omitted...</span></em>
+
+}</pre>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// some JDBC-backed DAO class...</span></em>
+private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+}
+
+public int countOfActors(Actor exampleActor) {
+
+    <em class="lineannotation"><span class="lineannotation">// notice how the named parameters match the properties of the above '<code class="classname">Actor</code>' class</span></em>
+    String sql = "select count(0) from T_ACTOR where first_name = :firstName and last_name = :lastName";
+
+    SqlParameterSource namedParameters = new BeanPropertySqlParameterSource(exampleActor);
+
+    return this.namedParameterJdbcTemplate.queryForInt(sql, namedParameters);
+}</pre>
+<p>
+			注意，<code class="classname">NamedParameterJdbcTemplate</code>类只是<span class="emphasis"><em>封装</em></span>了<code class="classname">JdbcTemplate</code>模板； 
+			因而如果你需要访问相应被封装的<code class="classname">JdbcTemplate</code>类，并访问一些只有在<code class="classname">JdbcTemplate</code>中拥有的功能，你需要使用<code class="methodname">getJdbcOperations()</code>方法来进行访问。
+		</p>
+<p>
+      请参照<a href="ch11s02.html#jdbc-JdbcTemplate-idioms" title="11.2.1.2.&#160;JdbcTemplate 的最佳实践">第&#160;11.2.1.2&#160;节 “<code class="classname">JdbcTemplate</code> 的最佳实践”</a>来获取一些使用<code class="classname">NamedParameterJdbcTemplate</code>的最佳实践。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-SimpleJdbcTemplate"></a>11.2.3.&#160;<code class="classname">SimpleJdbcTemplate</code>类</h3></div></div></div>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p><span class="emphasis"><em><code class="classname">SimpleJdbcTemplate</code>所提供的一些特性必须工作在Java 5及以上版本。</em></span></p>
+</div>
+<p>
+	<code class="classname">SimpleJdbcTemplate</code>类是对<code class="classname">JdbcTemplate</code>类进行的封装，从而可以充分利用Java 5所带来的varargs和autoboxing等特性。
+      <code class="classname">SimpleJdbcTemplate</code>类完全利用了Java 5语法所带来的蜜糖效应。凡是使用过Java 5的程序员们如果要从Java 5迁移回之前的JDK版本，无疑会发现这些特性所带来的蜜糖效应。
+      </p>
+<p>
+		<span class="emphasis"><em>“before and after”</em></span>示例可以成为<code class="classname">SimpleJdbcTemplate</code>类所带来的蜜糖效应的最佳诠释。
+			下面的代码示例首先展示了使用传统的<code class="classname">JdbcTemplate</code>进行JDBC访问的代码，接着是使用<code class="classname">SimpleJdbcTemplate</code>类做同样的事情。
+		</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// classic <code class="classname">JdbcTemplate</code>-style...</span></em>
+private JdbcTemplate jdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.jdbcTemplate = new JdbcTemplate(dataSource);
+}
+
+public Actor findActor(long id) {
+    String sql = "select id, first_name, last_name from T_ACTOR where id = ?";
+    
+    RowMapper mapper = new RowMapper() {
+    
+        public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Actor actor = new Actor();
+            actor.setId(rs.getLong("id"));
+            actor.setFirstName(rs.getString("first_name"));
+            actor.setLastName(rs.getString("last_name"));
+            return actor;
+        }
+    };
+    
+    <em class="lineannotation"><span class="lineannotation">// notice the cast, the wrapping up of the 'id' argument
+    // in an array, and the boxing of the 'id' argument as a reference type</span></em>
+    return (Actor) jdbcTemplate.queryForObject(sql, mapper, new Object[] {Long.valueOf(id)});
+}</pre>
+<p>下面是同样的逻辑，使用了<code class="classname">SimpleJdbcTemplate</code>；可以看到代码“干净”多了：</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// <code class="classname">SimpleJdbcTemplate</code>-style...</span></em>
+private SimpleJdbcTemplate simpleJdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.simpleJdbcTemplate = new SimpleJdbcTemplate(dataSource);
+}
+
+public Actor findActor(long id) {
+    String sql = "select id, first_name, last_name from T_ACTOR where id = ?";
+
+    ParameterizedRowMapper&lt;Actor&gt; mapper = new ParameterizedRowMapper&lt;Actor&gt;() {
+    
+        <em class="lineannotation"><span class="lineannotation">// notice the return type with respect to Java 5 covariant return types</span></em>
+        public Actor mapRow(ResultSet rs, int rowNum) throws SQLException {
+            Actor actor = new Actor();
+            actor.setId(rs.getLong("id"));
+            actor.setFirstName(rs.getString("first_name"));
+            actor.setLastName(rs.getString("last_name"));
+            return actor;
+        }
+    };
+
+    return this.simpleJdbcTemplate.queryForObject(sql, mapper, id);
+}</pre>
+<p>请同样参照<a href="ch11s02.html#jdbc-JdbcTemplate-idioms" title="11.2.1.2.&#160;JdbcTemplate 的最佳实践">第&#160;11.2.1.2&#160;节 “<code class="classname">JdbcTemplate</code> 的最佳实践”</a>来获取一些<code class="classname">SimpleJdbcTemplate</code>的最佳实践</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p><code class="classname">SimpleJdbcTemplate</code>只是提供了<code class="classname">JdbcTemplate</code>所提供的功能的子类。
+        如果你需要使用<code class="classname">JdbcTemplate</code>的方法，而这些方法又没有在<code class="classname">SimpleJdbcTemplate</code>中定义，你需要调用<code class="methodname">getJdbcOperations()</code>方法
+        获取相应的方法调用。<code class="interfacename">JdbcOperations</code>接口中定义的方法需要在这边做强制转化才能使用。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-datasource"></a>11.2.4.&#160;<code class="interfacename">DataSource</code>接口</h3></div></div></div>
+<p>
+		为了从数据库中取得数据，我们首先需要获取一个数据库连接。Spring通过<code class="interfacename">DataSource</code>对象来完成这个工作。
+		<code class="interfacename">DataSource</code>是JDBC规范的一部分，它被视为一个通用的数据库连接工厂。通过使用DataSource，
+		Container或Framework可以将连接池以及事务管理的细节从应用代码中分离出来。
+		作为一个开发人员，在开发和测试产品的过程中，你可能需要知道连接数据库的细节。但在产品实施时，你不需要知道这些细节。通常数据库管理员会帮你设置好数据源。
+	</p>
+<p>
+		在使用Spring JDBC时，你既可以通过JNDI获得数据源，也可以自行配置数据源（使用Spring提供的DataSource实现类）。使用后者可以更方便的脱离Web容器来进行单元测试。
+		这里我们将使用<code class="classname">DriverManagerDataSource</code>，不过DataSource有多种实现，
+		后面我们会讲到。使用<code class="classname">DriverManagerDataSource</code>和你以前获取一个JDBC连接
+		的做法没什么两样。你首先必须指定JDBC驱动程序的全限定名，这样<code class="classname">DriverManager</code>
+		才能加载JDBC驱动类，接着你必须提供一个url（因JDBC驱动而异，为了保证设置正确请参考相关JDBC驱动的文档），
+		最后你必须提供一个用户连接数据库的用户名和密码。下面我们将通过一个例子来说明如何配置一个<code class="classname">DriverManagerDataSource</code>：
+		</p>
+<pre class="code">DriverManagerDataSource dataSource = new DriverManagerDataSource();
+dataSource.setDriverClassName("org.hsqldb.jdbcDriver");
+dataSource.setUrl("jdbc:hsqldb:hsql://localhost:");
+dataSource.setUsername("sa");
+dataSource.setPassword("");</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-SQLExceptionTranslator"></a>11.2.5.&#160;<code class="interfacename">SQLExceptionTranslator</code>接口</h3></div></div></div>
+<p>
+			<code class="interfacename">SQLExceptionTranslator</code>是一个接口，如果你需要在
+			<code class="classname">SQLException</code>和<code class="classname">org.springframework.dao.DataAccessException</code>之间作转换，那么必须实现该接口。
+			转换器类的实现可以采用一般通用的做法(比如使用JDBC的SQLState code)，如果为了使转换更准确，也可以进行定制（比如使用Oracle的error code）。
+		</p>
+<p>
+			<code class="classname">SQLErrorCodeSQLExceptionTranslator</code>是SQLExceptionTranslator的默认实现。
+			该实现使用指定数据库厂商的error code，比采用<code class="literal">SQLState</code>更精确。转换过程基于一个JavaBean（类型为<code class="classname">SQLErrorCodes</code>）中的error code。
+			这个JavaBean由<code class="classname">SQLErrorCodesFactory</code>工厂类创建，其中的内容来自于
+			“sql-error-codes.xml”配置文件。该文件中的数据库厂商代码基于 <code class="interfacename">Database MetaData</code> 信息中的DatabaseProductName，从而配合当前数据库的使用。
+		</p>
+<p>
+      <code class="classname">SQLErrorCodeSQLExceptionTranslator</code>使用以下的匹配规则：
+      </p>
+<div class="itemizedlist"><ul type="disc" compact>
+<li><p>
+				首先检查是否存在完成定制转换的子类实现。通常<code class="classname">SQLErrorCodeSQLExceptionTranslator</code>
+				这个类可以作为一个具体类使用，不需要进行定制，那么这个规则将不适用。
+			</p></li>
+<li><p>
+				接着将SQLException的error code与错误代码集中的error code进行匹配。
+				默认情况下错误代码集将从<code class="classname">SQLErrorCodesFactory</code>取得。
+				错误代码集来自classpath下的sql-error-codes.xml文件，它们将与数据库metadata信息中的database name进行映射。
+			</p></li>
+<li><p>
+				使用fallback翻译器。<code class="classname">SQLStateSQLExceptionTranslator</code>类是缺省的fallback翻译器。
+			</p></li>
+</ul></div>
+<p>
+        </p>
+<p>
+			<code class="classname">SQLErrorCodeSQLExceptionTranslator</code>可以采用下面的方式进行扩展：
+		</p>
+<pre class="code">public class MySQLErrorCodesTranslator extends SQLErrorCodeSQLExceptionTranslator {
+
+    protected DataAccessException customTranslate(String task, String sql, SQLException sqlex) {
+        if (sqlex.getErrorCode() == -12345) {
+            return new DeadlockLoserDataAccessException(task, sqlex);
+        }
+        return null;
+    }
+}</pre>
+<p>
+		在上面的这个例子中，error code为<code class="literal">'-12345'</code>的SQLException将采用该转换器进行转换，而其他的error code将由默认的转换器进行转换。
+		为了使用该转换器，必须将其作为参数传递给<code class="classname">JdbcTemplate</code>类的<code class="literal">setExceptionTranslator</code>方法，并在需要使用这个转换器器的数据
+		存取操作中使用该<code class="classname">JdbcTemplate</code>。下面的例子演示了如何使用该定制转换器：
+	  </p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// create a <code class="classname">JdbcTemplate</code> and set data source</span></em> 
+JdbcTemplate jt = new JdbcTemplate(); 
+jt.setDataSource(dataSource); 
+<em class="lineannotation"><span class="lineannotation">// create a custom translator and set the <code class="interfacename">DataSource</code> for the default translation lookup</span></em> 
+MySQLErrorCodesTransalator tr = new MySQLErrorCodesTransalator(); 
+tr.setDataSource(dataSource); 
+jt.setExceptionTranslator(tr); 
+<em class="lineannotation"><span class="lineannotation">// use the <code class="classname">JdbcTemplate</code> for this <code class="classname">SqlUpdate</code></span></em>
+SqlUpdate su = new SqlUpdate(); 
+su.setJdbcTemplate(jt); 
+su.setSql("update orders set shipping_charge = shipping_charge * 1.05"); 
+su.compile(); 
+su.update();</pre>
+<p>
+		在上面的定制转换器中，我们给它注入了一个数据源，因为我们仍然需要
+		使用默认的转换器从<code class="literal">sql-error-codes.xml</code>中获取错误代码集。
+	</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-statements-executing"></a>11.2.6.&#160;执行SQL语句</h3></div></div></div>
+<p>
+		我们仅需要非常少的代码就可以达到执行SQL语句的目的，一旦获得一个
+		<code class="interfacename">DataSource</code>和一个<code class="classname">JdbcTemplate</code>，
+		我们就可以使用<code class="classname">JdbcTemplate</code>提供的丰富功能实现我们的操作。下面的例子使用了极少的代码完成创建一张表的工作。
+		</p>
+<pre class="code">import javax.sql.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class ExecuteAStatement {
+
+    private JdbcTemplate jdbcTemplate;
+
+    public void setDataSource(DataSource dataSource) {
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+
+    public void doExecute() {
+        this.jdbcTemplate.execute("create table mytable (id integer, name varchar(100))");
+    }
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-statements-querying"></a>11.2.7.&#160;执行查询</h3></div></div></div>
+<p>
+			除了execute方法之外，<code class="classname">JdbcTemplate</code>还提供了大量的查询方法。
+			在这些查询方法中，有很大一部分是用来查询单值的。比如返回一个汇总（count）结果
+			或者从返回行结果中取得指定列的值。这时我们可以使用<code class="literal">queryForInt(..)</code>、
+			<code class="literal">queryForLong(..)</code>或者<code class="literal">queryForObject(..)</code>方法。
+			queryForObject方法用来将返回的JDBC类型对象转换成指定的Java对象，如果类型转换失败将抛出
+			<code class="classname">InvalidDataAccessApiUsageException</code>异常。
+			下面的例子演示了两个查询的用法，一个返回<code class="literal">int</code>值，另一个返回<code class="classname">String</code>。
+		</p>
+<pre class="code">import javax.sql.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class RunAQuery {
+
+    private JdbcTemplate jdbcTemplate;
+
+    public void setDataSource(DataSource dataSource) {
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+  
+    public int getCount() {
+        return this.jdbcTemplate.queryForInt("select count(*) from mytable");
+    }
+
+    public String getName() {
+        return (String) this.jdbcTemplate.queryForObject("select name from mytable", String.class);
+    }
+
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+}</pre>
+<p>
+		除了返回单值的查询方法，<code class="classname">JdbcTemplate</code>还提供了一组返回List结果
+		的方法。List中的每一项对应查询返回结果中的一行。其中最简单的是<code class="literal">queryForList</code>方法，
+		该方法将返回一个<code class="interfacename">List</code>，该<code class="interfacename">List</code>中的每一条
+		记录是一个<code class="interfacename">Map</code>对象，对应应数据库中某一行；而该<code class="interfacename">Map</code>
+		中的每一项对应该数据库行中的某一列值。下面的代码片断接着上面的例子演示了如何用该方法返回表中所有记录：
+		</p>
+<pre class="code">
+private JdbcTemplate jdbcTemplate;
+
+public void setDataSource(DataSource dataSource) {
+    this.jdbcTemplate = new JdbcTemplate(dataSource);
+}
+
+public List getList() {
+    return this.jdbcTemplate.queryForList("select * from mytable");
+}</pre>
+<p>
+		返回的结果集类似下面这种形式：
+	</p>
+<pre class="code">[{name=Bob, id=1}, {name=Mary, id=2}]</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-updates"></a>11.2.8.&#160;更新数据库</h3></div></div></div>
+<p>
+			<code class="classname">JdbcTemplate</code>还提供了一些更新数据库的方法。
+			在下面的例子中，我们根据给定的主键值对指定的列进行更新。
+			例子中的SQL语句中使用了“?”占位符来接受参数（这种做法在更新和查询SQL语句中很常见）。
+			传递的参数值位于一个对象数组中（基本类型需要被包装成其对应的对象类型）。
+		</p>
+<pre class="code">import javax.sql.DataSource;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class ExecuteAnUpdate {
+
+    private JdbcTemplate jdbcTemplate;
+
+    public void setDataSource(DataSource dataSource) {
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    }
+
+    public void setName(int id, String name) {
+        this.jdbcTemplate.update(
+                "update mytable set name = ? where id = ?", 
+                new Object[] {name, new Integer(id)});
+    }
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jdbc-auto-genereted-keys"></a>11.2.9.&#160;获取自动生成的主键</h3></div></div></div>
+<p>
+      <code class="classname">JdbcTemplate</code>中有一个<code class="methodname">update</code>方法，可以方便地从数据库中获取数据库自动创建的主键。（这是JDBC 3.0的标准 - 可以参见13.6节获取详细信息）。
+      这个方法使用了<code class="classname">PreparedStatementCreator</code>接口作为第一个参数， 可以通过这个接口的实现类来定义相应的Insert语句。另外一个参数是<code class="classname">KeyHolder</code>，
+      一旦update方法成功，这个参数将包含生成的主键。这里对于创建合适的<code class="classname">PreparedStatement</code>并没有一个统一的标准。（这也解释了函数签名如此定义的原因）。下面是一个在Oracle上运行良好的示例，它可能在其他平台上无法工作：
+      </p>
+<pre class="code">final String INSERT_SQL = "insert into my_test (name) values(?)";
+final String name = "Rob";
+
+KeyHolder keyHolder = new GeneratedKeyHolder();
+jdbcTemplate.update(
+    new PreparedStatementCreator() {
+        public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
+            PreparedStatement ps =
+                connection.prepareStatement(INSERT_SQL, new String[] {"id"});
+            ps.setString(1, name);
+            return ps;
+        }
+    },
+    keyHolder);
+
+<em class="lineannotation"><span class="lineannotation">// keyHolder.getKey() now contains the generated key</span></em></pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

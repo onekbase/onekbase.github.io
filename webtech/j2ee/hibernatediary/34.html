@@ -1,0 +1,309 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="33.html"> 上一页</a><a href="35.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip:&nbsp;Bag</a></h1>
+    Bag是集合，与Set不同的是，Bag允许重复的元素，在Java的标准API中并没有提供Bag容器，Hibernate提供自己的Bag实现，允许您将List映射为Bag。<br />
+    <br />
+    您可以如下定义User类别，其中的List成员将被用作Bag来使用，而不管对象在List容器中的顺序：<br />
+<h5>User.java</h5>
+    <pre class="code">package onlyfun.caterpillar;<br /><br />import java.util.List;<br /><br />public class User {<br />    private Integer id;<br />    private String name;<br />    private List items;<br /><br />    // 必須要有一個預設的建構方法<br />    // 以使得Hibernate可以使用Constructor.newInstance()建立物件<br />    public User() {<br />    }<br /><br />    public Integer getId() {<br />        return id;<br />    }<br /><br />    public void setId(Integer id) {<br />        this.id = id;<br />    }<br /><br />    public String getName() {<br />        return name;<br />    }<br /><br />    public void setName(String name) {<br />        this.name = name;<br />    }<br /><br />    public List getItems() {<br />        return items;<br />    }<br /><br />    public void setItems(List items) {<br />        this.items = items;<br />    }<br /><br />    public void addItem(String item) {<br />        items.add(item);<br />    }<br />    <br />    public void removeItem(String name) {<br />        items.remove(name);<br />    }<br />}</pre>
+    <br />
+    最简单的Bag映射是使用&lt;bag&gt;卷标，在这之前，假设您如下建立表格：<br />
+    <pre class="code">CREATE TABLE user (
+&nbsp; &nbsp; id INT(11) NOT NULL auto_increment PRIMARY KEY,
+&nbsp; &nbsp; name VARCHAR(100) NOT NULL default ''
+);
+
+CREATE TABLE item (
+&nbsp; &nbsp; id INT(11) NOT NULL,
+&nbsp; &nbsp; name VARCHAR(100) NOT NULL
+);</pre>
+    接着定义映射文件，如下所示：<br />
+<h5>User.hbm.xml</h5>
+
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br /><br />        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;java.lang.Integer&quot;&gt; <br />            &lt;generator class=&quot;native&quot;/&gt; <br />        &lt;/id&gt; <br /><br />        &lt;property name=&quot;name&quot; <br />                  column=&quot;name&quot; <br />                  type=&quot;java.lang.String&quot;/&gt; <br />       <br />        &lt;bag name=&quot;items&quot; table=&quot;item&quot;&gt; <br />            &lt;key column=&quot;id&quot;/&gt; <br />            &lt;element column=&quot;name&quot; type=&quot;java.lang.String&quot;/&gt; <br />        &lt;/bag&gt; <br />        <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    假设您如下储存对象：<br />
+    <pre class="code">User user1 = new User();
+user1.setItems(new ArrayList());
+user1.setName(&quot;caterpillar&quot;);
+user1.addItem(&quot;Java Gossip&quot;);
+user1.addItem(&quot;Java Gossip&quot;);
+user1.addItem(&quot;Caxxx A80&quot;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+User user2 = new User();
+user2.setItems(new ArrayList());
+user2.setName(&quot;momor&quot;);
+user2.addItem(&quot;Snoppy world&quot;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Session session = sessionFactory.openSession();
+Transaction&nbsp;tx = session.beginTransaction();
+session.save(user1);
+session.save(user2);
+tx.commit();
+session.close();</pre>
+    则数据库中会有如下的数据：<br />
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2" id="table669">
+<tbody>
+  <tr>
+    <td style="background-color: rgb(0, 0, 0);"><small>mysql&gt; select * from user;<br />
++----+-------------+<br />
+| id &nbsp;&nbsp; | name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
++----+-------------+<br />
+|&nbsp; 1 &nbsp;&nbsp; | caterpillar |<br />
+|&nbsp; 2 &nbsp;&nbsp; | momor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
++----+-------------+<br />
+2 rows in set (0.00 sec)<br />
+<br />
+mysql&gt; select * from item;<br />
++----+--------------------+<br />
+| id &nbsp; &nbsp;| name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; |<br />
++----+-------------------+<br />
+|&nbsp; 1 &nbsp; &nbsp;| Java Gossip &nbsp; &nbsp; |<br />
+|&nbsp; 1 &nbsp; &nbsp;| Java Gossip &nbsp; &nbsp; |<br />
+|&nbsp; 1 &nbsp;&nbsp; | Caxxx A80&nbsp;&nbsp; &nbsp; &nbsp;&nbsp; |<br />
+|&nbsp; 2 &nbsp;&nbsp; | Snoppy world |<br />
++----+-------------------+<br />
+4 rows in set (0.00 sec)</small><br />
+</td>
+  </tr>
+</tbody>
+    </table>
+    <br />
+    您可以如下更新数据：<br />
+    <pre class="code">Session session = sessionFactory.openSession();
+Transaction tx = session.beginTransaction();
+User user = (User) session.load(User.class, new Integer(1));
+user.removeItem(&quot;Java Gossip&quot;);
+tx.commit();
+session.close();</pre>
+    然而注意观察在更新数据时所使用的SQL：<br />
+    <pre class="code">Hibernate: delete from item where id=?
+Hibernate: insert into item (id, name) values (?, ?)
+Hibernate: insert into item (id, name) values (?, ?)</pre>
+    由于Bag的数据允许重复，当必须更新数据时，无法确定要更新的是哪一笔数据，因而采取的方式是删除集合对象对应的所有数据，然后重新将集合对象中的数据写入数据库，显然的这种作法相当的没有效率。<br />
+    <br />
+    作为Bag的一种扩充，Hibernate提供idbag，藉由在定义Bag映像时加上&quot;collection-id&quot;，让Hibernate可以直接确定所要更新的数据，提高数据库操作的效率，您可以先如下建立表格：<br />
+    <pre class="code">CREATE TABLE user (
+&nbsp; &nbsp; id INT(11) NOT NULL auto_increment PRIMARY KEY,
+&nbsp; &nbsp; name VARCHAR(100) NOT NULL default ''
+);
+
+CREATE TABLE item (
+&nbsp; &nbsp; cid CHAR(32) NOT NULL,
+&nbsp; &nbsp; id INT(11) NOT NULL,
+&nbsp; &nbsp; name VARCHAR(100) NOT NULL
+);</pre>
+    其中item表格的cid就用于数据更新时定位之用，接着在映射文件中使用&lt;idbag&gt;标签加以定义：<br />
+<h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br /><br />        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;java.lang.Integer&quot;&gt; <br />            &lt;generator class=&quot;native&quot;/&gt; <br />        &lt;/id&gt; <br /><br />        &lt;property name=&quot;name&quot; <br />                  column=&quot;name&quot; <br />                  type=&quot;java.lang.String&quot;/&gt; <br />       <br />        &lt;idbag name=&quot;items&quot; table=&quot;item&quot;&gt; <br />            &lt;collection-id column=&quot;cid&quot; type=&quot;java.lang.String&quot;&gt;<br />                &lt;generator class=&quot;uuid.hex&quot;/&gt;<br />            &lt;/collection-id&gt;<br />            &lt;key column=&quot;id&quot;/&gt;            <br />            &lt;element column=&quot;name&quot; type=&quot;java.lang.String&quot;/&gt; <br />        &lt;/idbag&gt; <br />        <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    使用上面用过的程序片段来储存对象的话，数据库中会有如下的数据：<br />
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2" id="table670">
+<tbody>
+  <tr>
+    <td style="background-color: rgb(0, 0, 0);"><small>mysql&gt; select * from user;<br />
++----+-------------+<br />
+| id &nbsp;&nbsp; | name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |<br />
++----+-------------+<br />
+|&nbsp; 1 &nbsp; &nbsp;| caterpillar |<br />
+|&nbsp; 2 &nbsp;&nbsp; | momor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br />
++----+-------------+<br />
+2 rows in set (0.00 sec)<br />
+<br />
+mysql&gt; select * from item;<br />
++------------------------------------------------+----+--------------------+<br />
+|
+cid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; | id &nbsp; |
+name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; |<br />
++------------------------------------------------+----+--------------------+<br />
+| 297eba61056726030105672605df0001 |&nbsp; 1 &nbsp; | Java Gossip &nbsp; &nbsp;&nbsp; |<br />
+| 297eba61056726030105672605df0002 |&nbsp; 1 &nbsp; | Java Gossip &nbsp; &nbsp;&nbsp; |<br />
+| 297eba61056726030105672605df0003 |&nbsp; 1 &nbsp; | Caxxx A80&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; |<br />
+| 297eba61056726030105672605df0004 |&nbsp; 2 &nbsp; | Snoppy world&nbsp; |<br />
++------------------------------------------------+----+-------------------+<br />
+4 rows in set (0.00 sec)</small><br />
+</td>
+  </tr>
+</tbody>
+    </table>
+    <br />
+    如果使用上面提到过的程序片段来更新对象的话，则实际上Hibernate会使用以下的SQL来进行更新：<br />
+    <pre class="code">Hibernate: delete from item where cid=?</pre>
+    这一次并不是整个删除集合中的数据，而是直接藉由cid来确定所要更新的数据，比起只使用Bag，idbag的效率好了许多。<br />
+
+<div class="rpindex"><a href="35.html"> 下一页</a><a href="33.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

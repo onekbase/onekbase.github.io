@@ -1,0 +1,231 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="43.html"> 上一页</a><a href="45.html"> 下一页</a></div>
+<h2>Chapter 17. 事务和并行（Transactions And   Concurrency）</h2>
+<p>Hibernate本身并不是数据库，它只是一个轻量级的对象－关系数据库映射（object-relational）工具。它的事务交由底层的数据库连接管理，如果数据库连接有JTA的支持，那么在Session中进行的操作将是整个原子性JTA事务的一部分。Hibernate可以看作是添加了面向对象语义的JDBC瘦适配器（thin   adapter）。 </p>
+<h2>17.1. 配置，会话和工厂（Configurations, Sessions and   Factories）</h2>
+<p>SessionFactory的创建需要耗费大量资源，它是线程安全（threadsafe）的对象，在应用中它被所有线程共享。而Session的创建耗费资源很少，它不是线程安全的对象，对于一个简单商业过程（business   process），它应该只被使用一次，然后被丢弃。举例来说，当Hibernate在基于servlet的应用中，servlet能够以下面的方式得到SessionFactory。 </p>
+<pre class="code">SessionFactory sf = (SessionFactory)getServletContext().getAttribute(&quot;my.session.factory&quot;);</pre>
+<p>每次调用SessionFactory的service方法能够生成一个新的Session对象，然后调用Session的flush()，调用commit()提交它的连接，调用close()关闭它，最终丢弃它。 </p>
+<p>在无状态的session bean中，可以同样使用类似的方法。bean在setSessionContext()中得到SessionFactory的实例，每个商业方法会生成一个Session对象，调用它的flush()和close()，当然，应用不应该commit()connection.   (把它留给JTA.) </p>
+<p>这里需要理解flush()的含义。 flush()将持久化存储与内存中的变化进行同步，但<em>不是</em>将内存的变化与持久化存储进行同步。所以在调用flush()并接着调用commit()关闭连接时，会话将仍然含有过时的数据，在这种情况下，继续使用会话的<em>唯一</em>的方法是将会话中的数据进行版本化。 </p>
+<p>接下来的几小节将讨论利用版本化的方法来确保事务原子性，这些“高级”方法需要小心使用。 </p>
+<h2><a name="17-2" id="17-2"></a>17.2. 线程和连接（Threads and connections）</h2>
+<p>You should observe the following practices when creating Hibernate Sessions: </p>
+<p>在创建Hibernate会话（Session）时，你应该留意以下的实践（practices）： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>对于一个数据库连接，不要创建一个以上的Session或Transaction </p>
+  </li>
+  <li>
+    <p>在对于一个数据库连接、一个事务使用多个Session时，你尤其需要格外地小心。Session对象会记录下调入数据更新的情况，所以另一个Session对象可能会遇到过时的数据。 </p>
+  </li>
+  <li>
+    <p>Session<em>不是</em>线程安全的。如果确实需要在两个同时运行的线程中共享会话，那么你应该确保线程在访问会话时，线程对Session具有同步锁。 </p>
+  </li>
+</ul>
+<h2><a name="17-3" id="17-3"></a>17.3. 乐观锁定／版本化（Optimistic Locking /   Versioning）</h2>
+<p>许多商业过程需要一系列与用户进行交互的过程，数据库访问穿插在这些过程中。对于web和企业应用来说，跨一个用户交互过程的数据事务是不可接受的，因而维护各商业事务间的隔离（isolocation）就成为应用层的部分责任。唯一满足高并发性以及高可扩展性的方法是使用带有版本化的乐观锁定。Hibernate为使用乐观锁定的代码提供了三种可能的方法。 </p>
+<h3><a name="17-3-1" id="17-3-1"></a>17.3.1. 使用长生命周期带有自动版本化的会话</h3>
+<p>在整个商业过程中使用一个单独的Session实例以及它的持久化实例，这个Session使用带有版本化的乐观锁定机制，来确保多个数据库事务对于应用来说只是一个逻辑上的事务。在等待用户交互时，Session断开与数据库的连接。这个方法从数据库访问方面来看是最有效的，应用不需要关心对自己的版本检查或是重新与不需要序列化（transient）的实例进行关联。 </p>
+<pre class="code">// foo is an instance loaded earlier by the Session
+session.reconnect();
+foo.setProperty(&quot;bar&quot;);
+session.flush();
+session.connection().commit();
+session.disconnect();</pre>
+<h3><a name="17-3-2" id="17-3-2"></a>17.3.2. 使用带有自动版本化的多个会话</h3>
+<p>每个与持久化存储的交互出现在一个新的Session中，在每次与数据库的交互中，使用相同的持久化实例。应用操作那些从其它Session调入的不需要持久化实例的状态，通过使用Session.update()或者Session.saveOrUpdate()来重新建立与它们的关联。 </p>
+<pre class="code">// foo is an instance loaded by a previous Session
+foo.setProperty(&quot;bar&quot;);
+session = factory.openSession();
+session.saveOrUpdate(foo);
+session.flush();
+session.connection().commit();
+session.close();</pre>
+<h3><a name="17-3-3" id="17-3-3"></a>17.3.3. 应用程序自己进行版本检查</h3>
+<p>每当一个新的Session中与持久化存储层出现交互的时候，这个session会在操作持久化实例前重新把它们从数据存储中装载进来。我们现在所说的方式就是你的应用程序自己使用版本检查来确保商业过程的隔绝性。（当然，Hibernate仍会为你<em>更新</em>版本号）。从数据库访问方面来看，这种方法是最没有效率的，与entity EJB方式类似。 </p>
+<pre class="code">// foo is an instance loaded by a previous Session
+session = factory.openSession();
+int oldVersion = foo.getVersion();
+session.load( foo, foo.getKey() );
+if ( oldVersion!=foo.getVersion ) throw new StaleObjectStateException();
+foo.setProperty(&quot;bar&quot;);
+session.flush();
+session.connection().commit();
+session.close();</pre>
+<p>当然，如果在低数据并行（low-data-concurrency）的环境中，并不需要版本检查，你仍可以使用这个方法，只需要忽略版本检查。 </p>
+<div class="rpindex"><a href="45.html"> 下一页</a><a href="43.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

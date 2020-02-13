@@ -1,0 +1,473 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="jms-namespace"></a>19.6.&#160;JMS命名空间支持</h2></div></div></div>
+<p>Spring 2.5引入了XML命名空间以简化JMS的配置。使用JMS命名空间元素时，需要引用如下的JMS Schema：
+	</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       <span class="bold"><strong>xmlns:jms="http://www.springframework.org/schema/jms"</strong></span>
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+<span class="bold"><strong>http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-2.5.xsd"</strong></span>&gt;
+
+<em class="lineannotation"><span class="lineannotation">&lt;!-- <code class="literal">&lt;bean/&gt;</code> definitions here --&gt;</span></em>
+
+&lt;/beans&gt;</pre>
+<p>这个命名空间由两级元素组成：<code class="literal">&lt;listener-container/&gt;</code> 和 <code class="literal">&lt;jca-listener-container/&gt;</code>，它们都可以包含一个或这个多个 <code class="literal">&lt;listener/&gt;</code> 子元素。下面是一个基本配置的示例，包含两个监听器。</p>
+<pre class="code">&lt;jms:listener-container&gt;
+
+    &lt;jms:listener destination="queue.orders" ref="orderService" method="placeOrder"/&gt;
+
+    &lt;jms:listener destination="queue.confirmations" ref="confirmationLogger" method="log"/&gt;
+
+&lt;/jms:listener-container&gt;</pre>
+<p>上面的例子等同于在 <a href="ch19s04.html#jms-receiving-async-message-listener-adapter" title="19.4.4.&#160;MessageListenerAdapter">第&#160;19.4.4&#160;节 “<code class="classname">MessageListenerAdapter</code>”</a> 的示例中，定义两个不同的监听器容器和两个不同的 <code class="classname">MessageListenerAdapter</code> 。除了上面的属性外，<code class="literal">listener</code> 元素还具有几个可选的属性。下面的表格列出了所有的属性：
+   </p>
+<div class="table">
+<a name="jms-namespace-listener-tbl"></a><p class="title"><b>表&#160;19.1.&#160;JMS <code class="literal">listener</code> 元素的属性</b></p>
+<div class="table-contents"><table summary="JMS listener 元素的属性" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>属性</th>
+<th>描述</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>
+                        <p>监听器容器的Bean名称。如果没有指定，将自动生成一个Bean名称。</p>
+                    </td>
+</tr>
+<tr>
+<td>destination <span class="bold"><strong>（必须）</strong></span>
+</td>
+<td>
+                        <p>监听器目的地的名称，由 <code class="interfacename">DestinationResolver</code> 的策略决定。</p>
+                    </td>
+</tr>
+<tr>
+<td>ref <span class="bold"><strong>（必须）</strong></span>
+</td>
+<td>
+                        <p>处理对象的Bean名称</p> 
+                    </td>
+</tr>
+<tr>
+<td>method</td>
+<td>
+                        <p>处理器中被调用的方法名。如果 <code class="literal">ref</code> 指向
+                        <code class="interfacename">MessageListener</code> 或者 Spring
+                        <code class="interfacename">SessionAwareMessageListener</code>，则这个属性可以被忽略。
+                        </p> 
+                    </td>
+</tr>
+<tr>
+<td>response-destination</td>
+<td>
+                       <p>默认的响应目的地是发送响应消息抵达的目的地。 这用于请求消息没有包含"JMSReplyTo"域的情况。响应目的地类型被监听器容器的"destination-type"属性决定。记住：这仅仅适用于有返回值的监听器方法，因为每个结果对象都会被转化成响应消息。
+                        </p>
+                    </td>
+</tr>
+<tr>
+<td>subscription</td>
+<td>
+                        <p>持久订阅的名称，如果需要的话。</p>
+                    </td>
+</tr>
+<tr>
+<td>selector</td>
+<td>
+                         <p>监听器的一个可选的消息选择器。</p> 
+                    </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p><code class="literal">&lt;listener-container/&gt;</code>元素也有几个可选的属性。
+    这些属性允许像 基本的 JMS设置和资源引用一样来定义不同的策略 （例如
+    <span class="property">taskExecutor</span> 和 <span class="property">destinationResolver</span>）。
+    使用这些属性，可以定义很广泛的定制监听器容器，同时仍享有命名空间的便利。</p>
+<pre class="code">&lt;jms:listener-container connection-factory="myConnectionFactory"
+                        task-executor="myTaskExecutor"
+                        destination-resolver="myDestinationResolver"
+                        transaction-manager="myTransactionManager"
+                        concurrency="10"&gt;
+
+    &lt;jms:listener destination="queue.orders" ref="orderService" method="placeOrder"/&gt;
+
+    &lt;jms:listener destination="queue.confirmations" ref="confirmationLogger" method="log"/&gt;
+
+&lt;/jms:listener-container&gt;</pre>
+<p>下面的表格描述了所有可用的属性。参考 <code class="classname">AbstractMessageListenerContainer</code> 类和具体子类的Javadoc来了解每个属性的细节。这部分的Javadoc也提高那个了事务选择和消息传输场景的讨论。</p>
+<div class="table">
+<a name="jms-namespace-listener-container-tbl"></a><p class="title"><b>表&#160;19.2.&#160;JMS <code class="literal">&lt;listener-container/&gt;</code> 元素的属性</b></p>
+<div class="table-contents"><table summary="JMS &lt;listener-container/&gt; 元素的属性" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>属性</th>
+<th>描述</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>container-type</td>
+<td>
+                        <p>监听器容器的类型。可用的选项是： 
+                        <code class="literal">default</code>、<code class="literal">simple</code>、<code class="literal">default102</code> 或者 <code class="literal">simple102</code>
+                        （默认值是 <code class="literal">'default'</code>）。</p>
+                    </td>
+</tr>
+<tr>
+<td>connection-factory</td>
+<td>
+                        <p>JMS <code class="interfacename">ConnectionFactory</code> Bean的引用（默认的Bean名称是 <code class="literal">'connectionFactory'</code>）。</p>
+                    </td>
+</tr>
+<tr>
+<td>task-executor</td>
+<td>
+                        <p>JMS监听器调用者Spring <code class="interfacename">TaskExecutor</code>
+                      的引用。</p>
+                    </td>
+</tr>
+<tr>
+<td>destination-resolver</td>
+<td>
+                        <p><code class="interfacename">DestinationResolver</code> 策略的引用，用以解析JMS <code class="interfacename">Destinations</code>。
+                        </p>
+                    </td>
+</tr>
+<tr>
+<td>message-converter</td>
+<td>
+                         <p><code class="interfacename">MessageConverter</code>
+                        策略的引用，用以转换JMS Messages 成监听器方法的参数。默认值是 <code class="classname">SimpleMessageConverter</code>。</p>
+                    </td>
+</tr>
+<tr>
+<td>destination-type</td>
+<td>
+                        <p>监听器的JMS目的地类型。可用的选项包含：
+                        <code class="literal">queue</code>、<code class="literal">topic</code> 或者 <code class="literal">durableTopic</code> （默认值是 <code class="literal">'queue'</code>）。</p>
+                    </td>
+</tr>
+<tr>
+<td>client-id</td>
+<td>
+                        <p>这个监听器容器在JMS客户端的id。</p>
+                    </td>
+</tr>
+<tr>
+<td>acknowledge</td>
+<td>
+                        <p>本地JMS应答模式。可用的选项包含：
+                        <code class="literal">auto</code>、<code class="literal">client</code>、<code class="literal">dups-ok</code> 或者 <code class="literal">transacted</code>
+                        （默认值是 <code class="literal">'auto'</code>）。
+                        <code class="literal">'transacted'</code> 的值可激活本地事务性 <code class="interfacename">Session</code>。
+                        也可以通过指定下面介绍的 <code class="literal">transaction-manager</code> 属性。</p>
+                    </td>
+</tr>
+<tr>
+<td>transaction-manager</td>
+<td>
+                        <p>Spring <code class="interfacename">PlatformTransactionManager</code> 的引用。</p>
+                    </td>
+</tr>
+<tr>
+<td>concurrency</td>
+<td>
+                        <p>每个监听器可激活的Session最大并发数。</p>
+                    </td>
+</tr>
+<tr>
+<td>prefetch</td>
+<td>
+                        <p>加载进每个Session的最大消息数。记住增加这个值会造成并发空闲。</p>
+                    </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>使用“jms” Schema支持来配置基于JCA的监听器容器很相似。</p>
+<pre class="code">&lt;jms:jca-listener-container resource-adapter="myResourceAdapter"
+                            destination-resolver="myDestinationResolver"
+                            transaction-manager="myTransactionManager"
+                            concurrency="10"&gt;
+
+    &lt;jms:listener destination="queue.orders" ref="myMessageListener"/&gt;
+
+&lt;/jms:jca-listener-container&gt;</pre>
+<p>JCA可用的配置选项描述如下表：</p>
+<div class="table">
+<a name="jms-namespace-jca-listener-container-tbl"></a><p class="title"><b>表&#160;19.3.&#160;JMS <code class="literal">&lt;jca-listener-container/&gt;</code> 元素的属性</b></p>
+<div class="table-contents"><table summary="JMS &lt;jca-listener-container/&gt; 元素的属性" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>属性</th>
+<th>描述</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>resource-adapter</td>
+<td>
+                        <p>JCA <code class="interfacename">ResourceAdapter</code> Bean 的一个引用（默认的Bean名称是<code class="literal">'resourceAdapter'</code>）。</p>
+                    </td>
+</tr>
+<tr>
+<td>activation-spec-factory</td>
+<td>
+                        <p><code class="interfacename">JmsActivationSpecFactory</code> 的一个引用。
+                        默认自动检测JMS提供者和它的 <code class="interfacename">ActivationSpec</code> 类
+                        （参考 <code class="classname">DefaultJmsActivationSpecFactory</code>）</p>
+                    </td>
+</tr>
+<tr>
+<td>destination-resolver</td>
+<td>
+                         <p><code class="interfacename">DestinationResolver</code> 策略的引用，用以解析JMS <code class="interfacename">Destinations</code>。
+                        </p>
+                    </td>
+</tr>
+<tr>
+<td>message-converter</td>
+<td>
+                        <p><code class="interfacename">MessageConverter</code> 策略的引用，用以转换JMS Messages 成监听器方法参数。
+                        默认值是 <code class="classname">SimpleMessageConverter</code>。
+                        </p>
+                    </td>
+</tr>
+<tr>
+<td>destination-type</td>
+<td>
+                        <p>监听器的JMS目的地类型。可用的选项包含 <code class="literal">queue</code>、<code class="literal">topic</code> 或者 <code class="literal">durableTopic</code>
+                        默认是 <code class="literal">'queue'</code>）。</p>
+                    </td>
+</tr>
+<tr>
+<td>client-id</td>
+<td>
+                        <p>这个监听器容器在JMS客户端的id。</p>
+                    </td>
+</tr>
+<tr>
+<td>acknowledge</td>
+<td>
+                        <p>本地JMS应答模式。可用的选项包含：<code class="literal">auto</code>、<code class="literal">client</code>、<code class="literal">dups-ok</code> 或者 <code class="literal">transacted</code>
+                        （默认值是 <code class="literal">'auto'</code>）。
+                          <code class="literal">'transacted'</code> 的值可激活本地事务性 <code class="interfacename">Session</code>。
+                          也可以通过指定下面介绍的 <code class="literal">transaction-manager</code> 属性</p>
+                    </td>
+</tr>
+<tr>
+<td>transaction-manager</td>
+<td>
+                        <p>Spring <code class="classname">JtaTransactionManager</code>
+                        或者 <code class="interfacename">javax.transaction.TransactionManager</code> 的引用，用以为传进的消息应用XA事务。
+                        如果没有指定，将使用本地应答模型（参见“acknowledge”属性）。
+                        </p>
+                    </td>
+</tr>
+<tr>
+<td>concurrency</td>
+<td>
+                        <p>每个监听器可激活的Session最大并发数。</p>
+                    </td>
+</tr>
+<tr>
+<td>prefetch</td>
+<td>
+                        <p>加载进每个Session的最大消息数。记住增加这个值会造成并发空闲。</p>
+                    </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break">
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

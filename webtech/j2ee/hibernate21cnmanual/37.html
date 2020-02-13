@@ -1,0 +1,570 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="36.html"> 上一页</a><a href="38.html"> 下一页</a></div>
+<h2>Chapter 11. 实例(A Worked   Example)</h2>
+<p>我们用实例来演示上两章所讲述的概念。 </p>
+<h2>11.1. 持久化类</h2>
+<p>下面的两个持久化类表示一个weblog,和在其中张贴的一个贴子。他们是标准的父/子关系模型，但是我们会用一个排序包（ordered   bag)而非集合(set)。 </p>
+<pre class="code">package eg;
+
+import java.util.List;
+
+public class Blog {
+    private Long _id;
+    private String _name;
+    private List _items;
+
+    public Long getId() {
+        return _id;
+    }
+    public List getItems() {
+        return _items;
+    }
+    public String getName() {
+        return _name;
+    }
+    public void setId(Long long1) {
+        _id = long1;
+    }
+    public void setItems(List list) {
+        _items = list;
+    }
+    public void setName(String string) {
+        _name = string;
+    }
+}</pre>
+<pre class="code">package eg;
+
+import java.text.DateFormat;
+import java.util.Calendar;
+
+public class BlogItem {
+    private Long _id;
+    private Calendar _datetime;
+    private String _text;
+    private String _title;
+    private Blog _blog;
+
+    public Blog getBlog() {
+        return _blog;
+    }
+    public Calendar getDatetime() {
+        return _datetime;
+    }
+    public Long getId() {
+        return _id;
+    }
+    public String getText() {
+        return _text;
+    }
+    public String getTitle() {
+        return _title;
+    }
+    public void setBlog(Blog blog) {
+        _blog = blog;
+    }
+    public void setDatetime(Calendar calendar) {
+        _datetime = calendar;
+    }
+    public void setId(Long long1) {
+        _id = long1;
+    }
+    public void setText(String string) {
+        _text = string;
+    }
+    public void setTitle(String string) {
+        _title = string;
+    }
+}</pre>
+<h2><a name="11-2" id="11-2"></a>11.2. Hibernate 映射</h2>
+<p>下列的XML映射应该是很直白的。 </p>
+<pre class="code">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;!DOCTYPE hibernate-mapping PUBLIC 
+        &quot;-//Hibernate/Hibernate Mapping DTD 2.0//EN&quot;
+        &quot;http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd&quot;&gt;
+
+&lt;hibernate-mapping package=&quot;eg&quot;&gt;
+    &lt;class 
+        name=&quot;Blog&quot; 
+        table=&quot;BLOGS&quot; 
+        lazy=&quot;true&quot;&gt;
+        
+        &lt;id 
+            name=&quot;id&quot; 
+            column=&quot;BLOG_ID&quot;&gt;
+            
+            &lt;generator class=&quot;native&quot;/&gt;
+            
+        &lt;/id&gt;
+        
+        &lt;property 
+            name=&quot;name&quot; 
+            column=&quot;NAME&quot; 
+            not-null=&quot;true&quot; 
+            unique=&quot;true&quot;/&gt;
+            
+        &lt;bag 
+            name=&quot;items&quot; 
+            inverse=&quot;true&quot; 
+            lazy=&quot;true&quot;
+            order-by=&quot;DATE_TIME&quot; 
+            cascade=&quot;all&quot;&gt;
+            
+            &lt;key column=&quot;BLOG_ID&quot;/&gt;
+            &lt;one-to-many class=&quot;BlogItem&quot;/&gt;
+            
+        &lt;/bag&gt;
+        
+    &lt;/class&gt;
+    
+&lt;/hibernate-mapping&gt;</pre>
+<pre class="code">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;!DOCTYPE hibernate-mapping PUBLIC 
+        &quot;-//Hibernate/Hibernate Mapping DTD 2.0//EN&quot;
+        &quot;http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd&quot;&gt;
+
+&lt;hibernate-mapping package=&quot;eg&quot;&gt;
+    
+    &lt;class 
+        name=&quot;BlogItem&quot; 
+        table=&quot;BLOG_ITEMS&quot; 
+        dynamic-update=&quot;true&quot;&gt;
+        
+        &lt;id 
+            name=&quot;id&quot; 
+            column=&quot;BLOG_ITEM_ID&quot;&gt;
+            
+            &lt;generator class=&quot;native&quot;/&gt;
+            
+        &lt;/id&gt;
+        
+        &lt;property 
+            name=&quot;title&quot; 
+            column=&quot;TITLE&quot; 
+            not-null=&quot;true&quot;/&gt;
+            
+        &lt;property 
+            name=&quot;text&quot; 
+            column=&quot;TEXT&quot; 
+            not-null=&quot;true&quot;/&gt;
+            
+        &lt;property 
+            name=&quot;datetime&quot; 
+            column=&quot;DATE_TIME&quot; 
+            not-null=&quot;true&quot;/&gt;
+            
+        &lt;many-to-one 
+            name=&quot;blog&quot; 
+            column=&quot;BLOG_ID&quot; 
+            not-null=&quot;true&quot;/&gt;
+            
+    &lt;/class&gt;
+    
+&lt;/hibernate-mapping&gt;</pre>
+<h2><a name="11-3" id="11-3"></a>11.3. Hibernate 代码</h2>
+<p>下面的类演示了我们可以使用Hibernate对这些类所进行的操作。 </p>
+<pre class="code">package eg;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Iterator;
+import java.util.List;
+
+import net.sf.hibernate.HibernateException;
+import net.sf.hibernate.Query;
+import net.sf.hibernate.Session;
+import net.sf.hibernate.SessionFactory;
+import net.sf.hibernate.Transaction;
+import net.sf.hibernate.cfg.Configuration;
+import net.sf.hibernate.tool.hbm2ddl.SchemaExport;
+
+public class BlogMain {
+    
+    private SessionFactory _sessions;
+    
+    public void configure() throws HibernateException {
+        _sessions = new Configuration()
+            .addClass(Blog.class)
+            .addClass(BlogItem.class)
+            .buildSessionFactory();
+    }
+    
+    public void exportTables() throws HibernateException {
+        Configuration cfg = new Configuration()
+            .addClass(Blog.class)
+            .addClass(BlogItem.class);
+        new SchemaExport(cfg).create(true, true);
+    }
+    
+    public Blog createBlog(String name) throws HibernateException {
+        
+        Blog blog = new Blog();
+        blog.setName(name);
+        blog.setItems( new ArrayList() );
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            session.save(blog);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return blog;
+    }
+    
+    public BlogItem createBlogItem(Blog blog, String title, String text) throws HibernateException {
+        
+        BlogItem item = new BlogItem();
+        item.setTitle(title);
+        item.setText(text);
+        item.setBlog(blog);
+        item.setDatetime( Calendar.getInstance() );
+        blog.getItems().add(item);
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            session.update(blog);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return item;
+    }
+    
+    public BlogItem createBlogItem(Long blogid, String title, String text) throws HibernateException {
+        
+        BlogItem item = new BlogItem();
+        item.setTitle(title);
+        item.setText(text);
+        item.setDatetime( Calendar.getInstance() );
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            Blog blog = (Blog) session.load(Blog.class, blogid);
+            item.setBlog(blog);
+            blog.getItems().add(item);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return item;
+    }
+    
+    public void updateBlogItem(BlogItem item, String text) throws HibernateException {
+        
+        item.setText(text);
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            session.update(item);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+    }
+    
+    public void updateBlogItem(Long itemid, String text) throws HibernateException {
+    
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        try {
+            tx = session.beginTransaction();
+            BlogItem item = (BlogItem) session.load(BlogItem.class, itemid);
+            item.setText(text);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+    }
+    
+    public List listAllBlogNamesAndItemCounts(int max) throws HibernateException {
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        List result = null;
+        try {
+            tx = session.beginTransaction();
+            Query q = session.createQuery(
+                &quot;select blog.id, blog.name, count(blogItem) &quot; +
+                &quot;from Blog as blog &quot; +
+                &quot;left outer join blog.items as blogItem &quot; +
+                &quot;group by blog.name, blog.id &quot; +
+                &quot;order by max(blogItem.datetime)&quot;
+            );
+            q.setMaxResults(max);
+            result = q.list();
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return result;
+    }
+    
+    public Blog getBlogAndAllItems(Long blogid) throws HibernateException {
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        Blog blog = null;
+        try {
+            tx = session.beginTransaction();
+            Query q = session.createQuery(
+                &quot;from Blog as blog &quot; +
+                &quot;left outer join fetch blog.items &quot; +
+                &quot;where blog.id = :blogid&quot;
+            );
+            q.setParameter(&quot;blogid&quot;, blogid);
+            blog  = (Blog) q.list().get(0);
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return blog;
+    }
+    
+    public List listBlogsAndRecentItems() throws HibernateException {
+        
+        Session session = _sessions.openSession();
+        Transaction tx = null;
+        List result = null;
+        try {
+            tx = session.beginTransaction();
+            Query q = session.createQuery(
+                &quot;from Blog as blog &quot; +
+                &quot;inner join blog.items as blogItem &quot; +
+                &quot;where blogItem.datetime &gt; :minDate&quot;
+            );
+
+            Calendar cal = Calendar.getInstance();
+            cal.roll(Calendar.MONTH, false);
+            q.setCalendar(&quot;minDate&quot;, cal);
+            
+            result = q.list();
+            tx.commit();
+        }
+        catch (HibernateException he) {
+            if (tx!=null) tx.rollback();
+            throw he;
+        }
+        finally {
+            session.close();
+        }
+        return result;
+    }
+}</pre>
+<div class="rpindex"><a href="38.html"> 下一页</a><a href="36.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,711 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-schema"></a>6.3.&#160;基于Schema的AOP支持</h2></div></div></div>
+
+    
+　　<p>如果你无法使用Java 5，或者你比较喜欢使用XML格式，Spring2.0也提供了使用新的"aop"命名空间来定义一个切面。
+	  和使用@AspectJ风格完全一样，切入点表达式和通知类型同样得到了支持，因此在这一节中我们将着重介绍新的
+	  <span class="emphasis"><em>语法</em></span>并回顾前一节（<a href="ch06s02.html" title="6.2.&#160;@AspectJ支持">第&#160;6.2&#160;节 “@AspectJ支持”</a>)对编写一个切入点表达式和绑定通知参数的讨论。
+	  </p>
+   
+　　<p>使用本章所介绍的aop命名空间标签，你需要引入<a href="apa.html" title="附录&#160;A.&#160;XML Schema-based configuration">附录&#160;A, <i>XML Schema-based configuration</i></a>中提及的spring-aop schema。
+	  参见<a href="apas02.html#xsd-config-body-schemas-aop" title="A.2.7.&#160;The aop schema">第&#160;A.2.7&#160;节 “The <code class="literal">aop</code> schema”</a>了解如何在aop命名空间中引入标签。
+	  </p>
+    
+　　<p>在Spring的配置文件中，所有的切面和通知都必须定义在<code class="literal">&lt;aop:config&gt;</code>元素内部。
+		（一个application context可以包含多个 <code class="literal">&lt;aop:config&gt;</code>）。
+		一个<code class="literal">&lt;aop:config&gt;</code>可以包含pointcut，advisor和aspect元素
+		（注意这三个元素必须按照这个顺序进行声明）。
+	</p>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">警告</h3>
+<p><code class="literal">&lt;aop:config&gt;</code>风格的配置使得Spring
+      <a href="ch07s09.html" title="7.9.&#160;使用“自动代理（autoproxy）”功能">auto-proxying</a>机制的使用变得很笨重。如果你已经通过
+      <code class="classname">BeanNameAutoProxyCreator</code>或类似的东西显式使用auto-proxying，它可能会导致问题
+      （例如通知没有被织入）。 推荐的使用模式是仅仅使用<code class="literal">&lt;aop:config&gt;</code>风格，
+      或者仅仅使用<code class="interfacename">AutoProxyCreator</code>风格。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-declaring-an-aspect"></a>6.3.1.&#160;声明一个切面</h3></div></div></div>
+
+　　　<p>有了schema的支持，切面就和常规的Java对象一样被定义成application context中的一个bean。
+	　  对象的字段和方法提供了状态和行为信息，XML文件则提供了切入点和通知信息。</p>
+	　  <p>切面使用&lt;aop:aspect&gt;来声明，backing bean（支持bean）通过 <code class="literal">ref</code> 属性来引用：</p>
+<pre class="code">&lt;aop:config&gt;
+  &lt;aop:aspect id="myAspect" ref="aBean"&gt;
+    ...
+  &lt;/aop:aspect&gt;
+&lt;/aop:config&gt;
+
+&lt;bean id="aBean" class="..."&gt;
+  ...
+&lt;/bean&gt;</pre>
+<p>切面的支持bean（上例中的"<code class="literal">aBean</code>"）可以象其他Spring bean一样被容器管理配置以及依赖注入。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-pointcuts"></a>6.3.2.&#160;声明一个切入点</h3></div></div></div>
+
+　　　<p>一个命名切入点可以在&lt;aop:config&gt;元素中定义，这样多个切面和通知就可以共享该切入点。</p>
+	　  <p>一个描述service层中所有service执行的切入点可以定义如下：</p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:pointcut id="businessService" 
+        expression="execution（* com.xyz.myapp.service.*.*（..））"/&gt;
+
+&lt;/aop:config&gt;</pre>
+
+　　　<p>注意切入点表达式本身使用了与<a href="ch06s02.html" title="6.2.&#160;@AspectJ支持">第&#160;6.2&#160;节 “@AspectJ支持”</a>中描述的相同的AspectJ切入点表达式语言。
+	　  如果你在Java 5环境下使用基于schema的声明风格，可参考切入点表达式类型（@Aspects）中定义的命名切入点，
+	　  不过这个特性在JDK1.4及以下版本中是不可用的（因为依赖于Java 5中的AspectJ反射API）。所以在JDK 1.5中，
+	　  上面的切入点的另外一种定义形式如下：
+	　  </p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:pointcut id="businessService" 
+        expression="com.xyz.myapp.SystemArchitecture.businessService（）"/&gt;
+
+&lt;/aop:config&gt;</pre>
+<p>假定你有一个在<a href="ch06s02.html#aop-common-pointcuts" title="6.2.3.3.&#160;共享通用切入点定义">第&#160;6.2.3.3&#160;节 “共享通用切入点定义”</a>中
+      描述的<code class="literal">SystemArchitecture</code>切面。</p>
+<p>在切面里面声明一个切入点和声明一个顶级的切入点非常类似：</p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:aspect id="myAspect" ref="aBean"&gt;
+
+    &lt;aop:pointcut id="businessService" 
+          expression="execution（* com.xyz.myapp.service.*.*（..））"/&gt;
+          
+    ...
+    
+  &lt;/aop:aspect&gt;
+
+&lt;/aop:config&gt;</pre>
+<p>几乎和@AspectJ切面中的一样，使用基于schema定义风格声明的切入点可以收集(collect)
+      连接点上下文。例如，下面的切入点收集'this'对象作为连接点上下文并传递它给通知：</p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:aspect id="myAspect" ref="aBean"&gt;
+
+    &lt;aop:pointcut id="businessService" 
+          expression="execution（* com.xyz.myapp.service.*.*（..）） &amp;amp;&amp;amp; this（service）"/&gt;
+    &lt;aop:before pointcut-ref="businessService" method="monitor"/&gt;
+    ...
+    
+  &lt;/aop:aspect&gt;
+
+&lt;/aop:config&gt;</pre>
+
+　　　<p>通过包含匹配名字的参数，通知被声明来接收收集的连接点上下文：</p>
+<pre class="code">public void monitor（Object service） {
+    ...
+}</pre>
+
+　　　<p>当需要连接子表达式的时候，'&amp;&amp;'在XML中用起来非常不方便，所以关键字'and', 'or' 和 'not'可以分别用来代替'&amp;&amp;', '||' 和 '!'。例如，上面切入点更好的写法如下：</p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:aspect id="myAspect" ref="aBean"&gt;
+
+    &lt;aop:pointcut id="businessService" 
+          expression="execution（* com.xyz.myapp.service.*.*（..）） <span class="bold"><strong>and</strong></span> this（service）"/&gt;
+    &lt;aop:before pointcut-ref="businessService" method="monitor"/&gt;
+    ...
+    
+  &lt;/aop:aspect&gt;
+
+&lt;/aop:config&gt;</pre>
+<p>注意这种方式定义的切入点通过XML id来查找，并且不能定义切入点参数。在基于schema的定义风格中
+      命名切入点支持较之@AspectJ风格受到了很多的限制。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-advice"></a>6.3.3.&#160;声明通知</h3></div></div></div>
+
+    　<p>和@AspectJ风格一样，基于schema的风格也支持5种通知类型并且两者具有同样的语义。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-advice-before"></a>6.3.3.1.&#160;前置通知</h4></div></div></div>
+　　　　<p>前置通知在匹配方法执行前运行。在<code class="literal">&lt;aop:aspect&gt;</code>中使用&lt;aop:before&gt;
+		    元素来声明它。</p>
+<pre class="code">&lt;aop:aspect id="beforeExample" ref="aBean"&gt;
+
+    &lt;aop:before 
+      pointcut-ref="dataAccessOperation" 
+      method="doAccessCheck"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+
+　　　　<p>这里<code class="literal">dataAccessOperation</code>是一个顶级（<code class="literal">&lt;aop:config&gt;</code>）切入点的id。
+　　　　而要定义内置切入点，需将<code class="literal">pointcut-ref</code>属性替换为<code class="literal">pointcut</code>属性：
+		    </p>
+<pre class="code">&lt;aop:aspect id="beforeExample" ref="aBean"&gt;
+
+    &lt;aop:before 
+      pointcut="execution（* com.xyz.myapp.dao.*.*（..））" 
+      method="doAccessCheck"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+
+　　　　<p>正如我们在@AspectJ风格章节中讨论过的，使用命名切入点能够明显的提高代码的可读性。</p>
+<p>Method属性标识了提供通知主体的方法（<code class="literal">doAccessCheck</code>）。
+        这个方法必须定义在包含通知的切面元素所引用的bean中。在一个数据访问操作执行之前
+    		（一个方法执行由切入点表达式所匹配的连接点），切面中的"doAccessCheck"会被调用。
+    		</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-advice-after-returning"></a>6.3.3.2.&#160;后置通知</h4></div></div></div>
+<p>后置通知在匹配的方法完全执行后运行。和前置通知一样，可以在<code class="literal">&lt;aop:aspect&gt;</code>
+        里面声明它。例如：</p>
+<pre class="code">&lt;aop:aspect id="afterReturningExample" ref="aBean"&gt;
+
+    &lt;aop:after-returning 
+      pointcut-ref="dataAccessOperation" 
+      method="doAccessCheck"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+<p>和@AspectJ风格一样，通知主体可以得到返回值。使用returning属性来指定传递返回值的参数名：</p>
+<pre class="code">&lt;aop:aspect id="afterReturningExample" ref="aBean"&gt;
+
+    &lt;aop:after-returning 
+      pointcut-ref="dataAccessOperation"
+      returning="retVal" 
+      method="doAccessCheck"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+<p>doAccessCheck方法必须声明一个名字叫 <code class="literal">retVal</code> 的参数。
+		    参数的类型依照@AfterReturning所描述的方法强制匹配。例如，方法签名可以这样声明：
+		    </p>
+<pre class="code">public void doAccessCheck（Object retVal） {...</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-advice-after-throwing"></a>6.3.3.3.&#160;异常通知</h4></div></div></div>
+<p>异常通知在匹配方法抛出异常退出时执行。在<code class="literal">&lt;aop:aspect&gt;</code>中使用
+        after-throwing元素来声明：</p>
+<pre class="code">&lt;aop:aspect id="afterThrowingExample" ref="aBean"&gt;
+
+    &lt;aop:after-throwing
+      pointcut-ref="dataAccessOperation" 
+      method="doRecoveryActions"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+<p>和@AspectJ风格一样，通知主体可以得到抛出的异常。使用throwing属性来指定传递异常的参数名：</p>
+<pre class="code">&lt;aop:aspect id="afterThrowingExample" ref="aBean"&gt;
+
+    &lt;aop:after-throwing 
+      pointcut-ref="dataAccessOperation"
+      throwing="dataAccessEx" 
+      method="doRecoveryActions"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+<p>doRecoveryActions方法必须声明一个名字为<code class="literal">dataAccessEx</code>的参数。
+        参数的类型依照@AfterThrowing所描述的方法强制匹配。例如：方法签名可以如下这般声明：</p>
+<pre class="code">public void doRecoveryActions（DataAccessException dataAccessEx） {...</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-advice-after-finally"></a>6.3.3.4.&#160;最终通知</h4></div></div></div>
+<p>最终通知无论如何都会在匹配方法退出后执行。使用<code class="literal">after</code>元素来声明它：</p>
+<pre class="code">&lt;aop:aspect id="afterFinallyExample" ref="aBean"&gt;
+
+    &lt;aop:after
+      pointcut-ref="dataAccessOperation" 
+      method="doReleaseLock"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-advice-around"></a>6.3.3.5.&#160;环绕通知</h4></div></div></div>
+<p>环绕通知是最后一种通知类型。环绕通知在匹配方法运行期的“周围”执行。
+        它有机会在目标方法的前面和后面执行，并决定什么时候运行，怎么运行，甚至是否运行。
+        环绕通知经常在需要在一个方法执行前后共享状态信息，并且是在线程安全的情况下使用
+        （启动和停止一个计时器就是一个例子）。注意选择能满足你需求的最简单的通知类型；
+        如果简单的前置通知能做的事情就绝对不要使用环绕通知。</p>
+<p>Around通知使用<code class="literal">aop:around</code>元素来声明。通知方法的第一个参数的类型必须是
+        <code class="interfacename">ProceedingJoinPoint</code>类型。在通知的主体中，调用
+        <code class="interfacename">ProceedingJoinPoint</code>的<code class="literal">proceed()</code>方法来执行真正的方法。
+        <code class="literal">proceed</code>方法也可能会被调用并且传入一个<code class="classname">Object[]</code>对象 - 
+        该数组将作为方法执行时候的参数。参见<a href="ch06s02.html#aop-ataspectj-around-advice" title="6.2.4.5.&#160;环绕通知">第&#160;6.2.4.5&#160;节 “环绕通知”</a>中调用具有
+        <code class="classname">Object[]</code>的proceed方法。</p>
+<pre class="code">&lt;aop:aspect id="aroundExample" ref="aBean"&gt;
+
+    &lt;aop:around
+      pointcut-ref="businessService" 
+      method="doBasicProfiling"/&gt;
+          
+    ...
+    
+&lt;/aop:aspect&gt;</pre>
+<p><code class="literal">doBasicProfiling</code>通知的实现和@AspectJ中的例子完全一样（当然要去掉注解）：</p>
+<pre class="code">public Object doBasicProfiling（ProceedingJoinPoint pjp） throws Throwable {
+    <em class="lineannotation"><span class="lineannotation">// start stopwatch</span></em>
+    Object retVal = pjp.proceed（）;
+    <em class="lineannotation"><span class="lineannotation">// stop stopwatch</span></em>
+    return retVal;
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-schema-params"></a>6.3.3.6.&#160;通知参数</h4></div></div></div>
+<p>Schema-based声明风格和@AspectJ一样，支持多种类型的通知：通过通知方法参数名字来匹配切入点参数。
+        参见<a href="ch06s02.html#aop-ataspectj-advice-params" title="6.2.4.6.&#160;通知参数（Advice parameters）">第&#160;6.2.4.6&#160;节 “通知参数（Advice parameters）”</a>获取详细信息。如果你希望显式指定通知方法的参数名
+        （而不是依靠先前提及的侦测策略），可以通过通知元素的<code class="literal">arg-names</code>属性来实现，它的处理和
+        在<a href="ch06s02.html#aop-ataspectj-advice-params-names" title="6.2.4.6.3.&#160;确定参数名">第&#160;6.2.4.6.3&#160;节 “确定参数名”</a>中所描述的对通知注解中"argNames"属性的处理方式一样。
+        示例如下：</p>
+<pre class="code">&lt;aop:before
+  pointcut="com.xyz.lib.Pointcuts.anyPublicMethod（） and @annotation（auditable）"
+  method="audit"
+  arg-names="auditable"/&gt;</pre>
+<p><code class="literal">arg-names</code>属性接受由逗号分割的参数名列表。</p>
+<p>下面是个稍微复杂的基于XSD的例子，它展示了关联了多个强类型参数的环绕通知的使用。</p>
+<pre class="code">package x.y.service;
+
+public interface FooService {
+
+   Foo getFoo（String fooName, int age）;
+}
+
+public class DefaultFooService implements FooService {
+
+   public Foo getFoo（String name, int age） {
+      return new Foo（name, age）;
+   }
+}</pre>
+<p>接下来看切面。注意<code class="methodname">profile（..）</code>方法接受多个强类型参数，
+        首先连接点在方法调用时执行，这个参数指明<code class="methodname">profile（..）</code>会被用作
+        <code class="literal">环绕</code>通知：</p>
+<pre class="code">package x.y;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.springframework.util.StopWatch;
+
+public class SimpleProfiler {
+
+   public Object profile（ProceedingJoinPoint call, String name, int age） throws Throwable {
+      StopWatch clock = new StopWatch（
+            "Profiling for '" + name + "' and '" + age + "'"）;
+      try {
+         clock.start（call.toShortString（））;
+         return call.proceed（）;
+      } finally {
+         clock.stop（）;
+         System.out.println（clock.prettyPrint（））;
+      }
+   }
+}</pre>
+<p>最后这里是使得上面的通知针对一个特定连接点而执行所必需的XML配置：</p>
+<pre class="code">&lt;beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:aop="http://www.springframework.org/schema/aop"
+      xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"&gt;
+
+   <em class="lineannotation"><span class="lineannotation">&lt;!-- this is the object that will be proxied by Spring's AOP infrastructure --&gt;</span></em>
+   &lt;bean id="fooService" class="x.y.service.DefaultFooService"/&gt;
+
+   <em class="lineannotation"><span class="lineannotation">&lt;!-- this is the actual advice itself --&gt;</span></em>
+   &lt;bean id="profiler" class="x.y.SimpleProfiler"/&gt;
+
+   &lt;aop:config&gt;
+      &lt;aop:aspect ref="profiler"&gt;
+
+         &lt;aop:pointcut id="theExecutionOfSomeFooServiceMethod"
+                    expression="execution（* x.y.service.FooService.getFoo（String,int））
+                    and args（name, age）"/&gt;
+
+         &lt;aop:around pointcut-ref="theExecutionOfSomeFooServiceMethod"
+                  method="profile"/&gt;
+
+      &lt;/aop:aspect&gt;
+   &lt;/aop:config&gt;
+
+&lt;/beans&gt;</pre>
+<p>如果我们有下面的驱动脚本，我们将在标准输出上得到如下的输出：</p>
+<pre class="code">import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import x.y.service.FooService;
+
+public final class Boot {
+
+   public static void main（final String[] args） throws Exception {
+      BeanFactory ctx = new ClassPathXmlApplicationContext（"x/y/plain.xml"）;
+      FooService foo = （FooService） ctx.getBean（"fooService"）;
+      foo.getFoo（"Pengo", 12）;
+   }
+}</pre>
+<pre class="code">StopWatch 'Profiling for 'Pengo' and '12'': running time （millis） = 0
+-----------------------------------------
+ms     %     Task name
+-----------------------------------------
+00000  ?  execution（getFoo）</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="aop-ordering"></a>6.3.3.7.&#160;通知顺序</h4></div></div></div>
+<p>当同一个切入点（执行方法）上有多个通知需要执行时，执行顺序的规则如
+        <a href="ch06s02.html#aop-ataspectj-advice-ordering" title="6.2.4.7.&#160;通知顺序">第&#160;6.2.4.7&#160;节 “通知顺序”</a>所述。切面的优先级通过给切面的支持bean增加
+        <code class="interfacename">Order</code>注解或者使切面的支持bean实现
+        <code class="interfacename">Ordered</code>接口来决定。
+	　　</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-introductions"></a>6.3.4.&#160;引入</h3></div></div></div>
+<p>引入（在AspectJ中称为inter-type声明）允许一个切面声明一个通知对象实现指定接口，
+      并且提供了一个接口实现类来代表这些对象。</p>
+<p>引入的定义使用<code class="literal">aop:aspect</code>中的<code class="literal">aop:declare-parents</code>元素。
+			该元素用于声明所匹配的类型有一个新的父类型（所以有了这个名字）。
+			例如，给定接口<code class="interfacename">UsageTracked</code>，
+			以及这个接口的一个实现类 <code class="classname">DefaultUsageTracked</code>，
+		  下面的切面声明所有实现service接口的类同时实现 <code class="interfacename">UsageTracked</code>
+		  接口。（比如为了通过JMX输出统计信息）
+			</p>
+<pre class="code">&lt;aop:aspect id="usageTrackerAspect" ref="usageTracking"&gt;
+
+  &lt;aop:declare-parents
+      types-matching="com.xzy.myapp.service.*+"
+      implement-interface="com.xyz.myapp.service.tracking.UsageTracked"
+      default-impl="com.xyz.myapp.service.tracking.DefaultUsageTracked"/&gt;
+  
+  &lt;aop:before
+    pointcut="com.xyz.myapp.SystemArchitecture.businessService（）
+              and this（usageTracked）"
+    method="recordUsage"/&gt;
+  
+&lt;/aop:aspect&gt;</pre>
+<p><code class="literal">usageTracking</code> bean的支持类可以包含下面的方法：</p>
+<pre class="code">public void recordUsage（UsageTracked usageTracked） {
+    usageTracked.incrementUseCount（）;
+}</pre>
+<p>要实现的接口由<code class="literal">implement-interface</code>属性来指定。
+	　<code class="literal">types-matching</code>属性的值是一个AspectJ类型模式：任何匹配类型的bean都会实现
+	　<code class="interfacename">UsageTracked</code> 接口。注意在上面前置通知的例子中，
+	  serevice bean可以直接用作<code class="interfacename">UsageTracked</code>接口的实现。
+	  如果以编程形式访问一个bean，你可以这样来写：
+	  </p>
+<pre class="code">UsageTracked usageTracked = （UsageTracked） context.getBean（"myService"）;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-instatiation-models"></a>6.3.5.&#160;切面实例化模型</h3></div></div></div>
+<p>采用Schema风格来定义切面仅支持一种实例化模型就是singlton模型。其他的实例化模型或许以后的版本会支持。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-advisors"></a>6.3.6.&#160;Advisor</h3></div></div></div>
+<p>"advisor"这个概念来自Spring1.2对AOP的支持，而在AspectJ中没有等价的概念。
+      advisor就像一个小的自包含的切面，这个切面只有一个通知。切面自身通过一个bean表示，
+      并且必须实现一个在<a href="ch07s03.html#aop-api-advice-types" title="7.3.2.&#160;Spring里的通知类型">第&#160;7.3.2&#160;节 “Spring里的通知类型”</a>中描述的通知接口。
+      Advisor可以很好的利用AspectJ的切入点表达式。
+	　  </p>
+<p>Spring 2.0通过<code class="literal">&lt;aop:advisor&gt;</code>元素来支持advisor概念。
+      你将会发现大多数情况下它会和transactional advice一起使用，在Spring 2.0中它有自己的命名空间。其格式如下：
+	　  </p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:pointcut id="businessService"
+        expression="execution（* com.xyz.myapp.service.*.*（..））"/&gt;
+
+  &lt;aop:advisor 
+      pointcut-ref="businessService"
+      advice-ref="tx-advice"/&gt;
+      
+&lt;/aop:config&gt;
+
+&lt;tx:advice id="tx-advice"&gt;
+  &lt;tx:attributes&gt;
+    &lt;tx:method name="*" propagation="REQUIRED"/&gt;
+  &lt;/tx:attributes&gt;
+&lt;/tx:advice&gt;</pre>
+</div>
+<p>和上面所使用的<code class="literal">pointcut-ref</code>属性一样，你还可以使用<code class="literal">pointcut</code>
+    属性来定义一个内联的切入点表达式。</p>
+<p>为了定义一个advisor的优先级以便让通知具有次序，使用<code class="literal">order</code>属性来定义advisor中
+	  <code class="literal">Ordered</code>的值 。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-schema-example"></a>6.3.7.&#160;例子</h3></div></div></div>
+<p>让我们看看<a href="ch06s02.html#aop-ataspectj-example" title="6.2.7.&#160;例子">第&#160;6.2.7&#160;节 “例子”</a>中并发锁失败重试的例子，
+      当使用schema重写它时是什么样子。</p>
+<p>因为并发的问题，有时候business services可能会失败（例如，死锁失败）。如果重试操作，下一次很可能就会成功。
+	　  对于business services来说，这种情况下重试是很正常的（Idempotent操作不需要用户参与，否则会得出矛盾的结论）
+　　　我们可能需要透明的重试操作以避免客户看到一个<code class="classname">OptimisticLockingFailureException</code>
+	　  异常。很明显，在一个横切多层的情况下，这是非常有必要的，因此通过切面来实现是很理想的。
+	　  </p>
+<p>因为想要重试操作，我们需要使用环绕通知，这样就可以多次调用proceed()方法。
+      下面是简单的切面实现（只是一个schema支持的普通Java 类）：</p>
+<pre class="code">public class ConcurrentOperationExecutor implements Ordered {
+   
+   private static final int DEFAULT_MAX_RETRIES = 2;
+
+   private int maxRetries = DEFAULT_MAX_RETRIES;
+   private int order = 1;
+
+   public void setMaxRetries（int maxRetries） {
+      this.maxRetries = maxRetries;
+   }
+   
+   public int getOrder（） {
+      return this.order;
+   }
+   
+   public void setOrder（int order） {
+      this.order = order;
+   }
+   
+   public Object doConcurrentOperation（ProceedingJoinPoint pjp） throws Throwable { 
+      int numAttempts = 0;
+      PessimisticLockingFailureException lockFailureException;
+      do {
+         numAttempts++;
+         try { 
+            return pjp.proceed（）;
+         }
+         catch（PessimisticLockingFailureException ex） {
+            lockFailureException = ex;
+         }
+      }
+      while（numAttempts &lt;= this.maxRetries）;
+      throw lockFailureException;
+   }
+
+}</pre>
+<p>请注意切面实现了<code class="interfacename">Ordered</code>接口，这样我们就可以把切面的优先级设定为
+      高于事务通知（我们每次重试的时候都想要在一个全新的事务中进行）。
+      <code class="literal">maxRetries</code> 和 <code class="literal">order</code> 属性都可以在Spring中配置。
+      主要的动作在<code class="literal">doConcurrentOperation</code> 这个环绕通知方法中发生。
+      我们首先会尝试处理，如果得到一个<code class="classname">OptimisticLockingFailureException</code>
+      异常，我们仅仅重试直到耗尽所有预设的重试次数。</p>
+<p class="remark"><i><span class="remark">这个类跟我们在@AspectJ的例子中使用的是相同的，只是没有使用注解。</span></i></p>
+	　  <p>对应的Spring配置如下：</p>
+<pre class="code">&lt;aop:config&gt;
+
+  &lt;aop:aspect id="concurrentOperationRetry" ref="concurrentOperationExecutor"&gt;
+
+    &lt;aop:pointcut id="idempotentOperation"
+        expression="execution（* com.xyz.myapp.service.*.*（..））"/&gt;
+       
+    &lt;aop:around
+       pointcut-ref="idempotentOperation"
+       method="doConcurrentOperation"/&gt;
+  
+  &lt;/aop:aspect&gt;
+
+&lt;/aop:config&gt;
+
+&lt;bean id="concurrentOperationExecutor"
+  class="com.xyz.myapp.service.impl.ConcurrentOperationExecutor"&gt;
+     &lt;property name="maxRetries" value="3"/&gt;
+     &lt;property name="order" value="100"/&gt;  
+&lt;/bean&gt;</pre>
+<p>请注意我们现在假设所有的bussiness services都是idempotent。如果不是这样，我们可以改写切面，
+      通过引入一个<code class="interfacename">Idempotent</code>注解，让它只调用idempotent：</p>
+<pre class="code">@Retention（RetentionPolicy.RUNTIME）
+public @interface Idempotent {
+  <em class="lineannotation"><span class="lineannotation">// marker annotation</span></em>
+}</pre>
+<p>并且对service操作的实现进行注解。这时如果你只希望改变切面重试idempotent操作，
+      你只需要改写切入点表达式，让其只匹配<code class="interfacename">@Idempotent</code>操作：
+			</p>
+<pre class="code">  &lt;aop:pointcut id="idempotentOperation"
+        expression="execution（* com.xyz.myapp.service.*.*（..）） and
+                    @annotation（com.xyz.myapp.service.Idempotent）"/&gt;</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

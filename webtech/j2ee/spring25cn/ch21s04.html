@@ -1,0 +1,476 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="cci-object"></a>21.4.&#160;建模CCI访问为操作对象</h2></div></div></div>
+<p>
+  <code class="literal">org.springframework.jca.cci.object</code> 包中包含的支持类允许你以另一种风格访问EIS：
+  通过可重用的操作对象，类似于Spring的JDBC操作对象（参见JDBC一章）。
+  它通常都封装了 CCI 的API：将应用级的输入对象传入到操作对象，
+  从而它能创建输入record然后转换接收到的record数据到一个应用级输出对象并返回它。
+  </p>
+<p><span class="emphasis"><em>注意</em></span>: 这种方法内在地基于 <code class="classname">CciTemplate</code> 类和
+  <code class="interfacename">RecordCreator</code> / <code class="interfacename">RecordExtractor</code> 接口，重用了Spring核心CCI支持的机制。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-object-mapping-record"></a>21.4.1.&#160;<code class="classname">MappingRecordOperation</code></h3></div></div></div>
+<p> <code class="classname">MappingRecordOperation</code> 本质上与 <code class="classname">CciTemplate</code> 做的事情是一样的，
+   但是它表达了一个明确的、预配置（pre-configured）的操作作为对象。它提供了两个模板方法来指明如何将一个输入对象转换为输入记录，
+   以及如何将一个输出记录转换为输出对象（记录映射）：
+		</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><code class="literal">createInputRecord(..)</code> 指定了如何将一个输入对象转换为输入<code class="interfacename">Record</code></p></li>
+<li><p><code class="literal">extractOutputData(..)</code> 指定了如何从输出 <code class="interfacename">Record</code> 中提取输出对象</p></li>
+</ul></div>
+<p>下面是这些方法的签名：</p>
+<pre class="code">public abstract class MappingRecordOperation extends EisOperation {
+ ...
+ protected abstract Record createInputRecord(RecordFactory recordFactory, Object inputObject)
+   throws ResourceException, DataAccessException { ... }
+
+ protected abstract Object extractOutputData(Record outputRecord)
+   throws ResourceException, SQLException, DataAccessException { ... }
+ ...
+}</pre>
+<p> 此后，为了执行一个 EIS 操作，你需要使用一个单独的execute方法，传递一个应用级（application-level）
+   输入对象，并接收一个应用级输出对象作为结果：
+			</p>
+<pre class="code">public abstract class MappingRecordOperation extends EisOperation {
+ ...
+ public Object execute(Object inputObject) throws DataAccessException {
+ ...
+}</pre>
+<p>
+   正如你所看到的，与 <code class="classname">CciTemplate</code> 类相反，
+   这个<code class="literal">execute</code>方法并没有 <code class="interfacename">InteractionSpec</code> 参数，
+   然而，<code class="interfacename">InteractionSpec</code> 对操作是全局的。
+   下面的构造方法必须使用指定的 <code class="interfacename">InteractionSpec</code> 来初始化一个操作对象：
+   </p>
+<pre class="code">InteractionSpec spec = ...;
+MyMappingRecordOperation eisOperation = new MyMappingRecordOperation(getConnectionFactory(), spec);
+...</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-object-mapping-comm-area"></a>21.4.2.&#160;<code class="classname">MappingCommAreaOperation</code></h3></div></div></div>
+<p>
+   一些连接器使用了基于COMMAREA的记录，该记录包含了发送给EIS的参数和返回数据的字节数组。
+   Spring提供了一个专门的操作类用于直接操作COMMAREA而不是操作记录。
+   <code class="classname">MappingCommAreaOperation</code> 类扩展了 <code class="classname">MappingRecordOperation</code> 类以提供这种专门的COMMAREA支持。
+   它隐含地使用了 <code class="classname">CommAreaRecord</code>类作为输入和输出record类型，
+   并提供了两个新的方法来转换输入对象到输入COMMAREA，以及转换输出COMMAREA到输出对象。
+   </p>
+<pre class="code">public abstract class MappingCommAreaOperation extends MappingRecordOperation {
+ ...
+ protected abstract byte[] objectToBytes(Object inObject)
+   throws IOException, DataAccessException;
+
+ protected abstract Object bytesToObject(byte[] bytes)
+   throws IOException, DataAccessException;
+ ...
+}</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-automatic-record-gen"></a>21.4.3.&#160;自动生成输出记录</h3></div></div></div>
+<p>
+	由于每个 <code class="classname">MappingRecordOperation</code> 子类的内部都是基于 <code class="classname">CciTemplate</code> 的，所以
+	用 <code class="classname">CciTemplate</code> 以相同的方式自动生成输出record都是有效的。
+	每个操作对象提供一个相应的 <code class="literal">setOutputRecordCreator(..)</code> 方法。
+	更多的信息，请参见前面的<a href="ch21s03.html#automatic-output-generation" title="21.3.4.&#160;自动输出记录生成">第&#160;21.3.4&#160;节 “自动输出记录生成”</a>一节。
+			</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-object-summary"></a>21.4.4.&#160;总结</h3></div></div></div>
+<p>操作对象方法使用了跟 <code class="classname">CciTemplate</code> 相同的方式来使用记录。</p>
+<div class="table">
+<a name="cci-interaction-methods"></a><p class="title"><b>表&#160;21.2.&#160;Usage of Interaction execute methods</b></p>
+<div class="table-contents"><table summary="Usage of Interaction execute methods" border="1">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th align="center">
+<code class="classname">MappingRecordOperation</code> method
+        signature</th>
+<th align="center">
+<code class="classname">MappingRecordOperation</code>
+        <code class="literal">outputRecordCreator</code> property</th>
+<th align="center">execute method called on the CCI
+        <code class="interfacename">Interaction</code>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="center">Object execute(Object)</td>
+<td align="center">not set</td>
+<td align="center">Record execute(InteractionSpec,
+        Record)</td>
+</tr>
+<tr>
+<td align="center">Object execute(Object)</td>
+<td align="center">set</td>
+<td align="center">boolean execute(InteractionSpec, Record,
+        Record)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break">
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-objects-mappring-record-example"></a>21.4.5.&#160;<code class="classname">MappingRecordOperation</code> 使用示例</h3></div></div></div>
+<p>
+	   在本节中，将通过展示使用 Blackbox CCI 连接器访问一个数据库来说明 <code class="classname">MappingRecordOperation</code> 的用法。
+   </p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>该连接器的最初版本是由SUN提供的J2EE SDK（1.3版本）。</p>
+</div>
+<p>
+   首先，必须在 CCI <code class="interfacename">InteractionSpec</code> 中进行一些初始化动作来指定执行哪些SQL请求。
+	在这个例子中，我们直接定义了将请求参数转换为CCI record以及将CCI结果记录转换为一个 <code class="classname">Person</code> 类的实例的方法。
+   </p>
+<pre class="code">public class PersonMappingOperation extends MappingRecordOperation {
+
+ public PersonMappingOperation(ConnectionFactory connectionFactory) {
+  setConnectionFactory(connectionFactory);
+  CciInteractionSpec interactionSpec = new CciConnectionSpec();
+  interactionSpec.setSql("select * from person where person_id=?");
+  setInteractionSpec(interactionSpec);
+ }
+
+ protected Record createInputRecord(RecordFactory recordFactory, Object inputObject)
+   throws ResourceException {
+  Integer id = (Integer) inputObject;
+  IndexedRecord input = recordFactory.createIndexedRecord("input");
+  input.add(new Integer(id));
+  return input;
+ }
+
+ protected Object extractOutputData(Record outputRecord)
+   throws ResourceException, SQLException {
+  ResultSet rs = (ResultSet) outputRecord;
+  Person person = null;
+  if (rs.next()) {
+   Person person = new Person();
+   person.setId(rs.getInt("person_id"));
+   person.setLastName(rs.getString("person_last_name"));
+   person.setFirstName(rs.getString("person_first_name"));
+  }
+  return person;
+ }
+}</pre>
+<p>然后应用程序会以person标识符作为参数来得到操作对象。注意：操作对象可以被设为共享实例，因为它是线程安全的。
+</p>
+<pre class="code">public class MyDaoImpl extends CciDaoSupport implements MyDao {
+
+ public Person getPerson(int id) {
+  PersonMappingOperation query = new PersonMappingOperation(getConnectionFactory());
+  Person person = (Person) query.execute(new Integer(id));
+  return person;
+ }
+}</pre>
+<p>对应的Spring beans的配置看起来类似于下面非托管模式（non-managed mode）的配置：</p>
+<pre class="code">&lt;bean id="managedConnectionFactory"
+  class="com.sun.connector.cciblackbox.CciLocalTxManagedConnectionFactory"&gt;
+ &lt;property name="connectionURL" value="jdbc:hsqldb:hsql://localhost:9001"/&gt;
+ &lt;property name="driverName" value="org.hsqldb.jdbcDriver"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="targetConnectionFactory"
+  class="org.springframework.jca.support.LocalConnectionFactoryBean"&gt;
+ &lt;property name="managedConnectionFactory" ref="managedConnectionFactory"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="connectionFactory"
+  class="org.springframework.jca.cci.connection.ConnectionSpecConnectionFactoryAdapter"&gt;
+ &lt;property name="targetConnectionFactory" ref="targetConnectionFactory"/&gt;
+ &lt;property name="connectionSpec"&gt;
+  &lt;bean class="com.sun.connector.cciblackbox.CciConnectionSpec"&gt;
+   &lt;property name="user" value="sa"/&gt;
+   &lt;property name="password" value=""/&gt;
+  &lt;/bean&gt;
+ &lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+<p>在托管模式（managed mode）（也就是说，在一个J2EE环境中)），配置可能看起来像这样：</p>
+<pre class="code">&lt;bean id="targetConnectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
+ &lt;property name="jndiName" value="eis/blackbox"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="connectionFactory"
+  class="org.springframework.jca.cci.connection.ConnectionSpecConnectionFactoryAdapter"&gt;
+ &lt;property name="targetConnectionFactory" ref="targetConnectionFactory"/&gt;
+ &lt;property name="connectionSpec"&gt;
+  &lt;bean class="com.sun.connector.cciblackbox.CciConnectionSpec"&gt;
+   &lt;property name="user" value="sa"/&gt;
+   &lt;property name="password" value=""/&gt;
+  &lt;/bean&gt;
+ &lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="cci-objects-mapping-comm-area-example"></a>21.4.6.&#160;<code class="classname">MappingCommAreaOperation</code> 使用示例</h3></div></div></div>
+<p>
+   在本节中，将展示 <code class="classname">MappingCommAreaOperation</code>类的用法：通过IBM ECI连接器以ECI的模式访问一个CICS。
+   </p>
+<p>
+   	首先，CCI <code class="interfacename">InteractionSpec</code> 需要进行初始化以指定那个CICS程序去访问它以及如何与它交互。
+   </p>
+<pre class="code">public abstract class EciMappingOperation extends MappingCommAreaOperation {
+
+ public EciMappingOperation(ConnectionFactory connectionFactory, String programName) {
+  setConnectionFactory(connectionFactory);
+  ECIInteractionSpec interactionSpec = new ECIInteractionSpec(),
+  interactionSpec.setFunctionName(programName);
+  interactionSpec.setInteractionVerb(ECIInteractionSpec.SYNC_SEND_RECEIVE);
+  interactionSpec.setCommareaLength(30);
+  setInteractionSpec(interactionSpec);
+  setOutputRecordCreator(new EciOutputRecordCreator());
+ }
+
+ private static class EciOutputRecordCreator implements RecordCreator {
+  public Record createRecord(RecordFactory recordFactory) throws ResourceException {
+   return new CommAreaRecord();
+  }
+ }
+}</pre>
+<p>The abstract <code class="classname">EciMappingOperation</code> class can
+   then be subclassed to specify mappings between custom objects and
+			<code class="literal">Records</code>.</p>
+<p> <code class="classname">EciMappingOperation</code> 抽象类可以被子类化以指定自定义对象和 <code class="literal">Records</code> 之间的映射。
+</p>
+<pre class="code">public class MyDaoImpl extends CciDaoSupport implements MyDao {
+
+ public OutputObject getData(Integer id) {
+  EciMappingOperation query = new EciMappingOperation(getConnectionFactory(), "MYPROG") {
+   protected abstract byte[] objectToBytes(Object inObject) throws IOException {
+    Integer id = (Integer) inObject;
+    return String.valueOf(id);
+   }
+   protected abstract Object bytesToObject(byte[] bytes) throws IOException;
+    String str = new String(bytes);
+    String field1 = str.substring(0,6);
+    String field2 = str.substring(6,1);
+    String field3 = str.substring(7,1);
+    return new OutputObject(field1, field2, field3);
+   }
+  });
+
+  return (OutputObject) query.execute(new Integer(id));
+ }
+}</pre>
+<p>对应的Spring beans的配置看起来类似于下面非托管模式（non-managed mode）的配置：</p>
+<pre class="code">&lt;bean id="managedConnectionFactory" class="com.ibm.connector2.cics.ECIManagedConnectionFactory"&gt;
+ &lt;property name="serverName" value="TXSERIES"/&gt;
+ &lt;property name="connectionURL" value="local:"/&gt;
+ &lt;property name="userName" value="CICSUSER"/&gt;
+ &lt;property name="password" value="CICS"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="connectionFactory" class="org.springframework.jca.support.LocalConnectionFactoryBean"&gt;
+ &lt;property name="managedConnectionFactory" ref="managedConnectionFactory"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+<p>在托管模式（managed mode）（也就是说，在一个J2EE环境中），配置可能看起来像这样：</p>
+<pre class="code">&lt;bean id="connectionFactory" class="org.springframework.jndi.JndiObjectFactoryBean"&gt;
+ &lt;property name="jndiName" value="eis/cicseci"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="component" class="MyDaoImpl"&gt;
+ &lt;property name="connectionFactory" ref="connectionFactory"/&gt;
+&lt;/bean&gt;</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

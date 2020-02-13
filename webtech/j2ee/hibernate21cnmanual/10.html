@@ -1,0 +1,487 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="9.html"> 上一页</a><a href="11.html"> 下一页</a></div>
+<h2>3.5. 其它配置属性</h2>
+<p>下面是一些在运行时可以改变Hibernate行为的其他配置。所有这些都是可选的，也有合理的默认值。 </p>
+<p>系统级别的配置只能通过java -Dproperty=value或者在hibernate.properties文件中配置，而不能通过传递给Configuration的Properties实例来配置。 </p>
+
+<p><strong>Table 3.3. Hibernate配置属性</strong></p>
+<table summary="Hibernate配置属性" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>属性名</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hibernate.dialect</td>
+      <td><em>Hibernate方言（Dialect）的类名 -   可以让Hibernate使用某些特定的数据库平台的特性</em>
+          <p>取值. full.classname.of.Dialect </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.default_schema</td>
+      <td><em>在生成的SQL中，scheml/tablespace的全限定名</em>
+          <p>取值. SCHEMA_NAME </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.session_factory_name</td>
+      <td><em>把SessionFactory绑定到JNDI中去.</em>
+          <p>取值. jndi/composite/name </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.use_outer_join</td>
+      <td><em>允许使用外连接抓取.</em>
+          <p>取值. true | false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.max_fetch_depth</td>
+      <td><em>设置外连接抓取树的最大深度</em>
+          <p>取值. 建议设置为0到3之间 </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.jdbc.fetch_size</td>
+      <td><em>一个非零值，用来决定JDBC的获取量大小。(会调用calls Statement.setFetchSize()).</em></td>
+    </tr>
+    <tr>
+      <td>hibernate.jdbc.batch_size</td>
+      <td><em>一个非零值，会开启Hibernate使用JDBC2的批量更新功能</em>
+          <p>取值. 建议值在 5 和 30之间。 </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.jdbc.use_scrollable_resultset</td>
+      <td><em>允许Hibernate使用JDBC2提供的可滚动结果集。只有在使用用户自行提供的连接时，这个参数才是必需的。否则Hibernate会使用连接的元数据(metadata)。</em>
+          <p>取值. true | false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.jdbc.use_streams_for_binary</td>
+      <td><em>在从JDBC读写binary（二进制）或者serializable（可序列化）类型时,是否使用stream(流）</em>. 这是一个系统级别的属性。
+        <p>取值. true | false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.cglib.use_reflection_optimizer</td>
+      <td><em>是否使用CGLIB来代替运行时反射操作。（系统级别属性，默认为在可能时都使用CGLIB）.在调试的时候有时候使用反射会有用。</em>
+          <p>取值. true | false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.jndi.<em>&lt;propertyName&gt;</em></td>
+      <td><em>把propertyName这个属性传递到JNDI InitialContextFactory去</em> (可选) </td>
+    </tr>
+    <tr>
+      <td>hibernate.connection.isolation</td>
+      <td><em>事务隔离级别</em> (可选)
+        <p>取值. 1, 2, 4, 8 </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.connection.<em>&lt;propertyName&gt;</em></td>
+      <td><em>把 propertyName这个JDBC   属性传递到DriverManager.getConnection()去</em>. </td>
+    </tr>
+    <tr>
+      <td>hibernate.connection.provider_class</td>
+      <td><em>指定一个自定义的ConnectionProvider类名</em>
+          <p>取值. classname.of.ConnectionProvider </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.cache.provider_class</td>
+      <td><em>指定一个自定义的CacheProvider缓存提供者的类名</em>
+          <p>取值. classname.of.CacheProvider </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.cache.use_minimal_puts</td>
+      <td><em>优化第二层缓存操作，减少写操作，代价是读操作更频繁（对于集群缓存很有用） </em>
+          <p>取值. true|false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.cache.use_query_cache</td>
+      <td><em>打开查询缓存 </em>
+          <p>取值. true|false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.cache.region_prefix</td>
+      <td><em>用于第二层缓存区域名字的前缀</em>
+          <p>取值. prefix </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.transaction.factory_class</td>
+      <td><em>指定一个自定义的TransactionFactory类名，Hibernate Transaction   API将会使用</em>
+          <p>取值. classname.of.TransactionFactory </p></td>
+    </tr>
+    <tr>
+      <td>jta.UserTransaction</td>
+      <td><em>JTATransactionFactory   用来获取JTA UserTransaction的JNDI名</em>
+          <p>取值. jndi/composite/name </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.transaction.manager_lookup_class</td>
+      <td><em>TransactionManagerLookup的类名   - 当在JTA环境中，JVM级别的缓存被打开的时候使用</em>
+          <p>取值. classname.of.TransactionManagerLookup </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.query.substitutions</td>
+      <td><em>把Hibernate查询中的一些短语替换为SQL短语（比如说短语可能是函数或者字符）   .</em>
+          <p>取值. hqlLiteral=SQL_LITERAL,   hqlFunction=SQLFUNC </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.show_sql</td>
+      <td><em>把所有的SQL语句都输出到控制台(可以作为log功能的一个替代)</em>
+          <p>取值. true | false </p></td>
+    </tr>
+    <tr>
+      <td>hibernate.hbm2ddl.auto</td>
+      <td><em>自动输出schema创建DDL语句.</em>
+          <p>取值. update | create | create-drop </p></td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="3-5-1" id="3-5-1"></a>3.5.1. SQL Dialects SQL   方言</h3>
+<p>你总是可以为你的数据库设置一个hibernate.dialect方言，它是net.sf.hibernate.dialect.Dialect 的一个子类。如果你不需要使用基于native或者sequence的主键自动生成算法，或者悲观锁定（使用Session.lock() 或 Query.setLockMode())的话，方言就可以不必指定。然而，假若你指定了一个方言，Hibernate会为上面列出的一些属性使用特殊默认值，省得你手工指定它们。 </p>
+
+<p><strong>Table 3.4. Hibernate SQL 方言 (hibernate.dialect)</strong></p>
+<table summary="Hibernate SQL 方言 (hibernate.dialect)" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>RDBMS</th>
+      <th>方言</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DB2</td>
+      <td>net.sf.hibernate.dialect.DB2Dialect</td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>net.sf.hibernate.dialect.MySQLDialect</td>
+    </tr>
+    <tr>
+      <td>SAP DB</td>
+      <td>net.sf.hibernate.dialect.SAPDBDialect</td>
+    </tr>
+    <tr>
+      <td>Oracle (所有版本)</td>
+      <td>net.sf.hibernate.dialect.OracleDialect</td>
+    </tr>
+    <tr>
+      <td>Oracle 9</td>
+      <td>net.sf.hibernate.dialect.Oracle9Dialect</td>
+    </tr>
+    <tr>
+      <td>Sybase</td>
+      <td>net.sf.hibernate.dialect.SybaseDialect</td>
+    </tr>
+    <tr>
+      <td>Sybase Anywhere</td>
+      <td>net.sf.hibernate.dialect.SybaseAnywhereDialect</td>
+    </tr>
+    <tr>
+      <td>Progress</td>
+      <td>net.sf.hibernate.dialect.ProgressDialect</td>
+    </tr>
+    <tr>
+      <td>Mckoi SQL</td>
+      <td>net.sf.hibernate.dialect.MckoiDialect</td>
+    </tr>
+    <tr>
+      <td>Interbase</td>
+      <td>net.sf.hibernate.dialect.InterbaseDialect</td>
+    </tr>
+    <tr>
+      <td>Pointbase</td>
+      <td>net.sf.hibernate.dialect.PointbaseDialect</td>
+    </tr>
+    <tr>
+      <td>PostgreSQL</td>
+      <td>net.sf.hibernate.dialect.PostgreSQLDialect</td>
+    </tr>
+    <tr>
+      <td>HypersonicSQL</td>
+      <td>net.sf.hibernate.dialect.HSQLDialect</td>
+    </tr>
+    <tr>
+      <td>Microsoft SQL Server</td>
+      <td>net.sf.hibernate.dialect.SybaseDialect</td>
+    </tr>
+    <tr>
+      <td>Ingres</td>
+      <td>net.sf.hibernate.dialect.IngresDialect</td>
+    </tr>
+    <tr>
+      <td>Informix</td>
+      <td>net.sf.hibernate.dialect.InformixDialect</td>
+    </tr>
+    <tr>
+      <td>FrontBase</td>
+      <td>net.sf.hibernate.dialect.FrontbaseDialect</td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="3-5-2" id="3-5-2"></a>3.5.2. 外连接抓取（Outer Join   Fetching ）</h3>
+<p>如果你的数据库支持ANSI或者Oracle风格的外连接，<em>外连接抓取</em>可能提高性能，因为可以限制和数据库交互的数量（代价是数据库自身进行了更多的工作）。外连接抓取允许你在一个select语句中就可以得到一个由多对一或者一对一连接构成的对象图。 </p>
+<p>默认情况下，抓取在叶对象，拥有代理的对象或者产生对自身的引用时终止。对一个<em>特定关联</em>来说，通过在XML映射文件中设置outer-join属性可以控制是否开启抓取功能。也可以设置hibernate.use_outer_join为false来全局关闭此功能。 你也可以通过hibernate.max_fetch_depth来设置抓取得对象图的最大深度。 </p>
+<h3><a name="3-5-3" id="3-5-3"></a>3.5.3. 二进制流</h3>
+<p>Oracle限制通过它的JDBC驱动传递的byte数组的大小。如果你希望使用很大数量的binary或者serializable 类型的话，你需要打开hibernate.jdbc.use_streams_for_binary。<em>这只能通过JVM级别设定</em> </p>
+<h3><a name="3-5-4" id="3-5-4"></a>3.5.4. 在控制台记录SQL</h3>
+<p>hibernate.show_sql强制Hibernate把每一句SQL语句都写到控制台。这是作为打开log的一个简易替代。 </p>
+<h3><a name="3-5-5" id="3-5-5"></a>3.5.5. 自定义 ConnectionProvider</h3>
+<p>你可以自定义你的获取JDBC连接的策略，只需要实现net.sf.hibernate.connection.ConnectionProvider接口。在hibernate.connection.provider_class设置你自己的实现的类名。 </p>
+<h3><a name="3-5-6" id="3-5-6"></a>3.5.6. 常用数据库属性</h3>
+<p>几个配置属性影响除了DatasourceConnectionProvider之外的所有内置连接提供者.它们是： hibernate.connection.driver_class, hibernate.connection.url, hibernate.connection.username and hibernate.connection.password. </p>
+<p>hibernate.connection.isolation应该指定为一个整数值。(查阅java.sql.Connection可以得到值的含义，但注意大多数数据库不会支持所有的隔离级别。) </p>
+<p>专用的连接属性可以通过在&quot;hibernate.connnection&quot;后面加上属性名来指定。比如，你可以通过hibernate.connnection.charSet指定一个charSet。 </p>
+<h3><a name="3-5-7" id="3-5-7"></a>3.5.7. 自定义CacheProvider</h3>
+<p>通过实现net.sf.hibernate.cache.CacheProvider接口，你可以整合一个JVM级别（或者集群的）缓存进来。你可以通过hibernate.cache.provider_class选择某个子定义的实现。 </p>
+<h3><a name="3-5-8" id="3-5-8"></a>3.5.8. 事务策略</h3>
+<p>如果你希望使用Hibernate的Transaction API,你必须通过hibernate.transaction.factory_class属性指定一个Transaction实例的工厂类。 内置的两个标准选择是： </p>
+<dl>
+  <dt>net.sf.hibernate.transaction.JDBCTransactionFactory </dt>
+  <dd>
+    <p>使用数据库(JDBC)事务</p>
+  </dd>
+  <dt>net.sf.hibernate.transaction.JTATransactionFactory </dt>
+  <dd>
+    <p>使用JTA(假若已经存在一个事务，Session会在这个上下文中工作，否则会启动一个新的事务。）</p>
+  </dd>
+</dl>
+<p>你也可以自行定义你的事务策略（比如说，一个CORBA事务服务）。 </p>
+<p>如果你希望在JTA环境中为可变数据使用JVM级别的缓存，你必须指定一个获取JTA TransactionManager的策略。 </p>
+
+<p><strong>Table 3.5. JTA TransactionManagers</strong></p>
+<table summary="JTA TransactionManagers" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>事务工厂类</th>
+      <th align="middle">Application Server</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>net.sf.hibernate.transaction.JBossTransactionManagerLookup</td>
+      <td align="middle">JBoss</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.WeblogicTransactionManagerLookup</td>
+      <td align="middle">Weblogic</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.WebSphereTransactionManagerLookup</td>
+      <td align="middle">WebSphere</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.OrionTransactionManagerLookup</td>
+      <td align="middle">Orion</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.ResinTransactionManagerLookup</td>
+      <td align="middle">Resin</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.JOTMTransactionManagerLookup</td>
+      <td align="middle">JOTM</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.JOnASTransactionManagerLookup</td>
+      <td align="middle">JOnAS</td>
+    </tr>
+    <tr>
+      <td>net.sf.hibernate.transaction.JRun4TransactionManagerLookup</td>
+      <td align="middle">JRun4</td>
+    </tr>
+  </tbody>
+</table>
+<h3><a name="3-5-9" id="3-5-9"></a>3.5.9. 绑定SessionFactory到JNDI</h3>
+<p>假若你希望把SessionFactory绑定到一个JNDI命名空间，用hibernate.session_factory_name这个属性指定一个名字（比如，java:comp/env/hibernate/SessionFactory）。如果这个属性省略了，SessionFactory不会被绑定到JNDI。（在一个只读的JNDI默认值实现的环境中，这特别有用。比如，Tomcat。) </p>
+<p>当把SessionFactory 绑定到JNDI,Hibernate会使用hibernate.jndi.url,hibernate.jndi.class的值来获得一个初始化上下文的实例。如果他们没有指定，就会使用默认的InitialContext。 </p>
+<p>如果你选择使用JNDI,EJB或者其他工具类就可以通过JNDI查询得到SessionFactory。 </p>
+<h3><a name="a" id="a"></a>3.5.10. 查询语言替换 </h3>
+<p>你可以使用hibernate.query.substitutions定义新的Hibernate查询短语。比如说： </p>
+<pre>hibernate.query.substitutions true=1, false=0</pre>
+<p>会在生成的SQL中把短语true和 false替换成整数值。 </p>
+<pre>hibernate.query.substitutions toLowercase=LOWER</pre>
+<p>这可以让你重新命名SQL的LOWER函数。 </p>
+
+<div class="rpindex"><a href="11.html"> 下一页</a><a href="9.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

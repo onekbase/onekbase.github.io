@@ -1,0 +1,1030 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="beans-dependencies"></a>3.3.&#160;依赖</h2></div></div></div>
+<p>典型的企业应用不会只由单一的对象（或Spring的术语bean)组成。毫无疑问，即使最简单的系统也需要多个对象共同来展示给用户一个整体的应用。接下来的的内容除了阐述如何单独定义一系列bean外，还将描述如何让这些bean对象一起协同工作来实现一个完整的真实应用。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-collaborators"></a>3.3.1.&#160;注入依赖</h3></div></div></div>
+<p><span class="emphasis"><em>依赖注入</em></span>（DI）背后的基本原理是对象之间的依赖关系（即一起工作的其它对象）只会通过以下几种方式来实现：构造器的参数、工厂方法的参数，或给由构造函数或者工厂方法创建的对象设置属性。因此，容器的工作就是创建bean时<span class="emphasis"><em>注入</em></span>那些依赖关系。相对于由bean自己来控制其实例化、直接在构造器中指定依赖关系或者类似<span class="emphasis"><em>服务定位器（Service Locator）</em></span>模式这3种自主控制依赖关系注入的方法来说，控制从根本上发生了倒转，这也正是<span class="emphasis"><em>控制反转（Inversion of Control， IoC）</em></span> 名字的由来。 </p>
+<p>应用DI原则后，代码将更加清晰。而且当bean自己不再担心对象之间的依赖关系（甚至不知道依赖的定义指定地方和依赖的实际类）之后，实现更高层次的松耦合将易如反掌。DI主要有两种注入方式，即<a href="ch03s03.html#beans-setter-injection" title="3.3.1.2.&#160;Setter注入">Setter注入</a>和<a href="ch03s03.html#beans-constructor-injection" title="3.3.1.1.&#160;构造器注入">构造器注入</a></p>。
+
+      <div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-constructor-injection"></a>3.3.1.1.&#160;构造器注入</h4></div></div></div>
+<p><span class="emphasis"><em>基于构造器</em></span>的DI通过调用带参数的构造器来实现，每个参数代表着一个依赖。此外，还可通过给<code class="literal">stattic</code>工厂方法传参数来构造bean。接下来的介绍将认为给构造器传参与给<code class="literal">静态</code>工厂方法传参是类似的。下面展示了只能使用构造器参数来注入依赖关系的例子。请注意，这个类并没有什么<span class="emphasis"><em>特别之处</em></span>。</p>
+<pre class="code">public class SimpleMovieLister {
+
+    <em class="lineannotation"><span class="lineannotation">// the <code class="classname">SimpleMovieLister</code> has a dependency on a <code class="interfacename">MovieFinder</code></span></em>
+    private MovieFinder movieFinder;
+
+    <em class="lineannotation"><span class="lineannotation">// a constructor so that the Spring container can 'inject' a <code class="interfacename">MovieFinder</code></span></em>
+    public SimpleMovieLister(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+    
+    <em class="lineannotation"><span class="lineannotation">// business logic that actually 'uses' the injected <code class="interfacename">MovieFinder</code> is omitted...</span></em>
+}</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-factory-ctor-arguments-resolution"></a>3.3.1.1.1.&#160;构造器参数解析</h5></div></div></div>
+<p>构造器参数解析根据参数类型进行匹配，如果bean的构造器参数类型定义非常明确，那么在bean被实例化的时候，bean定义中构造器参数的定义顺序就是这些参数的顺序，依次进行匹配，比如下面的代码</p>
+<pre class="code">package x.y;
+
+public class Foo {
+
+    public Foo(Bar bar, Baz baz) {
+        <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+    }
+}</pre>
+<p>上述例子中由于构造参数非常明确（这里我们假定 <code class="classname">Bar</code>和 <code class="classname">Baz</code>之间不存在继承关系）。因此下面的配置即使没有明确指定构造参数顺序（和类型），也会工作的很好。</p>
+<pre class="code">&lt;beans&gt;
+    &lt;bean name="foo" class="x.y.Foo"&gt;
+        &lt;constructor-arg&gt;
+            &lt;bean class="x.y.Bar"/&gt;
+        &lt;/constructor-arg&gt;
+        &lt;constructor-arg&gt;
+            &lt;bean class="x.y.Baz"/&gt;
+        &lt;/constructor-arg&gt;
+    &lt;/bean&gt;
+&lt;/beans&gt;</pre>
+<p>我们再来看另一个bean，该bean的构造参数类型已知，匹配也没有问题(跟前面的例子一样)。但是当使用简单类型时，比如<code class="literal">&lt;value&gt;true&lt;value&gt;</code>，Spring将无法知道该值的类型。不借助其他帮助，他将无法仅仅根据参数类型进行匹配，比如下面的这个例子：</p>
+<pre class="code">package examples;
+
+public class ExampleBean {
+
+    <em class="lineannotation"><span class="lineannotation">// No. of years to the calculate the Ultimate Answer</span></em>
+    private int years;
+
+    <em class="lineannotation"><span class="lineannotation">// The Answer to Life, the Universe, and Everything</span></em>
+    private String ultimateAnswer;
+
+    public ExampleBean(int years, String ultimateAnswer) {
+        this.years = years;
+        this.ultimateAnswer = ultimateAnswer;
+    }
+}</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h6 class="title">
+<a name="beans-factory-ctor-arguments-type"></a>3.3.1.1.1.1.&#160;构造器参数类型匹配</h6></div></div></div>
+<p>针对上面的场景<span class="emphasis"><em>可以</em></span>通过使用<code class="literal">'type'</code>属性来显式指定那些简单类型的构造参数的类型，比如：</p>
+<pre class="code">&lt;bean id="exampleBean" class="examples.ExampleBean"&gt;
+  &lt;constructor-arg type="int" value="7500000"/&gt;
+  &lt;constructor-arg type="java.lang.String" value="42"/&gt;
+&lt;/bean&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h6 class="title">
+<a name="beans-factory-ctor-arguments-index"></a>3.3.1.1.1.2.&#160;构造参数索引</h6></div></div></div>
+<p>我们还可以通过<code class="literal">index</code>属性来显式指定构造参数的索引，比如下面的例子：</p>
+<pre class="code">&lt;bean id="exampleBean" class="examples.ExampleBean"&gt;
+  &lt;constructor-arg index="0" value="7500000"/&gt;
+  &lt;constructor-arg index="1" value="42"/&gt;
+&lt;/bean&gt;</pre>
+<p>通过使用索引属性不但可以解决多个简单属性的混淆问题，还可以解决有可能有相同类型的2个构造参数的混淆问题了，注意<span class="emphasis"><em>index是从0开始</em></span>。</p>
+</div>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-setter-injection"></a>3.3.1.2.&#160;Setter注入</h4></div></div></div>
+<p>通过调用无参构造器或无参<code class="literal">static</code>工厂方法实例化bean之后，调用该bean的setter方法，即可实现<span class="emphasis"><em>基于setter</em></span>的DI。</p>
+<p>下面的例子将展示只使用setter注入依赖。注意，这个类并没有什么<span class="emphasis"><em>特别</em></span>之处，它就是普通的Java类。</p>
+<pre class="code">public class SimpleMovieLister {
+
+    <em class="lineannotation"><span class="lineannotation">// the <code class="classname">SimpleMovieLister</code> has a dependency on the <code class="interfacename">MovieFinder</code></span></em>
+    private MovieFinder movieFinder;
+
+    <em class="lineannotation"><span class="lineannotation">// a setter method so that the Spring container can 'inject' a <code class="interfacename">MovieFinder</code></span></em>
+    public void setMovieFinder(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+
+    <em class="lineannotation"><span class="lineannotation">// business logic that actually 'uses' the injected <code class="interfacename">MovieFinder</code> is omitted...</span></em>
+}</pre>
+</div>
+<div class="sidebar">
+<p class="title"><b>构造器注入还是Setter注入?</b></p>
+<p>由于大量的构造器参数可能使程序变得笨拙，特别是当某些属性是可选的时候。因此通常情况下，Spring开发团队提倡使用setter注入。而且setter DI在以后的某个时候还可将实例重新配置（或重新注入）（<a href="ch20.html" title="第&#160;20&#160;章&#160;JMX">JMX MBean</a>就是一个很好的例子）。</p>
+<p>尽管如此，构造器注入还是得到很多纯化论者（也有很好的理由）的青睐。一次性将所有依赖注入的做法意味着，在未完全初始化的状态下，此对象不会返回给客户代码（或被调用），此外对象也不需要再次被重新配置（或重新注入）。</p>
+<p>对于注入类型的选择并没硬性的规定。只要能适合你的应用，无论使用何种类型的DI都可以。对于那些没有源代码的第三方类，或者没有提供setter方法的遗留代码，我们则别无选择－－构造器注入将是你唯一的选择。</p>
+</div>
+<p><code class="interfacename">BeanFactory</code>对于它所管理的bean提供两种注入依赖方式（实际上它也支持同时使用构造器注入和Setter方式注入依赖）。需要注入的依赖将保存在<code class="interfacename">BeanDefinition</code>中，它能根据指定的<code class="interfacename">PropertyEditor</code>实现将属性从一种格式转换成另外一种格式。然而，大部份的Spring用户并不需要直接以编程的方式处理这些类，而是采用XML的方式来进行定义，在内部这些定义将被转换成相应类的实例，并最终得到一个Spring IoC容器实例。</p>
+<p>处理bean依赖关系通常按以下步骤进行：</p>
+<div class="orderedlist"><ol type="1">
+<li><p>根据定义bean的配置（文件）创建并初始化<code class="interfacename">BeanFactory</code>实例（大部份的Spring用户使用支持XML格式配置文件的<code class="interfacename">BeanFactory</code>或<code class="interfacename">ApplicationContext</code>实现）。</p></li>
+<li><p>每个bean的依赖将以属性、构造器参数、或静态工厂方法参数的形式出现。<span class="emphasis"><em>当这些bean被实际创建时</em></span>，这些依赖也将会提供给该bean。</p></li>
+<li><p>每个属性或构造器参数既可以是一个实际的值，也可以是对该容器中另一个bean的引用。</p></li>
+<li><p><a name="beans-factory-collaborators-propertyeditor"></a>每个指定的属性或构造器参数值必须能够被转换成特定的格式或构造参数所需的类型。默认情况下，Spring会以String类型提供值转换成各种内置类型，比如<code class="literal">int</code>、<code class="literal">long</code>、<code class="literal">String</code>、<code class="literal">boolean</code>等。</p></li>
+</ol></div>
+<p>Spring会在容器被创建时验证容器中每个bean的配置，包括验证那些bean所引用的属性是否指向一个有效的bean（即被引用的bean也在容器中被定义）。然而，在bean<span class="emphasis"><em>被实际创建</em></span>之前，bean的属性并不会被设置。对于那些singleton类型和被设置为提前实例化的bean（比如<code class="interfacename">ApplicationContext</code>中的singleton bean）而言，bean实例将与容器同时被创建。而另外一些bean则会在需要的时候被创建，伴随着bean被实际创建，作为该bean的依赖bean以及依赖bean的依赖bean（依此类推）也将被创建和分配。</p>
+<div class="sidebar">
+<p class="title"><b>循环依赖</b></p>
+<p>在采用构造器注入的方式配置bean时，很有可能会产生循环依赖的情况。</p>
+<p>比如说，一个类A，需要通过构造器注入类B，而类B又需要通过构造器注入类A。如果为类A和B配置的bean被互相注入的话，那么Spring IoC容器将检测出循环引用，并抛出 <code class="classname">BeanCurrentlyInCreationException</code>异常。</p>
+<p>对于此问题，一个可能的解决方法就是修改源代码，将某些构造器注入改为setter注入。另一个解决方法就是完全放弃构造器注入，只使用setter注入。换句话说，除了极少数例外，大部分的循环依赖都是可以避免的，不过采用setter注入产生循环依赖的可能性也是存在的。</p>
+<p>与<span class="emphasis"><em>通常</em></span>我们见到的非循环依赖的情况有所不同，在两个bean之间的循环依赖将导致一个bean在被完全初始化的时候被注入到另一个bean中（如同我们常说的先有蛋还是先有鸡的情况）。</p>
+</div>
+<p>通常情况下，你可以信赖Spring，它会在容器加载时发现配置错误（比如对无效bean的引用以及循环依赖）。Spring会在bean创建时才去设置属性和依赖关系（只在需要时创建所依赖的其他对象）。这意味着即使Spring容器被正确加载，当获取一个bean实例时，如果在创建bean或者设置依赖时出现问题，仍然会抛出一个异常。因缺少或设置了一个无效属性而导致抛出一个异常的情况的确是存在的。因为一些配置问题而导致潜在的可见性被延迟，所以在默认情况下，<code class="interfacename">ApplicationContext</code>实现中的bean采用提前实例化的singleton模式。在实际需要之前创建这些bean将带来时间与内存的开销。而这样做的好处就是<code class="interfacename">ApplicationContext</code>被加载的时候可以尽早的发现一些配置的问题。不过用户也可以根据需要采用延迟实例化来替代默认的singleton模式。</p>
+<p>如果撇开循环依赖不谈，当协作bean被注入到依赖bean时，协作bean必须在依赖bean之前<span class="emphasis"><em>完全</em></span>配置好。例如bean A对bean B存在依赖关系，那么Spring IoC容器在调用bean A的setter方法之前，bean B必须被完全配置，这里所谓<span class="emphasis"><em>完全配置</em></span>的意思就是bean将被实例化（如果不是采用提前实例化的singleton模式），相关的依赖也将被设置好，而且所有相关的lifecycle方法（如<a href="ch03s05.html#beans-factory-lifecycle-initializingbean" title="3.5.1.1.&#160;初始化回调">IntializingBean</a>的init方法以及callback方法）也将被调用。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-some-examples"></a>3.3.1.3.&#160;一些例子</h4></div></div></div>
+<p>首先是一个用XML格式定义的Setter DI例子。相关的XML配置如下：</p>
+<pre class="code">&lt;bean id="exampleBean" class="examples.ExampleBean"&gt;
+
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- setter injection using the nested <code class="literal">&lt;ref/&gt;</code> element --&gt;</span></em>
+  &lt;property name="beanOne"&gt;&lt;ref bean="anotherExampleBean"/&gt;&lt;/property&gt;
+
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- setter injection using the neater 'ref' attribute --&gt;</span></em>
+  &lt;property name="beanTwo" ref="yetAnotherBean"/&gt;
+  &lt;property name="integerProperty" value="1"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="anotherExampleBean" class="examples.AnotherBean"/&gt;
+&lt;bean id="yetAnotherBean" class="examples.YetAnotherBean"/&gt;</pre>
+<pre class="code">public class ExampleBean {
+
+    private AnotherBean beanOne;
+    private YetAnotherBean beanTwo;
+    private int i;
+
+    public void setBeanOne(AnotherBean beanOne) {
+        this.beanOne = beanOne;
+    }
+
+    public void setBeanTwo(YetAnotherBean beanTwo) {
+        this.beanTwo = beanTwo;
+    }
+
+    public void setIntegerProperty(int i) {
+        this.i = i;
+    }    
+}</pre>
+<p>正如你所看到的，bean类中的setter方法与xml文件中配置的属性是一一对应的。接着是构造器注入的例子：</p>
+<pre class="code">&lt;bean id="exampleBean" class="examples.ExampleBean"&gt;
+
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- constructor injection using the nested <code class="literal">&lt;ref/&gt;</code> element --&gt;</span></em>
+  &lt;constructor-arg&gt;
+    &lt;ref bean="anotherExampleBean"/&gt;
+  &lt;/constructor-arg&gt;
+  
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- constructor injection using the neater 'ref' attribute --&gt;</span></em>
+  &lt;constructor-arg ref="yetAnotherBean"/&gt;
+  
+  &lt;constructor-arg type="int" value="1"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="anotherExampleBean" class="examples.AnotherBean"/&gt;
+&lt;bean id="yetAnotherBean" class="examples.YetAnotherBean"/&gt;</pre>
+<pre class="code">public class ExampleBean {
+
+    private AnotherBean beanOne;
+    private YetAnotherBean beanTwo;
+    private int i;
+    
+    public ExampleBean(
+        AnotherBean anotherBean, YetAnotherBean yetAnotherBean, int i) {
+        this.beanOne = anotherBean;
+        this.beanTwo = yetAnotherBean;
+        this.i = i;
+    }
+}</pre>
+<p>如你所见，在xml bean定义中指定的构造器参数将被用来作为传递给类<code class="classname">ExampleBean</code>构造器的参数。</p>
+<p>现在来研究一个替代构造器的方法，采用<code class="literal">static</code>工厂方法返回对象实例：</p>
+<pre class="code">&lt;bean id="exampleBean" class="examples.ExampleBean"
+      factory-method="createInstance"&gt;
+  &lt;constructor-arg ref="anotherExampleBean"/&gt;
+  &lt;constructor-arg ref="yetAnotherBean"/&gt;
+  &lt;constructor-arg value="1"/&gt; 
+&lt;/bean&gt;
+
+&lt;bean id="anotherExampleBean" class="examples.AnotherBean"/&gt;
+&lt;bean id="yetAnotherBean" class="examples.YetAnotherBean"/&gt;</pre>
+<pre class="code">public class ExampleBean {
+
+    <em class="lineannotation"><span class="lineannotation">// a private constructor</span></em>
+    private ExampleBean(...) {
+      ...
+    }
+    <em class="lineannotation"><span class="lineannotation">
+    // a static factory method; the arguments to this method can be
+    // considered the dependencies of the bean that is returned,
+    // regardless of how those arguments are actually used.</span></em>
+    public static ExampleBean createInstance (
+            AnotherBean anotherBean, YetAnotherBean yetAnotherBean, int i) {
+
+        ExampleBean eb = new ExampleBean (...);
+        <em class="lineannotation"><span class="lineannotation">// some other operations...</span></em>
+        return eb;
+    }
+}</pre>
+<p>请注意，传给<code class="literal">static</code>工厂方法的参数由<code class="literal">constructor-arg</code>元素提供，这与使用构造器注入时完全一样。而且，重要的是，工厂方法所返回的实例的类型并不一定要与包含<code class="literal">static</code>工厂方法的类类型一致。尽管在此例子中它的确是这样。非静态的实例工厂方法与此相同（除了使用<code class="literal">factory-bean</code>属性替代<code class="literal">class</code>属性外），因而不在此细述。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-properties-detailed"></a>3.3.2.&#160;依赖配置详解</h3></div></div></div>
+<p>正如前面章节所提到的，bean的属性及构造器参数既可以引用容器中的其他bean，也可以是内联（inline）bean。在spring的XML配置中使用<code class="literal">&lt;property/&gt;</code>和<code class="literal">&lt;constructor-arg/&gt;</code>元素定义。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-value-element"></a>3.3.2.1.&#160;直接变量(基本类型、<code class="literal">Strings</code>类型等。)</h4></div></div></div>
+<p><code class="literal">&lt;value/&gt;</code>元素通过人可以理解的字符串来指定属性或构造器参数的值。正如<a href="ch03s03.html#beans-factory-collaborators-propertyeditor">前面</a>所提到的，JavaBean <code class="literal">PropertyEditor</code>将用于把字符串从<code class="classname">java.lang.String</code>类型转化为实际的属性或参数类型。</p>
+<pre class="code">&lt;bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"&gt;
+  
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a <code class="methodname">setDriverClassName(String)</code> call --&gt;</span></em>
+  &lt;property name="driverClassName"&gt;
+    &lt;value&gt;com.mysql.jdbc.Driver&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property name="url"&gt;
+    &lt;value&gt;jdbc:mysql://localhost:3306/mydb&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property name="username"&gt;
+    &lt;value&gt;root&lt;/value&gt;
+  &lt;/property&gt;
+  &lt;property name="password"&gt;
+    &lt;value&gt;masterkaoli&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p> <code class="literal">&lt;property/&gt;</code> 和<code class="literal">&lt;constructor-arg/&gt;</code> 元素中也可以使用<code class="literal">'value'</code> 属性，这样会使我们的配置更简洁，比如下面的配置：</p>
+<pre class="code">&lt;bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"&gt;
+  
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a <code class="methodname">setDriverClassName(String)</code> call --&gt;</span></em>
+  &lt;property name="driverClassName" value="com.mysql.jdbc.Driver"/&gt;
+  &lt;property name="url" value="jdbc:mysql://localhost:3306/mydb"/&gt;
+  &lt;property name="username" value="root"/&gt;
+  &lt;property name="password" value="masterkaoli"/&gt;
+&lt;/bean&gt;</pre>
+<p>Spring团队更倾向采用属性方式（使用<code class="literal">&lt;value/&gt;</code>元素）来定义value值。当然我们也可以按照下面这种方式配置一个<code class="classname">java.util.Properties</code>实例：</p>
+<pre class="code">&lt;bean id="mappings" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"&gt;
+            
+   <em class="lineannotation"><span class="lineannotation">&lt;!-- typed as a <code class="classname">java.util.Properties</code> --&gt;</span></em>
+   &lt;property name="properties"&gt;
+      &lt;value&gt;
+         jdbc.driver.className=com.mysql.jdbc.Driver
+         jdbc.url=jdbc:mysql://localhost:3306/mydb
+      &lt;/value&gt;
+   &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p>看到什么了吗？如果采用上面的配置，Spring容器将使用JavaBean <code class="interfacename">PropertyEditor</code>把<code class="literal">&lt;value/&gt;</code>元素中的文本转换为一个<code class="classname">java.util.Properties</code>实例。由于这种做法的简单，因此Spring团队在很多地方也会采用内嵌的<code class="literal">&lt;value/&gt;</code>元素来代替<code class="literal">value</code>属性。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-idref-element"></a>3.3.2.1.1.&#160;<code class="literal">idref</code>元素</h5></div></div></div>
+<p><code class="literal">idref</code>元素用来将容器内其它bean的<span class="emphasis"><em>id</em></span>传给<code class="literal">&lt;constructor-arg/&gt;</code> 或 <code class="literal">&lt;property/&gt;</code>元素，同时提供错误验证功能。</p>
+<pre class="code">&lt;bean id="theTargetBean" class="..."/&gt;
+
+&lt;bean id="theClientBean" class="..."&gt;
+    &lt;property name="targetName"&gt;
+        &lt;idref bean="theTargetBean" /&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p>上述bean定义片段<span class="emphasis"><em>完全地</em></span>等同于（在运行时）以下的片段：</p>
+<pre class="code">&lt;bean id="theTargetBean" class="..." /&gt;
+
+&lt;bean id="client" class="..."&gt;
+    &lt;property name="targetName" value="theTargetBean" /&gt;
+&lt;/bean&gt;</pre>
+<p>第一种形式比第二种更可取的主要原因是，使用<code class="literal">idref</code>标记允许容器<span class="emphasis"><em>在部署时</em></span> 验证所被引用的bean是否存在。而第二种方式中，传给<code class="literal">client</code> bean的<code class="literal">targetName</code>属性值并没有被验证。任何的输入错误仅在<code class="literal">client</code>  bean实际实例化时才会被发现（可能伴随着致命的错误）。如果<code class="literal">client</code> bean 是<a href="ch03s04.html" title="3.4.&#160;Bean的作用域">prototype</a>类型的bean，则此输入错误（及由此导致的异常）可能在容器部署很久以后才会被发现。</p>
+<p>此外，如果被引用的bean在同一XML文件内，且bean名字就是bean <span class="emphasis"><em>id</em></span>，那么可以使用<code class="literal">local</code>属性，此属性允许XML解析器在解析XML文件时对引用的bean进行验证。</p>
+<pre class="code">&lt;property name="targetName"&gt;
+   <em class="lineannotation"><span class="lineannotation">&lt;!-- a bean with an id of '<code class="literal">theTargetBean</code>' must exist; otherwise an XML exception will be thrown --&gt;</span></em>
+   &lt;idref local="theTargetBean"/&gt;
+&lt;/property&gt;</pre>
+<p>上面的例子中，与在<code class="classname">ProxyFactoryBean</code> bean定义中使用&lt;idref/&gt;元素指定<a href="ch07s05.html#aop-pfb-1" title="7.5.1.&#160;基础">AOP interceptor</a>的相同之处在于：如果使用&lt;idref/&gt;元素指定拦截器名字，可以避免因一时疏忽导致的拦截器ID拼写错误。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-ref-element"></a>3.3.2.2.&#160;引用其它的bean（协作者）</h4></div></div></div>
+<p>在<code class="literal">&lt;constructor-arg/&gt;</code>或<code class="literal">&lt;property/&gt;</code>元素内部还可以使用<code class="literal">ref</code>元素。该元素用来将bean中指定属性的值设置为对容器中的另外一个bean的引用。如前所述，该引用bean将被作为依赖注入，而且在注入之前会被初始化（如果是singleton  bean则已被容器初始化）。尽管都是对另外一个对象的引用，但是通过id/name指向另外一个对象却有三种不同的形式，不同的形式将决定如何处理作用域及验证。</p>
+<p>第一种形式也是最常见的形式是通过使用<code class="literal">&lt;ref/&gt;</code>标记指定<code class="literal">bean</code>属性的目标bean，通过该标签可以引用同一容器或父容器内的任何bean（无论是否在同一XML文件中）。XML '<code class="literal">bean</code>'元素的值既可以是指定bean的<code class="literal">id</code>值也可以是其<code class="literal">name</code>值。</p>
+<pre class="code">&lt;ref bean="someBean"/&gt;</pre>
+<p>第二种形式是使用ref的<code class="literal">local</code>属性指定目标bean，它可以利用XML解析器来验证所引用的bean是否存在同一文件中。<code class="literal">local</code>属性值必须是目标bean的id属性值。如果在同一配置文件中没有找到引用的bean，XML解析器将抛出一个例外。如果目标bean是在同一文件内，使用local方式就是最好的选择（为了尽早地发现错误）。</p>
+<pre class="code">&lt;ref local="someBean"/&gt;</pre>
+<p>第三种方式是通过使用ref的<code class="literal">parent</code>属性来引用当前容器的父容器中的bean。<code class="literal">parent</code>属性值既可以是目标bean的<code class="literal">id</code>值，也可以是<code class="literal">name</code>属性值。而且目标bean必须在当前容器的父容器中。使用parent属性的主要用途是为了用某个与父容器中的bean同名的代理来包装父容器中的一个bean(例如，子上下文中的一个bean定义覆盖了他的父bean)。</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">&lt;!-- in the parent context --&gt;</span></em>
+&lt;bean id="accountService" class="com.foo.SimpleAccountService"&gt;
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- insert dependencies as required as here --&gt;</span></em>
+&lt;/bean&gt;</pre>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">&lt;!-- in the child (descendant) context --&gt;</span></em>
+&lt;bean id="accountService"  <em class="lineannotation"><span class="lineannotation">&lt;-- notice that the name of this bean is the <span class="bold"><strong>same</strong></span> as the name of the <code class="literal">'parent'</code> bean</span></em>
+      class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+      &lt;property name="target"&gt;
+          &lt;ref parent="accountService"/&gt;  <em class="lineannotation"><span class="lineannotation">&lt;-- notice how we refer to the <span class="bold"><strong>parent</strong></span> bean</span></em>
+      &lt;/property&gt;
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- insert other configuration and dependencies as required as here --&gt;</span></em>
+&lt;/bean&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-inner-beans"></a>3.3.2.3.&#160;内部bean</h4></div></div></div>
+<p>所谓的内部bean（inner bean）是指在一个bean的<code class="literal">&lt;property/&gt;</code>或 <code class="literal">&lt;constructor-arg/&gt;</code>元素中使用<code class="literal">&lt;bean/&gt;</code>元素定义的bean。内部bean定义不需要有id或name属性，即使指定id 或 name属性值也将会被容器忽略。</p>
+<pre class="code">&lt;bean id="outer" class="..."&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- instead of using a reference to a target bean, simply define the target bean inline --&gt;</span></em>
+  &lt;property name="target"&gt;
+    &lt;bean class="com.example.Person"&gt; <em class="lineannotation"><span class="lineannotation">&lt;!-- this is the inner bean --&gt;</span></em>
+      &lt;property name="name" value="Fiona Apple"/&gt;
+      &lt;property name="age" value="25"/&gt;
+    &lt;/bean&gt;
+  &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p>注意：内部bean中的<code class="literal">scope</code>标记及<code class="literal">id</code>或<code class="literal">name</code>属性将被忽略。内部bean<span class="emphasis"><em>总是</em></span>匿名的且它们<span class="emphasis"><em>总是</em></span><a href="ch03s04.html#beans-factory-scopes-prototype" title="3.4.2.&#160;Prototype作用域">prototype</a>模式的。同时将内部bean注入到包含该内部bean之外的bean是<span class="emphasis"><em>不</em></span>可能的。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-collection-elements"></a>3.3.2.4.&#160;集合</h4></div></div></div>
+<p>通过<code class="literal">&lt;list/&gt;</code>、<code class="literal">&lt;set/&gt;</code>、<code class="literal">&lt;map/&gt;</code>及<code class="literal">&lt;props/&gt;</code>元素可以定义和设置与Java <code class="interfacename">Collection</code>类型对应<code class="interfacename">List</code>、<code class="interfacename">Set</code>、<code class="interfacename">Map</code>及<code class="interfacename">Properties</code>的值。</p>
+<pre class="code">&lt;bean id="moreComplexObject" class="example.ComplexObject"&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a setAdminEmails(<code class="classname">java.util.Properties</code>) call --&gt;</span></em>
+  &lt;property name="adminEmails"&gt;
+    &lt;props&gt;
+        &lt;prop key="administrator"&gt;administrator@example.org&lt;/prop&gt;
+        &lt;prop key="support"&gt;support@example.org&lt;/prop&gt;
+        &lt;prop key="development"&gt;development@example.org&lt;/prop&gt;
+    &lt;/props&gt;
+  &lt;/property&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a setSomeList(<code class="interfacename">java.util.List</code>) call --&gt;</span></em>
+  &lt;property name="someList"&gt;
+    &lt;list&gt;
+        &lt;value&gt;a list element followed by a reference&lt;/value&gt;
+        &lt;ref bean="myDataSource" /&gt;
+    &lt;/list&gt;
+  &lt;/property&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a setSomeMap(<code class="interfacename">java.util.Map</code>) call --&gt;</span></em>
+  &lt;property name="someMap"&gt;
+    &lt;map&gt;
+        &lt;entry&gt;
+            &lt;key&gt;
+                &lt;value&gt;an entry&lt;/value&gt;
+            &lt;/key&gt;
+            &lt;value&gt;just some string&lt;/value&gt;
+        &lt;/entry&gt;
+        &lt;entry&gt;
+            &lt;key&gt;
+                &lt;value&gt;a ref&lt;/value&gt;
+            &lt;/key&gt;
+            &lt;ref bean="myDataSource" /&gt;
+        &lt;/entry&gt;
+    &lt;/map&gt;
+  &lt;/property&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- results in a setSomeSet(java.util.Set) call --&gt;</span></em>
+  &lt;property name="someSet"&gt;
+    &lt;set&gt;
+        &lt;value&gt;just some string&lt;/value&gt;
+        &lt;ref bean="myDataSource" /&gt;
+    &lt;/set&gt;
+  &lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p><span class="emphasis"><em>注意：map的key或value值，或set的value值还可以是以下元素：</em></span></p>
+<pre class="code">bean | ref | idref | list | set | map | props | value | null</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-collection-elements-merging"></a>3.3.2.4.1.&#160;集合的合并</h5></div></div></div>
+<p>从2.0开始，Spring IoC容器将支持集合的<span class="emphasis"><em>合并</em></span>。这样我们可以定义parent-style和child-style的<code class="literal">&lt;list/&gt;</code>、<code class="literal">&lt;map/&gt;</code>、<code class="literal">&lt;set/&gt;</code>或<code class="literal">&lt;props/&gt;</code>元素，子集合的值从其父集合继承和覆盖而来；也就是说，父子集合元素合并后的值就是子集合中的最终结果，而且子集合中的元素值将覆盖父集全中对应的值。</p>
+<p><span class="emphasis"><em>请注意，关于合并的这部分利用了parent-child bean机制。此内容将在后面介绍，不熟悉父子bean的读者可参见<a href="ch03s06.html" title="3.6.&#160;bean定义的继承">第&#160;3.6&#160;节 “bean定义的继承”</a>。</em></span></p>
+<p>Find below an example of the collection merging
+          feature:</p>
+<p>下面的例子展示了集合合并特性：</p>
+<pre class="code">&lt;beans&gt;
+&lt;bean id="parent" abstract="true" class="example.ComplexObject"&gt;
+    &lt;property name="adminEmails"&gt;
+        &lt;props&gt;
+            &lt;prop key="administrator"&gt;administrator@example.com&lt;/prop&gt;
+            &lt;prop key="support"&gt;support@example.com&lt;/prop&gt;
+        &lt;/props&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+&lt;bean id="child" parent="parent"&gt;
+    &lt;property name="adminEmails"&gt;
+        <em class="lineannotation"><span class="lineannotation">&lt;!-- the merge is specified on the *child* collection definition --&gt;</span></em>
+        &lt;props merge="true"&gt;
+            &lt;prop key="sales"&gt;sales@example.com&lt;/prop&gt;
+            &lt;prop key="support"&gt;support@example.co.uk&lt;/prop&gt;
+        &lt;/props&gt;
+    &lt;/property&gt;
+&lt;/bean&gt;
+&lt;beans&gt;</pre>
+<p>在上面的例子中，<code class="literal">child</code>bean的<code class="literal">adminEmails</code>属性的<code class="literal">&lt;props/&gt;</code>元素上使用了<code class="literal">merge=true</code>属性。当<code class="literal">child </code>bean被容器实际解析及实例化时，其 <code class="literal">adminEmails</code>将与父集合的<code class="literal">adminEmails</code>属性进行合并。</p>
+<pre class="code">administrator=administrator@example.com
+sales=sales@example.com
+support=support@example.co.uk</pre>
+<p>注意到这里子bean的<code class="classname">Properties</code>集合将从父<code class="literal">&lt;props/&gt;</code>继承所有属性元素。同时子bean的<code class="literal">support</code>值将覆盖父集合的相应值。</p>
+<p>对于<code class="literal">&lt;list/&gt;</code>、<code class="literal">&lt;map/&gt;</code>及<code class="literal">&lt;set/&gt;</code>集合类型的合并处理都基本类似，在某个方面<code class="literal">&lt;list/&gt;</code>元素比较特殊，这涉及到<code class="classname">List</code>集合本身的语义学，就拿维护一个<code class="literal">有序</code>集合中的值来说，父bean的列表内容将排在子bean列表内容的前面。对于<code class="interfacename">Map</code>、<code class="interfacename">Set</code>及<code class="interfacename">Properties</code>集合类型没有顺序的概念，因此作为相关的<code class="interfacename">Map</code>、<code class="interfacename">Set</code>及<code class="interfacename">Properties</code>实现基础的集合类型在容器内部没有排序的语义。</p>
+<p>最后需要指出的一点就是，合并功能仅在Spring 2.0（及随后的版本中）可用。不同的集合类型是不能合并（如<code class="literal">map</code>和 <code class="literal">list</code>是不能合并的），否则将会抛出相应的<code class="classname">Exception</code>。<code class="literal">merge</code>属性必须在继承的子bean中定义，而在父bean的集合属性上指定的<code class="literal">merge</code>属性将被忽略。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-collection-elements-strongly-typed"></a>3.3.2.4.2.&#160;强类型集合(仅适用于Java5+)</h5></div></div></div>
+<p>你若有幸在使用Java5 或Java 6，那么你可以使用强类型集合(支持泛型)。比如，声明一个只能包含<code class="classname">String</code>类型元素的<code class="interfacename">Collection</code>。假若使用Spring来给bean注入强类型的<code class="interfacename">Collection</code>，那就可以利用Spring的类型转换能，当向强类型<code class="interfacename">Collection</code>中添加元素前，这些元素将被转换。</p>
+<pre class="code">public class Foo {
+                
+    private Map&lt;String, Float&gt; accounts;
+    
+    public void setAccounts(Map&lt;String, Float&gt; accounts) {
+        this.accounts = accounts;
+    }
+}</pre>
+<pre class="code">&lt;beans&gt;
+    &lt;bean id="foo" class="x.y.Foo"&gt;
+        &lt;property name="accounts"&gt;
+            &lt;map&gt;
+                &lt;entry key="one" value="9.99"/&gt;
+                &lt;entry key="two" value="2.75"/&gt;
+                &lt;entry key="six" value="3.99"/&gt;
+            &lt;/map&gt;
+        &lt;/property&gt;
+    &lt;/bean&gt;
+&lt;/beans&gt;</pre>
+<p>在<code class="literal">foo</code>bean的<code class="literal">accounts</code>属性被注入之前，通过反射，利用强类型<code class="classname">Map&lt;String, Float&gt;</code>的泛型信息，Spring的底层类型转换机制将会把各种value元素值转换为<code class="classname">Float</code>类型，因此字符串<code class="literal">9.99、2.75</code>及<code class="literal">3.99</code>就会被转换为实际的<code class="classname">Float</code>类型。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-null-element"></a>3.3.2.5.&#160;<code class="literal">Nulls</code></h4></div></div></div>
+<p><code class="literal">&lt;null/&gt;</code>用于处理<code class="literal">null</code>值。Spring会把属性的空参数当作空<code class="literal">字符串</code>处理。以下的xml片断将email属性设为空<code class="classname">字符串</code>。</p>
+<pre class="code">&lt;bean class="ExampleBean"&gt;
+  &lt;property name="email"&gt;&lt;value/&gt;&lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p>这等同于Java代码：
+<code class="literal">exampleBean.setEmail("")</code>。
+而<code class="literal">null</code>值则可以使用<code class="literal">&lt;null&gt;</code>元素可用来表示。例如：</p>
+<pre class="code">&lt;bean class="ExampleBean"&gt;
+  &lt;property name="email"&gt;&lt;null/&gt;&lt;/property&gt;
+&lt;/bean&gt;</pre>
+<p>上述的配置等同于Java代码：<code class="literal">exampleBean.setEmail(null)</code>。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="xml-config-shortcuts"></a>3.3.2.6.&#160;XML配置文件的简写及其他</h4></div></div></div>
+<p>配置元数据冗长不是什么好事情，因此我们将通过下面的方式来对配置进行“减肥”，第一种做法就是通过使用<code class="literal">&lt;property/&gt;</code>来定义值和对其他bean的引用，另一个做法就是采用不同的属性定义格式。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-value-ref-shortcuts"></a>3.3.2.6.1.&#160;XML-based configuration metadata shortcuts</h5></div></div></div>
+<p><code class="literal">&lt;property/&gt;</code>、<code class="literal">&lt;constructor-arg/&gt;</code>及<code class="literal">&lt;entry/&gt;</code>元素都支持<code class="literal">value</code>属性（attribute），它可以用来替代内嵌的<code class="literal">&lt;value/&gt;</code>元素。因而，以下的代码：</p>
+<pre class="code">&lt;property name="myProperty"&gt;
+  &lt;value&gt;hello&lt;/value&gt;
+&lt;/property&gt;</pre>
+<pre class="code">&lt;constructor-arg&gt;
+  &lt;value&gt;hello&lt;/value&gt;
+&lt;/constructor-arg&gt;</pre>
+<pre class="code">&lt;entry key="myKey"&gt;
+  &lt;value&gt;hello&lt;/value&gt;
+&lt;/entry&gt;</pre>
+<p>等同于：</p>
+<pre class="code">&lt;property name="myProperty" value="hello"/&gt;</pre>
+<pre class="code">&lt;constructor-arg value="hello"/&gt;</pre>
+<pre class="code">&lt;entry key="myKey" value="hello"/&gt;</pre>
+<p>The <code class="literal">&lt;property/&gt;</code> and
+          <code class="literal">&lt;constructor-arg/&gt;</code> elements support a
+          similar shortcut <code class="literal">'ref'</code> attribute which may be
+          used instead of a full nested <code class="literal">&lt;ref/&gt;</code>
+          element. Therefore, the following:</p>
+<p><code class="literal">&lt;property/&gt;</code>和<code class="literal">&lt;constructor-arg/&gt;</code>支持类似<code class="literal">ref</code>的简写属性，它可用来替代整个内嵌的<code class="literal">&lt;ref/&gt;</code>元素。因而，以下的代码：</p>
+<pre class="code">&lt;property name="myProperty"&gt;
+  &lt;ref bean="myBean"&gt;
+&lt;/property&gt;</pre>
+<pre class="code">&lt;constructor-arg&gt;
+  &lt;ref bean="myBean"&gt;
+&lt;/constructor-arg&gt;</pre>
+<p>等同于：</p>
+<pre class="code">&lt;property name="myProperty" ref="myBean"/&gt;</pre>
+<pre class="code">&lt;constructor-arg ref="myBean"/&gt;</pre>
+<p>注意，尽管存在等同于<code class="literal">&lt;ref bean="xxx"&gt;</code> 元素的简写形式，但并没有<code class="literal">&lt;ref local="xxx"</code>&gt;的简写形式，为了对当前xml中bean的引用，你只能使用完整的形式。</p>
+<p>最后，map中entry元素的简写形式为<code class="literal">key</code>/<code class="literal">key-ref</code> 和 <code class="literal">value</code> /<code class="literal">value-ref</code>属性，因而，以下的代码：</p>
+<pre class="code">&lt;entry&gt;
+  &lt;key&gt;
+    &lt;ref bean="myKeyBean" /&gt;
+  &lt;/key&gt;
+  &lt;ref bean="myValueBean" /&gt;
+&lt;/entry&gt;</pre>
+<p>等同于：</p>
+<pre class="code">&lt;entry key-ref="myKeyBean" value-ref="myValueBean"/&gt;</pre>
+<p>再次强调，只有<code class="literal">&lt;ref bean="xxx"&gt;</code>元素的简写形式，没有<code class="literal">&lt;ref local="xxx"</code>&gt;的简写形式。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h5 class="title">
+<a name="beans-p-namespace"></a>3.3.2.6.2.&#160;使用p名称空间配置属性</h5></div></div></div>
+<p>给XML配置文件"减肥"的另一个选择就是使用p名称空间，从 2.0开始，Spring支持使用<a href="apa.html" title="附录&#160;A.&#160;XML Schema-based configuration">名称空间</a>的可扩展配置格式。这些名称空间都是基于一种XML Schema定义。事实上，我们所看到的所有<code class="literal">bean</code>的配置格式都是基于一个 XML Schema文档。</p>
+<p>特定的名称空间并不需要定义在一个XSD文件中，它只在Spring内核中存在。我们所说的p名称空间就是这样，它不需要一个schema定义，与我们前面采用<code class="literal">&lt;property/&gt;</code>元素定义bean的属性不同的是，当我们采用了p名称空间，我们就可以在<code class="literal">bean</code>元素中使用属性（attribute）来描述bean的property值。</p>
+<p>下面的两段XML配置文件中都是用来定义同一个bean：一个采用的是标准的XML格式，一个是采用p名称空间。</p>
+<pre class="code">&lt;beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"&gt;
+    
+    &lt;bean name="classic" class="com.example.ExampleBean"&gt;
+        &lt;property name="email" value="foo@bar.com/&gt;
+    &lt;/bean&gt;
+    
+    &lt;bean name="p-namespace" class="com.example.ExampleBean"
+          p:email="foo@bar.com"/&gt;
+&lt;/beans&gt;</pre>
+<p>从上面的bean定义中，我们采用p名称空间的方式包含了一个叫email的属性，而Spring会知道我们的bean包含了一个属性（property）定义。我们前面说了，p名称空间是不需要schema定义的，因此属性（attribute）的名字就是你bean的property的名字。</p>
+<p>This next example includes two more bean definitions that both
+          have a reference to another bean:</p>
+<p>下面的例子包含了两个bean定义，它们都引用了另一个bean</p>
+<pre class="code">&lt;beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"&gt;
+    
+    &lt;bean name="john-classic" class="com.example.Person"&gt;
+        &lt;property name="name" value="John Doe"/&gt;
+        &lt;property name="spouse" ref="jane"/&gt;
+    &lt;/bean&gt;
+
+    &lt;bean name="john-modern" 
+        class="com.example.Person"
+        p:name="John Doe"
+        p:spouse-ref="jane"/&gt;
+
+    &lt;bean name="jane" class="com.example.Person"&gt;
+        &lt;property name="name" value="Jane Doe"/&gt;
+    &lt;/bean&gt;
+&lt;/beans&gt;</pre>
+<p>As you can see, this example doesn't only include a property
+          value using the p-namespace, but also uses a special format to
+          declare property references. Whereas the first bean definition uses
+          <code class="literal">&lt;property name="spouse" ref="jane"/&gt;</code> to
+          create a reference from bean <code class="literal">john</code> to bean
+          <code class="literal">jane</code>, the second bean definition uses
+          <code class="literal">p:spouse-ref="jane"</code> as an attribute to do the
+          exact same thing. In this case '<code class="literal">spouse</code>' is the
+          property name whereas the '<code class="literal">-ref</code>' part indicates
+          that this is not a straight value but rather a reference to another
+          bean.</p>
+<p>上面的例子不仅使用p名称空间包含了一个属性（property）值，而且使用了一个特殊的格式声明了一个属性引用。在第一个bean定义中使用了<code class="literal">&lt;property name="spouse" ref="jane"/&gt;</code>来建立bean<code class="literal">john</code>到bean<code class="literal">jane</code>的引用，而第二个bean定义则采用<code class="literal">p:spouse-ref="jane"</code>属性（attribute）的方式达到了同样的目的。在这个例子中，"<code class="literal">spouse</code>"是属性（property）名，而"<code class="literal">-ref</code>“则用来说明该属性不是一个具体的值而是对另外一个bean的引用。</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>需要注意的是，p名称空间没有标准的XML格式定义灵活，比如说，bean的属性名是以<code class="literal">Ref</code>结尾的，那么采用p名称空间定义就会导致冲突，而采用标准的XML格式定义则不会出现这种问题。这里我们提醒大家在项目中还是仔细权衡来决定到底采用那种方式，同时也可以在团队成员都理解不同的定义方式的基础上，在项目中根据需要同时选择三种定义方式。</p>
+</div>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-compound-property-names"></a>3.3.2.7.&#160;组合属性名称</h4></div></div></div>
+<p>当设置bean的组合属性时，除了最后一个属性外，只要其他属性值不为<code class="literal">null</code>，组合或嵌套属性名是完全合法的。例如，下面bean的定义：</p>
+<pre class="code">&lt;bean id="foo" class="foo.Bar"&gt;
+  &lt;property name="fred.bob.sammy" value="123" /&gt;
+&lt;/bean&gt;</pre>
+<p><code class="literal">foo</code> bean有个<code class="literal">fred</code>属性，此属性有个<code class="literal">bob</code>属性，而<code class="literal">bob</code>属性又有个<code class="literal">sammy</code>属性，最后把<code class="literal">sammy</code>属性设置为<code class="literal">123</code>。为了让此定义能工作， <code class="literal">foo</code>的<code class="literal">fred</code>属性及<code class="literal">fred</code>的<code class="literal">bob</code>属性在bean被构造后都必须非空，否则将抛出<code class="exceptionname">NullPointerException</code>异常。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-dependson"></a>3.3.3.&#160;使用<code class="literal">depends-on</code></h3></div></div></div>
+<p>多数情况下，一个bean对另一个bean的依赖最简单的做法就是将一个bean设置为另外一个bean的属性。在xml配置文件中最常见的就是使用 <a href="ch03s03.html#beans-ref-element" title="3.3.2.2.&#160;引用其它的bean（协作者）"><code class="literal">&lt;ref/&gt;</code>元素</a>。在少数情况下，有时候bean之间的依赖关系并不是那么的直接（例如，当类中的静态块的初始化被时，如数据库驱动的注册）。<code class="literal">depends-on</code>属性可以用于当前bean初始化之前显式地强制一个或多个bean被初始化。下面的例子中使用了<code class="literal">depends-on</code>属性来指定一个bean的依赖。</p>
+<pre class="code">&lt;bean id="beanOne" class="ExampleBean" depends-on="<span class="bold"><strong>manager</strong></span>"/&gt;
+
+&lt;bean id="<span class="bold"><strong>manager</strong></span>" class="ManagerBean" /&gt;</pre>
+<p>若需要表达对多个bean的依赖，可以在<code class="literal">'depends-on'</code>中将指定的多个bean名字用分隔符进行分隔，分隔符可以是逗号、空格及分号等。下面的例子中使用了<code class="literal">'depends-on'</code>来表达对多个bean的依赖。</p>
+<pre class="code">&lt;bean id="beanOne" class="ExampleBean" depends-on="manager,accountDao"&gt;
+  &lt;property name="manager" ref="manager" /&gt;
+&lt;/bean&gt;
+
+&lt;bean id="manager" class="ManagerBean" /&gt;
+&lt;bean id="accountDao" class="x.y.jdbc.JdbcAccountDao" /&gt;</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>“<code class="literal">depends-on</code>”属性不仅用来指定初始化时的依赖，同时也用来指定相应的销毁时的依赖（该依赖只针对<a href="ch03s04.html#beans-factory-scopes-singleton" title="3.4.1.&#160;Singleton作用域">singleton</a>bean）。<code class="literal">depends-on</code>属性中指定的依赖bean会在相关bean销毁之前被销毁，从而可以让用户控制销毁顺序。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-lazy-init"></a>3.3.4.&#160;延迟初始化bean</h3></div></div></div>
+<p><code class="interfacename">ApplicationContext</code>实现的默认行为就是在启动时将所有<code class="literal">singleton</code> bean提前进行实例化。提前实例化意味着作为初始化过程的一部分，<code class="interfacename">ApplicationContext</code>实例会创建并配置所有的<a href="ch03s04.html#beans-factory-scopes-singleton" title="3.4.1.&#160;Singleton作用域">singleton</a>  bean。通常情况下这是件<span class="emphasis"><em>好事</em></span>，因为这样在配置中的任何错误就会即刻被发现（否则的话可能要花几个小时甚至几天）。</p>
+<p>有时候这种默认处理可能并<span class="emphasis"><em>不是</em></span>你想要的。如果你不想让一个singleton bean在<code class="interfacename">ApplicationContext</code>初始化时被提前实例化，那么可以将bean设置为延迟实例化。一个延迟初始化bean将告诉IoC 容器是在启动时还是在第一次被用到时实例化。</p>
+<p>在XML配置文件中，延迟初始化将通过<code class="literal">&lt;bean/&gt;</code>元素中的<code class="literal">lazy-init</code>属性来进行控制。例如：</p>
+<pre class="code">&lt;bean id="lazy" class="com.foo.ExpensiveToCreateBean" <span class="bold"><strong>lazy-init="true"</strong></span>/&gt;
+
+&lt;bean name="not.lazy" class="com.foo.AnotherBean"/&gt;</pre>
+<p>当<code class="interfacename">ApplicationContext</code>实现加载上述配置时，设置为<code class="literal">lazy</code>的bean将<span class="emphasis"><em>不会</em></span>在<code class="interfacename">ApplicationContext</code>启动时提前被实例化，而<code class="literal">not.lazy</code>却会被提前实例化。</p>
+<p>需要说明的是，如果一个bean被设置为延迟初始化，而另一个非延迟初始化的singleton bean依赖于它，那么当<code class="interfacename">ApplicationContext</code>提前实例化singleton bean时，它必须也确保所有上述singleton 依赖bean也被预先初始化，当然也包括设置为延迟实例化的bean。因此，如果Ioc容器在启动的时候创建了那些设置为延迟实例化的bean的实例，你也不要觉得奇怪，因为那些延迟初始化的bean可能在配置的某个地方被注入到了一个非延迟初始化singleton bean里面。</p>
+<p>在容器层次上通过在<code class="literal">&lt;beans/&gt;</code>元素上使用<code class="literal">'default-lazy-init'</code>属性来控制延迟初始化也是可能的。如下面的配置：</p>
+<pre class="code">&lt;beans default-lazy-init="true"&gt;
+    <em class="lineannotation"><span class="lineannotation">&lt;!-- no beans will be pre-instantiated... --&gt;</span></em>
+&lt;/beans&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-autowire"></a>3.3.5.&#160;自动装配（autowire）协作者</h3></div></div></div>
+<p>Spring IoC容器可以<span class="emphasis"><em>自动装配（autowire）</em></span>相互协作bean之间的关联关系。因此，如果可能的话，可以自动让Spring通过检查<code class="interfacename">BeanFactory</code>中的内容，来替我们指定bean的协作者（其他被依赖的bean）。autowire一共有五种类型。由于autowire可以针对单个bean进行设置，因此可以让有些bean使用autowire，有些bean不采用。autowire的方便之处在减少或者消除属性或构造器参数的设置，这样可以给我们的配置文件减减肥！<sup>[<a name="id443223" href="#ftn.id443223">2</a>]</sup> 在xml配置文件中，可以在<code class="literal">&lt;bean/&gt;</code>元素中使用autowire属性指定:</p>
+<div class="table">
+<a name="beans-factory-autowiring-modes-tbl"></a><p class="title"><b>表&#160;3.2.&#160;Autowiring modes</b></p>
+<div class="table-contents"><table summary="Autowiring modes" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>模式</th>
+<th>说明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>no</td>
+<td class="auto-generated">&#160;</td>
+</tr>
+<tr>
+<td>byName</td>
+<td>
+					<p>根据属性名自动装配。此选项将检查容器并根据名字查找与属性完全一致的bean，并将其与属性自动装配。例如，在bean定义中将autowire设置为by name，而该bean包含<span class="emphasis"><em>master</em></span>属性（同时提供<span class="emphasis"><em>setMaster(..)</em></span>方法），Spring就会查找名为<code class="literal">master</code>的bean定义，并用它来装配给master属性。</p>
+				</td>
+</tr>
+<tr>
+<td>byType</td>
+<td>
+					<p>如果容器中存在一个与指定属性类型相同的bean，那么将与该属性自动装配。如果存在多个该类型的bean，那么将会抛出异常，并指出不能使用<span class="emphasis"><em>byType</em></span>方式进行自动装配。若没有找到相匹配的bean，则什么事都不发生，属性也不会被设置。如果你不希望这样，那么可以通过设置<code class="literal">dependency-check="objects"</code>让Spring抛出异常。</p>
+				</td>
+</tr>
+<tr>
+<td>constructor</td>
+<td>
+				<p>与<span class="emphasis"><em>byType</em></span>的方式类似，不同之处在于它应用于构造器参数。如果在容器中没有找到与构造器参数类型一致的bean，那么将会抛出异常。</p>
+			</td>
+</tr>
+<tr>
+<td>autodetect</td>
+<td>
+					<p>通过bean类的自省机制（introspection）来决定是使用<span class="emphasis"><em>constructor</em></span>还是<span class="emphasis"><em>byType</em></span>方式进行自动装配。如果发现默认的构造器，那么将使用<span class="emphasis"><em>byType</em></span>方式。</p>
+				</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>如果直接使用<code class="literal">property</code>和<code class="literal">constructor-arg</code>注入依赖的话，那么将<code class="interfacename">总是</code>覆盖自动装配。而且目前也不支持<span class="emphasis"><em>简单</em></span>类型的自动装配，这里所说的简单类型包括基本类型、<code class="classname">String</code>、<code class="classname">Class</code>以及简单类型的数组（这一点已经被设计，将考虑作为一个<span class="emphasis"><em>功能</em></span>提供）。<span class="emphasis"><em>byType</em></span>和<span class="emphasis"><em>constructor</em></span>自动装配模式也可用于数组和指定类型的集合。在这种情况下容器中的<span class="emphasis"><em>所有</em></span>匹配的自动装配对象将被用于满足各种依赖。对于key值类型为 <code class="classname">String</code>的强类型Map也可以被自动装配。一个自动装配的Map的value值将由所匹配类型的bean所填充。而Map的key值则是相应的bean的名字。</p>
+<p>自动装配还可以与依赖检查结合使用，这样依赖检查将在自动装配完成之后被执行。</p>
+<p>理解自动装配的优缺点是很重要的。其中优点包括：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>自动装配能显著减少配置的数量。不过，采用bean模板（见<a href="ch03s06.html" title="3.6.&#160;bean定义的继承">这里</a>）也可以达到同样的目的。</p></li>
+<li><p>自动装配可以使配置与java代码同步更新。例如，如果你需要给一个java类增加一个依赖，那么该依赖将被自动实现而不需要修改配置。因此强烈推荐在开发过程中采用自动装配，而在系统趋于稳定的时候改为显式装配的方式。</p></li>
+</ul></div>
+<p>自动装配的一些缺点：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>尽管自动装配比显式装配更神奇，但是，正如上面所提到的，Spring会尽量避免在装配不明确的时候进行猜测，因为装配不明确可能出现难以预料的结果，而且Spring所管理的对象之间的关联关系也不再能清晰的进行文档化。</p></li>
+<li><p>对于那些根据Spring配置文件生成文档的工具来说，自动装配将会使这些工具没法生成依赖信息。</p></li>
+</ul></div>
+<p>另一个问题需要注意的是，当根据类型进行自动装配的时候，容器中可能存在多个bean定义跟自动装配的setter方法和构造器参数类型匹配。虽然对于数组、集合以及Map，不存在这个问题，但是对于单值依赖来说，就会存在模棱两可的问题。如果bean定义不唯一，装配时就会抛出异常，面对这种场景我们有几个方案进行选择：第一个方案就是弃自动装配而改用显式装配；第二个方案就是在bean定义中通过设置<code class="literal">'autowire-candidate'</code>属性为<code class="literal">'false'</code>来将该bean排除在自动装配候选名单之外（详情见接下来的章节）；第三个方案是通过在bean定义中设置<code class="literal">'primary'</code>属性为<code class="literal">'true'</code>来将该bean设置为<span class="emphasis"><em>首选</em></span>自动装配bean。最后，对于使用Java 5的用户来说，可能会使用注解的形式来配置bean，关于这方面的内容可见<a href="ch03s11.html" title="3.11.&#160;基于注解（Annotation-based）的配置">第&#160;3.11&#160;节 “基于注解（Annotation-based）的配置”</a>。</p>
+<p>但决定是否使用自动装配式时，没有绝对的对错。考虑项目的实际是最好的办法。比如项目通常不使用自动装配，那么使用它来仅仅装配2个bean定义是很让人困惑的。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-factory-autowire-candidate"></a>3.3.5.1.&#160;将bean排除在自动装配之外</h4></div></div></div>
+<p>你也可以针对单个bean设置其是否为被自动装配对象。当采用XML格式配置bean时，<code class="literal">&lt;bean/&gt;</code>元素的 <code class="literal">autowire-candidate</code>属性可被设为<code class="literal">false</code>，这样容器在查找自动装配对象时将不考虑该bean。</p>
+<p>另一个做法就是使用对bean名字进行模式匹配来对自动装配进行限制。其做法是在<code class="literal">&lt;beans/&gt;</code>元素的<code class="literal">'default-autowire-candidates'</code>属性中进行设置。比如，将自动装配限制在名字以<span class="emphasis"><em>'Repository'</em></span>结尾的bean，那么可以设置为"*Repository“。对于多个匹配模式则可以使用逗号进行分隔。注意，如果在bean定义中的<code class="literal">'autowire-candidate'</code>属性显式的设置为<code class="literal">'true'</code> 或 <code class="literal">'false'</code>，那么该容器在自动装配的时候优先采用该属性的设置，而模式匹配将不起作用。</p>
+<p>对于那些从来就不会被其它bean采用自动装配的方式来注入的bean而言，这是有用的。不过这并不意味着被排除的bean自己就不能使用自动装配来注入其他bean，它是可以的，或者更准确地说，应该是它不会被考虑作为其他bean自动装配的候选者。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-dependencies"></a>3.3.6.&#160;依赖检查</h3></div></div></div>
+<p>Spring除了能对容器中bean的依赖设置进行检查外，还可以检查bean定义中实际属性值的设置，当然也包括采用自动装配方式设置属性值的检查。</p>
+<p>当需要确保bean的所有属性值（或者属性类型）被正确设置的时候，那么这个功能会非常有用。当然，在很多情况下，bean类的某些属性会具有默认值，或者有些属性并不会在所有场景下使用，因此这项功能会存在一定的局限性。就像自动装配一样，依赖检查也可以针对每一个bean进行设置。依赖检查默认为<span class="emphasis"><em>not</em></span>，它有几种不同的使用模式，在xml配置文件中，可以在bean定义中为<code class="literal">dependency-check</code>属性使用以下几种值：</p>
+<div class="table">
+<a name="beans-factory-dependency-check-modes-tbl"></a><p class="title"><b>表&#160;3.3.&#160;依赖检查方式</b></p>
+<div class="table-contents"><table summary="依赖检查方式" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>模式</th>
+<th>说明</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>
+<p>没有依赖检查，如果bean的属性没有值的话可以不用设置。</p>
+			  </td>
+</tr>
+<tr>
+<td>simple</td>
+<td>
+<p>对于原始类型及集合（除协作者外的一切东西）执行依赖检查</p>
+			  </td>
+</tr>
+<tr>
+<td>object</td>
+<td>
+<p>仅对协作者执行依赖检查</p>
+			  </td>
+</tr>
+<tr>
+<td>all</td>
+<td>
+			  <p>对协作者，原始类型及集合执行依赖检查</p>
+			  </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>假若你在使用Java 5，可以采用源代码级的注解（annotations）来进行配置，关于这方面的内容可以在<a href="ch25s03.html#metadata-annotations-required" title="25.3.1.&#160;@Required">第&#160;25.3.1&#160;节 “@<code class="interfacename">Required</code>”</a>这一节找到。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-factory-method-injection"></a>3.3.7.&#160;方法注入</h3></div></div></div>
+<p>在大部分情况下，容器中的bean都是<a href="ch03s04.html#beans-factory-scopes-singleton" title="3.4.1.&#160;Singleton作用域">singleton</a>类型的。如果一个singleton bean要引用另外一个singleton bean，或者一个非singleton bean要引用另外一个非singleton bean时，通常情况下将一个bean定义为另一个bean的property值就可以了。不过对于具有不同生命周期的bean来说这样做就会有问题了，比如在调用一个singleton类型bean A的某个方法时，需要引用另一个非singleton（prototype）类型的bean B，对于bean A来说，容器只会创建一次，这样就没法在需要的时候每次让容器为bean A提供一个新的的bean B实例。</p>
+<p>上述问题的一个解决办法就是放弃控制反转。通过实现<code class="literal">BeanFactoryAware</code>接口（见<a href="ch03s05.html#beans-factory-aware-beanfactoryaware" title="3.5.2.1.&#160; BeanFactoryAware">这里</a>）让bean A能够感知bean 容器，并且在需要的时候通过使用<code class="literal">getBean("B")</code>方式（见<a href="ch03s02.html#beans-factory-client" title="3.2.4.&#160;使用容器">这里</a>）向容器请求一个新的bean B实例。看下下面这个例子，其中故意使用了这种方法：</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">// a class that uses a stateful Command-style class to perform some processing</span></em>
+package fiona.apple;
+
+<em class="lineannotation"><span class="lineannotation">// lots of Spring-API imports</span></em>
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+
+public class CommandManager implements BeanFactoryAware {
+
+   private BeanFactory beanFactory;
+
+   public Object process(Map commandState) {
+      <em class="lineannotation"><span class="lineannotation">// grab a new instance of the appropriate <code class="interfacename">Command</code></span></em>
+      Command command = createCommand();
+      <em class="lineannotation"><span class="lineannotation">// set the state on the (hopefully brand new) <code class="interfacename">Command</code> instance</span></em>
+      command.setState(commandState);
+      return command.execute();
+   }
+
+   <em class="lineannotation"><span class="lineannotation">// the <code class="interfacename">Command</code> returned here could be an implementation that executes asynchronously, or whatever</span></em>
+   protected Command createCommand() {
+      return (Command) this.beanFactory.getBean("command"); <em class="lineannotation"><span class="lineannotation">// notice the Spring API dependency</span></em>
+   }
+
+   public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+      this.beanFactory = beanFactory;
+   }
+}</pre>
+<p>上面的例子显然不是最好的，因为业务代码和Spring Framework产生了耦合。方法注入，作为Spring IoC容器的一种高级特性，可以以一种干净的方法来处理这种情况。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-factory-lookup-method-injection"></a>3.3.7.1.&#160;Lookup方法注入</h4></div></div></div>
+<div class="sidebar">
+<p class="title"><b>这究竟是不是方法注入……</b></p>
+<p>有点像Tapestry 4.0的页面，写上<code class="literal">abstract</code>属性，Tapestry会在运行时用具体实现将其覆盖。</p>
+<p>在<a href="http://blog.springframework.com/rod/?p=1" target="_top">这篇Blog文章中</a>你可以了解更过关于方法注入动机的内容。</p>
+</div>
+<p>Lookup方法注入利用了容器的覆盖<span class="emphasis"><em>受容器管理的bean</em></span>方法的能力，从而返回指定名字的bean实例。在上述场景中，Lookup方法注入适用于原型bean。Lookup方法注入的内部机制是Spring利用了CGLIB库在运行时生成二进制代码功能，通过动态创建Lookup方法bean的子类而达到复写Lookup方法的目的。</p>
+<p>如果你看下上个代码段中的代码(<code class="classname">CommandManager</code>类)，Spring容器动态覆盖了<code class="methodname">createCommand()</code>方法的实现。你的<code class="classname">CommandManager</code>类不会有一点对Spring的依赖，在下面这个例子中也是一样的：</p>
+<pre class="code">package fiona.apple;
+
+<em class="lineannotation"><span class="lineannotation">// no more Spring imports! </span></em>
+
+public abstract class CommandManager {
+
+   public Object process(Object commandState) {
+      <em class="lineannotation"><span class="lineannotation">// grab a new instance of the appropriate <code class="interfacename">Command</code> interface</span></em>
+      Command command = createCommand();
+      <em class="lineannotation"><span class="lineannotation">// set the state on the (hopefully brand new) <code class="interfacename">Command</code> instance</span></em>
+      command.setState(commandState);
+      return command.execute();
+   }
+
+    <em class="lineannotation"><span class="lineannotation">// okay... but where is the implementation of this method?</span></em>
+   protected abstract Command createCommand();
+}</pre>
+<p>在包含被注入方法的客户类中(此处是<code class="classname">CommandManager</code>)，此方法的定义必须按以下形式进行：</p>
+<pre class="code">&lt;public|protected&gt; [abstract] &lt;return-type&gt; theMethodName(<em class="lineannotation"><span class="lineannotation">no-arguments</span></em>);</pre>
+<p>如果方法是<code class="literal">抽象</code>的，动态生成的子类会实现该方法。否则，动态生成的子类会覆盖类里的具体方法。让我们来看个例子：</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">&lt;!-- a stateful bean deployed as a prototype (non-singleton) --&gt;</span></em>
+&lt;bean id="command" class="fiona.apple.AsyncCommand" scope="prototype"&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- inject dependencies here as required --&gt;</span></em>
+&lt;/bean&gt;
+
+<em class="lineannotation"><span class="lineannotation">&lt;!-- <code class="literal">commandProcessor</code> uses <code class="literal">statefulCommandHelper</code> --&gt;</span></em>
+&lt;bean id="commandManager" class="fiona.apple.CommandManager"&gt;
+  &lt;lookup-method name="createCommand" bean="command"/&gt;
+&lt;/bean&gt;</pre>
+<p>在上面的例子中，标识为<span class="emphasis"><em>commandManager</em></span>的bean在需要一个新的<span class="emphasis"><em>command</em></span> bean实例时，会调用<code class="literal">createCommand</code>方法。重要的一点是，必须将<code class="literal">command</code>部署为prototype。当然也可以指定为<a href="ch03s04.html#beans-factory-scopes-singleton" title="3.4.1.&#160;Singleton作用域">singleton</a>，如果是这样的话，那么每次将返回相同的<code class="literal">command</code> bean实例！</p>
+<p>请注意，为了让这个动态子类得以正常工作，需要把CGLIB的jar文件放在classpath里。另外，Spring容器要子类化的类不能是<code class="literal">final</code>的，要覆盖的方法也不能是<code class="literal">final</code>的。同样的，要测试一个包含<code class="literal">抽象</code>方法的类也稍微有些不同，你需要自己编写它的子类提供该<code class="literal">抽象</code>方法的桩实现。最后，作为方法注入目标的bean不能是序列化的(serialized)。</p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>有兴趣的读者也许已经发现<code class="classname">ServiceLocatorFactoryBean</code>(在<code class="literal">org.springframework.beans.factory.config</code>包里)的用法和<code class="classname">ObjectFactoryCreatingFactoryBean</code>的有些相似，不同的是它允许你指定自己的lookup接口，不一定非要用Spring的lookup接口，比如<code class="interfacename">ObjectFactory</code>。要详细了解这种方法请参考<code class="classname">ServiceLocatorFactoryBean</code>的Javadocs(它<span class="emphasis"><em>的确</em></span>减少了对Spring的耦合)。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="beans-factory-arbitrary-method-replacement"></a>3.3.7.2.&#160;自定义方法的替代方案</h4></div></div></div>
+<p>比起Lookup 方法注入来，还有一种很少用到的方法注入形式，该注入能使用bean的另一个方法实现去替换自定义的方法。除非你真的需要该功能，否则可以略过本节。</p>
+<p>当使用基于XML配置元数据文件时，可以在bean定义中使用<code class="literal">replaced-method</code>元素来达到用另一个方法来取代已有方法的目的。考虑下面的类，我们将覆盖computeValue方法：</p>
+<pre class="code">public class MyValueCalculator {
+
+  public String computeValue(String input) {
+    <em class="lineannotation"><span class="lineannotation">// some real code...</span></em>
+  }
+
+  <em class="lineannotation"><span class="lineannotation">// some other methods...</span></em>
+
+}</pre>
+<p>实现<code class="interfacename">org.springframework.beans.factory.support.MethodReplacer</code>接口的类提供了新的方法定义。</p>
+<pre class="code"><em class="lineannotation"><span class="lineannotation">/** meant to be used to override the existing <code class="methodname">computeValue(String)</code>
+    implementation in <code class="classname">MyValueCalculator</code>
+  */</span></em>
+public class ReplacementComputeValue implements MethodReplacer {
+
+    public Object reimplement(Object o, Method m, Object[] args) throws Throwable {
+        <em class="lineannotation"><span class="lineannotation">// get the input value, work with it, and return a computed result</span></em>
+        String input = (String) args[0];
+        ... 
+        return ...;
+    }
+}</pre>
+<p>下面的bean定义中指定了要配置的原始类和将要覆写的方法：</p>
+<pre class="code">&lt;bean id="myValueCalculator class="x.y.z.MyValueCalculator"&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- arbitrary method replacement --&gt;</span></em>
+  &lt;replaced-method name="computeValue" replacer="replacementComputeValue"&gt;
+    &lt;arg-type&gt;String&lt;/arg-type&gt;
+  &lt;/replaced-method&gt;
+&lt;/bean&gt;
+
+&lt;bean id="replacementComputeValue" class="a.b.c.ReplacementComputeValue"/&gt;</pre>
+<p>在<code class="literal">&lt;replaced-method/&gt;</code>元素内可包含一个或多个<code class="literal">&lt;arg-type/&gt;</code>元素，这些元素用来标明被覆写的方法签名。只有被覆写（override）的方法存在重载（overload）的情况（同名的多个方法变体）才会使用方法签名。为了方便，参数的类型字符串可以采用全限定类名的简写。例如，下面的字符串都表示参数类型为<code class="classname">java.lang.String</code>。</p>
+<pre class="code">    java.lang.String
+    String
+    Str</pre>
+<p>参数的个数通常足够用来区别每个可能的选择，这个捷径能减少很多键盘输入的工作，它允许你只输入最短的匹配参数类型的字符串。</p>
+</div>
+</div>
+<div class="footnotes">
+<br><hr width="100" align="left">
+<div class="footnote"><p><sup>[<a name="ftn.id443223" href="#id443223">2</a>] </sup>参见<a href="ch03s03.html#beans-factory-collaborators" title="3.3.1.&#160;注入依赖">第&#160;3.3.1&#160;节 “注入依赖”</a></p></div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

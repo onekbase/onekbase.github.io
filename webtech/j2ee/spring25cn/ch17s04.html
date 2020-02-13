@@ -1,0 +1,233 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="remoting-httpinvoker"></a>17.4.&#160;使用HTTP调用器暴露服务</h2></div></div></div>
+<p>与使用自身序列化机制的轻量级协议Burlap和Hessian相反，Spring HTTP调用器使用标准Java序列化机制来通过HTTP暴露业务。如果你的参数或返回值是复杂类型，并且不能通过Hessian和Burlap的序列化机制进行序列化，HTTP调用器就很有优势（参阅下一节，选择远程技术时的考虑）。</p>
+<p>实际上，Spring可以使用J2SE提供的标准功能或Commons的HttpClient来实现HTTP调用。如果你需要更先进，更容易使用的功能，就使用后者。你可以参考 <a href="" target="_top">jakarta.apache.org/commons/httpclient</a>。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div>
+<div><h3 class="title">
+<a name="remoting-httpinvoker-server"></a>17.4.1.&#160;Exposing the service object</h3></div>
+<div><h3 class="title">
+<a name="remoting-httpinvoker-server"></a>17.4.1.&#160;Exposing the service object</h3></div>
+</div></div>
+<p>为服务对象设置HTTP调用器和你在Hessian或Burlap中使用的方式类似。就象为Hessian支持提供的 <code class="classname">HessianServiceExporter</code>，Spring的HTTP调用器提供了 <code class="classname">org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter</code>。
+      </p>
+<p>为了在Spring Web MVC <code class="classname">DispatcherServlet</code>中暴露<code class="literal">AccountService</code> (如上所述)， 需要在dispatcher的应用上下文中使用以下配置：</p>
+<pre class="code">&lt;bean name="/AccountService" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"&gt;
+    &lt;property name="service" ref="accountService"/&gt;
+    &lt;property name="serviceInterface" value="example.AccountService"/&gt;
+&lt;/bean&gt;
+</pre>
+<p>和在Hessian章节讲的一样，这个exporter定义将通过 <code class="classname">DispatcherServlet</code>标准的映射工具暴露出来。</p>
+<p>做为可选项, 在你的根应用上下文中(比如<code class="filename">'WEB-INF/applicationContext.xml'</code>)创建一个<code class="classname">HttpInvokerServiceExporter</code> :</p>
+<pre class="code">&lt;bean name="accountExporter" class="org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter"&gt;
+    &lt;property name="service" ref="accountService"/&gt;
+    &lt;property name="serviceInterface" value="example.AccountService"/&gt;
+&lt;/bean&gt;</pre>
+<p>另外,在<code class="filename">'web.xml'</code>中为这个exporter定义一个相应的servlet，其名称与目标exporter bean的名称相匹配:</p>
+<pre class="code">&lt;servlet&gt;
+    &lt;servlet-name&gt;accountExporter&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;org.springframework.web.context.support.HttpRequestHandlerServlet&lt;/servlet-class&gt;
+&lt;/servlet&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;accountExporter&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/remoting/AccountService&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="remoting-httpinvoker-client"></a>17.4.2.&#160;在客户端连接服务</h3></div></div></div>
+<p>
+				同样，从客户端连接业务与你使用Hessian或Burlap时所做的很相似。使用代理，Spring可以将你调用的HTTP POST请求转换成被暴露服务的URL。
+		 </p>
+<pre class="code">&lt;bean id="httpInvokerProxy" class="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean"&gt;
+    &lt;property name="serviceUrl" value="http://remotehost:8080/remoting/AccountService"/&gt;
+    &lt;property name="serviceInterface" value="example.AccountService"/&gt;
+&lt;/bean&gt;
+</pre>
+<p>就象上面说的一样，你可以选择使用你想使用的HTTP客户端。缺省情况下，<code class="classname">HttpInvokerProxy</code>使用J2SE的HTTP功能，但是你也可以通过设置<code class="literal">httpInvokerRequestExecutor</code>属性选择使用Commons <code class="classname">HttpClient</code>：</p>
+<pre class="code">&lt;property name="httpInvokerRequestExecutor"&gt;
+    &lt;bean class="org.springframework.remoting.httpinvoker.CommonsHttpInvokerRequestExecutor"/&gt;
+&lt;/property&gt;
+</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

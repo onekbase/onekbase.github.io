@@ -1,0 +1,375 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<title>Hibernate 学习笔记</title>
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <h1>开源框架：Hibernate Gossip</h1>
+    Hibernate
+    是「对象/关系对应」（Object/Relational
+    Mapping）的解决方案，简写为ORM，简单的说就是将 Java 中的对象与对象关系，映像至关系型数据库中的表格与表格之间的关系，
+    Hibernate 提供了这个过程中自动对应转换的方案。<br>
+    <br>
+    2001年未 Hibernate 第一个版本发表，2003年6月8日 Hibernate 2 发表，并于年未获得 Jolt
+    2004 大奖，后被 JBOSS 收纳而成为其子项目之一，2005年3月 Hibernate 3 正式发表，当中有了一些重大的改变，这份文件将以之前
+    Hibernate 2 时撰写的 <a href="http://www.javaworld.com.tw/confluence/pages/viewpage.action?pageId=833">文件</a> 为基础，针对 Hibernate 3作重新整理的动作，所使用的版本为Hibernate 3.0。<br>
+    <br>
+    <br>
+    <br>
+    <dl>
+      <dt>基础入门</dt>
+    </dl>
+        
+从一个最基本的对象关系映像自动化程序，了解 Hibernate 组成的基本元素，并进一步了解 Hibernate 的基础语义、配置等概念。
+    <ul>
+      <li>O/R 映射入门</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 第一个 Hibernate 程序很简单，将一个对象映像至一个数据表。</div>
+    <ul>
+      <ul>
+        <li><a href="1.html">配置 Hibernate</a> </li>
+        <li><a href="2.html">第一个 Hibernate</a></li>
+        <li><a href="3.html">第二个 Hibernate</a></li>
+      </ul>
+      <li>基本配置</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 了解一下配置文件、映像文件中各种元素的意义，在进入对象关系映像的学习之前，这是必备的基本功夫。</div>
+    <ul>
+      <ul>
+        <li><a href="4.html">配置文件</a></li>
+        <li><a href="5.html">数据库连结</a></li>
+        <li><a href="6.html">简介快取（Session Level）</a></li>
+        <li><a href="7.html">简介事务管理（基于 JDBC ）</a></li>
+        <li><a href="8.html">映射文件</a></li>
+      </ul>
+      <li>基本 API</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 了解一下 Hibernate 常使用的几个类别之基本使用方式。</div>
+    <ul>
+      <ul>
+        <li><a href="9.html">Session</a></li>
+        <li><a href="10.html">Session 管理</a></li>
+        <li><a href="11.html">Criteria 基本查询</a></li>
+        <li><a href="12.html">Criteria 进阶查询</a></li>
+        <li><a href="13.html">DetchedCriteria</a></li>
+        <li><a href="14.html">Query</a></li>
+      </ul>
+      <li>HQL（Hibernate Query Language）</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 这是 Hibernate 官方所推荐的查询语言，接近 SQL 的语法，并提供更多的特性与封装。</div>
+    <ul>
+      <ul>
+        <li><a href="15.html">基本查询</a></li>
+        <li><a href="16.html">where、group by、order by 子句</a></li>
+        <li><a href="17.html">更新、删除</a></li>
+      </ul>
+      <li>SQL 支援</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; Hibernate 提供了对 SQL 的支持，并可以自行定义持久化方式。</div>
+    <ul>
+      <ul>
+        <li><a href="18.html">建立 SQL 查询</a></li>
+        <li><a href="19.html">自定义 insert、update、delete</a></li>
+      </ul>
+    </ul>
+    <div style="text-align: left;">
+      <ul>
+        <li>映射基础议题</li>
+      </ul>
+      <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 一边是对象，一边是数据表格，两者在映像时有一些过渡的基础议题必须了解。</div>
+      <ul>
+        <ul>
+          <li><a href="20.html">实体对象生命周期</a></li>
+          <li><a href="21.html">数据识别（Data Identity）</a></li>
+        </ul>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <dl>
+      <dt>物件关联映像（Object/Relational Mapping, ORM）</dt>
+    </dl>
+    <ul>
+    </ul>
+        
+学习 Hibernate，大部份的时间都在了解如何实现映射，而从中您也可以了解到不少关系型数据库的表格设计方式。
+    <ul>
+      <li>实体映像</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 来看看一些进阶的实体映像议题。</div>
+    <ul>
+      <ul>
+        <li><a href="22.html">复合主键（一）</a></li>
+        <li><a href="23.html">复合主键（二）</a></li>
+        <li><a href="24.html">Blob、Clob</a></li>
+        <li><a href="25.html">Blob、Clob - Oracle 9i</a></li>
+        <li><a href="26.html">Component</a></li>
+        <li><a href="27.html">动态模型（Dynamic Model）</a></li>
+      </ul>
+      <ul>
+      </ul>
+      <li>继承映射</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 在对象导向设计中，继承关系是很常见的，但继承与关系型数据库有着先天上的差异，继承关系至表格的设计上有三种方式。</div>
+    <ul>
+      <ul>
+        <li><a href="28.html">继承 - Table per concrete class</a></li>
+        <li><a href="29.html">继承 - Table per class hierarchy</a></li>
+        <li><a href="30.html">继承 - Table per &nbsp;subclass</a></li>
+      </ul>
+      <li>容器映射</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 容器常用来储存对象，这边来了解一下如何将容器的关系映像至表格。</div>
+    <ul>
+      <ul>
+        <li><a href="31.html">Set</a></li>
+        <li><a href="32.html">List</a> </li>
+        <li><a href="33.html">Map</a></li>
+        <li><a href="34.html">Bag</a><span class="Topic"></span></li>
+        <li><a href="35.html">内含 Component 的容器</a></li>
+        <li><a href="36.html"><span class="Topic">容器的排序</span></a></li>
+        <li><a href="37.html"><span class="Topic">容器的延迟初始（Lazy Initialization）</span></a></li>
+      </ul>
+      <li> 关系映射</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 来看看实体与实体之间的多对一、一对多、一对一、多对多如何与Java对象之间进行映像。</div>
+    <ul>
+      <ul>
+        <li><a href="39.html">多对一</a></li>
+        <li><a href="40.html">cascade 的意义</a></li>
+        <li><a href="41.html">一对多</a></li>
+        <li><a href="42.html"><span class="Topic">双向关联（inverse 的意义）</span></a><br>
+        </li>
+        <li><a href="43.html">一对一（唯一外键关联）</a></li>
+        <li><a href="44.html">一对一（主键关联）</a></li>
+        <li><a href="45.html">多对多</a></li>
+      </ul>
+    </ul>
+    <br>
+    <dl>
+      <dt>进阶特性</dt>
+    </dl>
+        
+有关于Hibernate的快取、事务等进阶特性的探讨。
+    <ul>
+    </ul>
+    <ul>
+      <li> 快取</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 二级快取可以跨越 Session 生命周期，Hibernate 透过第三方来实现二级快取，这边也来看看 Query 的快取。</div>
+    <ul>
+      <ul>
+        <li><a href="46.html">二级快取（Second-level）</a></li>
+        <li><a href="47.html">Query 快取</a></li>
+        <li><a href="48.html">Query.list()、iterator()</a></li>
+      </ul>
+      <li>Locking</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; Hibernate 透过两种 Locking 机制来保证数据在操作过程中不会被干扰。</div>
+    <ul>
+      <ul>
+        <li><a href="49.html">悲观锁定（Pessimistic Locking）</a></li>
+        <li><a href="50.html">乐观锁定（Optimistic Locking）</a></li>
+      </ul>
+    </ul>
+    <ul>
+      <li>Validatable、Lifecycle、Interceptor</li>
+    </ul>
+    <div style="margin-left: 40px;">&nbsp; &nbsp; &nbsp; &nbsp; 分别透过这三个接口，来进行数据验证、于 CRUD（Create Retrieve Update Delete）作对应动作、栏截动作。</div>
+    <ul>
+      <ul>
+        <li><a href="51.html">Lifecycle 接口、Validatable 接口</a></li>
+        <li><a href="52.html">Interceptor 界面</a></li>
+      </ul>
+    </ul>
+    <br>
+    <dl>
+      <dt>工具</dt>
+    </dl>
+        
+                     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;透过一些工具来自动生成映像文件或数据库表格。<br>
+    <ul>
+      <li><a href="53.html">从映像文件生成数据表</a></li>
+      <li><a href="54.html">从数据表生成映像文件</a></li>
+    </ul>
+    <br>
+    <dl>
+      <dt>附录</dt>
+    </dl>
+    <ul>
+      <li><a href="55.html">从 Hibernate 2 到 Hibernate 3</a></li>
+      <li><a href="http://www.hibernate.org/">Hibernate 官方网站</a></li>
+      <li><a href="http://forum.javaeye.com/">Java 视线论譠</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

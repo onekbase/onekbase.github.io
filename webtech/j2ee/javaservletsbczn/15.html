@@ -1,0 +1,931 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="14.html"> 上一页</a><a href="16.html"> 下一页</a></div>
+    <h1>第15章 使用servlet和本地代码</h1>
+    <p>　　有些时候，我们需要跳出Java环境，访问一些只能通过本地代码才能访问的资源，在本章中我们假设必须使用C语言来访问。可能你想要使用现有的库，或者你使用了某种数据库产品，它只提供了C的接口。还有可能是你明确知道应用程序要运行在某个特定的平台上，所以想要利用一些Java利用不了的该平台的功能或是想要用低级语言实现某种对时间要求很高的程序。在这些情况下，Java允许你通过Java本地接口(JNI)来实现这些功能。 </p>
+    <h2>15.1 JNI概述</h2>
+    <p>　　JNI本地接口(JNI)是核心JDK的一部分，它提供了一个到本地代码的接口框架。当然，你使用的本地代码在不同的硬件平台上移植起来不太容易，肯定是不能自动实现的，所以一定要记住，对要本地代码的使用使你不能利用Java的主要优势之一的平台无关性。</p>
+    <p> JNI结构允许你的本地代码就像在Java中一样来利用Java对象。本地方法不但可以将Java对象作为参数传递，而且还可以创建Java对象并将它返回给调用程序。本地方法甚至具有更新Java对象的能力。</p>
+    不过JNI可不是一个单向车道，同样，本地方法也可以调用Java方法。通过JNI，你可以在本地方法中利用Java编程语言的所有特性。通过使用Invocation 
+    API，你可以定位某个特定的Java对象的可用方法，调用这些方法，传递参数并取得返回值。你还可以捕获Java方法产生的异常，更重要的是，你还可以在本地方法中产生异常，然后由Java应用程序来处理
+    </p>
+    <h2><a name="152" id="152"></a>15.2 义不容辞的“Hello World”</h2>
+    <p>　　显示“Hello World”的简单程序总是C语言的第一个例子。我们的第一个例子将利用JNI将一个含有文本文件“Hello
+    <p> World”消息的字符串从一个用C编写的本地程序中返回给一个简单的Java servlet。在开始之前，我们先来看一看开发Java本地方法的基本步骤：</p>
+    <p> 1.设计接口。在我们使用本地方法之前，我们需要设计我们所要使用的方法、参数、返回值和异常类型。由于我们是从头开始设计，所以对于新应用程序来说这一步是比较简单的。如果你正在使用一个已经存在的库，又想在Java中使用它，那么你可能需要创建一些新的能够由Java应用程序调用的方法来包装库中原有的方法，在你的Java应用程序中调用这些方法，而在这些方法中调用库中原有的方法。 </p>
+    <p> 2.创建一个Java类定义这些本地方法。我们必须用Java方法修改符“native”来声明这些本地方法。</p>
+    <p> 3.用Javah来生成本地方法的头文件。javah工具是JDK提供的，这是我们要使用-jni开关。头文件生成之后，我们就可以使用方法签名了，这些签名被创建来实现方法。</p>
+    4.用选定的语言(如C、C++或者汇编之类)实现本地方法。如果你使用了已经存在的库，那么这个实现可能就是简单地直接调用这个库中的方法。JDBC-ODBC桥正是这样工作的。在本章的后面，我们还会看到一个使用其他ODBC
+    <p> API功能的例子来说明这个问题。</p>
+    <p> 5.编译本地代码并创建共享库文件，在UNIX中是一个共享对象，在Windows中是一个动态链接库。</p>
+    <p> 6.运行这个Java应用程序。Java应用程序将加载这个共享库以便使用其中的方法。</p>
+    下面就让我们一步一步的来创建这个从本地方法中取得“Hello World”消息的Java servlet吧。
+    </p>
+    <h3> <a name="1521" id="1521"></a>15.2.1 设计接口</h3>
+    <p>　　在我们开始激动人心的编程工作之前，需要确定Java和我们的本地代码之间的接口。在这个简单的“Hello World”例子中，我们需要的仅仅是一个向调用程序返回一个消息字符串的方法：</p>
+    <p> String getMessage();</p>
+    如果你要为一个已经存在的库创建一个本地接口，特别是那些需要许多不同类型的对象作为参数，设计接口的工作极富挑战性。JNI文档中有关于传递参数，以及如何在Java和C之间进行类型转换的更多信息。
+    </p>
+    <h3> <a name="1522" id="1522"></a>15.2.2 创建Java类</h3>
+    <p>　　现在我们已经知道本地接口的结构了，接下来就该编写声明这些本地方法的Java代码了。图15.1显示了getMessage方法的代码段。</p>
+    <pre class="code">/**
+* Gets a message from a native library
+* @return A message
+*/　</pre>
+    <p> public native String getMessage();</p>
+    图15.1 声明一个本地方法
+    <p>　　请注意这里使用的“本地”这个关键词。这个方法修饰符告诉Java编译器这个方法的实现可以在一个共享库中找到。在Java中使用本地方法的重要一点就是调用者并不知道也不关心这个方法是否用Java写的。事实上，许多标准的Java方法实际上都是用本地方法写的。Java.io包中的许多方法就是用本地代码写的。</p>
+    HelloWorld servlet的其他部分显示在图15.2中。正如我们将要看到的，使用getMessage方法和使用其他的Java方法完全一样。
+    </p>
+    <pre class="code">　package javaservlets.nativeCode;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+/**
+* This servlet uses native code to get a &quot;Hello World&quot; message
+*/
+public class HelloWorld extends HttpServlet
+{
+/**
+* Use a static initializer to load the native code which
+* is contained within a library. This initializer is
+* called when the class loader first loads this class.
+*/
+static
+{
+System.out.println(&quot;Loading HelloWorld Library&quot;);
+System.loadLibrary(&quot;HelloWorld&quot;);
+}
+
+/**
+* &lt;p&gt;Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType(&quot;text/html&quot;);
+
+// Get the PrintWriter to write the response
+java.io.PrintWriter out = resp.getWriter();
+
+// Create the header
+out.println(&quot;&lt;html&gt;&quot;);
+out.println(&quot;&lt;head&gt;&quot;);
+out.println(&quot;&lt;title&gt;Hello World Using Native Code&lt;/title&gt;&quot;);
+out.println(&quot;&lt;/head&gt;&quot;);
+out.println(&quot;&lt;body&gt;&lt;center&gt;&quot;);
+out.println(&quot;Native code returning: &quot; + getMessage());
+out.println(&quot;&lt;br&gt;&lt;br&gt;&quot;);
+out.println(&quot;Native code inserts: &quot;);
+printMessage(out);
+
+// Wrap up
+out.println(&quot;&lt;/body&gt;&quot;);
+out.println(&quot;&lt;/html&gt;&quot;);
+out.flush();
+}
+
+/**
+* Gets a message from a native library
+* @return A message
+*/
+public native String getMessage();
+}</pre>
+    <p>图15.2 HelloWorld代码清单 </p>
+    <p>你可能还会注意到这时使用了静态的初始化函数，这个函数在类第一次被加载的时候调用一次——这与创建类的实例时调用的构造函数不同。在这个方法中，使用System.loadLibrary方法加载共享库。将共享库加载到HelloWorld类中，使用本地方法和它的实现之间建立了映射关系。 </p>
+    <h3><a name="1523" id="1523"></a>15.2.3 生成头文件</h3>
+    <p> 刚才我们已经在Java中定义了本地方法，现在我们就要生成一个头文件，在这个头文件中包含了与本地方法相对应的C方法声明(method signature)。在JDK中有一个叫做javah的实用工具，它可以完成这一工作。javah分析给出的类并生成每一个本地方法的方法声明。这个命令的格式是：
+      javah -jni&lt;class name&gt;</p>
+    <p>javah的具体用法请参考JDK文档。缺省的，javah在类文件所在的目录中创建一个新的头文件。这个头文件的名字是一个包的全名，其中所有的点用下划线代替：
+      
+      javah -jni javaservlets.nativeCode.HelloWorld </p>
+    <p>生成文件：
+      javaservlets_nativeCode_HelloWorld.h </p>
+    <p>这个头文件的内容显示在图15.3中。 </p>
+    <pre class="code">  /* DO NOT EDIT THIS FILE - it is machine generated */
+  #include&lt;jni.h&gt;
+
+/* Header for class javaservlets_nativeCode_HelloWorld */
+  
+  #ifndef _Included_javaservlets_nativeCode_HelloWorld
+  #define _Included_javaservlets_nativeCode_HelloWorld
+  #ifdef __cplusplus
+  extern &quot;C&quot; {
+  #endif
+  /*
+  * Class: javaservlets_nativeCode_HelloWorld
+  * Method: getMessage
+  * Signature: ()Ljava/lang/String;
+  */
+  JNIEXPORT jstring JNICALL
+  Java_javaservlets_nativeCode_HelloWorld_getMessage
+  (JNIEnv *, jobject);
+  
+  #ifdef __cplusplus
+  }
+  #endif
+  #endif</pre>
+    图15.3 生成的HelloWorld的头文件
+    <p>　　如果HelloWorld类还定义了其他的本地方法，这些方法也会出现在这个头文件中。你也许会奇怪为什么这个本地方法的声明包含两个参数，而我们的getMessage方法并没有传递参数。JNI要求所有的本地方法都必须包含这两个参数作为前两个参数，它们分别是Java环境的句柄和当前对象的引用。环境句柄(JNIEvn)是一个接口指针，它为你的本地代码提供了许多不同的方法来帮助你建立本地代码和Java代码之间的联系，诸如创建对象，调用方法等等。当前对象指针指向调用这个本地方法的对象，实际上也就是Java中的this变量。</p>
+    <h3> <a name="1524" id="1524"></a>15.2.4 实用本地方法</h3>
+    <p>　　现在我们真正开始编写本地代码。这个方法的实现必须使用javah生成的头文件中的方法声明。图15.4显示了getMessage方法的一个简单实现。</p>
+    <pre class="code">　#include &lt;windows.h&gt;
+#include &lt;jni.h&gt;
+#include &quot;javaservlets_nativeCode_HelloWorld.h&quot;
+
+#define HELLO &quot;Hello World&quot;
+
+/*
+* Class: javaservlets_nativeCode_HelloWorld
+* Method: getMessage
+* Signature: ()Ljava/lang/String;
+*/
+JNIEXPORT jstring JNICALL
+Java_javaservlets_nativeCode_HelloWorld_getMessage
+(JNIEnv *env, jobject caller)
+{
+return (*env)-&gt;NewStringUTF(env, HELLO);
+}　</pre>
+    图15.4 HelloWorld.c代码清单
+    </p>
+    <p> 　　这里没有什么复杂的东西。getMessage方法使用生成的方法声明来实现，而消息正文是通过返回一个使用JNIEnv接口创建新的Java字符串来实现的。JNIEnv接口的所有方法请参阅JDK文档。传统的“Hello
+    <p> World”例子使用printf函数来显示“Hello World”消息，不过这在servlet中用处不大。</p>
+    本地代码还包含生成的头文件以及jni.h，在jni.h中包含一些与Java运行系统交互所需的定义。JNI头文件被分为两组：公用头文件和平台相关头文件。公用头文件可以在&lt;java 
+    home&gt;/include目录中找到，而平台相关头文件在include目录中，如&lt;java home&gt;/include/win32或者&lt;java 
+    home&gt;/include/solaris。
+    </p>
+    <h3> <a name="1525" id="1525"></a>15.2.5 编译本地代码和创建共享库</h3>
+    <p>　　我们已经实现了本地方法，现在我们就来编译这些代码并创建共享库。我们编译代码和创建共享库的方法可能和平台密切相关。</p>
+    <p> 在Solaris系统中创建HelloWorld共享对象的命令大致如下：</p>
+    <p> cc -G -I&lt;java home&gt;/include -I&lt;java home&gt;/include/solaris</p>
+    <p> HelloWorld.c -o HelloWorld</p>
+    <p> 在Win32系统中创建HelloWorld动态链接库的命令大致如下：</p>
+    cl -I&lt;java home&gt;/include -I&lt;java home&gt;/include/win32
+    <p> -LD</p>
+    <p> HelloWorld.c -FeHelloWorld</p>
+    请注意根据编译器和操作系统的不同，这些命令的用法可能有所不同。创建库的另一个方法就是使用IDE(如Microsoft Developer's
+    <p> Studio)来创建这个工程。千万不要忘记在工程文件中加入JNI头文件的路径。在随书光盘中包含一个HelloWorld库的工程的例子。</p>
+    我们可以给共享库随便起什么名字，不过这个名字必须和Java类的静态初始化函数中加载的库名一致。同样，在通过Java加载库的时候，无须给出.so以及.dll之类的库文件扩展名，因为运行时的系统会给库加上正确的扩展名。
+    </p>
+    <h3><a name="1526" id="1526"></a>15.2.6 运行Java应用程序</h3>
+    <p>　　现在就来试一下吧。不过在运行之前，确认一下是不是已经将这个共享库放在servlet引擎可以找到的位置上了。指定位置请参阅你的servlet引擎的文档。大多数引擎会为用户编写的库保留一个bin目录，所以我们就不必为在当前库路径加入什么而烦恼了。图15.5显示了我们的HelloWorld 
+      servlet。看上去并不激动人心，不过我们的本地代码的确是执行了！</p>
+    <h2><a name="153" id="153"></a>15.3 在C中调用Java方法</h2>
+    <p>　　我们已经知道了如何在Java中调用本地方法，那么如果我们反过来要在一个本地方法中调用Java的方法又该怎么办呢？又是JNI解决了这个问题。通过使用JNI提供的功能，调用Java方法，传递参数，取得返回值以及捕获异常都是非常简单的事情。为了说明这一切是多么容易，我们来扩展一下那个Hello 
+      World例子。这一次，我们不是将“Hello World”返回给servlet而是将servlet的输出流传给本地方法，然后直接将消息输出到这个输出流中。这要求我们在本地代码中直接调用println方法来输出消息。图15.6显示了附加的本地方法声明。</p>
+    <pre class="code">/**
+* Gets a message from a native library
+* @return A message
+*/
+public native String getMessage();
+
+/**
+* Prints a message to the print stream
+* @param out The print stream
+*/
+public native void printMessage(java.io.PrintWriter out);　</pre>
+    图15.6　加入一个本地方法
+    </p>
+    <p>　　这个新的叫做printMessage的本地方法将会接收到一个PrintWriter对象作为参数，通过这个对象，它可以直接在servelt的输出流中输出数据。图15.7显示了HelloWorld.java编译译后并执行了javah之后得到的头文件。</p>
+    <pre class="code"> /* DO NOT EDIT THIS FILE - it is machine generated */
+#include &lt;jni.h&gt;
+/* Header for class javaservlets_nativeCode_HelloWorld */
+
+#ifndef _Included_javaservlets_nativeCode_HelloWorld
+#define _Included_javaservlets_nativeCode_HelloWorld
+#ifdef __cplusplus
+extern &quot;C&quot; {
+#endif
+/*
+* Class: javaservlets_nativeCode_HelloWorld
+* Method: getMessage
+* Signature: ()Ljava/lang/String;
+*/
+JNIEXPORT jstring JNICALL
+Java_javaservlets_nativeCode_HelloWorld_getMessage
+(JNIEnv *, jobject);
+
+/*
+* Class: javaservlets_nativeCode_HelloWorld
+* Method: printMessage
+* Signature: (Ljava/io/PrintWriter;)V
+*/
+JNIEXPORT void JNICALL
+Java_javaservlets_nativeCode_HelloWorld_printMessage
+(JNIEnv *, jobject, jobject);
+
+#ifdef __cplusplus
+}
+#endif
+#endif　</pre>
+    <p>　　　　图15.7 生成的HelloWorld的头文件</p>
+    <p>　　请注意Java_javaservlets_nativeCode_HelloWorld_printMessage方法有三个参数：环境接口、当前对象以及PrintWriter对象——这个参数是jobject类型的。现在，通过传递参数，我们得到了一个对象的句柄，我们怎样来使用它呢？ </p>
+    <h3><a name="1531" id="1531"></a>15.3.1 调用Java方法</h3>
+    <p>　　得到一个Java对象的引用之后，我们就可以按照下列步骤来调用实例的一个方法：</p>
+    <p> 1.调用GetObjectClass方法，这个方法是JNIEnv接口提供的，同时还要提供包含你要调用的方法的对象。GetObjectClass方法返回一个指定对象类型的类对象。这和Java中的Object.getClass方法是一样的。</p>
+    <p> 2.得到类对象之后，调用GetMethodID方法，同样，这个方法也是JNIEnv接口提供的。GetMethodID在给定的类对象中查找Java方法，方便起见，如果这个方法没有被找到，那么GetMethodID会返回0，这时，从本地方法中立即返回并且产生一个NoSuchMethodError异常。</p>
+    <p> 3.调用这个方法。调用方法的时候会使用一些JNIEnv接口的方法，在我们的例子中，我们使用了CallVoidMethod，JNIEnv接口提供了一系列Call&lt;type&gt;Method的方法来调用具有相应返回值类型的方法，比如CallVoidMethod调用一个没有返回值的方法，而CallObjectMethod调用一个返回某种对象的方法(如字符串)。请注意这些Call&lt;type&gt;Method方法都可以接收可变长的参数，这样，我们就可以将所有调用这个方法时所需要的参数都传给这些方法。关于JNIEnv接口的详细描述请参阅相关的JNI文档。</p>
+    实现printMessage时，实现上述每一步的过程显示在图15.8中。这里，惟一比较难以理解的部分就是调用GetMethodID时所使用的方法声明。
+    </p>
+    <pre class="code">#include &lt;windows.h&gt;
+#include &lt;jni.h &gt;
+#include &quot;javaservlets_nativeCode_HelloWorld.h&quot;
+
+#define HELLO &quot;Hello World&quot;
+
+/*
+* Class: javaservlets_nativeCode_HelloWorld
+* Method: printMessage
+* Signature: (Ljava/io/PrintWriter;)V
+*/
+JNIEXPORT void JNICALL
+Java_javaservlets_nativeCode_HelloWorld_printMessage
+(JNIEnv *env, jobject caller, jobject out)
+{
+jclass jcls;
+jmethodID jmid;
+
+// Get the PrintWriter class and find the println method
+jcls = (*env)-&gt;GetObjectClass(env, out);
+if (jcls) {
+jmid = (*env)-&gt;GetMethodID(env, jcls, &quot;println&quot;,
+&quot;(Ljava/lang/String;)V&quot;);
+if (jmid == 0) {
+return;
+}
+
+// Invoke the println method on the PrintStream object
+(*env)-&gt;CallVoidMethod(env, out, jmid,
+(*env)-&gt;NewStringUTF(env, HELLO));
+}
+}　</pre>
+    图15.8 从C中调用一个Java方法
+    <h3><a name="1532" id="1532"></a>15.3.2 形成方法声明 </h3>
+    <p>　　如果你仔细观察图15.8，就会注意到println方法是通过GetMethodID方法找到的。第四个参数就是方法声明。它和Java虚拟机的类型声明类似，看起来可能些奇怪。方法声明的一般格式是：</p>
+    <p> &quot;(argument-types)return-type&quot;</p>
+    <p> println方法有一个字符串参数(Ljava/lang/String)并且返回一个空类型(V)。创建方法声明有一些规则，同时创建基本类型也有一些符号。为了不被这些规则和符号而困恼，我发现可以使用内建的javap命令来列出给定类的所有声明。</p>
+    javap是java类文件的反编译器，它可以创建一个方法声明的列表，我们可以从这个列表中剪切出方法声明然后粘贴到我们的GetMethodID调用中。图15.9显示了对java.io.PrintWriter运行javap所产生的部分输出。-s开关使javap输出方法声明，而-p开关使javap列出包含私有成员的所有成员。
+    </p>
+    <pre class="code"> 　javap -s -p java.io.PrintWriter
+Compiled from PrintWriter.java
+public class java.io.PrintWriter extends java.io.Writer 
+/* ACC_SUPER bit set */
+{
+protected java.io.Writer out;
+/* Ljava/io/Writer; */
+private boolean autoFlush;
+/* Z */
+private boolean trouble;
+/* Z */
+public void write(char[]);
+/* ([C)V */
+public void write(java.lang.String);
+/* (Ljava/lang/String;)V */
+public void print(java.lang.Object);
+/* (Ljava/lang/Object;)V */
+}　</pre>
+    图15.9 javap的输出
+    <h3><a name="1533" id="1533"></a>15.3.3 看看它的执行</h3>
+    <p>　　和HelloWorld servlet的第一个版本一样，这个servlet也没有什么特别的输出可看。图15.10显示了由servlet和本地代码共同生成的HTML页面。</p>
+    我们知道在屏幕后面到底发生了什么。HelloWorld servlet加载一个本地库，调用本地方法，然后这个方法再通过Java虚拟机调用一个Java方法。我的天！这真是太激动人心了。
+    </p>
+    <h2><a name="154" id="154"></a>15.4 列出ODBC数据源</h2>
+    <p>　　现在让我们把那个简单的HelloWorld应用程序放在一边，来编写真正可以使用的本地代码。我经常遇到一个问题是在使用NT上的JDBC-ODBC桥的时候，很难确定servlet引擎可以使用哪些数据源。管理ODBC的时候，人们通常都是添加一个用户数据源因为缺省就是这样。不过，由于大多数servlet引擎作为NT上的服务运行，而作为NT服务的所有应用程序都只能访问系统数据源。因此，Java应用程序可以正常使用的用户数据源对于一个试图建立ODBC数据库连接的servlet来说是不存在的。</p>
+    怎么解决这个问题呢？我们就编写一些本地代码来查询ODBC驱动程序管理器哪些数据源现在可以使用。为什么在一个servlet中执行这些程序，然后将可用的数据源名字为用户列出，这样就会减少所有关于使用JDBC-ODBC桥时servlet找不到ODBC数据源这样的问题了。回答十分简单：API不支持这种功能。数据源是一种与ODBC规范密切相关的概念，在通用的JDBC
+    <p> API中没有相应的概念。</p>
+    首先，我们需要设计本地接口。由于我们所做的只不过是调用有限的几个ODBC API函数，所以我们可以使用相同的方法名称并使用类似的函数参数。在HelloWorld 
+    servlet中我们选择了将本地方法定义嵌入servlet类中的办法，不过在我看来，更好的办法是创建一个如图15.11所示的单独的实用工具类来包含所有这些本地方法调用。
+    </p>
+    <pre class="code">package javaservlets.nativeCode;
+
+/**
+* This class defines all of the native methods used to bridge
+* from Java to ODBC.
+*/
+public class JavaToODBC
+{
+/**
+* Use a static initializer to load the native code which
+* is contained within a library. This initializer is
+* called when the class loader first loads this class.
+*/
+static
+{
+System.out.println(&quot;Loading JavaToODBC Library&quot;);
+System.loadLibrary(&quot;JavaToODBC&quot;);
+}
+
+/**
+* Creates an environment handle and initializes the ODBC
+* call level interface. SQLAllocEnv <b>must</b> be called
+* prior to calling any other ODBC functions.
+* @return The environment handle
+*/
+public static native int SQLAllocEnv() throws Exception;
+
+/**
+* Frees the environment handle and releases all memory
+* associated with the environment handle
+* @param The environment handle
+*/
+public static native void SQLFreeEnv(int henv) throws Exception;
+
+/**
+* Returns information about the next data source. The first
+* time this method is called the first data source will
+* be used; any subsequent calls will return the next data
+* source.
+* @param henv The environment handle
+* @param dataSource The DataSource object which will hold
+* the information for the data source
+* @return true if the data source is valid; false if no more
+* data source names were found
+*/
+public static native boolean SQLDataSources(int henv, DataSource ds)
+throws Exception;
+}　</pre>
+    图15.11 JavaToODBC代码清单
+    <p>　　我们可以会遇到的一个共同的问题是许多C函数可以通过地址指针返回多个值。ODBC特别喜欢使用这种技术，所以我索性创建了一个包含了所有这些由单个函数返回的数据的类。我们把一个这个类的实例作为参数传给一个本地方法，然后，这个本地方法又调用Java虚拟机并且在必要的时候设置这个对象中的某些数据。在图15.12中显示了一个这样的用来保存数据的类——DataSource，这个类保存了数据源的名称和描述。 </p>
+    <pre class="code">package javaservlets.nativeCode;
+
+/**
+* This class represents a single ODBC data source
+*/
+public class DataSource
+{
+String name;
+String desc;
+
+/**
+* Sets the data source name
+* @param name The data source name
+*/
+public void setName(String value)
+{
+name = value;
+}
+
+/**
+* Gets the data source name
+* @return The data source name
+*/
+public String getName()
+{
+return name;
+}
+
+/**
+* Sets the data source description
+* @param desc The data source description
+*/
+public void setDescription(String value)
+{
+desc = value;
+}
+
+/**
+* Gets the data source description
+* @return The data source description
+*/
+public String getDescription()
+{
+return desc;
+}
+
+}　　</pre>
+    图15.12 DataSource代码清单
+    <p>　　在编译了JavaToODBC之后，我们需要生成本地代码的头文件。和以前一样，我们还要使用javah实用程序来生成这个头文件。</p>
+    <p>　　javah -jni javaservlets.nativeCode.JavaToODBC</p>
+    <p>　　　　图15.13 显示的就是生成了的头文件</p>
+    <pre class="code">/* DO NOT EDIT THIS FILE - it is machine generated */
+#include &lt;jni.h&gt;
+/* Header for class javaservlets_nativeCode_JavaToODBC */
+
+#ifndef _Included_javaservlets_nativeCode_JavaToODBC
+#define _Included_javaservlets_nativeCode_JavaToODBC
+#ifdef __cplusplus
+extern &quot;C&quot; {
+#endif
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLAllocEnv
+* Signature: ()I
+*/
+JNIEXPORT jint JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLAllocEnv
+(JNIEnv *, jclass);
+
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLFreeEnv
+* Signature: (I)V
+*/
+JNIEXPORT void JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLFreeEnv
+(JNIEnv *, jclass, jint);
+
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLDataSources
+* Signature: (ILjavaservlets/nativeCode/DataSource;)Z
+*/
+JNIEXPORT jboolean JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLDataSources
+(JNIEnv *, jclass, jint, jobject);
+
+#ifdef __cplusplus
+}
+#endif
+#endif　　</pre>
+    <p>　　　　图15.13 生成 JavaToODBC的头文件</p>
+    <p>　　现在我们已经创建了方法声明，接下来，我们就要实现这些本地方法了。图15.14显示了这些本地方法的实现代码。特别值得注意的是throwException方法，这里我们可以看到如何产生一个可以被调用程序所捕获的Java异常。</p>
+    <pre class="code">#include &lt;windows.h&gt;
+#include &quot;jni.h&quot;
+#include &quot;sql.h&quot;
+#include &quot;sqlext.h&quot;
+#include &quot;javaservlets_nativeCode_JavaToODBC.h&quot;
+
+/**
+* Helper function to throw an exception.
+* @param env JNIEnv interface pointer
+* @param cls The exception class name
+* @param desc The exception description
+*/
+void throwException(JNIEnv *env, char* cls, char* desc)
+{
+jclass c;
+
+// Clear any pending exceptions
+(*env)-&gt;ExceptionDescribe(env);
+(*env)-&gt;ExceptionClear(env);
+
+// Load the exception class
+c = (*env)-&gt;FindClass(env, cls);
+
+// Make sure the class was found
+if (c) {
+
+// Throw the exception
+(*env)-&gt;ThrowNew(env, c, desc);
+}
+}
+
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLAllocEnv
+* Signature: ()I
+*/
+JNIEXPORT jint JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLAllocEnv
+(JNIEnv *env, jclass cls)
+{
+// The environment handle
+HENV henv;
+
+// The return code
+RETCODE retcode;
+
+// Allocate an environment handle
+retcode = SQLAllocEnv(&amp;henv);
+
+// Throw an exception if the environment cannot be allocated
+if (retcode == SQL_ERROR) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Environment handle cannot be allocated&quot;);
+return 0;
+}
+
+return (jint) henv;
+}
+
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLFreeEnv
+* Signature: ()I
+*/
+JNIEXPORT void JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLFreeEnv
+(JNIEnv *env, jclass cls, jint henv)
+{
+// The return code
+RETCODE retcode;
+
+// Free the handle
+retcode = SQLFreeEnv((HENV) henv);
+
+// Check for errors
+if (retcode == SQL_ERROR) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Unable to free environment handle&quot;);
+return;
+}
+else if (retcode == SQL_INVALID_HANDLE) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Invalid environment handle&quot;);
+return;
+}
+return;
+}
+
+/*
+* Class: javaservlets_nativeCode_JavaToODBC
+* Method: SQLDataSources
+* Signature: (Ljavaservlets/nativeCode/DataSource;)Z
+*/
+JNIEXPORT jboolean JNICALL
+Java_javaservlets_nativeCode_JavaToODBC_SQLDataSources
+(JNIEnv *env, jclass cls, jint henv, jobject dataSource)
+{
+// Return code
+RETCODE retcode;
+
+// Storage for the name and description
+UCHAR szDSN[SQL_MAX_DSN_LENGTH + 1];
+UCHAR szDesc[255];
+
+// Actual length of name and description
+SWORD cbDSN;
+SWORD cbDesc;
+
+// A java class
+jclass jcls;
+
+// A java method ID
+jmethodID jmid;
+
+// Make sure we've got a DataSource object to work with
+if (!dataSource) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;DataSource object is null&quot;);
+return FALSE;
+}
+
+// Get the next data source entry
+retcode = SQLDataSources((HENV) henv, SQL_FETCH_NEXT,
+&amp;szDSN[0], (SWORD) sizeof(szDSN),
+&amp;cbDSN, &amp;szDesc[0],
+(SWORD) sizeof(szDesc), &amp;cbDesc);
+
+// Check for errors
+if (retcode == SQL_ERROR) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Unable to get data source information&quot;);
+return FALSE;
+}
+else if (retcode == SQL_INVALID_HANDLE) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Invalid environment handle&quot;);
+return FALSE;
+}
+else if (retcode == SQL_NO_DATA_FOUND) {
+
+// End of data sources
+return FALSE;
+}
+
+// Get the DataSource class and find the setName method
+jcls = (*env)-&gt;GetObjectClass(env, dataSource);
+if (!jcls) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Unable to find DataSource class&quot;);
+return FALSE;
+}
+jmid = (*env)-&gt;GetMethodID(env, jcls, &quot;setName&quot;,
+&quot;(Ljava/lang/String;)V&quot;);
+if (!jmid) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Unable to find DataSource.setName&quot;);
+return FALSE;
+}
+
+// Invoke the setName method on the DataSource object
+(*env)-&gt;CallVoidMethod(env, dataSource, jmid,
+(*env)-&gt;NewStringUTF(env, szDSN));
+
+// Find the setDescription method
+jmid = (*env)-&gt;GetMethodID(env, jcls, &quot;setDescription&quot;,
+&quot;(Ljava/lang/String;)V&quot;);
+if (!jmid) {
+throwException(env, &quot;java/lang/Exception&quot;,
+&quot;Unable to find DataSource.setDescription&quot;);
+return FALSE;
+}
+
+// Invoke the setDescription method on the DataSource object
+(*env)-&gt;CallVoidMethod(env, dataSource, jmid,
+(*env)-&gt;NewStringUTF(env, szDesc));
+
+return TRUE;
+}　</pre>
+    <p>　　　图15.14 JavaToODBC.c代码清单</p>
+    <p>　　代码清单两个简单的方法——SQLAllocEnv和SQLFreeEnv——封装了一个ODBC函数。其中SQLAllocEnv分配了ODBC环境句柄，而SQLFreeEnv在应用程序结束时释放这个ODBC环境句柄。在这里我们忽略了前缀Java_javaservlets_nativeCodeJavaToODBC。主要的工作是在SQLDataSources方法中完成的。对SQLDataSources的第一次调用将会返回ODBC驱动程序管理器中的第一个ODBC数据源，而接下来的调用将会返回ODBC数据源列表中的其他数据源。在到达数据源列表的结尾的时候，这个方法返回SQL_NO_DATA_FOUND。在取得了数据源的信息之后，本地代码调用Java虚拟机以设置DataSource对象中的数据项。在这里，值得注意的是如何将一个由空字符作为结束符的C字符串转化成Java字符串的。通过这种转化，我们可以将字符串传给那些set方法。</p>
+    <p> 在编译了JavaToODBC.c文件并创建了共享库之后，一定不要忘记将这个共享库移动到适当的位置，以便在它被使用的时候，servlet引擎可以找到它。</p>
+    下面就要编写调用这些本地方法的servlet了。图15.15提示了这个叫做DataSourceList的servlet的源程序。
+    </p>
+    <pre class="code">import javax.servlet.*;
+import javax.servlet.http.*;
+
+/**
+* This servlet uses native code to gather a list of the
+* current ODBC data sources.
+*/
+public class DataSourceList extends HttpServlet
+{
+/**
+* &lt;p&gt;Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType(&quot;text/html&quot;);
+
+// Get the PrintWriter to write the response
+java.io.PrintWriter out = resp.getWriter();
+
+// Create the header
+out.println(&quot;&lt;html&gt;&quot;);
+out.println(&quot;&lt;head&gt;&quot;);
+out.println(&quot;&lt;title&gt;ODBC Data Source List&lt;/title&gt;&quot;);
+out.println(&quot;&lt;/head&gt;&quot;);
+out.println(&quot;&lt;body&gt;&lt;center&gt;&quot;);
+out.println(&quot;&lt;h2&gt;ODBC Data Sources Available To Servlets &quot; +
+&quot;Running in the Current Servlet Engine&lt;/h2&gt;&quot;);
+out.println(&quot;&lt;br&gt;&quot;);
+out.println(&quot;&lt;table border&gt;&quot;);
+out.println(&quot;&lt;tr&gt;&lt;th&gt;Data Source Name&lt;/th&gt;&quot;);
+out.println(&quot;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;&quot;);
+
+int henv = 0;
+
+try {
+// Allocate an environment handle
+henv = JavaToODBC.SQLAllocEnv();
+}
+catch (Exception ex) {
+out.println(&quot;ERROR: Unable to allocate environment&quot;);
+}
+
+// Loop through the data sources until the end of file
+// is reached
+while (true) {
+
+// Create a new DataSource object to hold the
+// data source attributes (name, description)
+DataSource ds = new DataSource();
+boolean b = false;
+
+try {
+// Make a native ODBC call to get the next data source
+// entry. The first call will return the first data source;
+// any subsequent calls will return the next data source
+b = JavaToODBC.SQLDataSources(henv, ds);
+}
+catch (Exception ex) {
+ex.printStackTrace();
+out.println(&quot;&lt;/table&gt;&lt;br&gt;ERROR: &quot; + ex.getMessage());
+break;
+}
+
+// SQLDataSources returns false if there are no more
+// data sources
+if (!b) {
+break;
+}
+
+// Add this data source to the table
+out.println(&quot;&lt;tr&gt;&lt;td&gt;&quot; + ds.getName() +
+&quot;&lt;/td&gt;&lt;td&gt;&quot; + ds.getDescription() + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;);
+}
+
+if (henv != 0) {
+try {
+
+// Free the environment handle
+JavaToODBC.SQLFreeEnv(henv);
+}
+catch (Exception ex) {
+// Ignore any errors
+}
+}
+
+// Wrap up
+out.println(&quot;&lt;/table&gt;&lt;/center&gt;&quot;);
+out.println(&quot;&lt;/body&gt;&quot;);
+out.println(&quot;&lt;/html&gt;&quot;);
+out.flush();
+}
+
+/**
+* &lt;p&gt;Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+}
+
+/**
+* &lt;p&gt;Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+public void destroy()
+{
+super.destroy();
+}
+}</pre>
+    图15.15 DataSourceList代码清单
+    </p>
+    <p>　　其实并不复杂，不过是分配ODBC环境句柄，调用SQLDataSources直到文件结束，然后释放环境句柄而已。值得注意的是DataSource对象的实例是如何被传递给本地方法的。当这个方法返回的时候，DataSource对象已经被更新，而且包含了列表中下一个数据源的信息了。从这个DataSource对象中取得数据然后创建一个HTML表格是十分简单的。图15.16就是这个HTML表格在浏览器中的样子。</p>
+    使用这个DataSourceList servlet是发现servlet引擎可用的ODBC数据源的一个好办法。同样，将这些数据提供给用户，以便他们选择要通过JDBC连接的数据源——就像ODBC的SQLBrowerConnect函数那样，也不是一件难事。
+    </p>
+    <h2><a name="155" id="155"></a>15.5 小结</h2>
+    <p> 　　在本章中，我们郑重研究了如何在Java应用程序中（特别是在servlet中）使用本地代码。我们开发了一个简单的HelloWorld
+    <p> servlet并且演示了如何在一个本地方法中调用Java方法。我们还创建了一个可以列出当前servlet可以通过JDBC-ODBC桥来使用的ODBC数据源的servlet。这个servlet还说明了如何在本地代码中产生异常，以及其他一些设计本地接口的技术。</p>
+    下一章中，我们将要研究一下如何通过Java的RMI（Remote Method Invocation，远程方法调用）来在servlet和其他Java服务器之间进行通
+    。
+    </p>
+    <div class="rpindex"><a href="16.html"> 下一页</a><a href="14.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

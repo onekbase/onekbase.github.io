@@ -1,0 +1,279 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="40.html"> 上一页</a><a href="42.html"> 下一页</a></div>
+<h2>Chapter 14. 条件查询(Criteria   Query)</h2>
+<p>现在Hibernate也支持一种直观的、可扩展的条件查询API。目前为止，这个API还没有更成熟的HQL查询那么强大，也没有那么多查询能力。特别要指出，条件查询也不支持投影（projection）或统计函数（aggregation）。 </p>
+<h2>14.1. 创建一个Criteria实例</h2>
+<p>net.sf.hibernate.Criteria这个接口代表对一个特定的持久化类的查询。Session是用来制造Criteria实例的工厂。 </p>
+<pre class="code">Criteria crit = sess.createCriteria(Cat.class);
+crit.setMaxResults(50);
+List cats = crit.list();</pre>
+<h2><a name="14-2" id="14-2"></a>14.2. 缩小结果集范围</h2>
+<p>一个查询条件(Criterion)是net.sf.hibernate.expression.Criterion接口的一个实例。类net.sf.hibernate.expression.Expression定义了获得一些内置的Criterion类型。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.like(&quot;name&quot;, &quot;Fritz%&quot;) )
+    .add( Expression.between(&quot;weight&quot;, minWeight, maxWeight) )
+    .list();</pre>
+<p>表达式（Expressions）可以按照逻辑分组. </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.like(&quot;name&quot;, &quot;Fritz%&quot;) )
+    .add( Expression.or(
+    	Expression.eq( &quot;age&quot;, new Integer(0) ),
+    	Expression.isNull(&quot;age&quot;)
+    ) )
+    .list();</pre>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.in( &quot;name&quot;, new String[] { &quot;Fritz&quot;, &quot;Izi&quot;, &quot;Pk&quot; } ) )
+    .add( Expression.disjunction()
+        .add( Expression.isNull(&quot;age&quot;) )
+    	.add( Expression.eq(&quot;age&quot;, new Integer(0) ) )
+    	.add( Expression.eq(&quot;age&quot;, new Integer(1) ) )
+    	.add( Expression.eq(&quot;age&quot;, new Integer(2) ) )
+    ) )
+    .list();</pre>
+<p>有很多预制的条件类型（Expression的子类）。有一个特别有用，可以让你直接嵌入SQL。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.sql(&quot;lower($alias.name) like lower(?)&quot;, &quot;Fritz%&quot;, Hibernate.STRING) )
+    .list();</pre>
+<p>其中的{alias}是一个占位符，它将会被所查询实体的行别名所替代。(原文:The {alias} placeholder with be replaced by the row alias of the   queried entity.) </p>
+<h2><a name="14-3" id="14-3"></a>14.3. 对结果排序</h2>
+<p>可以使用net.sf.hibernate.expression.Order对结果集排序. </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.like(&quot;name&quot;, &quot;F%&quot;)
+    .addOrder( Order.asc(&quot;name&quot;) )
+    .addOrder( Order.desc(&quot;age&quot;) )
+    .setMaxResults(50)
+    .list();</pre>
+<h2><a name="14-4" id="14-4"></a>14.4. 关联（Associations）</h2>
+<p>你可以在关联之间使用createCriteria()，很容易地在存在关系的实体之间指定约束。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.like(&quot;name&quot;, &quot;F%&quot;)
+    .createCriteria(&quot;kittens&quot;)
+        .add( Expression.like(&quot;name&quot;, &quot;F%&quot;)
+    .list();</pre>
+<p>注意，第二个createCriteria()返回一个Criteria的新实例，指向kittens集合类的元素。 </p>
+<p>下面的替代形式在特定情况下有用。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .createAlias(&quot;kittens&quot;, &quot;kt&quot;)
+    .createAlias(&quot;mate&quot;, &quot;mt&quot;)
+    .add( Expression.eqProperty(&quot;kt.name&quot;, &quot;mt.name&quot;) )
+    .list();</pre>
+<p>（createAlias()）并不会创建一个Criteria的新实例。） </p>
+<p>请注意，前面两个查询中Cat实例所持有的kittens集合类<em>并没有</em>通过criteria预先过滤！如果你希望只返回满足条件的kittens,你必须使用returnMaps()。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .createCriteria(&quot;kittens&quot;, &quot;kt&quot;)
+        .add( Expression.eq(&quot;name&quot;, &quot;F%&quot;) )
+    .returnMaps()
+    .list();
+Iterator iter = cats.iterator();
+while ( iter.hasNext() ) {
+    Map map = (Map) iter.next();
+    Cat cat = (Cat) map.get(Criteria.ROOT_ALIAS);
+    Cat kitten = (Cat) map.get(&quot;kt&quot;);
+}</pre>
+<h2><a name="14-5" id="14-5"></a>14.5. 动态关联对象获取（Dynamic association   fetching）</h2>
+<p>可以在运行时通过setFetchMode()来改变关联对象自动获取的策略。 </p>
+<pre class="code">List cats = sess.createCriteria(Cat.class)
+    .add( Expression.like(&quot;name&quot;, &quot;Fritz%&quot;) )
+    .setFetchMode(&quot;mate&quot;, FetchMode.EAGER)
+    .list();</pre>
+<p>这个查询会通过外连接(outer join)同时获得 mate和kittens。 </p>
+<h2><a name="14-6" id="14-6"></a>14.6. 根据示例查询（Example queries）</h2>
+<p>net.sf.hibernate.expression.Example类允许你从指定的实例创造查询条件。 </p>
+<pre class="code">Cat cat = new Cat();
+cat.setSex('F');
+cat.setColor(Color.BLACK);
+List results = session.createCriteria(Cat.class)
+    .add( Example.create(cat) )
+    .list();</pre>
+<p>版本属性，表示符属性和关联都会被忽略。默认情况下，null值的属性也被排除在外。 </p>
+<p>You can adjust how the Example is applied. 你可以调整示例(Example)如何应用。 </p>
+<pre class="code">Example example = Example.create(cat)
+    .excludeZeroes()           //exclude zero valued properties
+    .excludeProperty(&quot;color&quot;)  //exclude the property named &quot;color&quot;
+    .ignoreCase()              //perform case insensitive string comparisons
+    .enableLike();             //use like for string comparisons
+List results = session.createCriteria(Cat.class)
+    .add(example)
+    .list();</pre>
+你甚至可以用示例对关联对象建立criteria。
+<pre class="code">List results = session.createCriteria(Cat.class)
+    .add( Example.create(cat) )
+    .createCriteria(&quot;mate&quot;)
+        .add( Example.create( cat.getMate() ) )
+    .list();</pre>
+
+<div class="rpindex"><a href="42.html"> 下一页</a><a href="40.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

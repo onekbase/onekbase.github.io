@@ -1,0 +1,217 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="beans-child-bean-definitions"></a>3.6.&#160;bean定义的继承</h2></div></div></div>
+<p>在bean定义中包含了大量的配置信息，其中包括容器相关的信息（比如初始化方法、静态工厂方法名等等）以及构造器参数和属性值。子bean定义就是从父bean定义继承配置数据的bean定义。它可以覆盖父bean的一些值，或者添加一些它需要的值。使用父/子bean定义的形式可以节省很多的输入工作。实际上，这就是一种模板形式。</p>
+<p>当以编程的方式使用<code class="interfacename">BeanFactory</code>时，子bean定义用<code class="classname">ChildBeanDefinition</code>类表示。大多数用户从来不需要以这个方式使用它们，而是以类似<code class="classname">XmlBeanFactory</code>中的声明方式去配置bean定义。当使用基于XML的配置元数据时，给<code class="literal">'parent'</code>属性指定值，意味着子bean定义的声明。</p>
+<pre class="code">&lt;bean id="inheritedTestBean" abstract="true"
+    class="org.springframework.beans.TestBean"&gt;
+  &lt;property name="name" value="parent"/&gt;
+  &lt;property name="age" value="1"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="inheritsWithDifferentClass"
+      class="org.springframework.beans.DerivedTestBean"
+      <span class="bold"><strong>parent="inheritedTestBean"</strong></span> init-method="initialize"&gt;
+    
+  &lt;property name="name" value="override"/&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- the age property value of 1 will be inherited from  parent --&gt;</span></em>
+
+&lt;/bean&gt;</pre>
+<p>如果子bean定义没有指定class属性，它将使用父bean定义的class属性，当然也可以覆盖它。在后面一种情况中，子bean的class属性值必须同父bean兼容，也就是说它必须接受父bean的属性值。</p>
+<p>一个子bean定义可以从父bean继承构造器参数值、属性值以及覆盖父bean的方法，并且可以有选择地增加新的值。如果指定了init-method，destroy-method和/或<code class="literal">静态</code>factory-method，它们就会覆盖父bean相应的设置。</p>
+<p>剩余的设置将总是从子bean定义处得到：<span class="emphasis"><em>依赖</em></span>、<span class="emphasis"><em>自动装配模式</em></span>、<span class="emphasis"><em>依赖检查</em></span>、<span class="emphasis"><em>singleton</em></span>、<span class="emphasis"><em>作用域</em></span>和<span class="emphasis"><em>延迟初始化</em></span>。</p>
+<p>注意在上面的例子中，我们使用<span class="emphasis"><em>abstract</em></span>属性显式地将父bean定义标记为抽象的。下面是个父bean定义并没有指定class属性的例子，其中父bean必须显式地标上<code class="literal">abstract</code>：</p>
+<pre class="code">&lt;bean id="inheritedTestBeanWithoutClass" abstract="true"&gt;
+    &lt;property name="name" value="parent"/&gt;
+    &lt;property name="age" value="1"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="inheritsWithClass" class="org.springframework.beans.DerivedTestBean"
+    parent="inheritedTestBeanWithoutClass" init-method="initialize"&gt;
+  &lt;property name="name" value="override"/&gt;
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- age will inherit the value of <code class="literal">1</code> from the parent bean definition--&gt;</span></em>
+&lt;/bean&gt;</pre>
+<p>由于这样的父bean是不完整的，而且还被显式标记为<code class="literal">抽象的</code>，因而它无法得到自己的实例。<code class="literal">抽象</code>bean定义可作为子bean定义的模板。若要尝试单独使用这样的父bean（比如将它作为其他bean的ref属性而引用，或者直接使用这个父bean的id作为参数调用<code class="methodname">getBean()</code>方法），将会导致错误。同样地，容器内部的<code class="methodname">preInstantiateSingletons()</code>方法会完全忽略abstract的bean定义。</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>默认情况下，<code class="literal">ApplicationContext</code>（<span class="emphasis"><em>不是</em></span><code class="literal">BeanFactory</code>）会预实例化所有singleton的bean。因此很重要的一点是：如果你只想把一个（父）bean定义当作模板使用，而它又指定了class属性，那么你就得将<span class="emphasis"><em>'abstract'</em></span>属性设置为<span class="emphasis"><em>'true'</em></span>，否则应用上下文将会（试着）预实例化<code class="literal">抽象</code>bean。</p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

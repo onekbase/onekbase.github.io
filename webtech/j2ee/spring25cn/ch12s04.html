@@ -1,0 +1,480 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="orm-toplink"></a>12.4.&#160;Oracle TopLink</h2></div></div></div>
+<p>
+    Spring从Spring 1.2版本开始支持Oracle TopLink （<a href="" target="_top">http://www.oracle.com/technology/products/ias/toplink</a>）
+    作为数据访问策略，同样遵循类似于Spring对Hibernate的支持风格。Spring对其的支持包括
+    TopLink 9.0.4（Spring 1.2支持的产品版本）和TopLink 10.1.3（Spring 1.2支持的，依然处于beta版）。
+		对应的支持与整合类位于 <code class="literal">org.springframework.orm.toplink</code> 包中。
+		</p>
+<p>
+    TopLink支持由Spring和Oracle TopLink团队共同开发。
+		非常感谢TopLink团队，尤其是Jim Clark，替我们阐明了所有方面的细节！
+    </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="orm-toplink-abstraction"></a>12.4.1.&#160;<code class="interfacename">SessionFactory</code> 抽象层</h3></div></div></div>
+<p>
+      	TopLink本身并没有提供SessionFactory抽象层逻辑，多线程的数据访问是建立在中央 
+      	<code class="literal">ServerSession</code> 上的。对于单线程访问，
+      	这个中央 <code class="literal">ServerSession</code> 会为它一个 
+      	<code class="literal">ClientSession</code> 的实例供其使用。为了提供灵活便捷的创建选项，
+      	Spring为TopLink定义了一个 <code class="interfacename">SessionFactory</code> 接口，
+      	从而使你可以任意地在不同的 <code class="interfacename">Session</code> 创建策略之间进行切换。
+      </p>
+<p>
+      	作为一个一站式的商店，Spring提供了一个 <code class="classname">LocalSessionFactoryBean</code> 类，
+     	 	允许你以bean风格的配置方式来定义一个TopLink的 <code class="interfacename">SessionFactory</code>。
+				需要进行配置的地方主要是TopLink session配置文件，通常来说还需配置一个受到Spring管理的JDBC 
+				<code class="interfacename">DataSource</code>。
+      </p>
+<pre class="code">&lt;beans&gt;
+
+  &lt;bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"&gt;
+    &lt;property name="driverClassName" value="${jdbc.driverClassName}"/&gt;
+    &lt;property name="url" value="${jdbc.url}"/&gt;
+    &lt;property name="username" value="${jdbc.username}"/&gt;
+    &lt;property name="password" value="${jdbc.password}"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="mySessionFactory" class="org.springframework.orm.toplink.LocalSessionFactoryBean"&gt;
+    &lt;property name="configLocation" value="toplink-sessions.xml"/&gt;
+    &lt;property name="dataSource" ref="dataSource"/&gt;
+  &lt;/bean&gt;
+    
+&lt;/beans&gt;</pre>
+<pre class="code">&lt;toplink-configuration&gt;
+
+  &lt;session&gt;
+    &lt;name&gt;Session&lt;/name&gt;
+    &lt;project-xml&gt;toplink-mappings.xml&lt;/project-xml&gt;
+    &lt;session-type&gt;
+      &lt;server-session/&gt;
+    &lt;/session-type&gt;
+    &lt;enable-logging&gt;true&lt;/enable-logging&gt;
+    &lt;logging-options/&gt;
+  &lt;/session&gt;
+
+&lt;/toplink-configuration&gt;</pre>
+<p>
+      	通常情况下，<code class="classname">LocalSessionFactoryBean</code> 在底层将持有一个多线程的TopLink 
+      	<code class="literal">ServerSession</code> 并创建合适的客户端 <code class="interfacename">Session</code>：
+				它或者是一个普通的 <code class="interfacename">Session</code>（典型情况） —— 一个受管理的 <code class="literal">ClientSession</code>；
+				或者是一个具备事务功能的 <code class="interfacename">Session</code> （后者主要在Spring内部对TopLink的支持中被使用）。
+				还有一种情况，<code class="classname">LocalSessionFactoryBean</code> 可能会持有一个单线程的TopLink的 
+				<code class="literal">DatabaseSession</code>，这是非常特殊的情况了。
+			</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="orm-toplink-template"></a>12.4.2.&#160;<code class="classname">TopLinkTemplate</code> and
+      <code class="classname">TopLinkDaoSupport</code></h3></div></div></div>
+<p>
+      	每个基于TopLink的DAO将通过IoC被注入一个 <code class="interfacename">SessionFactory</code>，
+      	你可以通过Setter方式注入，也可以用构造函数方式注入。这样的DAO可以直接操作原生的TopLink API，通过 
+      	<code class="interfacename">SessionFactory</code> 来获取一个 <code class="interfacename">Session</code>，
+      	但是通常情况下，你更愿意使用Spring的 <code class="literal">TopLinkTemplate</code>：
+      </p>
+<pre class="code">&lt;beans&gt;
+  
+  &lt;bean id="myProductDao" class="product.ProductDaoImpl"&gt;
+    &lt;property name="sessionFactory" ref="mySessionFactory"/&gt;
+  &lt;/bean&gt;
+  
+&lt;/beans&gt;</pre>
+<pre class="code">public class TopLinkProductDao implements ProductDao {
+  
+    private TopLinkTemplate tlTemplate;
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.tlTemplate = new TopLinkTemplate(sessionFactory);
+    }
+
+    public Collection loadProductsByCategory(final String category) throws DataAccessException {
+        return (Collection) this.tlTemplate.execute(new TopLinkCallback() {
+            public Object doInTopLink(Session session) throws TopLinkException {
+                ReadAllQuery findOwnersQuery = new ReadAllQuery(Product.class);
+                findOwnersQuery.addArgument("Category");
+                ExpressionBuilder builder = this.findOwnersQuery.getExpressionBuilder();
+                findOwnersQuery.setSelectionCriteria(
+                    builder.get("category").like(builder.getParameter("Category")));
+
+                Vector args = new Vector();
+                args.add(category);
+                List result = session.executeQuery(findOwnersQuery, args);
+                <em class="lineannotation"><span class="lineannotation">// do some further stuff with the result list</span></em>
+                return result;
+            }
+        });
+    }
+}</pre>
+<p>
+      	一个回调的实现能够有效地在任何TopLink数据访问中使用。<code class="classname">TopLinkTemplate</code> 
+      	会确保当前的 <code class="interfacename">Session</code> 对象的正确打开和关闭，并自动参与到事务管理中去。
+				Template实例不仅是线程安全的，同时它也是可重用的。因而他们可以作为外部对象的实例变量而被持有。对于那些简单的诸如 
+				<code class="literal">executeQuery</code>、<code class="literal">readAll</code>、<code class="literal">readById</code> 和 
+				<code class="literal">merge</code> 操作的调用，<code class="classname">TopLinkTemplate</code>
+				（译者注：原文误写成<code class="classname">JdoTemplate</code>）提供可选择的快捷函数来替换这种回调的实现。
+				不仅如此，Spring还提供了一个简便的 <code class="classname">TopLinkDaoSupport</code> 基类，这个类提供了 
+				<code class="literal">setSessionFactory(..)</code> 方法来接受一个 <code class="interfacename">SessionFactory</code> 
+				对象，同时提供了 <code class="literal">getSessionFactory()</code> 和 <code class="literal">getTopLinkTemplate()</code> 
+				方法给子类使用。综合了这些，对于那些典型的业务需求，就有了一个非常简单的DAO实现。
+      </p>
+<pre class="code">public class ProductDaoImpl extends TopLinkDaoSupport implements ProductDao {
+  
+    public Collection loadProductsByCategory(String category) throws DataAccessException {
+        ReadAllQuery findOwnersQuery = new ReadAllQuery(Product.class);
+        findOwnersQuery.addArgument("Category");
+        ExpressionBuilder builder = this.findOwnersQuery.getExpressionBuilder();
+        findOwnersQuery.setSelectionCriteria(
+            builder.get("category").like(builder.getParameter("Category")));
+
+        return getTopLinkTemplate().executeQuery(findOwnersQuery, new Object[] {category});
+    }
+}</pre>
+<p>边注：TopLink查询对象是线程安全的，并且能够在DAO层被缓存。在一开始被创建时以实例变量的方式被保持。</p>
+<p>
+      	作为不使用Spring的 <code class="classname">TopLinkTemplate</code> 来实现DAO的替代解决方案，
+      	你依然可以通过原生TopLink API对那些基于Spring的DAO进行编程，此时你必须明确地打开和关
+      	闭一个 <code class="interfacename">Session</code>。正如在相应的Hibernate章节描述的
+      	一样，这种做法的主要优点在于你的数据访问代码可以在整个过程中抛出checked exceptions。
+				<code class="classname">TopLinkDaoSupport</code> 为这种情况提供了多种函数支持，包括获取和释放
+				一个具备事务的 <code class="interfacename">Session</code> 并做相关的异常转化。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="orm-toplink-straight"></a>12.4.3.&#160;基于原生的TopLink API的DAO实现</h3></div></div></div>
+<p>
+      	我们可以直接操作TopLink API来实现DAO，直接使用一个注入的 <code class="interfacename">Session</code> 
+      	而无需对Spring产生的任何依赖。它通常基于一个由 <code class="classname">LocalSessionFactoryBean</code> 
+      	定义的 <code class="interfacename">SessionFactory</code>，并通过Spring的 
+      	<code class="literal">TransactionAwareSessionAdapter</code> 暴露成为一个 <code class="interfacename">Session</code> 
+      	类型的引用。
+      </p>
+<p>
+      	TopLink的 <code class="interfacename">Session</code> 接口中定义的 
+      	<code class="literal">getActiveSession()</code> 方法将返回当前具备事务管理功能的 
+      	<code class="interfacename">Session</code> 对象。如果当前没有处于活跃状态的事务，
+      	这个函数将返回一个共享的TopLink的 <code class="literal">ServerSession</code>，也就是说，
+      	这种情况应该只是一个直接使用的只读访问。另外还有一个 <code class="methodname">getActiveUnitOfWork()</code> 
+      	方法, 返回TopLink的与当前事务绑定的 <code class="interfacename">UnitOfWork</code> 
+      	（如果没有当前事务则返回 <code class="literal">null</code>）。
+      </p>
+<p>一个相应的DAO实现类看上去就像下面那样:</p>
+<pre class="code">public class ProductDaoImpl implements ProductDao {
+
+    private Session session;
+
+    public void setSession(Session session) {
+        this.session = session;
+    }
+
+    public Collection loadProductsByCategory(String category) {
+        ReadAllQuery findOwnersQuery = new ReadAllQuery(Product.class);
+        findOwnersQuery.addArgument("Category");
+        ExpressionBuilder builder = this.findOwnersQuery.getExpressionBuilder();
+        findOwnersQuery.setSelectionCriteria(
+            builder.get("category").like(builder.getParameter("Category")));
+
+        Vector args = new Vector();
+        args.add(category);
+        return session.getActiveSession().executeQuery(findOwnersQuery, args);
+    }
+}</pre>
+<p>
+      	上面我们所列出的DAO完全遵循IoC：它如同使用Spring的 <code class="classname">TopLinkTemplate</code> 
+      	进行编码那样，非常适合在application context中进行配置。Spring的 
+      	<code class="literal">TransactionAwareSessionAdapter</code> 将暴露一个 
+      	<code class="interfacename">Session</code> 类型的bean的引用，并传入到DAO中去：
+      </p>
+<pre class="code">&lt;beans&gt;
+
+  &lt;bean id="mySessionAdapter"
+      class="org.springframework.orm.toplink.support.TransactionAwareSessionAdapter"&gt;
+    &lt;property name="sessionFactory" ref="mySessionFactory"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="myProductDao" class="product.ProductDaoImpl"&gt;
+    &lt;property name="session" ref="mySessionAdapter"/&gt;
+  &lt;/bean&gt;
+
+&lt;/beans&gt;</pre>
+<p>
+      	这种DAO风格的主要好处在于它仅仅依赖于TopLink自身的API，而无需引入任何的Spring
+      	的类。从无入侵性的角度来看，这一点非常吸引人。同时，对于TopLink的开发人员来说也更自然。
+      </p>
+<p>
+      
+      	然而，这样的DAO访问方式会抛出 <code class="exceptionname">TopLinkException</code>
+      	（这是一个无需声明或捕获的unchecked exception），这意味着，DAO的调用者只能以普通的
+      	错误来处理这些异常，除非完全依赖TopLink自身的异常体系。因而，除非你将DAO的调用者绑定
+      	到具体的实现策略上去，否则你将无法捕获特定的异常原因（诸如乐观锁异常）。这种折中平衡或许
+      	可以被接受，如果你的应用完全基于TopLink或者无需进行特殊的异常处理。
+      </p>
+<p>
+      
+      这样的DAO风格有一个不利因素在于TopLink的标准的 <code class="methodname">getActiveSession()</code> 
+      函数仅仅在JTA事务中有效。而对于其他的事务管理策略尤其时本地的TopLink事务，它将 <span class="emphasis"><em>无法</em></span> 工作。
+      </p>
+<p>
+      	幸运的是，Spring的 <code class="literal">TransactionAwareSessionAdapter</code> 
+      	为TopLink的 <code class="literal">ServerSession</code> 暴露了一个相应的代理类。
+				这个代理类能够在任何的事务策略之上支持TopLink的 <code class="literal">Session.getActiveSession()</code> 
+				和 <code class="literal">Session.getActiveUnitOfWork()</code> 函数，返回当前收到Spring管理
+				（即便由 <code class="literal">TopLinkTransactionManager</code> 管理）的具备事务管理功能的 
+				<code class="interfacename">Session</code> 实例。当然，这个函数的标准行为依然有效：
+				返回与当前的JTA事务绑定的 <code class="interfacename">Session</code> 对象。
+				（无论这个JTA事务是由Spring的 <code class="classname">JtaTransactionManager</code>、
+				EJB CMT或者普通的JTA所驱动的事务）。
+      </p>
+<p>
+      	总体来说，DAO可以基于TopLink的原生API实现，同时，它依旧需要能够参与到Spring的事务管理中。
+				这对于那些已经对TopLink非常熟悉的人来说很有吸引力，因为这种方式更加自然。不过，这种DAO将抛出 
+				<code class="exceptionname">TopLinkException</code>，因而，如果有必要的话需要明确地去做由 
+				<code class="exceptionname">TopLinkException</code> 到Spring的 <code class="classname">DataAccessException</code> 
+				的转化。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="orm-toplink-tx"></a>12.4.4.&#160;事务管理</h3></div></div></div>
+<p>将事务管理纳入到Service操作的执行中，你可以使用Spring通用的声明式的事务管理功能，参加下面的例子：</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:aop="http://www.springframework.org/schema/aop"
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xsi:schemaLocation="
+   http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"&gt;
+
+  &lt;bean id="myTxManager" class="org.springframework.orm.toplink.TopLinkTransactionManager"&gt;
+    &lt;property name="sessionFactory" ref="mySessionFactory"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="myProductService" class="product.ProductServiceImpl"&gt;
+    &lt;property name="productDao" ref="myProductDao"/&gt;
+  &lt;/bean&gt;
+  
+  &lt;aop:config&gt;
+    &lt;aop:pointcut id="productServiceMethods" expression="execution(* product.ProductService.*(..))"/&gt;
+    &lt;aop:advisor advice-ref="txAdvice" pointcut-ref="productServiceMethods"/&gt;
+  &lt;/aop:config&gt;
+
+  &lt;tx:advice id="txAdvice" transaction-manager="myTxManager"&gt;
+    &lt;tx:attributes&gt;
+      &lt;tx:method name="increasePrice*" propagation="REQUIRED"/&gt;
+      &lt;tx:method name="someOtherBusinessMethod" propagation="REQUIRES_NEW"/&gt;
+      &lt;tx:method name="*" propagation="SUPPORTS" read-only="true"/&gt;
+    &lt;/tx:attributes&gt;
+  &lt;/tx:advice&gt;
+
+&lt;/beans&gt;</pre>
+<p>
+      	注意，TopLink要求你必须在一个活跃的 <code class="interfacename">工作单元（UnitOfWork）</code> 
+      	中修改一个持久化对象（你通常不能修改由普通的TopLink的 <code class="interfacename">Session</code> 
+      	查询返回的对象，因为这些对象通常是一些从二级缓存中读出的只读对象）。与Hibernate相比，
+      	在TopLink中并没有一种类似脱离事务刷出（non-transactional flush）的概念。基于这
+      	种原因，TopLink需要被建立在特定的环境中，尤其是它需要为JTA同步做明确的创建，由此来
+      	自行检测一个JTA事务以及暴露一个相应的活跃的 <code class="interfacename">Session</code> 
+      	和 <code class="interfacename">UnitOfWork</code>。这一点对于本地事务不是必要的，由于它已经被
+      	Spring的 <code class="literal">TopLinkTransactionManager</code> 处理，但是对于
+      	需要参与到JTA事务中的情况，是必须的（无论是由Spring的 
+      	<code class="classname">JtaTransactionManager</code>、EJB CMT或者普通的JTA所驱动的事务）。
+      </p>
+<p>
+      	在你的基于TopLink的DAO代码中，你可以使用 <code class="literal">Session.getActiveUnitOfWork()</code> 
+      	方法来访问当前的 <code class="interfacename">UnitOfWork</code> 并通过它来执行写操作。这将只在一个活跃的事务中有效
+      	（在一个收到Spring管理的事务或者JTA事务中）。对于特殊的需求，你同样可以获取单独的 
+      	<code class="interfacename">UnitOfWork</code> 实例，它将不参与到当前的事务中去，不过这种情况非常少。
+      </p>
+<p>
+      	<code class="classname">TopLinkTransactionManager</code> 能够将一个TopLink事务暴露给
+      	访问相同的JDBC <code class="interfacename">DataSource</code> 的JDBC访问代码。
+				前提条件是，TopLink在底层是以JDBC方式工作的并且能够暴露底层的JDBC <code class="interfacename">Connection</code>。
+				这种情况下，用于暴露事务的 <code class="interfacename">DataSource</code> 必须被明确指定，
+				它是无法被自动检测到的。
+      </p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

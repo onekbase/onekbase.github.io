@@ -1,0 +1,306 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="transaction-programmatic"></a>9.6.&#160;编程式事务管理</h2></div></div></div>
+<p>Spring提供两种方式的编程式事务管理：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>使用 <code class="classname">TransactionTemplate</code></p></li>
+<li><p>直接使用一个 <code class="interfacename">PlatformTransactionManager</code> 实现</p></li>
+</ul></div>
+<p>如果你选择编程式事务管理，Spring小组推荐使用 <code class="classname">TransactionTemplate</code>。
+	第二种方法则类似使用JTA的 <code class="interfacename">UserTransaction</code> API （除了异常处理的部分稍微简单点）。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="tx-prog-template"></a>9.6.1.&#160;使用<code class="classname">TransactionTemplate</code></h3></div></div></div>
+<p><code class="classname">TransactionTemplate</code> 采用与Spring中别的 <span class="emphasis"><em>模板</em></span> 同样的方法，
+	  如 <code class="classname">JdbcTemplate</code> 。它使用回调机制，将应用代码从样板式的资源获取和释放代码中解放出来，
+	  这样写出的代码是目的驱动的，把精力集中在开发者想要做的事情上。</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>就像你马上要在后面的例子中看到的那样，
+				使用 <code class="classname">TransactionTemplate</code> 绝对会增加你的代码与Spring的事务框架和API间的耦合。
+				到底编程式事务管理是不是适合你的项目需要由你自己来决定。 </p>
+</div>
+<p>应用的代码必须在一个事务性的上下文中执行，这样就会像这样一样显式的使用<code class="classname">TransactionTemplate</code>。你作为一个应用程序员，
+			会写一个 <code class="interfacename">TransactionCallback</code> 的实现，
+			(通常会用匿名类来实现 )这样的实现会包含所以你需要在该事务上下文中执行的代码。
+			然后你会把一个你自己实现<code class="interfacename">TransactionCallback</code>的实例传递给<code class="classname">TransactionTemplate</code>暴露的<code class="methodname">execute(..)</code> 方法。</p>
+<pre class="code">public class SimpleService implements Service {
+
+  <em class="lineannotation"><span class="lineannotation">// single <code class="classname">TransactionTemplate</code> shared amongst all methods in this instance</span></em>
+  private final TransactionTemplate transactionTemplate;
+
+  <em class="lineannotation"><span class="lineannotation">// use constructor-injection to supply the <code class="interfacename">PlatformTransactionManager</code></span></em>
+  public SimpleService(PlatformTransactionManager transactionManager) {
+    Assert.notNull(transactionManager, "The 'transactionManager' argument must not be null.");
+    this.transactionTemplate = new TransactionTemplate(transactionManager);
+  }
+
+  public Object someServiceMethod() {
+    return transactionTemplate.execute(new TransactionCallback() {
+
+      <em class="lineannotation"><span class="lineannotation">// the code in this method executes in a transactional context</span></em>
+      public Object doInTransaction(TransactionStatus status) {
+        updateOperation1();
+        return resultOfUpdateOperation2();
+      }
+    });
+  }
+}</pre>
+<p>如果不需要返回值，更方便的方式是创建一个 <code class="classname">TransactionCallbackWithoutResult</code> 的匿名类，如下：</p>
+<pre class="code">transactionTemplate.execute(new <span class="bold"><strong>TransactionCallbackWithoutResult</strong></span>() {
+
+  protected void doInTransactionWithoutResult(TransactionStatus status) {
+    updateOperation1();
+    updateOperation2();
+  }
+});</pre>
+<p>回调方法内的代码可以通过调用 <code class="interfacename">TransactionStatus</code> 对象的 <code class="literal">setRollbackOnly()</code> 方法来回滚事务。</p>
+<pre class="code">transactionTemplate.execute(new TransactionCallbackWithoutResult() {
+
+  protected void doInTransactionWithoutResult(TransactionStatus status) {
+    try {
+      updateOperation1();
+      updateOperation2();
+    } catch (SomeBusinessExeption ex) {
+      <span class="bold"><strong>status.setRollbackOnly();</strong></span>
+    }
+  }
+});</pre>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="tx-prog-template-settings"></a>9.6.1.1.&#160;指定事务设置</h4></div></div></div>
+<p>诸如传播模式、隔离等级、超时等等的事务设置都可以在<code class="classname">TransactionTemplate</code>中或者通过配置或者编程式地实现。
+				<code class="classname">TransactionTemplate</code>实例默认继承了<a href="ch09s05.html#transaction-declarative-txadvice-settings" title="9.5.5.&#160;&lt;tx:advice/&gt; 有关的设置">默认事务设置</a>。
+				下面有个编程式的为一个特定的<code class="classname">TransactionTemplate</code>定制事务设置的例子。
+				</p>
+<pre class="code">public class SimpleService implements Service {
+
+  private final TransactionTemplate transactionTemplate;
+
+  public SimpleService(PlatformTransactionManager transactionManager) {
+    Assert.notNull(transactionManager, "The 'transactionManager' argument must not be null.");
+    this.transactionTemplate = new TransactionTemplate(transactionManager);
+
+    <em class="lineannotation"><span class="lineannotation">// the transaction settings can be set here explicitly if so desired</span></em>
+    this.transactionTemplate.setIsolationLevel(TransactionDefinition.ISOLATION_READ_UNCOMMITTED);
+    this.transactionTemplate.setTimeout(30); <em class="lineannotation"><span class="lineannotation">// 30 seconds</span></em>
+    <em class="lineannotation"><span class="lineannotation">// and so forth...</span></em>
+  }
+}</pre>
+<p>在下面的例子中，我们将会演示如何使用Spring XML配置来定制<code class="classname">TransactionTemplate</code>的事务属性。
+				'<code class="literal">sharedTransactionTemplate</code>'可以被注入到所有需要的服务中去。 </p>
+<pre class="code">&lt;bean id="sharedTransactionTemplate"
+    class="org.springframework.transaction.support.TransactionTemplate"&gt;
+  &lt;property name="isolationLevelName" value="ISOLATION_READ_UNCOMMITTED"/&gt;
+  &lt;property name="timeout" value="30"/&gt;
+&lt;/bean&gt;"</pre>
+</div>
+<p>
+			最后，<code class="classname">TransactionTemplate</code> 类的实例是线程安全的，任何状态都不会被保存。
+			<code class="classname">TransactionTemplate</code> 实例 <span class="emphasis"><em>的确会</em></span>
+			维护配置状态，所以当一些类选择共享一个单独的 <code class="classname">TransactionTemplate</code>实例时，
+			如果一个类需要使用不同配置的<code class="classname">TransactionTemplate</code>(比如，不同的隔离等级)，
+			那就需要创建和使用两个不同的<code class="classname">TransactionTemplate</code>。
+			</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="transaction-programmatic-ptm"></a>9.6.2.&#160;使用<code class="interfacename">PlatformTransactionManager</code></h3></div></div></div>
+<p>你也可以使用 <code class="interfacename">org.springframework.transaction.PlatformTransactionManager</code>
+			来直接管理你的事务。只需通过bean的引用，简单的把你在使用的<code class="interfacename">PlatformTransactionManager</code> 传递给你的bean。
+	  		然后，使用<code class="interfacename">TransactionDefinition</code>和<code class="interfacename">TransactionStatus</code>对象，
+	  		你可以启动，回滚和提交事务。</p>
+<pre class="code">DefaultTransactionDefinition def = new DefaultTransactionDefinition();
+<em class="lineannotation"><span class="lineannotation">// explicitly setting the transaction name is something that can only be done programmatically</span></em>
+def.setName("SomeTxName");
+def.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);
+
+TransactionStatus status = txManager.getTransaction(def);
+try {
+  <em class="lineannotation"><span class="lineannotation">// execute your business logic here</span></em>
+}
+catch (MyException ex) {
+  txManager.rollback(status);
+  throw ex;
+}
+txManager.commit(status);</pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

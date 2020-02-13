@@ -1,0 +1,434 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-pfb"></a>7.5.&#160;使用ProxyFactoryBean创建AOP代理</h2></div></div></div>
+<p>如果你正在使用Spring IoC容器（即ApplicationContext或BeanFactory）来管理你的业务对象--这正是你应该做的--你也许会想要使用Spring中关于AOP的FactoryBean。
+    （记住使用工厂bean引入一个间接层之后，我们就可以创建不同类型的对象了）。</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>Spring 2.0的AOP支持也在底层使用工厂bean。</p>
+</div>
+<p>在Spring里创建一个AOP代理的基本方法是使用<span class="emphasis"><em>org.springframework.aop.framework.ProxyFactoryBean</em></span>。
+    这个类对应用的切入点和通知提供了完整的控制能力（包括它们的应用顺序）。然而如果你不需要这种控制，你会喜欢更简单的方式。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-pfb-1"></a>7.5.1.&#160;基础</h3></div></div></div>
+<p>像其它的<code class="literal">FactoryBean</code>实现一样，<code class="literal">ProxyFactoryBean</code>引入了一个间接层。如果你定义一个名为<code class="literal">foo</code>的<code class="literal">ProxyFactoryBean</code>，
+            引用<code class="literal">foo</code>的对象看到的将不是<code class="literal">ProxyFactoryBean</code>实例本身，而是一个<code class="literal">ProxyFactoryBean</code>实现里<code class="literal">getObject() </code>方法所创建的对象。
+        这个方法将创建一个AOP代理，它包装了一个目标对象。</p>
+<p>使用<code class="literal">ProxyFactoryBean</code>或者其它IoC相关类带来的最重要的好处之一就是创建AOP代理，这意味着通知和切入点也可以由IoC来管理。这是一个强大的功能并使得某些特定的解决方案成为可能，
+            而这些用其它AOP框架很难做到。例如，一个通知也许本身也要引用应用程序对象（不仅仅是其它AOP框架中也可以访问的目标对象），这令你可以从依赖注射的可拔插特性中获益。
+        </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-pfb-2"></a>7.5.2.&#160;JavaBean属性</h3></div></div></div>
+<p>
+            通常情况下Spring提供了大多数的<code class="interfacename">FactoryBean</code>实现，<code class="classname">ProxyFactoryBean</code>类本身也是一个JavaBean。它的属性被用来：
+        </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>指定你希望代理的目标对象</p></li>
+<li><p>指定是否使用CGLIB（查看下面叫做<a href="ch07s05.html#aop-pfb-proxy-types" title="7.5.3.&#160;基于JDK和CGLIB的代理">第&#160;7.5.3&#160;节 “基于JDK和CGLIB的代理”</a>的小节）。</p></li>
+</ul></div>
+<p>
+            一些主要属性从<code class="classname">org.springframework.aop.framework.ProxyConfig</code>里继承下来（这个类是Spring里所有AOP代理工厂的父类）。这些主要属性包括：
+        </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+                    <code class="literal">proxyTargetClass</code>：这个属性为<code class="literal">true</code>时，目标类本身被代理而不是目标类的接口。如果这个属性值被设为<code class="literal">true</code>，CGLIB代理将被创建（可以参看下面名为<a href="ch07s05.html#aop-pfb-proxy-types" title="7.5.3.&#160;基于JDK和CGLIB的代理">第&#160;7.5.3&#160;节 “基于JDK和CGLIB的代理”</a>的章节）。
+                </p></li>
+<li><p>
+                    <code class="literal">optimize</code>：用来控制<span class="emphasis"><em>通过CGLIB创建</em></span>的代理是否使用激进的优化策略。
+                    除非完全了解AOP代理如何处理优化，否则不推荐用户使用这个设置。目前这个属性仅用于CGLIB代理；
+                    对于JDK动态代理（缺省代理）无效。
+				</p></li>
+<li><p>
+					<code class="literal">frozen</code>：如果一个代理配置是<code class="literal">frozen</code>的，就不允许对该配置进行修改。
+					这在简单优化和不希望调用者在代理创建后操作代理（通过<code class="interfacename">Advised</code>接口）
+					时很有用。缺省值为<code class="literal">false</code>，即可以进行类似添加附加通知的操作。
+				</p></li>
+<li><p>
+                    <code class="literal">exposeProxy</code>：决定当前代理是否被暴露在一个<code class="classname">ThreadLocal</code>
+                    中以便被目标对象访问。如果目标对象需要获取代理而且<code class="literal">exposeProxy</code>属性被设为
+                    <code class="literal">true</code>，目标对象可以使用<code class="literal">AopContext.currentProxy()</code>方法。 
+                </p></li>
+<li><p>
+                    <code class="literal">aopProxyFactory</code>：使用<code class="interfacename">AopProxyFactory</code>的实现。这提供了一种方法来自定义是否使用动态代理，CGLIB或其它代理策略。
+                    缺省实现将根据情况选择动态代理或者CGLIB。一般情况下应该没有使用这个属性的需要；它是被设计来在Spring 1.1中添加新的代理类型的。
+                </p></li>
+</ul></div>
+<p><code class="classname">ProxyFactoryBean</code>中需要说明的其它属性包括：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+                    <code class="literal">proxyInterfaces</code>：需要代理的接口名的字符串数组。
+                    如果没有提供，将为目标类使用一个CGLIB代理（也可以查看下面名为<a href="ch07s05.html#aop-pfb-proxy-types" title="7.5.3.&#160;基于JDK和CGLIB的代理">第&#160;7.5.3&#160;节 “基于JDK和CGLIB的代理”</a>的章节）。 
+                </p></li>
+<li>
+<p>
+                    <code class="literal">interceptorNames</code>：<code class="interfacename">Advisor</code>的字符串数组，可以包括拦截器或其它通知的名字。
+                    顺序是很重要的，排在前面的将被优先服务。就是说列表里的第一个拦截器将能够第一个拦截调用。
+                </p>
+<p>
+                    这里的名字是当前工厂中bean的名字，包括父工厂中bean的名字。这里你不能使用bean的引用因为这会导致<code class="classname">ProxyFactoryBean</code>忽略通知的单例设置。
+                </p>
+<p>
+                    你可以把一个拦截器的名字加上一个星号作为后缀（<code class="literal">*</code>）。这将导致这个应用程序里所有名字以星号之前部分开头的通知器都被应用。
+                    你可以在<a href="ch07s05.html#aop-global-advisors" title="7.5.6.&#160;使用“全局”通知器">第&#160;7.5.6&#160;节 “使用“全局”通知器”</a> 发现一个使用这个特性的例子。
+                </p>
+</li>
+<li><p>
+                    单例：工厂是否应该返回同一个对象，不论方法<code class="literal">getObject()</code>被调用的多频繁。
+                    多个<code class="interfacename">FactoryBean</code>实现都提供了这个方法。缺省值是<code class="literal">true</code>。
+                    如果你希望使用有状态的通知--例如，有状态的mixin--可以把单例属性的值设置为<code class="literal">false</code>来使用原型通知。
+                </p></li>
+</ul></div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-pfb-proxy-types"></a>7.5.3.&#160;基于JDK和CGLIB的代理</h3></div></div></div>
+<p>
+            这个小节作为说明性文档，解释了对于一个目标对象（需要被代理的对象），<code class="classname">ProxyFactryBean</code>是如何决定究竟创建一个基于JDK还是CGLIB的代理的。
+        </p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>
+                <code class="classname">ProxyFactoryBean</code>需要创建基于JDK还是CGLIB代理的具体行为在版本1.2.x和2.0中有所不同。
+                现在<code class="classname">ProxyFactoryBean</code>在关于自动检测接口方面使用了与<code class="classname">TransactionProxyFactoryBean</code>相似的语义。	
+            </p>
+</div>
+<p>
+            如果一个需要被代理的目标对象的类（后面将简单地称它为目标类）没有实现任何接口，那么一个基于CGLIB的代理将被创建。
+            这是最简单的场景，因为JDK代理是基于接口的，没有接口意味着没有使用JDK进行代理的可能。
+            在目标bean里将被插入探测代码，通过<code class="literal">interceptorNames</code>属性给出了拦截器的列表。
+            注意一个基于CGLIB的代理将被创建即使<code class="classname">ProxyFactoryBean</code>的<code class="literal">proxyTargetClass</code>属性被设置为<code class="literal">false</code>。
+            （很明显这种情况下对这个属性进行设置是没有意义的，最好把它从bean的定义中移除，因为虽然这只是个多余的属性，但在许多情况下会引起混淆。）
+        </p>
+<p>
+            如果目标类实现了一个（或者更多）接口，那么创建代理的类型将根据<code class="classname">ProxyFactoryBean</code>的配置来决定。
+        </p>
+<p>
+            如果<code class="classname">ProxyFactoryBean</code>的<code class="literal">proxyTargetClass</code>属性被设为<code class="literal">true</code>，那么一个基于CGLIB的代理将创建。
+            这样的规定是有意义的，遵循了最小惊讶法则（保证了设定的一致性）。甚至当<code class="classname">ProxyFactoryBean</code>的<code class="literal">proxyInterfaces</code>属性被设置为一个或者多个全限定接口名，
+            而<code class="literal">proxyTargetClass</code>属性被设置为<code class="literal">true</code>仍然<span class="emphasis"><em>将</em></span>实际使用基于CGLIB的代理。
+        </p>
+<p>
+            如果<code class="classname">ProxyFactoryBean</code>的<code class="literal">proxyInterfaces</code>属性被设置为一个或者多个全限定接口名，一个基于JDK的代理将被创建。
+            被创建的代理将实现所有在<code class="literal">proxyInterfaces</code>属性里被说明的接口；
+            如果目标类实现了全部在<code class="literal">proxyInterfaces</code>属性里说明的接口以及一些额外接口，返回的代理将只实现说明的接口而不会实现那些额外接口。
+        </p>
+<p>
+            如果<code class="classname">ProxyFactoryBean</code>的<code class="literal">proxyInterfaces</code>属性<span class="emphasis"><em>没有</em></span>被设置，
+            但是目标类<span class="emphasis"><em>实现了一个（或者更多）</em></span>接口，那么<code class="classname">ProxyFactoryBean</code>将自动检测到这个目标类已经实现了至少一个接口，
+            一个基于JDK的代理将被创建。被实际代理的接口将是目标类所实现的<span class="emphasis"><em>全部</em></span>接口；
+            实际上，这和在<code class="literal">proxyInterfaces</code>属性中列出目标类实现的每个接口的情况是一样的。
+            然而，这将显著地减少工作量以及输入错误的可能性。
+        </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-api-proxying-intf"></a>7.5.4.&#160;对接口进行代理</h3></div></div></div>
+<p>
+            让我们看一个关于<code class="classname">ProxyFactoryBean</code>的简单例子。这个例子涉及：
+        </p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>一个将被代理的<span class="emphasis"><em>目标bean</em></span>。在下面的例子里这个bean是“personTarget”。</p></li>
+<li><p>被用来提供通知的一个通知器和一个拦截器。</p></li>
+<li><p>一个AOP代理bean的定义，它说明了目标对象（personTarget bean）以及需要代理的接口，还包括需要被应用的通知。</p></li>
+</ul></div>
+<p>
+            </p>
+<pre class="code">&lt;bean id="personTarget" class="com.mycompany.PersonImpl"&gt;
+                &lt;property name="name"&gt;&lt;value&gt;Tony&lt;/value&gt;&lt;/property&gt;
+                &lt;property name="age"&gt;&lt;value&gt;51&lt;/value&gt;&lt;/property&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="myAdvisor" class="com.mycompany.MyAdvisor"&gt;
+                &lt;property name="someProperty"&gt;&lt;value&gt;Custom string property value&lt;/value&gt;&lt;/property&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="debugInterceptor" class="org.springframework.aop.interceptor.DebugInterceptor"&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="person" 
+                class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+                &lt;property name="proxyInterfaces"&gt;&lt;value&gt;com.mycompany.Person&lt;/value&gt;&lt;/property&gt;
+                
+                &lt;property name="target"&gt;&lt;ref local="personTarget"/&gt;&lt;/property&gt;
+                &lt;property name="interceptorNames"&gt;
+                &lt;list&gt;
+                &lt;value&gt;myAdvisor&lt;/value&gt;
+                &lt;value&gt;debugInterceptor&lt;/value&gt;
+                &lt;/list&gt;
+                &lt;/property&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>注意<code class="literal">interceptorNames</code>属性接受一组字符串：当前工厂中拦截器或通知器bean的名字。
+            拦截器，通知器，前置, 后置和异常通知对象都可以在这里被使用。这里通知器的顺序是很重要的。
+        </p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>你也许很奇怪为什么这个列表不保存bean的引用。理由是如果ProxyFactoryBean的singleton属性被设置为false，它必须返回独立的代理实例。
+                如果任何通知器本身是一个原型，则每次都返回一个独立实例，因此它必须能够从工厂里获得原型的一个实例；保存一个引用是不够的。
+            </p>
+</div>
+<p>上面“person” bean的定义可以被用来取代一个Person接口的实现，就像下面这样：</p>
+<pre class="code">Person person = (Person) factory.getBean("person");</pre>
+<p>在同一个IoC上下文中其它的bean可以对这个bean有基于类型的依赖，就像对一个普通的Java对象那样：</p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="personUser" class="com.mycompany.PersonUser"&gt;
+                &lt;property name="person"&gt;&lt;ref local="person" /&gt;&lt;/property&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>这个例子里的<code class="literal">PersonUser</code>类将暴露一个类型为Person的属性。就像我们关心的那样，AOP代理可以透明地取代一个“真实”的person接口实现。
+        然而，它的类将是一个动态代理类。 它可以被转型成<code class="literal">Advised</code>接口（将在下面讨论）。</p>
+<p>就像下面这样，你可以使用一个匿名<span class="emphasis"><em>内部bean</em></span>来隐藏目标和代理之间的区别。
+        仅仅<code class="literal">ProxyFactoryBean</code>的定义有所不同；通知的定义只是由于完整性的原因而被包括进来：</p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="myAdvisor" class="com.mycompany.MyAdvisor"&gt;
+                &lt;property name="someProperty"&gt;&lt;value&gt;Custom string property value&lt;/value&gt;&lt;/property&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="debugInterceptor" class="org.springframework.aop.interceptor.DebugInterceptor"/&gt;
+                
+                &lt;bean id="person" class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+                &lt;property name="proxyInterfaces"&gt;&lt;value&gt;com.mycompany.Person&lt;/value&gt;&lt;/property&gt;
+                &lt;!-- Use inner bean, not local reference to target --&gt;
+                &lt;property name="target"&gt;
+                &lt;bean class="com.mycompany.PersonImpl"&gt;
+                &lt;property name="name"&gt;&lt;value&gt;Tony&lt;/value&gt;&lt;/property&gt;
+                &lt;property name="age"&gt;&lt;value&gt;51&lt;/value&gt;&lt;/property&gt;
+                &lt;/bean&gt;
+                &lt;/property&gt;
+                &lt;property name="interceptorNames"&gt;
+                &lt;list&gt;
+                &lt;value&gt;myAdvisor&lt;/value&gt;
+                &lt;value&gt;debugInterceptor&lt;/value&gt;
+                &lt;/list&gt;
+                &lt;/property&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>对于只需要一个<code class="literal">Person</code>类型对象的情况，这是有好处的：如果你希望阻止应用程序上下文的用户获取一个指向未通知对象的引用或者希望避免使用Spring IoC <span class="emphasis"><em>自动织入</em></span> 时的混淆。
+        按理说ProxyFactoryBean定义还有一个优点是它是自包含的。然而，有时能够从工厂里获取未通知的目标也是一个优点：例如，在某些测试场景里。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-api-proxying-class"></a>7.5.5.&#160;对类进行代理</h3></div></div></div>
+<p>如果你需要代理一个类而不是代理一个或是更多接口，那么情况将是怎样？</p>
+<p>想象在我们上面的例子里，不存在<code class="literal">Person</code>接口：我们需要通知一个叫做<code class="literal">Person</code>的类，它没有实现任何业务接口。
+            在这种情况下，你可以配置Spring使用CGLIB代理，而不是动态代理。这只需简单地把上面ProxyFactoryBean的<code class="literal">proxyTargetClass</code>属性设为true。
+            虽然最佳方案是面向接口编程而不是类，但在与遗留代码一起工作时，通知没有实现接口的类的能力是非常有用的。
+            （通常情况下，Spring没有任何规定。它只是让你很容易根据实际情况选择最好的解决方案，避免强迫使用特定方式）。
+        </p>
+<p>也许你希望你能够在任何情况下都强制使用CGLIB，甚至在你使用接口的时候也这样做。</p>
+<p>CGLIB通过在运行时生成一个目标类的子类来进行代理工作。
+        Spring配置这个生成的子类对原始目标对象的方法调用进行托管：子类实现了<span class="emphasis"><em>装饰器（Decorator）</em></span>模式，把通知织入。</p>
+<p>CGLIB的代理活动应当对用户是透明的。然而，有一些问题需要被考虑：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p><code class="literal">Final</code>方法不可以被通知，因为它们不能被覆盖。</p></li>
+<li><p>你需要在你的类路径里有CGLIB 2的库；使用动态代理的话只需要JDK。</p></li>
+</ul></div>
+<p>在CGLIB代理和动态代理之间的速度差别是很小的。在Spring 1.0中，动态代理会快一点点。但这点可能在将来被改变。
+            这种情况下，选择使用何种代理时速度不应该成为决定性的理由。
+        </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-global-advisors"></a>7.5.6.&#160;使用“全局”通知器</h3></div></div></div>
+<p>通过在一个拦截器名后添加一个星号，所有bean名字与星号之前部分相匹配的通知都将被加入到通知器链中。这让你很容易添加一组标准的“全局”通知器：</p>
+<pre class="code">
+                &lt;bean id="proxy" class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+                &lt;property name="target" ref="service"/&gt;
+                &lt;property name="interceptorNames"&gt;
+                &lt;list&gt;
+                &lt;value&gt;globa *&lt;/value&gt;
+                &lt;/list&gt;
+                &lt;/property&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="global_debug" class="org.springframework.aop.interceptor.DebugInterceptor"/&gt;
+                &lt;bean id="global_performance" class="org.springframework.aop.interceptor.PerformanceMonitorInterceptor"/&gt;
+        </pre>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

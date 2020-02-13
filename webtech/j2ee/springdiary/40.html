@@ -1,0 +1,369 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="39.html"> 上一页</a><a href="41.html"> 下一页</a></div>
+<h1>DataSource  注入 </h1>
+<p> 对于不同的资料连接来源需求，Spring 提供了 javax.sql.DataSource 注入，更换资料来源只要 在 Bean 定义档中修改配置，而不用修改任何一行程式。 </p>
+<p> 因应不同的系统，应用程式可能使用不同的资料来源，例如纯綷的使用 JDBC、透过连接池、或  是透过 JNDI 等等，资料来源的更动是底层的行为，这些行为不  应影响到上层的业务逻辑，为此，  您可以在需要取得连接来源的 Bean 物件上保留一个 Datasource 注入的操作介面， Spring 提供 org.springframework.jdbc.datasource.DriverManagerDataSource 来取得它的 实例， DriverManagerDataSource 实作了 javax.sql.DataSource，您可以在 Bean 定义档中这么撰写：</p>
+<pre class="code">...
+&lt;beans&gt;
+	&lt;bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDat
+		aSource "&gt;
+		&lt;property name="driverClassName"&gt;
+			&lt;value&gt;com.mysql.jdbc.Driver&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="url"&gt;
+			&lt;value&gt;jdbc:mysql://localhost:3306/demo&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="username"&gt;
+			&lt;value&gt;caterpillar&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="password"&gt;
+			&lt;value&gt;123456&lt;/value&gt;
+		&lt;/property&gt;
+	&lt;/bean&gt;
+	...
+&lt;/beans&gt;</pre>
+<p> 其中&quot;driverClassName&quot;、&quot;url&quot;、&quot;username&quot;、&quot;password&quot;四个属性分别用来设定 JDBC 驱动程 式类别、资料库 URL 协定、使用者名称、密码。 
+  在这边实际使用一个程式来作为 DataSource 注入的示范，并也示范一下之前有关于 DAO 介绍的  实作，假设您定义了一个 DAO 的操作介面如下： </p>
+<h5> •      IUserDAO.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+public interface IUserDAO {
+	public void insert(User user);
+	public User find(Integer id);
+}
+</pre>
+<p> 这边关于 DAO 的介面定义只有 insert()与 find()两个方法。在这个介面中所使用到的 User 类别 则如下定义：</p>
+<h5> •      User.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+public class User { private Integer id; private String name; private Integer age;
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+}</pre>
+<p> 接着您可以定义一个 UserDAO 类别，它实作了 IUserDAO 介面，是实际进行资料库存取服务的物 
+  件，如下所示： </p>
+<h5> •      UserDAO.java</h5>
+<pre class="code">package onlyfun.caterpillar;
+import java.sql.Connection; import java.sql.ResultSet; import java.sql.SQLException; import java.sql.Statement;
+import javax.sql.DataSource;
+public class UserDAO implements IUserDAO {
+	private DataSource dataSource;
+	public void setDataSource(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+	public void insert(User user) { String name = user.getName();
+		int age = user.getAge().intValue();
+		Connection conn = null; Statement stmt = null;
+		try {
+			conn = dataSource.getConnection();
+			stmt = conn.createStatement();
+			stmt.execute("INSERT INTO user (name,age) "	+ "VALUES('" + name + "'," + age + ")");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if(stmt != null) {
+				try {
+					stmt.close();
+				}
+				catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(conn != null) {
+				try {
+					conn.close();
+				}
+				catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+	public User find(Integer id) { Connection conn = null; Statement stmt = null;
+		try {
+			conn = dataSource.getConnection();
+			stmt = conn.createStatement();
+			ResultSet result = stmt.executeQuery("SELECT * FROM user WHERE id=" + id.intValue());
+			if(result.next()) {
+				Integer i = new Integer(result.getInt(1));
+				String name = result.getString(2);
+				Integer age = new Integer(result.getInt(3));
+				// 封装为 User 物件
+				User user = new User();
+				user.setId(i);
+				user.setName(name);
+				user.setAge(age);
+				return user;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if(stmt != null) {
+				try {
+					stmt.close();
+				}
+				catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(conn != null) {
+				try {
+					conn.close();
+				}
+				catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return null;
+	}
+}</pre>
+<p> UserDAO 类别上宣告了一个 setDataSource()方法，可以让您注入 DataSource 的实例，您可以在 
+Bean 定义档中进行依赖注入的定义，如下所示：</p>
+<h5> •      beans-config.xml</h5>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE beans PUBLIC "-//SPRING/DTD BEAN/EN""http://www.springframework.org/dtd/spring-beans.dtd"&gt;
+&lt;beans&gt;
+	&lt;bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource"&gt;
+		&lt;property name="driverClassName"&gt;
+			&lt;value&gt;com.mysql.jdbc.Driver&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="url"&gt;
+			&lt;value&gt;jdbc:mysql://localhost:3306/demo&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="username"&gt;
+			&lt;value&gt;caterpillar&lt;/value&gt;
+		&lt;/property&gt;
+		&lt;property name="password"&gt;
+			&lt;value&gt;123456&lt;/value&gt;
+		&lt;/property&gt;
+	&lt;/bean&gt;
+	&lt;bean id="userDAO" class="onlyfun.caterpillar.UserDAO"&gt;
+		&lt;property name="dataSource"&gt;
+			&lt;ref bean="dataSource"/&gt;
+		&lt;/property&gt;
+	&lt;/bean&gt;
+&lt;/beans&gt;
+</pre>
+<p> 可以撰写一个简单的测试程式来操作 UserDAO 的实例，看看是否能进行资料的储存与查询： </p>
+<h5> •      SpringAOPDemo.java  </h5>
+<pre class="code">package onlyfun.caterpillar;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context. support.FileSystemXmlApplicationContext;
+public class SpringDAODemo {
+	public static void main(String[] args) { ApplicationContext context =
+		new FileSystemXmlApplicationContext( "beans-config.xml");
+		User user = new User();
+
+		user.setName("caterpillar");
+		user.setAge(new Integer(30));
+		IUserDAO userDAO =
+		(IUserDAO) context.getBean("userDAO");
+		userDAO.insert(user);
+		user = userDAO.find(new Integer(1));
+		System.out.println("name: " + user.getName());
+	}
+}</pre>
+<p> 在进行程式的测试之前，当然的您要先开启资料库服务，并将 beans-config.xml 中相关的驱动 
+程式类别、资料库 URL、使用者名称与密码等修改为您的设定，在这边我所使用的是 MySQL 资料 库，而我所建立的 user 表格是使用以下的 SQL 来建立的：</p>
+<pre class="code">CREATE TABLE user (
+	id INT(11) NOT NULL auto_increment PRIMARY KEY, 
+	name VARCHAR(100) NOT NULL default '',
+	age INT
+);</pre>
+<p> 程式的执行结果会先在资料库的 user 表格中存入一笔资料，接着根据 id 值查询出先前所存入的 资料，最后结果会显示&quot;name: caterpillar&quot;的文字。 </p>
+您 需 要 spring-core.jar 、  spring-beans.jar 、 spring-context.jar 、 spring-dao.jar 与 spring-jdbc.jar 这几个档案，如果您使用的是 spring.jar，当中已经包括了相关 API，另外也 需要相依的  commons-  logging.jar，当然，为了使用 JDBC，您必须要有 JDBC 驱动程式的 jar 档。
+
+<div class="rpindex"><a href="41.html"> 下一页</a><a href="39.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

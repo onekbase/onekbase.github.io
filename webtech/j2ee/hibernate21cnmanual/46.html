@@ -1,0 +1,434 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="45.html"> 上一页</a><a href="47.html"> 下一页</a></div>
+<h2>Chapter 18. 映射实例(Mapping   Examples)</h2>
+<p>本章将为你展示几个比较复杂的关联映射。 </p>
+<h2>18.1. 雇员／雇主（Employer/Employee）</h2>
+<p>接下来关于Employer和Employee关系的模型使用了一个实体（entity）类（Employment）来表示这个关联，因为对于相同的雇主和雇员可能会有多个雇用时间段。对于雇用金额和雇员姓名，我们使用组件（component）来进行建模。 </p>
+<img src="images/EmployerEmployee.gif" align="middle" />
+<p>这是一个可行的映射文档： </p>
+<pre class="code">&lt;hibernate-mapping&gt;
+        
+    &lt;class name=&quot;Employer&quot; table=&quot;employers&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;&gt;
+                &lt;param name=&quot;sequence&quot;&gt;employer_id_seq&lt;/param&gt;
+            &lt;/generator&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Employment&quot; table=&quot;employment_periods&quot;&gt;
+
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;&gt;
+                &lt;param name=&quot;sequence&quot;&gt;employment_id_seq&lt;/param&gt;
+            &lt;/generator&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;startDate&quot; column=&quot;start_date&quot;/&gt;
+        &lt;property name=&quot;endDate&quot; column=&quot;end_date&quot;/&gt;
+
+        &lt;component name=&quot;hourlyRate&quot; class=&quot;MonetoryAmount&quot;&gt;
+            &lt;property name=&quot;amount&quot;&gt;
+                &lt;column name=&quot;hourly_rate&quot; sql-type=&quot;NUMERIC(12, 2)&quot;/&gt;
+            &lt;/property&gt;
+            &lt;property name=&quot;currency&quot; length=&quot;12&quot;/&gt;
+        &lt;/component&gt;
+
+        &lt;many-to-one name=&quot;employer&quot; column=&quot;employer_id&quot; not-null=&quot;true&quot;/&gt;
+        &lt;many-to-one name=&quot;employee&quot; column=&quot;employee_id&quot; not-null=&quot;true&quot;/&gt;
+
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Employee&quot; table=&quot;employees&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;&gt;
+                &lt;param name=&quot;sequence&quot;&gt;employee_id_seq&lt;/param&gt;
+            &lt;/generator&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;taxfileNumber&quot;/&gt;
+        &lt;component name=&quot;name&quot; class=&quot;Name&quot;&gt;
+            &lt;property name=&quot;firstName&quot;/&gt;
+            &lt;property name=&quot;initial&quot;/&gt;
+            &lt;property name=&quot;lastName&quot;/&gt;
+        &lt;/component&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+这里是由SchemaExport生成的表结构。
+<pre class="code">create table employers (
+    id BIGINT not null, 
+    name VARCHAR(255), 
+    primary key (id)
+)
+
+create table employment_periods (
+    id BIGINT not null,
+    hourly_rate NUMERIC(12, 2),
+    currency VARCHAR(12), 
+    employee_id BIGINT not null, 
+    employer_id BIGINT not null, 
+    end_date TIMESTAMP, 
+    start_date TIMESTAMP, 
+    primary key (id)
+)
+
+create table employees (
+    id BIGINT not null, 
+    firstName VARCHAR(255), 
+    initial CHAR(1), 
+    lastName VARCHAR(255), 
+    taxfileNumber VARCHAR(255), 
+    primary key (id)
+)
+
+alter table employment_periods 
+    add constraint employment_periodsFK0 foreign key (employer_id) references employers
+alter table employment_periods 
+    add constraint employment_periodsFK1 foreign key (employee_id) references employees
+create sequence employee_id_seq
+create sequence employment_id_seq
+create sequence employer_id_seq</pre>
+<h2><a name="18-2" id="18-2"></a>18.2. 作者／著作(Author/Work)</h2>
+<p>下面的例子是关于Work、Author和Person。我们用多对多关系来表示Work和Author之间的关联，用一对一的关系来表示Author和Person之间的关联。另外一种可行的方式是对Author扩展Person。 </p>
+<img src="images/AuthorWork.gif" align="middle" />
+<p>接下来的映射文档正确地表示这些关系： </p>
+<pre class="code">&lt;hibernate-mapping&gt;
+
+    &lt;class name=&quot;Work&quot; table=&quot;works&quot; discriminator-value=&quot;W&quot;&gt;
+
+        &lt;id name=&quot;id&quot; column=&quot;id&quot;&gt;
+            &lt;generator class=&quot;native&quot;/&gt;
+        &lt;/id&gt;
+        &lt;discriminator column=&quot;type&quot; type=&quot;character&quot;/&gt;
+
+        &lt;property name=&quot;title&quot;/&gt;
+        &lt;set name=&quot;authors&quot; table=&quot;author_work&quot; lazy=&quot;true&quot;&gt;
+            &lt;key&gt;
+                &lt;column name=&quot;work_id&quot; not-null=&quot;true&quot;/&gt;
+            &lt;/key&gt;
+            &lt;many-to-many class=&quot;Author&quot;&gt;
+                &lt;column name=&quot;author_id&quot; not-null=&quot;true&quot;/&gt;
+            &lt;/many-to-many&gt;
+        &lt;/set&gt;
+
+        &lt;subclass name=&quot;Book&quot; discriminator-value=&quot;B&quot;&gt;
+            &lt;property name=&quot;text&quot;/&gt;
+        &lt;/subclass&gt;
+
+        &lt;subclass name=&quot;Song&quot; discriminator-value=&quot;S&quot;&gt;
+            &lt;property name=&quot;tempo&quot;/&gt;
+            &lt;property name=&quot;genre&quot;/&gt;
+        &lt;/subclass&gt;
+
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Author&quot; table=&quot;authors&quot;&gt;
+
+        &lt;id name=&quot;id&quot; column=&quot;id&quot;&gt;
+            &lt;!-- The Author must have the same identifier as the Person --&gt;
+            &lt;generator class=&quot;assigned&quot;/&gt; 
+        &lt;/id&gt;
+
+        &lt;property name=&quot;alias&quot;/&gt;
+        &lt;one-to-one name=&quot;person&quot; constrained=&quot;true&quot;/&gt;
+
+        &lt;set name=&quot;works&quot; table=&quot;author_work&quot; inverse=&quot;true&quot; lazy=&quot;true&quot;&gt;
+            &lt;key column=&quot;author_id&quot;/&gt;
+            &lt;many-to-many class=&quot;Work&quot; column=&quot;work_id&quot;/&gt;
+        &lt;/set&gt;
+
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Person&quot; table=&quot;persons&quot;&gt;
+        &lt;id name=&quot;id&quot; column=&quot;id&quot;&gt;
+            &lt;generator class=&quot;native&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+<p>在这个映射中有四个表。works，authors和persons分别存放著作、作者以及人的数据。author_work是关联表，把作者与著作关联起来。以下是由SchemaExport生成的表结构。 </p>
+<pre class="code">create table works (
+    id BIGINT not null generated by default as identity, 
+    tempo FLOAT, 
+    genre VARCHAR(255), 
+    text INTEGER, 
+    title VARCHAR(255), 
+    type CHAR(1) not null, 
+    primary key (id)
+)
+
+create table author_work (
+    author_id BIGINT not null, 
+    work_id BIGINT not null, 
+    primary key (work_id, author_id)
+)
+
+create table authors (
+    id BIGINT not null generated by default as identity, 
+    alias VARCHAR(255), 
+    primary key (id)
+)
+
+create table persons (
+    id BIGINT not null generated by default as identity, 
+    name VARCHAR(255), 
+    primary key (id)
+)
+
+alter table authors 
+    add constraint authorsFK0 foreign key (id) references persons
+alter table author_work 
+    add constraint author_workFK0 foreign key (author_id) references authors
+alter table author_work
+    add constraint author_workFK1 foreign key (work_id) references works</pre>
+<h2><a name="18-3" id="18-3"></a>18.3. 客户／订单／产品(Customer/Order/Product)</h2>
+<p>接下来的例子是关于Customer、Order、LineItem和Product。Customer和Order之间是一对多的关联。那么Order／LineItem／Product之间的关联怎么表示呢？我们可以把LineItem作为关联表来表示Order和Product之间多对多关联，在Hibernate里，它被称为组合元素（composite element）。 </p>
+<img src="images/CustomerOrderProduct.gif" align="middle" />
+<p>映射文档： </p>
+<pre class="code">&lt;hibernate-mapping&gt;
+
+    &lt;class name=&quot;Customer&quot; table=&quot;customers&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;native&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+        &lt;set name=&quot;orders&quot; inverse=&quot;true&quot; lazy=&quot;true&quot;&gt;
+            &lt;key column=&quot;customer_id&quot;/&gt;
+            &lt;one-to-many class=&quot;Order&quot;/&gt;
+        &lt;/set&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Order&quot; table=&quot;orders&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;native&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;date&quot;/&gt;
+        &lt;many-to-one name=&quot;customer&quot; column=&quot;customer_id&quot;/&gt;
+        &lt;list name=&quot;lineItems&quot; table=&quot;line_items&quot; lazy=&quot;true&quot;&gt;
+            &lt;key column=&quot;order_id&quot;/&gt;
+            &lt;index column=&quot;line_number&quot;/&gt;
+            &lt;composite-element class=&quot;LineItem&quot;&gt;
+                &lt;property name=&quot;quantity&quot;/&gt;
+                &lt;many-to-one name=&quot;product&quot; column=&quot;product_id&quot;/&gt;
+            &lt;/composite-element&gt;
+        &lt;/list&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;Product&quot; table=&quot;products&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;native&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;serialNumber&quot;/&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+<p>customers、orders、line_items和products分别存放客户、订单、订单项以及产品的数据。line_items作为关联表，把订单和产品关联起来。 </p>
+<pre class="code">create table customers (
+    id BIGINT not null generated by default as identity, 
+    name VARCHAR(255), 
+    primary key (id)
+)
+
+create table orders (
+    id BIGINT not null generated by default as identity, 
+    customer_id BIGINT, 
+    date TIMESTAMP, 
+    primary key (id)
+)
+
+create table line_items (
+    line_number INTEGER not null, 
+    order_id BIGINT not null, 
+    product_id BIGINT, 
+    quantity INTEGER, 
+    primary key (order_id, line_number)
+)
+
+create table products (
+    id BIGINT not null generated by default as identity, 
+    serialNumber VARCHAR(255), 
+    primary key (id)
+)
+
+alter table orders 
+    add constraint ordersFK0 foreign key (customer_id) references customers
+alter table line_items
+    add constraint line_itemsFK0 foreign key (product_id) references products
+alter table line_items
+    add constraint line_itemsFK1 foreign key (order_id) references orders</pre>
+<div class="rpindex"><a href="47.html"> 下一页</a><a href="45.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

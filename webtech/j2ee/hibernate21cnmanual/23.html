@@ -1,0 +1,380 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="22.html"> 上一页</a><a href="24.html"> 下一页</a></div>
+<h2>6.6. 集合排序（Sorted Collections）</h2>
+<p>Hibernate支持实现java.util.SortedMap和java.util.SortedSet的集合。你必须在映射文件中指定一个比较器： </p>
+<pre class="code">&lt;set name=&quot;aliases&quot; table=&quot;person_aliases&quot; sort=&quot;natural&quot;&gt;
+    &lt;key column=&quot;person&quot;/&gt;
+    &lt;element column=&quot;name&quot; type=&quot;string&quot;/&gt;
+&lt;/set&gt;
+
+&lt;map name=&quot;holidays&quot; sort=&quot;my.custom.HolidayComparator&quot; lazy=&quot;true&quot;&gt;
+    &lt;key column=&quot;year_id&quot;/&gt;
+    &lt;index column=&quot;hol_name&quot; type=&quot;string&quot;/&gt;
+    &lt;element column=&quot;hol_date type=&quot;date&quot;/&gt;
+&lt;/map&gt;</pre>
+<p>sort属性中允许的值包括unsorted,natural和某个实现了java.util.Comparator的类的名称。 </p>
+<p>分类集合的行为事实上象java.util.TreeSet或者java.util.TreeMap。 </p>
+<h2><a name="6-7" id="6-7"></a>6.7. 对collection排序的其他方法（Other Ways To Sort a   Collection）</h2>
+<p>如果你希望数据库自己对集合元素排序，可以利用set,bag或者map映射中的order-by属性。这个解决方案只能在jdk1.4或者更高的jdk版本中才可以实现(通过LinkedHashSet或者   LinkedHashMap实现)。 它是在SQL查询中完成排序，而不是在内存中。 </p>
+<pre class="code">&lt;set name=&quot;aliases&quot; table=&quot;person_aliases&quot; order-by=&quot;name asc&quot;&gt;
+    &lt;key column=&quot;person&quot;/&gt;
+    &lt;element column=&quot;name&quot; type=&quot;string&quot;/&gt;
+&lt;/set&gt;
+
+&lt;map name=&quot;holidays&quot; order-by=&quot;hol_date, hol_name&quot; lazy=&quot;true&quot;&gt;
+    &lt;key column=&quot;year_id&quot;/&gt;
+    &lt;index column=&quot;hol_name&quot; type=&quot;string&quot;/&gt;
+    &lt;element column=&quot;hol_date type=&quot;date&quot;/&gt;
+&lt;/map&gt;</pre>
+<p>注意: 这个order-by属性的值是一个SQL排序子句而不是HQL的！ </p>
+<p>关联还可以在运行时使用filter()根据任意的条件来排序。 </p>
+<pre class="code">sortedUsers = s.filter( group.getUsers(), &quot;order by this.name&quot; );</pre>
+<h2><a name="6-8" id="6-8"></a>6.8. 垃圾收集（Garbage Collection）</h2>
+<p>集合是在被持久对象引用时自动持久化，并且不再不引用时自动删除的。 如果集合被从一个持久化对象转移到另外一个, 他的数据可能会被从一个表移到另外一个。   你不需要担心这些。 就跟你通常使用java集合一样使用Hibernate集合即可。 </p>
+<p><em>注意:</em>上面的论断在inverse=&quot;true&quot;的情况下<em>不</em>适用。   我们将在接下来的章节中解释这一点。 </p>
+<h2><a name="6-9" id="6-9"></a>6.9. 双向关联（Bidirectional   Associations）</h2>
+<p><em>双向关联</em>允许通过关联的任一端访问另外一端。在Hibernate中,   支持两种类型的双向关联: </p>
+<dl>
+  <dt>一对多（one-to-many） </dt>
+  <dd>
+    <p>Set或者bag值在一端, 单独值(非集合)在另外一端 </p>
+  </dd>
+  <dt>多对多（many-to-many） </dt>
+  <dd>
+    <p>两端都是set或bag值 </p>
+  </dd>
+</dl>
+<p>请注意Hibernate不支持带有索引的集合(list,map或者array)作为&quot;多&quot;的那一端的双向one-to-many关联。 </p>
+<p>要建立一个双向的多对多关联，只需要映射两个many-to-many关联到同一个数据库表中，并再定义其中的一端为<em>inverse</em>。这里有一个从一个类关联到<em>他自身</em>的many-to-many的双向关联的例子： （原文：You may specify a   bidirectional many-to-many association simply by mapping two many-to-many   associations to the same database table and declaring one end as <em>inverse</em>. Heres an example of a bidirectional   many-to-many association from a class back to <em>itself</em>:） </p>
+<pre class="code">&lt;class name=&quot;eg.Node&quot;&gt;
+    &lt;id name=&quot;id&quot; column=&quot;id&quot;/&gt;
+    ....
+    &lt;bag name=&quot;accessibleTo&quot; table=&quot;node_access&quot; lazy=&quot;true&quot;&gt;
+        &lt;key column=&quot;to_node_id&quot;/&gt;
+        &lt;many-to-many class=&quot;eg.Node&quot; column=&quot;from_node_id&quot;/&gt;
+    &lt;/bag&gt;
+     &lt;!-- inverse end --&gt;
+    &lt;bag name=&quot;accessibleFrom&quot; table=&quot;node_access&quot; inverse=&quot;true&quot; lazy=&quot;true&quot;&gt;
+        &lt;key column=&quot;from_node_id&quot;/&gt;
+        &lt;many-to-many class=&quot;eg.Node&quot; column=&quot;to_node_id&quot;/&gt;
+    &lt;/bag&gt;
+&lt;/class&gt;</pre>
+<p>如果只对关联的反向端进行了改变，这个改变<em>不会</em>被持久化。 （原文：Changes   made only to the inverse end of the association are <em>not</em> persisted.） </p>
+<p>要建立一个一对多的双向关联，你可以通过把一个一对多关联，作为一个多对一关联映射到到同一张表的字段上，并且在&quot;多&quot;的那一端定义inverse=&quot;true&quot;。 （原文： You may map a bidirectional one-to-many   association by mapping a one-to-many association to the same table column(s) as   a many-to-one association and declaring the many-valued end inverse=&quot;true&quot;.） </p>
+<pre class="code">&lt;class name=&quot;eg.Parent&quot;&gt;
+    &lt;id name=&quot;id&quot; column=&quot;id&quot;/&gt;
+    ....
+    &lt;set name=&quot;children&quot; inverse=&quot;true&quot; lazy=&quot;true&quot;&gt;
+        &lt;key column=&quot;parent_id&quot;/&gt;
+        &lt;one-to-many class=&quot;eg.Child&quot;/&gt;
+    &lt;/set&gt;
+&lt;/class&gt;
+
+&lt;class name=&quot;eg.Child&quot;&gt;
+    &lt;id name=&quot;id&quot; column=&quot;id&quot;/&gt;
+    ....
+    &lt;many-to-one name=&quot;parent&quot; class=&quot;eg.Parent&quot; column=&quot;parent_id&quot;/&gt;
+&lt;/class&gt;</pre>
+<p>在“一”这一端定义inverse=&quot;true&quot;不会影响级联操作。 （原文：Mapping one end   of an association with inverse=&quot;true&quot; doesn't affect the   operation of cascades.） </p>
+<h2><a name="6-10" id="6-10"></a>6.10. 三重关联（Ternary Associations）</h2>
+<p>这里有两种可能的途径来映射一个三重关联。其中一个是使用组合元素(下面将讨论).另外一个是使用一个map，并且带有关联作为其索引。 </p>
+<pre class="code">&lt;map name=&quot;contracts&quot; lazy=&quot;true&quot;&gt;
+    &lt;key column=&quot;employer_id&quot;/&gt;
+    &lt;index-many-to-many column=&quot;employee_id&quot; class=&quot;Employee&quot;/&gt;
+    &lt;one-to-many column=&quot;contract_id&quot; class=&quot;Contract&quot;/&gt;
+&lt;/map&gt;</pre>
+<pre class="code">&lt;map name=&quot;connections&quot; lazy=&quot;true&quot;&gt;
+    &lt;key column=&quot;node1_id&quot;/&gt;
+    &lt;index-many-to-many column=&quot;node2_id&quot; class=&quot;Node&quot;/&gt;
+    &lt;many-to-many column=&quot;connection_id&quot; class=&quot;Connection&quot;/&gt;
+&lt;/map&gt;</pre>
+<h2><a name="6-11" id="6-11"></a>6.11. 异类关联(Heterogeneous   Associations)</h2>
+<p>&lt;many-to-any&gt;和&lt;index-many-to-any&gt;元素提供真正的异类关联。这些元素和&lt;any&gt;元素工作方式是同样的,他们都应该很少用到。 </p>
+<h2><a name="6-12" id="6-12"></a>6.12. 集合例子（Collection Example）</h2>
+<p>在前面的几个章节的确非常令人迷惑。 因此让我们来看一个例子。这个类： </p>
+<pre class="code">package eg;
+import java.util.Set;
+
+public class Parent {
+    private long id;
+    private Set children;
+
+    public long getId() { return id; }
+    private void setId(long id) { this.id=id; }
+
+    private Set getChildren() { return children; }
+    private void setChildren(Set children) { this.children=children; }
+
+    ....
+    ....
+}</pre>
+<p>这个类有一个eg.Child的实例集合。如果每一个子实例至多有一个父实例,   那么最自然的映射是一个one-to-many的关联关系： </p>
+<pre class="code">&lt;hibernate-mapping&gt;
+
+    &lt;class name=&quot;eg.Parent&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;set name=&quot;children&quot; lazy=&quot;true&quot;&gt;
+            &lt;key column=&quot;parent_id&quot;/&gt;
+            &lt;one-to-many class=&quot;eg.Child&quot;/&gt;
+        &lt;/set&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;eg.Child&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+<p>在以下的表定义中反应了这个映射关系：</p>
+<pre class="code">create table parent ( id bigint not null primary key )
+create table child ( id bigint not null primary key, name varchar(255), parent_id bigint )
+alter table child add constraint childfk0 (parent_id) references parent</pre>
+<p>如果父亲是<em>必须</em>的,   那么就可以使用双向one-to-many的关联了(请看后面父/子关系的章节)。 </p>
+<pre class="code">&lt;hibernate-mapping&gt;
+
+    &lt;class name=&quot;eg.Parent&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;set name=&quot;children&quot; inverse=&quot;true&quot; lazy=&quot;true&quot;&gt;
+            &lt;key column=&quot;parent_id&quot;/&gt;
+            &lt;one-to-many class=&quot;eg.Child&quot;/&gt;
+        &lt;/set&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;eg.Child&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+        &lt;many-to-one name=&quot;parent&quot; class=&quot;eg.Parent&quot; column=&quot;parent_id&quot; not-null=&quot;true&quot;/&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+<p>请注意NOT NULL的约束:</p>
+<pre class="code">create table parent ( id bigint not null primary key )
+create table child ( id bigint not null
+                     primary key,
+                     name varchar(255),
+                     parent_id bigint not null )
+alter table child add constraint childfk0 (parent_id) references parent</pre>
+<p>另外一方面,如果一个子实例可能有多个父实例, 那么就应该使用many-to-many关联：</p>
+<pre class="code">&lt;hibernate-mapping&gt;
+
+    &lt;class name=&quot;eg.Parent&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;set name=&quot;children&quot; lazy=&quot;true&quot; table=&quot;childset&quot;&gt;
+            &lt;key column=&quot;parent_id&quot;/&gt;
+            &lt;many-to-many class=&quot;eg.Child&quot; column=&quot;child_id&quot;/&gt;
+        &lt;/set&gt;
+    &lt;/class&gt;
+
+    &lt;class name=&quot;eg.Child&quot;&gt;
+        &lt;id name=&quot;id&quot;&gt;
+            &lt;generator class=&quot;sequence&quot;/&gt;
+        &lt;/id&gt;
+        &lt;property name=&quot;name&quot;/&gt;
+    &lt;/class&gt;
+
+&lt;/hibernate-mapping&gt;</pre>
+<p>表定义： </p>
+<pre class="code">create table parent ( id bigint not null primary key )
+create table child ( id bigint not null primary key, name varchar(255) )
+create table childset ( parent_id bigint not null, child_id bigint not null, primary key ( parent_id, child_id ) )
+alter table childset add constraint childsetfk0 (parent_id) references parent
+alter table childset add constraint childsetfk1 (child_id) references child</pre>
+<h2><a name="6-13" id="6-13"></a>6.13. &lt;idbag&gt;</h2>
+<p>如果你完全信奉我们对于“联合主键（composite keys）是个坏东西”，和“实体应该使用（无机的）自己生成的代用标识符（surrogate   keys）”的观点，也许你会感到有一些奇怪，我们目前为止展示的多对多关联和值集合都是映射成为带有联合主键的表的！现在，这一点非常值得争辩；看上去一个单纯的关联表并不能从代用标识符中获得什么好处（虽然使用组合值的集合<em>可能</em>会获得一点好处）。不过，Hibernate提供了一个（一点点试验性质的）功能，让你把多对多关联和值集合应得到一个使用代用标识符的表去。 </p>
+<p>&lt;idbag&gt; 属性让你使用bag语义来映射一个List (或Collection)。 </p>
+<pre class="code">&lt;idbag name=&quot;lovers&quot; table=&quot;LOVERS&quot; lazy=&quot;true&quot;&gt;
+    &lt;collection-id column=&quot;ID&quot; type=&quot;long&quot;&gt;
+        &lt;generator class=&quot;hilo&quot;/&gt;
+    &lt;/collection-id&gt;
+    &lt;key column=&quot;PERSON1&quot;/&gt;
+    &lt;many-to-many column=&quot;PERSON2&quot; class=&quot;eg.Person&quot; outer-join=&quot;true&quot;/&gt;
+&lt;/idbag&gt;</pre>
+<p>你可以理解，&lt;idbag&gt;人工的id生成器，就好像是实体类一样！集合的每一行都有一个不同的人造关键字。但是，Hibernate没有提供任何机制来让你取得某个特定行的人造关键字。 </p>
+<p>注意&lt;idbag&gt;的更新性能要比普通的&lt;bag&gt;高得多！Hibernate可以有效的定位到不同的行，分别进行更新或删除工作，就如同处理一个list,   map或者set一样。 </p>
+<p>在目前的实现中，还不支持使用identity标识符生成器策略。(In the current   implementation, the identity identifier generation   strategy is not supported.) </p>
+
+<div class="rpindex"><a href="24.html"> 下一页</a><a href="22.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,235 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="28.html"> 上一页</a><a href="30.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip:&nbsp;继承 - Table per class hierarchy</a></h1>
+    接续 <a href="28.html">上一个主题</a>，Table per
+    concrete
+    class的继承映像方式是最简单，但没有效率（例如查询同为User类型时，需要两次SQL）且不易管理的映像方式，来看看继承关系映像至关系型数据库
+    的第二种方式：Table per class
+    hierarchy。这种方式使用一个表格储存同一个继承阶层的所有类别，并使用额外的字段来表示所记录的是哪一个子类别的数据。<br />
+    <br />
+    具体来说，对于继承User类别的DefaultUser及PowerUser，可以设计以下的表格来储存数据：<br />
+    <img style="width: 143px; height: 158px;" alt="Table per class hierarchy" title="Table per class hierarchy" src="images/InheritanceTablePerClassHierarchy-1.jpg" /><br />
+    <br />
+    可以使用以下的SQL来建立表格：<br />
+    <pre class="code">CREATE TABLE user (
+&nbsp; &nbsp; id INT(11) NOT NULL auto_increment PRIMARY KEY,
+&nbsp; &nbsp; userType VARCHAR(50) NOT NULL,
+&nbsp; &nbsp; name VARCHAR(100) NOT NULL default '',
+&nbsp; &nbsp; someProperty VARCHAR(100),
+&nbsp; &nbsp; otherProperty VARCHAR(100)
+);</pre>
+    现在所决定的是，如果要储存的数据是来自DefalutUser，则在userType记下&quot;Default&quot;，如果储存的数据来PowerUser，则
+    在userType记下&quot;Power&quot;，由userType就可以在数据从数据库取回时，决定其该封装为DefaultUser或是PowerUser，
+    在使用Hibernate的话，这要在映射文件中使用&lt;discriminator&gt;等相关标签来定义，例如：<br />
+<h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br /><br />        &lt;id name=&quot;id&quot; column=&quot;id&quot; type=&quot;java.lang.Integer&quot;&gt; <br />            &lt;generator class=&quot;native&quot;/&gt; <br />        &lt;/id&gt; <br /><br />        &lt;discriminator column=&quot;userType&quot; type=&quot;java.lang.String&quot;/&gt; <br />        <br />        &lt;property name=&quot;name&quot; column=&quot;name&quot; type=&quot;java.lang.String&quot;/&gt; <br /><br />        &lt;subclass name=&quot;onlyfun.caterpillar.DefaultUser&quot; <br />                  discriminator-value=&quot;Default&quot;&gt; <br />            &lt;property name=&quot;someProperty&quot; <br />                      column=&quot;someProperty&quot; <br />                      type=&quot;java.lang.String&quot;/&gt; <br />        &lt;/subclass&gt; <br />        <br />        &lt;subclass name=&quot;onlyfun.caterpillar.PowerUser&quot; <br />                  discriminator-value=&quot;Power&quot;&gt; <br />            &lt;property name=&quot;otherProperty&quot; <br />                      column=&quot;otherProperty&quot; <br />                      type=&quot;java.lang.String&quot;/&gt; <br />        &lt;/subclass&gt;         <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    <br />
+    当然，别忘了在hibernate.cfg.xml 中指定映像文件：<br />
+<h5>hibernate.cfg.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-configuration PUBLIC<br />	&quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;<br />	&quot;http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;&gt;<br />	<br />&lt;hibernate-configuration&gt; <br /><br />    &lt;session-factory&gt; <br />        ....<br /><br />        &lt;!-- 物件與資料庫表格映射文件 --&gt; <br />        &lt;mapping resource=&quot;onlyfun/caterpillar/User.hbm.xml&quot;/&gt; <br /><br />    &lt;/session-factory&gt; <br /><br />&lt;/hibernate-configuration&gt;</pre>
+    <br />
+    使用 <a href="28.html">上一个主题</a> 中的储存程序的话，则Hibernate会使用以下的SQL来储存数据：<br />
+    <pre class="code">Hibernate: insert into user (name, otherProperty, userType) values (?, ?, 'Power')
+Hibernate: insert into user (name, someProperty, userType) values (?, ?, 'Default')</pre>
+    而实际上数据表会储存以下的内容：<br />
+    <table style="text-align: left; width: 100%;" border="0" cellpadding="2" cellspacing="2" id="table1">
+<tbody>
+  <tr>
+    <td style="background-color: rgb(0, 0, 0);"><small>+----+-------------+-------------+-------------------+------------------+<br />
+| id &nbsp;&nbsp; | userType | name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | someProperty | otherProperty |<br />
++----+-------------+-------------+-------------------+------------------+<br />
+|&nbsp; 1 &nbsp;&nbsp; | Power&nbsp; &nbsp; &nbsp;&nbsp; | caterpillar
+| NULL&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+| Bla...Bla... &nbsp; &nbsp; &nbsp;&nbsp; |<br />
+|&nbsp; 2 &nbsp;&nbsp; | Default &nbsp; &nbsp; | Bush&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp;&nbsp; | hu....hu... &nbsp; &nbsp; &nbsp; &nbsp; |
+NULL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+&nbsp; |<br />
++----+-------------+-------------+-------------------+-------------------+</small><br />
+</td>
+  </tr>
+</tbody>
+    </table>
+    <br />
+    缺点就是，因子类别属性的不同，对映储存时会有许多字段没有数据，但查询效率较好，例如查询User类型的数据时，只需一次SQL，如使用 <a href="28.html">上一个主题</a> 中的查询程序时，Hibernate会使用以下的SQL进行查询：<br />
+    <pre class="code">Hibernate:
+select user0_.id as id, user0_.name as name0_, user0_.someProperty as
+someProp4_0_, user0_.otherProperty as otherPro5_0_, user0_.userType as
+userType from user user0_</pre>
+
+
+<div class="rpindex"><a href="30.html"> 下一页</a><a href="28.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,405 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="beans-classpath-scanning"></a>3.12.&#160;对受管组件的Classpath扫描</h2></div></div></div>
+<p>到目前为止本章中的大多数例子都使用XML来指定配置元数据，
+    这些元数据会生成Spring容器中的每个<code class="interfacename">BeanDefinition</code>。
+    上一节(<a href="ch03s11.html" title="3.11.&#160;基于注解（Annotation-based）的配置">第&#160;3.11&#160;节 “基于注解（Annotation-based）的配置”</a>)演示了如何使用代码级注解来提供大量配置元数据。
+    然而，即使是在那些例子中，“基础”bean定义还是显式地定义在XML文件中，注解只是用来驱动依赖注入的。
+    本节中会介绍一种方法，通过扫描classpath并匹配<span class="emphasis"><em>过滤器</em></span>来隐式地检测<span class="emphasis"><em>候选组件</em></span> (candidate components)。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-stereotype-annotations"></a>3.12.1.&#160;<code class="interfacename">@Component</code>和更多典型化注解</h3></div></div></div>
+<p>从Spring 2.0开始，引入了<code class="interfacename">@Repository</code>注解，
+      用它来标记充当储存库(又称 Data Access Object或DAO)角色或典型的类。利用这个标记可以做很多事，
+      其中之一就是对<a href="ch12s06.html#orm-jpa-exceptions" title="12.6.4.&#160;异常转化">第&#160;12.6.4&#160;节 “异常转化”</a>中描述的异常进行自动转换。</p>
+<p>Spring 2.5引入了更多典型化注解(stereotype annotations)：
+      <code class="interfacename">@Component</code>、<code class="interfacename">@Service</code>和
+      <code class="interfacename">@Controller</code>。
+      <code class="interfacename">@Component</code>是所有受Spring管理组件的通用形式；
+      而<code class="interfacename">@Repository</code>、<code class="interfacename">@Service</code>和
+      <code class="interfacename">@Controller</code>则是<code class="interfacename">@Component</code>的细化，
+      用来表示更具体的用例(例如，分别对应了持久化层、服务层和表现层)。也就是说，
+      你能用<code class="interfacename">@Component</code>来注解你的组件类，
+      但如果用<code class="interfacename">@Repository</code>、<code class="interfacename">@Service</code>
+      或<code class="interfacename">@Controller</code>来注解它们，你的类也许能更好地被工具处理，或与切面进行关联。
+      例如，这些典型化注解可以成为理想的切入点目标。当然，在Spring Framework以后的版本中，
+      <code class="interfacename">@Repository</code>、<code class="interfacename">@Service</code>和
+      <code class="interfacename">@Controller</code>也许还能携带更多语义。如此一来，如果你正在考虑服务层中是该用
+      <code class="interfacename">@Component</code>还是<code class="interfacename">@Service</code>，
+      那<code class="interfacename">@Service</code>显然是更好的选择。同样的，就像前面说的那样，
+      <code class="interfacename">@Repository</code>已经能在持久化层中进行异常转换时被作为标记使用了。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-scanning-autodetection"></a>3.12.2.&#160;自动检测组件</h3></div></div></div>
+<p>Spring可以自动检测“被典型化”(stereotyped)的类，在<code class="interfacename">ApplicationContext</code>
+      中注册相应的<code class="interfacename">BeanDefinition</code>。例如，下面的这两个类就满足这种自动检测的要求：</p>
+<pre class="code">@Service
+public class SimpleMovieLister {
+
+    private MovieFinder movieFinder;
+
+    @Autowired
+    public SimpleMovieLister(MovieFinder movieFinder) {
+        this.movieFinder = movieFinder;
+    }
+}</pre>
+<pre class="code">@Repository
+public class JpaMovieFinder implements MovieFinder {
+    <em class="lineannotation"><span class="lineannotation">// implementation elided for clarity</span></em>
+}</pre>
+<p>要检测这些类并注册相应的bean，需要在XML中包含以下元素，其中'basePackage'是两个类的公共父包
+      (或者可以用逗号分隔的列表来分别指定包含各个类的包)。</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd"&gt;
+               
+     &lt;context:component-scan base-package="org.example"/&gt;
+     
+&lt;/beans&gt;</pre>
+<p>此外，在使用组件扫描元素时，<code class="interfacename">AutowiredAnnotationBeanPostProcessor</code>
+      和<code class="interfacename">CommonAnnotationBeanPostProcessor</code>会隐式地被包括进来。
+      也就是说，连个组件都会被自动检测<span class="emphasis"><em>并</em></span>织入 - 
+      所有这一切都不需要在XML中提供任何bean配置元数据。</p>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>通过加入值为'false'的<span class="emphasis"><em>annotation-config</em></span>属性可以禁止注册这些后置处理器。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-scanning-filters"></a>3.12.3.&#160;使用过滤器自定义扫描</h3></div></div></div>
+<p>默认情况下，用<code class="interfacename">@Component</code>、
+      <code class="interfacename">@Repository</code>、<code class="interfacename">@Service</code>或
+      <code class="interfacename">@Controller</code> (或本身使用了<code class="interfacename">@Component</code>注解的自定义注解)
+      注解的类是唯一会被检测到的候选组件。但是可以很方便地通过自定义过滤器来改变并扩展这一行为。
+      可以用'<code class="literal">component-scan</code>'的<span class="emphasis"><em>include-filter</em></span>或
+      <span class="emphasis"><em>exclude-filter</em></span>子元素来进行添加。
+      每个过滤器元素都要求有'<code class="literal">type</code>'和'<code class="literal">expression</code>'属性。
+      下面给出了四个已有的可选过滤器。</p>
+<div class="table">
+<a name="beans-scanning-filters-tbl"></a><p class="title"><b>表&#160;3.7.&#160;过滤器类型</b></p>
+<div class="table-contents"><table summary="过滤器类型" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>过滤器类型</th>
+<th>表达式范例</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>annotation</td>
+<td><p><code class="classname">org.example.SomeAnnotation</code></p></td>
+</tr>
+<tr>
+<td>assignable</td>
+<td><p><code class="classname">org.example.SomeClass</code></p></td>
+</tr>
+<tr>
+<td>regex</td>
+<td><p>org\.example\.Default.*</p></td>
+</tr>
+<tr>
+<td>aspectj</td>
+<td><p><code class="interfacename">org.example..*Service+</code></p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>下面这个XML配置会忽略所有的<code class="interfacename">@Repository</code>注解并用“stub”储存库代替。</p>
+<pre class="code">&lt;beans ...&gt;
+
+     &lt;context:component-scan base-package="org.example"&gt;
+        &lt;context:include-filter type="regex" expression=".*Stub.*Repository"/&gt;
+        &lt;context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/&gt;
+     &lt;/context:component-scan&gt;
+
+&lt;/beans&gt;</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>你也可以用&lt;component-scan/&gt;元素的<span class="emphasis"><em>use-default-filters="false"</em></span>
+        属性来禁用默认的过滤器。这会关闭对使用了<code class="interfacename">@Component</code>、
+        <code class="interfacename">@Repository</code>、<code class="interfacename">@Service</code>或
+        <code class="interfacename">@Controller</code>的类的自动检测。</p>
+</div>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-scanning-name-generator"></a>3.12.4.&#160;自动检测组件的命名</h3></div></div></div>
+<p>当一个组件在某个扫描过程中被自动检测到时，会根据那个扫描器的<code class="interfacename">BeanNameGenerator</code>
+      策略生成它的bean名称。默认情况下，任何包含<code class="literal">name</code>值的Spring“典型”注解
+      (<code class="interfacename">@Component</code>、<code class="interfacename">@Repository</code>、
+      <code class="interfacename">@Service</code>和<code class="interfacename">@Controller</code>)
+      会把那个名字提供给相关的bean定义。如果这个注解不包含<code class="literal">name</code>值或是其他检测到的组件
+      (比如被自定义过滤器发现的)，默认bean名称生成器会返回小写开头的非限定(non-qualified)类名。
+      例如，如果发现了下面这两个组件，它们的名字会是'myMovieLister'和'movieFinderImpl'：</p>
+<pre class="code">@Service("myMovieLister")
+public class SimpleMovieLister {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<pre class="code">@Repository
+public class MovieFinderImpl implements MovieFinder {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>如果你不想使用默认bean命名策略，可以提供一个自定义的命名策略。首先实现
+        <a href="" target="_top"><code class="interfacename">BeanNameGenerator</code></a>
+        接口，确认包含了一个默认的无参数构造方法。然后在配置扫描器时提供一个全限定(fully-qualified)类名：</p>
+</div>
+<pre class="code">&lt;beans ...&gt;
+               
+     &lt;context:component-scan base-package="org.example"
+                             name-generator="org.example.MyNameGenerator" /&gt;
+
+&lt;/beans&gt;</pre>
+<p>作为一条常规，当其他组件可能会显式地引用一个组件时可以考虑用注解来指定名称。
+      另一方面，当容器负责织入时，自动生成的名称就足够了。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-scanning-scope-resolver"></a>3.12.5.&#160;为自动检测的组件提供一个作用域</h3></div></div></div>
+<p>通常受Spring管理的组件，默认或者最常用的作用域是“singleton”。然而，有时也会需要其他的作用域。
+      因此Spring 2.5还引入了一个新的<code class="interfacename">@Scope</code>注解。只要在注解中提供作用域的名称就行了，
+      比方说：</p>
+<pre class="code">@Scope("prototype")
+@Repository
+public class MovieFinderImpl implements MovieFinder {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>如果你想提供一个自定义的作用域解析策略，不使用基于注解的方法，实现<a href="" target="_top"><code class="interfacename">ScopeMetadataResolver</code></a>
+        接口，确认包含一个默认的没有参数的构造方法。然后在配置扫描器时提供全限定类名：</p>
+</div>
+<pre class="code">&lt;beans ...&gt;
+               
+     &lt;context:component-scan base-package="org.example"
+                             scope-resolver="org.example.MyScopeResolver" /&gt;
+     
+&lt;/beans&gt;</pre>
+<p>当使用某些非singleton的作用域时，可能需要为这些作用域中的对象生成代理。
+      原因在标题为<a href="ch03s04.html#beans-factory-scopes-other-injection" title="3.4.4.5.&#160;作用域bean与依赖">第&#160;3.4.4.5&#160;节 “作用域bean与依赖”</a>的章节中已经说过了。
+      为了这个目的，'component-scan'元素有一个<span class="emphasis"><em>scoped-proxy</em></span>属性。
+      三个可能值是：'no'、'interfaces'和'targetClass'。比方说，下面的配置会产生标准的JDK动态代理：</p>
+<pre class="code">&lt;beans ...&gt;
+               
+     &lt;context:component-scan base-package="org.example"
+                             scoped-proxy="interfaces" /&gt;
+     
+&lt;/beans&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="beans-scanning-qualifiers"></a>3.12.6.&#160;用注解提供限定符元数据</h3></div></div></div>
+<p>在名为<a href="ch03s11.html#beans-autowired-annotation-qualifiers" title="3.11.2.&#160;基于注解的自动连接微调">第&#160;3.11.2&#160;节 “基于注解的自动连接微调”</a>的章节里引入了<code class="interfacename">@Qualifier</code>注解。
+      那节的例子中演示了<code class="interfacename">@Qualifier</code>注解的用法，以及如何用自定义限定符注解在自动织入解析时提供精细控制。
+      那些例子是基于XML bean定义的，所以限定符元数据是在XML中由'<code class="literal">bean</code>'元素的
+      '<code class="literal">qualifier</code>'或'<code class="literal">meta</code>'子元素提供。使用classpath扫描来自动检测组件时，
+      限定符元数据可以由候选类上的类别级(type-level)注解来提供。下面的三个例子就演示了这个技术。</p>
+<pre class="code">@Component
+<span class="bold"><strong>@Qualifier("Action")</strong></span>
+public class ActionMovieCatalog implements MovieCatalog {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<pre class="code">@Component
+<span class="bold"><strong>@Genre("Action")</strong></span>
+public class ActionMovieCatalog implements MovieCatalog {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<pre class="code">@Component
+<span class="bold"><strong>@Offline</strong></span>
+public class CachingMovieCatalog implements MovieCatalog {
+    <em class="lineannotation"><span class="lineannotation">// ...</span></em>
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>和其他大多数基于注解的东西一样，请牢记注解元数据是绑定到类定义上的，
+      而XML则允许多个<span class="emphasis"><em>相同类型</em></span>的bean根据限定符元数据提供多种选择，
+      因为元数据是由每个实例提供的，而不是每个类。</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

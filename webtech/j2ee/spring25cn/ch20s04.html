@@ -1,0 +1,292 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="jmx-naming"></a>20.4.&#160;控制Bean的<code class="classname">ObjectName</code></h2></div></div></div>
+<p>
+    对于每个Bean的注册，<code class="classname">MBeanExporter</code> 在后台委派给了 <code class="classname">ObjectNamingStrategy</code> 的一个实现来获取 <code class="classname">ObjectName</code>。
+    缺省实现是 <code class="classname">KeyNamingStrategy</code>，它将默认使用 <code class="literal">beans</code> 上 <code class="interfacename">Map</code> 的键值作为 <code class="classname">ObjectName</code>。
+    此外，<code class="classname">KeyNamingStrategy</code> 可以将该键值与 <code class="classname">Properties</code> 文件中的一个条目对应，以此解析 <code class="classname">ObjectName</code>。
+    除了 <code class="classname">KeyNamingStrategy</code> 之外，Spring还提供了另外两个 <code class="classname">ObjectNamingStrategy</code> 的实现：
+    基于bean的JVM标识构建 <code class="classname">ObjectName</code> 的 <code class="classname">IdentityNamingStrategy</code>；
+    利用源代码级元数据获取 <code class="classname">ObjectName</code> 的 <code class="classname">MetadataNamingStrategy</code>。
+    </p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jmx-naming-properties"></a>20.4.1.&#160;从<code class="classname">Properties</code>读取<code class="classname">Properties</code></h3></div></div></div>
+<p>
+      你可以配置你自己的 <code class="classname">KeyNamingStrategy</code> 实例，配置它从一个 <code class="classname">Properties</code> 实例读取 <code class="classname">ObjectName</code>，而不是用Bean的键值。
+      <code class="classname">KeyNamingStrategy</code> 首先会用bean的键值试图从 <code class="classname">Properties</code> 中定位一个条目。
+      假若没有找不到对应的条目，或者 <code class="classname">Properties</code> 实例为 <code class="literal">null</code>，最后才使用Bean的键值作为 <code class="classname">ObjectName</code>。
+      </p>
+<p>
+      以下代码显示了关于<code class="classname">KeyNamingStrategy</code>的一份配置样例：
+      </p>
+<pre class="code">&lt;beans&gt;
+
+  &lt;bean id="exporter" class="org.springframework.jmx.export.MBeanExporter"&gt;
+    &lt;property name="beans"&gt;
+      &lt;map&gt;
+        &lt;entry key="testBean" value-ref="testBean"/&gt;
+      &lt;/map&gt;
+    &lt;/property&gt;
+    &lt;property name="namingStrategy" ref="namingStrategy"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="testBean" class="org.springframework.jmx.JmxTestBean"&gt;
+    &lt;property name="name" value="TEST"/&gt;
+    &lt;property name="age" value="100"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="namingStrategy" class="org.springframework.jmx.export.naming.KeyNamingStrategy"&gt;
+    &lt;property name="mappings"&gt;
+      &lt;props&gt;
+        &lt;prop key="testBean"&gt;bean:name=testBean1&lt;/prop&gt;
+      &lt;/props&gt;
+    &lt;/property&gt;
+    &lt;property name="mappingLocations"&gt;
+      &lt;value&gt;names1.properties,names2.properties&lt;/value&gt;
+    &lt;/property&gt;
+  &lt;/bean
+
+&lt;/beans&gt;</pre>
+<p>
+      这个 <code class="classname">KeyNamingStrategy</code> 实例配置了一个 <code class="classname">Properties</code> 实例，而这个 <code class="classname">Properties</code> 实例由mapping属性和mappingLocations属性所指定的路径定位到的 <code class="classname">Properties</code> 文件合成。
+      在这个配置里，由于 <code class="classname">Properties</code> 实例有个键值对应该Bean的键值，因此 <code class="literal">testBean</code> 的 <code class="classname">ObjectName</code> 将被指定为 <code class="literal">bean:name=testBean1</code>。
+      </p>
+<p>
+      假若没有任何条目可以从 <code class="classname">Properties</code> 实例找到，Bean的键值将会作为 <code class="classname">ObjectName</code>。
+      </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jmx-naming-metadata"></a>20.4.2.&#160;使用<code class="classname">MetadataNamingStrategy</code></h3></div></div></div>
+<p>
+      <code class="classname">MetadataNamingStrategy</code> 用每个Bean上 <code class="classname">ManagedResource</code> 属性的 <code class="literal">objectName</code> 属性来构建 <code class="literal">objectName</code>。
+      以下代码展示了对于 <code class="classname">MetadataNamingStrategy</code> 的配置：
+      </p>
+<pre class="code">&lt;beans&gt;
+
+  &lt;bean id="exporter" class="org.springframework.jmx.export.MBeanExporter"&gt;
+    &lt;property name="beans"&gt;
+      &lt;map&gt;
+        &lt;entry key="testBean" value-ref="testBean"/&gt;
+      &lt;/map&gt;
+    &lt;/property&gt;
+    &lt;property name="namingStrategy" ref="namingStrategy"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="testBean" class="org.springframework.jmx.JmxTestBean"&gt;
+    &lt;property name="name" value="TEST"/&gt;
+    &lt;property name="age" value="100"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="namingStrategy" class="org.springframework.jmx.export.naming.MetadataNamingStrategy"&gt;
+    &lt;property name="attributeSource" ref="attributeSource"/&gt;
+  &lt;/bean&gt;
+
+  &lt;bean id="attributeSource"
+      class="org.springframework.jmx.export.metadata.AttributesJmxAttributeSource"/&gt;
+
+&lt;/beans&gt;</pre>
+<p>
+      假若没有 <code class="literal">objectName</code> 在 <code class="classname">ManagedResource</code>里提供，那么一个 <code class="classname">ObjectName</code> 将以以下格式创建： 
+      <span class="emphasis"><em>[fully-qualified-package-name]:type=[short-classname],name=[bean-name]</em></span>。
+      例如，对于以下的Bean，产生的 <code class="classname">ObjectName</code> 将是 <span class="emphasis"><em>com.foo:type=MyClass,name=myBean</em></span>。
+      </p>
+<pre class="code">&lt;bean id="myBean" class="com.foo.MyClass"/&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="jmx-context-mbeanexport"></a>20.4.3.&#160;<code class="literal">&lt;context:mbean-export/&gt;</code>元素</h3></div></div></div>
+<p>
+      如果你至少在使用Java 5，那么就可以使用一个方便的 <code class="classname">MBeanExporter</code> 子类， <code class="classname">AnnotationMBeanExporter</code>。
+      当定义一个这个子类的实例时，由于他将始终使用基于注解的标准Java元数据（自动探测也将始终被激活），<code class="literal">namingStrategy</code> 和 <code class="literal">attributeSource</code> 的配置也不再需要了。
+      </p>
+<pre class="code">&lt;context:mbean-export/&gt;</pre>
+<p>
+      必要时，你可以提供某个MBean服务器的引用，同时 <code class="literal">defaultDomain</code> 属性
+      （<code class="classname">AnnotationMBeanExporter</code>的一个属性）接受产生的MBean
+      <code class="classname">ObjectNames</code>域名的替代值。
+      这被用于替代前面章节 <a href="ch20s04.html#jmx-naming-metadata" title="20.4.2.&#160;使用MetadataNamingStrategy"><code class="classname">MetadataNamingStrategy</code></a> 提及的完整限定包名。
+      </p>
+<pre class="code">&lt;context:mbean-export server="myMBeanServer" default-domain="myDomain"/&gt;</pre>.
+
+    </div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

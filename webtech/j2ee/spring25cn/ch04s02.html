@@ -1,0 +1,233 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="resources-resource"></a>4.2.&#160;<code class="interfacename">Resource</code>接口</h2></div></div></div>
+<p>Spring的 <code class="interfacename">Resource</code> 接口是为了提供更强的访问底层资源能力的抽象。
+		</p>
+<pre class="code">public interface InputStreamSource {
+
+    boolean exists();
+
+    boolean isOpen();
+
+    URL getURL() throws IOException;
+
+    File getFile() throws IOException;
+
+    Resource createRelative(String relativePath) throws IOException;
+
+    String getFilename();
+
+    String getDescription();
+}</pre>
+<pre class="code">public interface InputStreamSource {
+
+    InputStream getInputStream() throws IOException;
+
+}</pre>
+<p>
+			<code class="interfacename">Resource</code> 接口一些比较重要的方法如下：
+		</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					<code class="methodname">getInputStream()</code>: 定位并打开资源，返回读取此资源的一个 <code class="classname">InputStream</code>。每次调用预期会返回一个新的 <code class="classname">InputStream</code>，由调用者负责关闭这个流。</p></li>
+<li><p>
+					<code class="methodname">exists()</code>: 返回标识这个资源在物理上是否的确存在的 <code class="literal">boolean</code> 值。</p></li>
+<li><p>
+					<code class="methodname">isOpen()</code>: 返回标识这个资源是否有已打开流的处理类的 <code class="literal">boolean</code> 值。如果为 <code class="literal">true</code>，则此<code class="classname">InputStream</code> 就不能被多次读取，
+而且只能被读取一次然后关闭以避免资源泄漏。除了 <code class="classname">InputStreamResource</code>，常见的resource实现都会返回 <code class="literal">false</code>。
+				</p></li>
+<li><p>
+					<code class="methodname">getDescription()</code>: 返回资源的描述，一般在与此资源相关的错误输出时使用。此描述通常是完整的文件名或实际的URL地址。
+				</p></li>
+</ul></div>
+<p>其它方法让你获得表示该资源的实际的 <code class="classname">URL</code> 或	<code class="classname">File</code> 对象(如果隐含的实现支持该方法并保持一致的话)。
+		</p>
+<p>Spring自身处理资源请求的多种方法声明中将<code class="interfacename">Resource</code> 抽象作为参数而广泛地使用。
+Spring APIs中的一些其它方法(比如许多<code class="interfacename">ApplicationContext</code>的实现构造函数)，使用普通格式的 <code class="classname">String</code> 来创建与context相符的<code class="interfacename">Resource</code>，也可以使用特殊的路径<code class="classname">String</code>前缀来让调用者指定创建和使用特定的 <code class="interfacename">Resource</code> 实现。
+		</p>
+<p>
+			<code class="interfacename">Resource</code>不仅被Spring自身大量地使用，它也非常适合在你自己的代码中独立作为辅助类使用。
+用户代码甚至可以在不用关心Spring其它部分的情况下访问资源。这样的确会造成代码与Spring之间的耦合，但也仅仅是与很少量的辅助类耦合。这些类可以作为比 <code class="classname">URL</code> 更有效的替代，而且与为这个目的而使用其它类库基本相似。
+		</p>
+<p>需要注意的是 <code class="interfacename">Resource</code> 抽象并没有改变功能：它尽量使用封装。
+			比如 <code class="classname">UrlResource</code> 封装了URL，然后使用被封装的 <code class="classname">URL</code> 来工作。
+		</p>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

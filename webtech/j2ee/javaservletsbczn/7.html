@@ -1,0 +1,1100 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="6.html"> 上一页</a><a href="8.html"> 下一页</a></div>
+    <h1>第7章 安全性 </h1>
+    <p>　　现在我们已经学会了如何编写一些简单的servlet，那么我们又该怎样来保证只有授权用户才能访问我们提供的信息呢？在本章中，我们将会看到进行用户认证的一些不同方法，并讨论每种方法的优缺点。我们还要讨论安全套接字协议层(Secure 
+      Sockets Layer,SSL)以及如何用它来保证信息传输的安全。</p>
+    <h2><b>7.1 HTTP认证</b></h2>
+    <p>　　最通用的一种用户认证方法就是使用HTTP内置的认证功能。当一个客户向服务器发出对受保护的资源的请求，服务器会用含有特别的请求首部和状态码的应答来响应。这个请求首部和状态码将会使浏览器提示输入用户名和口令。这种方法被称为challenge&amp;response(质询与答复)，服务器challenge(质询）客户(浏览器)，而客户用认证信息来应答。在接到客户的应答之后，服务器就使用它的用户数据库来验证该用户是否有效以及是授权访问还是拒绝。<br>
+      使用HTTP认证时有两个选项：基本认证方式和digest认证方式。基本认证方式得到了几乎全部浏览器的广泛支持，但是，不幸的是，它也很容易被破解。从客户发送到服务器的所有数据（包括用户口令）都是用Base64编码加密的。这种编码实在很难被称为加密，因为对Base64的解码并不很困难，后面我们就会看到这一点。所以，很容易就可以编写一个程序来冒充Web服务器，从而收集那些毫无防备的用户的用户名和口令。事实上，用servlet来实现这个程序真是轻而易举。说实在的，基本认证方式并不比传送明文安全多少，所以不要指望它能为你的站点提供百分之百的安全。<br>
+      来看看基本认证方式是如何工作的吧。图7.1显示了一个简单的servlet，它能够显示一个含有当前用户的用户名的页面。</p>
+    <pre class="code"> 　　           package javaservlets.security;
+            　　import javax.servlet.*;
+              　　import javax.servlet.http.*;
+            　　/**
+              　　* &lt;p&gt;This servlet uses HTTP Authentication to prompt for
+              　　* a username and password.
+              　　*/
+              　　public class HttpLogin extends HttpServlet
+              　　{
+              　　　/**
+              　　　* &lt;p&gt;Performs the HTTP GET operation
+              　　　*
+              　　　* @param req The request from the client
+              　　　* @param resp The response from the servlet
+              　　　*/
+              
+              　　　public void doGet(HttpServletRequest req,
+              　　　HttpServletResponse resp)
+              　　　throws ServletException, java.io.IOException
+              　　　{
+              　　　　// Set the content type of the response
+              　　　　resp.setContentType(&quot;text/html&quot;);
+             　　　　// Get the PrintWriter to write the response
+              　　　　java.io.PrintWriter out = resp.getWriter();
+             　　　　// Set the response header to force the browser to
+              　　　　// load the HTML page from the server instead of
+              　　　　// from a cache
+              　　　　resp.setHeader(&quot;Expires&quot;, &quot;Tues, 01 Jan 1980 
+              00:00:00 GMT&quot;);
+              
+              　　　　// Get the username
+              　　　　String user = req.getRemoteUser();
+             　　　　// Show the welcome page
+              　　　　out.println(&quot;&lt;html&gt;&quot;);
+              　　　　out.println(&quot;&lt;head&gt;&quot;);
+              　　　　out.println(&quot;&lt;title&gt;Welcome&lt;/title&gt;&quot;);
+              　　　　out.println(&quot;&lt;/head&gt;&quot;);
+              　　　　out.println(&quot;&lt;body&gt;&quot;);
+              　　　　out.println(&quot;&lt;center&gt;&lt;h2&gt;Welcome &quot; + user 
+              +
+              　　　　　&quot;&lt;/h2&gt;&lt;/center&gt;&quot;);
+              
+              　　　　// Wrap up
+              　　　　out.println(&quot;&lt;/body&gt;&quot;);
+              　　　　out.println(&quot;&lt;/html&gt;&quot;);
+              　　　　out.flush();
+              　　　}
+              　　}</pre>
+    图7.1 HttpLogin.java代码清单
+    </p>
+    <p>　　不过，看上去这个显示当前用户的servlet好像并没有什么了不起的。为了说明基本认证方式是如何工作的，你还要配置一下你的Web服务器，好让它用基本认证方式来保护这个HttpLogin 
+      Servlet。当然，每种Web服务器的配置方法可能不尽相同，所以你需要查看手册以确定在你的环境中需要作些什么。配置好了以后，就可以试着访问我们的HttpLogin 
+      Servlet了，这将会使Web服务器向客户提出要求以获得认证信息。如图7.2所示。<br>
+      浏览器在接收了用户输入的认证信息后，就把它们用Base64编码然后发送给Web服务器来认证。服务器在将用户名和口令解码后，用它的数据库来验证用户的有效性。如果用户有效，我们的servlet就会被调用，就能使用getRemoteUser方法来取得当前用户的用户名。请注意，在servlet中是不可能取得基本认证的口令的。<br>
+      这真是太简单了！这就是digest认证方式所要解决的问题。在digest认证方式中，口令不再是用Base64编码之后就在网上传输，让人可以肆无忌惮地分析，而是使用一个通过用户名、URL和一个服务器产生的“现时”随机数创建出来的digest口令。那些不怀好意的人要破解这种经过这种编码后的口令几乎是不可能。尽管digest认证方式看来是朝正确的方向迈进了重要的一步，然而目前的主流浏览器(如Internet 
+      Explorer和Netscape Navigator)都还不支持digest认证方式的使用。</p>
+    <h2><b><a name="72" id="72"></a>7.2 用户认证</b></h2>
+    <p>　　使用HTTP认证是最简单易行的，Web浏览器负责提示用户输入用户名和口令，而Web服务器管理认证用户的数据库。但是有时候我们可能需要对访问我们站点的用户进行更多的控制，你可能已经有了一些存在于外部数据库中的用户信息，或者你打算使用一种Web服务器控制不了的认证方式，甚至你可能需要一种不依赖于Web服务器的控制用户认证的能力。这时候，应该考虑使用用户认证方式。用户认证方式使用的仍然是HTTP认证方式的那种challeng&amp;responset(质询与答复)办法，只不过不是让Web服务器来进行认证，而是由你的程序来完成。千万要记住传输时的用户认证信息仍然仅仅是使用Base64编码，所以这种方法并不比基本认证方式安全多少——前面我们已经证明基本认证方式是不安全的。<br>
+      图7.3显示的是CustomLogin Servlet的源程序。这个servlet在用户没有登录的时候，强制Web浏览器提示用户输入用户名和口令。我们使用第6章中介绍的会话跟踪来观察当前用户是否有效。如果用户无效，设置WWW认证首部，并且设置状态码为SC_UNAU_THORIZED，这将再次质询浏览器，如图7.4所示。</p>
+    <pre class="code">　　package javaservlets.security;
+            　　import javax.servlet.*;
+              　　import javax.servlet.http.*;
+            　　/**
+              　　* &lt;p&gt;This servlet uses HTTP Authentication to prompt for
+              　　* a username and password and a custom authentication
+              　　* routine to validate the user
+              　　*/
+              　　public class CustomLogin extends HttpServlet
+              　　{
+              　　　// Define our counter key into the session
+              　　　static final String USER_KEY = &quot;CustomLogin.user&quot;;
+              
+              　　　/**
+              　　　* &lt;p&gt;Performs the HTTP GET operation
+              　　　*
+              　　　* @param req The request from the client
+              　　　* @param resp The response from the servlet
+              　　　*/
+              
+              　　　public void doGet(HttpServletRequest req,
+              　　　HttpServletResponse resp)
+              　　　throws ServletException, java.io.IOException
+              　　　{
+              　　　　// Set the content type of the response
+              　　　　resp.setContentType(&quot;text/html&quot;);
+             　　　　// Get the PrintWriter to write the response
+              　　　　java.io.PrintWriter out = resp.getWriter();
+             　　　　// Set the response header to force the browser to
+              　　　　// load the HTML page from the server instead of
+              　　　　// from a cache
+              　　　　resp.setHeader(&quot;Expires&quot;, &quot;Tues, 01 Jan 1980 
+              00:00:00 GMT&quot;);
+              
+              　　　　// Get the user for the current session
+              　　　　HttpSession session = req.getSession(true);
+              　　　　String sessionUser = null;
+              　　　　if (session != null) {
+              　　　　　sessionUser = (String) session.getValue(USER_KEY);
+              　　　　}
+             　　　　// If there is no user for the session, get the
+              　　　　// user and password from the authentication header
+              　　　　// in the request and validate
+              　　　　String user = null;
+              　　　　if (sessionUser == null) {
+              　　　　　user = validUser(req);
+              　　　　}
+              
+              　　　　// If there is no user for the session and the user was
+              　　　　// not authenticated from the request, force a login
+              　　　　if ((sessionUser == null) &amp;&amp; (user == null)) {
+              
+              　　　　　// The user is unauthorized to access this page.
+              　　　　　// Setting this status code will cause the browser
+              　　　　　// to prompt for a login
+              　　　　　resp.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+             　　　　　// Set the authentication realm
+              　　　　　resp.setHeader(&quot;WWW-Authenticate&quot;,
+              　　　　　　&quot;BASIC realm=\&quot;custom\&quot;&quot;);
+              　
+              　　　　　// The following page will be displayed if the
+              　　　　　// user presses 'cancel'
+              　　　　　out.println(&quot;&lt;html&gt;&quot;);
+              　　　　　out.println(&quot;&lt;head&gt;&quot;);
+              　　　　　out.println(&quot;&lt;title&gt;Invalid User&lt;/title&gt;&quot;);
+              　　　　　out.println(&quot;&lt;/head&gt;&quot;);
+              　　　　　out.println(&quot;&lt;body&gt;&quot;);
+              　　　　　out.println(&quot;You are not currently logged in&quot;);
+              　　　　}
+              　　　　else {
+             　　　　　// If there is no user for the session, bind it now
+              　　　　　if ((sessionUser == null) &amp;&amp; (session != null)) {
+              　　　　　　session.putValue(USER_KEY, user);
+              　　　　　　sessionUser = user;
+              　　　　　}
+              
+              　　　　　// Show the welcome page
+              　　　　　out.println(&quot;&lt;html&gt;&quot;);
+              　　　　　out.println(&quot;&lt;head&gt;&quot;);
+              　　　　　out.println(&quot;&lt;title&gt;Welcome&lt;/title&gt;&quot;);
+              　　　　　out.println(&quot;&lt;/head&gt;&quot;);
+              　　　　　out.println(&quot;&lt;body&gt;&quot;);
+              　　　　　out.println(&quot;&lt;center&gt;&lt;h2&gt;Welcome &quot; + 
+              sessionUser +
+              　　　　　&quot;!&lt;/h2&gt;&lt;/center&gt;&quot;);
+              　　　　}
+              
+              　　　　// Wrap up
+              　　　　out.println(&quot;&lt;/body&gt;&quot;);
+              　　　　out.println(&quot;&lt;/html&gt;&quot;);
+              　　　　out.flush();
+              　　　}
+             　　　/**
+              　　　* Validate the user and password given in the authorization
+              　　　* header. This information is base 64 encoded and will
+              　　　* look something like:
+              　　　*
+              　　　* Basic a2FybG1vc3M6YTFiMmMz
+              　　　*
+              　　　* @param req The request
+              　　　* @return The user name if valid or null if invalid
+              　　　*/
+              　　　protected String validUser(HttpServletRequest req)
+              　　　{
+              　　　　// Get the authorization header
+              　　　　String encodedAuth = req.getHeader(&quot;Authorization&quot;);
+             　　　　if (encodedAuth == null) {
+              　　　　　return null;
+              　　　　}
+             　　　　// The only authentication type we understand is BASIC
+              　　　　if (!encodedAuth.toUpperCase().startsWith(&quot;BASIC&quot;)) 
+              {
+              　　　　　return null;
+              　　　　}
+             　　　　// Decode the rest of the string which will be the
+              　　　　// username and password
+              　　　　String decoded = Decoder.base64(encodedAuth.substring(6));
+             　　　　// We should now have a string with the username and
+              　　　　// password separated by a colon, such as:
+              　　　　// karlmoss:a1b2c3
+              　　　　int idx = decoded.indexOf(&quot;:&quot;);
+              　　　　if (idx &lt; 0) {
+              　　　　　return null;
+              　　　　}
+              　　　　String user = decoded.substring(0, idx);
+              　　　　String password = decoded.substring(idx + 1);
+             　　　　// Validate the username and password.
+              　　　　if (!validateUser(user, password)) {
+              　　　　　user = null;
+              　　　　}
+              
+              　　　　return user;
+              　　　}
+             　　　/**
+              　　　* Validates the username and password
+              　　　* @param user The user name
+              　　　* @param password The password
+              　　　* @return true if the username and password are valid
+              　　　*/
+              　　　protected boolean validateUser(String user, String password)
+              　　　{
+              　　　　boolean valid = false;
+             　　　　　if ((user != null) &amp;&amp; (password != null)) {
+              　　
+              　　　　　　// Just do a simple check now. A &quot;real&quot; check would
+              　　　　　　// most likely use a database or LDAP server
+              　　　　　　if (user.equals(&quot;karlmoss&quot;)) {
+              　　　　　　　valid = true;
+              　　　　　}
+              　　　　}
+              
+              　　　　return valid;
+              　　　}
+              　　}</pre>
+    图7.3 CustomLogin.java代码清单
+    </p>
+    <p>　　你可能还会注意到在设置WWW认证首部和状态码的同时，我们还产生了一个HTML页面。这个简单的页面被用来在用户按下认证对话框的Cancel按钮时显示。<br>
+      用户输入用户名和口令之后，servlet再次取得控制权。这时，我们取得请求首部中用Base64编码的数据流，然后使用众所周知的算法对这个数据流进行解码。程序如图7.5所示。 </p>
+    <pre class="code">package javaservlets.security;
+
+public class Decoder
+{
+
+/**
+* The base64 method was posted to the SERVLET-INTEREST
+* newsgroup (SERVLET-INTEREST@JAVA.SUN.COM). It is
+* assumed to be public domain.
+*/
+
+static final char[] b2c=
+{
+'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P',
+'Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f',
+'g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v',
+'w','x','y','z','0','1','2','3','4','5','6','7','8','9','+','/'
+};
+
+static final char pad = '=';
+static byte[] c2b = null;
+
+/**
+* Decode a base64 encoded string.
+* @param s The base64 encoded string
+* @return The decoded string
+*/
+public static String base64(String s)
+{
+if (c2b==null) {
+c2b = new byte[256];
+for (byte b=0;b<64;b++) c2b[(byte)b2c[b]]=b;
+} // end if
+
+byte[] nibble = new byte[4];
+char[] decode = new char[s.length()];
+int d=0;
+int n=0;
+byte b;
+for (int i=0;i&lt;s.length();i++) {
+char c = s.charAt(i);
+nibble[n] = c2b[(int)c];
+
+if (c==pad) break;
+
+switch(n) {
+case 0:
+n++;
+break;
+
+case 1:
+b=(byte)(nibble[0]*4 + nibble[1]/16);
+decode[d++]=(char)b;
+n++;
+break;
+
+case 2:
+b=(byte)((nibble[1]&0xf)*16 + nibble[2]/4);
+decode[d++]=(char)b;
+n++;
+break;
+
+default:
+b=(byte)((nibble[2]&0x3)*64 + nibble[3]);
+decode[d++]=(char)b;
+n=0;
+break;
+}
+}
+
+String decoded = new String(decode,0,d);
+return decoded;
+}
+}　　</pre>
+    图7.5 Base64解码程序
+    </p>
+    <p>　　编码器要从解码的数据流中分析出用户名和口令，再简单也不过如此了。现在你知道基本认证方式是多么不安全了吧！当然，你还可以加入你自己的认证过程，比如使用将在第9章讨论的JDBC数据源。用户一旦被认证，他就被授予了访问该站点的权利。由于会话数据可以在多个servlet之间共享，所以你可以很容易地创建通用的过程，并把它使用在任何执行用户认证的servlet中。</p>
+    <h2><b><a name="73" id="73"></a>7.3 HTML表单认证</b></h2>
+    <p>　　使用用户认证方式可以使我们控制如何认证用户，但是我们仍然无法控制Web浏览器中如何收集登录信息。那个由浏览器提供的标准对话框可能并不适应你的要求。有的时候你可能想要考虑在一个HTML表单中收集用户输入的信息，这样，你就不但可以控制所要收集的信息而且还可以自己设计这个表单的外观，比如加上一个图形或者一段提示信息。在第8章中我们还要详细探讨HTML表单，现在就让我们先来看一个用HTML表单收集用户输入信息，然后由servlet处理的简单例子。<br>
+      图7.6显示了ServletLogin Servlet的源程序。我们首先检查会话，看一看当前用户是否已经被认证，如果用户尚未登录，就显示这个收集用户登录信息的HTML表单，否则，显示主页面。一旦用户输入了登录信息并按下“Login 
+      ”按钮后，这个HTML表单就将这些信息发送给我们的servlet，由ServletLogin Servlet收集这些信息并进行认证。如果用户是有效的，浏览器就重定向到主页面上。</p>
+    <pre class="code">　package javaservlets.security;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+/**
+* <p>This servlet creates an HTML form to gather a username and
+* password, validates the user, then allows the user to access
+* other pages.
+*/
+public class ServletLogin extends HttpServlet
+{
+public static String USER_KEY = "ServletLogin.user";
+public static String FIELD_USER = "username";
+public static String FIELD_PASSWORD = "password";
+
+/**
+* <p>Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Get the PrintWriter to write the response
+java.io.PrintWriter out = resp.getWriter();
+
+// Set the response header to force the browser to
+// load the HTML page from the server instead of
+// from a cache
+resp.setHeader("Expires", "Tues, 01 Jan 1980 00:00:00 GMT");
+
+// Get the URI of this request
+String uri = req.getRequestURI();
+
+// Get the current user. If one does not exist, create
+// a form to gather the user and password
+HttpSession session = req.getSession(true);
+String user = (String) session.getValue(USER_KEY);
+
+if (user == null) {
+
+// No user - create the form to prompt the user
+login(out, uri);
+return;
+}
+
+// Print a standard header
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Wecome&lt;/title>");
+out.println("&lt;/head>");
+out.println("&lt;body>");
+out.println("&lt;center>&lt;h2>Welcome to our site!&lt;/h2>");
+out.println("&lt;br>");
+out.println("More cool stuff coming soon...");
+out.println("&lt;/center>");
+
+// Wrap up
+out.println("&lt;/body>");
+out.println("&lt;/html>");
+out.flush();
+}
+
+/**
+* &lt;p>Performs the HTTP POST operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doPost(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Get the PrintWriter to write the response
+java.io.PrintWriter out = resp.getWriter();
+
+// If the user is not yet logged in, validate
+HttpSession session = req.getSession(true);
+String user = (String) session.getValue(USER_KEY);
+
+if (user == null) {
+String username = req.getParameter(FIELD_USER);
+String password = req.getParameter(FIELD_PASSWORD);
+
+if (!validUser(username, password)) {
+out.println("&lt;html>");
+out.println("&lt;title>Invalid User&lt;/title>");
+out.println("&lt;body>&lt;center>&lt;h2>Invalid User!&lt;/h2>&lt;br>");
+out.println("Press the 'Back' button to try again");
+out.println("&lt;/center>&lt;/body>&lt;/html>");
+out.flush();
+return;
+}
+
+// We've got a valid user now, store the username in
+// the session
+session.putValue(USER_KEY, username);
+}
+
+// The current user has been validated.
+// Redirect to our main site
+resp.sendRedirect("http://larryboy" + req.getRequestURI());
+}
+
+/**
+* Formats the login page
+* @param out The output stream to write the response to
+* @param uri The requesting URI
+*/
+protected void login(java.io.PrintWriter out, String uri)
+throws java.io.IOException
+{
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Login&lt;/title>");
+out.println("&lt;center>&lt;h2>Welcome! Please login&lt;/h2>");
+out.println("&lt;br>&lt;form method=POST action=\"" +
+uri + "\">");
+out.println("&lt;table>");
+out.println("&lt;tr>&lt;td>User ID:&lt;/td>");
+out.println("&lt;td>&lt;input type=text name=" +
+FIELD_USER + " size=30>&lt;/td>&lt;/tr>");
+out.println("&lt;tr>&lt;td>Password:&lt;/td>");
+out.println("&lt;td>&lt;input type=password name=" +
+FIELD_PASSWORD + " size=10>&lt;/td>&lt;/tr>");
+out.println("&lt;/table>&lt;br>");
+out.println("&lt;input type=submit value=\"Login\">");
+out.println("&lt;/form>&lt;/center>&lt;/body>&lt;/html>");
+}
+
+/**
+* Validates the username and password
+* @param username The user name
+* @param password The user password
+* @return true if the username/password is valid
+*/
+protected boolean validUser(String username, String password)
+{
+boolean valid = false;
+
+// Perform a simple check to make sure the user is valid.
+if ((username != null) && (username.length() > 0)) {
+valid = username.equals(password);
+}
+
+return valid;
+}
+}</pre>
+    图7.6 ServletLogin代码清单
+    <p>　　图7.7所示的HTML表单提示用户输入用户名和口令。仅仅如此看来这个例子的确有点枯燥，不过你可以很容易地给它加上些色彩。事实上，你可以随心所欲地改变这个表单的外观。<br>
+      这意味着，你对浏览器提示输入信息的方式有完全的控制，而且还可以控制如何在服务器上认证用户。使用HTML表单的唯一缺点是，向服务器传输的数据作为POST信息被封装在请求首部的。就像前面提到的一样，任何人都可以毫不费力地捕获和分析这些数据。</p>
+    <h2><b><a name="74" id="74"></a>7.4 APPLET认证</b></h2>
+    <p>　　综上所述，看来最好的办法只能是我们自己来控制Web浏览器接收用户输入信息，以及如何在服务器上难验证用户的有效性。然而如何控制包括用户口令在内的用户信息安全可靠地传输到服务器的问题已经超出了我们的讨论范围。而且不是所有的应用程序都要求这么高的安全性，事实上现有的很多Web页面使用的技术就是我们在前面所讨论的技术。但是，我们又该如何确保用户信息不会在传输过程中被偷听呢？接下来，我们就会看到，SSL是如何通过对在客户机和服务器之间传输的一部分数据进行加密来解决这个问题的。让我们自己用某种方法对数据进行加密是不是更安全一些？通过一个Web浏览器上的applet程序和服务器上的servlet进行通信，我们就可以控制要传输的用户数据的格式了。<br>
+      在第10章中我们将详细探讨applet和servlet的通信问题，现在先让我们了解一些基础知识。Applet的主要流程是，首先，applet打开一个连接到servlet的URLConnection，然后通过这个连接建立输出流，接下来就可以向这个流中写入要传输的数据(当然这些数据可能是经过加密的)，最后等待来自servlet的应答。URLConnection连接另一端的servlet的主要流程是，首先从URLConnection中打开一个输入流，然后从该输入流中读取applet发送的数据(必要时还要进行解密)，验证数据的有效性，最后将认证的结果作为应答发送给客户端的applet。<br>
+      图7.8显示了这个applet的源程序。由于主流浏览器对Java支持的程序不同，所以使用这个applet的时候可能会出现一些问题，我使用的是JDK1.0.2版本来编译和运行这个applet的。如果你的浏览器支持各个版本的Java，那么这个LoginApplet就应当可以正确运行。 </p>
+    <pre class="code">package javaservlets.security;
+
+import java.applet.*;
+import java.awt.*;
+import java.io.*;
+import java.net.*;
+
+/**
+* <p>This applet gathers a username and password and
+* then passes the information to a servlet to be
+* validated. If valid the servlet will send back the
+* location of the next page to be displayed. This
+* applet can be used with JDK 1.0.2 clients.
+*/
+
+public class LoginApplet extends Applet
+{
+// Define the GUI widgets
+TextField username;
+TextField password;
+Label message;
+Button login;
+String codeBase;
+String servlet;
+String nextDoc;
+String sessionId;
+
+/**
+* Initialize the applet
+*/
+public void init()
+{
+// Get the servlet name that will be validating
+// the username and password
+codeBase = "" + getCodeBase();
+servlet = getParameter("servlet");
+
+// Make sure we don't end up with a double '/'
+if (servlet != null) {
+if (servlet.startsWith("/") && codeBase.endsWith("/")) {
+codeBase = codeBase.substring(0, codeBase.length() - 1);
+}
+}
+
+// Get the session ID. This is a workaround for a
+// problem where the session ID of the original GET
+// is different than the session ID of our POST when
+// using URLConnection
+sessionId = getParameter("id");
+
+// Set our background color to blend in with a white
+// page
+setBackground(Color.white);
+
+// Set the layout to be a border layout. Place the message
+// area in the north, the login button in the south, and
+// the input areas in the center
+setLayout(new BorderLayout(0, 5));
+
+// Add the message area
+message = new Label();
+add("North", message);
+
+// Create the container for the input fields
+Panel p = new Panel();
+p.setLayout(new GridLayout(2, 2, 30, 20));
+
+// Add the username label and entry field
+p.add(new Label("Enter user name:"));
+username = new TextField(10);
+p.add(username);
+
+// Add the password label and entry field
+p.add(new Label("Enter password:"));
+password = new TextField(10);
+password.setEchoCharacter('*');
+p.add(password);
+
+add("Center", p);
+
+// Add the login button
+login = new Button("Login");
+add("South", login);
+
+}
+
+/**
+* <p>Handle events
+*/
+public boolean handleEvent(Event event)
+{
+if ((event != null) && (event.id == event.ACTION_EVENT)) {
+if (event.target == login) {
+
+message.setText("");
+
+// Get the user and password
+String user = username.getText();
+String pw = password.getText();
+
+// May want to decrypt the user and/or password here
+
+// Validate the user. If the user is valid the
+// applet will show a new page; otherwise we'll
+// return back here
+boolean valid = false;
+try {
+valid = validate(user, pw);
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+
+// Display a message for invalid users
+if (!valid) {
+message.setText("Invalid user - please try again");
+}
+else {
+
+// Show a new document
+try {
+getAppletContext().showDocument(new URL(nextDoc));
+}
+catch (Exception ex) {
+message.setText("Invalid document: " + nextDoc);
+ex.printStackTrace();
+}
+}
+}
+}
+return false;
+}
+
+
+/**
+* Validate the user and password. This routine will
+* communicate with a servlet that does the validation
+* @param user User name
+* @param pw Password
+* @return true if the user is valid
+*/
+protected boolean validate(String user, String pw)
+throws Exception
+{
+boolean valid = false;
+
+// Get the server URL 
+java.net.URL url = new java.net.URL(codeBase + servlet);
+
+// Attempt to connect to the host
+java.net.URLConnection con = url.openConnection();
+
+// Initialize the connection
+con.setUseCaches(false);
+con.setDoOutput(true);
+con.setDoInput(true);
+
+// Data will always be written to a byte array buffer so
+// that we can tell the server the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the
+// data to our buffer
+DataOutputStream out = new DataOutputStream(byteOut);
+
+// Send the proper session id
+out.writeUTF(sessionId);
+
+// Send the username and password
+out.writeUTF(user);
+out.writeUTF(pw);
+
+// Flush the data to the buffer
+out.flush();
+
+// Get our buffer to be sent
+byte buf[] = byteOut.toByteArray();
+
+// Set the content that we are sending
+con.setRequestProperty("Content-type",
+"application/octet-stream");
+
+// Set the length of the data buffer we are sending
+con.setRequestProperty("Content-length",
+"" + buf.length);
+
+// Get the output stream to the server and send our
+// data buffer
+DataOutputStream dataOut =
+new DataOutputStream(con.getOutputStream());
+dataOut.write(buf);
+
+// Flush the output stream and close it
+dataOut.flush();
+dataOut.close();
+
+// Get the input stream we can use to read the response
+DataInputStream in =
+new DataInputStream(con.getInputStream());
+
+// Read the response from the server
+valid = in.readBoolean();
+
+// If the user is valid get the name of the next
+// document to display
+if (valid) {
+nextDoc = in.readUTF();
+}
+
+// Close the input stream
+in.close();
+return valid; 
+}
+}　</pre>
+    图7.8 LoginApplet代码清单
+    </p>
+    <p>　　在init方法中，我们创建所需的输入域和窗口布局(如图7.9所示)。当用户按下“Login”按钮的时候，方法handleEvent就会被调用，这时从输入域中读出用户名和口令。你可以很容易地在这里加入一些验证过程以保证用户名和口令都不为空。方法validate将用户名和口令发送给服务器上的servlet并等待应答。在这个例子中，我们没有对数据进行加密，不过，要做到这一点只要在将数据写入输出流之前处理一下就可以很容易地实现。servlet用一个布尔值作为应答，该值指明用户是否为合法用户。如果用户合法，servlet就用方法showDocument把下一页也发送给浏览器显示。<br>
+      图7.10显示了AppletLogin Servlet的源程序。这个servlet在doPost方法中读出从applet发送来的数据。一个输入流被打开，然后数据被按照applet写入时的顺序读出(如果需要，还要进行解密)。之后，取得用户名和口令并验证它们的合法性。如果一个用户是有效的，欢迎页面的位置被发送回applet。在这个例子中，欢迎页面恰巧就是AppletLogin 
+      servlet本身。 </p>
+    <pre class="code">　　package javaservlets.security;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* <p>This servlet creates an HTML page that will present an
+* applet that gathers the username and password. This servlet
+* will also validate the input and redirect the applet as
+* necessary.
+*/
+public class AppletLogin extends HttpServlet
+{
+public static String USER_KEY = "ServletLogin.user";
+static java.util.Hashtable crossRef;
+
+/**
+* <p>Performs the HTTP GET operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doGet(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Set the content type of the response
+resp.setContentType("text/html");
+
+// Get the PrintWriter to write the response
+java.io.PrintWriter out = resp.getWriter();
+
+// Set the response header to force the browser to
+// load the HTML page from the server instead of
+// from a cache
+resp.setHeader("Expires", "Tues, 01 Jan 1980 00:00:00 GMT");
+
+// Get the current user. If one does not exist, create
+// a form to gather the user and password
+HttpSession session = req.getSession(true);
+String user = (String) session.getValue(USER_KEY);
+
+if (user == null) {
+// Check our cross-reference table
+user = (String) crossRef.get(session.getId());
+
+if (user != null) {
+// Found the user in the cross reference table.
+// Put the user in this session and remove from
+// the table
+session.putValue(USER_KEY, user);
+crossRef.remove(session.getId());
+}
+}
+
+if (user == null) {
+
+// No user - create the form to prompt the user
+login(out, req);
+return;
+}
+
+// Print a standard header
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Wecome&lt;/title>");
+out.println("&lt;/head>");
+out.println("&lt;body>");
+out.println("&lt;center>&lt;h2>Welcome to our site!&lt;/h2>");
+out.println("&lt;br>");
+out.println("More cool stuff coming soon...");
+out.println("&lt;/center>");
+
+// Wrap up
+out.println("&lt;/body>");
+out.println("&lt;/html>");
+out.flush();
+}
+
+/**
+* <p>Performs the HTTP POST operation
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void doPost(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Get the input stream for reading data from the client
+DataInputStream in =
+new DataInputStream(req.getInputStream());
+
+// We'll be sending binary data back to the client so
+// set the content type appropriately
+resp.setContentType("application/octet-stream");
+
+// Data will always be written to a byte array buffer so
+// that we can tell the client the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the
+// data to our buffer
+DataOutputStream out = new DataOutputStream(byteOut);
+
+// Read the proper session id
+String sessionId = in.readUTF();
+
+// Read the username and password
+String user = in.readUTF();
+String password = in.readUTF();
+
+// May want to decrypt the user and/or password here
+
+// Validate the user
+if (!validUser(user, password)) {
+
+// Send back a boolean value indicating that the
+// user is invalid
+out.writeBoolean(false);
+}
+else {
+
+// User valid. Set the user in our cross-reference table
+// and send back a boolean valid indicating that the user
+// is valid
+crossRef.put(sessionId, user);
+out.writeBoolean(true);
+
+// Write the location of the next page
+out.writeUTF("http://larryboy" + req.getRequestURI());
+}
+
+// Flush the contents of the output stream to the
+// byte array
+out.flush();
+
+// Get the buffer that is holding our response
+byte[] buf = byteOut.toByteArray();
+
+// Notify the client how much data is being sent
+resp.setContentLength(buf.length);
+
+// Send the buffer to the client
+ServletOutputStream servletOut = resp.getOutputStream();
+
+// Wrap up
+servletOut.write(buf);
+servletOut.close();
+}
+
+/**
+* Formats the login page
+* @param out The output stream to write the response to
+* @param uri The request
+*/
+protected void login(java.io.PrintWriter out,
+HttpServletRequest req)
+throws java.io.IOException
+{
+// Get the session
+HttpSession session = req.getSession(true);
+
+out.println("&lt;html>");
+out.println("&lt;head>");
+out.println("&lt;title>Login&lt;/title>");
+out.println("&lt;center>&lt;h2>Welcome! Please login&lt;/h2>");
+out.println("&lt;applet width=200 height=120");
+out.println(" name=\"LoginApplet\"");
+out.println(" codebase=\"" + req.getScheme() +
+"://" + req.getServerName() + "\"");
+out.println(" code=\"javaservlets.security.LoginApplet\">");
+out.println("&lt;param name=\"servlet\" value=\"" +
+req.getRequestURI() + "\">");
+out.println("&lt;param name=\"id\" value=\"" +
+session.getId() + "\">");
+out.println("&lt;/applet>");
+out.println("&lt;/center>&lt;/body>&lt;/html>");
+}
+
+/**
+* Validates the username and password
+* @param username The user name
+* @param password The user password
+* @return true if the username/password is valid
+*/
+protected boolean validUser(String username, String password)
+{
+boolean valid = false;
+
+// Perform a simple check to make sure the user is valid.
+if ((username != null) && (username.length() > 0)) {
+valid = username.equals(password);
+}
+
+return valid;
+}
+
+/**
+* <p>Initialize the servlet. This is called once when the
+* servlet is loaded. It is guaranteed to complete before any
+* requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+public void init(ServletConfig cfg)
+throws ServletException
+{
+// Create a new hashtable for our cross-reference table
+// if necessary
+if (crossRef == null) {
+crossRef = new java.util.Hashtable();
+}
+
+super.init(cfg);
+}
+
+/**
+* <p>Destroy the servlet. This is called once when the servlet
+* is unloaded.
+*/
+public void destroy()
+{
+super.destroy();
+}
+
+}</pre>
+    图7.10 AppletLogin代码清单
+    </p>
+    <p>　　如果这个servlet是第一次被Web浏览器访问，那么doGet方法就会被调用，这里，将会检查当前会话的用户名。如果用户名为空，那么就说明尚未有一个合法的用户绑定在这个会话上。在这种情况下，一个含有APPLET标记的HTML页面被返回给浏览器，它使浏览器加载LoginApplet。你可能会注意到我们使用了两个PARAM标记来给applet传递另外两个参数。“servlet”参数包含了applet所要通信的servlet的名字，在我们的例子里是AppletLogin(当前的servlet的名字可能用方法getRequestURI得到)。“id”参数包含当前会话的会话ID。会话ID被发送回AppletLogin 
+      servlet，这样，我们就可以标识出这个客户了。为什么要这样呢？难道servlet不能使用HTTP请求中的会话ID从而标记出浏览器吗？通常情况下可以，但不幸的是，浏览器和applet使用不同的位置保存cookies，所以它们分别具有各自的惟一的会话ID。当applet的数据经过验证的时候，由applet发送的会话ID——该会话ID是浏览器的会话ID——被用来更新一个静态的哈希表，servlet可以通过检查这个哈希表来查看某个浏览器的会话ID是否已经以过验证。<br>
+      图7.11显示了在用户名和口令被认证之后所显示的欢迎页面。请记住Applet Login servlet控制着这一页所显示的URL。<br>
+      现在，我们看到了三种方法中最好的一种。我们可以控制用户如何输入认证信息，如何将认证信息传送到服务器上，以及如何在服务器上对这些信息进行认证。但是，安全性并不仅仅是用户认证。在很多情况下，你可能需要把在Web浏览器和Web服务器之间的整个会话都加密，而实现这种功能正是SSL的设计目标。</p>
+    <h2><b><a name="75" id="75"></a>7.5 安全套接字协议层(SSL)</b></h2>
+    <p>　　能够确保数据被安全传输的一种可靠的方法就是使用安全套接字协议层(SSL)。SSL是在所有socket通信之上的，它将所有的数据被发送到网络上之前对它们进行加密，而在这些数据到达目的地之后再将它们解密。这一切并非神话。你必须购买某种数字证书（可以在www.verisign.com上得到）并配置你的Web服务器使之使用SSL，当然，你的Web服务器首先必须支持SSL。作为servlet开发者，我们不必了解SSL的细节，甚至不必了解是否使用了SSL。我们了解SSL是否被使用的惟一方法就是在请求对象上调用getScheme方法。如果使用了SSL，那么getScheme就会返回https(使用SSL的HTTP)。SSL被广泛使用在电子商务应用程序中，而且被认为是处理诸如信用卡号以及其他金融信息等敏感信息时，提供隐私保护的最好的办法之一。从servlet的角度看，SSL的魅力在于它提供了对数据透明的加密和解密，从而实现了数据的安全传输。</p>
+    <h2><b><a name="76" id="76"></a>7.6 小　结</b></h2>
+    <p>　　在本章中，我们接触到了安全这座冰山的一角。我们讨论了进行用户认证的几种不同的方法，以及在服务器上验证用户的不同方法。安全性的提供只能是一种折中。你对你的数据打算冒多大风险？你打算付出多大努力来保护你的数据？如果你可以接受轻量级的安全模式，那么HTTP认证就足够了。想要在验证用户信息上多一些控制吗？我们看到了使用用户认证方式时如何进行验证。想要取得用户名、口令的更多信息吗？或是想要客户化登录页面吗？使用HTML表单可能正是你所需要的。你还要控制浏览器以及用户的验证方式吗？或是你要实现自己的加密算法吗？我们还展示了如何创建一个可以和servlet进行通信的applet，并且使你可以完全控制这个认证过程。<br>
+      用户认证仅仅是保护你的Web站点的第一步。在用户经过认证之后，我们还要保证客户和服务器之间的数据交换的安全。我们简要地介绍了SSL，通过SSL我们可以加密所有的传输数据来保证数据的安全。
+    <div class="rpindex"><a href="8.html"> 下一页</a><a href="6.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

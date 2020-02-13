@@ -1,0 +1,305 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="mail-usage"></a>22.2.&#160;使用Spring邮件抽象</h2></div></div></div>
+<p>假设某个业务接口名为<code class="interfacename">OrderManager</code>:</p>
+<pre class="code">public interface OrderManager {
+
+    void placeOrder(Order order);
+}</pre>
+<p>我们同时假设有一个用例：需要生成带有订单号的email信件, 并向客户发送该订单。</p>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mail-usage-simple"></a>22.2.1.&#160;<code class="interfacename">MailSender</code> 和 <code class="classname">SimpleMailMessage</code> 的基本用法</h3></div></div></div>
+<pre class="code">import org.springframework.mail.MailException;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+
+public class SimpleOrderManager implements OrderManager {
+
+    private MailSender mailSender;
+    private SimpleMailMessage templateMessage;
+
+    public void setMailSender(MailSender mailSender) {
+        this.mailSender = mailSender;
+    }
+
+    public void setTemplateMessage(SimpleMailMessage templateMessage) {
+        this.templateMessage = templateMessage;
+    }
+
+    public void placeOrder(Order order) {
+
+        <em class="lineannotation"><span class="lineannotation">// Do the business calculations...</span></em>
+
+        <em class="lineannotation"><span class="lineannotation">// Call the collaborators to persist the order...</span></em>
+
+        <em class="lineannotation"><span class="lineannotation">// Create a thread safe "copy" of the template message and customize it</span></em>
+        SimpleMailMessage msg = new SimpleMailMessage(this.templateMessage);
+        msg.setTo(order.getCustomer().getEmailAddress());
+        msg.setText(
+            "Dear " + order.getCustomer().getFirstName()
+                + order.getCustomer().getLastName()
+                + ", thank you for placing order. Your order number is "
+                + order.getOrderNumber());
+        try{
+            this.mailSender.send(msg);
+        }
+        catch(MailException ex) {
+            <em class="lineannotation"><span class="lineannotation">// simply log it and go on...</span></em>
+            System.err.println(ex.getMessage());            
+        }
+    }
+}</pre>
+<p>上面的代码的bean定义应该是这样的:</p>
+<pre class="code">&lt;bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"&gt;
+  &lt;property name="host" value="mail.mycompany.com"/&gt;
+&lt;/bean&gt;
+
+<em class="lineannotation"><span class="lineannotation">&lt;!-- this is a template message that we can pre-load with default state --&gt;</span></em>
+&lt;bean id="templateMessage" class="org.springframework.mail.SimpleMailMessage"&gt;
+  &lt;property name="from" value="customerservice@mycompany.com"/&gt;
+  &lt;property name="subject" value="Your order"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="orderManager" class="com.mycompany.businessapp.support.SimpleOrderManager"&gt;
+  &lt;property name="mailSender" ref="mailSender"/&gt;
+  &lt;property name="templateMessage" ref="templateMessage"/&gt;
+&lt;/bean&gt;</pre>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="mail-usage-mime"></a>22.2.2.&#160;使用 <code class="interfacename">JavaMailSender</code> 和 <code class="classname">MimeMessagePreparator</code></h3></div></div></div>
+<p>下面是<code class="interfacename">OrderManager</code>的另一种实现, 使用了<code class="interfacename">MimeMessagePreparator</code>回调接口。
+			 请注意在这个用例中，<code class="literal">mailSender</code>属性是<code class="interfacename">JavaMailSender</code>类型， 所以我们可以使用JavaMail的<code class="classname">MimeMessage</code>类：</p>
+<pre class="code">import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+import javax.mail.internet.MimeMessage;
+import org.springframework.mail.MailException;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessagePreparator;
+
+public class SimpleOrderManager implements OrderManager {
+
+    private JavaMailSender mailSender;
+    
+    public void setMailSender(JavaMailSender mailSender) {
+        this.mailSender = mailSender;
+    }
+
+    public void placeOrder(final Order order) {
+
+        <em class="lineannotation"><span class="lineannotation">// Do the business calculations...</span></em>
+
+        <em class="lineannotation"><span class="lineannotation">// Call the collaborators to persist the order...</span></em>
+        
+        MimeMessagePreparator preparator = new MimeMessagePreparator() {
+        
+            public void prepare(MimeMessage mimeMessage) throws Exception {
+        
+                mimeMessage.setRecipient(Message.RecipientType.TO, 
+                        new InternetAddress(order.getCustomer().getEmailAddress()));
+                mimeMessage.setFrom(new InternetAddress("mail@mycompany.com"));
+                mimeMessage.setText(
+                    "Dear " + order.getCustomer().getFirstName() + " "
+                        + order.getCustomer().getLastName()
+                        + ", thank you for placing order. Your order number is "
+                        + order.getOrderNumber());
+            }
+        };
+        try {
+            this.mailSender.send(preparator);
+        }
+        catch (MailException ex) {
+            <em class="lineannotation"><span class="lineannotation">// simply log it and go on...</span></em>
+            System.err.println(ex.getMessage());            
+        }
+    }
+}</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>以上的邮件代码是一个横切关注点，能被完美地重构为<a href="ch06.html" title="第&#160;6&#160;章&#160;使用Spring进行面向切面编程（AOP）">自定义Spring AOP切面</a>的候选者，这样它就可以在目标对象<code class="interfacename">OrderManager</code>的一些合适的连接点（joinpoint）中被执行了。</p>
+</div>
+<p>Spring Framework的邮件支持直接提供两种<code class="interfacename">MailSender</code>的实现。标准的JavaMail实现和基于Jason Hunter编写的<code class="classname">MailMessage</code>类之上的实现，后者位于<a href="" target="_top"><code class="literal">com.oreilly.servlet</code>包</a>中。请查阅相关Javadocs以获得进一步的资料。</p>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

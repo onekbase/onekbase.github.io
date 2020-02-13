@@ -1,0 +1,458 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="28.html"> 上一页</a><a href="30.html"> 下一页</a></div>
+<h2>8.8. 对象图（Graphs of objects）</h2>
+<p>要保存或者更新一个对象关联图中所有的所有对象，你必须做到： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>保证每一个对象都执行save(), saveOrUpdate() 或 update()方法，或者， </p>
+  </li>
+  <li>
+    <p>在定义关联对象的映射时，使用cascade=&quot;all&quot;或cascade=&quot;save-update&quot;。 </p>
+  </li>
+</ul>
+<p>类似的，要删除一个关系图中的所有对象，必须： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>对每一个对象都执行delete()，或者 </p>
+  </li>
+  <li>
+    <p>在定义关联对象的映射时，使用cascade=&quot;all&quot;,cascade=&quot;all-delete-orphan&quot;或cascade=&quot;delete&quot;。 </p>
+  </li>
+</ul>
+<p>建议： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>如果子对象的生命期是绑定到父对象的生命期的，通过指定cascade=&quot;all&quot;可以把它变成一个<em>自动管理生命周期的对象（lifecycle object）</em>。 </p>
+  </li>
+  <li>
+    <p>否则，必须在应用程序代码中明确地执行save()和delete()。如果你想少敲一些代码，可以使用cascade=&quot;sve-update&quot;，然后只需明确地delete()。 </p>
+  </li>
+</ul>
+<h3><a name="8-8-1" id="8-8-1"></a>8.8.1. 自动管理生命周期的对象（lifecycle   object）</h3>
+<p>对一种关联（多对一，或者集合）使用cascade=&quot;all&quot;映射，就把这种关联标记为一种父/子（parent/child）风格的关系，对父对象进行保存/更新/删除会导致对（所有）子对象的保存/更新/删除。但是这个比喻并不是特别确切。如果父对象解除了对某个子对象的关联，那这个子对象就<em>不会</em>被自动删除了。除非这是一个一对多的关联，并且标明了cascade=&quot;all-delete-orphan&quot;（所有-删除-孤儿）。级联操作的精确语义在下面列出: </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>如果父对象被保存，所有的子对象会被传递到saveOrUpdate()方法去执行 </p>
+  </li>
+  <li>
+    <p>如果父对象被传递到update()或者saveOrUpdate()，所有的子对象会被传递到saveOrUpdate()方法去执行 </p>
+  </li>
+  <li>
+    <p>如果一个临时的子对象被一个持久化的父对象引用了，它会被传递到saveOrUpdate()去执行 </p>
+  </li>
+  <li>
+    <p>如果父对象被删除了，所有的子对象对被传递到delete()方法执行 </p>
+  </li>
+  <li>
+    <p>如果临时的子对象不再被持久化的父对象引用，什么都不会发生（必要时，程序应该明确的删除这个子对象），除非声明了cascade=&quot;all-delete-orphan&quot;，在这种情况下，成为“孤儿”的子对象会被删除。 </p>
+  </li>
+</ul>
+<h3><a name="8-8-2" id="8-8-2"></a>8.8.2. 通过可触及性决定持久化（Persistence by   Reachability）</h3>
+<p>Hibernate还没有完全实现“通过可触及性决定持久化”,后者暗示会对垃圾收集进行（效率不高的）持久化。但是，因为很广泛的呼声，Hibernate实现了一种意见，如果一个实体被一个持久化的对象引用，它也会被持久化。注明了cascade=&quot;save-update&quot;的关联就是按照这种思路运作的。如果你希望在你的整个程序中都贯彻这个方法，你可以在&lt;hibernate-mapping&gt;元素的default-cascade属性中指定这种级联方式。 </p>
+<h2><a name="8-9" id="8-9"></a>8.9. 清洗(Flushing) --   </h2>
+<h2>这个词很难翻译，不能使用“刷新”，因为刷新一词已经被&quot;refresh&quot;使用了。有什么好的建议？</h2>
+<p>每件隔一段时间，Session会执行一些必需的SQL语句来把内存中的对象和JDBC连接中的状态进行同步。这个过程被称为<em>清洗(flush)</em>，默认会在下面的时间点执行： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>在某些find()或者iterate()调用的时候 </p>
+  </li>
+  <li>
+    <p>在net.sf.hibernate.Transaction.commit()的时候 </p>
+  </li>
+  <li>
+    <p>在Session.flush()的时候 </p>
+  </li>
+</ul>
+<p>涉及的SQL语句会按照下面的顺序安排： </p>
+<ol type="1" compact="compact">
+  <li>
+    <p>所有对实体进行插入的语句，其顺序按照对象执行Session.save()的时间顺序 </p>
+  </li>
+  <li>
+    <p>所有对实体进行更新的语句 </p>
+  </li>
+  <li>
+    <p>所有进行集合删除的语句 </p>
+  </li>
+  <li>
+    <p>所有对集合元素进行删除，更新或者插入的语句 </p>
+  </li>
+  <li>
+    <p>所有进行集合插入的语句 </p>
+  </li>
+  <li>
+    <p>所有对实体进行删除的语句，其顺序按照对象执行Session.delete()的时间顺序 </p>
+  </li>
+</ol>
+<p>（有一个例外时，如果对象使用native方式进行 ID 生成的话，它们一执行save就会被插入。） </p>
+<p>除非你明确地发出了flush()指令，关于Session<em>合时</em>会执行这些JDBC调用是完全无法保证的，只能保证它们执行的前后顺序。当然，Hibernate保证，Session.find(..)绝对不会返回已经失效的数据，也不会返回错误数据。 </p>
+<p>也可以改变默认的设置，来让清洗发生的不那么频繁。FlushMode类定义了三种不同的方式。大部分情况下，它们只由当你在处理“只读”的事务时才会使用，可能会得到一些（不是那么明显的）性能提高。 </p>
+<pre class="code">sess = sf.openSession();
+Transaction tx = sess.beginTransaction();
+sess.setFlushMode(FlushMode.COMMIT); //allow queries to return stale state
+Cat izi = (Cat) sess.load(Cat.class, id);
+izi.setName(iznizi);
+// execute some queries....
+sess.find(&quot;from Cat as cat left outer join cat.kittens kitten&quot;); //change to izi is not flushed!!
+....
+tx.commit(); //flush occurs</pre>
+<h2><a name="8-10" id="8-10"></a>8.10. 结束一个Session</h2>
+<p>结束一个session包括四个独立的步骤： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>清洗session </p>
+  </li>
+  <li>
+    <p>提交事务 </p>
+  </li>
+  <li>
+    <p>关闭session </p>
+  </li>
+  <li>
+    <p>处理异常 </p>
+  </li>
+</ul>
+<h3><a name="8-10-1" id="8-10-1"></a>8.10.1. 清洗(Flush)session</h3>
+<p>如果你正在使用TransactionAPI，你就不用担心这个步骤。在事务提交的时候，隐含就会包括这一步。否则，你应该调用Session.flush()来确保你所有的修改都与数据库同步。 </p>
+<h3><a name="8-10-2" id="8-10-2"></a>8.10.2. 提交事务</h3>
+<p>如果你正在使用Hibernate 的Transaction API,代码类似这样： </p>
+<pre class="code">tx.commit(); // flush the Session and commit the transaction</pre>
+<p>如果你自行管理JDBC事务，你应该手工对JDBC 连接执行commit()。 </p>
+<pre class="code">sess.flush();
+sess.connection().commit();  // not necessary for JTA datasource</pre>
+<p>如果你决定<em>不</em>提交你的更改：</p>
+<pre class="code">tx.rollback();  // rollback the transaction</pre>
+<p>或者: </p>
+<pre class="code">// not necessary for JTA datasource, important otherwise
+sess.connection().rollback();</pre>
+<p>如果你回滚了事务,你应该立即关闭和取消当前session,确保Hibernate内部状态的完整性。 </p>
+<h3><a name="8-10-3" id="8-10-3"></a>8.10.3. 关闭session</h3>
+<p>调用Session.close()就标志这个session进入了尾声。close()主要的含义就是与这个session相关的JDBC连接会被放弃。 </p>
+<pre class="code">tx.commit();
+sess.close();</pre>
+<pre class="code">sess.flush();
+sess.connection().commit();  // not necessary for JTA datasource
+sess.close();</pre>
+<pre class="code">Session sess = factory.openSession();
+Transaction tx = null;
+try {
+    tx = sess.beginTransaction();
+    // do some work
+    ...
+    tx.commit();
+}
+catch (Exception e) {
+    if (tx!=null) tx.rollback();
+    throw e;
+}
+finally {
+    sess.close();
+}</pre>
+<p>如果你是手工管理JDBC事务的，用下面这段: </p>
+<pre class="code">Session sess = factory.openSession();
+try {
+    // do some work
+    ...
+    sess.flush();
+    sess.connection().commit();
+}
+catch (Exception e) {
+    sess.connection().rollback();
+    throw e;
+}
+finally {
+    sess.close();
+}</pre>
+<p>如果你是从JTA中获得数据源的： </p>
+<pre class="code"><span class="sect2">UserTransaction ut = .... ;
+Session sess = factory.openSession();
+try {
+    // do some work
+    ...
+    sess.flush();
+}
+catch (Exception e) {
+    ut.setRollbackOnly();
+    throw e;
+}
+finally {
+    sess.close();
+}</span></pre>
+<h2><a name="8-11" id="8-11"></a>8.11. 拦截器(Interceptors)</h2>
+<p>Interceptor接口提供从session到你的应用程序的回调方法，让你的程序可以观察和在持久化对象保存/更改/删除或者装载的时候操作它的属性。一种可能的用途是用来监视统计信息。比如，下面的Interceptor会自动在一个Auditable创建的时候设置其createTimestamp,并且当它被更改的时候，设置其lastUpdateTimestamp属性。 </p>
+<pre class="code">package net.sf.hibernate.test;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.Iterator;
+
+import net.sf.hibernate.Interceptor;
+import net.sf.hibernate.type.Type;
+
+public class AuditInterceptor implements Interceptor, Serializable {
+
+    private int updates;
+    private int creates;
+
+    public void onDelete(Object entity,
+                         Serializable id,
+                         Object[] state,
+                         String[] propertyNames,
+                         Type[] types) {
+        // do nothing
+    }
+
+    public boolean onFlushDirty(Object entity, 
+                                Serializable id, 
+                                Object[] currentState,
+                                Object[] previousState,
+                                String[] propertyNames,
+                                Type[] types) {
+
+        if ( entity instanceof Auditable ) {
+            updates++;
+            for ( int i=0; i &lt; propertyNames.length; i++ ) {
+                if ( &quot;lastUpdateTimestamp&quot;.equals( propertyNames[i] ) ) {
+                    currentState[i] = new Date();
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean onLoad(Object entity, 
+                          Serializable id,
+                          Object[] state,
+                          String[] propertyNames,
+                          Type[] types) {
+        return false;
+    }
+
+    public boolean onSave(Object entity,
+                          Serializable id,
+                          Object[] state,
+                          String[] propertyNames,
+                          Type[] types) {
+        
+        if ( entity instanceof Auditable ) {
+            creates++;
+            for ( int i=0; i&lt;propertyNames.length; i++ ) {
+                if ( &quot;createTimestamp&quot;.equals( propertyNames[i] ) ) {
+                    state[i] = new Date();
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public void postFlush(Iterator entities) {
+        System.out.println(&quot;Creations: &quot; + creates + &quot;, Updates: &quot; + updates);
+    }
+
+    public void preFlush(Iterator entities) {
+        updates=0;
+        creates=0;
+    }
+    
+    ......
+    ......
+    
+}</pre>
+当session被创建的时候，就应该指定拦截器。
+<pre class="code">Session session = sf.openSession( new AuditInterceptor() );</pre>
+<h2><a name="8-12" id="8-12"></a>8.12. 元数据(Metadata) API</h2>
+<p>Hibernate对所有的实体和值类型都需要一个非常丰富的元级别(meta-level)模型。有时候，这个模型对应用程序本身也会非常有用。比如说，应用程序可能使用Hibernate的元数据来实现一种“智能”的深度拷贝算法，来理解哪些对象应该被拷贝（比如，可变的值类型），那些不应该（不可变的值类型和可能的被关联的实体）。 </p>
+<p>Hibernate通过ClassMetadata接口，CollectionMetadata接口和Type对象树，暴露出元数据。可以通过SessionFactory获取metadata接口的实例。 </p>
+<pre class="code">Cat fritz = ......;
+Long id = (Long) catMeta.getIdentifier(fritz);
+ClassMetadata catMeta = sessionfactory.getClassMetadata(Cat.class);
+Object[] propertyValues = catMeta.getPropertyValues(fritz);
+String[] propertyNames = catMeta.getPropertyNames();
+Type[] propertyTypes = catMeta.getPropertyTypes();
+// get a Map of all properties which are not collections or associations
+// TODO: what about components?
+Map namedValues = new HashMap();
+for ( int i=0; i&lt;propertyNames.length; i++ ) {
+    if ( !propertyTypes[i].isEntityType() &amp;&amp; !propertyTypes[i].isCollectionType() ) {
+        namedValues.put( propertyNames[i], propertyValues[i] );
+    }
+}</pre>
+<p></p>
+
+<div class="rpindex"><a href="30.html"> 下一页</a><a href="28.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

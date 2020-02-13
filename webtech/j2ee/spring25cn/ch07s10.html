@@ -1,0 +1,313 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="aop-targetsource"></a>7.10.&#160;使用TargetSource</h2></div></div></div>
+<p>Spring提供了<span class="emphasis"><em>TargetSource</em></span>的概念，由<code class="literal">org.springframework.aop.TargetSource</code>接口进行描述。
+        这个接口负责返回一个实现连接点的“目标对象（target object）”。每当AOP代理处理一个方法调用时都会向<code class="literal">TargetSource</code>的实现请求一个目标实例。
+    </p>
+<p>使用Spring AOP的开发者通常不需要直接和TargetSource打交道，但这提供了一种强大的方式来支持池化（pooling），热交换（hot swappable）和其它高级目标。
+        例如，一个使用池来管理实例的TargetSource可以为每个调用返回一个不同的目标实例。
+    </p>
+<p>如果你不指定一个TargetSource，一个缺省实现将被使用，它包装一个本地对象。对于每次调用它将返回相同的目标（像你期望的那样）。</p>
+<p>让我们看看Spring提供的标准目标源（target source）以及如何使用它们。</p>
+<div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">提示</h3>
+<p>当使用一个自定义的目标源，你的目标通常需要是一个原型而不是一个单例的bean定义。这允许Spring在必要时创建新的目标实例。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-ts-swap"></a>7.10.1.&#160;热交换目标源</h3></div></div></div>
+<p><code class="literal">org.springframework.aop.target.HotSwappableTargetSource</code>允许当调用者保持引用的时候，切换一个AOP代理的目标。
+        </p>
+<p>修改目标源的目标将立即生效。
+        <code class="literal">HotSwappableTargetSource</code>是线程安全的。</p>
+<p>你可以通过HotSwappableTargetSource的 <code class="literal">swap()</code>方法来改变目标，就像下面那样：
+        </p>
+<p>
+            </p>
+<pre class="code">HotSwappableTargetSource swapper = 
+                (HotSwappableTargetSource) beanFactory.getBean("swapper");
+            Object oldTarget = swapper.swap(newTarget);</pre>
+<p>
+        </p>
+<p>所需的XML定义看起来像下面这样：</p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="initialTarget" class="mycompany.OldTarget"/&gt;
+                
+                &lt;bean id="swapper" class="org.springframework.aop.target.HotSwappableTargetSource"&gt;
+                &lt;constructor-arg ref="initialTarget"/&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="swappable" class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+                &lt;property name="targetSource" ref="swapper"/&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>上面的<code class="literal">swap()</code>调用修改了swappable bean的目标。保持对这个bean的引用的客户将不知道发生了这个修改，但是将可以立即点击新的目标。</p>
+<p>这个例子没有添加任何通知--也不必为使用一个<code class="literal">TargetSource</code>添加任何通知--当然任何<code class="literal">TargetSource</code>都可以与任意通知联合使用。
+        </p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-ts-pool"></a>7.10.2.&#160;池化目标源</h3></div></div></div>
+<p>使用一个池化目标源提供了和无状态session EJB类似的编程模型，它维护一个包括相同实例的池，方法调用结束后将把对象释放回池中。</p>
+<p>Spring池化和SLSB池化之间的一个决定性区别是Spring池化功能可以用于任何POJO。就像Spring通常情况下那样，这个服务是非侵入式的。</p>
+<p>Spring对Jakarta Commons Pool 1.3提供了开箱即用的支持，后者提供了一个相当有效的池化实现。要使用这个特性，你需要在应用程序路径中存在commons-pool的Jar文件。
+            也可以通过继承<code class="literal">org.springframework.aop.target.AbstractPoolingTargetSource</code>来支持其它的池化API。
+        </p>
+<p>下面是示例配置：</p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="businessObjectTarget" class="com.mycompany.MyBusinessObject" 
+                scope="prototype"&gt;
+                ... properties omitted
+                &lt;/bean&gt;
+                
+                &lt;bean id="poolTargetSource" class="org.springframework.aop.target.CommonsPoolTargetSource"&gt;
+                &lt;property name="targetBeanName" value="businessObjectTarget"/&gt;
+                &lt;property name="maxSize" value="25"/&gt;
+                &lt;/bean&gt;
+                
+                &lt;bean id="businessObject" class="org.springframework.aop.framework.ProxyFactoryBean"&gt;
+                &lt;property name="targetSource" ref="poolTargetSource"/&gt;
+                &lt;property name="interceptorNames" value="myInterceptor"/&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>注意目标对象--例子里的“businessObjectTarget”--<span class="emphasis"><em>必须</em></span>是个原型。
+            这允许<code class="literal">PoolingTargetSource</code>的实现在必要时为目标创建新的实例来增大池的容量。
+            查看<code class="literal">AbstractPoolingTargetSource</code>和你想要使用的具体子类的Javadoc获取更多关于它属性的信息：maxSize是最基础的，而且永远都要求被提供。
+        </p>
+<p>在这个例子里，“myInterceptor”是一个拦截器的名字，这个拦截器需要在同一个IoC上下文中被定义。然而，定义对拦截器进行池化是不必要的。
+            如果你想要的只是池化而没有其它通知，就不要设置interceptorNames属性。
+        </p>
+<p>可以配置Spring来把任何被池化对象转型到<code class="literal">org.springframework.aop.target.PoolingConfig</code>接口，
+            这通过一个introduction暴露配置以及当前池的大小。你需要像这样定义一个通知器：
+        </p>
+<p>
+            </p>
+<pre class="code">&lt;bean id="poolConfigAdvisor" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"&gt;
+                &lt;property name="targetObject" ref="poolTargetSource"/&gt;
+                &lt;property name="targetMethod" value="getPoolingConfigMixin"/&gt;
+            &lt;/bean&gt;</pre>
+<p>
+        </p>
+<p>这个通知器可以通过调用<code class="literal">AbstractPoolingTargetSource</code>类上的一个方便的方法来获得，因此这里使用MethodInvokingFactoryBean。
+            这个通知器名（这里是“poolConfigAdvisor”）必须在提供被池化对象的ProxyFactoryBean里的拦截器名列表里中。
+        </p>
+<p>转型看起来像这样：</p>
+<pre class="code">PoolingConfig conf = (PoolingConfig) beanFactory.getBean("businessObject");
+        System.out.println("Max pool size is " + conf.getMaxSize());</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>池化无状态服务对象通常是不必要的。我们不认为这（池化）应当是缺省的选择，因为多数无状态对象是先天线程安全的，如果资源被缓存，那么对实例进行池化会引起很多问题。</p>
+</div>
+<p>使用自动代理时池化更加简单。可以为任何自动代理创建器设置所使用的TargetSource</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-ts-prototype"></a>7.10.3.&#160;原型目标源</h3></div></div></div>
+<p>建立一个“原型”目标源和池化TargetSource很相似。在这个例子里，当每次方法调用时，将创建一个目标的新实例。
+        虽然在新版本的JVM中创建一个新对象的代价并不高，但是把新对象织入（满足它的IoC依赖）可能是很昂贵的。因此如果没有很好的理由，你不应该使用这个方法。</p>
+<p>为了做到这点，你可以把上面的<code class="literal">poolTargetSource</code>定义修改成下面的形式。（为了清楚说明，修改了bean的名字。） </p>
+<pre class="code">&lt;bean id="prototypeTargetSource" class="org.springframework.aop.target.PrototypeTargetSource"&gt;
+  &lt;property name="targetBeanName" ref="businessObjectTarget"/&gt;
+        &lt;/bean&gt;</pre>
+<p>这里只有一个属性：目标bean的名字。TargetSource的实现使用继承来确保命名的一致性。就像池化目标源那样，目标bean必须是一个原型的bean定义。</p>
+</div>
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="aop-ts-threadlocal"></a>7.10.4.&#160;<code class="classname">ThreadLocal</code>目标源</h3></div></div></div>
+<p>如果你需要为每个进来的请求（即每个线程）创建一个对象，<code class="classname">ThreadLocal</code>目标源是很有用的。
+            <code class="classname">ThreadLocal</code>的概念提供了一个JDK范围的功能，这可以为一个线程透明的保存资源。建立一个
+        <code class="classname">ThreadLocalTargetSource</code>的过程和其它目标源几乎完全一样：</p>
+<pre class="code">&lt;bean id="threadlocalTargetSource" class="org.springframework.aop.target.ThreadLocalTargetSource"&gt;
+  &lt;property name="targetBeanName" value="businessObjectTarget"/&gt;
+        &lt;/bean&gt;</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>如果不正确的在一个多线程和多类加载器的环境里使用ThreadLocal，将带来严重的问题（可能潜在地导致内存泄漏）。
+                永远记住应该把一个threadlocal包装在其它的类里，并永远不要直接使用<code class="classname">ThreadLocal</code>本身（当然是除了threadlocal包装类之外）。
+                同时，永远记住正确的设置（set）和取消（unset）（后者仅仅需要调用<code class="literal">ThreadLocal.set(null)</code>）绑定到线程的本地资源。
+            取消在任何情况下都应该进行，否则也许会导致错误的行为。Spring的ThreadLocal支持将为你处理这个问题，所以如果没有其它正确的处理代码，永远应该考虑使用这个功能。</p>
+</div>
+</div>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

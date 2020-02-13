@@ -1,0 +1,211 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="32.html"> 上一页</a><a href="34.html"> 下一页</a></div>
+<h1>Pointcut  介面 </h1>
+<p> Spring 是根据类别名称与方法名称来定义 Pointcut，当呼叫的类别与方法名称符合 Pointcut
+的定义时，将 Advice 缝合至应用程式上以提供服务。 </p>
+<p> Spring 的 Pointcut 是透过实作  org.springframework.aop.Pointcut 介面来实现，其定义如下：</p>
+<pre class="code">package org.springframework.aop;
+
+
+public interface Pointcut {
+	ClassFilter getClassFilter();
+	MethodMatcher getMethodMatcher();
+	Pointcut TRUE = TruePointcut.INSTANCE;
+}</pre>
+<p> Pointcut.TRUE 是 Pointcut 介面的简单实作，它传回的 ClassFilter  是 ClassFilter.TRUE，而 传回的 MethodMatcher 是传回 MethodMatcher.TRUE。 
+ClassFilter 介面决定了一个类别是否要应用 Advice，其定义如下所示：</p>
+<pre class="code">package org.springframework.aop;
+
+public interface ClassFilter {
+	boolean matches(Class clazz);
+	ClassFilter TRUE = TrueClassFilter.INSTANCE;
+}</pre>
+<p> matches()方法中要决定传入的类别是不是符合 Pointcut 的定义，ClassFilter.TRUE  是 
+  ClassFilter 介面的简单实 作，它的 matches()方法总是传回 true，如果您想要建立的  Pointcut<br />
+只考虑到方法名称，则可以使用这个方法。而 MethodMatcher 决定了某个方法是否要应用  Advice，其定义如下所示：</p>
+<pre class="code">package org.springframework.aop;
+import java.lang.reflect.Method;
+public interface MethodMatcher {
+	boolean matches(Method method, boolean isRuntime();	Class targetClass);
+	boolean matches(Method	method,	Class targetClass, Object[] args); 
+	MethodMatcher TRUE = TrueMethodMatcher.INSTANCE;
+}</pre>
+<p> matches()方法决定了某个类别的某个方法是否符合 Pointcut 定义，有两个版本，第一个版本使 
+  用于静态 Pointcut，像是 NameMatchMethodPointcutAdvisor 、 RegExpMethodPointcutAdvisor， 第一个方法总是会被执行，如果是静态 Pointcut，则 isRuntime()会传回 false，此时第二个  matches()方法不会被执行，只有在 isRuntime()为 true 时，第二个版本的  matches()才会被执 行，例如  ControlFlowPointcut  。 </p>
+MethodMatcher.TRUE  是 MethodMatcher 的简单实作，它的第一个版本的 matches()总是传回 true， isRuntime()总是传回 false，表示静态 Pointcut，所以您不可以呼叫第二个版本的 matches() 方法，否则就会丢出 UnsupportedOperationException 例外。
+
+<div class="rpindex"><a href="34.html"> 下一页</a><a href="32.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

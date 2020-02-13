@@ -1,0 +1,298 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="19.html"> 上一页</a><a href="21.html"> 下一页</a></div>
+<h3>5.2.4. 自定义值类型</h3>
+<p>开发者创建属于他们自己的值类型也是很容易的。比如说，你可能希望持久化java.lang.BigInteger类型的属性，持久化成为VARCHAR字段。Hibernate没有内置这样一种类型。自定义类型能够映射一个属性（或集合元素）到不止一个数据库表字段。比如说，你可能有这样的Java属性：getName()/setName()，这是java.lang.String类型的，对应的持久化到三个字段：FIRST_NAME, INITIAL, SURNAME。 </p>
+<p>要实现一个自定义类型，可以实现net.sf.hibernate.UserType或net.sf.hibernate.CompositeUserType中的任一个，并且使用类型的Java全限定类名来声明属性。请查看net.sf.hibernate.test.DoubleStringType这个例子，看看它是怎么做的。 </p>
+<pre class="code">&lt;property name=&quot;twoStrings&quot; type=&quot;net.sf.hibernate.test.DoubleStringType&quot;&gt;
+    &lt;column name=&quot;first_string&quot;/&gt;
+    &lt;column name=&quot;second_string&quot;/&gt;
+&lt;/property&gt;</pre>
+<p>注意使用&lt;column&gt;标签来把一个属性映射到多个字段的做法。 </p>
+<p>虽然Hibernate内置的丰富类型和对component的支持意味着你可能很少<em>需要</em>使用自定义类型，至少对于你程序中经常出现的自定义类（并非实体）来说，这是一种好方法。比如说，MonetoryAmount(价格总额)对比使用CompositeUserType来说更好,虽然它可以很容易的使用一个component实现。这样做的动机之一是抽象。通过自定义类型，以后假若你改变表示金额值的方法时，你的映射文件不需要更改，这就得到了保护。 </p>
+<h3><a name="5-2-5" id="5-2-5"></a>5.2.5. 映射到&quot;任意&quot;(any)类型</h3>
+<p>这是属性映射的又一种类型。&lt;any&gt;映射元素定义了一种从多个表到类的多形联合。这种类型的映射总是需要多于一个字段。第一个字段持有被从属的实体的类型。其他的字段持有标识符。对于这种类型的联合来说，不可能指定一个外键约束，所以当然这不是（多形）联合映射的通常方式。你只应该在非常特殊的情况下使用它（比如，审计log,用户会话数据等等）。 </p>
+<pre class="code">&lt;any name=&quot;anyEntity&quot; id-type=&quot;long&quot; meta-type=&quot;eg.custom.Class2TablenameType&quot;&gt;
+    &lt;column name=&quot;table_name&quot;/&gt;
+    &lt;column name=&quot;id&quot;/&gt;
+&lt;/any&gt;</pre>
+<p>meta-type属性让应用程序指定一个自定义类型，把数据库字段值映射到一个持久化类，该类的标识属性是用id-type定义的。如果meta-type返回java.lang.Class的实例，不需要其他处理。另一方面，如果是类似string或者character这样的基本类型，你必须指定从值到类的映射。 </p>
+<pre class="code">&lt;any name=&quot;anyEntity&quot; id-type=&quot;long&quot; meta-type=&quot;string&quot;&gt;
+    &lt;meta-value value=&quot;TBL_ANIMAL&quot; class=&quot;Animal&quot;/&gt;
+    &lt;meta-value value=&quot;TBL_HUMAN&quot; class=&quot;Human&quot;/&gt;
+    &lt;meta-value value=&quot;TBL_ALIEN&quot; class=&quot;Alien&quot;/&gt;
+    &lt;column name=&quot;table_name&quot;/&gt;
+    &lt;column name=&quot;id&quot;/&gt;
+&lt;/any&gt;</pre>
+<pre class="code">&lt;any
+        name=&quot;propertyName&quot;              <span class="co"><img src="images/callouts/1.png" alt="(1)" /></span>
+        id-type=&quot;idtypename&quot;             <span class="co"><img src="images/callouts/2.png" alt="(2)" /></span>
+        meta-type=&quot;metatypename&quot;         <span class="co"><img src="images/callouts/3.png" alt="(3)" /></span>
+        cascade=&quot;none|all|save-update&quot;   <span class="co"><img src="images/callouts/4.png" alt="(4)" /></span>
+        access=&quot;field|property|ClassName&quot;        <span class="co"><img src="images/callouts/5.png" alt="(5)" /></span>
+&gt;
+        &lt;meta-value ... /&gt;
+        &lt;meta-value ... /&gt;
+        .....
+        &lt;column .... /&gt;
+        &lt;column .... /&gt;
+        .....
+&lt;/any&gt;</pre>
+<table summary="Callout list" border="0">
+  <tbody>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="1" src="images/callouts/1.png" border="0" /></td>
+      <td valign="top" align="left"><p>name: 属性名。 </p></td>
+    </tr>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="2" src="images/callouts/2.png" border="0" /></td>
+      <td valign="top" align="left"><p>id-type: 标识符类型。 </p></td>
+    </tr>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="3" src="images/callouts/3.png" border="0" /></td>
+      <td valign="top" align="left"><p>meta-type (可选 - 默认为class):   一个用于把java.lang.Class映射到一个数据库字段的类或者允许分辨映射的类型。 </p></td>
+    </tr>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="4" src="images/callouts/4.png" border="0" /></td>
+      <td valign="top" align="left"><p>cascade(级联） (可选- 默认为 none):   级联风格。 </p></td>
+    </tr>
+    <tr>
+      <td valign="top" align="left" width="5%"><img alt="5" src="images/callouts/5.png" border="0" /></td>
+      <td valign="top" align="left"><p>access (可选 - 默认是 property):   Hibernate用来访问属性的策略。 </p></td>
+    </tr>
+  </tbody>
+</table>
+<p>老式的object 类型是用来在Hibernate   1.2中起到类似作用的，他仍然被支持，但是已经基本废弃了。 </p>
+<h2><a name="5-3" id="5-3"></a>5.3. SQL中引号包围的标识符</h2>
+<p>你可强制Hibernate在生成的SQL中把标识符用引号前后包围起来，这需要在映射文档中使用反向引号(`)把表名或者字段名包围（可能比较拗口，请看下面的例子）。Hibernate会使用相应的SQLDialect（方言）来使用正确的引号风格（通常是双引号，但是在SQL Server中是括号，MySQL中是反向引号）。 </p>
+<pre class="code">&lt;class name=&quot;LineItem&quot; table=&quot;`Line Item`&quot;&gt;
+    &lt;id name=&quot;id&quot; column=&quot;`Item Id`&quot;/&gt;&lt;generator class=&quot;assigned&quot;/&gt;&lt;/id&gt;
+    &lt;property name=&quot;itemNumber&quot; column=&quot;`Item #`&quot;/&gt;
+    ...
+&lt;/class&gt;</pre>
+<h2><a name="5-4" id="5-4"></a>5.4. 自定义DDL</h2>
+<p>Hibernate映射文档也包含一些只为了SchemaExport命令行工具生成DDL使用的信息。比如，你可以使用&lt;column&gt;元素的sql-type属性覆盖字段类型。 </p>
+<pre class="code">&lt;property 
+    name=&quot;amount&quot; 
+    type=&quot;big_decimal&quot;&gt;
+    &lt;column 
+        name=&quot;AMOUNT&quot; 
+        sql-type=&quot;NUMERIC(11, 2)&quot;/&gt;
+&lt;/property&gt;</pre>
+<p>或者,你可以指定字段长度和约束。下面是等价的： </p>
+<pre class="code">&lt;property 
+    name=&quot;socialSecurityNumber&quot; 
+    type=&quot;string&quot; 
+    length=&quot;9&quot; 
+    column=&quot;SSN&quot;
+    not-null=&quot;true&quot; 
+    unique=&quot;true&quot;/&gt;
+
+&lt;property 
+    name=&quot;socialSecurityNumber&quot; 
+    type=&quot;string&quot;&gt;
+    &lt;column 
+        name=&quot;SSN&quot; 
+        length=&quot;9&quot; 
+        not-null=&quot;true&quot; 
+        unique=&quot;true&quot;/&gt;
+&lt;/property&gt;</pre>
+<p>最后,也可以通过SchemaExport命令行工具自动生成所需的索引。如果要这么做，请在&lt;column&gt;元素上使用index属性。 </p>
+<pre class="code">&lt;property
+    name=&quot;lastname&quot;&gt;
+    &lt;column
+        name=&quot;LASTNAME&quot;
+        index=&quot;by_last_first&quot;/&gt;
+&lt;/property&gt;
+
+&lt;property
+    name=&quot;firstname&quot;&gt;
+     &lt;column
+         name=&quot;FIRSTNAME&quot;
+         index=&quot;by_last_first&quot;/&gt;
+&lt;/property&gt;</pre>
+<p>关于SchemaExport的更多内容，请参见本文档的“工具箱”那一章。 </p>
+<h2><a name="5-5" id="5-5"></a>5.5. 映射文件的模块化（Modular mapping files）</h2>
+<p>允许在独立的映射文档中定义subclass和joined-subclass，直接位于hibernate-mapping下。这就可以让你每次扩展你的类层次的时候，加入新的映射文件就行了。在子类的映射中你必须指定一个extents属性，指明先前已经映射过的超类。使用这个功能的时候，一定要注意映射文件的排序是非常重要的！ </p>
+<pre class="code">
+&lt;hibernate-mapping&gt;
+        &lt;subclass name=&quot;eg.subclass.DomesticCat&quot; extends=&quot;eg.Cat&quot; discriminator-value=&quot;D&quot;&gt;
+             &lt;property name=&quot;name&quot; type=&quot;string&quot;/&gt;
+        &lt;/subclass&gt;
+&lt;/hibernate-mapping&gt;</pre>
+
+
+<div class="rpindex"><a href="21.html"> 下一页</a><a href="19.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

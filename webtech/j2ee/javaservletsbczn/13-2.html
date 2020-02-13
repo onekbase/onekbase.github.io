@@ -1,0 +1,1189 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+  <div class="lpindex"><a href="index.html">首页</a><a href="13-1.html"> 上一页</a><a href="14.html"> 下一页</a></div>
+  <h1>第13章　制作第三方的JDBC驱动程序(下)
+    </p>
+  </h1>
+  <p>　　Statement</p>
+  <p>　　statement接口包含了那些直接在数据库执行SQL语句的方法。这些方法返回SQL语句执行返回的结果，这些结果可能包含一些数据(SELECT语句)或者是受到影响的行数据(UPDATE,INSERT或DELETE语句)。<br>
+    我们的statement对象在大多数情况下是一个从客户端到服务器的一个简单的一一映射，这定义了服务器端服务的接口(见图13.16)也是JDBC 
+    statement接口的一个一模一样的副本。 </p>
+  <pre class="code">　package javaservlets.SQLServlet.server;3
+
+/**
+* <p>This is the server-side statement object used by SQLServlet.
+*/
+
+public interface StatementInterface
+{
+/**
+* <p>Sets the connection and statement handles
+*
+* @param conHandle Connection handle
+* @param stmtHandle Statement handle
+*/
+void setHandle(int conHandle, int stmtHandle);
+
+/**
+* <p>Executes the given query
+*
+* @param sql SQL statement to execute
+* @return Handle to the remote result set
+*/
+int executeQuery(String sql) throws java.sql.SQLException;
+
+/**
+* <p>Closes the statement
+*/
+void close() throws java.sql.SQLException;
+
+/**
+* <p>Executes the given INSERT, UPDATE, or DELETE statement
+*
+* @param sql SQL statement to execute
+* @return The number of rows affected
+*/
+int executeUpdate(String sql) throws java.sql.SQLException;
+
+/**
+* <p>Sets the maximum field size
+*
+* @param size Maximum field size
+*/
+void setMaxFieldSize(int size) throws java.sql.SQLException;
+
+/**
+* <p>Gets the maximum field size
+*
+* @return The maximum field size
+*/
+int getMaxFieldSize() throws java.sql.SQLException;
+
+/**
+* <p>Sets the maximum number of rows a ResultSet can contain
+*
+* @param size The maximum number of rows
+*/
+void setMaxRows(int size) throws java.sql.SQLException;
+
+/**
+* <p>Gets the maximum number of rows a ResultSet can contain
+*
+* @return The maximum number of rows
+*/
+int getMaxRows() throws java.sql.SQLException;
+
+/**
+* <p>Sets the flag indicating whether to perform escape
+* processing
+*
+* @param enable true to enable escape processing
+*/
+void setEscapeProcessing(boolean enable)
+throws java.sql.SQLException;
+
+/**
+* <p>Sets the query timeout
+*
+* @param seconds The number of seconds to wait until the
+* statement is timed out
+*/
+void setQueryTimeout(int seconds) throws java.sql.SQLException;
+
+/**
+* <p>Gets the query timeout
+*
+* @return The number of seconds to wait until the statement
+* is timed out
+*/
+int getQueryTimeout() throws java.sql.SQLException;
+
+/**
+* <p>Cancel can be used by one thread to cancel a statement that
+* is being executed by another thread.
+*/
+void cancel() throws java.sql.SQLException;
+
+/**
+* <p>Get any warnings for the statement
+*
+* @return The first warning in a possible chain of warnings
+*/
+java.sql.SQLWarning getWarnings() throws java.sql.SQLException;
+
+/**
+* <p>Clears warnings
+*/
+void clearWarnings() throws java.sql.SQLException;
+
+/**
+* <p>Sets the cursor name to be used for executing statements
+*
+* @param name The new cursor name
+*/
+void setCursorName(String name) throws java.sql.SQLException;
+
+/**
+* <p>Executes the given SQL statement
+*
+* @param sql SQL statement to execute
+* @return true if the first result is a ResultSet
+*/
+boolean execute(String sql) throws java.sql.SQLException;
+
+/**
+* <p>Gets the next result as a ResultSet
+*
+* @return Handle to the remote result set
+*/
+int getResultSet() throws java.sql.SQLException;
+
+/**
+* <p>Gets the next result as a row count
+*
+* @return The current row count
+*/
+int getUpdateCount() throws java.sql.SQLException;
+
+/**
+* <p>Moves to the next result in a series of SQL statement
+* results.
+*
+* @return true if the next result is a ResultSet; false if
+* is a row count
+*/
+boolean getMoreResults() throws java.sql.SQLException;
+}　</pre>
+  图13.16 StatementInterface.java代码清单
+  <p>　　我们来仔细分析一下getResultSet()方法，这个方法返回一个查询结果(见图13.17)。客户端代理(它实现了StatementInterface)调用的getResultSet()方法会返回一个结果集对象的句柄。在客户端，可以使用结果集代理。用这个句柄来创建一个新的结果集对象。</p>
+  <pre class="code"> 　/**
+* <p>Returns the current result as a ResultSet. It
+* should only be called once per result.
+*　文件名：Statement.java
+* @return The current result as a ResultSet or null if it is
+* a row count
+*/
+public java.sql.ResultSet getResultSet()
+throws java.sql.SQLException
+{
+// Execute the query on the server
+int rsHandle = m_statement.getResultSet();
+
+// Create a new ResultSet object
+java.sql.ResultSet rs = null;
+if (rsHandle != 0) {
+rs = new ResultSet(m_conHandle, rsHandle, getCodeBase());
+}
+return rs;
+}　</pre>
+  图13.17 调用远程getResultSet()
+  <p>　　ResultSet</p>
+  <p> 　　结果集对象提供了访问表查询所产生的数据的方法。它包括一系列get方法，通过这些方法，可以取得JDBC SQL中的任何类型的数据，既可以用列号访问，也可以用列名访问。<br>
+    我们所实现的结果集接口十分高效。这是因为我们一次性读出配置行数的数据然后将它们保存在客户端。图13.18显示了定义了结果集的服务器端服务的接口。</p>
+  <pre class="code">　package javaservlets.SQLServlet.server;
+
+/**
+* <p>This is the server-side ResultSet object used by SQLServlet.
+*/
+
+public interface ResultSetInterface
+{
+/**
+* <p>Sets the connection and ResultSet handles
+*
+* @param conHandle Connection handle
+* @param rsHandle Statement handle
+*/
+void setHandle(int conHandle, int rsHandle);
+
+/**
+* <p>Closes the ResultSet
+*/
+void close() throws java.sql.SQLException;
+
+/**
+* <p>Get all of the ResultSetMetaData information. All of the
+* information will be gathered and returned at once so that
+* it can be cached on the client
+*
+* @return The ResultSetMetaData information
+*/
+RSMD getMetaData() throws java.sql.SQLException;
+
+/**
+* <p>Read the next chunk of rows. The ResultSetObject knows
+* how many rows to read.
+*
+* @return ResultSetData object containing information about
+* the read request and the data that was read.
+*/
+ResultSetData read() throws java.sql.SQLException;
+
+/**
+* <p>Get the name of the SQL cursor used by this ResultSet.
+*
+* @return The ResultSet's SQL cursor name
+*/
+String getCursorName() throws java.sql.SQLException;
+
+}　</pre>
+  图13.18 ResultSetInterface.java代码清单
+  <p>　　这里，值得注意的是read()方法，这个方法从服务器上取得预定义行数的数据，然后将这些数据在一个传输过程中返回给客户端。那么如何确定read()方法一次讲稿的行数呢？原来，服务器上有一个叫做SQLServlet.cfg文件(见图13.19)。在每次新连接在服务器上用java.util.Properies的load()方法建立的时候，这个配置文件就会被读入。</p>
+  <p> 　　#SQLServlet.cfg<br>
+    ResultSetCache=10<br>
+    图13.19 SQLServlet.cfg</p>
+  <p>　　你可能还会注意到read()方法返回的是一个ResultData对象。这个可序列化对象包含了从数据库中读取的每一行数据的所有列的值。这是通过保存一个向量来实现的，这个向量有一个元素专门用来在一行数据中指向其他的向量。在保持每一行数据的同时，我们还要保持每一行的SQL 
+    Warning链。图13.20显示了ResultSetData对象的源程序。</p>
+  <pre class="code">　package javaservlets.SQLServlet.server;
+
+/**
+* <p>This class holds the data read from a ResultSet. The ResultSet
+* can have multiple rows read and returned.
+*/
+
+public class ResultSetData
+implements java.io.Serializable
+{
+// true if EOF was reached while reading
+public boolean eofFound = false;
+
+// A Vector containing the results of the read. Each element
+// in the vector is another vector that holds each row's data
+public java.util.Vector readData = new java.util.Vector();
+
+// A Vector containing the warnings for each row read.
+public java.util.Vector warnings = new java.util.Vector();
+
+/**
+* <p>Returns the current size of the cache
+*
+* @return The number of rows in the cache
+*/
+public int getSize()
+{
+int size = 0;
+
+// Make sure we have read a cache
+if (readData != null) {
+size = readData.size();
+}
+return size;
+}
+
+/**
+* <p>Determines if another cache should be read
+*
+* @return true if another cache should be read
+*/
+public boolean more()
+{
+boolean moreData = true;
+
+// If we have read a cache determine if we reached eof on
+// the server
+if (readData != null) {
+moreData = !eofFound;
+}
+return moreData;
+}
+
+/**
+* <p>Returns the row of data for the given element
+*
+* @param ptr Element pointer
+* @return The Vector containing the row data
+*/
+public java.util.Vector getRow(int ptr)
+throws java.sql.SQLException
+{
+if ((ptr < 0) ||
+(ptr >= getSize())) {
+throw new java.sql.SQLException("Invalid row pointer");
+}
+return (java.util.Vector) readData.elementAt(ptr);
+}
+
+/**
+* <p>Returns the warnings for the current row
+*
+* @param ptr Element pointer
+* @return The warning object(s) if any
+*/
+public java.sql.SQLWarning getWarnings(int ptr)
+throws java.sql.SQLException
+{
+if ((ptr < 0) ||
+(ptr >= getSize())) {
+throw new java.sql.SQLException("Invalid row pointer");
+}
+return (java.sql.SQLWarning) warnings.elementAt(ptr);
+}
+
+}　</pre>
+  图13.20 ResultSetData.java代码清单
+  <p>　　图13.21显示了用来生成ResultSetData对象的服务器端的代码。请注意我们需要保持一个指示是否达到结果集结束的标记。另外，看一看在本地SQL语句中是如何读取和存储每一行数据的——是字符、二进制、数值还是时间戳？SQL数据类型是在ResultSetMetaData中获得的。这个类我们刚刚还提到过。</p>
+  <pre class="code"> 　/**
+* <p>Read the next chunk of rows. The ResultSetObject knows
+* how many rows to read.
+*
+* @return ResultSetData object containing information about
+* the read request and the data that was read.
+*/
+public ResultSetData read() throws java.sql.SQLException
+{
+// Get the ResultSet object
+java.sql.ResultSet rs = getResultSet();
+
+// Create a new ResultSetData object
+ResultSetData rsd = new ResultSetData();
+
+// Loop for the size of the cache
+for (int i = 0; i < m_cacheSize; i++) {
+// Get the next row
+boolean valid = rs.next();
+
+// If we have hit end of file set the flag on the
+// ResultSetData object and exit
+if (!valid) {
+rsd.eofFound = true;
+break;
+}
+
+// We have a valid row. Create a new Vector for the
+// row and add it to the ResultSetData
+rsd.readData.addElement(formatRow(rs));
+
+// Save any warnings for the row
+rsd.warnings.addElement(rs.getWarnings());
+}
+
+return rsd;
+}
+
+/**
+* <p>Formats the current row into a Vector that will be
+* returned to the client
+*
+* @param rs ResultSet object
+* @return A Vector holding the row data
+*/
+protected java.util.Vector formatRow(java.sql.ResultSet rs)
+throws java.sql.SQLException
+{
+// Create a new Vector to hold the data
+java.util.Vector row = new java.util.Vector();
+
+// Get the meta data
+RSMD rsmd = getMetaData();
+
+// Loop for each column
+for (int col = 1; col <= rsmd.columnCount; col++) {
+
+Object o = null;
+int sqlType = rsmd.getColumn(col).columnType;
+
+// Evaluate the column type
+switch(sqlType) {
+
+case java.sql.Types.CHAR:
+case java.sql.Types.VARCHAR:
+// Character data
+o = rs.getString(col);
+break;
+
+case java.sql.Types.NUMERIC:
+case java.sql.Types.DECIMAL:
+// Exact numeric values
+o = rs.getBigDecimal(col, rsmd.getColumn(col).scale);
+break;
+
+case java.sql.Types.BIT:
+// Boolean value
+o = new Boolean(rs.getBoolean(col));
+break;
+
+case java.sql.Types.TINYINT:
+// Byte value
+o = new Byte(rs.getByte(col));
+break;
+
+case java.sql.Types.SMALLINT:
+// Short value
+o = new Short(rs.getShort(col));
+break;
+
+case java.sql.Types.INTEGER:
+// Integer value
+o = new Integer(rs.getInt(col));
+break;
+
+case java.sql.Types.BIGINT:
+// Long value
+o = new Long(rs.getLong(col));
+break;
+
+case java.sql.Types.REAL:
+case java.sql.Types.FLOAT:
+// Approximate values
+o = new Float(rs.getFloat(col));
+break;
+
+case java.sql.Types.DOUBLE:
+// Approximate double value
+o = new Double(rs.getDouble(col));
+break;
+
+case java.sql.Types.DATE:
+// Date value
+o = rs.getDate(col);
+break;
+
+case java.sql.Types.TIME:
+// Time value
+o = rs.getTime(col);
+break;
+
+case java.sql.Types.TIMESTAMP:
+// Timestamp (date and time) value
+o = rs.getTimestamp(col);
+break;
+
+case java.sql.Types.BINARY:
+case java.sql.Types.VARBINARY:
+case java.sql.Types.LONGVARBINARY:
+case java.sql.Types.LONGVARCHAR:
+// Binary or long data. Get as a byte stream
+o = rs.getBytes(col);
+break;
+
+default:
+// Unknown/Unsupported data type. Attempt to get the
+// data as a String
+o = rs.getString(col);
+break;
+}
+
+// Create a new ColumnData object
+ColumnData colData = new ColumnData();
+
+// Check to see if the column was null
+if (rs.wasNull()) {
+o = null;
+colData.isNull = true;
+}
+
+// Set the column data
+colData.data = o;
+
+// Add it to the row
+row.addElement(colData);
+}
+
+return row;
+}　</pre>
+  图13.21 读取服务器上的一个结果集（来自ResultSetObject.java）
+  <p>　　列数据不是被直接保存在向量中而是保存在一个被叫做ColumnData的HOLDER对象中，这个对象又是保存在向量中的。使用这个附加对象的意义在于，我们可以存储那些值为NULL的列。<br>
+    我们已经在客户端创建了结果集代理，它会在服务器上创建实际的结果集对象。提交了一个SQL查询后，会读取一个数据的高速缓存然后将结果返回给客户端。接下来我们要处理客户端的数据高速缓存然后将各列数据按照应用程序需要的格式返回。首先我们必须实现结果集的next()的方法，这个方法将游标移动到一条记录。如果在高速缓存中已经没有数据，那么我们就产生一个对服务器的读请求。如图13.22所示。</p>
+  <pre class="code">　/**
+* <p>A ResultSet is initially positioned before its first row;
+* the first call to next makes the first row the current row;
+* the second call makes the second row the current row, etc.
+*
+* If an input stream from the previous row is open it is
+* implicitly closed. The ResultSet's warning chain is cleared
+* when a new row is read.
+*
+* @return true if the new current row is valid; false if there
+* are no more rows
+*/
+public boolean next()
+throws java.sql.SQLException
+{
+// Clear the last row
+m_row = null;
+
+// Read the initial ResultSetData object if necessary
+if (m_data == null) {
+m_data = m_resultSet.read();
+m_dataPtr = 0;
+}
+
+// Determine if we have used all of the rows in the
+// current cache
+if (m_dataPtr >= m_data.getSize()) {
+
+// No more data in the cache. If we need to read more data
+// do so; otherwize return false to indicate eof
+if (m_data.more()) {
+
+// Read another cache
+m_data = m_resultSet.read();
+m_dataPtr = 0;
+
+// Make sure we didn't hit eof on the first read
+if ((m_data.getSize() == 0) &&
+!m_data.more()) {
+return false;
+}
+}
+else {
+return false;
+}
+}
+
+// Get the current row
+m_row = m_data.getRow(m_dataPtr);
+
+// Get the warnings for the current row
+m_warnings = m_data.getWarnings(m_dataPtr);
+
+// Increment the row pointer
+m_dataPtr++;
+
+return true;
+}　</pre>
+  图13.22 记录集next()方法
+  <p>　　请注意高速缓存中当前位置的指针是如何使用的——当这个指针超出高速缓存大小的时候，会调用一个新的读取过程，除非在上一次读过程中已经读到了文件结束。同样还要注意的是，每一条记录的SQLWarning是如何从高速缓存中取得并在对象中设置的。<br>
+    接下来我们需要实现每一个结果集的getXXX方法(getString,getChar,getInt)等等。这些get方法的基本流程是首先取得这个列的本地数据类型，如果应用程序就是使用这种格式请求的数据，那么就直接将这个列返回给应用程序，否则，就必须执行某种数据类型的强制类型转换，我们需要尽可能地做好它。图13.22显示的就是试图从指定列中取得一个double型数据的代码。</p>
+  <pre class="code">/**
+* <p>Get the value of a column in the current row as a Java
+* double.
+*
+* @param columnIndex The index of the column relative to 1
+* @return The column value
+*/
+public double getDouble(int columnIndex)
+throws java.sql.SQLException
+{
+double value = 0;
+
+// Get the object data
+Object o = getObject(columnIndex);
+
+// Check for a null value
+if (o == null) {
+return 0;
+}
+
+// Get the value
+if (o instanceof Float) {
+value = ((Float) o).doubleValue();
+}
+else if (o instanceof Double) {
+value = ((Double) o).doubleValue();
+}
+else if (o instanceof java.math.BigDecimal) {
+value = ((java.math.BigDecimal) o).doubleValue();
+}
+else if (o instanceof String) {
+value = (Float.valueOf((String) o)).doubleValue();
+}
+else {
+value = (double) getLong(columnIndex);
+}
+
+return value;
+}　　</pre>
+  图13.23 结果集getDouble()方法[来自ResulSet.java]
+  <p>　　通常，我们将列作为一个对象来读，然后再确定它的本地Java数据类型。在数据类型确定下来之后，我们就试图将请求的SQL类型转化成这种数据类型。<br>
+    和前面的例子一样，结果集的客户端的代理和服务器端的代码存根都必须被生成。而生成的servlet都必须配置在Web服务器上。</p>
+  <p>　　ResultSetMetaData</p>
+  <p> 　　ResultSetMetaData接口包含了描述数据集中所有列的方法，以及这个数据集中的列的个数据。通过DatabaseMetaData，我们可以在服务器上高速缓存所有的静态信息然后马上将它返回给客户端。幸运的是，对于给定的数据集，所有的ResultSetMetaData数据都是静态的，所以我们可以在服务器上的数据集对象中简单地取得所有的数据。图13.24显示了用来保存每一列的metadata的可序列化对象，图13.25显示了用来保存所有metadata加上结果集中列数的对象。</p>
+  <pre class="code">package javaservlets.SQLServlet.server;
+
+/**
+* <p>This class represents a single column's ResultSetMetaData
+*/
+
+public class RSMDColumn
+implements java.io.Serializable
+{
+// The name of the catalog that contains this column
+public String catalogName;
+
+// The maximum display width for this column
+public int columnDisplaySize;
+
+// The preferred display name for this column
+public String columnLabel;
+
+// The name of this column as known by the database
+public String columnName;
+
+// The SQL data type of this column
+public int columnType;
+
+// The SQL data type name
+public String columnTypeName;
+
+// The precision of this column
+public int precision;
+
+// The scale of this column
+public int scale;
+
+// The name of the schema that contains this column
+public String schemaName;
+
+// The name of the table that contains this column
+public String tableName;
+
+// true if this column is automatically numbered by the database
+public boolean autoIncrement;
+
+// true if the column contents are case sensitive
+public boolean caseSensitive;
+
+// true if this column represents currency
+public boolean currency;
+
+// true if this column can definitely be written to
+public boolean definitelyWritable;
+
+// Does this column accepts null values
+public int nullable;
+
+// true if this column is read-only
+public boolean readOnly;
+
+// true if this column can be used in a WHERE clause
+public boolean searchable;
+
+// true if this column contains a signed number
+public boolean signed;
+
+// true if this column may be written to
+public boolean writable;
+}
+图13.24 RSMDColumn.java代码清单
+
+package javaservlets.SQLServlet.server;
+
+/**
+* <p>This class represents the ResultSetMetaData for a ResultSet
+*/
+
+public class RSMD
+implements java.io.Serializable
+{
+// The number of columns in the ResultSet
+public int columnCount;
+
+// A vector of RSMDColumn objects; one for each column in the
+// ResultSet
+public java.util.Vector columns = new java.util.Vector();
+
+/**
+* <p>Returns the RSMDColumn object for the given column index
+* (relative to 1)
+*/
+public RSMDColumn getColumn(int index)
+throws java.sql.SQLException
+{
+if ((index < 1) ||
+(index > columns.size())) {
+throw new java.sql.SQLException("Invalid column number");
+}
+
+// Get the column
+RSMDColumn col = (RSMDColumn) columns.elementAt(index - 1);
+
+return col;
+}
+}
+</pre>
+  <p>　　　图13.25 RSMD.java代码清单</p>
+  <p>　　由于所有的数据都被高速缓存在序列化对象中，所以不需要创建客户端代理或服务器端代码存根。</p>
+  <p>　　遗漏了些什么？</p>
+  <p>　　尽管SQLServlet JDBC驱动程序功能十分强大，不过根据你的需要，可能会涉及一些其他的领域。<br>
+    ·经过准备的SQL语句——JDBC的经过准备的SQL语句接口没有实现。如果你希望使用经过准备的SQL语句，那么你需要像statement接口一样实现一个经过准备的SQL语句接口。<br>
+    ·可调用的语句——JDBC的可调用语句接口没有实现。如果你希望调用存储过程时使用一些输入输出参数，那么你就得实现这个接口。<br>
+    ·数据加密——如果你十分重视传输的数据的保密性，那么你可能需要某种数据加密算法来加密结果，然后将结果返回客户端。<br>
+    ·数据压缩——如果你正在操作大量数据，那么你可能需要考虑在数据传输之前压缩这些数据。请注意我们所面对的是可能非常慢的网络连接，压缩和解压数据的时间可能会大大少于传输未压缩数据的时间。<br>
+    ·更快的通信协议——你可能会发现HTTP协议可能慢得不能适应你的需要。驱动程序的这种体系结构使它可以不太困难就能使用Java 
+    Remote Method Invocation (RMI)。RMI使用了和我们的HTTP遂道方案相类似的序列化。我们就把它留下来作为你的练习吧。</p>
+  <h2><a name="135" id="135"></a>13.5 SQLServlet例子：SimpleQueryApplet</h2>
+  <p>　　我们已经讨论了SQLServlet JDBC驱动程序，接下来我们就测试一下这个驱动。我们要创建一个叫做SimpleQueryApplet的applet，这个applet实现下列功能：<br>
+    ·使用SQLServlet驱动程序建立到指定的服务器上的JDBC驱动程序的连接。<br>
+    ·接受用户的一个SQL语句然后在服务器上执行它。<br>
+    ·显示这个SQL语句的结果。</p>
+  <h3><a name="1351" id="1351"></a>13.5.1 编写Applet</h3>
+  <p>　　我们来看看编写SimpleQueryApplet的一些更重要的方面。所有applet的第一部分是init()例程，这个过程在applet初始化时被调用。在这个过程中，我们创建GUI组件，把它们加入到applet框架中，并且建立与SQLServlet驱动程序的连接。图13.26显示了实现这一步的代码。</p>
+  <h3> <a name="1352" id="1352"></a>13.5.2 配置服务器</h3>
+  <pre class="code"> /**
+* <p>Initialize the applet
+*/
+public void init()
+{
+// Don't allow the results to be edited
+results.setEditable(false);
+
+// Add listeners
+connect.addActionListener(this);
+execute.addActionListener(this);
+
+// Setup the UI
+GridBagLayout gridBag = new GridBagLayout();
+GridBagConstraints gbc = new GridBagConstraints();
+
+// Set the layout manager
+setLayout(gridBag);
+
+// Setup the contraints
+gbc.weightx = 1.0;
+gbc.weighty = 1.0;
+gbc.anchor = gbc.CENTER;
+gbc.fill = gbc.NONE;
+gbc.gridwidth = gbc.REMAINDER;
+
+// Add the components to the applet frame
+add(new Label("JDBC Driver Name:"));
+gridBag.setConstraints(driver, gbc);
+add(driver);
+
+add(new Label("Connection URL:"));
+gridBag.setConstraints(url, gbc);
+add(url);
+
+add(new Label("User Name:"));
+gridBag.setConstraints(user, gbc);
+add(user);
+
+add(new Label("Password:"));
+gridBag.setConstraints(password, gbc);
+password.setEchoChar('*');
+add(password);
+
+gridBag.setConstraints(connect, gbc);
+add(connect);
+
+add(new Label("SQL Statement:"));
+gridBag.setConstraints(sql, gbc);
+add(sql);
+
+gridBag.setConstraints(execute, gbc);
+add(execute);
+
+Label l = new Label("---- Results ----");
+gridBag.setConstraints(l, gbc);
+add(l);
+
+gridBag.setConstraints(results, gbc);
+add(results);
+
+// Setup the components for connecting to the database
+setForConnect();
+
+// Attempt to create an instance of the SQLServlet JDBC
+// driver. This will cause the driver to register itself
+// with the JDBC DriverManager
+try {
+javaservlets.SQLServlet.Driver d =
+new javaservlets.SQLServlet.Driver();
+}
+catch (java.sql.SQLException ex) {
+ex.printStackTrace();
+}
+}　　</pre>
+  图 13.26 SimpleQueryApplet的init()方法
+  <p>　　初始化applet的另一面是如何正确地销毁这个applet。在applet结束的时候，destroy()方法被调用。这正是终止数据库连接的好地方。如图13.27所示。</p>
+  <pre class="code"> 　/**
+* <p>Called when the applet is destroyed
+*/
+public void destroy()
+{
+disconnect();
+}
+
+/**
+* <p>Disconnect from the database if necessary
+*/
+protected void disconnect()
+{
+if (m_con != null) {
+try {
+m_con.close();
+m_con = null;
+}
+catch (java.sql.SQLException ex) {
+// Ignore any close errors
+}
+}
+}　</pre>
+  图13.27 SimpleQueryApplet的destroy()方法
+  <p>　　最后，我们需要看一看applet的事件处理过程，所有动作的处理都在这里。如果你仔细研究了图13.26，那么你会注意到applet实现了action 
+    listener接口(在包java.awt.event中)。这个接口只有一个方法——actionPerformed()，一旦注册在action 
+    listener对象中的组件产生了一个事件，这个方法就会被调用。注册是通过在组件中调用addActionListener()来实现的。图13.28显示了actionPerformed()方法，这个方法在Connect或者Excecute按钮被按下时被调用。</p>
+  <pre class="code"> 　* <p>Process an action
+*/
+public void actionPerformed(ActionEvent event)
+{
+Object o = event.getSource();
+
+// Figure out which component caused the event
+if (o == connect) {
+
+// If we are already connected, disconnect
+if (m_con != null) {
+disconnect();
+setForConnect();
+results.setText("");
+}
+else {
+
+// The 'connect' button was pressed. Attempt to
+// connect to the database
+results.setText("");
+
+// Format the complete URL
+String fullURL = "jdbc:SQLServlet:" + getCodeBase() +
+"servlet/@" + driver.getText() + ":" + url.getText();
+
+results.append("Attempting to connect to:\n" +
+fullURL + "\n");
+
+try {
+
+// Record how long it takes to connect
+long start = System.currentTimeMillis();
+
+// Attempt to connect to the remote database
+m_con =
+java.sql.DriverManager.getConnection(fullURL,
+user.getText(), password.getText());
+
+results.append("Connection ready in " +
+(System.currentTimeMillis() - start) +
+"ms\n");
+setForConnected();
+}
+catch (java.sql.SQLException ex) {
+results.append("Connection failed: " +
+ex.getMessage() + "\n");
+}
+}
+}
+else if (o == execute) {
+
+// Execute the given SQL statement
+results.setText("");
+
+// The Statement object
+java.sql.Statement stmt = null;
+
+try {
+// Create a new statement object
+results.append("Creating new Statement\n");
+long start = System.currentTimeMillis();
+
+stmt = m_con.createStatement();
+results.append("Created in " +
+(System.currentTimeMillis() - start) +
+"ms\n");
+
+results.append("Executing " + sql.getText() + "\n");
+start = System.currentTimeMillis();
+
+// Execute the query. Since we don't know what type
+// of query is being executed we'll have to determine
+// whether we need to display a row count or display
+// the results of a query
+boolean hasResultSet = stmt.execute(sql.getText());
+results.append("Executed in " +
+(System.currentTimeMillis() - start) +
+"ms\n\n");
+
+// Determine what type of results were returned
+if (hasResultSet) {
+
+// Get the ResultSet for the query
+java.sql.ResultSet rs = stmt.getResultSet();
+
+// Dump the column headings
+java.sql.ResultSetMetaData md = rs.getMetaData();
+
+String line = "";
+for (int i = 1; i <= md.getColumnCount(); i++) {
+
+// Comma separate if necessary
+if (i > 1) line += ", ";
+
+// Get the column name and add to the list
+line += md.getColumnName(i);
+}
+results.append(line + "\n");
+
+// Dump the data. Only allow the first 20 rows to
+// be displayed
+int rowCount = 0;
+while (rs.next() && (rowCount < 20)) {
+rowCount++;
+line = "";
+for (int i = 1; i <= md.getColumnCount(); i++) {
+
+// Comma separate if necessary
+if (i > 1) line += ", ";
+
+// Get the column data and add to the list
+line += rs.getString(i);
+}
+results.append(line + "\n");
+}
+}
+else {
+// Display a row count
+results.append("" + stmt.getUpdateCount() +
+" rows affected\n");
+}
+
+}
+catch (java.sql.SQLException ex) {
+results.append("Failed: " + ex.getMessage() + "\n");
+}
+finally {
+// Always close the statement
+if (stmt != null) {
+try {
+stmt.close();
+stmt = null;
+}
+catch (java.sql.SQLException ex) {
+// Ignore close errors
+}
+}
+}
+}
+}</pre>
+  图13.28 SimpleQueryApplet的actionPerformed()方法
+  <p>　　请注意Connect按钮被按下时的处理过程。如果已经建立一个连接，这个连接被关闭。在组成连接的URL之后，用SQLServlet驱动程序来在服务器上建立一个新的连接。<br>
+    当Execute按钮被按下时，从用户取得SQL语句，然后将它发送给服务器来处理。在结果返回给客户端的时候，格式化这些数据然后显示出来。 </p>
+    <h5>  配置服务器</h5>
+  <p>　　别忘了SQLServlet JDBC驱动程序是由一系列必须配置在Web服务器上的servlet构成的。表13.1列出了在使用这个驱动程序的时候，必须在服务器上配置的别名。如果你很幸运地使用了支持servlet 
+    URL中使用全类名(如http://larryboy/servlet/javaservletsSQLServer.server.RemoteDriverObjectServer)的servlet引擎，你就可以在BaseObject.java中设置m_userPackage标志。这会在构成servlet 
+    URL时使用包名。如果你可以使用这个功能，那么将这些类文件放在servlet引擎可以找到的地方就可以了。 </p>
+  <p>表1.31 SQLServlet JDBC驱动程序的Servlet别名</p>
+  <p>　　━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>
+    别名　　　　　　　　　　　　类名<br>
+    ─────────────────────────────────<br>
+    RemoteDriverObjectServer 　　javaservlets.SQLServlet.server.Remote<br>
+    DriverObjectServer<br>
+    RemoteConnectionObjectServer javaservlets.SQLServlet.server.Remote<br>
+    ConnectionObjectServer<br>
+    RemoteDatabaseMetaDataObjectServer javaservlets.SQLServlet.server.Remote<br>
+    DatabaseMetaDataObjectServer<br>
+    RemoteStatementObjectServer javaservlets.SQLServlet.server.Remote<br>
+    StatementObjectServer<br>
+    RemoteResultSetObjectServer javaservlets.SQLServlet.server.Remote<br>
+    ResultSetObjectServer <br>
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<h3><a name="1353" id="1353"></a>13.5.3 创建发布存档</h3>
+  <p>　　我们利用第12章中讨论的方法为SimpleQueryApplet创建一个发布的ZIP文件。使用CreateArchive实用工具来创建一个含有所需的类文件的ZIP文件比将所有这些类文件放在Web服务器的下载目录中容易得多。我们仅仅需要调用CreateArchive应用程序然后看着它工作就可以了，其结果显示在图13.29中。</p>
+  <pre class="code">java javaservlets.rollcall.CreateArchive
+javaservlets.SQLServlet.SimpleQueryApplet
+-aSimpleQueryApplet.zip
+
+Creating archive SimpleQueryApplet.zip
+javaservlets.SQLServlet.SimpleQueryApplet.class
+javaservlets.SQLServlet.Driver.class
+...
+</pre>
+图13.29　使用CreateArchive实用工具
+  
+   <h3> <a name="1354" id="1354"></a>13.5.4 编写加载这个Applet和HTML
+  </h3>
+  <pre class="code">
+图13.30显示了加载这个Applet所需的HTML代码。请注意ARCHIVE标识符，这个标识符指出了我们创建的ZIP文件。这个SimpleQueryApplet.zip文件必须和HTML文件放在相同的目录下。
+
+&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Simple Query&lt;/TITLE>
+&lt;/HEAD>
+&lt;BODY>
+&lt;h3>Simple applet that makes remote JDBC method calls
+using HTTP tunneling.&lt;/h3>
+&lt;center>
+&lt;HR>
+&lt;APPLET WIDTH=450
+HEIGHT=350
+NAME="SimpleQueryApplet"
+CODE=javaservlets.SQLServlet.SimpleQueryApplet
+ARCHIVE=SimpleQueryApplet.zip>&lt;/APPLET>
+&lt;/center> 
+&lt;/BODY>
+&lt;/HTML>　　</pre>
+  图13.30 SimpleQuery.html清单
+  <h3> <a name="1355" id="1355"></a>13.5.5 看看运行情况</h3>
+  <p>　　图13.31显示了在Web浏览器中加载后的applet。<br>
+    现在我们可以输入我们使用的服务器上的JDBC驱动程序名、连接名和口令。输入这些信息之后，按下Connect按钮来试图建立一个新的到服务器的连接。图13.32显示了这个applet成功连接到我们的例子数据库之后的情况。<br>
+    现在这个applet就可以处理SQL语句了。图13.33显示了对表employee执行一个SELECT语句的结果。<br>
+    请注意这个数据库连接在applet销毁的时候被终止。这就防止了服务器上资源的浪费。 </p>
+  <h2><a name="136" id="136"></a>13.6 小结</h2>
+  <p>　　本章介绍了一个如何将本书中讨论的几种技术组织起来的例子。我们还介绍了如何使用HTTP遂道技术以及代理和servlet的自动生成技术来创建第三方JDBC驱动程序。使用同样的方法，我们可以开发任何类型的分布式应用程序。我们还开发了一个简单的例子来测试我们的JDBC驱动程序，以及如何创建ZIP文件来包含所有的applet类文件，这个ZIP文件的使用极大地简化了应用程序的发布程序。
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

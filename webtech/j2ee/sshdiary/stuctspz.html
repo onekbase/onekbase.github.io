@@ -1,0 +1,296 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>struts配制详解</h1>
+
+<p>struts的基本流程：</p>
+<ol>
+<li>指定类型url（如*.do）传给struts的ActionServlet，如xxx.do。</li>
+<li>ActionServlet解析出xxx，根据xxx找到对应Action。</li>
+<li>Action处理完业务后会返回一个Forward。</li>
+<li>struts根据Forward跳转到指定页面。</li>
+</ol>
+<p>所以弄清上面每个过程配制文件是怎么配制的，struts就基本会用了。</p>
+<p>先在web.xml中加入如下配制，可以参考<a title="serlvet布署全过程(tomcat中)" href="http://iteedu.com/2012/10/18/serlvet%e5%b8%83%e7%bd%b2%e5%85%a8%e8%bf%87%e7%a8%8btomcat%e4%b8%ad/">servlet的配制过程</a></p>
+<pre class="brush:xml">  &lt;!-- 标准ActionServlet(带调式) --&gt;
+  &lt;servlet&gt;
+    &lt;!-- 给ActionServlet启个名--&gt;
+    &lt;servlet-name&gt;action&lt;/servlet-name&gt;
+     &lt;!-- 指定ActionServlet类--&gt;
+    &lt;servlet-class&gt;org.apache.struts.action.ActionServlet&lt;/servlet-class&gt;
+    &lt;!-- 指定config.xml文件位置--&gt;
+    &lt;init-param&gt;
+      &lt;param-name&gt;config&lt;/param-name&gt;
+      &lt;param-value&gt;/WEB-INF/struts-config.xml&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    &lt;init-param&gt;
+      &lt;param-name&gt;debug&lt;/param-name&gt;
+      &lt;param-value&gt;2&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    &lt;init-param&gt;
+      &lt;param-name&gt;detail&lt;/param-name&gt;
+      &lt;param-value&gt;2&lt;/param-value&gt;
+    &lt;/init-param&gt;
+    &lt;load-on-startup&gt;2&lt;/load-on-startup&gt;
+  &lt;/servlet&gt;
+
+  &lt;!-- 指定ActionServlet处理的url类型，servlet-name要和上面的对应--&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;action&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.do&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;</pre>
+<p>配制struts-config.xml，上面ActionServlet指定的配制文件。</p>
+<p>struts-config.xml的根为&lt;struts-config&gt;，所有的配制都要写在这里面。</p>
+<pre class="brush:other">&lt;struts-config&gt;
+    &lt;!--配制内容 --&gt;
+&lt;/struts-config&gt;</pre>
+<p>以下的配制没有说明，默认都是在&lt;struts-config&gt;中。</p>
+<pre class="brush:xml">    &lt;form-beans&gt;
+        &lt;!-- 一个ActionForm的例子--&gt;
+        &lt;form-bean
+            &lt;!-- ActionForm的名字，以后引用时用--&gt;
+            name="inputForm"
+            &lt;!-- ActionForm类全路径--&gt;
+            type="app.InputForm"/&gt;
+
+        &lt;!-- 动态ActionForm的例子，不用创建类，type都指向DynaActionForm --&gt;
+        &lt;form-bean
+            name="logonForm"
+            type="org.apache.struts.action.DynaActionForm"&gt;
+            &lt;!--Form的属性，和表单中的提交名对应--&gt;
+            &lt;form-property
+                name="username"
+                type="java.lang.String"/&gt;
+            &lt;form-property
+                name="password"
+                type="java.lang.String"/&gt;
+       &lt;/form-bean&gt;
+    &lt;/form-beans&gt;</pre>
+<p>struts分发请求的配制。</p>
+<p>&nbsp;</p>
+<pre class="brush:xml">    &lt;action-mappings&gt;
+        &lt;!-- 最简单跳转 --&gt;
+        &lt;action
+            &lt;!-- 对应url,web.xml中ActionServlet对应servlet-mapping配制*的部分 --&gt;
+            path="/Welcome"
+            &lt;!-- 要跳转到的页面 --&gt;
+            forward="/pages/Welcome.jsp"/&gt;
+
+        &lt;!-- 用ForwardAction跳转 --&gt;
+        &lt;action
+            path="/Input"
+            &lt;!-- ForwardAction是struts中用来代替jsp中跳转功能的。
+                 在struts中不建议用jsp的跳转可能，可能会出各种问题。 --&gt;
+            type="org.apache.struts.actions.ForwardAction"
+            &lt;!-- ForwardAction参数，要跳转到的页面 --&gt;
+            parameter="/pages/Input.jsp"/&gt;
+
+        &lt;!-- 自定义Action --&gt;
+        &lt;action
+            path="/InputSubmit"
+            &lt;!-- Action类全路径 --&gt;
+            type="app.InputAction"
+            &lt;!-- Action类使用的ActionForm，form-beans中定义。
+                  form-beans中对应form-bean的name。--&gt;
+            name="inputForm"
+            &lt;!-- 作用范围 --&gt;
+            scope="request"
+            &lt;!-- 是否验证 --&gt;
+            validate="true"
+            &lt;!-- 验证出错跳转到页面 --&gt;
+            input="/pages/Input.jsp"/&gt;
+
+            &lt;!-- 正则匹配Action --&gt;
+          &lt;action
+                &lt;!-- *匹配的部分为以后参数中的{1} --&gt;
+                path="/edit*"
+                type="app.Edit{1}Action"
+                name="inputForm"
+                scope="request"
+                validate="true"
+                input="/pages/Edit{1}.jsp"/&gt;
+
+	&lt;action
+                path="/mh"
+                type="app.MhAction"
+                name="memoryForm"
+                scope="request"
+		validate="true"
+		input="/login.jsp"&gt;
+                &lt;!-- 根据Action返回name跳转
+                     return (mapping.findForward("name")); --&gt;
+		&lt;forward name="indexNoRight" path="/error/norighterror.jsp" /&gt;
+		&lt;forward name="indexsj" path="/mhsj.jsp" /&gt;
+		&lt;forward name="indexsj1" path="/mhsj_1.jsp" /&gt;
+
+	&lt;/action&gt;
+    &lt;/action-mappings&gt;</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,280 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="48.html"> 上一页</a><a href="50.html"> 下一页</a></div>
+<h2>19.3. 映射文件生成器（Mapping File Generation）</h2>
+<p>映射文件的骨架可以从编译过的持久化类中使用MapGenerator工具生成。这工具是Hibernate   Extensions发行包的一部分。 </p>
+<p>Hibernate映射生成器提供了从编译过的类中产生映射的机制。他使用Java反射来查找<em>属性(   properties)</em>，然后使用启发式算法来从属性类型猜测合适的映射。生成出来的映射文件之应该看作是后续工作的起点。没有办法在没有用户修正的情况下生成完整的Hibernate映射。但是，这个工具还是替你做了很多非常琐碎和麻烦的工作。 </p>
+<p>类一个一个地加入到映射去。如果工具认为某个类不是<em>Hibernate可持久化（   persistable）</em>的，就会把这些类剔除。 </p>
+<p>判断是否是<em>Hibernate可持久化（ persistable）</em>的原则是： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>必定不是一个原始类型</p>
+  </li>
+  <li>
+    <p>必定不是一个数组</p>
+  </li>
+  <li>
+    <p>必定不是一个接口</p>
+  </li>
+  <li>
+    <p>必定不是一个内部类</p>
+  </li>
+  <li>
+    <p>必定有一个默认的无参数的构造方法。</p>
+  </li>
+</ul>
+<p>注意，接口和内部类实际上是可以通过Hibernate持久化的，但是一般来说用户不会使用。 </p>
+<p>对已经发现的类，MapGenerator会重复回溯到超类链条上去，以尽可能的把Hibernate可持久化的超类加入到对同一个数据库表的映射去。如果回溯过程中某个类出现了有个属性在下列<em>备选UID名字（candidate UID names）</em>名单中，回溯就会停止。 </p>
+<p>默认的备选UID属性名有：uid, UID, id, ID, key,   KEY, pk, PK。 </p>
+<p>如果类中有两个方法，一个是setter,一个是getter，并且setter的单参数的属性和getter的无参数返回值得类型相同，并且setter返回void,就认为发现了一个属性。并且，setter的名字必须以set字符串开始，getter的名字必须以get开始，或者以is开始并且属性类型是boolean。在上面的情况发生时，get和set之后的名字还必须匹配。这个匹配就是属性的名字，然后如果第二个字母是小写的话，会把其首字母变成小写。 </p>
+<p>用来决定每个属性的数据库类型的规则如下： </p>
+<ol type="1" compact="compact">
+  <li>
+    <p>如果Java类型是Hibernate.basic()，则属性是该类型的一个普通字段。 </p>
+  </li>
+  <li>
+    <p>对于hibernate.type.Type特定类型和PersistentEnum来说，也会使用一个普通字段。 </p>
+  </li>
+  <li>
+    <p>如果属性类型是一个数组，那么会使用一个Hibernate数组,并且MapGenerator试图反映数组元素的类型。（attempts to reflect on the array   element type.） </p>
+  </li>
+  <li>
+    <p>如果属性是java.util.List,java.util.Map或者java.util.Set，会使用对应的Hibernate类型，但是MapGenerator不能对这些类型进行进一步处理了。 </p>
+  </li>
+  <li>
+    <p>如果属性的类型不是上面任何一种，MapGeneraotr把决定数据库类型的步骤留待所有的类都被处理之后再来做。在那时候，如果类在上面描述过的超类搜索过程中被发现了，这个属性会被认为是一个many-to-one的关联。如果类有人和属性，它则是一个组件(component)。否则它就是可序列化的（serializable），或者不是可持久化的。 </p>
+  </li>
+</ol>
+<h3><a name="19-3-1" id="19-3-1"></a>19.3.1. 运行此工具</h3>
+<p>这个工具会把XML映射写入到标准输出或者/并且到一个文件中去。 </p>
+<p>在调用这个工具的时候，你必须把你编译过的类放到classpath中去。 </p>
+<p>java -cp <em>hibernate_and_your_class_classpaths</em> net.sf.hibernate.tool.class2hbm.MapGenerator <em>options and classnames</em> </p>
+<p>有两种操作模式：命令行或者交互式。 </p>
+<p>交互式模式当你使用一个惟一的命令行参数--interact的时候启动。这个模式提供一个命令控制台。你可以用uid=XXX命令设置每个类的UID属性的名字，XXX就是UID属性名。其他可用的命令就是类名的全限定名，或者“done”命令用来输出XML,并且结束。 </p>
+<p>在命令行模式下，下面的参数选项和所需处理的类的全限定名可以相互间隔使用。大多数选项会使用多次，每个只影响其后出现的类。 </p>
+<p><strong>Table 19.7. MapGenerator命令行选项</strong></p>
+<table summary="MapGenerator命令行选项" border="1">
+  <colgroup>
+  <col />
+  <col />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--quiet</td>
+      <td>不把O-R 映射输出到stdout</td>
+    </tr>
+    <tr>
+      <td>--setUID=uid</td>
+      <td>设置备选UID名单</td>
+    </tr>
+    <tr>
+      <td>--addUID=uid</td>
+      <td>在备选UID名单前面增加一个新的uid</td>
+    </tr>
+    <tr>
+      <td>--select=<em>mode</em></td>
+      <td>对后面的classes使用select选择的<em>模式(mode)</em>(比如, <em>distinct</em> 或者<em>all</em>)</td>
+    </tr>
+    <tr>
+      <td>--depth=&lt;small-int&gt;</td>
+      <td>限制后面的类的组件数据递归层数</td>
+    </tr>
+    <tr>
+      <td>--output=my_mapping.xml</td>
+      <td>把O-R 映射输出到一个文件</td>
+    </tr>
+    <tr>
+      <td><em>full.class.Name</em></td>
+      <td>把这个类加入到映射中</td>
+    </tr>
+    <tr>
+      <td>--abstract=<em>full.class.Name</em></td>
+      <td>参见下面的说明</td>
+    </tr>
+  </tbody>
+</table>
+<p>abstract开关指定本工具忽略特定的超类,所以它的继承数上的类不会被映射到一个大表中去。比如，我们来看下面的类继承树： </p>
+<p>Animal--&gt;Mammal--&gt;Human </p>
+<p>Animal--&gt;Mammal--&gt;Marsupial--&gt;Kangaroo </p>
+<p>如果<em>不</em>使用--abstract开关，Animal的所有子类都会被放到一个巨大的表中去，包含所有类的所有属性，还有一个用于分辨子类的字段。如果Mammal被标记成abstract，Human和Marsupial会被映射到不同的&lt;class&gt;声明，并且会有各自单独的表。Kangaroo仍然会被认为是Marsupial的子类，除非Marsupial也标记为anstract的。 </p>
+
+<div class="rpindex"><a href="50.html"> 下一页</a><a href="48.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

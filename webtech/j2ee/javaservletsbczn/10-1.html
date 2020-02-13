@@ -1,0 +1,1364 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+  
+    <div class="lpindex"><a href="index.html">首页</a><a href="9-2.html"> 上一页</a><a href="10-2.html"> 下一页</a></div>
+    <h1>第10章 applet与servlet的通信(上) </h1>
+    <p>　　在这一章，我们将研究一下如何在Java applet中使用服务器端对象。Java的远程方法调用(Remote Method 
+      Invocation,RMI)特别定义了在使用TCP/IP协议的安全网络上这项工作是如何实现的。但是，我们现在将要使用一个名为HTTP遂道的进程，它将允许我们从一个没有安全保证的网络(如Internet)上调用远程方法。 </p>
+    <h2>10.1 HTTP</h2>
+    <p>　　HTTP(HypeText Transfer Protoocol——超级文本传输协议)是一种Internet客户机/服务器协议。它为提供超级文本素材如HTML，图像和声音而设计。所有的HTTP通信都使用8位字符，它可以确定所有表单数据的安全传输。但我们要传送和接收二进制码文件的时候，这一点就变得非常重要。让我们来看一下为一个HTTP服务请求提供服务的基本步骤：</p>
+    <p> 　　1.打开连接。要记住非常重要的一点就是HTTP是一种无状态协议。也就是说每一个请求都被视为一个独立的实体。因此，对于每一个连接都要建立一个新的连接。这就与TCP/IP协议非常不同，一个连接可以保持一个所给客户会话的整个生命周期。在第6章中，我们使用servlet会话跟踪辅助解决无状态服务器问题。</p>
+    <p> 　　2.发送请求，客户端发送给Web服务器一个消息请求某种类型的服务。这个请求信息包含HTTP请求头，在里面定义了请求包的类型和长度。请求头后面跟着请求数据。</p>
+    <p> 　　3.提供服务。Web服务器将为这个请求提供服务。对我们来说就是写一个新的servlet程序来处理请求。</p>
+    <p> 　　4.发送响应。服务器端将发送(或转寄)一个响应给客户端。这个响应包含响应头，在里面定义了响应包的类型和长度。响应头后面跟着响应数据。</p>
+    <p> 　　5.关闭连接。要记住HTTP是无状态的。在各个请求间，连接不会被保持。</p>
+    你可能会这么认为，HTTP只不过是请求并从Internet上的一个安全服务器上下载文件。这当然是HTTP的最常见的用途。然而我们也可以把它用于其他目的，如方法调用遂道。
+    </p>
+    <h2> <a name="102" id="102"></a>10.2 什么是遂道技术</h2>
+    <p>　我喜欢把遂道(tunneling)看作是一条这样的通道，它使用已存在的通信道路(HTTP)并且在之中创建了一个子协议来执行特殊任务。我们要创建的子协议将包含所有必要的信息，这些信息足以创建一个在Web服务器上的对象，调用这个对象中的方法，并将结果返回给客户端。使用HTTP遂道的另一大好处就是你可以将你的大量精力集中在子协议的细节上而不用关注如何在客户端和服务器之间传送数据包——HTTP协议是特别为此设计的并且做得非常好。</p>
+    <h2><a name="103" id="103"></a>10.3 基本流程</h2>
+    <p>　　为了更深入地阐述遂道技术的概念，我们展开基本HTTP流程：</p>
+    <p> 　　1.打开HTTP连接。一定要记住HTTP是一种无状态协议。正因为如此，对于每一个请求你都要建立一个新的连接。</p>
+    <p> 　　2.初始化方法请求。这里面将包含一些类型的方法指示符用来描述调用什么方法和方法所需要的参数。</p>
+    <p> 　　3.设置HTTP请求头。这里面包含要传送的数据类型(二进制)和数据的总长。</p>
+    <p> 　　4.发送请求。将二进制流写到服务器。</p>
+    <p> 　　5.读取请求。目标servlet程序将被调用并接受HTTP请求数据。servlet程序就调用所有必要的参数选择相应的方法。注意，如果这是这个客户端的第一次请求，一个服务器对象的新的实例就会被创建。</p>
+    <p> 　　6.调用方法。方法将会被服务器端的对象调用。</p>
+    <p> 　　7.初始化方法响应。如果调用的方法抛出一个异常，客户将接收到出错信息。否则，返回的类型(如果有)将会被发送。</p>
+    <p> 　　8.设置HTTP响应头。在响应头中，一定会设置待发送数据的类型和长度。</p>
+    <p> 　　9.发送响应。二进制数据流将从Web服务器发送并返回给客户端。</p>
+    <p> 　　10.关闭连接。</p>
+    就是传送一条单独的请求也要经过很多的工作。为了性能上的原因，你应该在每次的请求/响应中传输尽可能多的信息。HTTP遂道链接中的弱连接会为每个请求建立新的连接。
+    <h2> <a name="104" id="104"></a>10.4 Java 1.0.2的遂道技术</h2>
+    <p>　　我们大量关注于Java开发工具包(Java Developer's Kit——JDK)的当前流行版本，JDK1.1或是JDK1.2(或以上版本)。不要忘记第一个官方发布的JDK版本：JDK1.0.2。你可能没有考虑到使用这个版本的重要性。但我发现，之后的一些JDK版本并不能得到一些浏览器很好的支持且行为不可预知。另一方面，使用JDK1.0.2创建的applet可以在笔者所试过的所有支持Java的浏览器上非常正常地运行。诚然，之后版本的JDK有很多功能。但如果你的基本需求可以在1.0.2版本下得到满意的实现，你可能会希望就使用这个版本。特别是你要将你的applet放在Internet上(而不是企业内部网intranet)，在那里你无法限制使用者所使用的浏览器类型和版本。 </p>
+    <h3><a name="1041" id="1041"></a>10.4.1 编发参数和返回值</h3>
+    <p>　　什么是真正的编发(mashal)？非常简单，它就是将待发送的数据打包并在它被接收后对它进行解包。看过本章后，你就会发现如果用JDK1.1，通过使用序列化技术，编发数据将变得十分简单，而JDK 
+      1.0.2就不成。JDK1.0.2提供给我们读写所有的基本标量类型(boolean，char，byte，short，int，long，float，double，string)的一套机制。其他类型的数据都要编发为这些类型的组合形式。也就是说，当你写了一个特殊类型的数据，接收者就一定要知道所期望的数据属于什么类型。你可以通过在每一部分数据前加入标示某种类型的指示符来发送数据，但现在还没有什么简单的方法确认当前数据是什么类型。 </p>
+    <p>　使用DataOutputStream和DataInputStream</p>
+    <p> 　　为了说明如何在JDK的各个版本下编发数据，让我们来看一个简单的客户应用程序。这个程序使用java.io.DataOutputStream来写入请求数据，使用java.io.DataInputStream来读取响应数据。这个客户应用程序流程是这样的：</p>
+    <p> 　　1.打开一个HTTP连接。</p>
+    <p> 　　2.初始化请求数据。</p>
+    <p> 　　3.将请求发送到服务器。</p>
+    <p> 　　4.读取响应数据。</p>
+    <p> 　　5.关闭HTTP连接。</p>
+    <p> 　　服务器(待会儿我们就要看到)只是简单地读取请求数据并将这些数据回显，返回给客户端。</p>
+    图10.1显示了完整的应用程序。为了调用这个应用程序，你必须提供这个可回显数据的服务进程(当然是一个servlet程序)的URL：
+    <pre class="code">java javaservlets.tunnel.TestDataStream
+http://larryboy/servlet/javaservlets.tunnel.DataStreamEcho</pre>
+    注意命令最好分成两行，这样可提高代码的可读性；当然，它也可以放在一行之中。我们将使用“larryboy”服务器来调用在javaservlets.tunnel包中的servlet程序DataStreamEcho。你可以配置你的Web服务器，给servlet程序DataStreamEcho特别指定一个servlet程序别名。我所使用的Live 
+    Software出品的JRun可以允许我不用事先注册就可以指定servlet程序的完整包名。
+    <pre class="code">package javaservlets.tunnel;
+
+import java.io.*;
+
+/**
+* This application shows how to read data from and write data
+* to a servlet using data input/output streams.
+*/
+
+public class TestDataStream
+{
+/**
+* Application entry point. This application requires
+* one parameter, which is the servlet URL
+*/
+public static void main(String args[])
+{
+// Make sure we have an argument for the servlet URL
+if (args.length == 0) {
+System.out.println("\nServlet URL must be specified");
+return;
+}
+
+try {
+
+System.out.println("Attempting to connect to " + args[0]);
+
+// Get the server URL 
+java.net.URL url = new java.net.URL(args[0]);
+
+// Attempt to connect to the host
+java.net.URLConnection con = url.openConnection();
+
+// Initialize the connection
+con.setUseCaches(false);
+con.setDoOutput(true);
+con.setDoInput(true);
+
+// Data will always be written to a byte array buffer so
+// that we can tell the server the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the data to our buffer
+DataOutputStream out = new DataOutputStream(byteOut);
+
+System.out.println("Writing test data");
+
+// Write the test data
+out.writeBoolean(true);
+out.writeByte(1);
+out.writeChar(2);
+out.writeShort(3);
+out.writeInt(4);
+out.writeFloat(5);
+out.writeDouble(6);
+out.writeUTF("Hello, Karl");
+
+// Flush the data to the buffer
+out.flush();
+
+// Get our buffer to be sent
+byte buf[] = byteOut.toByteArray();
+
+// Set the content that we are sending
+con.setRequestProperty("Content-type","application/octet-stream");
+
+// Set the length of the data buffer we are sending
+con.setRequestProperty("Content-length","" + buf.length);
+
+// Get the output stream to the server and send our data buffer
+DataOutputStream dataOut = new DataOutputStream(con.getOutputStream());
+//out.write(buf, 0, buf.length);
+dataOut.write(buf);
+
+// Flush the output stream and close it
+dataOut.flush();
+dataOut.close();
+
+System.out.println("Reading response");
+
+// Get the input stream we can use to read the response
+DataInputStream in = new DataInputStream(con.getInputStream());
+
+// Read the data from the server
+boolean booleanValue = in.readBoolean();
+byte byteValue = in.readByte();
+char charValue = in.readChar();
+short shortValue = in.readShort();
+int intValue = in.readInt();
+float floatValue = in.readFloat();
+double doubleValue = in.readDouble();
+String stringValue = in.readUTF();
+
+// Close the input stream
+in.close();
+
+System.out.println("Data read: " +
+booleanValue + " " +
+byteValue + " " +
+((int) charValue) + " " +
+shortValue + " " +
+intValue + " " +
+floatValue + " " +
+doubleValue + " " +
+stringValue);
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+}　</pre>
+    <p>　　注意请求数据是如何被写入到内存中的一个缓冲区中的(java.io.ByteArrayOutputStream)。我们就可以直接将数据写入到HTTP输出流中，但这样你就不能在请求头中设置适当的请求数据长度。为了解决这个问题，我们先将所有数据写入到一个缓冲区，然后通过获取基本字节数组的长度来得到请求数据的长度。请求头设置好后，我们就可以从URLConnection对象中得到HTTP输出流，并将缓冲区内的全部数据写入到流中。但这些数据被发送出去后，我们可以从URLConnection对象中申请一个输入流，通过它可以读取响应。注意申请输入流的请求将会阻塞线程的运行直到线程接收到响应。一旦我们获得了输入流，我们只要从中读取数据，并显示出servlet程序回送要显示的内容。</p>
+    <pre class="code">Attempting to connect to http://larryboy/servlet/
+javaservlets.tunnel.DataStreamEcho
+Writing test data
+Reading response
+Data read:true 1 2 3 4 5.0 6.0 Hello,Karl</pre>
+    <p>　　那这个servlet程序又是如何的呢？由于这个进程功能十分简单，只要参照客户应用程序，你可以很容易地写出这个servlet程序：</p>
+    <p> 　　1.等待来自客户的服务请求。</p>
+    <p> 　　2.读取请求数据。</p>
+    <p> 　　3.使用从请求中读取的数据书写响应。</p>
+    图10.3列出了servlet程序DataStreamEcho的源代码。有一点一定要记好，就是一定要按照在客户端书写数据的同样的格式读取数据。
+    </p>
+    <pre class="code">package javaservlets.tunnel;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* This servlet shows how to read data from and write data
+* to a client using data input/output streams.
+*/
+
+public class DataStreamEcho extends HttpServlet
+{
+/**
+* Services the HTTP request
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+public void service(HttpServletRequest req,HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Get the input stream for reading data from the client
+DataInputStream in = new DataInputStream(req.getInputStream());
+
+// We'll be sending binary data back to the client so
+// set the content type appropriately
+resp.setContentType("application/octet-stream");
+
+// Data will always be written to a byte array buffer so
+// that we can tell the client the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the data to our buffer
+DataOutputStream out = new DataOutputStream(byteOut);
+
+// Read the data from the client.
+boolean booleanValue = in.readBoolean();
+byte byteValue = in.readByte();
+char charValue = in.readChar();
+short shortValue = in.readShort();
+int intValue = in.readInt();
+float floatValue = in.readFloat();
+double doubleValue = in.readDouble();
+String stringValue = in.readUTF();
+
+// Write the data to our internal buffer.
+out.writeBoolean(booleanValue);
+out.writeByte(byteValue);
+out.writeChar(charValue);
+out.writeShort(shortValue);
+out.writeInt(intValue);
+out.writeFloat(floatValue);
+out.writeDouble(doubleValue);
+out.writeUTF(stringValue);
+
+// Flush the contents of the output stream to the byte array
+out.flush();
+
+// Get the buffer that is holding our response
+byte[] buf = byteOut.toByteArray();
+
+// Notify the client how much data is being sent
+resp.setContentLength(buf.length);
+
+// Send the buffer to the client
+ServletOutputStream servletOut = resp.getOutputStream();
+
+// Wrap up
+servletOut.write(buf);
+servletOut.close();
+}
+}</pre>
+    <h3><a name="1042" id="1042"></a>10.4.2 基本的遂道客户端类</h3>
+    <p>　　现在你已经知道了如何在客户端和服务器端接收和发送数据。现在让我们开始尝试使用一些支持类使人们能够更简单地编写使用遂道技术的程序。我们将编写两种类型的客户端：“lite”版本(将只编发标量类型)和完全版本(使用Java序列化)。因此我觉得创建一个抽象基类是一个非常好的办法，这两种类型的客户端都可以继承这个基类。</p>
+    客户端需要什么类型的方法呢？所有的客户端都非常显然的需要初始化他们自己。由于我们是调用servlet程序中的方法，部分初始化步骤将用于实例化服务器端对象。
+    </p>
+    <pre class="code"> 　/**
+* Initializes the client. Also makes a server request
+* to initialize the server as well.
+*/
+public void _initialize() throws TunnelException
+{
+try {
+// Create a new buffer that will hold our data
+ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+
+// Create a method header. An ordinal value of -1 is reserved for initializing the server
+_createHeader(buffer, -1);
+
+// Invoke the method. This will send the initialization header to the server
+DataInput in = _invokeMethod(buffer.toByteArray());
+
+// Get the handle to the object that was just created
+m_objectHandle = in.readInt();
+
+// Close properly
+_close(in);
+}
+catch (IOException ex) {
+// Re-throw as a tunnel exception
+ex.printStackTrace();
+throw new TunnelException(ex.getMessage());
+}
+}</pre>
+    <p>　　所有这些方法都是发送一个信息包到服务器通知它实例化一个新的服务器端对象(我们稍后就将接触这个概念)。有一点要注意的就是这些基本步骤将会包含在我们发送给服务器的数据包中。</p>
+    <p> 　　1.创建一个新的内存缓冲区保存数据流内容。</p>
+    <p> 　　2.调用一个辅助方法创建包头。我们将通过为每个方法分配一个序号(一个数)来远程调用这些方法。每一个序号将惟一指定一个特定的方法。其中序号-1被保留用来指明请求并不是要调用一个方法而是用来初始化服务器。</p>
+    <p> 　　3.调用一个辅助方法将请求包发送到服务器端，这个方法将返回一个输入流。我们可以使用这个输入流来读取来自服务器的所有返回值。</p>
+    如果你回想一下早先介绍的简单应用程序TestDataOutput，就会觉得这一切非常熟悉。
+    </p>
+    <pre class="code"> /**
+* Starts a method by creating the method header.
+* The header consists of the method ordinal to invoke.
+*
+* @param buffer Buffer to hold the header data
+* @param ordinal Method ordinal to invoke on the server
+* @return Output stream to be used to send parameters
+*/
+public DataOutput _createHeader(ByteArrayOutputStream buffer,
+int ordinal)
+throws TunnelException
+{
+try {
+// Get an output stream use to write data to the buffer
+DataOutput out = _getOutputStream(buffer);
+
+// Write the method ordinal
+out.writeInt(ordinal);
+
+// If we are not initializing the object we need to send
+// the object handle along with the header
+if (ordinal != -1) {
+out.writeInt(m_objectHandle);
+}
+
+_flush(out);
+return out;
+}
+catch (IOException ex) {
+// Re-throw as a tunnel exception
+ex.printStackTrace();
+throw new TunnelException(ex.getMessage());
+}
+}</pre>
+    这里面并没有用到多少小把戏——只不过是创建一个输出流，写方法序号，将数据发到输出流。但等等！_getOutputStream方法和_flush方法是做什么的呢？每一个继承了基本客户类的客户都要实现这些虚方法来创建特定的输出流并按需要的方式发送数据。通过将这些方法定义为虚方法，我们可以写出一个非常通用的基本类，它可以被不同类型隧道客户继承。
+    基本类中我们还需要了解的下一个方法就是用于将包发送给服务器的方法
+    <pre class="code">/**
+* Sends the given buffer that will cause a remote method to be invoked.
+*
+* @param buffer Buffer containing data to send to the server
+* @return Input stream to be used to read the response from the server
+*/
+public DataInput _invokeMethod(byte buf[])
+throws TunnelException
+{
+DataInput in = null;
+
+try {
+// Get the server URL 
+java.net.URL url = _getURL();
+if (url == null) {
+throw new IOException("Server URL has not been set");
+}
+
+// Attempt to connect to the host
+java.net.URLConnection con = url.openConnection();
+
+// Initialize the connection
+con.setUseCaches(false);
+con.setDoOutput(true);
+con.setDoInput(true);
+
+// Set the content that we are sending
+con.setRequestProperty("Content-type","application/octet-stream");
+
+// Set the length of the data buffer we are sending
+con.setRequestProperty("Content-length","" + buf.length);
+
+// Get the output stream to the server and send our data buffer
+DataOutputStream out = new DataOutputStream(con.getOutputStream());
+out.write(buf);
+
+// Flush the output stream and close it
+out.flush();
+out.close();
+
+// Get the input stream we can use to read the response
+in = _getInputStream(con.getInputStream());
+
+// The server will always respond with an int value
+// that will either be the method ordinal that was
+// invoked, or a -2 indicating an exception was thrown
+// from the server
+int ordinal = in.readInt();
+
+// Check for an exception on the server.
+if (ordinal == -2) {
+// Read the exception message and throw it
+String msg = in.readUTF();
+throw new TunnelException(msg);
+}
+
+}
+catch (IOException ex) {
+// Re-throw as a tunnel exception
+ex.printStackTrace();
+throw new TunnelException(ex.getMessage());
+}
+
+// Return the input stream to be used to read the rest of the response from the server
+return in;
+}　</pre>
+    <p> 　　我们必须要做的第一件事是连接一个给出的URL。这个URL是在客户通道被实例化操作时设置的。与特定URL连接的部分初始化了连接设置。这里我们要注意setUseCaches方法，它告诉浏览器是使用内部高速缓冲存储器还是总是从连接中直接读取。在我们的例子中关闭了浏览器高速缓存功能。下一步，我们要设置请求头(数据类型和数据长度)并将数据块发送到服务器端。请求被发送后，我们的程序将被阻塞直到我们收到响应为止。这里我们要知道_getInputStream方法将返回客户端所使用的输入流的类型。这个方法是一个虚方法，必须被每一个客户通道实现。当响应到达后，我们要读取响应头。这个响应头的序号通常与所发送的请求头的序号相同。返回的序号为-2就说明在远程方法运行的过程中抛出了一个异常。遇到这种情况，我们可以从输入流中读取异常消息，并抛出一个新的异常给客户端。如果一切运行正常的话，我们就可以将输入流返回给调用者，调用者就可以读取到来自服务器的任何附加的数据。</p>
+    <h3><a name="1043" id="1043"></a>10.4.3 “Lite”遂道客户</h3>
+    <p>　　编写客户应用程序来实现我们的“Lite”遂道客户是十分简单易懂的。要记住我们对于一个“Lite”客户的定义是使用DataInputStream和DataOutputStream来编发数据。这一类的客户应用程序可以被任何版本的JDK实现。</p>
+    <pre class="code">　package javaservlets.tunnel.client;
+
+import java.io.*;
+
+/**
+* This class implements the necessary TunnelClientInterface
+* methods for a JDK 1.1 tunneled client. The marshaling of
+* data is done with serialization.
+*/
+
+public abstract class TunnelClient extends BaseTunnelClient
+{
+
+/**
+* Gets an input stream to be used for reading data
+* from the connection. The lite version uses a standard
+* data input stream for reading data.
+*
+* @param in Input stream from the connection URL
+* @return Input stream to read data from the connection
+*/
+public DataInput _getInputStream(InputStream in)
+throws IOException
+{
+// Create a new DataInputStream for reading data from the connection.
+return new ObjectInputStream(in);
+}
+
+/**
+* Gets an output stream to be used for writing data to
+* an internal buffer. The buffer will be written to the
+* connection. The lite version uses a standard data
+* output stream for writing data.
+*
+* @param buffer Buffer to hold the output data
+* @return Output stream to write data to the buffer
+*/
+public DataOutput _getOutputStream(ByteArrayOutputStream buffer)
+throws IOException
+{
+// Create a new DataOutputStream for writing data to the buffer.
+return new ObjectOutputStream(buffer);
+}
+
+/**
+* Flushes the any buffered data to the output stream
+*
+* @param out Output stream to flush
+*/
+public void _flush(DataOutput out) throws IOException
+{
+// Flush the data to the buffer
+((ObjectOutputStream) out).flush();
+}
+}</pre>
+    <h3><a name="1044" id="1044"></a>10.4.4 基本的遂道servlet类</h3>
+    <p>　　与我们创建基本客户端抽象类的方式相同，让我们首先也创建一个基本的servlet类。与客户端相同，它可以包含虚方法以创建使用特定编发方式的输入流和输出流。</p>
+    <pre class="code">package javaservlets.tunnel.server;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* Services the HTTP request
+*
+* @param req The request from the client
+* @param resp The response from the servlet
+*/
+
+public void service(HttpServletRequest req,
+HttpServletResponse resp)
+throws ServletException, java.io.IOException
+{
+// Get the input stream for reading data from the client
+DataInput in = _getInputStream(req.getInputStream());
+
+// Get the session object or create one if it does not exist.
+// A session will persist as long as the client browser maintains a connection to the server.
+HttpSession session = req.getSession(true);
+
+// Get the server object table bound to the session. This may
+// be null if this is the first request. If so create a new object table for the session
+java.util.Hashtable objectTable = (java.util.Hashtable) session.getValue(OBJECT_TABLE);
+
+if (objectTable == null) {
+objectTable = new java.util.Hashtable();
+
+// Add the server object to the HTTP session
+session.putValue(OBJECT_TABLE, objectTable);
+}
+
+// We'll be sending binary data back to the client so set the content type appropriately
+resp.setContentType("application/octet-stream");
+
+// Data will always be written to a byte array buffer so
+// that we can tell the client the length of the data
+ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
+
+// Create the output stream to be used to write the data to our buffer
+DataOutput out = _getOutputStream(byteOut);
+
+// Read the method ordinal from the input stream. All request headers contain a method ordinal
+int ordinal = in.readInt();
+
+// The server object
+Object serverObject;
+
+// The object handle
+int objectHandle;
+
+// Evaluate the ordinal. -1 is reserved for initializing the server
+switch (ordinal) {
+case -1:
+
+// Create a new instance of the server object
+serverObject = _getNewInstance();
+
+// Send the response back to the client indicating
+// that the server object is ready for method calls.
+out.writeInt(ordinal);
+
+// Get the object handle
+objectHandle = serverObject.hashCode();
+
+// Put the object in the object table for the session
+objectTable.put(new Integer(objectHandle), serverObject);
+
+// Part of the initial object response is the object handle
+out.writeInt(objectHandle);
+break;
+
+default:
+
+// Read the object handle from the request header
+objectHandle = in.readInt();
+
+// Attempt to find the object in the object table for the session
+serverObject = objectTable.get(new Integer(objectHandle));
+
+// We have to have a server object in order to invoke
+if (serverObject == null) {
+throwException(out, "Invalid server object");
+}
+else {
+
+try {
+
+// The response needs to always include the ordinal
+// that was invoked.
+out.writeInt(ordinal);
+_flush(out);
+
+// Invoke the method for the given ordinal
+_invokeMethod(serverObject, ordinal, in, out);
+}
+catch (Exception ex) {
+
+// Any exceptions thrown by invoking the server
+// method should be sent back to the client. Make
+// sure we are working with a 'pure' output stream
+// that does not contain any other data
+byteOut = new ByteArrayOutputStream();
+out = _getOutputStream(byteOut);
+throwException(out, ex.getMessage());
+}
+
+}
+}
+
+// Flush the contents of the output stream to the byte array
+_flush(out);
+
+// Get the buffer that is holding our response
+byte[] buf = byteOut.toByteArray();
+
+// Notify the client how much data is being sent
+resp.setContentLength(buf.length);
+
+// Send the buffer to the client
+ServletOutputStream servletOut = resp.getOutputStream();
+
+// Wrap up
+servletOut.write(buf);
+servletOut.close();
+}
+
+/**
+* Initialize the servlet. This is called once when the servlet is loaded.
+* It is guaranteed to complete before any requests are made to the servlet
+*
+* @param cfg Servlet configuration information
+*/
+
+public void init(ServletConfig cfg)
+throws ServletException
+{
+super.init(cfg);
+}
+
+/**
+* Destroy the servlet. This is called once when the servlet is unloaded.
+*/
+
+public void destroy()
+{
+super.destroy();
+}
+
+/**
+* Sends a packet to the client that will cause an exception to be thrown
+*
+* @param out Output stream
+* @param message Exception message
+*/
+public void throwException(DataOutput out, String message)
+throws IOException
+{
+// -2 is reserved for exceptions
+out.writeInt(-2);
+out.writeUTF(message);
+}　</pre>
+    <p>　　服务方法的基本流程如下：</p>
+    <p> 　　1.创建一个输入流读取客户端的请求，扩展基本servlet的服务器实例将创建特定类型的输入流。</p>
+    <p> 　　2.从会话中得出服务器方对象的实例。</p>
+    <p> 　　3.创建响应头。</p>
+    <p> 　　4.创建一个内存缓冲区以保存响应的数据组。由于我们需要在响应头中设置响应的长度，因此我们将响应数据放在一个连续的内存缓冲中以获取总长度。</p>
+    <p> 　　5.读取方法序号确定要调用服务器对象中的哪一个方法。序号-1直接被用来初始化一个新的服务器对象的实例并将这个实例放入会话对象中。</p>
+    <p> 　　6.调用方法。服务器实例将确定方法序号的值，读取所有的参数并调用指定的方法。方法一旦被调用完毕，服务器实例就会将所有返回值写入输入流以返回给客户端。</p>
+    7.将响应缓冲区发送给客户。
+    </p>
+    <h3><a name="1045" id="1045"></a>10.4.5 “List”遂道服务器</h3>
+    <p>　　编写实例“Lite”遂道服务器的服务器程序与编写实例“Lite”遂道客户端的程序非常相似。</p>
+    <pre class="code">package javaservlets.tunnel.server;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+
+/**
+* This is the base object to be extended by server objects
+* that are using HTTP lite tunneling.
+*/
+
+public abstract class TunnelLiteServer extends BaseTunnelServlet
+{
+/**
+* Creates an input stream to be used to read data sent from the client.
+*
+* @param servletInput Servlet input stream from the servlet request header
+* @return Input stream to read data from the client
+*/
+public DataInput _getInputStream(ServletInputStream servletInput)
+throws IOException
+{
+// Create a new DataInputStream for reading data from the client.
+return new DataInputStream(servletInput);
+}
+
+/**
+* Gets an output stream to be used for writing data to an internal buffer.
+* The buffer will be written to the client
+*
+* @param buffer Buffer to hold the output data
+* @return Output stream to write data to the buffer
+*/
+public DataOutput _getOutputStream(ByteArrayOutputStream buffer)
+throws IOException
+{
+// Create a new DataOutputStream for writing data to the buffer.
+return new DataOutputStream(buffer);
+}
+
+/**
+* Flushes the any buffered data to the output stream
+*
+* @param out Output stream to flush
+*/
+public void _flush(DataOutput out) throws IOException
+{
+// Flush the data to the buffer
+((DataOutputStream) out).flush();
+}
+}　</pre>
+    <p>　　注意我们要使用与我们在客户端中使用的相同的DataInputStream和DataOutputStream。</p>
+    <h3><a name="1046" id="1046"></a>10.4.6 遂道技术的实例：RemoteMathLite</h3>
+    <p>　　为了将这些部分组合起来，让我们来写一个提供简单数学运算(加、减、乘)的简单的applet程序。大任务，是不是？这个applet程序令人兴奋的地方就是所有的运算操作都是经由HTTP遂道而在服务器端运行的。</p>
+    <p>　编写服务器接口</p>
+    我总是喜欢从定义可以描述特定服务器对象的可用类的接口来开始工作。这对于我们现在的工作来说并不是必需的，而这一点将在第11章中我们开始使用自动创建的远程对象时变得非常重要。如果你使用
+    <p> 过CORBA语言，你一定已经写过接口定义语言(Interface Definition Language,IDL)来实现CORBA代理和代码存根。本质上，我们将作同样的事情。</p>
+    图10.10列出了我们的算术对象的接口部分定义。就像你所看到的一样，我们有三个方法：add，subtract，multiply。
+    <pre class="code">package javaservlets.tunnel;
+
+/**
+* This interface defines the methods available for performing math
+*/
+
+public interface MathInterface
+{
+/**
+* Adds two numbers
+*/
+int add(int a, int b);
+
+/**
+* Subtracts two numbers
+*/
+int subtract(int a, int b);
+
+/**
+* Multiplies two numbers
+*/
+int multiply(int a, int b);
+
+}</pre>
+    编写服务器对象
+    实现这三个算术方法并不是一件很困难的任务。要注意，即使是通过HTTP遂道来使用服务器对象，在实现这个对象的时候也不会有什么特殊的地方。
+    <pre class="code">package javaservlets.tunnel;
+
+/**
+* This class performs simple math functions in order to illustrate remote method tunneling.
+*/
+
+public class Math implements MathInterface
+{
+/**
+* Adds two numbers
+*/
+public int add(int a, int b)
+{
+return (a + b);
+}
+
+/**
+* Subtracts two numbers
+*/
+public int subtract(int a, int b)
+{
+return (a - b);
+}
+
+/**
+* Multiplies two numbers
+*/
+public int multiply(int a, int b)
+{
+return (a * b);
+}
+}</pre>
+    <p>　编写客户代理</p>
+    现在我们要实现客户代理。代理在Webster中定义是作为代理器或另一个替代器使用的个人认证的中介、函数或权限。我们所感兴趣的是创建一个取代实际算术对象的代理和在遂道中的那些方法与它们运行所在的服务器的通话情况。我们的客户算术代理(RemoteMathLiteClient)继承了我们的“Lite”客户类并实现了我们前面所定义的算术接口。这样，我们就要实现在接口中的每一个方法，在基本类中使用这些方法并将要发送给服务器的所有参数写入输出流。调用了远程方法之后，将从方法通话中返回一个输入流，通过它我们可以读取来自方法调用所产生的任何返回值。
+    <pre class="code">　package javaservlets.tunnel;
+
+import java.io.*;
+
+import javaservlets.tunnel.client.*; /**
+
+* This class implements the 'lite' client for tunneling
+
+* calls to the Math object.
+
+*/ public class RemoteMathLiteClient
+
+extends TunnelLiteClient
+
+implements MathInterface
+
+{ /**
+
+* Constructs a new RemoteMathLiteClient for the
+
+* given URL. The URL should contain the location of
+
+* servlet scripts (i.e. http://larryboy/servlet/).
+
+*/
+
+public RemoteMathLiteClient(String url)
+
+throws TunnelException, IOException
+
+{
+
+// Append the remote 'lite' server name
+
+url += "RemoteMathLiteServer"; // Set the URL
+
+_setURL(new java.net.URL(url)); // Initialize the client and server
+
+_initialize(); 
+
+}
+
+/**
+
+* Adds two numbers
+
+*下面的double类型在原文中是int 
+
+*/
+
+public double add(double a, double b)
+
+{
+
+double n = 0;
+
+try {
+
+// Create an internal buffer
+
+ByteArrayOutputStream baos = new ByteArrayOutputStream(); 
+
+// Create an output stream to write the request
+
+DataOutputStream out = (DataOutputStream) _createHeader(baos, 0); // Output the parameters
+
+out.writeDouble(a);
+
+out.writeDouble(b); // Invoke the method and read the response
+
+DataInputStream in = (DataInputStream) _invokeMethod(baos.toByteArray()); // Read the return value
+
+n = in.readDouble(); // Wrap up
+
+out.close();
+
+in.close();
+
+}
+
+catch (Exception ex) {
+
+ex.printStackTrace();
+
+}
+
+return n;
+
+} 　</pre>
+    <p>　　注意，初始化的例程指定了要调用的servlet程序的名字，在下一次我们还将创建它。在这里我们只列出了add方法的代码，而subtract和multiply方法除了在方法序号上不同以外，形式上是完全相同的。</p>
+    <p>　编写服务器代码存根</p>
+    <p> 　　服务器代码存根继承基本“Lite”服务器类并实现了_getNewInstance和_invokeMethod例程。与它的表面意义不同，代码存根是实际会被调用的servlet程序。代码存根所继承的基本类中的所有的servlet程序细节都被实现了。_getNewInstance方法将返回一个服务器对象的实例，这个实例将与Web服务器上的HTTP会话对象保持持续的联系。在我们的例子中，这个对象是一个实现了所有算术例程(加、减、乘)的算术对象。</p>
+    _invokeMethod方法的调用需要给出一个服务器对象的实例(从HTTP会话中得到)在服务器上调用的方法的方法序号，一个用于获取参数的输入流，一个用于返回结果的输出流。
+    </p>
+    <pre class="code">　package javaservlets.tunnel;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import javaservlets.tunnel.server.*;
+
+/**
+* This class implements the 'lite' server for tunneling remote Math method calls
+* 注意，下面的程序中的有关Double类型的代码在原文中用的是有关Int型的。
+*/
+
+public class RemoteMathLiteServer
+extends TunnelLiteServer
+{
+/**
+* Creates a new instance of the server object. 
+*
+* @return Instance of the server object
+*/
+public Object _getNewInstance()
+throws ServletException
+{
+return new Math();
+}
+
+/**
+* Invokes the method for the ordinal given. If the method
+* throws an exception it will be sent to the client. 
+*
+* @param Object Server object
+* @param ordinal Method ordinal
+* @param in Input stream to read additional parameters
+* @param out Output stream to write return values
+*/
+public void _invokeMethod(Object serverObject, int ordinal,
+DataInput in, DataOutput out)
+throws Exception
+{
+// Cast the server object
+Math math = (Math) serverObject;
+
+// Cast the input/output streams
+DataInputStream dataIn = (DataInputStream) in;
+DataOutputStream dataOut = (DataOutputStream) out;
+
+// Evaluate the ordinal
+switch (ordinal) {
+case 0: // add
+double a0 = dataIn.readDouble();
+double b0 = dataIn.readDouble();
+double n0 = math.add(a0, b0);
+out.writeDouble(n0);
+break;
+
+case 1: // subtract
+double a1 = dataIn.readDouble();
+double b1 = dataIn.readDouble();
+double n1 = math.subtract(a1, b1);
+out.writeDouble(n1);
+break;
+
+case 2: // multiply
+double a2 = dataIn.readDouble();
+double b2 = dataIn.readDouble();
+double n2 = math.multiply(a2, b2);
+out.writeDouble(n2);
+break;
+
+default:
+throw new Exception("Invalid ordinal: " + ordinal);
+}
+}
+}　</pre>
+    <p>　编写applet</p>
+    为了测试这个“Lite”远程对象，我使用JDK 1.0.2来证明它按所描述的方式工作。因此我们的MathLiteApplet将使用一个名为“handleEvent”的applet方法来替代JDK1.1的事件响应模型。不要着急，在本章的后面，我们将会编写一个使用更新事件模型的applet程序。由于本书并不是要讲applet编程的(现在已经有很多这方面的书籍)，我将不在applet程序开发的细节方面多费精力。这个applet程序的关键部分就是如何创建我们的远程对象。实际上，我们所要做的就是创建一个我们的客户代理的实例并将它与我们所定义的算术接口相连接。我们可以通过在接口上发出请求来调用一个远程方法而不必确切地知道(关心)它是一个远程方法。由于没有什么特殊的语法要学习，远程对象编程变得更加容易。只在要在方法中调用对象，客户代理隐藏了所有的工作过程。
+    
+    
+    图10.14 列出了applet程序的完整代码。一定要注意客户代理是如何实例化的和如何通过接口的一个简单调用来调用远程方法。
+    <pre class="code">　　package javaservlets.tunnel;
+
+import java.applet.*;
+import java.awt.*;
+
+/**
+* This calculator applet demonstrates how to use the tunnel clients to perform remote method calls using
+* JDK 1.0.2 style events.
+*/
+
+public class MathLiteApplet extends Applet
+{
+// Define the GUI widgets
+TextField output;
+Button b0;
+Button b1;
+Button b2;
+Button b3;
+Button b4;
+Button b5;
+Button b6;
+Button b7;
+Button b8;
+Button b9;
+Button dot;
+Button mult;
+Button add;
+Button sub;
+Button div;
+Button equals;
+Button clear;
+
+// Our memory area
+double mem;
+int opType;
+boolean newOp = false;
+
+// Operation types
+public static final int NONE = 0;
+public static final int MULTIPLY = 1;
+public static final int ADD = 2;
+public static final int SUBTRACT = 3;
+
+// Interface to our remote object
+MathInterface math;
+
+/**
+* Initialize the applet
+*/
+public void init()
+{
+setLayout(new BorderLayout(0, 5));
+
+// Create the output text area for the amount
+output = new TextField("0");
+output.disable();
+add("North", output);
+
+// Create the container for the buttons
+Panel p = new Panel();
+p.setLayout(new GridLayout(4, 4, 3, 3));
+
+b0 = new Button("0");
+b1 = new Button("1");
+b2 = new Button("2");
+b3 = new Button("3");
+b4 = new Button("4");
+b5 = new Button("5");
+b6 = new Button("6");
+b7 = new Button("7");
+b8 = new Button("8");
+b9 = new Button("9");
+dot = new Button(".");
+mult = new Button("X");
+add = new Button("+");
+sub = new Button("-");
+div = new Button("/");
+equals = new Button("=");
+clear = new Button("C");
+
+// First row 7 8 9 +
+p.add(b7);
+p.add(b8);
+p.add(b9);
+p.add(add);
+
+// Second row 4 5 6 -
+p.add(b4);
+p.add(b5);
+p.add(b6);
+p.add(sub);
+
+// Third row 3 2 1 X
+p.add(b1);
+p.add(b2);
+p.add(b3);
+p.add(mult);
+
+// Fourth row 0 . C =
+p.add(b0);
+p.add(dot);
+p.add(clear);
+p.add(equals);
+
+add("Center", p);
+
+// Create an instance of our remote object
+try {
+math = new RemoteMathLiteClient(getCodeBase() + "servlet/");
+}
+catch (Exception ex) {
+ex.printStackTrace();
+}
+}
+
+/**
+* Handle events
+*/
+public boolean handleEvent(Event event)
+{
+if ((event != null) && (event.id == event.ACTION_EVENT)) {
+if (event.target == b0) {
+append("0");
+}
+else if (event.target == b1) {
+append("1");
+}
+else if (event.target == b2) {
+append("2");
+}
+else if (event.target == b3) {
+append("3");
+}
+else if (event.target == b4) {
+append("4");
+}
+else if (event.target == b5) {
+append("5");
+}
+else if (event.target == b6) {
+append("6");
+}
+else if (event.target == b7) {
+append("7");
+}
+else if (event.target == b8) {
+append("8");
+}
+else if (event.target == b9) {
+append("9");
+}
+else if (event.target == dot) {
+append(".");
+}
+else if (event.target == mult) {
+compute(MULTIPLY);
+}
+else if (event.target == add) {
+compute(ADD);
+}
+else if (event.target == sub) {
+compute(SUBTRACT);
+}
+else if (event.target == equals) {
+compute();
+}
+else if (event.target == clear) {
+output.setText("0");
+mem = 0;
+opType = NONE;
+}
+}
+return false;
+}
+
+/**
+* Append the given number to the output text
+*/
+protected void append(String s)
+{
+// If this is the first value after an operation, clear the old value
+if (newOp) {
+newOp = false;
+output.setText("");
+}
+
+String o = output.getText();
+
+// Make sure it can fit
+if (o.length() >= 12) {
+return;
+}
+
+// First check if there is a decimal. If so, just tack the string on the end
+if (o.indexOf(".") >= 0) {
+o += s;
+}
+else {
+// Otherwise check to see if the number is zero. If it is, set the text to the given string
+if (o.equals("0")) {
+o = s;
+}
+else {
+o += s;
+}
+}
+
+output.setText(o);
+}
+
+/**
+* Compute the result
+*/
+protected void compute()
+{
+double current =
+Double.valueOf(output.getText()).doubleValue();
+
+switch (opType) {
+case MULTIPLY:
+if (math != null) {
+mem = math.multiply(mem, current);
+}
+break;
+case ADD:
+if (math != null) {
+mem = math.add(mem, current);
+}
+break;
+case SUBTRACT:
+if (math != null) {
+mem = math.subtract(mem, current);
+}
+break;
+default:
+mem = current;
+break;
+}
+
+opType = NONE;
+
+String s = "" + mem;
+
+// Truncate if a whole number
+if (s.endsWith(".0")) {
+s = s.substring(0, s.length() - 2);
+}
+output.setText(s);
+}
+
+protected void compute(int type)
+{
+// If there is a current operation, execute it
+if (opType != NONE) {
+compute();
+}
+else {
+mem = Double.valueOf(output.getText()).doubleValue();
+}
+
+opType = type;
+newOp = true;
+}
+}</pre>
+    <p>　观察它的运行状态</p>
+    在把servlet程序RemoteMathLiteServler加入到Web服务器中(通过别名方式)后，再写一个简单的HTML页面调用我们的applet程序，现在是测试它的时候了。不要忘记把applet和相关的类放置到你的Web服务器上，以保证客户端浏览器可以定位到它们(或者跳到第12章学习如何自动地创建一个描述applet程序的存根文件)。添加输入值并选择一个计算类型后，单击Calculate按钮将会发送一个给servlet程序的方法请求，这样就会调用在服务器端对象的相应的方法。这样，从服务器得到的返回值就会显示在结果域中。
+    <pre class="code">&lt;HTML>
+&lt;HEAD>
+&lt;TITLE>Math Lite Applet&lt;/TITLE>
+&lt;/HEAD>
+&lt;BODY>
+&lt;dir>
+&lt;h2>Simple calculator applet that makes remote method calls using HTTP tunneling.&lt;/h2>
+&lt;/dir>
+&lt;center>
+&lt;HR>
+&lt;APPLET WIDTH=150
+HEIGHT=150
+NAME="MathLiteApplet"
+CODE="javaservlets.tunnel.MathLiteApplet">&lt;/APPLET>
+&lt;/center>
+&lt;/BODY>
+&lt;/HTML> </pre>
+    <div class="rpindex"><a href="10-2.html"> 下一页</a><a href="9-2.html"> 上一页</a><a href="index.html">首页</a></div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

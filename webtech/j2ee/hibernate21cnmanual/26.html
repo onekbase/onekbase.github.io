@@ -1,0 +1,220 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="25.html"> 上一页</a><a href="27.html"> 下一页</a></div>
+<h2>Chapter 8. 操作持久化数据(Manipulating   Persistent Data)</h2>
+<h2>8.1. 创建一个持久化对象</h2>
+<p>对象（实体的实例）对一个特定的Session来说，要么是一个<em>瞬时（transient）</em>对象，要么是持久化（persistent）对象。刚刚创建的对象当然是瞬时的(注：后文中transient   object也称为临时对象)。session则提供了把瞬时实例保存（持久化）的服务: </p>
+<pre class="code">DomesticCat fritz = new DomesticCat();
+fritz.setColor(Color.GINGER);
+fritz.setSex('M');
+fritz.setName(&quot;Fritz&quot;);
+Long generatedId = (Long) sess.save(fritz);</pre>
+<pre class="code">DomesticCat pk = new DomesticCat();
+pk.setColor(Color.TABBY);
+pk.setSex('F');
+pk.setName(&quot;PK&quot;);
+pk.setKittens( new HashSet() );
+pk.addKitten(fritz);
+sess.save( pk, new Long(1234) );</pre>
+<p>单参数的save()方法为fritz生成了一个惟一标识符，并赋给这个对象。双参数的形式则使用给定的标识符保存pk。我们一般不鼓励使用双参数的形式，因为这可能会（隐含）使主键赋予业务含义。它有用的时候是在一些特殊场合下，比如使用Hibernate来持久化一个BMP实体bean. </p>
+<p>关联的对象可以用你喜欢的任何顺序持久化，除非有外键字段具有NOT   NULL的约束。决不会有外键约束冲突的危险。然而，如果在save()对象的时候用错了顺序，会触犯NOT NULL约束。 </p>
+<h2><a name="8-2" id="8-2"></a>8.2. 装载对象</h2>
+<p>如果你已知某个持久化实例的标识符，Session的load()方法让你取出它。第一种形式使用一个类对象作为参数，会把状态装载到另一个新创建的对象中去。第二个版本允许你给出一个实例，会在其中装载状态。把实例作为参数的形式在你准备把Hibernate和BMP实体bean一起使用的时候特别有用，它就是为此设计的。你也可以发现其他的用途（比如自己实现实例池等等）。 </p>
+<pre class="code">Cat fritz = (Cat) sess.load(Cat.class, generatedId);</pre>
+<pre class="code">// you need to wrap primitive identifiers
+long pkId = 1234;
+DomesticCat pk = (DomesticCat) sess.load( Cat.class, new Long(pkId) );</pre>
+<pre class="code">Cat cat = new DomesticCat();
+// load pk's state into cat
+sess.load( cat, new Long(pkId) );
+Set kittens = cat.getKittens();</pre>
+<p>请注意如果没有匹配的数据库记录，load()方法可能抛出无法恢复的exception。如果类是通过代理映射的，load()方法返回一个对象，这是一个未初始化的代理，并且直到你调用该对象的某方法时才会去访问数据库。这种行为方式在你喜欢创建一个指向某对象的关联，又不想真的从数据库中装载它的时候特别有用。 </p>
+<p>如果你不确定是否有匹配的行存在，你应该使用get()方法，它会立刻访问数据库，如果没有对应的行，返回null。 </p>
+<pre class="code">Cat cat = (Cat) sess.get(Cat.class, id);
+if (cat==null) {
+    cat = new Cat();
+    sess.save(cat, id);
+}
+return cat;</pre>
+<p>你可以用SQLSELECT ... FOR UPDATE装载对象。下一节有关于Hibernate LockMode的讨论。</p>
+<pre class="code">Cat cat = (Cat) sess.get(Cat.class, id, LockMode.UPGRADE);</pre>
+<p>注意，任何关联的实例或者包含的集合都<em>不会</em>被做为FOR UPDATE返回。 </p>
+<p>任何时候都可以使用refresh()方法重新装载对象和它的集合。如果你使用数据库触发器更改了对象的某些属性，这就很有用。 </p>
+<pre class="code">sess.save(cat);
+sess.flush(); //force the SQL INSERT
+sess.refresh(cat); //re-read the state (after the trigger executes)</pre>
+
+<div class="rpindex"><a href="27.html"> 下一页</a><a href="25.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

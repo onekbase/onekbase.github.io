@@ -1,0 +1,282 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+<div class="section" lang="zh-cn">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="transaction-strategies"></a>9.3.&#160;关键抽象</h2></div></div></div>
+<p>Spring事务抽象的关键是<span class="emphasis"><em>事务策略</em></span>的概念。这个概念由<code class="interfacename">org.springframework.transaction.PlatformTransactionManager</code>接口定义如下：</p>
+<pre class="code">public interface PlatformTransactionManager {
+
+    TransactionStatus getTransaction(TransactionDefinition definition)
+        throws TransactionException;
+
+    void commit(TransactionStatus status) throws TransactionException;
+
+    void rollback(TransactionStatus status) throws TransactionException;
+}</pre>
+<p>这首先是一个SPI接口，虽然它也可以在 <a href="ch09s06.html#transaction-programmatic-ptm" title="9.6.2.&#160;使用PlatformTransactionManager">编程</a> 中使用。注意按照Spring框架的哲学，<code class="interfacename">PlatformTransactionManager</code> 是一个 <span class="emphasis"><em>接口</em></span>。因而如果需要它可以很容易地被模拟和桩化。它也没有和一个查找策略如JNDI捆绑在一起：<code class="interfacename">PlatformTransactionManager</code> 的实现定义和其他Spring IoC容器中的对象一样。这个好处使得即使使用JTA，也是一个很有价值的抽象：事务代码可以比直接使用JTA更加容易测试。</p>
+<p>继续Spring哲学，可由任何 <code class="interfacename">PlatformTransactionManager</code> 的接口方法抛出的 <code class="exceptionname">TransactionException</code> 是unchecked exception（继承自<code class="exceptionname">java.lang.RuntimeException</code>）的。底层的事务失败几乎总是致命的。很少情况下应用程序代码可以从它们中恢复，不过应用开发者依然可以捕获并处理<code class="exceptionname">TransactionException</code>，他们可以自由决定怎么干。</p>
+<p>
+			<code class="methodname">getTransaction(..)</code>方法根据一个类型为 <code class="interfacename">TransactionDefinition</code> 的参数返回一个 <code class="interfacename">TransactionStatus</code> 对象。返回的 <code class="interfacename">TransactionStatus</code> 对象可能代表一个新的或已经存在的事务（如果在当前调用堆栈有一个符合条件的事务。如同J2EE事务环境，一个 <code class="interfacename">TransactionStatus</code> 也是和执行 <span class="bold"><strong>线程</strong></span> 绑定的）。</p>
+<p>
+			<code class="interfacename">TransactionDefinition</code>接口指定：</p>
+<div class="itemizedlist"><ul type="disc">
+<li><p>
+					<span class="bold"><strong>事务隔离</strong></span>：当前事务和其它事务的隔离的程度。例如，这个事务能否看到其他事务未提交的写数据？</p></li>
+<li><p>
+					<span class="bold"><strong>事务传播</strong></span>：通常在一个事务中执行的所有代码都会在这个事务中运行。但是，如果一个事务上下文已经存在，有几个选项可以指定一个事务性方法的执行行为：例如，简单地在现有的事务中继续运行（大多数情况）；或者挂起现有事务，创建一个新的事务。<span class="emphasis"><em>Spring提供EJB CMT中常见的事务传播选项</em></span>。</p></li>
+<li><p>
+					<span class="bold"><strong>事务超时</strong></span>: 事务在超时前能运行多久（自动被底层的事务基础设施回滚）。</p></li>
+<li><p>
+					<span class="bold"><strong>只读状态</strong></span>: 只读事务不修改任何数据。只读事务在某些情况下（例如当使用Hibernate时），是一种非常有用的优化。</p></li>
+</ul></div>
+<p>这些设置反映了标准概念。如果需要，请查阅讨论事务隔离层次和其他核心事务概念的资源：理解这些概念在使用Spring框架和其他事务管理解决方案时是非常关键的。</p>
+<p>
+			<code class="interfacename">TransactionStatus</code> 接口为处理事务的代码提供一个简单的控制事务执行和查询事务状态的方法。这个概念应该是熟悉的，因为它们在所有的事务API中是相同的:</p>
+<pre class="code">public interface TransactionStatus {
+
+    boolean isNewTransaction();
+
+    void setRollbackOnly();
+
+    boolean isRollbackOnly();
+}</pre>
+<p>使用Spring时，无论你选择编程式还是声明式的事务管理，定义一个正确的 <code class="interfacename">PlatformTransactionManager</code> 实现都是至关重要的。按照Spring的良好风格，这种重要定义都是通过IoC实现的。</p>
+<p>一般来说，选择<code class="interfacename">PlatformTransactionManager</code>实现时需要知道当前的工作环境，如JDBC、JTA、Hibernate等。下面的例子来自Spring示例应用——<span class="bold"><strong>jPetStore</strong></span>——中的<code class="literal">dataAccessContext-local.xml</code>文件，其中展示了一个局部<code class="interfacename">PlatformTransactionManager</code>实现是怎么定义的（仅限于纯粹JDBC环境）</p>
+<p>我们必须先定义一个JDBC <code class="interfacename">DataSource</code>，然后使用Spring的<code class="classname">DataSourceTransactionManager</code>，并传入指向<code class="interfacename">DataSource</code>的引用。</p>
+<pre class="code">&lt;bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"&gt;
+  &lt;property name="driverClassName" value="${jdbc.driverClassName}" /&gt;
+  &lt;property name="url" value="${jdbc.url}" /&gt;
+  &lt;property name="username" value="${jdbc.username}" /&gt;
+  &lt;property name="password" value="${jdbc.password}" /&gt;
+&lt;/bean&gt;</pre>
+<p>
+			<code class="interfacename">PlatformTransactionManager</code> bean的定义如下：</p>
+<pre class="code">&lt;bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;
+  &lt;property name="dataSource" ref="dataSource"/&gt;
+&lt;/bean&gt;</pre>
+<p>如果我们在J2EE容器里使用JTA，就像示例中 <code class="filename">'dataAccessContext-jta.xml'</code> 文件所示，我们将通过JNDI和Spring的 <code class="classname">JtaTransactionManager</code> 来获取一个容器管理的 <code class="interfacename">DataSource</code>。<code class="classname">JtaTransactionManager</code> 不需要知道 <code class="interfacename">DataSource</code> 和其他特定的资源，因为它将使用容器提供的全局事务管理。</p>
+<pre class="code">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd"&gt;
+
+  &lt;jee:jndi-lookup id="dataSource" jndi-name="jdbc/jpetstore"/&gt;
+
+  &lt;bean id="txManager" class="org.springframework.transaction.jta.JtaTransactionManager" /&gt;
+
+  <em class="lineannotation"><span class="lineannotation">&lt;!-- other <code class="literal">&lt;bean/&gt;</code> definitions here --&gt;</span></em>
+
+&lt;/beans&gt;</pre>
+<div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">注意</h3>
+<p>上面 <code class="literal">'dataSource'</code> 的bean定义使用了 <code class="literal">'jee'</code> 名称空间下的 <code class="literal">&lt;jndi-lookup/&gt;</code> 标签。想了解更多的配置信息, 请看 <a href="apa.html" title="附录&#160;A.&#160;XML Schema-based configuration">附录&#160;A, <i>XML Schema-based configuration</i></a>，关于 <code class="literal">&lt;jee/&gt;</code> 标签的信息，可参考 <a href="apas02.html#xsd-config-body-schemas-jee" title="A.2.3.&#160;The jee schema">第&#160;A.2.3&#160;节 “The <code class="literal">jee</code> schema”</a> 节。</p>
+</div>
+<p>我们也可以很容易地使用Hibernate局部事务，就像下面的Spring框架的 <span class="bold"><strong>PetClinic</strong></span> 示例应用中的例子一样）。这种情况下，我们需要定义一个Hibernate的 <code class="classname">LocalSessionFactoryBean</code>，应用程序从中获取到Hibernate <code class="interfacename">Session</code> 实例。</p>
+<p>
+			<code class="interfacename">DataSource</code> 的bean定义同上例类似（这里不再展示）。不过，如果是一个JEE容器提供的 <code class="interfacename">DataSource</code>，它将由JEE容器自身，而不是Spring框架来管理事务。</p>
+<p>这种情况中<code class="literal">'txManager'</code> bean的类型为 <code class="classname">HibernateTransactionManager</code>。同样地，<code class="classname">DataSourceTransactionManager</code> 需要一个指向 <code class="interfacename">DataSource</code> 的引用，而 <code class="classname">HibernateTransactionManager</code> 需要一个指向 <code class="interfacename">SessionFactory</code> 的引用。</p>
+<pre class="code">&lt;bean id="sessionFactory" class="org.springframework.orm.hibernate.LocalSessionFactoryBean"&gt;
+  &lt;property name="dataSource" ref="dataSource" /&gt;
+  &lt;property name="mappingResources"&gt;
+    &lt;list&gt;
+      &lt;value&gt;org/springframework/samples/petclinic/hibernate/petclinic.hbm.xml&lt;/value&gt;
+    &lt;/list&gt;
+  &lt;/property&gt;
+  &lt;property name="hibernateProperties"&gt;
+    &lt;value&gt;
+	  hibernate.dialect=${hibernate.dialect}
+	&lt;/value&gt;
+  &lt;/property&gt;
+&lt;/bean&gt;
+
+&lt;bean id="txManager" class="org.springframework.orm.hibernate.HibernateTransactionManager"&gt;
+  &lt;property name="sessionFactory" ref="sessionFactory" /&gt;
+&lt;/bean&gt;</pre>
+<p>我们可以简单地使用 <code class="classname">JtaTransactionManager</code> 来处理Hibernate事务和JTA事务，就像我们处理JDBC，或者任何其它的资源策略一样。</p>
+<pre class="code">&lt;bean id="txManager" class="org.springframework.transaction.jta.JtaTransactionManager"/&gt;</pre>
+<p>注意任何资源的JTA配置都是这样的，因为它们都是全局事务，可以支持任何事务性资源。</p>
+<p>
+			<em><span class="remark">
+			在所有这些情况下，应用程序代码根本不需要做任何改动。我们仅仅通过改变配置就可以改变事务管理方式，即使这些更改是在局部事务和全局事务间切换。
+			</span></em>
+		</p>
+</div>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

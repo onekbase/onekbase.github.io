@@ -1,0 +1,511 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>tomcat配制详解-server.xml详解</h1>
+<h2><span id="i">概述</span></h2>
+<h3><span id="i-2">项级元素<strong></strong></span></h3>
+<ol>
+  <li>Server：它代表整个容器,是Tomcat实例的顶层元素。子元素Service、GlobalNamingResources。</li>
+  <li>Service：关联一个或多个Connector组件，它们共享同一个处理外来请求的Engine。</li>
+</ol>
+<h3><span id="i-3">连接器</span></h3>
+<p>Connector：表示客户端和service之间的连接，代表与客户程序实际交互的组件,它负责接收客户请求,以及向客户返回响应结果。只有两种类型HTTP和AJP。</p>
+<h3><span id="i-4">容器元素<strong></strong></span></h3>
+<ol>
+  <li>Engine：表示指定service中的请求处理机，接收和处理来自Connector的请求。可以包含多个&lt;Host&gt;元素。</li>
+  <li>Context：表示一个web应用程序。</li>
+  <li>Host：表示一个虚拟主机。它包含了一个或多个Web应用。</li>
+</ol>
+<h3><span id="i-5">内嵌组件<strong></strong></span></h3>
+<ol>
+  <li>Listener：定义一个在特定事件发生时执行的组件，一般在Tomcat开启和停止时使用。可以嵌套在Server, Engine, Host或Context元素里。</li>
+  <li>GlobalNamingResources ：为Server定义全局的JNDI数据源。</li>
+  <li>Realm：表示存放用户名，密码及role的数据库。可以嵌套在Engine, Host或Context元素里。</li>
+  <li>Resources：代表web应用的静态数据源。可以嵌套在Context元素里。</li>
+  <li>Logger：表示日志，调试和错误信息。可以嵌套在Engine, Host或Context元素里。</li>
+  <li>Valve：功能与Logger差不多，其prefix和suffix属性解释和Logger 中的一样。可以嵌套在Engine, Host或Context元素里。</li>
+</ol>
+<h3><span id="i-6">总结<strong></strong></span></h3>
+<p>一个Server中可以有多个Service，Service定义了请求的处理主体。</p>
+<p>请求的接收者是Connector，每个Service可以有多个Connector，接收不同类型不同端口的请求。</p>
+<p>请求的处理主体是Engine，在一个Service中只有一个，和Connector平级，Service中定义的Connector都和这个Engine关联，Connector接收的请求都交给Engine处理。</p>
+<p>Engine可以定义多个虚拟主机Host，Host可以自动加载指定目录中的WEB应用，也可以手工指定多个WEB应用。WEB应用的定义用Context元素。</p>
+<p>内嵌组件可以嵌套在多种元素中，如Logger、Valve可以定义各级别的日志。</p>
+<h1>server</h1>
+
+<table width="94%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="19%">属性</td>
+      <td width="81%">解释</td>
+    </tr>
+    <tr>
+      <td width="19%">className</td>
+      <td width="81%">指定实现org.apache.catalina.Server接口的类.默认值为org.apache.catalina.core.StandardServer</td>
+    </tr>
+    <tr>
+      <td width="19%">port</td>
+      <td width="81%">指定一个端口，这个端口负责监听关闭tomcat的请求</td>
+    </tr>
+    <tr>
+      <td width="19%">shutdown</td>
+      <td width="81%">指定向端口发送的命令字符串</td>
+    </tr>
+  </tbody>
+</table>
+<p>它代表整个容器,是Tomcat实例的顶层元素。由org.apache.catalina.Server接口来定义.它包含一个或多个&lt;Service&gt;元素，并且它不能做为任何元素的子元素.</p>
+<pre class="brush:xml">&lt;Server port="8005" shutdown="SHUTDOWN" debug="0"&gt;</pre>
+<ol>
+  <li>port指定Tomcat监听shutdown命令端口.终止服务器运行时,必须在Tomcat服务器所在的机器上发出shutdown命令.该属性是必须的.</li>
+  <li>shutdown指定终止Tomcat服务器运行时,发给Tomcat服务器的shutdown监听端口的字符串.该属性必须设置</li>
+</ol>
+<h2>service</h2>
+
+<p>一个Service元素关联一个或多个Connector组件，它们共享同一个处理外来请求的Engine。</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="14%">属性</td>
+      <td width="85%">解释</td>
+    </tr>
+    <tr>
+      <td width="14%">className</td>
+      <td width="85%">指定实现org.apahce.catalina.Service接口的类.默认为org.apahce.catalina.core.StandardService。</td>
+    </tr>
+    <tr>
+      <td width="14%">name</td>
+      <td width="85%">指定service的名字</td>
+    </tr>
+  </tbody>
+</table>
+<p>该元素由org.apache.catalina.Service接口定义,它包含一个&lt;Engine&gt;元素,以及一个或多个&lt;Connector&gt;,这些Connector元素共享用同一个Engine元素 。</p>
+<pre class="brush:xml">&lt;Service name="Catalina"&gt;
+&lt;Service name="Apache"&gt;</pre>
+<p>第一个&lt;Service&gt;处理所有直接由Tomcat服务器接收的web客户请求.</p>
+<p>第二个&lt;Service&gt;处理所有由Apahce服务器转发过来的Web客户请求</p>
+<h2><span id="Connector">Connector</span></h2>
+<p>表示客户端和service之间的连接，由Connector接口定义。&lt;Connector&gt;元素代表与客户程序实际交互的组件,它负责接收客户请求,以及向客户返回响应结果。</p>
+<table width="94%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="22%">属性</td>
+      <td width="77%">解释</td>
+    </tr>
+    <tr>
+      <td width="22%">className</td>
+      <td width="77%">指定实现Connector接口的类。</td>
+    </tr>
+    <tr>
+      <td width="22%">port</td>
+      <td width="77%">指定服务器端要创建的端口号，并在这个断口监听来自客户端的请求</td>
+    </tr>
+    <tr>
+      <td width="22%">minProcessors</td>
+      <td width="77%">服务器启动时创建的处理请求的线程数，最小空闲连接线程数，用于提高系统处理性能，默认值为10</td>
+    </tr>
+    <tr>
+      <td width="22%">maxProcessors</td>
+      <td width="77%">最大可以创建的处理请求的线程数，最大连接线程数，即：并发处理的最大请求数，默认值为75</td>
+    </tr>
+    <tr>
+      <td width="22%">enableLookups</td>
+      <td width="77%">如果为true，则可以通过调用request.getRemoteHost()进行DNS查询来得到远程客户端的实际主机名，若为false则不进行DNS查询，而是返回其ip地址</td>
+    </tr>
+    <tr>
+      <td width="22%">redirectPort</td>
+      <td width="77%">表示当请求被传输保密或完整性保护的内容时，非SSL请求将会被重定向的端口.</td>
+    </tr>
+    <tr>
+      <td width="22%">acceptCount</td>
+      <td width="77%">指定当所有可以使用的处理请求的线程数都被使用时，可以放到处理队列中的请求数，超过这个数的请求将不予处理，应大于等于maxProcessors，默认值为100</td>
+    </tr>
+    <tr>
+      <td width="22%">connectionTimeout</td>
+      <td width="77%">网络连接超时，单位：毫秒。设置为0表示永不超时，这样设置有隐患的。通常可设置为30000毫秒。</td>
+    </tr>
+    <tr>
+      <td width="22%">Debug</td>
+      <td width="77%">表示该组件产生调试日志信息的详细级别, 数字越大，产生的日志信息越详细. 如果不指定, 该属性值将被设置为 (0). 但是调试信息是否出现在日志中，还进一步取决于log4j类别org.jboss.web.tomcat.tc5.Tomcat5的threshold</td>
+    </tr>
+    <tr>
+      <td width="22%">URIEncoding</td>
+      <td width="77%">设置请求编码格式</td>
+    </tr>
+  </tbody>
+</table>
+<pre class="brush:xml">&lt;Connector
+ port="8080"
+ maxThread="50"
+ minSpareThreads="25"
+ maxSpareThread="75"
+ enableLookups="false"
+ redirectPort="8443"
+ acceptCount="100"
+ debug="0"
+ connectionTimeout="20000"
+ disableUploadTimeout="true" /&gt;
+
+&lt;Connection
+ port="8009"
+ enableLookups="false"
+ redirectPort="8443"
+ debug="0"
+ protocol="AJP/1.3" /&gt;</pre>
+
+<p>第一个Connector元素定义了一个HTTP Connector,它通过8080端口接收HTTP请求;第二个Connector元素定义了一个JD Connector,它通过8009端口接收由其它服务器转发过来的请求.</p>
+<p>Connector元素常用属性：</p>
+<ol>
+  <li>className指定实现Connector接口的类。</li>
+  <li>enableLookups如果设为true,表示支持域名解析,可以把IP地址解析为主机名.WEB应用中调用request.getRemoteHost方法返回客户机主机名.默认值为true。</li>
+  <li>redirectPort指定转发端口.如果当前端口只支持non-SSL请求,在需要安全通信的场命,将把客户请求转发至SSL的redirectPort端口。</li>
+  <li>port设定Tcp/IP端口,默认值为8080,如果把8080改成80,则只要输入http://localhost即可，因为TCP/IP的默认端口是80。</li>
+  <li>address如果服务器有二个以上ip地址,此属性可以设定端口监听的ip地址.默认情况下,端口会监听服务器上所有的ip地址。</li>
+  <li>bufferSize设定由端口创建的输入流的缓存大小.默认值为2048byte。</li>
+  <li>protocol设定Http协议,默认值为HTTP/1.1。</li>
+  <li>maxThreads设定在监听端口的线程的最大数目,这个值也决定了服务器可以同时响应客户请求的最大数目.默认值为200。</li>
+  <li>acceptCount设定在监听端口队列的最大客户请求数量,默认值为10.如果队列已满,客户必须等待。</li>
+  <li>connectionTimeout定义建立客户连接超时的时间.如果为-1,表示不限制建立客户连接的时间。</li>
+</ol>
+<h2><span id="Engine">Engine</span></h2>
+<p>表示指定service中的请求处理机，接收和处理来自Connector的请求。</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="15%">属性</td>
+      <td width="84%">解释</td>
+    </tr>
+    <tr>
+      <td width="15%">className</td>
+      <td width="84%">指定实现Engine接口的类,默认值为StandardEngine</td>
+    </tr>
+    <tr>
+      <td width="15%">defaultHost</td>
+      <td width="84%">指定缺省的处理请求的主机名，它至少与其中的一个host元素的name属性值是一样的</td>
+    </tr>
+  </tbody>
+</table>
+<p>每个Service元素只能有一个Engine元素.元素处理在同一个&lt;Service&gt;中所有&lt;Connector&gt;元素接收到的客户请求.由org.apahce.catalina.Engine接口定义。</p>
+<pre class="brush:xml">&lt;Engine name="Catalina" defaultHost="localhost" debug="0"&gt;</pre>
+<ol>
+  <li>defaultHost指定处理客户的默认主机名,在&lt;Engine&gt;中的&lt;Host&gt;子元素中必须定义这一主机</li>
+  <li>name定义Engine的名字。</li>
+</ol>
+<p>在&lt;Engine&gt;可以包含如下元素&lt;Logger&gt;, &lt;Realm&gt;, &lt;Value&gt;, &lt;Host&gt;。</p>
+<h2><span id="Context">Context</span></h2>
+<p>表示一个web应用程序，通常为WAR文件，关于WAR的具体信息见servlet规范。</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="14%">属性</td>
+      <td width="85%">解释</td>
+    </tr>
+    <tr>
+      <td width="14%">className</td>
+      <td width="85%">指定实现Context的类,默认为StandardContext类。</td>
+    </tr>
+    <tr>
+      <td width="14%">docBase</td>
+      <td width="85%">应用程序的路径或者是WAR文件存放的路径</td>
+    </tr>
+    <tr>
+      <td width="14%">path</td>
+      <td width="85%">表示此web应用程序的url的前缀，这样请求的url为http://localhost:8080/path/****</td>
+    </tr>
+    <tr>
+      <td width="14%">reloadable</td>
+      <td width="85%">这个属性非常重要，如果为true，则tomcat会自动检测应用程序的/WEB-INF/lib 和/WEB-INF/classes目录的变化，自动装载新的应用程序，我们可以在不重起tomcat的情况下改变应用程序</td>
+    </tr>
+    <tr>
+      <td width="14%">useNaming</td>
+      <td width="85%">指定是否支持JNDI,默认值为了true。</td>
+    </tr>
+    <tr>
+      <td width="14%">cookies</td>
+      <td width="85%">指定是否通过Cookies来支持Session,默认值为true。</td>
+    </tr>
+  </tbody>
+</table>
+<p>它由Context接口定义.是使用最频繁的元素.每个&lt;Context元素代表了运行在虚拟主机上的单个Web应用.一个&lt;Host&gt;可以包含多个&lt;Context&gt;元素.每个web应用有唯一的一个相对应的Context代表web应用自身.servlet容器为每一个web应用创建一个ServletContext对象.</p>
+<pre class="brush:xml">&lt;Context path="/myweb" docBase="sample" debug="0" reloadbale="true"&gt;</pre>
+<ol>
+  <li>path指定访问Web应用的URL入口,注意/myweb,而不是myweb了事。</li>
+  <li>reloadable如果这个属性设为true, Tomcat服务器在运行状态下会监视在。WEB-INF/classes和Web-INF/lib目录CLASS文件的改运.如果监视到有class文件被更新,服务器自重新加载Web应用。</li>
+</ol>
+<p>在&lt;Context&gt;元素中可以包含如下元素&lt;Logger&gt;, &lt;Realm&gt;, &lt;Resource&gt;, &lt;ResourceParams&gt;。</p>
+<h2><span id="host">host</span></h2>
+<p>表示一个虚拟主机。</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="19%">属性</td>
+      <td width="80%">解释</td>
+    </tr>
+    <tr>
+      <td width="19%">className</td>
+      <td width="80%">指定实现Host接口的类.默认值为StandardHost。</td>
+    </tr>
+    <tr>
+      <td width="19%">name</td>
+      <td width="80%">指定主机名</td>
+    </tr>
+    <tr>
+      <td width="19%">appBase</td>
+      <td width="80%">应用程序基本目录，即存放应用程序的目录</td>
+    </tr>
+    <tr>
+      <td width="19%">unpackWARs</td>
+      <td width="80%">如果为true，则tomcat会自动将WAR文件解压，否则不解压，直接从WAR文件中运行应用程序</td>
+    </tr>
+    <tr>
+      <td width="19%">alias</td>
+      <td width="80%">指定主机别名,可以指定多个别名</td>
+    </tr>
+    <tr>
+      <td width="19%">autoDeploy</td>
+      <td width="80%">如果此项设为true,表示Tomcat服务处于运行状态时,能够监测appBase下的文件,如果有新有web应用加入进来,会自运发布这个WEB应用</td>
+    </tr>
+    <tr>
+      <td width="19%">deployOnStartup</td>
+      <td width="80%">如果此项设为true,表示Tomcat服务器启动时会自动发布appBase目录下所有的Web应用.如果Web应用中的server.xml没有相应的&lt;Context&gt;元素,将采用Tomcat默认的Context</td>
+    </tr>
+  </tbody>
+</table>
+<p>它由Host接口定义。一个Engine元素可以包含多个&lt;Host&gt;元素。每个&lt;Host&gt;的元素定义了一个虚拟主机。它包含了一个或多个Web应用。</p>
+<pre class="brush:xml">&lt;Host name="localhost"
+ debug="0"
+ appBase="webapps"
+ unpackWARs="true"
+ autoDeploy="true"&gt;</pre>
+<ol>
+  <li>appBase指定虚拟主机的目录,可以指定绝对目录,也可以指定相对于&lt;CATALINA_HOME&gt;的相对目录.如果没有此项,默认为&lt;CATALINA_HOME&gt;/webapps</li>
+  <li>unpackWARs如果此项设置为true,表示把WEB应用的WAR文件先展开为开放目录结构后再运行.如果设为false将直接运行为WAR文件</li>
+</ol>
+<p>在&lt;Host&gt;元素中可以包含如下子元素&lt;Logger&gt;, &lt;Realm&gt;, &lt;Value&gt;, &lt;Context&gt;</p>
+<h2><span id="Logger">Logger</span></h2>
+<p>表示日志，调试和错误信息</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="19%">属性</td>
+      <td width="80%">解释</td>
+    </tr>
+    <tr>
+      <td width="19%">className</td>
+      <td width="80%">指定logger使用的类名，此类必须实现org.apache.catalina.Logger 接口</td>
+    </tr>
+    <tr>
+      <td width="19%">prefix</td>
+      <td width="80%">指定log文件的前缀</td>
+    </tr>
+    <tr>
+      <td width="19%">suffix</td>
+      <td width="80%">指定log文件的后缀</td>
+    </tr>
+    <tr>
+      <td width="19%">timestamp</td>
+      <td width="80%">如果为true，则log文件名中要加入时间，如下例:localhost_log.2001-10-04.txt</td>
+    </tr>
+  </tbody>
+</table>
+<h2><span id="Realm">Realm</span></h2>
+<p>表示存放用户名，密码及role的数据库。</p>
+<table width="101%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="19%">属性</td>
+      <td width="80%">解释</td>
+    </tr>
+    <tr>
+      <td width="19%">className</td>
+      <td width="80%">指定Realm使用的类名，此类必须实现org.apache.catalina.Realm接口</td>
+    </tr>
+  </tbody>
+</table>
+<h2><span id="Valve">Valve</span></h2>
+<p>功能与Logger差不多，其prefix和suffix属性解释和Logger 中的一样</p>
+<table width="98%" border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td width="13%">属性</td>
+      <td width="86%">解释</td>
+    </tr>
+    <tr>
+      <td width="13%">className</td>
+      <td width="86%">指定Valve使用的类名，如用org.apache.catalina.valves.AccessLogValve类可以记录应用程序的访问信息</td>
+    </tr>
+    <tr>
+      <td width="13%">directory</td>
+      <td width="86%">指定log文件存放的位置</td>
+    </tr>
+    <tr>
+      <td width="13%">pattern</td>
+      <td width="86%">有两个值，common方式记录远程主机名或ip地址，用户名，日期，第一行请求的字符串，HTTP响应代码，发送的字节数。combined方式比common方式记录的值更多</td>
+    </tr>
+  </tbody>
+</table>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

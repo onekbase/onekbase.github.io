@@ -1,0 +1,277 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="8.html"> 上一页</a><a href="10.html"> 下一页</a></div>
+
+    <h2><a name="session-configuration-s4" id="session-configuration-s4"></a>3.4. Hibernate提供的JDBC连接</h2>
+    <p>另一种方法就是，你可以让SessionFactory替你打开连接。SessionFactory必须事先知道连接的参数，有几种不同的方法设置参数： </p>
+
+    <ol type="1" compact="compact">
+      <li>
+        <p>传递一个java.util.Properties到Configuration.setProperties()方法。 </p>
+      </li>
+      <li>
+        <p>在classpath的根目录中提供hibernate.properties文件。 </p>
+      </li>
+      <li>
+        <p>通过java -Dproperty=value指定使用系统属性。 </p>
+      </li>
+      <li>
+        <p>在hibernate.cfg.xml文件中包含&lt;property&gt;元素。详情见后。 </p>
+      </li>
+    </ol>
+    <p>如果你使用这种方法，打开一个Session是非常简单的： </p>
+<pre class="code">Session sess = sessions.openSession(); // obtain a JDBC connection and
+                                       // instantiate a new Session
+// start a new transaction (optional)
+Transaction tx = sess.beginTransaction();</pre>
+<p>所有的Hibernate属性名和约束都在net.sf.hibernate.cfg.Environment类中定义。我们讨论一下最重要的几项设置： </p>
+<p>假若你设置了如下的属性，Hibernate会使用java.sql.DriverManager来得到连接，并建立连接池： </p>
+<p><strong>Table 3.1. Hibernate JDBC属性</strong></p>
+    <table summary="Hibernate JDBC属性" border="1">
+      <colgroup>
+      <col />
+      <col />
+    </colgroup>
+      <thead>
+        <tr>
+          <th>属性名</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>hibernate.connection.driver_class</td>
+          <td><em>jdbc驱动类</em></td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.url</td>
+          <td><em>jdbc URL</em></td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.username</td>
+          <td><em>数据库用户名</em></td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.password</td>
+          <td><em>数据库用户密码</em></td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.pool_size</td>
+          <td><em>连接池容量最大数</em></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Hibernate的连接池算法是非常可配置的。它的用途是让你上手，但是<em>并非让你在生产系统中使用的</em>,甚至不是用来做性能测试的。 </p>
+<p>C3P0是随Hibernate发行包一起发布的一个开放源代码JDBC连接池，你可以在lib   目录中找到。假若你设置了hibernate.c3p0.* 属性，Hibernate会使用内置的C3P0ConnectionProvider作为连接池。 对Apache   DBCP和Proxool的支持也是内置的。你必须设置hibernate.dbcp.*属性   （DBCP连接池属性）和hibernate.dbcp.ps.* (DBCP 语句缓存属性)才能使用DBCPConnectionProvider。要知道它们的含义，请查阅Apache   commons-pool的文档。如果你想要用Proxool,你需要设置hibernate.proxool.*系列属性。 </p>
+<p>在Application Server内使用时，Hibernate可以从JNDI中注册的javax.sql.Datasource取得连接。需要设置如下属性： </p>
+<div>
+  <p><strong>Table 3.2. Hibernate 数据源（Datasource）属性</strong></p>
+  <table summary="Hibernate 数据源（Datasource）属性" border="1">
+      <colgroup>
+      <col />
+      <col />
+    </colgroup>
+      <thead>
+        <tr>
+          <th>属性名</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>hibernate.connection.datasource</td>
+          <td><em>datasource JNDI 名字</em></td>
+        </tr>
+        <tr>
+          <td>hibernate.jndi.url</td>
+          <td><em>JNDI 提供者的URL</em> (可选) </td>
+        </tr>
+        <tr>
+          <td>hibernate.jndi.class</td>
+          <td><em>JNDI InitialContextFactory的类名</em> (可选) </td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.username</td>
+          <td><em>数据库用户名</em> (可选) </td>
+        </tr>
+        <tr>
+          <td>hibernate.connection.password</td>
+          <td><em>数据库密码</em> (可选) </td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+<div class="rpindex"><a href="10.html"> 下一页</a><a href="8.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,204 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="35.html"> 上一页</a><a href="37.html"> 下一页</a></div>
+    <h1><a href="index.html">Hibernate Gossip:&nbsp;容器的排序</a></h1>
+    从数据库的观点来看，Set、Map、Bag是无序的，而List是有序的，这边所谓的无序或有序，是指将容器中对象储存至数据库时，是否依容器对象中的顺序来储存。<br />
+    <br />
+    然而从数据库取得数据之后，您也许会希望Set、Map等容器中的对象可以依一定的顺序来排列，您可以从两个层次来容器中的对象排序，一是在加载数据后于JVM中排序，另一是在数据库中直接使用order by子句来排序。<br />
+    <br />
+    以 Set 这篇文章中的范例来作说明，要在JVM中就数据进行排序，您可以在映像文件中使用sort属性来定义容器的排序，这适用于Set与Map，例如：<br />
+<h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br />        ....<br />        &lt;set name=&quot;emails&quot; table=&quot;email&quot; sort=&quot;natural&quot;&gt; <br />            &lt;key column=&quot;id&quot;/&gt; <br />            &lt;element type=&quot;java.lang.String&quot; <br />                     column=&quot;address&quot;/&gt; <br />        &lt;/set&gt; <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    sort=&quot;natural&quot;表示使用对象的comparaTo()方法来进行排序，容器中的对象上必须有实作java.lang.Comparable
+    接口，例如String就有实作java.lang.Comparable接口，结果会使用字典顺序来排列容器中的对象。<br />
+    <br />
+    您可以实现自己的排序方式，只要定义一个类别来实作java.util.Comparator接口，例如：<br />
+<h5>CustomComparator.java</h5>
+    <pre class="code">package onlyfun.caterpillar;<br /><br />import java.util.Comparator;<br /><br />public class CustomComparator implements Comparator {<br />    public int compare(Object o1, Object o2) {<br />        if (((String) o1).equals(o2)) <br />            return 0;<br />        return ((Comparable) o1).compareTo(o2) * -1;<br />    }<br />}</pre>
+    在自订的Comparator中，如果两个对象的顺序相同会传回0，而为了方便比较对象，要求传入的对象必须实作Comparable接口（例如
+    String对象就有实作Comparable接口），范例中只是简单的将原来compareTo()传回的值乘以负一，如此就可以简单的让排列顺序相
+    反，接着可以在映像文件中指定自订的Comparator类别：<br />
+<h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br />        ....<br />        &lt;set name=&quot;emails&quot; table=&quot;email&quot; <br />             sort=&quot;onlyfun.caterpillar.CustomComparator&quot;&gt;<br />            &lt;key column=&quot;id&quot;/&gt; <br />            &lt;element type=&quot;java.lang.String&quot; <br />                     column=&quot;address&quot;/&gt; <br />        &lt;/set&gt; <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    Bag与List并不适用于这种方式。<br />
+    <br />
+    另一个排序的方式则是在数据库中进行，直接使用order by子句来排序，这可以在映像文件中使用order-by属性来指定，例如：<br />
+<h5>User.hbm.xml</h5>
+    <pre class="code">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; <br />&lt;!DOCTYPE hibernate-mapping <br />    PUBLIC &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot; <br />    &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot;&gt; <br /><br />&lt;hibernate-mapping&gt; <br /><br />    &lt;class name=&quot;onlyfun.caterpillar.User&quot; table=&quot;user&quot;&gt; <br />        ....<br />        &lt;set name=&quot;emails&quot; table=&quot;email&quot; order-by=&quot;address desc&quot;&gt; <br />            &lt;key column=&quot;id&quot;/&gt; <br />            &lt;element type=&quot;java.lang.String&quot; <br />                     column=&quot;address&quot;/&gt; <br />        &lt;/set&gt; <br />    &lt;/class&gt; <br /><br />&lt;/hibernate-mapping&gt;</pre>
+    观察Hibernate所使用的SQL可以看到order by子句：<br />
+    <pre class="code">Hibernate: select emails0_.id as id0_, emails0_.address as address0_ from email emails0_ where emails0_.id=? order by emails0_.address desc</pre>
+
+<div class="rpindex"><a href="37.html"> 下一页</a><a href="35.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

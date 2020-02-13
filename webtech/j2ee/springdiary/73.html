@@ -1,0 +1,228 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="72.html"> 上一页</a><a href="74.html"> 下一页</a></div>
+<h1>ThrowawayController </h1>
+<p>org.springframework.web.servlet.mvc.throwaway.ThrowawayController 并不在 Spring 的 
+  Controller 继承架构中，而是一个独立的介面定义，实作该介面的类别不是像 Spring 中对 Controller 以单例的方式产生  并重复使用，ThrowawayController 在每一次请求时都要产生新 的物件，且用了就丢，不会重复使用它，这也是它名称上带有 Throwaway 的原因 
+（ThrowawayController 提供的是比较像 Webwork 形式的 Action 物件）。</p>
+<p> ThrowawayController  介面的定义如下： </p>
+<pre class="code">package org.springframework.web.servlet.mvc.throwaway;
+import org.springframework.web.servlet.ModelAndView;
+public interface ThrowawayController { 
+	ModelAndView execute() throws Exception;
+}</pre>
+<p> 实作 ThrowawayController 介面的类别必须实作  execute()方法，可以看到 execute()方法中不 带任何的参数，这使得  ThrowawayController 易于测试，不需要像 Controller 必须获取  HttpServletRequest、 HttpServletResponse 的实例。 </p>
+<p> execute()方法上没有任何的参数，如果要收集参数的话，ThrowawayController 本身也兼具 Command 的作用（这点熟悉 Webwork 的人并不陌生），例如可以如下实作一个 ThrowawayController： </p>
+<pre class="code">....
+public class SomeController implements ThrowawayController {
+	private String someParam;
+	public ModelAndView execute() throws Exception {
+		....
+		return new ModelAndView(...);
+	}
+	public void setSomeParam(String someParam) {
+		this.someParam = someParam;
+	}
+	....
+}</pre>
+<p> 当请求参数中带有&quot;someParam&quot;的参数时，会将之设定至 ThrowawayController 对应的 
+  setSomeParam()方法中。 
+在设定 Bean 定义档中必须注意的是，ThrowawayController 必须将&quot;singleton&quot;属性设定为&quot;false&quot;，即每一次的请求要产生一个新的实例，用过即丢，例如：</p>
+<pre class="code">...
+&lt;bean id="someController" 
+				class="onlyfun.caterpillar.SomeController" s
+				ingleton="false"&gt;
+	....
+&lt;/bean&gt;
+
+</pre>
+<p>DispatcherServlet 预设会使用 
+  org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter，这使得 Controller 继承体系下的  Controller 类别都可以直接为  DispatcherServlet 使用，但为了要告 诉 DispatchServlet 您将使用 ThrowawayController，您必须在 Bean 定义档中宣告，例如： </p>
+<pre class="code">...
+&lt;bean id="throwawayHandler" 
+			class="org.springframework.web.servlet.mvc.
+				→throwaway.ThrowawayControllerHandlerAdapter"/&gt;
+...
+&lt;bean id="simpleHandler" 
+			class="org.springframework.web.servlet.
+				→mvc.SimpleControllerHandlerAdapter"/&gt;
+
+</pre>
+<p>在上面的设定中，DispatcherServlet 可以使用 ThrowawayController，如果您要混合  Controller 
+介面的继承体系，则再加入 SimpleControllerHandlerAdapter，如此两种 Handler 就都可以混 合使用。
+</p>
+
+<div class="rpindex"><a href="74.html"> 下一页</a><a href="72.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

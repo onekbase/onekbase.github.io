@@ -1,0 +1,212 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>Tomcat虚拟主机配制</h1>
+<p>虚拟主机是一种在一个web服务器上服务多个域名的机制，对每个域名而言，都好象独享了整个主机。实际上，大多数的小型商务网站都是采用虚拟主机实现的，这主要是因为虚拟主机能直接连接到Internet并提供相应的带宽，以保障合理的访问响应速度，另外虚拟主机还能提供一个稳定的固定IP。也就是猛工说的主机头。</p>
+<p>建立两个Web项目</p>
+<p>分别为s1、s2，其index.jsp分别显示&ldquo;This is s1&rdquo;，&ldquo;This is s2&rdquo;，在Tomcat目录下建立一个文件夹host，和webapps并级，把这两个应用发布到host目录下</p>
+<p>设置本地主机域名</p>
+<p>为了测试多域名指向一个IP能实现虚拟主机，本地测试时需要配置下Hosts，hosts文件在系统目录C:\WINDOWS\system32\drivers\etc\下，如果是Win7，需要使用管理员身份打开编辑器才能修改。加入两行内容</p>
+<pre class="brush:other">127.0.0.1 s1.iteeducom
+127.0.0.1 s2.iteedu.com</pre>
+<p>修改Tomcat配置文件server.xml</p>
+<p>server.xml的配置信息见tomcat的文档，我这里只说具体相关的</p>
+<p>host (表示一个虚拟主机):</p>
+<ol>
+  <li>name 指定主机名</li>
+  <li>appBase 应用程序基本目录，即存放应用程序的目录</li>
+  <li> unpackWARs 如果为true，则tomcat会自动将WAR文件解压，否则不解压，直接从WAR文件中运行应用程序</li>
+</ol>
+<p>Context (表示一个web应用程序，通常为WAR文件，关于WAR的具体信息见servlet规范):</p>
+<ol>
+  <li>docBase 应用程序的路径或者是WAR文件存放的路径</li>
+  <li>path 表示此web应用程序的url的前缀,这样请求的url为http://localhost/path/****</li>
+</ol>
+<p>在server.xml里默认有一个Host节点，和它并级添加</p>
+<pre class="brush:xml">&lt;Host name="s1.iteedu.com" 
+ appBase="host/s1"
+ unpackWARs="true"
+ autoDeploy="true"
+ xmlValidation="false"
+ xmlNamespaceAware="false"&gt;
+              &lt;Context docBase="." path="" reloadable="true" /&gt;
+&lt;/Host&gt;
+&lt;Host name="s2.iteedu.com"
+ appBase="host/s2"
+ unpackWARs="true"
+ autoDeploy="true"
+ xmlValidation="false"
+ xmlNamespaceAware="false"&gt;
+             &lt;Context docBase="." path="" reloadable="true" /&gt;
+&lt;/Host&gt;</pre>
+
+<p>注意：在这里，我把两个应用发布到host目录下了，没有发布到webapps下面，并且指定appBase时是直接指到host/s1、host/s2了，如果把s1、s2放到webapps下，那么就需要把s1.thunisoft.com的appBase指向webapps，这样会造成重复载入应用   下面启动Tomcat服务 在浏览器中输入http://s1.iteedu.com/、http://s2.iteedu.com/ 即可看到效果</p>
+<p>OK，综上，可以看到我们只要添加一节Host即可。</p>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

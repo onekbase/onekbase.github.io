@@ -1,0 +1,282 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="27.html"> 上一页</a><a href="29.html"> 下一页</a></div>
+<h2>8.4. 更改在当前session中保存或者装载的对象</h2>
+<p><em>持久化实例</em>（就是通过session装载、保存、创建或者查询出的对象）可以被程序操作，所做的任何修改都会在Session<em>清洗（flushed）</em>的时候被持久化（参见后面的“flushing”部分）。所以最直接的更改一个对象的方法就是load()它，然后直接修改即可。 </p>
+<pre class="code">DomesticCat cat = (DomesticCat) sess.load( Cat.class, new Long(69) );
+cat.setName(&quot;PK&quot;);
+sess.flush();  // changes to cat are automatically detected and persisted</pre>
+<p>有些时候这种编程模式显得效率不高，因为它需要在同一个session中先使用SQL SELECT(来装载对象),又有一个SQL UPDATE（来把修改的状态写回）。因此，Hibernate提供了另一种方式。 </p>
+<h2><a name="8-5" id="8-5"></a>8.5. 更改在以前session中保存或者装载的对象</h2>
+<p>很多程序需要在一个事务中获取对象，然后发送到界面层去操作，用一个新的事务来保存修改。（在高同步访问的环境中使用这种方式，经常使用附带版本的数据来保证事务独立性。）这种方法需要和上一节所描述的略微不同的编程模型。Hibernate支持这种模型，因为它提供了Session.update()方法。 </p>
+<pre class="code">// in the first session
+Cat cat = (Cat) firstSession.load(Cat.class, catId);
+Cat potentialMate = new Cat();
+firstSession.save(potentialMate);
+
+// in a higher tier of the application
+cat.setMate(potentialMate);
+
+// later, in a new session
+secondSession.update(cat);  // update cat
+secondSession.update(mate); // update mate</pre>
+<p>如果拥有catId标识符的Cat在试图update它之前已经被secondSession装载了，会抛出一个异常。 </p>
+<p>对于给定的临时实例，<em>当且仅当</em> 它们触及的其他临时实例需要保存的时候，   应用程序应该对它们分别各自使用update()。（自动管理生命周期的对象(lifecycle   object)除外。） </p>
+<p>Hibernate用户曾经要求有一个通用的方法，可以为新建的临时实例生成标识符并保存，或者保存已经存在标识符的临时实例的改动。saveOrUpdate()方法就是用来提供这个功能的。 </p>
+<p>Hibernate通过对象的标识符的值（或version,或timestamp时间戳)来分辨这是一个“新”(未保存过的）实例，还是一个“已存在”（已经保存或者从先前的session中装载的）的实例。id映射中的unsaved-value(或&lt;version&gt;,或 &lt;timestamp&gt;)用来指定哪个值被用于表示“新”实例。 </p>
+<pre class="code">&lt;id name=&quot;id&quot; type=&quot;long&quot; column=&quot;uid&quot; unsaved-value=&quot;null&quot;&gt;
+    &lt;generator class=&quot;hilo&quot;/&gt;
+&lt;/id&gt;</pre>
+<p>unsaved-value允许的取值包括： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>any - always save 永远保存 </p>
+  </li>
+  <li>
+    <p>none - always update 永远更新 </p>
+  </li>
+  <li>
+    <p>null - 当标识符是空的时候保存（默认情况） </p>
+  </li>
+  <li>
+    <p>valid identifier value (合法的标识符值)- 当标识符是null或者这个给定的值时保存 </p>
+  </li>
+  <li>
+    <p>undefined - 对于version 或 timestamp来说的默认值。此时使用标识符检查。(原文: the default for version or timestamp, then identifier   check is used.参见下文有进一步描述.) </p>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<pre class="code">// in the first session
+Cat cat = (Cat) firstSession.load(Cat.class, catID);
+
+// in a higher tier of the application
+Cat mate = new Cat();
+cat.setMate(mate);
+
+// later, in a new session
+secondSession.saveOrUpdate(cat);   // update existing state (cat has a non-null id)
+secondSession.saveOrUpdate(mate);  // save the new instance (mate has a null id)</pre>
+<p>saveOrUpdate()的用法和语义看来对初学者来说容易造成困惑。首先，如果你还没有试图在另一个新session中使用来自原session的实例，你根本就不需要使用update()或者saveOrUpdate()方法。有一些程序完全不需要使用这些方法。 </p>
+<p>通常，update()或saveorUpdate()方法在下列情形下使用： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>程序在前面的session中装载了对象 </p>
+  </li>
+  <li>
+    <p>对象被传递到UI（界面）层 </p>
+  </li>
+  <li>
+    <p>对该对象进行了一些修改 </p>
+  </li>
+  <li>
+    <p>对象被传递回业务层 </p>
+  </li>
+  <li>
+    <p>应用程序在第二个session中调用update()保存修改 </p>
+  </li>
+</ul>
+<p>saveOrUpdate()完成了如下工作： </p>
+<ul type="disc" compact="compact">
+  <li>
+    <p>如果对象已经在这个session中持久化过了，什么都不用做 </p>
+  </li>
+  <li>
+    <p>如果对象没有标识值，调用save()来保存它 </p>
+  </li>
+  <li>
+    <p>如果对象的标识值与unsaved-value中的条件匹配，调用save()来保存它 </p>
+  </li>
+  <li>
+    <p>如果对象使用了版本(version或timestamp),那么除非设置unsaved-value=&quot;undefined&quot;,版本检查会发生在标识符检查之前. </p>
+  </li>
+  <li>
+    <p>如果这个session中有另外一个对象具有同样的标识符，抛出一个异常 </p>
+  </li>
+</ul>
+<h2><a name="8-6" id="8-6"></a>8.6. 把在先前的session中保存或装载的对象重新与新session建立关联(reassociate)</h2>
+<p>lock()方法是用来让应用程序把一个未修改的对象重新关联到新session的方法。 </p>
+<pre class="code">//just reassociate: &#30452;&#25509;&#37325;&#26032;&#20851;&#32852;
+sess.lock(fritz, LockMode.NONE);
+//do a version check, then reassociate:  &#36827;&#34892;&#29256;&#26412;&#26816;&#26597;&#21518;&#20851;&#32852;
+sess.lock(izi, LockMode.READ);
+//do a version check, using SELECT ... FOR UPDATE, then reassociate: &#20351;&#29992;SELECT ... FOR UPDATE&#36827;&#34892;&#29256;&#26412;&#26816;&#26597;&#21518;&#20851;&#32852;
+sess.lock(pk, LockMode.UPGRADE);</pre>
+<h2><a name="8-7" id="8-7"></a>8.7. 删除持久化对象</h2>
+<p>使用Session.delete()会把对象的状态从数据库中移除。当然，你的应用程序可能仍然持有一个指向它的引用。所以，最好这样理解：delete()的用途是把一个持久化实例变成临时实例。 </p>
+<pre class="code">sess.delete(cat);</pre>
+<p>你可以通过传递给delete()一个Hibernate 查询字符串来一次性删除很多对象。 </p>
+<p>你现在可以用你喜欢的任何顺序删除对象，不用担心外键约束冲突。当然，如果你搞错了顺序，还是有可能引发在外键字段定义的NOT NULL约束冲突。 </p>
+<div class="rpindex"><a href="29.html"> 下一页</a><a href="27.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
