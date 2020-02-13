@@ -1,0 +1,248 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="041.html"> 上一页</a><a href="048.html"> 下一页</a></div><CENTER>
+<H1>虚拟设备驱动程序初步</H1></CENTER>
+在本教程里，我假定读者对诸如虚8086模式，调页，GDT,LDT,IDT之类的INTEL 80x86保护模式的操作比较熟悉。如果你不了解这些，那你要先在 http://developer.intel.com/design/pentium/manuals/阅读INTEL的文档。 
+
+<H3>内容：</H3>
+<p>Windows95是一个运行在最高级特权，第0层级别的多线程操作系统。所有的应用程序都运行在最低级特权，第3层级别上。这样就限制了应用程序对系统的操作。它们不能使用cpu特权指令，不能直接访问I/O端口，等等。你对gdi32,kernal32和user32这三个大的系统组件一定很熟悉。你肯定会认为这样重要的代码段一定是在第0层级别下运行的。但是实际上，它们和其他的应用程序一样，是在第三层级别下运行的。这就是说它们并不比Windows计算器，或者扫雷游戏有更多的权限。系统的控制实权掌握在虚拟级管理器(VMM) 和虚拟设备驱动程序(VxD)手中。 </p>
+<p>这一切都是由dos引起的。在Window 3.x的时代，在市场上有很多成功的dos软件。Windows 3.x必须同时运行普通的Windows程序和dos程序，否则，它就会失去市场。 <BR>
+  这个局面是很难处理的，因为dos程序和Windows程序有本质的不同。dos程序认为它们拥有系统的<I>一切：</I>键盘，cpu，内存，硬盘等等。dos程序不知道怎样和其他程序合作，而Windows程序(从那时候起)是可靠的多任务合作系统。也就是每个Windows程序都必须通过GetMessage或PeekMessage来和其他程序进行交流。 </p>
+<p> 解决办法就是，在一个8086虚拟机上运行所有的dos程序，而在另一个叫做系统虚拟机的虚拟机上运行其他所有的Windows程序。Windows负责把cpu运算时间轮流的分给每个虚拟机。这样，在Windows 3.x里。Windows程序之间用的是合作多任务，而虚拟机之间用的是优先级多任务。 </p>
+<p> 什么是一个虚拟机？一个虚拟机是被软件创建的一个假象。一个虚拟机和在它上面运行的程序交互，就像这个程序是在真正的机器上运行一样。这样，一个程序不知道也不关心自己是否是在虚拟机上运行。只要虚拟机准确的像一个真的机器一样响应程序，我们就可以把它当成一个真正的机器。 </p>
+<p> 你可以把虚拟机这种实机器和软件之间的接口看作一种API。这种不寻常的API由中断，BIOS调用和I/O端口组成。如果Windows能够以某种方法完美的模拟这个API，那么在虚拟机上运行的程序就会表现的和它们在实际器上运行时完全一样。 </p>
+<p> 这就是为什么会出现VMM和VxD的原因。为了协调和监视虚拟机(VMs)，Windows需要一个程序来分配任务。这个程序就是虚拟机管理器(VMM)。 </p>
+<H3>
+虚拟机管理器</H3>VMM是一个32位的保护模式程序。它的主要任务是建立和维护一个支持虚拟机的框架。例如，它要创建，运行和结束一个虚拟机。VMM是众多的系统VxD程序之一，它被放在你的系统目录下的VMM32.VxD文件中。VMM本身是一个VxD程序，但它被当作一个监视其他VxD程序的监视器。让我们来看一下Windows95的启动次序： 
+<OL>
+  <LI>加载io.sys。 
+  <LI>执行config.sys和autoexec.bat。 
+  <LI>调用win.com。 
+  <LI>win.com运行VMM32.VxD，VMM32.VxD实际上是个简单的dos的exe文件。 
+  <LI>VMM32.VxD用xms驱动程序把VMM加载到扩展内存。 
+  <LI>VMM初始化自身及其它的默认VxD。 
+  <LI>VMM把机器转入到保护模式并创建系统虚拟机。 
+  <LI>最后被加载的虚拟外壳设备在系统虚拟机上通过运行krnl386.exe来启动Windows。 
+  <LI>krnl386.exe加载所有的文件，最后是Windows95外壳。 </LI></OL>
+<p>正如你所看到的，VMM是第一个被加载到内存的VxD程序。它创建系统虚拟机并初始化其他的VxD程序。它也为这些VxD程序提供许多服务。 </p>
+<p>VMM和VxD的操作模式和真正的程序不同。在大多数时候，它们是潜伏的。当应用程序在系统中运行时，这些VxD程序没有被激活。当某些需要它们处理的中断/错误/事件发生时，它们才被唤醒。 </p>
+<p> VMM是不可重入的。这意味着VxD程序必须使它们的访问和VMM服务同步。在有些情况下调用VMM服务是不安全的，比如VMM正在处理一个硬件中断。在这段时间内，VMM是不允许重进入的。作为一个VxD编写者，你必须对你的所作所为极度的小心。记住，你是在最高特权级别，第0层级别，如果你代码有错的话，谁也管不到。 </p>
+<H3>虚拟设备驱动程序</H3>
+<p>虚拟设备驱动程序被简称为VxD。x 代表各种设备的名字，如虚拟键盘驱动程序(vkd)，虚拟鼠标驱动程序(vmd)等等。VxD程序是硬件成功初始化的途径。记得dos程序认为它们拥有系统的一切，当它们在虚拟机中运行时，Windows需要给它们一个实机器的替身。VxD程序就是这些替身。VxD程序通常虚拟一些硬件设备，所以，例如当一个dos程序认为它在同键盘通讯时，实际是虚拟键盘驱动程序在和dos程序通讯。一个VxD程序通常控制真正的硬件设备并对该设备在各个虚拟机之间的共享进行管理。 </p>
+<p>尽管如此，并不是说每个VxD程序必须和一个硬件设备相连。虽然VxD程序是用来虚拟硬件设备的，但是我们也可以把VxD程序看作是在第0级别的dll。例如，如果你需要做一些只有在第0级别才能做的工作，你就可以编一个VxD程序来为你完成这个工作。这样，由于此VxD程序并没有虚拟任何设备，你就可以把它仅仅看作是你的程序的扩展。 </p>
+<p> 在我们更深入的讨论VxD和创建我们的VxD程序之前，让我先说一些有关于VxD的事情。 </p>
+<LI>VxD程序是Windows 9x特有的，它在Windows NT下不能运行。所以如果你的程序是依靠VxD的，它就不能被移植到Windows NT平台上去。 
+<LI>VxD是系统中权力最大的实体。由于它们可以对系统作任何事情，所以它们是极度危险的。一个恶意的/错误的VxD程序可以毁掉整个系统。对于恶意的/错误的VxD程序没有任何的保护措施。 
+<LI>通常的，不用VxD也有很多办法能达到你的目的。在采用VxD的解决办法之前一定要三思。如果用其他的可以在第三层级别实施的办法，就使用这个办法。 </LI>
+<p>indows 95下有两种VxD:</p>
+<LI>静态VxD 
+<LI>动态VxD</LI>
+<p>态VxD是那些从系统启动就被加载，在系统关闭之前一直存在于内存中的VxD程序。这种VxD可以追溯至Windows 3.x的时代。动态VxD时只有Windows 9x下才有的。动态VxD程序可以在需要的时候被加载/卸载。这些程序大多数都是用来控制设置管理器和输入输出监视器加载的即插即用设备的。你可以在你的win32应用程序里加载或卸载动态VxD程序。</p>
+<H3>VxD程序之间的通讯</H3>VxD程序，包括VMM，通过以下三种途径在相互之间进行通讯： 
+
+  <LI>控制消息 
+  <LI>服务API 
+<LI>回调</LI>
+  <p>控制消息: 当有VMM感兴趣的事件发生时，它就向系统中所有载入的VxD程序发送控制消息。控制消息就像是第三层级别的Windows应用程序的消息。每个VxD程序都有一个接受和处理控制消息的函数，叫做设备控制函数。系统控制消息总共有50多个。控制消息不多的原因是系统中通常加载了很多VxD程序，而每个VxD程序在收到一个控制消息时都要进行处理。如果控制消息太多，就会导致系统停滞。所以控制消息只包括那些与虚拟机有关的重要消息，如：一个虚拟机被创建，被销毁等等。作为对系统控制消息的附加，一个VxD程序可以定义自己的控制消息，这些消息可以用来和那些能响应这些消息的VxD程序通讯。</p>
+<P>服务函数: 一个VxD程序，包括VMM在内，通常要导出一系列的被别的VxD程序调用的公共函数，这些函数被称为VxD服务。调用这些服务的机制和在第三层级别运行的的应用程序有很大的不同：每个导出VxD服务的VxD程序必须有一个唯一的ID，你可以从Microsoft得到一个这样的ID。这个ID是一个包含了一个VxD唯一的身份验证的16位的数字，例如： 
+<P>NDEFINED_DEVICE_ID    EQU 
+  00000H <BR>
+VMM_DEVICE_ID          
+  EQU 00001H <BR>
+  DEBUG_DEVICE_ID        EQU 
+  00002H <BR>
+  VPICD_DEVICE_ID        EQU 
+  00003H <BR>
+  VDMAD_DEVICE_ID        EQU 
+  00004H <BR>
+  VTD_DEVICE_ID          
+EQU 00005H
+<P>你可以看到VMM的ID是1，VPICD的ID是3，等等。VMM用这些ID来找到导出所需VxD服务的VxD程序。当一个VxD程序导出VxD服务时，它把所有服务的地址存在一个表里面。所以，你还需要通过服务分支表里面服务的索引来找到你所要的服务。例如，如果你要调用第一个服务，GetVersion服务，你就要指定0(这个索引是从0开始的)。调用VxD服务的实机制包括中断20h，你的代码产生一个中断20h，并带有一个双字的值，这个值包含了设备ID和服务索引。例如，如果你要调用一个VxD程序导出的VxD服务，假设VxD程序设备ID是000DH，服务号码是1，那么代码应该是：
+<P> int  
+20h <br />dd  000D0001h
+
+<P>跟在中断20H后的双字的高字包含设备ID。低字是在服务列表中的索引。 
+<P> 当20H中断执行时，VMM得到了控制权，并马上检测跟着的双字。然后它提出设备ID用来找到VxD程序，用服务索引来定位在那个VxD程序中的所要求的服务的地址。 
+<P> 你可以看到这个操作时很费时的。VMM必须浪费很多时间来定位VxD程序和所要服务的地址，所以VMM作了个小小的<I>弊</I> 。当中断20H操作成功后，VMM抓取链接。这就是说，VMM用直接的服务调用来替代20H中断和它后面的双字。所以上面的20H中断代码片断就被改变成:
+<P>call dword ptr 
+[VxD_Service_Address]
+<P>这个把戏是成功的，因为int 
+  20h+dword加一个双字用6个字节，正好和call dword ptr结构相等。所以接下来的服务调用是快速而有效的。这个方法具有直接性，简洁性。在好的一方面，它减轻了VMM和VxD载入器的工作量，因为它们不用定位VxD中所有的服务，那些没有执行过的服务将会保持原样。再不那么好的一方面，一旦一个静态VxD程序导出的服务被调用，那么就不可能把这个静态的VxD程序卸载了。由于VMM把调用锁定到VxD服务的实际地址上，如果提供这个服务的VxD程序从内存中被卸载了，其他VxD程序调用这个服务时就会很快的因为调用无效的内存地址而导致系统崩溃。没有办法来消除抓取的链接。这个问题的结论是动态VxD不适合作为服务提供者。 
+<P>回调: 回调或者回调函数是在VxD程序中给其他的VxD程序调用的函数，不要把回调函数和VxD服务搞混淆了。回调函数不像服务那样是公共的，它们是私有函数，VxD在特定的情况下把它们的地址送给其他的VxD程序。例如，当一个VxD程序在处理一个硬件中断时，由于VMM是不可重入的，这个VxD程序不能使用VxD服务，否则会引起页面错误(重入VMM)。这个VxD程序可以把它自己的一个回调函数的地址给VMM，这样VMM就可以在能忍受页面错误时调用这个函数。回调函数的想法不是VxD独有的。许多Windows API都在用。最好的例子也许是窗口函数，你把窗口函数的地址填在WINDCLASS或WINDCLASSEX结构里并把它当作函数来调用RegisterClass或者RegisterClassEx。当有这个窗口的消息传来时，Windows就会调用你的窗口函数。另一个例子是窗口接管函数。你的程序把接管函数的地址送给Windows，这样当你感兴趣的事件发生时，Windows就会调用你的接管函数。 <BR>上述三种方法是VxD之间通讯的，我们还要讲对V86，保护模式和Win32应用程序的接口。在下一章里，我们要学习VxD对Win32应用程序的接口。
+
+</BODY></HTML>
+<div class="rpindex"><a href="048.html"> 下一页</a><a href="041.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

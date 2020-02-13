@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>java 把一个数字转换成字符</h1>
+<p>主要思想：在ASSIC码表中数字的码是连接的，所以digit + '0'代表就是digit对应字符的ASSIC码。当digit大于9时就要用字母来表示了就有了digit + 'a' - 10。</p>
+<pre class="code">    public static char forDigit(int digit, int radix) {
+        if (MIN_RADIX <= radix && radix <= MAX_RADIX) {
+            if (0 <= digit && digit < radix) {
+                return (char) (digit < 10 ? digit + '0' : digit + 'a' - 10);
+            }
+        }
+        return 0;
+    }</pre>
+<p>&nbsp;</p>
+</body>
+</html>

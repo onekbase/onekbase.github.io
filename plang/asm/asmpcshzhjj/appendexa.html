@@ -1,0 +1,787 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">目录</a> <a href="11-41.html">上一页</a> <a href="appendixb.html">附录B</a> </div>
+
+<h2>附录A 21H中断功能调用</h2>
+<table>
+  <tbody>
+    <tr>
+      <td>AH</td>
+      <td >功能</td>
+      <td >调用参数</td>
+      <td >返回参数</td>
+    </tr>
+    <tr>
+      <td>00</td>
+      <td >终止进程</td>
+      <td >CS=程序段前缀段地址</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td >带回显的键盘输入</td>
+      <td ></td>
+      <td >AL=输入字符</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td >显示一个字符</td>
+      <td >DL=待输出字符的ASCII码</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td >异步通讯输入</td>
+      <td ></td>
+      <td >AL=输入的数据</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td >异步通讯输出</td>
+      <td >DL=待输出的数据</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td >打印机输出</td>
+      <td >DL=待输出的字符</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td >直接控制台I/O</td>
+      <td >DL=0FFH：输入<br />
+        DL=字符的ASCII码：输出</td>
+      <td >AL=输入的字符</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td >无回显的键盘输入</td>
+      <td ></td>
+      <td >AL=输入的字符</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td >无回显的键盘输入（检测Ctrl-C）</td>
+      <td ></td>
+      <td >AL=输入的字符</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td >字符串输出</td>
+      <td >DS:DX=字符串首</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>0A</td>
+      <td >键盘输入至缓冲区</td>
+      <td >DS:DX=缓冲区首<br />
+        DS:[DX]=缓冲区最大容量</td>
+      <td >DS:[DX+1]=输入的字符数<br />
+        DS:DX+2=字符串首</td>
+    </tr>
+    <tr>
+      <td>0B</td>
+      <td >检测键盘状态</td>
+      <td ></td>
+      <td >AL=00：有输入<br />
+        AL=FF：无输入</td>
+    </tr>
+    <tr>
+      <td>0C</td>
+      <td >清除缓冲区并请求指定的输入功能</td>
+      <td >AL=输入功能的功能号<br />
+        （1、6、7、8、A）</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>0D</td>
+      <td >磁盘复位</td>
+      <td ></td>
+      <td >清除文件缓冲区</td>
+    </tr>
+    <tr>
+      <td>0E</td>
+      <td >指定当前缺省磁盘驱动器</td>
+      <td >DL=驱动器号0：A；1：B</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>0F</td>
+      <td >打开文件</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：文件打开<br />
+        AL=0FFH：出错</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td >关闭文件</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：文件关闭<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td >查找第一个目录项</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：找到<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td >查找下一个目录项</td>
+      <td >DS:DX=FCB首地址<br />
+        （文件名中带*或?）</td>
+      <td >AL=00：找到<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td >删除文件</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：成功删除<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td >顺序读</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：读成功<br />
+        AL=01：文件已到末尾<br />
+        AL=02：DTA溢出<br />
+        AL=03：读入部分数据</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td >顺序写</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：写成功<br />
+        AL=01：磁盘满<br />
+        AL=02：DTA溢出</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td >建立文件</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：文件成功建立<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td >文件改名</td>
+      <td >DS:DX=特殊的FCB首地址</td>
+      <td >AL=00：改名成功<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td >取当前缺省驱动器名</td>
+      <td ></td>
+      <td >AL=缺省驱动器号<br />
+        0：A；1：B；...</td>
+    </tr>
+    <tr>
+      <td>1A</td>
+      <td >置DTA地址</td>
+      <td >DS:DX=DTA首地址</td>
+      <td ></td>
+    </tr>
+
+    
+    <tr>
+      <td>1B</td>
+      <td >取缺省驱动器的FAT信息</td>
+      <td ></td>
+      <td >AL=每簇扇区数<br />
+        DS:BX=FAT标识字节<br />
+        CX=物理扇区的大小<br />
+        DX=缺省驱动器的簇数</td>
+    </tr>
+    <tr>
+      <td>1C</td>
+      <td >取任意驱动器的FAT信息</td>
+      <td >DL=驱动器号</td>
+      <td >同1BH功能</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td >随机读</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：读成功<br />
+        AL=01：文件已到末尾<br />
+        AL=02：DTA溢出<br />
+        AL=03：读入部分数据</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td >随机写</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：写成功<br />
+        AL=01：磁盘满<br />
+        AL=02：DTA溢出</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td >测定文件大小</td>
+      <td >DS:DX=FCB首地址</td>
+      <td >AL=00：成功，文件长度写入FCB<br />
+        AL=FF：失败</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td >设置随机记录号</td>
+      <td >DS:DX=FCB首地址</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td >设置中断向量</td>
+      <td >DS:DX=中断向量<br />
+        AL=中断号</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td >建立程序段前缀</td>
+      <td >DS:DX=新的程序段前缀</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td >随机块读</td>
+      <td >DS:DX=FCB首地址<br />
+        CX=读入记录数</td>
+      <td >AL=00：读成功<br />
+        AL=01：文件已到末尾<br />
+        AL=02：DTA溢出<br />
+        AL=03：读入部分数据</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td >随机块写</td>
+      <td >DS:DX=FCB首地址<br />
+        CX=写出记录数</td>
+      <td >AL=00：写成功<br />
+        AL=01：磁盘满<br />
+        AL=02：DTA溢出</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td >分析文件名</td>
+      <td >ES:DI=FCB首地址<br />
+        DS:SI=ASCIIZ串<br />
+        AL=控制分析标志</td>
+      <td >AL=00：标准文件<br />
+        AL=01多义文件<br />
+        AL=FF：非法盘符</td>
+    </tr>
+    <tr>
+      <td>2A</td>
+      <td >取日期</td>
+      <td ></td>
+      <td >CX=年<br />
+        DH:DL=月:日（二进制）</td>
+    </tr>
+    <tr>
+      <td>2B</td>
+      <td >设置日期</td>
+      <td >CX:DH:DL=年：月：日</td>
+      <td >AL=00：成功<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>2C</td>
+      <td >取时间</td>
+      <td ></td>
+      <td >CH:CL=时：分<br />
+        DH:DL=秒：1/100秒</td>
+    </tr>
+    <tr>
+      <td>2D</td>
+      <td >设置时间</td>
+      <td >CH:CL=时：分<br />
+        DH:DL=秒：1/100秒</td>
+      <td >AL=00：成功<br />
+        AL=FF：出错</td>
+    </tr>
+    <tr>
+      <td>2E</td>
+      <td >置磁盘自动读写标志</td>
+      <td >AL=00：关闭标志<br />
+        AL=01：打开标志</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>2F</td>
+      <td >取磁盘缓冲区首地址</td>
+      <td ></td>
+      <td >ES:BX=缓冲区首地址</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td >取DOS版本号</td>
+      <td ></td>
+      <td >AH=发行号；AL=版号</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td >结束进程并驻留</td>
+      <td >AL=返回码<br />
+        DX=驻留区大小（节）</td>
+      <td ></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td >Ctrl-Break检测</td>
+      <td >AL=00：取状态<br />
+        AL=01：置状态（DL）<br />
+        DL=00：关闭检测<br />
+        DL=01：打开检测</td>
+      <td >DL=00：关闭Ctrl-Break检测<br />
+        DL=01：打开Ctrl-Break检测</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td >取中断向量</td>
+      <td >AL=中断号</td>
+      <td >ES：BX=中断向量</td>
+    </tr>
+
+  
+  <tr>
+    <td>36</td>
+    <td >取空闲磁盘空间 </td>
+    <td >DL=驱动器号<br />
+      0：缺省；1：A；2：B；...</td>
+    <td >成功：AX=每簇扇区数<br />
+      BX=有效簇数<br />
+      CX=每扇区字节数<br />
+      DX=总簇数<br />
+      失败：AX=FFFF</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td >置/取国家信息 </td>
+    <td >DS:DX=信息区首地址 </td>
+    <td >BX=国家码；AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td >建立子目录 </td>
+    <td >DS:DX=ASCIIZ串首地址 </td>
+    <td >AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3A</td>
+    <td >删除子目录 </td>
+    <td >DS:DX=ASCIIZ串首地址 </td>
+    <td >AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3B</td>
+    <td >改变当前目录 </td>
+    <td >DS:DX=ASCIIZ串首地址 </td>
+    <td >AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3C</td>
+    <td >建立文件 </td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      CX=文件属性 </td>
+    <td >成功：AX=文件句柄<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3D</td>
+    <td >打开文件 </td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      AL=0：读<br />
+      AL=1：写<br />
+      AL=2：读/写 </td>
+    <td >成功：AX=文件句柄<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3E</td>
+    <td >关闭文件 </td>
+    <td >BX=文件句柄 </td>
+    <td >失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>3F</td>
+    <td >读文件或设备 </td>
+    <td >BX=文件句柄<br />
+      DS:DX=缓冲区首<br />
+      CX=读取的字节数 </td>
+    <td >成功：AX=实际读入的字节数<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td >写文件或设备 </td>
+    <td >BX=文件句柄<br />
+      DS:DX=缓冲区首<br />
+      CX=写出的字节数 </td>
+    <td >成功：AX=实际写出的字节数<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td >删除文件 </td>
+    <td >DS:DX=ASCIIZ串首地址 </td>
+    <td >成功：AX=00<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td >移动文件指针 </td>
+    <td >BX=文件句柄<br />
+      CX:DX=位移量<br />
+      AL=移动方式（0、1、2） </td>
+    <td >成功：DX:AX=新指针的位置<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td >置/取文件属性 </td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      AL=0：取文件属性<br />
+      AL=1：置文件属性<br />
+      CX=文件属性 </td>
+    <td >成功：CX=文件属性<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td >设备文件I/O控制 </td>
+    <td >BX=文件句柄<br />
+      AL=0:取状态 AL=1:置状态<br />
+      AL=2:读数据 AL=3:写数据<br />
+      AL=6:取输入状态<br />
+      AL=7:取输出状态 </td>
+    <td >DX=设备信息 </td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td >复制文件句柄 </td>
+    <td >BX=文件句柄1</td>
+    <td >成功：AX=文件句柄2<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td >强制复制文件句柄 </td>
+    <td >BX=文件句柄1<br />
+      CX=文件句柄2</td>
+    <td >失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td >取当前目录路径名 </td>
+    <td >DL=驱动器号<br />
+      DS:SI=ASCIIZ串首地址 </td>
+    <td >成功：DS:SI=ASCIIZ串<br />
+      失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td >分配内存空间 </td>
+    <td >BX=申请的内存数量（节） </td>
+    <td >成功：AX=分到的内存首址<br />
+      失败：BX=最大可用空间 </td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td >释放内存空间 </td>
+    <td >ES=内存起始段地址 </td>
+    <td >失败：AX=错误码 </td>
+  </tr>
+  <tr>
+    <td>4A</td>
+    <td >调整已分配的内存块 </td>
+    <td >ES=原内存起始段地址<br />
+      BX=调整后的尺寸 </td>
+    <td >失败：AX=错误码<br />
+      BX=最大可用空间 </td>
+  </tr>
+
+  
+  <tr>
+    <td>4B</td>
+    <td >装入/执行进程</td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      ES:BX=参数区首地址<br />
+      AL=0：装入执行<br />
+      AL=3：装入不执行</td>
+    <td >失败：AX=错误码</td>
+  </tr>
+  <tr>
+    <td>4C</td>
+    <td >带返回码结束</td>
+    <td >AL=返回码</td>
+    <td ></td>
+  </tr>
+  <tr>
+    <td>4D</td>
+    <td >取返回代码</td>
+    <td ></td>
+    <td >AX=返回代码</td>
+  </tr>
+  <tr>
+    <td>4E</td>
+    <td >查找第一个匹配文件</td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      CX=文件属性</td>
+    <td >AX=错误代码</td>
+  </tr>
+  <tr>
+    <td>4F</td>
+    <td >查找下一个匹配文件</td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      （文件名中带*或?）</td>
+    <td >AX=错误代码</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td >取盘自动读写标志</td>
+    <td ></td>
+    <td >AL=当前标志值</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td >文件改名</td>
+    <td >DS:DX=ASCIIZ串（旧）<br />
+      ES:DI=ASCIIZ串（新）</td>
+    <td >AX=错误代码</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td >置/取文件日期和时间</td>
+    <td >BX=文件句柄<br />
+      AL=0：读取<br />
+      AL=1：设置（DX：CX）</td>
+    <td >成功：DX:CX=日期和时间<br />
+      失败：AX=错误码</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td >取/置分配策略码</td>
+    <td >AL=0：取码<br />
+      AL=1：置码（BX）</td>
+    <td >成功：AX=策略码<br />
+      失败：AX=错误码</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td >取扩充错误码</td>
+    <td ></td>
+    <td >AX=扩充错误码<br />
+      BH=错误类型<br />
+      BL=建议的操作<br />
+      CH=错误场所</td>
+  </tr>
+  <tr>
+    <td>5A</td>
+    <td >建立临时文件</td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      CX=文件属性</td>
+    <td >成功：AX=文件句柄<br />
+      失败：AX=错误码</td>
+  </tr>
+  <tr>
+    <td>5B</td>
+    <td >建立新文件</td>
+    <td >DS:DX=ASCIIZ串首地址<br />
+      CX=文件属性</td>
+    <td >成功：AX=文件句柄<br />
+      失败：AX=错误码</td>
+  </tr>
+  <tr>
+    <td>5C</td>
+    <td >控制文件存取</td>
+    <td >AL=00：封锁 AL=01：开启<br />
+      BX=文件句柄<br />
+      CX:DX=文件位移<br />
+      SI:DI=文件长度</td>
+    <td ></td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td >取PSP地址</td>
+    <td ></td>
+    <td >BX=PSP地址</td>
+  </tr>
+</table>
+<div class="rpindex"> <a href="appendixb.html">附录B</a><a href="11-41.html">上一页</a><a href="index.html">目录</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

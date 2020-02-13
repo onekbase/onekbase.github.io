@@ -1,0 +1,318 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="11-14.html">上一页</a> <a href="11-21.html">下一页</a> </div>
+  <h2>11．2 内存分配技术</h2>
+  <h4>11.2导航：<a href="11-2.html">第一页</a> <a href="11-21.html">第二页</a></h4>
+  <p>试想一个程序如果需要开辟一个32KB的大缓冲区用于处理磁盘文件，那么这个程序应该如何编写呢？按前面我们讨论过的内容，这个程序可以写成下面这样：</p>
+  <h5>LARGE.ASM</h5>
+  <pre class="code">        data  segment
+              assume    ds:data
+         msg  db        'I have a large buffer-	-32KB--ha! ha! ha!',0dh,0ah,07h,24h
+      buffer  db        32768 dup (?)	；定义一个32KB的缓冲区
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              push      ds	；初始化堆栈
+              xor       ax,ax
+              push      ax
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+              lea       dx,msg	；显示字符串MSG
+              mov       ah,9
+              int       21h
+			
+              ret       ；结束进程
+        main  endp
+        code  ends
+              end       main
+</pre>
+  <p>程序看上去很简单，只是普通地用DB伪指令在数据段内开辟一个32KB的缓冲区。实际上这个程序编译连接成可执行文件后就会曝露出一个问题： </p>
+  <p><img src="figures/F11_4.gif"  height="174" /></p>
+  <p>所谓的问题就是这个EXE文件好象有点太大了，竟然有30多KB，而源程序中的代码并不多，无非是显示一个字符串而已。这30多KB又从何而来呢？</p>
+  <p> 　　
+    如果去掉源程序中&quot;BUFFER   DB...&quot;一行再进行编译连接，那么生成的EXE文件长度会迅速缩短到1KB多。实际上用DB伪指令开辟的缓冲区最终要包含在EXE文件里，每多&quot;DB&quot;一个字节，则最终的EXE文件就要增加一个字节。看来如果程序需要很大的缓冲区，采用传统的程序设计方法会显著增加可执行文件的长度。</p>
+  <p>　　
+    如何解决这个问题？我们知道&quot;操作系统&quot;的一个重要特征就是可以对各种&quot;资源&quot;进行有效地管理。这里的&quot;资源&quot;指得是各种数据（文件）及系统安装的各类设备。毫无疑问内存也属于设备，它也应该受到操作系统很好地管理。</p>
+  <p>　　
+    我们现在所依靠的操作系统--DOS就具备管理内存的能力。应用程序可以通过系统功能调用向DOS申请一些内存，结束之前还可以通过系统功能把&quot;借&quot;来的内存&quot;还&quot;给DOS，从而可以不用DB伪指令在数据段里定义缓冲区。</p>
+  <p>48H功能就是DOS提供的用于申请内存的功能调用： </p>
+  <p>功能号：48H<br />
+    用　途：向DOS申请一定量连续内存空间<br />
+    参　数：AH=48H<br />
+    BX=申请内存的&quot;节&quot;数<br />
+    调　用：INT   21H<br />
+    返　回：如果成功，则CF清零，AX=申请到的内存块段地址<br />
+    如果失败，则CF置1，AX=错误代码，BX=当前内存最大可用块的大小<br />
+    AX=07H   内存控制块被破坏<br />
+    08H 内存不够 </p>
+  <p>一&quot;节&quot;内存包含16个连续的BYTE，但这16个BYTE的起始地址必须是16的整数倍。比如从0B800H:0000H处开始的16个BYTE可以看作是一节，而从0B800H:0001H处开始的16个字节就不是一节。</p>
+  <p> 　　
+    如果这个功能正确地执行了，则DOS将通过AX寄存器返回这块内存的段地址，偏移地址就是0。下面这个程序演示了这个功能的应用，它可以向DOS申请10KB连续内存块，然后在这10KB空间内填写一些信息并将其段地址显示在屏幕上： </p>
+  <h5>GETMEM.ASM</h5>
+  <pre class="code">        data  segment
+              assume    ds:data
+     errmsg1  db        'MCB is error!!!',07h,0	dh,0ah,24h
+     errmsg2  db        'Not enought memory!!!'	,07h,0dh,0ah,24h
+        init  db        'ABCDEFG--HIJKLMN'
+        data  ends
+        code  segment
+              assume    cs:code
+        main  proc      far
+              push      ds	；初始化堆栈
+              mov       ax,0
+              push      ax
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+；******第	一个插入	点******	
+			
+              mov       ah,48h	；申请640节的内存
+              mov       bx,640
+              int       21h
+              jc        error	；若内存申请出错，转ERROR显示错误信息
+			
+              call      outseg	；输出申请到的内存段地址
+			
+              mov       es,ax	；ES:DI寄存器指向申请到的内存段
+              mov       di,0
+			
+              mov       cx,640	；准备向申请到的内存中填入数据
+       fill:
+              push      cx	；暂存CX寄存器
+              mov       cx,16	；在内存中传送16个字节
+              mov       si,offset init	；SI指向数据串
+              rep       movsb	；传送数据串
+              pop       cx  	；恢复CX寄存器
+              loop      fill	；填充下一"节"
+			
+；****	第二个插	入点******	
+			
+              ret       ；结束进程
+      error:
+              mov       dx,offset errmsg1	；准备输出第一个错误信息
+              cmp       ax,07h	；是内存控制块出错吗？
+              jz        exit	；是MCB有错，转EXIT显示第一个错误信息
+              mov       dx,offset errmsg2	；准备显示第二个错误信息
+       exit:
+              mov       ah,09h	；显示DX寄存器指向的错误信息
+              int       21h
+              ret       ；结束进程
+        main  endp
+			
+      outseg  proc      near	；输出段地址子程序
+              push      ax	；保存寄存器
+              push      bx
+              push      cx
+			
+              mov       cx,4	；显示一个4位十六进制数
+      loop1:
+              push      cx	；暂存CX寄存器中的计数值
+			
+              mov       cl,4	；准备处理4个Bit
+              rol       ax,cl	；将高4位移至低4位
+              mov       bx,ax	；暂存移位后的结果
+			
+              and       ax,000fh	；保留低4位
+              add       al,90h	；将低4位转换成ASCII码
+              daa
+              adc       al,40h
+              daa
+			
+              mov       ah,0eh	；利用10H中断的0EH功能输出字符
+              int       10h
+              mov       ax,bx	；取回移位后的结果
+              pop       cx	；恢复CX寄存器
+              loop      loop1	；继续处理下4位
+			
+              pop       cx	；恢复寄存器
+              pop       bx
+              pop       ax
+              ret       ；返回主过程
+      outseg  endp
+        code  ends
+			
+；****	第三个插	入点******	
+			
+              end       main
+			
+</pre>
+  <p>程序中保留了一些&quot;插入点&quot;，用于增加代码。如果就这样直接运行这个程序，那么会得到一个十分令人迷惑不解的结果：这个程序显示一行错误信息--&quot;Not enought   memory（没有足够的内存）&quot;。难道内存真的不够吗？ </p>
+  <p><img src="figures/F11_5.gif"  height="246" /></p>
+  <p>自由内存有618960个字节，600多KB内存竟然会不够，真让人摸不着头脑。</p>
+  <p>确实，600多KB的自由内存不应该不够，即使没有600多KB也不至于连10KB都没有。难道我们编写的程序有什么问题？</p>
+  <div  class="rpindex"><a href="11-21.html">下一页</a><a href="11-14.html">上一页</a> <a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

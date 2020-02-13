@@ -1,0 +1,385 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="008.html"> 上一页</a><a href="010.html"> 下一页</a></div>
+<h1>第九课 子窗口控件</h1>
+本课中我们将探讨控件，这些控件是我们程序主要的输入输出设备。 
+<h3> 理论：</h3>
+WINDOWS 提供了几个预定义的窗口类以方便我们的使用。大多数时间内，我们把它们用在对话框中，所以我们一般就它们叫做子窗口控件。子窗口控件会自己处理消息，并在自己状态发生改变时通知父窗口。这样就大大地减轻了我们的编程工作，所以我们应尽可能地利用它们。本课中我们把这些控件放在窗口中以简化程序，但是大多数时间内子窗口控件都是放在对话框中的。
+我们示例中演示的子窗口控件包括：按钮、下拉菜单、检查框、单选按钮、编辑框等。
+使用子窗口控件时，先调用CreateWindow 或
+CreateWindowEx。在这里由于WINDOWS 已经注册了这些子控件，所以无须我们再注册。当然我们不能改变它们的类名称。譬如：如果您想产生一个按钮，在调用上述两个函数时就必须指定类名为"button"。其他必须指定的参数还有父窗口的句柄和将要产生的子控件的ID号。子控件的ID号是用来标识子控件的，故也必须是唯一 的。子控件产生后，当其状态改变时将会向父窗口发送消息。一般我们应在父窗口的WM_CREATE消息中产生字控件。子控件向父窗口发送的消息是WM_COMMAND，并在传递的参数wPara的底位中包括控件的ID号，消息号在wParam的高位，lParam中则包括了子控件的窗口的句柄。各类控件有不同的消息代码集，详情请参见WIN32 API参考手册。
+父窗口也可以通过调用函数SendMessage向子控件发送消息，其中第一个参数是子控件的窗口句柄，第二个参数是要发送的消息号，附加的参数可以在wParam和lParam中传递，其实只要知道了某个窗口的句柄就可以用该函数向其发送相关消息。
+所以产生了子窗口后必须处理WM_COMMAND消息以便可以接收到子控件的消息。<p></p>
+<h3>例子：</h3>
+我们将产生一个窗口，在该窗口中有一个编辑框和一个按钮。当您按下按钮时 ，会弹出一个对话框其中显示了您在编辑框中输入的内容。另外，该应用程序还有一个菜单，其中有四个菜单项：
+<ol>
+  <li> Say Hello  -- 把一个字符串输入编辑控件；</li>
+  <li> Clear Edit Box -- 清除编辑控件中的字符串；</li>
+  <li> Get Text -- 弹出对话框显示编辑控件中的字符串；</li>
+  <li> Exit -- 退出应用程序。</li>
+</ol>
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+.DATA
+   CLASSNAME  DB        "SIMPLEWINCLASS",0
+     APPNAME  DB        "OUR FIRST WINDOW",0
+    MENUNAME  DB        "FIRSTMENU",0
+         BUTTONCLASSNAME  DB        "BUTTON",0
+  BUTTONTEXT  DB        "MY FIRST BUTTON",0
+           EDITCLASSNAME  DB        "EDIT",0
+  TESTSTRING  DB        "WOW! I'm in an edit box now",0
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hwndButton HWND ? 
+hwndEdit HWND ? 
+      BUFFER  DB        512 DUP(?)  ; buffer to store the text retrieved from the edit box
+
+.CONST
+    BUTTONID  EQU       1           ; The control ID of the button control
+      EDITID  EQU       2           ; The control ID of the edit control
+   IDM_HELLO  EQU       1
+   IDM_CLEAR  EQU       2
+ IDM_GETTEXT  EQU       3
+    IDM_EXIT  EQU       4
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_BTNFACE+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME, \
+ADDR AppName, WS_OVERLAPPEDWINDOW,\ 
+CW_USEDEFAULT, CW_USEDEFAULT,\ 
+300,200,NULL,NULL, hInst,NULL 
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_CREATE
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE, ADDR EDITCLASSNAME,NULL,\
+    WS_CHILD  OR        WS_VISIBLE OR WS_BORDER OR ES_LEFT OR\
+ES_AUTOHSCROLL,\ 
+50,35,200,25,hWnd,8,hInstance,NULL 
+              MOV       HWNDEDIT,EAX
+              INVOKE    SETFOCUS, HWNDEDIT
+              INVOKE    CREATEWINDOWEX,NULL, ADDR BUTTONCLASSNAME,ADDR BUTTONTEXT,\
+    WS_CHILD  OR        WS_VISIBLE OR BS_DEFPUSHBUTTON,\
+75,70,140,25,hWnd,ButtonID,hInstance,NULL 
+              MOV       HWNDBUTTON,EAX
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_HELLO
+              INVOKE    SETWINDOWTEXT,HWNDEDIT,ADDR TESTSTRING
+.ELSEIF       AX==IDM_CLEAR
+              INVOKE    SETWINDOWTEXT,HWNDEDIT,NULL
+.ELSEIF       AX==IDM_GETTEXT
+              INVOKE    GETWINDOWTEXT,HWNDEDIT,ADDR BUFFER,512
+              INVOKE    MESSAGEBOX,NULL,ADDR BUFFER,ADDR APPNAME,MB_OK
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF
+.ELSE
+.IF           AX==BUTTONID
+              SHR       EAX,16
+.IF           AX==BN_CLICKED
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_GETTEXT,0
+.ENDIF
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START</pre>
+
+<h3> 分析：</h3>
+<p>我们现在开始分析:</p>
+<pre class="code">.ELSEIF       UMSG==WM_CREATE
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE, \
+ADDR EditClassName,NULL,\ 
+    WS_CHILD  OR        WS_VISIBLE OR WS_BORDER OR ES_LEFT\
+              OR        ES_AUTOHSCROLL,\
+50,35,200,25,hWnd,EditID,hInstance,NULL 
+              MOV       HWNDEDIT,EAX
+              INVOKE    SETFOCUS, HWNDEDIT
+              INVOKE    CREATEWINDOWEX,NULL, ADDR BUTTONCLASSNAME,\
+ADDR ButtonText,\ 
+    WS_CHILD  OR        WS_VISIBLE OR BS_DEFPUSHBUTTON,\
+75,70,140,25,hWnd,ButtonID,hInstance,NULL 
+              MOV       HWNDBUTTON,EAX</pre>
+<p> 我们在WM_CREATE中产生子控件，其中在函数CreateWindowEx中给子控件窗口一个WS_EX_CLIENTEDGE风格，它使得子控件窗口看上去边界下凹，具有立体感。每一个子控件的类名都是预定义的，譬如：按钮的预定义类名是"button"，编辑框是"edit"。接下来的参数是窗口风格，除了通常的窗口风格外，每一个控件都有自己的扩展风格，譬如：按钮类的扩展风格前面加有BS_，编辑框类则是：ES_，WIN32 API 参考中有所有的扩展风格的描述。注意：您在CreateWindowsEx函数中本来要传递菜单句柄的地方传入子窗口空间的ID号不会有什么副作用，因为子窗口控件本身不能有菜单。产生控件后，我们保存它们的句柄，然后调用SetFocus把焦点设到编辑控件上以便用户立即可以输入。
+  接下来的是如何处理控件发送的通知消息WM_COMMAND： </p>
+<pre class="code">.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0</pre>
+
+<p>我们以前讲过选择菜单想也会发送WM_COMMAND
+消息，那我们应如何区分呢？看了下表您就会一目了然：<br>
+    
+<center>
+  <table>
+    <tr> 
+      <td> </td>
+      <td>Low word of wParam</td>
+      <td>High word of wParam</td>
+      <td>lParam</td>
+    </tr>
+    <tr> 
+      <td>Menu</td>
+      <td>Menu ID</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr> 
+      <td>Control</td>
+      <td>Control ID</td>
+      <td>Notification code</td>
+      <td>Child Window Handle</td>
+    </tr>
+  </table>
+</center>
+<p>其中我们可以看到不能用wParam来区分，因为菜单和控件的ID号可能相同，而且子窗口空间的消息号也有可能为0。
+<pre class="code">              IF        AX==IDM_HELLO
+              INVOKE    SETWINDOWTEXT,HWNDEDIT,ADDR TESTSTRING
+.ELSEIF       AX==IDM_CLEAR
+              INVOKE    SETWINDOWTEXT,HWNDEDIT,NULL
+.ELSEIF       AX==IDM_GETTEXT
+              INVOKE    GETWINDOWTEXT,HWNDEDIT,ADDR BUFFER,512
+              INVOKE    MESSAGEBOX,NULL,ADDR BUFFER,ADDR APPNAME,MB_OK</pre>
+
+<p>您可以调用SetWindowText函数把一字符串繁缛到编辑控件中去，为了清0，传入NULL值。SetWindowText是一个通用函数，即可以用它来设定一个窗口的标题，也可以用它来改变一个按钮上的文字。如果是要得到按钮上的文字，则调用GetWindowText。	
+<pre class="code">.IF           AX==BUTTONID
+              SHR       EAX,16
+.IF           AX==BN_CLICKED
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_GETTEXT,0
+.ENDIF
+.ENDIF</pre>
+
+<p>上面的片段是处理用户按钮事件的。他首先检查wParam的高字节看是否是按钮的ID 号，若是则检查低字节看发送的消息号是否BN_CLICKED，该消息是在按钮按下时发送的，如果一切都对，则转入处理该消息，我们可以从处理消息IDM_GETTEXT处复制全部的代码，但是更专业的办法是在发送一条IDM_GETTEXT消息让主窗口过程处理，这只要把传送的消息设置为WM_COMMAND，再把wParam的低字节中设置为IDM_GETTEXT即可。这样一来您的代码就简洁了许多，所以尽可能利用该技巧。
+最后，当然不是或有或无，必须在消息循环中调用函数TranslateMessage，因为您的应用程序需要在编辑框中输入可读的文字。如果省略了该函数，就不能在编辑框中输入任何东西。	</p>
+
+  <div class="rpindex"><a href="010.html"> 下一页</a><a href="008.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

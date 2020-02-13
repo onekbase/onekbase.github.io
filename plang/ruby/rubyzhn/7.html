@@ -1,0 +1,320 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="6.html"> 上一页</a><a href="8.html"> 下一页</a></div>
+<h1 class="moer-title">8、回到那些简单的例子</h1>
+<p class="moer-title">现在我们将前面的一些示例程序的代码坼开来分析一下.</p><p>
+  下面的例子出现在简单的例子一节.</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+因为是第一次解释,我们将逐行分析.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+第一行,def&nbsp;用于定义一个函数(或者,更准确地说,一个方法(method);我们会在稍后的一节中详细讨论什么是一个方法).这里,它指明&nbsp;fact&nbsp;函数带一个参数,也就是&nbsp;n.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+if&nbsp;用来检查一个条件.当条件吻合时,执行下面的代码;否则执行跟在else后的代码.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+当条件成立时if&nbsp;的值为&nbsp;1.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+如果条件不成立,执行从这里到end的代码.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+如果条件不满足,&nbsp;if的值会是n乘fact(n-1)的结果.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+第一个&nbsp;end&nbsp;与&nbsp;if&nbsp;语句对应.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+第二个&nbsp;end&nbsp;与&nbsp;def&nbsp;语句对应.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+这句用由命令行指定的值来调用fact()函数并打印结果.</p><p>
+ARGV是一个包含命令行参数的数组.ARGV的成员是字符串,所以我们必须通过to_i转化其为整数.&nbsp;Ruby并不像Perl那样自动将字符串转化为整数.</p><p>
+Hmmm...如果向程序赋一个负值作为参数会怎样?你看到这个问题了吗?你可以修复它吗?</p><p>
+<b>Strings</b></p><p>
+下面我们来检查在字符串这章中出现的猜谜程序.由于这个要长一点,我们为每一行打上行数.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+这个程序里,我们使用了一个新的控制结构&nbsp;while.只要某个指定的条件保持为真,while和它对应的end之间的代码会重复执行.</p><p>
+行2的rand(3)返回一个介于0-2之间的随机数.这个随机数用于提取数组&nbsp;words&nbsp;中的一个成员.</p><p>
+在行5我们通过STDIN.gets方法从标准输入读取一行.如果读行遇到时&nbsp;EOF&nbsp;(文件结束),&nbsp;gets会返回nil.因此,与while相连的代码会一直执行直到它遇到^D(或DOS下的^Z),表示输入的结束.</p><p>
+行6的guess.chop!去掉&nbsp;guess&nbsp;的最后一个字符;那一定是个换行符.</p><p>
+行15,我们打印出要猜的词.我们写的代码是上向&nbsp;print&nbsp;语句传递三个参数(这三个参数一个接一个地打印),但也可以用一个参数等效地打印:&nbsp;将secret写为&nbsp;#{secret}以表明将它是一个要取值的变量,而非一个要打印的一般文字:
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+<b>正则表达式</b></p><p>
+最后我们来看看正则表达式一节的那个程序.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+在行4,while的条件被硬设为&nbsp;true,因此这好像构成了一个无限循环.但我们在行8和行13放置了break语句以跳出循环.这两个break语句也是&nbsp;if&nbsp;修饰辞(if&nbsp;modifier)的一个例子.一个&quot;if修饰辞&quot;当且仅当指明条件满足时执行它左边的语句.</p><p>
+再说说&nbsp;chop!&nbsp;(出现在行9和行14).在Ruby里,我们亦可将&quot;!&quot;和&quot;?&quot;附于某些方法名字后面.惊叹号(!,有时大声地念作&quot;bang!&quot;)暗示某些东西可能具破坏性(destructive),也就是指,某些东西可以改变它所触及的东西.&nbsp;chop!直接作用于一个字符串,但不带!的chop只会产生一个拷贝.下面有这一区别的演示.
+</p>
+<pre class="code">def fact(n)  
+    if n == 0    
+       1  
+    else    
+       n * fact(n-1)  
+    end
+end
+print fact(ARGV[0].to_i), &quot;\n&quot; </pre><p>
+以后你还会遇见以问号(?,有时大声地念做&nbsp;&quot;huh?&quot;)结束的方法名;这指&quot;断言&quot;(prediacte)方法,只会返回true或false.</p><p>
+行15应给予注意.首先,注意gsub!也是一个破坏函数.它通过替换所有符合&nbsp;re&nbsp;模式字符来修改&nbsp;str(sub指替换,首字母&nbsp;g&nbsp;指全局,&nbsp;比如,替换所有的匹配而不只是第一个匹配).到此为止,还好;但我们用什么来替代文本中的匹配部分呢?&nbsp;在行1和行2里的&nbsp;st&nbsp;和&nbsp;en&nbsp;被分别定义为表示反转文本颜色(color-inverted)和恢复正常文本颜色的ANSI码.&nbsp;在行15,它们被#{}括起以确保他们被前面定义的那样解释(这样我们才没看见变量名被打印出来).在这中间是&nbsp;&quot;\\&amp;&quot;.这是个小把戏.因为替换字符串是由双引号引起的,一对反斜杠会被解释为一个单一的反斜杠;所以&nbsp;gsub!实际上得到的是&quot;\&amp;&quot;,就一段特殊代码正好就是表示&quot;任何与模式于第一处匹配的字符&quot;.因此新的字符串在被打印出来的时候,很像原来的那个,只不过匹配的部分以反视(inverse&nbsp;video)的方式高亮度显示出来.
+<div class="rpindex"><a href="8.html"> 下一页</a><a href="6.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

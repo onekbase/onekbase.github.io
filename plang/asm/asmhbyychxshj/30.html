@@ -1,0 +1,683 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="29.html"> 上一页</a><a href="32.html"> 下一页</a></div>
+<h3>(1)、功能3CH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>用指定的文件名创建一个新文件。如果指定的文件已存在，则设置其长度为0。创建后，该文件是打开的，并返回其句柄</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝3CH<br>
+      DS:DX＝指定文件名字符串的地址(以0为字符串的结束标志)<br>
+      CX＝文件属性(这些标志位可以组合)
+      <table>
+        <tr>
+          <td>
+            <p>位0=1——只读<br>
+            位2=1——系统<br>
+            位5=1——归档</td>
+          <td>位1=1——隐含<br>
+            位3=1——卷标号<br>
+            其它位保留不用，并置为0</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——创建成功，AX＝文件句柄，否则，AX＝错误号(03H、04H或05H)，其含义见错误代码表</td>
+  </tr>
+</table>
+
+<h3>(2)、功能3DH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>打开指定的驱动器、路径和文件名，并返回其文件句柄</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝3DH<br>
+      DS:DX＝表明文件的字符串(以0为字符串的结束标志)<br>
+      AL为打开方式：
+      <table>
+        <tr>
+          <td align="right">位0~2</td>
+          <td>000—只读方式　　001—写方式　　010—读/写方式</td>
+        </tr>
+        <tr>
+          <td align="right">位3</td>
+          <td>保留，其值为0</td>
+        </tr>
+        <tr>
+          <td align="right">位4~6</td>
+          <td>共享模式
+            <table>
+              <tr>
+                <td>000—兼容模式</td>
+                <td>001—不共享</td>
+                <td>010—拒绝写</td>
+              </tr>
+              <tr>
+                <td>011—拒绝读</td>
+                <td colspan="2">100—不拒绝任何操作</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">位7</td>
+          <td>继承标志——0/1：子进程继承或不继承句柄</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——打开成功，AX＝文件句柄，否则，AX＝错误号(02H、03H、04H、05H或0CH)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(3)、功能3EH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>关闭指定句柄的文件</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝3EH<br>
+      BX＝文件句柄</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——关闭成功，否则，AX＝错误号(06H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(4)、功能41H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>删除指定的文件</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝41H<br>
+      DS:DX＝文件名字符串的地址</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——删除成功，否则，AX＝错误号(02H、03H或05H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(5)、功能43H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取或设置指定文件的属性</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝43H<br>
+      BX＝文件句柄<br>
+      DS:DX＝文件名字符串的地址<br>
+      AL＝00H/01H——读取/设置文件属性<br>
+      CX＝文件属性：
+      <table>
+        <tr>
+          <td align="center">位0=1——只读</td>
+          <td>位1=1——隐含</td>
+        </tr>
+        <tr>
+          <td align="center">位2=1——系统</td>
+          <td>位3=1——卷标号</td>
+        </tr>
+        <tr>
+          <td align="center">位5=1——归档</td>
+          <td>其它位保留不用，并置为0</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——关闭成功，CX＝文件属性，否则，AX＝错误号(01H、02H、03H或05H)，其含义见错误代码表</td>
+  </tr>
+</table>
+
+<h3>(6)、功能45H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>复制当前打开设备或文件的句柄，该句柄对应同样设备或文件的相同位置</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝45H<br>
+      BX＝待复制的文件句柄</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——复制成功，AX＝新句柄，否则，AX＝错误号(04H或06H)，其含义见错误代码表</td>
+  </tr>
+</table>
+
+<h3>(7)、功能46H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>指定二个句柄，把第二句柄指向第一个句柄，即第二个句柄被重定向</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝46H<br>
+      BX＝文件或设备的句柄<br>
+      CX＝待重定向的文件句柄</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——重定向成功，否则，AX＝错误号(04H或06H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(8)、功能4EH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>获取第一个与给定的文件名相匹配的文件</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝4EH<br>
+      DS:DX＝给定文件名的字符串<br>
+      CX＝搜索时使用的文件属性：
+      <table>
+        <tr>
+          <td rowspan="4"></td>
+          <td>位0=1——只读　　位1=1——隐含</td>
+        </tr>
+        <tr>
+          <td>位2=1——系统　　位3=1——卷标号</td>
+        </tr>
+        <tr>
+          <td>位4=1——目录　　位5=1——归档</td>
+        </tr>
+        <tr>
+          <td>其它位保留不用，并置为0</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号(02H、03H或12H)，其含义见错误代码表，否则，操作成功，DTA(Disk    
+      Transfer Area)按下列方式填入数据：   
+      <table>
+        <tr>
+          <td align="center">字节00~14H</td>
+          <td>保留</td>
+        </tr>
+        <tr>
+          <td align="center">字节15H</td>
+          <td>匹配的文件属性</td>
+        </tr>
+        <tr>
+          <td align="center">字节16~17H</td>
+          <td>压缩的文件名</td>
+        </tr>
+        <tr>
+          <td align="center">字节18~19H</td>
+          <td>压缩的文件日期</td>
+        </tr>
+        <tr>
+          <td align="center">字节1A~1DH</td>
+          <td>文件大小</td>
+        </tr>
+        <tr>
+          <td align="center">字节1E~2AH</td>
+          <td>文件名字符串</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h3>(9)、功能4FH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>在中断21H的功能4EH成功使用之后，再搜索下一个文件名</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝4FH<br>
+      AL＝返回的代码</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号(12H)，其含义见错误代码表，否则，操作成功，DTA中的数据如前面功能4EH所示</td>
+  </tr>
+</table>
+<h3>(10)、功能56H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>文件换名</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝56H<br>
+      DS:DX＝当前文件名字符串地址<br>
+      ES:DI＝新文件名字符串地址</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——操作成功，否则，AX＝错误号(02H、03H、05H、11H)，其含义见错误代码表</td>
+  </tr>
+</table>
+
+<h3>(11)、功能57H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取/设置文件的日期和时间</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝57H<br>
+      BX＝文件句柄
+      <table>
+        <tr>
+          <td>读取日期和时间</td>
+          <td>AL＝00H</td>
+        </tr>
+        <tr>
+          <td>设置日期和时间</td>
+          <td>AL＝01H<br>
+            CX＝时间(0F~0BH：小时，0AH~05H：分钟，04H~00H：2秒的个数)<br>
+            DX＝日期(0F~09H：年(相对1980年)，08H~05H：月，04H~00H：日)</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号(01H、06H)，其含义见错误代码表，否则，若是读文件信息，则，CX＝时间，DX＝日期</td>
+  </tr>
+</table>
+
+<h3>(12)、功能5AH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>创建临时文件</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝5AH<br>
+      DS:DX＝路径名的地址<br>
+      CX＝文件属性(位可组合)，其定义如下：
+      <table>
+        <tr>
+          <td align="center">位0＝1　只读</td>
+          <td>位3-4＝0　　保留</td>
+        </tr>
+        <tr>
+          <td align="center">位1＝1　隐含</td>
+          <td>位5＝1　 　归档</td>
+        </tr>
+        <tr>
+          <td align="center">位2＝1　系统</td>
+          <td>位6-15＝0　保留</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——操作成功，AX＝文件句柄，DS:DX＝完整的路径文件地址，否则，AX＝错误号(03H、04H或05H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(13)、功能5BH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>创建新文件</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝5BH<br>
+      DS:DX＝路径名的地址<br>
+      CX＝文件属性(位可组合)，其定义如下：
+      <table>
+        <tr>
+          <td align="center" rowspan="4"></td>
+          <td align="center">位0＝1</td>
+          <td>只读</td>
+          <td align="center">位4＝0</td>
+          <td>保留</td>
+        </tr>
+        <tr>
+          <td align="center">位1＝1</td>
+          <td>隐含</td>
+          <td align="center">位5＝1</td>
+          <td>归档</td>
+        </tr>
+        <tr>
+          <td align="center">位2＝1</td>
+          <td>系统</td>
+          <td align="center">位6-15＝0</td>
+          <td>保留</td>
+        </tr>
+        <tr>
+          <td align="center">位3＝1</td>
+          <td colspan="3">卷标号</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——操作成功，AX＝文件句柄，否则，AX＝错误号(03H、04H、05H或50H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(14)、功能67H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置文件句柄数(最多文件数)</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝67H<br>
+      BX＝句柄的数量</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝0——操作成功，否则，AX＝错误号，其含义见错误代码表</td>
+  </tr>
+</table>
+<h3>(15)、功能6CH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>扩展的打开文件功能(打开、创建或替换文件)</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AH＝6CH<br>
+      AL＝00H<br>
+      DS:SI＝路径名的地址<br>
+      BX＝打开方式
+      <table>
+        <tr>
+          <td align="center">位2~0</td>
+          <td>000—只读　　001—只写　　010—可读、写</td>
+        </tr>
+        <tr>
+          <td align="center">位3</td>
+          <td>保留(0)</td>
+        </tr>
+        <tr>
+          <td align="center">位6~4</td>
+          <td>000—兼容　　　001—拒绝读写　　010——拒绝写<br>
+            011—拒绝读　　100——不拒绝任何操作</td>
+        </tr>
+        <tr>
+          <td align="center">位7</td>
+          <td>0—子进程继承句柄，1—子进程不继承句柄</td>
+        </tr>
+        <tr>
+          <td align="center">位12~8</td>
+          <td>保留(0)</td>
+        </tr>
+        <tr>
+          <td align="center">位13</td>
+          <td>致命错误处理程序，0—执行INT 24H，否则，返回错误代码给进程</td>  
+        </tr>
+        <tr>
+          <td align="center">位14</td>
+          <td>写入方式：0—写入缓冲区，1—直接写入文件</td>
+        </tr>
+        <tr>
+          <td align="center">位15</td>
+          <td>保留(0)</td>
+        </tr>
+        <tr>
+          <td colspan="2">CX＝文件属性</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table>
+              <tr>
+                <td rowspan="4"></td>
+                <td>位0＝1　只读</td>
+                <td>位4＝0　　　保留</td>
+              </tr>
+              <tr>
+                <td>位1＝1　隐含</td>
+                <td>位5＝1　　　归档</td>
+              </tr>
+              <tr>
+                <td>位2＝1　系统</td>
+                <td>位6-15＝0　 保留</td>  
+              </tr>
+              <tr>
+                <td colspan="2">位3＝1　卷标签</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">DX＝打开标志
+            <table>
+              <tr>
+                <td></td>
+                <td>位3~0　　0—打开失败，1—打开文件，2—替换文件<br>
+                  位7~4　　0—打开失败，1—创建文件<br>
+                  位15~8　 0—保留</td>  
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号，其含义见错误代码表，否则，<br>
+      AX＝文件句柄<br>
+      CX＝1——文件存在，打开之<br>
+      　＝2——文件不存在，创建之</td>
+  </tr>
+</table>
+<p></p>
+<div class="rpindex"><a href="32.html"> 下一页</a><a href="29.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

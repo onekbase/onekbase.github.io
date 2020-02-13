@@ -1,0 +1,496 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="077.html"> 上一页</a><a href="079.html"> 下一页</a></div>
+<h1>在 Win32 下 Serial Port 的通訊 </h1>
+<p>以下的東西是我在閱讀 &quot;Communications Programming for Windows 95&quot; 時做的一點筆記, 
+  所以在 topic 上大致上都和這書上的第三章一樣. 一些 structure 和 API 的宣告都是 copy from VC 5.0 的 on-line 
+  help. </p>
+<p>這些東西主要談的是如何在 Win32 的平台下對 serial port 的通訊. 可能可以帶來幫助的是那些了解 serial 
+  port 的通訊, 但是不清楚在 Win32 平台究竟有那些 API 可用的 programer (就像我? :p) 我只是做做整理罷了, 更清楚的內容可能要再翻翻 
+  on-line help 或是書本. 如果你要嘗試在 Win32 下做像是對 modem 做控制(例如撥號, 通訊)的程式, 但是對於 serial port 
+  並不了解, 那你應該再去找一本有講到這些東西的書看看. </p>
+<h1>開啟一個 Serial Port </h1>
+<p>利用一般開啟檔案的 CreatFile() 即可開啟 serial port device </p>
+<pre class="code">HANDLE CreateFile( 
+LPCTSTR lpFileName, // pointer to name of the file 
+DWORD dwDesiredAccess, // access (read-write) mode 
+DWORD dwShareMode, // share mode 
+LPSECURITY_ATTRIBUTES lpSecurityAttributes, // pointer to security attributes 
+DWORD dwCreationDistribution, // how to create 
+DWORD dwFlagsAndAttributes, // file attributes 
+HANDLE hTemplateFile // handle to file with attributes to copy 
+); 
+</pre>
+
+  <li>用 CreateFile() API.  </li>
+  <li>lpFileName 為 &quot;COM1&quot; 或是 &quot;COM2&quot;  </li>
+  <li>dwDersiredAccess 一般為 GENERIC_READ|GENERIC_WRITE  </li>
+  <li>dwShareMode &quot;必須&quot;為 0, 即不能共享, 但同一個 process 中的不同 thread 在一開啟之後就可以共享.  </li>
+  <li>lpSecurityAttributes 一般為 NULL  </li>
+  <li>dwCreateionDistributon 在這裡&quot;必須&quot;為 OPEN_EXISTING  </li>
+  <li>dwFlagsAndAttributes 定義了開啟的屬性, 若是設成 FILE_FLAG_OVERLAPPED 
+    則可使用非同步的 I/O.  </li>
+  <li>hTemplateFile &quot;必須&quot;為 NULL  </li>
+  <li>傳回檔案 handle </li>
+
+  <h1>設定 Serial Port 傳送及接收緩衝區的大小 </h1>
+  <p>在開啟完 serial port 之後, 可以藉由呼叫 SetupComm() 來進行配置傳送時的緩衝區及接收時的緩衝區. 
+  如果沒有呼叫 SetupComm() 的話, Win95 會配置內定的緩衝區. </p>
+<pre class="code">BOOL SetupComm( 
+HANDLE hFile, // handle of communications device 
+DWORD dwInQueue, // size of input buffer 
+DWORD dwOutQueue // size of output buffer 
+);
+</pre>
+<table>
+  <tbody>
+    <tr>
+      <th bgcolor="#99ee99">關閉 Serial Port file </th>
+    </tr>
+  </tbody>
+</table>
+<p>利用一般的 CloseHandle() 即可. </p>
+<pre class="code">BOOL CloseHandle( 
+HANDLE hObject // handle to object to close 
+)
+</pre>
+<h1>取得 Seial Port 的資訊 </h1>
+<p>在 Win32 裡頭, 將一些通訊時會用到的資訊用 COMMPROP 這個結構來表示. (當然不僅僅是 Serial 
+  Port) 可以用 GetCommProperties() 來取得: </p>
+<pre class="code">BOOL GetCommProperties( 
+HANDLE hFile, // handle of communications device 
+LPCOMMPROP lpCommProp // address of communications properties structure 
+);
+</pre>
+<p>COMMPROP 長的像這個樣子: </p>
+<pre class="code">typedef struct _COMMPROP { // cmmp 
+    WORD  wPacketLength;       // packet size, in bytes 
+    WORD  wPacketVersion;      // packet version 
+    DWORD dwServiceMask;       // services implemented 
+    DWORD dwReserved1;         // reserved 
+    DWORD dwMaxTxQueue;        // max Tx bufsize, in bytes 
+    DWORD dwMaxRxQueue;        // max Rx bufsize, in bytes 
+    DWORD dwMaxBaud;           // max baud rate, in bps 
+    DWORD dwProvSubType;       // specific provider type 
+    DWORD dwProvCapabilities;  // capabilities supported 
+    DWORD dwSettableParams;    // changable parameters 
+    DWORD dwSettableBaud;      // allowable baud rates 
+    WORD  wSettableData;       // allowable byte sizes 
+    WORD  wSettableStopParity; // stop bits/parity allowed 
+    DWORD dwCurrentTxQueue;    // Tx buffer size, in bytes 
+    DWORD dwCurrentRxQueue;    // Rx buffer size, in bytes 
+    DWORD dwProvSpec1;         // provider-specific data 
+    DWORD dwProvSpec2;         // provider-specific data 
+    WCHAR wcProvChar[1];       // provider-specific data 
+} COMMPROP; 
+</pre>
+<p>在這裡, lpCommProp 需要 programmer 自行配置空間. 有趣的問題是, 系統在這個結構之後會需要額外的空間. 
+  但是配置者也就是 programmer 卻不知道系統會需要多少. 很簡單的做法是配置一大塊絕對會夠的空間. 另一個聰明的做法是執行兩次 GetCommProperties() 
+  , 第一次只配置 sizeof(COMMPROP) 這麼大的空間, 因為還沒有開始執行一些動作, 所以系統並不會嘗試著在後面填東西, 所以不會出問題. 
+  接著執行第一次的 GetCommProperties(), 得到結果, 取出結構中的 wPacketLength, 這個 member 代表實際上需要的大小, 
+  然後依據這個大小重新配置一個新的. 這樣的話 , 就不會有浪費任何空間的問題了. </p>
+<p>至於上述 COMMPROP 結構的成員所代表的意思, on-line help 中應該寫的都滿清楚的 . </p>
+<h1>設定及取得通訊狀態 </h1>
+<p>你可以利用 COMMPROP 來取得一些狀態, 但是當你想改變目前的設定時你需要兩個 API 來完成: </p>
+<pre class="code">BOOL GetCommState( 
+HANDLE hFile, // handle of communications device 
+LPDCB lpDCB // address of device-control block structure 
+); 
+
+BOOL SetCommState( 
+HANDLE hFile, // handle of communications device 
+LPDCB lpDCB // address of device-control block structure 
+);
+</pre>
+<p>你可以用 GetCommState() 來取得目前 Serial Port 的狀態, 也可以用 SetCommState() 
+  來設定 Serial Port 的狀態. </p>
+<p>DCB 的結構就請自行翻閱 help 囉. </p>
+<p>另外, programmer 最常控制的幾個設定就是 baud rate, parity method, data bits, 
+  還有 stop bit. BuildCommDCB() 提供了對於這幾個常見設定的控制. </p>
+<pre class="code">BOOL BuildCommDCB( 
+LPCTSTR lpDef, // pointer to device-control string 
+LPDCB lpDCB // pointer to device-control block 
+);
+</pre>
+<p>lpDef 長的像這樣: &quot;baud=2400 parity=N data=8 stop=1&quot; </p>
+<h1>通訊設定對話盒 </h1>
+<p>Win32 API 中提供了一個開啟通訊設定對話盒的 API: CommConfigDialog(), 當呼叫這個 API 
+  時, 會蹦現一個可供設定 Baud Rate, Data Bits, Parity .. 等資訊的對話盒, programmer 可以利用它來讓使用者設定一些資訊, 
+  並且取得結果. </p>
+<pre class="code">BOOL CommConfigDialog( 
+LPTSTR lpszName, // pointer to device name string 
+HWND hWnd, // handle to window 
+LPCOMMCONFIG lpCC // pointer to comm. configuration structure 
+);
+</pre>
+<p>其中 lpCC 被用來存放設定值的結果. </p>
+<pre class="code">typedef struct _COMM_CONFIG {
+    DWORD dwSize;
+    WORD  wVersion; 
+    WORD  wReserved;
+    DCB   dcb;
+    DWORD dwProviderSubType;
+    DWORD dwProviderOffset;
+    DWORD dwProviderSize;
+    WCHAR wcProviderData[1];
+} COMMCONFIG, *LPCOMMCONFIG;
+</pre>
+<p>在我們呼叫 CommConfigDialog() 之前, dwSize 要設為 sizeof(COMMCONFIG), 
+  wVersion 的值在這邊似乎不重要(我不清楚, VC5 的 on-line help 說可以設為 1, 我手中的 book 的範例是設為 0x100), 
+  呼叫完 CommConfigDialog() 之後, 成員 dcb 中的 BaudRate, ByteSize, StopBits, Parity 就是使用者的設定.  </p>
+<h1>Timeout 的機制 </h1>
+<p>因為傳輸時並不會維持一個絕對穩定的速率. 因為傳輸品質的關係, programer 會需要 timeout 的機制來協助他們做一些控制. 
+  在 Win32 通訊 Timeout 的機制中, timeout 的性質共分為兩類, 先來看看 COMMTIMEOUTS 這個結構: </p>
+<pre class="code">typedef struct _COMMTIMEOUTS {   // ctmo 
+    DWORD ReadIntervalTimeout; 
+
+    DWORD ReadTotalTimeoutMultiplier; 
+    DWORD ReadTotalTimeoutConstant; 
+    DWORD WriteTotalTimeoutMultiplier; 
+    DWORD WriteTotalTimeoutConstant; 
+} COMMTIMEOUTS,*LPCOMMTIMEOUTS;
+</pre>
+<p>programmer 可以利用 GetCommTimeouts() 和 SetCommTimeouts() 來讀取或是設定目前的 
+  timeout 值. </p>
+<pre class="code">BOOL GetCommTimeouts( 
+HANDLE hFile, // handle of communications device 
+LPCOMMTIMEOUTS lpCommTimeouts // address of comm. time-outs structure 
+); 		
+
+BOOL SetCommTimeouts( 
+HANDLE hFile, // handle of communications device 
+LPCOMMTIMEOUTS lpCommTimeouts // address of communications time-out structure 
+);
+</pre>
+<p>第一種 timeout 的機制稱為 interval timeout, 從字面上的意義很容易可以理解這種 timeout 
+  的機制是讀取字元之間的間隔時間的 timeout, 只有讀取字元時才能夠使用interval timeout. 也就是在這個結構中的 ReadIntervalTimeout, 
+  單位為 ms, 當讀取完一個字元後, 超過了 ReadIntervalTimeout 的值, 卻還沒有讀到下一個字元時, timeout 就發生了. </p>
+<p>第二種 timeout 的機制稱為 total timeout, 顧名思義即是傳輸的總時間的 timeout . 在這種 
+  timeout 的機制下, Win32 提供了一個具有彈性的方式來設定 total timeout. 以讀取的 total timeout 為例, 利用 
+  ReadTotalTimeoutMultiplier 和 ReadTotalTimeoutConstant 構成了一個線性的上限值. 什麼意思呢? 實際上的 
+  total timeout 應該是這樣的一個式子: </p>
+<pre class="code">ReadTotalTimeout = ReadTotalTimeOutMultiplier*BytesToRead+ReadTotalTimeoutConstant 
+  </pre>
+<p>WriteTotalTimeout 用同樣的公式來計算. 這樣的話, 不僅可以用一個固定的值來做為 timeout 值, 
+  也可以用條線來做為 timeout 的值, 而隨著要讀取或是要寫的 bytes 數而變動. </p>
+<p>如果不想使用 timeout, 就把 COMMTIMEOUTS 裡頭的資料成員都填為 0. </p>
+<p>如果你將 ReadIntervalTimeout 設為 MAXDWORD, 且將 ReadTotalTimeOutMultiplier 
+  和 ReadTotalTimeoutConstant 都設為 0 的話, 那麼讀取時, 如果 receive queue 裡頭並沒有資料, 讀取的動作將會馬上返回, 
+  而不會停滯在讀取的動作. </p>
+<p>這裡有一個和 BuildCommDCB() 很像的 API 叫 BuildCommDCBAndTimeouts():  </p>
+<pre class="code">BOOL BuildCommDCBAndTimeouts( 
+LPCTSTR lpDef, // pointer to the device-control string 
+LPDCB lpDCB, // pointer to the device-control block 
+LPCOMMTIMEOUTS lpCommTimeouts // pointer to comm. time-out structure 
+);	
+</pre>
+<p>lpDef 一樣是控制字串, 可以給像 BuildCommDCB() 中的 lpDef 那樣格式的字串, 但是多了 &quot;TO=XXX&quot; 
+  這個設定. 如果 &quot;TO=ON&quot;, 這個 API 會依據 lpCommTimeouts 裡頭的值來設定讀和寫的 timeout 值. 如果 &quot;TO=OFF&quot;, 
+  則會設定這個 device 沒有 timeout. 如果是 &quot;ON&quot; 和 &quot;OFF&quot; 之外的其它值, 則 lpCommTimeouts 的設定將會被忽略.  </p>
+<p>對了, 在設定完 timeout 值之後, 記得要檢查 COMMPROP 裡的 dwProvCapabilities 
+  中的 PCF_INTTIMEOUTS 和 PCF_TOTALTIMEOUTS 兩個 flags 是否有被 set, 以確認 interval timeout 
+  和 total timeout 是否有支援. </p>
+<h1>讀取資料 </h1>
+<p>從 serial port 裡頭讀取資料就跟讀取一般的檔案一樣, 使用 ReadFile() 來達成. </p>
+<pre class="code">BOOL ReadFile( 
+HANDLE hFile, // handle of file to read 
+LPVOID lpBuffer, // address of buffer that receives data 
+DWORD nNumberOfBytesToRead, // number of bytes to read 
+LPDWORD lpNumberOfBytesRead, // address of number of bytes read 
+LPOVERLAPPED lpOverlapped // address of structure for data 
+); 
+</pre>
+<p>要注意的是, nNumberOfBytesToRead 設定的是一次最多的讀取量, 很有可能所讀取的值(檢查 lpNumberOfBytesRead)小於這個值. 
+  通常在錯誤發生或是 timeout 發生時這個 API 就會返回. </p>
+<p>PurgeComm() 這個 API 可以用來終止目前正在進行的讀或寫的動作, 也可以 flush 掉 I/O buffer 
+  內等待讀或寫的資料. </p>
+<pre class="code">BOOL PurgeComm( 
+HANDLE hFile, // handle of communications resource 
+DWORD dwFlags // action to perform 
+); 
+</pre>
+<p>其中 dwFlags 共有四種 flags: </p>
+
+  <li>PURGE_TXABORT: 終止目前正在進行的(背景)寫入動作  </li>
+  <li>PURGE_RXABORT: 終正目前正在進行的(背景)讀取動作  </li>
+  <li>PURGE_TXCLEAR: flush 寫入的 buffer  </li>
+  <li>PURGE_TXCLEAR: flush 讀取的 buffer </li>
+
+<p>而使用 FlushFileBuffers() 可以確保所有的資料都被送出, 這個 API 才會返回. </p>
+<p>另外一個有趣的 API 是 ClearCommError(), 從字面上的意思看來, 它是用來清除錯誤情況用的, 但是實際上它還可以拿來取得目前通訊設備的一些資訊.  </p>
+<pre class="code">BOOL ClearCommError( 
+HANDLE hFile, // handle to communications device 
+LPDWORD lpErrors, // pointer to variable to receive error codes 
+LPCOMSTAT lpStat // pointer to buffer for communications status 
+); 
+</pre>
+<p>呼叫這個 API 之後, 關於通訊設備的一些資訊會被儲存在 lpStat 中, COMSTAT 的結構如下: </p>
+<pre class="code">typedef struct _COMSTAT { // cst 
+    DWORD fCtsHold : 1;   // Tx waiting for CTS signal 
+    DWORD fDsrHold : 1;   // Tx waiting for DSR signal 
+    DWORD fRlsdHold : 1;  // Tx waiting for RLSD signal 
+    DWORD fXoffHold : 1;  // Tx waiting, XOFF char rec'd 
+    DWORD fXoffSent : 1;  // Tx waiting, XOFF char sent 
+    DWORD fEof : 1;       // EOF character sent 
+    DWORD fTxim : 1;      // character waiting for Tx 
+    DWORD fReserved : 25; // reserved 
+    DWORD cbInQue;        // bytes in input buffer 
+    DWORD cbOutQue;       // bytes in output buffer 
+} COMSTAT, *LPCOMSTAT
+</pre>
+<p>藉由 fCtsHold, fDsrHold, fRlsdHold, fXoffHold, fXoffSent 可以知道目前因為什麼因素而使通訊阻礙住了.( 
+  跟 handshaking 和 flow control 有關) cbInque 和 cbOutQue 則可以顯示出還有多少 bytes 在讀取或是寫入 
+  queue 中. </p>
+<h1>寫入資料 </h1>
+<p>和讀取資料一樣, programmer 可以使用 WriteFile() 來將資料寫入 serial port. </p>
+<pre class="code">BOOL WriteFile( 
+HANDLE hFile, // handle to file to write to 
+LPCVOID lpBuffer, // pointer to data to write to file 
+DWORD nNumberOfBytesToWrite, // number of bytes to write 
+LPDWORD lpNumberOfBytesWritten, // pointer to number of bytes written 
+LPOVERLAPPED lpOverlapped // pointer to structure needed for overlapped I/O 
+); 
+</pre>
+<p>關於通訊設備的寫入有三個很有趣的 API, 它們分別是 SetCommBreak(), ClearCommBreak, 
+  和 TransmitCommChar().</p>
+<pre class="code">BOOL SetCommBreak( 
+HANDLE hFile // handle of communications device 
+); 
+
+BOOL ClearCommBreak( 
+HANDLE hFile // handle to communications device 
+); 
+
+BOOL TransmitCommChar( 
+HANDLE hFile, // handle of communications device 
+char cChar // character to transmit 
+); 
+</pre>
+<p>SetCommBreak() 是用來暫停目前的傳輸作業, 它會使 buffer 中的資料都不再被送出, 這個時候, program 
+  可以去做些雜七雜八的事, 之後, 再利用 ClearCommBreak() 回復傳輸作業. </p>
+<p>TransmitCommChar() 是用來立即性的趕在所有 buffer 資料被送出去之前, 傳輸一個字元的資料出去, 
+  即使 buffer 中還有資料. 換句話說, 這個字元有最高的優先權被送出去. </p>
+<h1>事件驅動式的 I/O </h1>
+<p>在 Win32 裡頭, 對於通訊設備的 I/O 可以用像是事件驅動式的方法來達成. 主要是利用一個叫 WaitCommEvent() 
+  的 API. 呼叫這個 API 之後, 會一直 block 到設定的事件發生之後才會返回. 我們先來看看如何設定事件, 再回過頭來看 WaitCommEvent() 
+  . </p>
+<p>programer 可以用 GetCommMask() 和 SetCommMask() 來取得或是設定目前設定的通訊事件.  </p>
+<pre  class="code">BOOL GetCommMask( 
+HANDLE hFile, // handle of communications device 
+LPDWORD lpEvtMask // address of variable to get event mask 
+); 
+
+BOOL SetCommMask( 
+HANDLE hFile, // handle of communications device 
+DWORD dwEvtMask // mask that identifies enabled events 
+); 
+</pre>
+<p>可以設定的事件有 EV_BREAK, EV_CTS, EV_DSR, EV_ERR, EV_RING, EV_RLSD, 
+  EV_RXCHAR, EV_RXFLAG, EV_TXEMPTY.(其意義請自行參考 help), 當然, 你可以把它們 or 起來成為組合的事件. </p>
+<p>在設定完想要處理的事件之後, 可以使用 WaitCommEvent() </p>
+<pre class="code">BOOL WaitCommEvent( 
+HANDLE hFile, // handle of communications device 
+LPDWORD lpEvtMask, // address of variable for event that occurred 
+LPOVERLAPPED lpOverlapped, // address of overlapped structure 
+); 
+</pre>
+<p>WaitCommEvent() 會一直 block 到你所設定的通訊事件發生為止. 所以當 WaitCommEvent() 
+  返回時, 你可以由 lpEvtMask 取得究竟是那一事件發生, 再來決定要如何處理. </p>
+<p>舉例來說, 可以用 SetCommMask() 設定事件為 EV_RXCHAR, 那麼在呼叫 WaitCommEvent() 
+  時, 它會等到有字元可供讀取時才會返回, 那麼在它返回之後, 可以檢查一下 lpEvtMask 中是否 set 了 EV_RXCHAR, 如果是的話就可以用 
+  ReadFile() 去讀取. 這樣的話, 可以避免掉某些情形之下, 需要做 polling 所引起效率不彰的問題. </p>
+<h1>錯誤的處理 </h1>
+<p>前面提過的 ClearnCommError() 可以用來取得目前發生錯誤的原因.(請參見 help) </p>
+<h1>硬體的控制命令 </h1>
+<p>Win32 中提供了 EscapeCommFunction() 允許 programer 對幾個硬體訊號做控制. </p>
+<pre class="code">BOOL EscapeCommFunction( 
+HANDLE hFile, // handle to communications device 
+DWORD dwFunc // extended function to perform 
+); 	
+</pre>
+<p>其中 dwFunc 可以是: </p>
+
+  <li>CLRDTR : 讓 DTR OFF  </li>
+  <li>CLRRTS : 讓 RTS OFF  </li>
+  <li>SETDTR : 讓 DTR ON  </li>
+  <li>SETRTS : 讓 RTS ON  </li>
+  <li>SETXOFF : &quot;模擬&quot; 接收到 XOFF 字元  </li>
+  <li>SETXON : &quot;模擬&quot; 接收到 XON 字元  </li>
+  <li>SETBREAK : 和 SetCommBreak() 的意思相同  </li>
+  <li>CLRBREAK : 和 ClearCommBreak() 的意思相同 </li>
+
+<div class="rpindex"><a href="079.html"> 下一页</a><a href="077.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

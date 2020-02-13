@@ -1,0 +1,372 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="083.html"> 上一页</a><a href="085.html"> 下一页</a></div>
+<h1>用汇编编 Windows 
+  程序</h1>
+<h2>概述：</h2>
+<p> 用汇编编制一般的 Windows 程序需要的不是汇编编程的资料，而是 Windows 函数调用的资料，你分析一下下面的源程序就会发现，程序的结构跟用 
+  BC++ 编 Windows 程序几乎一模一样，原来用 C++ 函数的地方，变成了一个 Call  外部子程序，而函数的参数是由 PUSH 指令先压入堆栈，先由最后一个参数压起。同样，用汇编编 
+  Windows 程序也需要 .DEF 文件和 .RES 文件，这是由 Windows 程序的结构决定的。本文是一个最简单的 Windows 程序，仅仅开了一个窗口，说一句话：&quot;Hello, 
+  Windows 95!&quot;，这个声音文件是我从别的地方拷来的，你可以把它换成其他声音文件。<br>
+  用于编译的工具请到软件下载中找，本文要用到的是 Tasm.exe，Tlink.exe，Make.exe 和库文件 
+  Import32.lib。<br>
+  </p>
+
+<p>源程序：</p>
+ <pre class="code">              NAME      = HELLOWIN
+        OBJS  =         $(NAME).OBJ
+         DEF  =         $(NAME).DEF
+         RES  =         $(NAME).RES
+IMPORT=IMPORT32
+$(NAME).EXE: $(OBJS) $(DEF)
+  tlink32 /Tpe /aa /c $(LINKDEBUG) $(OBJS),,, $(IMPORT), $(DEF),
+   .ASM.OBJ:
+  tasm32 /ml /m2 $&.asm,,,
+文件 Hellowin.def 的内容，同编 C++ 程序一样，定义了数据段，代码段的属性等内容：
+
+              NAME      HELLOWIN
+DESCRIPTION '(C) Copyright by Lyb'
+CODE         PRELOAD MOVEABLE DISCARDABLE
+DATA         PRELOAD MOVEABLE MULTIPLE
+EXETYPE      WINDOWS
+HEAPSIZE     8192
+STACKSIZE    8192
+EXPORTS      WndProc
+HelloWin 的源程序：
+.486P
+.MODEL        FLAT,STDCALL
+     INCLUDE  WINDOWS.INC       ;外部子程序，常量的定义等
+
+;**************************************************
+.DATA
+msg		MSGSTRUCT	&lt;?&gt;	;消息
+wndclass	WNDCLASS	&lt;?&gt;	;Windows 类
+ptstr		PAINTSTRUCT	&lt;?&gt;	;用于屏幕刷新的句柄
+rect		RECT		&lt;?&gt;	;
+        H_DC  DD        ?           ;DC 句柄，用于屏幕刷新的句柄
+      H_INST  DD        ?           ;handle of module
+       H_WIN  DD        ?           ;handle of window
+     D_CLASS  DB        "HELLO WIN",0
+     T_TITLE  DB        "HELLO, WINDOWS 95 !",0
+      T_COPY  DB        'A copy of program is already running, continue ? ',0
+     PAINT_X  DD        ?
+     PAINT_Y  DD        ?
+            WAV_FILENAME  DB        'hellowin.wav',0
+;**************************************************
+.CODE
+      START:
+              PUSH      0
+              CALL      GETMODULEHANDLE		；取模块句柄
+              MOV       H_INST,EAX
+ FIND_CLASS:
+              PUSH      0
+              PUSH      OFFSET D_CLASS
+              CALL      FINDWINDOW  ;查找有无程序副本在运行
+              OR        EAX,EAX
+              JZ        REGISTER_CLASS
+              PUSH      MB_YESNO OR MB_ICONQUESTION
+              PUSH      OFFSET T_TITLE
+              PUSH      OFFSET T_COPY
+              PUSH      0
+              CALL      MESSAGEBOX  ;显示一个对话框
+              CMP       EAX,IDNO
+              JZ        END_LOOP
+         REGISTER_CLASS:
+              PUSH      IDC_ARROW
+              PUSH      0
+              CALL      LOADCURSOR  ;装入光标
+              MOV       WNDCLASS.CLSHCURSOR,EAX
+              MOV       WNDCLASS.CLSSTYLE,CS_HREDRAW OR CS_VREDRAW
+              MOV       WNDCLASS.CLSLPFNWNDPROC,OFFSET WNDPROC
+              MOV       WNDCLASS.CLSCBCLSEXTRA,0
+              MOV       WNDCLASS.CLSCBWNDEXTRA,0
+              MOV       EAX,H_INST
+              MOV       WNDCLASS.CLSHINSTANCE,EAX
+              MOV       WNDCLASS.CLSHICON,0
+              MOV       WNDCLASS.CLSHBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WNDCLASS.CLSLPSZMENUNAME,0
+              MOV       WNDCLASS.CLSLPSZCLASSNAME,OFFSET D_CLASS
+              PUSH      OFFSET WNDCLASS
+              CALL      REGISTERCLASS           ;注册窗口类
+; create new window
+              PUSH      0
+              PUSH      H_INST
+              PUSH      0
+              PUSH      0
+              PUSH      CW_USEDEFAULT
+              PUSH      CW_USEDEFAULT
+              PUSH      CW_USEDEFAULT
+              PUSH      CW_USEDEFAULT
+              MOV       EAX,WS_OVERLAPPEDWINDOW OR WS_MINIMIZE
+              PUSH      EAX
+              PUSH      OFFSET T_TITLE
+              PUSH      OFFSET D_CLASS
+              PUSH      0
+              CALL      CREATEWINDOWEX          ;创建一个窗口
+              MOV       H_WIN,EAX
+		
+; show new window
+              PUSH      SW_SHOWNORMAL
+;		push	SW_SHOWMINNOACTIVE	;show in task bar
+              PUSH      H_WIN
+              CALL      SHOWWINDOW		；显示窗口
+		
+              PUSH      H_WIN
+              CALL      UPDATEWINDOW		；刷新窗口
+   MSG_LOOP:
+              PUSH      0
+              PUSH      0
+              PUSH      0
+              PUSH      OFFSET MSG
+              CALL      GETMESSAGE		；取消息循环
+              CMP       AX,0
+              JZ        END_LOOP
+		
+              PUSH      OFFSET MSG
+              CALL      TRANSLATEMESSAGE	；把消息传给 WNDPROC 子程序
+              PUSH      OFFSET MSG
+              CALL      DISPATCHMESSAGE
+              JMP       MSG_LOOP
+   END_LOOP:
+
+              PUSH      MSG.MSWPARAM
+              CALL      EXITPROCESS
+
+;********************************************************************
+;	WndProc
+；消息处理程序
+;********************************************************************
+     WNDPROC  PROC      USES EBX EDI ESI,HWND:DWORD,WMSG:DWORD,WPARAM:DWORD,LPARAM:DWORD
+              LOCAL     THEDC:DWORD
+
+;注意，以上的结构是固定的，因为 Windows 自己回先把 EBX，EDI，ESI 压入 STACK
+              MOV       EAX,WMSG
+              CMP       EAX,WM_CREATE	；判断消息类型并执行响应程序
+              JZ        WM_CREATE
+              CMP       EAX,WM_DESTROY
+              JZ        WM_DESTROY
+              CMP       EAX,WM_PAINT
+              JZ        WM_PAINT
+		
+              PUSH      LPARAM      ;return with default windows proc
+              PUSH      WPARAM
+              PUSH      WMSG
+              PUSH      HWND
+              CALL      DEFWINDOWPROC
+              RET
+  WM_CREATE:
+              PUSH      20000H OR 1 ;snd_filename | snd_async
+              PUSH      0
+              PUSH      OFFSET WAV_FILENAME
+              CALL      PLAYSOUND
+              XOR       EAX,EAX
+              RET
+   WM_PAINT:
+              PUSH      OFFSET PTSTR
+              PUSH      HWND
+              CALL      BEGINPAINT
+              MOV       H_DC,EAX
+		
+              PUSH      OFFSET RECT
+              PUSH      HWND
+              CALL      GETCLIENTRECT
+		
+              PUSH      20H OR 1 OR 4           ;dt_singleline | dt_enter | DT_VCENTEr
+              PUSH      OFFSET RECT
+              PUSH      -1
+              PUSH      OFFSET T_TITLE
+              PUSH      H_DC
+              CALL      DRAWTEXT
+		
+              PUSH      OFFSET PTSTR
+              PUSH      HWND
+              CALL      ENDPAINT
+              XOR       EAX,EAX
+              RET
+ WM_DESTROY:
+              PUSH      0
+              CALL      POSTQUITMESSAGE
+              XOR       EAX,EAX
+              RET
+		
+     WNDPROC  ENDP
+      PUBLIC  WNDPROC
+              ENDS
+              END       START
+</pre>
+
+ <div class="rpindex"><a href="085.html"> 下一页</a><a href="083.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

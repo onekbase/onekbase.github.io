@@ -1,0 +1,624 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="040.html"> 上一页</a><a href="047.html"> 下一页</a></div><h1 align="center">一个例子</h1>
+<p>这一章,我们要把我们已学的知识集合起来。具体来讲,我们来写一个使用ODBC APIs的程序.为简单起见,这个程序中我使用Microsoft的Access数据库(Microsoft 
+Access 97) .</p>
+<p>注意:如果你使用的windows.inc 是1.18及其以下版本,在开始编译之前要修改其中的一个小bug.在windows.inc中查找 "SQL_NULL_HANDLE"，将得到下面这行:</p>
+<p>SQL_NULL_HANDLE equ 
+0L</p>
+<p>将0后面的"L"删除,象这样:</p>
+<p>SQL_NULL_HANDLE equ 0</p>
+<p>这个程序是一个基于对话框的程序，有一个简单的菜单.当用户选择"connect"时,它将试图连接test.mdb数据库,如果连接成功,将显示由ODBC驱动程序返回的完整连接字符串.接下来,用户可选择"View All Records"命令,程序会使用listview control来显示数据库中的所有数据.用户还可以选择"Query"命令来查询特定的记录.例子程序将会显示一个小对话框提示用户输入想找的人名.当用户按下OK钮或回车键,程序将执行一个查询来查找符合条件的记录.当用户完成对数据库的操作时,可以选择"disconnect"命令与数据库断开连接.</p>
+<p>现在看一下源程序:</p>
+<pre class="code">.386
+.model flat,stdcall
+include \masm32\include\windows.inc
+include \masm32\include\kernel32.inc
+include \masm32\include\odbc32.inc
+include \masm32\include\comctl32.inc
+include \masm32\include\user32.inc
+includelib \masm32\lib\odbc32.lib
+includelib \masm32\lib\comctl32.lib
+includelib \masm32\lib\kernel32.lib
+includelib \masm32\lib\user32.lib
+
+IDD_MAINDLG equ 101
+IDR_MAINMENU equ 102
+IDC_DATALIST equ 1000
+IDM_CONNECT equ 40001
+IDM_DISCONNECT equ 40002
+IDM_QUERY equ 40003
+IDC_NAME equ 1000
+IDC_OK equ 1001
+IDC_CANCEL equ 1002
+IDM_CUSTOMQUERY equ 40004
+IDD_QUERYDLG equ 102
+
+
+DlgProc proto hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD
+QueryProc proto hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD
+SwitchMenuState proto :DWORD
+ODBCConnect proto :DWORD
+ODBCDisconnect proto :DWORD
+RunQuery proto :DWORD
+
+.data?
+hInstance dd ?
+hEnv dd ?
+hConn dd ?
+hStmt dd ?
+Conn db 256 dup(?)
+StrLen dd ?
+hMenu dd ? ; 主菜单句柄
+hList dd ? ; listview control句柄
+TheName db 26 dup(?)
+TheSurname db 26 dup(?)
+TelNo db 21 dup(?)
+NameLength dd ?
+SurnameLength dd ?
+TelNoLength dd ?
+SearchName db 26 dup(?)
+ProgPath db 256 dup(?)
+ConnectString db 1024 dup(?)
+
+.data
+SQLStatement db "select * from main",0
+WhereStatement db " where name=?",0
+strConnect db "DRIVER={Microsoft Access Driver (*.mdb)};DBQ=",0
+DBName db "test.mdb",0
+ConnectCaption db "Complete Connection String",0
+Disconnect db "Disconnect successful",0
+AppName db "ODBC Test",0
+AllocEnvFail db "Environment handle allocation failed",0
+AllocConnFail db "Connection handle allocation failed",0
+SetAttrFail db "Cannot set desired ODBC version",0
+NoData db "You must type the name in the edit box",0
+ExecuteFail db "Execution of SQL statement failed",0
+ConnFail db "Connection attempt failed",0
+AllocStmtFail db "Statement handle allocation failed",0
+Heading1 db "Name",0
+Heading2 db "Surname",0
+Heading3 db "Telephone No.",0
+
+.code
+start:
+invoke GetModuleHandle, NULL
+mov hInstance,eax
+call GetProgramPath
+invoke DialogBoxParam, hInstance, IDD_MAINDLG,0,addr DlgProc,0
+invoke ExitProcess,eax
+invoke InitCommonControls
+DlgProc proc hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD
+.if uMsg==WM_INITDIALOG
+invoke GetMenu, hDlg
+mov hMenu,eax
+invoke GetDlgItem, hDlg, IDC_DATALIST
+mov hList,eax
+call InsertColumn
+.elseif uMsg==WM_CLOSE
+invoke GetMenuState, hMenu, IDM_CONNECT,MF_BYCOMMAND
+.if eax==MF_GRAYED
+invoke ODBCDisconnect, hDlg
+.endif
+invoke EndDialog,hDlg, 0
+.elseif uMsg==WM_COMMAND
+.if lParam==0
+mov eax,wParam
+.if ax==IDM_CONNECT
+invoke ODBCConnect,hDlg
+.elseif ax==IDM_DISCONNECT
+invoke ODBCDisconnect,hDlg
+.elseif ax==IDM_QUERY
+invoke RunQuery,hDlg
+.elseif ax==IDM_CUSTOMQUERY
+invoke DialogBoxParam, hInstance, IDD_QUERYDLG,hDlg, addr QueryProc, 0
+.endif
+.endif
+.else
+mov eax,FALSE
+ret
+.endif
+mov eax,TRUE
+ret
+DlgProc endp 
+
+GetProgramPath proc
+invoke GetModuleFileName, NULL,addr ProgPath,sizeof ProgPath
+std
+mov edi,offset ProgPath
+add edi,sizeof ProgPath-1
+mov al,"\"
+mov ecx,sizeof ProgPath
+repne scasb
+cld
+mov byte ptr [edi+2],0
+ret
+GetProgramPath endp
+
+SwitchMenuState proc Flag:DWORD
+.if Flag==TRUE 
+invoke EnableMenuItem, hMenu, IDM_CONNECT, MF_GRAYED
+invoke EnableMenuItem, hMenu, IDM_DISCONNECT, MF_ENABLED
+invoke EnableMenuItem, hMenu, IDM_QUERY, MF_ENABLED
+invoke EnableMenuItem, hMenu, IDM_CUSTOMQUERY, MF_ENABLED
+.else
+invoke EnableMenuItem, hMenu, IDM_CONNECT, MF_ENABLED
+invoke EnableMenuItem, hMenu, IDM_DISCONNECT, MF_GRAYED
+invoke EnableMenuItem, hMenu, IDM_QUERY, MF_GRAYED
+invoke EnableMenuItem, hMenu, IDM_CUSTOMQUERY, MF_GRAYED
+.endif
+ret
+SwitchMenuState endp
+
+ODBCConnect proc hDlg:DWORD
+invoke SQLAllocHandle, SQL_HANDLE_ENV, SQL_NULL_HANDLE, addr hEnv
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke SQLSetEnvAttr, hEnv,SQL_ATTR_ODBC_VERSION, SQL_OV_ODBC3,0
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke SQLAllocHandle, SQL_HANDLE_DBC, hEnv, addr hConn
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke lstrcpy,addr ConnectString,addr strConnect
+invoke lstrcat,addr ConnectString, addr ProgPath
+invoke lstrcat, addr ConnectString,addr DBName
+invoke SQLDriverConnect, hConn, hDlg, addr ConnectString, sizeof ConnectString, addr Conn, sizeof Conn,addr StrLen, SQL_DRIVER_COMPLETE
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke SwitchMenuState,TRUE
+invoke MessageBox,hDlg, addr Conn,addr ConnectCaption,MB_OK+MB_ICONINFORMATION
+.else
+invoke SQLFreeHandle, SQL_HANDLE_DBC, hConn
+invoke SQLFreeHandle, SQL_HANDLE_ENV, hEnv
+invoke MessageBox, hDlg, addr ConnFail, addr AppName, MB_OK+MB_ICONERROR
+.endif
+.else
+invoke SQLFreeHandle, SQL_HANDLE_ENV, hEnv
+invoke MessageBox, hDlg, addr AllocConnFail, addr AppName, MB_OK+MB_ICONERROR
+.endif
+.else
+invoke SQLFreeHandle, SQL_HANDLE_ENV, hEnv
+invoke MessageBox, hDlg, addr SetAttrFail, addr AppName, MB_OK+MB_ICONERROR
+.endif
+.else
+invoke MessageBox, hDlg, addr AllocEnvFail, addr AppName, MB_OK+MB_ICONERROR 
+.endif
+ret
+ODBCConnect endp
+
+ODBCDisconnect proc hDlg:DWORD
+invoke SQLDisconnect, hConn
+invoke SQLFreeHandle, SQL_HANDLE_DBC, hConn
+invoke SQLFreeHandle, SQL_HANDLE_ENV, hEnv
+invoke SwitchMenuState, FALSE
+invoke ShowWindow,hList, SW_HIDE
+invoke MessageBox,hDlg,addr Disconnect, addr AppName,MB_OK+MB_ICONINFORMATION
+ret
+ODBCDisconnect endp
+
+InsertColumn proc
+LOCAL lvc:LV_COLUMN
+mov lvc.imask,LVCF_TEXT+LVCF_WIDTH
+mov lvc.pszText,offset Heading1
+mov lvc.lx,150
+invoke SendMessage,hList, LVM_INSERTCOLUMN,0,addr lvc
+mov lvc.pszText,offset Heading2
+invoke SendMessage,hList, LVM_INSERTCOLUMN, 1 ,addr lvc 
+mov lvc.pszText,offset Heading3
+invoke SendMessage,hList, LVM_INSERTCOLUMN, 3 ,addr lvc 
+ret 
+InsertColumn endp
+
+FillData proc
+LOCAL lvi:LV_ITEM
+LOCAL row:DWORD
+
+invoke SQLBindCol, hStmt,1,SQL_C_CHAR, addr TheName, sizeof TheName,addr NameLength
+invoke SQLBindCol, hStmt,2,SQL_C_CHAR, addr TheSurname, sizeof TheSurname,addr SurnameLength
+invoke SQLBindCol, hStmt,3,SQL_C_CHAR, addr TelNo, sizeof TelNo,addr TelNoLength
+mov row,0
+.while TRUE
+mov byte ptr ds:[TheName],0
+mov byte ptr ds:[TheSurname],0
+mov byte ptr ds:[TelNo],0
+invoke SQLFetch, hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+mov lvi.imask,LVIF_TEXT+LVIF_PARAM
+push row
+pop lvi.iItem 
+mov lvi.iSubItem,0
+mov lvi.pszText, offset TheName
+push row
+pop lvi.lParam
+invoke SendMessage,hList, LVM_INSERTITEM,0, addr lvi
+mov lvi.imask,LVIF_TEXT
+inc lvi.iSubItem
+mov lvi.pszText,offset TheSurname
+invoke SendMessage,hList,LVM_SETITEM, 0,addr lvi
+inc lvi.iSubItem
+mov lvi.pszText,offset TelNo
+invoke SendMessage,hList,LVM_SETITEM, 0,addr lvi
+inc row
+.else
+.break
+.endif
+.endw
+ret
+FillData endp
+
+RunQuery proc hDlg:DWORD
+invoke ShowWindow, hList, SW_SHOW
+invoke SendMessage, hList, LVM_DELETEALLITEMS,0,0
+invoke SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke SQLExecDirect, hStmt, addr SQLStatement, sizeof SQLStatement
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke FillData
+.else
+invoke ShowWindow, hList, SW_HIDE
+invoke MessageBox,hDlg,addr ExecuteFail, addr AppName, MB_OK+MB_ICONERROR
+.endif
+invoke SQLCloseCursor, hStmt
+invoke SQLFreeHandle, SQL_HANDLE_STMT, hStmt
+.else
+invoke ShowWindow, hList, SW_HIDE
+invoke MessageBox,hDlg,addr AllocStmtFail, addr AppName, MB_OK+MB_ICONERROR
+.endif
+ret
+RunQuery endp
+QueryProc proc hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD 
+.if uMsg==WM_CLOSE
+invoke SQLFreeHandle, SQL_HANDLE_STMT, hStmt
+invoke EndDialog, hDlg,0
+.elseif uMsg==WM_INITDIALOG
+invoke ShowWindow, hList, SW_SHOW
+invoke SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke lstrcpy, addr Conn, addr SQLStatement
+invoke lstrcat, addr Conn, addr WhereStatement
+invoke SQLBindParameter,hStmt, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR,25,0, addr SearchName,25,addr StrLen
+invoke SQLPrepare, hStmt, addr Conn, sizeof Conn
+.else
+invoke ShowWindow, hList, SW_HIDE
+invoke MessageBox,hDlg,addr AllocStmtFail, addr AppName, MB_OK+MB_ICONERROR
+invoke EndDialog, hDlg,0
+.endif 
+.elseif uMsg==WM_COMMAND
+mov eax, wParam
+shr eax,16
+.if ax==BN_CLICKED
+mov eax,wParam
+.if ax==IDC_OK
+invoke GetDlgItemText, hDlg, IDC_NAME, addr SearchName, 25
+.if ax==0
+invoke MessageBox, hDlg,addr NoData, addr AppName, MB_OK+MB_ICONERROR
+invoke GetDlgItem, hDlg, IDC_NAME
+invoke SetFocus, eax
+.else
+invoke lstrlen,addr SearchName
+mov StrLen,eax
+invoke SendMessage, hList, LVM_DELETEALLITEMS,0,0
+invoke SQLExecute, hStmt
+invoke FillData
+invoke SQLCloseCursor, hStmt
+.endif
+.else
+invoke SQLFreeHandle, SQL_HANDLE_STMT, hStmt
+invoke EndDialog, hDlg,0
+.endif
+.endif
+.else
+mov eax,FALSE
+ret
+.endif
+mov eax,TRUE
+ret
+QueryProc endp
+end start</pre>
+
+<h4>分析</h4>
+<pre class="code">start:
+invoke GetModuleHandle, NULL
+mov hInstance,eax
+call GetProgramPath</pre>
+<p>当程序开始时,将获得实例句柄并获得所在路径.默认情况下数据库 test.mdb应与程序处于同一文件夹. <br>
+</p>
+<pre class="code">GetProgramPath proc
+invoke GetModuleFileName, NULL,addr ProgPath,sizeof ProgPath
+std
+mov edi,offset ProgPath
+add edi,sizeof ProgPath-1
+mov al,"\"
+mov ecx,sizeof ProgPath
+repne scasb
+cld
+mov byte ptr [edi+2],0
+ret
+GetProgramPath endp </pre>
+<p>GetProgramPath调用GetModuleFileName来获得程序的全路径名.接着在路径中查找最后一个"\"符",通过将文件名的第一个字符置为0获得(truncate)" 文件名. 因此我们在ProgPath中获得了程序的路径名.</p>
+<p>然后程序将用DialogBoxParam显示主对话框.当主对话框第一次被载入时,它将获得菜单句柄和listview control句柄.接下来在listview control中插入三列(因为我们已经知道结果集将包含三列.因为是我们先建的表.)</p>
+<p>现在,它就等待用户的动作了.如果用户在菜单中选择"connect",将会调用ODBCConnect函数.</p>
+<pre class="code">ODBCConnect proc hDlg:DWORD
+invoke SQLAllocHandle, SQL_HANDLE_ENV, SQL_NULL_HANDLE, addr hEnv
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre>
+<p>它做的第一件事是调用SQLAllocHandle来分配一个环境句柄.<br>
+</p>
+<pre class="code"> invoke SQLSetEnvAttr, hEnv,SQL_ATTR_ODBC_VERSION, SQL_OV_ODBC3,0
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre>
+<p>获得环境句柄后,程序调用SQLSetEnvAttr来表示将要使用ODBC 3.x的语法.<br>
+</p>
+<pre class="code"> invoke SQLAllocHandle, SQL_HANDLE_DBC, hEnv, addr hConn
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre>
+<p>如果一切顺利,程序将通过调用SQLAllocHandle获得连接句柄来实现连接.<br>
+</p>
+<pre class="code"> invoke lstrcpy,addr ConnectString,addr strConnect
+invoke lstrcat,addr ConnectString, addr ProgPath
+invoke lstrcat, addr ConnectString,addr DBName</pre>
+<p>接着填写连接字符串.完整的连接字符串将被用在ConnectionString<br>
+</p>
+<pre class="code"> invoke SQLDriverConnect, hConn, hDlg, addr ConnectString, sizeof ConnectString, addr Conn, sizeof Conn,addr StrLen, SQL_DRIVER_COMPLETE
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke SwitchMenuState,TRUE
+invoke MessageBox,hDlg, addr Conn,addr ConnectCaption,MB_OK+MB_ICONINFORMATION</pre>
+<p>当连接字符串完成,程序将调用SQLDriverConnect来通过MS Access ODBC 驱动程序连接test.mdb数据库.如果文件test.mdb不存在,ODBC driver将提示用户输入该文件的位置,因为我们已经设定了SQL_DRIVER_COMPLETE标志.当SQLDriverConnect成功返回时, Conn 被填入由ODBC驱动程序创建的完整连接字符串.我们通过一个message box来将其显示给用户. SwitchMenuState是一个单纯切换菜单选项可用的函数.</p>
+<p>现在,到数据库的连接已经建立并被打开,并一直保持打开状态直到用户选择关闭. </p>
+<p>当用户选择了"View All Records"命令, 
+对话框过程将调用RunQuery.函数 
+<br>
+</p>
+<pre class="code">
+RunQuery proc hDlg:DWORD
+invoke ShowWindow, hList, SW_SHOW
+invoke SendMessage, hList, LVM_DELETEALLITEMS,0,0</pre>
+<p>由于listview control在创建时是不可见的,现在我们把它显示出来.还有 要把其中的所有元素(如果有的话)删掉.</p>
+<p> invoke SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+<p>接下来,程序将获得一个语句句柄.<br>
+</p>
+<pre class="code"> invoke SQLExecDirect, hStmt, addr SQLStatement, sizeof SQLStatement
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre>
+<p>通过 SQLExecDirect执行已准备好的SQL语句.我这里选择SQLExecDirect 
+的原因是只须执行一次.<br>
+</p>
+<p> invoke FillData
+<p>执行SQL语句后,将返回一个结果集.我们使用 FillData函数来从结果集中解出数据并将其放入listview control中.</p>
+<pre class="code">FillData proc
+LOCAL lvi:LV_ITEM
+LOCAL row:DWORD
+
+invoke SQLBindCol, hStmt,1,SQL_C_CHAR, addr TheName, sizeof TheName,addr NameLength
+invoke SQLBindCol, hStmt,2,SQL_C_CHAR, addr TheSurname, sizeof TheSurname,addr SurnameLength
+invoke SQLBindCol, hStmt,3,SQL_C_CHAR, addr TelNo, sizeof TelNo,addr TelNoLength</pre>
+<p>现在,结果集被返回.我们要绑定结果集的所有三列到我们提供的缓冲区中.这是调用SQLBindCol来实现的.注意我们要对每一列分别调用.并且我们并不需要绑定所有的列:只要绑定要获得数据的列就行了. </p>
+<pre class="code"> mov row,0
+.while TRUE
+mov byte ptr ds:[TheName],0
+mov byte ptr ds:[TheSurname],0
+mov byte ptr ds:[TelNo],0</pre>
+<p>当列中没有数据时,我们初始化缓冲区为NULLs.更好的方法是用SQLBindCol指定的变量中数据的长度.在我们的例子中,我们可以检查NameLength, 
+ SurnameLength和TelNoLength中的值的确切长度. 
+</p>
+<pre class="code"> invoke SQLFetch, hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+mov lvi.imask,LVIF_TEXT+LVIF_PARAM
+push row
+pop lvi.iItem 
+mov lvi.iSubItem,0
+mov lvi.pszText, offset TheName
+push row
+pop lvi.lParam
+invoke SendMessage,hList, LVM_INSERTITEM,0, addr lvi  </pre>
+<p>其它都很简单了.调用SQLFetch 
+来获得结果集的一行,并将其存入listview control的缓冲区中.当没有更多的行供检索时(已到达文件尾), SQLFetch返回SQL_NO_DATA并且程序跳出循环. 
+</p>
+<pre class="code"> invoke SQLCloseCursor, hStmt
+invoke SQLFreeHandle, SQL_HANDLE_STMT, hStmt</pre>
+<p>当完成对结果集的操作时,调用SQLCloseCursor关闭结果集并调用SQLFreeHandle释放语句句柄.<br>
+<br>
+当用户选择"Query"命令,程序显示另一个对话框供用户输入要查询的名字.</p>
+<pre class="code"> .elseif uMsg==WM_INITDIALOG
+invoke ShowWindow, hList, SW_SHOW
+invoke SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+invoke lstrcpy, addr Conn, addr SQLStatement
+invoke lstrcat, addr Conn, addr WhereStatement
+invoke SQLBindParameter,hStmt, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR,25,0, addr SearchName,25,addr StrLen
+invoke SQLPrepare, hStmt, addr Conn, sizeof Conn</pre>
+<p>对话框做的第一件事是显示listview control.接下来分配一个语句句柄以创建SQL语句.这个SQL语句有一个"where"子句及一个参数标志符"?". 
+完整的SQL语句是:</p>
+ 
+<pre class="code">select * from main where name=?</pre >
+<p>接着程序调用SQLBindParameter 
+来建立参数标志符与缓冲区SearchName的连接,这样当SQL语句被执行时,ODBC驱动程序就可从SearchName中获得需要的字符串.接下来,程序调用SQLPrepare来编译SQL语句. 
+这样我们只要准备/编译SQL语句一次就可多次使用.因为SQL语句已被编译过,接下来的执行过程会快一些.</p>
+<pre class="code"> .if ax==IDC_OK
+invoke GetDlgItemText, hDlg, IDC_NAME, addr SearchName, 25
+.if ax==0
+invoke MessageBox, hDlg,addr NoData, addr AppName, MB_OK+MB_ICONERROR
+invoke GetDlgItem, hDlg, IDC_NAME
+invoke SetFocus, eax
+.else</pre>
+<p>当用户在编辑框(edit control)中填入了一些名字并按下回车键, 程序将获得编辑框中的文本并检查是否是空字符串.如果是,则显示一个message box并将键盘焦点设在编辑框上,提示用户输入名字.<br>
+ </p>
+<pre class="code"> invoke lstrlen,addr SearchName
+mov StrLen,eax
+invoke SendMessage, hList, LVM_DELETEALLITEMS,0,0
+invoke SQLExecute, hStmt
+invoke FillData
+invoke SQLCloseCursor, hStmt</pre>
+<p>如果编辑框中已有字符串,程序会获得它的长度并将其放入StrLen中供ODBC驱动程序使用(记住我们已将StrLen的地址传送给了SQLBindParameter). 
+接下来程序使用获得的语句句柄调用SQLExecute执行已准备好的SQL语句.当 
+SQLExecute返回时,程序调用FillData在listview control显示结果.因为我们不会再用到结果集,调用SQLCloseCursor来关闭它.</p>
+
+<div class="rpindex"><a href="047.html"> 下一页</a><a href="040.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

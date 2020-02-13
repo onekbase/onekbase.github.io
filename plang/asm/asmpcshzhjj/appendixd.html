@@ -1,0 +1,1075 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">目录</a> <a href="appendixc.html">附录C</a>  </div>
+
+<h2>附录D BIOS数据区</h2>
+<table>
+  <tr>
+    <td >偏移</td>
+    <td >长度</td>
+    <td >位定义<br />
+    7654 3210</td>
+    <td  >说明</td>
+    <td >备注</td>
+  </tr>
+  <tr>
+    <td>00H</td>
+    <td>字</td>
+    <td></td>
+    <td >串行口COM1基地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>02H</td>
+    <td>字</td>
+    <td></td>
+    <td >串行口COM2基地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>04H</td>
+    <td>字</td>
+    <td></td>
+    <td >串行口COM3基地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>06H</td>
+    <td>字</td>
+    <td></td>
+    <td >串行口COM4基地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>08H</td>
+    <td>字</td>
+    <td></td>
+    <td >并行打印适配器LPT1端口地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0AH</td>
+    <td>字</td>
+    <td></td>
+    <td >并行打印适配器LPT2端口地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0CH</td>
+    <td>字</td>
+    <td></td>
+    <td >并行打印适配器LPT3端口地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0EH</td>
+    <td>字</td>
+    <td></td>
+    <td >并行打印适配器LPT4端口地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10H</td>
+    <td>字节</td>
+    <td>**.. ....<br />
+      ..** ....<br />
+      <br />
+      <br />
+      .... **..<br />
+      ....   .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td >软盘驱动器数<br />
+      显示方式:<br />
+      00:保留 01:40x25 彩色<br />
+      10:80x25 彩色 11:80x25   单色<br />
+      PC:内存已安装 AT:保留<br />
+      PC/AT:保留   PS/2:装有定点设备<br />
+      装有8087/287/387协处理器<br />
+      装有软盘驱动器</td>
+    <td rowspan="2">10H与11H两个字节为设备编码，调用BIOS中断11H可返回此信息</td>
+  </tr>
+  <tr>
+    <td>11H</td>
+    <td>字节</td>
+    <td>**.. ....<br />
+      ..*. ....<br />
+      ...* ....<br />
+      ....   ***.<br />
+      .... ...*</td>
+    <td >打印机适配器号<br />
+      便携机：内部调制解调器<br />
+      装有游戏杆<br />
+      RS232适配器号<br />
+      保留</td>
+  </tr>
+  <tr>
+    <td>12H</td>
+    <td>字节</td>
+    <td></td>
+    <td >PC/AT：初始化信息；便携机：电源自检状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13H</td>
+    <td>字</td>
+    <td></td>
+    <td >内存容量，以KB为单位</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>15H</td>
+    <td>字</td>
+    <td></td>
+    <td >PC/AT：保留；便携机：电池状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>17H</td>
+    <td>字节</td>
+    <td>*... ....<br />
+      .*.. ....<br />
+      ..*. ....<br />
+      ...*   ....<br />
+      .... *...<br />
+      .... .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td >Insert状态<br />
+      Caps Lock状态<br />
+      Num Lock状态<br />
+      Scroll   Lock状态<br />
+      Alt键按下<br />
+      Ctrl键按下<br />
+      Left Shift键按下<br />
+      Right Shift键按下</td>
+    <td rowspan="2">17H与18H合称键盘状态字</td>
+  </tr>
+  <tr>
+    <td>18H</td>
+    <td>字节</td>
+    <td>*... ....<br />
+      .*.. ....<br />
+      ..*. ....<br />
+      ...*   ....<br />
+      .... *...<br />
+      .... .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td >Insert键按下<br />
+      Caps Lock键按下<br />
+      Num Lock键按下<br />
+      Scroll   Lock键按下<br />
+      Pause状态<br />
+      仅在AT机上：SysRq键按下<br />
+      仅在AT机上：Left Alt键按下<br />
+      仅在AT机上：Left   Ctrl键按下</td>
+  </tr>
+  <tr>
+    <td>19H</td>
+    <td>字节</td>
+    <td></td>
+    <td >用Alt+数字小键盘键入工作区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1AH</td>
+    <td>字</td>
+    <td></td>
+    <td >键盘缓冲区首地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1CH</td>
+    <td>字</td>
+    <td></td>
+    <td >键盘缓冲区尾地址</td>
+  </tr>
+
+  
+  <tr>
+    <td>1EH</td>
+    <td>32字节</td>
+    <td></td>
+    <td>键盘缓冲区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3EH</td>
+    <td>字节</td>
+    <td>*... ....<br />
+      .*** ....<br />
+      .... *...<br />
+      ....   .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td>中断标志<br />
+      保留<br />
+      重新调整软盘驱动器3<br />
+      重新调整软盘驱动器2<br />
+      重新调整软盘驱动器1<br />
+      重新调整软盘驱动器0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3FH</td>
+    <td>字节</td>
+    <td>*... ....<br />
+      .*.. ....<br />
+      ..** ....<br />
+      ....   *...<br />
+      .... .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td>读/写操作<br />
+      保留<br />
+      选择操作的驱动器<br />
+      软盘驱动器3马达开<br />
+      软盘驱动器2马达开<br />
+      软盘驱动器1马达开<br />
+      软盘驱动器0马达开</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>40H</td>
+    <td>字节</td>
+    <td></td>
+    <td>磁盘驱动器马达按通时间计数</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>41H</td>
+    <td>字节</td>
+    <td></td>
+    <td>最近一次软驱操作状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>42H</td>
+    <td>7字节</td>
+    <td></td>
+    <td>磁盘驱动器控制状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>49H</td>
+    <td>字节</td>
+    <td></td>
+    <td>当前显示模式</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4AH</td>
+    <td>字</td>
+    <td></td>
+    <td>显示屏幕宽度</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4CH</td>
+    <td>字</td>
+    <td></td>
+    <td>当前显示页的长度（字节数）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4EH</td>
+    <td>字</td>
+    <td></td>
+    <td>当前显示页的起始地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>50H</td>
+    <td>字</td>
+    <td></td>
+    <td>第1显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>52H</td>
+    <td>字</td>
+    <td></td>
+    <td>第2显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>54H</td>
+    <td>字</td>
+    <td></td>
+    <td>第3显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>56H</td>
+    <td>字</td>
+    <td></td>
+    <td>第4显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>58H</td>
+    <td>字</td>
+    <td></td>
+    <td>第5显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5AH</td>
+    <td>字</td>
+    <td></td>
+    <td>第6显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5CH</td>
+    <td>字</td>
+    <td></td>
+    <td>第7显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5EH</td>
+    <td>字</td>
+    <td></td>
+    <td>第8显示页的光标位置（行、列）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>60H</td>
+    <td>字</td>
+    <td></td>
+    <td>光标类型</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>62H</td>
+    <td>字节</td>
+    <td></td>
+    <td>当前显示页</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>63H</td>
+    <td>字</td>
+    <td></td>
+    <td>显示控制器基地址</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>65H</td>
+    <td>字节</td>
+    <td></td>
+    <td>显示方式寄存器口地址（3x8H）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>66H</td>
+    <td>字节</td>
+    <td></td>
+    <td>颜色设置寄存器口地址（3x9H）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>67H</td>
+    <td>5字节</td>
+    <td></td>
+    <td>PC：磁带控制器的定时计数器（字）；CRC寄存器（字）和最后输入数值字节<br />
+      AT：双字指针，指向BIOS开关使80286由保护虚地址方式转换到实地址方式时控制返回的位置<br />
+      PS/2：复位码指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6CH</td>
+    <td>双字</td>
+    <td></td>
+    <td>时钟计数器的双字单元</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>70H</td>
+    <td>字节</td>
+    <td></td>
+    <td>时钟翻转字节</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>71H</td>
+    <td>字节</td>
+    <td></td>
+    <td>BREAK键标志，如果键入CTRL+BREAK序列，则该字节第7位为1</td>
+  </tr>
+
+  
+  <tr>
+    <td>72H</td>
+    <td>字</td>
+    <td></td>
+    <td>复位标志：<br />
+      00064H：不变方式<br />
+      01234H：跳过内存测试（热启动）<br />
+      04321H：保护内存（用于PS/2）<br />
+      05678H：系统挂起（用于便携机）<br />
+      09ABCH：环境（MFG）测试（用于便携机）<br />
+      0ABCDH：电源自检循环（用于便携机）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>74H</td>
+    <td>字节</td>
+    <td></td>
+    <td>最近一次硬盘操作状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>75H</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘驱动器数</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76H</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘驱动器控制（仅用于XT机）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>77H</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘控制器端口（仅用于XT机）</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>78H</td>
+    <td>字节</td>
+    <td></td>
+    <td>并行打印适配器LPT1超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>79H</td>
+    <td>字节</td>
+    <td></td>
+    <td>并行打印适配器LPT2超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7AH</td>
+    <td>字节</td>
+    <td></td>
+    <td>并行打印适配器LPT3超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7BH</td>
+    <td>字节</td>
+    <td></td>
+    <td>并行打印适配器LPT4超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7CH</td>
+    <td>字节</td>
+    <td></td>
+    <td>串口适配器COM1超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7DH</td>
+    <td>字节</td>
+    <td></td>
+    <td>串口适配器COM2超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7EH</td>
+    <td>字节</td>
+    <td></td>
+    <td>串口适配器COM3超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7FH</td>
+    <td>字节</td>
+    <td></td>
+    <td>串口适配器COM4超时值</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>80H</td>
+    <td>字</td>
+    <td></td>
+    <td>键盘缓冲区首地址偏移指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>82H</td>
+    <td>字</td>
+    <td></td>
+    <td>键盘缓冲区尾地址偏移指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>84H</td>
+    <td>字节</td>
+    <td></td>
+    <td>EGA/VGA：屏幕显示行数，为真正显示行数减1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>85H</td>
+    <td>字节</td>
+    <td></td>
+    <td>EGA/VGA：字符高度</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>87H</td>
+    <td>字节</td>
+    <td><br />
+      *... ....<br />
+      .**. ....<br />
+      <br />
+      .... 0...<br />
+      ....   .*..<br />
+      .... ..0.<br />
+      .... ..1.<br />
+      .... ...0<br />
+      .... ...1</td>
+    <td>VGA显示控制状态<br />
+      消除显示RAM<br />
+      显示卡上的存储容量<br />
+      00：64K 01：128K 10：192K   11：256K<br />
+      EGA/VGA显示卡<br />
+      等待显示有效<br />
+      彩色/ECD显示器<br />
+      单色显示器<br />
+      在350线方式下使用ECD显示器变换光标<br />
+      禁止光标变换</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>88H</td>
+    <td>字节</td>
+    <td><br />
+      **** ....<br />
+      .... ****</td>
+    <td>EGA/VGA交换数据<br />
+      特征连接位<br />
+      选项交换位</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>89H</td>
+    <td>字节</td>
+    <td><br />
+      *... ....</td>
+    <td>EGA/VGA控制位<br />
+      200线</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>89H</td>
+    <td>字节</td>
+    <td>...* ....<br />
+      .... *...<br />
+      .... .*..<br />
+      ....   ..*.</td>
+    <td>400线<br />
+      未加载调色板<br />
+      单色显示器<br />
+      灰度缩放</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8AH</td>
+    <td>字节</td>
+    <td></td>
+    <td>显示组合码表（DCC）索引</td>
+  </tr>
+
+  
+  <tr>
+    <td>8BH</td>
+    <td>字节</td>
+    <td><br />
+        <br />
+      **.. ....<br />
+      <br />
+      <br />
+      ..** ....<br />
+      ....   **..<br />
+      .... ..**</td>
+    <td>软驱介质控制，仅用于85年1月10日后生产的PC/AT/PS2机<br />
+      最后一个软驱数据传输率（*）<br />
+      00：500K/秒   01：300K/秒<br />
+      10：250K/秒 11：保留<br />
+      最后一个软驱步进速率<br />
+      操作开始时的数据传输率，同（*）<br />
+      保留</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8CH</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘控制器状态，仅用于85年1月10日后生产的PC/AT/PS2机</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8DH</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘控制器错误状态，仅用于85年1月10日后生产的PC/AT/PS2机</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8EH</td>
+    <td>字节</td>
+    <td></td>
+    <td>硬盘中断控制，仅用于85年1月10日后生产的PC/AT/PS2机</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8FH</td>
+    <td>字节</td>
+    <td><br />
+      .*.. ....<br />
+      ..*. ....<br />
+      ...* ....<br />
+      ....   .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td>软盘控制器信息<br />
+      确定驱动器1<br />
+      驱动器1是多速率的<br />
+      驱动器1支持变化线<br />
+      确定驱动器0<br />
+      驱动器0是多速率的<br />
+      驱动器0支持变化线</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>90H</td>
+    <td>字节</td>
+    <td><br />
+        <br />
+      **.. ....<br />
+      <br />
+      <br />
+      ..*. ....<br />
+      ...*   ....<br />
+      .... *...<br />
+      .... .***<br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br /></td>
+    <td>软驱0介质状态，仅用于85年1月10日后生产的PC/AT/PS2机<br />
+      软驱数据传输率<br />
+      00：500K/秒   01：300K/秒<br />
+      10：250K/秒   11：保留<br />
+      需要双倍步长（360K软盘在1.2M软驱）<br />
+      介质已建立<br />
+      保留<br />
+      介质/驱动器状态<br />
+      000：不能确定360K盘在360K驱动器中<br />
+      001：不能确定360盘在1.2M驱动器中<br />
+      010：不能确定1.2M盘在1.2M驱动器中<br />
+      011：确定360K盘在360K驱动器中<br />
+      100：确定360K盘在1.2M驱动器中<br />
+      101：确定1.2M盘在1.2M驱动器中<br />
+      110：保留<br />
+      111：确定为720K/1.44M磁盘</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>91H</td>
+    <td>字节</td>
+    <td></td>
+    <td>软驱0介质状态，仅用于85年1月10日后生产的PC/AT/PS2机</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>92H</td>
+    <td>字节</td>
+    <td></td>
+    <td>软盘设备0服务工作区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>93H</td>
+    <td>字节</td>
+    <td></td>
+    <td>软盘设备1服务工作区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>94H</td>
+    <td>字节</td>
+    <td></td>
+    <td>软盘驱动器0当前磁道</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>95H</td>
+    <td>字节</td>
+    <td></td>
+    <td>软盘驱动器1当前磁道</td>
+  </tr>
+
+  
+  <tr>
+    <td>96H</td>
+    <td>字节</td>
+    <td><br />
+      *... ....<br />
+      .*.. ....<br />
+      ..*. ....<br />
+      ...*   ....<br />
+      .... *...<br />
+      .... .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td >键盘状态议类型标志<br />
+      读ID<br />
+      最后一个字符是第一个ID字符<br />
+      如果读ID和键盘，则强置Num   Lock<br />
+      装有101/102键键盘<br />
+      右Alt键按下<br />
+      右Ctrl键按下<br />
+      最后一个代码是0E0H隐藏码<br />
+      最后一个代码是0E1H隐藏码</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>97H</td>
+    <td>字节</td>
+    <td><br />
+      *... ....<br />
+      .*.. ....<br />
+      ..*. ....<br />
+      ...*   ....<br />
+      .... *...<br />
+      .... .*..<br />
+      .... ..*.<br />
+      .... ...*</td>
+    <td >键盘LED状态<br />
+      键盘传输错误<br />
+      方式指示器更新<br />
+      重复接收标志<br />
+      收到响应<br />
+      保留（必须为0）<br />
+      LED状态位：Caps   Lock状态<br />
+      LED状态：Num Lock状态<br />
+      LED状态：Scroll Lock状态</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>98H</td>
+    <td>双字</td>
+    <td></td>
+    <td >用户等待完成标志指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9CH</td>
+    <td>双字</td>
+    <td></td>
+    <td >用户等待计数，以微秒为单位</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0A0H</td>
+    <td>字节</td>
+    <td><br />
+      *... ....<br />
+      .*** *...<br />
+      .... .*..<br />
+      ....   ..*.<br />
+      .... ...*</td>
+    <td >等待激活标志，报告实时钟等待状态<br />
+      等待时间已过<br />
+      保留<br />
+      报警挂起（用于便携机）<br />
+      使用INT   4AH报警挂起服务（用于便携机）<br />
+      等待激活</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0A1H</td>
+    <td>7字节</td>
+    <td></td>
+    <td >网卡数据区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0A8H</td>
+    <td>双字</td>
+    <td></td>
+    <td >EGA显示参数表指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0ACH</td>
+    <td>双字</td>
+    <td></td>
+    <td >EGA动态存储区指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0B0H</td>
+    <td>双字</td>
+    <td></td>
+    <td >EGA字符方式辅助字符发生器指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0B4H</td>
+    <td>双字</td>
+    <td></td>
+    <td >EGA图形方式辅助字符发生器指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0B8H</td>
+    <td>双字</td>
+    <td></td>
+    <td >EGA二级存储区指针</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0BCH</td>
+    <td>7字节</td>
+    <td></td>
+    <td >保留，只能设置为0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0C0H</td>
+    <td>64字节</td>
+    <td></td>
+    <td >保留</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0F0H</td>
+    <td>16字节</td>
+    <td></td>
+    <td >ICA数据区</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0:500H</td>
+    <td>字节</td>
+    <td></td>
+    <td >打印屏幕操作状态：<br />
+      0：屏幕拷贝打印操作成功或无法进行<br />
+      1：屏幕拷贝打印操作正在进行<br />
+      0FFH：屏幕拷贝打印操作错</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0:501H</td>
+    <td>3字节</td>
+    <td></td>
+    <td >保留</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0:504H</td>
+    <td>字节</td>
+    <td></td>
+    <td >单软驱逻辑驱动器号<br />
+      0：逻辑驱动器A<br />
+      1：逻辑驱动器B<br />
+      0FFH：逻辑驱动器A</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>0:505H</td>
+    <td>250字节</td>
+    <td></td>
+    <td >保留</td>
+  </tr>
+</table>
+<div class="rpindex"> <a href="appendixc.html">附录C</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

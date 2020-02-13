@@ -1,0 +1,323 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="63.html"> 上一页</a><a href="68.html"> 下一页</a></div>
+  <h4>(1)、功能00H</h4>
+  <table>
+    <tr>
+      <td>功能描述：</td>
+      <td>初始化通信口</td>
+    </tr>
+    <tr>
+      <td>入口参数：</td>
+      <td>AH＝00H<br>
+        DX＝初始化通信口号(0＝COM1，1＝COM2，……)<br>
+        AL＝初始化参数，参数的说明如下：
+        <table>
+          <tr>
+            <td>波特率</td>
+            <td>奇偶位</td>
+            <td>停止位</td>
+            <td>字的位数</td>
+          </tr>
+          <tr>
+            <td>765</td>
+            <td>43</td>
+            <td>2</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>000 = 110</td>
+            <td>X0 = None</td>
+            <td>0 = 1 bit</td>
+            <td>10 = 7 bits</td>
+          </tr>
+          <tr>
+            <td>001 = 150</td>
+            <td>01 = Odd</td>
+            <td rowspan="7">1 = 2 bits</td>
+            <td rowspan="7">11 = 8 bits</td>
+          </tr>
+          <tr>
+            <td>010 = 300</td>
+            <td rowspan="6">11 = Even</td>
+          </tr>
+          <tr>
+            <td>011 = 600</td>
+          </tr>
+          <tr>
+            <td>100 = 1200</td>
+          </tr>
+          <tr>
+            <td>101 = 2400</td>
+          </tr>
+          <tr>
+            <td>110 = 4800</td>
+          </tr>
+          <tr>
+            <td>111 = 9600</td>
+          </tr>
+        </table>
+        <p>对于PS/2，可用INT 14H之功能04H和05H来初始化其通信速率大于9600。</td>
+    </tr>
+    <tr>
+      <td>出口参数：</td>
+      <td>AH＝通信口状态，各状态位为1时的含义如下：
+        <table>
+          <tr>
+            <td>位7—超时<br>
+              位6—传递移位寄存器为空<br>
+              位5—传递保持寄存器为空<br>
+              位4—发现终止</td>
+            <td> 位3—发现帧错误<br>
+              位2—发现奇偶错<br>
+              位1—发现越界错<br>
+              位0—接受数据准备好</td>
+          </tr>
+        </table>
+        <p>AL＝Modem状态</p>
+        <table>
+          <tr>
+            <td>位7—接受单线信号诊断<br>
+              位6—环指示器<br>
+              位5—数据发送准备好<br>
+              位4—清除数据，再发送</td>
+            <td> 位3—改变在接受线上的信号诊断<br>
+              位2—后边界环指示器<br>
+              位1—改变“数据准备好”状态<br>
+              位0—改变“清除—发送”状态</td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+  <h4>(2)、功能01H</h4>
+  <table>
+    <tr>
+      <td>功能描述：</td>
+      <td>向通信口输出字符</td>
+    </tr>
+    <tr>
+      <td>入口参数：</td>
+      <td>AH＝01H<br>
+        AL＝字符<br>
+        DX＝初始化通信口号(0＝COM1，1＝COM2，……)</td>
+    </tr>
+    <tr>
+      <td>出口参数：</td>
+      <td>AL的值不变<br>
+        AH的位7＝0——操作成功，通信口状态，AH的位6~0是其状态位</td>
+    </tr>
+  </table>
+  <h4>(3)、功能02H</h4>
+  <table>
+    <tr>
+      <td>功能描述：</td>
+      <td>从通信口读入字符</td>
+    </tr>
+    <tr>
+      <td>入口参数：</td>
+      <td>AH＝02H<br>
+        DX＝初始化通信口号(0＝COM1，1＝COM2，……)</td>
+    </tr>
+    <tr>
+      <td>出口参数：</td>
+      <td>AL＝接受的字符<br>
+        AH的位7＝0——操作成功，通信口状态，AH的位6~0是其状态位</td>
+    </tr>
+  </table>
+  <h4>(4)、功能03H</h4>
+  <table>
+    <tr>
+      <td>功能描述：</td>
+      <td>读取通信口状态</td>
+    </tr>
+    <tr>
+      <td>入口参数：</td>
+      <td>AH＝03H<br>
+        DX＝初始化通信口号(0＝COM1，1＝COM2，……)</td>
+    </tr>
+    <tr>
+      <td>出口参数：</td>
+      <td>AH＝通信口状态，AL＝Modem状态，参见功能号00H中的说明</td>
+    </tr>
+  </table>
+  <h4>(5)、功能04H</h4>
+  <table>
+    <tr>
+      <td>功能描述：</td>
+      <td>扩充初始化通信口，仅在PS/2中有效，在此从略</td>
+    </tr>
+  </table>
+  <p></p>
+  <div class="rpindex"><a href="68.html"> 下一页</a><a href="63.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

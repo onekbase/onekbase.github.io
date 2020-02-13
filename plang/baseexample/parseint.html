@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>java parseInt(String)字符串转整数
+</h1>
+<p>主要看如何处理正负号和循环处理字符串。</p>
+<pre class="code">    public static int parseInt(String string) throws NumberFormatException {
+        return parseInt(string, 10);
+    }
+
+    public static int parseInt(String string, int radix)
+            throws NumberFormatException {
+        if (string == null || radix < Character.MIN_RADIX
+                || radix > Character.MAX_RADIX) {
+            // BEGIN android-changed
+            throw new NumberFormatException("unable to parse '"+string+"' as integer");
+            // END android-changed
+        }
+        int length = string.length(), i = 0;
+        if (length == 0) {
+            // BEGIN android-changed
+            throw new NumberFormatException("unable to parse '"+string+"' as integer");
+            // END android-changed
+        }
+        boolean negative = string.charAt(i) == '-';
+        if (negative && ++i == length) {
+            // BEGIN android-changed
+            throw new NumberFormatException("unable to parse '"+string+"' as integer");
+            // END android-changed
+        }
+
+        return parse(string, i, radix, negative);
+    }</pre>
+<p>以上是两上重载方法，真正转换方法如下：</p>
+<pre class="code">	private static int parse(String string, int offset, int radix,
+            boolean negative) throws NumberFormatException {
+        int max = Integer.MIN_VALUE / radix;
+        int result = 0, length = string.length();
+        while (offset < length) {
+            int digit = <strong><a href="digit.html">Character.digit(string.charAt(offset++), radix)</a>;</strong>
+            if (digit == -1) {
+                // BEGIN android-changed
+                throw new NumberFormatException("unable to parse '"+string+"' as integer");
+                // END android-changed
+            }
+            if (max > result) {
+                // BEGIN android-changed
+                throw new NumberFormatException("unable to parse '"+string+"' as integer");
+                // END android-changed
+            }
+            int next = result * radix - digit;
+            if (next > result) {
+                // BEGIN android-changed
+                throw new NumberFormatException("unable to parse '"+string+"' as integer");
+                // END android-changed
+            }
+            result = next;
+        }
+        if (!negative) {
+            result = -result;
+            if (result < 0) {
+                // BEGIN android-changed
+                throw new NumberFormatException("unable to parse '"+string+"' as integer");
+                // END android-changed
+            }
+        }
+        return result;
+    }</pre>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="62.html"> 上一页</a><a href="64.html"> 下一页</a></div>
+
+<H1>Ruby的启动</H1>
+<UL>
+<LI>命令行选项 
+<LI>关于解释器行 </LI></UL>
+<P>请使用如下命令行启动Ruby解释器.</P><pre class="code">ruby [ option ...] [ -- ] [ programfile ] [ argument ...]
+</PRE>
+<P>这里的"option"指下文将要提到的命令行选项中的一个。"--"则显式地表明选项字符串到此结束。"programfile"是装载Ruby脚本的文件。若省略不写或者写成"-"时,Ruby会把标准输入当做Ruby脚本进行处理。</P>
+<P>programfile若以“#!”开始，则进行特殊的处理。详细情况请参考下文的关于解释器行。</P>
+<P>argument中的字符串将变成内部常数ARGV的初始值。在有的环境中(Win32)，标准shell不会展开通配符，这时Ruby解释器将自行展开通配符然后赋值给ARGV。此时，可使用的通配符有“*”、“?”、“[]”和“**/”(与Dir.glob不同，这里不能使用“{..}”)。在Win32环境中，若不想展开通配符的话，请使用单引号(')将参数括起来。</P>
+<H2>命令行选项</H2>
+<P>Ruby解释器可接受下列命令行选项。基本上与Perl的类似。</P>
+
+<h5>-0数字 
+  
+</h5>
+<P>以8进制数指定输入记录分隔符('$/')。</P>
+<P>若不指定数字的话，分隔符是空字符(等同于$/="\0")。数字后面可以有其他的开关(switch)。</P>
+<P>-00代表段落模式(等同于$/="")，-0777(因为这个代码不代表任何文字)表示将文件的全部内容一次性读入(相当于$/=nil)。</P>
+<h5>-a 
+  
+</h5>
+<P>与'-n'或'-p'一起使用时，可以打开自动拆分模式(auto split mode)。自动拆分模式将在各个循环前执行以下动作。</P><pre class="code">$F = $_.split
+</PRE>
+<P>若没有同时指定'-n'或'-p'选项的话将不起作用。</P>
+<h5>-C directory 
+  
+</h5>
+<P>执行脚本之前，先移动到指定目录。</P>
+<h5>-c 
+  
+</h5>
+<P>只对脚本进行编译，而并不执行。编译后若没发现语法错误，则显示“Syntax OK”。</P>
+<h5>--copyright 
+  
+</h5>
+<P>显示版权信息。</P>
+<h5>-Kc
+  <!-- RDLabel: "-Kc" --> 
+  
+</h5>
+<P>指定Ruby要处理的汉字编码。若是'E'或'e'，则Ruby认定字符串或访问文件中的汉字编码为EUC。同样，若是'S'或's'的话则认定为SJIS。若是'U'或'u'则当作UTF-8处理。'N'表示不对汉字进行处理。该选项的默认值就是N(NONE)。</P>
+<P>将来有可能会改变文字编码处理方式，届时该选项的内容也会有所变化。</P>
+<h5>-d
+  <!-- RDLabel: "-d" --> 
+  --debug
+  <!-- RDLabel: "&shy;&shy;debug" --> 
+  
+</h5>
+<P>以调试模式执行脚本。将$DEBUG设置成true。</P>
+<h5>-e script
+  <!-- RDLabel: "-e script" --> 
+  
+</h5>
+<P>在命令行中指定脚本。添加-e选项后，就不会从参数中抽取脚本文件名了。</P>
+<P>若多次使用-e选项时，系统会按照以下方式处理。</P><pre class="code">下列各表达式的意义相同。
+ruby -e "5.times do |i|" -e "puts i" -e "end"
+
+ruby -e "5.times do |i|
+  puts i
+end"
+
+ruby -e "5.times do |i|; puts i; end"
+</PRE>
+<h5>-Fregexp
+  <!-- RDLabel: "-Fregexp" --> 
+  
+</h5>
+<P>将regexp指定给输入域分隔符(field separator)。</P>
+<h5>-h
+  <!-- RDLabel: "-h" --> 
+  --help
+  <!-- RDLabel: "&shy;&shy;help" --> 
+  
+</h5>
+<P>显示命令行选项的简介。</P>
+<h5>-i[extension]
+  <!-- RDLabel: "-i[extension]" --> 
+  
+</h5>
+<P>对参数中指定的文件内容进行替换(in-place edit)。原始文件将被加上扩展名并保存下来。若没有扩展名的话，将不会进行备份，而且只有替换后的文件会被保留下来。</P>
+<P>例:</P><pre class="code">% echo matz &gt; /tmp/junk
+% cat /tmp/junk
+matz
+% ruby -p -i.bak -e '$_.upcase!' /tmp/junk
+% cat /tmp/junk
+MATZ
+% cat /tmp/junk.bak
+matz
+</PRE>
+<h5>-I directory
+  <!-- RDLabel: "-I directory" --> 
+  
+</h5>
+<P>指定(追加)加载文件的路径。指定的目录将被追加到Ruby的数组变量($:)中。</P>
+<h5>-l
+  <!-- RDLabel: "-l" --> 
+  
+</h5>
+<P>进行行尾自动处理。首先，将$\改为$/的值，在print输出时添加换行。若使用了-n标志或-p标志的话，将对gets读入的各行末尾进行String#chop!处理。</P>
+<h5>-n
+  <!-- RDLabel: "-n" --> 
+  
+</h5>
+<P>若使用了该标志，则整个程序会像sed -n或awk一样，被</P><pre class="code">while gets
+ ...
+end
+</PRE>
+<P>括起来运行。</P>
+<h5>-p
+  <!-- RDLabel: "-p" --> 
+  
+</h5>
+<P>与-n标志相仿，在各循环后输出变量$_的值。</P>
+<P>例:</P><pre class="code">% echo matz | ruby -p -e '$_.tr! "a-z", "A-Z"'
+MATZ
+</PRE>
+<h5>-r feature
+  <!-- RDLabel: "-r feature" --> 
+  
+</h5>
+<P>执行脚本前，先对feature指定的库执行require操作。与'-n'选项、'-p'选项一起使用时特别奏效。</P>
+<h5>-s
+  <!-- RDLabel: "-s" --> 
+  
+</h5>
+<P>对跟在脚本名后并且以'-'开头的参数进行解释，并将其值赋值给同名的全局变量。遇到以'--'开头的参数就停止解释，并将该参数从ARGV中删除。</P>
+<P>例:</P><pre class="code">#! /usr/local/bin/ruby -s
+# prints "true" if invoked with `-xyz' switch.
+print "true\n" if $xyz
+</PRE>
+<h5>-S
+  <!-- RDLabel: "-S" --> 
+  
+</h5>
+<P>该选项表明，当脚本名不是以'/'开头的时候，要使用环境变量PATH的值搜索脚本。若您的机器不支持#!的话，可以使用下列方法模拟#!的运行：</P><pre class="code">#!/bin/sh
+exec ruby -S -x $0 "$@"
+#! ruby
+</PRE>
+<P>因为第1行的关系，系统把脚本交给/bin/sh。/bin/sh执行第2行后启动Ruby解释器。在-x选项的作用下，Ruby解释器把从'#!'到包含'ruby'的行的内容全部读入。</P>
+<P>根据系统的不同，$0未必包含完整路径，因此有必要使用'-S'选项来告诉Ruby在必要时搜索脚本。</P>
+<h5>-T[level]
+  <!-- RDLabel: "-T[level]" --> 
+  
+</h5>
+<P>执行不纯度测试。若给level指定了一个值之后，安全等级也会使用这个值。省略level时，其值为1。对于CGI程序来说，将其指定为-T1比较合适。$SAFE的等级也将被设定。</P>
+<h5>-v
+  <!-- RDLabel: "-v" --> 
+  --verbose
+  <!-- RDLabel: "&shy;&shy;verbose" --> 
+  
+</h5>
+<P>冗长模式。启动时显示版本信息，然后将内部变量$VERBOSE设为true。当此变量为true时，众多的方法在运行时会显示冗长的信息。若只设定'-v'选项，而没有其他参数时，启动后会先显示版本信息，然后就结束运行(不会等待来自标准输入的脚本)。</P>
+<h5>--version
+  <!-- RDLabel: "&shy;&shy;version" --> 
+  
+</h5>
+<P>显示Ruby的版本信息。</P>
+<h5>-w
+  <!-- RDLabel: "-w" --> 
+  
+</h5>
+<P>不显示版本信息的冗长模式。</P>
+<h5>-W[level]
+  <!-- RDLabel: "-W[level]" --> 
+  
+</h5>
+<P>ruby 1.8 特性</P>
+<P>可以指定3种级别的冗长模式，如下所示。</P>
+<UL>
+<LI>-W0: 不显示警告 
+<LI>-W1: 只显示重要警告(默认) 
+<LI>-W2 or -W: 显示所有警告 </LI></UL>
+<P>内部变量$VERBOSE被分别设置为nil,false,true。</P>
+<h5>-x[directory]
+  <!-- RDLabel: "-x[directory]" --> 
+  
+</h5>
+<P>从message中取出脚本并执行。读入脚本的范围是从'#!'开始，直到包含'ruby'的行为止。用EOF(文件结束)，^D(controlD)，^Z(controlZ)或保留字_END_来指定脚本结束。</P>
+<P>若指定了目录名的话，则在执行脚本前移动到该指定目录。</P>
+<h5>-y
+  <!-- RDLabel: "-y" --> 
+  --yydebug
+  <!-- RDLabel: "&shy;&shy;yydebug" --> 
+  
+</h5>
+<P>编译器调试模式。编译脚本时显示语法分析的过程。该显示过程会很漫长，可能只对那些想调试编译器的人有用。</P>
+<H2><a name="a" id="a"></a>关于解释器行<!-- RDLabel: "インタプリタ乖の豺坚" --></H2>
+<P>命令行指定的脚本是以'#!'开头的文件，当该行中不包含'ruby'时，将替代OS把'#!'后面的字符串看成命令行，然后启动解释器。</P>
+<P>例如，用Ruby运行下面的shell脚本时将启动sh。</P><pre class="code">#!/bin/sh -vx
+echo "$@"
+</PRE>
+<P>若此行中包含'ruby'的话，则'ruby'左侧的部分将被忽略，右侧以'-'开头的部分被视为选项。</P>
+<P>这里指定的选项将被追加到以命令行方式指定的选项之中。这主要是为了嵌入那些本该在脚本中指定的选项。例如，下面脚本的作用等价于使用命令行方式指定-Ke选项。</P><pre class="code">#! ruby -Ke
+</PRE>
+
+
+<div class="rpindex"><a href="64.html"> 下一页</a><a href="62.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

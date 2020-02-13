@@ -1,0 +1,407 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="097.html"> 上一页</a><a href="099.html"> 下一页</a></div>
+<h1>获得键盘扫描码</h1>
+<h2>概述：</h2>
+在编制键盘输入程序时常常要用到一个键的扫描码或ASC码，如用到 Foxpro 的 inkey() 函数，以及用到 
+  BIOS 的 INT 16H时，但找一个编码表不太容易，有时候找到的编码表又不全，无法查到组合键的编码，本程序就是一个随时用来显示按键的ASC码及扫描码的程序，可以用 
+  16 进制和 10 进制同时显示一个键按下和放开的扫描码，以及ASC码，同样也支持组合键。<br>
+      在本程序中，查表的编程方法可用做参考，一般来说，如果程序有以下的结构：<br>
+<pre class="code">...
+              CMP       AL,VALUE1
+              JZ        OFFSET1
+              CMP       AL,VALUE2
+              JZ        OFFSET2
+              CMP       AL,VALUE3
+              JZ        OFFSET3
+...</pre>
+  且要比较的值很多时，可以考虑查表的方法。程序改为以下结构后，修改起来很容易，可读性也大大增强了,如果要继续添加分支时，只需在表中加上一项就行。<br>
+  <pre class="code">...
+       TABLE  DB        VALUE1,VALUE2,VALUE3 ...
+      TABLE1  DW        OFFSET1,OFFSET2,OFFSET3 ...
+
+              MOV       DI,OFFSET TABLE
+              MOV       CX,TABLE的长度
+       REPNZ  SCASB
+              JNZ       NOT_FOUND
+
+              DEC       DI
+              SUB       DI,OFFSET TABLE         ;取出表的地址
+              MOV       SI,DI
+              SHL       SI,1        ;x2
+              ADD       SI,OFFSET TABLE1
+              JMP       [SI]        ;跳转到表中的地址
+...
+</pre>
+  源程序：<br>
+  <pre class="code">
+; Scan code viewer
+; Aug 3,1995
+; by Luo Yun Bin
+
+.286
+        CODE  SEGMENT
+              ASSUME    CS:CODE,DS:CODE
+              ORG       100H
+      START:
+              JMP       INSTALL
+
+    KEY_BUFF  DB        ?           ;INT 9H中按下一个键产生的扫描码
+   KEY_BUFF1  DB        ?           ;INT 9H中松开一个键产生的扫描码
+         AAH  DB        ?
+         AAL  DB        ?
+
+ D_COPYRIGHT  DB        "<< SCANCODE VIEWER >>",0DH,0AH
+              DB        '(C) Copyright by Luo Yun Bin, May 26,1996',0DH,0AH
+              DB        'Phone: 0576-4114689.',0DH,0AH,0AH
+              DB        "PRESS ANY KEY TO VIEW IT's scan code...",0dh,0ah
+              DB        'or press Esc key to return DOS...',0DH,0AH,0AH,24H
+      D_MES1  DB        'Scan Code: %02shh (%2sd) ... '
+              DB        'Release: %02shh (%3sd) ... Key: ',0
+              DW        KEY_BUFF,KEY_BUFF,KEY_BUFF1,KEY_BUFF1
+      D_MES2  DB        0DH,0AH,0
+      D_MES3  DB        'Key value: %02sh%02shh ...... '
+              DB        '(AH=%sd,AL=%sd)',0DH,0AH,0AH,0
+              DW        AAH,AAL,AAH,AAL
+      D_MES4  DB        'This is Scan Code viewer by LYB.',0DH,0AH,24H</pre>
+  ;键盘扫描码编码表<br>
+  <pre class="code">; 0123456789abcdef ;
+   KEY_TABLE  DB        '??1234567890-=??'      ;0
+              DB        'QWERTYUIOP[]??AS'      ;1
+              DB        "DFGHJKL    ;'`?\ZXCV" ;2
+              DB        'BNM,./?*????????'      ;3
+              DB        '??????????-?5?+?'      ;4
+              DB        '????????????????'      ;5
+              DB        '????????????????'      ;6
+              DB        '????????????????'      ;7</pre>
+  ;特殊键的说明字符串编码表<br>
+  <pre class="code">  KEY_TABLE1  DB        3BH,3CH,3DH,3EH,3FH,40H,41H,42H,43H,44H,57H,58H
+              DB        0EH,0FH,3AH,2AH,1DH,38H,36H,1CH,39H,1
+              DB        52H,53H,47H,4FH,49H,51H,48H,50H,4BH,4DH,46H,45H</pre>
+  ;对应上表<br>
+ <pre class="code">          KEY_TABLE1_END  EQU       THIS BYTE
+              DW        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12
+              DW        BKS,TAB,CAP,LSH,CTR,ALT,RSH,ENT,SPA,_ESC
+              DW        _INS,DEL,HOM,_END,PGU,PGD,UP,DOW,LEF,RIG,SCO,NUM</pre>
+  ;特殊键的说明字符串<br>
+<pre class="code">          F1  DB        'F1',0      ;
+          F2  DB        'F2',0
+          F3  DB        'F3',0
+          F4  DB        'F4',0
+          F5  DB        'F5',0
+          F6  DB        'F6',0
+          F7  DB        'F7',0
+          F8  DB        'F8',0
+          F9  DB        'F9',0
+         F10  DB        'F10',0
+         F11  DB        'F11',0
+         F12  DB        'F12',0
+         BKS  DB        'Back Space',0
+         TAB  DB        'Table',0
+         CAP  DB        'Caps Lock',0
+         LSH  DB        'Left Shift',0
+         CTR  DB        'Ctrl',0
+         ALT  DB        'Alt',0
+         RSH  DB        'Right Shift',0
+         ENT  DB        'Enter',0
+         SPA  DB        'Space',0
+        _INS  DB        'Insert',0
+         DEL  DB        'Delete',0
+         HOM  DB        'Home',0
+        _END  DB        'End',0
+         PGU  DB        'Page Up',0
+         PGD  DB        'Page Down',0
+          UP  DB        'Up',0
+         DOW  DB        'Down',0
+         LEF  DB        'Left',0
+         RIG  DB        'Right',0
+         SCO  DB        'Scroll Lock',0
+         NUM  DB        'Num Lock',0
+        _ESC  DB        'Esc',0
+
+   PRINT_KEY  PROC
+
+              MOV       BL,KEY_BUFF ;取扫描码到BL
+              XOR       BH,BH
+              MOV       AL,KEY_TABLE [BX]       ;查扫描码表
+
+              CMP       AL,'?'      ;如果为?则继续查特殊码表
+              JZ        PK1
+        PK0:
+              CALL      PRT_TO_SCR
+              RET
+        PK1:
+              MOV       AL,KEY_BUFF ;在特殊码表内扫描
+              MOV       DI,OFFSET KEY_TABLE1
+              MOV       CX,OFFSET KEY_TABLE1_END-OFFSET KEY_TABLE1
+       REPNZ  SCASB
+              JNZ       PK0
+
+              DEC       DI
+              SUB       DI,OFFSET KEY_TABLE1    ;取出说明字符串地址
+              MOV       SI,DI
+              SHL       SI,1
+              ADD       SI,OFFSET KEY_TABLE1_END
+              MOV       SI,[SI]
+              CALL      PRINTF      ;显示到屏幕
+
+              RET
+
+   PRINT_KEY  ENDP
+
+;新的 INT 09H 键盘中断程序
+       INT9:
+              PUSHF
+              PUSHA
+              PUSH      DS
+              PUSH      ES
+
+              PUSH      CS
+              POP       DS
+              PUSH      CS
+              POP       ES
+
+              IN        AL,60H      ;读入扫描码
+              MOV       KEY_BUFF,AL
+
+              TEST      AL,80H      ;如果>80H则为放开一个键
+              JNZ       INT9_QUIT
+
+              OR        AL,80H
+              MOV       KEY_BUFF1,AL
+
+              MOV       SI,OFFSET D_MES1
+              CALL      PRINTF
+              CALL      PRINT_KEY
+              MOV       SI,OFFSET D_MES2
+              CALL      PRINTF
+  INT9_QUIT:
+              POP       ES
+              POP       DS
+              POPA
+              POPF
+
+              DB        0EAH
+        OFF9  DW        ?
+        SEG9  DW        ?
+
+    INSTALL:
+              MOV       AH,9        ;显示版权信息
+              MOV       DX,OFFSET D_COPYRIGHT
+              INT       21H
+
+              MOV       AX,3509H    ;保留INT 09H的中断向量
+              INT       21H
+              MOV       OFF9,BX
+              MOV       SEG9,ES
+              MOV       AX,2509H    ;把INT 09H指到 offset int9
+              MOV       DX,OFFSET INT9
+              INT       21H
+              PUSH      CS
+              POP       ES
+        LOP:
+              MOV       AH,10H      ;扩展键盘输入
+              INT       16H
+
+              MOV       AAH,AH      ;显示键盘输入的编码
+              MOV       AAL,AL
+              MOV       SI,OFFSET D_MES3
+              CALL      PRINTF
+
+              CMP       KEY_BUFF,1  ;如果非按下Esc，继续循环
+              JNZ       LOP
+
+              LDS       DX,DWORD PTR OFF9       ;恢复INT 09H中断向量
+              MOV       AX,2509H
+              INT       21H
+
+              PUSH      CS
+              POP       DS
+
+              MOV       AH,9
+              MOV       DX,OFFSET D_MES4
+              INT       21H
+
+              INT       20H
+
+     INCLUDE  PRINTF.ASM        ;一个公用的显示子程序
+
+        CODE  ENDS
+              END       START</pre>
+
+
+<div class="rpindex"><a href="099.html"> 下一页</a><a href="097.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

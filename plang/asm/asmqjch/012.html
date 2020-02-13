@@ -1,0 +1,498 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="011.html"> 上一页</a><a href="013.html"> 下一页</a></div>
+<h1>第十二课 内存管理和文件输入/输出</h1>
+本课中我们将学习基本的内存管理和文件输入/输出操作方面的知识。另外我们还将用上课学的通用对话框作为我们的显示“设备”。 
+<h2>理论： 
+</h2>
+<P>从用户的角度来看，WIN32的内存管理是非常简单和明了的。每一个应用程序都有自己独立的4G地址空间，这种内存模式叫做“平坦”型地址模式，所有的段寄存器或描述符都指向同样的起始地址，所有的地址偏移都是32位的长度，这样一个应用程序无须变换选择符就可以存取自己的多达4G的地址空间。这种内存管理模式是非常简洁而便于管理的，而且我们再不用和那些令人讨厌的“near”和“far”指针打交道了。
+<P> 在W16下有两种主要类型的API：全局和局部。“全局”的API 分配在其他的段中，这样从内存角度来看他们是一些“far”（远）函数或者叫远过程调用，“局部”API只要和进程的堆打交道，所以把它们叫做“near”（近）函数或者近过程调用。而在WIN32中，这两种内存模式是相同的，无论您调用GlobalAlloc还是LocalAlloc，结果都是一样。<BR>
+  至于分配和使用内存的过程都是一样的： 
+<OL>
+  <LI>调用GlobalAlloc函数分配一块内存，该函数会返回分配的内存句柄。 
+  <LI>调用GlobalLock函数锁定内存块，该函数接受一个内存句柄作为参数，然后返回一个指向被锁定的内存块的指针。 
+  <LI>您可以用该指针来读写内存。 
+  <LI>调用GlobalUnlock函数来解锁先前被锁定的内存，该函数使得指向内存块的指针无效。 
+  <LI>调用GlobalFree函数来释放内存块。您必须传给该函数一个内存句柄。 </LI>
+</OL>
+<P>在WIN32中您也可以用“Local”替代内存分配API函数带有“Global”字样的函数中的“Global”，也即用LocalAlloc、LocalLock等。<BR>
+  在调用函数GlobalAlloc时使用GMEM_FIXED标志位可以更进一步简化操作。使用了该标志后，Global/LocalAlloc返回的是指向已分配内存的指针而不是句柄，这样也就不用调用Global/LocalLock来锁定内存了，释放内存时只要直接调用Global/LocalFree就可以了。不过在本课中我们只使用传统的方法，因为其它地方有许多的源代码是用这种方法写的。</P>
+<P>WIN32的文件输入/输出API和DOS下的从外表上看几乎一样（译者注：也许不管内部实现多么不同，可以想象所有的文件系统暴露给应用程序编写者的接口的功能应该基本相同），不同的只是把DOS下的中断方式处理文件输入/输出变成了对API函数的调用。以下是基本的步骤： 
+  <BR>
+    
+<OL>
+  <LI>调用CreateFile函数生成一个文件，该函数可以应用在多方面，除了磁盘文件外，我们还可以用来打开通讯端口、管道、驱动程序或控制台。如果成功的话，会返回指向文件或设备的句柄。然后可以使用该句柄去完成对文件或设备操作。<BR>
+    调用SetFilePointer来把文件指针移到想读写的地方。. 
+  <LI>然后调用ReadFile 或 WriteFile来完成实际的读写。这些函数会自己处理文件和内存之间的数据传送，这样免得您自己去做分配内存等繁杂的琐事。 
+  <LI>调用CloseHandle来关闭文件。该函数接受一个先前打开的文件句柄。 </LI>
+</OL>
+<h2>内容：</h2>
+<P>下面的代码段演示了：打开一个“打开文件”对话框，用户可以选择打开一个文本文件，然后在一个编辑控件中打开该文本文件的内容，另外用户还可以编辑该文本文件的内容并选择保存。</P>
+<Pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\COMDLG32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\COMDLG32.LIB
+
+.CONST
+    IDM_OPEN  EQU       1
+    IDM_SAVE  EQU       2
+    IDM_EXIT  EQU       3
+     MAXSIZE  EQU       260
+     MEMSIZE  EQU       65535
+
+      EDITID  EQU       1           ; ID of the edit control
+
+.DATA
+   CLASSNAME  DB        "WIN32ASMEDITCLASS",0
+     APPNAME  DB        "WIN32 ASM EDIT",0
+   EDITCLASS  DB        "EDIT",0
+    MENUNAME  DB        "FIRSTMENU",0
+ofn OPENFILENAME <> 
+            FILTERSTRING  DB        "ALL FILES",0,"*.*",0
+              DB        "TEXT FILES",0,"*.TXT",0,0
+      BUFFER  DB        MAXSIZE DUP(0)
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hwndEdit HWND ? ; Handle to the edit control 
+hFile HANDLE ? ; File handle 
+hMemory HANDLE ? ;handle to the allocated memory block 
+     PMEMORY  DWORD     ?           ;pointer to the allocated memory block
+           SIZEREADWRITE  DWORD     ?           ; number of bytes actually read or write
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:SDWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME,ADDR APPNAME,\
+WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\ 
+CW_USEDEFAULT,300,200,NULL,NULL,\ 
+hInst,NULL 
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      USES EBX HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_CREATE
+              INVOKE    CREATEWINDOWEX,NULL,ADDR EDITCLASS,NULL,\
+  WS_VISIBLE  OR        WS_CHILD OR ES_LEFT OR ES_MULTILINE OR\
+          ES_AUTOHSCROLL  OR        ES_AUTOVSCROLL,0,\
+0,0,0,hWnd,EditID,\ 
+hInstance,NULL 
+              MOV       HWNDEDIT,EAX
+              INVOKE    SETFOCUS,HWNDEDIT
+;============================================== 
+; Initialize the members of OPENFILENAME structure 
+;============================================== 
+              MOV       OFN.LSTRUCTSIZE,SIZEOF OFN
+              PUSH      HWND
+              POP       OFN.HWNDOWNER
+              PUSH      HINSTANCE
+              POP       OFN.HINSTANCE
+              MOV       OFN.LPSTRFILTER, OFFSET FILTERSTRING
+              MOV       OFN.LPSTRFILE, OFFSET BUFFER
+              MOV       OFN.NMAXFILE,MAXSIZE
+.ELSEIF       UMSG==WM_SIZE
+              MOV       EAX,LPARAM
+              MOV       EDX,EAX
+              SHR       EDX,16
+              AND       EAX,0FFFFH
+              INVOKE    MOVEWINDOW,HWNDEDIT,0,0,EAX,EDX,TRUE
+.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_OPEN
+              MOV       OFN.FLAGS, OFN_FILEMUSTEXIST OR \
+       OFN_PATHMUSTEXIST  OR        OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY
+              INVOKE    GETOPENFILENAME, ADDR OFN
+.IF           EAX==TRUE
+              INVOKE    CREATEFILE,ADDR BUFFER,\
+            GENERIC_READ  OR        GENERIC_WRITE ,\
+         FILE_SHARE_READ  OR        FILE_SHARE_WRITE,\
+NULL,OPEN_EXISTING,FILE_ATTRIBUTE_ARCHIVE,\ 
+NULL 
+              MOV       HFILE,EAX
+              INVOKE    GLOBALALLOC,GMEM_MOVEABLE OR GMEM_ZEROINIT,MEMSIZE
+              MOV       HMEMORY,EAX
+              INVOKE    GLOBALLOCK,HMEMORY
+              MOV       PMEMORY,EAX
+              INVOKE    READFILE,HFILE,PMEMORY,MEMSIZE-1,ADDR SIZEREADWRITE,NULL
+              INVOKE    SENDMESSAGE,HWNDEDIT,WM_SETTEXT,NULL,PMEMORY
+              INVOKE    CLOSEHANDLE,HFILE
+              INVOKE    GLOBALUNLOCK,PMEMORY
+              INVOKE    GLOBALFREE,HMEMORY
+.ENDIF
+              INVOKE    SETFOCUS,HWNDEDIT
+.ELSEIF       AX==IDM_SAVE
+              MOV       OFN.FLAGS,OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY
+              INVOKE    GETSAVEFILENAME, ADDR OFN
+.IF           EAX==TRUE
+              INVOKE    CREATEFILE,ADDR BUFFER,\
+            GENERIC_READ  OR        GENERIC_WRITE ,\
+         FILE_SHARE_READ  OR        FILE_SHARE_WRITE,\
+NULL,CREATE_NEW,FILE_ATTRIBUTE_ARCHIVE,\ 
+NULL 
+              MOV       HFILE,EAX
+              INVOKE    GLOBALALLOC,GMEM_MOVEABLE OR GMEM_ZEROINIT,MEMSIZE
+              MOV       HMEMORY,EAX
+              INVOKE    GLOBALLOCK,HMEMORY
+              MOV       PMEMORY,EAX
+              INVOKE    SENDMESSAGE,HWNDEDIT,WM_GETTEXT,MEMSIZE-1,PMEMORY
+              INVOKE    WRITEFILE,HFILE,PMEMORY,EAX,ADDR SIZEREADWRITE,NULL
+              INVOKE    CLOSEHANDLE,HFILE
+              INVOKE    GLOBALUNLOCK,PMEMORY
+              INVOKE    GLOBALFREE,HMEMORY
+.ENDIF
+              INVOKE    SETFOCUS,HWNDEDIT
+.ELSE
+              INVOKE    DESTROYWINDOW, HWND
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START</Pre>
+
+<P> 
+
+<H4>分析：</H4>
+        <pre class="code">              INVOKE    CREATEWINDOWEX,NULL,ADDR EDITCLASS,NULL,\
+  WS_VISIBLE  OR        WS_CHILD OR ES_LEFT OR ES_MULTILINE OR\
+          ES_AUTOHSCROLL  OR        ES_AUTOVSCROLL,0,\
+0,0,0,hWnd,EditID,\ 
+hInstance,NULL 
+              MOV       HWNDEDIT,EAX</pre>
+        <P>处理 WM_CREATE消息时，我们创建一个编辑控件。请注意，我们把该控件大小的有关参数都设成0，因为我们稍后将重新设置该编辑控件的大小，使得其覆盖父窗口的整个客户区。<BR>
+  注意：本例中我们没有必要调用ShowWindow来显示编辑控件，因为在创建时在其风格中已设置了WS_VISIBLE标志位，在创建父窗口时也可以使用这个小技巧。 
+        <Pre class="code">                                  
+;==============================================
+; Initialize the members of OPENFILENAME structure 
+;============================================== 
+              MOV       OFN.LSTRUCTSIZE,SIZEOF OFN
+              PUSH      HWND
+              POP       OFN.HWNDOWNER
+              PUSH      HINSTANCE
+              POP       OFN.HINSTANCE
+              MOV       OFN.LPSTRFILTER, OFFSET FILTERSTRING
+              MOV       OFN.LPSTRFILE, OFFSET BUFFER
+              MOV       OFN.NMAXFILE,MAXSIZE</Pre>
+        
+        <P>创建完编辑控件后，我们初始话ofn变量的成员。因为稍后在保存文件时还要使用该结构体变量，所以此处只初始化要用到的公共部分。WM_CREATE 消息的处理部分是进行这种初始化的绝佳之处。 
+        <Pre class="code">.ELSEIF       UMSG==WM_SIZE
+              MOV       EAX,LPARAM
+              MOV       EDX,EAX
+              SHR       EDX,16
+              AND       EAX,0FFFFH
+              INVOKE    MOVEWINDOW,HWNDEDIT,0,0,EAX,EDX,TRUE</Pre>
+        
+        <P>当主窗口的客户区部分大小改变时，我们的应用程序将接收到WM_SIZE 消息。当然该窗口第一次显示时，我们也将接收到该消息。要接收到该消息，主窗口必须有CS_VREDRAW和CS_HREDRAW风格。我们应该把缩放编辑控件的动作放到此处。我们要把编辑控件变成和我们的窗口客户区一样大，所以先得要得到父窗口客户区的大小。这些值包含在参数lParam中，lParam的高字部分是客户区的高，底字部分是客户区的宽。然后我们调用MoveWindow函数来重新调整编辑控件的大小，该函数不仅能够移动窗口的位置，而且能够改变窗口的大小。 
+        <Pre class="code">.IF           AX==IDM_OPEN
+              MOV       OFN.FLAGS, OFN_FILEMUSTEXIST OR \
+       OFN_PATHMUSTEXIST  OR        OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY
+              INVOKE    GETOPENFILENAME, ADDR OFN</Pre>
+        
+        <P>当用户选择了File/Open菜单项时，我们填充ofn的其他成员，然后调用GetOpenFileName函数显示一个“打开文件”对话框。 
+        <Pre class="code">.IF           EAX==TRUE
+              INVOKE    CREATEFILE,ADDR BUFFER,\
+            GENERIC_READ  OR        GENERIC_WRITE ,\
+         FILE_SHARE_READ  OR        FILE_SHARE_WRITE,\
+NULL,OPEN_EXISTING,FILE_ATTRIBUTE_ARCHIVE,\ 
+NULL 
+              MOV       HFILE,EAX</Pre>
+        
+        <P>如果用户选择了一个文件时，我们调用CreateFile函数来打开。我们设置标志位来让该函数的文件能够读写。文件打开后我们把返回的文件句柄保存在一个全局变量中以便以后使用。CreateFile函数应用非常广泛，其原型如下： 
+        <Pre class="code">  CREATEFILE  PROTO     LPFILENAME:DWORD,\
+                        dwDesiredAccess:DWORD,\
+                        dwShareMode:DWORD,\
+                        lpSecurityAttributes:DWORD,\
+                        dwCreationDistribution:DWORD\,
+                        dwFlagsAndAttributes:DWORD\,
+          HTEMPLATEFILE:  DWORD
+</Pre>
+        
+        <P>dwDesiredAccess 指定想要进行的操作。 
+
+<LI>0  打开文件查询它的属性。 
+<LI>GENERIC_READ   打开文件读 
+<LI>GENERIC_WRITE  打开文件写. </LI>
+
+dwShareMode 指定文件的共享模式。 
+
+  <LI>0  不让其他进程共享，即当您打开该文件后，其他进程欲打开该文件时将失败。 
+  <LI>FILE_SHARE_READ  允许其他进程读。 
+  <LI>FILE_SHARE_WRITE  允许其他进程写。 </LI>
+
+<P>lpSecurityAttributes 该属性在WIN95下无效。 <BR>
+  dwCreationDistribution 指定欲生成的文件在其已存在和未存在时应做的动作。</P>
+
+  <LI>CREATE_NEW 生成一个新文件。如果文件已存在则失败。 
+  <LI>CREATE_ALWAYS 无论文件是否存在都生成一个新文件。 
+  <LI>OPEN_EXISTING 打开存在的文件。如果文件不存在则失败。 
+  <LI>OPEN_ALWAYS 打开文件，如果该文件不存在则生成，这和在dwCreationDistribution 中设置 CREATE_NEW标志位一样。 
+  <LI>TRUNCATE_EXISTING打开文件。打开时该文件的长度裁减到零（也即完全不要原来的文件了）。这要求调用进程必须有GENERIC_WRITE的权利，如果指定的文件不存在，该函数返回失败。 
+  </LI>
+
+<P>dwFlagsAndAttributes 指定文件的属性。</P>
+
+  <LI>FILE_ATTRIBUTE_ARCHIVE 该文件具有一般的归档文件的属性。用户可以用该标志位来标记文件的删除和备份。 
+  <LI>FILE_ATTRIBUTE_COMPRESSED 文件或目录是压缩的。对于文件来说是压缩其中的所有数据，而对于目录来说新生成的子目录和文件都要压缩。 
+  <LI>FILE_ATTRIBUTE_NORMAL 该文件没有一般的属性集。该标志位只能单独使用。 
+  <LI>FILE_ATTRIBUTE_HIDDEN 该文件是隐藏文件，当浏览一般的文件目录时将不显示它。 
+  <LI>FILE_ATTRIBUTE_READONLY 该文件是只读文件。应用程序可以读其中的内容，但不可以写。 
+  <LI>FILE_ATTRIBUTE_SYSTEM 该文件是系统文件。 </LI>
+
+                    
+  <p>invoke GlobalAlloc,GMEM_MOVEABLE or GMEM_ZEROINIT,MEMSIZE <BR>
+</p>
+  <pre class="code">              MOV       HMEMORY,EAX
+              INVOKE    GLOBALLOCK,HMEMORY
+              MOV       PMEMORY,EAX</pre>
+  <P>文件打开后，我们将分配一块内存供随后的API 函数ReadFile 和 WriteFile使用。我们使用标志GMEM_MOVEABLE来使得WINDOWS总是把内存块移到可靠的内存中去，GMEM_ZEROINIT告诉WINDOWS把刚刚分配的内存置为零。如果GlobalAlloc调用成功的话，会在eax中返回内存块的句柄，我们把该句柄传给GlobalLock函数以得到指向内存块的指针。 
+  <Pre class="code">              INVOKE    READFILE,HFILE,PMEMORY,MEMSIZE-1,ADDR SIZEREADWRITE,NULL
+              INVOKE    SENDMESSAGE,HWNDEDIT,WM_SETTEXT,NULL,PMEMORY</Pre>
+  
+  <P>使内存块可用后，我们调用ReadFile函数从文件中读数据。对于第一次打开的文件，文件的指针放在偏移0处，像本例中我们从偏移0处往前读。ReadFile的第一个参数是文件句柄，第二个参数是指向内存块的指针，接下来的参数是要读的数据的长度，第四个参数是一个指向DWORD型的参数的指针，它用来存放实际读的数据的长度。读完了后，我们把这些内容存放到编辑控件中，这要用消息传递来完成，我们把消息WM_SETTEXT传给编辑控件，其中的参数lParam中包含指向内存块的指针。到此处，编辑控件就可以在它的客户区显示文件的内容了。 
+  <Pre class="code">              INVOKE    CLOSEHANDLE,HFILE
+              INVOKE    GLOBALUNLOCK,PMEMORY
+              INVOKE    GLOBALFREE,HMEMORY
+.ENDIF</Pre>
+  
+  <P>我们不再需要让文件打开了，因为我们的目的是把修改后的数据保存到另一个文件而不是先前的那一个文件中去。所以我们可以调用CloseHandle来关闭文件。接下来我们解锁内存块，再释放它。实际上我们可以暂不释放内存块，而在以后的操作中重新利用。我们为了演示的原由，选择了释放它。 
+<Pre class="code">   invoke SetFocus,hwndEdit </Pre>
+<P>当打开文件对话框显示在屏幕上时，输入的焦点切换到了该对话框上。所以在该对话框关闭后，我们必须把焦点切换到编辑控件上。 现在打开文件的阶段结束了，用户可以编辑他们打开的文件了。当用户想把修改后的内容保存到磁盘上时，必须选择File/Save菜单项，这时会显示一个保存文件对话框。显示保存文件对话框其实和打开打开文件对话框基本一样。您甚至可以认为他们的不同只是函数名称不一样而已。此处可以复用大多数ofn变量先前设置的成员的值。 
+<Pre class="code">              MOV       OFN.FLAGS,OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY</Pre>
+
+<P>本例中我们将生成一个新文件，所以一定不能有 OFN_FILEMUSTEXIST 和 OFN_PATHMUSTEXIST标志位。dwCreationDistribution 
+  参数应当有CREATE_NEW标志位。 接下来的代码和打开问对话框基本一样。最后调用： 
+<Pre class="code">              INVOKE    SENDMESSAGE,HWNDEDIT,WM_GETTEXT,MEMSIZE-1,PMEMORY
+              INVOKE    WRITEFILE,HFILE,PMEMORY,EAX,ADDR SIZEREADWRITE,NULL</Pre>
+
+<P>现在我们把修改后的数据从编辑控件中写回内存块，再从内存块写回新文件。
+
+<div class="rpindex"><a href="013.html"> 下一页</a><a href="011.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

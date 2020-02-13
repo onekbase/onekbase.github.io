@@ -1,0 +1,251 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+<h1>常见问题(Troubleshooting)</h1>
+<p>这一节是使用BeautifulSoup时会遇到的一些常见问题的解决方法。 </p>
+<h2>为什么Beautiful Soup不能打印我的no-ASCII字符?</h2>
+<p>If you're getting errors that say: <code>&quot;'ascii' codec can't encode character 'x' in position y: ordinal not in range(128)&quot;</code>, 
+  the problem is probably with your Python installation rather than with
+  Beautiful Soup. Try printing out the non-ASCII characters without
+  running them through Beautiful Soup and you should have the same
+  problem. For instance, try running code like this: <br/>
+  如果你遇到这样的错误： <code>&quot;'ascii' codec can't encode character 'x' in position y: ordinal not in range(128)&quot;</code>,
+  这个错误可能是Python的问题而不是BeautifulSoup。 <br/>
+  （译者注：在已知文档编码类型的情况下，可以先将编码转换为unicode形式，在转换为utf-8编码，然后才传递给BeautifulSoup。
+  例如HTML的内容htm是GB2312编码: <br/>
+  htm=unicode(htm,'gb2312','ignore').encode('utf-8','ignore')<br/>
+  soup=BeautifulSoup(htm) <br/>
+  如果不知道编码的类型,可以使用chardet先检测一下文档的编码类型。chardet需要自己安装一下，在网上很容下到。） <br/>
+  试着不用Beautiful Soup而直接打印non-ASCII 字符，你也会遇到一样的问题。
+例如，试着运行以下代码： </p>
+<pre class="code">latin1word = 'Sacr\xe9 bleu!'
+unicodeword = unicode(latin1word, 'latin-1')
+print unicodeword
+</pre>
+<p>If this works but Beautiful Soup doesn't, there's probably a bug in
+  Beautiful Soup. However, if this doesn't work, the problem's with your
+  Python setup. Python is playing it safe and not sending non-ASCII
+  characters to your terminal. There are two ways to override this
+  behavior. <br/>
+  如果它没有问题而Beautiful Soup不行，这可能是BeautifulSoup的一个bug。
+  但是，如果这个也有问题，就是Python本身的问题。Python为了安全缘故不支持发送non-ASCII
+  到终端。有两种方法可以解决这个限制。 </p>
+<ol>
+  <li>
+    <p>The easy way is to remap standard output to a converter that's
+      not afraid to send ISO-Latin-1 or UTF-8 characters to the terminal. <br/>
+      最简单的方式是将标准输出重新映射到一个转换器，不在意发送到终端的字符类型是ISO-Latin-1还是UTF-8字符串。 </p>
+    <pre class="code">import codecs
+import sys
+streamWriter = codecs.lookup('utf-8')[-1]
+sys.stdout = streamWriter(sys.stdout)
+    </pre>
+    <p><code>codecs.lookup</code> returns a number of bound methods and
+      other objects related to a codec. The last one is a <code>StreamWriter</code> object capable of wrapping an output
+      stream. <br/>
+      <code>codecs.lookup</code>返回一些绑定的方法和其它和codec相关的对象。
+      最后一行是一个封装了输出流的<code>StreamWriter</code>对象。</p>
+  </li>
+  <li>
+    <p>The hard way is to create a <code>sitecustomize.py</code> file
+      in your Python installation which sets the default encoding to
+      ISO-Latin-1 or to UTF-8. Then all your Python programs will use that
+      encoding for standard output, without you having to do something for
+      each program. In my installation, I have a <code>/usr/lib/python/sitecustomize.py</code> which looks like this: <br/>
+      稍微困难点的方法是创建一个<code>sitecustomize.py</code>文件在你的Python安装中，
+      将默认编码设置为ISO-Latin-1或UTF-8。这样你所有的Python程序都会使用这个编码作为标准输出，
+      不用在每个程序里再设置一下。在我的安装中，我有一个 <code>/usr/lib/python/sitecustomize.py</code>，内容如下： </p>
+    <pre class="code">import sys
+sys.setdefaultencoding(&quot;utf-8&quot;)
+    </pre>
+  </li>
+</ol>
+<p>For more information about Python's Unicode support, look at <a href="http://dalchemy.com/opensource/unicodedoc/">Unicode for
+  Programmers</a> or <a href="http://dalchemy.com/opensource/unicodedoc/">End to End Unicode
+    Web Applications in Python</a>. Recipes 1.20 and 1.21 in the Python
+  cookbook are also very helpful. <br/>
+  更多关于Python的Unicode支持的信息，参考 <a href="http://dalchemy.com/opensource/unicodedoc/">Unicode for
+    Programmers</a> or <a href="http://dalchemy.com/opensource/unicodedoc/">End to End Unicode
+      Web Applications in Python</a>。Python食谱的给的菜谱1.20和1.21也很有用。 </p>
+<p>Remember, even if your terminal display is restricted to ASCII, you
+  can still use Beautiful Soup to parse, process, and write documents in
+  UTF-8 and other encodings. You just can't print certain strings with <code>print</code>. <br/>
+  但是即使你的终端显示被限制为ASCII，你也可以使用BeautifulSoup以UTF-8和其它的编码类型来剖析，处理和修改文档。
+  只是对于某些字符，你不能使用<code>print</code>来输出。 </p>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

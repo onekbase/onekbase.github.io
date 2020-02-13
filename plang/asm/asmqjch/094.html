@@ -1,0 +1,293 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="093.html"> 上一页</a><a href="095.html"> 下一页</a></div>
+<h1>如何获取真正中断入口地址</h1>
+<h2>概述：</h2>
+我们知道，DOS 的中断例程的入口地址存在 0000：0000 开始的中断向量表中，当程序要要建立一个中断例程时，需要修改中断向量表把入口地址指向自己的程序，为了使原来的中断例程能正常使用，在出口的时候还要用远跳转指令回到原中断的入口地址，如 
+  DOS 中断 INT 21H，在 DOS 启动后，后面要挂上很多的新的例程，如 SMARTDRV 等等，磁盘中断 INT 13H 也是如此。<br>
+      但在程序中，有时需要用到真正的中断入口，如 INT 13H 的 BIOS 入口举例说为 F000：EC59，为了反跟踪，程序中有时要用 
+  PUSHF/CALL F000：EC59 的方法来调用，这就需要在程序开始运行时检测出真正的中断入口地址以备用。<br>
+      检测真正的入口地址可以用单步中断的方法来进行，在调用 INT XX之前，把单步中断指向自己的程序，<br>
+  在单步中断中，从堆栈中取出要返回的地址，这就起到的跟踪 INT XX 的执行的作用，举例程序中将跟踪 INT 21H 的执行，然后把执行的地址输出到屏幕上，在 
+  INT 21H 中远跳转的地方给出提示。<br>
+      真正的中断地址往往在远跳转的地方，在判断哪个远跳转是真正的中断地址时，不同的中断要具体判断，如跟踪 INT 13H 
+  时，我们知道 BIOS 的段地址一般为 E000，所以一旦判断到段地址为 E000 时，就可以把这个地址保存下来作为真正 INT 13H 地址，而跟踪 
+  INT 21H 时，INT 21H 在 DOS 的内核中，所以要先用第一个 MCB 地址的功能取出 MCB 地址，而第一个 MCB 地址之前是系统内核区，当判断到段地址小于第一个 
+  MCB 地址时，这个地址就是真正的 INT 21H 地址。<br>
+  <br>
+  汇编编程示例：<br>
+ 
+<pre class="code">
+
+.286
+        CODE  SEGMENT
+              ASSUME    CS:CODE,DS:CODE
+              ORG       100H
+      START:
+              JMP       INSTALL
+
+      D_MES1  DB        'CS:IP = %04h:%04h  %,FLAG = %017b%,',0DH,0AH,0
+              DW        _CS,_IP,_FLAG
+         _CS  DW        ?
+     _OLD_CS  DW        ?
+         _IP  DW        ?
+       _FLAG  DW        ?
+      D_MES2  DB        '%14r- SEGMENT CHANGE %13r-',0DH,0AH,0
+;新的单步中断 INT 1 例程
+;
+       INT1:
+              PUSH      AX
+              PUSH      BP
+              MOV       BP,SP       ;
+		
+              MOV       AX,SS:[BP+4]            ;返回的 ip
+              MOV       CS:_IP,AX
+              MOV       AX,SS:[BP+6]            ;返回的 cs
+              MOV       CS:_CS,AX
+              MOV       AX,SS:[BP+8]            ;flag
+              MOV       CS:_FLAG,AX
+		
+              POP       BP
+              POP       AX
+		
+              PUSHF
+              PUSHA
+              PUSH      DS
+              PUSH      ES
+		
+              PUSH      CS
+              POP       DS
+              PUSH      CS
+              POP       ES
+		
+              MOV       AX,_CS
+              CMP       AX,_OLD_CS
+              MOV       _OLD_CS,AX
+              JZ        INT1_1
+              MOV       SI,OFFSET D_MES2        ;segment has changed
+              CALL      PRINTF
+     INT1_1:
+              MOV       SI,OFFSET D_MES1        ;print return address
+              CALL      PRINTF      ;and flags
+              POP       ES
+              POP       DS
+              POPA
+              POPF
+              IRET
+    INSTALL:
+              MOV       AX,CS
+              MOV       _OLD_CS,AX
+		
+              MOV       AX,3501H    ;keep int 01
+              INT       21H
+              PUSH      ES
+              PUSH      BX
+		
+              MOV       AX,2501H    ;set new int 01
+              MOV       DX,OFFSET INT1
+              INT       21H
+		
+              PUSHF
+              POP       AX
+              OR        AX,0100H
+              PUSH      AX
+              POPF                  ;set int 01 flag
+;--------------------------------------------------------
+              XOR       AX,AX
+              MOV       ES,AX       ;从这一句开始单步中断
+		
+              MOV       AH,-1       ;由于 INT 语句要清单步中断，所以
+              PUSHF                 ;要用 PUSHF/CALL FAR 的形式执行 INT 21H
+              CALL      DWORD PTR ES:[4*21H]
+              PUSHF
+              POP       AX
+              AND       AX,0FEFFH
+              PUSH      AX          ;跟踪完毕后清楚单步中断
+              POPF                  ;clear int 01 flag
+;---------------------------------------------------------
+              POP       DX
+              POP       DS
+              MOV       AX,2501H
+              INT       21H         ;restore old int 01
+		
+              INT       20H
+     INCLUDE  PRINTF.ASM        ;公用屏幕输出子程序
+        CODE  ENDS
+              END       START
+</pre>
+
+  <div class="rpindex"><a href="095.html"> 下一页</a><a href="093.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

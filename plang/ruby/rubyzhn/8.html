@@ -1,0 +1,293 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="7.html"> 上一页</a><a href="9.html"> 下一页</a></div>
+<h1 class="moer-title">9、流程控制</h1>
+<p class="moer-title">这章我们将讨论更多的Ruby流程控制.</p>
+<h4>  case</h4>
+<p>
+  我们用case语句测试有次序的条件.正如我们所见的,这和C,Java的switch相当接近,但更强大.</p>
+<pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+2..5表示2到5之间的一个范围.下面的表达式测试&nbsp;i&nbsp;是否在范围内:
+</p>
+   <pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+case&nbsp;内部也是用关系运算符&nbsp;===&nbsp;来同时测试几个条件.为了保持ruby的面对对象性质,&nbsp;===&nbsp;可以合适地理解为出现在&nbsp;when&nbsp;条件里的对</p><p>
+象.比如,下面的代码现在第一个&nbsp;when&nbsp;里测试字符串是否相等,并在第二个&nbsp;when&nbsp;里进行正则表达式匹配.
+</p>
+<pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre>
+<h4>while</h4>
+<p>
+虽然你将会在下一章发现并不需要经常将循环体写得很清楚,但&nbsp;Ruby&nbsp;还是提供了一套构建循环的好用的方法.</p><p>
+while&nbsp;是重复的&nbsp;if.我们在猜词游戏和正则表达式中使用过它(见前面的章节);这里,当条件(condition)为真的时候,它围绕一个代码域以</p><p>
+while&nbsp;condition...end的形式循环.但&nbsp;while&nbsp;和&nbsp;if&nbsp;可以很容易就运用于单独语句:
+</p>
+<pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+有时候你想要否定一个测试条件.&nbsp;unless&nbsp;是&nbsp;if&nbsp;的否定,&nbsp;until&nbsp;是一个否定的&nbsp;while.在这里我把它们留给你实验.</p><p>
+There&nbsp;are&nbsp;four&nbsp;ways&nbsp;to&nbsp;interrupt&nbsp;the&nbsp;progress&nbsp;of&nbsp;a&nbsp;loop&nbsp;from&nbsp;inside.&nbsp;First,&nbsp;break&nbsp;means,&nbsp;as&nbsp;in&nbsp;C,&nbsp;to&nbsp;escape&nbsp;from&nbsp;the&nbsp;</p><p>
+loop&nbsp;entirely.&nbsp;Second,&nbsp;next&nbsp;skips&nbsp;to&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;next&nbsp;iteration&nbsp;of&nbsp;the&nbsp;loop&nbsp;(corresponding&nbsp;to&nbsp;C's&nbsp;continue).&nbsp;</p><p>
+Third,&nbsp;ruby&nbsp;has&nbsp;redo,&nbsp;which&nbsp;restarts&nbsp;the&nbsp;current&nbsp;iteration.&nbsp;The&nbsp;following&nbsp;is&nbsp;C&nbsp;code&nbsp;illustrating&nbsp;the&nbsp;meanings&nbsp;of&nbsp;break,&nbsp;</p><p>
+next,&nbsp;and&nbsp;redo:</p>
+<p>
+有四种从内部中断循环的方法.第一,和C一样break从循环中完全退出.第二,&nbsp;next&nbsp;跳到下一次循环迭代的开始(对应于C的&nbsp;continue&nbsp;).</p>
+<p>第三,Ruby有redo,它可以重新开始现在的迭代.下面是用&nbsp;C&nbsp;代码对break,next,redo的意义做了演示:</p>
+<pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+第四种方法是由循环内跳出的方法是&nbsp;returen.&nbsp;return的结果是不仅从循环中跳出,而且会从含循环的方法中跳出.如果有参数,它会返回给方法调用,不然就返回nil.</p>
+   <h4>for</h4>
+   <p>
+C程序员现在会想知道怎样做一个&quot;for&quot;循环.Ruby的for比你想象的要有趣一点.下面的loop由集合中的元素控制运行:</p>
+   <pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+集合可以是一个数集(也是传统意义上的for循环):
+</p>
+   <pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+也可以是其它的什么类型的集合,比如一个数组:
+</p>
+   <pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+但我们说过头了.for其实是&nbsp;each&nbsp;的另一写法,正巧,这是我们关于迭代器的第一个例子.下面的两种形式是等价的:
+</p>
+   <pre class="code">ruby&gt; i=8
+ruby&gt; case i
+    | when 1, 2..5
+    |   print &quot;1..5\n&quot;
+    | when 6..10
+    |   print &quot;6..10\n&quot;
+    | end
+6..10
+   nil</pre><p>
+一旦你熟悉了迭代器,它便会常常代替传统的循环.它们一般更容易处理.因此,让我们接着学习更多关于迭代器的知识.
+<div class="rpindex"><a href="9.html"> 下一页</a><a href="7.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

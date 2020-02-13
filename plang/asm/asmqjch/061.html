@@ -1,0 +1,559 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="060.html"> 上一页</a><a href="062.html"> 下一页</a></div>
+<h1 align="center">PE教程5: Section Table（节表）</h1>
+
+<p>&nbsp;</p>
+
+<h3>理论:</h3>
+
+<p>到本课为止，我们已经学了许多关于
+DOS header 和 PE header
+的知识。接下来就该轮到 section table（节表）了。节表其实就是紧挨着
+PE header 的一结构数组。该数组成员的数目由 file header (IMAGE_FILE_HEADER) 结构中 NumberOfSections 域的域值来决定。节表结构又命名为
+IMAGE_SECTION_HEADER。</p>
+<pre class="code"> IMAGE_SIZEOF_SHORT_NAME  equ       8
+
+    IMAGE_SECTION_HEADER  STRUCT
+       Name1  db        IMAGE_SIZEOF_SHORT_NAME dup(?)
+union Misc 
+         PhysicalAddress  dd        ?
+ VirtualSize  dd        ?
+              ends
+          VirtualAddress  dd        ?
+           SizeOfRawData  dd        ?
+        PointerToRawData  dd        ?
+    PointerToRelocations  dd        ?
+    PointerToLinenumbers  dd        ? 
+     NumberOfRelocations  dw        ?
+     NumberOfLinenumbers  dw        ?
+         Characteristics  dd        ?
+    IMAGE_SECTION_HEADER  ENDS</pre>
+
+<p>同样，不是所有成员都是很有用的，我们只关心那些真正重要的。</p>
+
+<table>
+    <tr>
+        <th bgcolor="#006666">Field</th>
+        <th bgcolor="#006666">Meanings</th>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#003333">Name1</td>
+        <td align="center" bgcolor="#003333">事实上本域的名称是&quot;name&quot;，只是&quot;name&quot;已被MASM用作关键字，所以我们只能用&quot;Name1&quot;代替。这儿的节名长不超过8字节。记住节名仅仅是个标记而已，我们选择任何名字甚至空着也行，注意这里不用null结束。命名不是一个ASCIIZ字符串，所以不用null结尾。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#003333">VirtualAddress</td>
+        <td align="center" bgcolor="#003333">本节的RVA（相对虚拟地址）。PE装载器将节映射至内存时会读取本值，因此如果域值是1000h，而PE文件装在地址400000h处，那么本节就被载到401000h。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#003333">SizeOfRawData</td>
+        <td align="center" bgcolor="#003333">经过文件对齐处理后节尺寸，PE装载器提取本域值了解需映射入内存的节字节数。（译者注: 假设一个文件的文件对齐尺寸是0x200，如果前面的 VirtualSize域指示本节长度是0x388字节，则本域值为0x400，表示本节是0x400字节长）。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#003333">PointerToRawData</td>
+        <td align="center" bgcolor="#003333">这是节基于文件的偏移量，PE装载器通过本域值找到节数据在文件中的位置。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#003333">Characteristics</td>
+        <td align="center" bgcolor="#003333">包含标记以指示节属性，比如节是否含有可执行代码、初始化数据、未初始数据，是否可写、可读等。</td>
+    </tr>
+</table>
+
+<p>现在我们已知晓 IMAGE_SECTION_HEADER 结构，再来模拟一下
+PE装载器的工作吧:</p>
+
+<ol>
+    <li>读取 IMAGE_FILE_HEADER 的 NumberOfSections域，知道文件的节数目。</li>
+    <li>SizeOfHeaders 域值作为节表的文件偏移量，并以此定位节表。</li>
+    <li>遍历整个结构数组检查各成员值。</li>
+    <li>对于每个结构，我们读取PointerToRawData域值并定位到该文件偏移量。然后再读取SizeOfRawData域值来决定映射内存的字节数。将VirtualAddress域值加上ImageBase域值等于节起始的虚拟地址。然后就准备把节映射进内存，并根据Characteristics域值设置属性。</li>
+    <li>遍历整个数组，直至所有节都已处理完毕。</li>
+</ol>
+
+<p>注意我们并没有使用节名: 这其实并不重要。</p>
+
+<h3>示例:</h3>
+
+<p>本例程打开一PE文件遍历其节表，并在列表框控件显示各节的信息。</p>
+
+<pre class="code">.386
+.model        flat,stdcall
+option casemap:none 
+     include  \masm32\include\windows.inc
+     include  \masm32\include\kernel32.inc
+     include  \masm32\include\comdlg32.inc
+     include  \masm32\include\user32.inc
+     include  \masm32\include\comctl32.inc
+  includelib  \masm32\lib\comctl32.lib
+  includelib  \masm32\lib\user32.lib
+  includelib  \masm32\lib\kernel32.lib
+  includelib  \masm32\lib\comdlg32.lib
+
+        IDD_SECTIONTABLE  equ       104
+         IDC_SECTIONLIST  equ       1001
+
+         SEH  struct
+
+
+    PrevLink  dd        ?           ; the address of the previous seh structure
+          CurrentHandler  dd        ?           ; the address of the new exception handler
+  SafeOffset  dd        ?           ; The offset where it's safe to continue execution
+     PrevEsp  dd        ?           ; the old value in esp
+     PrevEbp  dd        ?           ; The old value in ebp
+         SEH  ends
+
+.data
+     AppName  db        "PE tutorial no.5",0
+ofn OPENFILENAME <> 
+            FilterString  db        "Executable Files (*.exe, *.dll)",0,"*.exe      ;*.dll",0
+              db        "All Files",0,"*.*",0,0
+           FileOpenError  db        "Cannot open the file for reading",0
+    FileOpenMappingError  db        "Cannot open the file for memory mapping",0
+        FileMappingError  db        "Cannot map the file into memory",0
+           FileInValidPE  db        "This file is not a valid PE",0
+    template  db        "%08lx",0
+ SectionName  db        "Section",0
+ VirtualSize  db        "V.Size",0
+          VirtualAddress  db        "V.Address",0
+           SizeOfRawData  db        "Raw Size",0
+   RawOffset  db        "Raw Offset",0
+         Characteristics  db        "Characteristics",0
+
+.data?
+   hInstance  dd        ?
+      buffer  db        512 dup(?)
+       hFile  dd        ?
+    hMapping  dd        ?
+    pMapping  dd        ?
+     ValidPE  dd        ?
+        NumberOfSections  dd        ?
+
+.code
+       start  proc
+              LOCAL     seh:SEH
+              invoke    GetModuleHandle,NULL
+              mov       hInstance,eax
+              mov       ofn.lStructSize,SIZEOF ofn
+              mov       ofn.lpstrFilter, OFFSET FilterString
+              mov       ofn.lpstrFile, OFFSET buffer
+              mov       ofn.nMaxFile,512
+              mov       ofn.Flags, OFN_FILEMUSTEXIST or OFN_PATHMUSTEXIST or OFN_LONGNAMES or OFN_EXPLORER or OFN_HIDEREADONLY
+              invoke    GetOpenFileName, ADDR ofn
+.if           eax==TRUE
+              invoke    CreateFile, addr buffer, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL
+.if           eax!=INVALID_HANDLE_VALUE
+              mov       hFile, eax
+              invoke    CreateFileMapping, hFile, NULL, PAGE_READONLY,0,0,0
+.if           eax!=NULL
+              mov       hMapping, eax
+              invoke    MapViewOfFile,hMapping,FILE_MAP_READ,0,0,0
+.if           eax!=NULL
+              mov       pMapping,eax
+              assume    fs:nothing
+              push      fs:[0]
+              pop       seh.PrevLink
+              mov       seh.CurrentHandler,offset SEHHandler
+              mov       seh.SafeOffset,offset FinalExit
+              lea       eax,seh
+              mov       fs:[0], eax
+              mov       seh.PrevEsp,esp
+              mov       seh.PrevEbp,ebp
+              mov       edi, pMapping
+              assume    edi:ptr IMAGE_DOS_HEADER
+.if           [edi].e_magic==IMAGE_DOS_SIGNATURE
+              add       edi, [edi].e_lfanew
+              assume    edi:ptr IMAGE_NT_HEADERS
+.if           [edi].Signature==IMAGE_NT_SIGNATURE
+              mov       ValidPE, TRUE
+.else
+              mov       ValidPE, FALSE
+.endif
+.else
+              mov       ValidPE,FALSE
+.endif
+  FinalExit:
+              push      seh.PrevLink
+              pop       fs:[0]
+.if           ValidPE==TRUE
+              call      ShowSectionInfo
+.else
+              invoke    MessageBox, 0, addr FileInValidPE, addr AppName, MB_OK+MB_ICONINFORMATION
+.endif
+              invoke    UnmapViewOfFile, pMapping
+.else
+              invoke    MessageBox, 0, addr FileMappingError, addr AppName, MB_OK+MB_ICONERROR
+.endif
+              invoke    CloseHandle,hMapping
+.else
+              invoke    MessageBox, 0, addr FileOpenMappingError, addr AppName, MB_OK+MB_ICONERROR
+.endif
+              invoke    CloseHandle, hFile
+.else
+              invoke    MessageBox, 0, addr FileOpenError, addr AppName, MB_OK+MB_ICONERROR
+.endif
+.endif
+              invoke    ExitProcess, 0
+              invoke    InitCommonControls
+       start  endp
+
+  SEHHandler  proc      uses edx pExcept:DWORD,pFrame:DWORD,pContext:DWORD,pDispatch:DWORD
+              mov       edx,pFrame
+              assume    edx:ptr SEH
+              mov       eax,pContext
+              assume    eax:ptr CONTEXT
+              push      [edx].SafeOffset
+              pop       [eax].regEip
+              push      [edx].PrevEsp
+              pop       [eax].regEsp
+              push      [edx].PrevEbp
+              pop       [eax].regEbp
+              mov       ValidPE, FALSE
+              mov       eax,ExceptionContinueExecution
+              ret
+  SEHHandler  endp
+
+     DlgProc  proc      uses edi esi hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD
+              LOCAL     lvc:LV_COLUMN
+              LOCAL     lvi:LV_ITEM
+.if           uMsg==WM_INITDIALOG
+              mov       esi, lParam
+              mov       lvc.imask,LVCF_FMT or LVCF_TEXT or LVCF_WIDTH or LVCF_SUBITEM
+              mov       lvc.fmt,LVCFMT_LEFT
+              mov       lvc.lx,80
+              mov       lvc.iSubItem,0
+              mov       lvc.pszText,offset SectionName
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,0,addr lvc inc lvc.iSubItem
+              mov       lvc.fmt,LVCFMT_RIGHT
+              mov       lvc.pszText,offset VirtualSize
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,1,addr lvc
+              inc       lvc.iSubItem
+              mov       lvc.pszText,offset VirtualAddress
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,2,addr lvc
+              inc       lvc.iSubItem
+              mov       lvc.pszText,offset SizeOfRawData
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,3,addr lvc
+              inc       lvc.iSubItem
+              mov       lvc.pszText,offset RawOffset
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,4,addr lvc
+              inc       lvc.iSubItem
+              mov       lvc.pszText,offset Characteristics
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTCOLUMN,5,addr lvc
+              mov       ax, NumberOfSections
+              movzx     eax,ax
+              mov       edi,eax
+              mov       lvi.imask,LVIF_TEXT
+              mov       lvi.iItem,0
+              assume    esi:ptr IMAGE_SECTION_HEADER
+.while        edi>0
+              mov       lvi.iSubItem,0
+              invoke    RtlZeroMemory,addr buffer,9
+              invoke    lstrcpyn,addr buffer,addr [esi].Name1,8
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTITEM,0,addr lvi
+              invoke    wsprintf,addr buffer,addr template,[esi].Misc.VirtualSize
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              inc       lvi.iSubItem
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_SETITEM,0,addr lvi
+              invoke    wsprintf,addr buffer,addr template,[esi].VirtualAddress
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              inc       lvi.iSubItem
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_SETITEM,0,addr lvi
+              invoke    wsprintf,addr buffer,addr template,[esi].SizeOfRawData
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              inc       lvi.iSubItem
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_SETITEM,0,addr lvi
+              invoke    wsprintf,addr buffer,addr template,[esi].PointerToRawData
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              inc       lvi.iSubItem
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_SETITEM,0,addr lvi
+              invoke    wsprintf,addr buffer,addr template,[esi].Characteristics
+              lea       eax,buffer
+              mov       lvi.pszText,eax
+              inc       lvi.iSubItem
+              invoke    SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_SETITEM,0,addr lvi
+              inc       lvi.iItem
+              dec       edi
+              add       esi, sizeof IMAGE_SECTION_HEADER
+.endw
+.elseif
+uMsg==WM_CLOSE 
+              invoke    EndDialog,hDlg,NULL
+.else
+              mov       eax,FALSE
+              ret
+.endif
+              mov       eax,TRUE
+              ret
+     DlgProc  endp
+
+         ShowSectionInfo  proc      uses edi
+              mov       edi, pMapping
+              assume    edi:ptr IMAGE_DOS_HEADER
+              add       edi, [edi].e_lfanew
+              assume    edi:ptr IMAGE_NT_HEADERS
+              mov       ax,[edi].FileHeader.NumberOfSections
+              movzx     eax,ax
+              mov       NumberOfSections,eax
+              add       edi,sizeof IMAGE_NT_HEADERS
+              invoke    DialogBoxParam, hInstance, IDD_SECTIONTABLE,NULL, addr DlgProc, edi
+              ret
+         ShowSectionInfo  endp
+              end       start</pre>
+
+<h3>分析:</h3>
+
+<p>本例重用了PE教程2的代码，校验PE文件的有效性后，继续调用函数ShowSectionInfo显示各节信息。</p>
+
+<pre class="code">ShowSectionInfo proc uses edi <br>
+   mov edi, pMapping <br>
+   assume edi:ptr IMAGE_DOS_HEADER <br>
+   add edi, [edi].e_lfanew<br>
+   assume edi:ptr IMAGE_NT_HEADERS</pre>
+
+<p>我们将edi用作指向PE文件数据的指针。首先，将指向DOS header地址的pMapping赋给edi，再加上e_lfanew域值等于PE
+header的地址。</p>
+
+<p>   mov
+ax,[edi].FileHeader.NumberOfSections<br>
+   mov NumberOfSections,ax </p>
+
+<p>因为我们要遍历节表，所以必须先获取文件的节数目。这就得靠file header里的NumberOfSections域了，切记这是个word域。</p>
+
+<pre class="code">   add edi,sizeof
+IMAGE_NT_HEADERS </pre>
+
+<p>现在edi正指向PE header的起始地址，加上PE header结构大小后恰好指向节表了。</p>
+
+<pre class="code">   invoke DialogBoxParam,
+hInstance, IDD_SECTIONTABLE,NULL, addr DlgProc, edi</pre>
+
+<p>调用 DialogBoxParam 显示列表对话框，注意我们已将节表地址作为最后一个参数传递过去了，该值可从WM_INITDIALOG 消息的lParam参数中提取。</p>
+
+<p>在对话框过程里我们响应WM_INITDIALOG消息，将lParam值 (节表地址)存入esi，节数目赋给edi并设置列表控件。万事俱备后，进入循环将各节信息插入到列表控件中，这部分相当简单。</p>
+
+<pre class="code"> .while
+              edi&gt                ;0 <br>
+              mov
+lvi.iSubItem,0 </pre>
+
+<p>字符串置入第一列。</p>
+
+<pre class="code">              invoke    RtlZeroMemory,addr buffer,9
+              invoke    lstrcpyn,addr buffer,addr [esi].Name1,8
+              lea       eax,buffer
+              mov       lvi.pszText,eax</pre>
+
+<p>要显示节名，当然要将其转换为ASCIIZ字符串先。</p>
+
+<pre class="code">        
+invoke
+SendDlgItemMessage,hDlg,IDC_SECTIONLIST,LVM_INSERTITEM,0,addr lvi
+</pre>
+
+<p>然后显示第一列。<br>
+继续我们伟大的工程，显示完本节中最后一个欲呈现的值后，立马下一个结构。</p>
+
+<pre class="code">        
+dec edi <br>
+         add esi, sizeof
+IMAGE_SECTION_HEADER <br>
+      .endw </pre>
+
+<p>每处理完一节就递减edi，然后将esi加上IMAGE_SECTION_HEADER 结构大小，使其指向下一个IMAGE_SECTION_HEADER 结构。</p>
+
+<p>遍历节表的步骤:</p>
+
+<ol>
+    <li>PE文件有效性校验。</li>
+    <li>定位到 PE header 的起始地址。</li>
+    <li>从 file header 的 NumberOfSections域获取节数。</li>
+    <li>通过两种方法定位节表: ImageBase+SizeOfHeaders 或者
+        PE header的起始地址+ PE header结构大小。
+        (节表紧随 PE header)。如果不是使用文件映射的方法，可以用SetFilePointer 直接将文件指针定位到节表。节表的文件偏移量存放在
+        SizeOfHeaders域里。(SizeOfHeaders 是 IMAGE_OPTIONAL_HEADER
+        的结构成员)</li>
+    <li>处理每个 IMAGE_SECTION_HEADER 结构。</li>
+</ol>
+
+
+
+<div class="rpindex"><a href="062.html"> 下一页</a><a href="060.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

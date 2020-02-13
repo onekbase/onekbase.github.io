@@ -1,0 +1,414 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="11-12.html">上一页</a> <a href="11-14.html">下一页</a> </div>
+  <p>依照这个思路，可以把程序TSR.ASM修改成下面的模样： </p>
+  <h5>NEW09.ASM</h5>
+  <pre class="code">        code  segment
+              assume    cs:code,ds:code
+              org       100h
+      start:
+              jmp       short install	；转驻留部分的安装程序
+       old09  dd        ?	；保存原09H中断向量
+new09:			；新的09H中断服务程序
+              push      ax	；保存寄存器
+              push      bx
+              push      cx
+              push      di
+              push      es
+			
+              mov       ax,0b800h	；ES寄存器指向显示缓存段
+              mov       es,ax
+              mov       di,0	；DI寄存器指向显示缓存首部
+			
+              in        al,60h	；取得扫描码
+              push      ax	；并存入堆栈
+              in        al,61h	；向键盘发出应答信号
+              or        al,80h
+              out       61h,al
+              and       al,7fh
+              out       61h,al
+			
+              mov       al,20h	；发中断结束命令EOI
+              out       20h,al
+			
+              pop       ax	；取回扫描码
+              test      al,10000000b	；是通码吗？
+              jnz       exit	；不是通码，转EXIT
+			
+              mov       cx,2000	；准备修改屏幕字符属性
+              cmp       al,57h	；是F11键吗？
+              jz        f11	；是F11键，转相应的处理程序
+              cmp       al,58h	；是F12键吗？
+              jz        f12	；是F12键，转相应的处理程序
+              jmp       exit	；结束本中断服务程序
+        f11:
+              inc       di	；将屏幕字符颜色改为绿色
+              mov       al,2
+              stosb
+              loop      f11
+              jmp       exit	；结束本中断服务程序
+        f12:
+              inc       di	；将屏幕字符颜色改为红色
+              mov       al,4
+              stosb
+              loop      f12
+       exit:
+              pop       es	；恢复寄存器
+              pop       di
+              pop       cx
+              pop       bx
+              pop       ax
+              jmp       dword ptr cs:[old09]	；转原09H中断服务程序
+    install:
+              mov       ax,3509h	；利用DOS的35H功能取得09H中断向量
+              int       21h
+              mov       word ptr [old09],bx	；将原09H中断向量存入内存
+              mov       word ptr [old09+2],es
+              mov       ax,2509h	；设置新的09H中断向量
+              mov       dx,offset new09
+              int       21h
+			
+              mov       dx,offset install	；结束并驻留内存
+              int       27h
+        code  ends
+              end       start
+</pre>
+  <p>将这个程序编译连接成COM文件，运行之后就会发现键盘的工作与原先一模一样，唯一的不同就是F11和F12这两个功能键有作用了。其实这个程序并没有什么特殊的技术，我们只不过是采用了DOS提供的35H功能预先取得了原09H中断服务程序的入口地址，并将其保存在一个双字的数据区内： </p>
+  <p>功能号：35H<br />
+    用　途：取得某个中断服务程序的入口地址<br />
+    参　数：AH=35H<br />
+    AL=中断号<br />
+    调　用：INT   21H<br />
+    返　回：ES=中断服务程序入口段地址<br />
+    BX=中断服务程序入口偏移地址 </p>
+  <p>注意一下程序中取代&quot;IRET&quot;的指令&quot;JMP DWORD PTR   CS：[OLD09]&quot;，我们前面讲过许多应用于MOV等数据传送指令的寻址方式同样适用于JMP、CALL等转移指令，在这个程序中指令JMP可看作是应用了&quot;存储器直接寻址&quot;方式完成&quot;远程&quot;转移。关于这个指令有三个关键之处：</p>
+  <p>① 注意PTR操作符前的&quot;类型&quot;是&quot;DWORD（Double WORD）&quot;，不要想当然地写成&quot;WORD PTR&quot;或&quot;FAR PTR&quot;。写成&quot;WORD   PTR&quot;指令本身并没错，但是它不能完成&quot;远程&quot;转移。至于&quot;FAR PTR&quot;则是完完全全的不对。</p>
+  <p> ②   注意明确指定段寄存器是CS，因为原服务程序入口地址和新编的中断服务程序代码是在一个段内，而CPU进入中断服务程序后只有CS寄存器指向这个段，其它段寄存器还都是被中断的程序设置的值。</p>
+  <p>③   注意预先保存原中断服务程序入口地址时要把偏移地址放在低字位置，段地址放在高字位置。</p>
+  <h5>（2）05H中断</h5>
+  <p> 严格地说这个中断并不是一个硬件中断，尽管这个中断是由[PrtSc]键激发的。实际上这个中断是由09H中断服务程序调用而产生，当[PrtSc]键按下之后，09H中断服务程序检测到键盘发出的扫描码是[PrtSc]键，它就会执行一条&quot;INT   05&quot;指令，从而产生05H中断。</p>
+  <p>系统为05H中断提供的服务程序可以将屏幕上显示的内容输出到打印机，完成屏幕的&quot;硬拷贝&quot;。很多抓图程序都是通过重编05H中断服务程序的方法实现其功能，我们下面给出的程序就是通过这种方法实现&quot;拷屏&quot;的： </p>
+  <h5>SNAP.ASM</h5>
+  <pre class="code">        code  segment
+              assume    cs:code,ds:code
+              org       100h
+        main  proc      near
+              jmp       install	；转INSTALL安装驻留内存部分
+       fname  db        'TEXT.SCR',0	；屏幕内容将保存到这个文件中
+        buff  db        80 dup (?)	；定义一个缓冲区保存屏幕上一行字符
+        crlf  db        0dh,0ah	；一行之后加上回车、换行符
+new05:			；新的05H中断服务程序
+              push      ax	；保存寄存器
+              push      bx
+              push      cx
+              push      dx
+              push      ds
+              push      si
+              push      es
+              push      di
+			
+              mov       ax,cs	；DS寄存器指向代码段
+              mov       ds,ax
+			
+              mov       ah,3ch	；建立一个文件用于保存屏幕信息
+              mov       cx,0
+              mov       dx,offset fname
+              int       21h
+              jc        exit	；若文件操作有错，转EXIT
+			
+              mov       bx,ax	；文件句柄送入BX寄存器
+              mov       ax,0b800h	；ES寄存器指向显示缓冲区段
+              mov       es,ax
+              mov       si,0	；SI寄存器指向显示缓存首
+			
+              mov       cx,25	；屏幕上其共有25行字符
+      loop1:
+              push      cx	；暂存行计数值
+              mov       di,offset buff	；DI寄存器指向字符缓冲区
+              mov       cx,80	；每行有80个字符
+      loop2:
+              mov       al,byte ptr es:[si]	；从显示缓存中取得一个字符
+              mov       [di],al	；并将其存入缓冲区中
+              inc       si	；SI寄存器指向下一字符（跳过属性字节）
+              inc       si
+              inc       di	；DI指向缓冲区的下一个位置
+              loop      loop2	；获得一行字符
+			
+              mov       ah,40h	；将缓冲区中的82个字符
+              mov       cx,82	；包括回车、换行符写入文件
+              mov       dx,offset buff
+              int       21h
+              jc        exit	；若文件操作出错，转EXIT
+			
+              pop       cx	；恢复行计数值
+              loop      loop1	；转LOOP1处理下一行
+			
+              mov       ah,3eh	；关闭文件
+              int       21h
+       exit:
+              pop       di	；恢复寄存器
+              pop       es
+              pop       si
+              pop       ds
+              pop       dx
+              pop       cx
+              pop       bx
+              pop       ax
+              iret      ；中断返回
+    install:
+              mov       ax,2505h	；设置新的05H中断向量
+              mov       dx,offset new05
+              int       21h
+			
+              mov       dx,offset install	；结束并驻留内存
+              int       27h
+        main  endp
+        code  ends
+              end       main
+</pre>
+  <p>既然05H中断并非是硬件中断，因此中断服务程序也不必发出中断结束命令EOI。这个程序还不能在图形模式下完成拷屏，它只能在字符模式下工作。程序驻留内存之后可以在任意时刻 </p>
+  <p>按下[PrtSc]键，此时屏幕上所有的文字都被保存在一个名为TEXT.SCR的文本文件中，使用TYPE命令或EDIT程序可以观察到抓到的内容。</p>
+  <h5>（3）08H中断</h5>
+  <p> 前面讨论定时器时对08H中断做过介绍，这个中断是定时电路的通道0控制，每一秒中产生18.2次，每两次之间的时间间隔为55Ms。它的服务程序控制着BIOS数据区中的一个双字变量，每执行一次就将这个变量加1。同时它还控制着软盘驱动器的马达，软驱工作完毕后总要隔2秒钟左右才会停转，这2秒的延时就是由08H中断控制的。</p>
+  <p>重新编制08H中断服务程序可以很方便地完成精确定时，最重要的是用这种方法定时不需要CPU循环等待。如果把CPU比作一个正在忙于工作的人，那么这个&quot;人&quot;实际上是一边做本职工作一边每隔55Ms看一下&quot;表&quot;。当到达预定时间后他会转去做另一件事，然后再回来继续工作。请大家仔细分析下面这个程序的运行情况： </p>
+  <h5>TIMER.ASM</h5>
+  <pre class="code">        code  segment
+              assume    cs:code,ds:code
+              org       100h
+        main  proc      near
+              jmp       install	；跳转至驻留程序的安装部分
+     counter  db        ?	；定义一个计数器
+      attrib  db        0	；字符属性字节
+       old08  dd        ?	；原08H中断向量
+      new08:
+              push      ax	；保存寄存器
+              push      cx
+              push      es
+              push      di
+			
+              pushf     ；标志寄存器入栈
+              call      dword ptr cs:[old08]	；调用原08H中断服务程序
+			
+              mov       al,cs:[counter]	；取得计数值
+              inc       al	；计数值加1
+              cmp       al,18	；计到1秒钟了吗？
+              jnz       exit	；未到1秒钟，转EXIT退出服务程序
+			
+              mov       ax,0b800h	；ES:DI向显示缓冲区
+              mov       es,ax
+              mov       di,0
+			
+              mov       al,cs:[attrib]	；取得属性字节
+              mov       cx,2000	；准备修改屏幕显示属性
+      loop1:
+              inc       di	；DI寄存器指向属性字节
+              stosb     ；修改字符属性
+              loop      loop1	；转LOOP1继续
+			
+              inc       al	；改变属性字节
+              and       al,0fh	；防止属性字节超过16
+              mov       cs:[attrib],al	；将改变后属性字节送回内存备用
+			
+              mov       al,0	；准备将计数器清0
+       exit:
+              mov       byte ptr cs:[counter],al	；将AL寄存器中的值存入计数器
+              pop       di	；恢复寄存器
+              pop       es
+              pop       cx
+              pop       ax
+              iret      ；中断返回
+    install:
+              mov       ax,3508h	；取得原08H中断向量
+              int       21h
+              mov       word ptr [old08],bx	；并将其保存至内存中
+              mov       word ptr [old08+2],es
+			
+              mov       ax,2508h	；设置新的08H中断向量
+              mov       dx,offset new08
+              int       21h
+			
+              mov       dx,offset install	；结束程序并驻留
+              int       27h
+        main  endp
+        code  ends
+              end       main
+</pre>
+  <p>能够把DOS系统死板的屏幕显示变得有趣一些其实是一件很简单的工作，就象TIMER程序，运行之后屏幕上显示的文字每隔1秒钟就会改变一次颜色，一闪一闪的很好玩。这个程序充分反映了通过08H中断完成定时可以不干扰CPU进行其它工作这个事实。运行这个程序后大家可以进行其它的任何工作，屏幕颜色的改变不会对用户的工作产生任何干扰。</p>
+  <p> 这个程序也是需要同原08H中断服务程序共同工作的，不过它并没有使用JMP指令转去执行原服务程序，而是采用了CALL指令。从&quot;寻址方式&quot;上看CALL指令与JMP指令的用法是完全一样的，但是有一点不同的是CALL指令之前加了一个&quot;PUSHF&quot;指令。为什么要先把标志寄存器压进堆栈呢？ </p>
+  <p>在回答这个问题之前请大家先想一想中断调用与返回的过程与一般的子程序调用与返回的过程有没有区别？其实区别很明显：采用CALL指令完成远程调用时CPU会自动将CS:IP压入堆栈，子过程返回指令&quot;RETF&quot;会把CS:IP从堆栈中恢复；而CPU响应中断时不仅要把CS:IP压入堆栈，而且要先把标志寄存器压入堆栈。执行中断返回指令&quot;IRET&quot;时标志寄存器也会自动从堆栈中弹出。所以程序中采用CALL指令调用原中断服务程序时要先把标志寄存器压入堆栈，这实际上提供了一种以CALL指令模拟INT指令的方法。</p>
+  <h5>（4）1CH中断</h5>
+  <p> 08H中断并不是PC系统中唯一一个每秒钟执行18.2次的中断，1CH也有这样的性质。不过1CH中断并不是由硬件触发的，它是一个软件中断。1CH中断与05H中断有相似的特点，05H中断是由09H中断服务程序调用而产生的，1CH则恰好是由08H中断服务程序调用产生，所以它具有与08H中断相同的性质--每55Ms调用一次。</p>
+  <p>这个中断才是真正提供给用户使用的，系统为它编制的服务程序只有一条指令--IRET，也就是说当用户没有为它编制服务程序时，它是什么事都不做的。所以用户编制一些需要定时的内存驻留程序时通常不选择08H中断，而是选择1CH中断，重编1CH中断服务程序时可以不用考虑与其原服务程序配合工作。</p>
+  <div  class="rpindex"><a href="11-14.html">下一页</a><a href="11-12.html">上一页</a><a href="index.html">目录</a> 　 </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

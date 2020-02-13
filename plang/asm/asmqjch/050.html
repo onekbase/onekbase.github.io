@@ -1,0 +1,385 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="048.html"> 上一页</a><a href="051.html"> 下一页</a></div><H1>虚拟设备驱动程序结构</H1>
+<p>现在大家对vmm和vxd有了一定的了解，接下来我们来看一看如何编写vxd代码。首先，你必须具备Windows 95/98 Device Driver Development 
+  Kit。Window95 ddk只有MSDN 订户才能拿到，但Windows98 ddk却可以免费从Microsoft公司取得。尽管Windows 98 ddk是面向WDM的，但你还是可以用它来开发VxD程序。你可以从 http://www.microsoft.com/hwdev/ddk/install98ddk.html?下载Window98 ddk。</p>
+<p> 你可以下载整个软件包(大约30M)，也可以只下载你感兴趣的部分。如果你没有下载整个软件包，那么别忘了下载other.exe 
+  里面的Window95 ddk documentation。Windows98 ddk 包含了6.11d版的MASM。你需要把它升级为最新版。 </p>
+<p> Window9x DDK包含了一些Masm32包所不具有的重要库文件。</p>
+<H3>LE文件格式</H3>
+VxD采用线性可执行文件格式(LE)。这种文件格式是为OS/2 2.0版设计的。它同时包含16位和32位代码，这点也是VxD程序的需要。回想VxD在Windows3.x的时代，在那时，从Dos启动Windows,Windows在把机器转到保护模式之前需要在实模式下做一些初始化。实模式的16位代码必须和32位代码一起放在可执行文件中。所以LE文件格式理所当然的选择。幸运的，Windows NT驱动程序不必在实模式下初始化，所以它们不必使用LE文件格式。它们用的是PE文件格式。 
+<P>在LE文件中，代码和数据被存放在几类运行属性不同的段中。以下是一些可用的段类。 
+<ul>
+<LI>LCODE 页面锁定的代码和数据段   这种段被锁定在内存里。换句话说，这段永远不会被放到硬盘上去，所以你一定要谨慎的使用这种段类以免浪费宝贵的内存。那些每时每刻都必须放在内存中的代码和数据应该放在这个段里。尤其是那些硬件中断处理程序。 
+<LI>PCODE 可调页代码段   VMM可以对这种段实行调页处理，在这种段里的代码不必时刻放在内存里，当VMM需要物理内存的时候，它就会把这段放到硬盘上去。 
+<LI>PDATA 可调页数据段 
+<LI>ICODE 仅用于的初始化段    这种段里的代码仅仅用来进行VxD的初始化。当初始化完成后，VMM就把这段从内存中释放。 
+<LI>DBOCODE 仅用于调试的代码数据段    当你要调试VxD程序时，就要用到这种段里的代码和数据，例如，它包含要调试的消息的处理代码。 
+<LI>SCODE 静态代码和数据段     这种段时刻存在于内存中，即使VxD已经卸载，这种段对某些动态的VxD程序很有用，这些VxD程序需要在某一Windows进程里不停的加载/卸载而又要纪录上次的环境和状态。 
+<LI>RCODE 实模式初始化代码数据段     这种段包含实模式初始化需要的16位代码和数据。
+<LI>16ICODE 16ICODE USE16保护模式初始化数据段     这是一个16位的段，它包含VxD要从保护模式拷贝到V86模式的代码。例如，如果你要把一些V86的代码拷贝到一个虚拟机上时，你想拷贝的代码就要放在这里。如果你把它放在其他的段里，编译程序就会产生错误的代码，例如，它会产生32位代码而不是16位代码。 
+<LI>MCODE 锁定的消息字串    这种段包含了由VMM消息宏帮助编译的消息字串，这有助于你构造你的驱程的国际版本。</LI></ul>
+
+<p>并不意味着你的VxD程序必须包含以上所有的段，你可以选择你的VxD程序需要的段。例如，如果你的VxD程序不进行实模式初始化，那么就不必包含RCODE段。 
+  <BR>
+大多数时候，你要用到LCODE, PCODE和PDATA段。作为一个VxD程序编写者，为你的代码和数据选择合适的段取决于你自己的判断。总的来说，你应该尽可能多的使用PCODE和PDATA因为这样VMM就可以在需要的时候把段调入调出内存。另外，硬件中断程序及其所用到的服务必须放在 LCODE段里。 <BR>
+你不能直接地使用这些段类，你要用这些段类来定义段，这些段的定义被存放在模块定义文件(.def)中。下面是一个标准的模块定义文件：</p>
+<pre class="code">VXD FIRSTVXD 
+SEGMENTS 
+_LPTEXT CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_LTEXT CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_LDATA CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_TEXT CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_DATA CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+CONST CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_TLS CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_BSS CLASS 'LCODE' PRELOAD NONDISCARDABLE 
+_LMGTABLE CLASS 'MCODE' PRELOAD NONDISCARDABLE IOPL 
+_LMSGDATA CLASS 'MCODE' PRELOAD NONDISCARDABLE IOPL 
+_IMSGTABLE CLASS 'MCODE' PRELOAD DISCARDABLE IOPL 
+_IMSGDATA CLASS 'MCODE' PRELOAD DISCARDABLE IOPL 
+_ITEXT CLASS 'ICODE' DISCARDABLE 
+_IDATA CLASS 'ICODE' DISCARDABLE 
+_PTEXT CLASS 'PCODE' NONDISCARDABLE 
+_PMSGTABLE CLASS 'MCODE' NONDISCARDABLE IOPL 
+_PMSGDATA CLASS 'MCODE' NONDISCARDABLE IOPL 
+_PDATA CLASS 'PDATA' NONDISCARDABLE SHARED 
+_STEXT CLASS 'SCODE' RESIDENT 
+_SDATA CLASS 'SCODE' RESIDENT 
+_DBOSTART CLASS 'DBOCODE' PRELOAD NONDISCARDABLE CONFORMING 
+_DBOCODE CLASS 'DBOCODE' PRELOAD NONDISCARDABLE CONFORMING 
+_DBODATA CLASS 'DBOCODE' PRELOAD NONDISCARDABLE CONFORMING 
+_16ICODE CLASS '16ICODE' PRELOAD DISCARDABLE 
+_RCODE CLASS 'RCODE' 
+EXPORTS 
+FIRSTVXD_DDB @1</pre>
+第一个声明定义了VxD的名称，一个VxD的名称必须是全部大写的，我曾经试过用小写，结果VxD除了把自己载入内存外什么也不干。 
+<BR>
+接下来是段的定义，段的定义包括三个部分：段的名称，段类和要求的段的运行属性。你可以看到很多段都基于相同的段类，例如，_LPTEXT, _LTEXT, _LDATA都是基于LCODE段类而且属性也完全一样。这样定义段有利于使代码更容易理解。如：LCODE可以包含代码和数据，对于一个程序员来说，如果他能把数据放到_LDATA段里，把代码放到_LTEXT 段里，就会显得很容易理解。最后，这两个段都会被编译到最后的可执行程序的同一个段内。 <BR>
+一个VxD程序导出且仅导出一个标记：它的设备描述块(DDB)。DDB实际上是一个结构，它包含了VMM需要知道的所有的VxD信息。你必须在模块定义文件中导出DDB。 <BR>
+在大多数时候，你可以把上面的.DEF文件用到你的新建的VxD项目中去。你只要把.DEF文件里第一行和最后一行的VxD名字改掉就可以了。在一个汇编的VxD项目中，段的定义是不必要的，段的定义主要用于C的VxD项目编写，但用在汇编里也是可以的。你会得到一大堆警告的信息但是它能汇编成功。你也可以删掉你在你的项目里没有用到的段定义从而去掉这些讨厌的警告信息。 <BR>
+vmm.inc包含了许多用于定义你的源文件中的段的宏： 
+<BR>
+ 
+<table>
+  <TBODY>
+    <TR>
+      <TD>_LTEXT</TD>
+      <TD>VxD_LOCKED_CODE_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_PTEXT</TD>
+      <TD>VxD_PAGEABLE_CODE_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_DBOCODE</TD>
+      <TD>VxD_DEBUG_ONLY_CODE_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_ITEXT</TD>
+      <TD>VxD_INIT_CODE_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_LDATA</TD>
+      <TD>VxD_LOCKED_DATA_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_IDATA</TD>
+      <TD>VxD_IDATA_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_PDATA</TD>
+      <TD>VxD_PAGEABLE_DATA_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_STEXT</TD>
+      <TD>VxD_STATIC_CODE_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_SDATA</TD>
+      <TD>VxD_STATIC_DATA_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_DBODATA</TD>
+      <TD>VxD_DEBUG_ONLY_DATA_SEG</TD>
+    </TR>
+    <TR>
+
+      <TD>_16ICODE</TD>
+      <TD>VxD_16BIT_INIT_SEG</TD>
+    </TR>
+    <TR>
+      <TD>_RCODE</TD>
+      <TD>VxD_REAL_INIT_SEG</TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<P>每个宏都有它相对应的结束宏，例如，如果你要在你的源文件中定义一个_LTEXT段，你应该这样写： 
+<BLOCKQUOTE>VxD_LOCKED_CODE_SEG 
+  <P>(把你的代码写在这里) 
+<P>VxD_LOCKED_CODE_ENDS</P>
+</BLOCKQUOTE>
+<H3>VxD结构</H3>
+现在你了解了LE文件里的段，我们可以继续来看一下源文件。你会发现VxD程序有一个特点，那就是它用了很多的宏。你可以看到在VxD中宏几乎无处不在，这都成为一个习惯了。这些宏用来隐藏一些底层的细节，也增加了源程序的可移植性。如果你有兴趣，你可以看一看像vmm.inc这一类的库文件中的这些宏的定义。 <BR>
+下面是VxD源文件结构： <BR>
+<pre  class="code">
+.386p
+     include  vmm.inc DECLARE_VIRTUAL_DEVICE FIRSTVXD,1,0, FIRSTVXD_Control, UNDEFINED_DEVICE_ID, UNDEFINED_INIT_ORDER
+
+Begin_control_dispatch FIRSTVXD 
+End_control_dispatch FIRSTVXD 
+
+              end  </pre>
+<P><BR>
+  这段源程序给人的第一印象就是：它并不像一个汇编源程序。那是因为它用了很多宏。让我们来分析一下源程序以便你能很快理解它。 
+<BLOCKQUOTE>.386p</BLOCKQUOTE>
+告诉编译器我们要使用包括CPU特权指令的80386指令系统。你也可以使用.486p或者.586p. 
+<BLOCKQUOTE>include vmm.inc</BLOCKQUOTE>
+你的每个VxD源程序都必须包含imm.inc，因为它包含了你在源程序里所要用到的宏的定义。你还可以根据需要包含其他的库文件。 
+<BLOCKQUOTE>DECLARE_VIRTUAL_DEVICE FIRSTVXD,1,0, FIRSTVXD_Control, 
+  UNDEFINED_DEVICE_ID, 
+UNDEFINED_INIT_ORDER</BLOCKQUOTE>
+正如我们刚才说的，VMM通过VxD程序的设备描述块(DDB)来获取它所需要知道的关于VxD的所有信息。一个设备描述块是一个结构，它包含了许多关于VxD的重要信息，比如VxD的名字，它的设备ID，它的VxD服务函数入口(如果有的话)，等等。你可以在imm.inc里查一查这个结构，它被定义为VxD_Desc_Block。你必须在.DEF 文件里导出这个结构。这个结构有22个数据，但是你只用填写其中的几个。然后vmm.inc包含的一个宏会为你初始化并填写这些数据。这个宏叫做DECLARE_VIRTUAL_DEVICE。它的格式如下： 
+<P>Declare_Virtual_Device   
+Name, MajorVer, MinorVer, CtrlProc, DeviceID, InitOrder, V86Proc, PMProc, 
+RefData 
+<P>你可以看到：VxD源程序中的标号是不区分大小写的，你可以用大写，小写或者混合起来用都可以。让我们来看一下Declare_virtual_device里的每一个参数。 
+<ul>
+<LI>Name   VxD的名字  最多8个字符。它必须是大写！在系统中的所有VxD程序里，它们的名字不能重复，每个VxD的名字应该是唯一的。这个宏同时也会根据这个名字产生DDB的名字，产生的办法就是：在这个名字的后面加上_DDB。所以如果你的VxD的名字是FIRSTVXD, Declare_Virtual_Device这个宏就会把DDB的名字定为FIRSTVXD_DDB。记住，你还要在.DEF文件里导出DDB。所以你必须使DDB的名字和.DEF文件定义中的相同。 
+<LI>MajorVer 和 MinorVer 你的VxD的主要的和次要的版本。 
+<LI>CtrlProc 你的VxD程序的设备控制函数的名字。设备控制函数是一个接受和处理VxD程序的控制消息的函数。你可以把设备控制函数看作Window函数的等价物。既然我们要用Begin_Control_Dispatch这个宏来生成我们的设备控制函数，那么我们应该使用一个标准格式的名字，那就是VxD的名字_Control。 Begin_Control_Dispatch这个宏把_Control 加到它后面的那个名字上(而我们又通常把VxD的名字写在它后面)作为设备控制函数的名字，所以我们就应该把VxD的名字加上_Control作为CtrlProc 参数的值。 
+<LI>DeviceID  你的VxD程序的16位唯一标识符  当且仅当你的VxD程序需要处理以下情况时你需要用到这个ID: 
+  
+<LI>你的VxD程序导出一些供其他VxD程序使用的VxD服务。因为20H中断接口用设备ID来定位/区分VxD程序，所以一个唯一的ID对你的VxD程序是必要的。 
+<LI>Your VxD 
+    你的VxD程序要在初始化中断2FH,1607H时通知实模式程序它的存在。 
+<LI>Some 
+     一些实模式软件(TSR)要用中断2FH,1605H来加载你的VxD程序。 </LI>
+  
+  如果你的VxD程序不需要一个唯一的设备ID，你可以把这一项设为UNDEFINED_DEVICE_ID ，如果你需要它，你可以去Microsoft要一个。 
+  <LI>InitOrder 初始化的顺序，简单的说，就是加载的顺序。VMM就按照这个次序来加载VxD程序。每个VxD程序都有一个加载次序号，例如： </LI>
+
+
+  
+    VMM_INIT_ORDER        EQU 
+    <Pre class="code">000000000H 
+DEBUG_INIT_ORDER EQU 000000000H 
+DEBUGCMD_INIT_ORDER EQU 000000000H 
+PERF_INIT_ORDER EQU 000900000H 
+APM_INIT_ORDER EQU 001000000H </Pre>
+    你可以看到：VMM, DEBUG和 DEBUGCMD是首先加载的VxD程序，然后是PERF和APM。初始化顺序值越低的VxD程序越先被加载。如果你的VxD程序在初始化时需要用到其他VxD程序提供的服务，那么你必须把初始化顺序的值设得比你所要调用的那个VxD程序的大，这样，当你的VxD程序加载时，你所要的VxD就已经在内存中为你准备好了。如果不想去管你的VxD的初始化顺序，就把这个参数填写为UNDEFINED_INIT_ORDER 。 
+  <LI>V86Proc和PMProc 你的程序可以导出供V86和保护模式程序使用的API，这两个参数就是用来填写这些API的地址。记住，VxD程序除了监控系统虚拟机外，还要监控一个或多个运行在DOS或者保护模式下的虚拟机程序。理所当然的，VxD程序要为DOS和保护模式程序提供API支持。如果你不导出这些API，你可以不填这两个参数。 
+  <LI>RefData 输入输出监视器(IOS)要用到的参考数据。只有一种情况下你要用到这个参数：当你在为IOS编写一个层驱动程序时。否则，你可以不填这个参数。</LI></ul>
+
+  <p>下来是 Begin_Control_Dispatch宏。</p>
+  <pre class="code">Begin_control_dispatch FIRSTVXD 
+End_control_dispatch FIRSTVXD</pre>
+这两个宏定义了设备控制函数，当VxD的控制消息发生时，VMM就调用这个函数。你必须填写设备控制函数名字的前半部分，在本例中，我们用的是 FIRSTVXD。这个宏会在你输入的前半部分后加上_Control作为设备控制函数的名字。这个名字一定要和你在Declare_virtual_device 宏中给参数CtrlProc填的名字一致。设备控制函数总是放在锁定段(VxD_LOCKED_CODE_SEG)内的。上面定义的设备控制函数什么也不干。你需要说明你的VxD程序要响应什么控制消息，以及处理这个消息的函数，你可以用Control_Dispatch宏来实现这一点。 
+<pre class="code">Control_Dispatch message, function</pre>
+例如，如果你的VxD程序只要处理Device_Init 消息，你的设备控制程序要这样写： 
+<pre class="code">Begin_Control_Dispatch FIRSTVXD 
+Control_Dispatch Device_Init, OnDeviceInit 
+End_Control_DispatchFIRSTVXD</pre>
+OnDeviceInit就是要处理Device_Init消息的函数的名字。你可以给你的函数取任何你想取的名字。 <BR>
+你可以用end 直接地结束你的VxD源程序。 <BR>
+综上所述，一个VxD程序至少包含一个设备控制块和一个设备控制函数。你要用Declare_Virtual_Device宏来定义一个设备控制块，用Begin_Control_Dispatch宏来定义一个设备控制程序。你必须在.def文件中的EXPORTS下面填写设备控制块的名字，从而导出该设备控制块。 
+<H3> 编译VxD</H3>
+编译的过程和编译普通的win32程序一样。先调用ml.exe编译asm源文件，然后用link.exe来连接object文件。不同的地方是ml.exe和link.exe后所带的命令行参数不同。 
+<Pre class="code"> ml -coff -c -Cx -DMASM6 -DBLD_COFF -DIS_32  firstvxd.asm </Pre>
+<P>-coff  表明COFF数据格式 <BR>
+    -c   
+只汇编，不调用连接程序来连接，这样我们就可以在调用link.exe的时候使用跟多的参数。 <BR>
+-Cx  保存公共，外部标记。 <BR>
+-D&lt;text&gt; 定义一个文本宏，例如，-DBLD_COFF定义了一个文本宏BLD_COFF，这个宏用来作为编译的条件。如果你有兴趣，你可以在库文件中查找BLD_COFF，自己亲眼看看它对汇编过程起什么作用。上面的命令行定义了三个文本宏：BLD_COFF，IS_32和MASM6。如果你对C编程熟悉的话，你会知道这些定义相当于完成以下功能： 
+<pre class="code"> #define BLD_COFF
+#define IS_32 
+#define MASM6</pre>
+<pre class="code">link -vxd -def:firstvxd.def  firstvxd.obj </pre>
+<P>-vxd 表明我们要根据obj文件来生成一个VxD文件。 <BR>
+    -def:&lt;.DEF file&gt; 指定该VxD文件的模式定义文件。 
+<P>我觉得用makefile很方便，如果你不喜欢用makefile，你也可以创建批处理文件来自动完成编译过程。我的makefile如下： 
+<pre class="code">NAME=firstvxd 
+
+$(NAME).vxd:$(NAME).obj 
+link -vxd -def:$(NAME).def $(NAME).obj 
+
+$(NAME).obj:$(NAME).asm 
+ml -coff -c -Cx -DMASM6 -DBLD_COFF -DIS_32 $(NAME).asm </pre>
+ 
+
+</BODY></HTML>
+<div class="rpindex"><a href="051.html"> 下一页</a><a href="048.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

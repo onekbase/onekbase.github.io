@@ -1,0 +1,267 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="11-31.html">上一页</a> <a href="11-33.html">下一页</a> </div>
+  <p>灵活的运用带参数的宏可以十分方便地编写程序，这是因为宏的参数不仅可以是指令的操作数，而且还可以是具体的指令，甚至于是某个指令的一部分。比如下面这个例子就是采用指令作为宏的参数：</p>
+  <pre class="code">         ope  MACRO     pa1,pa2,pa3,pa4
+                mov       ax,pa1
+              	pa2	pa3
+              	pa4
+              ENDM</pre>
+  <p>如果我们这样调用宏OPE：<br />
+    OPE　　200H,DEC,AX,CWD<br />
+    那么编译之后这个宏将被展开为：<br />
+    mov　　ax,200h<br />
+    dec　　ax<br />
+    cwd</p>
+  <p> 参数中的200H与AX是指令操作数，而DEC与CWD却是实实在在的指令。如果我们换用其它指令，比如说这样调用OPE：<br />
+    OPE　　CX，PUSH，AX，CLC</p>
+  <p> 这时编译程序就会把OPE宏展开为：<br />
+    mov　　ax,cx<br />
+    push　   ax<br />
+    clc</p>
+  <p> 可见这个宏可以称为千变万化了。</p>
+  <p> 宏OPE的变化还是很普通的，下面这个例子所显示出的变化就更吸引人了：<br />
+    compare MACRO   pa1,pa2,pa3,pa4<br />
+    cmp pa1,pa2<br />
+    j&amp;pa3   pa4<br />
+    ENDM</p>
+  <p> 如果这样来调用宏COMPARE：<br />
+    COMPARE   AX，200H，NZ，EXIT</p>
+  <p> 则编译之后这个宏会被展开为：<br />
+    cmp　　 ax,200h<br />
+    jnz　　 exit</p>
+  <p>参数中的&quot;NZ&quot;其实是作为指令&quot;JNZ&quot;的一部分给出的。另一部分&quot;J&quot;在宏的内部。这里要注意字符&quot;&amp;&quot;不可以丢掉。与OPE宏一样，如果把参数做些变化，则这个宏就会被展开其它样子。比如：<br />
+    COMPARE   AX，BX，LE，NEXT</p>
+  <p> 展开之后就是：<br />
+    cmp　　 ax,bx<br />
+    jle　　   next</p>
+  <p> 带参数的宏还有其它一些活用的例子，限于篇幅不再详细讨论了。下面给出了一个宏汇编程序实例，这个程序可以将一个字符串中的大小写字母互相转换，将此程序编译连接之后大家可以自己用DEBUG观察反汇编结果，以研究源程序中应用宏的技巧。 </p>
+  <h5>DEMO.ASM</h5>
+  <pre class="code">       print  MACRO     p1	；输出字符串的宏
+              mov       dx,offset p1
+              mov       ah,09
+              int       21h
+              ENDM
+			
+        comp  MACRO     pa1,pa2,pa3	；用于进行数据比较的宏
+              cmp       al,pa1	；将参数PA1与AL寄存器中的数据比较
+              j&pa2     next&pa3	；根据PA2给出的条件及PA3给出的部分
+              ENDM      ；目的地址进行转移
+			
+        code  segment
+              assume    cs:code,ds:code
+              org       100h
+        main  proc      near
+              print     msg	；输出转换前的字符串MSG
+			
+              mov       si,offset msg	；SI、DI寄存器指向字符串
+              mov       di,si
+      next1:
+              lodsb     ；取得一个字符
+              comp      24h,z,3	；将其与'$'进行比较，若相等转NEXT3
+              comp      20h,le,2	；将其与空格相比较，若小于或等于空格符
+			；转NEXT2
+              xor       al,20h	；将大小写字母互换
+      next2:
+              stosb     ；将转换后的字符存回字符串
+              jmp       next1	；转NEXT1继续
+      next3:
+              print     msg	；输出转换后的字符串
+              ret       ；结束进程
+         msg  db        'Best	Wish To YOU',0dh,0ah,24h
+        main  endp
+        code  ends
+              end       main
+
+</pre>
+  <p>除了宏汇编技术之外，条件汇编也是一种高级的汇编技术。所谓条件汇编，指得是把源程序分成几个部分，编译时如果具备了某个条件则编译其中一个部分，如果相应条件不具备则编译其它部分。所以说，条件实际上是提供给编译程序处理的。 </p>
+  <p>在具体讨论条件汇编技术之前我们先来看一看示例程序CHILD.ASM：</p>
+  <h4>CHILD.ASM</h4>
+  <pre class="code">        code  segment
+              assume    cs:code
+              org       100h
+        main  proc      near
+              mov       ah,09
+              mov       dx,offset msg
+              int       21h
+              int       20h
+         msg  db        'Hello	,cowboy!',0dh,0ah,07h,24h
+        main  endp
+        code  ends
+              end       main
+</pre><p>这个程序的功能很简单，它只是在屏幕上显示一行文字--"Hello,cowboy！"。现在如果假设有一位很任性的小姑娘看到了这个程序显示的文字，她十分希望这个程序能显示出"Hello,cowgirl！"，那么这个程序就要做些修改了。
+</p>
+<p>说句老实话，修改程序比编写程序还要烦人，象这样的小程序当然看不出什么，对于一些比较大的程序来说修改工作可不比编写工作轻松。我们之所以强调要把程序中频繁使用的数据用"EQU"伪指令定义成常量，为的就是修改起来方便一些。</p>
+<div  class="rpindex"> <a href="11-33.html">下一页</a><a href="11-31.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

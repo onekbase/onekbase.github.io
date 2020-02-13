@@ -1,0 +1,369 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="015.html"> 上一页</a><a href="017.html"> 下一页</a></div>
+<h1>第十六课 事件对象</h1>
+本课中我们将要学习事件对象以及如何在多线程编程中如何使用同步对象。 
+<H3>理论：</H3>上一课中我们演示了如何用WINDOWS消息在不同的线程之间进行通讯。另外的两种，即：使用全局变量和事件对象，将在本课中讲解。 
+<BR>事件对象就像一个开关：它只有两种状态---开和关。当一个事件处于”开”状态，我们称其为”有信号”否则称为”无信号”。您可以在一个线程的执行函数中创建一个事件对象，然后观察它的状态，如果是”无信号”就让该线程睡眠，这样该线程占用的CPU时间就比较少。 
+<BR>产生事件对象的函数如下： 
+<Pre class="code"> CREATEEVENT  PROTO     LPEVENTATTRIBUTES:DWORD,BMANUALRESET:DWORD,BINITIALSTATE:DWORD,LPNAME:  DWORD</Pre>
+
+<P>lpEventAttribute--&gt; 
+如果是NULL值，产生的事件对象有缺省的安全属性。<BR>bManualReset--&gt; 
+如果想在每次调用WaitForSingleObject 
+后让WINDOWS为您自动地把事件地状态恢复为”无信号”状态，必须把该参数设为FALSE,否则，您必须每次调用ResetEvent函数来清除事件的信号。<BR>bInitialState--&gt; 
+刚刚产生事件对象时的状态。如果设为TRUE是”有信号”，否则是”无信号”。<BR>lpName --&gt; 
+事件对象的名称。您在OpenEvent函数中可能使用。 
+<P>如果CreateEvent调用成功的话，会返回新生成的对象的句柄，否则返回NULL。<BR>这里有两个API函数用来修改事件对象的信号状态：SetEvent和ResetEvent。前者把事件对象设为”有信号”状态，而后者正好相反。<BR>在事件对象生成后，必须调用WaitForSingleObject来让线程进入等待状态，该函数的语法如下： 
+
+<Pre class="code">WaitForSingleObject proto hObject:DWORD, dwTimeout:DWORD </Pre>
+<P>hObject --&gt;指向同步对象的指针。事件对象其实是同步对象的一种。<BR>dwTimeout --&gt; 
+等待同步对象变成”有信号”前等待的时间，以毫秒计。当等待的时间超过该值后无信号同步对象仍处于”无信号”状态，线程不再等待，WaitForSingleObject函数会返回。如果想要线程一直等待，请把该参数设为INFINITE（该值等于0xffffffff)。 
+
+<H3>例子：</H3>下面的例子显示了一个窗口，当用户选择了菜单项”run 
+thread”后，线程开始简单的计数运算。结束后弹出一个对话框通知用户。在整个的计数期间，您可以选择菜单项”stop thread”来随时终止线程。 
+<Pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+.CONST
+        IDM_START_THREAD  EQU       1
+         IDM_STOP_THREAD  EQU       2
+    IDM_EXIT  EQU       3
+   WM_FINISH  EQU       WM_USER+100H
+
+.DATA
+   CLASSNAME  DB        "WIN32ASMEVENTCLASS",0
+     APPNAME  DB        "WIN32 ASM EVENT EXAMPLE",0
+    MENUNAME  DB        "FIRSTMENU",0
+           SUCCESSSTRING  DB        "THE CALCULATION IS COMPLETED!",0
+  STOPSTRING  DB        "THE THREAD IS STOPPED",0
+EventStop BOOL FALSE 
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hwnd HANDLE ? 
+hMenu HANDLE ? 
+    THREADID  DWORD     ?
+    EXITCODE  DWORD     ?
+hEventStart HANDLE ? 
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME,\
+                        ADDR AppName,\
+                        WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\
+                        CW_USEDEFAULT,300,200,NULL,NULL,\
+                        hInst,NULL
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+              INVOKE    GETMENU,HWND
+              MOV       HMENU,EAX
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_CREATE
+              INVOKE    CREATEEVENT,NULL,FALSE,FALSE,NULL
+              MOV       HEVENTSTART,EAX
+              MOV       EAX,OFFSET THREADPROC
+              INVOKE    CREATETHREAD,NULL,NULL,EAX,NULL,0,ADDR THREADID
+              INVOKE    CLOSEHANDLE,EAX
+.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_START_THREAD
+              INVOKE    SETEVENT,HEVENTSTART
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_START_THREAD,MF_GRAYED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_STOP_THREAD,MF_ENABLED
+.ELSEIF       AX==IDM_STOP_THREAD
+              MOV       EVENTSTOP,TRUE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_START_THREAD,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_STOP_THREAD,MF_GRAYED
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF
+.ENDIF
+.ELSEIF       UMSG==WM_FINISH
+              INVOKE    MESSAGEBOX,NULL,ADDR SUCCESSSTRING,ADDR APPNAME,MB_OK
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+
+  THREADPROC  PROC      USES ECX PARAM:DWORD
+              INVOKE    WAITFORSINGLEOBJECT,HEVENTSTART,INFINITE
+              MOV       ECX,600000000
+.WHILE        ECX!=0
+.IF           EVENTSTOP!=TRUE
+              ADD       EAX,EAX
+              DEC       ECX
+.ELSE
+              INVOKE    MESSAGEBOX,HWND,ADDR STOPSTRING,ADDR APPNAME,MB_OK
+              MOV       EVENTSTOP,FALSE
+              JMP       THREADPROC
+.ENDIF
+.ENDW
+              INVOKE    POSTMESSAGE,HWND,WM_FINISH,NULL,NULL
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_START_THREAD,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_STOP_THREAD,MF_GRAYED
+              JMP       THREADPROC
+              RET
+  THREADPROC  ENDP
+              END       START</Pre>
+
+<H3>分析：</H3>本例中，我们演示另一种技巧： 
+<Pre class="code">.IF           UMSG==WM_CREATE
+              INVOKE    CREATEEVENT,NULL,FALSE,FALSE,NULL
+              MOV       HEVENTSTART,EAX
+              MOV       EAX,OFFSET THREADPROC
+              INVOKE    CREATETHREAD,NULL,NULL,EAX,NULL,0,ADDR ThreadID
+              INVOKE    CLOSEHANDLE,EAX</Pre>
+
+<P>在WM_CREATE 
+消息的处理中我们生成事件同步对象并创建线程。我们设置了相关的值让同步对象生成时处于”无信号”状态而且在调用了WaitForSingleObject后可以自动把事件对象的状态设为”无信号”。然后我们创建线程。 
+线程的代码开始执行后立即被阻塞： 
+<Pre class="code">  THREADPROC  PROC      USES ECX PARAM:DWORD
+              INVOKE    WAITFORSINGLEOBJECT,HEVENTSTART,INFINITE
+              MOV       ECX,600000000</Pre>
+
+<P>您可以看到线程的执行体的第一条代码就是调用WaitForSingleObject函数，该函数使得线程阻塞并且一直处于等待事件对象变成”有信号”。这也就是说，我们以开始就让该线程进入了睡眠状态。 
+当用户选择了菜单项”run thread”后，我们把事件对象得状态变成”有信号”： 
+<Pre class="code">.IF           AX==IDM_START_THREAD
+              INVOKE    SETEVENT,HEVENTSTART</Pre>
+
+
+<P>函数SetEvent可以让同步对象变成”有信号”状态，那么下一次线程得到时间片运行时，WaitForSingleObject函数就会返回，线程余下的代码就可以得到执行了。当用户选择了菜单项”stop 
+thread” 时，我们把全局变量EventStop设为TRUE。 
+<Pre class="code">.IF           EVENTSTOP==FALSE
+              ADD       EAX,EAX
+              DEC       ECX
+.ELSE
+              INVOKE    MESSAGEBOX,HWND,ADDR STOPSTRING,ADDR APPNAME,MB_OK
+              MOV       EVENTSTOP,FALSE
+              JMP       THREADPROC
+.ENDIF</Pre>
+
+<P>这样线程得计数工作结束，然后跳转到重新执行WaitForSingleObject函数的地方。注意：我们不用手动清除事件对象的信号，因为在调用CreateEvent函数时把参数bManualReset的值设为了FALSE。
+
+<div class="rpindex"><a href="017.html"> 下一页</a><a href="015.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

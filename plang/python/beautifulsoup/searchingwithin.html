@@ -1,0 +1,352 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+<h1>Searching 剖析树内部</h1>
+<p>上面说明的方法<code>findAll</code>及<code>find</code>，都是从剖析树的某一点开始并一直往下。
+他们反复的遍历对象的<code>contents</code>直到最低点。 </p>
+<p>也就是说你不能在 <code>NavigableString</code>对象上使用这些方法，
+  因为<code>NavigableString</code>没有contents：它们是剖析树的叶子。 </p>
+<p>[这段翻译的不太准确]但是向下搜索不是唯一的遍历剖析树的方法。在<a href="navigatingparse.html">Navigating剖析树</a> 中，我们可以使用这些方法：<code>parent</code>, <code>nextSibling</code>等。
+  他们都有2个相应的方法：一个类似<code>findAll</code>,一个类似<code>find</code>.
+  由于<code>NavigableString</code>对象也支持这些方法，你可以像<code>Tag</code>一样
+  使用这些方法。 </p>
+<p>为什么这个很有用?因为有些时候，你不能使用<code>findAll</code>或<code>find</code> 从<code>Tag</code>或<code>NavigableString</code>获得你想要的。例如，下面的HTML文档： </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+soup = BeautifulSoup('''&lt;ul&gt;
+ &lt;li&gt;An unrelated list
+&lt;/ul&gt;
+
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;This is &lt;b&gt;the list you want&lt;/b&gt;:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The data you want&lt;/ul&gt;''')
+</pre>
+<p>有很多方法去定位到包含特定数据的&lt;LI&gt; 标签。最明显的方式如下： </p>
+<pre class="code">soup('li', limit=2)[1]
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>显然，这样获得所需的&lt;LI&gt;标签并不稳定。如果，你只分析一次页面，这没什么影响。
+  但是如果你需要在一段时间分析很多次这个页面，就需要考虑一下这种方法。
+  If the irrelevant list grows another &lt;LI&gt; tag, you'll get that tag instead of the one you
+  want, and your script will break or give the wrong data. <br/>
+  因为如果列表发生变化，你可能就得不到你想要的结果。 </p>
+<pre class="code">soup('ul', limit=2)[1].li
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>That's is a little better, because it can survive changes to the
+  irrelevant list. But if the document grows another irrelevant list at
+  the top, you'll get the first &lt;LI&gt; tag of that list instead of the one
+  you want. A more reliable way of referring to the ul tag you want
+  would better reflect that tag's place in the structure of the
+  document. <br/>
+  这有一点好处，因为那些不相干的列表的变更生效了。
+  但是如果文档增长的不相干的列表在顶部，你会获得第一个&lt;LI&gt;标签而不是
+  你想要的标签。一个更可靠的方式是去引用对应的ul标签，
+  这样可以更好的处理文档的结构。 </p>
+<p>在HTML里面，你也许认为你想要的list是&lt;H1&gt;标签下的&lt;UL&gt;标签。
+  问题是那个标签不是在&lt;H1&gt;下，它只是在它后面。获得&lt;H1&gt;标签很容易，但是获得
+  &lt;UL&gt;却没法使用<code>first</code>和<code>fetch</code>，
+  因为这些方法只是搜索&lt;H1&gt;标签的<code>contents</code>。
+  你需要使用<code>next</code>或<code>nextSibling</code>来获得&lt;UL&gt;标签。 </p>
+<pre class="code">s = soup.h1
+while getattr(s, 'name', None) != 'ul':
+    s = s.nextSibling
+s.li
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>或者，你觉得这样也许会比较稳定： </p>
+<pre class="code">s = soup.find(text='Heading')
+while getattr(s, 'name', None) != 'ul':
+    s = s.next
+s.li
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>但是还有很多困难需要你去克服。这里会介绍一下非常有用的方法。
+  你可以在你需要的使用它们写一些遍历成员的方法。它们以某种方式遍历树，并跟踪那些满足条件的<code>Tag</code> 和<code>NavigableString</code>对象。代替上面那个例子的第一的循环的代码，你可以这样写： </p>
+<pre class="code">soup.h1.findNextSibling('ul').li
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>第二循环，你可以这样写： </p>
+<pre class="code">soup.find(text='Heading').findNext('ul').li
+# <samp>&lt;li&gt;The data you want&lt;/li&gt;</samp>
+</pre>
+<p>这些循环代替调用<code>findNextString</code>和<code>findNext</code>。
+  本节剩下的内容是这种类型所用方法的参考。同时，对于遍历总是有两种方法：
+  一个是返回list的<code>findAll</code>，一个是返回单一量的<code>find</code>。 </p>
+<p><a name="Search example document" id="Search example document">下面，我们再举一个例子来说明：</a> </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+doc = ['&lt;html&gt;&lt;head&gt;&lt;title&gt;Page title&lt;/title&gt;&lt;/head&gt;',
+       '&lt;body&gt;&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.',
+       '&lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.',
+       '&lt;/html&gt;']
+soup = BeautifulSoup(''.join(doc))
+print soup.prettify()
+# <samp>&lt;html&gt;</samp>
+# <samp> &lt;head&gt;</samp>
+# <samp>  &lt;title&gt;</samp>
+# <samp>   Page title</samp>
+# <samp>  &lt;/title&gt;</samp>
+# <samp> &lt;/head&gt;</samp>
+# <samp> &lt;body&gt;</samp>
+# <samp>  &lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;</samp>
+# <samp>   This is paragraph</samp>
+# <samp>   &lt;b&gt;</samp>
+# <samp>    one</samp>
+# <samp>   &lt;/b&gt;</samp>
+# <samp>   .</samp>
+# <samp>  &lt;/p&gt;</samp>
+# <samp>  &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;</samp>
+# <samp>   This is paragraph</samp>
+# <samp>   &lt;b&gt;</samp>
+# <samp>    two</samp>
+# <samp>   &lt;/b&gt;</samp>
+# <samp>   .</samp>
+# <samp>  &lt;/p&gt;</samp>
+# <samp> &lt;/body&gt;</samp>
+# <samp>&lt;/html&gt;</samp>
+</pre>
+<h3><code><a name="findNextSiblings(name, attrs, text, limit, **kwargs) and findNextSibling(name, attrs, text, **kwargs)" id="findNextSiblings(name, attrs, text, limit, **kwargs) and findNextSibling(name, attrs, text, **kwargs)">findNextSiblings(</a>name, attrs, text, limit, **kwargs)</code></h3>
+<h3><code>findNextSibling(name, attrs, text, **kwargs)</code></h3>
+<p>这两个方法以<code>nextSibling</code>的成员为依据，
+  获得满足条件的<code>Tag</code>或<code>NavigableText</code>对象。
+  以上面的<a href="#Search%20example%20document">文档</a>为例: </p>
+<pre class="code">paraText = soup.find(text='This is paragraph ')
+paraText.findNextSiblings('b')
+# <samp>[&lt;b&gt;one&lt;/b&gt;]</samp>
+
+paraText.findNextSibling(text = lambda(text): len(text) == 1)
+# <samp>u'.'</samp>
+</pre>
+<h3><code><a name="findPreviousSiblings(name, attrs, text, limit, **kwargs) and findPreviousSibling(name, attrs, text, **kwargs)" id="findPreviousSiblings(name, attrs, text, limit, **kwargs) and findPreviousSibling(name, attrs, text, **kwargs)">findPreviousSiblings(</a>name, attrs, text, limit, **kwargs)</code></h3>
+<h3><code>findPreviousSibling(name, attrs, text, **kwargs)</code></h3>
+<p>这两个方法以<code>previousSibling</code>成员为依据，获得满足条件的<code>Tag</code>和 <code>NavigableText</code>对象。
+  以上面的<a href="#Search%20example%20document">文档</a>为例: </p>
+<pre class="code">paraText = soup.find(text='.')
+paraText.findPreviousSiblings('b')
+# <samp>[&lt;b&gt;one&lt;/b&gt;]</samp>
+
+paraText.findPreviousSibling(text = True)
+# <samp>u'This is paragraph '</samp>
+</pre>
+<h3><code><a name="findAllNext(name, attrs, text, limit, **kwargs) and findNext(name, attrs, text, **kwargs)" id="findAllNext(name, attrs, text, limit, **kwargs) and findNext(name, attrs, text, **kwargs)">findAllNext(</a>name, attrs, text, limit, **kwargs)</code></h3>
+<h3><code>findNext(name, attrs, text, **kwargs)</code></h3>
+<p>这两个方法以<code>next</code>的成员为依据，
+  获得满足条件的<code>Tag</code>和<code>NavigableText</code>对象。
+  以上面的<a href="#Search%20example%20document">文档</a>为例: </p>
+<pre class="code">pTag = soup.find('p')
+pTag.findAllNext(text=True)
+# <samp>[u'This is paragraph ', u'one', u'.', u'This is paragraph ', u'two', u'.']</samp>
+
+pTag.findNext('p')
+# <samp>&lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;</samp>
+
+pTag.findNext('b')
+# <samp>&lt;b&gt;one&lt;/b&gt;</samp>
+</pre>
+<h3><code><a name="findAllPrevious(name, attrs, text, limit, **kwargs) and findPrevious(name, attrs, text, **kwargs)" id="findAllPrevious(name, attrs, text, limit, **kwargs) and findPrevious(name, attrs, text, **kwargs)">findAllPrevious(</a>name, attrs, text, limit, **kwargs)</code></h3>
+<h3><code>findPrevious(name, attrs, text, **kwargs)</code></h3>
+<p> 这两方法以<code>previous</code>的成员依据，
+  获得满足条件的<code>Tag</code>和<code>NavigableText</code>对象。
+  以上面的<a href="#Search%20example%20document">文档</a>为例: </p>
+<pre class="code">lastPTag = soup('p')[-1]
+lastPTag.findAllPrevious(text=True)
+# <samp>[u'.', u'one', u'This is paragraph ', u'Page title']</samp>
+# <samp>Note the reverse order!</samp>
+
+lastPTag.findPrevious('p')
+# <samp>&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;</samp>
+
+lastPTag.findPrevious('b')
+# <samp>&lt;b&gt;one&lt;/b&gt;</samp>
+</pre>
+<h3><code>findParents(name, attrs, limit, **kwargs)</code></h3>
+<h3><code>findParent(name, attrs, **kwargs)</code></h3>
+<p>这两个方法以<code>parent</code>成员为依据，
+  获得满足条件的<code>Tag</code>和<code>NavigableText</code>对象。
+  他们没有<code>text</code>参数,因为这里的对象的parent不会有<code>NavigableString</code>。
+  以上面的<a href="#Search%20example%20document">文档</a>为例: </p>
+<pre class="code">bTag = soup.find('b')
+
+[tag.name for tag in bTag.findParents()]
+# <samp>[u'p', u'body', u'html', '[document]']</samp>
+# <samp>NOTE: &quot;u'[document]'&quot; means that that the parser object itself matched.</samp>
+
+bTag.findParent('body').name
+# <samp>u'body'</samp>
+</pre>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

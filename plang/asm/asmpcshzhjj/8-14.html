@@ -1,0 +1,363 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">目录</a> <a href="8-13.html">上一页</a> <a href="8-15.html">下一页</a> </div>
+  <p>为了搞清楚这个问题，我们来看下面两个程序： </p>
+  <h5>STARMAP.ASM</h5>
+  <pre class="code">        data  segment
+              assume    ds:data
+       fname  db        'hzk16',0
+      buffer  db        32 dup(0)
+         off  dw        1520h,0002h,3340h,0001h,18e0h,0000h,74a0h,0002h,2520h,0001h
+         msg  db        'Press any key to display the next star-map.',0dh,0ah,24h
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+              mov       dx,offset fname	；DX指向待处理的文件名
+              mov       ax,3d00h	；按"读取"的方式打开文件
+              int       21h
+              jc        exit	；若文件打开出错，转EXIT结束
+			
+              mov       cx,5	；准备读取5组数据
+              mov       bx,ax	；BX寄存器获得文件句柄
+              mov       si,offset off	；SI寄存器指向偏移值数组
+      loop1:
+              push      cx	；暂存CX寄存器
+              mov       ax,0003h	；重置显示模式，清除屏幕
+              int       10h
+			
+              mov       ah,09h	；显示字符串MSG
+              mov       dx,offset msg
+              int       21h
+			
+              lodsw     ；取得第一个偏移量的低字
+              mov       dx,ax	；将偏移量低字送入DX寄存器
+              lodsw     ；取得第一个偏移量的高字
+              mov       cx,ax	；将偏移量高字送入CX寄存器
+              mov       ah,42h	；调用42H移动文件指针
+              mov       al,00h	；从文件首部计数偏移量
+              int       21h
+              jc        exit	；若移动指针出错，转EXIT结束
+			
+              mov       ah,3fh	；准备读取数据
+              mov       dx,offset buffer	；DX寄存器指向文件缓冲区
+              mov       cx,32	；读入32个字节
+              int       21h
+              jc        exit	；若读取出错，转EXIT结束
+			
+              call      disp	；调用DISP子过程
+			
+              mov       ah,0	；等待键盘输入
+              int       16h
+              pop       cx	；恢复CX寄存器
+              loop      loop1	；转LOOP1继续读取下一组数据
+       exit:
+              mov       ah,4ch	；结束进程
+              int       21h
+        main  endp
+			
+        disp  proc      near	；DISP子过程
+              push      bx	；保存要使用的寄存器
+              push      si
+              mov       cx,16	；处理16个字（32字节）
+              mov       si,offset buffer	；SI寄存器指向文件缓冲区
+			
+              mov       dh,3	；设置光标初始行、列位置
+              mov       dl,32
+      loop2:
+              mov       ah,2	；设置光标位置
+              mov       bh,0
+              int       10h
+			
+              lodsw     ；取得一个字的数据
+              xchg      ah,al	；交换高低字节
+              push      cx	；暂存CX寄存器
+              mov       cx,16	；处理16个数位
+      loop3:
+              shl       ax,1	；取得的数据左移1位
+              push      ax	；暂存移位后的结果
+              mov       ah,0eh	；选择10H中断的0EH功能
+              jnc       next_dot	；若移出的数位为0，转NEXT_DOT输出空格
+              mov       al,2ah	；AL寄存器送入字符"*"
+              jmp       output	；转OUTPUT输出AL寄存器中的字符
+   next_dot:
+              mov       al,20h	；AL寄存器送入空格符
+     output:
+              int       10h	；显示输出
+              pop       ax	；恢复移位后的结果
+              loop      loop3	；继续处理下一个数位
+			
+              inc       dh	；光标行号加1
+              pop       cx	；恢复CX寄存器
+              loop      loop2	；转LOOP2继续处理下一个字
+			
+              pop       si	；恢复入口处保存的寄存器
+              pop       bx
+              ret       ；返回主过程
+        disp  endp
+        code  ends
+              end       main
+</pre>
+  <p>在这个程序中我们使用DW伪指令定义了5个偏移量，当然这样做是比较累的，事实上我们们完全可以使用&quot;DD&quot;（Define Double word）伪指令直接定义32位的数据。不过考虑到某些早期版本的编译程序可能不支持这个伪指令，所以还是采用了DW伪指令，这并不是问题的关键。下面给出了这个程序跟踪执行的结果： </p>
+  <pre class="code">-g=0 2e[Enter]
+Press any key to display the next star-map.
+AX=4200 BX=0005 CX=0002 DX=1520 SP=FFFE BP=0000 SI=002A DI=0000
+DS=124D ES=123D SS=124D CS=1254 IP=002E NV UP EI PL NZ NA PO NC
+1254:002E CD21 INT 21
+</pre>
+  <p>以上是执行42H功能调用之前各个寄存器的情况，&quot;CX:DX&quot;中是文件读写指针的新位置，AL寄存器指定方式0，BX寄存器为文件句柄。下面执行指令INT 21：</p>
+  <pre class="code">-p[Enter]
+AX=1520 BX=0005 CX=0002 DX=0002 SP=FFFE BP=0000 SI=002A DI=0000
+DS=124D ES=123D SS=124D CS=1254 IP=0030 NV UP EI PL NZ NA PO NC
+1254:0030 7216 JB 0048
+</pre>
+  <p>可以看到&quot;DX:AX&quot;寄存器返回了文件指针的新指向。</p>
+  <p> STARMAP程序现在有了两个版本，我们搞的第一个版本只能从头至尾按顺序显示国标汉字，而这个新版本可以显示任意的汉字，关键在于正确地定位文件读写指针。这个程序中还有一些问题将在下一章进行更深入讨论，现在如果有什么不明白的地方可以先放一放，大家只要知道从文件HZK16中的某个位置读取32个字节加以处理就可以看到一个国标汉字或符号即可。</p>
+  <p> 至于文件指针的相对移动问题笔者不准备给出程序例，大家可以自己研究。但是需要特别讨论的是文件指针的&quot;绝对倒移&quot;问题。这样的移动方式初看起来好象没什么用途，它不符合人们的习惯。但是这个方式在实践中还是有应用的，请思考这样一个问题：如果程序设定偏移量为0，而使用方式2移动文件读写指针，那么DOS在执行完功能调用后通过&quot;DX:AX&quot;寄存器给我们返回的数据有什么特殊的意义？</p>
+  <p> 毫无疑问那是文件读写指针指向的新位置，即文件的结尾。但是如果换个方向思考这个问题就会发现那个32位的数据其实就是文件的长度。下面这个程序可以查出 &quot;CONFIG.SYS&quot;文件的长度：</p>
+  <pre class="code">        data  segment
+              assume    ds:data
+       fname  db        c:\config.sys',0e '
+         msg  db        'Your config.sys includ	；定义一个用于保存数字的缓冲区
+       tbuff  db        5 dup (20h)
+              db        ' Bytes',0dh,0ah,24h
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+              mov       dx,offset fname	；按"读取"方式打开文件
+              mov       ax,3d00h
+              int       21h
+              jc        exit	；若文件未能正确打开，转EXIT
+			
+              mov       bx,ax	；BX寄存器获得文件句柄
+			
+              mov       cx,0	；设置新的文件指针偏移量为0
+              mov       dx,0
+              mov       ah,42h	；选42H功能
+              mov       al,02h	；从文件尾部计数偏移量
+              int       21h	；移动文件读写指针
+              jc        exit	；若没有正确移动文件指针，转EXIT结束
+			；准备输出DX:AX中的文件长度
+              mov       cx,10	；CX寄存器送入10
+              mov       si,offset tbuff+4	；SI寄存器指向数字的缓冲区尾部
+     outdec:
+              div       cx	；DX:AX中的长度值除以10
+              xchg      ax,dx	；将余数送入AX寄存器，商送入DX寄存器
+              add       al,30h	；将余数加上30H转换成数字的ASCII码
+              mov       byte ptr [si],al	；将个位数字送入缓冲区
+              dec       si	；SI寄存器指向十位数字的位置
+              mov       ax,dx	；将商转换成32位数并存入DX:AX
+              xor       dx,dx
+              cmp       ax,0	；商是0吗？
+              jnz       outdec	；若商不是0，则转OUTDEC继续计算数位
+			
+              mov       ah,9	；输出带有长度数的字符串MSG
+              mov       dx,offset msg
+              int       21h
+       exit:
+              mov       ah,4ch	；结束进程
+              int       21h
+        main  endp
+        code  ends
+              end       main
+</pre>
+  <p>如何将一个32位的二进制数据转换成十进制的形式显示出来？这个问题大家倒是可以深入思考一下，上面这个程序给出了一种算法，还有没有更好的方法呢？</p>
+  <p> 还有一个不常用的功能需要讨论一下，那就是文件的删除。DOS提供了41H号功能调用完成这个工作，这个功能可以参考表7-1中的有关说明，有关的程序例不再给出。需要提醒大家的是不要使用&quot;*.*&quot;这样的通配符，句柄能不支持通配符；另外凡是具有&quot;只读&quot;、&quot;隐含&quot;等属性的文件也不能用此功能删除。<br />
+    在本节的最后我准备给出另一种处理命令行参数的方法，然后开始新一节的讨论。我们在讨论FCB功能时曾经给出过利用&quot;缺省FCB&quot;处理命令行参数的方法，那种方法缺乏灵活性，如果我们需要处理多个参数或树型目录使用缺省FCB就不行了。解决这个问题就要使用下面介绍的知识了。仿照前面的形式，我们先来看看在程序段前缀中还有什么值得注意的内容，我们还是要求助于DEBUG：</p>
+  <p> C:\ASM\&gt;debug tasm.exe aaa\bbb\ccc ddd[Enter]</p>
+  <p> 我们知道缺省的FCB在PSP的前128个字节中，后128个字节中有些什么内容我们还不清楚，现在就让我们列出后面的128个字节来看一看：</p>
+  <pre class="code">-d80[Enter]
+0F6F:0080		10 20 61 61 61 5C 62 62-62 5C 63 63 63 20 64 64		. aaa\bbb\ccc dd
+0F6F:0090		64 0D 20 64 64 64 0D 00-00 00 00 00 00 00 00 00		d. ddd..........
+0F6F:00A0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+0F6F:00B0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+0F6F:00C0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+0F6F:00D0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+0F6F:00E0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+0F6F:00F0		00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00		................
+
+</pre>
+  <p>这一下问题全清楚了，对于FCB功能来讲这后128个字节用作缺省的DTA空间，由于句柄功能不再使用DTA传输数据，所以DOS把命令行参数放在这个区域中供程序使用。与放在缺省FCB中的参数不同的是DOS会把整个参数字符串原样放在这个区域中，不对其进行任何的处理。<br />
+  </p>
+  <div class="rpindex"> <a href="8-15.html">下一页 </a><a href="8-13.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

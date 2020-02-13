@@ -1,0 +1,443 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="055.html"> 上一页</a><a href="057.html"> 下一页</a></div>
+<h1>虚拟8086模式的内存管理</h1>
+<p>下边我们用到的V86即指虚拟8086模式。 在以前的教程中，你学习了怎样模拟V86中断，但还有一个问题没有解决：在VxD和V86代码之间交换数据。我们将在此学习如何使用V86内存管理器来实现这个功能。</p>
+<p>理论</p>
+<p>假如你的VxD和一些V86程序一起运行，如何传送大量数据到V86程序中或从V86程序中传送大量数据迟早是一个大问题。通过寄存器传送大量数据是不现实的。可能你的下一个想法是在ring0中分配一大块内存，并且通过一些寄存器传送其指针到V86程序，使其能访问这些数据。假如你这样做，可能会破坏你的系统，因为V86的地址定位方式需要segment:offset对，而不是线性定位方式。对这个问题，有很多解决的方法。然而，我选择了一个由V86内存管理器提供的一种简便的方法。</p>
+<p>如你能在你可使用的V86内存范围内找到一个空闲的内存块作为通讯缓冲区，这将解决其中的一个问题。然而，指针传送的问题依然存在。你可以通过V86内存管理器的服务来解决这两个问题。V86内存管理器是为V86应用管理内存的静态VxD。它还为V86应用提供EMS和XMS服务和为其他VxD提供API传送服务。API传送是一个从ring0拷贝数据到V86范围内的缓冲区并且传送V86缓冲区地址到V86代码的过程。V86内存管理器有一个在V86内存范围内的传送缓冲区，其含有VxD拷贝到V86内存范围内的数据，反之亦然。初始的缓冲区是4K。你以调用V86MMGR_Set_Mapping_Info来增加它的大小。</p>
+<p>现在你知道了传送缓冲区，我们如何拷入或拷出数据呢？这个问题通过调用两个服务来解决：V86MMGR_Allocate_Buffer和V86MMGR_Free_Buffer。</p>
+<p>V86MMGR_Allocate_Buffer从传送缓冲区分配一块内存并且从ring0拷贝一些数据到分配的V86缓冲区。V86MMGR_Free_Buffer正好相反：它从分配的V86内存块拷贝一些数据到ring0缓冲区并且释放由V86MMGR_Allocate_Buffer分配的内存块。</p>
+<p>记住，V86在内存管理器象堆栈一样管理被分配的缓冲区。这意味着分配／释放必须按先进后出的规则。所以如你调用了两次V86MMGR_Allocate_Buffer，第一个V86MMGR_Free_Buffer将释放由第二个V86MMGR_Allocate_Buffer调用而分配的缓冲区。</p>
+<p>我们来看一下V86MMGR_Allocate_Buffer的定义，它是一个基本寄存器传送参数的服务。</p>
+
+  <li> EBX 当前VM的句柄 </li>
+  <li> EBP 指向当前VM的客户寄存器结构的指针 </li>
+  <li>ECX 从传送缓冲区分配的字节数 CARRY FLAG 进位标志位，如你不想从ring0缓冲区拷贝数据到分配的内存块就清零， 如你想从ring0缓冲区拷贝数据到分配的内存块就置1 
+  </li>
+  <li>FS:ESI 指向ring0缓冲区的selector:offset指针，缓冲区中有要被拷贝到被分配的 缓冲区中的数据如果进位标志位被清零，则忽略它。 
+  </li>
+
+<p> 假如调用成功，进位标志位被清零并且ECX包含在传送缓冲区中的字节数。这个数值应小于你要求的数值，所以你应保持这个数值，V86MMGR_Free_Buffer待会要用到它。EDI的高字包含被分配的内存块的V86段地址，偏移地址在在低字中。进位标志位当错误发生时被置位。</p>
+<p> V86MMGR_Free_Buffer和V86MMGR_Allocate_Buffer接受同样的参数。</p>
+<p> 当你调用V86MMGR_Allocate_Buffer时，你在当前VM的V86内存范围内分配了一块内存，并且把其地址放到了EDI中。你可以使用这些服务传送数据到V86中断中或从V86中断中取得数据。</p>
+<p> 在附加的API传送中，V86内存管理器也给其他VxDs提供了API映射服务。API映射服务是映射一些在扩展内存中的页到每个VM的V86内存范围。你可以使用V86MMGR_Map_Pages执行API映射。使用这个服务，页被映射到每个VM的同一线性地址空间上。如你仅仅工作在一个VM上，这将浪费地址空间。因为API映射比API传送要慢，所以你尽可能使用API传送方式。API映射仅仅使用在一些要访问同一线性地址空间并作用到所有VM的V86操作上。</p>
+<p>例子：</p>
+<p> 这个例子演示了API传送方式，使用了int 21h的440Dh功能（从代码66h）。这个中断调用得到媒体ID，你的第一个固定磁盘的卷标号。</p>
+<pre class="code">;--------------------------------------------------------------- 
+;                            VxDLabel.asm 
+;--------------------------------------------------------------- 
+.386p 
+include \masm\include\vmm.inc 
+include \masm\include\vwin32.inc 
+include \masm\include\v86mmgr.inc 
+VxDName TEXTEQU <VXDLABEL> 
+ControlName TEXTEQU <VXDLABEL_Control> 
+VxDMajorVersion TEXTEQU <1> 
+VxDMinorVersion TEXTEQU <0> 
+
+VxD_STATIC_DATA_SEG 
+VxD_STATIC_DATA_ENDS 
+
+VXD_LOCKED_CODE_SEG 
+;---------------------------------------------------------------------------- 
+; Remember: The name of the vxd MUST be uppercase else it won't work/unload 
+;---------------------------------------------------------------------------- 
+DECLARE_VIRTUAL_DEVICE %VxDName,%VxDMajorVersion,%VxDMinorVersion, %ControlName,UNDEFINED_DEVICE_ID,UNDEFINED_INIT_ORDER 
+
+Begin_control_dispatch %VxDName 
+        Control_Dispatch W32_DEVICEIOCONTROL, OnDeviceIoControl 
+End_control_dispatch %VxDName 
+
+VXD_LOCKED_CODE_ENDS 
+
+VXD_PAGEABLE_CODE_SEG 
+BeginProc OnDeviceIoControl 
+ assume esi:ptr DIOCParams 
+ .if [esi].dwIoControlCode==1 
+  VMMCall Get_Sys_VM_Handle 
+  mov Handle,ebx 
+  assume ebx:ptr cb_s 
+  mov ebp,[ebx+CB_Client_Pointer] 
+  mov ecx,sizeof MID 
+  stc 
+  push esi 
+  mov esi,OFFSET32 MediaID 
+  push ds 
+  pop fs 
+  VxDCall V86MMGR_Allocate_Buffer 
+  pop esi 
+  jc EndI 
+  mov AllocSize,ecx 
+  Push_Client_State 
+  VMMCall Begin_Nest_V86_Exec 
+  assume ebp:ptr Client_Byte_Reg_Struc 
+  mov [ebp].Client_ch,8 
+  mov [ebp].Client_cl,66h 
+  assume ebp:ptr Client_word_reg_struc 
+  mov edx,edi 
+  mov [ebp].Client_bx,3 ; drive A 
+  mov [ebp].Client_ax,440dh 
+  mov [ebp].Client_dx,dx 
+  shr edx,16 
+  mov [ebp].Client_ds,dx 
+  mov eax,21h 
+  VMMCall Exec_Int 
+  VMMCall End_Nest_Exec 
+  Pop_Client_State 
+  ;------------------------------- 
+  ; retrieve the data 
+  ;------------------------------- 
+  mov ecx,AllocSize 
+  stc 
+  mov ebx,Handle 
+  push esi 
+  mov esi,OFFSET32 MediaID 
+  push ds 
+  pop fs 
+  VxDCall V86MMGR_Free_Buffer 
+  pop esi 
+  mov edx,esi 
+  assume edx:ptr DIOCParams 
+  mov edi,[edx].lpvOutBuffer 
+  mov esi,OFFSET32 MediaID.midVolLabel 
+  mov ecx,11 
+  rep movsb 
+  mov byte ptr [edi],0 
+  mov ecx,[edx].lpcbBytesReturned 
+  mov dword ptr [edx],11 
+EndI: 
+ .endif 
+ xor eax,eax 
+ ret 
+EndProc OnDeviceIoControl 
+VXD_PAGEABLE_CODE_ENDS 
+
+VXD_PAGEABLE_DATA_SEG 
+ MID struct 
+  midInfoLevel dw 0 
+  midSerialNum dd ? 
+  midVolLabel db 11 dup(?) 
+  midFileSysType db 8 dup(?) 
+ MID ends 
+ MediaID MID <> 
+ Handle dd ? 
+ AllocSize dd ? 
+VXD_PAGEABLE_DATA_ENDS 
+
+end 
+
+;------------------------------------------------------------ 
+;                        Label.asm 
+; The win32 VxD loader. 
+;------------------------------------------------------------ 
+.386 
+.model flat,stdcall 
+option casemap:none 
+
+include \masm32\include\windows.inc 
+include \masm32\include\user32.inc 
+include \masm32\include\kernel32.inc 
+includelib \masm32\lib\user32.lib 
+includelib \masm32\lib\kernel32.lib 
+
+DlgProc PROTO :DWORD,:DWORD,:DWORD,:DWORD 
+.data 
+Failure db "Cannot load VxDLabel.VXD",0 
+AppName db "Get Disk Label",0 
+VxDName db "\\.\vxdLabel.vxd",0 
+OutputTemplate db "Volume Label of Drive C",0 
+
+.data? 
+hInstance HINSTANCE ? 
+hVxD dd ? 
+DiskLabel db 12 dup(?) 
+BytesReturned dd ? 
+
+.const 
+IDD_VXDRUN    equ 101 
+IDC_LOAD      equ 1000 
+
+.code 
+start: 
+ invoke GetModuleHandle, NULL 
+ mov    hInstance,eax 
+ invoke DialogBoxParam, hInstance, IDD_VXDRUN ,NULL,addr DlgProc,NULL 
+ invoke ExitProcess,eax 
+
+DlgProc proc hDlg:HWND, uMsg:UINT, wParam:WPARAM, lParam:LPARAM 
+ .IF uMsg==WM_INITDIALOG 
+  invoke CreateFile,addr VxDName,0,0,0,0,FILE_FLAG_DELETE_ON_CLOSE,0 
+  .if eax==INVALID_HANDLE_VALUE 
+   invoke MessageBox,hDlg,addr Failure,addr AppName,MB_OK+MB_ICONERROR 
+   mov hVxD,0 
+   invoke EndDialog,hDlg,NULL 
+  .else 
+   mov hVxD,eax 
+  .endif 
+ .elseif uMsg==WM_CLOSE 
+  .if hVxD!=0 
+   invoke CloseHandle,hVxD 
+  .endif 
+  invoke EndDialog,hDlg,0 
+ .ELSEIF uMsg==WM_COMMAND 
+  mov eax,wParam 
+  mov edx,wParam 
+  shr edx,16 
+  .if dx==BN_CLICKED 
+   .IF ax==IDC_LOAD 
+     invoke DeviceIoControl,hVxD,1,NULL,0,addr DiskLabel,12,addr BytesReturned,NULL 
+     invoke MessageBox,hDlg,addr DiskLabel,addr OutputTemplate,MB_OK+MB_ICONINFORMATION 
+   .endif 
+  .endif 
+ .ELSE 
+  mov eax,FALSE 
+  ret 
+ .ENDIF 
+ mov eax,TRUE 
+ ret 
+DlgProc endp 
+end start
+</pre>
+<p>讲解 </p>
+<p> 我们首先分析lable.asm，它是一个加载了VxD的WIN32应用程序。 </p>
+<p> invoke DeviceIoControl,hVxD,1,NULL,0,addr DiskLabel,12,addr 
+  BytesReturned,NULL  </p>
+<p>它调用DeviceIoControl，设备代码是1，没有输入缓冲区，一个指向输出缓冲区的指针及其大小。DiskLable是一个接收由VxD返回的卷标号的缓冲区。BytesReturned变量存有返回的字节数。这个例子说明了怎样传送数据和从VxD接收数据：你传送输入／输出缓冲区给VxD并且VxD读取／写入数据到指定的缓冲区。</p>
+<p>我们下面看看VxD代码。</p>
+<pre class="code">    VMMCall Get_Sys_VM_Handle 
+    mov Handle,ebx 
+    assume ebx:ptr cb_s 
+    mov ebp,[ebx+CB_Client_Pointer</pre>
+<p> 当一个VxD接收W32_DeviceIoControl消息，它调用Get_Sys_VM_Handle得到系统VM的句柄并把它存在一个叫Handle的变量中。下面将从VM控制块中提取指向客户寄存器结构的指针到EBP。</p>
+<pre class="code">    mov ecx,sizeof MID 
+    stc 
+    push esi 
+    mov esi,OFFSET32 MediaID 
+    push ds 
+    pop fs 
+    VxDCall V86MMGR_Allocate_Buffer 
+    pop esi 
+    jc EndI 
+    mov AllocSize,ecx</pre>
+<p>下面，准备传送到V86MMGR_Allocate_Buffer的参数。我们必须初始化被分配的缓冲区。我们把MediaID的偏移量送到ESI中，并且把选择子放在FS中，然后调用V86MMGR_Allocate_Buffer。你等会要恢复指向DIOCParams的指针，所以我们必须通过push 
+  esi 和pop esi来保护它。</p>
+<pre class="code">    Push_Client_State 
+    VMMCall Begin_Nest_V86_Exec 
+    assume ebp:ptr Client_Byte_Reg_Struc 
+    mov [ebp].Client_ch,8 
+    mov [ebp].Client_cl,66h 
+    assume ebp:ptr Client_word_reg_struc 
+    mov edx,edi 
+    mov [ebp].Client_bx,3 ; drive C 
+    mov [ebp].Client_ax,440dh</pre>
+<p>我们在客户寄存器结构中准备参数值来执行int 21h的440Dh功能（从代码66h），得到盘C的媒体ID。我们拷贝edi的值到edx中（edi中有由V86MMGR_Allocate_Buffer分配的内存块的V86地址）。</p>
+<pre class="code">    mov [ebp].Client_dx,dx 
+    shr edx,16 
+    mov [ebp].Client_ds,dx</pre>
+<p>调用了int 21h的440Dh功能（从代码66h）后，在ds:dx中得到一指向一个MID结构的指针，我们必须把在edx中的segment:offset对转换成两个部分并把它们放到合适的寄存器映象中。</p>
+<pre class="code">    mov eax,21h 
+    VMMCall Exec_Int 
+    VMMCall End_Nest_Exec 
+    Pop_Client_State</pre>
+<p>当一切都准备好了，我们将运行Exec_Int去模拟一个中断。</p>
+<pre class="code">    mov ecx,AllocSize 
+    stc 
+    mov ebx,Handle 
+    push esi 
+    mov esi,OFFSET32 MediaID 
+    push ds 
+    pop fs 
+    VxDCall V86MMGR_Free_Buffer 
+    pop esi</pre>
+<p> 当Exec_Int返回时，分配的缓冲已经由我们想要的信息填满了。下一步是检索信息。我们使用 V86MMGR_Free_Buffer来完成这个目标。这个服务释放由V86MMGR_Allocate_Memory分配的内存块，并且从分配的内存块中拷贝数据到ring0中的内存块。象V86MMGR_Allocate_Memory，如果你想要进行拷贝操作，你必须先把进位标志位置1，再调用服务。</p>
+<pre class="code">
+    mov edx,esi 
+    assume edx:ptr DIOCParams 
+    mov edi,[edx].lpvOutBuffer 
+    mov esi,OFFSET32 MediaID.midVolLabel 
+    mov ecx,11 
+    rep movsb 
+    mov byte ptr [edi],0 
+    mov ecx,[edx].lpcbBytesReturned 
+    mov dword ptr [edx],11</pre>
+<p> 我们在ring0中得到这个信息后，拷贝这个卷标值到Win32应用程序提供的缓冲区中。我们可以用DIOCParams的成员lpvOutBuffer来访问它。</p>
+
+  <div class="rpindex"><a href="057.html"> 下一页</a><a href="055.html"> 上一页</a><a href="index.html">首页</a></div>
+  
+</BODY></HTML>
+
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

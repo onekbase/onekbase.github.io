@@ -1,0 +1,884 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="030.html"> 上一页</a><a href="032.html"> 下一页</a></div>
+<h1>第三十一课 列表视图控件</h1>
+本课中我们将学习如何创建和使用列表视图控件。 
+<H3>理论：</H3>
+<P>列表视图控件和树型视图、丰富文本编辑控件一样是通用控件的一种。可能您都已经知道了列表视图控件，只不过是不知道它的确切名字而已。列表视图控件可以用来很好地显示项目。在这方面它和列表框相同，只不过它的性能更强。</P>
+<P>有两种方法创建一个列表视图控件。第一种也是最简单的方法是：用资源编辑器来创建它。用该种方法只是不要忘记在您的代码（的任何位置处）加入对InitCommonControls函数的调用（记得吗，调用该函数只是为了隐式地加载包含通用控件的DLL）。另一种方法是调用CreateWindowEx函数，这里您必须指定合适的类名，譬如：SysListView32，WC_LISTVIEW不是正确的类名</P>
+<P> 在列表视图种有四种方法来显示数据：大图标，小图标，列表和报告方式。这些方法和在资源管理器种选择View-&gt;Large 
+  Icons，Small Icons ， List 和 Details 
+  相对应。各种不同的显示方式只是显示了不同的外观而已。譬如，您可能有许多的数据，只是并不想全部显示。报告方式提供的消息最完全，其它的方式则要少得多。在刚创建一个列表视图时您可以选择一种初始显示方法，随后您可以调用SetWinodwLong函数并设置GWL_STYLE标志位来改变显示方式</P>
+<P>既然我们已经知道了如何创建列表控件，接下来我们学习如何使用它们。我们将主要集中在报告方式的显示上，因为该种方式演示了最多的列表控制的特性。使用列表控制的步骤如下：</P>
+<OL>
+  <LI>调用CreateWindowEx函数来创建一个列表控件，指定它的类名为SysListView32。您还可以在此处指定控件初次显示时的方式。 
+  <LI>创建和初始化用在列表控件中显示项目的图象列表（如果存在）。
+  <LI>向列表控件中插入列，如果显示的方式是报告方式这一步是必须的。 
+  <LI>向控件中插入项目和自项目。 </LI></OL>
+<H4>列：</H4>
+<P>在报告方式中，有不止一个列。您可以把放入到列表控件中的数据看作是一张表单：这时数据是按行列排列的。在控件中至少有一列。在其它的显示方式中则无所谓，因为这些显示方式有仅有一列。<BR>加入列要通过向列表控件发送LVM_INSERTCOLUMN消息来实现。</P>
+<BLOCKQUOTE>
+  <P>LVM_INSERTCOLUMN<BR>wParam = iCol<BR>lParam 
+=指向LV_COLUMN型结构体变量的指针</P></BLOCKQUOTE>
+<P>iCol 列数，从0开始编号。<BR>LV_COLUMN 包含了将插入的列的信息。它的定义如下：</P>
+
+<Pre class="code">   LV_COLUMN  STRUCT
+       IMASK  DD        ?
+         FMT  DD        ?
+          LX  DD        ?
+     PSZTEXT  DD        ?
+  CCHTEXTMAX  DD        ?
+    ISUBITEM  DD        ?
+      IIMAGE  DD        ?
+      IORDER  DD        ?
+   LV_COLUMN  ENDS</Pre>
+<table>
+  <TBODY>
+  <TR>
+    <TH bgColor=#006666>Field name</TH>
+    <TH bgColor=#006666>Meanings</TH></TR>
+  <TR>
+    <TD>imask</TD>
+    <TD>
+      <P>一组标志位，它指示了该结构体中的那些成员变量是有效的。该结构体中的成员变量并不是同时有效的。在某些时候，可能只有某些成员变量是有效的。结构体可以用来输入和输出。这样让WINDOWS知道那些成员变量是有效的是非常重要的。可能的标志有：</P>
+      <P>LVCF_FMT = fmt有效<BR>LVCF_SUBITEM = iSubItem有效 <BR>LVCF_TEXT = 
+      pszText有效. <BR>LVCF_WIDTH = lx有效</P>
+      <P>您可以一次使用几个标志。譬如，如果您向指定列的文本标签（列名），您必须在pszText成员变量中提供列名，然后指定标志LVCF_TEXT告诉WINDOWS成员变量pszText中的值是有效的，否则WINDOWS将忽略掉pszText中的值。</P></TD></TR>
+  <TR>
+    <TD>fmt</TD>
+    <TD>
+      <P>指定了项目/子项目的对齐方式。可能的值有：</P>
+      <P>LVCFMT_CENTER = 文本居中 <BR>LVCFMT_LEFT = 文本左对齐 <BR>LVCFMT_RIGHT = 
+      文本右对齐</P></TD></TR>
+  <TR>
+    <TD>lx</TD>
+    <TD>lx 是列的宽度（以像素点为单位）。以后您可以发送消息LVM_SETCOLUMNWIDTH来改变列的宽度。</TD></TR>
+  <TR>
+    <TD>pszText</TD>
+    <TD>如果用来设定列的属性时，该成员变量为指向列名的指针。如果是查询列名，该成员变量指向一个足够大的缓冲区，用来接收返回的列名，这是您必须在成员cchTextMax中指定缓冲区的大小。如果是设定列名时，可以忽略该变量，因为该指针指向的是一个ASCII码的字符串，而WINDOWS可以解析出ASCII串的长度。</TD></TR>
+  <TR>
+    <TD>cchTextMax</TD>
+    <TD>cchTextMax 
+    以字节计的上面一个成员变量指向的缓冲区的小。该成员变量只在您查询列的属性时使用。如果是设定列的属性，那该变量将被忽略。</TD></TR>
+  <TR>
+    <TD>iSubItem</TD>
+    <TD>指定和该列相连的子项目的索引号。该成员变量的值用来标识和列相连系的子项目。该列的使用最好地说明了如何把列号和子项目相连。要查询列的属性时可以发送LVM_GETCOLUMN消息，并在成员变量imask中指定LVCF_SUBITEM标志，列表控件将在iSubItem中返回插入时设定的iSubItem值。为了使用该办法，您需要在该成员变量中放入正确的值。 
+    </TD></TR>
+  <TR>
+    <TD>iImage and iOrder</TD>
+    <TD>为了和IE3.0以上版本兼容。目前我没有这方面的资料。</TD></TR></TBODY></TABLE>
+<P>
+在列表视图控件创建后，您必须至少向其中插入一列。当然如果不打算使用报告方式显示，那倒是没有必要插入列。为了插入列，您需要定义一个LV_COLUMN型的结构体变量，给其成员变量赋上正确的值，指定列号，然后向列表视图控件发送LVM_INSERTCOLUMN消息并把该结构体变量的值传过去。</P>
+<BLOCKQUOTE>
+  <P>   LOCAL lvc:LV_COLUMN<BR>   mov 
+  lvc.imask,LVCF_TEXT+LVCF_WIDTH <BR>   mov lvc.pszText,offset 
+  Heading1 <BR>   mov lvc.lx,150 <BR>   invoke 
+  SendMessage,hList, LVM_INSERTCOLUMN,0,addr lvc </P></BLOCKQUOTE>
+<P>上面的代码段显示了该过程。当发送LVM_INSERTCOLUMN消息时，他指定了列的标题条文本和它的宽度。 </P>
+<H3>项目和子项目</H3>
+<P>项目是列表视图中主要的内容。除报告方式显示的外，在列表视图您只能看到项目。子项目是项目的详细信息。一个项目可能有不止一个相关的子项目。举个例子，譬如项目是文件名，那其相关的子项目可能有文件属性、大小、创建日期等。在报告方式的视图中，最左边一列是项目，其它列是子项目。从数据库记录的角度看，项目类似主键，子项目类似记录。</P>
+<P>至少您的列表视图需要一些项目：子项目是可选的。如果您想要给用户提供更多的信息，可以把子项目和项目相连，然后放到列表视图中以报告的方式显示。<BR>
+  您可以通过向列表视图发送LVM_INSERTITEM消息来向其中添加项目，这时还需要把一个指向LV_ITEM型的结构体的变量的指针放到lParam一同传给列表视图。LV_ITEM的定义如下：</P>
+
+<Pre class="code">     LV_ITEM  STRUCT
+       IMASK  DD        ?
+       IITEM  DD        ?
+    ISUBITEM  DD        ?
+       STATE  DD        ?
+   STATEMASK  DD        ?
+     PSZTEXT  DD        ?
+  CCHTEXTMAX  DD        ?
+      IIMAGE  DD        ?
+      LPARAM  DD        ?
+     IINDENT  DD        ?
+     LV_ITEM  ENDS</Pre>
+<table>
+  <TBODY>
+  <TR>
+    <TH bgColor=#006666 noWrap>Field name</TH>
+    <TH bgColor=#006666 noWrap>Meanings</TH></TR>
+  <TR>
+    <TD>imask</TD>
+    <TD>一组标志位标明该结构体中那些成员变量中的值有效。它的意义和上面我们提到的LV_COLUMN型结构体中向对应的成员变量基本相同。更详细的信息，可以查询WIN32 
+      API 手册。</TD></TR>
+  <TR>
+    <TD>iItem</TD>
+    <TD>该结构体代表的项目的索引号。索引号是从0开始编号的。该值和表单的“行”类似。</TD></TR>
+  <TR>
+    <TD>iSubItem</TD>
+    <TD>和上一个成员变量指定的项目相连的子项目的索引号。您可以把它当作表单的“列”。譬如您想要把一个项目插入到新创建的列表视图控件，iItem的值应为0（因为该项目是第一个项目），iSubItem的值也应当为0（我们想把该项目插到第一列）。如果你想指定一个子项目和该项目相连，iItem中应该是您想要相连的项目的索引号，iSubItem的值应当是大于0的值，具体的值取决于您想把该子项目插在那一列。如果你的列表视图控件一共有4列的化，第一列包含了项目，其余3列是留给子项目的。如果您想把子项目插在第四列，应当指定该值为3。</TD></TR>
+  <TR>
+    <TD>state</TD>
+    <TD>
+      <P>该成员变量包含的标志位反应了项目的状态。状态的改变可能是由用户的操作引起的或是程序改变的。这些状态包括：是否有焦点/高亮度显示/被选中（由于被剪切）/被选中等。另外还包括，以1为基数的索引用来代表是否处使用重叠/状态图标。</P></TD></TR>
+  <TR>
+    <TD>stateMask</TD>
+    <TD>由于上面的成员变量包含状态标志位、重叠的位图索引号、和状态位图的索引号，我们需要告诉WINDOWS我们到底需要设定或查询那一个值。该成员变量就是用来做这项工作的。</TD></TR>
+  <TR>
+    <TD>pszText</TD>
+    <TD>当我们想设定项目的属性时，它包含项目名称的ASCII码的字符串的地址。当查询项目的属性时，该成员变量将用来接收查询返回的项目的名称。</TD></TR>
+  <TR>
+    <TD>cchTextMax</TD>
+    <TD>仅当您用来查询项目的属性时才需要使用该值，这时它包含上一个成员变量的大小。</TD></TR>
+  <TR>
+    <TD>iImage</TD>
+    <TD>图标在列表视图中的图象链表中的索引号。</TD></TR>
+  <TR>
+    <TD>lParam</TD>
+    <TD>用户定义的值，当您给项目排序时使用。当您告诉列表视图对项目排序时，列表视图将成对地比较项目。 
+      它将会把两个项目的lParam的值传给您，这样您就可以进行比较先列出那一个了。如果您现在还不太明白的话，没有系，我们稍后还要讲关于排序的问题。</TD></TR></TBODY></TABLE>
+<P>现在让我们来总结想列表控件中插入项目/子项目的步骤：</P>
+<OL>
+  <LI>定义一个LV_ITEM型的结构体变量。 
+  <LI>给该变量赋给合适的值 
+  <LI>如果要插入一个项目，就向列表视图控件发送LVM_INSERTITEM值。 
+  如果要插入一个子项目，发送LVM_SETITEM。如果您不明白项目和子项目之间的关系的话，可能会有一些疑惑。子项目仅是项目的属性而已，也就是说您可以插入一个项目但是不能插入一个子项目。所以添加一个子项目十只能发送LVM_SETITEM消息而不能发送LVM_INSERTITEM消息。 
+  </LI></OL>
+<H3>列表视图控件的消息/通知</H3>
+<P>既然您知道了如何创建和往其中添加内容，下一步就是如何和它通讯。列表视图控件和它的父窗口之间的通讯是通过消息/通知来进行的。父窗口通过发送消息来控制列表视图控件，列表视图控件通过发送WM_NOTIFY消息来通知它的父窗口。这一点和其它的通用控件没有什么不同。</P>
+<H3>排序项目/子项目</H3>
+<P>您可以在调用CreateWindowEx函数时指定LVS_SORTASCENDING 或 
+LVS_SORTDESCENDING风格来指定缺省的排序方式。这两种风格仅仅排序项目的名称。如果想要排序项目的其它属性，您可以通过发送LVM_SORTITEMS消息来完成</P>
+
+<Pre class="code">        LVM_SORTITEMS
+      WPARAM  =         LPARAMSORT
+      LPARAM  =         PCOMPAREFUNCTION</Pre>
+<P>lParamSort 用户定义的值，该值将传递给用来比较的函数。<BR>pCompareFunction 
+用户定义的用来比较排序的函数的地址。该函数的原型如下：</P>
+<Pre class="code">CompareFunc proto lParam1:DWORD, lParam2:DWORD, lParamSort:DWORD</Pre>
+<P>lParam1 和 lParam2 是 LV_ITEM型的结构体中的成员变量lParam的值。<BR>lParamSort 
+是发送LVM_SORTITEMS消息时参数wParam中的值</P>
+<P>当列表视图控件接收到LVM_SORTITEMS消息时，当需要比较项目时它会调用在lParam中指定的比较函数。比较函数将决定那一个项目排在前面。方法很简单：如果函数返回一个负值，由（lParam代表的）第一个项目排在前，如果返回正值，第二个项目排在前。如果相等，必须返回0 
+。 </P>
+<P>真正使得该方法能够运行的是LV_ITEM型结构体中的成员变量lParam值。当您需要排序时（譬如当您点击列的标题条时），您需要考虑好排序方案。在本例中，我们把项目的索引放到该成员变量中，这样我们可以通过发送LVM_GETITEM消息来得到项目的其它信息。注意：当项目重排序后，它们的索引也就变了。所以当重排序后，我需要在lParam参数中反应出新的索引。如果您想在用户点击列的标题条时重新排序，您需要在您的窗口过程函数中处理LVN_COLUMNCLICK通知消息。LVN_COLUMNCLICK消息是随同WM_NOTIFY消息一起发送的。</P>
+<H3>例子：</H3>
+<P>该例子创建了一个列表视图控件，并在其中显示了当前文件夹中的文件大小和文件名。缺省的视图是报告方式的，如果您点击列标题条，标题将按升/降序重新排列。您可以通过菜单选择不同的显示方式（大图标、小图标等）。当您双击一个项目时，项目的名称将显示在一个对话框中。</P>
+<Pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\COMCTL32.INC
+  INCLUDELIB  \MASM32\LIB\COMCTL32.LIB
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+
+            IDM_MAINMENU  EQU       10000
+    IDM_ICON  EQU       LVS_ICON
+           IDM_SMALLICON  EQU       LVS_SMALLICON
+    IDM_LIST  EQU       LVS_LIST
+  IDM_REPORT  EQU       LVS_REPORT
+
+         RGB  MACRO     RED,GREEN,BLUE
+              XOR       EAX,EAX
+              MOV       AH,BLUE
+              SHL       EAX,8
+              MOV       AH,GREEN
+              MOV       AL,RED
+              ENDM
+
+.DATA
+   CLASSNAME  DB        "LISTVIEWWINCLASS",0
+     APPNAME  DB        "TESTING A LISTVIEW CONTROL",0
+       LISTVIEWCLASSNAME  DB        "SYSLISTVIEW32",0
+    HEADING1  DB        "FILENAME",0
+    HEADING2  DB        "SIZE",0
+         FILENAMEPATTERN  DB        "*.*",0
+       FILENAMESORTORDER  DD        0
+           SIZESORTORDER  DD        0
+    TEMPLATE  DB        "%LU",0
+
+.DATA?
+hInstance HINSTANCE ? 
+       HLIST  DD        ?
+       HMENU  DD        ?
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL, NULL, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+              INVOKE    INITCOMMONCONTROLS
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, NULL
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINSTANCE
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,IDM_MAINMENU
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,NULL,ADDR CLASSNAME,ADDR APPNAME, WS_OVERLAPPEDWINDOW,CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, NULL, HINST,NULL
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+            INSERTCOLUMN  PROC
+              LOCAL     LVC:LV_COLUMN
+
+              MOV       LVC.IMASK,LVCF_TEXT+LVCF_WIDTH
+              MOV       LVC.PSZTEXT,OFFSET HEADING1
+              MOV       LVC.LX,150
+              INVOKE    SENDMESSAGE,HLIST, LVM_INSERTCOLUMN, 0, ADDR LVC
+              OR        LVC.IMASK,LVCF_FMT
+              MOV       LVC.FMT,LVCFMT_RIGHT
+              MOV       LVC.PSZTEXT,OFFSET HEADING2
+              MOV       LVC.LX,100
+              INVOKE    SENDMESSAGE,HLIST, LVM_INSERTCOLUMN, 1 ,ADDR LVC
+              RET
+            INSERTCOLUMN  ENDP
+
+            SHOWFILEINFO  PROC      USES EDI ROW:DWORD, LPFIND:DWORD
+              LOCAL     LVI:LV_ITEM
+              LOCAL     BUFFER[20]:BYTE
+              MOV       EDI,LPFIND
+              ASSUME    EDI:PTR WIN32_FIND_DATA
+              MOV       LVI.IMASK,LVIF_TEXT+LVIF_PARAM
+              PUSH      ROW
+              POP       LVI.IITEM
+              MOV       LVI.ISUBITEM,0
+              LEA       EAX,[EDI].CFILENAME
+              MOV       LVI.PSZTEXT,EAX
+              PUSH      ROW
+              POP       LVI.LPARAM
+              INVOKE    SENDMESSAGE,HLIST, LVM_INSERTITEM,0, ADDR LVI
+              MOV       LVI.IMASK,LVIF_TEXT
+              INC       LVI.ISUBITEM
+              INVOKE    WSPRINTF,ADDR BUFFER, ADDR TEMPLATE,[EDI].NFILESIZELOW
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETITEM, 0,ADDR LVI
+              ASSUME    EDI:NOTHING
+              RET
+            SHOWFILEINFO  ENDP
+
+            FILLFILEINFO  PROC      USES EDI
+              LOCAL     FINDDATA:WIN32_FIND_DATA
+              LOCAL     FHANDLE:DWORD
+
+              INVOKE    FINDFIRSTFILE,ADDR FILENAMEPATTERN,ADDR FINDDATA
+.IF           EAX!=INVALID_HANDLE_VALUE
+              MOV       FHANDLE,EAX
+              XOR       EDI,EDI
+.WHILE        EAX!=0
+              TEST      FINDDATA.DWFILEATTRIBUTES,FILE_ATTRIBUTE_DIRECTORY
+.IF           ZERO?
+              INVOKE    SHOWFILEINFO,EDI, ADDR FINDDATA
+              INC       EDI
+.ENDIF
+              INVOKE    FINDNEXTFILE,FHANDLE,ADDR FINDDATA
+.ENDW
+              INVOKE    FINDCLOSE,FHANDLE
+.ENDIF
+              RET
+            FILLFILEINFO  ENDP
+
+            STRING2DWORD  PROC      USES ECX EDI EDX ESI STRING:DWORD
+              LOCAL     RESULT:DWORD
+
+              MOV       RESULT,0
+              MOV       EDI,STRING
+              INVOKE    LSTRLEN,STRING
+.WHILE        EAX!=0
+              XOR       EDX,EDX
+              MOV       DL,BYTE PTR [EDI]
+              SUB       DL,"0"
+              MOV       ESI,EAX
+              DEC       ESI
+              PUSH      EAX
+              MOV       EAX,EDX
+              PUSH      EBX
+              MOV       EBX,10
+.WHILE        ESI > 0
+              MUL       EBX
+              DEC       ESI
+.ENDW
+              POP       EBX
+              ADD       RESULT,EAX
+              POP       EAX
+              INC       EDI
+              DEC       EAX
+.ENDW
+              MOV       EAX,RESULT
+              RET
+            STRING2DWORD  ENDP
+
+ COMPAREFUNC  PROC      USES EDI LPARAM1:DWORD, LPARAM2:DWORD, SORTTYPE:DWORD
+              LOCAL     BUFFER[256]:BYTE
+              LOCAL     BUFFER1[256]:BYTE
+              LOCAL     LVI:LV_ITEM
+
+              MOV       LVI.IMASK,LVIF_TEXT
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX
+              MOV       LVI.CCHTEXTMAX,256
+.IF           SORTTYPE==1
+              MOV       LVI.ISUBITEM,1
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI
+              INVOKE    STRING2DWORD,ADDR BUFFER
+              MOV       EDI,EAX
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    STRING2DWORD,ADDR BUFFER
+              SUB       EDI,EAX
+              MOV       EAX,EDI
+.ELSEIF       SORTTYPE==2
+              MOV       LVI.ISUBITEM,1
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI
+              INVOKE    STRING2DWORD,ADDR BUFFER
+              MOV       EDI,EAX
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    STRING2DWORD,ADDR BUFFER
+              SUB       EAX,EDI
+.ELSEIF       SORTTYPE==3
+              MOV       LVI.ISUBITEM,0
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI
+              INVOKE    LSTRCPY,ADDR BUFFER1,ADDR BUFFER
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    LSTRCMPI,ADDR BUFFER1,ADDR BUFFER
+.ELSE
+              MOV       LVI.ISUBITEM,0
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI
+              INVOKE    LSTRCPY,ADDR BUFFER1,ADDR BUFFER
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.ENDIF
+              RET
+ COMPAREFUNC  ENDP
+
+            UPDATELPARAM  PROC      USES EDI
+              LOCAL     LVI:LV_ITEM
+
+              INVOKE    SENDMESSAGE,HLIST, LVM_GETITEMCOUNT,0,0
+              MOV       EDI,EAX
+              MOV       LVI.IMASK,LVIF_PARAM
+              MOV       LVI.ISUBITEM,0
+              MOV       LVI.IITEM,0
+.WHILE        EDI>0
+              PUSH      LVI.IITEM
+              POP       LVI.LPARAM
+              INVOKE    SENDMESSAGE,HLIST, LVM_SETITEM,0,ADDR LVI
+              INC       LVI.IITEM
+              DEC       EDI
+.ENDW
+              RET
+            UPDATELPARAM  ENDP
+
+        SHOWCURRENTFOCUS  PROC
+              LOCAL     LVI:LV_ITEM
+              LOCAL     BUFFER[256]:BYTE
+
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETNEXTITEM,-1, LVNI_FOCUSED
+              MOV       LVI.IITEM,EAX
+              MOV       LVI.ISUBITEM,0
+              MOV       LVI.IMASK,LVIF_TEXT
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX
+              MOV       LVI.CCHTEXTMAX,256
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEM,0,ADDR LVI
+              INVOKE    MESSAGEBOX,0, ADDR BUFFER,ADDR APPNAME,MB_OK
+              RET
+        SHOWCURRENTFOCUS  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_CREATE
+              INVOKE    CREATEWINDOWEX, NULL, ADDR LISTVIEWCLASSNAME, NULL, LVS_REPORT+WS_CHILD+WS_VISIBLE, 0,0,0,0,HWND, NULL, HINSTANCE, NULL
+              MOV       HLIST, EAX
+              INVOKE    INSERTCOLUMN
+              INVOKE    FILLFILEINFO
+              RGB       255,255,255
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETTEXTCOLOR,0,EAX
+              RGB       0,0,0
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETBKCOLOR,0,EAX
+              RGB       0,0,0
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETTEXTBKCOLOR,0,EAX
+              INVOKE    GETMENU,HWND
+              MOV       HMENU,EAX
+              INVOKE    CHECKMENURADIOITEM,HMENU,IDM_ICON,IDM_LIST, IDM_REPORT,MF_CHECKED
+.ELSEIF       UMSG==WM_COMMAND
+.IF           LPARAM==0
+              INVOKE    GETWINDOWLONG,HLIST,GWL_STYLE
+              AND       EAX,NOT LVS_TYPEMASK
+              MOV       EDX,WPARAM
+              AND       EDX,0FFFFH
+              PUSH      EDX
+              OR        EAX,EDX
+              INVOKE    SETWINDOWLONG,HLIST,GWL_STYLE,EAX
+              POP       EDX
+              INVOKE    CHECKMENURADIOITEM,HMENU,IDM_ICON,IDM_LIST, EDX,MF_CHECKED
+.ENDIF
+.ELSEIF       UMSG==WM_NOTIFY
+              PUSH      EDI
+              MOV       EDI,LPARAM
+              ASSUME    EDI:PTR NMHDR
+              MOV       EAX,[EDI].HWNDFROM
+.IF           EAX==HLIST
+.IF           [EDI].CODE==LVN_COLUMNCLICK
+              ASSUME    EDI:PTR NM_LISTVIEW
+.IF           [EDI].ISUBITEM==1
+.IF           SIZESORTORDER==0 || SIZESORTORDER==2
+              INVOKE    SENDMESSAGE,HLIST,LVM_SORTITEMS,1,ADDR COMPAREFUNC
+              INVOKE    UPDATELPARAM
+              MOV       SIZESORTORDER,1
+.ELSE
+              INVOKE    SENDMESSAGE,HLIST,LVM_SORTITEMS,2,ADDR COMPAREFUNC
+              INVOKE    UPDATELPARAM
+              MOV       SIZESORTORDER,2
+.ENDIF
+.ELSE
+.IF           FILENAMESORTORDER==0 || FILENAMESORTORDER==4
+              INVOKE    SENDMESSAGE,HLIST,LVM_SORTITEMS,3,ADDR COMPAREFUNC
+              INVOKE    UPDATELPARAM
+              MOV       FILENAMESORTORDER,3
+.ELSE
+              INVOKE    SENDMESSAGE,HLIST,LVM_SORTITEMS,4,ADDR COMPAREFUNC
+              INVOKE    UPDATELPARAM
+              MOV       FILENAMESORTORDER,4
+.ENDIF
+.ENDIF
+              ASSUME    EDI:PTR NMHDR
+.ELSEIF       [EDI].CODE==NM_DBLCLK
+              INVOKE    SHOWCURRENTFOCUS
+.ENDIF
+.ENDIF
+              POP       EDI
+.ELSEIF       UMSG==WM_SIZE
+              MOV       EAX,LPARAM
+              MOV       EDX,EAX
+              AND       EAX,0FFFFH
+              SHR       EDX,16
+              INVOKE    MOVEWINDOW,HLIST, 0, 0, EAX,EDX,TRUE
+.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START</Pre>
+<H3>分析：</H3>
+<P>当主窗口创建后要做的第一件事是创建一个列表视图控件应用程序。</P>
+<Pre class="code">.IF           UMSG==WM_CREATE
+              INVOKE    CREATEWINDOWEX, NULL, ADDR LISTVIEWCLASSNAME, NULL, LVS_REPORT+WS_CHILD+WS_VISIBLE, 0,0,0,0,HWND, NULL, HINSTANCE, NULL
+              MOV       HLIST, EAX</Pre>
+<P>我们调用CreateWindowEx来创建窗口，并把窗口类的名称“SysListView32”传给它。缺省的显示方式是报告方式，因为您指定了LVS_REPORT标志作为它的风格。</P>
+<Pre class="code">    invoke InsertColumn </Pre>
+<P>创建列表视图控件后，我们向其中插入列。 </P>
+<Pre class="code">              LOCAL     LVC:LV_COLUMN
+
+              MOV       LVC.IMASK,LVCF_TEXT+LVCF_WIDTH
+              MOV       LVC.PSZTEXT,OFFSET HEADING1
+              MOV       LVC.LX,150
+              INVOKE    SENDMESSAGE,HLIST, LVM_INSERTCOLUMN, 0, ADDR LVC</Pre>
+<P>我们指定第一列的宽度和列的标题条，为了在该列中显示文件的名称，我们需要在LV_COLUMN 型结构体变量的成员变量iMask中设定标志位LVCF_TEXT 
+或 
+LVCF_WIDTH。我们设定pszText为列标题条文本字符串的值，lx设定为列的宽度（以像素点为单位）。然后我们发送LVM_INSERTCOLUMN消息给列表视图控件，并把该结构体变量传递给它。</P>
+<Pre class="code">              OR        LVC.IMASK,LVCF_FMT
+              MOV       LVC.FMT,LVCFMT_RIGHT</Pre>
+<P>插入完第一列后，我们再插入第二列，单击该列的标题条可以按文件的大小排序。因为我们需要右对齐文本，我们需要在成员变量fmt中指定标志位LVCFMT_RIGHT。我们还必须在成员变量iMask中除了标志位LVCF_TEXT 
+和 LVCF_WIDTH外还需要指定标志位LVCF_FMT。</P>
+<Pre class="code">              MOV       LVC.PSZTEXT,OFFSET HEADING2
+              MOV       LVC.LX,100
+              INVOKE    SENDMESSAGE,HLIST, LVM_INSERTCOLUMN, 1 ,ADDR LVC</Pre>
+<P>剩余的代码比较简单。在pszText中放入文本字符串的地址，在lx中放入列的宽度。然后发送消息LVM_INSERTCOLUMN 
+给列表视图控件，在参数中同时传递列号和结构体变量的地址。</P>
+<P>当插入完列后，我们向列表控件中加入项目。</P>
+<Pre class="code">    invoke FillFileInfo </Pre>
+<P>FillFileInfo 的代码如下：</P>
+<Pre class="code">            FILLFILEINFO  PROC      USES EDI
+              LOCAL     FINDDATA:WIN32_FIND_DATA
+              LOCAL     FHANDLE:DWORD
+
+              INVOKE    FINDFIRSTFILE,ADDR FILENAMEPATTERN,ADDR FINDDATA</Pre >
+<P>我们调用FindFirstFile来得到第一个符合搜索标准的的文件的信息。FindFirstFile函数的原型如下</P>
+<Pre class="code">FindFirstFile proto pFileName:DWORD, pWin32_Find_Data:DWORD</Pre >
+<P>pFileName 
+是用来匹配搜索的文件名的地址。该字符串包含了通配符。在我们的例子中是*.*，这样会搜索当前文件夹中所有的文件。<BR>pWin32_Find_Data 
+是WIN32_FIND_DATA 型的结构体变量的地址，WIN32_FIND_DATA型的结构体变量将用来保存返回的文件的信息。 </P>
+<P>如果没有找到匹配的文件，该函数将在eax中返回INVALID_HANDLE_VALUE 
+。否则将返回一个搜索句柄，您可以用该句柄在FindNextFile函数中来搜索下一个符合条件的文件。</P>
+<Pre class="code">.IF           EAX!=INVALID_HANDLE_VALUE
+              MOV       FHANDLE,EAX
+              XOR       EDI,EDI</Pre >
+<P>如果找到了一个文件，我们在一个变量中保存搜索句柄，并把寄存器edi清零，该寄存器将用作项目的索引号。</P>
+<Pre class="code">.WHILE        EAX!=0
+              TEST      FINDDATA.DWFILEATTRIBUTES,FILE_ATTRIBUTE_DIRECTORY
+.IF           ZERO?</Pre >
+<P>在本课中，我们将不处理文件夹，所以我们检查dwFileAttributes成员变量的值是否有FILE_ATTRIBUTE_DIRECTORY 
+标志，如果有，我们就忽略掉它，然后调用FindNextFile。</P>
+<Pre class="code">              INVOKE    SHOWFILEINFO,EDI, ADDR FINDDATA
+              INC       EDI
+.ENDIF
+              INVOKE    FINDNEXTFILE,FHANDLE,ADDR FINDDATA
+.ENDW
+</Pre >
+<P>我们调用ShowFileInfo函数包文件的名称和大小信息加到列表视图控件中去。然后让edi寄存器加一来增加项目的行号。最后我们调用FindNextFile函数在当前文件夹中继续搜索文件一直到该函数返回0为止（这意味着没有可供搜索的文件了）。 
+</P>
+<Pre class="code">              INVOKE    FINDCLOSE,FHANDLE
+.ENDIF
+              RET
+            FILLFILEINFO  ENDP</Pre >
+<P>当前文件夹中的文件枚举完毕后，我们必须关闭搜索句柄。</P>
+<P>先在我们看一下ShowFileInfo函数。该函数由两个参数，一个是项目的索引号（也即行号），另一个是WIN32_FIND_DATA型结构体变量的地址。</P>
+<Pre class="code">            SHOWFILEINFO  PROC      USES EDI ROW:DWORD, LPFIND:DWORD
+              LOCAL     LVI:LV_ITEM
+              LOCAL     BUFFER[20]:BYTE
+              MOV       EDI,LPFIND
+              ASSUME    EDI:PTR WIN32_FIND_DATA</Pre>
+<P>把WIN32_FIND_DATA 型结构体变量的值放到寄存器edi中。</P>
+<Pre class="code">              MOV       LVI.IMASK,LVIF_TEXT+LVIF_PARAM
+              PUSH      ROW
+              POP       LVI.IITEM
+              MOV       LVI.ISUBITEM,0</Pre >
+<P>我们将传递项目的名称和lParam的值，所以我们在iMask中放入标志位LVIF_TEXT 
+和LVIF_PARAM。接下来我们在iItem中放入传递进来的行号，另外由于这是主项目我们必须设置iSubItem的值等于0。</P>
+<Pre class="code">              LEA       EAX,[EDI].CFILENAME
+              MOV       LVI.PSZTEXT,EAX
+              PUSH      ROW
+              POP       LVI.LPARAM</Pre >
+<P>我们现在要把标签字符串的地址，在这里也就是WIN32_FIND_DATA 
+型结构体变量中的文件的名称放到pszText中。由于我们要完成对项目的排序，所以必须设置lParam的值，我把它设成行号值，这样我们可以根据索引值来查询项目。</P>
+<Pre class="code">  invoke SendMessage,hList, LVM_INSERTITEM,0, addr lvi </Pre>
+<P>设置完所有LV_ITEM型变量中的值后，我们发送LVM_INSERTITEM消息给列表视图控件来把项目插入到其中。</P>
+<Pre class="code">              MOV       LVI.IMASK,LVIF_TEXT
+              INC       LVI.ISUBITEM
+              INVOKE    WSPRINTF,ADDR BUFFER, ADDR TEMPLATE,[EDI].NFILESIZELOW
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX</Pre>
+<P>我们将把子项目插入到第二列。一个子项目只能有一个标签。这样我们在iMask中指定LVIF_TEXT标志位。接着我们指定子项目所在的列，本例中我们通过将iSubItem加一使得该值等于1。标签值是文件的大小，为了转换成文本我们调用wsprintf函数，然后把文本的地址放到pszText中去。</P>
+<Pre class="code">              INVOKE    SENDMESSAGE,HLIST,LVM_SETITEM, 0,ADDR LVI
+              ASSUME    EDI:NOTHING
+              RET
+            SHOWFILEINFO  ENDP
+</Pre >
+<P>当LV_ITEM型变量中的值设定好之后，我们向列表视图控件发送LVM_SETITEM消息，并一同把LV_ITEM变量的地址传过去。注意：发送的消息是LV_ITEM而不是LVM_INSERTITEM，因为我们插入的是子项目，子项目不是真正的项目而是主项目的属性。所以我们这时是在设定项目的属性，而不是加入一个项目。</P>
+<P>当所有的项目都插入到列表视图控件后，我们设定它的文本和背景颜色。</P>
+<Pre class="code">RGB 255,255,255
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETTEXTCOLOR,0,EAX
+RGB 0,0,0 
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETBKCOLOR,0,EAX
+RGB 0,0,0 
+              INVOKE    SENDMESSAGE,HLIST,LVM_SETTEXTBKCOLOR,0,EAX</Pre>
+<P>我们用RGB（R---Red G---Green B---Blue）来把三色转换并放到eax中。我们通过发送LVM_SETTEXTCOLOR 和 
+LVM_SETTEXTBKCOLOR 消息来设定文本的前景和背景色。</P>
+<Pre class="code">              INVOKE    GETMENU,HWND
+              MOV       HMENU,EAX
+              INVOKE    CHECKMENURADIOITEM,HMENU,IDM_ICON,IDM_LIST, IDM_REPORT,MF_CHECKED</Pre >
+<P>我们将让用户通过菜单来选择它想要的显示方式。这样我们必须先得到菜单的句柄。我了让用户跟踪当前的视图，我们在菜单中放入一组单选按钮。我们可以调用CheckMenuRadioItem函数，该函数将把一个单选按钮放到一个菜单项前。</P>
+<P>注意我们创建列表视图控件时把它的宽度和高度都设成为0。当父窗口改变大小时，它将同时改变大小。这样我们可以让列表视图总是随着主窗口改变。子我们的例子中，我们让列表视图填充整个客户区。</P>
+<Pre class="code">.ELSEIF       UMSG==WM_SIZE
+              MOV       EAX,LPARAM
+              MOV       EDX,EAX
+              AND       EAX,0FFFFH
+              SHR       EDX,16
+              INVOKE    MOVEWINDOW,HLIST, 0, 0, EAX,EDX,TRUE</Pre>
+<P>当父窗口接收到了WM_SIZE消息后，lParam的底字部分包含了客户区新的宽和高。让后我们调用MoveWindow来改变列表视图控件的大小使得它覆盖整个的客户区。</P>
+<P>当用户通过菜单选择了一种选择方式，我们必须相应地改变列表视图中的显示方式。我们调用SetWindowLong函数来设定新的风格。</P>
+<Pre class="code">.ELSEIF       UMSG==WM_COMMAND
+.IF           LPARAM==0
+              INVOKE    GETWINDOWLONG,HLIST,GWL_STYLE
+              AND       EAX,NOT LVS_TYPEMASK</Pre >
+<P>首先得到当前的风格，然后清除旧的风格。LVS_TYPEMASK 
+是LVS_ICON+LVS_SMALLICON+LVS_LIST+LVS_REPORT四种风格的集合。这样当我们用当前的风格“与”“not 
+LVS_TYPEMASK”就等于清除了当前的显示风格。</P>
+<P>在设计菜单时，我们使用了一些小技巧。我们包显示风格的常数串当作菜单的ID号。</P>
+<Pre class="code">    IDM_ICON  EQU       LVS_ICON
+           IDM_SMALLICON  EQU       LVS_SMALLICON
+    IDM_LIST  EQU       LVS_LIST
+  IDM_REPORT  EQU       LVS_REPORT</Pre >
+<P>这样当父窗口接收到WM_COMMAND消息时，希望显示的风格值会当成菜单的ID号传递过来。</P>
+<Pre class="code">              MOV       EDX,WPARAM
+              AND       EDX,0FFFFH</Pre>
+<P>在wParam中的低字部分是欲显示的风格，我们所需要做的只是把高字部分清0。</P>
+<Pre class="code">              PUSH      EDX
+              OR        EAX,EDX</Pre>
+<P>我们把希望显示的风格加到列表视图的风格中去（已经去除了旧的风格）。</P>
+<Pre class="code">      invoke SetWindowLong,hList,GWL_STYLE,eax </Pre>
+<P>调用SetWindowLong函数来设定新的风格。</P>
+<Pre class="code">              POP       EDX
+              INVOKE    CHECKMENURADIOITEM,HMENU,IDM_ICON,IDM_LIST, EDX,MF_CHECKED
+.ENDIF</Pre>
+<P>我们需要在被选择的显示方式前放入单选按钮。如果要排序，我们必须处理WM_NOTIFY消息。</P>
+<Pre class="code">.ELSEIF       UMSG==WM_NOTIFY
+              PUSH      EDI
+              MOV       EDI,LPARAM
+              ASSUME    EDI:PTR NMHDR
+              MOV       EAX,[EDI].HWNDFROM
+.IF           EAX==HLIST</Pre>
+<P>当我们接收到了WM_NOTIFY 
+消息后，lParam包含了指向NMHDR型结构体变量的指针。我们通过把列表视图控件的值和NMHDR型结构体变量中的hwndFrom成员变量的值比较来判断，如果相等的话我们就可以确定消息是列表视图控件发送的。</P>
+<Pre class="code">.IF           [EDI].CODE==LVN_COLUMNCLICK
+              ASSUME    EDI:PTR NM_LISTVIEW</Pre>
+<P>如果通知消息是列表视图控件发送的，我们检测该消息是否是LVN_COLUMNCLICK。如果是，它意味着用户点击了列标题条。在接收到LVN_COLUMNCLICK消息后，我们假设lParam参数包含NM_LISTVIEW型结构体变量的指针，NM_LISTVIEW型结构体是NMHDR型结构体的扩展。我们需要知道用户单击了那一列，在iSubItem中的值即是列号，列的编号是从0开始的。</P>
+<Pre class="code">.IF           [EDI].ISUBITEM==1
+.IF           SIZESORTORDER==0 || SIZESORTORDER==2</Pre>
+<P>在这里iSubItem的值是1，它表示用户点击的是第二列，即文件的大小。我们用状态变量来保持当前的排序顺序。0代表不用排序，1代表升序，2代表降序。如果该列中的项目/子项目以前没有排序或为降序，我们就把它设成升序。</P>
+<Pre class="code">              INVOKE    SENDMESSAGE,HLIST,LVM_SORTITEMS,1,ADDR COMPAREFUNC</Pre>
+<P>我们发送消息LVM_SORTITEMS给列表视图控件，在wParam中传递1，在lParam中传递比较函数的参数。注意wParam中的值是用户定义的，用户可以按自己的需要来解释，这里我们把它用作排序的方法。我们先来看看比较函数：</P>
+<Pre class="code"> COMPAREFUNC  PROC      USES EDI LPARAM1:DWORD, LPARAM2:DWORD, SORTTYPE:DWORD
+              LOCAL     BUFFER[256]:BYTE
+              LOCAL     BUFFER1[256]:BYTE
+              LOCAL     LVI:LV_ITEM
+
+              MOV       LVI.IMASK,LVIF_TEXT
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX
+              MOV       LVI.CCHTEXTMAX,256</Pre>
+<P>列表视图控件将传递需要比较的两个项目的lParam（LV_ITEM型结构体变量的成员变量）比较函数。您还记得吗？我们在lParam中放置了醒目的索引号。这样我们利用这些索引号查询列表视图来得到项目信息。我们需要的消息是项目/子项目的标签文本。为此我们准备好LV_ITEM 
+型结构体变量并在iMask中设置标志位LVIF_TEXT ，在pszText中设置缓冲区的地址，在cchTextMax中设置缓冲区的大小。</P>
+<Pre class="code">.IF           SORTTYPE==1
+              MOV       LVI.ISUBITEM,1
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI</Pre>
+<P>如果SortType的值为1或2，我们知道点击了那一列，1代表根据文件的大小按升序排列所有的项目。2的意思相反。这样我们指定iSubItem为1（代表文件大小列）然后发送LVM_GETITEMTEXT 
+消息给列表视图控件来得到在项目的标签文本串。</P>
+<Pre class="code">              INVOKE    STRING2DWORD,ADDR BUFFER
+              MOV       EDI,EAX</Pre>
+<P>调用子定义的String2Dword函数来把字符串转换成一个DWORD值。它将在eax中返回转换后的值，我们把它保存在edi中以便以后比较用。</P>
+<Pre class="code">              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    STRING2DWORD,ADDR BUFFER
+              SUB       EDI,EAX
+              MOV       EAX,EDI</Pre>
+<P>对lParam2 中的值做同样的操作。当我们得到了两个文件的大小后，就可以比较它们了。比较的规则如下：</P>
+
+  <LI>如果第一个项目放在前面，在eax中返回一个负值 
+  <LI>如果第二个项目放在前面，在eax中返回一个正值 
+  <LI>如果相等，在eax中返回0 </LI>
+<P>在我们这里，我们想按升序排列，所以我们只要简单地将第二个项目的文件大小减去第一个项目的文件大小，然后返回放在eax中的值。</P>
+<Pre class="code">.ELSEIF       SORTTYPE==3
+              MOV       LVI.ISUBITEM,0
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM1,ADDR LVI
+              INVOKE    LSTRCPY,ADDR BUFFER1,ADDR BUFFER
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEMTEXT,LPARAM2,ADDR LVI
+              INVOKE    LSTRCMPI,ADDR BUFFER1,ADDR BUFFER
+</Pre>
+<P>当用户点击文件名字列时，我们必须比较文件的名字。我们先得到文件的名字，然后调用lstrcmpi函数来比较，然后只要简单返回lstrcmpi的值，因为该函数比较使用的规则和我们的相同。</P>
+<P>当项目排序后，我们调用UpdateParam函数来更新所有项目的lParam的值来反应出最新的改变。</P>
+<Pre class="code">              INVOKE    UPDATELPARAM
+              MOV       SIZESORTORDER,1</Pre>
+<P>该函数简单地枚举列表视图中所有的项目并且把它们lParam更新成项目的索引号。</P>
+<Pre class="code">.ELSEIF       [EDI].CODE==NM_DBLCLK
+              INVOKE    SHOWCURRENTFOCUS
+.ENDIF</Pre>
+<P>如果用户双击某个项目时，我们将显示一个消息框，上面有该项目的有关标签值。我们必须检查NMHDR 中的code值是否是 
+NM_DBLCLK。如果是，我们就得到它的标签值并显示在一个消息框中。</P>
+<Pre class="code">        SHOWCURRENTFOCUS  PROC
+              LOCAL     LVI:LV_ITEM
+              LOCAL     BUFFER[256]:BYTE
+
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETNEXTITEM,-1, LVNI_FOCUSED</Pre>
+<P>我们是增么怎么知道某个项目被双击的呢？当单击或双击某个项目时，它的状态被设成“焦点”。即使有多个项目被选中，也仅有一个项目有焦点。我们的工作就是去找到那个有焦点的项目。我们发送LVM_GETNEXTITEM消息给列表视图控件，在lParam中指定期望的状态。如果wParam中时-1的话，表示要搜索所有的项目。有焦点的项目第索引号在eax中返回。</P>
+<Pre class="code">              MOV       LVI.IITEM,EAX
+              MOV       LVI.ISUBITEM,0
+              MOV       LVI.IMASK,LVIF_TEXT
+              LEA       EAX,BUFFER
+              MOV       LVI.PSZTEXT,EAX
+              MOV       LVI.CCHTEXTMAX,256
+              INVOKE    SENDMESSAGE,HLIST,LVM_GETITEM,0,ADDR LVI</Pre>
+<P>发送LVM_GETITEM消息来得到标签。</P>
+<Pre class="code">   invoke MessageBox,0, addr buffer,addr AppName,MB_OK </Pre>
+<P>最后我们在一个消息框中显示标签。</P>
+<P>如果想在列表视图控件中显示图标，您可以阅读关于树型视图控件的课程。它们的步骤基本上是一样的。</P>
+
+  
+</BODY></HTML>
+<div class="rpindex"><a href="032.html"> 下一页</a><a href="030.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

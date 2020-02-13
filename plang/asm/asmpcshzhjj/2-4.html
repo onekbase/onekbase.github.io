@@ -1,0 +1,308 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="2-31.html">上一页</a> <a href="3-1.html">下一章</a> </div>
+  <h2>2．4   其它的改进方法 </h2>
+  <p>上一节的程序中我们用堆栈来保存CX寄存器的拷贝，这并非是唯一的解决办法。就&quot;保存CX寄存器副本&quot;这一问题而言，很容易想到可以用一个未使用的寄存器来保存CX寄存器中的计数值。程序PROG2－A中应用了BX寄存器（当然也可应用DX或其它寄存器）。有一点要注意：段寄存器，SP寄存器不可作为暂存数据用。</p>
+  <p> 这里需要插入一点有关&quot;寻址方式&quot;的讨论。很多专业教材都谈到了这个问题。所谓寻址方式，就是CPU&quot;寻找&quot;被处理数据的方法。例如在指令&quot;MOV   CX，500&quot;中，500H是一个&quot;立即数&quot;，它最终将出现在指令编译后的机器码中。CPU在取指令的同时就已经取到了数据。这样的寻址方式称为立即数寻址。</p>
+  <p> 而在指令&quot;MOV   CX，BX&quot;中，BX是一个寄存器，CPU在取指令时只是取到了表示&quot;BX&quot;寄存器编码，而实际所需的数据并未取到，只有在指令执行完后，BX中的数据才会进入CX。这样的寻址方式就称为&quot;寄存器寻址&quot;。当然还有其它的寻址方式，在本书的后文中会逐渐谈到。 </p>
+  <p>　关于PROG2我们还有别的改进方法。PROG2中的两个循环都用LOOP指令完成，都要用CX计数，这是造成&quot;冲突&quot;的根源。若我们不用LOOP指令而改用其它指令来完成&quot;活&quot;循环，那么这种冲突就不存在了。程序PROG2－B就是采用了这种思想。 </p>
+  <pre class="code">PROG2－A
+-a100[Enter]
+0B01:0100 MOV CX,0800
+0B01:0103 MOV BX,CX
+0B01:0105 IN AL,61
+0B01:0107 XOR AL,02
+0B01:0109 OUT 61,AL
+0B01:010B MOV CX,0500
+0B01:010E LOOP 010E
+0B01:0110 MOV CX,BX
+0B01:0112 LOOP 0103
+0B01:0114 RET </pre>
+  <p>在讨论新增的指令前，我们先看看LOOP指令的动作流程，图2－3反映了CPU执行LOOP指令的过程。注意CX寄存器先减1，而后判断是否减至0。这两个步骤是CPU自动完成的。</p>
+  <p> 由此我们可以设想把某个循环的计数值放在除CX外的其它寄存器中，在执行循环时我们用&quot;专门的指令&quot;来把计数值减1，再用&quot;专门的指令&quot;判断减1的结果来控制转移，即可避免两个LOOP间的冲突。这就要用到PROG2－B中新增的两条指令DEC和JNZ。</p>
+  <pre class="code">PROG2－B
+-a100
+0B01:0100 mov bx,800
+0B01:0103 in al,61
+0B01:0105 xor al,2
+0B01:0107 out 61,al
+0B01:0109 mov cx,500
+0B01:010C loop 10c
+0B01:010E dec bx
+0B01:010F jnz 103
+0B01:0111 int 20
+0B01:0112 </pre>
+  <p>助记符：DEC（Decrement）<br />
+    用　途：将指定的寄存器或内存单元中的数据的值减去1<br />
+    格　式：DEC 寄存器（8bit或16bit）<br />
+    DEC 内存单元<br />
+    执　行：原数据减1，结果仍保存于这个寄存器或内存单元中</p>
+  <p>这条指令和C语言的那个&quot;－－&quot;运算符一样。由于所有段寄存器都不参与运算，所以没有&quot;DEC   DS&quot;这样的用法。</p>
+  <p> 在程序PROG2－B中我们一开始用BX来保存外循环的计数值，在内循环执行完后，我们用&quot;DEC   BX&quot;使得BX中的计数值减1。下面的问题就是看BX是否被减成0。这由新增的JNZ指令完成。 </p>
+  <p>助记符：JNZ（JUMP IF NOT ZERO）<br />
+    用　途：根据运算结果是否非0来控制转移<br />
+    格　式：JNZ   目的地址<br />
+    执　行：若ZF＝0，则转移至目的地址执行指令；若ZF＝1，则继续执行下面的指令 </p>
+  <p>新的问题出现了，ZF是什么？是新的寄存器吗？</p>
+  <p> 这个问题不会再留到后面讨论了，因为它本身就是个遗留下来的问题。请看第一节内&quot;细看PC机&quot;中的2.2.5，在前文我们刚刚讨论了堆栈指针（SP）寄存器，还留了3个小问题，现在我们就来讨论&quot;标志寄存器&quot;。</p>
+  <p> 对于一般数学运算我们不仅要关心运算的结果，同时要关心&quot;运算后果&quot;。以&quot;DEC   BX&quot;为例，若BX〉1，则执行一次DEC指令不会使BX减为0，即运算没有造成变量变成0的&quot;后果&quot;；若BX＝1，则执行一次DEC即可造成&quot;BX＝0&quot;的后果。因此对于DEC指令而言，它可以造成两种不同的后果：</p>
+  <p>（1）被减的变量仍大于0；　　　　（2）被减的变量恰好成了0。</p>
+  <p>我们所编的程序并不关心&quot;DEC BX&quot;的结果是什么，但是要关心&quot;DEC   BX&quot;的后果。因为BX被减至0实际意味着外循环的结束。那么运算的后果记录在什么地方呢？</p>
+  <p> 在CPU中有一个特殊的16bit寄存器，此寄存器称为&quot;标志寄存器（FLAG   Register）&quot;。和通用寄存器、段寄存器不同，它并不用于保存数据，CPU用它某些位的0，1状态来记录运算的后果。它的结构如图2－7所示。 </p>
+  <p><img src="figures/F2_8.gif"  height="45" /></p>
+  <p>所用到的各个位的解释都列在表2－1中，其中的ZF位就是我们现在所关心的。ZF被称为&quot;零标志位&quot;（Zero   Flag），当某次运算的结果恰好是0时，ZF将被&quot;置位（SET）&quot;，即ZF＝1；否则ZF&quot;复位（RESET）&quot;。JNZ指令根据ZF的状态来转移。 </p>
+  <h5>表2-1 标志寄存器各个位的功能表 </h5>
+  <table>
+    <tr>
+      <td >标志位</td>
+      <td >功　能　解　释</td>
+      <td >清0</td>
+      <td >置1</td>
+    </tr>
+    <tr>
+      <td >CF</td>
+      <td >进位（借位）标志，某次运算有进位或借位时此标志置1</td>
+      <td >NC</td>
+      <td >CY</td>
+    </tr>
+    <tr>
+      <td >PF</td>
+      <td >奇偶标志，若运算结果中为1的位有偶数个此标志置1</td>
+      <td >PE</td>
+      <td >PO</td>
+    </tr>
+    <tr>
+      <td >AF</td>
+      <td >辅助进位标志*，记录运算中低4位向高4位或低8位向高8位的进位</td>
+      <td >AC</td>
+      <td >NA</td>
+    </tr>
+    <tr>
+      <td >ZF</td>
+      <td >零标志，若运算结果等于0此标志置1</td>
+      <td >ZR</td>
+      <td >NZ</td>
+    </tr>
+    <tr>
+      <td >SF</td>
+      <td >符号标志，运算结果为负数此标志置1</td>
+      <td >NG</td>
+      <td >PL</td>
+    </tr>
+    <tr>
+      <td >TF</td>
+      <td >陷井标志，当此标志位置1后CPU处于单步执行方式</td>
+      <td >-</td>
+      <td >-</td>
+    </tr>
+    <tr>
+      <td >IF</td>
+      <td >中断标志，此标志置1时允许CPU响应中断，置0时将屏蔽中断**</td>
+      <td >EI</td>
+      <td >DI</td>
+    </tr>
+    <tr>
+      <td >DF</td>
+      <td >方向标志，用于控制串处理指令的步进方向</td>
+      <td >DN</td>
+      <td >UP</td>
+    </tr>
+    <tr>
+      <td >OF</td>
+      <td >溢出标志，若运算发生溢出时此标志置1</td>
+      <td >OV</td>
+      <td >NV</td>
+    </tr>
+  </table>
+  <p>注：* 也称为半进位标志； ** 对不可屏蔽中断（NMI）没有影响 </p>
+  <p>不难看出JNZ指令的转移与否也是有条件的，这样的转移指令被称为&quot;条件转移指令&quot;。在汇编语言中还有大量的条件转移指令，这些指令大部分都受到标志寄存器中某些位的控制。而且条件转移指令有很多都有&quot;对立面&quot;--转移条件恰好相反的指令。如与JNZ相对的指令：</p>
+  <p>助记符：JZ（JUMP IF ZERO）<br />
+    用　途：根据运算结果是否为0来控制转移<br />
+    格　式：JZ   目的地址<br />
+    执　行：若ZF＝1则转移至目的地址执行指令；ZF＝0时继续执行下面的指令 </p>
+  <p>这两条指令应用格式完全一致，而转移条件正相反。还有一点需要注意：条件转移指令只能在－128－＋127字节范围内进行跳转，即目的地址与转移指令后面一条指令的起始地址之差不能大于＋127或小于－128。这个性质很容易验证：输入命令A100[   ]，然后输入&quot;JZ 182[Enter]&quot;，DEBUG马上会显示&quot;error&quot;，这是因为182H－102H＝80H＝128〉＋127的缘故。同理，&quot;JZ   81[Enter]&quot;也会出错。</p>
+  <p> 标志寄存器还有第二个用途，就是控制CPU内部的工作状态。这一点恰和端口的作用相对应，端口是对外部设备的工作状态进行控制。关于此种用途的实际应用将在后面介绍。</p>
+  <p> PROG2－B的结尾没有RET指令，但它却能正常的返回操作系统。这是那条&quot;INT   20&quot;指令作用的结果。 </p>
+  <p>助记符：INT（INTERUPT）<br />
+    用　途：调用中断服务程序<br />
+    格　式：INT   nn<br />
+    执　行：CPU暂时停止执行当前的程序，根据nn的值去执行另一段程序，这段程序完成一个特定的工作，此程序执行完后，CPU自动返回原来的程序，从停下的地方继续执行。 </p>
+  <p>INT 20的作用是命令CPU去执行操作系统提供的20H号中断服务程序，这段程序可以使机器重新控制在DOS手中。因此，执行过&quot;INT   20&quot;后，CPU将不在回到PROG2－B。</p>
+  <p> RET是一条指令，而INT   20的实质是执行一段程序，两者所完成的工作却完全一样，这又是什么原因呢？难道是RET指令的功能强大的可以和一段程序相比吗？这个问题引出了本书的第三章--中断调用与子程序。这一章会给出这个问题的答案。</p>
+  <h4>本章结束语</h4>
+  <p>这一章中说得最多的一句话就是&quot;这个问题将在后面讨论&quot;。确实，我们留下了很多问题。为什么要这样？笔者的目的有两个：</p>
+  <p> 其一是为压缩内容。这一章所涉及的内容已经相当多了，需要大量的记忆。如果我们面面俱道，那并不利于读者很好地掌握重点内容；其二，笔者认为带着问题学习往往会有好的效果。当我们对一个问题&quot;恍然大悟&quot;的时候，我们对这个问题的理解和记忆就会更深刻。<br />
+    请耐心地学下去。</p>
+  <div  class="rpindex"><a href="3-1.html">下一章</a><a href="2-31.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

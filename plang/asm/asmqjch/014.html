@@ -1,0 +1,402 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="013.html"> 上一页</a><a href="015.html"> 下一页</a></div>
+<h1>第十四课 进程</h1>
+本课中我们将学习：什么是进程？如何产生和终止一个进程？ 
+<H3>初步知识：</H3>
+<p>进程是什么？下面是我从WIN32 API指南中节选的解释：</p>
+<p> “一个进程是一个正在执行的应用程序，它包含有：私有的虚拟地址空间、代码、数据和其它的操作系统资源，譬如进程可以存取的管道、文件和同步对象等等。” </p>
+<P>从上面的定义中您可以看到，一个进程拥有几个对象：地址空间、执行模块和其它该执行程序打开或创建的任何对象或资源。至少，一个进程必须包含可执行模块、私有的地址空间和一个以上的线程。什么是线程呢？一个线程实际上是一个执行单元。当WINDOWS产生一个进程时，它自动为该进程产生一个主线程。该线程通常从模块的第一条指令处开始执行。如果进程需要更多的线程，它可以随后显式地产生。</P>
+<P>当WINDWOS 
+  接收到产生进程的消息时，它会为进程生成私有内存地址空间，接着把可执行文件映射到该空间。在WIN32下为进程产生了主进程后，您还可以调用函数CreateProcess来为您的进程产生更多的线程。</P>
+<P>CreateProcess的原型如下：</P>
+<Pre class="code">           CREATEPROCESS  PROTO     LPAPPLICATIONNAME:DWORD,\
+           lpCommandLine:DWORD,\
+           lpProcessAttributes:DWORD,\
+           lpThreadAttributes:DWORD,\
+           bInheritHandles:DWORD,\
+           dwCreationFlags:DWORD,\
+           lpEnvironment:DWORD,\
+           lpCurrentDirectory:DWORD,\
+           lpStartupInfo:DWORD,\
+   LPPROCESSINFORMATION:  DWORD</Pre>
+
+<P>不要被这么多的参数吓倒，其实您可以忽略其中的大多数的参数（让它们有缺省值）。 
+<P>lpApplicationName --&gt; 
+可执行文件的名称（含或不含路径）。如果该参数为NULL，那必须在参数lpCommandLine中传递文件名称。<BR>lpCommandLine --&gt; 
+传递给欲执行的文件的命令行参数。如果lpApplicationName为NULL，那必须在该参数中指定，譬如："notepad.exe readme.txt" 
+。<BR>lpProcessAttributes 和 lpthreadAttributes --&gt; 
+指定进程和主线程的安全属性。您可以把它们都设成为NULL，这样就设置了缺省的安全属性。<BR>bInheritHandles --&gt; 
+标志位。用来设置新进程是否继承创建进程所有的打开句柄。<BR>dwCreationFlags --&gt; 
+有几个标志可以在此处设置以决定欲创建进程的行为，譬如：您可能想创建进程后并不想让它立刻运行，这样在它真正运行前可以作一些检查和修改工作。您还可以在此处设置新进程中的所有线程的优先级，通常我们把它设置为NORMAL_PRIORITY_CLASS。<BR>lpEnvironment 
+--&gt; 
+指向环境块的指针，一般地环境块包含几个环境字符串。如果该参数为NULL，那么新进程继承创建进程的环境块。<BR>lpCurrentDirectory 
+--&gt; 指向当前目录以及为子进程设置的“当前目录”的路径。如果为NULL， 则继承创建进程的“当前目录”路径。<BR>lpStartupInfo 
+--&gt; 
+指向新进程的启动结构体STARTUPINFO的指针。STARTUPINFO告诉WINDOWS如何显示新进程的外观。该参数有许多的成员变量，如果您不想新进程有什么的特别之处，可以调用GetStartupInfo函数来用创建进程的启动参数来填充STARTUPINFO结构体变量。<BR>lpProcessInformation 
+--&gt; 指向结构体PROCESS_INFORMATION的指针，该结构体变量包含了一些标识该进程唯一性的一些成员变量： 
+<pre class="code">     PROCESS_INFORMATION  STRUCT
+                          hProcess HANDLE ; handle to the child process
+                          hThread HANDLE ; handle to the primary thread of the child process
+                          DWPROCESSID  DWORD                 ; ID of the child process
+                          DWTHREADID  DWORD                 ; ID of the primary thread of the child process
+     PROCESS_INFORMATION  ENDS</pre>
+<P>进程句柄和进程ID是两个不同的概念。进程ID好似一个唯一值，而进程句柄是调用相关的WINDOWS API 
+后得到的一个返回值。不能用进程句柄来标识一个进程的唯一性，因为这个值并不唯一。在调用CreateProcess产生新进程后，该进程就被创建，而且CerateProcess函数立即返回。您可以调用函数GetExitCodeProcess来检验进程是否结束。该函数的原型如下： 
+
+<Pre class="code">GetExitCodeProcess proto hProcess:DWORD, lpExitCode:DWORD </Pre>
+<P>如果调用成功，lpExitCode中包含了所查询进程的状态码。如果等于STILL_ACTIVE就表明该进程依旧存在。 
+您可以调用函数TerminateProcess来强制终止一个进程。该函数的原型如下： 
+<Pre class="code">TerminateProcess proto hProcess:DWORD, uExitCode:DWORD </Pre>
+<P>您可以指定任意一个退出值。用该函数结束一个进程并不好，因为该进程加载的动态连接库并不会得到进程正退出的消息。<BR>  
+<H3>例子：</H3>在下面的例子中，当用户选择菜单项“crate 
+process”时我们创建一个新进程。它会去执行“"msgbox.exe”。如果用户想要终止新进程，可以选择菜单项“terminate 
+process”。这时，应用程序检查欲终止的进程是否仍存在，若存在则调用TerminateProcess函数来终止它。 
+<Pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+.CONST
+      IDM_CREATE_PROCESS  EQU       1
+           IDM_TERMINATE  EQU       2
+    IDM_EXIT  EQU       3
+
+.DATA
+   CLASSNAME  DB        "WIN32ASMPROCESSCLASS",0
+     APPNAME  DB        "WIN32 ASM PROCESS EXAMPLE",0
+    MENUNAME  DB        "FIRSTMENU",0
+processInfo PROCESS_INFORMATION <> 
+ PROGRAMNAME  DB        "MSGBOX.EXE",0
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hMenu HANDLE ? 
+    EXITCODE  DWORD     ?           ; contains the process exitcode status from GetExitCodeProcess call.
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME,ADDR APPNAME,\
+                        WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\
+                        CW_USEDEFAULT,300,200,NULL,NULL,\
+                        hInst,NULL
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+              INVOKE    GETMENU,HWND
+              MOV       HMENU,EAX
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+              LOCAL     STARTINFO:STARTUPINFO
+.IF           UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_INITMENUPOPUP
+              INVOKE    GETEXITCODEPROCESS,PROCESSINFO.HPROCESS,ADDR EXITCODE
+.IF           EAX==TRUE
+.IF           EXITCODE==STILL_ACTIVE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_GRAYED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_ENABLED
+.ELSE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_GRAYED
+.ENDIF
+.ELSE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_GRAYED
+.ENDIF
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_CREATE_PROCESS
+.IF           PROCESSINFO.HPROCESS!=0
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HPROCESS
+              MOV       PROCESSINFO.HPROCESS,0
+.ENDIF
+              INVOKE    GETSTARTUPINFO,ADDR STARTINFO
+              INVOKE    CREATEPROCESS,ADDR PROGRAMNAME,NULL,NULL,NULL,FALSE,\
+                        NORMAL_PRIORITY_CLASS,\
+                        NULL,NULL,ADDR startInfo,ADDR processInfo
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HTHREAD
+.ELSEIF       AX==IDM_TERMINATE
+              INVOKE    GETEXITCODEPROCESS,PROCESSINFO.HPROCESS,ADDR EXITCODE
+.IF           EXITCODE==STILL_ACTIVE
+              INVOKE    TERMINATEPROCESS,PROCESSINFO.HPROCESS,0
+.ENDIF
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HPROCESS
+              MOV       PROCESSINFO.HPROCESS,0
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START</Pre>
+
+<H3>分析：</H3>应用程序创建主窗口，保存菜单句柄以备后用。当用户在主菜单中选择了“Process”菜单项后，消息处理过程中接收到WM_INITMENUPOPUP消息，我们在此处修改弹出式菜单中的菜单项的“使能”和“非使能”，以便同一菜单有不同的显示。 
+
+<Pre class="code">.ELSEIF       UMSG==WM_INITMENUPOPUP
+              INVOKE    GETEXITCODEPROCESS,PROCESSINFO.HPROCESS,ADDR EXITCODE
+.IF           EAX==TRUE
+.IF           EXITCODE==STILL_ACTIVE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_GRAYED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_ENABLED
+.ELSE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_GRAYED
+.ENDIF
+.ELSE
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_CREATE_PROCESS,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_TERMINATE,MF_GRAYED
+.ENDIF</Pre>
+
+<P>我们之所以处理该消息的目的就是让菜单显示时有不同的外观以方便用户的使用。譬如；新进程尚未运行时，我们就变亮（使能）“菜单项“start 
+process”，而变灰（非使能）菜单项“terminate 
+process”。当新进程运行起来后，菜单的外观就应该是相反的。<BR>首先我们调用GetExitCodeProcess函数，其中传入由CreateProcess返回的句柄。如果GetExitCodeProcess返回FALSE，则表示进程尚未运行，我们就让菜单项“terminate 
+process”变灰；如果返回TRUE，表示新进程已经启动了，我们再检测是否正在运行，这通过比较ExitCode是否等于STILL_ACTIVE 
+来完成，如果相等，表示进程仍在运行，我们就让菜单项“start process”变灰，因为在我们的简单的应用程序中不提供同时运行多个进程的能力。 
+<Pre class="code"> .IF           AX==IDM_CREATE_PROCESS
+.IF           PROCESSINFO.HPROCESS!=0
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HPROCESS
+              MOV       PROCESSINFO.HPROCESS,0
+.ENDIF
+              INVOKE    GETSTARTUPINFO,ADDR STARTINFO
+              INVOKE    CREATEPROCESS,ADDR PROGRAMNAME,NULL,NULL,NULL,FALSE,\
+                        NORMAL_PRIORITY_CLASS,\
+                        NULL,NULL,ADDR startInfo,ADDR processInfo
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HTHREAD</Pre>
+  <BR>当用户选择了菜单项“start 
+process”时，我们先检测结构体PROCESS_INFORMATION中的成员变量hPRocess是否已经关闭。如果是第一次启动应用程序，那该变量为0，因为我们在.data分段定义结构体时已经初始化该值为0。如果该值不为0，则表明新进程已经结束，但是我们尚未关闭该进程的句柄（以减少该进程的引用记数），我们在此处完成该动作。<BR>我们调用GetStartupInfo函数来填充启动信息的结构体变量，而该变量将被传递到CreateProcess函数中去。调用CreateProcess生成新进程，我们不检查该函数的返回值为的是让问题简化一些，在实际应用中，必须做该项工作。在调用CreateProcess后，我们立即关闭在进程信息结构体参数中返回的主线程句柄，关闭线程句柄为的是减少该内核对象的引用记数，否则即使该线程退出后，其内核对象仍惨存在内核中得不到释放，这会引起资源泄露。进程其实也是一样，之所以我们不在该处关闭进程的句柄是因为稍后我们还要用该句柄去得到一些和进程相关的信息，至于线程，我们的应用程序不需要其相关信息。 
+
+<Pre class="code">.ELSEIF       AX==IDM_TERMINATE
+              INVOKE    GETEXITCODEPROCESS,PROCESSINFO.HPROCESS,ADDR EXITCODE
+.IF           EXITCODE==STILL_ACTIVE
+              INVOKE    TERMINATEPROCESS,PROCESSINFO.HPROCESS,0
+.ENDIF
+              INVOKE    CLOSEHANDLE,PROCESSINFO.HPROCESS
+              MOV       PROCESSINFO.HPROCESS,0</Pre>
+
+<P>当用户选择了菜单项“terminate 
+process”后，我们调用函数GetExitCodeProcess来检查新进程是否还存在，如果还存在我们就调用函数TerminateProcess来结束它。另外我们把它的句柄关闭掉，因为我们再也不用它了。
+
+<div class="rpindex"><a href="015.html"> 下一页</a><a href="013.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

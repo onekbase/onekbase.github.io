@@ -1,0 +1,769 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="44.html"> 上一页</a><a href="47.html"> 下一页</a></div>
+<h3>(1)、功能25H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置中断向量表</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝中断号<br>
+      DS:DX＝中断处理程序的入口地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>取MS-DOS操作系统的版本号</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝30H</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>AL＝0——V 1.0；对其它高版本有：AL＝主要版本号<br>        
+      AH＝次版本号(MS-DOS 3.1＝0AH，...)<br>        
+      BH＝OEM的序列号(Original Equipment Manufacturer)<br>        
+      BL:CX＝24位用户序列号</td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td valign="top">功能描述：</td>
+    <td>获得或改变操作系统中断的状态。在功能调用期间，将影响^C的检测</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝33H<br>
+      AL＝00H——取状态<br>
+      　＝01H——设置状态，DL＝00/01表示置该状态OFF/ON</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>取状态时，DL＝00/01——分别表示OFF/ON<br>
+      说明：<br>
+      　1、若AL中存入其它的功能号，则返回时，AL的值为0FFH；<br>
+      　2、若置AL为5，则启动驱动器号返回在DL中(1-A，2-B，…)
+    </td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>获得InDos标志的远地址，它由DOS维护表示DOS时活跃的</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝34H</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>ES:BX＝InDos标志的远地址<br>
+      若该单元值为1，表示DOS功能在执行，否则，则不是。</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>取指定中断号的入口地址</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝35H<br>
+      AL＝中断号</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>ES:BX＝中断处理程序的入口地址</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取或设置国家信息</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝38H
+      <table>
+        <tr>
+          <td colspan="2">当读取国家信息时</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>DS:DX＝存放返回信息的地址<br>
+            AL＝0——取当前国家信息<br>
+            AL＝1~0FEH——取国家代码小于255的国家信息<br>
+            AL＝0FFH——取代码大于等于255的国家信息，BX＝国家代码</td>
+        </tr>
+        <tr>
+          <td colspan="2">设置国家信息时</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>DX＝0FFFFH<br>
+            AL＝0~0FEH——设置国家代码小于255的国家信息<br>
+            AL＝0FFH——置代码大于等于255的国家信息，BX＝国家代码</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——调用成功，BX＝国家代码，否则。AX＝错误代码(02H)，其含义见错误代码表
+      <table>
+        <tr>
+          <td valign="top" colspan="2">
+            <p>说明国家信息如下所示：</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节0-1H：</td>
+          <td>日期格式：0—mdy、1—dmy、2—ymd</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节2-6H：</td>
+          <td>货币字符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节7-8H：</td>
+          <td>数值千位分割符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节9-0AH：</td>
+          <td>数值精度分割符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节0B-0CH：</td>
+          <td>日期间隔符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节0D-0EH：</td>
+          <td>时间间隔符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节0FH：</td>
+          <td>货币格式<br>
+            位0=0——货币符号在前，否则，货币符号在后<br>
+            位1=0——货币符号和数据之间无空格，否则，二者之间有一个空格<br>
+            位2=0——货币符号和小数点分开，否则，货币符号代替小数点</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节10H：</td>
+          <td>货币的小数位数</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节11H：</td>
+          <td>时间格式。位0=0—12小时制，否则，24小时制</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节12~15H：</td>
+          <td>Case-Map调用地址</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节16~17H：</td>
+          <td>字符串分割符</td>
+        </tr>
+        <tr>
+          <td valign="top" align="right">字节18~21H：</td>
+          <td>保留</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>输入/输出控制，其子功能描述：</td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="3">
+      <table>
+        <tr>
+          <td>　00H—取设备信息</td>
+          <td>01H—取设备信息</td>
+        </tr>
+        <tr>
+          <td>　02H—从字符设备驱动器接受控制数据</td>
+          <td>03H—发送控制数据到字符设备驱动器</td>
+        </tr>
+        <tr>
+          <td>　04H—从块设备驱动器接受控制数据&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td>05H—发送控制数据到块设备驱动器</td>
+        </tr>
+        <tr>
+          <td>　06H—检查输入状态</td>
+          <td>07H—检查输出状态</td>
+        </tr>
+        <tr>
+          <td>　08H—检查块设备是否为可拆卸设备</td>
+          <td>09H—检查设备是否为远程设备</td>
+        </tr>
+        <tr>
+          <td>　0AH—检查句柄是否为远程对象</td>
+          <td>0BH—改变共享访问入口数</td>
+        </tr>
+        <tr>
+          <td>　0CH—字符设备的一般I/O控制信息</td>
+          <td>0DH—块设备的一般I/O控制信息</td>
+        </tr>
+        <tr>
+          <td>　0EH—读取逻辑驱动器映射关系</td>
+          <td>0FH—设置逻辑驱动器映射关系</td>
+        </tr>
+        <tr>
+          <td colspan="2">说明：输入/输出子功能中的00H、06H和07H仅针对文件句柄，子功能00H~    
+            08H不支持网络设备。</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置程序段前缀(PSP)地址</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝50H<br>
+      BX＝新的PSP地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取程序段前缀(PSP)地址</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝51H</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>BX＝PSP地址</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+
+    <td>功能描述：</td>
+    <td>读取扩展的错误信息</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝59H<br>
+      BX＝00H</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>AX＝扩展的错误代码，其含义见错误代码表<br>
+      BH＝错误类型，其定义如下：
+      <table>
+        <tr>
+          <td>01h—资源短缺</td>
+          <td>02h—处于临时状态而非错误</td>
+        </tr>
+        <tr>
+          <td>03h—权限问题</td>
+          <td>04h—系统软件内部错误</td>
+        </tr>
+        <tr>
+          <td valign="top">05h—硬件失败</td>
+          <td>06h—系统软件失败，但不是活跃进程失败</td>
+        </tr>
+        <tr>
+          <td>07h—应用程序错</td>
+          <td>08h—文件或数据项未发现</td>
+        </tr>
+        <tr>
+          <td>09h—文件或数据项类型或格式错</td>
+          <td>0Ah—文件或数据项相互加锁</td>
+        </tr>
+        <tr>
+          <td colspan="2">0Bh—驱动器中坏磁盘，磁盘中坏区域或存储问题</td>
+        </tr>
+        <tr>
+          <td colspan="2">0Ch—其它错误</td>
+        </tr>
+      </table>
+      <p>BL＝建议采用的措施，其定义如下：<br>
+      　01h — 重试若干次后，再选"终止"或"忽略"<br>     
+      　02h — 重试若干次(二次之间要等待)后，再选"终止"或"忽略"<br>     
+      　03h — 从用户获取正确的信息<br>     
+      　04h — 终止应用程序，并清除其所使用资源<br>     
+      　05h — 立即终止程序，但没有清除其资源<br>     
+      　06h — 忽略错误<br>     
+      　07h — 消除错误原因，再重试</p>     
+      <p>CH＝错误地点，其定义如下：<br>
+      　01h — 不知道<br>     
+      　02h — 块设备(磁盘或磁盘模拟器)<br>     
+      　03h — 网络<br>     
+      　04h — 串行设备<br>     
+      　05h — 内存</p>     
+      <p>ES:DI＝插入磁盘标签的字符串，若AX＝0022h(非法改变磁盘)</td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td valign="top">功能描述：</td>
+    <td>读取机器名，读取/设置打印机配置
+      <table>
+        <tr>
+          <td>子功能号</td>
+          <td>功能描述</td>
+        </tr>
+        <tr>
+          <td>00h</td>
+          <td>读取机器名</td>
+        </tr>
+        <tr>
+          <td>02h</td>
+          <td>设置打印机安装字符串</td>
+        </tr>
+        <tr>
+          <td>03h</td>
+          <td>读取打印机安装字符串</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝5EH<br>
+      AL＝00H<br>
+      DS:DX＝接受字符串缓冲区的地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号(01H)，其含义见错误代码表，否则，<br>
+      CH＝00H——机器名未定义，否则，机器名已定义<br>
+      CL＝NetBIOS名称号(当CH≠00H时)<br>
+      DS:DX＝标识符地址(当CH≠00H时)</td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="2"></td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td>AH＝5EH<br>
+      AL＝02H<br>
+      BX＝重定向列表索引<br>
+      CX＝安装字符串的长度<br>
+      DS:SI＝安装字符串的地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——操作成功，否则，AX＝错误号(01H)，其含义见错误代码表</td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="2"></td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td>AH＝5EH<br>
+      AL＝03H<br>
+      BX＝重定向列表索引<br>
+      ES:DI＝接受字符串缓冲区的地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——操作成功，CX＝接受字符串的长度，否则，AX＝错误号(01H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td valign="top">功能描述：</td>
+    <td>设备重定向
+      <table>
+        <tr>
+          <td>子功能号</td>
+          <td>功能描述</td>
+        </tr>
+        <tr>
+          <td>02h</td>
+          <td>读取重定向列表索引</td>
+        </tr>
+        <tr>
+          <td>03h</td>
+          <td>重定向设备</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="2"></td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td>AH＝5FH<br>
+      AL＝02H<br>
+      BX＝重定向列表索引<br>
+      DS:SI＝接受本地设备名的16字节存储区地址<br>
+      ES:DI＝接受网络名的128字节存储区地址</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝1——操作失败，AX＝错误号(01H或12H)，其含义见错误代码表，否则，BH位0＝0H——设备合法，否则，设备非法<br>
+      BL＝设备类型——03H：打印机，04H：驱动器<br>
+      CX＝存储参数值<br>
+      DX＝被破坏<br>
+      BP＝被破坏<br>
+      DS:SI＝存放本地设备名的地址<br>
+      ES:DI＝存放网络名的地址</td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="2"></td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td>AH＝5FH<br>
+      AL＝03H<br>
+      BL＝设备类型——03H：打印机，04H：驱动器<br>
+      CX＝调用者保存的参数<br>
+      DS:SI＝本地设备名的16字节存储区地址<br>
+      ES:DI＝网络名的128字节存储区地址，紧跟其后是密码</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——操作成功，否则，AX＝错误号(01H、03H、05H、08H、0FH或12H)，其含义见错误代码表</td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取前导字节表</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝63H
+      <table>
+        <tr>
+          <td valign="top">AL</td>
+          <td>＝子功能<br>
+            ＝00H—读取系统前导字节表地址<br>
+            ＝01H—设置/清除临时控制台标志(DL＝00H/01H—清除/设置标志)<br>
+            ＝02H—读取临时控制台标志值</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>BX＝1——操作失败，AX＝错误号(01H)，其含义见错误代码表，否则，调用时，<br>
+      　　　若AL＝00H，则，DS:SI＝系统前导字节表地址；<br>
+      　　　若AL＝02H，则，DL＝临时控制台标志值
+    </td>
+  </tr>
+</table>
+
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取扩展的国家信息</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝65H<br>
+      BX＝代码页(-1＝活跃的CON设备)<br>
+      CX＝接受信息的缓冲区大小<br>
+      DX＝国家标识(-1＝缺省)<br>
+      ES:DI＝接受信息的缓冲区地址
+      <table>
+        <tr>
+          <td valign="top">AL</td>
+          <td>＝子功能<br>
+            ＝01H——读取一般的国家信息<br>
+            ＝02H——读取指向大写字母表的指针<br>
+            ＝04H——读取指向文件名大写字母表的指针<br>
+            ＝06H——读取指向校对表的指针<br>
+            ＝07H——读取指向DBCS向量的指针</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——操作成功，需要的数据存入调用的缓冲区，否则，AX＝错误号(02H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取/设置代码页</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AH＝66H<br>
+      AL＝子功能号：01H——读取代码页，02H——选择代码页<br>
+      BX＝选择的代码页(当AL＝02H)</td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>CF＝0——操作成功，当调用子功能01H时，BX＝活跃的代码页，DX＝缺省的代码页，否则，AX＝错误号(02H或65H)，其含义见错误代码表</td>
+  </tr>
+</table>
+<p></p>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置扩展的错误信息</td>
+  </tr>
+  <tr>
+    <td valign="top">入口参数：</td>
+    <td valign="top">AX＝5D0AH<br>
+      DS:DX＝扩展错误结构的地址，该结构的说明如下：
+      <table>
+        <tr>
+          <td valign="top">EXTEND_ERR&nbsp;</td>
+          <td>STRUCT<br>
+            RAx　WORD　?　;AX<br>
+            RBx　WORD　?　;BX<br>
+            RCx　WORD　?　; CX<br>    
+            RDx　WORD　?　; DX<br>    
+            RSi　WORD　?　; SI<br>    
+            RDi　WORD　?　; DI<br>    
+            RDs　WORD　?　; DS<br>    
+            REs　WORD　?　; ES<br>    
+            Pad　WORD　3 DUP(0)</td>     
+        </tr>
+        <tr>
+          <td>EXTEND_ERR</td>
+          <td>ENDS</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<p></p>
+<div class="rpindex"><a href="47.html"> 下一页</a><a href="44.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

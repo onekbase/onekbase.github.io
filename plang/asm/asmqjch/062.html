@@ -1,0 +1,1334 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="061.html"> 上一页</a><a href="063.html"> 下一页</a></div>
+<h1 align="center">PE教程6: Import Table（引入表）</h1>
+
+<p>本课我们将学习引入表。先警告一下，对于不熟悉引入表的读者来说，这是一堂又长又难的课，所以需要多读几遍，最好再打开调试器来好好分析相关结构。各位，努力啊！</p>
+
+<p>&nbsp;</p>
+
+<h3>理论:</h3>
+
+<p>首先，您得了解什么是引入函数。一个引入函数是被某模块调用的但又不在调用者模块中的函数，因而命名为&quot;import（引入）&quot;。引入函数实际位于一个或者更多的DLL里。调用者模块里只保留一些函数信息，包括函数名及其驻留的DLL名。现在，我们怎样才能找到PE文件中保存的信息呢? 转到 data directory 寻求答案吧。再回顾一把，下面就是
+PE header:</p>
+
+<pre class="code">        IMAGE_NT_HEADERS  STRUCT
+   Signature  dd        ?
+FileHeader IMAGE_FILE_HEADER <>
+OptionalHeader IMAGE_OPTIONAL_HEADER <>
+        IMAGE_NT_HEADERS  ENDS</pre>
+
+<p>optional header 最后一个成员就是 data directory（数据目录）:</p>
+
+<pre class="code"> IMAGE_OPTIONAL_HEADER32  STRUCT
+.... 
+ LoaderFlags  dd        ?
+     NumberOfRvaAndSizes  dd        ?
+DataDirectory IMAGE_DATA_DIRECTORY 16 dup(<>) 
+ IMAGE_OPTIONAL_HEADER32  ENDS</pre>
+
+<p>data directory 是一个 IMAGE_DATA_DIRECTORY 结构数组，共有16个成员。如果您还记得节表可以看作是PE文件各节的根目录的话，也可以认为
+data directory 是存储在这些节里的逻辑元素的根目录。明确点，data directory 包含了PE文件中各重要数据结构的位置和尺寸信息。
+每个成员包含了一个重要数据结构的信息。</p>
+
+<table>
+    <tr>
+        <th width="55" bgcolor="#006666">Member </th>
+        <th width="162" bgcolor="#006666">Info inside</th>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">0 </td>
+        <td align="center" width="162" bgcolor="#999900">Export symbols</td>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">1 </td>
+        <td align="center" width="162" bgcolor="#999900">Import symbols</td>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">2 </td>
+        <td align="center" width="162" bgcolor="#999900">Resources</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">3 </td>
+        <td align="center" width="162">Exception</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">4 </td>
+        <td align="center" width="162">Security</td>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">5 </td>
+        <td align="center" width="162" bgcolor="#999900">Base relocation</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">6 </td>
+        <td align="center" width="162">Debug</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">7 </td>
+        <td align="center" width="162">Copyright string</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">8 </td>
+        <td align="center" width="162">Unknown</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">9 </td>
+        <td align="center" width="162">Thread local storage (TLS)</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">10 </td>
+        <td align="center" width="162">Load configuration</td>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">11 </td>
+        <td align="center" width="162" bgcolor="#999900">Bound Import</td>
+    </tr>
+    <tr>
+        <td align="center" width="55" bgcolor="#999900">12 </td>
+        <td align="center" width="162" bgcolor="#999900">Import Address Table</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">13 </td>
+        <td align="center" width="162">Delay Import</td>
+    </tr>
+    <tr>
+        <td align="center" width="55">14 </td>
+        <td align="center" width="162">COM descriptor</td>
+    </tr>
+</table>
+
+<p>上面那些金色显示的是我熟悉的。了解
+data directory 包含域后，我们可以仔细研究它们了。data directory 的每个成员都是 IMAGE_DATA_DIRECTORY 结构类型的，其定义如下所示:</p>
+
+<pre class="code">IMAGE_DATA_DIRECTORY STRUCT <br>
+  VirtualAddress dd ? <br>
+  isize dd ? <br>
+IMAGE_DATA_DIRECTORY ENDS </pre>
+
+<p>VirtualAddress 实际上是数据结构的相对虚拟地址(RVA)。比如，如果该结构是关于import symbols的，该域就包含指向IMAGE_IMPORT_DESCRIPTOR
+数组的RVA。 <br>
+isize
+含有VirtualAddress所指向数据结构的字节数。</p>
+
+<p>下面就是如何找寻PE文件中重要数据结构的一般方法:</p>
+
+<ol>
+    <li>从 DOS header 定位到
+        PE header</li>
+    <li>从 optional header 读取 data directory 的地址。</li>
+    <li>IMAGE_DATA_DIRECTORY
+        结构尺寸乘上找寻结构的索引号: 比如您要找寻import symbols的位置信息，必须用IMAGE_DATA_DIRECTORY 结构尺寸(8 bytes)乘上1（import
+        symbols在data directory中的索引号）。</li>
+    <li>将上面的结果加上data directory地址，我们就得到包含所查询数据结构信息的
+        IMAGE_DATA_DIRECTORY 结构项。</li>
+</ol>
+
+<p>现在我们开始真正讨论引入表了。data directory数组第二项的VirtualAddress包含引入表地址。引入表实际上是一个 IMAGE_IMPORT_DESCRIPTOR 结构数组。每个结构包含PE文件引入函数的一个相关DLL的信息。比如，如果该PE文件从10个不同的DLL中引入函数，那么这个数组就有10个成员。该数组以一个全0的成员结尾。下面详细研究结构组成:</p>
+
+<pre class="code"> IMAGE_IMPORT_DESCRIPTOR  STRUCT
+union 
+         Characteristics  dd        ?
+      OriginalFirstThunk  dd        ?
+              ends
+           TimeDateStamp  dd        ?
+          ForwarderChain  dd        ?
+       Name1  dd        ?
+  FirstThunk  dd        ?
+ IMAGE_IMPORT_DESCRIPTOR  ENDS</pre>
+
+<p>结构第一项是一个union子结构。
+事实上，这个union子结构只是给 OriginalFirstThunk 增添了个别名，您也可以称其为&quot;Characteristics&quot;。 该成员项含有指向一个 IMAGE_THUNK_DATA 结构数组的RVA。<br>
+什么是 IMAGE_THUNK_DATA? 这是一个dword类型的集合。通常我们将其解释为指向一个 IMAGE_IMPORT_BY_NAME 结构的指针。注意
+IMAGE_THUNK_DATA 包含了指向一个
+IMAGE_IMPORT_BY_NAME 结构的指针: 而不是结构本身。<br>
+请看这里: 现有几个 IMAGE_IMPORT_BY_NAME 结构，我们收集起这些结构的RVA (IMAGE_THUNK_DATAs)组成一个数组，并以0结尾，然后再将数组的RVA放入 OriginalFirstThunk。<br>
+此 IMAGE_IMPORT_BY_NAME 结构存有一个引入函数的相关信息。再来研究
+IMAGE_IMPORT_BY_NAME 结构到底是什么样子的呢:</p>
+
+<pre class="code">    IMAGE_IMPORT_BY_NAME  STRUCT
+        Hint  dw        ?
+       Name1  db        ?
+    IMAGE_IMPORT_BY_NAME  ENDS</pre>
+
+<p>Hint 指示本函数在其所驻留DLL的引出表中的索引号。该域被PE装载器用来在DLL的引出表里快速查询函数。该值不是必须的，一些连接器将此值设为0。<br>
+Name1 含有引入函数的函数名。函数名是一个ASCIIZ字符串。注意这里虽然将Name1的大小定义成字节，其实它是可变尺寸域，只不过我们没有更好方法来表示结构中的可变尺寸域。The structure is provided so that
+you can refer to the data structure with descriptive names.<br>
+</p>
+
+<p>TimeDateStamp 和 ForwarderChain 可是高级东东: 让我们精通其他成员后再来讨论它们吧。</p>
+
+<p>Name1 含有指向DLL名字的RVA，即指向DLL名字的指针，也是一个ASCIIZ字符串。</p>
+
+<p>FirstThunk 与 OriginalFirstThunk 非常相似，它也包含指向一个
+IMAGE_THUNK_DATA 结构数组的RVA(当然这是另外一个IMAGE_THUNK_DATA 结构数组)。 <br>
+好了，如果您还在犯糊涂，就朝这边看过来: 现在有几个
+IMAGE_IMPORT_BY_NAME
+结构，同时您又创建了两个结构数组，并同样寸入指向那些
+IMAGE_IMPORT_BY_NAME 结构的RVAs，这样两个数组就包含相同数值了(可谓相当精确的复制啊)。
+最后您决定将第一个数组的RVA赋给 OriginalFirstThunk，第二个数组的RVA赋给 FirstThunk，这样一切都很清楚了。</p>
+
+<table>
+    <tr>
+        <th width="152" bgcolor="#006666">OriginalFirstThunk</th>
+        <th width="58">　</th>
+        <th width="183" bgcolor="#006666">IMAGE_IMPORT_BY_NAME</th>
+        <th width="27">　</th>
+        <th width="152" bgcolor="#006666">FirstThunk</th>
+    </tr>
+    <tr>
+        <td align="center" width="152"><p>| </p>        </td>
+        <td align="center" width="58">　</td>
+        <td align="center" width="183">　</td>
+        <td align="center" width="27">　</td>
+        <td align="center" width="152">| </td>
+    </tr>
+    <tr>
+        <td align="center" width="152"><table>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+        </table>        </td>
+        <td align="center" width="58"><table>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+        </table>        </td>
+        <td align="center" width="183"><table>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 1 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 2 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 3 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 4 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function n </td>
+            </tr>
+        </table>        </td>
+        <td align="center" width="27"><table>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>&lt;---</td>
+            </tr>
+        </table>        </td>
+        <td align="center" width="152"><table>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+        </table>        </td>
+    </tr>
+</table>
+
+<p>现在您应该明白我的意思。不要被IMAGE_THUNK_DATA这个名字弄糊涂: 它仅是指向 IMAGE_IMPORT_BY_NAME
+结构的RVA。 如果将 IMAGE_THUNK_DATA 字眼想象成RVA，就更容易明白了。OriginalFirstThunk 和 FirstThunk 所指向的这两个数组大小取决于PE文件从DLL中引入函数的数目。比如，如果PE文件从kernel32.dll中引入10个函数，那么IMAGE_IMPORT_DESCRIPTOR 结构的 Name1域包含指向字符串&quot;kernel32.dll&quot;的RVA，同时每个IMAGE_THUNK_DATA 数组有10个元素。</p>
+
+<p>下一个问题是: 为什么我们需要两个完全相同的数组? 为了回答该问题，我们需要了解当PE文件被装载到内存时，PE装载器将查找IMAGE_THUNK_DATA 和 IMAGE_IMPORT_BY_NAME 这些结构数组，以此决定引入函数的地址。然后用引入函数真实地址来替代由FirstThunk指向的 IMAGE_THUNK_DATA 数组里的元素值。因此当PE文件准备执行时，上图已转换成:</p>
+
+<table>
+    <tr>
+        <th bgcolor="#006666">OriginalFirstThunk</th>
+        <th>　</th>
+        <th bgcolor="#006666">IMAGE_IMPORT_BY_NAME</th>
+        <th>　</th>
+        <th bgcolor="#006666">FirstThunk</th>
+    </tr>
+    <tr>
+        <td align="center"><p>| </p>        </td>
+        <td align="center">　</td>
+        <td align="center">　</td>
+        <td align="center">　</td>
+        <td align="center">|        </td>
+    </tr>
+    <tr>
+        <td align="center"><table>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">IMAGE_THUNK_DATA                </td>
+            </tr>
+        </table>        </td>
+        <td align="center"><table>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>---&gt;</td>
+            </tr>
+        </table>        </td>
+        <td align="center"><table>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 1 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 2 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 3 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function 4 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#660066">Function n </td>
+            </tr>
+        </table>        </td>
+        <td align="center"><table>
+            <tr>
+                <td align="center" nowrap>   </td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>　</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>　</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>　</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>　</td>
+            </tr>
+            <tr>
+                <td align="center" nowrap>　</td>
+            </tr>
+        </table>        </td>
+        <td align="center"><table>
+            <tr>
+                <td align="center" bgcolor="#666600">Address of Function
+                1 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">Address of Function
+                2 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">Address of Function
+                3 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">Address of Function
+                4 </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">... </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#666600">Address of Function
+                n </td>
+            </tr>
+        </table>        </td>
+    </tr>
+</table>
+
+<p>由OriginalFirstThunk 指向的RVA数组始终不会改变，所以若还反过头来查找引入函数名，PE装载器还能找寻到。<br>
+  当然再简单的事物都有其复杂的一面。有些情况下一些函数仅由序数引出，也就是说您不能用函数名来调用它们: 您只能用它们的位置来调用。此时，调用者模块中就不存在该函数的 IMAGE_IMPORT_BY_NAME 结构。不同的，对应该函数的 IMAGE_THUNK_DATA 值的低位字指示函数序数，而最高二进位 (MSB)设为1。例如，如果一个函数只由序数引出且其序数是1234h，那么对应该函数的 IMAGE_THUNK_DATA 值是80001234h。Microsoft提供了一个方便的常量来测试dword值的MSB位，就是 IMAGE_ORDINAL_FLAG32，其值为80000000h。<br>
+假设我们要列出某个PE文件的所有引入函数，可以照着下面步骤走:</p>
+
+<ol>
+    <li>校验文件是否是有效的PE。</li>
+    <li>从 DOS header 定位到
+        PE header。</li>
+    <li>获取位于 OptionalHeader 数据目录地址。</li>
+    <li>转至数据目录的第二个成员提取其VirtualAddress值。</li>
+    <li>利用上值定位第一个 IMAGE_IMPORT_DESCRIPTOR 结构。</li>
+    <li>检查 OriginalFirstThunk值。若不为0，顺着 OriginalFirstThunk 里的RVA值转入那个RVA数组。若
+        OriginalFirstThunk 为0，就改用FirstThunk值。有些连接器生成PE文件时会置OriginalFirstThunk值为0，这应该算是个bug。不过为了安全起见，我们还是检查
+        OriginalFirstThunk值先。</li>
+    <li>对于每个数组元素，我们比对元素值是否等于IMAGE_ORDINAL_FLAG32。如果该元素值的最高二进位为1，
+        那么函数是由序数引入的，可以从该值的低字节提取序数。</li>
+    <li>如果元素值的最高二进位为0，就可将该值作为RVA转入
+        IMAGE_IMPORT_BY_NAME 数组，跳过 Hint 就是函数名字了。</li>
+    <li>再跳至下一个数组元素提取函数名一直到数组底部(它以null结尾)。现在我们已遍历完一个DLL的引入函数，接下去处理下一个DLL。</li>
+    <li>即跳转到下一个 IMAGE_IMPORT_DESCRIPTOR 并处理之，如此这般循环直到数组见底。(IMAGE_IMPORT_DESCRIPTOR 数组以一个全0域元素结尾)。</li>
+</ol>
+
+<h3>示例:</h3>
+
+<p>本例程打开一PE文件，将所有引入函数名读入一编辑控件，同时显示
+IMAGE_IMPORT_DESCRIPTOR 结构各域值。</p>
+
+<pre class="code">.386
+
+.model        flat,stdcall
+
+option casemap:none 
+
+     include  \masm32\include\windows.inc
+
+     include  \masm32\include\kernel32.inc
+
+     include  \masm32\include\comdlg32.inc
+
+     include  \masm32\include\user32.inc
+
+  includelib  \masm32\lib\user32.lib
+
+  includelib  \masm32\lib\kernel32.lib
+
+  includelib  \masm32\lib\comdlg32.lib
+
+
+
+ IDD_MAINDLG  equ       101
+
+    IDC_EDIT  equ       1000
+
+    IDM_OPEN  equ       40001
+
+    IDM_EXIT  equ       40003
+
+
+
+DlgProc proto :DWORD,:DWORD,:DWORD,:DWORD 
+
+ShowImportFunctions proto :DWORD 
+
+ShowTheFunctions proto :DWORD,:DWORD 
+
+AppendText proto :DWORD,:DWORD 
+
+
+
+         SEH  struct
+
+    PrevLink  dd        ?           ; the address of the previous seh structure
+
+          CurrentHandler  dd        ?           ; the address of the new exception handler
+
+  SafeOffset  dd        ?           ; The offset where it's safe to continue
+execution 
+
+     PrevEsp  dd        ?           ; the old value in esp
+
+     PrevEbp  dd        ?           ; The old value in ebp
+
+         SEH  ends
+
+
+
+.data
+
+     AppName  db        "PE tutorial no.6",0
+
+ofn OPENFILENAME <> 
+
+            FilterString  db        "Executable Files (*.exe,
+*.dll)",0,"*.exe;*.dll",0 
+
+
+              db        "All Files",0,"*.*",0,0
+
+           FileOpenError  db        "Cannot open the file for reading",0
+
+    FileOpenMappingError  db        "Cannot open the file for memory
+mapping",0 
+
+        FileMappingError  db        "Cannot map the file into memory",0
+
+
+  NotValidPE  db        "This file is not a valid PE",0
+
+        CRLF  db        0Dh,0Ah,0
+
+        ImportDescriptor  db        0Dh,0Ah,"================[
+IMAGE_IMPORT_DESCRIPTOR ]=============",0 
+
+  IDTemplate  db        "OriginalFirstThunk = %lX",0Dh,0Ah
+
+              db
+          "TimeDateStamp  =         %lX",0Dh,0Ah
+
+              db
+         "ForwarderChain  =         %lX",0Dh,0Ah
+
+              db
+       "Name  =         %s",0Dh,0Ah
+
+              db
+ "FirstThunk  =         %lX",0
+
+  NameHeader  db        0Dh,0Ah,"Hint Function",0Dh,0Ah
+
+              db
+"-----------------------------------------",0 
+
+            NameTemplate  db        "%u %s",0
+
+         OrdinalTemplate  db        "%u (ord.)",0
+
+
+
+.data?
+
+      buffer  db        512 dup(?)
+
+       hFile  dd        ?
+
+    hMapping  dd        ?
+
+    pMapping  dd        ?
+
+     ValidPE  dd        ?
+
+
+
+.code
+
+      start:
+
+              invoke    GetModuleHandle,NULL
+
+              invoke    DialogBoxParam, eax, IDD_MAINDLG,NULL,addr DlgProc, 0
+
+              invoke    ExitProcess, 0
+
+
+
+     DlgProc  proc      hDlg:DWORD, uMsg:DWORD, wParam:DWORD, lParam:DWORD
+
+.if           uMsg==WM_INITDIALOG
+
+              invoke
+SendDlgItemMessage,hDlg,IDC_EDIT,EM_SETLIMITTEXT,0,0 
+
+.elseif       uMsg==WM_CLOSE
+
+              invoke    EndDialog,hDlg,0
+
+.elseif       uMsg==WM_COMMAND
+
+.if           lParam==0
+
+              mov       eax,wParam
+
+.if           ax==IDM_OPEN
+
+              invoke    ShowImportFunctions,hDlg
+
+.else              ; IDM_EXIT
+
+              invoke
+SendMessage,hDlg,WM_CLOSE,0,0 
+
+.endif
+
+.endif
+
+.else
+
+              mov       eax,FALSE
+
+              ret
+
+.endif
+
+              mov       eax,TRUE
+
+              ret
+
+     DlgProc  endp
+
+
+
+  SEHHandler  proc      uses edx pExcept:DWORD, pFrame:DWORD,
+pContext:DWORD, pDispatch:DWORD 
+
+              mov       edx,pFrame
+
+              assume    edx:ptr SEH
+
+              mov       eax,pContext
+
+              assume    eax:ptr CONTEXT
+
+              push      [edx].SafeOffset
+
+              pop       [eax].regEip
+
+              push      [edx].PrevEsp
+
+              pop       [eax].regEsp
+
+              push      [edx].PrevEbp
+
+              pop       [eax].regEbp
+
+              mov       ValidPE, FALSE
+
+              mov       eax,ExceptionContinueExecution
+
+              ret
+
+  SEHHandler  endp
+
+
+
+     ShowImportFunctions  proc      uses edi hDlg:DWORD
+
+              LOCAL     seh:SEH
+
+              mov       ofn.lStructSize,SIZEOF
+
+         ofn  mov       ofn.lpstrFilter, OFFSET FilterString
+
+              mov       ofn.lpstrFile, OFFSET buffer
+
+              mov       ofn.nMaxFile,512
+
+              mov       ofn.Flags, OFN_FILEMUSTEXIST or OFN_PATHMUSTEXIST or
+           OFN_LONGNAMES  or        OFN_EXPLORER or OFN_HIDEREADONLY
+
+              invoke    GetOpenFileName, ADDR ofn
+
+.if           eax==TRUE
+
+              invoke    CreateFile, addr buffer, GENERIC_READ,
+FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL
+
+
+.if           eax!=INVALID_HANDLE_VALUE
+
+              mov       hFile, eax
+
+              invoke    CreateFileMapping, hFile,
+NULL, PAGE_READONLY,0,0,0 
+
+.if           eax!=NULL
+
+              mov       hMapping, eax
+
+              invoke
+MapViewOfFile,hMapping,FILE_MAP_READ,0,0,0 
+
+.if           eax!=NULL
+
+              mov
+pMapping,eax 
+
+              assume
+fs:nothing 
+
+              push
+fs:[0] 
+
+              pop
+seh.PrevLink 
+
+              mov
+seh.CurrentHandler,offset SEHHandler 
+
+              mov
+seh.SafeOffset,offset FinalExit 
+
+              lea
+eax,seh 
+
+              mov
+fs:[0], eax 
+
+              mov
+seh.PrevEsp,esp 
+
+              mov
+seh.PrevEbp,ebp 
+
+              mov       edi,
+pMapping 
+
+              assume
+edi:ptr IMAGE_DOS_HEADER 
+
+.if
+[edi].e_magic==IMAGE_DOS_SIGNATURE 
+
+
+              add       edi, [edi].e_lfanew
+
+
+              assume    edi:ptr IMAGE_NT_HEADERS
+
+
+.if           [edi].Signature==IMAGE_NT_SIGNATURE
+
+              mov
+ValidPE, TRUE 
+
+.else
+
+
+
+              mov       ValidPE, FALSE
+
+
+.endif
+
+.else
+
+
+              mov       ValidPE,FALSE
+
+.endif
+
+  FinalExit:
+
+              push
+seh.PrevLink 
+
+              pop       fs:[0]
+
+
+.if
+ValidPE==TRUE 
+
+
+              invoke    ShowTheFunctions, hDlg, edi
+
+.else
+
+
+              invoke    MessageBox,0, addr NotValidPE, addr AppName,
+MB_OK+MB_ICONERROR 
+
+.endif
+
+
+              invoke
+UnmapViewOfFile, pMapping 
+
+.else
+
+              invoke
+MessageBox, 0, addr FileMappingError, addr AppName,
+MB_OK+MB_ICONERROR 
+
+.endif
+
+              invoke    CloseHandle,hMapping
+
+.else
+
+              invoke    MessageBox, 0, addr
+FileOpenMappingError, addr AppName, MB_OK+MB_ICONERROR 
+
+.endif
+
+              invoke    CloseHandle, hFile
+
+.else
+
+              invoke    MessageBox, 0, addr FileOpenError, addr
+AppName, MB_OK+MB_ICONERROR 
+
+.endif
+
+.endif
+
+              ret
+
+     ShowImportFunctions  endp
+
+
+
+  AppendText  proc      hDlg:DWORD,pText:DWORD
+
+              invoke
+SendDlgItemMessage,hDlg,IDC_EDIT,EM_REPLACESEL,0,pText 
+
+              invoke
+SendDlgItemMessage,hDlg,IDC_EDIT,EM_REPLACESEL,0,addr CRLF 
+
+              invoke
+SendDlgItemMessage,hDlg,IDC_EDIT,EM_SETSEL,-1,0 
+
+              ret
+
+  AppendText  endp
+
+
+
+ RVAToOffset  PROC      uses edi esi edx ecx pFileMap:DWORD,RVA:DWORD
+
+              mov       esi,pFileMap
+
+              assume    esi:ptr IMAGE_DOS_HEADER
+
+              add       esi,[esi].e_lfanew
+
+              assume    esi:ptr IMAGE_NT_HEADERS
+
+              mov       edi,RVA     ; edi == RVA
+
+              mov       edx,esi
+
+              add       edx,sizeof IMAGE_NT_HEADERS
+
+              mov       cx,[esi].FileHeader.NumberOfSections
+
+              movzx     ecx,cx
+
+              assume    edx:ptr IMAGE_SECTION_HEADER
+
+.while        ecx>0    ; check all sections
+
+.if           edi>=[edx].VirtualAddress
+
+              mov       eax,[edx].VirtualAddress
+
+
+              add       eax,[edx].SizeOfRawData
+
+.if           edi< eax       ; The address
+          is  in        this section
+
+              mov
+eax,[edx].VirtualAddress 
+
+              sub       edi,eax
+
+              mov
+eax,[edx].PointerToRawData 
+
+              add       eax,edi     ;
+eax == file offset 
+
+              ret
+
+.endif
+
+.endif
+
+              add       edx,sizeof IMAGE_SECTION_HEADER
+
+              dec       ecx
+
+.endw
+
+              assume    edx:nothing
+
+              assume    esi:nothing
+
+              mov       eax,edi
+
+              ret
+
+ RVAToOffset  endp
+
+
+
+        ShowTheFunctions  proc      uses esi ecx ebx hDlg:DWORD, pNTHdr:DWORD
+
+              LOCAL     temp[512]:BYTE
+
+              invoke    SetDlgItemText,hDlg,IDC_EDIT,0
+
+              invoke    AppendText,hDlg,addr buffer
+
+              mov       edi,pNTHdr
+
+              assume    edi:ptr IMAGE_NT_HEADERS
+
+              mov       edi, [edi].OptionalHeader.DataDirectory[sizeof
+IMAGE_DATA_DIRECTORY].VirtualAddress 
+
+              invoke    RVAToOffset,pMapping,edi
+
+              mov       edi,eax
+
+              add       edi,pMapping
+
+              assume    edi:ptr IMAGE_IMPORT_DESCRIPTOR
+
+.while        !([edi].OriginalFirstThunk==0 &&
+  [edi].TimeDateStamp==0  &&        [edi].ForwarderChain==0
+              &&        [edi].Name1==0 && [edi].FirstThunk==0)
+
+              invoke    AppendText,hDlg,addr
+ImportDescriptor 
+
+              invoke    RVAToOffset,pMapping, [edi].Name1
+
+
+              mov       edx,eax
+
+              add       edx,pMapping
+
+              invoke    wsprintf, addr temp, addr
+IDTemplate, [edi].OriginalFirstThunk,[edi].TimeDateStamp,[edi].ForwarderChain,edx,[edi].FirstThunk
+              invoke    AppendText,hDlg,addr temp
+
+.if           [edi].OriginalFirstThunk==0
+
+              mov
+esi,[edi].FirstThunk 
+
+.else
+
+              mov
+esi,[edi].OriginalFirstThunk 
+
+.endif
+
+              invoke    RVAToOffset,pMapping,esi
+
+              add       eax,pMapping
+
+              mov       esi,eax
+
+              invoke    AppendText,hDlg,addr NameHeader
+
+.while        dword ptr [esi]!=0
+
+              test      dword ptr
+[esi],IMAGE_ORDINAL_FLAG32 
+
+              jnz       ImportByOrdinal
+
+              invoke
+RVAToOffset,pMapping,dword ptr [esi] 
+
+              mov       edx,eax
+
+              add       edx,pMapping
+
+              assume    edx:ptr
+IMAGE_IMPORT_BY_NAME 
+
+              mov       cx, [edx].Hint
+
+              movzx     ecx,cx
+
+              invoke    wsprintf,addr
+temp,addr NameTemplate,ecx,addr [edx].Name1 
+
+              jmp       ShowTheText
+
+        ImportByOrdinal:
+
+              mov       edx,dword ptr [esi]
+
+              and       edx,0FFFFh
+
+              invoke    wsprintf,addr
+temp,addr OrdinalTemplate,edx 
+
+            ShowTheText:
+
+              invoke    AppendText,hDlg,addr
+temp 
+
+              add       esi,4
+
+.endw
+
+              add       edi,sizeof IMAGE_IMPORT_DESCRIPTOR
+
+.endw
+
+              ret
+
+        ShowTheFunctions  endp
+
+              end       start
+
+</pre>
+<h3>分析:</h3>
+
+<p>本例中，用户点击打开菜单显示文件打开对话框，检验文件的PE有效性后调用
+ShowTheFunctions。</p>
+
+<pre class="code">ShowTheFunctions proc uses esi ecx ebx
+hDlg:DWORD, pNTHdr:DWORD <br>
+   LOCAL temp[512]:BYTE </pre>
+
+<p>保留512字节堆栈空间用于字符串操作。</p>
+
+<pre class="code">   invoke
+SetDlgItemText,hDlg,IDC_EDIT,0 </pre>
+
+<p>清除编辑控件内容。</p>
+
+<pre class="code">   invoke AppendText,hDlg,addr
+buffer </pre>
+
+<p>将PE文件名插入编辑控件。 AppendText 通过传递一个 EM_REPLACESEL 消息以通知向编辑控件添加文本。然后它又向编辑控件发送一个设置了
+wParam=-1和lParam=0的EM_SETSEL 消息，使光标定位到文本末。</p>
+
+<pre class="code">   mov edi,pNTHdr <br>
+   assume edi:ptr IMAGE_NT_HEADERS <br>
+   mov edi, [edi].OptionalHeader.DataDirectory[sizeof
+IMAGE_DATA_DIRECTORY].VirtualAddress </pre>
+
+<p>获取import symbols的RVA。edi起初指向
+PE header，以此我们可以定位到数据目录数组的第二个数组元素来得到虚拟地址值。</p>
+
+<pre class="code">   invoke
+RVAToOffset,pMapping,edi <br>
+   mov edi,eax <br>
+   add edi,pMapping </pre>
+
+<p>这儿对PE编程初学者来说可能有点困难。在PE文件中大多数地址多是RVAs 而 
+  RVAs只有当PE文件被PE装载器装入内存后才有意义。 本例中，我们直接将文件映射到内存而不是通过PE装载器载入，因此我们不能直接使用那些RVAs。必须先将那些RVAs转换成文件偏移量，RVAToOffset函数就起到这个作用。 
+  这里不准备详细分析。指出的是，它还将给定的RVA和PE文件所有节的始末RVA作比较（检验RVA的有效性），然后通过IMAGE_SECTION_HEADER 结构中的PointerToRawData域（当然是所在节的那个PointerToRawData域啦）将RVA转换成文件偏移量。<br>
+  函数使用需要传递两个参数: 内存映射文件指针和所要转换的RVA。eax里返回文件偏移量。上面代码中，我们必须将文件偏移量加上内存映射文件指针以转换成虚拟地址。是不是有点复杂? 
+  :)</p>
+
+<pre class="code">   assume edi:ptr
+IMAGE_IMPORT_DESCRIPTOR <br>
+   .while !([edi].OriginalFirstThunk==0 &amp;&amp;
+[edi].TimeDateStamp==0 &amp;&amp; [edi].ForwarderChain==0
+&amp;&amp; [edi].Name1==0 &amp;&amp; [edi].FirstThunk==0) </pre>
+
+<p>edi现在指向第一个
+IMAGE_IMPORT_DESCRIPTOR 结构。接下来我们遍历整个结构数组直到遇上一个全0结构，这就是数组末尾了。</p>
+
+<pre class="code">              invoke    AppendText,hDlg,addr ImportDescriptor
+              invoke    RVAToOffset,pMapping, [edi].Name1
+              mov       edx,eax
+              add       edx,pMapping</pre>
+<p>我们要显示当前 IMAGE_IMPORT_DESCRIPTOR 结构的值。Name1 不同于其他结构成员，它含有指向相关dll名的RVA。因此必须先将其转换成虚拟地址。</p>
+
+<pre class="code">                invoke
+wsprintf, addr temp, addr IDTemplate, [edi].OriginalFirstThunk,[edi].TimeDateStamp,[edi].ForwarderChain,edx,[edi].FirstThunk
+              invoke    AppendText,hDlg,addr temp </pre>
+
+<p>显示当前 IMAGE_IMPORT_DESCRIPTOR 结构的值。</p>
+
+<pre class="code">.              if        [edi].OriginalFirstThunk==0
+              mov       esi,[edi].FirstThunk
+.else
+              mov       esi,[edi].OriginalFirstThunk
+.endif</pre>
+
+<p>接下来准备遍历 IMAGE_THUNK_DATA 数组。通常我们会选择OriginalFirstThunk指向的那个数组，不过，如果某些连接器错误地将OriginalFirstThunk 置0，这可以通过检查OriginalFirstThunk值是否为0判断。这样的话，只要选择FirstThunk指向的数组了。</p>
+
+<pre class="code">     invoke
+RVAToOffset,pMapping,esi <br>
+     add eax,pMapping <br>
+     mov esi,eax </pre>
+
+<p>同样的，OriginalFirstThunk/FirstThunk值是一个RVA。必须将其转换为虚拟地址。</p>
+
+<pre class="code">     invoke
+AppendText,hDlg,addr NameHeader<br>
+     .while dword ptr [esi]!=0 </pre>
+
+<p>现在我们准备遍历 IMAGE_THUNK_DATAs 数组以查找该DLL引入的函数名，直到遇上全0项。</p>
+
+<pre class="code">                   test      dword ptr [esi],IMAGE_ORDINAL_FLAG32 <br>
+              jnz       ImportByOrdinal 
+</pre>
+
+<p>第一件事是校验IMAGE_THUNK_DATA 是否含有IMAGE_ORDINAL_FLAG32标记。检查IMAGE_THUNK_DATA 的MSB是否为1，如果是1，则函数是通过序数引出的，所以不需要更进一步处理了。直接从
+IMAGE_THUNK_DATA 提取低字节获得序数，然后是下一个IMAGE_THUNK_DATA 双字。</p>
+
+<pre class="code">              invoke    RVAToOffset,pMapping,dword ptr [esi]
+              mov       edx,eax
+              add       edx,pMapping
+              assume    edx:ptr IMAGE_IMPORT_BY_NAME</pre>
+
+<p>如果IMAGE_THUNK_DATA 的MSB是0，那么它包含了IMAGE_IMPORT_BY_NAME 结构的RVA。需要先转换为虚拟地址。</p>
+
+<pre class="code">              mov       cx, [edx].Hint
+              movzx     ecx,cx
+              invoke    wsprintf,addr temp,addr NameTemplate,ecx,addr [edx].Name1
+              jmp       ShowTheText</pre>
+
+<p>Hint 是字类型，所以先转换为双字后再传递给wsprintf，然后我们将hint和函数名都显示到编辑控件中。</p>
+
+<pre class="code">        ImportByOrdinal:
+              mov       edx,dword ptr [esi]
+              and       edx,0FFFFh
+              invoke    wsprintf,addr temp,addr OrdinalTemplate,edx</pre>
+
+<p>在仅用序数引出函数的情况中，先清空高字再显示序数。</p>
+
+<pre class="code">ShowTheText: <br>
+              invoke    AppendText,hDlg,addr
+temp <br>
+              add       esi,4 </pre>
+
+<p>在编辑控件中插入相应的函数名/序数后，跳转到下个
+IMAGE_THUNK_DATA。</p>
+
+<pre class="code">    .endw <br>
+    add edi,sizeof IMAGE_IMPORT_DESCRIPTOR </pre>
+
+<p>处理完当前IMAGE_THUNK_DATA 数组里的所有双字，跳转到下个IMAGE_IMPORT_DESCRIPTOR 开始处理其他DLLs的引入函数了。</p>
+
+<h3>附录:</h3>
+
+<p>让我们再来讨论一下bound import。当PE装载器装入PE文件时，检查引入表并将相关DLLs映射到进程地址空间。然后象我们这样遍历IMAGE_THUNK_DATA 数组并用引入函数的真实地址替换IMAGE_THUNK_DATAs 值。这一步需要很多时间。如果程序员能事先正确预测函数地址，PE装载器就不用每次装入PE文件时都去修正IMAGE_THUNK_DATAs 值了。Bound import就是这种思想的产物。<br>
+为了方便实现，Microsoft出品的类似Visual Studio的编译器多提供了bind.exe这样的工具，由它检查PE文件的引入表并用引入函数的真实地址替换IMAGE_THUNK_DATA 值。当文件装入时，PE装载器必定检查地址的有效性，如果DLL版本不同于PE文件存放的相关信息，或则DLLs需要重定位，那么装载器认为原先计算的地址是无效的，它必定遍历OriginalFirstThunk指向的数组以获取引入函数新地址。<br>
+Bound import在本课中并非很重要，我们确省就是用到了OriginalFirstThunk。</p>
+
+<div class="rpindex"><a href="063.html"> 下一页</a><a href="061.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

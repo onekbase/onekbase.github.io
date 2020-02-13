@@ -1,0 +1,361 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <!导航条>
+  <div class="lpindex"><a href="index.html">目录</a> <a href="7-24.html">上一页</a> <a href="8-11.html">下一页</a> </div>
+  <h1>第8章 文件句柄功能与磁盘</h1>
+  <p>FCB功能的存在是出于历史的原因，虽然它也有一些很显著的优点，但随着DOS版本的升级，FCB功能逐渐被另一套文件处理功能所取代。即使是DOS的设计者Microsoft公司也并不提倡程序员使用FCB功能。因此在本章我们将研究DOS提供的另一套功能--&quot;文件句柄功能&quot;的应用。</p>
+  <h2>8．1 文件句柄功能调用</h2>
+  <h4>8.1导航：<a href="8-1.html">第一页</a> <a href="8-11.html">第二页</a> <a href="8-12.html">第三页</a> <a href="8-13.html">第四页</a> <a href="8-14.html">第五页</a> <a href="8-15.html">第六页</a></h4>
+  <p>我们在前面讨论过，使用FCB处理文件有一个十分显著的缺点，那就是无法处理&quot;树形目录&quot;。这并不能怪FCB的功能弱，FCB功能源于CP/M操作系统，而树形目录是在DOS2.0版中才引入PC中的，所以利用FCB无法处理也就不足为奇了。</p>
+  <p> 　　所谓树形目录，是Microsoft从UNIX/XENIX操作系统中移植到DOS中的，它引入了&quot;子目录&quot;的的概念，使磁盘在有限的空间内能够更合理地容纳更多的文件，方便了用户对文件的管理工作。</p>
+  <p> 为了使程序设计人员能够有效的处理树形目录，DOS提供了一套称之为&quot;文件句柄功能调用&quot;的API接口，和FCB功能相比，文件句柄功能的一个突出特点就是将FCB中保存的文件特征信息隐藏在DOS内部，而对于我们设计的程序，DOS只提供了一个16位的数据，这个数据就是我们所说的&quot;文件句柄&quot;。我们现在就来研究一下有关&quot;文件句柄&quot;功能所需的一个很重要的基础知识--文件名与路径名。</p>
+  <p> 我们使用FCB功能打开文件时，需要先初始化一个&quot;未打开&quot;的FCB，也就是在FCB的前12个字节中填入相应驱动器符和文件名。这实际上是给DOS提供执行打开操作的依据。而使用文件句柄功能处理文件也有这样一个步骤。但是我们需要提供给DOS的数据就不象FCB那么死板了。主要的区别在于我们所给出的数据不仅有驱动器符和文件名，还可以包含路径名。DOS规定我们给出的数据应具有下面这样的结构：</p>
+  <p> [Drive][路径名]&amp;LT;文件名&amp;GT;.&amp;LT;扩展名&amp;GT;,00H</p>
+  <p> 其中Drive项是驱动器名，同FCB的规定不同，DOS不再接受0，1，2，3这样的数字表示，而要求我们直接使用A:，B:，C:，D:这样的表示法；[路径名]一项和我们一般理解的路径名是一致的，即一系列用&quot;\&quot;隔离开的子目录名。文件名和扩展名没什么更多说的，需注意的是其中的那个&quot;.&quot;不能省去；至于未尾那个&quot;00H&quot;，这是DOS所规定必须要有的表示结尾的标志。所以我们说我们提供给DOS的数据是一个由ASCII字符组成的字符串加上一个&quot;0&quot;字节构成，习惯上我们把这串数据称为ASCIIZ串（ASCII ZERO）。比如我们需要处理WINDOWS系统中名为WIN386.EXE的文件，那么我们将这样定义ASCIIZ串：</p>
+  <p> FILENAME  DB'C:\WINDOWS\WIN386.EXE',0 </p>
+  <p>这里还有几点我要提醒大家，凡是&quot;[ ]&quot;中的项都是可以省略的，DOS会按&quot;当前情况&quot;处理。另外，DOS不要求我们定义象&quot;文件控制块&quot;那样的数据结构，因此，ASCIIZ串可以放在内存中任意地方。同时，在存取文件时DOS也不需要我们定义DTA，不过DOS要求我们给出指向数据缓冲区的指针。简而言之，有关FCB功能的那一套并未&quot;传染&quot;给文件句柄功能。关于这些问题我们将在稍后做更深入的讨论。</p>
+  <p> 　　有了这些初步的认识，我们下面所做的工作就是研究文件句柄功能的具体应用方法。表7-1给出了DOS提供的最常用的文件句柄功能调用，仿照前半章的内容，我们仍按照&quot;打开关闭--读出写入--其它功能&quot;的顺序来分别讨论。 </p>
+  <p>&nbsp;</p>
+  <table>
+    <tr>
+      <td colspan="18" >表7-1 文件句柄功能调用</td>
+    </tr>
+    <tr>
+      <td >功能用途</td>
+      <td >参数</td>
+      <td colspan="10" >返回 </td>
+    </tr>
+    <tr>
+      <td >3CH建立文件</td>
+      <td>CX=文件属性<br />
+        DS:DX指向ASCIIZ串</td>
+      <td colspan="10">成功:CF标志清0,AX=文件句柄<br />
+        失败:CF标志置1,AX=错误代码<sup>*</sup></td>
+    </tr>
+    <tr>
+      <td >3DH打开文件</td>
+      <td>AL=访问方式<br />
+        DS:DX指向ASCIIZ串</td>
+      <td colspan="10">成功:CF标志清0,AX=文件句柄<br />
+        失败:CF标志置1,AX=错误代码</td>
+    </tr>
+    <tr>
+      <td >3EH关闭文件</td>
+      <td>BX=文件句柄</td>
+      <td colspan="10">成功:CF标志清0,AX=文件句柄<br />
+        失败:CF标志置1,AX=错误代码</td>
+    </tr>
+    <tr>
+      <td >3FH读文件</td>
+      <td>BX=文件句柄<br />
+        CX=要读入的字节数<br />
+        DS:DX指向缓冲区</td>
+      <td colspan="10">成功:CF标志清0,AX=实际读入的字节数<br />
+        失败:CF标志置1,AX=错误代码</td>
+    </tr>
+    <tr>
+      <td >40H写文件</td>
+      <td>BX=文件句柄<br />
+        CX=要写的字节数<br />
+        DS:DX指向缓冲区</td>
+      <td colspan="10">成功:CF标志清0,AX=实际写出的字节数<br />
+        失败:CF标志置1,AX=错误代码</td>
+    </tr>
+    <tr>
+      <td >41H删除文件</td>
+      <td>BX=文件句柄</td>
+      <td colspan="10">成功:CF标志清0 失败:CF标志置1</td>
+    </tr>
+    <tr>
+      <td >42H移动文件读写指针</td>
+      <td>AL=方式代码<br />
+        BX=文件句柄<br />
+        CX:DX=偏移值</td>
+      <td colspan="10">成功:CF标志清0,DX:AX=新的文件指针<br />
+        失败:CF标志置1,AX=错误代码</td>
+    </tr>
+    <tr>
+      <td colspan="18"> 　　* 注：错误代码在后面讨论。 </td>
+    </tr>
+  </table>
+  <p>在这一节我们主要讨论文件的打开与关闭功能，借此以加深对文件句柄功能的理解。请大家把我们的老朋友--DEBUG搬入内存，并用&quot;A&quot;命令输入下面这段小程序：</p>
+  <pre class="code">C:\ASM\&gt;DEBUG[Enter] 
+-a100[Enter]
+123D:0100	JMP	0124			；跳过数据区
+123D:0102	DB	'C:\COMMAND.COM',0			；定义一个ASCIIZ串
+123D:0111	DB	'OK...',0D,0A,24			；程序执行正确的信息
+123D:0119	DB	'ERROR...',0D,0A,24			；程序出错信息
+123D:0124	MOV	AX,3D00			；按读方式打开文件
+123D:0127	MOV	DX,0102			；DX指向ASCIIZ串
+123D:012A	INT	21				；打开文件
+123D:012C	JB	0139			；出错，转0139
+123D:012E	MOV	BX,AX			；文件句柄送入BX寄存器
+123D:0130	MOV	DX,0111			；显示程序正确执行的信息
+123D:0133	MOV	AH,09			
+123D:0135	INT	21			
+123D:0137	JMP	0140			；转0140结束进程
+123D:0139	MOV	DX,0119			；显示程序出错信息			
+123D:013C	MOV	AH,09			
+123D:013E	INT	21			
+123D:0140	MOV	AH,3E			；用3EH功能
+123D:0142	INT	21			；关闭文件
+123D:0140	MOV	AH,4C			；结束进程
+123D:0142 	INT 	21 			
+
+</pre>
+  <p>通过这个实验程序大家应该掌握两点：其一，ASCIIZ串的定义方法；其二，3DH功能的应用。第一个问题可以对照我们前面讨论过的内容，而第二个问题可以参考后面对3DH功能的说明。我们现在来实际跟踪一下这个程序，看看还能发现什么新鲜的东西。</p>
+  <pre class="code">-g=100 12c[Enter]
+AX=0005 BX=0000 CX=0042 DX=0102 SP=FFFE BP=0000 SI=0000 DI=0000
+DS=123D ES=123D SS=123D CS=123D IP=012C NV UP EI PL NZ NA PO NC
+123D:012C 7209 JB 0139
+</pre>
+  <p>用&quot;G&quot;命令在012CH处打一个断点，则DEBUG会在执行INT 21指令后为我们列出各寄存器的情况。可以看到AX寄存器返回一个16位的数字05H，这就是我们所需要的那个所谓的&quot;句柄&quot;。这一个数字所代表的就是我们刚刚打开的那个文件，从此以后我们对这个文件进行其它操作时必须要给DOS提供这个数字。</p>
+  <p> 前面几节使用FCB功能打开文件后，DOS会在文件控制块中填入好多的信息供程序使用。而使用句柄功能却只能得到一个简单的数字。这不能不说是句柄功能与FCB功能的最大差别了。当然，事实上DOS仍然要取得有关文件的特征信息的，只不过这些信息都存于DOS内部，由DOS私用而已。</p>
+  <p> 标志寄存器中的CF位为0，表明DOS成功的打开了要处理的文件，如果CF标志为1则说明功能调用执行出错。因此应用指令依据CF标志的状态转移即可区分文件操作是否正确。指令&quot;JNC&quot;恰好能达到此目的：</p>
+  <p>助记符：JNC（Jump if Not Carry）<br />
+    用　途：依据CF标志状态转移<br />
+    格　式：JNC  目的地址<br />
+    执　行：若CF标志等于0，此指令将使CPU转移至目的地址处继续执行程序，<br />
+    否则CPU执行JNC指令下面的程序</p>
+  <p>这是一个条件转移指令，注意它只能进行短程转移。与此指令相对的指令是JC，第六章里已经介绍过。句柄功能返回错误状态的方法与FCB功能不同，应加以注意。</p>
+  <p> 　　先别忙着&quot;GO&quot;这个程序，我想问诸位一句大家是否对AX寄存器中的&quot;句柄&quot;有什么疑问？问题并不难发现，为什么这个句柄不是&quot;00H&quot;呢？我们只打开了一个文件呀？这里面有个不大不小的秘密，我打算在下一节中将其&quot;曝光&quot;。</p>
+  <p> 程序中使用的3EH功能用于关闭文件，所谓关闭，其含义和我们在前面所讲的一样，也是将BUFFER中的数据存入磁盘同时更新目录项，这里我们就不多讨论了，要注意的是使用这个功能前别忘记在BX寄存器中放入要关闭的文件对应的&quot;句柄&quot;。</p>
+  <p> 附带说明一下，关于打开文件时在AL寄存器中填入的&quot;存取方式&quot;一项，这是一个取值为0，1，2的数据，分别表示&quot;读&quot;、&quot;写&quot;和&quot;读/写&quot;三种方式。如果大家熟悉C语言，肯定知道用FOPEN函数打开文件时也要指明存取方式：r表示&quot;读取&quot;；rw表示&quot;读/写&quot;。如果大家不清楚C语言为什么要有这样的要求，那么学到这里，我想你应该对这个问题有了比较明白的认识--C语言也要求助于DOS为其打开文件，它也要遵守DOS的规定。</p>
+  <p> 事实上DOS允许我们同时打开多个文件，每打开一个文件DOS都会给我们返回一个句柄，各个文件对应的句柄都是不同的。我们知道每打开一个文件后DOS都会取得与这个文件相关的一些特征信息保存在自己内部，而DOS用于保存这些信息的空间可不是无穷无尽的，所以能够同时打开的文件数就有限制。DOS启动后究竟为打开文件准备了多少内存呢？这个问题的答案在CONFIG.SYS文件中。还记得我们前面讨论的BUFFERS设置吗？在CONFIG文件中还有一项&quot;FILES=？？？&quot;的配置项，这一项就是告诉DOS启动时要准备出打开&quot;？？？&quot;个文件所需的内存空间。而我们的程序所能同时打开的文件个数是&quot;？？？－5&quot;个，这是因为文件句柄号是从05H开始的。</p>
+  <p> 在本节的最后，我们来讨论一下有关&quot;建立文件&quot;的内容。下面给出了3CH功能的用法，利用句柄功能建立一个文件和用FCB功能并无太大区别，要注意的有这样几点：</p>
+  <p> 第一，不要忘记用ASCIIZ串给出路径和文件名；<br />
+    第二，如果指定目录下无重名的目录项，则DOS会新建一个目录项并返回句柄。如果指定目录下有一个与待建立的文件重名的目录项，则DOS会将旧的文件长度截为0。此一点和FCB功能相同。<br />
+    第三，CX寄存器中要设定待建文件的属性。属性的定义和FCB功能相同，但是句柄功能无法建立具有卷标属性或子目录属性的目录项。同FCB功能相比这可以说是句柄功能的一个弱项。<br />
+    第四，若出错，则CF标志置位，同时AX寄存器返回错误码供程序处理。这其实是所有句柄功能的一个共同特点。这些错误代码都出自一个统一的错误代码表，见表7-2。<br />
+    第五，文件成功建立之后我们即可对其进行写操作，3CH功能不涉及&quot;打开方式&quot;的问题。建立文件功能的用法并不难，大家可自己编制实验程序将其掌握。 </p>
+  <h5>表7-2 错误代码表</h5>
+  <table>
+    <tr>
+      <td>01</td>
+      <td>非法功能号</td>
+      <td>10</td>
+      <td>非法环境</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>文件未找到</td>
+      <td>11</td>
+      <td>非法格式</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>路径名不正确</td>
+      <td>12</td>
+      <td>非法存取代码</td>
+    </tr>
+    <tr>
+      <td>04</td>
+      <td>同时打开的文件太多</td>
+      <td>13</td>
+      <td>非法数据</td>
+    </tr>
+    <tr>
+      <td>05</td>
+      <td>拒绝存取</td>
+      <td>14</td>
+      <td>未定义</td>
+    </tr>
+    <tr>
+      <td>06</td>
+      <td>非法文件句柄</td>
+      <td>15</td>
+      <td>非法指定设备</td>
+    </tr>
+    <tr>
+      <td>07</td>
+      <td>内存控制块被破坏</td>
+      <td>16</td>
+      <td>试图删除当前的目录</td>
+    </tr>
+    <tr>
+      <td>08</td>
+      <td>内存不够</td>
+      <td>17</td>
+      <td>设备不一致</td>
+    </tr>
+    <tr>
+      <td>09</td>
+      <td>非法存储块地址</td>
+      <td>18</td>
+      <td>已没有文件</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <div class="rpindex"> <a href="8-11.html">下一页 </a><a href="7-24.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

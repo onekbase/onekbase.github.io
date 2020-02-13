@@ -1,0 +1,374 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="072.html"> 上一页</a><a href="074.html"> 下一页</a></div>
+<h1>Win32汇编教程十</h1>
+<h3> 定时器的应用 </h3>
+<h4>概述</h4>
+<p>     Windows 的定时器是一种输入设备，它周期性地在指定的间隔时间通知应用程序。它可以用向指定窗口发送 
+  WM_TIMER 消息或者调用指定的过程来执行用户的程序。定时器的应用主要包括下面一些地方：</p>
+<ol>
+  <li>时钟程序 - 显然，这是定时器最直接的应用。</li>
+  <li>多任务 - 如果程序有大量的数据处理，除了用多线程的办法，还可以用定时器，在每一个定时器消息中处理一小块内容。</li>
+  <li>定时显示程序的状况 - 定时器就相当于 Dos 编程中的自己挂接在 int 1ch 上面的要定时处理的程序，它可以定时显示程序运行的情况，如发送了多少内容，接收了多到内容等等。</li>
+  <li>在游戏程序中使用定时器可以消除在不同处理器下用延时来保持速度一致所造成的误差。</li>
+  <li>用于数据流处理 - 在音频、视频的播放中，需要隔一段时间处理一段数据。</li>
+</ol>
+<p>总的来说，在 Dos 下实现精确定时的唯一方法是在 int 1ch 时钟中断中处理程序，但你使用起来必须遵守很多的规范，而在 Windows 的定时器中，你可以用 
+  SetTimer 函数分配不止一个的定时器，比如说，在你的文本编辑程序中，你可以使用一个间隔1秒的定时器来在状态栏中显示时钟，同时分配一个10分钟的定时器来实现定时存盘的功能。定时器实际上是 
+  Windows 对时钟中断的一种扩展，它的本质还是基于时钟中断的，所以你实际上无法把定时器的间隔设置到55毫秒以下，另外，定时器的精度也是以55毫秒为倍数的，比如说，你设置了一个1秒的定时器，它实际上是在每989毫秒的时候发生的。和在 
+  Dos 下使用时钟中断，windows 的定时器还有下面一些要点：</p>
+<ol>
+  <li>在 Dos 中，你的程序随时可能被 int 1ch 打断，而在Windows 中，Windows 通过 WM_TIMER 消息把定时器消息放入正常的消息队列中，所以你不必担心你的程序在别的处理中被定时器打断。</li>
+  <li>不可能有同时两条以上的 WM_TIMER 消息，如果在一个还在消息队列中，窗口再得到一条 WM_TIMER 消息，两条消息会被合并为一条，所以在程序比较忙的时候可能会丢失 
+    WM_TIMER 消息。</li>
+  <li>WM_TIMER 消息的级别是很低的，程序只有在消息队列中没有其他消息的情况下，才会接收 WM_TIMER 消息，你可以通过下马方法验证：在一个设置了定时器的窗口上按住标题栏移动窗口，你会发现定时器停止了工作，当你松开鼠标后，在这个过程中丢失的 
+    WM_TIMER 消息并没有被补上，所以如果你设计一个时钟程序，你不能使用定时器消息来计数，而必须在消息中每次获取正确的系统时间。</li>
+</ol>
+<p>讲了这么多定时器的特点，下面是定时器相关的API，你会发现除了在使用中要注意的这些特性，定时器的API真是又少又简单：</p>
+<ol>
+  <li>建立定时器<br>
+  <pre class="code">SetTimer( 
+HWND hWnd, // handle of window for timer messages 
+UINT nIDEvent, // timer identifier 
+UINT uElapse, // time-out value 
+TIMERPROC lpTimerFunc // address of timer procedure 
+);</pre>
+    hWnd 是 windows 发送 WM_TIMER 的窗口，nIDEvent 是定时器的编号，在 WM_TIMER 中出现在 wParam 参数中，用来区分在多个定时器的情况下，这条消息是由哪个定时器产生的。uElapse 
+    是定时器间隔的毫秒数，如果你要设置一个1秒的定时器，这个值就是1000，lpTimerFunc 是处理定时器消息的过程，如果这个参数不是 NULL，windows 
+    在到时间后会调用lpTimerFunc 指定的过程，调用的参数是 CALLBACK TimerProc(hwnd,WM_TIMER,iTimerID,dwTime)，iTimerID 
+    是定时器 ID，dwTime 是系统时间；如果 lpTimerFunc 参数是 NULL，Windows 会把 WM_TIMER 消息放入消息循环中，消息的 
+    hWnd 是第一个参数中指定的 hWnd，也就是说向这个窗口发送了 WM_TIMER 消息。<br>
+    另外，如果你的程序没有窗口，你也可以用这种办法建立定时器：invoke SetTimer,NULL,NULL,uElapse,TimerProc，函数会返回一个系统定义的 
+    TimerID供你在 KillTimer 中使用。<br>
+  </li>
+  <li>取消定时器<br>
+  <pre class="code">KillTimer( 
+HWND hWnd, // handle of window that installed timer 
+UINT uIDEvent // timer identifier 
+);</pre>
+    取消定时器只需对应 SetTimer 时的 hWnd 和 uIDEvent 调用 KillTimer 函数就行了。</li>
+</ol>
+<p>在本节的例子程序中，我在对话框中的 WM_INIT 消息中用 SetTimer 建立两个定时器，时间分别是500ms 和 200ms，然后在间隔0.5秒的定时器消息中更换按钮上的图片，在间隔 
+  0.2 秒的定时器消息中更换标题栏上的小图标，你就可以看到动画的效果了。</p>
+<p> 源程序 - 汇编源文件</p>
+<pre class="code">;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Programmed by 罗云彬, bigluo@telekbird.com.cn
+;	Website: http://asm.yeah.net
+;	LuoYunBin's Win32 ASM page (罗云彬的编程乐园)
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	版本信息
+;	汇编教程附带例子程序 - 定时器的使用
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.386
+.model        flat, stdcall
+		option casemap :none   ; case sensitive
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Include 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     include  windows.inc
+     include  user32.inc
+     include  kernel32.inc
+     include  comctl32.inc
+     include  comdlg32.inc
+
+  includelib  user32.lib
+  includelib  kernel32.lib
+  includelib  comctl32.lib
+  includelib  comdlg32.lib
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Equ 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    IDI_MAIN  equ       1
+   IDI_MOON1  equ       2
+   IDI_MOON2  equ       3
+   IDI_MOON3  equ       4
+   IDI_MOON4  equ       5
+   IDI_MOON5  equ       6
+   IDI_MOON6  equ       7
+   IDI_MOON7  equ       8
+   IDI_MOON8  equ       9
+
+    DLG_MAIN  equ       1000
+     ID_MOON  equ       1001
+
+   ID_TIMER1  equ       1
+   ID_TIMER2  equ       2
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	数据段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.data?
+
+   hInstance  dd        ?
+  dwCounter1  dd        ?
+  dwCounter2  dd        ?
+      hIcon1  dd        ?
+      hIcon2  dd        ?
+      hIcon3  dd        ?
+      hIcon4  dd        ?
+      hIcon5  dd        ?
+      hIcon6  dd        ?
+      hIcon7  dd        ?
+      hIcon8  dd        ?
+    szBuffer  db        256 dup	(?)
+
+.data
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	代码段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.code
+;********************************************************************
+            _ProcDlgMain  proc      uses ebx edi esi, \
+		hWnd:DWORD,wMsg:DWORD,wParam:DWORD,lParam:DWORD
+
+              mov       eax,wMsg
+;********************************************************************
+.if           eax ==	WM_CLOSE
+              invoke    KillTimer,hWnd,ID_TIMER1
+              invoke    KillTimer,hWnd,ID_TIMER2
+              invoke    EndDialog,hWnd,NULL
+;********************************************************************
+.elseif       eax ==	WM_INITDIALOG
+              mov       edi,offset hIcon1
+              mov       ebx,IDI_MOON1
+              mov       ecx,8
+         @@:
+              push      ecx
+              invoke    LoadIcon,hInstance,ebx
+              cld
+              stosd
+              inc       ebx
+              pop       ecx
+              loop      @B
+              invoke    SetTimer,hWnd,ID_TIMER1,500,NULL
+              invoke    SetTimer,hWnd,ID_TIMER2,200,NULL
+              invoke    SendMessage,hWnd,WM_SETICON,ICON_SMALL,hIcon1
+;********************************************************************
+.elseif       eax ==	WM_TIMER
+.if           wParam == ID_TIMER1
+              inc       dwCounter1
+.if           dwCounter1 == 8
+              mov       dwCounter1,0
+.endif
+              mov       eax,dwCounter1
+              shl       eax,2
+              add       eax,offset hIcon1
+              mov       eax,[eax]
+              invoke    SendMessage,hWnd,WM_SETICON,ICON_SMALL,eax
+.else
+              inc       dwCounter2
+.if           dwCounter2 == 8
+              mov       dwCounter2,0
+.endif
+              mov       eax,dwCounter2
+              shl       eax,2
+              add       eax,offset hIcon1
+              mov       eax,[eax]
+              invoke    SendDlgItemMessage,hWnd,ID_MOON,BM_SETIMAGE,IMAGE_ICON,eax
+.endif
+;********************************************************************
+.else
+              mov       eax,FALSE
+              ret
+.endif
+              mov       eax,TRUE
+              ret
+		
+            _ProcDlgMain  endp
+;********************************************************************
+      start:
+              invoke    GetModuleHandle,NULL
+              mov       hInstance,eax
+              invoke    DialogBoxParam,hInstance,DLG_MAIN,NULL,offset _ProcDlgMain,0
+              invoke    ExitProcess,NULL
+;********************************************************************
+              end       start</pre>
+<p>程序的分析和要点</p>
+<p>    有了上面的介绍，这个程序是很容易看懂的，在 WM_TIMER 消息中，通过 wParam 中的 TimerID 
+  可以区分是哪个定时器产生的消息。在 WM_CLOSE 消息中，通过 KillTimer 来取消定时器。本程序中的的图标定义在资源文件中，在对话框建立的时候，先用 
+  LoadIcon 装入，然后为两个定时器分别保存一个图片编号 dwCounter1 和 dwCounter2，在定时器消息中分别用 WM_SETICON 
+  和 BM_SETIMAGE 消息来对窗口标题的图标和按钮的图标进行设置。 </p>
+
+
+<div class="rpindex"><a href="074.html"> 下一页</a><a href="072.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

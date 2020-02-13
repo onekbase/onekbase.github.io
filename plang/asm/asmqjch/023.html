@@ -1,0 +1,425 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="022.html"> 上一页</a><a href="024.html"> 下一页</a></div>
+<h1>第二十三课 系统托盘中的快捷图标</h1>
+本课中，我们将学习如何把小图标放到系统托盘中去以及如何创建和使用弹出式菜单。 
+<H3>理论：</H3>系统托盘是指任务条中的一个方形区域，在该区域中可以放入一些小图标，通常您可以在此处看到系统提供的最新时间。您自己当然也可以把快捷小图标放到此处。下面是这么做的步骤： 
+
+<OL>
+  <LI>设置NOTIFYICONDATA型的结构体变量的成员变量的值： 
+  
+  <LI>cbSize   该结构体的大小。 
+  <LI>hwnd 窗口的句柄。当鼠标滑过该小图标时，该窗口将接收到相关的消息。 
+  <LI>uID         
+    小图标的ID号。您可以取任意值，只是当您的应用程序有不止一个小图标时，您要能够区分出到底是那一个小图标接收到了鼠标的消息，也即ID号必须唯一。 
+  <LI>uFlags    指定该结构体变量的那些成员变量有效。 
+    
+  <LI>NIF_ICON 有效。 
+  <LI>NIF_MESSAGE 有效。 
+  <LI>NIF_TIP 有效。 </LI>
+    <LI>uCallbackMessage  
+    自定义的消息。当鼠标对小图标动作时，WINDOWS外壳将把该消息发送到您的应用程序。该消息的值您可以自己定义。 
+    <LI>hIcon      放入系统托盘中的图标的句柄。 
+    <LI>szTip    64字节的缓冲区，它用来放入提示字符串，当鼠标停留在小图标上时，就会显示该字符串。 </LI>
+  <LI>调用Shell_NotifyIcon函数。该函数在shell32.inc中定义，其原型如下： 
+    <Pre class="code">     Shell_NotifyIcon PROTO dwMessage:DWORD ,pnid:DWORD </Pre>
+    <P>    dwMessage  
+  是发送到WINDOWS外壳的消息：<BR>           
+  NIM_ADD 
+  把小图标加到系统托盘区。<BR>          
+  NIM_DELETE 
+  从系统托盘中删除小图标。<BR>          
+  NIM_MODIFY 修改小图标。 <BR>    pnid  
+  是指向NOTIFYICONDATA型结构体变量的指针。<BR>如果您想要加入一个小图标就用NIM_ADD，删除时使用NIM_DELETE消息。</P></LI></OL>基本上的消息就是这些。但是大多数的情况下，您不会仅仅满足把一个小图标放到那里。您还必须要对鼠标事件作出适当的反应。您可以在NOTIFYICONDATA型的结构体变量的成员变量uCallbackMessage 
+中设置您要处理的消息，然后WINDOWS外壳将在发生这些事件时通知您的应用程序。随着消息传送的参数wParam和lParam的值如下： 
+
+  <LI>wParam 小图标的ID号。它和您在NOTIFYICONDATA型结构体变量中的成员变量uID中设置的值一样。 
+  <LI>lParam 低字包含鼠标消息。譬如，用户在小图标上按下了右键时，lParam中将包含WM_RBUTTONDOWN消息。 
+</LI>大多数的系统托盘中的小图标，在用户用鼠标右击时都会弹出一个菜单以方便用户选择。我们可先创建菜单，然后调用TrackPopupMenu函数来显示它。步骤如下： 
+
+<OL>
+  <LI>调用CreatePopupMenu函数来创建菜单。该函数创建一个空的菜单。如果成功，将在eax中返回该菜单的句柄。 
+  <LI>调用AppendMenu, InsertMenu 或 InsertMenuItem来向菜单中加入菜单项。 
+  <LI>当您想在当前鼠标位置显示该菜单时，调用GetCursorPosition函数来得到鼠标当前的屏幕位置，然后调用TrackPopupMenu来显示菜单。当用户从弹出式菜单中选择了一个菜单项时，WINDOWS将发送WM_COMMAND消息给您应用程序的消息处理过程，这和通常的菜单选择是一样的。. 
+  </LI></OL>注意：当您使用系统托盘中的小图标时有两件比较讨厌的事： 
+<OL>
+  <LI>该菜单可能不会像通常那样马上消失掉。这是因为从弹出式接收消息的窗口必须是前景窗口。调用SetForegroundWindow函数就可以纠正该错误;
+  <LI>在调用了SetForegroundWindow函数后，您会发现第一次该弹出式菜单会正常弹出而且工作的很好。但是随后，该菜单只是一弹出就立即消失。根据MSDN，这么做是故意的。为了使得弹出菜单保持住，必须要求下一个切换到的是程序的主窗口。您可以通过邮寄任何消息给该程序的窗口来强行进行任务切换。注意要使用PostMessage而不是SendMessage。 
+  </LI></OL>
+<H3>例子：</H3>
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\SHELL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\SHELL32.LIB
+          WM_SHELLNOTIFY  EQU       WM_USER+5
+    IDI_TRAY  EQU       0
+ IDM_RESTORE  EQU       1000
+    IDM_EXIT  EQU       1010
+WinMain PROTO :DWORD,:DWORD,:DWORD,:DWORD 
+
+.DATA
+   CLASSNAME  DB        "TRAYICONWINCLASS",0
+     APPNAME  DB        "TRAYICON DEMO",0
+           RESTORESTRING  DB        "&RESTORE",0
+  EXITSTRING  DB        "E&XIT PROGRAM",0
+
+.DATA?
+   HINSTANCE  DD        ?
+note NOTIFYICONDATA <> 
+  HPOPUPMENU  DD        ?
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,NULL, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW OR CS_DBLCLKS
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_APPWORKSPACE
+              MOV       WC.LPSZMENUNAME,NULL
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME,ADDR APPNAME,\
+WS_OVERLAPPED+WS_CAPTION+WS_SYSMENU+WS_MINIMIZEBOX+WS_MAXIMIZEBOX+WS_VISIBLE,CW_USEDEFAULT,\ 
+           CW_USEDEFAULT,350,200,NULL,NULL,\ 
+           hInst,NULL 
+              MOV       HWND,EAX
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+              LOCAL     PT:POINT
+.IF           UMSG==WM_CREATE
+              INVOKE    CREATEPOPUPMENU
+              MOV       HPOPUPMENU,EAX
+              INVOKE    APPENDMENU,HPOPUPMENU,MF_STRING,IDM_RESTORE,ADDR RESTORESTRING
+              INVOKE    APPENDMENU,HPOPUPMENU,MF_STRING,IDM_EXIT,ADDR EXITSTRING
+.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    DESTROYMENU,HPOPUPMENU
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_SIZE
+.IF           WPARAM==SIZE_MINIMIZED
+              MOV       NOTE.CBSIZE,SIZEOF NOTIFYICONDATA
+              PUSH      HWND
+              POP       NOTE.HWND
+              MOV       NOTE.UID,IDI_TRAY
+              MOV       NOTE.UFLAGS,NIF_ICON+NIF_MESSAGE+NIF_TIP
+              MOV       NOTE.UCALLBACKMESSAGE,WM_SHELLNOTIFY
+              INVOKE    LOADICON,NULL,IDI_WINLOGO
+              MOV       NOTE.HICON,EAX
+              INVOKE    LSTRCPY,ADDR NOTE.SZTIP,ADDR APPNAME
+              INVOKE    SHOWWINDOW,HWND,SW_HIDE
+              INVOKE    SHELL_NOTIFYICON,NIM_ADD,ADDR NOTE
+.ENDIF
+.ELSEIF       UMSG==WM_COMMAND
+.IF           LPARAM==0
+              INVOKE    SHELL_NOTIFYICON,NIM_DELETE,ADDR NOTE
+              MOV       EAX,WPARAM
+.IF           AX==IDM_RESTORE
+              INVOKE    SHOWWINDOW,HWND,SW_RESTORE
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF
+.ENDIF
+.ELSEIF       UMSG==WM_SHELLNOTIFY
+.IF           WPARAM==IDI_TRAY
+.IF           LPARAM==WM_RBUTTONDOWN
+              INVOKE    GETCURSORPOS,ADDR PT
+              INVOKE    SETFOREGROUNDWINDOW,HWND
+              INVOKE    TRACKPOPUPMENU,HPOPUPMENU,TPM_RIGHTALIGN,PT.X,PT.Y,NULL,HWND,NULL
+              INVOKE    POSTMESSAGE,HWND,WM_NULL,0,0
+.ELSEIF       LPARAM==WM_LBUTTONDBLCLK
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_RESTORE,0
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+
+              END       START
+
+;</pre>
+<H3>分析：</H3>该程序将显示一个简单的窗口。当您按下最小化按钮时，该窗口将隐藏，然后放一个小图标到系统托盘中。当您双击小图标时，应用程序将恢复自己，并把小图标从系统托盘中删除。当您右击小图标时，会显示一个弹出式菜单。您可以在菜单中选择是恢复窗口还是退出应用程序。 
+
+<Pre class="code">.IF           UMSG==WM_CREATE
+              INVOKE    CREATEPOPUPMENU
+              MOV       HPOPUPMENU,EAX
+              INVOKE    APPENDMENU,HPOPUPMENU,MF_STRING,IDM_RESTORE,ADDR RESTORESTRING
+              INVOKE    APPENDMENU,HPOPUPMENU,MF_STRING,IDM_EXIT,ADDR EXITSTRING</Pre>
+
+<P>当主窗口创建时，将会创建一个弹出式菜单，并且加入两个菜单项。 AppendMenu的语法如下： <BR>  
+<BLOCKQUOTE>AppendMenu PROTO hMenu:DWORD, uFlags:DWORD, uIDNewItem:DWORD, 
+  lpNewItem:DWORD <BR>  
+  
+    <LI>hMenu 是将要加入菜单项的菜单的句柄。 
+    <LI>uFlags 告诉WINDOWS要加入的菜单项是位图、字符串或自画的项目以及是可用、不可用或灰色显示等。您可以从WIN32 API 
+    指南中得到全部的标志位的信息。在我们的例子中使用标志位MF_STRING，它表示我们加入的菜单项是字符串。 
+    <LI>uIDNewItem 是菜单项的ID号。这是一个用户自定义的值，它用来唯一地代表菜单项。. 
+    <LI>lpNewItem 
+    用来指定菜单项的内容，具体代表什么取决于uFlags中指定的标志。我们前面指定了MF_STRING标志，所以此处代表一个字符串 
+</LI></BLOCKQUOTE>主窗口创建完成后，用户就可以开始测试了。这时按下最小化键。<BR>当一个窗口被最小化时将接收到WM_SIZE消息，其中wParam参数中的值为SIZE_MINIMIZED。 
+
+<Pre class="code" >.ELSEIF       UMSG==WM_SIZE
+.IF           WPARAM==SIZE_MINIMIZED
+              MOV       NOTE.CBSIZE,SIZEOF NOTIFYICONDATA
+              PUSH      HWND
+              POP       NOTE.HWND
+              MOV       NOTE.UID,IDI_TRAY
+              MOV       NOTE.UFLAGS,NIF_ICON+NIF_MESSAGE+NIF_TIP
+              MOV       NOTE.UCALLBACKMESSAGE,WM_SHELLNOTIFY
+              INVOKE    LOADICON,NULL,IDI_WINLOGO
+              MOV       NOTE.HICON,EAX
+              INVOKE    LSTRCPY,ADDR NOTE.SZTIP,ADDR APPNAME
+              INVOKE    SHOWWINDOW,HWND,SW_HIDE
+              INVOKE    SHELL_NOTIFYICON,NIM_ADD,ADDR NOTE
+.ENDIF</Pre>
+
+<P>这时我们来给NOTIFYICONDATA型结构体变量赋值。IDI_TRAY是在代码开始处定义的一个数值常量，您可以任意设定它的值。由于我们仅有一个图标，所以这一点并不重要，如果要同时加入几个系统图标的话，那么每个图标都要有一个唯一的ID号。由于我们指定了一个图标NIF_ICON，所以我们要在uFlags成员变量中指定所有的标志位，我们还指定了一个自定义的消息NIF_MESSAGE和帮助文本NIF_TIP。 
+WM_SHELLNOTIFY 
+被定义为WM_USER+5，只要是唯一的值，就无所谓是多少了，只要大于WM_USER。我们这里用的是WINDOWS登录时的图标，当然您可以使用任意您想要用的图标，您可以用LoadIcon函数从资源中装载，该函数返回一个图标的句柄。最后我们在szTip中放入当鼠标放在图标时显示的提示文本。为了达到“最小化然后只显示图标的效果”，我们在这时隐藏掉主窗口。 
+<BR>接下来，我们调用Shell_NotifyIcon函数并指定标志位NIM_ADD把图标加到系统托盘中去。 
+<P>现在我们的主窗口隐藏了，图标显示在系统托盘中。如果您让鼠标从图标上滑过，将看到提示文本。如果您双击小图标，主窗口就会显示，图标将消失。 
+<Pre class="code">.ELSEIF       UMSG==WM_SHELLNOTIFY
+.IF           WPARAM==IDI_TRAY
+.IF           LPARAM==WM_RBUTTONDOWN
+              INVOKE    GETCURSORPOS,ADDR PT
+              INVOKE    SETFOREGROUNDWINDOW,HWND
+              INVOKE    TRACKPOPUPMENU,HPOPUPMENU,TPM_RIGHTALIGN,PT.X,PT.Y,NULL,HWND,NULL
+              INVOKE    POSTMESSAGE,HWND,WM_NULL,0,0
+.ELSEIF       LPARAM==WM_LBUTTONDBLCLK
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_RESTORE,0
+.ENDIF
+.ENDIF</Pre>
+
+<P>当在系统托盘中的图标发生鼠标事件时，您的窗口将接收到WM_SHELLNOTIFY消息，该消息是在uCallbackMessage成员变量中指定的。在接收到该消息时，wParam中包含了图标的ID号，lParam中包含了鼠标动作的原始数据。在上面的代码中，我们首先检测是否是我们感兴趣的消息。如果是的话，我们在看看是什么消息。因为我们只对右击和双击事件感兴趣，所以我们仅仅处理WM_RBUTTONDOWN和WM_LBUTTONDBLCLK消息。 
+<BR>如果是WM_RBUTTONDOWN，我们调用GetCursorPos来得到鼠标光标所在的当前屏幕位置。注意我指的是屏幕位置，即，其坐标是相对于整个的屏幕的。譬如，如果屏幕的解析读640*480，那么它的右下角的坐标是x==639 
+，y==479。如果您想要把屏幕位置转换成窗口的坐标，可以调用ScreenToClient函数<BR>我们想要在当前的位置显示弹出式菜单，我们就调用TrackPopupMenu函数，该函数需要屏幕的坐标，由GetCursorPos函数返回的坐标就可以原封不动的拿过来用。<BR>TrackPopupMenu的原型如下：
+<Pre class="code">          TRACKPOPUPMENU  PROTO     HMENU:DWORD, UFLAGS:DWORD, X:DWORD, Y:DWORD, NRESERVED:DWORD, HWND:DWORD, PRCRECT:DWORD</Pre>
+<LI>hMenu 是弹出式菜单的句柄。 
+<LI>uFlags 
+  功能的选择。像在哪里放置（相对于随后将指定的坐标）菜单，那一个鼠标按钮用来跟踪弹出式菜单。在我们的例子中，我们用TPM_RIGHTALIGN标志位来指定弹出式菜单放在坐标的左边。 
+
+<LI>x 和 y 指定放置菜单的屏幕坐标。 
+<LI>nReserved 必须为NULL。 
+<LI>hWnd 是将要接收消息的窗口的句柄。 
+<LI>prcRect 
+指定一个矩形区域。如果在该矩形区域外面按下鼠标的话，菜单将消失。一般我们把该值设为NULL，这样当用户只要在菜单外面按下鼠标，菜单立即消失。 </LI>
+<P>当用户双击图标时，我们给我们自己的窗口发送WM_COMMAND消息，并指定消息为IDM_RESTORE，这样可以达到和在弹出式菜单中选择“Restore”菜单项同样的效果。为了能够接收到双击消息，主窗口必须要有的CS_DBLCLKS 
+风格。</P>
+<Pre class="code">              INVOKE    SHELL_NOTIFYICON,NIM_DELETE,ADDR NOTE
+              MOV       EAX,WPARAM
+.IF           AX==IDM_RESTORE
+              INVOKE    SHOWWINDOW,HWND,SW_RESTORE
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF</Pre>
+
+<P>当用户选择恢复主窗口时，我们调用Shell_NotifyIcon函数来删除掉系统托盘中的图标，这一次我们要指定NIM_DELETE消息。接下来我们把主窗口恢复到原始的状态。如果用户选择了Exit菜单项，我们不但把图标给删除掉，也从整个的应用程序中退出。
+<div class="rpindex"><a href="024.html"> 下一页</a><a href="022.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

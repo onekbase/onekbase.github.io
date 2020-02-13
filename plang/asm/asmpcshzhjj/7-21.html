@@ -1,0 +1,435 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">目录</a> <a href="7-2.html">上一页</a> <a href="7-22.html">下一页</a> </div>
+  <h3>7．2．3 驱动器号</h3>
+  <p>普通FCB的第一个字节就是驱动器号，这个数据要由我们在编程时填入。它是这样定义的： </p>
+  <pre class="code">未打开：	0－－当前驱动器		打开后：	1－－驱动器A
+			1－－驱动器A					2－－驱动器B
+			2－－驱动器B					3－－驱动器C
+			3－－驱动器C					．．．
+</pre>
+  <p>DOS允许我们使用&quot;当前驱动器&quot;代替一个具体的驱动器名，执行&quot;打开文件&quot;或&quot;建立文件&quot;操作后DOS会自己查出&quot;当前驱动器&quot;的号码并将其重新填入FCB中。</p>
+  <h3>7．2．4 记录块与记录</h3>
+  <p>在我们看来，一个文件无非就是由若干字节的二进制数据组成的。然而如果你打算使用FCB来处理文件，那么我们就需要转变一下观念。我们需要把一个文件切割成一个个较大的数据块，这些数据块是等长度的（最后一块可能短一些），我们称其为&quot;记录块&quot;。对于每一个记录块，我们还需要将其再切割成一些小数据块，这些小数据块也是等长度的，我们称之为&quot;记录&quot;。每一个记录则是由一定数量的字节组成。请看图7-3：</p>
+  <p><img src="figures/F7_3.gif"  height="112" /></p>
+  <h4>图7-3 记录块与记录</h4>
+  <p>　由字节构成记录，由记录构成记录块，由记录块最终构成了文件。这里面有这样两个问题： </p>
+  <p>（1）一个记录块包含多少个记录？（2）每个记录包含多少个字节？ </p>
+  <p>　问题很简单，DOS规定每个记录块包含128个记录，而每个记录的长度则要由文件控制块中偏移0EH处的两字节数据规定。这个长度可以由我们自己根据需要而确定，如果我们没有明确指定记录长度，那么DOS会给出一个默认长度，值为128字节。此时我们可以算出一个记录块的长度是128×128＝16384字节。</p>
+  <p> 由于DOS对文件的长度是有限制的（〈230字节），所以如果我们使用默认的记录长度，那么一个文件的记录块数最多可有65536个，这恰好可以用一个字的数据表示，这个字在FCB偏移0CH处。</p>
+  <p> 这个数据和偏移0EH处的记录长度配合使用就可以使我们得以访问文件中的任意数据，我们把利用这两个数据访问文件的方法称为&quot;顺序访问&quot;。</p>
+  <p> 在FCB的最后还有4字节的数据，位于偏移21H处，这4个字节指出了&quot;相对记录号&quot;，利用&quot;相对记录号&quot;也能完成文件读写，我们把这种处理方法称为&quot;随机访问&quot;。</p>
+  <p> 综合上述，我们可以看到FCB中真正属性我们的数据只占一部分，从偏移-1至偏移16共有17个字节可由我们控制，还有就是FCB最后4个字节，其余的都由DOS进行处理。</p>
+  <p> 下面我们给出了一个普通FCB的实例，利用这个FCB我们可以对C盘上的CONFIG.SYS文件进行处理。 </p>
+  <pre class="code">        DATA  SEGMENT
+              ASSUME    DS:DATA
+      MY_FCB  LABEL     BYTE
+       DRIVE  DB        0	；驱动器号，0：当前 1：A 2：B ...
+   FILE_NAME  DB        'CONFIG '	；文件名
+    EXT_NAME  DB        'SYS'	；扩展名
+   CUR_BLOCK  DW        ?	；当前记录块号
+    REC_SIZE  DW        ?	；记录长度
+   FILE_SIZE  DW        2 DUP(?)	；文件长度，由系统填入
+   CREA_DATE  DW        ?	；建立或最后修改的日期，由系统填入
+    POSITION  DB        10 DUP(?)	；保留空间，由系统填入
+     CUR_REC  DB        ?	；当前记录号
+     REL_REC  DW        2 DUP(?)	；相对记录号
+        DATA  ENDS
+</pre>
+  <p>　在这个FCB中我需要提醒大家注意这样一个问题那就是填写文件名与扩展名时不要使用这个字符--&quot;\&quot;。利用FCB只能处理&quot;当前目录&quot;下的文件，所以你不能使用&quot;路径名&quot;。至于分割文件名与扩展名的那个句点也是不需要的。特别要记住，文件名在FCB中占据了8个字节空间，如果填入的文件名不足8个字节要用空格补齐。</p>
+  <p> 有了FCB的知识，我们现在就可以开始学习系统功能调用了。我们要学的第一个功能就是&quot;打开文件&quot;，这要使用21H中断的0FH功能： </p>
+  <p>功能号：0FH<br />
+    用　途：打开指定的文件供存取处理。<br />
+    参　数：DS：DX＝未打开FCB的段：偏移地址<br />
+    调　用：INT 21H<br />
+    返　回：AL＝00H<br />
+    驱动器号：填入实际驱动器号<br />
+    当前记录块号：00H<br />
+    记录长度：0080H<br />
+    文件长度：目录项的文件长度数值<br />
+    建立日期：目录项的建立日期<br />
+    建立时间：目录项的建立时间 </p>
+  <p>使用这个功能之前我们需要让DS:DX指向一个未打开的FCB，在这个FCB中已经填好了驱动器号，文件及扩展名这三部分信息，然后调用0FH功能即可打开文件。如果DOS确实找到了所要打开的文件那么它会在AL寄存器中返回00H，并且DOS会自动填好FCB中那些由它负责的数据。如果它没有找到指定的文件，那么DOS会在AL寄存器中返回-1表示出现了错误。请看下面这个程序： </p>
+  <h5>FCB1.ASM</h5>
+  <pre class="code">        DATA  SEGMENT
+              ASSUME    DS:DATA
+      MY_FCB  LABEL     BYTE
+       DRIVE  DB        0	；驱动器号，0：当前 1：A 2：B ...
+   FILE_NAME  DB        'CONFIG '	；文件名
+    EXT_NAME  DB        'SYS'	；扩展名
+   CUR_BLOCK  DW        ?	；当前记录块号
+    REC_SIZE  DW        ?	；记录长度
+   FILE_SIZE  DW        2 DUP(?)	；文件长度，由系统填入
+   CREA_DATE  DW        ?	；建立或最后修改的日期，由系统填入
+    POSITION  DB        10 DUP(?)	；保留空间，由系统填入
+     CUR_REC  DB        ?	；当前记录号
+     REL_REC  DW        2 DUP(?)	；相对记录号
+      ERRMSG  DB        'Error',0DH,0AH,24H
+        DATA  ENDS
+        CODE  SEGMENT
+              ASSUME    CS:CODE
+        MAIN  PROC      FAR
+              MOV       AX,DATA	；初始化DS寄存器指向数据段
+              MOV       DS,AX
+			
+              MOV       DX,OFFSET MY_FCB	；DX寄存器指向未打开的FCB
+              MOV       AH,0FH	；选择DOS API的0FH功能
+              INT       21H	；打开文件
+			
+              OR        AL,AL	；AL寄存器返回了0吗？
+              JNZ       ERR_EXIT	；没有返回0，转ERR_EXIT结束
+			
+              MOV       AH,4CH	；结束程序
+              INT       21H
+   ERR_EXIT:
+              MOV       AH,9	；利用DOS API的09功能
+              MOV       DX,OFFSET ERRMSG	；输出错误信息
+              INT       21H
+			
+              MOV       AH,4CH	；结束程序
+              INT       21H
+        MAIN  ENDP
+        CODE  ENDS
+              END       MAIN
+</pre>
+  <p>这个程序主要用于跟踪分析用，大家可以试一试执行这个程序，不过执行之前必须保证当前的驱动器是&quot;C:&quot;而且CONFIG.SYS就在当前目录下，缺了这两个条件的话就只能看到程序输出&quot;Error&quot;了。我们现在跟踪这个程序看一看当一个文件打开后FCB会有什么变化：</p>
+  <pre class="code">C:\ASM\>DEBUG FCB1.EXE[Enter]
+G=0 A[Enter]
+AX=0F8A BX=0000 CX=004F DX=0000 SP=0000 BP=0000 SI=0000 DI=0000
+DS=258A ES=257A SS=258A CS=258D IP=000A NV UP EI PL NZ NA PO NC
+258D:000A CD21 INT 21
+</pre>
+  <p>在执行&quot;INT 21&quot;指令之前，我们先观察一下未打开的FCB，可以看到在未打开的FCB中除驱动器域和文件名、扩展名域外其它各项均为0：</p>
+  <pre class="code">-d0 24?当前驱动器?文件名及扩展名
+258A:0000?00 43 4F 4E 46 49 47 20-20 53 59 53 00 00 00 00?.CONFIG?SYS....
+258A:0010?00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00?................
+258A:0020?00 00 00 00 00?								  .....
+</pre>
+  <p>用&quot;P&quot;命令跟踪INT 21指令，然后再观察打开之后的FCB，可以看到先前为0的项目域均由DOS填入了相应的数据：</p>
+  <pre class="code">-P?（执行INT 21）
+AX=0F00BX=0000CX=004FDX=0000SP=0000BP=0000SI=0000DI=0000
+DS=258AES=257ASS=258ACS=258DIP=000CNV UP EI PL NZ NA PO NC
+258D:000C0AC0 OR AL,AL
+-d0 24?当前驱动器
+258A:0000 03 43 4F 4E 46 49 47 20-20 53 59 53 00 00 80 00 .CONFIG?SYS....
+258A:0010 9B 02 00 00 38 21 4C 85-40 02 42 DE 02 97 01 0F?....8!L.@.B.....
+258A:0020?00 00 00 00 00								  .....
+
+</pre>
+  <p>FCB的改变是很明显的，首先驱动器号由00H变为03H，说明DOS查出当前驱动器是&quot;C:&quot;。当前记录块号与记录长度都填入了相应值。值得注意的是日期和时间域的填写，这个文件的建立日期是2138H，时间是854CH，这两个数据是如何表示真正的日期和时间的呢？<br />
+    MicroSoft在设计DOS时表现得很&quot;小气&quot;，它仅给文件的日期域和时间域各分配了两个字节，所以年月日与时分秒都只能用这两个字节中的一些位来表示。日期域的16个位是这样分配的：</p>
+  <table>
+    <tr>
+      <td colspan="2">bit:</td>
+      <td>F</td>
+      <td>E</td>
+      <td>D</td>
+      <td>C</td>
+      <td>B</td>
+      <td>A</td>
+      <td>9</td>
+      <td>8</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>|</td>
+      <td colspan="5">年份</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="2">月(1-12)</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="3">日(1-31)</td>
+      <td>|</td>
+    </tr>
+    <tr>
+      <td colspan="2">2138:</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>|</td>
+      <td colspan="5">年份:1980+16=1996</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="2">月份:9</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="3">日:18</td>
+      <td>|</td>
+    </tr>
+  </table>
+  <p>所以这个文件建立的日期是96年9月18日。年份占据了7个位，最大为127，也就是说我们可以在公元2107年前正常地建立文件，2107年之后建立的文件都将返回到1980年。好在这个限制还是很长的，我们有生之年不会遇到这个问题。但有个问题还是很有趣的，DOS在列目录时总是忽略&quot;世纪&quot;，它总是给出96年而不给出1996年，所以如果我们在2000年还在使用DOS的话就会发现所有文件都是00年某月某日建立的。不知道DOS为什么被设计成这样，难道它已经预见到自己活不到21世纪了吗？<br />
+    时间域的分配也是如此：</p>
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <td colspan="2">bit:</td>
+      <td>F</td>
+      <td>E</td>
+      <td>D</td>
+      <td>C</td>
+      <td>B</td>
+      <td>A</td>
+      <td>9</td>
+      <td>8</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <!右边距>
+    </tr>
+    <tr>
+      <!左边距>
+      <td colspan="2"></td>
+      <td>|</td>
+      <td colspan="3">小时(0-23)</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="4">分(0-59)</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="4">秒/2(0-29)</td>
+      <td>|</td>
+      <!右边距>
+    </tr>
+    <tr>
+      <!左边距>
+      <td colspan="2">854C:</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <!右边距>
+    </tr>
+    <tr>
+      <!左边距>
+      <td colspan="2"></td>
+      <td>|</td>
+      <td colspan="3">小时:16</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="4">分:42</td>
+      <td>|</td>
+      <td>|</td>
+      <td colspan="4">秒:24</td>
+      <td>|</td>
+      <!右边距>
+    </tr>
+    <tr>
+      <!左边距>
+      <td colspan="18">　　这个文件建立的时间是16:42:24。 </td>
+    </tr>
+  </table>
+  <p>　打开文件只能对磁盘上已经存在的文件进行操作，如果我们想在磁盘上建立一个新的文件，那么我们应该使用21H中断的16H功能。这个功能所要传递的参数和0FH功能一致，返回的结果也和OFH功能相同，大家可以将程序FCB1.ASM中的指令&quot;MOV AH,0FH&quot;改为&quot;MOV AH,16H&quot;，即可构成一个用于观察16H功能的程序。</p>
+  <div class="rpindex"> <a href="7-22.html">下一页 </a><a href="7-2.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

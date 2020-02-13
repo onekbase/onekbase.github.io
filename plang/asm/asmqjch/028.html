@@ -1,0 +1,463 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="027.html"> 上一页</a><a href="029.html"> 下一页</a></div>
+<h1>第二十八课: Win32调试API 第一部分 
+  
+  
+</h1>
+<p>在本教程中,我们将学习Win32提供给开发者的用于调试的原语. 在教程的结尾,我们将学习如何调试一个进程.</p>
+<h3>理论:</h3>
+<p>Win32有一些供程序员使用的API,它们提供相当于调试器的功能. 他们被称作Win32调试API(或原语).利用这些API,我们可以:</p>
+
+  <li>加载一个程序或捆绑到一个正在运行的程序上以供调试</li>
+  <li>获得被调试的程序的低层信息,例如进程ID,进入地址,映像基址等.</li>
+  <li>当发生与调试有关的事件时被通知,例如进程/线程的开始/结束, DLL的加载/释放等.</li>
+  <li>修改被调试的进程或线程</li>
+
+<p>简而言之,我们可以用这些API写一个简单的调试器.由于这个题目有些过大,我把它分为几部分,而本教程就是它的第一部分.在本教程中,我将讲解一些基本概念及Win32调试API的大致框架.<br>
+  使用Win32调试API的步骤如下:</p>
+<ol>
+  <li>创建一个进程或捆绑到一个运行中的进程上. 这是使用Win32调试API的第一步.由于我们的程序要扮演调试器的角色,我们要找一个供调试的程序.一个被调试的程序被称为debuggee.可以通过以下两种方式获得debuggee: 
+  <li>通过CreateProcess创建debuggee进程.为了创建被调试的进程,必须指定DEBUG_PROCESS标志.这一标志告诉Windows我们要调试该进程. 
+        当debuggee中发生重要的与调试有关的事件(调试事件)时,Windows 会向我们的程序发送通知.debuggee会立即挂起以等待我们的程序准备好.如果debuggee还创建了子进程,Windows还会为每个子进程中的调试事件向我们的程序发送通知.这一特性通常是不必要的.我们可以通过指定DEBUG_ONLY_THIS_PROCESS与 
+        DEBUG_PROCESS的组合标志来禁止它. </li>
+      <li>我们也可以用 DebugActiveProcess标志捆绑到一个运行中的进程上.</li>
+    
+  
+  <li>等待调试事件. 在获得了一个debuggee进程后,debuggee的主线程被挂起,这种状况将持续到我们的程序调用WaitForDebugEvent为止.这个函数和其他的WaitForXXX函数相似,比如说,它阻塞调用线程直到等待的事件发生.对这个函数来说, 
+    它等待由Windows发送的调试事件.下面是它的定义: 
+    <pre class="code">WaitForDebugEvent proto lpDebugEvent:DWORD, dwMilliseconds:DWORD</pre>
+    <p>lpDebugEvent is the address of a DEBUG_EVENT这个结构将被填入关于debuggee中发生的调试事件的信息.</p>
+    <p>dwMilliseconds 该函数等待调试事件的时间,以毫秒为单位.如果这段时间没有调试事件发生, WaitForDebugEvent返回调用者.另一方面,如果将该参数指定为 
+      INFINITE 常数,函数将一直等待直到调试事件发生.</p>
+    <p>现在我们看一下DEBUG_EVENT 结构.</p>
+    <pre class="code"> DEBUG_EVENT  STRUCT
+        DWDEBUGEVENTCODE  DD        ?
+        DWPROCESSID  DD        ?
+        DWTHREADID  DD        ?
+        u DEBUGSTRUCT <>
+ DEBUG_EVENT  ENDS</pre>
+    <p>dwDebugEventCode 该值指定了等待发生的调试事件的类型.因为有很多种类型的事件发生,我们的程序要检查该值,知道要发生事件的类型并做出响应. 
+      该值可能的取值如下:</p>
+  </li>
+  <table>
+    <tr bgcolor="#009999"> 
+      <th>取值</th>
+      <th>含义</th>
+    </tr>
+    <tr> 
+      <td>CREATE_PROCESS_DEBUG_EVENT</td>
+      <td>进程被创建.当debuggee进程刚被创建(还未运行) 或我们的程序刚以DebugActiveProcess被捆绑到一个运行中的进程时事件发生. 
+        这是我们的程序应该获得的第一个事件.</td>
+    </tr>
+    <tr> 
+      <td>EXIT_PROCESS_DEBUG_EVENT</td>
+      <td>进程退出.</td>
+    </tr>
+    <tr> 
+      <td>CREATE_THEAD_DEBUG_EVENT</td>
+      <td>当一个新线程在deuggee进程中创建或我们的程序首次捆绑到运行中的进程时事件发生.要注意的是当debugge的主线程被创建时不会收到该通知.      </td>
+    </tr>
+    <tr> 
+      <td height="131">EXIT_THREAD_DEBUG_EVENT</td>
+      <td height="131">debuggee中的线程退出时事件发生.debugee的主线程退出时不会收到该通知.我们可以认为debuggee的主线程与debugge进程是同义词. 
+        因此, 当我们的程序看到CREATE_PROCESS_DEBUG_EVENT标志时,对主线程来说,就是CREATE_THREAD_DEBUG_EVENT标志.</td>
+    </tr>
+    <tr> 
+      <td>LOAD_DLL_DEBUG_EVENT</td>
+      <td>debuggee装入一个DLL.当PE装载器第一次分解指向DLL的链接时,我们将收到这一事件. (当调用CreateProcess装入 
+        debuggee时)并且当debuggee调用LoadLibrary时也会发生.</td>
+    </tr>
+    <tr> 
+      <td>UNLOAD_DLL_DEBUG_EVENT</td>
+      <td>一个DLL从debuggee中卸载时事件发生. </td>
+    </tr>
+    <tr> 
+      <td>EXCEPTION_DEBUG_EVENT</td>
+      <td>在debuggee中发生异常时事件发生. 注意: 该事件仅在debuggee开始它的第一条指令之前发生一次.异常实际上是一个调试中断(int 
+        3h).如果想恢复debuggee事,以 DBG_CONTINUE 标志调用ContinueDebugEvent 函数. 
+        不要使用DBG_EXCEPTION_NOT_HANDLED 标志否则debuggee会在NT下拒绝运行(Win98下运行得很好).</td>
+    </tr>
+    <tr> 
+      <td>OUTPUT_DEBUG_STRING_EVENT</td>
+      <td>当debuggee调用DebugOutputString函数向我们的程序发送消息字符串时该事件发生. </td>
+    </tr>
+    <tr> 
+      <td>RIP_EVENT</td>
+      <td>系统调试发生错误</td>
+    </tr>
+  </table>
+  <p>dwProcessId 和dwThreadId发生调试事件的进程和线程Id.我们可以用这些值作为我们感兴趣的进程或线程的标志符.记住如果我们使用CreateProcess来装载debuggee,我们仍可在PROCESS_INFO结构中获得debuggee的进程和线程.我们可以用这些值来区别调试事件是发生在debuggee中还是它的子进程中(当没有指定 
+    DEBUG_ONLY_THIS_PROCESS 标志时).</p>
+  <p> u 是一个联合,包含了调试事件的更多信息.根据上面dwDebugEventCode的不同,它可以是以下结构:</p>
+  <table>
+    <tr bgcolor="#009900"> 
+      <th>dwDebugEventCode</th>
+      <th>u的解释</th>
+    </tr>
+    <tr> 
+      <td>CREATE_PROCESS_DEBUG_EVENT</td>
+      <td>名为CreateProcessInfo的CREATE_PROCESS_DEBUG_INFO结构</td>
+    </tr>
+    <tr> 
+      <td>EXIT_PROCESS_DEBUG_EVENT</td>
+      <td>名为ExitProcess的EXIT_PROCESS_DEBUG_INFO结构</td>
+    </tr>
+    <tr> 
+      <td>CREATE_THREAD_DEBUG_EVENT</td>
+      <td>名为CreateThread的CREATE_THREAD_DEBUG_INFO结构</td>
+    </tr>
+    <tr> 
+      <td>EXIT_THREAD_DEBUG_EVENT</td>
+      <td>名为ExitThread的EXIT_THREAD_DEBUG_EVENT 结构</td>
+    </tr>
+    <tr> 
+      <td>LOAD_DLL_DEBUG_EVENT</td>
+      <td>名为LoadDll的LOAD_DLL_DEBUG_INFO 结构</td>
+    </tr>
+    <tr> 
+      <td>UNLOAD_DLL_DEBUG_EVENT</td>
+      <td>名为UnloadDll的UNLOAD_DLL_DEBUG_INFO结构</td>
+    </tr>
+    <tr> 
+      <td>EXCEPTION_DEBUG_EVENT</td>
+      <td>名为Exception的EXCEPTION_DEBUG_INFO结构</td>
+    </tr>
+    <tr> 
+      <td>OUTPUT_DEBUG_STRING_EVENT</td>
+      <td>名为DebugString的OUTPUT_DEBUG_STRING_INFO 结构</td>
+    </tr>
+    <tr> 
+      <td>RIP_EVENT</td>
+      <td>名为RipInfo的RIP_INFO 结构</td>
+    </tr>
+  </table>
+  <p>我不会在这一个教程里讲所有这些结构的细节,这里只详细讲一下CREATE_PROCESS_DEBUG_INFO 结构. <br>
+    假设我们的程序调用了WaitForDebugEvent函数并返回,我们要做的第一件事就是检查dwDebugEventCode中的值来看debuggee进程中发生了那种类型的调试事件.比如说,如果dwDebugEventCode的值为 
+    CREATE_PROCESS_DEBUG_EVENT,就可认为u的成员为CreateProcessInfo 
+    并用u.CreateProcessInfo来访问. </p>
+  <li>在我们的程序中做对调试事件的响应. 当WaitForDebugEvent 返回时,这意味着在debuggee进程中发生了调试事件或者发生了超时.所以我们的程序要检查dwDebugEventCode 
+    来作出适当的反应.这里有些象处理Windows消息:由用户来选择和忽略消息.</li>
+  <li>继续运行debuggee. 当调试事件发生时, Windows挂起了debuggee,所以当我们处理完调试事件,还要让debuggee继续运行.调用ContinueDebugEvent 
+    函数来完成这一过程. 
+    <pre class="code">ContinueDebugEvent proto dwProcessId:DWORD, dwThreadId:DWORD, dwContinueStatus:DWORD</pre>
+    <p>该函数恢复由于调试事件而挂起的线程.<br>
+      dwProcessId和dwThreadId是要恢复的线程的进程ID和线程ID,通常这两个值从 DEBUG_EVENT结构的dwProcessId 
+      和dwThreadId成员获得.<br>
+      dwContinueStatus显示了如何继续报告调试事件的线程.可能的取值有两个: DBG_CONTINUE 和DBG_EXCEPTION_NOT_HANDLED. 
+      对大多数调试事件,这两个值都一样:恢复线程.唯一的例外是EXCEPTION_DEBUG_EVENT,如果线程报告发生了一个异常调试事件,这意味着在debuggee的线程中发生了一个异常.如果指定了DBG_CONTINUE,线程将忽略它自己的异常处理部分并继续执行.在这种情况下,我们的程序必须在以DBG_CONTINUE恢复线程之前检查并处理异常,否则异常将生生不息地不断发生....如果我们指定了 
+      DBG_EXCEPTION_NOT_HANDLED值,就是告诉Windows我们的程序并不处理异常:Windows将使用debuggee的默认异常处理函数来处理异常.</p>
+  </li>
+  <li>
+    <p> 总而言之,如果我们的程序没有考虑异常,而调试事件又指向debuggee进程中的一个异常的话,就应调用含DBG_CONTINUE标志的ContinueDebugEvent函数.否则,我们的程序就必须以DBG_EXCEPTION_NOT_HANDLED调用 
+      ContinueDebugEvent.但在下面这种情况下必须使用DBG_CONTINUE标志:第一个在ExceptionCode成员中有值EXCEPTION_BREAKPOINT的 
+      EXCEPTION_DEBUG_EVENT事件.当debuggee开始执行它的第一条指令时,我们的函数将接受到异常调试事件.它事实上是一个调试中断(int 
+      3h).如果我们以DBG_EXCEPTION_NOT_HANDLED调用ContinueDebugEvent 来响应调试事件, 
+      Windows NT会拒绝执行debuggee(因为它没有异常处理).所以在这种情况下,要用DBG_CONTINUE标志告诉Windows我们希望该线程继续执行.</p>
+  </li>
+  <li>继续上面的步骤循环直到debuggee进程退出. 我们的程序必须在一个很象消息循环的无限循环中直到debuggee结束.该循环大体如下: 
+    <p>.while TRUE<br>
+          invoke WaitForDebugEvent, addr DebugEvent, INFINITE<br>
+         .break .if DebugEvent.dwDebugEventCode==EXIT_PROCESS_DEBUG_EVENT<br>
+         &lt;调试事件处理&gt;<br>
+         invoke ContinueDebugEvent, DebugEvent.dwProcessId, DebugEvent.dwThreadId, 
+      DBG_EXCEPTION_NOT_HANDLED <br>
+      .endw <br>
+    </p>
+    <p>就是说,当开始调试程序时,我们的程序不能和debuggee分开直到它结束.</p>
+  </li>
+</ol>
+<p>我们再来总结一下这些步骤:</p>
+<ol>
+  <li>创建一个进程或捆绑我们的程序到运行中的进程上.</li>
+  <li>等待调试事件</li>
+  <li>响应调试事件.</li>
+  <li>继续执行debuggee.</li>
+  <li>继续这一无尽循环直到debuggee进程结束</li>
+</ol>
+<h3>例子:</h3>
+<p>这个例子调试一个win32程序并显示诸如进程句柄,进程Id,映象基址等.</p>
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\COMDLG32.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\COMDLG32.LIB
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+.DATA
+     APPNAME  DB        "WIN32 DEBUG EXAMPLE NO.1",0
+ofn OPENFILENAME <> 
+            FILTERSTRING  DB        "EXECUTABLE FILES",0,"*.EXE",0
+              DB        "ALL FILES",0,"*.*",0,0
+    EXITPROC  DB        "THE DEBUGGEE EXITS",0
+   NEWTHREAD  DB        "A NEW THREAD IS CREATED",0
+   ENDTHREAD  DB        "A THREAD IS DESTROYED",0
+ PROCESSINFO  DB        "FILE HANDLE: %LX ",0DH,0AH
+              DB        "PROCESS HANDLE: %LX",0DH,0AH
+              DB        "THREAD HANDLE: %LX",0DH,0AH
+              DB        "IMAGE BASE: %LX",0DH,0AH
+              DB        "START ADDRESS: %LX",0
+.DATA?
+      BUFFER  DB        512 DUP(?)
+      startinfo STARTUPINFO <>
+      pi PROCESS_INFORMATION <>
+      DBEvent DEBUG_EVENT <>
+.CODE
+      START:
+              MOV       OFN.LSTRUCTSIZE,SIZEOF OFN
+              MOV       OFN.LPSTRFILTER, OFFSET FILTERSTRING
+              MOV       OFN.LPSTRFILE, OFFSET BUFFER
+              MOV       OFN.NMAXFILE,512
+              MOV       OFN.FLAGS, OFN_FILEMUSTEXIST OR OFN_PATHMUSTEXIST OR OFN_LONGNAMES OR OFN_EXPLORER OR OFN_HIDEREADONLY
+              INVOKE    GETOPENFILENAME, ADDR OFN
+.IF           EAX==TRUE
+              INVOKE    GETSTARTUPINFO,ADDR STARTINFO
+              INVOKE    CREATEPROCESS, ADDR BUFFER, NULL, NULL, NULL, FALSE, DEBUG_PROCESS+ DEBUG_ONLY_THIS_PROCESS, NULL, NULL, ADDR STARTINFO, ADDR PI
+.WHILE        TRUE
+              INVOKE    WAITFORDEBUGEVENT, ADDR DBEVENT, INFINITE
+.IF           DBEVENT.DWDEBUGEVENTCODE==EXIT_PROCESS_DEBUG_EVENT
+              INVOKE    MESSAGEBOX, 0, ADDR EXITPROC, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.BREAK
+.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==CREATE_PROCESS_DEBUG_EVENT
+              INVOKE    WSPRINTF, ADDR BUFFER, ADDR PROCESSINFO, DBEVENT.U.CREATEPROCESSINFO.HFILE, DBEVENT.U.CREATEPROCESSINFO.HPROCESS, DBEVENT.U.CREATEPROCESSINFO.HTHREAD, DBEVENT.U.CREATEPROCESSINFO.LPBASEOFIMAGE, DBEVENT.U.CREATEPROCESSINFO.LPSTARTADDRESS
+              INVOKE    MESSAGEBOX,0, ADDR BUFFER, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==EXCEPTION_DEBUG_EVENT
+.IF           DBEVENT.U.EXCEPTION.PEXCEPTIONRECORD.EXCEPTIONCODE==EXCEPTION_BREAKPOINT
+              INVOKE    CONTINUEDEBUGEVENT, DBEVENT.DWPROCESSID, DBEVENT.DWTHREADID, DBG_CONTINUE
+.CONTINUE
+.ENDIF
+.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==CREATE_THREAD_DEBUG_EVENT
+              INVOKE    MESSAGEBOX,0, ADDR NEWTHREAD, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==EXIT_THREAD_DEBUG_EVENT
+              INVOKE    MESSAGEBOX,0, ADDR ENDTHREAD, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.ENDIF
+              INVOKE    CONTINUEDEBUGEVENT, DBEVENT.DWPROCESSID, DBEVENT.DWTHREADID, DBG_EXCEPTION_NOT_HANDLED
+.ENDW
+              INVOKE    CLOSEHANDLE,PI.HPROCESS
+              INVOKE    CLOSEHANDLE,PI.HTHREAD
+.ENDIF
+              INVOKE    EXITPROCESS, 0
+              END       START</pre>
+<h3>分析:</h3>
+<p>程序首先填充OPENFILENAME结构,调用GetOpenFileName让用户选择要调试的程序.</p>
+<pre class="code">invoke GetStartupInfo,addr startinfo  
+invoke CreateProcess, addr buffer, NULL, NULL, NULL, FALSE, DEBUG_PROCESS+ DEBUG_ONLY_THIS_PROCESS, NULL, NULL, addr startinfo, addr pi </pre>
+<p>当接收用户选择后,调用CreateProcess装载程序.并调用GetStartupInfo以默认值填充STARTUPINFO结构.注意我们将DEBUG_PROCESS标志与DEBUG_ONLY_THIS_PROCESS标志组合来仅调试这个程序,不包括子进程.</p>
+<pre class="code">.while TRUE 
+     invoke WaitForDebugEvent, addr DBEvent, INFINITE
+</pre>
+<p>在debuggee被装入后,我们调用WaitForDebugEvent进入无尽的调试循环,WaitForDebugEvent在debuggee中发生调试事件时返回,因为我们指定了INFINITE作为第二个参数.当调试事件发生时, 
+  WaitForDebugEvent 返回并填充DBEvent结构.</p>
+<pre class="code">   .if DBEvent.dwDebugEventCode==EXIT_PROCESS_DEBUG_EVENT 
+         invoke MessageBox, 0, addr ExitProc, addr AppName, MB_OK+MB_ICONINFORMATION 
+         .break </pre>
+<p>我们要先检查dwDebugEventCode的值, 如果是EXIT_PROCESS_DEBUG_EVENT,用一个消息框显示&quot;The 
+  debuggee exits&quot; 并退出调试循环.</p>
+<pre class="code">.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==CREATE_PROCESS_DEBUG_EVENT
+              INVOKE    WSPRINTF, ADDR BUFFER, ADDR PROCESSINFO, DBEVENT.U.CREATEPROCESSINFO.HFILE, DBEVENT.U.CREATEPROCESSINFO.HPROCESS, DBEVENT.U.CREATEPROCESSINFO.HTHREAD, DBEVENT.U.CREATEPROCESSINFO.LPBASEOFIMAGE, DBEVENT.U.CREATEPROCESSINFO.LPSTARTADDRESS
+              INVOKE    MESSAGEBOX,0, ADDR BUFFER, ADDR APPNAME, MB_OK+MB_ICONINFORMATION</pre>
+<p>如果dwDebugEventCode 的值为CREATE_PROCESS_DEBUG_EVENT,我们就在消息框中显示一些感兴趣的底层信息.这些信息从u.CreateProcessInfo获得. 
+  CreateProcessInfo是一个CREATE_PROCESS_DEBUG_INFO类型的结构体.你可以查阅Win32 API获得它的更多信息e. 
+</p>
+<pre class="code">.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==EXCEPTION_DEBUG_EVENT
+.IF           DBEVENT.U.EXCEPTION.PEXCEPTIONRECORD.EXCEPTIONCODE==EXCEPTION_BREAKPOINT
+              INVOKE    CONTINUEDEBUGEVENT, DBEVENT.DWPROCESSID, DBEVENT.DWTHREADID, DBG_CONTINUE
+.CONTINUE
+.ENDIF</pre>
+<p>如果dwDebugEventCode 的值为EXCEPTION_DEBUG_EVENT,我们就要更进一步检查异常类型.它是一大堆的结构嵌套,但我们可以从ExceptionCode成员获得异常类型.如果ExceptionCode的值为 
+  EXCEPTION_BREAKPOINT并且是第一次发生(或者我们已知道deuggee中没有int 3h指令),我们可以安全地假定在debuggee要执行第一条指令时发生这一异常.在我们完成这些处理后,就可以用 
+  DBG_CONTINUE调用ContinueDebugEvent来继续执行debuggee.接着我们继续等待下一个调试事件的发生.</p>
+<pre class="code">.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==CREATE_THREAD_DEBUG_EVENT
+              INVOKE    MESSAGEBOX,0, ADDR NEWTHREAD, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.ELSEIF       DBEVENT.DWDEBUGEVENTCODE==EXIT_THREAD_DEBUG_EVENT
+              INVOKE    MESSAGEBOX,0, ADDR ENDTHREAD, ADDR APPNAME, MB_OK+MB_ICONINFORMATION
+.ENDIF</pre>
+<p>如果dwDebugEventCode 的值为CREATE_THREAD_DEBUG_EVENT或EXIT_THREAD_DEBUG_EVENT, 
+  我们的程序显示一个消息框.</p>
+<pre class="code">              INVOKE    CONTINUEDEBUGEVENT, DBEVENT.DWPROCESSID, DBEVENT.DWTHREADID, DBG_EXCEPTION_NOT_HANDLED
+.ENDW</pre>
+<p>除了上面讨论过的 EXCEPTION_DEBUG_EVENT,用DBG_EXCEPTION_NOT_HANDLED标志调用ContinueDebugEvent函数恢复debuggee的执行.</p>
+<pre class="code">              INVOKE    CLOSEHANDLE,PI.HPROCESS
+              INVOKE    CLOSEHANDLE,PI.HTHREAD</pre>
+<p>当debuggee结束时,我们就跳出了调试循环,这时要关闭 debuggee的线程和进程句柄.关闭这些句柄并不意味着要关闭这些进程和线程.只是说不再用这些句柄罢了.</p>
+
+ 
+</BODY></HTML>
+<div class="rpindex"><a href="029.html"> 下一页</a><a href="027.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

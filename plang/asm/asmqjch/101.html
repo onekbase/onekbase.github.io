@@ -1,0 +1,341 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="100.html"> 上一页</a><a href="102.html"> 下一页</a></div>
+<h1>DOS程序使用XMS</h1>
+<h2>概述：</h2>
+作为常规内存的扩充，XMS（即扩充内存）的应用很广泛，它主要用于程序的数据存储空间，使用XMS时，需要在常规内存中开一个缓冲区，然后用移动内存块的方法进行数据交换。<br>
+      XMS 内存的存取是通过 XMS 驱动程序进行的，存取 XMS 前，必须先检测 XMS 驱动程序是否存在，然后获取驱动程序地址，通过远调用来使用它。检测 
+  XMS 及获取驱动程序地址通过 INT 2FH 的 4300H 和 4310H 功能来进行的，一旦成功后，所有对 XMS 的操作都是先在 AH 内设置功能码，然后通过对驱动程序进行 
+  CALL FAR 来完成。在调用时需要在内存中先定义一个 EMM 结构，里面包括移动的字节数，XMS内存的句柄等要用到的参数。</p>
+<p>有关资料：<br>
+  <br>
+  1.DOS 中断 2FH 的 4300H 及 4310H 功能</p>
+<table>
+  <tr> 
+    <td width="20%" bgcolor="#0000FF">功能号</td>
+    <td width="40%" bgcolor="#0000FF">入口参数</td>
+    <td width="40%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr> 
+    <td width="20%" rowspan="2" bgcolor="#C8C8FF">AX=4300H<br>
+      XMS安装检测</td>
+    <td width="40%" rowspan="2" bgcolor="#C8C8FF">　</td>
+    <td width="40%" bgcolor="#C8C8FF">AL=80H 已安装XMS</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF">AL&lt;&gt;80H XMS未安装</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">AX=4310H<br>
+      取驱动程序地址</td>
+    <td width="40%" bgcolor="#C8C8FF">　</td>
+    <td width="40%" bgcolor="#C8C8FF">ES:BX=驱动程序入口地址</td>
+  </tr>
+</table>
+<p>2.远调用 XMS 驱动程序的功能表</p>
+<table>
+  <tr> 
+    <td width="20%" bgcolor="#0000FF">功能号</td>
+    <td width="40%" bgcolor="#0000FF">入口参数</td>
+    <td width="40%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr> 
+    <td width="20%" rowspan="2" bgcolor="#C8C8FF">AH=09H<br>
+      分配XMS内存</td>
+    <td width="40%" rowspan="2" bgcolor="#C8C8FF">DX=所需的KB</td>
+    <td width="40%" bgcolor="#C8C8FF">AX=0001H 成功<br>
+      则DX=XMS 内存句柄</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF">AX=0000H 失败</td>
+  </tr>
+  <tr> 
+    <td width="20%" rowspan="2" bgcolor="#C8C8FF">AH=0AH<br>
+      释放XMS内存</td>
+    <td width="40%" rowspan="2" bgcolor="#C8C8FF">DX=XMS句柄</td>
+    <td width="40%" bgcolor="#C8C8FF">AX=0001H 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF">AX=0000H 失败</td>
+  </tr>
+  <tr> 
+    <td width="20%" rowspan="2" bgcolor="#C8C8FF">AH=0BH<br>
+      移动XMS内存</td>
+    <td width="40%" rowspan="2" bgcolor="#C8C8FF">DS:SI指向EMM结构</td>
+    <td width="40%" bgcolor="#C8C8FF">AX=0001H 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF">AX=0000H 失败</td>
+  </tr>
+</table>
+<p>3.EMM 结构的格式</p>
+<table>
+  <tr> 
+    <td width="20%" bgcolor="#0000FF">偏移量</td>
+    <td width="40%" bgcolor="#0000FF">大小</td>
+    <td width="40%" bgcolor="#0000FF">说明</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">00H</td>
+    <td width="40%" bgcolor="#C8C8FF">Double word</td>
+    <td width="40%" bgcolor="#C8C8FF">要移动的字节数（必须是偶数）</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">04H</td>
+    <td width="40%" bgcolor="#C8C8FF">Word</td>
+    <td width="40%" bgcolor="#C8C8FF">源句柄（0 表示常规内存）</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">06H</td>
+    <td width="40%" bgcolor="#C8C8FF">Double word</td>
+    <td width="40%" bgcolor="#C8C8FF">源块中的偏移量</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">0AH</td>
+    <td width="40%" bgcolor="#C8C8FF">Word</td>
+    <td width="40%" bgcolor="#C8C8FF">目的句柄（0 表示常规内存）</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF">0CH</td>
+    <td width="40%" bgcolor="#C8C8FF">Double word</td>
+    <td width="40%" bgcolor="#C8C8FF">目的块中的偏移量</td>
+  </tr>
+</table>
+<p>汇编编程示例： 
+ <pre class="code">;定义 EMM 结构
+
+         EMM  DW        0,0         ;double word -- how many bytes to move
+              DW        0           ;word -- source handle
+              DW        0,0         ;double word -- source offset & segment
+              DW        0           ;word -- target handle
+              DW        0,0         ;double word -- target offset & segment
+      OFFXMS  DW        0           ;XMS驱动程序的入口地址
+      SEGXMS  DW        0
+
+  HANDLE_XMS  DW        0           ;申请到的XMS句柄</pre>
+  ;以下程序检测及申请XMS内存<br>
+ <pre class="code">
+              MOV       AX,4300H    ;检测有无XMS
+              INT       2FH
+              CMP       AL,80H
+              JNZ       NO_XMS
+
+              MOV       AX,4310H    ;保存XMS驱动程序地址
+              INT       2FH
+              MOV       OFFXMS,BX
+              MOV       SEGXMS,ES
+
+              MOV       AH,9        ;分配XMS内存
+              MOV       DX,100      ;分配100KB
+              CALL      DWORD PTR OFFXMS
+              OR        AX,AX
+              JZ        NO_MORE_XMS ;AX=0 则分配失败
+
+              MOV       XMS_HANDLE,DX</pre>
+  ;以下程序将内存A000:0000处的64K字节移到XMS块中<br>
+ <pre class="code">              MOV       EMM,0
+              MOV       EMM+2,1     ;10000H为64K
+              MOV       EMM+4,0     ;source handle = 普通内存
+              MOV       EMM+6,0     ;源地址A000:0000
+              MOV       EMM+8,0A000H
+              MOV       BX,XMS_HANDLE
+              MOV       EMM+0AH,BX  ;targat handle = XMS
+              MOV       EMM+0CH,0   ;移动到XMS的起始地址
+              MOV       EMM+0EH,0
+              MOV       SI,OFFSET EMM
+              MOV       AH,0BH
+              CALL      DWORD PTR OFFXMS</pre>
+  ;以下程序将XMS块中的64K字节移到内存A000:0000处<br>
+  <pre class="code">              MOV       EMM,0
+              MOV       EMM+2,1     ;bytes = 10000H (64K)
+              MOV       BX,XMS_HANDLE
+              MOV       EMM+4,BX    ;source handle
+              MOV       EMM+6,0     ;source offset
+              MOV       EMM+8,0
+              MOV       EMM+0AH,0   ;target handle 0 for MEM
+              MOV       EMM+0CH,0   ;target offset
+              MOV       EMM+0EH,0A000H
+              MOV       SI,OFFSET EMM
+              MOV       AH,0BH
+              CALL      DWORD PTR OFFXMS</pre>
+  ;以下程序释放XMS内存<br>
+ <pre class="code">              MOV       AH,0AH      ;free XMS memory
+              MOV       DX,CS:XMS_HANDLE
+              CALL      DWORD PTR CS:OFFXMS</pre>
+
+
+<div class="rpindex"><a href="102.html"> 下一页</a><a href="100.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

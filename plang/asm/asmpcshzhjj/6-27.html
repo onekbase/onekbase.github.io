@@ -1,0 +1,238 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="6-26.html">上一页</a> <a href="6-28.html">下一页</a> </div>
+  <p>关于显示分页的情况在本章的前半部分中已有所述，很多项功能调用都要求在BH寄存器中放入显示页号，而且只有&quot;当前&quot;的显示页才会真正出现在屏幕上。这样一来如果程序在其他显示中写入了字符应该如何处理才能在屏幕上看到呢？这就需要使用10H中断的05H功能来设置当前显示页：</p>
+  <p>功能号：05H<br />
+    用　途：设定当前显示页<br />
+    参　数：AL=所选的显示页号<br />
+    调　用：INT 10H<br />
+    返　回：无</p>
+  <p>下面的程序演示了这个功能的应用，我们先在四个显示页中写入不同的信息，然后根据按下的数字键轮换设置四个显示页为当前显示页，这样就可以在屏幕上看到不同的显示内容。 </p>
+  <pre class="code">        data  segment
+              assume    ds:data
+     pagemsg  db        'Zero PAGE',0	；定义放入不同显示页中信息
+              db        'First PAGE',0
+              db        'Second PAGE',0
+              db        'Third PAGE',0
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+              mov       si,offset pagemsg	；SI寄存器指向PAGEMSG
+              mov       bl,1	；显示字符为蓝色
+              mov       bh,0	；显示页号送入BH寄存器
+      start:
+              mov       dx,0	；设置光标的位置为（0，0）
+    dispmsg:
+              mov       ah,2	；利用10H中断的02功能
+              int       10h	；设置光标位置
+			
+              lodsb     ；从字符串中取得一个字符
+              or        al,al	；已经到字符串结尾了吗？
+              jz        next_page	；已到结尾，转NEXT_PAGE
+              mov       ah,9	；利用10H中断的09功能
+              mov       cx,1	；在BH指出的显示页内输出一个字符
+              int       10h
+			
+              inc       dl	；光标所在列号加1
+              jmp       dispmsg	；显示下一个字符
+  next_page:
+              inc       bl	；改变字符属性
+              inc       bh	；选择下一个显示页
+              cmp       bh,4	；处理所有的显示页了吗？
+              jb        start	；未处理所有的显示页，转START继续
+      swich:
+              mov       ah,0	；等待键盘输入
+              int       16h
+              sub       al,30h	；输入的字符ASCII码减30H
+              jb        exit	；若ASCII码小于30H（不是数字键）结束
+              cmp       al,03h	；若ASCII码大于33H（大于数字4）
+              ja        exit	；转EXIT退出
+              mov       ah,5	；利用10H中断的05功能
+              int       10h	；将当前显示页设置为指定页
+              jmp       swich	；转SWICH继续等待键盘输入
+       exit:
+              mov       ah,4ch	；结束程序
+              int       21h
+        main  endp
+        code  ends
+              end       main
+</pre>
+  <p>这四个显示页有什么实际应用价值吗？可以这样设想，让程序在非当前的显示页中写入信息，而后将被写入的显示页切换为当前显示页，这样可以使整屏的信息在一瞬时&quot;弹出（Popup）&quot;于用户眼前，使得程序具有一种快速感。当然，有时我们可能感觉直接在当前显示页中写一整屏信息并不慢，这是因为在字符模式下我们要处理的数据量比较小造成的。如果显示图形，那么使用多个显示页轮换显示就会有快速的效果。</p>
+  <div  class="rpindex"><a href="6-28.html">下一页</a><a href="6-26.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

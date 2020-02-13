@@ -1,0 +1,538 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="026.html"> 上一页</a><a href="028.html"> 下一页</a></div>
+<h1>第27课 工具提示控件</h1>
+<p> 我们将学习工具提示控件:它是什么如何创建和使用.</p>
+<h3>理论:</h3>
+<p>工具提示是当鼠标在某特定区域上停留时显示的一个矩形窗口.工具提示窗口包含一些编程者想要显示的文本.在这点上,工具提示同状态栏的作用是一样的,所不同的是工具提示当单击或者远离指定区域的时候就会消逝,你可能熟悉与工具栏相关联的工具提示,那些&quot;提示&quot;是工具栏控件提供的便利.如果你想要在其它窗口、控件中显示工具提示的话,就不得不自己创建他们.</p>
+<p>既然已经了解了什么是工具提示,就让我们来看看如何创建他们.大致步骤如下:</p>
+<ol>
+  <li>用CreateWindowEx函数创建工具提示控件. 
+  <li>定义一个工具提示控件将要监视鼠标移动的区域. 
+  <li>将区域传递给工具提示控件 
+  <li>将传递区域的鼠标消息转送给工具提示控件.(这步或许更早,具体依据转播消息的方法) </li>
+</ol>
+下面我们就来详细的讨论每一步. 
+<H4>工具提示控件的创建</H4>
+工具提示控件是一种通用控件.同样,要在源代码某处调用InitCommonControls以便MASM能够将你的程序和comctl32.dll连接. 
+用CreateWindowEx创建工具提示控件,典型代码如下: 
+<pre class="code">.DATA
+        TOOLTIPCLASSNAME  DB        "TOOLTIPS_CLASS32",0
+.CODE
+..... 
+              INVOKE    INITCOMMONCONTROLS
+              INVOKE    CREATEWINDOWEX, NULL, ADDR TOOLTIPCLASSNAME, NULL, \
+TIS_ALWAYSTIP, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, NULL, NULL, HINSTANCE, NULL
+</pre>
+注意窗口风格:TIS_ALWAYSTIP指定了工具提示不管包含指定区域的窗口状态如何,当鼠标移过指定区域的时候,工具提示总是显示.简单的说就是,即使窗口处于非激活状态,鼠标移过工具提示指定区域的时候,工具提示也会出现. 
+<BR>
+你不必在CreateWindowEx中包括WS_POPUP 和 WS_EX_TOOLWINDOW风格,因为工具提示处理过程会自动加上,你也不必指定工具提示窗口的坐标和宽高,控件会依据要显示的文字自动调节.四个参数,均使用CW_USEDEFAULT 
+,其余的参数都不太重要. 
+<H4>指定工具</H4>
+<p>工具提示控件创建了但还没有显示,我们想要当鼠标指针在某个区域之上时显示工具提示窗口.现在需要指定这个区域.我们称这样的区域为&quot;工具&quot;,“工具”就是工具提示控件监视鼠标指针是否移过的位于窗口客户区的一个方形区域.如果鼠标指针移过&quot;工具&quot;,工具提示窗口就显示.&quot;工具&quot;可覆盖整个客户区或者仅仅是它的一部分.因此我们把&quot;工具&quot;分成两种类型,一种是作为一个窗口,另一种则是某窗口客户区的一部分.两种各有所用.覆盖整个客户区的&quot;工具&quot;通常用于按钮、编辑控件等,你不必指定焦点域的坐标和大小:它被假定为窗口的整个客户区.仅覆盖窗口客户区一部分的&quot;工具&quot;在你想把窗口客户区分成几个部分但又不想使用子窗口时特别有用,但需要指定左上角的坐标和宽高.</p>
+<p>使用如下的 TOOLINFO 结构定义&quot;工具&quot;:</p>
+<pre class="code">    TOOLINFO  STRUCT
+      CBSIZE  DWORD     ?
+      UFLAGS  DWORD     ?
+        HWND  DWORD     ?
+         UID  DWORD     ?
+rect RECT <> 
+       HINST  DWORD     ?
+    LPSZTEXT  DWORD     ?
+lParam LPARAM ? 
+    TOOLINFO  ENDS</pre>
+<CENTER>
+<table>
+  <TBODY>
+  <TR align=middle bgColor=#666600>
+      <TD bgcolor="#CCCCCC">域名</TD>
+      <TD bgcolor="#CCCCCC">说明</TD>
+    </TR>
+  <TR>
+    <TD>cbSize</TD>
+      <TD>TOOLINFO结构的大小.必须填充, 如果这个区域不被正确填充Windows并不会报错,但你会得到不可预料的奇怪结果.</TD>
+    </TR>
+  <TR>
+      <TD height="229">uFlags</TD>
+      <TD height="229"> 指定焦点域的属性,可以是如下标志的联合: 
+        
+          <LI>TTF_IDISHWND  "ID is hWnd".如果你指定了这个标志,就意味着你要使用覆盖整个客户区的&quot;工具&quot; 
+            (上面第一种&quot;工具&quot;). 如果你使用了这个标志,你必须用你要使用的窗口句柄填充uId成员,如果你不指定这个成员,就意味着你要使用第二种&quot;工具&quot;、客户区窗口的一方形区域.在这种情况下,你就必须以方形区域的大小填充rect成员. 
+          <LI>TTF_CENTERTIP   通常工具提示窗口显示在鼠标的右下方,如果你指定了这个标志,不管鼠标的位置如何,工具提示总显示在焦点域总的中下方. 
+          <LI>TTF_RTLREADING  .如果你的程序不是为阿拉伯或者希伯来语系统设计的,你完全可以不理它,它使得提示文本以从右至左的顺序显示,在其它系统中无效. 
+          <LI>TTF_SUBCLASS  如果你使用了这个标志,工具提示控件将子类化&quot;工具&quot;所在窗口以便截取发送给它的的鼠标消息,这个标志非常有用,否则你将不得不做更多的工作来向工具提示控件转发消息.</LI>
+        
+      </TD></TR>
+  <TR>
+    <TD>hWnd</TD>
+      <TD>包含&quot;工具&quot;的窗口句柄,如果你指定了TTF_IDISHWND标志,Windows将忽略该值,而使用uId成员的值作为窗口句柄.你需要填充这个域域如果: 
+        
+          <LI>你不使用 TTF_IDISHWND标志 (换句话说,你使用局部&quot;工具&quot;) 
+          <LI>你在 lpszText 成员中指定了LPSTR_TEXTCALLBACK .这个值告诉工具提示控件当需要显示提示窗口时,必须向包含&quot;工具&quot;的窗口查询应该显示什么. 
+            这是一种实时的控件文本更新.如果你需要动态改变提示文本,你应当在 lpszText成员中指定LPSTR_TEXTCALLBACK值,控件就会向hWnd指定的窗口发送TTN_NEEDTEXT 
+            消息. </LI>
+        
+      </TD></TR>
+  <TR>
+      <TD height="151">uId</TD>
+      <TD height="151">这个域的值可能有两种含义,依 uFlags 是否包含TTF_IDISHWND. 
+        
+          <LI> 如果TTF_IDISHWND标志没有被指定就代表应用程序定义的&quot;工具&quot;ID,由于这意味着你使用仅覆盖客户区一部分的&quot;工具&quot;,逻辑的推出一个客户区可能存在多个同样的焦点域(不存在交迭),Hwnd成员的一个窗口句柄就不够了,应用程序定义ID以区分他们因此而显得必要,只要唯一ID可以是任何值. 
+          <LI> 如果TTF_IDISHWND标志被指定就表示整个客户区都作为焦点域的窗口句柄,你或许会奇怪为什么不用上面提到的hWnd成员的值来储存窗口句柄.答案是:如果lpszText指定为LPSTR_TEXTCALLBACK,Hwnd 
+            可能已经被填充了.还有提供提示文本的窗口和包含&quot;工具&quot;的窗口可能不是同一个!(你可以设计一个提供两种服务的窗口程序,但太严格了,在这点上,微软为我们提供了更大的自由,欢呼吧!)</LI>
+        
+      </TD></TR>
+  <TR>
+      <TD height="54">rect</TD>
+      <TD height="54"> 指定&quot;工具&quot;大小的rect结构.这个结构定义了一个以hWnd指定窗口客户区左上角为基点的方形大小,简言之,如果你想指定客户区的一部分作为&quot;工具&quot;就得填充这个结构,如果你指定了TTF_IDISHWND标志 
+        ,控件就会忽略这个值.(你已经选择整个客户区作为&quot;工具&quot;) </TD>
+    </TR>
+  <TR>
+      <TD height="52">hInst</TD>
+      <TD height="52">如果lpszText指定了字符串资源的标识,包含将作为工具提文本字符串资源的实例句柄.听起来有点费解,阅读一下lpszText的说明就可以明白这个域是干什么用的了.若lpszText不包含字符串资源标识,控件会忽略这个域.</TD>
+    </TR>
+  <TR>
+      <TD height="121">lpszText</TD>
+      <TD height="121">这个域可以有如下几个值: 
+        
+          <LI>如果指定为LPSTR_TEXTCALLBACK, 工具提示控件就会向HWnd窗口发送TTN_NEEDTEXT消息以获得将要显示的字符串.提示文本的动态更新方法:每次显示提示窗口都改变提示文本. 
+          <LI> 如果在这个域中指定字符串资源标识,当控件要在提示窗口中显示提示文本时,就搜索hInst成员标识的实例的字符串资源列表.由于字符串资源列表标识总是16位值,这个域的高字节将永远为0,这种方法在你想移植程序时非常有用,由于字符串资源以脚本形式定义,你不必修改源代码.只需要修改字符串列表提示文本就会相应改变,而不必担心引进bugs. 
+          <LI>如果这个域的值不是LPSTR_TEXTCALLBACK并且高字节不为零, 控件截取这个值作为提示文本的指针,这是最简单的方法但也最不稳定.通过检查高字节区分字符串资源标识.</LI>
+        
+      </TD></TR></TBODY></TABLE>
+</CENTER>
+<P>总言之,你需要将TOOLINFO结构传递给工具提示控件之前填充填充好,它描述了你期望的&quot;工具&quot;属性. 
+<H4>向工具提示控件注册&quot;工具&quot;</H4>
+<p>填充完TOOLINFO结构后, 必须将其传递给控件 . 一个工具提示控件可以控制很多&quot;工具&quot;,因此不必为一个窗口创建很多控件,为了注册&quot;工具&quot;,向控件发送TTM_ADDTOOL消息 
+  wParam不使用,lParam必须包含要注册的TOOLINFO结构的指针</p>
+<pre class="code">.DATA?
+ti TOOLINFO <> 
+....... 
+.CODE
+....... 
+<fill the TOOLINFO structure> 
+....... 
+              INVOKE    SENDMESSAGE, HWNDTOOLTIP, TTM_ADDTOOL, NULL, ADDR TI</pre>
+<p>成功返回 TRUE,否则返回 FALSE.<BR>
+  发送 TTM_DELTOOL消息取消注册. </p>
+<H4>向工具提示控件转发鼠标消息</H4>
+以上步骤完毕之后,控件知道了应当监视那一块区域和应该在提示窗口显示什么.唯一缺乏的就是激发机制. 想想看:&quot;工具&quot;指定的其它窗口的客户区的区域.控件如何截取发送向该窗口的消息呢?实际中需要截取消息以便了解鼠标停留了多长时间,当指定时间流逝以后,控件显示提示窗口.有两种方法: 
+一种需要包含&quot;工具&quot;窗口的合作,另一种则不需要. 
+
+  <LI>包含&quot;工具&quot;的窗口必须向控件发送 TTM_RELAYEVENT 以转发消息. lParam是指向要转发消息MSG的指针 
+    控件仅处理如下鼠标消息 : 
+    
+<LI>WM_LBUTTONDOWN 
+<LI>WM_MOUSEMOVE 
+<LI>WM_LBUTTONUP 
+<LI>WM_RBUTTONDOWN 
+<LI>WM_MBUTTONDOWN 
+<LI>WM_RBUTTONUP 
+<LI>WM_MBUTTONUP </LI>
+    
+    其它消息全被忽略,因此包含&quot;工具&quot;的窗口的处理过程必须包含像这样的选择: 
+    <Pre class="code">     WNDPROC  PROC      HWND:DWORD, UMSG:DWORD, WPARAM:DWORD, LPARAM:DWORD
+....... 
+              IF        UMSG==WM_CREATE
+        ............. 
+              ELSEIF    UMSG==WM_LBUTTONDOWN || UMSG==WM_MOUSEMOVE || UMSG==WM_LBUTTONUP \
+              || UMSG==WM_RBUTTONDOWN || UMSG==WM_MBUTTONDOWN || UMSG==WM_RBUTTONUP || UMSG==WM_MBUTTONUP
+              INVOKE    SENDMESSAGE, HWNDTOOLTIP, TTM_RELAYEVENT, NULL, ADDR MSG</Pre>
+  <LI>.你可以在TOOLINFO结构的uFlags成员指定 TTF_SUBCLASS标志。此标志告诉控件子类化包含&quot;工具&quot;的窗口以便无需窗口的协作便可捕获鼠标消息。由于除了控件自己处理截获的鼠标消息和指定TTF_SUBCLASS标志之外不用编写多余的代码，因此很易于使用。</LI>
+
+就是这些了,到这步为止,控件已经全功能了.还有几个你应当知道的相关消息. 
+
+  <LI>TTM_ACTIVATE.如果你想动态的允许或者禁止工具提示控件,这个小消息就是为你而备.wParam值为TRUE,允许控件.若为FALSE,禁止控件.控件初始创建的时候无需发送消息激活他,便被自动设为允许状态. 
+  <LI>TTM_GETTOOLINFO and TTM_SETTOOLINFO. 如果你想在把TOOLINFO结构传递给控件之后获得或者改变其值,使用此消息.你需要用正确的uId 
+    and hWnd值指定要改变的&quot;工具&quot;.如果你只想改变rect成员的值,使用TTM_NEWTOOLRECT 消息,如果仅想改变提示文本,使用TTM_UPDATETIPTEXT消息. 
+  <LI>TTM_SETDELAYTIME. 使用此消息指定控件显示提示文本时的时间延迟.</LI>
+
+<H3>例子:</H3>
+例子是一个有两个按钮的对话框,对话框的客户区分为4部分:左上、右上、左下、右下.每个区域都指定为有自己提示文本的&quot;工具&quot;,两个按钮也有自己的提示文本.
+
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\COMCTL32.INC
+  INCLUDELIB  \MASM32\LIB\COMCTL32.LIB
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+DlgProc proto :DWORD,:DWORD,:DWORD,:DWORD 
+EnumChild proto :DWORD,:DWORD 
+SetDlgToolArea proto :DWORD,:DWORD,:DWORD,:DWORD,:DWORD 
+.CONST
+          IDD_MAINDIALOG  EQU       101
+.DATA
+       TOOLTIPSCLASSNAME  DB        "TOOLTIPS_CLASS32",0
+         MAINDIALOGTEXT1  DB        "THIS IS THE UPPER LEFT AREA OF THE DIALOG",0
+         MAINDIALOGTEXT2  DB        "THIS IS THE UPPER RIGHT AREA OF THE DIALOG",0
+         MAINDIALOGTEXT3  DB        "THIS IS THE LOWER LEFT AREA OF THE DIALOG",0
+         MAINDIALOGTEXT4  DB        "THIS IS THE LOWER RIGHT AREA OF THE DIALOG",0
+.DATA?
+    HWNDTOOL  DD        ?
+   HINSTANCE  DD        ?
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE,NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    DIALOGBOXPARAM,HINSTANCE,IDD_MAINDIALOG,NULL,ADDR DLGPROC,NULL
+              INVOKE    EXITPROCESS,EAX
+
+     DLGPROC  PROC      HDLG:DWORD,UMSG:DWORD,WPARAM:DWORD,LPARAM:DWORD
+              LOCAL     TI:TOOLINFO
+              LOCAL     ID:DWORD
+              LOCAL     RECT:RECT
+.IF           UMSG==WM_INITDIALOG
+              INVOKE    INITCOMMONCONTROLS
+              INVOKE    CREATEWINDOWEX,NULL,ADDR TOOLTIPSCLASSNAME,NULL,\
+                        TTS_ALWAYSTIP,CW_USEDEFAULT,\
+                        CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,NULL,\
+hInstance,NULL
+              MOV       HWNDTOOL,EAX
+              MOV       ID,0
+              MOV       TI.CBSIZE,SIZEOF TOOLINFO
+              MOV       TI.UFLAGS,TTF_SUBCLASS
+              PUSH      HDLG
+              POP       TI.HWND
+              INVOKE    GETWINDOWRECT,HDLG,ADDR RECT
+              INVOKE    SETDLGTOOLAREA,HDLG,ADDR TI,ADDR MAINDIALOGTEXT1,ID,ADDR RECT
+              INC       ID
+              INVOKE    SETDLGTOOLAREA,HDLG,ADDR TI,ADDR MAINDIALOGTEXT2,ID,ADDR RECT
+              INC       ID
+              INVOKE    SETDLGTOOLAREA,HDLG,ADDR TI,ADDR MAINDIALOGTEXT3,ID,ADDR RECT
+              INC       ID
+              INVOKE    SETDLGTOOLAREA,HDLG,ADDR TI,ADDR MAINDIALOGTEXT4,ID,ADDR RECT
+              INVOKE    ENUMCHILDWINDOWS,HDLG,ADDR ENUMCHILD,ADDR TI
+
+
+.ELSEIF       UMSG==WM_CLOSE
+              INVOKE    ENDDIALOG,HDLG,NULL
+.ELSE
+              MOV       EAX,FALSE
+              RET
+.ENDIF
+              MOV       EAX,TRUE
+              RET
+     DLGPROC  ENDP
+
+   ENUMCHILD  PROC      USES EDI HWNDCHILD:DWORD,LPARAM:DWORD
+              LOCAL     BUFFER[256]:BYTE
+              MOV       EDI,LPARAM
+              ASSUME    EDI:PTR TOOLINFO
+              PUSH      HWNDCHILD
+              POP       [EDI].UID
+              OR        [EDI].UFLAGS,TTF_IDISHWND
+              INVOKE    GETWINDOWTEXT,HWNDCHILD,ADDR BUFFER,255
+              LEA       EAX,BUFFER
+              MOV       [EDI].LPSZTEXT,EAX
+              INVOKE    SENDMESSAGE,HWNDTOOL,TTM_ADDTOOL,NULL,EDI
+              ASSUME    EDI:NOTHING
+              RET
+   ENUMCHILD  ENDP
+
+          SETDLGTOOLAREA  PROC      USES EDI ESI HDLG:DWORD,LPTI:DWORD,LPTEXT:DWORD,ID:DWORD,LPRECT:DWORD
+              MOV       EDI,LPTI
+              MOV       ESI,LPRECT
+              ASSUME    ESI:PTR RECT
+              ASSUME    EDI:PTR TOOLINFO
+.IF           ID==0
+              MOV       [EDI].RECT.LEFT,0
+              MOV       [EDI].RECT.TOP,0
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              SHR       EAX,1
+              MOV       [EDI].RECT.RIGHT,EAX
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              SHR       EAX,1
+              MOV       [EDI].RECT.BOTTOM,EAX
+.ELSEIF       ID==1
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              SHR       EAX,1
+              INC       EAX
+              MOV       [EDI].RECT.LEFT,EAX
+              MOV       [EDI].RECT.TOP,0
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              MOV       [EDI].RECT.RIGHT,EAX
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              MOV       [EDI].RECT.BOTTOM,EAX
+.ELSEIF       ID==2
+              MOV       [EDI].RECT.LEFT,0
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              SHR       EAX,1
+              INC       EAX
+              MOV       [EDI].RECT.TOP,EAX
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              SHR       EAX,1
+              MOV       [EDI].RECT.RIGHT,EAX
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              MOV       [EDI].RECT.BOTTOM,EAX
+.ELSE
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              SHR       EAX,1
+              INC       EAX
+              MOV       [EDI].RECT.LEFT,EAX
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              SHR       EAX,1
+              INC       EAX
+              MOV       [EDI].RECT.TOP,EAX
+              MOV       EAX,[ESI].RIGHT
+              SUB       EAX,[ESI].LEFT
+              MOV       [EDI].RECT.RIGHT,EAX
+              MOV       EAX,[ESI].BOTTOM
+              SUB       EAX,[ESI].TOP
+              MOV       [EDI].RECT.BOTTOM,EAX
+.ENDIF
+              PUSH      LPTEXT
+              POP       [EDI].LPSZTEXT
+              INVOKE    SENDMESSAGE,HWNDTOOL,TTM_ADDTOOL,NULL,LPTI
+              ASSUME    EDI:NOTHING
+              ASSUME    ESI:NOTHING
+              RET
+          SETDLGTOOLAREA  ENDP
+
+
+              END       START</pre>
+  <p>分析:</p>
+<p>创建主对话框窗口之后,使用CreateWindowEx创建工具提示控件.</p>
+<pre class="code">              INVOKE    INITCOMMONCONTROLS
+              INVOKE    CREATEWINDOWEX,NULL,ADDR TOOLTIPSCLASSNAME,NULL,\
+                        TTS_ALWAYSTIP,CW_USEDEFAULT,\
+                        CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,NULL,\
+                        hInstance,NULL
+              MOV       HWNDTOOL,EAX
+
+</pre>
+<p>之后,我们继续定义对话框四个角作为焦点域.</p>
+<pre class="code">              MOV       ID,0        ; 焦点域ID
+              MOV       TI.CBSIZE,SIZEOF TOOLINFO
+              MOV       TI.UFLAGS,TTF_SUBCLASS  ; 告诉控件子类化窗口.
+              PUSH      HDLG
+              POP       TI.HWND     ; 包含焦点域的窗口句柄
+              INVOKE    GETWINDOWRECT,HDLG,ADDR RECT        ; 获得客户区的大小
+              INVOKE    SETDLGTOOLAREA,HDLG,ADDR TI,ADDR MAINDIALOGTEXT1,ID,ADDR RECT</pre>
+<P>我们初始化TOOLINFO结构. 注意我们要把客户区分成4个焦点域,因此我们需要知道客户区的大小,所以调用GetWindowRect.因为我们不想自己向控件转发消息,因此指定TIF_SUBCLASS 
+  标志.<BR>
+  SetDlgToolArea 是计算焦点域矩形范围的并向控件注册的函数,我不详细解释计算过程.只说明它把对话框分成4个焦点域.然后向控件发送TTM_ADDTOOL 
+  消息, 在lParam参数中传递TOOLINFO结构的地址.
+<Pre class="code">    invoke SendMessage,hwndTool,TTM_ADDTOOL,NULL,lpti </Pre>
+<P> 在四个控件注册之后,我们来看看对话框的按钮,我们可以用ID来处理每个按钮,但是实在太乏味了.我们使用EnumChildWindows函数列举对话框上的所有控件并把他们注册给控件,EnumChildWindows原型如下:
+<pre class="code">EnumChildWindows proto hWnd:DWORD, lpEnumFunc:DWORD, lParam:DWORD</pre>
+<p>hWnd 是父窗口句柄. </p>
+<p>lpEnumFunc 是每个控件将调用的EnumChildProc函数地址.lParam 是应用程序定义的要传给EnumChildProc 
+  函数的值. EnumChildProc 函数定义如下:</p>
+<pre class="code">EnumChildProc proto hwndChild:DWORD, lParam:DWORD</pre>
+hwndChild是EnumChildWindows函数枚举的句柄. lParam 就是你传递给EnumChildWindows函数的同一个lParam. 
+<BR>
+在例子中.我们如此调用 EnumChildWindows 函数:
+<pre class="code">invoke EnumChildWindows,hDlg,addr EnumChild,addr ti 
+</pre>
+<p>我们把TOOLINFO结构的地址放在lParam参数中传递,是因为我们要在EnumChild函数中注册每个子控件.如果我们不使用这种方法,就需要将ti声明为全局变量,但这可能会引入很多bug.<BR>
+  当我们调用 EnumChildWindows时, Windows会枚举出对话框上所有的子控件并为每个子控件调用一次EnumChild 
+  f函数. 这样如果我们的对话框有两个控件,EnumChild将被调用两次.<BR>
+  EnumChild 函数填充TOOLINFO 结构的相应成员并向控件注册.  </p>
+<pre class="code">   ENUMCHILD  PROC      USES EDI HWNDCHILD:DWORD,LPARAM:DWORD
+              LOCAL     BUFFER[256]:BYTE
+              MOV       EDI,LPARAM
+              ASSUME    EDI:PTR TOOLINFO
+              PUSH      HWNDCHILD
+              POP       [EDI].UID   ; we use the whole client area of the control as the tool
+              OR        [EDI].UFLAGS,TTF_IDISHWND
+              INVOKE    GETWINDOWTEXT,HWNDCHILD,ADDR BUFFER,255
+              LEA       EAX,BUFFER  ; use the window text as the tooltip text
+              MOV       [EDI].LPSZTEXT,EAX
+              INVOKE    SENDMESSAGE,HWNDTOOL,TTM_ADDTOOL,NULL,EDI
+              ASSUME    EDI:NOTHING
+              RET
+   ENUMCHILD  ENDP
+
+</pre>
+<p>注意在例子中,我们使用了一种不同&quot;工具&quot;:覆盖整个客户区的&quot;工具&quot;,因此我们需要用包含&quot;工具&quot;窗口的句柄来填充uID成员,也必须在uFlags 
+  成员中指定TTF_IDISHWND标志.</p>
+</BODY></HTML>
+<div class="rpindex"><a href="028.html"> 下一页</a><a href="026.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

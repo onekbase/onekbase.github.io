@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>java <span class="code">digit(</span>Char,Int)把一个字符转换为一个数字
+</h1>
+<p>进制radix主要用来排错，因为转换的数为能大于radix。</p>
+<pre class="code">    public static int digit(int codePoint, int radix) {
+        // BEGIN android-changed
+        if (radix < MIN_RADIX || radix > MAX_RADIX) {
+            return -1;
+        }
+        if (codePoint < 128) {
+            // Optimized for ASCII
+            int result = -1;
+            if ('0' <= codePoint && codePoint <= '9') {
+                result = codePoint - '0';
+            } else if ('a' <= codePoint && codePoint <= 'z') {
+                result = 10 + (codePoint - 'a');
+            } else if ('A' <= codePoint && codePoint <= 'Z') {
+                result = 10 + (codePoint - 'A');
+            }
+            return result < radix ? result : -1;
+        }
+        return UCharacter.digit(codePoint, radix);
+        // END android-changed
+    }</pre>
+<p>&nbsp;</p>
+</body>
+</html>

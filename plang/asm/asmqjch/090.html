@@ -1,0 +1,337 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="089.html"> 上一页</a><a href="091.html"> 下一页</a></div>
+<h1>DOS 
+  程序读取Windows 
+  的剪贴板数据</h1>
+<h2>概述：</h2>
+Windows 中剪贴板的功能给了我们很大的方便，但在 DOS 窗口下运行的程序如何利用剪贴板来获得数据呢？DOS 
+  的 INT 2FH 中断提供了几个有关剪贴板操作的中断，以下是中断的资料和读取剪贴板文本数据的编程示例。经过修改大家很容易编出读取图形数据的程序。<br>
+      本程序要用到的 INT 2FH 中断的 17xxH 功能如下：</p>
+<table>
+  <tr> 
+    <td width="20%" bgcolor="#0000FF" height="16">功能号</td>
+    <td width="40%" bgcolor="#0000FF" height="16">入口参数</td>
+    <td width="40%" bgcolor="#0000FF" height="16">出口参数</td>
+  </tr>
+  <tr> 
+    <td width="20%" rowspan="2" bgcolor="#C8C8FF" height="55">AX = 1700H<br>
+      检验是否支持剪贴板<br>
+    </td>
+    <td width="40%" bgcolor="#C8C8FF" rowspan="2" height="55">AX = 1700H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="24">AX = 1700H 不支持</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="25">AX &lt;&gt; 1700H 支持</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" rowspan="2" height="52">AH = 1701H<br>
+      打开剪贴板</td>
+    <td width="40%" bgcolor="#C8C8FF" rowspan="2" height="52">AX = 1701H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="23">AX &lt;&gt; 0 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="23">AX = 0 剪贴板已打开</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" rowspan="2" height="52">AH = 1702H<br>
+      清空剪贴板</td>
+    <td width="40%" bgcolor="#C8C8FF" rowspan="2" height="52">AX = 1702H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="23">AX &lt;&gt; 0 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="23">AX = 0 失败</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" rowspan="4" height="88">AH = 1703H<br>
+      将数据传入剪贴板</td>
+    <td width="40%" bgcolor="#C8C8FF" height="23">AX = 1703H</td>
+    <td width="40%" bgcolor="#C8C8FF" rowspan="2" height="177">AX &lt;&gt; 0 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="148">DX = 数据格式<br>
+      1 = 文本<br>
+      2 = Bitmap<br>
+      3 = Metafile picture<br>
+      4 = SYLK<br>
+      5 = DIF<br>
+      6 = TIFF<br>
+      7 = OEM 文本</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="23">ES:BX 指向数据缓冲区</td>
+    <td width="40%" bgcolor="#C8C8FF" rowspan="2" height="1">AX = 0 失败</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="1">SI:CX = 数据长度</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" height="23" rowspan="2">AH = 1704H<br>
+      取剪贴板数据长度</td>
+    <td width="40%" bgcolor="#C8C8FF" height="12">AX = 1704H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="12">DX:AX = 剪贴板内数据长度</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="11">DX = 数据格式（详见1703的DX）</td>
+    <td width="40%" bgcolor="#C8C8FF" height="11">DX:AX = 0 剪贴板内无数据</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" height="23" rowspan="2">AH = 1705H<br>
+      剪贴板数据</td>
+    <td width="40%" bgcolor="#C8C8FF" height="12">AX = 1705H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="12">AX &lt;&gt; 0 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="11">ES:BX 指向自己定义的数据缓冲区</td>
+    <td width="40%" bgcolor="#C8C8FF" height="11">AX = 0 失败</td>
+  </tr>
+  <tr> 
+    <td width="20%" bgcolor="#C8C8FF" height="23" rowspan="2">AH = 1708H<br>
+      关闭剪贴板</td>
+    <td width="40%" bgcolor="#C8C8FF" height="23" rowspan="2">AX = 1708H</td>
+    <td width="40%" bgcolor="#C8C8FF" height="12">AX &lt;&gt; 0 成功</td>
+  </tr>
+  <tr> 
+    <td width="40%" bgcolor="#C8C8FF" height="11">AX = 0 失败</td>
+  </tr>
+</table>
+<p>源程序：</p>
+  <pre class="code">
+;Copyright by LuoYunBin
+;http://asm.yeah.net
+;本程序未考虑剪贴板数据长度超过 60K 的情况！
+
+.286
+        CODE  SEGMENT
+              ASSUME    CS:CODE,DS:CODE
+              ORG       100H
+      START:
+              JMP       INSTALL
+
+      D_CLIP  DB        'Length in clipboard is %ld bytes.',0DH,0AH,0AH
+              DB        'The text in clipboard is:',0DH,0AH
+              DB        '-------------------------------------------',0DH,0AH
+              DB        '%c',0DH,0AH
+              DB        '-------------------------------------------',0DH,0AH,0
+              DW        _LENGTH,BUFFER
+   D_NO_DATA  DB        'There is no data in clipboard!',0DH,0AH,0
+     _LENGTH  DW        ?,?
+    INSTALL:
+              MOV       AX,1701H    ;打开剪贴板
+              INT       2FH
+
+              MOV       AX,1704H    ;读剪贴板数据长度
+              MOV       DX,1        ;数据格式为文本
+              INT       2FH
+              OR        AX,AX       ;为 0 则无数据
+              JNZ       HAS_DATA
+              OR        DX,DX
+              JZ        NO_DATA
+   HAS_DATA:
+              MOV       _LENGTH,AX  ;保存数据长度
+              MOV       _LENGTH+2,DX
+              MOV       AX,1705H    ;读剪贴板数据
+              MOV       DX,1
+              MOV       BX,OFFSET BUFFER
+              INT       2FH
+              OR        AX,AX
+              JZ        NO_DATA
+
+              MOV       AX,1708H    ;关闭剪贴板
+              INT       2FH
+
+              MOV       SI,_LENGTH
+              MOV       BUFFER [SI],0
+
+              MOV       SI,OFFSET D_CLIP        ;显示数据
+              CALL      PRINTF
+
+              INT       20H
+    NO_DATA:
+              MOV       SI,OFFSET D_NO_DATA
+              CALL      PRINTF
+              INT       20H
+		
+     INCLUDE  PRINTF.ASM        ;一个共用的显示程序
+      BUFFER  EQU       THIS BYTE   ;文件用作数据缓冲区
+        CODE  ENDS
+              END       START
+
+</pre>
+
+
+<div class="rpindex"><a href="091.html"> 下一页</a><a href="089.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,734 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">目录</a> <a href="1-3.html">上一页</a> <a href="1-5.html">下一页</a> </div>
+  <h2>1．4 汇编语言中的文字和符号</h2>
+  <p>习惯上通常把文字和符号统称为&quot;字符&quot;，字符在机器中是如何表示和存储的呢？我们知道计算机可以方便地处理数字，因此如果把字符用数字来表示，就可以很方便的在计算机中储存和处理。所以在计算机中一般采用ASCII（美国信息交换代码American Standard Code for Information Interchange）码来表示字符。</p>
+  <p> 计算机中所用的字符包括：</p>
+  <ol>
+    <li> 字母：A、B、．．．Z，a、b、．．．z；</li>
+    <li> 数字：0、1、．．．9；</li>
+    <li> 专用符号：＋、－、*、／、= ．．．</li>
+    <li> 控制符号：CR（Carriage Return 回车）、LF（Line Feed 换行）．．．</li>
+  </ol>
+  <p> 这些字符的ASCII码都列在下面表1-4和表1-5中</p>
+  <h4>表1-4  ASCII基本字符对照表</h4>
+  <table>
+    <tr>
+      <td > ASCII值</td>
+      <td  > 字符<sup>*</sup></td>
+      <td  > ASCII值</td>
+      <td  > 字符</td>
+      <td  > ASCII值</td>
+      <td  > 字符</td>
+      <td  > ASCII值</td>
+      <td > 字符</td>
+    </tr>
+    <tr>
+      <td  > 000<br />
+        001<br />
+        002<br />
+        003<br />
+        004<br />
+        005<br />
+        006<br />
+        007<br />
+        008<br />
+        009<br />
+        00A<br />
+        00B<br />
+        00C<br />
+        00D<br />
+        00E<br />
+        00F<br />
+        010<br />
+        011<br />
+        012<br />
+        013<br />
+        014<br />
+        015<br />
+        016<br />
+        017<br />
+        018<br />
+        019<br />
+        01A<br />
+        01B<br />
+        01C<br /></td>
+      <td > NULL<br />
+        SOH<br />
+        STX<br />
+        ETX<br />
+        EOT<br />
+        END<br />
+        ACK<br />
+        BEL<br />
+        BS<br />
+        HT<br />
+        LF<br />
+        VT<br />
+        FF<br />
+        CR<br />
+        SO<br />
+        SI<br />
+        DLE<br />
+        DC1<br />
+        DC2<br />
+        DC3<br />
+        DC4<br />
+        NAK<br />
+        SYN<br />
+        ETB<br />
+        CAN<br />
+        EM<br />
+        SUB<br />
+        ESC<br />
+        FS</td>
+      <td  > 020<br />
+        021<br />
+        022<br />
+        023<br />
+        024<br />
+        025<br />
+        026<br />
+        027<br />
+        028<br />
+        029<br />
+        02A<br />
+        02B<br />
+        02C<br />
+        02D<br />
+        02E<br />
+        02F<br />
+        030<br />
+        031<br />
+        032<br />
+        033<br />
+        034<br />
+        035<br />
+        036<br />
+        037<br />
+        038<br />
+        039<br />
+        03A<br />
+        03B<br />
+        03C</td>
+      <td > SPACE<br />
+        !<br />
+        &quot;<br />
+        #<br />
+        $<br />
+        %<br />
+        &amp;<br />
+        '<br />
+        (<br />
+        )<br />
+        *<br />
+        +<br />
+        ,<br />
+        -<br />
+        .<br />
+        /<br />
+        0<br />
+        1<br />
+        2<br />
+        3<br />
+        4<br />
+        5<br />
+        6<br />
+        7<br />
+        8<br />
+        9<br />
+        :<br />
+        ;<br />
+        &amp;LT</td>
+      <td > 040<br />
+        041<br />
+        042<br />
+        043<br />
+        044<br />
+        045<br />
+        046<br />
+        047<br />
+        048<br />
+        049<br />
+        04A<br />
+        04B<br />
+        04C<br />
+        04D<br />
+        04E<br />
+        04F<br />
+        050<br />
+        051<br />
+        052<br />
+        053<br />
+        054<br />
+        055<br />
+        056<br />
+        057<br />
+        058<br />
+        059<br />
+        05A<br />
+        05B<br />
+        05C</td>
+      <td > @<br />
+        A<br />
+        B<br />
+        C<br />
+        D<br />
+        E<br />
+        F<br />
+        G<br />
+        H<br />
+        I<br />
+        J<br />
+        K<br />
+        L<br />
+        M<br />
+        N<br />
+        O<br />
+        P<br />
+        Q<br />
+        R<br />
+        S<br />
+        T<br />
+        U<br />
+        V<br />
+        W<br />
+        X<br />
+        Y<br />
+        Z<br />
+        [<br />
+        \</td>
+      <td > 060<br />
+        061<br />
+        062<br />
+        063<br />
+        064<br />
+        065<br />
+        066<br />
+        067<br />
+        068<br />
+        069<br />
+        06A<br />
+        06B<br />
+        06C<br />
+        06D<br />
+        06E<br />
+        06F<br />
+        070<br />
+        071<br />
+        072<br />
+        073<br />
+        074<br />
+        075<br />
+        076<br />
+        077<br />
+        078<br />
+        079<br />
+        07A<br />
+        07B<br />
+        07C</td>
+      <td > `<br />
+        a<br />
+        b<br />
+        c<br />
+        d<br />
+        e<br />
+        f<br />
+        g<br />
+        h<br />
+        i<br />
+        j<br />
+        k<br />
+        l<br />
+        m<br />
+        n<br />
+        o<br />
+        p<br />
+        q<br />
+        r<br />
+        s<br />
+        t<br />
+        u<br />
+        v<br />
+        w<br />
+        x<br />
+        y<br />
+        z<br />
+        {<br />
+        |</td>
+    </tr>
+    <tr>
+      <td > 01D<br />
+        01E<br />
+        01F </td>
+      <td > GS<br />
+        RS<br />
+        US </td>
+      <td > 03D<br />
+        03E<br />
+        03F </td>
+      <td > =<br />
+        &amp;GT<br />
+        ? </td>
+      <td > 05D<br />
+        05E<br />
+        05F </td>
+      <td > ]<br />
+        <br />
+        _ </td>
+      <td > 07D<br />
+        07E<br />
+        07F </td>
+      <td > }<br />
+        ~<br />
+        | </td>
+    </tr>
+  </table>
+  <p>* 注：000H-01FH本为控制码，但在PC机屏幕上有时也会显示出特殊字形，比如0DH是控制码&quot;CR（回车）&quot;，直接写入屏幕时会显示出&quot;x&quot;。</p>
+  <h5>表1-5  ASCII扩展字符对照表</h5>
+  <table>
+    <tr>
+      <td > ASCII值 </td>
+      <td > 字符<sup>*</sup> </td>
+      <td > ASCII值 </td>
+      <td > 字符 </td>
+      <td > ASCII值 </td>
+      <td > 字符 </td>
+      <td > ASCII值 </td>
+      <td > 字符 </td>
+    </tr>
+    <tr>
+      <td > 080<br />
+        081<br />
+        082<br />
+        083<br />
+        084<br />
+        085<br />
+        086<br />
+        087<br />
+        088<br />
+        089<br />
+        08A<br />
+        08B<br />
+        08C<br />
+        08D<br />
+        08E<br />
+        08F<br />
+        090<br />
+        091<br />
+        092<br />
+        093<br />
+        094<br />
+        095<br />
+        096<br />
+        097<br />
+        098<br />
+        099<br />
+        09A<br />
+        09B<br />
+        09C<br />
+        09D<br />
+        09E<br />
+        09F </td>
+      <td ><br />
+        ü<br />
+        é<br />
+        à<br />
+        a<br />
+        à<br />
+        a<br />
+        <br />
+        ê<br />
+        è<br />
+        ё<br />
+        <br />
+        <br />
+        ì<br />
+        A<br />
+        A<br />
+        E<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        ò<br />
+        <br />
+        ù<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        ￡<br />
+        ￥<br />
+        Pt<br />
+        <br />
+      </td>
+      <td > 0A0<br />
+        0A1<br />
+        0A2<br />
+        0A3<br />
+        0A4<br />
+        0A5<br />
+        0A6<br />
+        0A7<br />
+        0A8<br />
+        0A9<br />
+        0AA<br />
+        0AB<br />
+        0AC<br />
+        0AD<br />
+        0AE<br />
+        0AF<br />
+        0B0<br />
+        0B1<br />
+        0B2<br />
+        0B3<br />
+        0B4<br />
+        0B5<br />
+        0B6<br />
+        0B7<br />
+        0B8<br />
+        0B9<br />
+        0BA<br />
+        0BB<br />
+        0BC<br />
+        0BD<br />
+        0BE<br />
+        0BF </td>
+      <td > á<br />
+        í<br />
+        ó<br />
+        ú<br />
+        n<br />
+        N<br />
+        a<br />
+        o<br />
+        <br />
+        <br />
+        <br />
+        1/2<br />
+        1/4<br />
+        <br />
+        《<br />
+        》<br />
+        ▓<br />
+        <br />
+        ▓<br />
+        │<br />
+        ┤<br />
+        ╡<br />
+        ╢<br />
+        ╖<br />
+        ╕<br />
+        ╣<br />
+        ║<br />
+        ╗<br />
+        ╝<br />
+        ╜<br />
+        ┘<br />
+        ┐ </td>
+      <td > 0C0<br />
+        0C1<br />
+        0C2<br />
+        0C3<br />
+        0C4<br />
+        0C5<br />
+        0C6<br />
+        0C7<br />
+        0C8<br />
+        0C9<br />
+        0CA<br />
+        0CB<br />
+        0CC<br />
+        0CD<br />
+        0CE<br />
+        0CF<br />
+        0D0<br />
+        0D1<br />
+        0D2<br />
+        0D3<br />
+        0D4<br />
+        0D5<br />
+        0D6<br />
+        0D7<br />
+        0D8<br />
+        0D9<br />
+        0DA<br />
+        0DB<br />
+        0DC<br />
+        0DD<br />
+        0DE<br />
+        0DF </td>
+      <td > └<br />
+        ┴<br />
+        ┬<br />
+        ├<br />
+        ─<br />
+        ┼<br />
+        ╞<br />
+        ╟<br />
+        ╚<br />
+        ╔<br />
+        ╩<br />
+        ╦<br />
+        ╠<br />
+        ═<br />
+        ╬<br />
+        ╧<br />
+        ╨<br />
+        ╤<br />
+        ╥<br />
+        ╙<br />
+        ╘<br />
+        ╒<br />
+        ╓<br />
+        ╫<br />
+        ╪<br />
+        ┙<br />
+        ┌<br />
+        ▋<br />
+        ▄<br />
+        ▍<br />
+        ▍<br />
+        ▅ </td>
+      <td > 0E0<br />
+        0E1<br />
+        0E2<br />
+        0E3<br />
+        0E4<br />
+        0E5<br />
+        0E6<br />
+        0E7<br />
+        0E8<br />
+        0E9<br />
+        0EA<br />
+        0EB<br />
+        0EC<br />
+        0ED<br />
+        0EE<br />
+        0EF<br />
+        0F0<br />
+        0F1<br />
+        0F2<br />
+        0F3<br />
+        0F4<br />
+        0F5<br />
+        0F6<br />
+        0F7<br />
+        0F8<br />
+        0F9<br />
+        0FA<br />
+        0FB<br />
+        0FC<br />
+        0FD<br />
+        0FE<br />
+        0FF </td>
+      <td ><br />
+        <br />
+        <br />
+        Д<br />
+        <br />
+        σ<br />
+        <br />
+        <br />
+        Φ<br />
+        <br />
+        Ω<br />
+        <br />
+        ∞<br />
+        ∮<br />
+        ∈<br />
+        ∩<br />
+        ≡<br />
+        ±<br />
+        ≥<br />
+        ≤<br />
+        <br />
+        <br />
+        ÷<br />
+        ≈<br />
+        °<br />
+        ·<br />
+        ˙<br />
+        √<br />
+        ∏<br />
+        Ζ<br />
+        ■<br />
+        BLANK </td>
+    </tr>
+  </table>
+  <p>　用ASCII码表示字符可以很方便地由计算机处理，也便于在机器之间交换文字信息。当我们在键盘上按下字母&quot;a&quot;时，计算机究竟收到怎样的信息呢？实际上计主机从键盘收到的信息就是一个二进制数01100001。由于字符与数字之间的对应关系在ASCII码表中规定死了， 计算机当然知道键盘传输来的这个数字意味着什么，所以它会将这个数重新转换为人所能看懂的形式并将其显示在屏幕上。因此&quot;键盘输入-主机-显示输出&quot;的过程实际上就是&quot;文字-数字-文字&quot;的转换过程，这种转换由计算机自动完成。 </p>
+  <p>注意标准的ASCII码表内只有128个字符和控制码，用一个7位二进制数就可以表示。不过我们实际使用的都是8位二进制数，最高位用作校验位。不过在PC电脑中ASCII码表被扩展了，最高位不再用于校验，这样一来就多出了128个字符，这128个字符通常被称为&quot;扩展ASCII码&quot;，我们平常所看到的表格线，以及&quot; &quot;、&quot; &quot;这样的字符都存在于扩展ASCII码表中。</p>
+  <div class="rpindex"><a href="1-5.html">下一页</a><a href="1-3.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

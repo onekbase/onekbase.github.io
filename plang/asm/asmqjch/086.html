@@ -1,0 +1,397 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="085.html"> 上一页</a><a href="087.html"> 下一页</a></div>
+<h1>如何产生一个BMP文件</h1>
+<h2>概述：</h2>
+
+       BMP 文件是一种常用的图像文件格式，本文的例子程序产生一个简单的 640x480 24 bit 颜色的 
+  BMP 文件。BMP 文件的格式分两部分，第一部分为文件头，具体定义见源程序，第二部分为数据区，紧接着文件头存放。
+<pre class="code">        CODE  SEGMENT
+              ASSUME    CS:CODE,DS:CODE
+              ORG       100H
+      START:
+              JMP       INSTALL
+
+;BMP 文件头定义
+;---------------------------------------------------------------
+    BMP_HEAD  DB        'BM'        ;固定为 'BM'
+           D_FILE_LENGTH  DD        640*480*3+36H           ;文件总长度，包括文件头
+  D_RESERVED  DD        ?           ;reserved
+    D_OFFSET  DD        36H         ;数据区开始位置
+    D_BISIZE  DD        28H         ;bit map info' head length
+     D_WIDTH  DD        640         ;图形的宽度（单位象素）
+    D_HEIGHT  DD        480         ;图形的高度（单位象素）
+    D_PLANES  DW        1           ;图形的平面数
+       D_BIT  DW        24          ;颜色位数
+  D_COMPRESS  DD        0           ;压缩方式（0为不压缩）
+      D_SIZE  DD        640*480*3   ;数据长度
+      D_XPPM  DD        0C00H       ;pixels per meter (x)
+      D_YPPM  DD        0C00H       ;pixels per meter (y)
+   D_CLRUSED  DD        0           ;color used
+    D_CLRIMP  DD        0           ;important color index
+            BMP_HEAD_END  EQU       THIS BYTE
+;----------------------------------------------------------------
+      HANDLE  DW        ?
+   FILE_NAME  DB        'test.bmp',0
+    LINE_BUF  DB        640*3 DUP (0)
+       D_RED  DB        0FFH
+     D_GREEN  DB        0
+      D_BLUE  DB        0
+    INSTALL:
+              MOV       AH,3CH      ;建立文件
+              XOR       CX,CX
+              MOV       DX,OFFSET FILE_NAME
+              INT       21H
+              JNB       CRE_OK
+              INT       20H
+     CRE_OK:
+              MOV       HANDLE,AX
+		
+              MOV       AH,40H      ;写入文件头
+              MOV       BX,HANDLE
+              MOV       CX,OFFSET BMP_HEAD_END-OFFSET BMP_HEAD
+              MOV       DX,OFFSET BMP_HEAD
+              INT       21H
+		
+              MOV       CX,480      ;写入 480 行数据
+              XOR       BP,BP
+      B_LOP:
+              PUSH      CX
+		
+              MOV       AX,BP
+              INC       BP
+              CMP       AX,160
+              JB        B1
+              CMP       AX,320
+              JB        B2
+         B3:
+              SUB       AX,320
+              MOV       SI,OFFSET D_BLUE
+              MOV       DI,OFFSET D_RED
+              JMP       SHORT B4
+         B2:
+              SUB       AX,160
+              MOV       SI,OFFSET D_GREEN
+              MOV       DI,OFFSET D_BLUE
+              JMP       SHORT B4
+         B1:
+              MOV       SI,OFFSET D_RED
+              MOV       DI,OFFSET D_GREEN
+         B4:
+              MOV       CX,0FFH
+              MUL       CX
+              MOV       CX,160      ;160
+              DIV       CX
+		
+              MOV       BYTE PTR DS:[SI],0FFH
+              SUB       BYTE PTR DS:[SI],AL
+              MOV       BYTE PTR DS:[DI],AL
+		
+              MOV       CX,640
+              MOV       DI,OFFSET LINE_BUF
+              CLD
+     B_LOP1:
+              MOV       AL,D_RED
+              STOSB
+              MOV       AL,D_GREEN
+              STOSB
+              MOV       AL,D_BLUE
+              STOSB
+              LOOP      B_LOP1
+		
+              MOV       AH,40H
+              MOV       BX,HANDLE
+              MOV       CX,640*3
+              MOV       DX,OFFSET LINE_BUF
+              INT       21H
+              POP       CX
+              LOOP      B_LOP
+		
+              MOV       AH,3EH      ;关闭文件
+              INT       21H
+              INT       20H
+        CODE  ENDS
+              END       START
+</pre>
+
+  <p> CODE  SEGMENT<br />
+    ASSUME    CS:CODE,DS:CODE<br />
+    ORG       100H<br />
+    START:<br />
+    JMP       INSTALL</p>
+  <p>;BMP 文件头定义<br />
+    ;---------------------------------------------------------------<br />
+    BMP_HEAD  DB        'BM'        ;固定为 'BM'<br />
+    D_FILE_LENGTH  DD        640*480*3+36H           ;文件总长度，包括文件头<br />
+    D_RESERVED  DD        ?           ;reserved<br />
+    D_OFFSET  DD        36H         ;数据区开始位置<br />
+    D_BISIZE  DD        28H         ;bit map info' head length<br />
+    D_WIDTH  DD        640         ;图形的宽度（单位象素）<br />
+    D_HEIGHT  DD        480         ;图形的高度（单位象素）<br />
+    D_PLANES  DW        1           ;图形的平面数<br />
+    D_BIT  DW        24          ;颜色位数<br />
+    D_COMPRESS  DD        0           ;压缩方式（0为不压缩）<br />
+    D_SIZE  DD        640*480*3   ;数据长度<br />
+    D_XPPM  DD        0C00H       ;pixels per meter (x)<br />
+    D_YPPM  DD        0C00H       ;pixels per meter (y)<br />
+    D_CLRUSED  DD        0           ;color used<br />
+    D_CLRIMP  DD        0           ;important color index<br />
+    BMP_HEAD_END  EQU       THIS BYTE<br />
+    ;----------------------------------------------------------------<br />
+    HANDLE  DW        ?<br />
+    FILE_NAME  DB        'test.bmp',0<br />
+    LINE_BUF  DB        640*3 DUP (0)<br />
+    D_RED  DB        0FFH<br />
+    D_GREEN  DB        0<br />
+    D_BLUE  DB        0<br />
+    INSTALL:<br />
+    MOV       AH,3CH      ;建立文件<br />
+    XOR       CX,CX<br />
+    MOV       DX,OFFSET FILE_NAME<br />
+    INT       21H<br />
+    JNB       CRE_OK<br />
+    INT       20H<br />
+    CRE_OK:<br />
+    MOV       HANDLE,AX<br />
+  <br />
+    MOV       AH,40H      ;写入文件头<br />
+    MOV       BX,HANDLE<br />
+    MOV       CX,OFFSET BMP_HEAD_END-OFFSET BMP_HEAD<br />
+    MOV       DX,OFFSET BMP_HEAD<br />
+    INT       21H<br />
+  <br />
+    MOV       CX,480      ;写入 480 行数据<br />
+    XOR       BP,BP<br />
+    B_LOP:<br />
+    PUSH      CX<br />
+  <br />
+    MOV       AX,BP<br />
+    INC       BP<br />
+    CMP       AX,160<br />
+    JB        B1<br />
+    CMP       AX,320<br />
+    JB        B2<br />
+    B3:<br />
+    SUB       AX,320<br />
+    MOV       SI,OFFSET D_BLUE<br />
+    MOV       DI,OFFSET D_RED<br />
+    JMP       SHORT B4<br />
+    B2:<br />
+    SUB       AX,160<br />
+    MOV       SI,OFFSET D_GREEN<br />
+    MOV       DI,OFFSET D_BLUE<br />
+    JMP       SHORT B4<br />
+    B1:<br />
+    MOV       SI,OFFSET D_RED<br />
+    MOV       DI,OFFSET D_GREEN<br />
+    B4:<br />
+    MOV       CX,0FFH<br />
+    MUL       CX<br />
+    MOV       CX,160      ;160<br />
+    DIV       CX<br />
+  <br />
+    MOV       BYTE PTR DS:[SI],0FFH<br />
+    SUB       BYTE PTR DS:[SI],AL<br />
+    MOV       BYTE PTR DS:[DI],AL<br />
+  <br />
+    MOV       CX,640<br />
+    MOV       DI,OFFSET LINE_BUF<br />
+    CLD<br />
+    B_LOP1:<br />
+    MOV       AL,D_RED<br />
+    STOSB<br />
+    MOV       AL,D_GREEN<br />
+    STOSB<br />
+    MOV       AL,D_BLUE<br />
+    STOSB<br />
+    LOOP      B_LOP1<br />
+  <br />
+    MOV       AH,40H<br />
+    MOV       BX,HANDLE<br />
+    MOV       CX,640*3<br />
+    MOV       DX,OFFSET LINE_BUF<br />
+    INT       21H<br />
+    POP       CX<br />
+    LOOP      B_LOP<br />
+  <br />
+    MOV       AH,3EH      ;关闭文件<br />
+    INT       21H<br />
+    INT       20H<br />
+    CODE  ENDS<br />
+    END       START<br />
+  </p>
+  <div class="rpindex"><a href="087.html"> 下一页</a><a href="085.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,334 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div  class="lpindex"><a href="index.html">目录</a> <a href="5-11.html">上一页</a> <a href="5-13.html">下一页</a> </div>
+  <p>下面是用DEBUG根踪这个程序的过程，请注意观察BP寄存器的应用和堆栈的变化：</p>
+  <pre class="code">-g=0 c
+
+welcome to pc world?程序显示出的字符串
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=0000 BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=000C NV UP EI PL NZ NA PO NC
+
+1033:000C 52 PUSH DX
+</pre>
+  <p>&quot;PUSH DX&quot;指令将字符串首地址压入堆栈，借助堆栈将参数传递给子过程。注意SP寄存器的原值为0000。 </p>
+  <pre class="code">-t
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=FFFE BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=000D NV UP EI PL NZ NA PO NC
+
+1033:000D E80800 CALL 0018
+</pre>
+  <p>　&quot;CALL&quot;指令执行时堆栈中存入返回地址，恰好在所传递的参数之上。</p>
+  <pre class="code">-t
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=FFFC BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=0018 NV UP EI PL NZ NA PO NC
+
+1033:0018 55 PUSH BP
+</pre>
+  <p>为不破坏BP寄存器的原值，在应用BP寄存器之前先将其原状态压入堆栈，此时堆栈指针距传递参数的距离为4个BYTE。</p>
+  <pre class="code">-t
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=FFFA BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=0019 NV UP EI PL NZ NA PO NC
+
+1033:0019 8BEC MOV BP,SP
+</pre>
+  <p>　将堆栈指针置入BP寄存器，准备从堆栈之中取得参数。</p>
+  <pre class="code">-t
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=FFFA BP=FFFA SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=001B NV UP EI PL NZ NA PO NC
+
+1033:001B 8B5E04 MOV BX,[BP+04] SS:FFFE=0000
+</pre>
+  <p>　参数的实际位置应该是&quot;WORD PTR SS：[BP+04]&quot;，应用BP寄存器做间接寻址时CPU会自动引用SS寄存器提取段地址，因此编程时可以不明确指定引用SS寄存器。</p>
+  <pRE class="code">-t         注意此数据实际来自堆栈
+
+AX=0924 BX=0000 CX=004E DX=0000 SP=FFFA BP=FFFA SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=001E NV UP EI PL NZ NA PO NC
+
+1033:001E B91300 MOV CX,0013 SS:FFFE=0000
+</pre>
+  <p>　下面我们一次将子过程全部执行完，并在002BH处设置断点，以便于观察指令RET的执行情况。</p>
+  <pre class="code">-g=1e 2b
+
+AX=0944 BX=0013 CX=0000 DX=0000 SP=FFFC BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=002B NV UP EI PL NZ NA PO NC
+
+1033:002B C20200 RET 0002
+</pre>
+  <p>　带参数的RET指令可以自动修改SP寄存器，如果在这里简单的使用不带参数的RET指令，则这个子程序返回后SP应该等于&quot;0FFFEH&quot;，RET指令加上参数之后，SP寄存器就会被修改为0000，等于以前压入的参数自动出栈。</p>
+  <pre class="code">-t?注意SP寄存器的变化
+
+AX=0944 BX=0013 CX=0000 DX=0000 SP=0000 BP=0000 SI=0000 DI=0000
+
+DS=1031 ES=1021 SS=1031 CS=1033 IP=0010 NV UP EI PL NZ NA PO NC
+
+1033:0010 B409 MOV AH,09
+
+g=10
+
+WELCOME TO PC WORLD         转换后的字符串
+
+Program terminated normally
+</pre>
+  <p>下面这个程序也是一个有关如何应用BP寄存器实例，这个程序示例揭示了BP寄存器的又一用途--动态分配内存。</p>
+  <pre class="code">CALC.ASM			
+          CR  equ       0dh	；回车符的ASCII码
+          LF  equ       0ah	；换行符的ASCII码
+        data  segment
+              assume    ds:data
+        mess  db        'welco	me to pc world',0dh,0ah,24h	；定义一个小写字符串
+       ascii  db        '01234	56789abcdef'	；十六进制的数字
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              mov       ax,data	；设置数据段寄存器
+              mov       ds,ax
+			
+              mov       dx,offset mess	；DX寄存器指向字符串首
+              push      dx	；字符串首地址压入堆栈
+              mov       bx,offset ascii	；BX寄存器指向ASCII表
+              call      calc	；调用CALC子过程计算字符数
+              call      hexout	；调用HEXOUT子过程输出字符数
+              mov       ah,4ch	；结束进程
+              int       21h
+        main  endp
+			
+        calc  proc      near	；CALC子过程
+              push      bp	；保存BP寄存器
+              mov       bp,sp	；堆栈指针置入BP寄存器
+              sub       sp,2	；堆栈指针上移2字节
+              push      bx	；保存BX寄存器
+              mov       bx,[bp+4]	；字符串首地址送入BX寄存器
+              mov       word ptr [bp-2],0	；堆栈中空出的2个字节清零
+     caloop:
+              mov       dl,byte ptr [bx]	；从字符串中取一个字符
+              cmp       dl,24h	；到字符串结尾了吗？
+              jz        return	；到字符串结尾，返回主程序
+              mov       ah,2	；选择DOS API的02功能
+              int       21h	；调用中断显示字符
+              inc       bx	；BX指向下一个字符
+              inc       word ptr [bp-2]	；堆栈中的计数器加1
+              jmp       caloop	；处理下一个字符
+     return:
+              mov       ax,[bp-2]	；字符个数送入AX寄存器
+              pop       bx	；恢复BX寄存器
+              mov       sp,bp	；恢复堆栈指针
+              pop       bp	；恢复BP寄存器
+              ret       2	；返回主程序
+        calc  endp
+			
+      hexout  proc      near	；HEXOUT子程序
+              push      ax	；保存AX寄存器
+              mov       cx,2	；显示2位十六进制数
+    hexloop:
+              push      cx	；保存CX中的计数值
+              mov       cl,4	；准备循环移位次数
+              rol       al,cl	；循环移位
+              push      ax	；保存AX寄存器
+              and       al,0fh	；保留计数值的高4位
+              xlat      ascii	；取得对应的ASCII码
+              mov       dl,al	；准备显示数字对应的ASCII码
+              mov       ah,2
+              int       21h	；显示数字
+              pop       ax	；恢复AX寄存器
+              pop       cx	；恢复CX寄存器
+              loop      hexloop	；处理低4位
+              mov       dl,CR	；DL寄存器置入回车符
+              mov       ah,2
+              int       21h	；显示回车符
+              mov       dl,LF	；DL寄存器置入换行符
+              int       21h	；显示换行符
+              pop       ax	；恢复AX寄存器
+              ret       ；返回主程序
+              endp
+      hexout  ends
+        code  end       main
+</pre>
+  <p>子过程CALC用于显示字符串并计算总字符数。程序首先将堆栈指针SP的值置入BP寄存器，而后将SP寄存器减去2，这样一来在堆栈中就出现了两字节存储空间，这两字节可用[BP－2]寻址，这一存储空间可用于暂存数据。</p>
+  <p> 使用这种方式分配内存的好处是它比死板地使用DB、DW伪指令要灵活，当子过程返回后，所分到的内存会自动释放，而不占用固定的空间；如果我们把用DB、DW伪指令定义的变量称为&quot;静态变量&quot;（STATIC），那么这种在堆栈中分配到存储空间就是&quot;自动变量&quot;（AUTO）。这两种称谓都出现在C语言中，其实C语言也正是通过堆栈实现&quot;自动变量&quot;的。</p>
+  <div  class="rpindex"><a href="5-13.html">下一页</a><a href="5-11.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,273 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+<h1>使用Unicode的Beautiful Soup，Dammit</h1>
+<p>当你的文档被剖析之后，它就自动被转换为unicode。
+Beautiful Soup 只存储Unicode字符串。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+soup = BeautifulSoup(&quot;Hello&quot;)
+soup.contents[0]
+# <samp>u'Hello'</samp>
+soup.originalEncoding
+# <samp>'ascii'</samp>
+</pre>
+<p>使用UTF-8编码的日文文档例子： </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+soup = BeautifulSoup(&quot;\xe3\x81\x93\xe3\x82\x8c\xe3\x81\xaf&quot;)
+soup.contents[0]
+# <samp>u'\u3053\u308c\u306f'</samp>
+soup.originalEncoding
+# <samp>'utf-8'</samp>
+
+str(soup)
+# <samp>'\xe3\x81\x93\xe3\x82\x8c\xe3\x81\xaf'</samp>
+
+# <samp>Note: this bit uses EUC-JP, so it only works if you have cjkcodecs</samp>
+# <samp>installed, or are running Python 2.4.</samp>
+soup.__str__('euc-jp')
+# <samp>'\xa4\xb3\xa4\xec\xa4\xcf'</samp>
+</pre>
+<p>Beautiful Soup 使用一个称为<code>UnicodeDammit</code> 的类去来检测文档的编码，并将其转换为Unicode。
+  如果你需要为其他文档（没有石油Beautiful Soup剖析过得文档）使用这转换，你也可以
+  直接使用<code>UnicodeDammit</code>。
+  它是基于<a href="http://www.feedparser.org/">Universal Feed Parser</a>开发的。 </p>
+<p>如果你使用Python2.4之前的版本，请下载和安装<a href="http://cjkpython.i18n.org/"><code>cjkcodecs</code> 以及<code>iconvcodec</code></a> 是python支持更多的编码，特别是CJK编码。要想更好地自动检测，
+  你也要安装<a href="http://chardet.feedparser.org/"><code>chardet</code></a> </p>
+<p>Beautiful Soup 会按顺序尝试不同的编码将你的文档转换为Unicode： </p>
+<ul>
+  <li>可以通过<code>fromEncoding</code>参数传递编码类型给soup的构造器 </li>
+  <li>通过文档本身找到编码类型：例如XML的声明或者HTML文档<code>http-equiv</code>的META标签。
+    如果Beautiful Soup在文档中发现编码类型，它试着使用找到的类型转换文档。
+    但是，如果你明显的指定一个编码类型，
+    并且成功使用了编码：这时它会忽略任何它在文档中发现的编码类型。 </li>
+  <li>通过嗅探文件开头的一下数据，判断编码。如果编码类型可以被检测到，
+    它将是这些中的一个：UTF-*编码，EBCDIC或者ASCII。 </li>
+  <li>通过<a href="http://chardet.feedparser.org/"><code>chardet</code></a> 库,嗅探编码，如果你安装了这个库。 </li>
+  <li>UTF-8 </li>
+  <li>Windows-1252 </li>
+</ul>
+<p>Beautiful Soup总是会猜对它可以猜测的。但是对于那些没有声明以及有着奇怪编码
+  的文档，它会常常会失败。这时，它会选择Windows-1252编码，这个可能是错误的编码。
+  下面是EUC-JP的例子，Beautiful Soup猜错了编码。(重申一下：因为它使用了EUC-JP， 这个例子只会在
+  python 2.4或者你安装了<code>cjkcodecs</code>的情况下才工作。)： </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+euc_jp = '\xa4\xb3\xa4\xec\xa4\xcf'
+
+soup = BeautifulSoup(euc_jp)
+soup.originalEncoding
+# <samp>'windows-1252'</samp>
+
+str(soup)
+# <samp>'\xc2\xa4\xc2\xb3\xc2\xa4\xc3\xac\xc2\xa4\xc3\x8f'     # Wrong!</samp>
+</pre>
+<p>但如果你使用<code>fromEncoding</code>参数指定编码，
+  它可以正确的剖析文档，并可以将文档转换为UTF-8或者转回EUC-JP。 </p>
+<pre class="code">soup = BeautifulSoup(euc_jp, fromEncoding=&quot;euc-jp&quot;)
+soup.originalEncoding
+# <samp>'windows-1252'</samp>
+
+str(soup)
+# <samp>'\xe3\x81\x93\xe3\x82\x8c\xe3\x81\xaf'                 # Right!</samp>
+
+soup.__str__(self, 'euc-jp') == euc_jp
+# <samp>True</samp>
+</pre>
+<p>如果你指定Beautiful Soup使用 Windows-1252编码（或者类似的编码如ISO-8859-1，ISO-8859-2),
+  Beautiful Soup会找到并破坏文档的smart quotes以及其他的Windows-specific 字符。
+  这些字符不会转换为相应的Unicode,而是将它们变为HTML entities(<code>BeautifulSoup</code>) 
+  或者XML entitis(<code>BeautifulStoneSoup</code>)。 </p>
+<p>但是，你可以指定参数<code>smartQuotesTo=None</code> 到soup构造器：这时
+  smart quotes会被正确的转换为Unicode。你也可以指定<code>smartQuotesTo</code>为&quot;xml&quot;或&quot;html&quot;
+  去改变<code>BeautifulSoup</code>和<code>BeautifulStoneSoup</code>的默认操作。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup, BeautifulStoneSoup
+text = &quot;Deploy the \x91SMART QUOTES\x92!&quot;
+
+str(BeautifulSoup(text))
+# <samp>'Deploy the &amp;lsquo;SMART QUOTES&amp;rsquo;!'</samp>
+
+str(BeautifulStoneSoup(text))
+# <samp>'Deploy the &amp;#x2018;SMART QUOTES&amp;#x2019;!'</samp>
+
+str(BeautifulSoup(text, smartQuotesTo=&quot;xml&quot;))
+# <samp>'Deploy the &amp;#x2018;SMART QUOTES&amp;#x2019;!'</samp>
+
+BeautifulSoup(text, smartQuotesTo=None).contents[0]
+# <samp>u'Deploy the \u2018SMART QUOTES\u2019!'</samp>
+</pre>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>java 字符大小写转换
+</h1>
+<p>主要思想：大小写对应字母之差相同，因为在ASSIC表中大小写字母是两段连续的数字。这个差可以用'a' - 'A'表示。</p>
+<p>转小写：</p>
+<pre class="code">    public static char toLowerCase(char c) {
+        // BEGIN android-changed
+        return (char) toLowerCase((int) c);
+        // END android-changed
+    }
+    public static int toLowerCase(int codePoint) {
+        // BEGIN android-changed
+        // Optimized case for ASCII
+        if ('A' <= codePoint && codePoint <= 'Z') {
+            return (char) (<strong>codePoint + ('a' - 'A')</strong>);
+        }
+        if (codePoint < 192) {
+            return codePoint;
+        }
+        return UCharacter.toLowerCase(codePoint);
+        // END android-changed
+    }</pre>
+<p>转大写：</p>
+<pre class="code">    public static char toUpperCase(char c) {
+        // BEGIN android-changed
+        return (char) toUpperCase((int) c);
+        // END android-changed
+    }
+    public static int toUpperCase(int codePoint) {
+        // BEGIN android-changed
+        // Optimized case for ASCII
+        if ('a' <= codePoint && codePoint <= 'z') {
+            return (char) (<strong>codePoint - ('a' - 'A')</strong>);
+        }
+        if (codePoint < 181) {
+            return codePoint;
+        }
+        return UCharacter.toUpperCase(codePoint);
+        // END android-changed
+    }</pre>
+</body>
+</html>

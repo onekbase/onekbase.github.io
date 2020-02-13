@@ -1,0 +1,281 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">目录</a> <a href="8-1.html">上一页</a> <a href="8-12.html">下一页</a> </div>
+  <h3>8．1．1 文件的存取</h3>
+  <p>一个文件正常打开（或建立）之后，我们下面对文件进行存取的时候就不再依靠那个ASCIIZ串了，而完全依靠DOS给我们的文件句柄。这可以从表－－中所列的读写功能的用法中看出一些眉目来。下面我们就来看一看文件的读写功能是如何应用的。请看程序STARMAP.ASM：</p>
+  <h5>STARMAP.ASM</h5>
+  <pre class="code">      ESCkey  equ       1bh	；ESC键的ASCII码
+        data  segment
+              assume    ds:data
+       fname  db        'hzk16',0	；ASCIIZ串
+      buffer  db        32 dup(0)	；文件缓冲区
+         msg  db        Press any key to display the next star-map.',0dh,0ah
+              db        ESCape to exit',0dh,0ah,24h
+        data  ends
+			
+        code  segment
+              assume    cs:code
+        main  proc      far
+              mov       ax,data	；初始化DS寄存器
+              mov       ds,ax
+			
+              mov       dx,offset fname	；DX指向文件名的ASCIIZ串
+              mov       ax,3d00h	；按"读取"方式打开文件
+              int       21h
+              jc        exit	；若打开操作出错，转EXIT结束程序
+			
+              mov       bx,ax	；将文件句柄置入BX寄存器
+      loop1:
+              mov       ax,0003h	；重置显示模式3以清除屏幕
+              int       10h
+			
+              mov       ah,09h	；显示字符串MSG
+              mov       dx,offset msg
+              int       21h
+			
+              mov       ah,3fh	；准备从文件中读取数据
+              mov       dx,offset buffer	；DX指向文件缓冲区
+              mov       cx,32	；读取32字节
+              int       21h
+              jc        exit	；若读取操作出错，转EXIT结束程序
+              cmp       ax,cx	；确实读出了32个字节吗？
+              jb        exit	；若只读出部分数据，转EXIT结束
+			
+              call      disp	；调用DISP子过程处理读入的数据
+			
+              mov       ah,0	；等待键盘输入字符
+              int       16h
+              cmp       al,ESCkey	；输入的是ESC键吗？
+              jnz       loop1	；不是ESC键，转LOOP1继续
+       exit:
+              mov       ah,4ch	；结束进程
+              int       21h
+        main  endp
+			
+        disp  proc      near	；DISP子过程
+              push      bx	；保存BX寄存器
+              mov       cx,16	；处理读入的16个字（32字节）
+              mov       si,offset buffer	；SI寄存器指向文件缓冲区
+			
+              mov       dh,3	；设置光标的初始行列位置
+              mov       dl,32
+      loop2:
+              mov       ah,2	；设置光标位置
+              mov       bh,0
+              int       10h
+			
+              lodsw     ；从文件缓冲区取得一个字的数据
+              xchg      ah,al	；调整高、低字节的位置
+              push      cx	；暂存CX寄存器中的计数值
+              mov       cx,16	；处理一个字的16个数位
+      loop3:
+              shl       ax,1	；将取得的数据从移1位
+              push      ax	；保存移位后的结果，腾出AX寄存器
+              mov       ah,0eh	；选择10H中断的0EH功能
+              jnc       next_dot	；若移出AX的数位为0，转NEXT_DOT输出空格
+              mov       al,2ah	；AL寄存器中送入"*"
+              jmp       output	；转OUTPUT输出AL寄存器中的字符
+   next_dot:
+              mov       al,20h	；AL寄存器送入空格符
+     output:
+              int       10h	；输出AL中的字符
+              pop       ax	；恢复移位后的结果
+              loop      loop3	；返回LOOP3处理下一个数位
+			
+              inc       dh	；准备将光标移动至下一行
+              pop       cx	；恢复CX寄存器
+              loop      loop2	；返回LOOP2处理下一个字的数据
+              pop       bx	；恢复BX寄存器
+              ret       ；返回主过程
+        disp  endp
+        code  ends
+              end       main
+</pre >
+  <p>程序中出现了一个新指令--XCHG，这个指令用于将两个数据的位置进行交换：</p>
+  <p>助记符：XCHG（Exchange）<br />
+    用　途：将两个寄存器或寄存器与存储器中的数据互换。<br />
+    格　式：XCHG 寄存器，寄存器<br />
+    XCHG 寄存器，存储单元<br />
+    XCHG 存储单元，寄存器<br />
+    执　行：寄存器之间或寄存器与存储单元中的数据交换了位置。</p>
+  <p>STARMAP是一个很有趣的程序，出现在屏幕上那些&quot;星号&quot;组成了一个个特殊的符号，大家可以试着使用UCDOS或其它汉字系统的&quot;区位&quot;输入法从区位码&quot;0000&quot;开始输入汉字，再和这个程序输出的&quot;星图&quot;作一对比，就会发现&quot;有趣&quot;之处。</p>
+  <p> 这个程序所揭示的不仅仅是有关读取文件内容的方法，还有一个很重要的知识点。这个知识点将在下一章详细加以讨论。我们现在主要来讨论有关文件的内容。</p>
+  <p> 3FH功能用于从文件中读取数据，使用这个功能时只需将被操作的文件所对应的句柄填入BX寄存器即可。同利用FCB的那些功能相比，它具有这样一些特点：</p>
+  <p> （1）DS：DX寄存器指向一个预先定义的缓冲区，读入的数据将保存在这个缓冲区中。句柄功能不采用定义DTA的方式保存数据，这给程序的设计带来了一些灵活性，比如我们可以将文件读到内存中任意一个位置，只需变变DS：DX的指向即可，无需反复调用系统功能定义DTA。当然采用这种方法也有不太尽人意的地方，它不象定义DTA那样可以一劳永逸，你必须时刻注意DS:DX的指向。<br />
+    （2）每次读入的字节数可在CX寄存器中任意设定，最多64K字节。这一点告诉我们需要改变对文件的看法，不能再将文件看成是由记录块和记录所构成，而应将其看作是一串&quot;字节流&quot;。我们可以存取其中任意长度的数据串。<br />
+    （3）每次执行读取功能后DOS会把实际读入的字节数通过AX寄存器返回，所以一旦AX寄存器返回的数据小于CX寄存器中设定的数值，则说明已读完了所有的数据。<br />
+    （4）3FH功能能否使用还要取决于打开文件时所设定的存取方式。如果你设定AX寄存器为3D01H打开一个文件，那么对不起，你无法使用3FH功能从这个文件中读取任何内容，因为这个文件是为了写入而打开的。最后一点就是出错处理处理问题，一个样，利用JC/JNC指令依CF标志的状态进行转移即可。</p>
+  <p> 这些特点说起来挺多，其实大家只需用DEBUG跟踪一下这个程序就全明白了。</p>
+  <div class="rpindex"> <a href="8-12.html">下一页 </a><a href="8-1.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

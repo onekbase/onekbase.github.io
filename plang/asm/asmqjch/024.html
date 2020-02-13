@@ -1,0 +1,512 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="023.html"> 上一页</a><a href="025.html"> 下一页</a></div>
+<h1>第二十四课 WINDOWS钩子函数</h1>
+本课中我们将要学习WINDOWS钩子函数的使用方法。WINDOWS钩子函数的功能非常强大，有了它您可以探测其它进程并且改变其它进程的行为。
+<H3>理论：</H3>
+<p>WINDOWS的钩子函数可以认为是WINDOWS的主要特性之一。利用它们，您可以捕捉您自己进程或其它进程发生的事件。通过“钩挂”，您可以给WINDOWS一个处理或过滤事件的回调函数，该函数也叫做“钩子函数”，当每次发生您感兴趣的事件时，WINDOWS都将调用该函数。一共有两种类型的钩子：局部的和远程的。</p>
+<LI>局部钩子仅钩挂您自己进程的事件。
+<LI>远程的钩子还可以将钩挂其它进程发生的事件。远程的钩子又有两种：
+<LI>基于线程的 它将捕获其它进程中某一特定线程的事件。简言之，就是可以用来观察其它进程中的某一特定线程将发生的事件。
+<LI>系统范围的 将捕捉系统中所有进程将发生的事件消息。 </LI>
+<p>安装钩子函数将会影响系统的性能。监测“系统范围事件”的系统钩子特别明显。因为系统在处理所有的相关事件时都将调用您的钩子函数，这样您的系统将会明显的减慢。所以应谨慎使用，用完后立即卸载。还有，由于您可以预先截获其它进程的消息，所以一旦您的钩子函数出了问题的话必将影响其它的进程。记住：功能强大也意味着使用时要负责任。</p>
+<p><BR>
+  在正确使用钩子函数前，我们先讲解钩子函数的工作原理。当您创建一个钩子时，WINDOWS会先在内存中创建一个数据结构，该数据结构包含了钩子的相关信息，然后把该结构体加到已经存在的钩子链表中去。新的钩子将加到老的前面。当一个事件发生时，如果您安装的是一个局部钩子，您进程中的钩子函数将被调用。如果是一个远程钩子，系统就必须把钩子函数插入到其它进程的地址空间，要做到这一点要求钩子函数必须在一个动态链接库中，所以如果您想要使用远程钩子，就必须把该钩子函数放到动态链接库中去。当然有两个例外：工作日志钩子和工作日志回放钩子。这两个钩子的钩子函数必须在安装钩子的线程中。原因是：这两个钩子是用来监控比较底层的硬件事件的，既然是记录和回放，所有的事件就当然都是有先后次序的。所以如果把回调函数放在DLL中，输入的事件被放在几个线程中记录，所以我们无法保证得到正确的次序。故解决的办法是：把钩子函数放到单个的线程中，譬如安装钩子的线程。</p>
+<p>  钩子一共有14种，以下是它们被调用的时机： </p>
+<LI>WH_CALLWNDPROC 当调用SendMessage时
+<LI>WH_CALLWNDPROCRET 当SendMessage的调用返回时
+<LI>WH_GETMESSAGE 当调用GetMessage 或 PeekMessage时
+<LI>WH_KEYBOARD 当调用GetMessage 或 PeekMessage 来从消息队列中查询WM_KEYUP 或 WM_KEYDOWN 消息时
+<LI>WH_MOUSE 当调用GetMessage 或 PeekMessage 来从消息队列中查询鼠标事件消息时
+<LI>WH_HARDWARE 当调用GetMessage 或 PeekMessage 来从消息队列种查询非鼠标、键盘消息时
+<LI>WH_MSGFILTER 当对话框、菜单或滚动条要处理一个消息时。该钩子是局部的。它时为那些有自己的消息处理过程的控件对象设计的。
+<LI>WH_SYSMSGFILTER 和WH_MSGFILTER一样，只不过是系统范围的
+<LI>WH_JOURNALRECORD 当WINDOWS从硬件队列中获得消息时
+<LI>WH_JOURNALPLAYBACK 当一个事件从系统的硬件输入队列中被请求时
+<LI>WH_SHELL 当关于WINDOWS外壳事件发生时，譬如任务条需要重画它的按钮.
+<LI>WH_CBT 当基于计算机的训练(CBT)事件发生时
+<LI>WH_FOREGROUNDIDLE 由WINDOWS自己使用，一般的应用程序很少使用
+<LI>WH_DEBUG 用来给钩子函数除错 </LI>
+<p>现在我们知道了一些基本的理论，现在开始讲解如何安装/卸载一个钩子。 <BR>
+  要安装一个钩子，您可以调用SetWindowHookEx函数。该函数的原型如下：</p>
+<pre class="code">SetWindowsHookEx proto HookType:DWORD, pHookProc:DWORD, hInstance:DWORD, ThreadID:DWORD </pre>
+<LI>HookType 是我们上面列出的值之一,譬如： WH_MOUSE, WH_KEYBOARD
+<LI>pHookProc 是钩子函数的地址。如果使用的是远程的钩子，就必须放在一个DLL中，否则放在本身代码中
+<LI>hInstance 钩子函数所在DLL的实例句柄。如果是一个局部的钩子，该值为NULL
+<LI>ThreadID 
+    是您安装该钩子函数后想监控的线程的ID号。该参数可以决定该钩子是局部的还是系统范围的。如果该值为NULL，那么该钩子将被解释成系统范围内的，那它就可以监控所有的进程及它们的线程。如果您指定了您自己进程中的某个线程ID 
+    号，那该钩子是一个局部的钩子。如果该线程ID是另一个进程中某个线程的ID，那该钩子是一个全局的远程钩子。这里有两个特殊情况：WH_JOURNALRECORD 
+    和 WH_JOURNALPLAYBACK总是代表局部的系统范围的钩子，之所以说是局部，是因为它们没有必要放到一个DLL中。WH_SYSMSGFILTER 
+  总是一个系统范围内的远程钩子。其实它和WH_MSGFILTER钩子类似，如果把参数ThreadID设成0的话，它们就完全一样了。 </LI>
+<p>如果该函数调用成功的话，将在eax中返回钩子的句柄，否则返回NULL。您必须保存该句柄，因为后面我们还要它来卸载钩子。要卸载一个钩子时调用UnhookWidowHookEx函数，该函数仅有一个参数，就是欲卸载的钩子的句柄。如果调用成功的话，在eax中返回非0值，否则返回NULL。</p>
+<p> 现在您知道了如何安装和卸载一个钩子了，接下来我们将看看钩子函数。. </p>
+<p>  只要您安装的钩子的消息事件类型发生，WINDOWS就将调用钩子函数。譬如您安装的钩子是WH_MOUSE类型，那么只要有一个鼠标事件发生时，该钩子函数就会被调用。不管您安装的时那一类型钩子，钩子函数的原型都时是一样的：  </p>
+<pre class="code">HookProc proto nCode:DWORD, wParam:DWORD, lParam:DWORD</pre>
+<LI>nCode 指定是否需要处理该消息
+<LI>wParam 和 lParam 包含该消息的附加消息 </LI>
+<p>HookProc 
+  可以看作是一个函数名的占位符。只要函数的原型一致，您可以给该函数取任何名字。至于以上的几个参数及返回值的具体含义各种类型的钩子都不相同。譬如： </p>
+<p> WH_CALLWNDPROC </p>
+<LI>nCode 只能是HC_ACTION，它代表有一个消息发送给了一个窗口
+<LI>wParam 如果非0，代表正被发送的消息
+<LI>lParam 指向CWPSTRUCT型结构体变量的指针
+<LI>return value: 未使用，返回0 </LI>
+
+<p>WH_MOUSE</p>
+<LI>nCode 为HC_ACTION 或 HC_NOREMOVE
+<LI>wParam 包含鼠标的事件消息
+<LI>lParam 指向MOUSEHOOKSTRUCT型结构体变量的指针
+<LI>return value: 如果不处理返回0，否则返回非0值 </LI>
+ <p> 所以您必须查询您的WIN32 API 
+指南来得到不同类型的钩子的参数的详细定义以及它们返回值的意义。这里还有一个问题需要注意：所有的钩子都串在一个链表上，最近加入的钩子放在链表的头部。当一个事件发生时，WINDOWS将按照从链表头到链表尾调用的顺序。所以您的钩子函数有责任把消息传到下一个链中的钩子函数。当然您可以不这样做，但是您最好明白这时这么做的原因。在大多数的情况下，最好把消息事件传递下去以便其它的钩子都有机会获得处理这一消息的机会。调用下一个钩子函数可以调用函数CallNextHookEx。该函数的原型如下：
+<pre class="code">CallNextHookEx proto hHook:DWORD, nCode:DWORD, wParam:DWORD, lParam:DWORD</pre>
+<LI>hHook 时是您自己的钩子函数的句柄。利用该句柄可以遍历钩子链。
+<LI>nCode, wParam and lParam 您只要把传入的参数简单传给CallNextHookEx即可。 <br />
+</LI>
+<p>注意：对于远程钩子，钩子函数必须放到DLL中，它们将从DLL中映射到其它的进程空间中去。当WINDOWS映射DLL到其它的进程空间中去时，不会把数据段也进行映射。简言之，所有的进程仅共享DLL的代码，至于数据段，每一个进程都将有其单独的拷贝。这是一个很容易被忽视的问题。您可能想当然的以为，在DLL中保存的值可以在所有映射该DLL的进程之间共享。在通常情况下，由于每一个映射该DLL的进程都有自己的数据段，所以在大多数的情况下您的程序运行得都不错。但是钩子函数却不是如此。对于钩子函数来说，要求DLL的数据段对所有的进程也必须相同。这样您就必须把数据段设成共享的，这可以通过在链接开关中指定段的属性来实现。在MASM中您可以这么做：</p>
+<BLOCKQUOTE>/SECTION:&lt;section name&gt;, 
+  S</BLOCKQUOTE>
+已初期化的段名是.data，未初始化的段名是.bss。`加入您想要写一个包含钩子函数的DLL，而且想使它的未初始化的数据段在所有进程间共享，您必须这么做：
+<BLOCKQUOTE>link /section:.bss,S  /DLL  /SUBSYSTEM:WINDOWS 
+  ..........</BLOCKQUOTE>
+S 代表该段是共享段。
+<H3>例子：</H3>
+<p>一共有两个模块：一个是GUI部分，另一个是安装和卸载钩子的DLL。</p>
+<pre class="code">;--------------------------------------------- 主程序的源代码部分-------------------------------------- 
+.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  MOUSEHOOK.INC
+  INCLUDELIB  MOUSEHOOK.LIB
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+   WSPRINTFA  PROTO     C :DWORD,:DWORD,:VARARG
+    WSPRINTF  TEXTEQU   <WSPRINTFA>
+
+.CONST
+ IDD_MAINDLG  EQU       101
+           IDC_CLASSNAME  EQU       1000
+  IDC_HANDLE  EQU       1001
+ IDC_WNDPROC  EQU       1002
+    IDC_HOOK  EQU       1004
+    IDC_EXIT  EQU       1005
+            WM_MOUSEHOOK  EQU       WM_USER+6
+
+DlgFunc PROTO :DWORD,:DWORD,:DWORD,:DWORD 
+
+.DATA
+    HOOKFLAG  DD        FALSE
+    HOOKTEXT  DB        "&HOOK",0
+  UNHOOKTEXT  DB        "&UNHOOK",0
+    TEMPLATE  DB        "%LX",0
+
+.DATA?
+   HINSTANCE  DD        ?
+       HHOOK  DD        ?
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE,NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    DIALOGBOXPARAM,HINSTANCE,IDD_MAINDLG,NULL,ADDR DLGFUNC,NULL
+              INVOKE    EXITPROCESS,NULL
+
+     DLGFUNC  PROC      HDLG:DWORD,UMSG:DWORD,WPARAM:DWORD,LPARAM:DWORD
+              LOCAL     HLIB:DWORD
+              LOCAL     BUFFER[128]:BYTE
+              LOCAL     BUFFER1[128]:BYTE
+              LOCAL     RECT:RECT
+.IF           UMSG==WM_CLOSE
+.IF           HOOKFLAG==TRUE
+              INVOKE    UNINSTALLHOOK
+.ENDIF
+              INVOKE    ENDDIALOG,HDLG,NULL
+.ELSEIF       UMSG==WM_INITDIALOG
+              INVOKE    GETWINDOWRECT,HDLG,ADDR RECT
+              INVOKE    SETWINDOWPOS, HDLG, HWND_TOPMOST, RECT.LEFT, RECT.TOP, RECT.RIGHT, RECT.BOTTOM, SWP_SHOWWINDOW
+.ELSEIF       UMSG==WM_MOUSEHOOK
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_HANDLE,ADDR BUFFER1,128
+              INVOKE    WSPRINTF,ADDR BUFFER,ADDR TEMPLATE,WPARAM
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HANDLE,ADDR BUFFER
+.ENDIF
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_CLASSNAME,ADDR BUFFER1,128
+              INVOKE    GETCLASSNAME,WPARAM,ADDR BUFFER,128
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_CLASSNAME,ADDR BUFFER
+.ENDIF
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_WNDPROC,ADDR BUFFER1,128
+              INVOKE    GETCLASSLONG,WPARAM,GCL_WNDPROC
+              INVOKE    WSPRINTF,ADDR BUFFER,ADDR TEMPLATE,EAX
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_WNDPROC,ADDR BUFFER
+.ENDIF
+.ELSEIF       UMSG==WM_COMMAND
+.IF           LPARAM!=0
+              MOV       EAX,WPARAM
+              MOV       EDX,EAX
+              SHR       EDX,16
+.IF           DX==BN_CLICKED
+.IF           AX==IDC_EXIT
+              INVOKE    SENDMESSAGE,HDLG,WM_CLOSE,0,0
+.ELSE
+.IF           HOOKFLAG==FALSE
+              INVOKE    INSTALLHOOK,HDLG
+.IF           EAX!=NULL
+              MOV       HOOKFLAG,TRUE
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HOOK,ADDR UNHOOKTEXT
+.ENDIF
+.ELSE
+              INVOKE    UNINSTALLHOOK
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HOOK,ADDR HOOKTEXT
+              MOV       HOOKFLAG,FALSE
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_CLASSNAME,NULL
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HANDLE,NULL
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_WNDPROC,NULL
+.ENDIF
+.ENDIF
+.ENDIF
+.ENDIF
+.ELSE
+              MOV       EAX,FALSE
+              RET
+.ENDIF
+              MOV       EAX,TRUE
+              RET
+     DLGFUNC  ENDP
+
+              END       START
+
+;----------------------------------------------------- DLL的源代码部分 -------------------------------------- 
+.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+
+.CONST
+            WM_MOUSEHOOK  EQU       WM_USER+6
+
+.DATA
+   HINSTANCE  DD        0
+
+.DATA?
+       HHOOK  DD        ?
+        HWND  DD        ?
+
+.CODE
+    DLLENTRY  PROC      HINST:HINSTANCE, REASON:DWORD, RESERVED1:DWORD
+.IF           REASON==DLL_PROCESS_ATTACH
+              PUSH      HINST
+              POP       HINSTANCE
+.ENDIF
+              MOV       EAX,TRUE
+              RET
+    DLLENTRY  ENDP
+
+   MOUSEPROC  PROC      NCODE:DWORD,WPARAM:DWORD,LPARAM:DWORD
+              INVOKE    CALLNEXTHOOKEX,HHOOK,NCODE,WPARAM,LPARAM
+              MOV       EDX,LPARAM
+              ASSUME    EDX:PTR MOUSEHOOKSTRUCT
+              INVOKE    WINDOWFROMPOINT,[EDX].PT.X,[EDX].PT.Y
+              INVOKE    POSTMESSAGE,HWND,WM_MOUSEHOOK,EAX,0
+              ASSUME    EDX:NOTHING
+              XOR       EAX,EAX
+              RET
+   MOUSEPROC  ENDP
+
+ INSTALLHOOK  PROC      HWND:DWORD
+              PUSH      HWND
+              POP       HWND
+              INVOKE    SETWINDOWSHOOKEX,WH_MOUSE,ADDR MOUSEPROC,HINSTANCE,NULL
+              MOV       HHOOK,EAX
+              RET
+ INSTALLHOOK  ENDP
+
+           UNINSTALLHOOK  PROC
+              INVOKE    UNHOOKWINDOWSHOOKEX,HHOOK
+              RET
+           UNINSTALLHOOK  ENDP
+
+              END       DLLENTRY
+
+;---------------------------------------------- DLL的Makefile文件 ---------------------------------------------- 
+
+NAME=mousehook 
+$(NAME).dll: $(NAME).obj 
+        Link /SECTION:.bss,S  /DLL /DEF:$(NAME).def /SUBSYSTEM:WINDOWS /LIBPATH:c:\masm\lib $(NAME).obj 
+$(NAME).obj: $(NAME).asm 
+        ml /c /coff /Cp $(NAME).asm 
+</pre>
+
+<H3>分析:</H3>
+该应用程序的主窗口中包括三个编辑控件，它们将分别显示当前鼠标光标所在位置的窗口类名、窗口句柄和窗口过程的地址。还有两个按钮：“Hook”和“Eixt”。当您按下Hook时，应用程序将钩挂鼠标输入的事件消息，该按钮的文本将变成“Unhook”。当您把鼠标关标滑过一个窗口时，该窗口的有关消息将显示在主窗口中。当您按下“Unhook”时，应用程序将卸载钩子。 
+主窗口使用一个对话框来作为它的主窗口。它自定义了一个消息WM_MOUSEHOOK，用来在主窗口和DLL之间传递消息。当主窗口接收到该消息时，wParam中包含了光标所在位置的窗口的句柄。当然这是我们做的安排。我这么做只是为了方便。您可以使用您自己的方法在主应用程序和DLL之间进行通讯。
+<Pre class="code">.IF           HOOKFLAG==FALSE
+              INVOKE    INSTALLHOOK,HDLG
+.IF           EAX!=NULL
+              MOV       HOOKFLAG,TRUE
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HOOK,ADDR UNHOOKTEXT
+.ENDIF</Pre>
+
+<P>该应用程序有一个全局变量，HookFlag，它用来监视钩子的状态。如果安装来钩子它就是TRUE，否则是FALSE。 
+  当用户按下Hook按钮时，应用程序检查钩子是否已经安装。如果还没有的话，它将调用DLL中引出的函数InstallHook来安装它。注意我们把主对话框的句柄传递给了DLL，这样这个钩子DLL就可以把WM_MOUSEHOOK消息传递给正确的窗口了。当应用程序加载时，钩子DLL也同时加载。时机上当主程序一旦加载到内存中后，DLL就立即加载。DLL的入口点函数载主程序的第一条语句执行前就前执行了。所以当主程序执行时，DLL已经初始化好了。我们载入口点处放入如下代码：
+<Pre class="code">.IF           REASON==DLL_PROCESS_ATTACH
+              PUSH      HINST
+              POP       HINSTANCE
+.ENDIF</Pre>
+
+<P>该段代码把DLL自己的实例句柄放到一个全局变量中保存。由于入口点函数是在所有函数调用前被执行的，所以hInstance总是有效的。我们把该变量放到.data中，使得每一个进程都有自己一个该变量的值。因为当鼠标光标停在一个窗口上时，钩子DLL被映射进进程的地址空间。加入在DLL缺省加载的地址处已经加载其它的DLL，那钩子DLL将要被映射到其他的地址。hInstance将被更新成其它的值。当用户按下Unhook再按下Hook时，SetWindowsHookEx将被再次调用。这一次，它将把新的地址作为实例句柄。而在例子中这是错误的，DLL装载的地址并没有变。这个钩子将变成一个局部的，您只能钩挂发生在您窗口中的鼠标事件，这是很难让人满意的 
+  。
+<Pre class="code"> INSTALLHOOK  PROC      HWND:DWORD
+              PUSH      HWND
+              POP       HWND
+              INVOKE    SETWINDOWSHOOKEX,WH_MOUSE,ADDR MOUSEPROC,HINSTANCE,NULL
+              MOV       HHOOK,EAX
+              RET
+ INSTALLHOOK  ENDP</Pre>
+
+<P>InstallHook 
+  函数非常简单。它把传递过来的窗口句柄保存在hWnd中以备后用。接着调用SetWindowsHookEx函数来安装一个鼠标钩子。该函数的返回值放在全局变量hHook中，将来在UnhookWindowsHookEx中还要使用。在调用SetWindowsHookEx后，鼠标钩子就开始工作了。无论什么时候发生了鼠标事件，MouseProc函数都将被调用：
+<Pre class="code">   MOUSEPROC  PROC      NCODE:DWORD,WPARAM:DWORD,LPARAM:DWORD
+              INVOKE    CALLNEXTHOOKEX,HHOOK,NCODE,WPARAM,LPARAM
+              MOV       EDX,LPARAM
+              ASSUME    EDX:PTR MOUSEHOOKSTRUCT
+              INVOKE    WINDOWFROMPOINT,[EDX].PT.X,[EDX].PT.Y
+              INVOKE    POSTMESSAGE,HWND,WM_MOUSEHOOK,EAX,0
+              ASSUME    EDX:NOTHING
+              XOR       EAX,EAX
+              RET
+   MOUSEPROC  ENDP</Pre>
+
+<P>钩子函数首先调用CallNextHookEx函数让其它的钩子处理该鼠标事件。然后，调用WindowFromPoint函数来得到给定屏幕坐标位置处的窗口句柄。注意：我们用lParam指向的MOUSEHOOKSTRUCT型结构体变量中的POINT成员变量作为当前的鼠标位置。在我们调用PostMessage函数把WM_MOUSEHOOK消息发送到主程序。您必须记住的一件事是：在钩子函数中不要使用SendMessage函数，它会引起死锁。MOUSEHOOKSTRUCT的定义如下：
+<Pre class="code">         MOUSEHOOKSTRUCT  STRUCT    DWORD
+                          pt POINT <>
+                          HWND  DWORD     ?
+                          WHITTESTCODE  DWORD     ?
+                          DWEXTRAINFO  DWORD     ?
+         MOUSEHOOKSTRUCT  ENDS</Pre>
+<LI>pt 是当前鼠标所在的屏幕位置。
+<LI>hwnd 
+  是将接收鼠标消息的窗口的句柄。通常它是鼠标所在处的窗口，但是如果窗口调用了SetCapture，鼠标的输入将到向到这个窗口。因我们不用该成员变量而是用WindowFromPoint函数。
+<LI>wHitTestCode 指定hit-test值，该值给出了更多的鼠标位置值。它指定了鼠标在窗口的那个部位。该值的完全列表，请参考WIN32 API 
+  指南中的WM_NCHITTEST消息。
+<LI>dwExtraInfo 该值包含了相关的信息。一般该值由mouse_event函数设定，可以调用GetMessageExtraInfo来获得。 </LI>
+<P>当主窗口接收到WM_MOUSEHOOK 消息时，它用wParam参数中的窗口句柄来查询窗口的消息。</P>
+<Pre class="code">.ELSEIF       UMSG==WM_MOUSEHOOK
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_HANDLE,ADDR BUFFER1,128
+              INVOKE    WSPRINTF,ADDR BUFFER,ADDR TEMPLATE,WPARAM
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HANDLE,ADDR BUFFER
+.ENDIF
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_CLASSNAME,ADDR BUFFER1,128
+              INVOKE    GETCLASSNAME,WPARAM,ADDR BUFFER,128
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_CLASSNAME,ADDR BUFFER
+.ENDIF
+              INVOKE    GETDLGITEMTEXT,HDLG,IDC_WNDPROC,ADDR BUFFER1,128
+              INVOKE    GETCLASSLONG,WPARAM,GCL_WNDPROC
+              INVOKE    WSPRINTF,ADDR BUFFER,ADDR TEMPLATE,EAX
+              INVOKE    LSTRCMPI,ADDR BUFFER,ADDR BUFFER1
+.IF           EAX!=0
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_WNDPROC,ADDR BUFFER
+.ENDIF</Pre>
+
+<P>为了避免重绘文本时的抖动，我们把已经在编辑空间中线时的文本和我们将要显示的对比。如果相同，就可以忽略掉。得到类名调用GetClassName，得到窗口过程调用GetClassLong并传入GCL_WNDPROC标志，然后把它们格式化成文本串并放到相关的编辑空间中去。
+<Pre class="code">              INVOKE    UNINSTALLHOOK
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HOOK,ADDR HOOKTEXT
+              MOV       HOOKFLAG,FALSE
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_CLASSNAME,NULL
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_HANDLE,NULL
+              INVOKE    SETDLGITEMTEXT,HDLG,IDC_WNDPROC,NULL</Pre>
+
+<P>当用户按下Unhook后，主程序调用DLL中的UninstallHook函数。该函数调用UnhookWindowsHookEx函数。然后，它把按钮的文本换回“Hook”，HookFlag的值设成FALSE再清除掉编辑控件中的文本。<BR>
+  链接器的开关选项如下：
+<Pre class="code"> Link /SECTION:.bss,S  /DLL /DEF:$(NAME).def /SUBSYSTEM:WINDOWS</Pre>
+<P>它指定.bss段作为一个共享段以便所有映射该DLL的进程共享未初始化的数据段。如果不用该开关，您DLL中的钩子就不能正常工作了。
+
+
+<div class="rpindex"><a href="025.html">下一页</a><a href="023.html">上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

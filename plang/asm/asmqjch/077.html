@@ -1,0 +1,470 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="076.html"> 上一页</a><a href="078.html"> 下一页</a></div>
+<h1>实战串行通讯  </h1>
+<p>很长时间没有写编程文章了，最近为了编一个串行通讯的终端程序忙了近一个月，发现了在 Win32 的通讯 API 中有不少的问题，还有许多在其他串行通讯文章中没有谈到的问题。有关串行通讯方面的基础文章，可以参考《Serial 
+  communications in Microsoft Win32》和《串行通讯编程点滴》。本文不是全面的讲述如何编写串行通讯程序，而是讨论一些实际遇到的问题。</p>
+<p>1 选择通讯方式 -- 同步还是非同步</p>
+<p>正如在《Serial communications in Microsoft Win32》等文章中提到的，同步（NonOverLapped）方式是比较简单的一种方式，编写起来代码的长度要明显少于异步（OverLapped）方式，我开始用同步方式编写了整个子程序，在 
+  Windows98 下工作正常，但后来在 Windows2000下测试，发现接收正常，但一发送数据，程序就会停在那里，原因应该在于同步方式下如果有一个通讯 
+  Api 在操作中，另一个会阻塞直到上一个操作完成，所以当读数据的线程停留在 WaitCommEvent 的时候，WriteFile 就停在那里。我又测试了我手上所有有关串行通讯的例子程序，发现所有使用同步方式的程序在 
+  Windows 2000 下全部工作不正常，对这个问题我一直找不到解决的办法，后来在 Iczelion 站点上发现一篇文章提到 NT 下对串行通讯的处理和 
+  9x 有些不同，根本不要指望在 NT 或 Windows 2000 下用同步方式同时收发数据，我只好又用异步方式把整个通讯子程序重新写了一遍。</p>
+<p>所以对于这个问题的建议是：如果程序只打算工作在 Win9x 下，为了简单起见，可以用同步方式写程序，如果程序打算在 NT 下也可以工作的话，就必须用异步方式写。</p>
+<p>2 Win32 通讯 API Bug 之一 --- CommConfigDialog</p>
+<p>CommConfigDialog 是弹出系统内置串口设置对话框的 API，我们在设备管理器中设置串口参数的对话框就是这个，使用这个 API 时不用先打开端口，它并不针对一个已打开的端口，而是仅仅是把 
+  DCB 的内容填写到对话框中，当按了 OK 后把输入的结果存回到 DCB 数据结构中，至于什么时候把结果设置到串口上，那就是你自己要做的事情了。</p>
+<p>CommCinfigDialog 的定义如下：</p>
+<pre class="code">BOOL CommConfigDialog(
+<p> LPTSTR lpszName, // pointer to device name string<br>
+  HWND hWnd, // handle to window<br>
+  LPCOMMCONFIG lpCC // pointer to comm. configuration structure<br>
+  );</pre>
+<p>但在使用中发现，对话框有时能出来，有时出不来，最后总结的经验是问题出在 COMMCONFIG 结构的 dwSize 字段上，COMMCONFIG 的定义如下：</p>
+<pre class="code">typedef struct _COMM_CONFIG {<br>
+  DWORD dwSize;<br>
+  WORD wVersion; <br>
+  WORD wReserved;<br>
+  DCB dcb;<br>
+  DWORD dwProviderSubType;<br>
+  DWORD dwProviderOffset;<br>
+  DWORD dwProviderSize;<br>
+  WCHAR wcProviderData[1];<br>
+  } COMMCONFIG, *LPCOMMCONFIG;</pre>
+<p>在参数中，wVersion 要填 100h，dwProviderSubType 要填 1，但 dwSize 就不能填 sizeof COMMCONFIG 
+  了，我发现好象一定要把 dwSize 设置为比 sizeof COMMCONFIG 对话框才能出来，所以我用的代码中定义了一个足够大的缓冲区作为结构的地址：</p>
+<pre class="code">       _CommConfigDialog  proc
+              local     @stCC[256]:BYTE
+
+              pushad
+              invoke    RtlZeroMemory,addr @stCC,sizeof @stCC
+              mov       (COMMCONFIG ptr @stCC).dwSize,256
+              mov       (COMMCONFIG ptr @stCC).wVersion,100h
+              mov       (COMMCONFIG ptr @stCC).dwProviderSubType,1
+              invoke    CommConfigDialog,addr [esi].szPortName,[esi].hWnd,addr @stCC
+              popad
+              ret
+
+       _CommConfigDialog  endp</pre>
+<p>3 Win32 通讯 API Bug 之二--- BuildCommDCB</p>
+<p>BuildCommDCB 的功能是把一个字符串如 com1:9600,n,8,1 这样的转换到具体的数据填写到 DCB 中，但使用中也存在问题，我发现我用它转换象 
+  com1:9600,e,7,1 之类的带校验位的字符串，它总是无法把这个 e 给我转换过去，设置好串口一看，成了 9600,n,7,1，而上面提到的 CommConfigDialog 
+  返回的结果用来设置串口却是正确的，经过比较，发现问题出在 DCB.fbits.fParity 这个 bit 上，只有把这个 bit 置 1，校验位才是有效的，而 
+  BuildCommDCB 恰恰是漏了这个 bit，所有如果你要使用 BuildCommDCB，别忘了补充把 DCB.fbits.fParity 设置回去，我用的代码是：</p>
+<pre class="code"></pre>
+<p>4 Win32 通讯编程的一般流程</p>
+<p>由于同步方式相对比较简单，在这里讲述的是异步方式的流程，在其他的很多文章里提到了 Windows 通讯 API 有二十多个，它们是：</p>
+<pre class="code">BuildCommDCB
+BuildCommDCBAndTimeouts
+ClearCommBreak
+ClearCommError
+CommConfigDialog
+EscapeCommFunction
+GetCommConfig
+GetCommMask
+GetCommModemStatus
+GetCommProperties
+GetCommState
+GetCommTimeouts
+GetDefaultCommConfig
+PurgeComm
+SetCommBreak
+SetCommConfig
+SetCommMask
+SetCommState
+SetCommTimeouts
+SetDefaultCommConfig
+SetupComm
+TransmitCommChar
+WaitCommEvent </pre>
+<p>我刚看到这些 API 的时候，都不知道如何使用它们，但并不是所有这些 API 都是必须用的，比如说你要检测当前串口的设置可以只用 SetCommState 
+  而不用 GetCommProperties 和 GetCommConfig，虽然它们返回的信息可能更多。同样，如果有些值你想用缺省的，比如缓冲区的大小和超时的时间等等，那么 
+  SetupComm 和 BuildCommDCBAndTimeouts、SetCommTimeouts 也可以不用，TransmitCommChar 是马上在发送序列中优先插入发送一个字符用的，平时也很少用到，下面讲的是必须用到的 
+  API 和使用步骤：</p>
+<ol>
+  <li>建立 Event -- 用 CreateEvent<br>
+    <br>
+    invoke CreateEvent,NULL,TRUE,FALSE,NULL<br>
+    用异步方式操作串口必须要定义 OVERLAPPED 结构，其中的 hEvent 必须自己建立，你要定义两个 OVERLAPPED 结构，一个用于读一个用于写，当然也必须建立两个 
+    Event，把它们放入 OVERLAPPED.hEvent<br>
+    <br>
+  </li>
+  <li>打开串口 -- 用 CreateFile<br>
+    <br>
+    invoke CreateFile,addr szPortName,GENERIC_READ or GENERIC_WRITE,0,NULL,OPEN_EXISTING,FILE_FLAG_OVERLAPPED,NULL<br>
+    注意用异步方式必须指定 FILE_FLAG_OVERLAPPED，而文件方式必须 OPEN_EXISTING，读写必须是 GENERIC_READ 
+    or GENERIC_WRITE<br>
+    <br>
+  </li>
+  <li>设置串口参数 -- 用 SetCommState<br>
+    <br>
+    invoke SetCommState,hCom,addr dcbx<br>
+    hCom 是前面打开成功后返回的句柄，dcbx 是数据结构 DCB，里面包括了通讯的具体参数，至于这个参数的建立，你可以自己填写，也可以用前面提到的 
+    BuildCommDCB 或 CommConfigDialog 填写<br>
+    <br>
+  </li>
+  <li>建立读数据的线程<br>
+    <br>
+    到这里，就可以开始读数据了，一般我们是在主线程中写数据，因为写是我们可以控制的，而读的时候我们不知道数据什么时候会到，所以要建立一个线程专门用来读数据，在这个线程中，我们循环地用 
+    ReadFile 读串口，同时用 WaitCommEvent 检测线路状态。<br>
+    <br>
+  </li>
+  <li>如果要检测通讯状态，如 CTS 信号，RingIn 等等 -- 用 SetCommMask、WaitCommEvent、ClearCommError、GetCommModemStatus<br>
+    <br>
+    invoke SetCommMask,hCom,EV_BREAK or EV_CTS or EV_DSR or EV_ERR or EV_RING 
+    or EV_RLSD or EV_RXCHAR or EV_RXFLAG or EV_TXEMPTY<br>
+    SetCommMask 指定 WaitCommEvent 要等待的事件名称，具体的参数请查手册<br>
+    <br>
+    invoke WaitCommEvent,hCom,addr dwEvent,NULL<br>
+    WaitCommEvent 等待一直到 SetCommMask 指定事件之一发生<br>
+    <br>
+    invoke ClearCommError,hCom,addr dwError,addr stComStat<br>
+    在 WaitCommEvent 以后，要用 ClearCommError 清除事件的 Flag，以便进行下一轮 WaitCommEvent，同时这个 
+    API 可以获得更详细的事件信息<br>
+    <br>
+    invoke GetCommModemStatus,hCom,addr dwModemStatus<br>
+    同样，GetCommModemStatus 是用来获得串口线路状态的，如 CTS、RING 等等，当 WaitCommEvent 返回时，只是指出了如 
+    CTS 等等状态有变化，但具体是变成 On 还是 Off 了还要靠这个 API 去取得更详细的信息<br>
+    <br>
+  </li>
+  <li>读数据 -- 用 ReadFile<br>
+    <br>
+    invoke ReadFile,hCom,addr szBuffer,sizeof szBuffer,addr dwBytesRead,addr stReadState<br>
+    最后一个参数是开头定义的 OVERLAPPED 结构的地址，指定了它就表示是用异步方式的读方式，这个 API 会马上返回，接下去要用<br>
+    <br>
+    invoke GetOverlappedResult,hCom,addr stReadState,addr dwBytesRead,FALSE<br>
+    将其余的数据读完<br>
+    <br>
+  </li>
+  <li>结束时关闭端口 -- 停止 WaitCommEvent 的等待以及关闭端口 CloseHandle<br>
+    <br>
+    平时程序会停留在 WaitCommEvent 的等待中，当要终止线程的时候，必须是程序从 WaitCommEvent 中退出来，这时候要用<br>
+    <br>
+    按照 Win32 手册上的说明，参数为 NULL 的 SetCommMask 会使另一个线程中的 WaitCommEvent 马上返回，然后就是用 
+    CloseHandle 关闭端口<br>
+    invoke CloseHandle,hCom</li>
+</ol>
+<p>5 Win32 通讯 API Bug 之二--- SetCommMask 和 WaitCommEvent<br>
+  <br>
+  严格的说这不应该是 Bug，而是偶然的情况，我发现有些时候我的读线程无法结束，跟踪发现是停在了 WaitCommEvent 上，这说明有时候 invoke 
+  SetCommMask,hCom,NULL 并不能使 WaitCommEvent 退出，我最后使用的办法是： 在 SetCommMask 以后再执行 invoke 
+  SetEvent,stReadState.hEvent，把读的 OVERLAPPED 结构中的 Event 置位，让 WaitCommEvent 认为有 
+  Event 发生，它就会马上返回，也许这并不是普遍的情况，但如果你的程序也是停在了 WaitCommEvent 的地方，不妨一试。</p>
+<p>6 如何编写读线程中的循环<br>
+</p>
+<p>按照《Serial communications in Microsoft 
+  Win32》一文中的例程，读循环可以用：</p>
+<pre class="code">#define READ_TIMEOUT 500 // milliseconds
+
+              DWORD     dwRes       ;
+              DWORD     dwRead      ;
+BOOL fWaitingOnRead = FALSE;
+OVERLAPPED osReader = {0};
+
+// Create the overlapped event. Must be closed before exiting
+// to avoid a handle leak.
+         osReader.hEvent  =         CreateEvent(NULL, TRUE, FALSE, NULL)            ;
+
+              if        (osReader.hEvent == NULL)
+// Error creating overlapped event; abort.
+
+              if        (!fWaitingOnRead) {
+// Issue read operation.
+              if        (!ReadFile(hComm, lpBuf, READ_BUF_SIZE, &dwRead, &osReader)) {
+              if        (GetLastError() != ERROR_IO_PENDING) // read not delayed?
+// Error in communications; report it.
+              else
+          fWaitingOnRead  =         TRUE        ;
+}
+              else      {
+// read completed immediately
+HandleASuccessfulRead(lpBuf, dwRead);
+}
+}
+
+
+
+              if        (fWaitingOnRead) {
+       dwRes  =         WaitForSingleObject(osReader.hEvent, READ_TIMEOUT)          ;
+switch(dwRes)
+{
+// Read completed.
+case WAIT_OBJECT_0:
+              if        (!GetOverlappedResult(hComm, &osReader, &dwRead, FALSE))
+// Error in communications; report it.
+              else
+// Read completed successfully.
+HandleASuccessfulRead(lpBuf, dwRead);
+
+// Reset flag so that another opertion can be issued.
+          fWaitingOnRead  =         FALSE       ;
+break;
+
+case WAIT_TIMEOUT:
+// Operation isn't complete yet. fWaitingOnRead flag isn't
+// changed since I'll loop back around, and I don't want
+// to issue another read until the first one finishes.
+//
+// This is a good time to do some background work.
+break; 
+
+    default:
+// Error in the WaitForSingleObject; abort.
+// This indicates a problem with the OVERLAPPED structure's
+// event handle.
+break;
+}
+}
+
+
+
+这一段程序在 98 下正常，但非常不幸的是在 Win2000 下，ReadFile 总是返回读正确，并不返回 ERROR_IO_PENDING，使下面的 WaitForSingleObject 的循环形同虚设，要命的是，ReadFile 返回读正确却每次只读一个字节，结果程序工作得很奇怪，即使缓冲区中有很多的字符，程序也每次只能读一个字符，要等到发送字符或做其他的操作使线路状态改变了，才能读下一个字符，我不知道这个奇怪的现象是如何发生的，反正我解决的办法是在 ReadFile 前加 WaitCommEvent，真正等到 EV_RXCHAR 以后才去 ReadFile，到最后，我用的循环是这样的，虽然没有一篇文章中的例子是这样的，但它却同时在 windows9x 和 windows2000 下工作得很好：
+
+.while        dwFlag & IF_CONNECT
+;********************************************************************
+; 检测其它的通信事件
+; 如果检测到且定义了 lpProcessEvent 则调用 lpProcessEvent
+;********************************************************************
+              invoke    WaitCommEvent,hCom,addr @dwEvent,NULL           ;addr stReadState
+              push      eax
+              invoke    ClearCommError,hCom,addr @dwError,addr @stComStat
+              pop       eax
+.if           eax == 0
+              invoke    GetLastError
+.if           eax == ERROR_IO_PENDING
+              or        dwFlag,IF_WAITING
+.endif
+.else
+;这里是线路状态的处理
+.endif
+;********************************************************************
+; 如果没有在等待异步读的过程中，则读端口
+;********************************************************************
+.if           ! (dwFlag & IF_WAITING)
+              mov       @dwBytesRead,0
+              invoke    ReadFile,hCom,addr @szBuffer,sizeof @szBuffer,\
+addr @dwBytesRead,addr stReadState
+.if           eax == FALSE
+              or        dwFlag,IF_WAITING
+              invoke    GetLastError
+.if           eax != ERROR_IO_PENDING
+;这里是错误处理
+.endif
+.else
+              and       dwFlag,not IF_WAITING
+              mov       eax,@dwBytesRead
+.if           eax != 0
+;这里是接收到的数据处理
+.endif
+.endif
+.endif
+;********************************************************************
+; 如果在异步读端口中，则等待一段时间 
+;********************************************************************
+.if           dwFlag & IF_WAITING
+              invoke    WaitForSingleObject,stReadState.hEvent,200
+.if           eax == WAIT_OBJECT_0
+              and       dwFlag,not IF_WAITING
+              invoke    GetOverlappedResult,hCom,addr stReadState,\
+addr @dwBytesRead,FALSE
+.if           eax != 0
+              mov       eax,@dwBytesRead
+.if           eax != 0
+;这里是接收到的数据处理
+.endif
+.else
+;这里是错误处理
+              invoke    ClearCommError,hCom,addr @dwError,addr @stComStat
+.endif
+.else
+;这里是错误处理
+.endif
+.endif
+.endw</pre>
+  7 流控制的问题
+<p>在流控制方式为“无”和“软件控制”的情况下，基本上没有什么问题，但在“硬件控制”下，win32 手册中说明 RTS_CONTROL_HANDSHAKE 
+  控制方式的含义是：</p>
+<p>Enables RTS handshaking. The driver raises the RTS line when the &quot;type-ahead&quot; 
+  (input) buffer is less than one-half full and lowers the RTS line when the buffer 
+  is more than three-quarters full. If handshaking is enabled, it is an error 
+  for the application to adjust the line by using the EscapeCommFunction function.</p>
+<p>也就是说，当缓冲区快满的时候 RTS 会自动 OFF 通知对方暂停发送，当缓冲区重新空出来的时候， RTS 会自动 ON，但我发现当 RTS 变 OFF 
+  以后即使你已经清空了缓冲区， RTS 也不会自动的 ON，造成对方停在那里不发送了，所以，如果要用硬件流控制的话，还要在接收后最好加上检测缓冲区大小的判断，具体是使用 
+  ClearCommError 后返回的 COMSTAT.cbInQue，当缓冲区已经空出来的时候，要使用 invoke EscapeCommFunction,hCom,SETRTS 
+  重新将 RTS 设置为 ON。<br>
+</p>
+<div class="rpindex"><a href="078.html"> 下一页</a><a href="076.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

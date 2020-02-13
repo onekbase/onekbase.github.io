@@ -1,0 +1,1001 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="53.html"> 上一页</a><a href="56.html"> 下一页</a></div>
+<h3>(1)、功能00H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>初始化鼠标，该操作只需要执行一次</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝00H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>AX＝0000H——不支持鼠标功能，FFFFH——支持鼠标功能<br>
+      BX＝鼠标按钮个数(在支持鼠标功能时)<br>
+      在支持鼠标功能的情况下，鼠标还被设置如下参数：
+      <table>
+        <tr>
+          <td>1、</td>
+          <td> 鼠标指针放在屏幕中央</td>
+        </tr>
+        <tr>
+          <td>2、</td>
+          <td> 如果当前鼠标指针是显示的，则操作后，鼠标指针被隐藏</td>
+        </tr>
+        <tr>
+          <td>3、</td>
+          <td> 鼠标指针的显示页为0</td>
+        </tr>
+        <tr>
+          <td>4、</td>
+          <td> 根据屏幕的显示模式显示鼠标指针：文本—反向显示矩形块，图形—尖头形状</td>
+        </tr>
+        <tr>
+          <td>5、</td>
+          <td> 水平象素比＝8:8，垂直象素比＝16:8</td>
+        </tr>
+        <tr>
+          <td>6、</td>
+          <td> 设置水平和垂直的显示边界为当前显示模式的最大边界</td>
+        </tr>
+        <tr>
+          <td>7、</td>
+          <td> 允许光笔仿真</td>
+        </tr>
+        <tr>
+          <td>8、</td>
+          <td> 双速门槛值＝64</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h3>(2)、功能01H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>显示鼠标指针，通常在鼠标初始化后，用此功能显示其指针</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝01H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(3)、功能02H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>隐藏鼠标指针，一般在程序结束时，调用此功能</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝02H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(4)、功能03H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标位置及其按钮状态</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝03H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>
+      <table>
+        <tr>
+          <td>BX＝按键状态：</td>
+          <td>位0=1——按下左键</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>位1=1——按下右键</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>位2=1——按下中键</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>其它位——保留，内部使用</td>
+        </tr>
+        <tr>
+          <td colspan="2">CX＝水平位置</td>
+        </tr>
+        <tr>
+          <td colspan="2">DX＝垂直位置</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h3>(5)、功能04H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标指针位置</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝04H，CX＝水平位置，DX＝垂直位置</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(6)、功能05H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标按键信息</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝05H，BX＝指定的按键：0—左键，1—右键，2—中键</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>AX＝按键状态，参见功能3H中BX的说明<br>
+      BX＝按键次数<br>
+      CX＝水平位置(最后按键时)<br>
+      DX＝垂直位置(最后按键时)</td>
+  </tr>
+</table>
+<h3>(7)、功能06H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标按钮释放信息</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝06H，BX＝指定的按键：0—左键，1—右键，2—中键</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>AX＝按键状态，参见功能3H中BX的说明<br>
+      BX＝释放的次数<br>
+      CX＝水平位置(最后释放时)<br>
+      DX＝垂直位置(最后释放时)</td>
+  </tr>
+</table>
+<h3>(8)、功能07H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标水平边界</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝07H<br>
+      CX＝最小水平位置<br>
+      DX＝最大水平位置</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无，鼠标有可能因新区域变小而自动移进新区域内</td>
+  </tr>
+</table>
+<h3>(9)、功能08H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标垂直边界</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝08H<br>
+      CX＝最小垂直位置<br>
+      DX＝最大垂直位置</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无，鼠标有可能因新区域变小而自动移进新区域内</td>
+  </tr>
+</table>
+<h3>(10)、功能09H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置图形鼠标形状</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝09H<br>
+      BX＝指针的水平位置<br>
+      CX＝指针的垂直位置<br>
+      ES:DX＝16×16位光标的映象地址
+      <table>
+        <tr>
+          <td>参数说明：</td>
+          <td>(BX，CX)是鼠标的指针在16×16点阵中的位置，(0,0)是左上角；<br>
+            ES:DX指向的存储单元内存放16×16点阵的位映象隐码，紧跟其后的是16×16点阵的光标掩码。</td>
+        </tr>
+        <tr>
+          <td>鼠标指针的显示方法：</td>
+          <td>位映象隐码“逻辑与”上屏幕显示区的内容，然后再用光标掩码内容“异或”前面运算的结果。</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(11)、功能0AH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置本文鼠标形状</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0AH<br>
+      BX＝光标类型：
+      <table>
+        <tr>
+          <td>0 —</td>      
+          <td>   
+CX和DX的各位含义如下：
+            <table>
+              <tr>
+                <td align="center">位7~0</td>
+                <td>  
+鼠标指针符号</td>
+              </tr>
+              <tr>
+                <td align="center">位10~8</td>
+                <td>  
+字符前景色</td>
+              </tr>
+              <tr>
+                <td align="center">位11</td>
+                <td>  
+亮度</td>
+              </tr>
+              <tr>
+                <td align="center">位14~12</td>
+                <td>  
+字符背景色</td>
+              </tr>
+              <tr>
+                <td align="center">位15</td>
+                <td>  
+闪烁</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>1 —</td>      
+          <td>CX＝光标的起始扫描线<br>
+            DX＝光标的结束扫描线</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(12)、功能0BH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标移动计数</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0BH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CX＝水平移动距离：正数——向右移，负数——向左移<br>
+      DX＝垂直移动距离：正数——向下移，负数——向上移</td>
+  </tr>
+</table>
+<h3>(13)、功能0CH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>为鼠标事件设置处理程序</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0CH<br>
+      CX＝中断掩码
+      <table>
+        <tr>
+          <td>位0＝1</td>
+          <td>——鼠标指针位置发送变化</td>
+        </tr>
+        <tr>
+          <td>位1＝1</td>
+          <td>——按下左按钮</td>
+        </tr>
+        <tr>
+          <td>位2＝1</td>
+          <td>——释放左按钮</td>
+        </tr>
+        <tr>
+          <td>位3＝1</td>
+          <td>——按下右按钮</td>
+        </tr>
+        <tr>
+          <td>位4＝1</td>
+          <td>——释放右按钮</td>
+        </tr>
+        <tr>
+          <td>位5＝1</td>
+          <td>——按下中间按钮</td>
+        </tr>
+        <tr>
+          <td>位6＝1</td>
+          <td>——释放中间按钮</td>
+        </tr>
+        <tr>
+          <td>位7~15＝0</td>
+          <td>——保留</td>
+        </tr>
+      </table>
+      <p>ES:DX＝中断处理程序的地址</p>
+      <p>在进入中断处理程序时，有关寄存器的值含义：<br>
+      　　AX＝中断掩码<br>
+      　　BX＝按键状态<br>
+      　　CX＝鼠标指针的水平位置<br>
+      　　DX＝鼠标指针的垂直位置<br>
+      　　SI＝水平位置的变化量<br>
+      　　DI＝垂直位置的变化量</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(14)、功能0DH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>允许光笔仿真</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0DH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(15)、功能0EH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>关闭光笔仿真</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0EH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(16)、功能0FH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标计数与象素比</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝0FH<br>
+      CX＝水平比例<br>
+      DX＝垂直比例</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(17)、功能10H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标指针隐藏区域</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝10H<br>
+      CX＝左上角X坐标<br>
+      DX＝左上角Y坐标<br>
+      SI＝右下角X坐标<br>
+      DI＝右下角Y坐标</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(18)、功能13H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置倍速的阈值，其缺省值为64</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝13H<br>
+      DX＝阀值</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(19)、功能14H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>替换鼠标事件中断</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝14H<br>
+      CX＝中断掩码<br>
+      ES:DX＝中断处理程序的地址</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>CX＝旧的中断掩码<br>
+      ES:DX＝旧的中断处理程序地址</td>
+  </tr>
+</table>
+<h3>(20)、功能15H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标驱动器状态的缓冲区大小</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝15H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BX＝存放鼠标驱动器状态所需缓冲区的大小</td>
+  </tr>
+</table>
+<h3>(21)、功能16H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>存储鼠标驱动器状态</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝16H<br>
+      ES:DX＝存储鼠标驱动器状态的地址</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(22)、功能17H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>重装鼠标驱动器状态</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝17H<br>
+      ES:DX＝鼠标驱动器状态的地址</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(23)、功能18H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>为鼠标事件设置可选的处理程序</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝18H<br>
+      CX＝替换中断掩码<br>
+      ES:DX＝替换中断处理程序的地址<br>
+      CF＝0</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(24)、功能19H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取替换处理程序的地址</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝19H<br>
+      CX＝替换中断掩码</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>若AX＝-1——不成功，否则，ES:DX＝中断处理程序的地址</td>
+  </tr>
+</table>
+<h3>(25)、功能1AH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标的灵敏度，其取值1~100</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1AH<br>
+      BX＝水平灵敏度(每8个象素鼠标需要移动的数量，一般为8)<br>
+      CX＝垂直灵敏度(每8个象素鼠标需要移动的数量，一般为16)<br>
+      DX＝倍速阀值</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(26)、功能1BH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标的灵敏度</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1BH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BX＝水平灵敏度<br>
+      CX＝垂直灵敏度<br>
+      DX＝倍速阀值</td>
+  </tr>
+</table>
+<h3>(27)、功能1CH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标中断速率</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1CH<br>
+      BX＝每秒钟中断的次数：0—关中断，1—30/S，2—50/S，3—100/S，4—200/S</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(28)、功能1DH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>为鼠标指针选择显示页</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1DH<br>
+      BX＝显示页</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(29)、功能1EH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标指针的显示页</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1EH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BX＝显示页</td>
+  </tr>
+</table>
+<h3>(30)、功能1FH</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>禁止鼠标驱动程序</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝1FH</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>若AX＝-1——不成功，否则，ES:BX＝鼠标驱动程序的地址</td>
+  </tr>
+</table>
+<h3>(31)、功能20H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>启动鼠标驱动程序</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝20H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(32)、功能21H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>鼠标驱动程序复位</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝21H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>若AX＝-1——不成功，否则，BX＝2</td>
+  </tr>
+</table>
+<h3>(33)、功能22H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>设置鼠标驱动程序信息语言</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝22H<br>
+      BX＝语言代码：0—英语，1—法语，2—荷兰语，3—德语，4—瑞典语，5—芬兰语，6—西班牙语，7—葡萄牙语，8—意大利语</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>无</td>
+  </tr>
+</table>
+<h3>(34)、功能23H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取语种</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝23H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BX＝语言代码</td>
+  </tr>
+</table>
+<h3>(35)、功能24H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标信息</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝24H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BH＝主版本号，BL＝辅版本号<br>
+      CL＝中断请求号<br>
+      CH＝鼠标类型：1－Bus        
+Mouse，2－Serial        
+Mouse，3－InPort        
+Mouse，4－PS/2        
+Mouse，5－HP Mouse</td>      
+  </tr>
+</table>
+<h3>(36)、功能25H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取鼠标驱动程序信息</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝25H</td>
+  </tr>
+  <tr>
+    <td>出口参数：
+</td>
+    <td>AX＝鼠标驱动程序信息：
+      <table>
+        <tr>
+          <td>位15       
+——0：</td>
+          <td>驱动程序是.SYS文件，否则，为.COM文件</td>
+        </tr>
+        <tr>
+          <td>位14——0：</td>
+          <td>不完全鼠标显示驱动程序，否则，为完全的</td>
+        </tr>
+        <tr>
+          <td>位13-12——00：</td>
+          <td>软件文本光标</td>
+        </tr>
+        <tr>
+          <td>01：</td>
+          <td>硬件文本光标</td>
+        </tr>
+        <tr>
+          <td>1X：</td>
+          <td>图形光标</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h3>(37)、功能26H</h3>
+<table>
+  <tr>
+    
+    <td>功能描述：</td>
+    <td>读取最大有效坐标</td>
+  </tr>
+  <tr>
+    <td>入口参数：</td>
+    <td>AX＝26H</td>
+  </tr>
+  <tr>
+    <td>出口参数：</td>
+    <td>BX＝鼠标驱动程序状态<br>
+      CX＝最大水平坐标<br>
+      DX＝最大垂直坐标</td>
+  </tr>
+</table>
+<p></p>
+<div class="rpindex"><a href="56.html"> 下一页</a><a href="53.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

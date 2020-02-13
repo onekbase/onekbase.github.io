@@ -1,0 +1,512 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="073.html"> 上一页</a><a href="075.html"> 下一页</a></div>
+<h1>Win32汇编教程十一</h1>
+<h3> 进程控制 </h3>
+<h4>概述</h4>
+<p>进程控制简单的说相当于在一个程序中执行另一个程序，你可以把它想象成在 Dos 下用 int 21h/4bh 功能来执行另外一个程序，如果单从执行另一个程序的目的来讲，在 
+  Windows 中有不少方法，如使用 ShellExecute 等，但这些 Api 仅仅是“执行”而已，进程控制的意义在于可以创建一个进程，并可以通过进程句柄结束进程，同样你也可以通过进程句柄来跟踪程序，还可以用 
+  ReadProcessMemory 和 WriteProcessMemory 来读写子进程的内存空间。</p>
+<p>进程控制要使用的相关 API 有下面这些：</p>
+<p> 创建进程的函数为CreateProcess，该函数比较复杂，共有十个参数，但有个好消息是使用时大部分可以用 
+  NULL。<br>
+<pre class="code">BOOL CreateProcess( 
+LPCTSTR lpApplicationName, // 执行程序文件名
+LPTSTR lpCommandLine, // 参数行 
+LPSECURITY_ATTRIBUTES lpProcessAttributes, // 进程安全参数
+LPSECURITY_ATTRIBUTES lpThreadAttributes, // 线程安全参数
+BOOL bInheritHandles, // 继承标记
+              DWORD     dwCreationFlags, // 创建标记
+LPVOID lpEnvironment, // 环境变量
+LPCTSTR lpCurrentDirectory, // 运行该子进程的初始目录
+LPSTARTUPINFO lpStartupInfo, // 创建该子进程的相关参数 
+LPPROCESS_INFORMATION lpProcessInformation // 创建后用于被创建子进程的信息
+);
+</pre>
+  各个参数的说明如下：
+
+  <li> lpApplicationName：为执行程序的文件名，你也可以把执行文件名包括在下一个参数 lpCommandLine 中，然后把该参数置为NULL。 
+  </li>
+  <li> lpCommandLine：为参数行，如果无参数可以为NULL，在有参数传递给进程时可以如下设置：lpApplicationName=文件名；lpCommandLine=参数，或者 
+    lpApplicationName=NULL；lpCommandLine=文件名 + 参数。</li>
+  <li> lpProcessAttributes，lpThreadAttributes：分别描述了创建的进程和线程安全属性，如果使用NULL表示使用默认的安全描述。</li>
+  <li> bInheritHandles：表示当前进程中的打开的句柄是否能够被创建的子进程所继承。</li>
+  <li> dwCreationFlags：表示创建标记，通过该标记可以设置进程的创建状态和优先级别。常用的有下面的标记： <br>
+    CREATE_NEW_CONSOLE：为子进程创建一个新的控制台。 <br>
+    CREATE_SUSPENDED：子进程在创建时为挂起状态。如果指定了这个参数，那么执行 CreateProcess 后进程只是被装入内存，但不是马上开始执行，而是必须等主程序调用 
+    ResumeThread 后才继续执行。<br>
+    HIGH_PRIORITY_CLASS/NORMAL_PRIORITY_CLASS：高/普通优先级别。</li>
+  <li> lpEnvironment：表示子进程所使用的环境变量，如果为NULL，则表示与当前进程使用相同的环境变量。</li>
+  <li> lpCurrentDirectory：表示子进程运行的初始目录。</li>
+  <li> lpStartupInfo：STARTUPINFO 结构，用于在创建子进程时设置各种属性。</li>
+  <li>lpProcessInformation：PROCESS_INFORMATION 结构，用来在进程创建后接收相关信息，该结构由系统填写。</li>
+
+<p>调用 CreateProcess 函数有三个参数是必需的，一在 lpApplicationName 或 lpCommandLine 指定文件名，二是 
+  lpStartupInfo 结构，三是 PROCESS_INFORMATION 结构，因为 PROCESS_INFORMATION 结构返回了进程建立后的句柄，以后的一切操作将要用到这些返回的句柄，它是由系统填写的，结构说明如下：</p>
+<pre class="code">
+HANDLE hProcess; //进程句柄
+HANDLE hThread; //进程的主线程句柄
+              DWORD     dwProcessId ; //进程ID
+              DWORD     dwThreadId  ; //进程的主线程ID
+} PROCESS_INFORMATION;</pre>
+<p>另外还有一个关键的结构 STARTUPINFO，该结构定义如下：</p>
+<pre class="code">
+              DWORD     cb          ; //结构长度
+LPTSTR lpReserved; //保留
+LPTSTR lpDesktop; //保留
+LPTSTR lpTitle; //如果为控制台进程则为显示的标题
+              DWORD     dwX         ; //窗口位置
+              DWORD     dwY         ; //窗口位置
+              DWORD     dwXSize     ; //窗口大小
+              DWORD     dwYSize     ; //窗口大小
+              DWORD     dwXCountChars           ; //控制台窗口字符号宽度
+              DWORD     dwYCountChars           ; //控制台窗口字符号高度
+              DWORD     dwFillAttribute         ; //控制台窗口填充模式
+              DWORD     dwFlags     ; //创建标记
+              WORD      wShowWindow ; //窗口显示标记，如同ShowWindow中的标记
+              WORD      cbReserved2 ; //
+LPBYTE lpReserved2; //
+HANDLE hStdInput; //标准输入句柄
+HANDLE hStdOutput; //标准输出句柄
+HANDLE hStdError; //标准错误句柄
+} STARTUPINFO, *LPSTARTUPINFO;</pre>
+<p> 结构中 dwFlags 指定了其它的一些字段是否有效，如：dwFlags包含 STARTF_USESIZE 表示dwXSize和dwYSize有效，包含STARTF_USEPOSITION表示dwX和dwY有效，等等。如果不是有特殊的要求，我们不用自己去填写这个结构，只需用 
+  GetStartupInfo 让 Windows 为你填写好了，这样，建立一个进程的语句就是：</p>
+<pre class="code">...
+stStartUp STARTUPINFO &lt;?&gt; 
+stProcInfo PROCESS_INFORMATION &lt;?&gt;
+... 
+
+              invoke    GetStartupInfo,addr stStartUp
+              invoke    CreateProcess,NULL,addr szFileName,NULL,NULL,NULL,NORMAL_PRIORITY_CLASS,NULL,NULL,offset stStartUp,offset stProcInfo
+... </pre>
+<p>如果成功的话，eax 将返回非零值，注意返回在 PROCESS_INFORMATION 结构中的 hProcess，以后很多的操作都要用到它。</p>
+<p>强制结束一个进程的 API 为 TerminateProcess<br>
+</p>
+<pre class="code">BOOL TerminateProcess(
+  HANDLE hProcess, // 进程句柄
+  UINT uExitCode // 退出代码 
+  );</pre>
+<p>你可以使用语句 invoke TerminateProcess,structProcInfo.hProcess,0 来结束进程，要注意的是如果可能的话，尽量不要在程序中强制结束别的进程，因为使用 
+  TerminateProcess 结束的进程，它装载的 dll 不能被正确卸载。这样可能会引起系统资源的无效占用。最好的办法在进程中自己使用 ExitProcess 
+  退出。</p>
+<p>查询一个进程状态的 API 为 GetExitCodeProcess。</p>
+<pre class="code"> BOOL GetExitCodeProcess(
+  HANDLE hProcess, // handle to the process 
+  LPDWORD lpExitCode // address to receive termination status 
+  );</pre>
+<p> 如果进程尚未退出，函数将会返回STILL_ACTIVE。这个 API 是马上返回的。</p>
+<p>等待进程执行可以用 WaitForSingleObject</p>
+<p>这个 API 并不是单用于进程的等待，其它还可以用在线程等操作，但我们一般用它来等待进程的执行，它的申明是：</p>
+<pre class="code">DWORD WaitForSingleObject(
+  HANDLE hHandle, // handle of object to wait for
+  DWORD dwMilliseconds // time-out interval in milliseconds 
+  );</pre>
+<p>如果我们要等待进程执行 1 秒钟，可以 invoke WaitForSingleObject,stProcInfo.hProcess,1000 如果要等到进程结束，可以用 
+  WaitForSingleObject,stProcInfo.hProcess,INFINITE ，参数 2 中的 INFINITE 在 Windows.inc 
+  中有定义，意思是无穷等待。 </p>
+<p>最后，当不再使用进程句柄的时候，不要忘了使用 CloseHandle 关闭 hProcess 和 hThread，否则会浪费系统句柄的资源。</p>
+<p>源程序 - 汇编源文件</p>
+<pre class="code">.386
+.model        flat, stdcall
+	option casemap :none   ; case sensitive
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Include 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     include  windows.inc
+     include  user32.inc
+     include  kernel32.inc
+     include  comctl32.inc
+     include  comdlg32.inc
+     include  gdi32.inc
+
+  includelib  user32.lib
+  includelib  kernel32.lib
+  includelib  comctl32.lib
+  includelib  comdlg32.lib
+  includelib  gdi32.lib
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Equ 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    DLG_MAIN  equ       3000
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   ID_BROWSE  equ       3001
+      ID_RUN  equ       3002
+     ID_EXIT  equ       3003
+     ID_TEXT  equ       3004
+
+   F_RUNNING  equ       0001h       ;进程在运行中
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	数据段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.data?
+
+stStartUp	STARTUPINFO		&lt;?&gt;
+stProcInfo	PROCESS_INFORMATION	&lt;?&gt;
+stOpenFileName	OPENFILENAME	&lt;?&gt;
+
+  hRunThread  dd        ?
+   hInstance  dd        ?
+    hWinMain  dd        ?
+       hIcon  dd        ?
+    szBuffer  db        512 dup	(?)
+
+      dwFlag  dd        ?
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.data
+
+    szExcute  db        '执行(&E)',0            ;按钮文字
+      szKill  db        '终止(&E)',0
+           szExcuteError  db        '启动应用程序错误！',0
+
+ szTitleOpen  db        "Open executable file...",0
+       szExt  db        '*.exe',0
+    szFilter  db        'Excutable Files',0,'*.exe          ;*.com',0
+              db        0
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	代码段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.code
+
+              if        DEBUG
+     include  Debug.asm
+              endif
+     include  Win.asm
+
+;********************************************************************
+; 执行程序用的线程
+; 1. 用 CreateProcess 建立进程
+; 2. 用 WaitForSingleOject 等待进程结束
+;********************************************************************
+  _RunThread  proc      uses ebx ecx edx esi edi,\
+    dwParam:  DWORD
+
+              or        dwFlag,F_RUNNING
+;********************************************************************
+; 取消“退出”按钮并把“执行”按钮改为“中止”
+;********************************************************************
+              invoke    GetDlgItem,hWinMain,ID_EXIT
+              invoke    EnableWindow,eax,FALSE
+              invoke    SendDlgItemMessage,hWinMain,ID_RUN,WM_SETTEXT,0,offset szKill
+
+;********************************************************************
+; 执行文件，如果成功则等待程序结束
+;********************************************************************
+              invoke    GetStartupInfo,addr stStartUp
+              invoke    CreateProcess,NULL,addr szBuffer,NULL,NULL,\
+			NULL,NORMAL_PRIORITY_CLASS,NULL,NULL,offset stStartUp,offset stProcInfo
+.if           eax !=	0
+              invoke    WaitForSingleObject,stProcInfo.hProcess,INFINITE
+              invoke    CloseHandle,stProcInfo.hProcess
+              invoke    CloseHandle,stProcInfo.hThread
+.else
+              invoke    MessageBox,hWinMain,addr szExcuteError,NULL,MB_OK or MB_ICONERROR
+.endif
+;********************************************************************
+; Enable “退出”按钮并把“中止”按钮改为“执行”
+;********************************************************************
+              invoke    GetDlgItem,hWinMain,ID_EXIT
+              invoke    EnableWindow,eax,TRUE
+              invoke    SendDlgItemMessage,hWinMain,ID_RUN,WM_SETTEXT,0,offset szExcute
+              and       dwFlag,not F_RUNNING
+              ret
+
+  _RunThread  endp
+
+;********************************************************************
+;	窗口程序
+;********************************************************************
+          DialogMainProc  proc      uses ebx edi esi, \
+		hWnd:DWORD,wMsg:DWORD,wParam:DWORD,lParam:DWORD
+
+              mov       eax,wMsg
+;********************************************************************
+.if           eax ==	WM_INITDIALOG
+              mov       eax,hWnd
+              mov       hWinMain,eax
+              call      _Init
+;********************************************************************
+.elseif       eax ==	WM_CLOSE
+              invoke    EndDialog,hWinMain,NULL
+;********************************************************************
+.elseif       eax ==	WM_COMMAND
+              mov       eax,wParam
+.if           ax ==	ID_BROWSE
+              call      _BrowseFile
+              call      _CheckText
+.elseif       ax ==	ID_TEXT
+              invoke    GetDlgItemText,hWinMain,ID_TEXT,addr szBuffer,512
+              call      _CheckText
+.elseif       ax ==	ID_RUN
+;********************************************************************
+; 如果没有在执行中(dwFlag 没有置位) 则建立线程，在线程中执行程序
+; 如果已经在执行中，则用 TerminateProcess 终止执行
+;********************************************************************
+              test      dwFlag,F_RUNNING
+.if           ZERO?
+              invoke    CreateThread,NULL,NULL,offset _RunThread,\
+					NULL,NULL,offset hRunThread
+.else
+              invoke    TerminateProcess,stProcInfo.hProcess,-1
+.endif
+.elseif       ax ==	ID_EXIT
+              invoke    EndDialog,hWinMain,NULL
+.endif
+.else
+;********************************************************************
+;	注意：对话框的消息处理后，要返回 TRUE,对没有处理的消息
+;	要返回 FALSE
+;********************************************************************
+              mov       eax,FALSE
+              ret
+.endif
+              mov       eax,TRUE
+              ret
+
+          DialogMainProc  endp
+;********************************************************************
+; 程序入口
+;********************************************************************
+      start:
+              invoke    InitCommonControls
+              invoke    GetModuleHandle,NULL
+              mov       hInstance,eax
+              invoke    DialogBoxParam,hInstance,DLG_MAIN,NULL,offset DialogMainProc,0
+              invoke    ExitProcess,NULL
+;********************************************************************
+       _Init  proc
+
+              invoke    _CenterWindow,hWinMain
+
+              invoke    SendDlgItemMessage,hWinMain,ID_TEXT,EM_LIMITTEXT,512,NULL
+              invoke    GetDlgItem,hWinMain,ID_RUN
+              invoke    EnableWindow,eax,FALSE
+
+              ret
+
+       _Init  endp
+;********************************************************************
+; 根据 text control 中有无字符决定是否将“执行”按钮 Disable 掉
+;********************************************************************
+  _CheckText  proc
+
+              invoke    GetDlgItemText,hWinMain,ID_TEXT,addr szBuffer,512
+              invoke    lstrlen,addr szBuffer
+.if           eax != 0 || (dwFlag & F_RUNNING)
+              invoke    GetDlgItem,hWinMain,ID_RUN
+              invoke    EnableWindow,eax,TRUE
+.else
+              invoke    GetDlgItem,hWinMain,ID_RUN
+              invoke    EnableWindow,eax,FALSE
+.endif
+              ret
+
+  _CheckText  endp
+;********************************************************************
+ _BrowseFile  proc
+
+              mov       stOpenFileName.Flags,OFN_PATHMUSTEXIST or OFN_FILEMUSTEXIST
+              mov       stOpenFileName.lStructSize,SIZEOF stOpenFileName
+              mov       eax,hWinMain
+              mov       stOpenFileName.hwndOwner,eax
+              mov       stOpenFileName.lpstrFilter,offset szFilter      ;扩展名
+              mov       stOpenFileName.lpstrFile,offset szBuffer        ;文件名缓冲
+              mov       stOpenFileName.nMaxFile,512         ;文件名缓冲长度
+              mov       stOpenFileName.lpstrInitialDir,0
+              mov       stOpenFileName.lpstrTitle,offset szTitleOpen
+              mov       stOpenFileName.lpstrDefExt,offset szExt
+              invoke    GetOpenFileName,offset stOpenFileName
+.if           eax == FALSE
+              ret
+.endif
+              invoke    SetDlgItemText,hWinMain,ID_TEXT,addr szBuffer
+              ret
+
+ _BrowseFile  endp
+;********************************************************************
+              end       start
+
+</pre>
+<p>程序的分析和要点</p>
+<p>    本程序在使用调用 GetOpenFileName 或者自己在文本框中输入执行文件名，然后通过 CreateProcess 
+  建立进程，最后用 WaitForSingleObject 等待进程结束，如果在对话框的处理过程中等待会导致程序在进程返回前无法响应，所以程序中用 CreateThread 
+  建立一个线程来实现这个过程，当子过程返回的时候，线程结束。dwFlag 中的 0 位作为标志位，表示是否子过程在运行中，如果这一位置 1 的话，按下“终止”按钮会用 
+  TerminateProcess 来强制终止子进程。</p>
+
+  <div class="rpindex"><a href="075.html"> 下一页</a><a href="073.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

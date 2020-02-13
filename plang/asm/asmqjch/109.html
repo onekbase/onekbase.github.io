@@ -1,0 +1,297 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="109.html"> 上一页</a><a href="110.html"> 下一页</a></div>
+<h1>拾取密码框中的密码</h1>
+<h2>概述：</h2>
+<p>    其实早有所闻 Windows 的马虎，Windows打星号的密码框中的密码实际上是很容易得到的，我以前看到过的资料说是检索屏幕上的窗口，找到有 
+  ES_PASSWORD 风格的就向它发送取消 ES_PASSWORD 的消息，然后刷新它，密码就在原来的地方显示出来了，这儿还有另一个办法，就是找到密码框，直接取得中间的文本。<br>
+      程序的结构如下： 初始化的时候设置一个定时器，定时时间为0.1秒，然后在定时器消息中利用 GetCursorPos 
+  取得当前鼠标的位置，再利用 WindowFromPoint 取得该位置的窗口句柄，如果成功的话，利用 GetWindowLong 取得窗口的风格，如果窗口有 
+  ES_PASSWORD 风格的话，那么这肯定是个密码框，然后我们向它发送 WM_GETTEXT 消息取得中间的文本就万事大吉了，简单吗？下面是源程序，结合上面的介绍是很好懂的。<br>
+  最后，如果你的163密码泄密了可不是我的错喔！ :-)</p>
+<p>源程序：</p>
+<pre class="code">;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Programmed by 罗云彬, bigluo@telekbird.com.cn
+;	Website: http://asm.yeah.net
+;	LuoYunBin's Win32 ASM page (罗云彬的编程乐园)
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	版本信息
+;	密码查看器 - 可以查看 ES_PASSWORD 风格的编辑框中的密码
+;	   V1.0 ------	2000年6月18日
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.386
+.MODEL        FLAT, STDCALL
+		option casemap :none   ; case sensitive
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Include 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     INCLUDE  WINDOWS.INC
+     INCLUDE  USER32.INC
+     INCLUDE  KERNEL32.INC
+     INCLUDE  COMCTL32.INC
+     INCLUDE  COMDLG32.INC
+
+  INCLUDELIB  USER32.LIB
+  INCLUDELIB  KERNEL32.LIB
+  INCLUDELIB  COMCTL32.LIB
+  INCLUDELIB  COMDLG32.LIB
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Equ 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    DLG_MAIN  EQU       1000
+      ID_PWD  EQU       1001
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	数据段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.DATA?
+
+   HINSTANCE  DD        ?
+    SZBUFFER  DB        256 DUP	(?)
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	子程序声明
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+_ProcDlgMain	PROTO	:DWORD,:DWORD,:DWORD,:DWORD
+
+.DATA
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	代码段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.CODE
+
+     INCLUDE  WIN.ASM
+
+;********************************************************************
+            _PROCDLGMAIN  PROC      USES EBX EDI ESI, \
+		hWnd:DWORD,wMsg:DWORD,wParam:DWORD,lParam:DWORD
+              LOCAL     @STPOINT:POINT
+              LOCAL     @HWINDOW
+
+              MOV       EAX,WMSG
+.IF           EAX == WM_CLOSE
+              INVOKE    ENDDIALOG,HWND,NULL
+              INVOKE    KILLTIMER,HWND,1
+.ELSEIF       EAX == WM_INITDIALOG
+              INVOKE    _CENTERWINDOW,HWND
+              INVOKE    SENDDLGITEMMESSAGE,HWND,ID_PWD,EM_SETREADONLY,TRUE,NULL
+              INVOKE    SETWINDOWPOS,HWND,HWND_TOPMOST,0,0,0,0,\
+  SWP_NOMOVE  OR        SWP_NOSIZE
+              INVOKE    SETTIMER,HWND,1,100,NULL
+.ELSEIF       EAX == WM_TIMER
+              INVOKE    GETCURSORPOS,ADDR @STPOINT
+              INVOKE    WINDOWFROMPOINT,@STPOINT.X,@STPOINT.Y
+              MOV       @HWINDOW,EAX
+.IF           EAX !=	NULL
+              INVOKE    GETWINDOWLONG,@HWINDOW,GWL_STYLE
+.IF           (EAX & ES_PASSWORD)
+              INVOKE    SENDMESSAGE,@HWINDOW,WM_GETTEXT,255,OFFSET SZBUFFER
+              INVOKE    SETDLGITEMTEXT,HWND,ID_PWD,OFFSET SZBUFFER
+.ENDIF
+.ENDIF
+.ELSE
+;********************************************************************
+;	注意：对话框的消息处理后，要返回 TRUE,对没有处理的消息
+;	要返回 FALSE
+;********************************************************************
+              MOV       EAX,FALSE
+              RET
+.ENDIF
+              MOV       EAX,TRUE
+              RET
+		
+            _PROCDLGMAIN  ENDP
+;********************************************************************
+      START:
+              INVOKE    GETMODULEHANDLE,NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    DIALOGBOXPARAM,HINSTANCE,DLG_MAIN,NULL,OFFSET _PROCDLGMAIN,0
+              INVOKE    EXITPROCESS,NULL
+
+              END       START
+
+</pre>
+
+  <div class="rpindex"><a href="110.html"> 下一页</a><a href="109.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

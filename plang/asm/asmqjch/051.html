@@ -1,0 +1,318 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="050.html"> 上一页</a><a href="052.html"> 下一页</a></div><CENTER>
+<H1>VxD 程序设计入门</H1></CENTER>We 
+我们在上一节学会了如何编写一个什么事也不做的VxD程序。在这一节里，我们要给它增加处理控制消息的功能。 
+<H3>VxD的初始化和结束</H3>VxD程序分为两种：静态的和动态的。每种的加载方法都不同，接受到的初始化和结束的控制消息也不同。 
+<H3>静态VxD:</H3>下列情况下，VMM加载一个静态VxD: 
+
+  <LI>一个实模式常驻程序通过调用中断2FH，1605H,来调用此VxD。 
+  <LI>此VxD在注册表中的如下位置有定义： </LI>
+  <p>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\VxD\key\StaticVxD=VxD带路径文件名
+    
+    
+  </p>
+  <LI>此VxD在system.ini中的[386enh]行下有定义：[386enh] 
+  section:  </LI>
+  <p>device=VxD带路径文件名
+    
+    
+</p>
+  <p>在开发的时候，我建议你从system.ini载入VxD程序，因为这样如果你的VxD程序有错而导致Windows不能启动的话，你可以在Dos下修改system.ini，而如果你使用的注册表载入的办法，就无法修改了。</p>
+  <p>    当VMM加载你的静态VxD程序时，你的VxD程序会按以下顺序接收到三个系统控制消息： </p>
+  <LI>Sys_Critical_Init  VMM在转入到保护模式后，开放中断前发出这个控制消息。大多数VxD程序到不要用到这个消息，除非： 
+  
+<LI>你的VxD程序要接管一些其他VxD程序或者保护模式程序要用到的中断。既然你处理这个消息的时候这个中断还没有打开，你就可以确定在你接管这个中断的时候此中断不会被调用。
+
+<LI> 你的VxD程序为其他的VxD程序提供了一些VxD服务。<br />
+  例如，一些在你的VxD程序后加载的VxD程序在处理Device_Init控制消息时需要调用一些你的VxD服务，既然<br />
+  Sys_Critical_Init 
+  控制消息在Device_Init消息之前被发送，所以你应该在Sys_Critical_Init 
+  消息发送时初始化你的程序。 
+
+<p>如果你要对这消息进行处理，你应该尽可能快的做完初始化工作，以免太长的执行时间导致的硬中断丢失。(记住：中断还没打开)</p>
+<p>Device_Init VMM在开放中断后发送此信息。</p>
+<p>大多数VxD程序都在得到这个消息时初始化。因为中断都开放了，所以耗时的操作也可以在这里执行而不必怕会导致硬中断的丢失。你可以在这时进行初始化(如果你需要的话）</p>
+<LI>Init_Complete 在所有的VxD程序处理完Device_Init 消息之后,VMM释放初始化段（ICODE和RCODE段类）之前，VMM发出这个控制消息。<br />
+  只有少数几个VxD要处理这个消息 你的VxD程序在成功地初始化后，必须将返回标志清零，反之，必须在返回之前把返回标志设为出错信息。<br />
+  如果你的VxD不需要初始化，你就不必对这些消息进行处理。 <BR>
+当要结束静态VxD的时候，VMM发送如下的控制消息：</LI>
+<LI>System_Exit2  当你的VxD程序收到这个消息，Windows95正在关闭系统，除了系统虚拟机所有其他虚拟机都已经退出了。<br />
+尽管如此，CPU仍然处于保护模式下，在系统虚拟机上执行实模式编码也是安全的。在这时Kernel32.dll也已经被卸载了。<br />
+<br /> 
+<LI>Sys_Critical_Exit2   当所有的VxD完成对System_Exit2的响应处理并且中断都被关闭后，你的VxD收到到这个消息。 </LI>许多VxD程序并不要响应这两个消息，除非你要为系统做转换到实模式的准备。要知道，当Window95关闭时，它进入到实模式。所以如果你的VxD程序对实模式影像做了一些会导致它不稳定的操作，它就需要在这时进行恢复。 <BR>你也许会感到奇怪：为什么这两个消息后面都跟着个“2" ”。这是因为：在VMM加载VxD程序的时候，它是按照初始化顺序值小的VxD先加载的顺序加载的，这样VxD程序就可以使用那些在它们之前加载的VxD程序提供的服务。例如，VxD2要用到VxD1中的服务，它就必须把它的初始化顺序值定义的比VxD小。加载的顺序是： 
+<BLOCKQUOTE>..... VxD1 ===&gt;  VxD2 ===&gt; VxD3 
+  .....</BLOCKQUOTE>那么卸载的时候，理所当然的是初始化顺序值大的VxD程序先被卸载，这样他们仍然可以使用比它们后加载的那些VxD程序提供的服务。如上面的例子，次序是： 
+<BLOCKQUOTE>.... VxD3 ===&gt; VxD2 ===&gt; 
+VxD1.....</BLOCKQUOTE>在上边的例子中，如果VxD2在初始化时调用了VxD1中的某些服务，那么卸载时它可能也要再次用到一些VxD1中的服务。System_Exit2和Sys_Critical_Exit2是反初始化顺序发送的。这表示，当VxD2接受到这些消息时，VxD1还没有被卸载，它仍可以调用VxD1的服务，而System_Exit和Sys_Critical_Exit消息不是按照反初始化顺序发送的。这意味着，你不能肯定你是否仍能调用在你之前加载的VxD提供的VxD服务。新一代的VxD程序不应该使用这些消息。 <BR>还有两种退出消息：
+ 
+
+  <LI>Device_Reboot_Notify2  
+   告诉VxD程序VMM正在准备重新启动系统。这时候中断还是开放的。 
+  <LI>Crit_Reboot_Notify2  
+   告诉VxD程序VMM正在准备重新启动系统。这时候中断已经被关闭了。 </LI>到这里，你可以猜到还有Device_Reboot_Notify和Crit_Reboot_Notify 
+消息，但它们并不是像“2”版本的消息一样按反初始化顺序发送的。 
+<H3>动态VxD:</H3>动态VxD在Windows9x里可以动态的被加载和卸载。这个特点在Window3.x下是没有的。动态VxD程序的主要作用是用来支持某些动态的硬件设备的重装，比如：即插即用设备。尽管如此，你可以从你的Win32程序中加载/卸载它，也可以把它看作是你的程序的一个到ring-0的扩展。 <BR>上一节我们提到的例子是一个静态的VxD，你可以把它转换成一个动态的VxD，只要在.def文件中VxD标记的后面加上关键字DYNAMIC。<BLOCKQUOTE>VxD   FIRSTVxD   
+DYNAMIC</BLOCKQUOTE>这就是你把一个静态VxD转换成一个动态的VxD所要做的一切。 <BR>一个动态的VxD可以按以下的方法被加载： 
+
+  <LI>把它放到你的Windows目录下的\SYSTEM\IOSUBSYS目录中。在这个目录里的VxD会被输入输出监视器(ios)加载。这些VxD必须支持层设备驱动。所以用这种方法加载你的动态VxD并不是一个好办法。 
+  <LI>用VxD加载服务。 VxDLDR是一个可以加载动态VxD的静态VxD。你可以在其他VxD里面或者在16位代码里面调用它的服务。 
+  <LI>用Win32应用程序里的
+  CreateFile API。你在调用CreateFile时，你的动态VxD要以下面的格式填写： 
+   <BR>\\.\VxD完整路径名
+  <P><BR>例如，如果你要加载一个在当前目录下名为FirstVxD的动态VxD，你需要做如下的工作：  </LI>
+  <pre class="code">.DATA
+     VXDNAME  DB        "\\.\FIRSTVXD.VXD",0
+...... 
+.DATA?
+     HDEVICE  DD        ?
+..... 
+.CODE
+..... 
+              INVOKE    CREATEFILE, ADDR VXDNAME,0,0,0,0, FILE_FLAG_DELETE_ON_CLOSE,0
+              MOV       HDEVICE,EAX
+...... 
+              INVOKE    CLOSEHANDLE,HDEVICE
+...... 
+
+
+</pre>
+  
+  <p>FILE_FLAG_DELETE_ON_CLOSE 这个标志用来说明该VxD在CreateFile返回的句柄关闭时被卸载。 <BR>
+  如果你用CreateFile来加载一个动态VxD，那么这个动态VxD必须处理w32_DeviceIoControl 消息。当你的动态VxD第一次被CreateFile函数加载的时候，VWIN32 向你的VxD发出这个消息。你的VxD响应这个消息，返回时eax中的值必须为零。当应用程序调用DeviceIoControl API来与一个动态VxD通讯时，w32_DeviceIoControl消息也被发送。我们会在下一章讲到DeviceIoControl接口。 <BR>
+  一个动态VxD在初始化时收到一个消息：</p>
+
+  <LI>Sys_Dynamic_Device_Init<br />  
+    <br />  
+    <br />
+  </LI>
+  在结束时也收到一个控制消息：<br />
+  <br /> 
+
+<LI>Sys_Dynamic_Device_Exit <br />
+  <br />
+</LI>
+动态VxD不会收到Sys_Critical_Init, Device_Init和Init_Complete控制消息，因为这些消息是在系统虚拟机初始化时发送的。除了这三个消息，动态VxD能收到所有的控制消息，只要它还在内存里。它可以做静态VxD可以做的所有事情。简单的说，动态VxD除了加载机制和接收到的初始化/结束消息跟静态VxD不同以外，它能做静态VxD所能做的一切。 
+<H3>其它系统控制消息</H3>当VxD在内存里的时候，除了接收和初始化及结束相关的消息外，它还要收到许多别的控制消息。有些消息是关于虚拟机管理器的，有的是关于各种事件的。例如，关于虚拟机的消息如下： 
+
+  <pre class="code"> Create_VM 
+
+VM_Critical_Init 
+
+VM_Suspend 
+
+VM_Resume 
+
+Close_VM_Notify 
+
+Destroy_VM </pre>
+  选择地响应你所感兴趣的消息是你自己的责任。 
+<H3>
+在VxD内创建函数</H3>你要在一个段里面定义你的函数。你应该首先定义一个段，然后把你的函数放进去。例如，如果你要把你的函数放到一个可调页段中。你应该先定义一个可调页段，像这样： 
+<BLOCKQUOTE>
+<pre class="code">VxD_PAGEABLE_CODE_SEG 
+（你的函数写在这里） 
+
+VxD_PAGEABLE_CODE_ENDS</pre>
+</BLOCKQUOTE>你可以在一个段里面插入多个的函数。作为一个VxD编写者，你必须决定每一个函数应该放到哪个段里面去。如果你的函数必须时刻存在于内存中，如某些硬件中断处理程序，就把它们放到锁定页面段里面，否则，你应该把它们放到可调页段。 <BR>你要用BeginProc和EndProc 
+宏来定义你的函数： 
+<BLOCKQUOTE>
+  <pre class="code">BeginProc 函数名
+EndProc  函数名</pre>
+</BLOCKQUOTE>使用BeginProc 宏还可以加上一些参数，想了解这些细节，你可以看看Win95 DDK的文档。大多数时候，你只用填写函数的名字就够了。 <BR>因为BeginProc-EndProc 宏比proc-endp 指令的功能要强，所以你应该用BeginProc-EndProc宏来代替proc-endp指令 
+<H3>VxD编程约定</H3>
+<H3>寄存器的使用</H3>你的VxD程序可以使用所有的寄存器，FS和GS。但是在改动段寄存器的时候一定要小心。尤其是，一定不要改动CS和SS的内容，除非你对将发生的事情有绝对的把握。你可以使用DS和ES，但一定要记住在返回时恢复它们初值。有两个特征位尤其重要：方向和中断特征位。不要长时间的屏蔽中断。还有如果你要改动方向特征位，不要忘了在返回之前恢复它的初值。
+ 
+<H3>参数传递约定</H3> VxD服务函数有两种调用约定：寄存器法和堆栈法。调用寄存器法服务函数时，你通过各种寄存器来传递服务函数的参数。并且，在调用完成后检查寄存器的值来看操作是否成功。不要总是以为在调用服务函数后主要寄存器的值还和以前一样。当调用堆栈法服务函数时，你把要传递的参数压栈，在eax得到返回值。堆栈调用法的服务函数保存ebx，esi，edi和ebp的值。许多寄存器调用法服务函数都源于Windows3.x的时代。在大多数时候，你可以通过名字来区分这两种服务函数，如果一个函数的名字一下划线开头，如_HeapAllocate，它就是一个堆栈法的服务函数（除了少数从VWIN32.VxD导出的函数）。如果函数名不是一下划线开头，它就是一个寄存器法的服务函数。 
+<H3>
+调用VxD服务函数</H3>你可以通过VMMCall和VxDCall 宏来调用VMM和VxD服务。这两个宏的语法是一样的。当你要调用VMM导出的VxD服务函数时，用VMMCall。当你要用其它VxD程序导出的VxD服务函数时，用VxDCall。 
+<pre class="code">VMMCall service ; 调用寄存器法服务函数e 
+VMMCall _service, <argument list> ; 调用堆栈法服务函数</pre>
+正如我在前面所讲的，VMMCall和VxDCall分解出一个跟着一个双字的20h中断，这样用起来很方便。
+当你调用堆栈法服务时，你必须用角括号把你的参数列括起来。 
+<pre class="code">VMMCall _HeapAllocate, <<size mybuffer>, HeapLockedIfDP></pre>
+_HeapAllocate是一个堆栈法服务函数。它有两个参数，我们必须用角括号把它们括起来。由于第一个参数是一个这个宏不能正确解释的表达式，所以我们又要用一个角括号把它括起来。 
+<H3>Flat地址</H3>在老的编译工具里，当你使用offset 
+操作符时，编译器和联接器会生成错误地址，所以VxD编写者用offset flat:来代替offset。imm.inc包括了一个使这更简单的宏：OFFSET32 
+来代替offset 
+flat:。所以如果你要用地址操作时，用OFFSET32 
+来代替offset操作符。 
+<P>注意： 当我写这篇教程的时候，我试了一下用offset 
+操作符。它可以生成正确的地址。所以我想MASM6.14修正了这个bug。但是为了安全起见，你还是应该用OFFSET32宏来代替offset。 <BR>
+
+  <CENTER></CENTER></BODY></HTML>
+<div class="rpindex"><a href="052.html"> 下一页</a><a href="050.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

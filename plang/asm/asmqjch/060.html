@@ -1,0 +1,251 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="059.html"> 上一页</a><a href="061.html"> 下一页</a></div>
+<h1 align="center">PE教程4: Optional Header</h1>
+
+<p>我们已经学习了关于 DOS header 和
+PE header 中部分成员的知识。这里是 PE header 中最后、最大或许也是最重要的成员，optional header。</p>
+
+<p>回顾一下，optional header 结构是 IMAGE_NT_HEADERS 中的最后成员。包含了PE文件的逻辑分布信息。该结构共有31个域，一些是很关键，另一些不太常用。这里只介绍那些真正有用的域。</p>
+
+<p>这儿有个关于PE文件格式的常用术语: RVA <br>
+  RVA 代表相对虚拟地址。 知道什么是虚拟地址吗？相对那些简单的概念而言，RVA有些晦涩。简言之，RVA是虚拟空间中到参考点的一段距离。我打赌您肯定熟悉文件偏移量: 
+  RVA就是类似文件偏移量的东西。当然它是相对虚拟空间里的一个地址，而不是文件头部。举例说明，如果PE文件装入虚拟地址(VA)空间的400000h处，且进程从虚址401000h开始执行，我们可以说进程执行起始地址在RVA 
+  1000h。每个RVA都是相对于模块的起始VA的。<br>
+  为什么PE文件格式要用到RVA呢? 这是为了减少PE装载器的负担。因为每个模块多有可能被重载到任何虚拟地址空间，如果让PE装载器修正每个重定位项，这肯定是个梦魇。相反，如果所有重定位项都使用RVA，那么PE装载器就不必操心那些东西了: 
+  它只要将整个模块重定位到新的起始VA。这就象相对路径和绝对路径的概念: RVA类似相对路径，VA就象绝对路径。</p>
+
+<table>
+    <tr>
+        <th bgcolor="#006666">Field</th>
+        <th bgcolor="#006666">Meanings</th>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">AddressOfEntryPoint</td>
+        
+    <td align="center" bgcolor="#006666">PE装载器准备运行的PE文件的第一个指令的RVA。若您要改变整个执行的流程，可以将该值指定到新的RVA，这样新RVA处的指令首先被执行。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">ImageBase</td>
+        
+    <td align="center" bgcolor="#006666">PE文件的优先装载地址。比如，如果该值是400000h，PE装载器将尝试把文件装到虚拟地址空间的400000h处。字眼&quot;优先&quot;表示若该地址区域已被其他模块占用，那PE装载器会选用其他空闲地址。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">SectionAlignment</td>
+        
+    <td align="center" bgcolor="#006666">内存中节对齐的粒度。例如，如果该值是4096 (1000h)，那么每节的起始地址必须是4096的倍数。若第一节从401000h开始且大小是10个字节，则下一节必定从402000h开始，即使401000h和402000h之间还有很多空间没被使用。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">FileAlignment</td>
+        
+    <td align="center" bgcolor="#006666"> 
+      <p>文件中节对齐的粒度。例如，如果该值是(200h),，那么每节的起始地址必须是512的倍数。若第一节从文件偏移量200h开始且大小是10个字节，则下一节必定位于偏移量400h: 
+        即使偏移量512和1024之间还有很多空间没被使用/定义。</p>      </td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">MajorSubsystemVersion<br>
+        MinorSubsystemVersion </td>
+        
+    <td align="center" bgcolor="#006666"> win32子系统版本。若PE文件是专门为Win32设计的，该子系统版本必定是4.0否则对话框不会有3维立体感。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">SizeOfImage</td>
+        
+    <td align="center" bgcolor="#006666">内存中整个PE映像体的尺寸。它是所有头和节经过节对齐处理后的大小。 </td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">SizeOfHeaders</td>
+        
+    <td align="center" bgcolor="#006666">所有头+节表的大小，也就等于文件尺寸减去文件中所有节的尺寸。可以以此值作为PE文件第一节的文件偏移量。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">Subsystem</td>
+        
+    <td align="center" bgcolor="#006666">NT用来识别PE文件属于哪个子系统。 对于大多数Win32程序，只有两类值: Windows GUI 
+      和 Windows CUI (控制台)。</td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="#006666">DataDirectory</td>
+        
+    <td align="center" bgcolor="#006666">一IMAGE_DATA_DIRECTORY 
+      结构数组。每个结构给出一个重要数据结构的RVA，比如引入地址表等。</td>
+    </tr>
+</table>
+
+
+<p>　</p>
+<div class="rpindex"><a href="061.html"> 下一页</a><a href="059.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,534 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="84.html"> 上一页</a><a href="87.html"> 下一页</a></div>
+  <h3>2.1、@Read：从文件或设备读数据</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@Read &nbsp;buffer，length [，[handle]       
+        [，segment]]</td>
+    </tr>
+    <tr>
+      <td rowspan="4">参数说明：</td>
+      <td>&lt;buffer&gt;</td>
+      <td> 存放数据的缓冲区偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;length&gt;</td>
+      <td> 数据字节的长度</td>
+    </tr>
+    <tr>
+      <td>&lt;handle&gt;</td>
+      <td> 文件或设备的句柄，缺省值为0(键盘)</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 字符串的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝0，则AX＝读入的字节数</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、BX、CX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 3FH，@Write</td>
+    </tr>
+  </table>
+  <h3>2.2、@Write：向文件或设备写数据</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@Write &nbsp;buffer，length [，[handle]       
+        [，segment]]</td>
+    </tr>
+    <tr>
+      <td rowspan="4">参数说明：</td>
+      <td>&lt;buffer&gt;&nbsp;</td>
+      <td> 存放数据的缓冲区偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;length&gt;</td>
+      <td> 数据字节的长度</td>
+    </tr>
+    <tr>
+      <td>&lt;handle&gt;</td>
+      <td> 文件或设备的句柄，缺省值为1(屏幕)</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 字符串的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝0，则AX＝输出的字节数</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、BX、CX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 40H，@Read</td>
+    </tr>
+  </table>
+  <h3>2.3、@MakeFile：创建一个文件</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@MakeFile path [，[attrib] [，[segment]       
+        [，kind]]]</td>
+    </tr>
+    <tr>
+      <td rowspan="4">参数说明：</td>
+      <td>&lt;path&gt;</td>
+      <td> 文件名的地址</td>
+    </tr>
+    <tr>
+      <td>&lt;attrib&gt;</td>
+      <td> 文件的属性，缺省值为0</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 字符串的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>&lt;kind&gt;</td>
+      <td> 可用"tmp"/"new"，若不指定，则创建一个新文件即使文件已存在<br>
+        "tmp"创建一个唯一文件；<br>
+        "new"创建一个新文件(在原文件不存在时)</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝0，则AX＝文件的句柄</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、CX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h —       
+        3CH、5AH和5B，@OpenFile，@CloseFile</td>
+    </tr>
+  </table>
+  <h3>2.4、@OpenFile：为输入/输出而打开文件</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@OpenFile path，access [，segment]</td>
+    </tr>
+    <tr>
+      <td rowspan="3">参数说明：</td>
+      <td>&lt;path&gt;</td>
+      <td> 文件名的地址</td>
+    </tr>
+    <tr>
+      <td>&lt;access&gt;</td>
+      <td> 常量，文件访问代码，缺省值为0(可读/写)</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 字符串的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝1，则AX＝错误代码</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 3DH，@MakeFile</td>
+    </tr>
+  </table>
+  <h3>2.5、@CloseFile：关闭文件句柄</h3>
+  <table>
+    <tr>
+      <td rowspan="5"></td>
+      <td>使用语法：</td>
+      <td colspan="2">@CloseFile handle</td>
+    </tr><a href="8-3-22.html">修改中断向量的步骤_读取和设置中断向量_中断功能的分类_输入输出和中断_汇编语言程序设计教程_asm_编程语言_itE教</a>
+    <tr>
+      <td>参数说明：</td>
+      <td>&lt;handle&gt;</td>
+      <td> 先前打开的文件句柄</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝1，则AX＝错误代码</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX和BX</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 3EH，@OpenFile，@MakeFile</td>
+    </tr>
+  </table>
+  <h3>2.6、@DelFile：删除一个指定的文件</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@DelFile path [，segment]</td>
+    </tr>
+    <tr>
+      <td rowspan="2">参数说明：</td>
+      <td>&lt;path&gt;</td>
+      <td> 文件名字符串的偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 路径的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝1，则AX＝错误代码</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 41H</td>
+    </tr>
+  </table>
+  <h3>2.7、@MoveFile：文件移动或换名</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@MoveFile old，new [，[segold] [，segnew]]</td>
+    </tr>
+    <tr>
+      <td rowspan="4">参数说明：</td>
+      <td>&lt;old&gt;</td>
+      <td> 被换名的文件名字符串的偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;new&gt;</td>
+      <td> 新文件名字符串的偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;segold&gt;</td>
+      <td> 旧文件名的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>&lt;segnew&gt;</td>
+      <td> 新文件名的段地址，缺省值为ES</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝1，则AX＝错误代码</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、DX、DI，DS和ES(若相应段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 56H</td>
+    </tr>
+  </table>
+  <h3 style="text-indent: -32pt; margin-left: 32pt">2.8、@GetFirst：读取第一个匹配的文件<br>
+    @GetNext：读取其它的匹配文件 </h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@GetFirst path [，[attribute] [，segment]]<br>
+        @GetNext</td>
+    </tr>
+    <tr>
+      <td rowspan="3">参数说明：</td>
+      <td>&lt;path&gt;</td>
+      <td> 指定文件的偏移量，可含通配符</td>
+    </tr>
+    <tr>
+      <td>&lt;attribute&gt;</td>
+      <td> 被搜索的文件属性，缺省值为0</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 路径的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝1，则AX＝错误代码</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX(二者)，对@GetFirst，CX、DX和DS(若段改变了)</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 4EH和4FH，@SetDTA，@GetDTA</td>
+    </tr>
+  </table>
+  <h3 style="text-indent: -32pt; margin-left: 32pt">2.9、@GetDTA：读取DTA(Disk Transfer Address)<br>
+    @SetDTA：设置DTA </h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@SetDTA buffer [，segment]<br>
+        @GetDTA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">参数说明：</td>
+      <td>&lt;buffer&gt;</td>
+      <td> 新DTA缓冲区的偏移量</td>
+    </tr>
+    <tr>
+      <td>&lt;segment&gt;</td>
+      <td> 新DTA缓冲区的段地址，缺省值为DS</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">对@GetDTA，ES:BX＝指向DTA的指针</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">对@GetDTA，AX、ES和BX<br>
+        对@SetDTA，AX、DS和DX</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 2FH和1AH，@GetNext</td>
+    </tr>
+  </table>
+  <h3>2.10、@GetFileSize：读取文件大小</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@GetFileSize handle</td>
+    </tr>
+    <tr>
+      <td>参数说明：</td>
+      <td>&lt;handle&gt;</td>
+      <td> 先前打开的文件句柄</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝0，则，DX:AX＝文件的大小</td>
+    </tr>
+    <tr>
+      <td rowspan="2">内容破坏：</td>
+      <td colspan="2">AX、BX、CX和DX</td>
+    </tr>
+    <tr>
+      <td colspan="2">注意：该宏将把文件指针复位到0，所以，在文件操作过程中，不要使用该宏</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 42H</td>
+    </tr>
+  </table>
+  <h3 style="text-indent: -39pt; margin-left: 39pt">2.11、@MovePtrAbs：移动文件指针道一个绝对位置<br>
+    @MovePtrRel：移动文件指针道一个相对位置</h3>
+  <table>
+    <tr>
+      <td>使用语法：</td>
+      <td colspan="2">@MovePtrAbs handle [，distance]<br>
+        @MovePtrRel handle [，distance]</td>
+    </tr>
+    <tr>
+      <td rowspan="2">参数说明：</td>
+      <td>&lt;handle&gt;</td>
+      <td> 先前打开的文件句柄</td>
+    </tr>
+    <tr>
+      <td>&lt;distance&gt;</td>
+      <td> 16位常量，或16/32位变量，缺省值是CX:DX</td>
+    </tr>
+    <tr>
+      <td>返回参数：</td>
+      <td colspan="2">若CF＝0，则，DX:AX＝文件指针的位置</td>
+    </tr>
+    <tr>
+      <td>内容破坏：</td>
+      <td colspan="2">AX、BX、CX和DX</td>
+    </tr>
+    <tr>
+      <td>参见内容：</td>
+      <td colspan="2">Int 21h — 42H</td>
+    </tr>
+  </table>
+  <p></p>
+  <div class="rpindex"><a href="87.html"> 下一页</a><a href="84.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

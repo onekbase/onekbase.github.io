@@ -1,0 +1,425 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+<h1>定制剖析器(Parser)</h1>
+<p>When the built-in parser classes won't do the job, you need to
+  customize. This usually means customizing the lists of nestable and
+  self-closing tags. You can customize the list of self-closing tags by
+  passing a <a href="parsingxml.html#selfClosingTags"><code>selfClosingTags</code></a> argument
+  into the soup constructor. To customize the lists of nestable tags,
+  though, you'll have to subclass. <br/>
+  当内置的剖析类不能做一些工作时，你需要定制它们。
+  这通常意味着重新定义可内嵌的标签和自关闭的标签列表。
+你可以通过传递参数<a href="parsingxml.html#selfClosingTags"><code>selfClosingTags</code></a> 给soup的构造器来定制自关闭的标签。自定义可以内嵌的标签的列表，你需要子类化。 </p>
+<p>The most useful classes to subclass are <code>MinimalSoup</code> (for HTML)
+  and <code>BeautifulStoneSoup</code> (for XML). I'm going to show you how to
+  override <code>RESET_NESTING_TAGS</code> and <code>NESTABLE_TAGS</code> in a subclass. This
+  is the most complicated part of Beautiful Soup and I'm not going to
+  explain it very well here, but I'll get something written and then I
+  can improve it with feedback. <br/>
+  非常有用的用来子类的类是<code>MinimalSoup</code>类(针对HTML)和<code>BeautifulStoneSoup</code>(针对XML)。
+  我会说明如何在子类中重写<code>RESET_NESTING_TAGS</code>和<code>NESTABLE_TAGS</code>。这是Beautiful Soup 中
+  最为复杂的部分，所以我也不会在这里详细的解释，但是我会写些东西并利用反馈来改进它。 </p>
+<p>When Beautiful Soup is parsing a document, it keeps a stack of open
+  tags. Whenever it sees a new start tag, it tosses that tag on top of
+  the stack. But before it does, it might close some of the open tags
+  and remove them from the stack. Which tags it closes depends on the
+  qualities of tag it just found, and the qualities of the tags in the
+  stack. <br/>
+  当Beautiful Soup剖析一个文档的时候，它会保持一个打开的tag的堆栈。任何时候只要它看到一个新的
+  开始tag，它会将这个tag拖到堆栈的顶端。但在做这步之前，它可能会关闭某些已经打开的标签并将它们从
+  堆栈中移除。 </p>
+<p>The best way to explain it is through example. Let's say the stack
+  looks like <code>['html', 'p', 'b']</code>, and Beautiful Soup encounters a &lt;P&gt;
+  tag. If it just tossed another <code>'p'</code> onto the stack, this would imply
+  that the second &lt;P&gt; tag is within the first &lt;P&gt; tag, not to mention
+  the open &lt;B&gt; tag. But that's not the way &lt;P&gt; tags work. You can't
+  stick a &lt;P&gt; tag inside another &lt;P&gt; tag. A &lt;P&gt; tag isn't &quot;nestable&quot; at
+  all. <br/>
+  我们最好还是通过例子来解释。我们假定堆栈如同<code>['html','p','b']</code>，
+  并且Beautiful Soup遇到一个&lt;P&gt;标签。如果它仅仅将另一个<code>'p'</code>拖到堆栈的顶端，
+  这意味着第二个&lt;P&gt;标签在第一个&lt;P&gt;内，而不会影响到打开的&lt;B&gt;。
+  但是这不是&lt;P&gt;应该的样子。你不能插入一个&lt;P&gt;到另一个&lt;P&gt;里面去。&lt;P&gt;标签不是可内嵌的。 </p>
+<p>So when Beautiful Soup encounters a &lt;P&gt; tag, it closes and pops all
+  the tags up to and including the previously encountered tag of the
+  same type. This is the default behavior, and this is how <code>BeautifulStoneSoup</code> treats <i>every</i> tag. It's what you get when a
+  tag is not mentioned in either <code>NESTABLE_TAGS</code> or <code>RESET_NESTING_TAGS</code>. It's also what you get when a tag shows up in <code>RESET_NESTING_TAGS</code> but has no entry in <code>NESTABLE_TAGS</code>, the way the
+  &lt;P&gt; tag does. <br/>
+  因此当Beautiful Soup 遇到一个&lt;P&gt;时，它先关闭并弹出所有的标签，包括前面遇到的同类型的标签。
+  这是默认的操作，这也是Beautiful Soup对待每个标签的方式。当一个标签不在<code>NESTABLE_TAGS</code> 或<code>RESET_NESTING_TAGS</code>中时，你会遇到的处理方式。这也是当一个标签在<code>RESET_NESTING_TAGS</code> 中而不在<code>NESTABLE_TAGS</code>中时的处理方式，就像处理&lt;P&gt;一样。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+BeautifulSoup.RESET_NESTING_TAGS['p'] == None
+# <samp>True</samp>
+BeautifulSoup.NESTABLE_TAGS.has_key('p')
+# <samp>False</samp>
+
+print BeautifulSoup(&quot;&lt;html&gt;&lt;p&gt;Para&lt;b&gt;one&lt;p&gt;Para two&quot;)
+# <samp>&lt;html&gt;&lt;p&gt;Para&lt;b&gt;one&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Para two&lt;/p&gt;&lt;/html&gt;</samp>
+# <samp>                     ^---^--The second &lt;p&gt; tag made those two tags get closed</samp>
+</pre>
+<p>Let's say the stack looks like <code>['html', 'span', 'b']</code>, and
+  Beautiful Soup encounters a &lt;SPAN&gt; tag. Now, &lt;SPAN&gt; tags can contain
+  other &lt;SPAN&gt; tags without limit, so there's no need to pop up to the
+  previous &lt;SPAN&gt; tag when you encounter one. This is represented by
+  mapping the tag name to an empty list in <code>NESTABLE_TAGS</code>. This kind of
+  tag should not be mentioned in <code>RESET_NESTING_TAGS</code>: there are no
+  circumstances when encountering a &lt;SPAN&gt; tag would cause any tags to
+  be popped. <br/>
+  我们假定堆栈如同<code>['html','span','b']</code>，并且Beautiful Soup 遇到一个&lt;SPAN&gt;标签。
+  现在，&lt;SPAN&gt;可以无限制包含其他的&lt;SPAN&gt;，因此当再次遇到&lt;SPAN&gt;标签时没有必要弹出前面的&lt;SPAN&gt;标签。
+  这是通过映射标签名到<code>NESTABLE_TAGS</code>中的一个空列表里。这样的标签也需要在<code>RESET_NESTING_TAGS</code>里
+  设置：当再次遇到&lt;SPAN&gt;是不会再导致任何标签被弹出并关闭。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+BeautifulSoup.NESTABLE_TAGS['span']
+# <samp>[]</samp>
+BeautifulSoup.RESET_NESTING_TAGS.has_key('span')
+# <samp>False</samp>
+
+print BeautifulSoup(&quot;&lt;html&gt;&lt;span&gt;Span&lt;b&gt;one&lt;span&gt;Span two&quot;)
+# <samp>&lt;html&gt;&lt;span&gt;Span&lt;b&gt;one&lt;span&gt;Span two&lt;/span&gt;&lt;/b&gt;&lt;/span&gt;&lt;/html&gt;</samp>
+</pre>
+<p>Third example: suppose the stack looks like <code>['ol','li','ul']</code>:
+  that is, we've got an ordered list, the first element of which
+  contains an unordered list. Now suppose Beautiful Soup encounters a
+  &lt;LI&gt; tag. It shouldn't pop up to the first &lt;LI&gt; tag, because this new
+  &lt;LI&gt; tag is part of the unordered sublist. It's okay for an &lt;LI&gt; tag
+  to be inside another &lt;LI&gt; tag, so long as there's a &lt;UL&gt; or &lt;OL&gt; tag
+  in the way. <br/>
+  第三个例子:假定堆栈如同<code>['ol','li','ul']</code>:
+  也就是，我们有一个有序的list，且列表的第一个元素包含一个无序的list。现在假设，Beautiful Soup
+  遇到一个&lt;LI&gt;标签。它不会弹出第一个&lt;LI&gt;，因为这个新的&lt;LI&gt;是无序的子list一部分。
+  &lt;LI&gt;中内嵌一个&lt;LI&gt;是可以的，同样的&lt;UL&gt;和&lt;OL&gt;标签也可以这样。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+print BeautifulSoup(&quot;&lt;ol&gt;&lt;li&gt;1&lt;ul&gt;&lt;li&gt;A&quot;).prettify()
+# <samp>&lt;ol&gt;</samp>
+# <samp> &lt;li&gt;</samp>
+# <samp>  1</samp>
+# <samp>  &lt;ul&gt;</samp>
+# <samp>   &lt;li&gt;</samp>
+# <samp>    A</samp>
+# <samp>   &lt;/li&gt;</samp>
+# <samp>  &lt;/ul&gt;</samp>
+# <samp> &lt;/li&gt;</samp>
+# <samp>&lt;/ol&gt;</samp>
+</pre>
+<p>But if there is no intervening &lt;UL&gt; or &lt;OL&gt;, then one &lt;LI&gt; tag
+  can't be underneath another: <br/>
+  如果&lt;UL&gt;和&lt;OL&gt;没有被干扰，这时一个&lt;LI&gt;标签也不能在另一个之下。[bad] </p>
+<pre class="code">print BeautifulSoup(&quot;&lt;ol&gt;&lt;li&gt;1&lt;li&gt;A&quot;).prettify()
+# <samp>&lt;ol&gt;</samp>
+# <samp> &lt;li&gt;</samp>
+# <samp>  1</samp>
+# <samp> &lt;/li&gt;</samp>
+# <samp> &lt;li&gt;</samp>
+# <samp>  A</samp>
+# <samp> &lt;/li&gt;</samp>
+# <samp>&lt;/ol&gt;</samp>
+</pre>
+<p>We tell Beautiful Soup to treat &lt;LI&gt; tags this way by putting &quot;li&quot;
+  in <code>RESET_NESTING_TAGS</code>, and by giving &quot;li&quot; a <code>NESTABLE_TAGS</code> entry
+  showing list of tags under which it can nest. <br/>
+  Beautiful Soup这样对待&lt;LI&gt;是通过将&quot;li&quot;放入<code>RESET_NESTING_TAGS</code>，并给在<code>NESTABLE_TAGS</code>中给&quot;li&quot;一个可以内嵌接口。 </p>
+<pre class="code">BeautifulSoup.RESET_NESTING_TAGS.has_key('li')
+# <samp>True</samp>
+BeautifulSoup.NESTABLE_TAGS['li']
+# <samp>['ul', 'ol']</samp>
+</pre>
+<p>This is also how we handle the nesting of table tags: <br/>
+  这也是处理内嵌的table标签的方式： </p>
+<pre class="code">BeautifulSoup.NESTABLE_TAGS['td']
+# <samp>['tr']</samp>
+BeautifulSoup.NESTABLE_TAGS['tr']
+# <samp>['table', 'tbody', 'tfoot', 'thead']</samp>
+BeautifulSoup.NESTABLE_TAGS['tbody']
+# <samp>['table']</samp>
+BeautifulSoup.NESTABLE_TAGS['thead']
+# <samp>['table']</samp>
+BeautifulSoup.NESTABLE_TAGS['tfoot']
+# <samp>['table']</samp>
+BeautifulSoup.NESTABLE_TAGS['table']
+# <samp>[]</samp>
+</pre>
+<p>That is: &lt;TD&gt; tags can be nested within &lt;TR&gt; tags. &lt;TR&gt; tags can be
+  nested within &lt;TABLE&gt;, &lt;TBODY&gt;, &lt;TFOOT&gt;, and &lt;THEAD&gt; tags. &lt;TBODY&gt;,
+  &lt;TFOOT&gt;, and &lt;THEAD&gt; tags can be nested in &lt;TABLE&gt; tags, and &lt;TABLE&gt;
+  tags can be nested in other &lt;TABLE&gt; tags. If you know about HTML
+  tables, these rules should already make sense to you. <br/>
+  也就是&lt;TD&gt;标签可以嵌入到&lt;TR&gt;中。
+  &lt;TR&gt;可以被嵌入到&lt;TABLE&gt;, &lt;TBODY&gt;, &lt;TFOOT&gt;, 以及 &lt;THEAD&gt; 中。
+  &lt;TBODY&gt;,&lt;TFOOT&gt;, and &lt;THEAD&gt;标签可以嵌入到 &lt;TABLE&gt; 标签中, 而 &lt;TABLE&gt;
+  嵌入到其它的&lt;TABLE&gt; 标签中. 如果你对HTML有所了解，这些规则对你而言应该很熟悉。 </p>
+<p>One more example. Say the stack looks like <code>['html', 'p', 'table']</code> and Beautiful Soup encounters a &lt;P&gt; tag. <br/>
+  再举一个例子，假设堆栈如同<code>['html','p','table']</code>，并且Beautiful Soup遇到一个&lt;P&gt;标签。 </p>
+<p>At first glance, this looks just like the example where the stack
+  is <code>['html', 'p', 'b']</code> and Beautiful Soup encounters a &lt;P&gt; tag. In
+  that example, we closed the &lt;B&gt; and &lt;P&gt; tags, because you can't have
+  one paragraph inside another.
+  首先，这看起来像前面的同样是Beautiful Soup遇到了堆栈<code>['html','p','b']</code>。
+  在那个例子中，我们关闭了&lt;B&gt;和&lt;P&gt;标签，因为你不能在一个段落里内嵌另一个段落。 </p>
+<p>Except... you <i>can</i> have a paragraph that contains a table,
+  and then the table contains a paragraph. So the right thing to do is
+  to not close any of these tags. Beautiful Soup does the right thing:
+  除非，你的段落里包含了一个table，然后这table包含了一个段落。因此，这种情况下正确的处理是
+  不关闭任何标签。Beautiful Soup就是这样做的： </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+print BeautifulSoup(&quot;&lt;p&gt;Para 1&lt;b&gt;&lt;p&gt;Para 2&quot;)
+# <samp>&lt;p&gt;</samp>
+# <samp> Para 1</samp>
+# <samp> &lt;b&gt;</samp>
+# <samp> &lt;/b&gt;</samp>
+# <samp>&lt;/p&gt;</samp>
+# <samp>&lt;p&gt;</samp>
+# <samp> Para 2</samp>
+# <samp>&lt;/p&gt;</samp>
+
+print BeautifulSoup(&quot;&lt;p&gt;Para 1&lt;table&gt;&lt;p&gt;Para 2&quot;).prettify()
+# <samp>&lt;p&gt;</samp>
+# <samp> Para 1</samp>
+# <samp> &lt;table&gt;</samp>
+# <samp>  &lt;p&gt;</samp>
+# <samp>   Para 2</samp>
+# <samp>  &lt;/p&gt;</samp>
+# <samp> &lt;/table&gt;</samp>
+# <samp>&lt;/p&gt;</samp>
+</pre>
+<p>What's the difference? The difference is that &lt;TABLE&gt; is in <code>RESET_NESTING_TAGS</code> and &lt;B&gt; is not. A tag that's in <code>RESET_NESTING_TAGS</code> doesn't get popped off the stack as easily as a
+  tag that's not. <br/>
+  有什么不同？不同是&lt;TABLE&gt;标签在<code>RESET_NESTING_TAGS</code>中，而&lt;B&gt;不在。
+  一个在<code>RESET_NESTING_TAGS</code>中标签不会像不在其里面的标签那样，会是堆栈中标签被弹出。 </p>
+<p>Okay, hopefully you get the idea. Here's the <code>NESTABLE_TAGS</code> for
+  the <code>BeautifulSoup</code> class. Correlate this with what you know about
+  HTML, and you should be able to create your own <code>NESTABLE_TAGS</code> for
+  bizarre HTML documents that don't follow the normal rules, and for
+  other XML dialects that have different nesting rules. <br/>
+  好了，希望你明白了(我被弄有点晕，有些地方翻译的不清，还请见谅)。 <code>NESTABLE_TAGS</code>用于<code>BeautifulSoup</code>类。
+  依据你所知道的HTML，你可以创建你自己<code>NESTABLE_TAGS</code>来处理那些不遵循标准规则的HTML文档。
+  以及那些使用不同嵌入规则XML的方言。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+nestKeys = BeautifulSoup.NESTABLE_TAGS.keys()
+nestKeys.sort()
+for key in nestKeys:
+    print &quot;%s: %s&quot; % (key, BeautifulSoup.NESTABLE_TAGS[key])
+# <samp>bdo: []</samp>
+# <samp>blockquote: []</samp>
+# <samp>center: []</samp>
+# <samp>dd: ['dl']</samp>
+# <samp>del: []</samp>
+# <samp>div: []</samp>
+# <samp>dl: []</samp>
+# <samp>dt: ['dl']</samp>
+# <samp>fieldset: []</samp>
+# <samp>font: []</samp>
+# <samp>ins: []</samp>
+# <samp>li: ['ul', 'ol']</samp>
+# <samp>object: []</samp>
+# <samp>ol: []</samp>
+# <samp>q: []</samp>
+# <samp>span: []</samp>
+# <samp>sub: []</samp>
+# <samp>sup: []</samp>
+# <samp>table: []</samp>
+# <samp>tbody: ['table']</samp>
+# <samp>td: ['tr']</samp>
+# <samp>tfoot: ['table']</samp>
+# <samp>th: ['tr']</samp>
+# <samp>thead: ['table']</samp>
+# <samp>tr: ['table', 'tbody', 'tfoot', 'thead']</samp>
+# <samp>ul: []</samp>
+</pre>
+<p>And here's <code>BeautifulSoup</code>'s <code>RESET_NESTING_TAGS</code>. Only the keys
+  are important: <code>RESET_NESTING_TAGS</code> is actually a list, put into the
+  form of a dictionary for quick random access. <br/>
+  这是<code>BeautifulSoup</code>的<code>RESET_NESTING_TAGS</code>。只有键(keys)是重要的： <code>RESET_NESTING_TAGS</code>实际是一个list，以字典的形式可以快速随机存取。 </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+resetKeys = BeautifulSoup.RESET_NESTING_TAGS.keys()
+resetKeys.sort()
+resetKeys
+# <samp>['address', 'blockquote', 'dd', 'del', 'div', 'dl', 'dt', 'fieldset', </samp>
+# <samp> 'form', 'ins', 'li', 'noscript', 'ol', 'p', 'pre', 'table', 'tbody',</samp>
+# <samp> 'td', 'tfoot', 'th', 'thead', 'tr', 'ul']</samp>
+</pre>
+<p>Since you're subclassing anyway, you might as well override <code>SELF_CLOSING_TAGS</code> while you're at it. It's a dictionary that maps
+  self-closing tag names to any values at all (like <code>RESET_NESTING_TAGS</code>, it's actually a list in the form of a
+  dictionary). Then you won't have to pass that list in to the
+  constructor (as <code>selfClosingTags</code>) every time you instantiate your
+  subclass. <br/>
+  因为无论如何都有使用继承，你最好还是在需要的时候重写<code>SELF_CLOSING_TAGS</code>。
+  这是一个映射自关闭标签名的字典(如同<code>RESET_NESTING_TAGS</code>,它实际是字典形式的list)。
+  这样每次实例化你的子类时，你就不用传list给构造器(如<code>selfClosingTags</code>)。 </p>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

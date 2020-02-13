@@ -1,0 +1,458 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="057.html"> 上一页</a><a href="059.html"> 下一页</a></div>
+<h1 align="center">PE教程2: 检验PE文件的有效性</h1>
+
+<p>本教程中我们将学习如何检测给定文件是一有效PE文件。<br>
+</p>
+
+<h3>理论:</h3>
+
+<p>如何才能校验指定文件是否为一有效PE文件呢? 这个问题很难回答，完全取决于想要的精准程度。您可以检验PE文件格式里的各个数据结构，或者仅校验一些关键数据结构。大多数情况下，没有必要校验文件里的每一个数据结构，只要一些关键数据结构有效，我们就认为是有效的PE文件了。下面我们就来实现前面的假设。</p>
+
+<p>我们要验证的重要数据结构就是 PE header。从编程角度看，PE header 实际就是一个
+IMAGE_NT_HEADERS 结构。定义如下:</p>
+
+<pre class="code">        IMAGE_NT_HEADERS  STRUCT
+   Signature  dd        ?
+FileHeader IMAGE_FILE_HEADER <> 
+OptionalHeader IMAGE_OPTIONAL_HEADER32 <> 
+        IMAGE_NT_HEADERS  ENDS</pre>
+
+<p>Signature 一dword类型，值为50h, 45h, 00h, 00h（PE\0\0）。 本域为PE标记，我们可以此识别给定文件是否为有效PE文件。<br>
+FileHeader
+该结构域包含了关于PE文件物理分布的信息， 比如节数目、文件执行机器等。<br>
+OptionalHeader 该结构域包含了关于PE文件逻辑分布的信息，虽然域名有&quot;可选&quot;字样，但实际上本结构总是存在的。</p>
+
+<p>我们目的很明确。如果IMAGE_NT_HEADERS的signature域值等于&quot;PE\0\0&quot;，那么就是有效的PE文件。实际上，为了比较方便，Microsoft已定义了常量IMAGE_NT_SIGNATURE供我们使用。</p>
+
+<pre class="code">IMAGE_DOS_SIGNATURE
+equ 5A4Dh <br>
+IMAGE_OS2_SIGNATURE equ 454Eh <br>
+IMAGE_OS2_SIGNATURE_LE equ 454Ch <br>
+IMAGE_VXD_SIGNATURE equ 454Ch <br>
+IMAGE_NT_SIGNATURE
+equ 4550h </pre>
+
+<p>接下来的问题是: 如何定位 PE header? 答案很简单: DOS MZ header 已经包含了指向 PE header 的文件偏移量。DOS MZ header 又定义成结构 IMAGE_DOS_HEADER 。查询windows.inc，我们知道
+IMAGE_DOS_HEADER 结构的e_lfanew成员就是指向 PE header 的文件偏移量。
+</p>
+
+<p>现在将所有步骤总结如下:</p>
+
+<ol>
+    <li>首先检验文件头部第一个字的值是否等于
+        IMAGE_DOS_SIGNATURE，是则
+        DOS MZ header 有效。</li>
+    <li>一旦证明文件的 DOS header 有效后，就可用e_lfanew来定位
+        PE header 了。</li>
+    <li>比较 PE header 的第一个字的值是否等于 IMAGE_NT_HEADER。如果前后两个值都匹配，那我们就认为该文件是一个有效的PE文件。</li>
+</ol>
+
+<h3>Example:</h3>
+
+<pre class="code">.386 <br>
+.model flat,stdcall <br>
+option casemap:none <br>
+include \masm32\include\windows.inc <br>
+include \masm32\include\kernel32.inc <br>
+include \masm32\include\comdlg32.inc <br>
+include \masm32\include\user32.inc <br>
+includelib \masm32\lib\user32.lib <br>
+includelib \masm32\lib\kernel32.lib <br>
+includelib \masm32\lib\comdlg32.lib <br>
+<br>
+SEH struct <br>
+PrevLink dd ?    ; the address of the previous seh
+structure <br>
+CurrentHandler dd ?    ; the address of the
+exception handler <br>
+SafeOffset dd ?    ; The offset where it's safe to
+continue execution <br>
+PrevEsp dd ?      ; the old value in esp
+<br>
+PrevEbp dd ?     ; The old value in ebp <br>
+SEH ends<br>
+<br>
+.data <br>
+AppName db &quot;PE tutorial no.2&quot;,0 <br>
+ofn OPENFILENAME <> <br>
+FilterString db &quot;Executable Files (*.exe,
+*.dll)&quot;,0,&quot;*.exe;*.dll&quot;,0 <br>
+                
+db &quot;All Files&quot;,0,&quot;*.*&quot;,0,0 <br>
+FileOpenError db &quot;Cannot open the file for reading&quot;,0 <br>
+FileOpenMappingError db &quot;Cannot open the file for memory
+mapping&quot;,0 <br>
+FileMappingError db &quot;Cannot map the file into memory&quot;,0
+<br>
+FileValidPE db &quot;This file is a valid PE&quot;,0 <br>
+FileInValidPE db &quot;This file is not a valid PE&quot;,0 <br>
+<br>
+.data? <br>
+buffer db 512 dup(?) <br>
+hFile dd ? <br>
+hMapping dd ? <br>
+pMapping dd ? <br>
+ValidPE dd ? <br>
+<br>
+.code <br>
+start proc <br>
+LOCAL seh:SEH <br>
+mov ofn.lStructSize,SIZEOF ofn <br>
+mov ofn.lpstrFilter, OFFSET FilterString <br>
+mov ofn.lpstrFile, OFFSET buffer <br>
+mov ofn.nMaxFile,512 <br>
+mov ofn.Flags, OFN_FILEMUSTEXIST or OFN_PATHMUSTEXIST or
+OFN_LONGNAMES or OFN_EXPLORER or OFN_HIDEREADONLY <br>
+invoke GetOpenFileName, ADDR ofn <br>
+.if eax==TRUE <br>
+    invoke CreateFile, addr buffer, GENERIC_READ,
+FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL
+<br>
+    .if eax!=INVALID_HANDLE_VALUE <br>
+       mov hFile, eax <br>
+       invoke CreateFileMapping,
+hFile, NULL, PAGE_READONLY,0,0,0 <br>
+       .if eax!=NULL <br>
+          mov
+hMapping, eax <br>
+          invoke
+MapViewOfFile,hMapping,FILE_MAP_READ,0,0,0 <br>
+          .if
+eax!=NULL <br>
+            
+mov pMapping,eax <br>
+            
+assume fs:nothing <br>
+            
+push fs:[0] <br>
+            
+pop seh.PrevLink <br>
+            
+mov seh.CurrentHandler,offset SEHHandler <br>
+            
+mov seh.SafeOffset,offset FinalExit <br>
+            
+lea eax,seh <br>
+            
+mov fs:[0], eax <br>
+            
+mov seh.PrevEsp,esp <br>
+            
+mov seh.PrevEbp,ebp <br>
+            
+mov edi, pMapping <br>
+            
+assume edi:ptr IMAGE_DOS_HEADER <br>
+            
+.if [edi].e_magic==IMAGE_DOS_SIGNATURE <br>
+               
+add edi, [edi].e_lfanew <br>
+               
+assume edi:ptr IMAGE_NT_HEADERS <br>
+               
+.if [edi].Signature==IMAGE_NT_SIGNATURE <br>
+                  
+mov ValidPE, TRUE <br>
+               
+.else <br>
+                  
+mov ValidPE, FALSE <br>
+               
+.endif <br>
+            
+.else <br>
+                
+mov ValidPE,FALSE <br>
+            
+.endif <br>
+FinalExit: <br>
+            
+.if ValidPE==TRUE <br>
+                
+invoke MessageBox, 0, addr FileValidPE, addr AppName,
+MB_OK+MB_ICONINFORMATION <br>
+            
+.else <br>
+               
+invoke MessageBox, 0, addr FileInValidPE, addr AppName,
+MB_OK+MB_ICONINFORMATION <br>
+            
+.endif <br>
+            
+push seh.PrevLink <br>
+            
+pop fs:[0] <br>
+            
+invoke UnmapViewOfFile, pMapping <br>
+          .else <br>
+            
+invoke MessageBox, 0, addr FileMappingError, addr AppName,
+MB_OK+MB_ICONERROR <br>
+          .endif <br>
+          invoke
+CloseHandle,hMapping <br>
+       .else <br>
+          invoke
+MessageBox, 0, addr FileOpenMappingError, addr AppName,
+MB_OK+MB_ICONERROR <br>
+       .endif <br>
+       invoke CloseHandle, hFile <br>
+    .else <br>
+       invoke MessageBox, 0, addr
+FileOpenError, addr AppName, MB_OK+MB_ICONERROR <br>
+    .endif <br>
+.endif <br>
+invoke ExitProcess, 0 <br>
+start endp <br>
+<br>
+SEHHandler proc uses edx pExcept:DWORD, pFrame:DWORD,
+pContext:DWORD, pDispatch:DWORD <br>
+    mov edx,pFrame <br>
+    assume edx:ptr SEH <br>
+    mov eax,pContext <br>
+    assume eax:ptr CONTEXT <br>
+    push [edx].SafeOffset <br>
+    pop [eax].regEip <br>
+    push [edx].PrevEsp <br>
+    pop [eax].regEsp <br>
+    push [edx].PrevEbp <br>
+    pop [eax].regEbp <br>
+    mov ValidPE, FALSE <br>
+    mov eax,ExceptionContinueExecution <br>
+    ret <br>
+SEHHandler endp <br>
+end start </pre>
+
+<h3>分析:</h3>
+
+<p>本例程打开一文件，先检验DOS header是否有效，有效就接着检验PE header的有效性，ok就认为是有效的PE文件了。这里，我们还运用了结构异常处理(SEH)，这样就不必检查每个可能的错误: 如果有错误出现，就认为PE检测失效所致，于是给出我们的报错信息。其实Windows内部普遍使用SEH来检验参数传递的有效性。若对SEH感兴趣的话，可阅读Jeremy Gordon的 文章。</p>
+
+<p>程序调用打开文件通用对话框，用户选定执行文件后，程序便打开文件并映射到内存。并在有效性检验前建立一 SEH:</p>
+
+<pre class="code">   assume fs:nothing <br>
+   push fs:[0] <br>
+   pop seh.PrevLink <br>
+   mov seh.CurrentHandler,offset SEHHandler <br>
+   mov seh.SafeOffset,offset FinalExit <br>
+   lea eax,seh <br>
+   mov fs:[0], eax <br>
+   mov seh.PrevEsp,esp <br>
+   mov seh.PrevEbp,ebp 
+
+<p>一开始就假设寄存器 fs为空（assume fs:nothing）。 记住这一步不能省却，因为MASM假设fs寄存器为ERROR。接下来保存 Windows使用的旧SEH处理函数地址到我们自己定义的结构中，同时保存我们的SEH处理函数地址和异常处理时的执行恢复地址，这样一旦错误发生就能由异常处理函数安全地恢复执行了。同时还保存当前esp及ebp的值，以便我们的SEH处理函数将堆栈恢复到正常状态。</p>
+
+<p>   mov edi, pMapping <br>
+   assume edi:ptr IMAGE_DOS_HEADER <br>
+   .if [edi].e_magic==IMAGE_DOS_SIGNATURE </pre>
+
+<p>成功建立SEH后继续校验工作。置目标文件的首字节地址给edi，使其指向DOS header的首字节。为便于比较，我们告诉编译器可以假定edi正指向IMAGE_DOS_HEADER结构(事实亦是如此)。然后比较DOS header的首字是否等于字符串&quot;MZ&quot;，这里利用了windows.inc中定义的IMAGE_DOS_SIGNATURE常量。若比较成功，继续转到PE header，否则设ValidPE 值为FALSE，意味着文件不是有效PE文件。</p>
+
+<pre class="code">      add
+edi, [edi].e_lfanew <br>
+      assume edi:ptr
+IMAGE_NT_HEADERS <br>
+      .if
+[edi].Signature==IMAGE_NT_SIGNATURE <br>
+         mov
+ValidPE, TRUE <br>
+      .else <br>
+         mov
+ValidPE, FALSE <br>
+      .endif </pre>
+
+<p>要定位到PE header，需要读取DOS header中的e_lfanew域值。该域含有PE header在文件中相对文件首部的偏移量。edi加上该值正好定位到PE header的首字节。这儿可能会出错，如果文件不是PE文件，e_lfanew值就不正确，加上该值作为指针就可能导致异常。若不用SEH，我们必须校验e_lfanew值是否超出文件尺寸，这不是一个好办法。如果一切OK，我们就比较PE header的首字是否是字符串&quot;PE&quot;。这里在此用到了常量IMAGE_NT_SIGNATURE，相等则认为是有效的PE文件。<br>
+如果e_lfanew的值不正确导致异常，我们的SEH处理函数就得到执行控制权，简单恢复堆栈指针和基栈指针后，就根据safeoffset的值恢复执行到FinalExit标签处。</p>
+
+<pre class="code">FinalExit: <br>
+   .if ValidPE==TRUE <br>
+      invoke MessageBox, 0, addr
+FileValidPE, addr AppName, MB_OK+MB_ICONINFORMATION <br>
+   .else <br>
+      invoke MessageBox, 0, addr
+FileInValidPE, addr AppName, MB_OK+MB_ICONINFORMATION <br>
+   .endif 
+
+<p>上述代码简单明确，根据ValidPE的值显示相应信息。</p>
+
+<p>   push seh.PrevLink <br>
+   pop fs:[0] </pre>
+
+<p>一旦SEH不再使用，必须从SEH链上断开。</p>
+
+<div class="rpindex"><a href="059.html"> 下一页</a><a href="057.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

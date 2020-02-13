@@ -1,0 +1,446 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+<h1>搜索剖析树</h1>
+<p>Beautiful Soup提供了许多方法用于浏览一个剖析树，收集你指定的<code>Tag</code>和<code>NavigableString</code>。 </p>
+<p><a name="findall example document" id="findall example document">有几种方法去定义用于Beautiful Soup的匹配项。
+  我们先用深入解释最基本的一种搜索方法<code>findAll</code>。
+  和前面一样，我们使用下面这个文档说明：</a> </p>
+<pre class="code">from BeautifulSoup import BeautifulSoup
+doc = ['&lt;html&gt;&lt;head&gt;&lt;title&gt;Page title&lt;/title&gt;&lt;/head&gt;',
+       '&lt;body&gt;&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.',
+       '&lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.',
+       '&lt;/html&gt;']
+soup = BeautifulSoup(''.join(doc))
+print soup.prettify()
+# <samp>&lt;html&gt;</samp>
+# <samp> &lt;head&gt;</samp>
+# <samp>  &lt;title&gt;</samp>
+# <samp>   Page title</samp>
+# <samp>  &lt;/title&gt;</samp>
+# <samp> &lt;/head&gt;</samp>
+# <samp> &lt;body&gt;</samp>
+# <samp>  &lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;</samp>
+# <samp>   This is paragraph</samp>
+# <samp>   &lt;b&gt;</samp>
+# <samp>    one</samp>
+# <samp>   &lt;/b&gt;</samp>
+# <samp>   .</samp>
+# <samp>  &lt;/p&gt;</samp>
+# <samp>  &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;</samp>
+# <samp>   This is paragraph</samp>
+# <samp>   &lt;b&gt;</samp>
+# <samp>    two</samp>
+# <samp>   &lt;/b&gt;</samp>
+# <samp>   .</samp>
+# <samp>  &lt;/p&gt;</samp>
+# <samp> &lt;/body&gt;</samp>
+# <samp>&lt;/html&gt;</samp>
+</pre>
+<p>还有, 这里的两个方法(<code>findAll</code>和 <code>find</code>)仅对<code>Tag</code>对象以及
+  顶层剖析对象有效，但 <code>NavigableString</code>不可用。
+  这两个方法在<a href="searchingwithin.html">Searching 剖析树内部</a>同样可用。 </p>
+<h3><a name="The basic find method: findAll(name, attrs, recursive, text, limit, **kwargs)" id="The basic find method: findAll(name, attrs, recursive, text, limit, **kwargs)">The basic find method: <code>findAll(</code></a>name, attrs, recursive, text, limit, **kwargs)</h3>
+<p>方法<code>findAll</code> 从给定的点开始遍历整个树，并找到满足给定条件所有<code>Tag</code>以及<code>NavigableString</code>。 <code>findall</code>函数原型定义如下： </p>
+<p><b>findAll(name=None, attrs={}, recursive=True, text=None,
+  limit=None, **kwargs)</b></p>
+<p>这些<a name="args" id="args">参数</a>会反复的在这个文档中出现。其中最重要的是<code>name</code>参数
+  和keywords参数(译注：就是**kwargs参数)。</p>
+<ul>
+  <li>
+    <p>参数<a name="arg-name" id="arg-name"><b><code>name</code></b></a> 匹配tags的名字，获得相应的结果集。
+      有几种方法去匹配name，在这个文档中会一再的用到。 </p>
+    <ol>
+      <p></p>
+      <li>
+        <p>最简单用法是仅仅给定一个tag name值。下面的代码寻找文档中所有的
+          &lt;B&gt; <code>Tag</code>: </p>
+        <pre class="code">soup.findAll('b')
+# <samp>[&lt;b&gt;one&lt;/b&gt;, &lt;b&gt;two&lt;/b&gt;]</samp>
+        </pre>
+      </li>
+      <li>
+        <p>你可以传一个正则表达式。下面的代码寻找所有以b开头的标签: </p>
+        <pre class="code">import re
+tagsStartingWithB = soup.findAll(re.compile('^b'))
+[tag.name for tag in tagsStartingWithB]
+# <samp>[u'body', u'b', u'b']</samp>
+        </pre>
+      </li>
+      <li>
+        <p>你可以传一个list或dictionary。下面两个调用是查找所有的&lt;TITLE&gt;和&lt;P&gt;标签。
+          他们获得结果一样，但是后一种方法更快一些: </p>
+        <pre class="code">soup.findAll(['title', 'p'])
+# <samp>[&lt;title&gt;Page title&lt;/title&gt;, </samp>
+# <samp> &lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;, </samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.findAll({'title' : True, 'p' : True})
+# <samp>[&lt;title&gt;Page title&lt;/title&gt;, </samp>
+# <samp> &lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;, </samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+        </pre>
+      </li>
+      <li>
+        <p>你可以传一个<code>True</code>值,这样可以匹配每个tag的name：也就是匹配每个tag。 </p>
+        <pre class="code">allTags = soup.findAll(True)
+[tag.name for tag in allTags]
+[u'html', u'head', u'title', u'body', u'p', u'b', u'p', u'b']
+        </pre>
+        <p>这看起来不是很有用，但是当你限定属性(attribute)值时候，使用<code>True</code>就很有用了。 </p>
+      </li>
+      <li>
+        <p>你可以传<a name="match-callable" id="match-callable">callable</a>对象，就是一个使用<code>Tag</code>对象作为它唯一的参数，并返回布尔值的对象。 <code>findAll</code>使用的每个作为参数的<code>Tag</code>对象都会传递给这个<a name="match-callable" id="match-callable">callable</a>对象，
+          并且如果调用返回<code>True</code>，则这个tag便是匹配的。 </p>
+        <p>下面是查找两个并仅两个属性的标签(tags)： </p>
+        <pre class="code">soup.findAll(lambda tag: len(tag.attrs) == 2)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;, </samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+        </pre>
+        <p>下面是寻找单个字符为标签名并且没有属性的标签： </p>
+        <pre class="code">soup.findAll(lambda tag: len(tag.name) == 1 and not tag.attrs)
+# <samp>[&lt;b&gt;one&lt;/b&gt;, &lt;b&gt;two&lt;/b&gt;]</samp>
+        </pre>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p><a name="arg-**kwargs" id="arg-**kwargs"> keyword参数</a>用于筛选tag的属性。下面这个例子是查找拥有属性align且值为center的
+      所有标签： </p>
+    <pre class="code">soup.findAll(align=&quot;center&quot;)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;]</samp>
+    </pre>
+    <p>如同<code>name</code>参数，你也可以使用不同的keyword参数对象，从而更加灵活的指定属性值的匹配条件。
+      你可以向上面那样传递一个字符串，来匹配属性的值。你也可以传递一个正则表达式，一个列表(list)，一个哈希表(hash)，
+      特殊值<code>True</code>或<code>None</code>，或者一个可调用的以属性值为参数的对象(注意：这个值可能为<code>None</code>)。
+      一些例子： </p>
+    <pre class="code">soup.findAll(id=re.compile(&quot;para$&quot;))
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;,</samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.findAll(align=[&quot;center&quot;, &quot;blah&quot;])
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;,</samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.findAll(align=lambda(value): value and len(value) &lt; 5)
+# <samp>[&lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+    </pre>
+    <p>特殊值<code>True</code>和<code>None</code>更让人感兴趣。 <code>True</code>匹配给定属性为<i>任意</i>值的标签，<code>None</code>匹配那些给定的属性值为<i>空</i>的标签。 
+      一些例子如下： </p>
+    <pre class="code">soup.findAll(align=True)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;,</samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+[tag.name for tag in soup.findAll(align=None)]
+# <samp>[u'html', u'head', u'title', u'body', u'b', u'b']</samp>
+    </pre>
+    <p>如果你需要在标签的属性上添加更加复杂或相互关联的(interlocking)匹配值， <a href="#match-callable">如同上面</a>一样，以callable对象的传递参数来处理<code>Tag</code>对象。 </p>
+    <p><a name="arg-attrs" id="arg-attrs">在这里你也许注意到一个问题。</a> 如果你有一个文档，它有一个标签定义了一个name属性,会怎么样？
+      你不能使用<code>name</code>为keyword参数，因为Beautiful Soup 已经定义了一个<code>name</code>参数使用。
+      你也不能用一个Python的保留字例如<code>for</code>作为关键字参数。 </p>
+    <p>Beautiful Soup提供了一个特殊的参数<code>attrs</code>，你可以使用它来应付这些情况。 <code>attrs</code>是一个字典，用起来就和keyword参数一样： </p>
+    <pre class="code">soup.findAll(id=re.compile(&quot;para$&quot;))
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;,</samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.findAll(attrs={'id' : re.compile(&quot;para$&quot;)})
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;,</samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+    </pre>
+    <p>你可以使用<code>attrs</code>去匹配那些名字为Python保留字的属性，
+      例如<code>class</code>, <code>for</code>, 以及<code>import</code>；
+      或者那些不是keyword参数但是名字为Beautiful Soup搜索方法使用的参数名的属性，
+      例如<code>name</code>, <code>recursive</code>, <code>limit</code>, <code>text</code>,
+      以及<code>attrs</code>本身。 </p>
+    <pre class="code">from BeautifulSoup import BeautifulStoneSoup
+xml = '&lt;person name=&quot;Bob&quot;&gt;&lt;parent rel=&quot;mother&quot; name=&quot;Alice&quot;&gt;'
+xmlSoup = BeautifulStoneSoup(xml)
+
+xmlSoup.findAll(name=&quot;Alice&quot;)
+# <samp>[]</samp>
+
+xmlSoup.findAll(attrs={&quot;name&quot; : &quot;Alice&quot;})
+# <samp>[parent rel=&quot;mother&quot; name=&quot;Alice&quot;&gt;&lt;/parent&gt;]</samp>
+    </pre>
+    <h4><a name="Searching by CSS class" id="Searching by CSS class">使用CSS类查找</a></h4>
+    <p><code>对于CSS类attrs</code>参数更加方便。例如class不仅是一个CSS属性，
+      也是Python的保留字。 </p>
+    <p>你可以使用<code>soup.find(&quot;tagName&quot;, {
+      &quot;class&quot; : &quot;cssClass&quot; })</code>搜索CSS class，但是由于有很多这样的操作，
+      你也可以只传递一个字符串给<code>attrs</code>。
+      这个字符串默认处理为CSS的class的参数值。 </p>
+    <pre class="code">from BeautifulSoup import BeautifulSoup
+soup = BeautifulSoup(&quot;&quot;&quot;Bob's &lt;b&gt;Bold&lt;/b&gt; Barbeque Sauce now available in 
+                        &lt;b class=&quot;hickory&quot;&gt;Hickory&lt;/b&gt; and &lt;b class=&quot;lime&quot;&gt;Lime&lt;/a&gt;&quot;&quot;&quot;)
+
+soup.find(&quot;b&quot;, { &quot;class&quot; : &quot;lime&quot; })
+# <samp>&lt;b class=&quot;lime&quot;&gt;Lime&lt;/b&gt;</samp>
+
+soup.find(&quot;b&quot;, &quot;hickory&quot;)
+# <samp>&lt;b class=&quot;hickory&quot;&gt;Hickory&lt;/b&gt;</samp>
+    </pre>
+  </li>
+  <li>
+    <p><a name="arg-text" id="arg-text"><b><code>text</code></b></a> 是一个用于搜索<code>NavigableString</code>对象的参数。
+      它的值可以是字符串，一个正则表达式，
+      一个list或dictionary，<code>True</code>或<code>None</code>，
+      一个以<code>NavigableString</code>为参数的可调用对象： </p>
+    <pre class="code">soup.findAll(text=&quot;one&quot;)
+# <samp>[u'one']</samp>
+soup.findAll(text=u'one')
+# <samp>[u'one']</samp>
+
+soup.findAll(text=[&quot;one&quot;, &quot;two&quot;])
+# <samp>[u'one', u'two']</samp>
+
+soup.findAll(text=re.compile(&quot;paragraph&quot;))
+# <samp>[u'This is paragraph ', u'This is paragraph ']</samp>
+
+soup.findAll(text=True)
+# <samp>[u'Page title', u'This is paragraph ', u'one', u'.', u'This is paragraph ', </samp>
+# <samp> u'two', u'.']</samp>
+
+soup.findAll(text=lambda(x): len(x) &lt; 12)
+# <samp>[u'Page title', u'one', u'.', u'two', u'.']</samp>
+    </pre>
+    <p>如果你使用<code>text</code>，任何指定给<code>name</code> 以及keyword参数的值都会被忽略。 </p>
+  </li>
+  <li>
+    <p><a name="arg-recursive" id="arg-recursive"><b><code>recursive</code></b></a> 是一个布尔参数(默认为<code>True</code>)，用于指定Beautiful Soup遍历整个剖析树，
+      还是只查找当前的子标签或者剖析对象。下面是这两种方法的区别： </p>
+    <pre class="code">[tag.name for tag in soup.html.findAll()]
+# <samp>[u'head', u'title', u'body', u'p', u'b', u'p', u'b']</samp>
+
+[tag.name for tag in soup.html.findAll(recursive=False)]
+# <samp>[u'head', u'body']</samp>
+    </pre>
+    <p>当<code>recursive</code>为false，只有当前的子标签&lt;HTML&gt;会被搜索。如果你需要搜索树，
+      使用这种方法可以节省一些时间。 </p>
+  </li>
+  <li>
+    <p>设置<a name="arg-limit" id="arg-limit"><b><code>limit</code></b></a> 参数可以让Beautiful Soup
+      在找到特定个数的匹配时停止搜索。
+      文档中如果有上千个表格，但你只需要前四个，传值4到<code>limit</code>可以让你节省很多时间。
+      默认是没有限制(limit没有指定值). </p>
+    <pre class="code">soup.findAll('p', limit=1)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.findAll('p', limit=100)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;, </samp>
+# <samp> &lt;p id=&quot;secondpara&quot; align=&quot;blah&quot;&gt;This is paragraph &lt;b&gt;two&lt;/b&gt;.&lt;/p&gt;]</samp>
+    </pre>
+  </li>
+</ul>
+<h4><a name="Calling a tag is like calling findall" id="Calling a tag is like calling findall">像<code>findall</code>一样调用tag </a></h4>
+<p>一个小捷径。如果你像函数一样调用剖析对象或者<code>Tag</code>对象，
+  这样你调用所用参数都会传递给<code>findall</code>的参数，就和调用<code>findall</code>一样。
+  就上面那个<a href="#findall%20example%20document">文档</a>为例： </p>
+<pre class="code">soup(text=lambda(x): len(x) &lt; 12)
+# <samp>[u'Page title', u'one', u'.', u'two', u'.']</samp>
+
+soup.body('p', limit=1)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;]</samp>
+</pre>
+<a name="find(name, attrs, recursive, text, **kwargs)" id="find(name, attrs, recursive, text, **kwargs)"></a>
+<h3><code><a name="find(name, attrs, recursive, text, **kwargs)" id="find(name, attrs, recursive, text, **kwargs)">find(</a><a href="#arg-name">name</a>, <a href="#arg-attrs">attrs</a>, <a href="#arg-recursive">recursive</a>, <a href="#arg-text">text</a>, <a href="#arg-**kwargs">**kwargs</a>)</code></h3>
+<p>好了，我们现在看看其他的搜索方法。他们都是有和 <code>findAll</code> 几乎一样的参数。 </p>
+<p><code>find</code>方法是最接近<code>findAll</code>的函数，
+  只是它并不会获得所有的匹配对象，它仅仅返回找到第一个可匹配对象。
+  也就是说，它相当于<code>limit</code>参数为1的结果集。
+  以上面的 <a href="#findall%20example%20document">文档</a>为例: </p>
+<pre class="code">soup.findAll('p', limit=1)
+# <samp>[&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;]</samp>
+
+soup.find('p', limit=1)
+# <samp>&lt;p id=&quot;firstpara&quot; align=&quot;center&quot;&gt;This is paragraph &lt;b&gt;one&lt;/b&gt;.&lt;/p&gt;</samp>
+
+soup.find('nosuchtag', limit=1) == None
+# <samp>True</samp>
+</pre>
+<p>通常，当你看到一个搜索方法的名字由复数构成
+  (如<code>findAll</code>和<code>findNextSiblings</code>)时，
+  这个方法就会存在<code>limit</code>参数，并返回一个list的结果。但你
+  看到的方法不是复数形式(如<code>find</code>和<code>findNextSibling</code>)时，
+  你就可以知道这函数没有limit参数且返回值是单一的结果。 </p>
+<h3><a name="What happened to first?" id="What happened to first?"><code>first</code>哪里去了?</a></h3>
+<p> 早期的Beautiful Soup 版本有一些<code>first</code>，<code>fetch</code>以及<code>fetchPrevious</code>方法。
+  这些方法还在，但是已经被弃用了，也许不久就不在存在了。
+  因为这些名字有些令人迷惑。新的名字更加有意义：
+  前面提到了，复数名称的方法名，比如含有<code>All</code>的方法名，它将返回一个
+  多对象。否则，它只会返回单个对象。 </p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

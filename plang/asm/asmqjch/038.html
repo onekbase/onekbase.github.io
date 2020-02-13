@@ -1,0 +1,453 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="037.html"> 上一页</a><a href="039.html"> 下一页</a></div><h1 align="center">连接数据源</h1>
+<p>本教程中，我们将学习使用ODBC APIs的细节.</p>
+<p>因为我们的程序并不与ODBC驱动程序直接通信，而是通过ODBC管理器来定义一系列APIs供你的程序调用以完成工作，所以我们需要包含odbc32.inc和odbc32.lib文件，当然还有windows.inc。</p>
+<p>连接数据源需要以下几步:</p>
+<ol>
+<li>分配一个环境句柄(environment 
+handle). 在进行每个ODBC任务(session)时仅需这样做一次.一旦获得了句柄,我们就可修改环境属性来适合我们的需要。你可以把这想象为在DB工作中创建一个workspace.</li>
+<li>确认将使用的ODBC的版本. 你可在ODBC 2.x版和3.x版间选择.他们在很多方面存在不同，因此本步骤是必须的以使得ODBC管理器它将用何种语法与用户程序通讯，及如何解释用户程序的命令.</li>
+<li>分配一个连接句柄.这个步骤可看作创建一个空连接.我们还没有指定使用那一个驱动程序，连接那一个数据库.这些信息将在稍后来写入.</li>
+<li>建立一个连接.可通过调用ODBC函数来建立连接.</li>
+</ol>
+<p>当连接完成时，必须通过以下步骤来关闭和销毁它:</p>
+<ol>
+<li>断开与数据源的连接.</li>
+<li>释放连接句柄.</li>
+<li>释放环境句柄 (如果不再需要在这个环境中作更多连接)</li>
+</ol>
+<h4>分配一个句柄</h4>
+<p>在ODBC 3.x版本以前,我们需要调用很多独立的函数来分配环境、连接和语句句柄(SQLAllocEnv,  SQLAllocConnect, 
+SQLAllocStmt).而在ODBC 3.x中, 这些函数被SQLAllocHandle所代替，语法如下:</p>
+<pre class="code">SQLRETURN SQLAllocHandle( SQLSMALLINT HandleType, 
+                                         SQLHANDLE InputHandle, 
+                                         SQLHANDLE * OutputHandlePtr
+                                       ); 
+</pre>
+<p>看上去挺麻烦，简化一下看看： </p>
+ 
+<pre class="code">SQLAllocHandle proto HandleType:DWORD, 
+                     nputHandle:DWORD, 
+					     OutputHandlePtr:DWORD
+</pre >
+SQLRETURN 
+被定义为SQLSMALLINT类型.而 
+SQLSMALLINT被定义为短整型,例如一个字(16 bits). 
+所以该函数的返回值在ax中,而不是 eax. 这是很重要的.但是Win32下函数的参数是通过32位堆栈来传送的.即使这个参数只是一个字长(16位)，它也应被扩展为32位.这就是为什么HandleType被说明为双字(dword)而不是字(word).看一下导入库 odbc32.lib，SQLAllocHandle的入口是_SQLAllocHandle@12. 就是说这个函数的参数的组合长度为12字节(3 
+dwords).然而，这不是说C函数的原型不对.
+ SQLAllocHandle会只用HandleType的底位字并忽略高位字.因此C函数原型是<i>功能上(functionally)</i>正确而我们的汇编函数原型反映了实际.</p>
+<p>结束了SQL类型的讨论，我们来看一看函数的参数和返回值。.</p>
+
+<li>HandleType 
+是一个常数，定义了希望分配的句柄类型.可能值如下:</li>
+
+<table>
+<tr> 
+<td bgcolor="#0000CC">SQL_HANDLE_ENV </td>
+<td bgcolor="#006666">环境句柄(Environment handle)</td>
+</tr>
+<tr> 
+<td bgcolor="#0000CC">SQL_HANDLE_DBC</td>
+<td bgcolor="#006666">连接句柄(Connection handle)</td>
+</tr>
+<tr> 
+<td bgcolor="#0000CC">SQL_HANDLE_STMT</td>
+<td bgcolor="#006666">语句句柄(Statement handle)</td>
+</tr>
+<tr> 
+<td bgcolor="#0000CC">SQL_HANDLE_DESC</td>
+<td bgcolor="#006666">描述符句柄(Descriptor handle)</td>
+</tr>
+</table>
+<blockquote> 
+<p>描述符是一个数据集合描述了一个SQL语句的参数或一个结果集的列数, 
+视应用程序或驱动程序而定。</p>
+</blockquote>
+
+<li>InputHandle 
+是指向父"文本"的句柄.就是说,如果你想分配一个连接句柄, 需要通过一个环境句柄因为连接将在那个环境的文本中建立.如果你想分配一个环境句柄,这个参数必须为SQL_HANDLE_NULL 
+(注意SQL_HANDLE_NULL在windows.inc版本1.18及其以前版本中被不正确的定义为0L.你需要删除掉"L"否则程序不会被编译通过.这是我的错，因为我负责修订windows.inc中的 SQL/ODBC部分.) 
+因为环境没有父文本.对于语句和描述符句柄，我们需要将连接句柄作为这个参数。</li>
+<li>OutputHandlePtr 
+如果调用成功，将指向一个双字，其中包含了被分配的句柄.</li>
+
+<p>SQLAllocHandle 
+可能的返回值如下:</p>
+<table>
+<tr> 
+<td bgcolor="#003399">SQL_SUCCESS</td>
+<td bgcolor="#006666">函数成功完成.</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_SUCCESS_WITH_INFO</td>
+<td bgcolor="#006666">函数成功完成，但带回非致命错误或警告. </td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_ERROR</td>
+<td bgcolor="#006666">函数调用失败.</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_INVALID_HANDLE</td>
+<td bgcolor="#006666">传送给函数的句柄非法.</td>
+</tr>
+</table>
+<p>无论函数的调用成功还是失败，我们都可通过调用SQLGetDiagRec或SQLGetDiagField函数来获得更多的信息.它们与Win32 API中的GetLastError很相似.</p>
+<p><br>
+例子:</p>
+<pre class="code">.data?
+        hEnv  dd        ?
+
+.code
+              invoke    SQLAllocHandle, SQL_HANDLE_ENV, SQL_HANDLE_NULL, addr hEnv
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre>
+<h4>选择ODBC的版本</h4>
+<p>分配完环境句柄后,我们需要设置一个环境属性SQL_ATTR_ODBC_VERSION以适当的值.设置环境属性可通过调用函数SQLSetEnvAttr.你也许猜到了，还有类似的函数如 
+SQLSetConnectAttr和SQLSetStmtAttr. 
+SQLSetEnvAttr原型如下:</p>
+ 
+<pre class="code">SQLSetEnvAttr proto EnvironmentHandle:DWORD,
+                                   Attribute:DWORD,
+                                   ValuePtr:DWORD,
+                                   StringLength:DWORD</pre>
+<li>EnvironmentHandle. 
+与字面意思一样, 它包含了要设置属性的环境句柄.</li>
+<li>Attribute. 
+这是一个常数，表示用户需要设置的属性.对我们而言,是SQL_ATTR_ODBC_VERSION.可以从MSDN中查看全部列表. </li>
+<li>ValuePtr. 
+这个参数的意义由希望设置的属性值决定.如果属性值是32位的, 这个参数将被认为是想要设置的属性值.如果属性值是一个字符串或二进制缓冲区,它就被解释为指向字符串或缓冲区的指针.如果我们指定了要设置的属性为SQL_ATTR_ODBC_VERSION, 这个参数我们可以填入SQL_OV_ODBC3和SQL_OV_ODBC2这两个可能值,分别对应ODBC 3.x和2.x.</li>
+<li>StringLength. 
+由ValuePtr指向的值的长度. 
+如果这个值是字符串或二进制缓冲区,这个参数一定是合法的. 
+如果想设置的属性是一个双字，这个参数被忽略.因为
+SQL_ATTR_ODBC_VERSION属性包含一个双字的值,我们可以只给它赋为NULL.</li>
+
+<p>这个函数的返回值与SQLAllocHandle相同.</p>
+<p>例子:</p>
+<pre class="code">.data?
+        hEnv  dd        ?
+
+.code
+              invoke    SQLAllocHandle, SQL_HANDLE_ENV, SQL_HANDLE_NULL, addr hEnv
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+              invoke    SQLSetEnvAttr, hEnv, SQL_ATTR_ODBC_VERSION, SQL_OV_ODBC3, NULL
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre >
+<h4>分配连接句柄</h4>
+<p>这一步与分配环境句柄相似，我们可以通过调用SQLAllocHandle函数并赋以不同的参数值来完成.</p>
+<p>例子:</p>
+<pre class="code">
+.data?
+        hEnv  dd        ?
+       hConn  dd        ?
+
+.code
+              invoke    SQLAllocHandle, SQL_HANDLE_ENV, SQL_HANDLE_NULL, addr hEnv
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+              invoke    SQLSetEnvAttr, hEnv, SQL_ATTR_ODBC_VERSION, SQL_OV_ODBC3, NULL
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+              invoke    SQLAllocHandle, SQL_HANDLE_DBC, hEnv, addr hConn
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO</pre >
+<h4>建立一个连接</h4>
+<p>我们现在要通过特定的ODBC驱动程序来连接数据源.通过这三个ODBC函数来达成这个目标.它们为我们提供了好几层"选择".</p>
+<table>
+<tr> 
+<td bgcolor="#003399">SQLConnect</td>
+<td bgcolor="#666600">Core</td>
+<td bgcolor="#660066">这是最简单的函数。它只需要数据源名(DSN,Data source name)和可选的用户名和密码.它不提供任何GUI选项例如向用户显示一个对话框来提供更多信息。如果你已经有了需要使用的数据库的DSN就可以使用这个函数.</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQLDriverConnect</td>
+<td bgcolor="#666600">Core</td>
+<td bgcolor="#660066">这个函数提供了较SQLConnect更多的选择.我们可以连接一个没有在系统信息内定义的数据源。如没有DSN.另外,我们可以指定这个函数是否需要显示一个对话框来为用户提供更多信息.例如,如果用户遗漏了数据库的名字,它会指导ODBC驱动程序显示一个对话框，让用户来选择想连接的数据库.</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQLBrowseConnect</td>
+<td bgcolor="#666600">Level 1</td>
+<td bgcolor="#660066">这个函数允许在运行时(RunTime)枚举数据源.比SQLDriverConnect更加灵活。因为可以多次顺序调用SQLBrowseConnect，而每次提供给使用者更多的专用信息直到最后获得需要的连接句柄.</td>
+</tr>
+</table>
+<p>我将先检查SQLConnect函数.要使用 SQLConnect,你应先知道什么是DSN. DSN是数据源名(Data Source Name)的缩写,是一个唯一标识某数据源的字符串。一个DSN标识了一个包含了如何连接某一特定的数据源的信息的数据结构.这个信息包括要使用何种ODBC驱动程序及要连接哪个数据库.我们可以通过控制面板中的32位ODBC数据源来创建、修改及删除DSN. </p>
+<p>SQLConnect的语法如下:</p>
+ 
+  <pre class="code">SQLConnect proto ConnectionHandle:DWORD
+                 pDSN:DWORD,
+                 DSNLength:DWORD,
+                 pUserName:DWORD,
+                 NameLength:DWORD,
+                 pPassword:DWORD,
+                 PasswordLength:DWORD</pre>
+<li>ConnectionHandle. 
+要使用的连接句柄.</li>
+<li>pDSN. 
+指向DSN的指针.</li>
+<li>DSNLength. 
+DSN的长度</li>
+<li>pUserName. 
+指向用户名的指针</li>
+<li>NameLength. 
+用户名的长度</li>
+<li>pPassword. 
+指向该用户名所使用密码的指针</li>
+<li>PasswordLength. 
+密码的长度</li>
+
+<p>在最小情况下, SQLConnect 
+需要连接句柄,DSN和DSN的长度。如果数据源不需要的话，用户名和密码就不是必须的.函数的返回值与SQLAllocHandle的返回值相同.</p>
+<p>假设我们的系统中有一个叫做"Sales" 
+的DSN并且我们想连接这个数据源.我们可以这样做:</p>
+<pre class="code">.data
+         DSN  db        "Sales",0
+
+.code
+......
+              invoke    SQLConnect, hConn, addr DSN, sizeof DSN,0,0,0,0</pre >
+<p>SQLConnect 
+的缺点是：在连接一个数据源之前,我们必须创建它的DSN. 
+SQLDriverConnect 提供了更大的灵活性.它的语法如下:</p>
+ 
+  <pre class="code">SQLDriverConnect  proto     ConnectionHandle:DWORD,
+                  hWnd:DWORD,
+                  pInConnectString:DWORD,
+                  InStringLength:DWORD,
+                  pOutConnectString:DWORD,
+                  OutBufferSize:DWORD,
+                  pOutConnectStringLength:DWORD, DriverCompletion:DWORD</pre>
+<li>ConnectionHandle连接句柄</li>
+<li>hWnd 应用程序窗口句柄.如果这个参数被置为NULL,驱动程序将不会为用户显示一个对话框来显示更多信息(如果有的话).</li>
+<li>pInConnectString 
+指向连接字符串的指针. 这是一个ASCIIZ字符串,格式由要连接的具体ODBC驱动程序描述.它描述了驱动程序名、数据源及其他附加属性.连接字符串的具体描述请参见MSDN，这里不再细述.</li>
+<li>InStringLength 
+连接字符串的长度.</li>
+<li>pOutConnectString 
+指向将要被填入完整连接字符串的缓冲区的指针.这个缓冲区将至少有1,024字节长.这听上去使人困惑。事实上，我们提供的连接字符串会不完整，这时，ODBC驱动程序会提示用户更多信息.接下来ODBC驱动程序会根据所有可能的信息创建一个完整的连接字符串并将其放入缓冲区。即使我们提供的连接字符串已经可以工作了，这个缓冲区也会填入更多的属性值.这个参数的目的是我们可以保存完整连接字符串来为接下来的连接做准备。</li>
+<li>OutBufferSize 由pOutConnectString指向的缓冲区的长度.</li>
+<li>pOutConnectStringLength 
+指向一个双字的指针，用来接收由ODBC驱动程序返回的完整连接字符串的长度。</li>
+<li>DriverCompletion 
+一个标志用来指示ODBC管理器/驱动程序是否将提示用户更多信息.但是,这个标志取决于是否在调用本函数时传送了hWnd 参数一个窗口句柄。如果没有,即使该标志被设置，ODBC管理器/驱动程序也不会提示用户.可能值如下：<br>
+<br>
+ 
+<table>
+<tr> 
+<td bgcolor="#003366">SQL_DRIVER_PROMPT</td>
+<td bgcolor="#006666">ODBC驱动程序提示用户输入信息。驱动程序将利用这些信息来创建连接字符串.</td>
+</tr>
+<tr> 
+<td bgcolor="#003366">SQL_DRIVER_COMPLETE<br>
+SQL_DRIVER_COMPLETE_REQUIRED </td>
+<td bgcolor="#006666">仅当用户提供的连接字符串不完全时， ODBC驱动程序才会提示用户.</td>
+</tr>
+<tr> 
+<td bgcolor="#003366">SQL_DRIVER_NOPROMPT</td>
+<td bgcolor="#006666">ODBC驱动程序将不会提示用户.</td>
+</tr>
+</table>
+ </li>
+
+<h5>例子:</h5>
+<pre class="code">.data
+  strConnect  db        "DBQ=c:\data\test.mdb   ;DRIVER={Microsoft Access Driver (*.mdb)};",0
+
+.data?
+      buffer  db        1024 dup(?)
+         OutStringLength  dd        ?
+
+.code
+.....
+              invoke    SQLDriverConnect, hConn, hWnd, addr strConnect, sizeof strConnect,\
+               addr buffer, sizeof buffer, addr OutBufferLength, SQL_DRIVER_COMPLETE</pre >
+<h4>断开与数据源的连接</h4>
+<p>在连接顺利完成后,我们就可以对数据源进行查询及其他操作.这些将在下一节讨论.现在假设我们已完成了对数据源的操作，就可以通过调用SQLDisconnect来断开与它的连接. 
+这个函数非常简单(就象那悲伤而冷酷的现实：毁灭总比创造容易的多).它只需要一个参数：连接句柄。</p>
+ 
+<pre class="code">invoke SQLDisconnect,hConn</pre >
+<h4>释放连接与环境句柄</h4>
+<p>在顺利地断开连接后,我们现在可以调用SQLFreeHandle函数来销毁连接句柄和环境句柄. 
+这是由ODBC 3.x提供的新函数.它替代了SQLFreeConnect, 
+ SQLFreeEnv及SQLFreeStmt函数. 
+SQLFreeHandle语法如下:</p>
+ 
+<pre class="code">SQLFreeHandle proto HandleType:DWORD, Handle:DWORD</pre>
+<li>HandleType 
+标识要销毁句柄的类别的常数.可能值与 SQLAllocHandle中相同</li>
+<li>Handle要销毁的句柄.</li>
+
+<p>For example:</p>
+ 
+<pre class="code">invoke SQLFreeHandle, SQL_HANDLE_DBC, hConn
+invoke SQLFreeHandle, SQL_HANDLE_ENV, hEnv</pre >
+<div class="rpindex"><a href="039.html"> 下一页</a><a href="037.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

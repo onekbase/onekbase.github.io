@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>java 数字转换为字符串
+</h1>
+<p>转换为二进制字符串：</p>
+<p><span class="code">i &gt;&gt;&gt;= 1</span>是将i右移一二进制位，这样就去除了最低一位。<span class="code">i &amp; 1</span>是位的与运算，会得到最低二进制位。</p>
+<pre class="code">    public static String toBinaryString(int i) {
+        int bufLen = 32;  // Max number of binary digits in an int
+        char[] buf = new char[bufLen];
+        int cursor = bufLen;
+
+        do {
+            buf[--cursor] = (char) ((i & 1) + '0');
+        }  while ((i >>>= 1) != 0);
+
+        return new String(cursor, bufLen - cursor, buf);
+    }</pre>
+<p>转换为十六进制字符串：</p>
+<p>DIGITS[i &amp; 0xF]也可以用<a href="numtostring.html">forDigit(int digit, int radix)</a>转换为字符。</p>
+<pre class="code">    static final char[] DIGITS = {
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y', 'z'
+    };
+    public static String toHexString(int i) {
+        int bufLen = 8;  // Max number of hex digits in an int
+        char[] buf = new char[bufLen];
+        int cursor = bufLen;
+
+        do {
+            buf[--cursor] = DIGITS[i & 0xF];
+        } while ((i >>>= 4) != 0);
+
+        return new String(cursor, bufLen - cursor, buf);
+    }</pre>
+<p>转换为八进制字符串：</p>
+<pre class="code">    public static String toOctalString(int i) {
+        int bufLen = 11;  // Max number of octal digits in an int
+        char[] buf = new char[bufLen];
+        int cursor = bufLen;
+
+        do {
+            buf[--cursor] = (char) ((i & 7) + '0');
+        } while ((i >>>= 3) != 0);
+
+        return new String(cursor, bufLen - cursor, buf);
+    }</pre>
+<p>任意进制转换为字符串：</p>
+<pre class="code">    public static String toString(int i, int radix) {
+        if (radix < Character.MIN_RADIX || radix > Character.MAX_RADIX) {
+            radix = 10;
+        }
+
+        boolean negative = false;
+        if (i < 0) {
+            negative = true;
+        } else {
+            i = -i;
+        }
+
+        int bufLen = radix < 8 ? 33 : 12;  
+        char[] buf = new char[bufLen];
+        int cursor = bufLen;
+
+        do {
+            int q = i / radix;
+            buf[--cursor] = DIGITS[radix * q - i];
+            i = q;
+        } while (i != 0);
+
+        if (negative) {
+            buf[--cursor] = '-';
+        }
+
+        return new String(cursor, bufLen - cursor, buf);
+    }</pre>
+</body>
+</html>

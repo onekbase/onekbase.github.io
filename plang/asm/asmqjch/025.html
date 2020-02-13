@@ -1,0 +1,407 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="024.html"> 上一页</a><a href="026.html"> 下一页</a></div>
+<h1>第二十五课:位图初步</h1>
+在这一课,我们将学习怎样在程序中使用位图。 
+更准确地说,我们要学习的是怎样在一个窗口的客户区中显示位图。 
+<h3> 理论</h3>
+<p>位图就是存贮于电脑中的图片。位图文件有相当多的格式（译者：如.BMP.JPG.GIF.PIC 等）但Windows仅
+  支持 Windows Bitmap Graphics 格式，即BMP文件。 本课所指的位图也是BMP文件。 
+  使用位图最简单的方法就是把它定义在资源文件（.rc)中。 
+  定义的方法有两种。第一种方法是把它定义为整数宏，具体如下：</p>
+<pre class="code"> #define IDB_MYBITMAP   100 
+  IDB_MYBITMAP  BITMAP  "c:\project\example.bmp"</pre>
+<p>第一行我们定义了一个值为100的整数宏。 第二行我们把这个整数宏指向所要定义的位图， 
+  这样，编译器就能知道位图所在的路径。<br>
+  另一种方法是给它起一个名字，也就是把它定义为字符串，具体如下: </p>
+<pre class="code">MyBitMap  BITMAP "c:\project\example.bmp"</pre>
+<p>两种方法效果是一样的。
+  选择哪一种方法，视乎在程序中你喜欢用整数宏还是用字符串来指向位图。 <br>
+  现在我们已经把位图定义在资源文件中，下一步就是把它显示在窗口的客户区上。  </p>
+<p>在程序中，我们使用API函数 LoadBitmap 取得位图句柄。 下面是 LoadBitmap 函数的
+  完型： </p>
+
+<pre class="code">  LoadBitmap proto hInstance:HINSTANCE, lpBitmapName:LPSTR </pre>
+  <p>
+    该函数返回一个位图句柄。函数有两个参数，其中 hInstance 是程序句柄。 
+    lpBitmapName 是位图名字的指针（适用于第二种定义方法）。如果你使用了第一种 
+    定义方法，你可以填入指向位图的值或整数宏 
+    （对应上例这个值就是100，整数宏是IDB_MYBITMAP)。下面是简单的例子： 
+  <p>第一种方法: </p>
+  <pre class="code">.386
+.MODEL        FLAT, STDCALL
+................ 
+.CONST
+            IDB_MYBITMAP  EQU       100
+............... 
+.DATA?
+   HINSTANCE  DD        ?
+.............. 
+.CODE
+............. 
+              INVOKE    GETMODULEHANDLE,NULL
+              MOV       HINSTANCE,EAX
+............ 
+              INVOKE    LOADBITMAP,HINSTANCE,IDB_MYBITMAP
+........... </pre>
+  
+  <p>第二种方法: 
+  <pre class="code">.386
+.MODEL        FLAT, STDCALL
+................ 
+.DATA
+  BITMAPNAME  DB        "MYBITMAP",0
+............... 
+.DATA?
+   HINSTANCE  DD        ?
+.............. 
+.CODE
+............. 
+              INVOKE    GETMODULEHANDLE,NULL
+              MOV       HINSTANCE,EAX
+............ 
+              INVOKE    LOADBITMAP,HINSTANCE,ADDR BITMAPNAME
+........... </pre>
+  
+  <li> 获得一个设备文本（DC）句柄。你可以在响应WM_PAINT消息时通过API函数BeginPaint获得。
+  如果在其它消息中则可以用API函数GetDC获得。</li>
+  <li> 创建这个DC的内存映像。这样做的目的是建立一张“隐藏的画纸”，把位图
+      “画”在上面，作缓冲之用。完成这项工作后，我们就通过一个函数把“画纸”上的位图复制 
+      到真正的DC中。这就是在屏幕上快速显示图象的双缓冲技术。（译者：可以减少图象抖动）
+  这张“画纸”用API函数 CreateCompatibleDC 建立，下面是它的完型：</li>
+    <pre class="code">reateCompatibleDC  proto  hdc:HDC  </pre>
+  <p>
+    如果函数执行成功，将返回DC内存映像也即“画纸”的句柄。
+  <li>现在我们已经有了“画纸”，可以把位图画在上面了。这可以通过API函数 SelectObject 完成，  
+  其中第一个参数是“画纸”的句柄，第二个参数则是位图的句柄，下面是函数的完型:</li>
+    <pre class="code">electObject   proto  hdc:HDC, hGdiObject:DWORD  </pre>
+  <li> 现在位图已经画在“画纸”上了。下一步我们要把位图复制到真正的DC中。 
+     有很多API函数都能完成这项工作，例如 BitBlt 和 StretchBlt。
+     函数 BitBlt 仅仅将一个DC的内容简单地复制到另一个DC中，而函数 StretchBlt 
+     则能够自动调整源DC复制内容的大小已适应目的DC的输出区域大小，因此前者比后者速度更快。
+  在这里我们只使用函数 BitBlt ，下面是它的完型： </li>
+    <pre class="code">itBlt  proto  hdcDest:DWORD, nxDest:DWORD, nyDest:DWORD, nWidth:DWORD,   nHeight:DWORD, hdcSrc:DWORD, nxSrc:DWORD, nySrc:DWORD, dwROP:DWORD </pre>
+    <p>      hdcDest 目的DC的句柄。 <br>
+      nxDest, nyDest 目的DC输出区域的左上角坐标。<br>
+      nWidth, nHeight  目的DC输出区域的长和宽。<br>
+      hdcSrc  源DC的句柄。<br>
+      nxSrc, nySrc 源DC中所要复制区域的左上角坐标。 <br>
+      dwROP 屏面运算码（ROP）。该参数用以确定复制内容的颜色与输出区域原来的颜色按哪种运算
+      方式处理。通常，只需要简单地用复制内容把输出区域覆盖掉。</p>
+  <li> 一切办妥后，就用API函数 DeleteObject 释放位图对象，也就是把位图“抹掉”。</li>
+大功告成! 现在再来回顾一下整个过程：首先，你需要把位图定义在资源文件中。 
+然后，你需要在程序中载入位图资源，并取得位图句柄。随后，你需要获得位图输出区域的DC，
+以及创建这个DC的内存映像，并把位图放进这个DC内存映像中。最后把位图从DC内存映像复制到
+真正的DC中。
+<h3> 例子:</h3>
+<pre class="code">                                                            
+
+.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\GDI32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\GDI32.LIB WINMAIN PROTO :DWORD,:DWORD,:DWORD,:DWORD
+    IDB_MAIN  EQU       1
+
+.DATA
+   CLASSNAME  DB        "SIMPLEWIN32ASMBITMAPCLASS",0
+     APPNAME  DB        "WIN32ASM SIMPLE BITMAP EXAMPLE",0
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+     HBITMAP  DD        ?
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINSTANCE
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,NULL
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,NULL,ADDR CLASSNAME,ADDR APPNAME,\
+WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\ 
+CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,NULL,\ 
+hInst,NULL 
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+              LOCAL     PS:PAINTSTRUCT
+              LOCAL     HDC:HDC
+              LOCAL     HMEMDC:HDC
+              LOCAL     RECT:RECT
+.IF           UMSG==WM_CREATE
+              INVOKE    LOADBITMAP,HINSTANCE,IDB_MAIN
+              MOV       HBITMAP,EAX
+.ELSEIF       UMSG==WM_PAINT
+              INVOKE    BEGINPAINT,HWND,ADDR PS
+              MOV       HDC,EAX
+              INVOKE    CREATECOMPATIBLEDC,HDC
+              MOV       HMEMDC,EAX
+              INVOKE    SELECTOBJECT,HMEMDC,HBITMAP
+              INVOKE    GETCLIENTRECT,HWND,ADDR RECT
+              INVOKE    BITBLT,HDC,0,0,RECT.RIGHT,RECT.BOTTOM,HMEMDC,0,0,SRCCOPY
+              INVOKE    DELETEDC,HMEMDC
+              INVOKE    ENDPAINT,HWND,ADDR PS
+.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    DELETEOBJECT,HBITMAP
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START
+
+;--------------------------------------------------------------------- 
+; 资源定义
+;--------------------------------------------------------------------- 
+#define IDB_MAIN 1 
+IDB_MAIN BITMAP "tweety78.bmp" </pre>
+<h3>分析:</h3>
+<pre class="code">#define IDB_MAIN 1 
+  IDB_MAIN BITMAP "tweety78.bmp" </pre>
+<p>定义整数宏IDB_MAIN的值为1，然后把它指向一个与资源文件处于相同目录文件名为“tweety.bmp"的位图。 </p>
+<pre class="code">    .if uMsg==WM_CREATE  
+         invoke LoadBitmap,hInstance,IDB_MAIN  
+         mov hBitmap,eax  </pre>
+<p>在处理 WM_CREATE 消息时, 我们通过API函数 LoadBitmap 载入位图资源，并通过函数
+返回值取得位图句柄。 <br>
+  然后，我们就可以把位图画在窗口客户区上。 
+<pre class="code">.ELSEIF       UMSG==WM_PAINT
+              INVOKE    BEGINPAINT,HWND,ADDR PS
+              MOV       HDC,EAX
+              INVOKE    CREATECOMPATIBLEDC,HDC
+              MOV       HMEMDC,EAX
+              INVOKE    SELECTOBJECT,HMEMDC,HBITMAP
+              INVOKE    GETCLIENTRECT,HWND,ADDR RECT
+              INVOKE    BITBLT,HDC,0,0,RECT.RIGHT,RECT.BOTTOM,HMEMDC,0,0,SRCCOPY
+              INVOKE    DELETEDC,HMEMDC
+              INVOKE    ENDPAINT,HWND,ADDR PS</pre>
+
+<p>在本例中，我们选用在响应WM_PAINT消息时画出位图。首先我们通过API函数l 
+  BeginPaint 获得窗口客户区的DC句柄。 接着我们通过API函数 CreateCompatibleDC 创建该DC 
+  的内存映像，并通过API函数 SelectObject 把位图放进内存映像中。下一步，我们通过API函数 GetClientRect  
+  取得窗口客户区的大小。最后，我们通过API函数 BitBlt 把位图从DC内存映像复制到真正的客户区DC中。 
+  完成显示工作后，我们通过API函数 DeleteDC 释放DC内存映像，并用API函数 EndPaint 释放客户区DC，
+  结束画图工作。 
+<pre class="code">.ELSEIF       UMSG==WM_DESTROY
+              INVOKE    DELETEOBJECT,HBITMAP
+              INVOKE    POSTQUITMESSAGE,NULL</pre>
+当我们不再需要位图时，通过API函数 DeleteObject 把它释放。 
+
+ <div class="rpindex"><a href="026.html"> 下一页</a><a href="024.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

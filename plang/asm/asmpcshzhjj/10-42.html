@@ -1,0 +1,209 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">目录</a> <a href="10-41.html">上一页</a> <a href="10-43.html">下一页</a> </div>
+  <h5>（5）中断指令</h5>
+  <p> 除了条件转移指令之外，还有几个指令在执行时也要判断条件，比如刚刚讨论过的LOOPZ/LOOPNZ，以及前面学习过的指令前缀REPZ/REPNZ等。其实，中断指令也有一条是需要判断条件的，当然，我们前面学习过的指令INT并没有这样的要求，这是一条新的指令：</p>
+  <p>助记符：INTO（Interrupt if Overflow）<br />
+    用　途：如果发生溢出则执行中断<br />
+    格　式：INTO<br />
+    执　行：执行INTO指令时，CPU首先判断OF标志位，如果OF=1，则CPU自动</p>
+  <p> 执行4号中断服务程序；如果OF=0，则CPU继续执行下面的程序如果不考虑此指令判断的条件，则可以用&quot;INT  04&quot;代替这条指令。这条指令很不常用，不过在一些加密软件中有时会常见它的身影。需要提到的是这条指令产生的中断也是处理机中断。实际上处理机中断有些也是需要指令才能产生的，这一点与前面我们讨论过的除法错中断、单步中断不同。除法错、单步中断是在CPU执行指令时自动产生，而溢出中断则不同，如果CPU没有执行INTO指令，即使运算发生溢出它也不会自动转去执行4号中断服务程序。</p>
+  <p> 还有一条中断指令也很特殊，这条指令就是&quot;INT  3&quot;。从形式上看这条指令与&quot;INT  10H&quot;、&quot;INT  21H&quot;没有什么区别，但是它编译之后的机器码却与一般的INT指令有很大的不同。那么不同之处在哪里？这个问题咱们可以请教DEBUG：</p>
+  <pre class="code">C:\ASM\&gt;DEBUG[Enter] 
+-a[Enter] 
+0F6A:0100 mov ax,0e07 
+0F6A:0103 int 10
+0F6A:0105 int 3
+0F6A:0106 [Enter]
+
+-u100 105	[Enter]		
+0F6A:0100	B8070E	MOV	AX,0E07
+0F6A:0103	CD10	INT	10
+0F6A:0105	CC	INT	3
+
+</pre>
+  <p>　从反汇编的的结果可以看出&quot;INT 3&quot;与一般的INT指令的区别：指令&quot;INT 10&quot;编译成的机器码是&quot;CD 10&quot;，很明显，&quot;10&quot;就是中断号，&quot;CD&quot;是INT指令的机器码。照此来看&quot;INT 3&quot;应该编译成&quot;CD  03&quot;才对，然而反汇编的结果显示出&quot;INT 3&quot;的机器码只有一个字节--0CCH。所以说&quot;INT 03&quot;实际是一条单字节中断指令，尽管形式上它与&quot;INT 10&quot;之类的指令一致。</p>
+  <p> 这条指令有什么作用呢？我们不妨把这个程序运行一下，看看会有什么结果产生。</p>
+  <pre class="code">-g=100[Enter]
+AX=0E07 BX=0000 CX=0000 DX=0000 SP=FFEE BP=0000 SI=0000 DI=0000
+DS=0F6A ES=0F6A SS=0F6A CS=0F6A IP=0105 NV UP EI PL NZ NA PO NC
+0F6A:0105 CC INT 3
+
+</pre>
+  <p>　除了喇叭里发出一声鸣叫之外，屏幕上居然显示出了所有寄存器的内容。我们既没有用R命令观察寄存器，也没有用T、P命令跟踪这个程序的执行，屏幕上所显示的这些东西又是从何而来呢？</p>
+  <p> 问题的答案是很有戏剧性的：我们在0105处打了一个断点。</p>
+  <p> 3号中断其实是专为DEBUG提供的，DEBUG内部包含有3号中断的服务程序，启动DEBUG之后它会修改中断向量表，使3号中断向量指向DEBUG内部的服务程序。这段服务程序的作用就是将所有寄存器的内容显示在屏幕上并等待命令。所谓设置断点，实际过程就是DEBUG将断点地址处的一个字节取出存入它自己的数据区内，然后在断点地址处填入0CCH。这样当程序执行到断点地址处就会产生3号中断，于是我们就能观察到各个寄存器的内容。在上面的实验程序中，我们人为地在0105处输入了指令INT 3，作用等同于打上一个断点。</p>
+  <p> 这样来看有关DEBUG程序的&quot;T&quot;命令与&quot;G&quot;命令的详细情况我们已略知一二，&quot;T&quot;命令主要依靠单步中断，可以通过设置标志寄存器的TF位实现；而&quot;G&quot;命令设置断点主要依靠单字节中断指令&quot;INT 3&quot;。必须注意，&quot;P&quot;命令虽然功能与&quot;T&quot;命令相似，但是&quot;P&quot;命令也是依靠&quot;INT 3&quot;实现，它不依靠单步中断。</p>
+  <div class="rpindex"> <a href="10-44.html">下一页 </a><a href="10-42.html">上一页</a><a href="index.html">目录</a> </div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

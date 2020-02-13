@@ -1,0 +1,846 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="031.html"> 上一页</a><a href="033.html"> 下一页</a></div><h1>教程32:多文档界面(MDI)</h1>
+<p>本教程告诉你怎样创建MDI应用程序.事实上并不是很困难.</p>
+<h3 align="left">理论:</h3>
+<p>多文档界面(MDI)是同一时刻处理多个文档的应用程序的一个规范.  你很熟悉记事本.它是单文档界面(SDI)的一个例子.记事本在一个时候只能处理一个文档.假如你希望打开另一个文档,你首先必须关闭你前面打开的那一个.你可以想象这有多麻烦. 
+  和Microsoft Word相比:Word可以随心所欲的在同一时刻打开任意多个文档,而且可以让用户选择使用哪一个文档.Microsoft Word 是多文档界面(MDI)的一个例子.</p>
+<p>MDI应用程序有几个显著的特征:我列举其中的一些:</p>
+
+  <li>有主窗口,在客户区可以有多个子窗口.所有的子窗口都位于客户区. </li>
+  <li>最小化一个子窗口,它最小化到了主窗口的客户区的左下角. </li>
+  <li>最大化一个子窗口,它的标题和主窗口的标题合并到了一起. </li>
+  <li>你可以通过按Ctrl+F4键来关闭子窗口,还可以通过按Ctrl+Tab键在子窗口之间来切换. </li>
+
+<p>包含子窗口的主窗口被称为框架窗口.主窗口的客户区是子窗口活动的地方,因此有了'框架'这个名字.主窗口的任务要比普通窗口精细一些,因为它需要为MDI处理一些协调工作.</p>
+<p>为了在你的客户区控制任意多个数目的子窗口,你需要一个特殊的窗口:客户窗口.你可以把客户窗口看成是覆盖框架窗口的整个客户区的一个透明的窗口.客户窗口才是所有MDI子窗口的实际的父亲.客户窗口是MDI子窗口的真实的监督者.</p>
+<table>
+  <TBODY> 
+  <tr> 
+    <td></td>
+    <td></td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>框架窗口
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td></td>
+    <td> 
+      <p>| 
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td></td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap>客户窗口</th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td></td>
+    <td> 
+      <p>|
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr> 
+    <td colSpan="5"> 
+      
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <p>|
+    </td>
+    <td> 
+      <p>|
+    </td>
+    <td> 
+      <p>|
+    </td>
+    <td> 
+      <p>|
+    </td>
+    <td> 
+      <p>|
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>MDI 自窗口1 
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>MDI 自窗口 2
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>MDI自窗口3
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>MDI自窗口4
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+    <td> 
+      <table>
+        <TBODY> 
+        <tr> 
+          <th noWrap> 
+            <p>MDI 自窗口 n
+          </th>
+        </tr>
+        </TBODY> 
+      </table>
+    </td>
+  </tr>
+  </TBODY> 
+</table>
+<h5>图1.一个MDI应用程序的层次结构</h5>
+<h3>创建框架窗口</h3>
+<p>现在我们将注意力放到细节上来.首先你需要创建框架窗口. 创建框架窗口的方法和普通窗口是相同的:调用CreateWindowEx. 和普通窗口相比,有两个主要的不同.</p>
+<p>第一个不同是你必须调用DefFrameProc来处理你的窗口不想处理的窗口信息而不是调用DefWindowProc.这是让Windows为你作的保持一个MDI应用程序的垃圾任务的一个方法.假如你忘记使用DefFrameProc,你的应用程序将不具有MDI的功能. 
+  DefFrameProc具有下列语法:</p>
+<blockquote> 
+  <pre class="code">            DEFFRAMEPROC  PROC      HWNDFRAME:DWORD,
+                          hwndClient:DWORD,
+                          uMsg:DWORD,
+                          wParam:DWORD,
+     LPARAM:  DWORD</pre>
+</blockquote>
+<p>假如你将 DefFrameProc 和 DefWindowProc作一个对比,你将会注意到它们之间的唯一的不同在于DefFrameProc有5个参数,而DefWindowProc只有4个.这个增加的参数是客户窗口的句柄.这个句柄是必须的,有了它Windows才可以发送MDI-相关的消息给客户窗口.</p>
+<p>第二个不同是你必须在你的框架窗口的消息循环中调用 TranslateMDISysAccel 
+  .假如你希望Windows为你处理MDI相关的加速键,比如Ctrl+F4,Ctrl+Tab,那么这是必须的.它具有下列语法: </p>
+ 
+<pre class="code">TranslateMDISysAccel proc hwndClient:DWORD,lpMsg:DWORD </pre>
+  <p>第一个参数是客户窗口的句柄.对此你应该不会觉得惊讶.因为客户窗口是所有MDI子窗口的父亲. 第二个参数是你通过调用GetMessage获得的MSG框架的地址. 我们的想法是传递MSG结构给客户窗口,这样客户窗口可以检测在MSG结构中所包含的MDI相关的按键是不是按下去了.假如是的话, 
+  客户窗口处理这个信息,然后返回一个非零值,否则返回一个假值..</p>
+<p>创建框架窗口的步骤总结如下: 
+<ol>
+  <li>像平常一样填写 WNDCLASSEX 结构. </li>
+  <li>通过调用 RegisterClassEx注册框架窗口类. 
+  </li>
+  <li>通过调用CreateWindowEx创建框架窗口. </li>
+  <li>在消息循环中调用TranslateMDISysAccel. </li>
+  <li>在窗口过程中,将未处理的消息传递给 DefFrameProc 而不是DefWindowProc. 
+  </li>
+</ol>
+<h3>创建客户窗口</h3>
+<p>现在我们有了框架窗口,我们可以开始创建客户窗口了. 客户窗口类是由Windows预先注册的. 类的名称为&quot;MDICLIENT&quot;. 
+  你同样也需要将 CLIENTCREATESTRUCT 的地址传递给 CreateWindowEx. 这个结构具有以下定义:</p>
+ 
+<pre class="code">     CLIENTCREATESTRUCT  STRUCT
+
+                          HWINDOWMENU  DD        ?
+
+                          IDFIRSTCHILD  DD        ?
+
+      CLIENTCREATESTRUCT  ENDS</pre>
+
+  <p>hWindowMenu 是子菜单的句柄,这个子菜单显示Windows将要添加的MDI子窗口名称列表. 我们需要对这一功能进行一点解释.假如你以前曾经使用过类似Microsoft 
+  Word的MDI 应用程序,你将会注意到有一个名称为&quot;窗口&quot;的子菜单. 这个菜单一旦激活的话,将会在底部显示出和窗口管理相关的各种各样的菜单项, 
+  还有当前打开的MDI子窗口的列表. 这个列表是由Windows自己内部保持的. 你不需要为它作任何特殊的事情. 仅仅只在需要在hWindowMenu 
+  中传递你所希望显示列表的子菜单的句柄, Windows 将会处理剩下的事情. 注意这个子菜单可以是任何的子菜单:它并不一定要是名称为&quot;窗口&quot;的子菜单.  
+  重要的是你应该传递你希望显示窗口列表的子菜单的句柄. 假如你不想要这个列表,你就给 hWindowMenu 赋一个NULL的值就行了. 
+  你可以通过调用GetSubMenu来获得子菜单的句柄.</p>
+<p>idFirstChild 是第一个MDI子窗口的标识号. Windows为应用程序所创建的每一个新的MDI子窗口相应的增加标识号. 
+  举个例子, 假如你传递100给这个域, 第一个MDI子窗口将会有一个值为100的标识符, 那么第二个MDI子窗口也就会有一个值为101的标识符, 如此这样下去. 
+  当从窗口列表中选择MDI子窗口时,  被选择的MDI子窗口的标识符通过WM_COMMAND传递给框架窗口. 正常情况下,你将传递&quot;未处理&quot;的WM_COMMAND消息给DefFrameProc. 
+  我用&quot;未处理&quot;这个词语,是因为窗口列表中的菜单项不是由你的应用程序创建的, 这样你的应用程序不知道它们的标识符,而且也没有它们的句柄. 
+  这是MDI框架窗口又一个特殊的地方. 假如你有窗口列表的话,你必须像这样来修改你的WM_COMMAND句柄:</p>
+ 
+<pre class="code">.elseif uMsg==WM_COMMAND
+      .if lParam==0			; 这条消息是由菜单产生的
+          mov eax,wParam
+          .if ax==IDM_CASCADE
+                 .....
+          .elseif ax==IDM_TILEVERT
+                .....
+          .else
+                invoke DefFrameProc, hwndFrame, hwndClient, uMsg,wParam, lParam
+                ret
+          .endif</pre>
+
+  <p>一般来说,你可以忽略未处理的消息.  但是在MDI的情况下,如果你忽略它们, 当用户点击窗口列表中的一个MDI子窗口的名称时,,这个窗口不会被激活. 
+  你需要将这些消息传递给DefFrameProc  这样它们才会得到适当的处理.</p>
+<p>idFirstChild 赋值的注意之处: 你不能使用0. 你窗口列表将会表现的不正常. 举个例子, 即使某一个MDI子窗口被激活的话, 
+  窗口列表中的这个MDI子窗口名字前的复选标记也不会显现. 我们可以选择一个安全的值,比如100或是一个比100大的值.</p>
+<p>给 CLIENTCREATESTRUCT 结构赋值后,你可以通过调用 CreateWindowEx  用预先注册好的类名&quot;MDICLIENT&quot;, 
+  在lParam中传递CLIENTCREATESTRUCT结构的地址来创建客户窗口. 你同样需要在hWndParent参数中指定框架窗口的句柄, 这样Windows才可以知道框架窗口和客户窗口之间的父-子关系.  
+  你可以使用的窗口风格有:WS_CHILD        ,WS_VISIBLEHE 
+  WS_CLIPCHILDREN . 假如你忘了WS_VISIBLE的话, 即使MDI子窗口成功地创建了,你也看不到它们.</p>
+<p>以下是创建客户窗口的步骤: 
+<ol>
+  <li>获取你所希望显示窗口列表的子菜单的句柄. </li>
+  <li>将这个菜单句柄的值和你希望作为第一个MDI子窗口标识符的值一起传送给CLIENTCREATESTRUCT 结构. </li>
+  <li>调用 CreateWindowEx 用类名&quot;MDICLIENT&quot; ,lParam参数为CLIENTCREATESTRUCT结构的地址,  
+  </li>
+</ol>
+<h3>创建MDI子窗口</h3>
+<p>现在我们既有了框架窗口,也有了客户窗口. 下一阶段可以开始创建MDI子窗口了.有两种方法: 
+
+<li>你可以发送 WM_MDICREATE消息给客户窗口,在wParam参数中传递类型MDICREATESTRUCT的结构的地址. 这是常用的也是最简单的MDI子窗口的创建方法.
+ 
+  <pre class="code">.data?
+    mdicreate MDICREATESTRUCT <>
+    ....
+.code
+    .....
+    [fill the members of mdicreate]
+    ......
+    invoke SendMessage, hwndClient, WM_MDICREATE,addr mdicreate,0</pre>
+  
+        <p>假如创建成功的话, SendMessage 将会返回新创建的MDI子窗口的句柄. 你并不需要保存这个句柄. 如果你需要的话, 
+          你可以通过其它的方法来获得它. MDICREATESTRUCT有如下定义.</p>
+       
+  <pre class="code">        MDICREATESTRUCT  STRUCT
+     SZCLASS  DWORD     ?
+     SZTITLE  DWORD     ?
+      HOWNER  DWORD     ?
+           X  DWORD     ?
+           Y  DWORD     ?
+          LX  DWORD     ?
+          LY  DWORD     ?
+       STYLE  DWORD     ?
+      LPARAM  DWORD     ?
+         MDICREATESTRUCT  ENDS</pre>
+</li>
+<blockquote> 
+  <table>
+    <TBODY> 
+    <tr> 
+      <th noWrap>szClass</th>
+      <td>你作为MDI自窗口模板的窗口类的地址</td>
+    </tr>
+    <tr> 
+      <th noWrap>szTitle</th>
+      <td>你希望出现在子窗口的标题栏的文本的地址</td>
+    </tr>
+    <tr> 
+      <th noWrap>hOwner</th>
+      <td>应用程序的例程句柄</td>
+    </tr>
+    <tr> 
+      <th noWrap>x,y,lx,ly</th>
+      <td>子窗口的左上角的坐标以及宽度和高度</td>
+    </tr>
+    <tr> 
+      <th noWrap>style</th>
+      <td>子窗口风格. 假若你用MDIS_ALLCHILDSTYLES创建子窗口的话,你可以使用任何窗口风格. </td>
+    </tr>
+    <tr> 
+      <th noWrap>lParam</th>
+      <td>一个应用程序定义的32位值. 这是在MDI窗口中共享值的一种方法. 如果你不需要它, 将它设为NULL.</td>
+    </tr>
+    </TBODY> 
+  </table>
+</blockquote>
+
+  <li>你可以调用 CreateMDIWindow. 这一个功能具有下列语法: </li>
+
+<pre class="code">CreateMDIWindow proto lpClassName:DWORD
+                                           lpWindowName:DWORD
+                                           dwStyle:DWORD
+                                           x:DWORD
+                                           y:DWORD
+                                           nWidth:DWORD
+                                           nHeight:DWORD
+                                           hWndParent:DWORD
+                                           hInstance:DWORD
+                                           lParam:DWORD</pre>
+<blockquote> 
+  <p>如果你仔细地看一下这些参数, 你将会发现它们和MDICREATESTRUCT结构的成员是相同的, 除了 hWndParent.以外. 
+    本质上它和你用WM_MDICREATE传送的参数数目是相同的. MDICREATESTRUCT不需要hWndParent 域, 因为你必须用Sendmessage传送整个结构给正确的子窗口.  
+    .</p>
+</blockquote>
+<p>在这里,你也许会有一些问题: 我应该使用哪一种方法? 在这两者之间有什么区别? 答案如下:</p>
+<p> WM_MDICREATE方法创建的MDI子窗口作为调用代码是同一个线程.这意味这假如这个应用程序只有一个主线程的话, 所有的MDI子窗口都在这个主线程中运行. 
+  这并不是一个大的问题. 但是如果一个或是多个你的MDI子窗口执行一些较长的操作的话, 问题就来了.  想象一下你的整个的应用程序突然之间停止了,对任何事情都没有反应, 
+  一直持续到MDI子窗口的操作结束.</p>
+<p>这个问题正是CreateMDIWindow 设计了所要解决的. CreateMDIWindow 
+  为每一个MDI子窗口创建了一个单独的线程.  这样假如一个MDI子窗口忙的话, 它不会拖累整个应用程序..</p>
+<p>有关MDI子窗口的窗口过程还有一点需要说明的地方. 对于框架窗口, 你不能调用DefWindowProc来处理未处理的消息. 与之相反你必须在自窗口的窗口过程中使用DefMDIChildProc 
+  . 这个函数具有和DefWindowProc相同的参数.</p>
+<p>除了WM_MDICREATE以外,还有其它的MDI相关的窗口消息. 列表如下:</p>
+<table>
+  <TBODY> 
+  <tr> 
+    <th noWrap width="177">WM_MDIACTIVATE</th>
+    <td width="466">这条消息由应用程序发送给客户窗口,告诉客户窗口激活所选择的MDI子窗口.  当客户窗口受到消息后, 它将激活所选择的MDI子窗口和发送WM_MDIACTIVATE消息给将被激活的子窗口和将变为非活动窗口的子窗口. 
+      这条消息的用途是双方面的:应用程序可以用它来激活所希望的子窗口.同时它又可以被MDI子窗口本身用作活动/非活动窗口的指示器.举个例子,假如每一个MDI子窗口都有不同的菜单, 
+      那么当它变为活动或是非活动窗口的时候,它可以利用这个机会来改变框架窗口的菜单</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDICASCADE<br>
+      WM_MDITILE<br>
+      WM_MDIICONARRANGE </th>
+    <td width="466">这些消息处理如何排列MDI子窗口. 举个例子, 假如你希望MDI子窗口排列成层叠的样式,发送WM_MDICASCADE消息给客户窗口.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDIDESTROY</th>
+    <td width="466">发送这条消息给客户窗口来关闭一个MDI子窗口. 你应该使用这条消息而不是调用DestroyWindow 
+      因为假如这个MDI子窗口最大化的话, th这条消息将会恢复框架窗口的标题. 假如你使用DestroyWindow, 
+      框架窗口的标题将不会被恢复.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDIGETACTIVE</th>
+    <td width="466">发送这条消息检索当前活动MDI子窗口的句柄.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDIMAXIMIZE<br>
+      WM_MDIRESTORE </th>
+    <td width="466">发送 WM_MDIMAXIMIZE来最大化MDI子窗口和WM_MDIRESTORE来将它恢复成以前的状态. 对于这些操作总是使用这些消息. 
+      假如你使用参数为SW_MAXIMIZE来调用ShowWindow时,MDI子窗口最大化并没有问题, 但是当你试图将它恢复成以前的状态时,问题就来了. 
+      但是你可以用调用ShowWindow来最小化MDI子窗口.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDINEXT</th>
+    <td width="466">发送这条消息给客户窗口,根据wParam和lParam里相应的值来激活下一个或是前一个MDI子窗口.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDIREFRESHMENU</th>
+    <td width="466">发送这条消息给客户窗口来刷新框架窗口的菜单. 注意在发送了这条消息之后, 你必须调用DrawMenuBar 
+      来更新菜单条.</td>
+  </tr>
+  <tr> 
+    <th noWrap width="177">WM_MDISETMENU</th>
+    <td width="466">发送这条消息给客户窗口来取代框架窗口的整个菜单或是窗口子菜单. 你必须使用这条消息而不是用SetMenu. 
+      在发送了这条消息之后, 你必须调用DrawMenuBar来更新菜单条. 
+      正常情况下当活动的MDI子窗口有它自己的菜单而且你希望用这个活动的子窗口自身的菜单来取代框架窗口的菜单时,你将使用这条消息.</td>
+  </tr>
+  </TBODY> 
+</table>
+<p>我们将创建一个MDI应用程序的步骤回顾一遍. 
+<ol>
+  <li>注册窗口类, 既有框架窗口类也有MDI子窗口类. </li>
+  <li>调用CreateWindowEx创建框架窗口. </li>
+  <li>在消息循环中调用TranslateMDISysAccel 来处理MDI相关的加速键. </li>
+  <li>在框架窗口的窗口过程中, 调用DefFrameProc 处理所有你的代码没有处理的消息. </li>
+  <li>用预选定义好的窗口类名 &quot;MDICLIENT&quot;调用CreateWindowEx来创建客户窗口, 
+    在lParam参数中传递CLIENTCREATESTRUCT结构的地址. 正常情况下,你可以用框架窗口过程中的WM_CREATE句柄来创建一个客户窗口.</li>
+  <li>相应的要创建MDI子窗口,你可以通过调用CreateMDIWindow 
+    来发送WM_MDICREATE消息给客户窗口.</li>
+  <li>在MDI子窗口的窗口过程中, 我们把所有未处理的消息发送给传递给DefMDIChildProc. 
+  </li>
+  <li>假如某一条消息有它的MDI的版本,那我们就使用它的MDI版本. 举个例子, 我们使用WM_MDIDESTORY消息, 而不是使用DestroyWindow来关闭一个MDI子窗口.  
+  </li>
+</ol>
+<h3>例子:</h3>
+<pre class="code">.386 
+.model flat,stdcall 
+option casemap:none 
+include \masm32\include\windows.inc    
+include \masm32\include\user32.inc 
+include \masm32\include\kernel32.inc 
+includelib \masm32\lib\user32.lib 
+includelib \masm32\lib\kernel32.lib 
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD    
+
+.const 
+IDR_MAINMENU 	equ 101 
+IDR_CHILDMENU	equ 102 
+IDM_EXIT 		equ 40001 
+IDM_TILEHORZ	equ 40002 
+IDM_TILEVERT	equ 40003
+IDM_CASCADE	equ 40004 
+IDM_NEW 		equ 40005 
+IDM_CLOSE	equ 40006 
+
+.data 
+ClassName 	db &quot;MDIASMClass&quot;,0 
+MDIClientName	db &quot;MDICLIENT&quot;,0 
+MDIChildClassName	db &quot;Win32asmMDIChild&quot;,0 
+MDIChildTitle	db &quot;MDI Child&quot;,0 
+AppName		db &quot;Win32asm MDI Demo&quot;,0 
+ClosePromptMessage	db &quot;Are you sure you want to close this window?&quot;,0
+
+.data? 
+hInstance 	dd ? 
+hMainMenu 	dd ? 
+hwndClient 	dd ? 
+hChildMenu 	dd ? 
+mdicreate		MDICREATESTRUCT &lt;&gt; 
+hwndFrame 	dd ? 
+
+.code 
+start: 
+	invoke GetModuleHandle, NULL    
+	mov hInstance,eax 
+	invoke WinMain, hInstance,NULL,NULL, SW_SHOWDEFAULT 
+	invoke ExitProcess,eax 
+
+WinMain proc hInst:HINSTANCE,hPrevInst:HINSTANCE,CmdLine:LPSTR,CmdShow:DWORD    
+	LOCAL wc:WNDCLASSEX 
+	LOCAL msg:MSG 
+	;=============================================    
+	; 注册框架窗口类 
+	;=============================================    
+	mov wc.cbSize,SIZEOF WNDCLASSEX 
+	mov wc.style, CS_HREDRAW or CS_VREDRAW 
+	mov wc.lpfnWndProc,OFFSET WndProc 
+	mov wc.cbClsExtra,NULL 
+	mov wc.cbWndExtra,NULL 
+	push hInstance
+	pop wc.hInstance 
+	mov wc.hbrBackground,COLOR_APPWORKSPACE 
+	mov wc.lpszMenuName,IDR_MAINMENU
+	mov wc.lpszClassName,OFFSET ClassName
+	invoke LoadIcon,NULL,IDI_APPLICATION 
+	mov wc.hIcon,eax 
+	mov wc.hIconSm,eax 
+	invoke LoadCursor,NULL,IDC_ARROW 
+	mov wc.hCursor,eax    
+	invoke RegisterClassEx, addr wc 
+	;================================================    
+	; 注册MDI子窗口类 
+	;================================================    
+	mov wc.lpfnWndProc,offset ChildProc 
+	mov wc.hbrBackground,COLOR_WINDOW+1 
+	mov wc.lpszClassName,offset MDIChildClassName 
+	invoke RegisterClassEx,addr wc 
+	invoke CreateWindowEx,NULL,ADDR ClassName,ADDR AppName,\ 
+			WS_OVERLAPPEDWINDOW or WS_CLIPCHILDREN,CW_USEDEFAULT,\    
+			CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,0,\ 
+			hInst,NULL 
+	mov hwndFrame,eax    
+	invoke LoadMenu,hInstance, IDR_CHILDMENU 
+	mov hChildMenu,eax 
+	invoke ShowWindow,hwndFrame,SW_SHOWNORMAL 
+	invoke UpdateWindow, hwndFrame 
+	.while TRUE 
+		invoke GetMessage,ADDR msg,NULL,0,0 
+		.break .if (!eax) 
+		invoke TranslateMDISysAccel,hwndClient,addr msg 
+		.if !eax 
+			invoke TranslateMessage, ADDR msg 
+			invoke DispatchMessage, ADDR msg 
+		.endif 
+	.endw 
+	invoke DestroyMenu, hChildMenu 
+	mov eax,msg.wParam 
+	ret 
+WinMain endp 
+
+WndProc proc hWnd:HWND, uMsg:UINT, wParam:WPARAM, lParam:LPARAM 
+	LOCAL ClientStruct:CLIENTCREATESTRUCT    
+	.if uMsg==WM_CREATE 
+		invoke GetMenu,hWnd 
+		mov hMainMenu,eax 
+		invoke GetSubMenu,hMainMenu,1    
+		mov ClientStruct.hWindowMenu,eax 
+		mov ClientStruct.idFirstChild,100 
+		INVOKE CreateWindowEx,NULL,ADDR MDIClientName,NULL,\ 
+				WS_CHILD or WS_VISIBLE or WS_CLIPCHILDREN,CW_USEDEFAULT,\
+				CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,hWnd,NULL,\ 
+				hInstance,addr ClientStruct    
+		mov hwndClient,eax 
+		;======================================= 
+		; 初始化MDICREATESTRUCT结构
+		;======================================= 
+		mov mdicreate.szClass,offset MDIChildClassName 
+		mov mdicreate.szTitle,offset MDIChildTitle 
+		push hInstance    
+		pop mdicreate.hOwner 
+		mov mdicreate.x,CW_USEDEFAULT 
+		mov mdicreate.y,CW_USEDEFAULT    
+		mov mdicreate.lx,CW_USEDEFAULT 
+		mov mdicreate.ly,CW_USEDEFAULT 
+	.elseif uMsg==WM_COMMAND    
+		.if lParam==0 
+			mov eax,wParam 
+			.if ax==IDM_EXIT 
+				invoke SendMessage,hWnd,WM_CLOSE,0,0    
+			.elseif ax==IDM_TILEHORZ 
+				invoke SendMessage,hwndClient,WM_MDITILE,MDITILE_HORIZONTAL,0 
+			.elseif ax==IDM_TILEVERT 
+				invoke SendMessage,hwndClient,WM_MDITILE,MDITILE_VERTICAL,0    
+			.elseif ax==IDM_CASCADE 
+				invoke SendMessage,hwndClient,WM_MDICASCADE,MDITILE_SKIPDISABLED,0	   
+			.elseif ax==IDM_NEW 
+				invoke SendMessage,hwndClient,WM_MDICREATE,0,addr mdicreate   
+			.elseif ax==IDM_CLOSE 
+				invoke SendMessage,hwndClient,WM_MDIGETACTIVE,0,0 
+				invoke SendMessage,eax,WM_CLOSE,0,0 
+			.else 
+				invoke DefFrameProc,hWnd,hwndClient,uMsg,wParam,lParam	   
+				ret
+			.endif 
+		.endif 
+	.elseif uMsg==WM_DESTROY 
+		invoke PostQuitMessage,NULL 
+	.else 
+		invoke DefFrameProc,hWnd,hwndClient,uMsg,wParam,lParam 
+		ret 
+	.endif 
+	xor eax,eax 
+	ret 
+WndProc endp 
+
+ChildProc proc hChild:DWORD,uMsg:DWORD,wParam:DWORD,lParam:DWORD 
+	.if uMsg==WM_MDIACTIVATE    
+		mov eax,lParam 
+		.if eax==hChild 
+			invoke GetSubMenu,hChildMenu,1 
+			mov edx,eax 
+			invoke SendMessage,hwndClient,WM_MDISETMENU,hChildMenu,edx 
+		.else 
+			invoke GetSubMenu,hMainMenu,1    
+			mov edx,eax 
+			invoke SendMessage,hwndClient,WM_MDISETMENU,hMainMenu,edx 
+		.endif 
+		invoke DrawMenuBar,hwndFrame 
+	.elseif uMsg==WM_CLOSE   
+		invoke MessageBox,hChild,addr ClosePromptMessage,addr AppName,MB_YESNO 
+		.if eax==IDYES    
+			invoke SendMessage,hwndClient,WM_MDIDESTROY,hChild,0 
+		.endif 
+	.else 
+		invoke DefMDIChildProc,hChild,uMsg,wParam,lParam    
+		ret 
+	.endif 
+	xor eax,eax 
+	ret 
+ChildProc endp 
+end start </pre>
+
+<h3>分析:</h3>
+<p>程序所做的第一件事情就是注册框架窗口类和MDI子窗口类. 作完这个以后, 程序调用CreateWindowEx来创建框架窗口.用框架窗口的WM_CREATE句柄来创建客户窗口: 
+  <br>
+</p>
+<pre class="code">	LOCAL ClientStruct:CLIENTCREATESTRUCT 
+	.if uMsg==WM_CREATE 
+		invoke GetMenu,hWnd    
+		mov hMainMenu,eax 
+		invoke GetSubMenu,hMainMenu,1 
+		mov ClientStruct.hWindowMenu,eax    
+		mov ClientStruct.idFirstChild,100 
+		invoke CreateWindowEx,NULL,ADDR MDIClientName,NULL,\    
+			WS_CHILD or WS_VISIBLE or WS_CLIPCHILDREN,CW_USEDEFAULT,\ 
+			CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,hWnd,NULL,\    
+			hInstance,addr ClientStruct 
+		mov hwndClient,eax </pre>
+
+<p>我们调用GetMenu来获得框架窗口的菜单的句柄, 这个句柄在调用GetSubMenu时将会被用到. 
+  注意我们将1传递给 GetSubMenu ,因为我们希望显示窗口列表的子菜单是第二个子菜单. 
+  然后我们给CLIENTCREATESTRUCT结构的成员赋值.<br>
+  下一步我们初始化MDICLIENTSTRUCT 结构. 注意我们不需要在这里做.要初始化MDICLIENTSTRUCT结构的话,用WM_CREATE消息比较方便.</p>
+<pre class="code">	mov mdicreate.szClass,offset MDIChildClassName 
+	mov mdicreate.szTitle,offset MDIChildTitle 
+	push hInstance 
+	pop mdicreate.hOwner 
+	mov mdicreate.x,CW_USEDEFAULT    
+	mov mdicreate.y,CW_USEDEFAULT 
+	mov mdicreate.lx,CW_USEDEFAULT 
+	mov mdicreate.ly,CW_USEDEFAULT</pre>
+
+<p>在框架窗口创建之后(也包括客户窗口), 我们调用LoadMenu从资源中获取子窗口的菜单.我们需要获取这个菜单的句柄,这样当一个MDI子菜单出现时,我们就可以用这个句柄来取代框架窗口的菜单. 
+  在这个应用程序退出到Windows之前不要忘记调用DestroyMenu来去掉这个句柄. 
+  正常情况下当一个应用程序退出的时候,Windows将会自动释放和窗口相关的菜单. 但是在这种情况下, 子窗口的菜单没有和任何窗口相关联, 这样即使当应用程序退出后半部 
+  子窗口的菜单仍然会占用宝贵的内存资源.</p>
+<p>　</p>
+<pre class="code">	invoke LoadMenu,hInstance, IDR_CHILDMENU 
+	mov hChildMenu,eax 
+	........
+	invoke DestroyMenu, hChildMenu</pre>
+
+<p>在消息循环中我们调用TranslateMDISysAccel.</p>
+<pre class="code">	.while TRUE 
+		invoke GetMessage,ADDR msg,NULL,0,0 
+		.break .if (!eax) 
+		invoke TranslateMDISysAccel,hwndClient,addr msg 
+		.if !eax 
+			invoke TranslateMessage, ADDR msg 
+			invoke DispatchMessage, ADDR msg 
+		.endif 
+	.endw </pre>
+<p>假如TranslateMDISysAccel 返回一个非零值, 它以为着Windows已经在处理这条消息.这样你就不需要为这条消息做任何事情了.假如返回的值为零, 
+  那么这条消息就不是MDI相关的消息, 因此就必须按照通常情况来处理.<br>
+</p>
+<pre class="code">WndProc proc hWnd:HWND, uMsg:UINT, wParam:WPARAM, lParam:LPARAM 
+	.....
+	.else 
+		invoke DefFrameProc,hWnd,hwndClient,uMsg,wParam,lParam 
+		ret 
+	.endif
+	xor eax,eax
+	ret
+WndProc endp</pre>
+<p>注意到在框架窗口的窗口过程中, 我们调用DefFrameProc来处理我们不感兴趣的消息.</p>
+<p>窗口过程的重要之处在 WM_COMMAND句柄. 当用户从文件菜单中选择 &quot;New&quot;时, 我们就创建了一个MDI子窗口.</p>
+<pre class="code">	.elseif ax==IDM_NEW 
+		invoke SendMessage,hwndClient,WM_MDICREATE,0,addr mdicreate</pre>
+
+<p>在我们的例子中,我们通过发送WM_MDICREATE消息给客户窗口, 同时还要在lParam参数中传递MDICREATESTRUCT结构的地址来创建一个MDI子窗口.</p>
+<pre class="code">ChildProc proc hChild:DWORD,uMsg:DWORD,wParam:DWORD,lParam:DWORD 
+	.if uMsg==WM_MDIACTIVATE    
+		mov eax,lParam 
+		.if eax==hChild 
+			invoke GetSubMenu,hChildMenu,1 
+			mov edx,eax 
+			invoke SendMessage,hwndClient,WM_MDISETMENU,hChildMenu,edx 
+		.else 
+			invoke GetSubMenu,hMainMenu,1    
+			mov edx,eax 
+			invoke SendMessage,hwndClient,WM_MDISETMENU,hMainMenu,edx 
+		.endif    
+		invoke DrawMenuBar,hwndFrame </pre>
+<p>当MDI子窗口创建后, 我们可以监视 WM_MDIACTIVATE以察看它是不是一个活动窗口.具体的方法是比较将某一个MDI子窗口的句柄和参数lParam的值进行比较, 
+  参数lParam中包含的是活动子窗口的句柄. 这样如果两者匹配的话, 证明这个MDI子窗口就是活动子窗口. 下一步就是将框架窗口的菜单替换成MDI子窗口自身的菜单. 
+  因为最初的菜单将会被取代, 你比学赶帮超再一次告讼Windows窗口列表将显示在哪一个子菜单. 这就是我们必须再一次调用GetSubMenu 
+  来检索子菜单的句柄的原因. 我们发送 WM_MDISETMENU消息给客户窗口来获得想要的结果. WM_MDISETMENU中的wParam参数包含了你希望取代最初的菜单的菜单句柄. 
+  lParam参数包含的是你希望用来显示窗口列表的子菜单的句柄.在发送了WM_MDISETMENU之后, 我们调用l DrawMenuBar 
+  来刷新菜单, 否则的话你的菜单将会是一片混乱.</p>
+<pre class="code">	.else 
+		invoke DefMDIChildProc,hChild,uMsg,wParam,lParam 
+		ret 
+	.endif </pre>
+<p>在MDI子窗口的窗口过程中, 你必须传送所有未处理的消息给DefMDIChildProc而不是DefWindowProc.
+<pre class="code">	.elseif ax==IDM_TILEHORZ 
+		invoke SendMessage,hwndClient,WM_MDITILE,MDITILE_HORIZONTAL,0  
+	.elseif ax==IDM_TILEVERT 
+		invoke SendMessage,hwndClient,WM_MDITILE,MDITILE_VERTICAL,0  
+	.elseif ax==IDM_CASCADE 
+		invoke SendMessage,hwndClient,WM_MDICASCADE,MDITILE_SKIPDISABLED,0	 </pre>
+<p>当用户在窗口子菜单中选择一个菜单项时, 我们发送相应的消息给客户窗口. 假如用户选择平铺窗口, 我们发送 WM_MDITILE 给客户窗口, 在wParam参数中指定哪一种类型的平铺. 
+  选择重叠的话是类似的, 相应的发送WM_MDICASCADE..</p>
+<pre class="code">	.elseif ax==IDM_CLOSE 
+		invoke SendMessage,hwndClient,WM_MDIGETACTIVE,0,0    
+		invoke SendMessage,eax,WM_CLOSE,0,0 </pre>
+<p>假如用户选择 &quot;Close&quot; 菜单项, 我们首先必须通过发送WM_MDIGETACTIVE给客户窗口来获得当前活动的MDI子窗口的句柄, 
+  返回的值保存在eax寄存器中, 这个值就是当前活动MDI子窗口的句柄. 获得句柄之后, 我们就可以发送WM_CLOSE给那个窗口了.</p>
+<pre class="code">	.elseif uMsg==WM_CLOSE 
+		invoke MessageBox,hChild,addr ClosePromptMessage,addr AppName,MB_YESNO 
+		.if eax==IDYES 
+			invoke SendMessage,hwndClient,WM_MDIDESTROY,hChild,0    
+		.endif </pre>
+<p>在MDI子窗口的窗口过程中, 当收到WM_CLOSE的消息时, 就会显示一个消息框询问用户是否确实想关闭着这个窗口.  假如回答是&quot;是&quot;的话, 
+  我们发送WM_MDIDESTROY给客户窗口. WM_MDIDESTROY关闭MDI子窗口,然后恢复框架窗口的标题.</p>
+
+  
+</BODY></HTML>
+<div class="rpindex"><a href="033.html"> 下一页</a><a href="031.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

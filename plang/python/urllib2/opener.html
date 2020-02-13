@@ -1,0 +1,211 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>OpenerDirector类</h1>
+<p>当你获取一个URL时，你使用一个opener（OpenerDirector）。正常情况下我们一直使用默认的opener，通过urlopen，但你也可以创建自定义的openers。</p>
+<p>opener使用handler处理任务，所有的重活都交给这些handlers来做。每一个handler知道怎么以特定的url协议打开url，或者怎么处理打开url的某些方面，如，HTTP重定向，或者HTTP   cookie。<br />
+  <br />
+你可以用build_opener，这是一个很方便的创建opener对象的函数，它只有一个函数调用。</p>
+<p> install_opener能设置一个全局opener对象，这意味着调用urlopen将会都用你刚安装的opener。</p>
+<p> opener对象有一个open方法，它可以以一种和urlopen函数同样的方式直接调用来获取url：除非是为了方便,没有必要调用install_opener。</p>
+<p>OpenerDirector操作类是一个管理很多处理类（Handler）的类。而所有这些 Handler 类都对应处理相应的协议，或者特殊功能。</p>
+<p>分别有下面的处理类:BaseHandler,HTTPErrorProcessor,HTTPDefaultErrorHandler,HTTPRedirectHandler,ProxyHandler,<br />
+  AbstractBasicAuthHandler,HTTPBasicAuthHandler,ProxyBasicAuthHandler,AbstractDigestAuthHandler,<br />
+  ProxyDigestAuthHandler,AbstractHTTPHandler,HTTPHandler,HTTPCookieProcessor,UnknownHandler,<br />
+  FileHandler,FTPHandler,CacheFTPHandler</p>
+<p>们都是遵循相应的规则，需求创建的类，甚至是相似的。你基本的需是http协议的处理类。</p>
+<p>最简单的urlib2的使用，也就是源码中给出的使用方式：</p>
+<pre class="code">#file: urllib2.py
+_opener=None
+def urlopen(url, data=None, timeout=socket._GLOBAL_DEFAULT_TIMEOUT):
+	global _opener
+	if _opener is None:
+		_opener=build_opener()
+	return _opener.open(url, data, timeout)</pre>
+<p><a href="../urllib/urlopencode.html">对比urllib.urlopen()</a></p>
+<p>现在分析urllib2里的urlopen, 一般我们直接调用urlopen()就是表示去调用build_opener()方法，这里_opener 是一个全局变量。第一次使用时，通过build_opener() 得到一个值，以后再次使用就是保存到这个全局变量中值。
+然后用build_opener()方法返回的类对象去调用该对象的open方法。<a href="buildopener.html">bulid_opener()创建自己的opener对象</a></p>
+<p>使用urllib2.urlopen()生成的是我们前面提到的管理很多处理器类的OpenerDirector操作类，然后给他加入很多的处理器,作为其一个属性，然后调用该处理器操作类对象的open方法就可以获取页面了。 流程就是</p>
+<ol>
+  <li>生成一个处理器opener = OpenerDirector()对象</li>
+  <li>给这个处理器对象加入处理器opener.add_handler(h)</li>
+  <li> 使用打开方法，可能是具体handler类的打开方法。获取至本地的&ldquo;文件流&rdquo;对象，使用&ldquo;文件流&rdquo;。read()获取内容，写入文件</li>
+</ol>
+<p>即只要你是使用urllib2,不管你是要用代理，还是要用ftp,http,都逃不过这套过程。</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

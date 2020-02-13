@@ -1,0 +1,426 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="11-3-9.html"> 上一页</a><a href="11-5.html"> 下一页</a></div>
+<h2>11.4 协处理器的编程举例</h2>
+<p>本节提供几个利用协处理器进行编程的例子，从这些例子可看出使用协处理器指令编程的方法和技巧。 </p>
+<h5> 例11.8 已知L=4.0，F按每次递增10.0的幅度从10.0增加到1000.0，试按公式Y＝2πFL，计算出100个Y值，并把它们存入数组RES中。 </h5>
+<p> 解：</p>
+<pre class="code">.MODEL        SMALL
+.386
+.387
+.DATA
+     L DD　4.0
+     F DD　1000.0 ;为了便于循环控制，F“从大到小”来计算
+     TEN DD　10.0
+     Y DD　100 DUP(?)
+.CODE
+ .STARTUP 
+              FLDPI                 ;装入π
+              FADD      ST, ST(0)   ;自身相加，得到2π
+              FMUL      L           ;计算出不变的结果2πL
+              MOV       ECX, 100
+              MOV       EDI, OFFSET Y-4
+      again:
+              FLD       F
+              FMUL      ST, ST(1)   ;得到一个计算结果2πLF
+              FSTP      dword ptr [EDI+4*ECX]   ;保存当前得到结果(从后向前)
+              FLD       F
+              FSUB      TEN
+              FSTP      F           ;F的值变小10.0
+              LOOP      again
+              FCOMP                 ;先前计算出结果2πL出栈，使之为空
+.EXIT         0
+              END
+</pre>
+<h5> 例11.9 把内存单元DATA中存放的单精度浮点数以小数的形式显示在屏幕上。 </h5>
+<p> 解：</p>
+<pre class="code"> .MODEL　SMALL 
+.386
+.387
+.DATA
+     DATA DD　-1234.75
+     STATUS DW　?
+     WHOLE DD　?
+     FRACT DD　?
+.CODE
+DISPS PROC　NEAR ;子程序：显示AL中的字符 
+              MOV       AH, 6
+              MOV       DL, AL
+              INT       21H
+              RET
+       DISPS  ENDP
+ .STARTUP 
+              FSTCW     STATUS      ;以小数形式显示浮点数DATA
+              OR        STATUS,0C00H            ;设定截取舍入方式
+              FLDCW     STATUS
+              FLD       DATA
+              FTST
+              FSTSW     AX
+              AND       AX, 4500H
+              CMP       AX, 0100H
+              JNZ       Positive
+              MOV       AL, ‘-‘
+              CALL      DISPS
+              FABS
+   Positive:
+              FLD       ST
+              FRNDINT
+              FIST      WHOLE       ;保存整数部分
+              FSUBR
+              FABS
+              FSTP      FRACT       ;保存小数部分
+              MOV       EAX, WHOLE
+              MOV       EBX, 10
+              MOV       CX, 0
+              PUSH      BX
+     Again1:
+              MOV       EDX, 0
+              DIV       EBX
+              ADD       DL, 30H
+              PUSH      DX
+              INC       CX
+              CMP       EAX, 0
+              JNZ       Again1
+      Disp1:
+              POP       AX
+              CALL      DISPS       ;显示整数部分
+              LOOP      Disp1
+              MOV       AL, ‘.’
+              CALL      DISPS       ;显示小数点
+              MOV       EAX, FRACT
+              FSTCW     STATUS
+              XOR       STATUS, 0C00H
+              FLDCW     STATUS
+              FLD       FRACT
+              FXTRACT
+              FSTP      FRACT
+              FABS
+              FISTP     WHOLE
+              MOV       ECX, WHOLE
+              MOV       EAX, FRACT
+              SHL       EAX, 9
+              RCR       EAX, CL
+     Again2:
+              MUL       EBX
+              PUSH      EAX
+              XCHG      EAX, EDX
+              ADD       AL, 30H
+              CALL      DISPS
+              POP       EAX
+              CMP       EAX, 0
+              JNZ       Again2
+.EXIT　0 
+              END
+</pre>
+<h5> 例11.10 从键盘上读入一个带小数的数字字符串，然后把它转换成单精度浮点数，并存入内存单元DATA中。 </h5>
+<p> 解：</p>
+<pre class="code">.MODEL　SMALL 
+.386
+.387
+.DATA
+DATA DD　0
+TEN DD　10.0
+TEMP DW　?
+SIGN DB　?
+.CODE
+       GETCH  MACRO                 ;宏GETCH的功能是从键盘读入一个字符
+              MOV       AH, 1
+              INT       21H
+              ENDM
+.STARTUP 
+              FLDZ                  ;ST=0
+              GETCH
+.IF           AL == ‘+’                   ;判定是否输入正号‘+’
+              MOV       SIGN, 0
+              GETCH
+ 
+.ENDIF
+.IF           AL == ‘-‘
+              MOV       SIGN, 1     ;判定是否输入负号‘-’
+              GETCH
+ 
+.ENDIF
+.REPEAT
+              FMUL      TEN
+              MOV       AH,0
+              SUB       AL, 30H
+              MOV       TEMP, AX
+              FIADD     TEMP        ;部分数×10.0＋(字符-‘0’)
+              GETCH
+ 
+.UNTIL　AL<’0’ || AL>’9’ ;完成整数部分的处理 
+              CMP       AL, ‘.’
+              JNE       exit
+              FLD1                  ;开始处理小数部分
+.WHILE1 
+              FDIV      TEN
+              GETCH
+ 
+.BREAK        .IF AL<’0’ || AL>’9’
+ 
+              MOV       AH, 0
+              SUB       AL, 30H
+              MOV       TEMP, AX
+              FILD      TEMP
+              FMUL      ST, ST(1)
+              FADD      ST(2), ST
+              FCOMP
+ 
+.ENDW
+              FCOMP
+       exit:
+.IF           SIGN == 1                   ;如果是负数，那么需要改变符号
+              FCHS
+ 
+.ENDIF
+              FSTP      DATA        ;保存最终转换的结果
+.EXIT　0 
+              END
+</pre>
+<h5> 例11.11 编写一个子程序，求解一元二次方程的根ax2 +  bx + c = 0的根。 </h5>
+<p>解： </p>
+<pre class="code">;调用参数：方程的系数a、b和c，R1和R2是指向存放根的指针； 
+ 
+;返回参数：返回值存于AX中，其含义：0—有二个根，1—有一个根R1，2—无实根。
+ 
+   Quadratic  PROC      USES DS DI SI, AA:DWORD, BB:DWORD, CC:DWORD, R1:PDWORD, R2:PDWORD
+ 
+              LES       DI, R1      ;(ES:DI) → 1st Root-R1
+              LDS       SI, R2      ;(DS:SI) → 2nd Root-R2
+              SUB       BX, BX      ;用BX来标识方程有根的情况
+              FLD1                  ;栈顶寄存器置1
+              FADD      ST, ST      ;栈顶寄存器自加，变成2
+              FLD       ST          ;把数值2复制一份到新的栈顶
+              FMUL      AA          ;ST = 2A
+              FTST                  ;测试ST是否为0，即，考虑A=0的情况
+              FSTSW     AX          ;把当前状态寄存器存入AX中
+              FWAIT                 ;等待协处理器完成上面操作
+              SAHF                  ;AH装入到标志寄存器中
+              JNZ       Notzero     ;考虑A = 0的情况
+              FLD       CC          ;常数项C进栈
+              FCHS                  ;改变栈顶的符号，得到-C
+              FLD       BB          ;参数B进栈
+              FTST                  ;测试当前栈顶是否为0
+              FSTSW     AX
+              SAHF
+              JZ        EXIT2       ;考虑B = 0的情况
+              FDIV                  ;计算出-C/B
+              FSTP      dword ptr ES:[DI]       ;得到一个根，并弹出栈顶
+              FSTP      ST          ;弹出多余的堆栈数据
+              JMP       EXIT1       ;返回，并标识有1个根
+    Notzero:
+              FMUL      ST(1), ST   ;ST(1) = 4A
+              FXCH                  ;ST和ST(1)交换
+              FMUL      CC          ;ST = 4AC
+              FTST
+              FSTSW     AX
+              SAHF
+              JP        EXIT2       ;如果状态位C2=1，则4AC是无穷大
+              FLD       BB          ;装入参数B
+              FMUL      ST, ST      ;ST = B2
+              FSUBR                 ;ST = B2 - 4AC
+              FTST
+              FSTSW     AX
+              SAHF
+              JC        EXIT2       ;如果C0=1，则B2 < 4AC
+              JNZ       Tworoot     ;如果C3=1，则B2 = 4AC
+              INC       BX          ;标志有1个根
+    Tworoot:
+              FSQRT                 ;求出B2 - 4AC的平方根
+              FLD       BB
+              FCHS                  ;得到-B
+              FXCH                  ;ST 和ST(1)交换
+              FLD       ST          ;栈顶再复制一份
+              FADD      ST, ST(2)   ;ST = -B + SQRT(B2 - 4AC)
+              FXCH                  ;ST 和ST(1)交换
+              FSUBP     ST(2), ST   ;ST = -B - SQRT(B2 - 4AC)
+              FDIV      ST, ST(2)   ;得到一个根ST = ST/(2A)
+              FSTP      dword ptr ES:[DI]       ;存储第一个根
+              FDIVR                 ;得到另一个根ST = ST/(2A)
+              FSTP      dword ptr DS:[SI]       ;存储第二个根
+              JMP       EXIT
+      EXIT2:
+              INC       BX          ;无根时的返回出口
+              FSTP      ST          ;清除多余的堆栈数据
+      EXIT1:
+              INC       BX          ;有一个根时的返回出口
+              FSTP      ST          ;清除多余的堆栈数据
+       EXIT:
+              MOV       AX, BX
+              RET
+   Quadratic  ENDP
+              END
+</pre>
+<div class="rpindex"><a href="11-5.html"> 下一页</a><a href="11-3-9.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

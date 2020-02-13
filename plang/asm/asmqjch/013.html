@@ -1,0 +1,446 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="012.html"> 上一页</a><a href="014.html"> 下一页</a></div>
+<h1>第十三课 内存映射文件</h1>
+本课中我们将要讲解内存映射文件并且演示如何运用它。您将会发现使用内存映射文件是非常简单的。 
+<h2>理论：</h2>
+<P>如果您仔细地研究了前一课的例子， 
+就会发现它有一个严重的缺陷：如果您想读的内容大于系统分配的内存块怎么办？如果您想搜索的字符串刚好超过内存块的边界又该如何处理？对于第一个问题，您也许会说，只要不断地读就不解决了吗。至于第二个问题，您又会说在内存块的边界处做一些特别的处理，譬如放上一些标志位就可以了。原理上确实是行得通，但是这随问题复杂程度加深而显得非常难以处理。其中的第二个问题是有名的边界判断问题，程序中许许多多的错误都是由此引起。想一想，如果我们能够分配一个能够容纳整个文件的大内存块该多好啊，这样这两个问题不都迎刃而解了吗？是的，WIN32的内存映射文件确实允许我们分配一个装得下现实中可能存在的足够大的文件的内存。</P>
+<P>利用内存映射文件您可以认为操作系统已经为您把文件全部装入了内存，然后您只要移动文件指针进行读写即可了。这样您甚至不需要调用那些分配、释放内存块和文件输入/输出的API函数，另外您可以把这用作不同的进程之间共享数据的一种办法。运用内存映射文件实际上没有涉及实际的文件操作，它更象为每个进程保留一个看得见的内存空间。至于把内存映射文件当成进程间共享数据的办法来用，则要加倍小心，因为您不得不处理数据的同步问题，否则您的应用程序也许很可能得到过时或错误的数据甚至崩溃。本课中我们将主要讲述内存映射文件，将不涉及进程间的同步。WIN32中的内存映射文件应用非常广泛，譬如：即使是系统的核心模块---PE格式文件装载器也用到了内存映射文件，因为PE格式的文件并不是一次性加载到内存中来的，譬如他它在首次加载时只加载必需加载的部分，而其他部分在用到时再加载，这正好可以利用到内存映射文件的长处。实际中的大多数文件存取都和PE加载器类似，所以您在处理该类问题时也应该充分利用内存映射文件。</P>
+<P>内存映射文件本身还是有一些局限性的，譬如一旦您生成了一个内存映射文件，那么您在那个会话期间是不能够改变它的大小的。所以内存映射文件对于只读文件和不会影响其大小的文件操作是非常有用的。当然这并不意味着对于会引起改变其大小的文件操作就一定不能用内存影射文件的方法，您可以事先估计操作后的文件的可能大小，然后生成这么大小一块的内存映射文件，然后文件的长度就可以增长到这么一个大小。 
+我们的解释够多的了，接下来我们就看看实现的细节： </P>
+<OL>
+  <LI>调用CreateFile打开您想要映射的文件。 
+  <LI>调用CreateFileMapping，其中要求传入先前CreateFile返回的句柄，该函数生成一个建立在CreateFile函数创建的文件对象基础上的内存映射对象。 
+
+  <LI>调用MapViewOfFile函数映射整个文件的一个区域或者整个文件到内存。该函数返回指向映射到内存的第一个字节的指针。 
+  <LI>用该指针来读写文件。 
+  <LI>调用UnmapViewOfFile来解除文件映射。 
+  <LI>调用CloseHandle来关闭内存映射文件。注意必须传入内存映射文件的句柄。 
+  <LI>调用CloseHandle来关闭文件。注意必须传入由CreateFile创建的文件的句柄。 </LI></OL>
+<H3>例子：</H3>下面的例子允许用户通过“打开文件”对话框来打开一个文件，然后用内存映射文件来打开该文件，如果成功，窗口的标题条会显示打开的文件的名称，您可以通过选择“File/Save”菜单项来把换名保存。该程序将会把打开的文件的内容存到新文件中去。注意，这整个过程您根本就没有用到GlobalAlloc这样的分配内存的函数。 
+
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\COMDLG32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\COMDLG32.LIB
+
+.CONST
+    IDM_OPEN  EQU       1
+    IDM_SAVE  EQU       2
+    IDM_EXIT  EQU       3
+     MAXSIZE  EQU       260
+
+.DATA
+   CLASSNAME  DB        "WIN32ASMFILEMAPPINGCLASS",0
+     APPNAME  DB        "WIN32 ASM FILE MAPPING EXAMPLE",0
+    MENUNAME  DB        "FIRSTMENU",0
+ofn OPENFILENAME <> 
+            FILTERSTRING  DB        "ALL FILES",0,"*.*",0
+              DB        "TEXT FILES",0,"*.TXT",0,0
+      BUFFER  DB        MAXSIZE DUP(0)
+hMapFile HANDLE 0 ; Handle to the memory mapped file, must be 
+;initialized with 0 because we also use it as 
+;a flag in WM_DESTROY section too 
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hFileRead HANDLE ? ; Handle to the source file 
+hFileWrite HANDLE ? ; Handle to the output file 
+hMenu HANDLE ? 
+     PMEMORY  DWORD     ?           ; pointer to the data in the source file
+ SIZEWRITTEN  DWORD     ?           ; number of bytes actually written by WriteFile
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,WS_EX_CLIENTEDGE,ADDR CLASSNAME,\
+ADDR AppName, WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\ 
+CW_USEDEFAULT,300,200,NULL,NULL,\ 
+hInst,NULL 
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_CREATE
+              INVOKE    GETMENU,HWND            ;Obtain the menu handle
+              MOV       HMENU,EAX
+              MOV       OFN.LSTRUCTSIZE,SIZEOF OFN
+              PUSH      HWND
+              POP       OFN.HWNDOWNER
+              PUSH      HINSTANCE
+              POP       OFN.HINSTANCE
+              MOV       OFN.LPSTRFILTER, OFFSET FILTERSTRING
+              MOV       OFN.LPSTRFILE, OFFSET BUFFER
+              MOV       OFN.NMAXFILE,MAXSIZE
+.ELSEIF       UMSG==WM_DESTROY
+.IF           HMAPFILE!=0
+              CALL      CLOSEMAPFILE
+.ENDIF
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_OPEN
+              MOV       OFN.FLAGS, OFN_FILEMUSTEXIST OR \
+       OFN_PATHMUSTEXIST  OR        OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY
+              INVOKE    GETOPENFILENAME, ADDR OFN
+.IF           EAX==TRUE
+              INVOKE    CREATEFILE,ADDR BUFFER,\
+GENERIC_READ ,\ 
+0,\ 
+NULL,OPEN_EXISTING,FILE_ATTRIBUTE_ARCHIVE,\ 
+NULL 
+              MOV       HFILEREAD,EAX
+              INVOKE    CREATEFILEMAPPING,HFILEREAD,NULL,PAGE_READONLY,0,0,NULL
+              MOV       HMAPFILE,EAX
+              MOV       EAX,OFFSET BUFFER
+              MOVZX     EDX,OFN.NFILEOFFSET
+              ADD       EAX,EDX
+              INVOKE    SETWINDOWTEXT,HWND,EAX
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_OPEN,MF_GRAYED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_SAVE,MF_ENABLED
+.ENDIF
+.ELSEIF       AX==IDM_SAVE
+              MOV       OFN.FLAGS,OFN_LONGNAMES OR\
+            OFN_EXPLORER  OR        OFN_HIDEREADONLY
+              INVOKE    GETSAVEFILENAME, ADDR OFN
+.IF           EAX==TRUE
+              INVOKE    CREATEFILE,ADDR BUFFER,\
+            GENERIC_READ  OR        GENERIC_WRITE ,\
+         FILE_SHARE_READ  OR        FILE_SHARE_WRITE,\
+NULL,CREATE_NEW,FILE_ATTRIBUTE_ARCHIVE,\ 
+NULL 
+              MOV       HFILEWRITE,EAX
+              INVOKE    MAPVIEWOFFILE,HMAPFILE,FILE_MAP_READ,0,0,0
+              MOV       PMEMORY,EAX
+              INVOKE    GETFILESIZE,HFILEREAD,NULL
+              INVOKE    WRITEFILE,HFILEWRITE,PMEMORY,EAX,ADDR SIZEWRITTEN,NULL
+              INVOKE    UNMAPVIEWOFFILE,PMEMORY
+              CALL      CLOSEMAPFILE
+              INVOKE    CLOSEHANDLE,HFILEWRITE
+              INVOKE    SETWINDOWTEXT,HWND,ADDR APPNAME
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_OPEN,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_SAVE,MF_GRAYED
+.ENDIF
+.ELSE
+              INVOKE    DESTROYWINDOW, HWND
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+
+            CLOSEMAPFILE  PROC
+              INVOKE    CLOSEHANDLE,HMAPFILE
+              MOV       HMAPFILE,0
+              INVOKE    CLOSEHANDLE,HFILEREAD
+              RET
+            CLOSEMAPFILE  ENDP
+
+              END       START</pre>  
+<H3>分析：</H3>                    
+<pre class="code">              INVOKE    CREATEFILE,ADDR BUFFER,GENERIC_READ ,0,\
+                        NULL,OPEN_EXISTING,FILE_ATTRIBUTE_ARCHIVE,NULL</pre>
+<P>当用户选择打开文件时，我们调用CreateFile来打开。注意我们指定GENERIC_READ（一般的读）来表示我们打开的文件只能够读出，把dwShareMode设成0，表示我们不想其他进程在我们操作文件时来存取该文件。 
+
+<Pre class="code">                     INVOKE    CREATEFILEMAPPING,HFILEREAD,NULL,PAGE_READONLY,0,0,NULL</Pre>
+<P>我们调用CreateFileMapping来在打开的文件的基础上生成内存映射文件。CreateFileMapping的语法如下： 
+<Pre class="code">       CREATEFILEMAPPING  PROTO     HFILE:DWORD,\
+                          lpFileMappingAttributes:DWORD,\
+                          flProtect:DWORD,\
+                          dwMaximumSizeHigh:DWORD,\
+                          dwMaximumSizeLow:DWORD,\
+     LPNAME:  DWORD</Pre>
+
+<P>您应当知道该函数并没有必要把整个文件映射到内存中去，您可以用该函数来只映射文件的一部分。您可以在参数dwMaximumSizeHigh和dwMaximumSizeLow中指定内存映射文件的大小，如果您指定的值大于实际的文件，则实际的文件将增长到指定的大小，如果想要映射的内存大小正好和文件的实际大小相等，则把两个参数中都设成为0。您可以设定lpFileMappingAttributes为NULL，让WINDOWS赋予该内存映射文件于缺省的安全属性。<BR>flProtect定义了内存映射文件的保护属性，我们指定它为PAGE_READONLY来规定该内存映射文件只能够读。注意该属性不能和CreateFile中指定的属性相矛盾，否则就不能生成内存映射文件。<BR>lpName指定内存映射文件的名称，如果您想要该内存映射文件同时可以供其它的进程使用，就必须给它取个名称。不过在我们的例子中，只有我们的进程使用该内存映射文件故我们忽略该参数。 
+
+<Pre class="code">              MOV       EAX,OFFSET BUFFER
+              MOVZX     EDX,OFN.NFILEOFFSET
+              ADD       EAX,EDX
+              INVOKE    SETWINDOWTEXT,HWND,EAX</Pre>
+
+<P>如果函数CreateFileMapping调用成功，我们把窗口的标题条换成被打开文件的名称。保存在缓冲区中的文件名是带有路径的全文件名，所以为了只显示文件名我们需要利用OPENFILENAME结构体中的成员nFileOffset的值来找到文件名的起始地址。 
+
+<Pre class="code">              INVOKE    ENABLEMENUITEM,HMENU,IDM_OPEN,MF_GRAYED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_SAVE,MF_ENABLED</Pre>
+
+<P>为了避免用户一次性打开多个文件，我们让“打开文件”菜单项呈灰色显示，使得打开文件的菜单项失效。函数EnableMenuItem可以用来改变菜单项的属性。 
+之后用户可能保存文件或者直接关闭应用程序。如果用户选择关闭应用程序，则事先必须关闭内存映射文件和打开的文件， 代码如下: 
+<Pre class="code">.ELSEIF       UMSG==WM_DESTROY
+.IF           HMAPFILE!=0
+              CALL      CLOSEMAPFILE
+.ENDIF
+              INVOKE    POSTQUITMESSAGE,NULL</Pre>
+
+<P>在上面的代码段中，当WINDOWS的消息处理过程接收到WM_DESTROY消息后，它首先检测hMapFile值是否为0。如果不为0则表示相关的文件未关闭，这样就需要调用CloseMapFile来关闭它们。 
+
+<Pre class="code">            CLOSEMAPFILE  PROC
+              INVOKE    CLOSEHANDLE,HMAPFILE
+              MOV       HMAPFILE,0
+              INVOKE    CLOSEHANDLE,HFILEREAD
+              RET
+            CLOSEMAPFILE  ENDP</Pre>
+
+<P>上述过程调用是用来关闭内存映射文件和原来打开的文件的，这样可以使得程序退出时没有资源泄漏。如果用户选择保存文件的话，就弹出一个“保存文件”对话框，当用户输入了新文件的名称后，我们调用CreateFile函数来创建新文件---输出文件。 
+
+<Pre  class="code">              INVOKE    MAPVIEWOFFILE,HMAPFILE,FILE_MAP_READ,0,0,0
+              MOV       PMEMORY,EAX</Pre>
+
+<P>在输出文件创建后我们调用MapViewOfFile来映射希望映射到内存中的部分。该函数的语法如下: 
+<Pre class="code">           MAPVIEWOFFILE  PROTO     HFILEMAPPINGOBJECT:DWORD,\
+                                    dwDesiredAccess:DWORD,\
+                                    dwFileOffsetHigh:DWORD,\
+                                    dwFileOffsetLow:DWORD,\
+   DWNUMBEROFBYTESTOMAP:  DWORD</Pre>
+
+<P>dwDesiredAccess用来指定我们想对文件进行的操作。在我们例子中，我们只想读，故指定标志FILE_MAP_READ。<BR>dwFileOffsetHigh 
+和 dwFileOffsetLow 
+用来指定打开文件中欲映射的起始偏移位置。我们的例子中想映射整个的文件，故指定它们的值为0。<BR>dwNumberOfBytesToMap 
+用来指定欲映射的字节数，如果想映射整个的文件，设定该值为0。<BR>调用MapViewOfFile后，我们希望的部分就已经映射到内存中去了。您将得到一个指向起始内存块的指针。 
+
+<Pre class="code">              INVOKE    GETFILESIZE,HFILEREAD,NULL</Pre>
+
+<P>调用该函数可以得到文件的大小，其值通过eax传送，如果文件的长度超过4G，那么文件长度DWORD的高值部分（也即超过4G的部分）保存在FileSizeHighWord中。因为我们估计一般的文件将没有这么大，故忽略该值。 
+
+<Pre class="code">              INVOKE    WRITEFILE,HFILEWRITE,PMEMORY,EAX,ADDR SIZEWRITTEN,NULL</Pre>
+
+<P>把内存映射文件中的数据写到输出文件中去。 
+<Pre class="code">              INVOKE    UNMAPVIEWOFFILE,PMEMORY</Pre>
+
+<P>写完后，我们解除映射。 
+<Pre class="code">                 CALL      CLOSEMAPFILE
+              INVOKE    CLOSEHANDLE,HFILEWRITE</Pre>                 
+
+<P>关闭内存映射文件和输出文件的句柄。 
+<Pre class="code">              INVOKE    SETWINDOWTEXT,HWND,ADDR APPNAME</Pre>
+
+<P>恢复窗口的标题条到应用程序的名称。 
+<Pre class="code">              INVOKE    ENABLEMENUITEM,HMENU,IDM_OPEN,MF_ENABLED
+              INVOKE    ENABLEMENUITEM,HMENU,IDM_SAVE,MF_GRAYED</Pre>
+
+<P>恢复“打开文件”和“保存文件”菜单项使的可以重新开始新的打开、编辑和保存循环。
+
+<div class="rpindex"><a href="014.html"> 下一页</a><a href="012.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

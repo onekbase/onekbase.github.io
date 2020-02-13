@@ -1,0 +1,390 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="070.html"> 上一页</a><a href="072.html"> 下一页</a></div>
+<h1>Win32汇编教程八</h1>
+<h3> 图形界面的操作 </h3>
+<h4>有关GDI和位图</h4>
+<p>     GDI 即图形设备界面，是 Windows 最重要的部分之一，它大部分由 GDI32.DLL 库中的 
+  API 来处理，GDI 的主要目的之一是支持与设备无关的图形编程，对于 Dos 下的图形编程，很多人可能“心有余悸”，因为PC 中有太多种类的显示卡，而几乎每个显示卡的处理都是不同的，即使后来有了 
+  Vesa 编程，我们还是不能全部撇开具体的硬件，Windows GDI 使我们对图形的编程变得相对简单了很多，由于GDI 是 Windows 最庞大的部分，并不是几句话能讲清楚的，本节要讲的是 
+  Windows 下GDI 的基本处理步骤和简单的位图处理，并没有涉及到 Directx 一类的编程。只希望能对朋友们有所启发。<br>
+      Windows 并不允许程序员访问显示硬件，它的所有对屏幕的操作是通过环境设备（DC）来处理的，屏幕上的每一个窗口对应一个DC，你可以把一个DC 
+  想象成这个窗口的视频缓冲区，你对DC的操作结果会反映到屏幕上，在窗口的DC之外，你也可以自己建立DC，这相当于建立一个内存中的缓冲区，你对这个DC的操作结果保存在内存中。你也可以用 
+  API 在不同的DC之间拷贝数据，比如说你可以在内存DC 中先建立好数据，然后拷贝到窗口的DC中，就相当于完成了屏幕的刷新。<br>
+      与DC的取得、建立取消有关的API有以下几种：</p>
+<ol>
+  <li> GetDC(hWnd) - 取得某个窗口的DC，API 返回对应的 DC 句柄</li>
+  <li>ReleaseDC(hWnd,hDC) - 释放用 GetDC 取得的 DC 句柄</li>
+  <li>CreateCompatibleDC(hDC) - 从一个已知的 DC 句柄中建立一个内存 DC，各种参数、属性参考已知的 DC</li>
+  <li>DeleteDC(hDC) - 删除用CreateCompatibleDC 建立的 DC</li>
+</ol>
+<p> 上面的4个API，必须成对出现，用 GetDC 取得的DC 必须用 ReleaseDC 释放，而用 CreateCompatibleDC 建立的 DC 
+  必须用 DeleteDC 删除，不能混淆。DC 的作用范围：用 GetDC 取得的窗口 DC 必须尽快释放，你不应该在 Windows 的不同消息之间保存 
+  DC 句柄，而用 CreateCompatibleDC 建立的 DC 可以长期保存，举例说明，如果你在 WM_PAINT 和 WM_SIZE 消息中都要对窗口的 
+  DC 进行操作，你不能在 WM_INIT 时先 GetDC，然后保存句柄，最后在 WM_CLOSE 消息时 ReleaseDC，而是必须在 WM_PAINT 
+  和 WM_SIZE 开始的地方 GetDC，在消息结束的地方就 ReleaseDC，而用 CreateCompatibleDC 建立的则相反，你可以在 
+  WM_INIT 时建立，在 WM_CLOSE 时删除。<br>
+      如果想把一个位图画到 DC 中，你只需简单的用 invoke SelectObject,hDc,hBitmap 
+  就行了，是不是很简单？但图形操作并不是单单把位图放入屏幕就行了，还要涉及到位的操作，如把前景位图的边缘去掉贴入背景位图等。 Windows 的 GDI 
+  提供了下面一些 DC 间的拷贝 API，中间就包括了拷贝的模式：</p>
+<ol>
+  <li>BitBlt hDcDest,XDest,YDest,Width,Height,hDcSource,XSrc,YSrc,dwRop<br>
+    这个 API 把 hDcSource 的 XSrc,YSrc 坐标处的内容拷贝到 hDcDest 的 XDest,YDest 处，拷贝大小为 Width,Height。</li>
+  <li>PatBlt hDc,X,Y,Width,Height,dwRop 是用预定义的刷子等 Object 填充 DC</li>
+  <li>StretchBlt,hDcDest,XDest,YDest,Width,Height,hDcSource,XSrc,YSrc,WidthSrc,HeightSrc,dwRop 
+    是拷贝并自动缩放大小，你可以注意到它和 BitBlt 相比多了两个参数 WidthSrc 和 HeightSrc，别的都是一样的。</li>
+</ol>
+<p>以上API 中的 dwRop 参数是最关键的，它的值有 SRCCOPY，SRCPAINT，SRCAND，DSTINVERT 等，表示源DC 拷贝到目标DC后象素的计算方法，SRCCOPY 
+  表示用源DC覆盖目标DC，SRCPAINT是执行 OR 操作，SRCAND 是执行 AND 操作，DSTINVERT 是取反，举例说明，如果源DC中的某一点是黑色，目标DC对应的点是红色，那么用 
+  SRCCOPY后，目标DC的点变成黑色，用SRCPAINT 后还是红色，因为黑 (000000) or 红(0000ff) ＝红(0000ff)。<br>
+       对应一般对屏幕或窗口进行图形操作的步骤如下。</p>
+<ol>
+  <li>用GetDC 取得目标窗口的 DC</li>
+  <li>用 CreateCompatibleDC 建立一个内存中的 DC用作缓冲区</li>
+  <li>用 SelectObject 填充内存DC 或别的办法对内存DC进行操作，一句话，先把要显示的东西处理好</li>
+  <li>用 BitBlt 把内存DC 拷贝到窗口 DC中，完成屏幕刷新。</li>
+</ol>
+<p>本节的例子程序是一个屏幕放大镜，它把鼠标移动到的地方的屏幕内容放大一倍显示到自己的窗口中。 </p>
+<p> 源程序 - 汇编源文件</p>
+<pre class="code">;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Programmed by 罗云彬, bigluo@telekbird.com.cn
+;	Website: http://asm.yeah.net
+;	LuoYunBin's Win32 ASM page (罗云彬的编程乐园)
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	版本信息
+;	汇编教程附带源程序 - 屏幕放大器
+;	   V1.0 ------	2000年7月1日
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.386
+.model        flat, stdcall
+		option casemap :none   ; case sensitive
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Include 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     include  windows.inc
+     include  user32.inc
+     include  kernel32.inc
+     include  comctl32.inc
+     include  comdlg32.inc
+     include  gdi32.inc
+
+  includelib  user32.lib
+  includelib  kernel32.lib
+  includelib  comctl32.lib
+  includelib  comdlg32.lib
+  includelib  gdi32.lib
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	Equ 数据
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    DLG_MAIN  equ       1000
+   ID_BITMAP  equ       1001
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	数据段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.data?
+
+     hWinPic  dd        ?
+      hDcMem  dd        ?
+     hBitmap  dd        ?
+ hWinDesktop  dd        ?
+   hInstance  dd        ?
+    szBuffer  db        256 dup	(?)
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	子程序声明
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+_ProcDlgMain	PROTO	:DWORD,:DWORD,:DWORD,:DWORD
+
+.data
+
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+;	代码段
+;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.code
+
+     include  Win.asm
+
+;********************************************************************
+            _ProcDlgMain  proc      uses ebx edi esi, \
+		hWnd:DWORD,wMsg:DWORD,wParam:DWORD,lParam:DWORD
+              local     @stPoint:POINT
+              local     @hDcDesktop,@hDcPic
+
+              mov       eax,wMsg
+.if           eax == WM_CLOSE
+              invoke    EndDialog,hWnd,NULL
+              invoke    KillTimer,hWnd,1
+              invoke    DeleteDC,hDcMem
+              invoke    DeleteObject,hBitmap
+; *******************************************************************
+.elseif       eax == WM_INITDIALOG
+              invoke    GetDlgItem,hWnd,ID_BITMAP
+              mov       hWinPic,eax
+              invoke    GetDesktopWindow
+              mov       hWinDesktop,eax
+              invoke    SetWindowPos,hWnd,HWND_TOPMOST,0,0,0,0,\
+  SWP_NOMOVE  or        SWP_NOSIZE
+; *******************************************************************
+              invoke    GetDC,hWinDesktop
+              mov       @hDcDesktop,eax
+              invoke    CreateCompatibleDC,@hDcDesktop
+              mov       hDcMem,eax
+              invoke    CreateCompatibleBitmap,@hDcDesktop,80,80
+              mov       hBitmap,eax
+              invoke    SelectObject,hDcMem,hBitmap
+              invoke    ReleaseDC,hWinDesktop,@hDcDesktop
+              invoke    SetTimer,hWnd,1,100,NULL
+; *******************************************************************
+.elseif       eax == WM_TIMER
+              invoke    GetCursorPos,addr @stPoint
+              sub       @stPoint.x,20
+              sub       @stPoint.y,20
+.if           @stPoint.x < 0
+              mov       @stPoint.x,0
+.endif
+.if           @stPoint.y < 0
+              mov       @stPoint.y,0
+.endif
+              invoke    GetDC,hWinDesktop
+              mov       @hDcDesktop,eax
+              invoke    GetDC,hWinPic
+              mov       @hDcPic,eax
+              invoke    PatBlt,hDcMem,0,0,80,80,BLACKNESS
+              invoke    StretchBlt,hDcMem,0,0,80,80,\
+				@hDcDesktop,@stPoint.x,@stPoint.y,40,40,SRCCOPY
+              invoke    BitBlt,@hDcPic,0,0,80,80,\
+				hDcMem,0,0,SRCCOPY
+              invoke    ReleaseDC,hWinDesktop,@hDcDesktop
+              invoke    ReleaseDC,hWinPic,@hDcPic
+.else
+;********************************************************************
+;	注意：对话框的消息处理后，要返回 TRUE,对没有处理的消息
+;	要返回 FALSE
+;********************************************************************
+              mov       eax,FALSE
+              ret
+.endif
+              mov       eax,TRUE
+              ret
+		
+            _ProcDlgMain  endp
+;********************************************************************
+      start:
+              invoke    GetModuleHandle,NULL
+              mov       hInstance,eax
+              invoke    DialogBoxParam,hInstance,DLG_MAIN,NULL,offset _ProcDlgMain,0
+              invoke    ExitProcess,NULL
+
+              end       start
+</pre>
+<p>程序的分析和要点</p>
+<p>    在程序的初始化中，我们用GetDc 取的桌面的屏幕的 DC，再用 CreateCompatibleDC 
+  建立一个内存DC做缓冲区，建立一个位图再用 SelectObject 把 hDcMem 设置为这个位图是为了是 hDcMem 的大小变为 80x80。</p>
+<pre class="code">			invoke	GetDC,hWinDesktop
+			mov	@hDcDesktop,eax
+			invoke	CreateCompatibleDC,@hDcDesktop
+			mov	hDcMem,eax
+			invoke	CreateCompatibleBitmap,@hDcDesktop,80,80
+			mov	hBitmap,eax
+			invoke	SelectObject,hDcMem,hBitmap
+			invoke	ReleaseDC,hWinDesktop,@hDcDesktop</pre>
+<p>然后在程序的每 0.1 秒一次的 WM_TIMER 定时器消息中，我们先用 GetDC 取得桌面和对话框中文本框的句柄，然后用 PatBlt 把内存DC清除为黑色，再用 
+  StretchBlt 从桌面DC中拷贝 40x40的区域到内存 DC 中，新的大小是 80x80（放大功能就是这样实现的），拷贝的位置是用 GetCursorPos 
+  取得的，也就是鼠标的当前位置，最后用 BitBlt 把内存DC 拷贝到对话框中。如果直接把桌面DC 拷贝到对话框中也可以，但是当鼠标移动到屏幕边缘上时，由于屏幕外的点是无效的，所以对话框中的一部分会花屏，大家可以改动程序试试。</p>
+<pre class="code">			invoke	GetCursorPos,addr @stPoint
+			invoke	GetDC,hWinDesktop
+			mov	@hDcDesktop,eax
+			invoke	GetDC,hWinPic
+			mov	@hDcPic,eax
+			invoke	PatBlt,hDcMem,0,0,80,80,BLACKNESS
+			invoke	StretchBlt,hDcMem,0,0,80,80,\
+				@hDcDesktop,@stPoint.x,@stPoint.y,40,40,SRCCOPY
+			invoke	BitBlt,@hDcPic,0,0,80,80,\
+				hDcMem,0,0,SRCCOPY
+			invoke	ReleaseDC,hWinDesktop,@hDcDesktop
+			invoke	ReleaseDC,hWinPic,@hDcPic</pre>
+
+
+  <div class="rpindex"><a href="072.html"> 下一页</a><a href="070.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

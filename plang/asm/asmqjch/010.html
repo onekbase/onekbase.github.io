@@ -1,0 +1,554 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="009.html"> 上一页</a><a href="011.html"> 下一页</a></div>
+<h1>第十课 以对话框为主要界面的应用程序</h1>
+现在我们开始学习一些有关GUI编程的有趣的部分， 即：以对话框为主要界面的应用程序。我们将分两课来讲述这一过程 
+<h3>理论：</h3>
+<p>如果您仔细关注过前一个程序就会发现：您无法按TAB键从一个子窗口控件跳到另一个子窗口控件，要想转移的话只有 用鼠标一下一下地去点击。对用户来说这是不友好的。另一件事是如果您象前一课中那样把主窗口的背景色从白色改成 
+  灰色，为了子窗口控件无缝地作相应地改变，您必须细分类所有子窗口。 造成上述诸多不便的原因是子窗口控件本来是为对话框而设计的，象子窗口控件的背景色是灰色的，而对话框的背景色也是 
+  灰色的，这样它们本来就相互协调了，而无须程序员加入其他的处理。 在我们深入讨论对话框前我们必须知道何谓对话框。一个对话框其实是有很多的子窗口控件的一个窗口，WINDOWS在对话框 
+  内部有一个管理程序，由其来处理象按下TAB键则输入焦点从一个子窗口空间条到另一个子窗口控件、按下ENTER键等于在当 前具有输入焦点的子窗口控件上点击了鼠标 
+  等等这些杂事，这样程序员就可以集中精力于他们的逻辑事务了。对话框主要用 作输入输出接口，人们无须知道它们内部的工作原理，而只要知道如何和他们进行交互就可以了。这也是面向对象设计中的 
+  所谓信息隐藏。只要这个黑盒子中的实现足够完美，我们就可以放心地使用，当然我们必须强调的是“黑盒子”必须完美。 WIN32 API 内部 的实现即是一个“黑盒子”。 
+  噢，好象我们的讨论有些走题，现在让我们回到正题来，对话框的设计是为了减少程序员的工作量的，一般您如果在窗口中 自己放一个子窗口控件您就必须自己处理其中的按键逻辑和细分类它的窗口过程。如果您把它放到对话框中，则这些杂事 
+  对话框会自己处理，您只要知道如何获得用户输入的数据和如何把数据放入到子窗口控件中去就可以了。 在程序中对话框和菜单一样被定义成一种资源，您可以在脚本文件中写一个对话框模板，其中包含该对话框和子窗口的特性， 
+  然后用资源编辑器编辑。需要注意的是所有的资源必须放在同一个脚本文件中。 虽然可以用文本编辑器去编辑脚本文件，但是象要调整子窗口控件位置时要涉及到一些坐标值时最好还是用一些可视化的编 
+  辑器，这样方便多了。一般在编译器的开发包中都会带资源编辑器，您可以用它们来产生一个模板然后增删一些子窗口控件。 有两种主要的对话框：模式对话框和无模式对话框。无模式对话框允许您把输入焦点切换到（同一个应用程序的）另一个窗口，而该对话框无须关闭 
+  。比如MS WORD 中的FIND对话框。模式对话框又有两类：应用程序模式对话框和系统对话框。应用程序对话框不允许您在本 应用程序中切换输入焦点，但是可以切换到其它的应用程序中去，而系统对话框则必须您对该对话框做出响应否则不能切换到 
+  任何的应用程序中去。要创建一个无模式对话框调用API函数CreateDialogParam，而创建一个模式对话框则调用API函数DialogBoxParam。 
+  其中应用程序模式对话框和系统模式对话框之间的差别是style参数不同，要想创建一个系统模式对话框该参数必须“或”上 DS_SYSMODAL标志位。在对话框中若要和子窗口控件通讯则调用函数SendDlgItemMesage。该函数的语法如下：</p>
+<pre class="code">
+      SENDDLGITEMMESSAGE  PROTO     HWNDDLG:DWORD,\
+idControl:DWORD,\ 
+uMsg:DWORD,\ 
+wParam:DWORD,\ 
+     LPARAM:  DWORD</pre>
+<p> 该PAI函数对于用在向子窗口控件发送方面是非常有用的。譬如:如果您想得到编辑控件中的字符串可以这么做:
+</p>
+<pre class="code">              CALL      SENDDLGITEMMESSAGE, HDLG, ID_EDITBOX, WM_GETTEXT, 256, ADDR TEXT_BUFFER</pre>
+具体要发送那些消息应当查询有关的WIN32 API 参考手册。
+WINDOWS 还 提供几个快速存取控件数据的函数。譬如：GetDlgItemText、CheckDlgButton等。这样一来，您就可以不用去查询每个消息的wParam和lParam参数获得相关信息了。您应尽可能地使用这些API 函数，这样使得您的代码将来比较容易维护。
+对话框的管理函数会把一些消息发送给一个特定的回调函数：对话框过程处理函数，该函数的格式为：
+<pre class="code">     DLGPROC  PROTO     HDLG:DWORD ,\
+       IMSG:  DWORD     ,\
+     WPARAM:  DWORD     ,\
+     LPARAM:  DWORD</pre>
+该函数的格式非常类似于窗口的过程函数，除了返回值是TURE和FALSE，而不是HRESULT，存在于WINDOWS内部的对话框管理器才是对话框真正的窗口过程函数。它会把某些消息传递给我们的窗口过程函数。所以当我们的窗口过程函数处理这些消息时就返回TTRUE，否则就在eax中返回FALSE。这也意味着我们的窗口过程函数在接受到自己不处理的消息时并不会调用DefWindowProc函数，因为它本身不是一个真正的窗口过程函数。
+对于对话框有两种用法：一种是把它作为一个主窗口来用，一种是把它作为一种输入输出设备使用。本课中我们将示范第一种用法。“把对话框用作主窗口”有两种意思：
+1。您可以调用RegisterClassEx函数把对话框模板注册为一个窗口类。这样该对话框的行为就类似于一个普通的窗口了：它通过在注册窗口时指定的窗口过程来处理所有的消息，通过这种方法来使用对话框的好处是您不需要显示地创建子窗口控件，WINDOWS本身会帮您创建好，另外还会帮您处理所有的按键逻辑，另外您还可以指定您窗口类结构中的光标和图标；
+2。您的应用程序创建没有父窗口的对话框窗口，这种方法中，没有必要需要一段处理消息循环的代码，因为所有的消息被直接送到对话框过程处理函数，这样您也可以不要注册一个窗口类。
+本课中我门将先使用第一种方法然后使用第二中方法。
+<h3> 例子：</h3>
+<pre class="code">dialog.asm 
+
+
+.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB .DATA
+   CLASSNAME  DB        "DLGCLASS",0
+    MENUNAME  DB        "MYMENU",0
+     DLGNAME  DB        "MYDIALOG",0
+     APPNAME  DB        "OUR FIRST DIALOG BOX",0
+  TESTSTRING  DB        "WOW! I'm in an edit box now",0
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+      BUFFER  DB        512 DUP(?)
+
+.CONST
+    IDC_EDIT  EQU       3000
+  IDC_BUTTON  EQU       3001
+    IDC_EXIT  EQU       3002
+ IDM_GETTEXT  EQU       32000
+   IDM_CLEAR  EQU       32001
+    IDM_EXIT  EQU       32002
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HDLG:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,DLGWINDOWEXTRA
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_BTNFACE+1
+              MOV       WC.LPSZMENUNAME,OFFSET MENUNAME
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEDIALOGPARAM,HINSTANCE,ADDR DLGNAME,NULL,NULL,NULL
+              MOV       HDLG,EAX
+              INVOKE    SHOWWINDOW, HDLG,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HDLG
+              INVOKE    GETDLGITEM,HDLG,IDC_EDIT
+              INVOKE    SETFOCUS,EAX
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    ISDIALOGMESSAGE, HDLG, ADDR MSG
+.IF           EAX ==FALSE
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDIF
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_GETTEXT
+              INVOKE    GETDLGITEMTEXT,HWND,IDC_EDIT,ADDR BUFFER,512
+              INVOKE    MESSAGEBOX,NULL,ADDR BUFFER,ADDR APPNAME,MB_OK
+.ELSEIF       AX==IDM_CLEAR
+              INVOKE    SETDLGITEMTEXT,HWND,IDC_EDIT,NULL
+.ELSE
+              INVOKE    DESTROYWINDOW,HWND
+.ENDIF
+.ELSE
+              MOV       EDX,WPARAM
+              SHR       EDX,16
+.IF           DX==BN_CLICKED
+.IF           AX==IDC_BUTTON
+              INVOKE    SETDLGITEMTEXT,HWND,IDC_EDIT,ADDR TESTSTRING
+.ELSEIF       AX==IDC_EXIT
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_EXIT,0
+.ENDIF
+.ENDIF
+.ENDIF
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START
+Dialog.rc 
+
+
+#include "resource.h" 
+
+#define IDC_EDIT 3000 
+#define IDC_BUTTON 3001 
+#define IDC_EXIT 3002 
+
+#define IDM_GETTEXT 32000 
+#define IDM_CLEAR 32001 
+#define IDM_EXIT 32003 
+
+
+MyDialog DIALOG 10, 10, 205, 60 
+STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX | 
+WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK 
+CAPTION "Our First Dialog Box" 
+CLASS "DLGCLASS" 
+BEGIN 
+EDITTEXT IDC_EDIT, 15,17,111,13, ES_AUTOHSCROLL | ES_LEFT 
+DEFPUSHBUTTON "Say Hello", IDC_BUTTON, 141,10,52,13 
+  PUSHBUTTON  "E&XIT",          IDC_EXIT, 141,26,52,13, WS_GROUP
+              END
+
+
+MyMenu MENU 
+BEGIN 
+POPUP "Test Controls" 
+BEGIN 
+MENUITEM "Get Text", IDM_GETTEXT 
+MENUITEM "Clear Text", IDM_CLEAR 
+MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/ 
+    MENUITEM  "E&XIT",          IDM_EXIT
+              END
+              END</pre>
+
+<h3> 分析：</h3>
+我们先来分析第一个例子： <br>
+该例显示了如何把一个对话框模板注册成一个窗口类，然后创建一个由该窗口类派生的窗口。由于您没有必要自己去创建子窗口控件，所以就简化了许多的工作。<br>
+我们先来分析对话框模板。
+<pre class="code">MyDialog DIALOG 10, 10, 205, 60 </pre>
+
+<p>先是对话框的名字，然后是关键字“DAILOG”。接下来的四个数字中，前两个是对话框的坐标，后两个是对话框的宽和高（注意：它们的单位是对话框的单位，而不一定是像素点）。
+<pre class="code">STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX | 
+WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK </pre>
+
+<p>上面定义了对话框的风格。 
+<pre class="code">CAPTION "Our First Dialog Box" </pre>
+
+<p>这是显示在对话框标题条上的标题。 
+<pre class="code">CLASS "DLGCLASS" </pre>
+<p>这一行非常关键。正是有了关键字CLASS，我们才可以用它来声明把一个对话框当成一个窗口来用。跟在关键字后面的是“窗口类”的名称。
+<pre class="code">BEGIN 
+EDITTEXT IDC_EDIT, 15,17,111,13, ES_AUTOHSCROLL | ES_LEFT 
+DEFPUSHBUTTON "Say Hello", IDC_BUTTON, 141,10,52,13 
+  PUSHBUTTON  "E&XIT",          IDC_EXIT, 141,26,52,13
+              END</pre>
+
+<p>上面的一块定义了对话框中的子窗口控件，它们是声明在一头一尾的两个关键字BEGIN和END之间的。
+
+  control-type  "text"   ,controlID, x, y, width, height [,styles] 
+
+控件的类型是资源编辑器定义好了的常数，您可以查找有关的手册。 
+<br>
+现在我们来看看汇编源代码。先看这部分： 
+
+  mov   wc.cbWndExtra,DLGWINDOWEXTRA <br>
+  mov   wc.lpszClassName,OFFSET ClassName 
+
+通常cbWndExtra被设成NULL，但我们想把一个对话框模板注册成一个窗口类，我们必须把该成员的值设成DLGWINDOWEXTRA。注意类的名称必须和模板中跟在CLASS关键字后面的名称一样。余下的成员变量和声明一般的窗口类相同。填写好窗口类结构变量后调用函数RegisterClassEx进行注册。看上去这一切和注册一个普通的窗口类是一样的。 
+
+  invoke CreateDialogParam,hInstance,ADDR DlgName,NULL,NULL,NULL 
+
+注册完毕后，我们就创建该对话框。在这个例子中，我们调用函数CreateDialogParam产生一个无模式对话框。这个函数共有5个参数，其中前两个参数是必须的：实例句柄和指向对话框模板名称的指针。注意第二个参数是指向模板名称而不是类名称的指针。这时，WINDOWS将产生对话框和子控件窗口。同时您的应用程序将接收到由WINDOWS传送的第一个消息WM_CREATE。 
+
+  invoke GetDlgItem,hDlg,IDC_EDIT <br>
+  invoke SetFocus,eax 
+
+在对话框产生后，我们把输入输出焦点设到编辑控件上。如果在WM_CREATE消息处理段中假如设置焦点的代码，GetDlgItem函数就会失败，因为此时空间窗口还未产生，为了在对话框和所有的子窗口控件都产生后调用该函数我们把它安排到了函数UpdatWindow后，GetDlgItem函数返回该控件的敞口句柄。 
+<pre class="code">              INVOKE    ISDIALOGMESSAGE, HDLG, ADDR MSG
+.IF           EAX ==FALSE
+              INVOKE    TRANSLATEMESSAGE, ADDR MSG
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDIF</pre>
+
+<p>现在程序进入消息循环，在我们翻译和派发消息前，该函数使得对话框内置的对话框管理程序来处理有关的键盘跳转逻辑。如果该函数返回TRUE，则表示消息是传给对话框的已经由该函数处理了。注意和前一课不同，当我们想得到控件的文本信息时调用GetDlgItemText函数而不是GetWindowText函数，前者接受的参数是一个控件的ID 号，而不是窗口的句柄，这使得在对话框中调用该函数更方便。<br>
+
+<br>
+好我们现在使用第二种方法把一个对话框当成一个主窗口来使用。在接下来的例子中，我们将产生一个应用程序的模式对话框，您将会发现其中根本没有消息循环或窗口处理过程，因为它们根本没有必要！
+<pre class="code">dialog.asm (part 2) 
+
+
+.386
+.MODEL        FLAT,STDCALL
+option casemap:none 
+
+DlgProc proto :DWORD,:DWORD,:DWORD,:DWORD 
+
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+
+.DATA
+     DLGNAME  DB        "MYDIALOG",0
+     APPNAME  DB        "OUR SECOND DIALOG BOX",0
+  TESTSTRING  DB        "WOW! I'm in an edit box now",0
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+      BUFFER  DB        512 DUP(?)
+
+.CONST
+    IDC_EDIT  EQU       3000
+  IDC_BUTTON  EQU       3001
+    IDC_EXIT  EQU       3002
+ IDM_GETTEXT  EQU       32000
+   IDM_CLEAR  EQU       32001
+    IDM_EXIT  EQU       32002
+
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    DIALOGBOXPARAM, HINSTANCE, ADDR DLGNAME,NULL, ADDR DLGPROC, NULL
+              INVOKE    EXITPROCESS,EAX
+
+     DLGPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+.IF           UMSG==WM_INITDIALOG
+              INVOKE    GETDLGITEM, HWND,IDC_EDIT
+              INVOKE    SETFOCUS,EAX
+.ELSEIF       UMSG==WM_CLOSE
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_EXIT,0
+.ELSEIF       UMSG==WM_COMMAND
+              MOV       EAX,WPARAM
+.IF           LPARAM==0
+.IF           AX==IDM_GETTEXT
+              INVOKE    GETDLGITEMTEXT,HWND,IDC_EDIT,ADDR BUFFER,512
+              INVOKE    MESSAGEBOX,NULL,ADDR BUFFER,ADDR APPNAME,MB_OK
+.ELSEIF       AX==IDM_CLEAR
+              INVOKE    SETDLGITEMTEXT,HWND,IDC_EDIT,NULL
+.ELSEIF       AX==IDM_EXIT
+              INVOKE    ENDDIALOG, HWND,NULL
+.ENDIF
+.ELSE
+              MOV       EDX,WPARAM
+              SHR       EDX,16
+.IF           DX==BN_CLICKED
+.IF           AX==IDC_BUTTON
+              INVOKE    SETDLGITEMTEXT,HWND,IDC_EDIT,ADDR TESTSTRING
+.ELSEIF       AX==IDC_EXIT
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_EXIT,0
+.ENDIF
+.ENDIF
+.ENDIF
+.ELSE
+              MOV       EAX,FALSE
+              RET
+.ENDIF
+              MOV       EAX,TRUE
+              RET
+     DLGPROC  ENDP
+              END       START
+dialog.rc (part 2) 
+
+
+#include "resource.h" 
+
+#define IDC_EDIT 3000 
+#define IDC_BUTTON 3001 
+#define IDC_EXIT 3002 
+
+#define IDR_MENU1 3003 
+
+#define IDM_GETTEXT 32000 
+#define IDM_CLEAR 32001 
+#define IDM_EXIT 32003 
+
+
+MyDialog DIALOG 10, 10, 205, 60 
+STYLE 0x0004 | DS_CENTER | WS_CAPTION | WS_MINIMIZEBOX | 
+WS_SYSMENU | WS_VISIBLE | WS_OVERLAPPED | DS_MODALFRAME | DS_3DLOOK 
+CAPTION "Our Second Dialog Box" 
+MENU IDR_MENU1 
+BEGIN 
+EDITTEXT IDC_EDIT, 15,17,111,13, ES_AUTOHSCROLL | ES_LEFT 
+DEFPUSHBUTTON "Say Hello", IDC_BUTTON, 141,10,52,13 
+  PUSHBUTTON  "E&XIT",          IDC_EXIT, 141,26,52,13
+              END
+
+
+IDR_MENU1 MENU 
+BEGIN 
+POPUP "Test Controls" 
+BEGIN 
+MENUITEM "Get Text", IDM_GETTEXT 
+MENUITEM "Clear Text", IDM_CLEAR 
+MENUITEM "", , 0x0800 /*MFT_SEPARATOR*/ 
+    MENUITEM  "E&XIT",          IDM_EXIT
+              END
+              END</pre>
+
+<p> 
+
+<br>
+分析如下： 
+<pre class="code">DlgProc proto :DWORD,:DWORD,:DWORD,:DWORD </pre>
+
+<p>我们已经定义了DlgProc函数的原型，所以可以用操作符ADDR来获得它的地址（记得吗，它可以在运行时动态地获得标识符的有效地址）：
+<pre class="code">              INVOKE    DIALOGBOXPARAM, HINSTANCE, ADDR DLGNAME,NULL, ADDR DLGPROC, NULL</pre>
+
+<p>上面的几行调用了函数DialogBoxPAram，该函数有五个参数，分别是：实例句柄、对话框模板的名字、父窗口的句柄、对话框过程函数的地址、和对话框相关的数据。该函数产生一个模式对话框。如果不显示地关闭该函数不会返回。 
+<pre class="code">.IF           UMSG==WM_INITDIALOG
+              INVOKE    GETDLGITEM, HWND,IDC_EDIT
+              INVOKE    SETFOCUS,EAX
+.ELSEIF       UMSG==WM_CLOSE
+              INVOKE    SENDMESSAGE,HWND,WM_COMMAND,IDM_EXIT,0</pre>
+
+<p>除了不处理WM_CREATE消息外对话框的窗口处理过程函数和一般的窗口处理过程相似。该过程函数接收到的第一个消息是WM_INITDIALOG。通常把初始化的代码放到此处。注意如果您处理该消息必须在eax中返回TRUE。内置的对话框管理函数不会把WM_DESTROY 消息发送到对话框的消息处理函数，所以如果我们想在对话框关闭时进行处理，就把它放到WM_CLOSE消息的处理中。在我们的例子中我们发送消息WM_COMMAND，并在参数wParam中放置IDM_EXIT，这和处理WM_CLOSE 消息效果一样，在处理IDM_EXIT 中我们调用EndDialog函数。
+如果我们想要销毁一个对话框，必须调用EndDialog函数，该函数并不会立即销毁一个窗口，而是设置一个标志位，然后对话框管理器会处理接下去的销毁对话框动作。
+好，现在我们来看看资源文件，其中最显著的变化是在指定菜单时我们不是用字符串指定该菜单的名称而是用了一个常量 IDR_MENU1。在调用DialogBoxParam产生的对话框中挂接一个菜单必须这么做，注意在该对话框模板中，在该标识符前必须加MENU关键字，这两个例子中的显著不同是后者没有图标，这可以在处理WM_INITDIALOG中发送消息WM_SETICON消息，然后在该消息处理代码中作适当的处理即可。
+</p>
+  <div class="rpindex"><a href="011.html"> 下一页</a><a href="009.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

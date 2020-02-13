@@ -1,0 +1,689 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="096.html"> 上一页</a><a href="098.html"> 下一页</a></div>
+<h1>图形显示方式屏幕的保存和恢复</h1>
+<h2>概述：</h2>
+在程序中常常要暂时的保存图形显示方式屏幕上的内容，然后把自己的信息输出到屏幕上，结束后再恢复原来的屏幕内容，特别在内存驻留程序弹出一个窗口时更要用到，但是图形方式下显示缓冲区的容量巨大，在常用的 
+  80 x 25 文本方式下，显示缓冲区仅大小仅为 80 x 25 x 2 = 4000 字节，而在模式 13H 320 x 200 x 256 色时为 
+  320 x 200 = 64000 字节，现在常用的高彩色、真彩色下如 800 x 600 x 65535 色时为 800 x 600 x 2 = 960000 
+  字节，涉及到如此大的数据量程序必须使用磁盘交换方法或用到 XMS 做为数据保存缓冲区，使编程复杂化。<br>
+      本文用了 INT 10H 中不清除显示内存设置新显示模式的方法，使不管在什么显示方式下，用到的缓冲区大下都在 10K 
+  左右，即使在 1024 x 768 x 16.7M 色也能正常保存。<br>
+      本程序的适用范围为保存屏幕后自己的程序仅仅使用文本模式 3 的情况，如果要用到图形模式，那么还是要保存全部的显示缓冲区。在兼容性方面，由于使用 
+  VESA 标准功能，在现在的 PCI/VESA 显示卡上都能正常运行，我发现唯一不能运行的是有一段时期生产的 TVGA 8900/9000 卡，因为此卡在 
+  VESA 功能刚出现的时候生产，支持 VESA 的伪彩色显示模式，却又不支持很多其他的 VESA 功能。大家找到克服的方法告诉我一声。<br>
+      本程序要用到的一些中断的说明如下：</p>
+
+<p>INT 10H 的 00H 功能，设置显示模式：</p>
+
+<table>
+  <tr>
+    <td width="33%" bgcolor="#0000FF">功能</td>
+    <td width="33%" bgcolor="#0000FF">入口参数</td>
+    <td width="34%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="2">INT 10H 的 00H功能<br>
+    设置显示模式</td>
+    <td width="33%" bgcolor="#C8C8FF">AH = 00H</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="2">　</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">AL = 模式(如果位 7 
+    置位，则不清除显示缓冲区)</td>
+  </tr>
+</table>
+
+<p>INT 10H 的 1BH 功能，检测是否 VGA 卡：</p>
+
+<table>
+  <tr>
+    <td width="33%" bgcolor="#0000FF">功能</td>
+    <td width="33%" bgcolor="#0000FF">入口参数</td>
+    <td width="34%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="4">INT 10H 的 1BH功能<br>
+    取 VGA/MCGA 的功能、状态信息</td>
+    <td width="33%" bgcolor="#C8C8FF">AH = 1BH</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="2">AL = 1BH 成功(说明显示卡为 
+    VGA 以上）<br>
+    ES:DI 返回状态信息</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="2">BX = 0000</td>
+  </tr>
+  <tr>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="2">AL &lt;&gt; 1BH 非VGA/MCGA 
+    显示卡</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:DI 指向 64 字节缓冲区</td>
+  </tr>
+</table>
+
+<p>INT 10H 的 1CH 功能，保存/恢复视频状态：</p>
+
+<table>
+  <tr>
+    <td width="33%" bgcolor="#0000FF">功能</td>
+    <td width="33%" bgcolor="#0000FF">入口参数</td>
+    <td width="34%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">INT 10H 的 1C00H 功能<br>
+    返回状态缓冲区容量</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 1C00H</td>
+    <td width="34%" bgcolor="#C8C8FF">AL = 1CH 成功<br>
+    BX = 需要的 64 字节块数目</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="2">INT 10H 的 1C01H 
+    功能<br>
+    保存视频状态</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 1C01H</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="2">　</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:BX 指向缓冲区</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="3">INT 10H 的 1C02H 
+    功能<br>
+    恢复视频状态</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 1C01H</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="3">　</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">CX = 要求的状态<br>
+      位 0 = 恢复视频硬件状态<br>
+      位 1 = BIOS 数据区<br>
+      位 2 = 彩色寄存器和 DAC 状态</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:BX 指向缓冲区(用1C01H功能保存下来的)</td>
+  </tr>
+</table>
+
+<p>INT 10H 的 4FH 功能，VESA 功能：</p>
+
+<table>
+  <tr>
+    <td width="33%" bgcolor="#0000FF">功能</td>
+    <td width="33%" bgcolor="#0000FF">入口参数</td>
+    <td width="34%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="2">INT 10H 的 4F00H功能<br>
+    取显示卡 VESA 信息</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 4F00H</td>
+    <td width="34%" bgcolor="#C8C8FF">AL = 4FH 说明显示卡支持VESA 
+    <br>
+    AH = 00H 成功<br>
+    AH = 01H  失败</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:DI 指向缓冲区 (256 字节)</td>
+    <td width="34%" bgcolor="#C8C8FF">AL &lt;&gt; 4FH 显示卡不支持VESA 
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="2">INT 10H 的 4F05H功能<br>
+    控制对 VESA 显示卡视频 RAM 的访问</td>
+    <td width="33%" bgcolor="#C8C8FF">BH = 00H 选视频内存窗口<br>
+    DX = 视频内存窗口地址</td>
+    <td width="34%" bgcolor="#C8C8FF">AH = 00H 成功<br>
+    AH = 01H  失败</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">BH = 01H 取视频内存窗口</td>
+    <td width="34%" bgcolor="#C8C8FF">AH = 00H 成功<br>
+    DX = 视频内存窗口地址<br>
+    AH = 01H  失败</td>
+  </tr>
+</table>
+
+<p>INT 33H 的 16H/17H 功能，保存/恢复鼠标驱动程序状态：</p>
+
+<table>
+  <tr>
+    <td width="33%" bgcolor="#0000FF">功能</td>
+    <td width="33%" bgcolor="#0000FF">入口参数</td>
+    <td width="34%" bgcolor="#0000FF">出口参数</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">INT 33H 的 0015H功能<br>
+    确定保存鼠标驱动程序状态所需<br>
+    的空间</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 0015H</td>
+    <td width="34%" bgcolor="#C8C8FF">BX = 所需大小</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="3">INT 33H 的 0016H功能<br>
+    保存鼠标驱动程序状态</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 0016H</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="3">　</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">BX = 缓冲区大小(用 0015H 
+    获得)</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:DX 指向缓冲区</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF" rowspan="3">INT 33H 的 0017H功能<br>
+    恢复鼠标驱动程序状态</td>
+    <td width="33%" bgcolor="#C8C8FF">AX = 0017H</td>
+    <td width="34%" bgcolor="#C8C8FF" rowspan="3">　</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">BX = 缓冲区大小(用 0015H 
+    获得)</td>
+  </tr>
+  <tr>
+    <td width="33%" bgcolor="#C8C8FF">ES:DX 指向缓冲区</td>
+  </tr>
+</table>
+
+<p>源程序：<br>
+<pre class="code">;by Luo Yun Bin
+;http://asm.yeah.net 
+
+;这个子程序用来检测显示卡的类型，鼠标状态等等
+;在程序初始化时执行
+
+;文中要用到的一些缓冲区请自己定义，注意大小！
+
+        FLAG  DB        ?           ;标志位，位 7 置 1 表示安装了鼠标
+    VGA_TYPE  DB        ?           ;显示卡类型
+  VIDEO_MODE  DB        ?           ;显示模式
+    VGA_WIN1  DW        ?           ;视频窗口,暂存 VESA 的窗口状态
+    VGA_WIN2  DW        ?           ;
+    VGA_WIN3  DW        ?           ;
+
+                ...
+
+    TEST_VGA  PROC
+
+              PUSH      0           ;检测是否安装鼠标驱动程序
+              POP       DS
+              CMP       WORD PTR DS:[33H*4],0
+              JZ        NO_MOUSE
+              OR        CS:FLAG,10000000B       ;has mouse installed
+   NO_MOUSE:
+              PUSH      CS
+              POP       DS
+              MOV       AH,1BH      ;检测是否是 VGA 以上显示卡
+              XOR       BX,BX
+              MOV       DI,OFFSET FILE_END
+              INT       10H
+              CMP       AL,1BH
+              JNZ       TV_NO_VGA
+              MOV       AX,4F00H    ;检测是否支持 VESA 功能
+              MOV       DI,OFFSET FILE_END
+              INT       10H
+              CMP       AL,4FH
+              JZ        TV_IS_VESA
+              MOV       DX,3C4H     ;检测是否 TVGA 9000 卡
+              MOV       AL,0EH      ;这一段是照抄的，找不到资料
+              OUT       DX,AL
+              INC       DX
+              IN        AL,DX
+              MOV       BL,AL
+              XOR       AL,AL
+              OUT       DX,AL
+              IN        AL,DX
+              XCHG      AL,BL
+              OUT       DX,AL
+              TEST      BL,2
+              JNZ       TV_IS_TVGA
+              MOV       DX,3CDH     ;检测是否 ET6000 卡
+              IN        AL,DX
+              MOV       AH,AL
+              MOV       AL,11H
+              OUT       DX,AL
+              IN        AL,DX
+              XCHG      AH,AL
+              OUT       DX,AL
+              CMP       AH,11H
+              JZ        TV_IS_TSENG
+              MOV       VGA_TYPE,4
+              RET
+ TV_IS_VESA:
+              MOV       VGA_TYPE,1
+              RET
+ TV_IS_TVGA:
+              MOV       VGA_TYPE,2
+              RET
+            TV_IS_TSENG:
+              MOV       VGA_TYPE,3
+              RET
+  TV_NO_VGA:
+              INT       20H         ;非 VGA 卡退出
+
+    TEST_VGA  ENDP
+
+                ...
+
+;================================================================
+;保存显示缓冲区内容并设置新的显示模式到 80 x 25 文本 (模式 3）
+    SAVE_SCR  PROC
+              PUSH      DS
+              PUSH      ES
+              TEST      FLAG,10000000B          ;见前面
+              JZ        SS_NO_MOUSE
+              MOV       AX,16H      ;保存鼠标状态
+              MOV       DX,OFFSET MOUSE_BUFFER
+              INT       33H
+            SS_NO_MOUSE:
+              MOV       AX,1C01H    ;保存视频状态
+              MOV       BX,OFFSET VIDEO_BUFFER
+              MOV       CX,7
+              INT       10H
+              MOV       AH,0FH      ;保存原显示模式
+              INT       10H
+              MOV       VIDEO_MODE,AL
+              CMP       AL,3        ;80 x 25 x 16 色
+              JZ        SS_MODE3
+              CMP       AL,7        ;80 x 25 黑白
+              JZ        SS_MODE7
+              XOR       AX,AX       ;以下为图形方式保存显示缓冲区
+              CALL      VGA_PAGE
+              CALL      VGA_BASE
+              CALL      SAVE_VRAM
+              MOV       AX,0083H    ;设置新的显示模式，不清除显示内存
+              INT       10H
+
+              PUSH      0B800H
+              POP       DS          ;保存显示内存
+              XOR       SI,SI
+              MOV       CX,1000H
+              MOV       DI,OFFSET RAM_BUFFER
+              PUSH      CS
+              PUSH      DS
+              CLD
+              REP       MOVSB
+              XOR       DI,DI       ;
+              MOV       CX,80*25
+              MOV       AX,57B1H    ;填充背景，不然有乱字符
+              CLD
+              REP       STOSW
+    SCR_RET:
+              POP       ES
+              POP       DS
+              RET
+   SS_MODE3:
+              CALL      SAVE_VRAM   ;显示模式 3 保存显示 RAM
+              JMP       SHORT SCR_RET
+   SS_MODE7:
+              PUSH      0B000H      ;显示模式 7 保存显示 RAM
+              POP       DS
+              CALL      SAVE_VRAM1
+              MOV       AX,3
+              INT       10H
+              CALL      RESTORE_VRAM
+              JMP       SHORT SCR_RET
+    SAVE_SCR  ENDP
+   SAVE_VRAM  PROC
+              PUSH      0B800H      ;把显示内存保存到自己的缓冲区
+              POP       DS
+ SAVE_VRAM1:
+              PUSH      CS
+              POP       DS
+              XOR       SI,SI
+              MOV       DI,OFFSET RAM_BUFFER
+              MOV       CX,2000H
+              CLD
+              REP       MOVSB
+              RET
+
+   SAVE_VRAM  ENDP
+            RESTORE_VRAM  PROC
+
+              PUSH      0B800H      ;恢复显示缓冲区内容
+              POP       ES
+          RESTORE_VRAM1:
+              XOR       DI,DI
+              PUSH      CS
+              POP       DS
+              MOV       SI,OFFSET RAM_BUFFER
+              MOV       CX,2000H
+              CLD
+              REP       MOVSB
+              RET
+
+            RESTORE_VRAM  ENDP
+    VGA_PAGE  PROC
+              CMP       VGA_TYPE,1
+              JNZ       OTHER_VGA1
+              CMP       AH,1
+              JZ        VP_VESA2
+              CMP       AH,2
+              JZ        VP_VESA1
+              MOV       AX,4F05H    ;保存 VESA 显示卡状态
+              MOV       BX,0100H
+              INT       10H
+              MOV       VGA_WIN1,DX
+              MOV       AX,4F05H
+              MOV       BX,0101H
+              INT       10H
+              MOV       VGA_WIN2,DX
+   VP_VESA1:
+              MOV       AX,4F05H
+              XOR       BX,BX
+              XOR       DX,DX
+              INT       10H
+              MOV       AX,4F05H
+              MOV       BX,0001H
+              XOR       DX,DX
+              INT       10H
+              RET
+   VP_VESA2:
+              MOV       AX,4F05H
+              XOR       BX,BX
+              MOV       DX,VGA_WIN1
+              INT       10H
+              MOV       AX,4F05H
+              MOV       BX,0001H
+              MOV       DX,VGA_WIN2
+              INT       10H
+              RET
+ OTHER_VGA1:
+              CMP       VGA_TYPE,3
+              JNZ       OTHER_VGA2
+              MOV       DX,3CDH
+              CMP       AH,1
+              JZ        VP_TSENG2
+              CMP       AH,2
+              JZ        VP_TSENG1
+              IN        AL,DX
+              MOV       VGA_WIN3,AL
+  VP_TSENG1:
+              XOR       AL,AL
+              OUT       DX,AL
+              RET
+  VP_TSENG2:
+              MOV       AL,VGA_WIN3
+              OUT       DX,AL
+     VP_RET:
+              RET
+ OTHER_VGA2:
+              CMP       VGA_TYPE,2
+              JNZ       VP_RET
+              MOV       AL,0EH
+              MOV       DX,03C4H
+              CMP       AH,1
+              JZ        VP_TVGA2
+              OUT       DX,AL
+              INC       DX
+              IN        AL,DX
+              CMP       AH,2
+              JZ        VP_TVGA1
+              MOV       VGA_WIN3,AL
+              XOR       AL,AL
+              OUT       DX,AL
+              RET
+   VP_TVGA1:
+              MOV       AL,2
+              OUT       DX,AL
+              RET
+   VP_TVGA2:
+              MOV       AH,VGA_WIN3
+              OUT       DX,AX
+              RET
+    VGA_PAGE  ENDP
+    VGA_BASE  PROC
+              MOV       DX,3C4H     ;这一段是照抄的，找不到资料
+              MOV       AX,402H
+              OUT       DX,AX
+              MOV       AX,704H
+              OUT       DX,AX
+              MOV       DX,3CEH
+              MOV       AX,0FF08H
+              OUT       DX,AX
+              MOV       AX,0C06H
+              OUT       DX,AX
+              MOV       AX,204H
+              OUT       DX,AX
+              MOV       AX,5
+              OUT       DX,AX
+              RET
+    VGA_BASE  ENDP
+
+;====================================================
+;本子程序为恢复原来的显示内容
+;在自己的程序执行完后使用
+ RESTORE_SCR  PROC
+              PUSH      CS
+              POP       DS
+              MOV       AL,VIDEO_MODE           ;根据不同的原显示模式不同处理
+              CMP       AL,3
+              JZ        RS_MODE3
+              CMP       AL,7
+              JZ        RS_MODE7
+              PUSH      0B800H      ;以下为图形方式恢复显示内容
+              POP       ES
+              PUSH      CS
+              POP       DS
+              MOV       SI,OFFSET RAM_BUFFER
+              XOR       DI,DI
+              MOV       CX,1000H
+              CLD
+              REP       MOVSB       ;恢复显示 RAM
+
+              MOV       AH,2
+              CALL      VGA_PAGE
+              CALL      VGA_BASE
+              CALL      RESTORE_VRAM
+              XOR       AH,AH       ;恢复到原来的显示模式
+              MOV       AL,VIDEO_MODE
+              OR        AL,80H
+              INT       10H
+              MOV       AH,1
+              CALL      VGA_BASE
+              JMP       SHORT RS_MODE31
+   RS_MODE3:
+              CALL      RESTORE_VRAM
+  RS_MODE31:
+              PUSH      CS
+              POP       ES
+              PUSH      CS
+              POP       DS
+              MOV       AX,1C02H    ;恢复视频状态
+              MOV       BX,OFFSET VIDEO_BUFFER
+              MOV       CX,7
+              INT       10H
+              TEST      FLAG,10000000B
+              JZ        RS_NO_MOUSE
+              MOV       AX,17H      ;恢复鼠标状态
+              MOV       DX,OFFSET MOUSE_BUFFER
+              INT       33H
+            RS_NO_MOUSE:
+              RET
+   RS_MODE7:
+              MOV       AX,7        ;显示模式 7 恢复
+              INT       10H
+              PUSH      0B000H
+              POP       ES
+              CALL      RESTORE_VRAM1
+              JMP       SHORT RS_MODE31
+ RESTORE_SCR  ENDP
+</pre>
+
+
+  <div class="rpindex"><a href="098.html"> 下一页</a><a href="096.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

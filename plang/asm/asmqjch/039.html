@@ -1,0 +1,395 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="038.html"> 上一页</a><a href="040.html"> 下一页</a></div><h1 align="center">准备与使用语句</h1>
+<p>继续我们的学习,在这一章，我们来看看如何通过ODBC来操作数据源.</p>
+<p>在上一章,我们已学习了第一步，怎样连接一个数据源。一个连接定义了用户与数据源的数据通道.它是静态的.如果要想操作数据源，我们就必须使用语句(statement).可以认为语句就是发给数据源的命令.这个"命令"必须用SQL写成.通过使用语句,我们就可以修改数据源的结构、在其中执行查询、修改及删除数据.</p>
+<p>准备及使用语句可分为以下几个步骤:</p><font>
+<ol>
+<li>分配一个语句句柄(statement handle)</li>
+<li>创建SQL语句</li>
+<li>执行语句</li>
+<li>销毁语句</li>
+</ol>
+<h4>分配一个语句句柄</h4>
+<p>可以通过调用函数 
+SQLAllocHandle来分配一个语句句柄。例子如下：</p>
+<pre class="code">.data?
+       hStmt  dd        ?
+
+.code
+......
+              invoke    SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt</pre >
+<h4>创建SQL语句</h4>
+<p>这部分你就得靠自己了你必须知道SQL的语法.比如说,当你想创建一个表时，你就得知道CREATE TABLE语句. </p>
+<h4>执行语句</h4>
+<p>执行语句有四种方法,由它们是否被数据库引擎编译过（准备好）及被怎样定义有关.</p>
+<table>
+<tr> 
+<td bgcolor="#000099">直接执行(Direct Execution)</td>
+<td bgcolor="#003333">由用户程序定义SQL语句.语句在运行时(runtime)被编译并执行.</td>
+</tr>
+<tr> 
+<td bgcolor="#000099">编译执行(Prepared Execution)</td>
+<td bgcolor="#003333">也是由用户程序定义SQL语句，但编译和执行被分为两步：首先SQL被准备好(被编译)，接下来被执行.通过这种方法,我们可以只编译SQL语句一次但执行相同的语句多次以节省时间.</td>
+</tr>
+<tr> 
+<td bgcolor="#000099">存储过程(Procedures)</td>
+<td bgcolor="#003333">SQL语句被编译并存放在数据源内，用户程序可以在运行时调用这些语句.</td>
+</tr>
+<tr> 
+<td bgcolor="#000099">目录(Catalog)</td>
+<td bgcolor="#003333">SQL被硬编码(hardcoded)在ODBC驱动程序内. 目录函数的目的是返回预定义的结果集例如数据库中的所有表名. 总的来说,目录函数用来获得数据源的信息的用户程序可以在运行时调用它们.</td>
+</tr>
+</table>
+<p>这四种方法各有优缺点.当你只运行某一SQL语句一次时，直接执行是一个很好的选择；如果你要经常运行某一语句,则应首选编译执行因为SQL语句仅在第一次运行时被编译，在接下来的运行中，它将运行更快，因为已被编译过了；存储过程是注重速度的最佳选择，因为它已被编译过并存放在数据源中了。缺点是并不是所有的数据存储都支持存储过程.目录主要是是用来获得数据源结构的一些信息。</p>
+<p>在本章中,我们主要看一下直接执行和编译执行，因为它们是由我们的程序来完成的.编写存储过程是DBMS(数据库管理系统)的事.而目录将在稍后讨论.</p>
+<h4>直接执行</h4>
+<p>要直接并快速执行SQL语句,以如下语法调用函数SQLExecDirect:</p>
+ 
+  <pre class="code">           SQLExecDirect  proto     StatementHandle:DWORD,pStatementText:DWORDTextLength:  DWORD</pre>
+<li>StatementHandle. 
+要使用的语句句柄</li>
+<li>pStatementText. 
+指向要执行的SQL语句的指针</li>
+<li>TextLength. 
+SQL语句的长度.</li>
+
+<p>可能的返回值如下:</p>
+<table>
+<tr> 
+<td bgcolor="#003399">SQL_SUCCESS</td>
+<td bgcolor="#333300">操作顺利</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_SUCCESS_WITH_INFO</td>
+<td bgcolor="#333300">操作顺利但可能产生非致命错误</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_ERROR</td>
+<td bgcolor="#333300">操作失败</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_INVALID_HANDLE</td>
+<td bgcolor="#333300">使用的语句句柄非法</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_NEED_DATA</td>
+<td bgcolor="#333300">如果在执行SQL语句前没有提供足够的参数将会获得这个返回值.这时需调用SQLParamData 
+或 SQLPutData函数来提交参数.</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_NO_DATA</td>
+<td bgcolor="#333300">如果SQL语句不返回结果集，例如只是一个查询动作,将获得这个返回值。使用户知道动作成功，但没有结果集被返回。</td>
+</tr>
+<tr> 
+<td bgcolor="#003399">SQL_STILL_EXECUTING</td>
+<td bgcolor="#333300">如果异步执行SQL语句,  SQLExecDirect 会立刻返回这个值,表明语句正在执行。在通常情况下，如果你使用的一个多线程操作系统，异步执行是一个好主意。如果你希望异步执行,旧可以通过SQLSetStmtAttr来设置语句属性。</td>
+</tr>
+</table>
+<p>例子:</p>
+<pre class="code">.data
+     SQLStmt  db        "select * from Sales",0
+
+.data?
+       hStmt  dd        ?
+
+.code
+.....
+              invoke    SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+              invoke    SQLExecDirect, hStmt, addr SQLStmt, sizeof SQLStmt</pre >
+<h4>编译执行</h4>
+<p>SQL的执行被分为两步：第一步，必须通过调用函数SQLPrepare来*准备*语句。第二步,通过调用SQLExecute函数来执行语句.在使用编译执行时,我们可以多次调用SQLExecute来执行同一语句. 结合使用SQL参数,这个方法对执行同一语句极为有效。</p>
+<p>SQLPrepare 
+与SQLExecDirect使用相同的三个参数，所以这里不再写出函数原型。 SQLExecute 
+语法:</p>
+ 
+<pre class="code">SQLExecute proto StatementHandle:DWORD</pre>
+<p>只须这一个参数,我想不再需要解释了;)</p>
+<p>例子:</p>
+<pre class="code">.data
+     SQLStmt  db        "select * from Sales",0
+
+.data?
+       hStmt  dd        ?
+
+.code
+.....
+              invoke    SQLAllocHandle, SQL_HANDLE_STMT, hConn, addr hStmt
+.if           ax==SQL_SUCCESS || ax==SQL_SUCCESS_WITH_INFO
+              invoke    SQLPrepare, hStmt, addr SQLStmt, sizeof SQLStmt
+              invoke    SQLExecute, hStmt</pre>
+<p>你也许会想，编译执行没什么强于直接执行的。上面的例子还不明显。
+我们需要知道SQL语句的参数来仔细研究它。</p>
+<h4>语句参数(Statement Parameters)</h4>
+<p>这里的参数是指由SQL语句使用的变量.比如说我们有一个叫做 "employee"的表，它有三个字段："name", "surname"和 "TelephoneNo" 。现在我们要找一个叫做"Bob"的职员的电话号码, 
+就可以使用以下SQL语句：</p>
+ 
+<pre class="code">select telephoneNo from employee where name='Bob'</pre>
+<p>这条SQL语句象我们希望的那样工作了。但是，如果我们又想找另一个职员的电话号码怎么办？如果不使用参数,那只好再写一条SQL语句，然后再一次编译、执行它。</p><font>
+<p>现在我们不会允许这种低效率的行为了。我们可以使用参数来实现目标。在上面的例子中，我们必须将字符串/值替换为 '?' (被称为参数标志符(parameter marker)).SQL 语句将变成这样:</p>
+ 
+<pre class="code">select telephoneNo from employee where name=?</pre>
+<p>现在想一下这个问题:ODBC驱动程序如何知道用什么值来替换参数标志符'?'?答案是: 
+我们必须提供需要的值.这种方法被称为参数绑定(parameter 
+binding).简单点说,就是将一个参数标志符与用户程序中的变量建立连接的过程.在上面的例子中,我们需要创建一个缓冲区来告诉ODBC驱动程序，当它需要一个参数的具体值时，将从我们提供的字符串缓冲区中获得。一旦一个参数与一个变量绑定,它将一直保持绑定，直到被绑定到另一变量，或直到所有参数都被函数  SQLFreeStmt以(函数)参数 
+SQL_RESET_PARAMS释放，或直到该语句被释放.</p>
+<p>将一个参数绑定到一个变量是通过调用函数 
+SQLBindParameter实现，语法如下:</p>
+<pre class="code">        SQLBindParameter  proto     StatementHandle:DWORD,
+                          ParameterNumber:DWORD,
+                          InputOutputType:DWORD,
+                          ValueType:DWORD,
+                          ParameterType:DWORD,
+                          ColumnSize:DWORD,
+                          DecimalDigits:DWORD,
+                          ParameterValuePtr:DWORD,
+                          BufferLength:DWORD,
+        pStrLenOrIndPtr:  DWORD</pre>
+<li>StatementHandle 
+语句句柄</li>
+<li>ParameterNumber 参数个数，由1开始。这就是ODBC用来判断参数描述符的方法。如果有三个参数，则最左边是第一个参数，最右边是第三个参数。</li>
+<li>InputOutputType 表明参数是用来输入还是输出的标志.这里的输入是指ODBC驱动程序将使用参数中获得的值，输出是指ODBC驱动程序将在操作结束时将结果放入参数中.大多数情况下,我们使用参数作为输入。而输出参数经常与存储过程有关.这个参数的两个可能值为: SQL_PARAM_INPUT、 
+ SQL_PARAM_INPUT_OUTPUT和SQL_PARAM_OUTPUT(译者:似应为三个参数，但原文如此)</li>
+<li>ValueType 
+指明用户程序将要绑定到参数的值或缓冲区的类型。可能的类型为一组常数，以SQL_C_开头。</li>
+<li>ParameterType 
+参数的SQL类型。例如,如果SQL参数是文本字段,我们就在这里填入值SQL_CHAR.查看MSDN中的ODBC程序员指南来获得完整列表(ODBC Programmer's reference)。</li>
+<li>ColumnSize 
+参数的长度。换句话说，可认为是与参数标志符相连接的列(字段)的长度.在我们的例子中, 我们的参数标志符对列"name"使用了标准值.如果该列被定义了20字节长,我们就该在ColumnSize中填入20.</li>
+<li>DecimalDigits 与参数描述符连接的列的小数位.</li>
+<li>ParameterValuePtr 
+指向包含参数数据的缓冲区的指针. </li>
+<li>BufferLength 
+由ParameterValuePtr指向的缓冲区的长度.</li>
+<li>pStrLenOrIndPtr 
+指向一个双字的指针，包含以下之一: 
+
+<li>由ParameterValuePtr指向的缓冲区中包含的参数长度. 
+除非参数的类型是字符串或二进制值，否则这个值被忽略.别把它与BufferLength混淆，看一下这个例子就会明白：假设该参数是一个字符串，该列有20字节宽.所以我们分配了一个21字节长的缓冲区，并将其地址传送到ParameterValuePtr。在调用函数SQLExecute前, 我们在缓冲区中放入了字符串"Bob".这个字符串有3字节长，因此我们需要在pStrLenOrIndPtr指向的双字中放入3这个值.</li>
+<li>SQL_NTS. 
+这个参数是一个0结尾字符串(null-terminated string). </li>
+<li>SQL_NULL_DATA. 
+参数值为NULL. </li>
+<li>SQL_DEFAULT_PARAM. 
+存储过程将使用参数的默认值,而不是从用户程序中获得的值. 它仅适用于已定义了默认参数值的存储过程.</li>
+<li>SQL_DATA_AT_EXEC. 
+参数的数据将由SQLPutData传送. 
+由于数据可能太大无法放入内存(比如整个文件的数据),我们可以告诉ODBC驱动程序我们将用SQLPutData替代.<br>
+<br>
+可能你会说 pStrLenOrIndPtr的参数太多了,但通常情况下，我们只会用到第一或第三个选项。</li>
+
+
+
+<h5>例子:</h5>
+<pre class="code">                                                            
+
+.data
+   SQLString  db        "select telephoneNo from employee where name=?",0
+     Sample1  db        "Bob",0
+     Sample2  db        "Mary",0
+
+.data?
+      buffer  db        21 dup(?)
+      StrLen  dd        ?
+
+.code
+........
+              invoke    SQLPrepare, hStmt, addr SQLString,sizeof SQLString
+              invoke    SQLBindParameter, hStmt, 1, SQL_PARAM_INPUT, SQL_C_CHAR, SQL_CHAR, 20, 0, addr buffer, sizeof buffer, addr StrLen
+;===========================================
+; First run
+;=========================================== 
+              invoke    lstrcpy, addr buffer, addr Sample1
+              mov       StrLen, sizeof Sample1
+              invoke    SQLExecute, hStmt
+;===========================================
+; Second run
+;=========================================== 
+              invoke    lstrcpy, addr buffer, addr Sample2
+              mov       StrLen, sizeof Sample2
+              invoke    SQLExecute, hStmt</pre>
+<p>注意我们仅将参数与缓冲区仅绑定了一次，当我们修改了缓冲区的内容并调用了SQLExecute 
+很多次.不必再调用SQLPrepare.ODBC驱动程序知道去那里找它需要的参数因为已通过SQLBindParameter函数告诉了它.</p>
+<p>但现在我们还不能获得查询结果.访问和适用结果集是下一章的内容。</p>
+<p>假设我们已完成了很多SQL语句，并要执行一个新的语句，那么没必要重新分配一个语句句柄.只要使用SQL_UNBIND与SQL_RESET_PARAMS参数调用SQLFreeStmt函数来解除与参数的绑定就可以了. 
+接下来就可以接着使用原来的语句句柄来执行SQL语句了. 
+</p>
+<h4>释放语句 </h4>
+<p>由调用SQLFreeHandle函数实现.</p>
+<li>
+  <div class="rpindex"><a href="040.html"> 下一页</a><a href="038.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

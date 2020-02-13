@@ -1,0 +1,321 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="006.html"> 上一页</a><a href="008.html"> 下一页</a></div>
+<h1>第七课  处理鼠标输入消息</h1>
+本课中我们将学习如何在我们的窗口过程函数中处理鼠标按键消息。示例程序演示了如何等待左键按下消息，我们将在按下的位置显示一个字符串。
+
+
+<h3> 理论：</h3>
+和处理键盘输入一样，WINDOWS将捕捉鼠标动作并把它们发送到相关窗口。这些活动包括左、右键按下、移动、双击等(译者注：新式鼠标还包括滚轮消息WM_WHEEL)。WINDOWS并不像处理键盘输入那样把所有的鼠标消息都导向有输入焦点的窗口，任何鼠标经过的窗口都将接收到鼠标消息，无论有否输入焦点。另外，窗口还会接收到鼠标在非客户区移动的消息（WM_NCMOVE），但大多数的情况下我们都会将其忽略掉。 
+对鼠标的每一个按钮都有两个消息：WM_LBUTTONDOWN,WM_RBUTTONDOWN 。对于三键鼠标还会有WM_MBUTTONDOWN和WM_MBUTTONUP消息，当鼠标在某窗口客户区移动时，该窗口将接收到WM_MOUSEMOVE消息。一个窗口若想处理WM_LBUTTONDBCLK或 
+WM_RBUTTONDBCLK，那么它的窗口类必须有CS_DBLCLKS风格，否则它就会接受到一堆的按键起落（WM_XBUTTONDOWN或WM_XBUTTONUP)的消息。 
+对于所有的消息，窗口过程函数传入的参数lParam包含了鼠标的位置，其中底位为x坐标，高位为y坐标，这些坐标值都是相对于窗口客户区的左上角的值，wParam中则包含了鼠标按钮的状态。 
+<br>
+  
+<h3> 例子：</h3>
+<pre class="code">.386
+.MODEL        FLAT,STDCALL
+option casemap:none WinMain proto :DWORD,:DWORD,:DWORD,:DWORD 
+
+     INCLUDE  \MASM32\INCLUDE\WINDOWS.INC
+     INCLUDE  \MASM32\INCLUDE\USER32.INC
+     INCLUDE  \MASM32\INCLUDE\KERNEL32.INC
+     INCLUDE  \MASM32\INCLUDE\GDI32.INC
+  INCLUDELIB  \MASM32\LIB\USER32.LIB
+  INCLUDELIB  \MASM32\LIB\KERNEL32.LIB
+  INCLUDELIB  \MASM32\LIB\GDI32.LIB
+
+.DATA
+   CLASSNAME  DB        "SIMPLEWINCLASS",0
+     APPNAME  DB        "OUR FIRST WINDOW",0
+  MOUSECLICK  DB        0           ; 0=no click yet
+
+.DATA?
+hInstance HINSTANCE ? 
+CommandLine LPSTR ? 
+hitpoint POINT <> 
+
+.CODE
+      START:
+              INVOKE    GETMODULEHANDLE, NULL
+              MOV       HINSTANCE,EAX
+              INVOKE    GETCOMMANDLINE
+              MOV       COMMANDLINE,EAX
+              INVOKE    WINMAIN, HINSTANCE,NULL,COMMANDLINE, SW_SHOWDEFAULT
+              INVOKE    EXITPROCESS,EAX
+
+     WINMAIN  PROC      HINST:HINSTANCE,HPREVINST:HINSTANCE,CMDLINE:LPSTR,CMDSHOW:DWORD
+              LOCAL     WC:WNDCLASSEX
+              LOCAL     MSG:MSG
+              LOCAL     HWND:HWND
+              MOV       WC.CBSIZE,SIZEOF WNDCLASSEX
+              MOV       WC.STYLE, CS_HREDRAW OR CS_VREDRAW
+              MOV       WC.LPFNWNDPROC, OFFSET WNDPROC
+              MOV       WC.CBCLSEXTRA,NULL
+              MOV       WC.CBWNDEXTRA,NULL
+              PUSH      HINST
+              POP       WC.HINSTANCE
+              MOV       WC.HBRBACKGROUND,COLOR_WINDOW+1
+              MOV       WC.LPSZMENUNAME,NULL
+              MOV       WC.LPSZCLASSNAME,OFFSET CLASSNAME
+              INVOKE    LOADICON,NULL,IDI_APPLICATION
+              MOV       WC.HICON,EAX
+              MOV       WC.HICONSM,EAX
+              INVOKE    LOADCURSOR,NULL,IDC_ARROW
+              MOV       WC.HCURSOR,EAX
+              INVOKE    REGISTERCLASSEX, ADDR WC
+              INVOKE    CREATEWINDOWEX,NULL,ADDR CLASSNAME,ADDR APPNAME,\
+WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\ 
+CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,NULL,\ 
+hInst,NULL 
+              MOV       HWND,EAX
+              INVOKE    SHOWWINDOW, HWND,SW_SHOWNORMAL
+              INVOKE    UPDATEWINDOW, HWND
+.WHILE        TRUE
+              INVOKE    GETMESSAGE, ADDR MSG,NULL,0,0
+.BREAK        .IF (!EAX)
+              INVOKE    DISPATCHMESSAGE, ADDR MSG
+.ENDW
+              MOV       EAX,MSG.WPARAM
+              RET
+     WINMAIN  ENDP
+
+     WNDPROC  PROC      HWND:HWND, UMSG:UINT, WPARAM:WPARAM, LPARAM:LPARAM
+              LOCAL     HDC:HDC
+              LOCAL     PS:PAINTSTRUCT
+
+.IF           UMSG==WM_DESTROY
+              INVOKE    POSTQUITMESSAGE,NULL
+.ELSEIF       UMSG==WM_LBUTTONDOWN
+              MOV       EAX,LPARAM
+              AND       EAX,0FFFFH
+              MOV       HITPOINT.X,EAX
+              MOV       EAX,LPARAM
+              SHR       EAX,16
+              MOV       HITPOINT.Y,EAX
+              MOV       MOUSECLICK,TRUE
+              INVOKE    INVALIDATERECT,HWND,NULL,TRUE
+.ELSEIF       UMSG==WM_PAINT
+              INVOKE    BEGINPAINT,HWND, ADDR PS
+              MOV       HDC,EAX
+.IF           MOUSECLICK
+              INVOKE    LSTRLEN,ADDR APPNAME
+              INVOKE    TEXTOUT,HDC,HITPOINT.X,HITPOINT.Y,ADDR APPNAME,EAX
+.ENDIF
+              INVOKE    ENDPAINT,HWND, ADDR PS
+.ELSE
+              INVOKE    DEFWINDOWPROC,HWND,UMSG,WPARAM,LPARAM
+              RET
+.ENDIF
+              XOR       EAX,EAX
+              RET
+     WNDPROC  ENDP
+              END       START</pre>
+<h3> 分析：</h3>
+    <pre class="code">.ELSEIF       UMSG==WM_LBUTTONDOWN
+              MOV       EAX,LPARAM
+              AND       EAX,0FFFFH
+              MOV       HITPOINT.X,EAX
+              MOV       EAX,LPARAM
+              SHR       EAX,16
+              MOV       HITPOINT.Y,EAX
+              MOV       MOUSECLICK,TRUE
+              INVOKE    INVALIDATERECT,HWND,NULL,TRUE</pre>
+    <p>窗口过程处理了WM_LBUTTONDOWN消息，当接收到该消息时，lParam中包含了相对于窗口客户区左上角的坐标，我们把它保存下来，放到一个结构体变量（POINT）中，该结构体变量的定义如下：
+    <p>
+    <p>然后我们把标志量MouseClick设为TRUE，这表明至少有一次在客户区的左键按下消息。
+    <pre class="code">              MOV       EAX,LPARAM
+              AND       EAX,0FFFFH
+              MOV       HITPOINT.X,EAX</pre>
+    
+    <p>由于lParam是一个32位长的数，其中高、底16位分别包括了x、y坐标所以我们做一些小处理，以便保存它们。
+<pre class="code">              SHR       EAX,16
+              MOV       HITPOINT.Y,EAX</pre>
+  保存完坐标后我们设标志MouseClick为TRUE，这是在处理WM_PAINT时用来判断是否有鼠标左键按下消息。然后我们调用InvalidateRect（）函数迫使WINDOWS重新绘制客户区。
+
+
+ 
+<p>        .IF MouseClick <br>
+
+<p>绘制客户区的代码首先检测MouseClick标志位，再决定是否重绘。因为我们在首次显示窗口时还没有左键按下的消息，所以我们在初始时把该标志设为FALSE，告诉WINDOWS不要重绘客户区，当有左键按下的消息时，它会在鼠标按下的位置绘制字符串。注意在调用TextOut（）函数时，其关于字符串长度的参数是调用lstrlen（）函数来计算的。</p>
+                
+<pre class="code">              INVOKE    LSTRLEN,ADDR APPNAME
+              INVOKE    TEXTOUT,HDC,HITPOINT.X,HITPOINT.Y,ADDR APPNAME,EAX
+.ENDIF</pre>
+
+
+  <div class="rpindex"><a href="008.html"> 下一页</a><a href="006.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
