@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>WebGL Water</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+</head><body>
+  <script src="OES_texture_float_linear-polyfill.js"></script>
+  <script src="/webgl/example/water/lightgl.js"></script>
+  <script src="/webgl/example/water/cubemap.js"></script>
+  <script src="/webgl/example/water/renderer.js"></script>
+  <script src="/webgl/example/water/water.js"></script>
+  <script src="/webgl/example/water/main.js"></script>
+  <style type="text/css">
+    body { font: 13px/140% Arial, sans-serif; background: black; color: white; overflow: hidden; }
+    a { color: inherit; cursor: pointer; }
+    img { display: none; }
+    ul { padding: 0 0 0 20px; }
+    h1 { font: bold italic 30px/30px Georgia; text-align: center; }
+    h2 { font: bold italic 17px/17px Georgia; padding-top: 10px; }
+    small { display: block; font-size: 11px; line-height: 15px; }
+    canvas { position: absolute; top: 0; left: 0; }
+    #help { position: absolute; top: 0; right: 0; bottom: 0; width: 280px; padding-right: 20px; overflow: auto; }
+    #loading { position: absolute; left: 0; top: 50%; right: 300px; text-align: center; margin-top: -8px; }
+    @media (max-width: 600px) {
+      small { font-size: 8px; line-height: 10px; }
+      #help { width: 100px; font-size: 10px; line-height: 12px; }
+    }
+  </style>
+  <div id="loading"></div>
+  <div id="help">
+    <h1>WebGL Water</h1>
+    <p>由<a href="http://madebyevan.com/">Evan Wallace</a>制作</p>
+    <p>This demo requires a decent graphics card and up-to-date drivers. If you can't run the demo, you can still <a href="http://youtube.com/watch?v=R0O_9bp3EKQ">see it on YouTube</a>.</p>
+    <h2>交互:</h2>
+    <ul>
+      <li>在水上拖动可以泛起涟漪</li>
+      <li>拖动背景可以旋转视角</li>
+      <li>按空格可以暂停或启动</li>
+      <li>可以拖动小球到指定位置</li>
+      <li>按L键调整灯光方向</li>
+      <li>按G键开关重力选项</li>
+    </ul>
+    <h2>Features:</h2>
+    <ul>
+      <li>Raytraced reflections and refractions</li>
+      <li>Analytic ambient occlusion</li>
+      <li>Heightfield water simulation *</li>
+      <li>Soft shadows</li>
+      <li>Caustics **</li>
+    </ul>
+    <p><small>* requires the OES_texture_float extension<br>** requires the OES_standard_derivatives extension</small></p>
+    <p><small>Tile texture from <a href="http://www.flickr.com/photos/zooboing/3682834083/">zooboing</a> on Flickr</small></p>
+  </div>
+  <img id="tiles" src="/webgl/example/water/tiles.jpg">
+  <img id="xneg" src="/webgl/example/water/xneg.jpg">
+  <img id="xpos" src="/webgl/example/water/xpos.jpg">
+  <img id="ypos" src="/webgl/example/water/ypos.jpg">
+  <img id="zneg" src="/webgl/example/water/zneg.jpg">
+  <img id="zpos" src="/webgl/example/water/zpos.jpg">
+
+</script><canvas width="1120" height="731" style="width: 1120px; height: 731px;"></canvas>
+</body></html>
