@@ -1,0 +1,552 @@
+/* 初始化-开始 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: rgb(7, 105, 173);
+}
+
+p, h1, h2, h3, h4, h5 {
+	margin: 10px 0px;
+}
+/* 初始化-结束 */
+/* 结构定义-开始 */
+header {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	display: block;
+	width: 100%;
+	z-index: 999;
+}
+
+#container {
+	margin: 35px auto 0px auto;
+	padding: 0px 20px;
+	display: block;
+	border-top-color: currentColor !important;
+	border-top-width: medium !important;
+	border-top-style: none !important;
+}
+
+#content-wrapper {
+	overflow: hidden;
+	border-radius: 0px 0px 10px 10px;
+	border-top-color: rgb(51, 51, 51);
+	border-top-width: 1px;
+	border-top-style: solid;
+	position: relative;
+	box-shadow: -3px 0px 5px -3px rgba(1, 1, 1, 0.87), 3px 0px 5px -3px
+		rgba(1, 1, 1, 0.87);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px
+		rgba(1, 1, 1, 0.87);
+}
+
+#file-wrapper {
+	padding: 5px 2%;
+	overflow: hidden;
+}
+
+footer {
+	height: 50px;
+	background: white;
+}
+
+footer p.copyright {
+	margin: 0px;
+	padding-top: 10px;
+	text-align: center
+}
+
+footer p.copyright a {rgb (102,102,102);
+	
+}
+/* 结构定义-结束 */
+/* 通用标签定义-开始 */
+p {
+	text-indent: 2em;
+}
+
+h1, h2, h3, h4, h5 {
+	color: rgb(51, 51, 51);
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+#file-wrapper h1 {
+	text-align: center;
+}
+
+#file-wrapper ol, #file-wrapper ul {
+	padding: 0px 10px 0px 50px;
+}
+
+#file-wrapper pre {
+	padding: 10px;
+	border: 1px solid #ddd;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	line-height: 1.6;
+	font-family: "YaHei Consolas Hybrid", Consolas, "Meiryo UI",
+		"Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace,
+		monospace;
+	font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	background: #f6f6f6;
+	border-radius: 3px;
+	overflow: auto;
+	font-size: 85%;
+	margin-top: 0;
+	margin-bottom: 16px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+	text-size-adjust: 100%;
+	text-align: left;
+	text-align: left;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, td, th {
+	border: 1px solid black;
+}
+/* 通用标签定义-结束 */
+/* 左中右定义-开始 */
+.c_l {
+	float: left;
+	width: 240px;
+	/* border: 1px solid #999 ; */
+}
+
+#file-wrapper .c_l ul {
+	padding: 0px;
+}
+
+#file-wrapper .c_l ul li {
+	word-break: break-all;
+	list-style: none;
+	border-bottom: 1px dotted #999;
+	margin: 0px;
+	padding: 0px;
+}
+
+#file-wrapper .c_l ul li a {
+	word-break: break-all;
+}
+
+.listitem {
+	font-size: 20px;
+	border-bottom: 1px dotted #999;
+	padding:8px 0px;
+}
+
+.c_m {
+	margin: 0px 0px 0px 260px;
+}
+/* 左中右定义-结束 */
+/* 顶部标题 global-nav */
+#global-nav {
+	background: repeat-x 0px bottom rgb(27, 27, 27);
+}
+
+#global-nav nav {
+	height: 34px;
+	padding: 0px 20px;
+}
+
+#global-nav nav ul {
+	list-style: none;
+	margin: 0px;
+	text-align: left;
+	border-right-color: rgba(255, 255, 255, 0.097656);
+	border-left-color: rgba(0, 0, 0, 0.347656);
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	float: left;
+	display: inline;
+	padding: 0px;
+}
+
+#global-nav nav ul.links {
+	float: right;
+}
+
+#global-nav nav ul li {
+	font: bold 13px/17px "Helvetica Neue", Helvetica, Arial, Geneva,
+		sans-serif;
+	transition: 0.2s;
+	top: 1px;
+	border-right-color: rgba(0, 0, 0, 0.347656);
+	border-left-color: rgba(255, 255, 255, 0.097656);
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	float: left;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size-adjust: none;
+	font-stretch: normal;
+	text-shadow: 0px 0px 2px #000;
+	-webkit-transition: all 0.2s;
+}
+
+#global-nav nav ul li:hover {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+}
+
+#global-nav nav ul li i {
+	height: 1em;
+}
+
+#global-nav nav ul li a {
+	padding: 8px 12px;
+	color: rgb(230, 230, 230);
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+}
+
+#global-nav nav ul li ul {
+	padding: 0px;
+	transition: opacity 0.2s;
+	left: -2px;
+	top: 32px;
+	width: 120px;
+	display: none;
+	visibility: hidden;
+	position: absolute;
+	z-index: 400;
+	opacity: 0;
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 43px 5px rgba(0, 0, 0, 0.4);
+	-webkit-transiton: opacity 0.2s;
+}
+
+#global-nav nav ul li ul.wide {
+	width: 260px;
+}
+
+#global-nav nav ul li ul li {
+	background: url("../../images/bg-footer-noise.jpg") rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	float: none;
+	display: block;
+}
+
+#global-nav nav ul li ul li:hover {
+	background: rgb(0, 0, 0);
+}
+
+#global-nav nav ul li:hover ul {
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+
+#global-nav nav ul.projects li.project {
+	background: url("../../images/jq-nav-icons.png") -6px 0px;
+	padding: 0px;
+	width: 42px;
+	height: 33px;
+	text-indent: -9999px;
+	z-index: 10;
+}
+
+#global-nav nav ul.projects li.project a {
+	height: 33px;
+	display: block;
+}
+/* 顶部标题 global-nav 结束 */
+#logo-wapper {
+	padding-top: 25px;
+	padding-bottom: 20px;
+	clear: both;
+}
+
+#logo-wapper aside {
+	margin-bottom: -18px;
+	float: right;
+}
+
+#logo-wapper {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#logo-wapper aside {
+	padding: 10px 0px;
+	left: 50%;
+	margin-left: -200px;
+	float: none;
+	display: inline-block;
+	position: relative;
+}
+
+#logo-wapper h2.logo {
+	margin-right: auto;
+	margin: 20px 0px 20px 30px;
+	float: none;
+	text-shadow: 0px 1px 0px #ffffff;
+	font-size: 36px;
+}
+
+nav#main-nav {
+	border-radius: 10px 10px 0px 0px;
+	border-top-color: rgba(250, 250, 250, 0.27);
+	border-right-color: rgba(2, 2, 2, 0.28);
+	border-left-color: rgba(2, 2, 2, 0.28);
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.7);
+	background-color: rgba(0, 0, 0, 0.18);
+	height: 35px;
+	border-radius: 10px 10px 0px 0px;
+	padding-left: 5px;
+}
+
+nav#main-nav .ui-menu {
+	display: inline-block;
+	width: 70%;
+}
+
+nav#main-nav .ui-menu li {
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+nav#main-nav .ui-menu .ui-menu-item {
+	display: inline-block;
+	width: 100px;
+}
+
+nav#main-nav ul {
+	width: 100px !important;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0px 0px 10px 10px;
+}
+
+nav#main-nav li {
+	font: 16px/normal "klavika-web", "Helvetica Neue", Helvetica, Arial,
+		Geneva, sans-serif;
+}
+
+nav#main-nav li a {
+	padding: 6px 10px;
+	border: 1px solid transparent;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	display: block;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.76);
+}
+
+nav#main-nav li a:hover {
+	background: none;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.1);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.796875), 0px 0px 10px
+		rgba(255, 255, 255, 0.296875);
+}
+
+nav#main-nav li.current a {
+	background: none;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.1);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.796875), 0px 0px 10px
+		rgba(255, 255, 255, 0.296875);
+}
+
+.searchform {
+	background: none;
+	border-radius: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-image: none;
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.4), 0px 1px 0px
+		rgba(255, 255, 255, 0.1);
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.796875), 0px 0px 10px
+		rgba(255, 255, 255, 0.296875);
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4),
+		rgba(255, 255, 255, 0.1) 0 1px 0;
+}
+
+.searchform {
+	padding: 0px;
+	margin: 3px 5px 0px 0px;
+	width: 28%;
+	position: relative;
+	float: right;
+}
+
+.searchform input {
+	margin: 0px;
+	padding: 5px 10px;
+	width: 90%;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	box-shadow: none;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.76);
+	background-color: transparent;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 1px
+}
+
+.searchform input:-ms-input-placeholder {
+	color: rgb(255, 255, 255);
+	opacity: 0.2;
+}
+
+.searchform .icon-search {
+	border-width: 0px 0px 0px 1px;
+	padding: 0px 0px 0px 7px;
+	top: 3px;
+	right: 10px;
+	bottom: 3px;
+	color: rgb(255, 255, 255);
+	border-left-color: rgba(7, 7, 7, 0.65);
+	border-left-style: solid;
+	position: absolute;
+	opacity: 0.33;
+	background-color: transparent;
+}
+
+.linknav {
+	display: block;
+	width: 100% !important;
+}
+/*old css*/
+.big_window {
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.big_window .bwbody {
+	overflow: hidden;
+}
+
+.window {
+	margin: 5px 5px 0px 0px;
+	float: left;
+	font-size: 14px;
+	border: 1px solid #999;
+	width: 280px;
+}
+
+.window .wbody {
+	overflow: hidden;
+	height: 185px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.window ol, ul {
+	padding: 0px 0px 0px 25px;
+	margin: 0px;
+}
+
+.wtitle {
+	height: 25px;
+	padding: 5px 5px 0px 5px;
+	color: rgb(51, 51, 51);
+	font-size: 20px;
+	margin-bottom: 10px;
+	background: rgb(236, 236, 236);
+	text-shadow: 1px 2px 1px #ffffff;
+}
+
+.wtitle .more {
+	float: right;
+	font-size: 14px;
+}
+
+.wtitle .title {
+	float: left;
+	font-weight: bold;
+}
+
+#left {
+	position: relative;
+	box-sizing: border-box;
+	float: left;
+	width: 29%;
+}
+
+#right {
+	position: relative;
+	box-sizing: border-box;
+	float: right;
+	width: 71%;
+}
+
+.lpindex a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0000FF;
+	display: block;
+	width: 50px;
+	float: left;
+	padding: 3px;
+}
+
+.lpindex {
+	text-align: center;
+	height: 20px;
+	padding: 5px;
+}
+
+.rpindex a {
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0000FF;
+	display: block;
+	width: 50px;
+	padding: 3px;
+}
+
+.rpindex {
+	text-align: center;
+	height: 20px;
+	padding: 5px;
+}
