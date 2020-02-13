@@ -1,0 +1,247 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>配制内核config</h1>
+<p>首先，清理以前编译时留下的临时文件。如果是刚刚解开的包，不需要执行这步。如果是第二次或者是第n次编译，那么一定要执行。</p>
+<p> 相关命令如下：</p>
+<pre class="code">$ sudo make mrproper</pre>
+<p>网上很多教程上说把现在使用的内核的config拷贝过来参考，据实验，是不需要的，ubuntu还有debian会自动做这步。不过这条命令倒是可以学习一下。当然你可以将以前的配置拷贝过来。</p>
+<p> 命令：</p>
+<pre class="code">cp /boot/config-`uname -r` ./.config</pre>
+<p>./.config的意思是拷贝到当前目录并以.config重命名。</p>
+<p><strong>注意：在配制内核时，修改的文件为linux-2.6.25.10文件夹中的.config文件。这是个隐藏文件，更改查看方式可以看到。是make mrproper时自动拷贝过来的，下载的源包中没有。</strong></p>
+<h2>相关命令</h2>
+<ol>
+  <li>#make config：基于文本的最为传统的配置界面，不推荐使用 </li>
+  <li> #make <a href="1.html">menuconfig</a>：基于文本选单的配置界面，字符终端下推荐使用</li>
+  <li> #make <a href="2.html">xconfig</a>：基于图形窗口模式的配置界面，Xwindow下推荐使用 </li>
+  <li>#make  oldconfig：如果只想在原来内核配置的基础上修改一些小地方，会省去不少麻烦</li>
+  <li>#make defconfig    ：按默认选项对内核进行配置(386的默认配置是Linus做的)</li>
+  <li> #make allnoconfig  ： 除必须的选项外, 其它选项一律不选. (常用于嵌入式系统)</li>
+</ol>
+<p>配置2.6.0内核时如果你的主板是Intel芯片的话，你用默认配制也许就可以得到一个满意的内核哦。做法是make  menuconfig后离开时选择保存。</p>
+<p>这里的难点是pci,如果你硬盘是IDE的那一定要选择好你主板上南桥芯片。SCSI的话就是要选择上你的SCSI卡型号。</p>
+<p>还有就是网卡，声卡芯片的型号了,他们的型号你都可以用lspci 查找到比如我的是。 </p>
+<pre class="code"># lspci
+00:00.0 Host bridge: Intel Corp. 440BX/ZX/DX - 82443BX/ZX/DX Host bridge (rev 01)
+00:01.0 PCI bridge: Intel Corp. 440BX/ZX/DX - 82443BX/ZX/DX AGP bridge (rev 01)
+00:07.0 ISA bridge: Intel Corp. 82371AB/EB/MB PIIX4 ISA (rev 08)
+00:07.1 IDE interface: Intel Corp. 82371AB/EB/MB PIIX4 IDE (rev 01)
+00:07.2 USB Controller: Intel Corp. 82371AB/EB/MB PIIX4 USB
+00:07.3 Bridge: Intel Corp. 82371AB/EB/MB PIIX4 ACPI (rev 08)
+00:0f.0 VGA compatible controller: VMware Inc [VMware SVGA II] PCI Display Adapter
+00:10.0 SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)
+00:11.0 Ethernet controller: Advanced Micro Devices [AMD] 79c970 [PCnet32 LANCE] (rev 10)
+00:12.0 Multimedia audio controller: Ensoniq ES1371 [AudioPCI-97] (rev 02)</pre>
+<h2>编译配置</h2>
+<h3>1)文件系统</h3>
+<p>请务必要选中ext3文件系统,</p>
+<pre class="code">File systems--->
+[*] Ext3 journalling file system support
+[*] Ext3 Security Labels
+[*] JBD (ext3) debugging support</pre>
+<p>　　以上三项一定要选上,而且要内建(即标*). 这个非常重要,在配置完后一定要检查一下.config文件有没有&quot;CONFIG_EXT3_FS=y&quot;这一项. </p>
+<p>如果不是&quot;CONFIG_EXT3_FS=y&quot;而是&quot;CONFIG_EXT3_FS=m&quot;,你在运行内核时就会遇上以下错误: pivotroot: pivot_root(/sysroot,/sysroot/initrd) failed</p>
+<h3>2)网卡驱动</h3>
+<p>务必把自己网卡对应的驱动编译进内核,比较普遍的网卡是realtek 8139,以下就是这种网卡的配置,以供参考</p>
+<pre class="code">Device Drivers--->
+Networking support--->
+Ethernet (10 or 100Mbit) --->
+<*> RealTek RTL-8139 C+ PCI Fast Ethernet Adapter support (EXPERIMENTAL)
+<*> RealTek RTL-8139 PCI Fast Ethernet Adapter support</pre>
+<h3>3)声卡驱动</h3>
+<p>也要选择自己声卡对应的驱动编译进内核,比较普遍的声卡是i810_audio,以下就是这种声卡的配置,以供参考</p>
+<pre class="code">Device Drivers --->
+Sound --->
+<*> Sound card support
+Advanced Linux Sound Architecture --->
+<*> Advanced Linux Sound Architecture
+<*> Sequencer support
+< > Sequencer dummy client
+<*> OSS Mixer API
+<*> OSS PCM (digital audio) API[*] OSS Sequencer API
+<*> RTC Timer support
+PCI devices --->
+<*> Intel i8x0/MX440, SiS 7012; Ali 5455; NForce Audio; AMD768/8111
+Open Sound System --->
+< > Open Sound System (DEPRECATED)　　</pre>
+<p>以上三项配置关系到新内核能否正常运行,请备加注意.其他的配置如果不是很了解,大可以按默认的选择.</p>
+<p>更多请看：<a href="../../article/kernelconfig.html">config配制详解</a></p>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

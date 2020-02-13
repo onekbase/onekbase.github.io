@@ -1,0 +1,272 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>inittab文件解析</h1>
+<p>inittab配置文件每行的基本格式如下。   </p>
+<pre class="code">id:runlevels:action:process </pre>
+<p>其中某些部分可以为空，下面我们逐一介绍。</p>
+<h2>1．id</h2>
+<p>1～2个字符，配置行的唯一标识，在配置文件中不能重复。</p>
+<h2>2．runlevels</h2>
+<p>配置行适用的运行级别，在这里可填入多个运行级别，比如12345或者35等。</p>
+<p>Linux有7个运行级别。</p>
+<ul>
+  <li>0：关机。</li>
+  <li> 1：单用户字符界面。</li>
+  <li> 2：不具备网络文件系统（NFS）功能的多用户字符界面。</li>
+  <li> 3：具有网络功能的多用户字符界面。</li>
+  <li> 4： 保留不用。</li>
+  <li> 5：具有网络功能的图形用户界面。</li>
+  <li> 6：重新启动系统。</li>
+</ul>
+<h2>3．action</h2>
+<p> init有如下几种行为， init行为：</p>
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td>行为</td>
+    <td>描述</td>
+  </tr>
+  <tr>
+    <td>respawn</td>
+    <td>启动并监视第4项指定的process，
+若process终止则重启它</td>
+  </tr>
+  <tr>
+    <td>wait</td>
+    <td>执行第4项指定的process，并等待它执行完毕</td>
+  </tr>
+  <tr>
+    <td>once</td>
+    <td>执行第4项指定的process</td>
+  </tr>
+  <tr>
+    <td>boot</td>
+    <td>不论在哪个执行等级，系统启动时都会
+运行第4项指定的process</td>
+  </tr>
+  <tr>
+    <td>bootwait</td>
+    <td>不论在哪个执行等级，系统启动时都会运
+行第4项指定的process，且一直等它执行完备</td>
+  </tr>
+  <tr>
+    <td>off</td>
+    <td>关闭任何动作，相当于忽略该配置行</td>
+  </tr>
+  <tr>
+    <td>ondemand</td>
+    <td>进入ondemand执行等级时，执行第4项指定的process</td>
+  </tr>
+  <tr>
+    <td>initdefault</td>
+    <td>系统启动后进入的执行等级，该行不需要指定process</td>
+  </tr>
+  <tr>
+    <td>sysinit</td>
+    <td>不论在哪个执行等级，系统会在执行boot
+及bootwait之前执行第4项指定的process</td>
+  </tr>
+  <tr>
+    <td>powerwait</td>
+    <td>当系统的供电不足时执行第4项指定的
+process，且一直等它执行完毕</td>
+  </tr>
+  <tr>
+    <td>powerokwait</td>
+    <td>当系统的供电恢复正常时执行第4项指定
+的process，且一直等它执行完毕</td>
+  </tr>
+  <tr>
+    <td>powerfailnow</td>
+    <td>当系统的供电严重不足时执行第4项指定
+的process</td>
+  </tr>
+  <tr>
+    <td>ctrlaltdel</td>
+    <td>当用户按下【Ctrl+Alt+Del】时执行的操作</td>
+  </tr>
+  <tr>
+    <td>kbrequest</td>
+    <td>当用户按下特殊的组合键时执行第4项指
+定的process，此组合键需在keymaps文件定义</td>
+  </tr>
+</table>
+<h2>4.process　　　</h2>
+<p>所要执行的shell命令。任何合法的shell语法均适用于该字段。</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

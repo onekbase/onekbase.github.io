@@ -1,0 +1,665 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+  <h1 >Tesseract-ocr的JNI测试 </h1>
+  <p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-07-29</strong></p>
+  (1)&nbsp;编写Main.java接口
+ 具体代码如下：
+  <pre class="code">  import&nbsp;java.awt.Image;    
+  import&nbsp;java.io.File;    
+  import&nbsp;java.io.FileInputStream;    
+  import&nbsp;java.io.FileNotFoundException;    
+  import&nbsp;java.io.IOException;    
+  import&nbsp;java.io.InputStream;    
+  import&nbsp;javax.imageio.ImageIO;    
+  public&nbsp;class&nbsp;Main&nbsp;{    
+  &#9;static&nbsp;{    
+  &#9;&#9;System.loadLibrary("tesseractjni");   
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;public&nbsp;native&nbsp;String&nbsp;OCR(String&nbsp;input,String&nbsp;output,String&nbsp;lang);    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//二进制流时，bytes_per_pixel是0    
+  &#9;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;InstantiationException,&nbsp;IllegalAccessException,&nbsp;FileNotFoundException,&nbsp;IOException&nbsp;{ 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main&nbsp;m&nbsp;=&nbsp;new&nbsp;Main();   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream&nbsp;input_file&nbsp;=&nbsp;new&nbsp;FileInputStream(new&nbsp;File("/home/administrator/5.tif"));&nbsp;    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(input_file==null)    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("inputStream&nbsp;null");    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;input&nbsp;=&nbsp;input_file.toString();    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String&nbsp;output&nbsp;=&nbsp;"";&nbsp;&nbsp;    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer&nbsp;&nbsp;&nbsp;out&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;StringBuffer();   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[]&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;byte[4096];    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int&nbsp;&nbsp;n;&nbsp;(n&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;input_file.read(b))!=-1;){    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out.append(new&nbsp;&nbsp;&nbsp;String(b,&nbsp;&nbsp;&nbsp;0,&nbsp;&nbsp;&nbsp;n));    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input=out.toString();    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;System.out.println(input);&#9;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;lang&nbsp;=&nbsp;chi_sim; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String&nbsp;output&nbsp;=&nbsp;&#8220;&#8221;; &nbsp;&nbsp;&nbsp;&nbsp; 
+         &nbsp;m.OCR(input,&nbsp;output,&nbsp;lang);   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+   
+  } </pre>
+  <p >该代码的功能是：通过java传递过来图片的内容（以字符串形式）、所加载的语言包最后调用了OCR接口，来实现处理图片上的文字信息，并返回output的值，即为图片上的文字信息。 </p>
+  <p >(2)编译Main.java </p>
+  <p >命令：javac&nbsp;Main.java </p>
+  <p >生成Main.class </p>
+  <p >(3)生成Main.h </p>
+  <p >命令:javah&nbsp;Main </p>
+  <p >Main.h的内容： </p>
+  <pre class="code">/*&nbsp;DO&nbsp;NOT&nbsp;EDIT&nbsp;THIS&nbsp;FILE&nbsp;-&nbsp;it&nbsp;is&nbsp;machine&nbsp;generated&nbsp;*/  
+ #include&nbsp;"jni.h"
+/*&nbsp;Header&nbsp;for&nbsp;class&nbsp;Main&nbsp;*/ 
+#ifndef&nbsp;_Included_Main  
+#define&nbsp;_Included_Main  
+#ifdef&nbsp;__cplusplus  
+extern&nbsp;"C"&nbsp;{  
+#endif  
+/* *&nbsp;Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main  
+&nbsp;*&nbsp;Method:&nbsp;&nbsp;&nbsp;&nbsp;OCR  
+&nbsp;*&nbsp;Signature:&nbsp;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 
+  &nbsp;*/  
+JNIEXPORT&nbsp;jstring&nbsp;JNICALL&nbsp;Java_Main_OCR  
+&nbsp;&nbsp;(JNIEnv&nbsp;*,&nbsp;jobject,&nbsp;jstring,&nbsp;jstring,&nbsp;jstring);  
+  #ifdef&nbsp;__cplusplus 
+  } #endif  
+#endif </pre>
+  <p >(4)在eclipse中实现OCR接口函数 </p>
+  <p >首先，确保tesseract-ocr在eclipse中配置正确； </p>
+  <p >其次，将jni.h和jni_md.h这两个文件从系统中所安装的java-jdk中拷贝出来，放到当前工程目录下边； </p>
+  <p >然后，将Main.h也拷贝到当前目录下边； </p>
+  <p >最后，编写OCR接口函数。  </p>
+  <pre class="code">//测试，输入一个字符串，输出一个字符串的main函数的测试  
+//input:为指向图片所在的绝对路径的字符指针；  
+//output：为指向存放处理完毕后，所得字符串的指针；  
+//返回output字符指针  
+//lang参数在此初始化为&#8220;eng&#8221;,则为英文包；初始化为"chi_sim",则为汉语包  
+//这里对output采用的是动态分配内存，由于存在版面等的分析，实际存储字符串所占用的空间并不多，造成内存分配浪费  
+  //添加了jni机制，目标：用Main.class来调用libtesseractjni.so #include&nbsp;"Main.h"    
+  #include&nbsp;&#60;ctype.h&#62;    
+  #include&nbsp;"applybox.h"    
+  #include&nbsp;"control.h"    
+  #include&nbsp;"tessvars.h"    
+  #include&nbsp;"tessedit.h"    
+  #include&nbsp;"baseapi.h"    
+  #include&nbsp;"thresholder.h"    
+  #include&nbsp;"pageres.h"    
+  #include&nbsp;"imgs.h"    
+  #include&nbsp;"varabled.h"    
+  #include&nbsp;"tprintf.h"    
+  #include&nbsp;"tesseractmain.h"    
+  #include&nbsp;"stderr.h"   
+  #include&nbsp;"notdll.h"    
+  #include&nbsp;"mainblk.h"    
+  #include&nbsp;"output.h"    
+  #include&nbsp;"globals.h"    
+  #include&nbsp;"helpers.h"    
+  #include&nbsp;"blread.h"    
+  #include&nbsp;"tfacep.h"    
+  #include&nbsp;"callnet.h"     
+  #include&nbsp;"strings.h"    
+  #include&nbsp;&nbsp;&nbsp;"varable.h"    
+  #include&nbsp;&nbsp;&nbsp;"tessclas.h"    
+  #include&nbsp;&nbsp;&nbsp;"notdll.h"    
+  #ifdef&nbsp;USING_GETTEXT    
+  #include&nbsp;&#60;libintl.h&#62;    
+  #include&nbsp;&#60;locale.h&#62;    
+  #define&nbsp;_(x)&nbsp;gettext(x)    
+  #else    
+  #define&nbsp;_(x)&nbsp;(x)    
+  #endif    
+  #ifdef&nbsp;HAVE_LIBTIFF    
+  #include&nbsp;"tiffio.h"    
+  #endif    
+  #ifdef&nbsp;HAVE_LIBLEPT    
+  #include&nbsp;"allheaders.h"    
+  #else    
+  class&nbsp;Pix;    
+  #endif    
+  #ifdef&nbsp;_TIFFIO_    
+  void&nbsp;read_tiff_image(TIFF*&nbsp;tif,&nbsp;IMAGE*&nbsp;image);    
+  #endif    
+  const&nbsp;int&nbsp;kMaxIntSize&nbsp;=&nbsp;22;  
+  #define&nbsp;EXTERN    
+  BOOL_VAR(tessedit_create_boxfile,&nbsp;FALSE,&nbsp;"Output&nbsp;text&nbsp;with&nbsp;boxes"); 
+  BOOL_VAR(tessedit_create_hocr,&nbsp;FALSE,&nbsp;"Output&nbsp;HTML&nbsp;with&nbsp;hOCR&nbsp;markup"); 
+  BOOL_VAR(tessedit_read_image,&nbsp;TRUE,&nbsp;"Ensure&nbsp;the&nbsp;image&nbsp;is&nbsp;read"); 
+  INT_VAR(tessedit_serial_unlv,&nbsp;0, 
+  "0-&#62;Whole&nbsp;page,&nbsp;1-&#62;serial&nbsp;no&nbsp;adapt,&nbsp;2-&#62;serial&nbsp;with&nbsp;adapt"); 
+  INT_VAR(tessedit_page_number,&nbsp;-1,    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"-1&nbsp;-&#62;&nbsp;All&nbsp;pages,&nbsp;else&nbsp;specific&nbsp;page&nbsp;to&nbsp;process"); 
+  BOOL_VAR(tessedit_write_images,&nbsp;FALSE,&nbsp;"Capture&nbsp;the&nbsp;image&nbsp;from&nbsp;the&nbsp;IPE"); 
+  BOOL_VAR(tessedit_debug_to_screen,&nbsp;FALSE,&nbsp;"Dont&nbsp;use&nbsp;debug&nbsp;file"); 
+  /* 
+  convert&nbsp;the&nbsp;input_file&nbsp;into&nbsp;the&nbsp;STRING*,and&nbsp;put&nbsp;it&nbsp;into&nbsp;the&nbsp;text_out 
+   &nbsp;*/ 
+  void&nbsp;TesseractImage(const&nbsp;char*&nbsp;input_file,&nbsp;IMAGE*&nbsp;image,&nbsp;Pix*&nbsp;pix,&nbsp;int&nbsp;page_index, 
+   &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tesseract::TessBaseAPI*&nbsp;api,&nbsp;STRING*&nbsp;text_out)&nbsp;{ 
+    &#9;&nbsp;&nbsp;api-&#62;SetInputName(input_file); 
+  #ifdef&nbsp;HAVE_LIBLEPT 
+  if&nbsp;(pix&nbsp;!=&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;api-&gt;SetImage(pix);    
+  &#9;&nbsp;&nbsp;}&nbsp;else&nbsp;{    
+  &#9;#endif    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_line&nbsp;=&nbsp;check_legal_image_size(image-&gt;get_xsize(),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image-&gt;get_ysize(),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image-&gt;get_bpp());    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;api-&gt;SetImage(image-&gt;get_buffer(),&nbsp;image-&gt;get_xsize(),&nbsp;image-&gt;get_ysize(),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image-&gt;get_bpp()&nbsp;/&nbsp;8,&nbsp;bytes_per_line);    
+  &#9;#ifdef&nbsp;HAVE_LIBLEPT    
+  &#9;&nbsp;&nbsp;}    
+  &#9;#endif    
+  &#9;&nbsp;&nbsp;if&nbsp;(tessedit_serial_unlv&nbsp;==&nbsp;0)&nbsp;{   
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;char*&nbsp;text;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(tessedit_create_boxfile)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;api-&gt;GetBoxText(page_index);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;if&nbsp;(tessedit_write_unlv)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;api-&gt;GetUNLVText();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;if&nbsp;(tessedit_create_hocr)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;api-&gt;GetHOCRText(page_index&nbsp;+&nbsp;1);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;else    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;=&nbsp;api-&gt;GetUTF8Text();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;*text_out&nbsp;+=&nbsp;text;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;delete&nbsp;[]&nbsp;text;    
+  &#9;&nbsp;&nbsp;}&nbsp;else&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;BLOCK_LIST&nbsp;blocks;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;STRING&nbsp;filename&nbsp;=&nbsp;input_file;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;char*&nbsp;lastdot&nbsp;=&nbsp;strrchr(filename.string(),&nbsp;'.');    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(lastdot&nbsp;!=&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filename[lastdot&nbsp;-&nbsp;filename.string()]&nbsp;=&nbsp;'\0';
+    &#9;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!read_unlv_file(filename,&nbsp;image-&gt;get_xsize(),&nbsp;image-&gt;get_ysize(),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;blocks))&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fprintf(stderr,&nbsp;_(&quot;Error:&nbsp;Must&nbsp;have&nbsp;a&nbsp;unlv&nbsp;zone&nbsp;file&nbsp;%s&nbsp;to&nbsp;read!\n&quot;),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filename.string());    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;BLOCK_IT&nbsp;b_it&nbsp;=&nbsp;&amp;blocks;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(b_it.mark_cycle_pt();&nbsp;!b_it.cycled_list();&nbsp;b_it.forward())&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BLOCK*&nbsp;block&nbsp;=&nbsp;b_it.data();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TBOX&nbsp;box&nbsp;=&nbsp;block-&gt;bounding_box();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;api-&gt;SetRectangle(box.left(),&nbsp;image-&gt;get_ysize()&nbsp;-&nbsp;box.top(),    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box.width(),&nbsp;box.height());    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char*&nbsp;text&nbsp;=&nbsp;api-&gt;GetUNLVText();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*text_out&nbsp;+=&nbsp;text;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delete&nbsp;[]&nbsp;text;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(tessedit_serial_unlv&nbsp;==&nbsp;1)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;api-&gt;ClearAdaptiveClassifier();    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;} 
+  &#9;&nbsp;&nbsp;}    
+  &#9;&nbsp;/*&nbsp;if&nbsp;(tessedit_write_images)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;page_image.write(&quot;tessinput.tif&quot;);    
+  &#9;&nbsp;&nbsp;}*/    
+  }    
+  /*end&nbsp;TesseractImage*/    
+  /*Java_Main_OCR&nbsp;Native&nbsp;funciton   
+  &nbsp;*&nbsp;*/    
+  JNIEXPORT&nbsp;jstring&nbsp;JNICALL&nbsp;Java_Main_OCR(JNIEnv&nbsp;*env,&nbsp;jobject&nbsp;jo,&nbsp;jstring&nbsp;jinput,&nbsp;jstring&nbsp;joutput,&nbsp;jstring&nbsp;jlang){ 
+  &#9;const&nbsp;char&nbsp;*input;    
+  &#9;char&nbsp;*output;    
+  &#9;const&nbsp;char&nbsp;*lang;    
+  &#9;input&nbsp;=&nbsp;env-&gt;GetStringUTFChars(jinput,&nbsp;0);    
+  &#9;//output&nbsp;=env-&gt;GetStringUTFChars(joutput,&nbsp;0);    
+  &#9;lang&nbsp;=&nbsp;&nbsp;env-&gt;GetStringUTFChars(jlang,&nbsp;0);    
+  &#9;tesseract::TessBaseAPI&nbsp;&nbsp;api; 
+  &#9;api.Init(input,lang,&nbsp;0,&nbsp;0,&nbsp;false); 
+  &#9;IMAGE&nbsp;image;    
+  &#9;STRING&nbsp;text_out;    
+  &#9;int&nbsp;page_number&nbsp;=&nbsp;tessedit_page_number;    
+  &#9;if&nbsp;(page_number&nbsp;&lt;&nbsp;0){    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;page_number&nbsp;=&nbsp;0;    
+  &#9;}    
+  &#9;FILE*&nbsp;fp&nbsp;=&nbsp;fopen(input,&nbsp;&quot;rb&quot;);    
+  &#9;if&nbsp;(fp&nbsp;==&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Image&nbsp;file&nbsp;%s&nbsp;cannot&nbsp;be&nbsp;opened!\n&quot;),input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fp);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &#9;}    
+  &#9;#ifdef&nbsp;HAVE_LIBLEPT    
+  &#9;&nbsp;&nbsp;int&nbsp;page&nbsp;=&nbsp;page_number;    
+  &#9;&nbsp;&nbsp;int&nbsp;npages&nbsp;=&nbsp;0;    
+  &#9;&nbsp;&nbsp;bool&nbsp;is_tiff&nbsp;=&nbsp;fileFormatIsTiff(fp);    
+  &#9;&nbsp;&nbsp;if&nbsp;(is_tiff)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;tiffstat&nbsp;=&nbsp;tiffGetCount(fp,&nbsp;&amp;npages);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(tiffstat&nbsp;==&nbsp;1)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fprintf&nbsp;(stderr,&nbsp;_(&quot;Error&nbsp;reading&nbsp;file&nbsp;%s!\n&quot;),input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fp);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;//fprintf&nbsp;(stderr,&nbsp;&quot;%d&nbsp;pages\n&quot;,&nbsp;npages);    
+  &#9;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;fclose(fp);    
+  &#9;&nbsp;&nbsp;fp&nbsp;=&nbsp;NULL;    
+  &#9;&nbsp;&nbsp;Pix&nbsp;*pix;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(is_tiff)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(;&nbsp;(pix&nbsp;=&nbsp;pixReadTiff(input,&nbsp;page))&nbsp;!=&nbsp;NULL;&nbsp;++page)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(page&nbsp;&gt;&nbsp;0)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Page&nbsp;%d\n&quot;),&nbsp;page);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;page_str[kMaxIntSize];    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snprintf(page_str,&nbsp;kMaxIntSize&nbsp;-&nbsp;1,&nbsp;&quot;%d&quot;,&nbsp;page);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;api.SetVariable(&quot;applybox_page&quot;,&nbsp;page_str);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Run&nbsp;tesseract&nbsp;on&nbsp;the&nbsp;page!    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TesseractImage(input,&nbsp;NULL,&nbsp;pix,&nbsp;page,&nbsp;&amp;api,&nbsp;&amp;text_out);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixDestroy(&amp;pix);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(tessedit_page_number&nbsp;&gt;=&nbsp;0&nbsp;||&nbsp;npages&nbsp;==&nbsp;1)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;else&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;The&nbsp;file&nbsp;is&nbsp;not&nbsp;a&nbsp;tiff&nbsp;file,&nbsp;so&nbsp;use&nbsp;the&nbsp;general&nbsp;pixRead&nbsp;function. 
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;If&nbsp;the&nbsp;image&nbsp;fails&nbsp;to&nbsp;read,&nbsp;try&nbsp;it&nbsp;as&nbsp;a&nbsp;list&nbsp;of&nbsp;filenames.    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PIX*&nbsp;pix&nbsp;=&nbsp;pixRead(input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(pix&nbsp;==&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FILE*&nbsp;fimg&nbsp;=&nbsp;fopen(input,&nbsp;&quot;r&quot;);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(fimg&nbsp;==&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;File&nbsp;%s&nbsp;cannot&nbsp;be&nbsp;opened!\n&quot;),&nbsp;input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fimg);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;filename[MAX_PATH];    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(fgets(filename,&nbsp;sizeof(filename),&nbsp;fimg)&nbsp;!=&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chomp_string(filename);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pix&nbsp;=&nbsp;pixRead(filename);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(pix&nbsp;==&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Image&nbsp;file&nbsp;%s&nbsp;cannot&nbsp;be&nbsp;read!\n&quot;),&nbsp;filename);   
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fimg);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Page&nbsp;%d&nbsp;:&nbsp;%s\n&quot;),&nbsp;page,&nbsp;filename);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TesseractImage(filename,&nbsp;NULL,&nbsp;pix,&nbsp;page,&nbsp;&amp;api,&nbsp;&amp;text_out);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixDestroy(&amp;pix);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++page;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fclose(fimg);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TesseractImage(input,&nbsp;NULL,&nbsp;pix,&nbsp;0,&nbsp;&amp;api,&nbsp;&amp;text_out);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pixDestroy(&amp;pix);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&#9;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;#else    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;#ifdef&nbsp;_TIFFIO_    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;len&nbsp;=&nbsp;strlen(input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIFF*&nbsp;archive&nbsp;=&nbsp;NULL;   
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;do&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Since&nbsp;libtiff&nbsp;keeps&nbsp;all&nbsp;read&nbsp;images&nbsp;in&nbsp;memory&nbsp;we&nbsp;have&nbsp;to&nbsp;close&nbsp;the    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;file&nbsp;and&nbsp;reopen&nbsp;it&nbsp;for&nbsp;every&nbsp;page,&nbsp;and&nbsp;seek&nbsp;to&nbsp;the&nbsp;appropriate&nbsp;page.    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(archive&nbsp;!=&nbsp;NULL)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIFFClose(archive);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;archive&nbsp;=&nbsp;TIFFOpen(input,&nbsp;&quot;r&quot;);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(archive&nbsp;==&nbsp;NULL)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Read&nbsp;of&nbsp;file&nbsp;%s&nbsp;failed.\n&quot;),&nbsp;input);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(page_number&nbsp;&gt;&nbsp;0)    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Page&nbsp;%d\n&quot;),&nbsp;page_number);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Seek&nbsp;to&nbsp;the&nbsp;appropriate&nbsp;page.    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;(int&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;&nbsp;page_number;&nbsp;++i)&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIFFReadDirectory(archive);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char&nbsp;page_str[kMaxIntSize];    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snprintf(page_str,&nbsp;kMaxIntSize&nbsp;-&nbsp;1,&nbsp;&quot;%d&quot;,&nbsp;page_number);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;api.SetVariable(&quot;applybox_page&quot;,&nbsp;page_str);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Read&nbsp;the&nbsp;current&nbsp;page&nbsp;into&nbsp;the&nbsp;Tesseract&nbsp;image.    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMAGE&nbsp;image;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;read_tiff_image(archive,&nbsp;&amp;image);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Run&nbsp;tesseract&nbsp;on&nbsp;the&nbsp;page!    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TesseractImage(input,&nbsp;&amp;image,&nbsp;NULL,&nbsp;page_number,&nbsp;&amp;api,&nbsp;&amp;text_out); 
+   &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;++page_number;    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Do&nbsp;this&nbsp;while&nbsp;there&nbsp;are&nbsp;more&nbsp;pages&nbsp;in&nbsp;the&nbsp;tiff&nbsp;file.    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;while&nbsp;(TIFFReadDirectory(archive)&nbsp;&amp;&amp; 
+     &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(page_number&nbsp;&lt;=&nbsp;tessedit_page_number&nbsp;||&nbsp;tessedit_page_number&nbsp;&lt;&nbsp;0));    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIFFClose(archive);    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{    
+  &#9;&nbsp;&nbsp;&nbsp;&nbsp;#endif  
+   
+  &nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Using&nbsp;built-in&nbsp;image&nbsp;library&nbsp;to&nbsp;read&nbsp;bmp,&nbsp;or&nbsp;tiff&nbsp;without&nbsp;libtiff.    
+  &nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(image.read_header(input)&nbsp;&lt;&nbsp;0)&nbsp;{    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tprintf(_(&quot;Read&nbsp;of&nbsp;file&nbsp;%s&nbsp;failed.\n&quot;),&nbsp;input);    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exit(1);    
+  &nbsp;&nbsp;&nbsp;&nbsp;}    
+  &nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(image.read(image.get_ysize&nbsp;())&nbsp;&lt;&nbsp;0)    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MEMORY_OUT.error(&quot;error&quot;,&nbsp;EXIT,&nbsp;_(&quot;Read&nbsp;of&nbsp;image&nbsp;%s&quot;),&nbsp;input);    
+  &nbsp;&nbsp;&nbsp;&nbsp;invert_image(&amp;image);    
+  &nbsp;&nbsp;&nbsp;&nbsp;TesseractImage(input,&nbsp;&amp;image,&nbsp;NULL,&nbsp;0,&nbsp;&amp;api,&nbsp;&amp;text_out);    
+  #ifdef&nbsp;_TIFFIO_    
+  &nbsp;&nbsp;}    
+  &nbsp;&nbsp;delete[]&nbsp;ext;    
+  #endif    
+  #endif&nbsp;&nbsp;//&nbsp;HAVE_LIBLEPT   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output&nbsp;=(char*)malloc(strlen(text_out.string())+1);    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;memset(output,0,sizeof(output));   
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strcpy(output,text_out.string());    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;joutput&nbsp;=&nbsp;env-&gt;NewStringUTF(output);    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;free(output);    
+  &nbsp;&nbsp;&nbsp;/*&nbsp;while(output!=NULL){    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9;printf(&quot;%c&quot;,*output);    
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9;output++;    
+  &nbsp;&nbsp;&nbsp;&nbsp;}*/    
+  &nbsp;&nbsp;&nbsp;return&nbsp;joutput;&nbsp;&nbsp;&nbsp;&nbsp;//Normal&nbsp;exit    
+  }    
+  /* *&nbsp;end&nbsp;Java_Main_OCR */ </pre>
+  <p >（5）编译OCR </p>
+ 第一：在命令行去操作： 
+  <pre class="code" >g++&nbsp;-fPIC&nbsp;-D_REENTRANT&nbsp;-I/usr/lib/jvm/java-1.5.0-sun-1.5.0.19/include&nbsp;-I/usr/lib/jvm/java-1.5.0-sun-1.5.0.19/include/linux&nbsp;-c&nbsp;tesseractmain.cpp </pre>
+ 或者
+  <pre class="code">g++&nbsp;&nbsp;-fPIC&nbsp;-D_REENTRANT&nbsp;-I&nbsp;/usr/lib/jvm/java-6-openjdk/include </pre>
+  <p >&nbsp;-c&nbsp;tesseract.cpp </p>
+  <p >其中，-I所加载的路径，是jni.h和jni_md.h所在的目录。 </p>
+  <p >最终生成tesseractmain.o文件。 </p>
+  <p >第二：在eclipse中操作： </p>
+  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;需要将jni.h和jni_md.h以及Main.h均放在所测试的工程目录下。 </p>
+  <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直接bulid即可，生成.o文件。 </p>
+  <p >（6)利用.o文件生成libtesseract.so文件 </p>
+  <pre class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g++&nbsp;-shared&nbsp;tesseractmain.o&nbsp;-o&nbsp;libtesseractjni.so </pre>
+  <p >至此，之后，我们所需要的libtesseractjni.so生成。 </p>
+  <p >确保libtesseractjni.so文件的路径添加到LD_LIBRARY_PATH中。 </p>
+  <p >运行java&nbsp;Main.class:java&nbsp;Main </p>
+  <p >注意：在Main.java中，System.loadLibrary("tesseractjni");，其中添加绝对路径，或者添加.so文件的全称都无法识别，这一点与在eclipse下的Lib寻找路径类似。 </p>
+  <p >这样子设置虽然可以识别libtesseractjni.so文件了，但是却无法找到ocr中的所需要链接的东西。 </p>
+  <p > </p>
+  <p >当然，在失败之前，还进行了其他版本的测试： </p>
+  <h3 >Main.java函数： </h3>
+  <pre class="code" >  import&nbsp;java.awt.Image; 
+  import&nbsp;java.io.File; 
+  import&nbsp;java.io.FileInputStream; 
+  import&nbsp;java.io.FileNotFoundException; 
+  import&nbsp;java.io.IOException; 
+  import&nbsp;java.io.InputStream; 
+  import&nbsp;javax.imageio.ImageIO; 
+   
+  public&nbsp;class&nbsp;Main&nbsp;{ 
+  &#9;static&nbsp;{ 
+   
+  &#9;&#9;System.loadLibrary("tesseractjni"); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;System.load("home/administrator/workspace/testorc2/libtesseractjni.so"); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+  &#9;public&nbsp;native&nbsp;String&nbsp;OCR(String&nbsp;input,String&nbsp;output,String&nbsp;lang,int&nbsp;bytes_per_pixel,int&nbsp;bytes_per_line,int&nbsp;left,int&nbsp;top,int&nbsp;width,&nbsp;int&nbsp;height); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//二进制流时，bytes_per_pixel是0 
+  &#9;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;InstantiationException,&nbsp;IllegalAccessException,&nbsp;FileNotFoundException,&nbsp;IOException&nbsp;{ 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main&nbsp;m&nbsp;=&nbsp;new&nbsp;Main();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream&nbsp;input_file&nbsp;=&nbsp;new&nbsp;FileInputStream(new&nbsp;File("/home/administrator/5.tif"));&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(input_file==null) 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("inputStream&nbsp;null"); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;input&nbsp;=&nbsp;input_file.toString(); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String&nbsp;output&nbsp;=&nbsp;"";&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer&nbsp;&nbsp;&nbsp;out&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;StringBuffer(); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[]&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;byte[4096]; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int&nbsp;&nbsp;n;&nbsp;(n&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;input_file.read(b))!=-1;){ 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out.append(new&nbsp;&nbsp;&nbsp;String(b,&nbsp;&nbsp;&nbsp;0,&nbsp;&nbsp;&nbsp;n)); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input=out.toString(); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;System.out.println(input);&#9; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_pixel=0; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_line=50; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;left&nbsp;=0; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;top&nbsp;=&nbsp;0; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;width&nbsp;=1024; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;height&nbsp;=800; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.OCR(input,&nbsp;input,&nbsp;input,&nbsp;bytes_per_pixel,&nbsp;bytes_per_line,&nbsp;left,&nbsp;top,&nbsp;width,&nbsp;height); 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+  } </pre>
+  <h3 >Main.h函数 </h3>
+  <pre class="code">/*&nbsp;DO&nbsp;NOT&nbsp;EDIT&nbsp;THIS&nbsp;FILE&nbsp;-&nbsp;it&nbsp;is&nbsp;machine&nbsp;generated&nbsp;*/ 
+  #include&nbsp;"jni.h" 
+  /*&nbsp;Header&nbsp;for&nbsp;class&nbsp;Main&nbsp;*/ 
+   
+  #ifndef&nbsp;_Included_Main 
+  #define&nbsp;_Included_Main 
+  #ifdef&nbsp;__cplusplus 
+  extern&nbsp;"C"&nbsp;{ 
+  #endif 
+  /* 
+  &nbsp;*&nbsp;Class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main 
+  &nbsp;*&nbsp;Method:&nbsp;&nbsp;&nbsp;&nbsp;OCR 
+  &nbsp;*&nbsp;Signature:&nbsp;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIIII)Ljava/lang/String; 
+  &nbsp;*/ 
+  JNIEXPORT&nbsp;jstring&nbsp;JNICALL&nbsp;Java_Main_OCR 
+  &nbsp;&nbsp;(JNIEnv&nbsp;*,&nbsp;jobject,&nbsp;jstring,&nbsp;jstring,&nbsp;jstring,&nbsp;jint,&nbsp;jint,&nbsp;jint,&nbsp;jint,&nbsp;jint,&nbsp;jint); 
+   
+  #ifdef&nbsp;__cplusplus 
+  } 
+  #endif 
+  #endif </pre>
+  <h3 >ocr.cpp函数 </h3>
+  <p > </p>
+  <p >/*测试，输入一个字符串，输出一个字符串的main函数的测试 </p>
+  <p >input:为指向图片所在的绝对路径的字符指针； </p>
+  <p >output：为指向存放处理完毕后，所得字符串的指针； </p>
+  <p >返回output字符指针 </p>
+  <p >lang参数在此初始化为&#8220;eng&#8221;,则为英文包；初始化为"chi_sim",则为汉语包 </p>
+  <p >这里对output采用的是动态分配内存，由于存在版面等的分析，实际存储字符串所占用的空间并不多，造成内存分配浪费 </p>
+  <p >添加了jni机制，目标：用Main.class来调用libtesseractjni.so*/ </p>
+  <p > </p>
+  <pre class="code">#include&nbsp;"Main.h" 
+  #include&nbsp;"tessedit.h" 
+  #include&nbsp;"baseapi.h" 
+  #include&nbsp;"tesseractmain.h" 
+  #include&nbsp;"strings.h" 
+   
+   
+  /* 
+  convert&nbsp;the&nbsp;input_file&nbsp;into&nbsp;the&nbsp;STRING*,and&nbsp;put&nbsp;it&nbsp;into&nbsp;the&nbsp;text_out 
+  &nbsp;*/ 
+  JNIEXPORT&nbsp;jstring&nbsp;JNICALL&nbsp;Java_Main_OCR(JNIEnv&nbsp;*env,&nbsp;jobject&nbsp;jo,&nbsp;jstring&nbsp;jinput,&nbsp;jstring&nbsp;joutput,&nbsp;jstring&nbsp;jlang,jint&nbsp;jbytes_per_pixel,jint&nbsp;jbytes_per_line,jint&nbsp;jleft,jint&nbsp;jtop,jint&nbsp;jwidth,jint&nbsp;jheight){ 
+   
+  &nbsp;&nbsp;&nbsp;const&nbsp;unsigned&nbsp;char*&nbsp;imagedata; 
+  &nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_pixel&nbsp;=&nbsp;jbytes_per_pixel;//二进制流时，为0 
+  &nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_line&nbsp;=&nbsp;jbytes_per_line; 
+  &nbsp;&nbsp;&nbsp;int&nbsp;left&nbsp;=&nbsp;jleft;//默认为0 
+  &nbsp;&nbsp;&nbsp;int&nbsp;top&nbsp;=&nbsp;jtop;//默认为0 
+  &nbsp;&nbsp;&nbsp;int&nbsp;width&nbsp;=&nbsp;jwidth; 
+  &nbsp;&nbsp;&nbsp;int&nbsp;height&nbsp;=&nbsp;jheight; 
+  &nbsp;&nbsp;&nbsp;tesseract::TessBaseAPI*&nbsp;api; 
+  &nbsp;&nbsp;&nbsp;char&nbsp;*input&nbsp;=&nbsp;(char&nbsp;*)malloc(strlen(env-&#62;GetStringUTFChars(jinput,&nbsp;0))+1); 
+  &nbsp;&nbsp;&nbsp;strcpy(input,env-&#62;GetStringUTFChars(jinput,&nbsp;0)); 
+  &nbsp;&nbsp;&nbsp;imagedata&nbsp;=&nbsp;(unsigned&nbsp;char*)input; 
+  &nbsp;&nbsp;&nbsp;char&nbsp;*output; 
+  &nbsp;&nbsp;&nbsp;output&nbsp;=&nbsp;(char*)malloc(strlen(api-&#62;TesseractRect(imagedata,&nbsp;bytes_per_pixel,&nbsp;bytes_per_line,&nbsp;left,&nbsp;top,&nbsp;width,&nbsp;height))); 
+  &nbsp;&nbsp;&nbsp;&nbsp;//output=api-&#62;TesseractRect(imagedata,&nbsp;bytes_per_pixel,&nbsp;bytes_per_line,&nbsp;left,&nbsp;top,&nbsp;width,&nbsp;height); 
+  &nbsp;&nbsp;&nbsp;&nbsp;strcpy(output,api-&#62;TesseractRect(imagedata,&nbsp;bytes_per_pixel,&nbsp;bytes_per_line,&nbsp;left,&nbsp;top,&nbsp;width,&nbsp;height)); 
+  &nbsp;&nbsp;&nbsp;&nbsp;//编码格式是UTF8 
+  &nbsp;&nbsp;&nbsp;&nbsp;joutput&nbsp;=&nbsp;env-&#62;NewStringUTF(output); 
+  &nbsp;&nbsp;&nbsp;&nbsp;free(input); 
+  &nbsp;&nbsp;&nbsp;&nbsp;free(output); 
+  &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;joutput; 
+  &nbsp;} </pre>
+  <h2 >问题总结 </h2>
+  <h2 >1.测试运行时的错误 </h2>
+  <p >java&nbsp;Main时，一直： </p>
+  <pre class="code">java&nbsp;Main 
+   
+  Exception&nbsp;in&nbsp;thread&nbsp;"main"&nbsp;java.lang.UnsatisfiedLinkError:&nbsp;/home/administrator/workspace/testorc2/libtesseractjni.so:&nbsp;/home/administrator/workspace/testorc2/libtesseractjni.so:&nbsp;undefined&nbsp;symbol:&nbsp;_ZN9tesseract11TessBaseAPI12SetInputNameEPKc 
+  &#9;at&nbsp;java.lang.ClassLoader$NativeLibrary.load(Native&nbsp;Method) 
+  &#9;at&nbsp;java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1750) 
+  &#9;at&nbsp;java.lang.ClassLoader.loadLibrary(ClassLoader.java:1675) 
+  &#9;at&nbsp;java.lang.Runtime.loadLibrary0(Runtime.java:840) 
+  &#9;at&nbsp;java.lang.System.loadLibrary(System.java:1047) 
+  &#9;at&nbsp;Main.&#60;clinit&#62;(Main.java:10) 
+  Could&nbsp;not&nbsp;find&nbsp;the&nbsp;main&nbsp;class:&nbsp;Main.&nbsp;Program&nbsp;will&nbsp;exit. 
+   </pre>
+  <h2 >2.代码编写中的不足 </h2>
+  <p > </p>
+  <p >在所实现的native函数中JNIEXPORT&nbsp;jstring&nbsp;JNICALL&nbsp;Java_Main_OCR(JNIEnv&nbsp;*env,&nbsp;jobject&nbsp;jo,&nbsp;jstring&nbsp;jinput,&nbsp;jstring&nbsp;joutput,&nbsp;jstring&nbsp;jlang)； </p>
+  <p >参数jinput转换成了只读的const&nbsp;char*&nbsp;input,jlang也相应做了转换； </p>
+  <p >参数joutput由于要只想一个字符串，且作为返回值，需要在程序中给其分配内存： </p>
+  <p >在测试工程中所采用的两种分配方式的测试结果都不是很理想。 </p>
+  <h3 >3.最主要的是GCC命令行选项 </h3>
+  <p >JNI编译时，需要注意GCC或者G++命令行的参数： </p>
+  <p >（1）-shared&nbsp;该选项指定生成动态连接库（让连接器生成T类型的导出符号表，有时候也生成弱连接W类型的导出符号），不用该标志外部程序无法连接。相当于一个可执行文件&nbsp;</p>
+<p >（2）-fPIC：表示编译为位置独立的代码，不用此选项的话编译后的代码是位置相关的所以动态载入时是通过代码拷贝的方式来满足不同进程的需要，而不能达到真正代码段共享的目的。&nbsp; </p>
+  <p >（3）-L.：表示要连接的库在当前目录中&nbsp; </p>
+  
+  <p >（4）-ltest：编译器查找动态连接库时有隐含的命名规则，即在给出的名字前面加上lib，后面加上.so来确定库的名称&nbsp;</p>
+<p >（5）LD_LIBRARY_PATH：这个环境变量指示动态连接器可以装载动态库的路径。&nbsp;</p>
+<p >当然如果有root权限的话，可以修改/etc/ld.so.conf文件，然后调用&nbsp;/sbin/ldconfig来达到同样的目的，不过如果没有root权限，那么只能采用输出LD_LIBRARY_PATH的方法了。&nbsp; </p>
+  <h3 >JNI调用动态库时的问题 </h3>
+  <p >调用动态库的时候有几个问题会经常碰到，有时，明明已经将库的头文件所在目录&nbsp;通过&nbsp;&#8220;-I&#8221;&nbsp;include进来了，库所在文件通过&nbsp;&#8220;-L&#8221;参数引导，并指定了&#8220;-l&#8221;的库名，但通过ldd命令察看时，就是死活找不到你指定链接的so文件，这时你要作的就是通过修改LD_LIBRARY_PATH或者/etc/ld.so.conf文件来指定动态库的目录。通常这样做就可以解决库无法链接的问题了。 </p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

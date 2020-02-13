@@ -1,0 +1,388 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="9.html"> 上一页</a><a href="11.html"> 下一页</a></div>
+<h1>五、通过GRUB命令行来启动Linux操作系统；</h1>
+<p>GRUB的命令行才是王道，如果知道怎么用命令行来启动操作系统，那理解menu.lst的写法也不难；也就是说在开机的时候，不用GRUB的菜单，通过GRUB的命令也是一样能把操作系统引导起来。</p>
+<p>因为menu.lst的内容就是GRUB的一个一个的指令集合；是不是Linux这玩意很神奇？</p>
+<h2> 1、为什么需要学习GRUB的命令行；</h2>
+<p> 当我们把GRUB的menu.lst写错的时候，或者丢掉了menu.lst的时，比如在开机的时候，GRUB会出现grub&gt;类似的命令提示符，这时需要我们用命令行启动系统；当然您可以不用定义GRUB的菜单   ，直接用命令行来启动系统，比如我现在就是，为了写GRUB的文档，就把menu.lst 删除了，直接用命令来启动系统；</p>
+<h2> 2、用命令行来引导Linux操作系统的步骤；</h2>
+<p>通过命令行来引导操作系统的流程，也没有什么难的；无非是把指令手工输入到grub&gt;提示符的后面；在这个过程中，tab键的命令补齐功能就显得很重要了。如果您不知道有哪些命令，可以输入help；</p>
+<h3> <a name="1" id="1"></a>1）进入GRUB的命令行模式   grub&gt;</h3>
+<p> 如果开机时，GRUB出现的是grub&gt;，说明你没有/etc/grub/menu.lst   ，您需要自己写一个才会GRUB的菜单，让我们来选择进入哪个系统。如果有GRUB的菜单，您可以按Ctrl+c组合键进入GRUB的命令行模式，会出现grub&gt; 提示符；</p>
+<div class="code">grub&gt; </div>
+<h3><a name="2" id="2"></a>2）获取帮助GRUB的 help</h3>
+ <p>只要您在grub&gt;提示符的后面输入help 就能得到GRUB所有的命令提示； </p>
+ <pre class="code">grub&gt; help
+  blocklist   FILE                         boot
+  cat FILE                                 chainloader [--force] FILE
+  clear                                  color   NORMAL [HIGHLIGHT]
+  configfile FILE                        device DRIVE   DEVICE
+  displayapm                             displaymem
+  find   FILENAME                          geometry DRIVE [CYLINDER HEAD SECTOR [
+  halt   [--no-apm]                        help [--all] [PATTERN ...]
+  hide   PARTITION                         initrd FILE [ARG ...]
+  kernel   [--no-mem-option] [--type=TYPE] makeactive
+  map TO_DRIVE   FROM_DRIVE                md5crypt
+  module FILE [ARG ...]                    modulenounzip FILE [ARG ...]
+  pager [FLAG]                           partnew   PART TYPE START LEN
+  parttype PART TYPE                       quit
+  reboot                                 root [DEVICE   [HDBIAS]]
+  rootnoverify [DEVICE [HDBIAS]]         serial [--unit=UNIT]   [--port=PORT] [--
+  setkey [TO_KEY FROM_KEY]               setup [--prefix=DIR]   [--stage2=STAGE2_
+  terminal [--dumb] [--no-echo] [--no-ed terminfo   [--name=NAME --cursor-address
+  testvbe MODE                           unhide   PARTITION
+  uppermem KBYTES                        vbeprobe [MODE]</pre>
+<p>如果需要得到某个指令的帮助，就在 help 后面空一格，然后输入指令，比如； </p>
+<div class="code">grub&gt;help kernel  </div>
+ <h3><a name="3" id="3"></a>3）cat的用法； </h3>
+<p>cat指令是用来查看文件内容的，有时我们不知道Linux的/boot分区，以及/根分区所在的位置，要查看/etc/fstab的内容来得知，这时，我们就要用到cat   (hd[0-n],y)/etc/fstab 来获得这些内容；注意要学会用tab键命令补齐的功能；</p>
+<pre class="code">grub&gt; cat (     按tab 键会出来hd0或hd1之类的；
+  grub&gt;   cat (hd0, 注：输入hd0,然后再按tab键；会出来分区之类的；
+  grub&gt; cat (hd0,6)
+  Possible   partitions are:
+   
+Partition num: 0,  Filesystem type unknown, partition type   0x7  
+   
+Partition num: 4,  Filesystem type is fat, partition type 0xb  
+     
+Partition num: 5,  Filesystem type is reiserfs, partition type 0x83  
+     
+Partition num: 6,  Filesystem type is ext2fs, partition type 0x83  
+     
+Partition num: 7,  Filesystem type unknown, partition type 0x83  
+   
+Partition   num: 8,  Filesystem type is reiserfs, partition type 0x83  
+   
+Partition num:   9,  Filesystem type unknown, partition type 0x82  
+  
+  grub&gt; cat   (hd0,6)/etc/fstab 注：比如我想查看一下   (hd0,6)/etc/fstab的内容就这样输入；
+  
+  LABEL=/                   /                       ext3    defaults        1 1
+  /dev/devpts               /dev/pts                devpts  gid=5,mode=620  0 0
+  /dev/shm                  /dev/shm                tmpfs   defaults        0 0
+  /dev/proc                 /proc                   proc    defaults        0 0
+  /dev/sys                  /sys                    sysfs   defaults        0 0
+  LABEL=SWAP-hda1           swap                    swap    defaults        0 0
+  /dev/hdc                  /media/cdrecorder       auto    pamconsole,exec,noauto,
+  managed 0   0</pre>
+<p>有的弟兄可能会说，我不知道Linux安装在了哪个分区。那根据文件系统来判断一个一个的尝试总可以吧我；只要能cat出/etc/fstab就能为以后引导带来方便；</p>
+<p>主要查看/etc/fstab中的内容，主要是Linux的/分区及/boot是否是独立的分区；如果没有/boot类似的行，证明/boot和Linux的/处于同一个硬盘分区；比如上面的例子中LABEL=/   这行是极为重要的；说明Linux系统就安在标签为LABEL=/的分区中；</p>
+<p>如果您的Linux系统/boot和/没有位于同一个分区，可能cat (hd[a-n],y) 查到的是类似下面的； </p>
+<div class="code">LABEL=/                 /                         ext3    defaults        1 1<br />
+  LABEL=/boot             /boot                     ext3    defaults        1 2</div>
+<h3> <a name="4" id="4"></a>4） root (hd[0-n,y)   指令来指定/boot所在的分区；</h3>
+<p>其实这个root (hd[0,n],y)是可以省略的，如果省略了，我们要在kerenl 命令中指定；我们前面已经说过 (hd[0-n],y)   硬盘分区的表示方法的用途；主要是用来指定 /boot所在的分区；</p>
+<p>比如我们确认/boot和 (hd0,6)，所以就可以这样来输入root (hd0,6)<br />
+</p>
+<div class="code">grub&gt; root (hd0,6)</div>
+<p>如果发现不对，可以重新来过；没有什么大不了的；</p>
+<h3> <a name="5" id="5"></a>5） kernel   指令，用来指定Linux的内核，及/所在的分区；</h3>
+<p>kernel   这个指令可能初学者有点怕，不知道内核在哪个分区，及内核文件名的全称是什么。不要忘记tab键的命令补齐的应用；</p>
+<p> 如果我们已经通过root   (hd[0-n],y)   指定了/boot所在的分区，语法有两个：</p>
+<p> 如果/boot和Linux的/位于同一个分区，应该是下面的一种格式；</p>
+<p> kernel   /boot/vmlinuz在这里按tab键来补齐，就看到内核全称了 ro   root=/dev/hd[a-z]X</p>
+<p> 如果/boot有自己独立的分区，应该是；</p>
+<p> kernel   /vmlinuz在这里按tab键来补齐，就看到内核全称了 ro root=/dev/hd[a-z]X</p>
+<p>在这里 root=/dev/hd[a-z]X 是Linux 的/根所位于的分区，如果不知道是哪个分区，就用tab出来的来计算，一个一个的尝试；或用cat   (hd[0-n],y)/etc/fstab 中得到Linux的/所在的分区或分区的标签； </p>
+<div class="code">grub&gt; kernel /boot/在这里按tab键；这样就列出/boot中的文件了； <br />
+  Possible files are: grub initrd-2.6.11-1.1369_FC4.img   System.map-2.6.11-1.1369<br />
+  _FC4 config-2.6.11-1.1369_FC4   vmlinuz-2.6.11-1.1369_FC4 grubBAK memtest86+-1.55<br />
+  .1 xen-syms   xen.gz<br />
+  <br />
+  grub&gt; kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro root=LABEL=/  <br />
+   
+[Linux-bzImage, setup=0x1e00, size=0x18e473]  <br />
+</div>
+<p>注解： root=LABEL=/   是Linux的/所在的分区的文件系统的标签；如果您知道Linux的/在哪个具体的分区，用root=/dev/hd[a-z]X来指定也行。比如下面的一行也是可以的； </p>
+<div class="code">grub&gt; kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro   root=/dev/hda7</div>
+<p>也可以把/boot所在的分区的指定 root (hd[0-n],y)这行省掉，直接在kernel 中指定/boot所在的分区；所以就在下面的语法；</p>
+<p>如果是/boot和Linux的根同处一个分区；</p>
+<div class="code">kernel (hd[0-n],y)/boot/vmlinuz ro   root=/dev/hd[a-z]X</div>
+<p>比如：</p>
+<div class="code">grub&gt;kernel </div>
+<p>如果是/boot和Linux所在的根不在一个分区；则是；</p>
+<div class="code">
+  <p>kernel (hd[0-n],y)/vmlinuz  ro root=/dev/hd[a-z]X </p>
+</div>
+<div class="code">grub&gt; kernel   (hd0,6)/boot/vmlinuz-2.6.11-1.1369_FC4 ro root=/dev/hda7 <br />
+     
+  [Linux-bzImage,   setup=0x1e00, size=0x18e473]</div>
+<p>或下面的输入，以cat 出/etc/fstab内容为准； </p>
+<div>grub&gt; kernel   (hd0,6)/boot/vmlinuz-2.6.11-1.1369_FC4 ro root=LABEL=/<br />
+     
+  [Linux-bzImage,   setup=0x1e00, size=0x18e473]</div>
+<h3> <a name="6" id="6"></a>6）initrd 命令行来指定initrd文件； </h3>
+<div class="code">grub&gt; initrd /boot/initrd在这里tab 来补齐；<br />
+  grub&gt;   initrd /boot/initrd-2.6.11-1.1369_FC4.img<br />
+   
+[Linux-initrd @ 0x2e1000,   0x10e685 bytes]  </div>
+<p>如果/boot是独立的一个分区，应该是如下样子的语法；比如下面的； </p>
+<div class="code">grub&gt; initrd /initrd在这里tab 来补齐；<br />
+  grub&gt; initrd   /initrd-2.6.11-1.1369_FC4.img<br />
+   
+[Linux-initrd @ 0x2e1000, 0x10e685   bytes]  </div>
+ <h3><a name="7" id="7"></a>7）boot 引导系统； </h3>
+ <div class="code">grub&gt;boot </div>
+<p>前面的几个步骤都弄好 。就进入引导；尝试一下就知道了。</p>
+<h3> <a name="8" id="8"></a>8）引导Linux系统实例全程回放；</h3>
+<p>实例：/boot和Linux的/处于同一个硬盘分区；</p>
+<pre class="code">grub&gt; cat (hd0,6)/etc/fstab
+  # This file is   edited by fstab-sync - see 'man fstab-sync' for   details
+  LABEL=/                 /                       ext3      defaults        1 1
+  /dev/devpts             /dev/pts                devpts    gid=5,mode=620  0 0
+  /dev/shm                /dev/shm                tmpfs     defaults        0 0
+  /dev/proc               /proc                   proc      defaults        0 0
+  /dev/sys                /sys                    sysfs     defaults        0 0
+  LABEL=SWAP-hda1         swap                    swap      defaults        0 0
+  /dev/hdc                /media/cdrecorder       auto      pamconsole,exec,noauto,managed 0 0
+  
+  grub&gt; root (hd0,6)
+  Filesystem   type is ext2fs, partition type 0x83
+  
+  grub&gt; kernel   /boot/在这里按tab补齐，全列出/boot所有的文件；
+  Possible files are: grub   initrd-2.6.11-1.1369_FC4.img System.map-2.6.11-1.1369_FC4
+   config-2.6.11-1.1369_FC4 vmlinuz-2.6.11-1.1369_FC4  
+  memtest86+-1.55.1   xen-syms xen.gz
+  
+  grub&gt; kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro   root=/dev/hda7  注：输入
+   
+[Linux-bzImage, setup=0x1e00,   size=0x18e473]  
+  
+  grub&gt; initrd /boot/在这里按tab补齐
+  Possible files are:   grub initrd-2.6.11-1.1369_FC4.img System.map-2.6.11-1.1369_FC4
+   config-2.6.11-1.1369_FC4 vmlinuz-2.6.11-1.1369_FC4  
+  memtest86+-1.55.1   xen-syms xen.gz
+  
+  grub&gt; initrd /boot/initrd-2.6.11-1.1369_FC4.img   注;输入intrd文件名的全名；
+   
+[Linux-initrd @ 0x2e1000, 0x10e685 bytes]  
+  
+  grub&gt;   boot</pre>
+<p>我们指定Linux的根时，可以用cat出来的fstab的内容中Linux的/分区文件系统标签来替代；也就是kernel 那行中   root=/dev/hd[a-z]X； </p>
+<pre class="code">grub&gt; cat (hd0,6)/etc/fstab
+  # This file is   edited by fstab-sync - see 'man fstab-sync' for   details
+  LABEL=/                 /                       ext3      defaults        1 1
+  /dev/devpts             /dev/pts                devpts    gid=5,mode=620  0 0
+  /dev/shm                /dev/shm                tmpfs     defaults        0 0
+  /dev/proc               /proc                   proc      defaults        0 0
+  /dev/sys                /sys                    sysfs     defaults        0 0
+  LABEL=SWAP-hda1         swap                    swap      defaults        0 0
+  
+  /dev/hdc                /media/cdrecorder         auto    pamconsole,exec,noauto,managed 0 0
+  
+  grub&gt; root   (hd0,6)
+  Filesystem type is ext2fs, partition type 0x83
+  
+  grub&gt; kernel   /boot/在这里按tab补齐，全列出/boot所有的文件；
+  Possible files are: grub   initrd-2.6.11-1.1369_FC4.img System.map-2.6.11-1.1369_FC4
+   config-2.6.11-1.1369_FC4 vmlinuz-2.6.11-1.1369_FC4  
+  memtest86+-1.55.1   xen-syms xen.gz
+  
+  grub&gt; kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro   root=LABEL=/  
+   
+[Linux-bzImage, setup=0x1e00,   size=0x18e473]  
+  
+  grub&gt; initrd /boot/在这里按tab补齐
+  Possible files are:   grub initrd-2.6.11-1.1369_FC4.img System.map-2.6.11-1.1369_FC4   
+   config-2.6.11-1.1369_FC4 vmlinuz-2.6.11-1.1369_FC4 grubBAK
+  memtest86+-1.55.1   xen-syms xen.gz
+  
+  grub&gt; initrd /boot/initrd-2.6.11-1.1369_FC4.img   注;输入intrd文件名的全名；
+   
+[Linux-initrd @ 0x2e1000, 0x10e685 bytes]  
+  
+  grub&gt;   boot</pre>
+<p>如果是/boot和Linux的根分区不在同一个分区，要把kernel和initrd 指令中的/boot去掉，也就是/vmlinuzMMMMMM 或   /initrdNNNN</p>
+<p>也可以不用root (hd[0-n]来指定/boot所在分区，要在kernel 和initrd   中指定；比如Linux的/根所位于的分区和/boot所位于的分区都是(hd0,6)，并且我们cat出来的/etc/fstab是Linux的/根分区的文件系统的标签为LABEL=/，引导操作系统的例子如下；</p>
+<div class="code">grub&gt;kernel (hd0,6)/boot/vmlinuz-2.6.11-1.1369_FC4   ro root=LABEL=/<br />
+  grub&gt;initrd   (hd0,6)/boot/initrd-2.6.11-1.1369_FC4.img<br />
+  grub&gt;boot </div>
+<p>或 </p>
+<div class="code">grub&gt;kernel (hd0,6)/boot/vmlinuz-2.6.11-1.1369_FC4   ro root=/dev/hda7 <br />
+  grub&gt;initrd   (hd0,6)/boot/initrd-2.6.11-1.1369_FC4.img<br />
+  <br />
+  grub&gt;boot </div>
+<p>如果/boot位于 /dev/hda6，也就是(hd0,5)，Linux的根/位于分区/dev/hda7，并且我们cat 出来的/etc/fstab   中/分区的标签为 LABEL=/。下面的两种方法都可以引导； </p>
+<div class="code">grub&gt;kernel (hd0,5)/vmlinuz-2.6.11-1.1369_FC4 ro   root=LABEL=/<br />
+  grub&gt;initrd   (hd0,5)/initrd-2.6.11-1.1369_FC4.img<br />
+  grub&gt;boot </div>
+<p>或 </p>
+<div class="code">grub&gt;kernel (hd0,5)/vmlinuz-2.6.11-1.1369_FC4 ro   root=/dev/hda7 <br />
+  grub&gt;initrd   (hd0,5)/initrd-2.6.11-1.1369_FC4.img<br />
+  grub&gt;boot </div>
+
+<div class="rpindex"><a href="11.html"> 下一页</a><a href="9.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

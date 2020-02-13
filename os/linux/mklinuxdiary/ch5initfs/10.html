@@ -1,0 +1,300 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>sysinit文件写法详解</h1>
+<p>sysinit文件是linux初始化文件系统时执行的第一个脚本文件。它主要做在各个运行级别中进行初始化工作,包括: 启动交换分区;检查磁盘;设置主机名;检查并挂载文件系统;加载并初始化硬件模块.</p>
+<p>具体执行的脚本由<a href="3.html">inittab</a>文件中的<a href="3.html">action</a>为sysinit的一行确定。如<a href="../../lfs/lfscn-6-6/">LFS</a>中为如下一行：</p>
+<pre class="code">si::sysinit:/etc/rc.d/init.d/rc sysinit</pre>
+<p>这代表init初始化程序执行的第一个脚本为<span class="code">/etc/rc.d/init.d/rc</span>，并传入sysinit参数。一般linux传入的参数为一数字，代表运行级别。rc会用参数合成/etc/init.d/rcsysinit.d目录，并执行其中的文件完成服务初始化。下面是/etc/init.d/rcsysinit.d目录中的文件。</p>
+<pre class="code">│   └── rcsysinit.d
+│       ├── S00mountkernfs -> ../init.d/mountkernfs
+│       ├── S02consolelog -> ../init.d/consolelog
+│       ├── S05modules -> ../init.d/modules
+│       ├── S10udev -> ../init.d/udev
+│       ├── S20swap -> ../init.d/swap
+│       ├── S30checkfs -> ../init.d/checkfs
+│       ├── S40mountfs -> ../init.d/mountfs
+│       ├── S45cleanfs -> ../init.d/cleanfs
+│       ├── S50udev_retry -> ../init.d/udev_retry
+│       ├── S70console -> ../init.d/console
+│       ├── S80localnet -> ../init.d/localnet
+│       └── S90sysctl -> ../init.d/sysctl
+</pre>
+<p>下面我们来看一下<a href="../../lfs/lfscn-6-6/">LFS</a>中rc文件的写法。</p>
+<pre class="code">#!/bin/sh
+#------------------------------------
+#sysconfig/rc只定义了几个变量，内容如下：
+#rc_base=/etc/rc.d
+#rc_functions=${rc_base}/init.d/functions
+#network_devices=/etc/sysconfig/network-devices
+#----------------------------------------------
+. /etc/sysconfig/rc
+#由上面知rc_function为 "/etc/rc.d/init.d/functions"
+#文件只设置了一变量,如PATH="/bin:/usr/bin:/sbin:/usr/sbin".还有一些函数
+. ${rc_functions}
+
+# This sets a few default terminal options.
+stty sane
+
+# These 3 signals will not cause our script to exit
+trap "" INT QUIT TSTP
+#如果 ${1}不为空,runlevel 为 ${1}。${1}是脚本的第一个参数
+[ "${1}" != "" ] && runlevel=${1}
+
+#如果runlevel为空则退出.${0}为脚本名字
+if [ "${runlevel}" = "" ]; then
+	echo "Usage: ${0} <runlevel>" >&2
+	exit 1
+fi
+#当运行级变化时，PREVLEVEL存储当前runlevel变量.
+previous=${PREVLEVEL}
+#if previous is null, previous is setted N.
+#when boot system,the previous is null.
+[ "${previous}" = "" ] && previous=N
+#对应runlevel的目录不存在则退出。
+#boot_mesg为一个向屏幕输出字符串的函数
+if [ ! -d ${rc_base}/rc${runlevel}.d ]; then
+	boot_mesg "${rc_base}/rc${runlevel}.d does not exist." ${WARNING}
+	boot_mesg_flush
+	exit 1
+fi
+
+# 停止前一个运行级的所有服务，退出这一runlevel
+# 当启动系统时，下面不会运行。不必细看
+if [ "${previous}" != "N" ]; then
+	for i in $(ls -v ${rc_base}/rc${runlevel}.d/K* 2> /dev/null)
+	do
+		check_script_status
+
+		suffix=${i#$rc_base/rc$runlevel.d/K[0-9][0-9]}
+		prev_start=$rc_base/rc$previous.d/S[0-9][0-9]$suffix
+		sysinit_start=$rc_base/rcsysinit.d/S[0-9][0-9]$suffix
+
+		if [ "${runlevel}" != "0" ] && [ "${runlevel}" != "6" ]; then
+			if [ ! -f ${prev_start} ] && [ ! -f ${sysinit_start} ]; then
+				boot_mesg -n "WARNING:\n\n${i} can't be" ${WARNING}
+				boot_mesg -n " executed because it was not"
+				boot_mesg -n " not started in the previous"
+				boot_mesg -n " runlevel (${previous})."
+				boot_mesg "" ${NORMAL}
+				boot_mesg_flush
+				continue
+			fi
+		fi
+		${i} stop
+		error_value=${?}
+
+		if [ "${error_value}" != "0" ]; then
+			print_error_msg
+		fi
+	done
+fi
+
+#开启当前runlevel的所有服务，主要是这一段要明白。
+for i in $( ls -v ${rc_base}/rc${runlevel}.d/S* 2> /dev/null)
+do
+
+	if [ "${previous}" != "N" ]; then #this if is false when booting.
+		suffix=${i#$rc_base/rc$runlevel.d/S[0-9][0-9]}
+		stop=$rc_base/rc$runlevel.d/K[0-9][0-9]$suffix
+		prev_start=$rc_base/rc$previous.d/S[0-9][0-9]$suffix
+
+		[ -f ${prev_start} ] && [ ! -f ${stop} ] && continue
+	fi
+
+	check_script_status #a function judgeing the file if is a file and executable. 
+
+	case ${runlevel} in
+		0|6) #if runleve is 0 or 6, stop the service i.
+			${i} stop
+			;;
+		*)
+			${i} start
+			;;
+	esac
+	error_value=${?}
+
+	if [ "${error_value}" != "0" ]; then
+		print_error_msg
+	fi
+done
+
+# End $rc_base/init.d/rc</pre>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

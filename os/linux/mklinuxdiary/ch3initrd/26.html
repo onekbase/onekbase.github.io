@@ -1,0 +1,336 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>linux文件系统初始化步骤</h1>
+<p>System V init启动过程 </p>
+<p> 概括地讲,Linux/Unix系统一般有两种不同的初始化启动方式.</p>
+<ul>
+  <li> 1) BSD system init</li>
+  <li> 2) System V init</li>
+</ul>
+<p> 大多数发行套件的Linux使用了与System V init相仿的init也就是Sys V init,它比传统的BSD system init更容易且更加灵活。</p>
+<p>System V init的主要思想是定义了不同的&quot;运行级别(runlevel)&quot;。通过配置文件/etc/inittab定义了系统引导时的运行级别, 进入或者切换到一个运行级别时做什么。每个运行级别对应于一个子目录/etc/rc.d/rcX.d。</p>
+<p>每个rcX.d目录中都是一些以S或K开头的文件链接。这些链接指向的脚本都 可以接收start和stop参数，S开头的链接会传入start参数，一般是开启一项服务，K会传入stop参数，一般是停止某服务。</p>
+<p> 以下是一个大致的System V init过程:</p>
+<p> (1)<strong>init 过程执行的第一个脚本是 /etc/rc.d/rc.sysinit</strong>，它主要做在各个运行级别中进行初始化工作,包括: 启动交换分区;检查磁盘;设置主机名;检查并挂载文件系统;加载并初始化硬件模块.</p>
+<p> (2)执行缺省的运行级别模式。
+  这一步的内容主要在/<strong>etc/inittab</strong>中体现, inittab文件会告诉init进程要进入什么运行级别,以及在哪里可以找到该运行级别的配置文件.</p>
+<p> (3)执行/etc/rc.d/rc.local脚本文件。
+  这也是init过程中执行的最后一个脚本文件,所以用户可以在这个文件中添加一些需要在登录之前执行的命令.</p>
+<p> (4)执行/bin/login程序</p>
+<h2>注意：</h2>
+<p>System V init只是一种模式，每个系统初始化都有差异，但大体上不会相差太多。如busybox执行的第一个启动脚本就是/etc/init.d/rcS，而且不可以改变，与上面讲的不同。</p>
+<h2>LFS文件系统初始化示例</h2>
+<h3>inittab文件</h3>
+<p>由下内容可以看出，最先执行的是<em><strong>/etc/rc.d/init.d/rc</strong></em>文件，给这个文件传入的参数是一个数字，rc会由传入的数字合成rcX.d目录的路径，然后执行其中的所有脚本链接。当然这只是一部分功能。</p>
+<pre class="code"># Begin /etc/inittab
+id:3:initdefault:
+<em><strong>si::sysinit:/etc/rc.d/init.d/rc sysinit</strong></em> #可以设定初始化脚本
+l0:0:wait:/etc/rc.d/init.d/rc 0
+l1:S1:wait:/etc/rc.d/init.d/rc 1
+l2:2:wait:/etc/rc.d/init.d/rc 2
+...
+ca:12345:ctrlaltdel:/sbin/shutdown -t1 -a -r now
+su:S016:once:/sbin/sulogin
+1:2345:respawn:/sbin/agetty tty1 9600
+2:2345:respawn:/sbin/agetty tty2 9600
+...
+# End /etc/inittab</pre>
+<h3>etc目录结构</h3>
+<p>只是一部分，有删减。</p>
+<pre class="code">.
+├── fstab
+├── <em>inittab</em>
+├── inputrc
+├── profile
+├── rc.d
+│   ├── init.d
+│   │   ├── checkfs
+│   │   ├── cleanfs
+...
+│   │   ├── modules
+│   │   ├── mountfs
+│   │   ├── mountkernfs
+│   │   ├── network
+│   │   ├── rc    #when boot, run.
+│   │   ├── reboot
+...
+│   ├── rc0.d
+│   │   ├── K80network -> ../init.d/network
+│   │   ├── K90sysklogd -> ../init.d/sysklogd
+│   │   ├── S60sendsignals -> ../init.d/sendsignals
+│   │   ├── S70mountfs -> ../init.d/mountfs
+│   │   ├── S80swap -> ../init.d/swap
+│   │   ├── S90localnet -> ../init.d/localnet
+│   │   └── S99halt -> ../init.d/halt
+│   ├── rc1.d
+│   │   ├── K80network -> ../init.d/network
+│   │   └── K90sysklogd -> ../init.d/sysklogd
+│   ├── rc2.d
+│   │   ├── K80network -> ../init.d/network
+│   │   └── K90sysklogd -> ../init.d/sysklogd
+│   ├── rc3.d
+│   │   ├── S10sysklogd -> ../init.d/sysklogd
+│   │   └── S20network -> ../init.d/network
+│   ├── rc4.d
+│   │   ├── S10sysklogd -> ../init.d/sysklogd
+│   │   └── S20network -> ../init.d/network
+│   ├── rc5.d
+│   │   ├── S10sysklogd -> ../init.d/sysklogd
+│   │   └── S20network -> ../init.d/network
+│   ├── rc6.d
+│   │   ├── K80network -> ../init.d/network
+│   │   ├── K90sysklogd -> ../init.d/sysklogd
+│   │   ├── S60sendsignals -> ../init.d/sendsignals
+│   │   ├── S70mountfs -> ../init.d/mountfs
+│   │   ├── S80swap -> ../init.d/swap
+│   │   ├── S90localnet -> ../init.d/localnet
+│   │   └── S99reboot -> ../init.d/reboot
+│   └── rcsysinit.d
+│       ├── S00mountkernfs -> ../init.d/mountkernfs
+│       ├── S02consolelog -> ../init.d/consolelog
+│       ├── S05modules -> ../init.d/modules
+...
+├── udev
+│   ├── rules.d
+│   │   └── 55-lfs.rules
+│   └── udev.conf
+└── vimrc</pre>
+<h3>network脚本</h3>
+<pre class="code">#!/bin/sh
+
+. /etc/sysconfig/rc
+. ${rc_functions}
+. /etc/sysconfig/network
+
+case "${1}" in
+	start)
+		# Start all network interfaces
+		for file in ${network_devices}/ifconfig.*
+		do
+			interface=${file##*/ifconfig.}
+
+			# skip if $file is * (because nothing was found)
+			if [ "${interface}" = "*" ]
+			then
+				continue
+			fi
+
+			IN_BOOT=1 ${network_devices}/ifup ${interface}
+		done
+		;;
+
+	stop)
+		# Reverse list
+		FILES=""
+		for file in ${network_devices}/ifconfig.*
+		do
+			FILES="${file} ${FILES}"
+		done
+
+		# Stop all network interfaces
+		for file in ${FILES}
+		do
+			interface=${file##*/ifconfig.}
+
+			# skip if $file is * (because nothing was found)
+			if [ "${interface}" = "*" ]
+			then
+				continue
+			fi
+
+			IN_BOOT=1 ${network_devices}/ifdown ${interface}
+		done
+		;;
+
+	restart)
+		${0} stop
+		sleep 1
+		${0} start
+		;;
+
+	*)
+		echo "Usage: ${0} {start|stop|restart}"
+		exit 1
+		;;
+esac
+
+# End /etc/rc.d/init.d/network
+</pre>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

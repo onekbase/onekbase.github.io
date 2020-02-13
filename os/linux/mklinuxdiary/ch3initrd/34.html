@@ -1,0 +1,232 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>用udev自动加载设备驱动模块 </h1>
+<p>了解了udev的coldplug的机理，我们就试验一下用udev自动加载设备驱动模块，并生成硬件设备文件。 </p>
+<p> （1）从 /sbin 目录下拷贝udevd、udevtrigger、udevsettle程序到image目录下的sbin目录下，并用ldd命令找到它们所需要的动态库文件，拷贝到image目录下的lib目录下。 <br />
+（2）修改init脚本，增加coldplug功能： </p>
+<pre class="code">#!/bin/sh 
+mount -t proc proc /proc 
+mount -t sysfs sysfs /sys 
+mdev -s 
+#using udev autoload hard disk driver module 
+mkdir -p /dev/.udev/db 
+udevd --daemon 
+mkdir -p /dev/.udev/queue 
+udevtrigger 
+udevsettle 
+mount /dev/sda8 /mnt 
+killall udevd 
+exec switch_root /mnt /sbin/init </pre>
+<p> 注意：在切换到真正根文件系统前，要把udevd进程杀掉，否则会和真正根文件系统中的udev脚本的执行相冲突。这就是上面killall  udevd 语句的作用。 </p>
+<p> （3）编写udev规则文件 </p>
+<p> 规 则文件是udev的灵魂，没有规则文件，udev无法自动加载硬件设备的驱动模块。为了简单，我们直接使用CLFS中的40-  modprobe.rules，把它拷贝到image目录下的etc/udev/rules.d目录。</p>
+<pre class="code">######################################################################## 
+# 
+# Description : 40-modprobe.rules 
+# 
+# Authors : Based on Open Suse Udev Rules 
+# [url=mailto:kay.sievers@suse.de]kay.sievers@suse.de 
+# 
+# Adapted to : Jim Gifford 
+# LFS : Alexander E. Patrakov 
+# 
+# Version : 00.01 
+# 
+# Notes : 
+# 
+######################################################################## 
+# hotplug 
+ENV{MODALIAS}=="?*", RUN+="/sbin/modprobe $env{MODALIAS}" 
+# scsi 
+SUBSYSTEM=="scsi_device", ACTION=="add", SYSFS{device/type}=="0|7|14", RUN+="/sbin/modprobe sd_mod" 
+SUBSYSTEM=="scsi_device", ACTION=="add", SYSFS{device/type}=="1", SYSFS{device/vendor}=="On[sS]tream", RUN+="/sbin/modprobe osst" 
+SUBSYSTEM=="scsi_device", ACTION=="add", SYSFS{device/type}=="1", RUN+="/sbin/modprobe st" 
+SUBSYSTEM=="scsi_device", ACTION=="add", SYSFS{device/type}=="[45]", RUN+="/sbin/modprobe sr_mod" 
+SUBSYSTEM=="scsi_device", ACTION=="add", RUN+="/sbin/modprobe sg" 
+# floppy 
+KERNEL=="nvram", ACTION=="add", RUN+="load_floppy_module.sh"</pre>
+<p>  注意：上面的 </p>
+<pre class="code"> ENV{MODALIAS}==&quot;?*&quot;,  RUN+=&quot;/sbin/modprobe $env{MODALIAS}&quot;</pre>
+<p>  语 句是实现自动加载硬件设备驱动模块功能的关键，它根据sysfs文件系统中记录的模块aliases数据，用modprobe命令加载对应的内核模块。有 关模块aliases的进一步说明，可参考CLFS手册（CLFS-1.0.0-x86）中的11.5.2.4.  Module Loading一节的描述。 </p>
+<p> （4）拷贝modprobe命令 </p>
+<p> 前一节提到过，busybox的modprobe 命令不能正常使用，所以我们需要拷贝 /sbin 目录下的modprobe命令到image目录下的sbin目录，供udev加载内核模块使用。</p>
+<p>再用ldd命令检查一下 /sbin/modprobe 命令所需的动态库文件，如果有则拷贝到image/lib目录下。（我的检查结果是，除了libc6外，不需要其他动态库，所以不需要拷贝） <br />
+  好了，重新生成initramfs，initramfs能够自动加载硬盘设备的驱动模块，系统顺利地从initramfs切换到了真正的根文件系统。</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

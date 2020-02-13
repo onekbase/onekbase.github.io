@@ -1,0 +1,243 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>网络配制总结</h1>
+<h2>修改ip地址</h2>
+<p> 即时生效:</p>
+<pre class="code"> # ifconfig eth0 192.168.0.20 netmask 255.255.255.0</pre>
+<p> 启动生效:</p>
+<p> 修改/etc/sysconfig/network-scripts/ifcfg-eth0</p>
+
+<h2> 修改default gateway</h2>
+<p> 即时生效:</p>
+<pre class="code"> # route add default gw 192.168.0.254</pre>
+<p> 启动生效:</p>
+<p> 修改/etc/sysconfig/network-scripts/ifcfg-eth0</p>
+
+<h2> 修改dns</h2>
+<p> 修改/etc/resolv.conf</p>
+<p> 修改后可即时生效，启动同样有效</p>
+
+<h2> 修改host name</h2>
+<p> 即时生效:</p>
+<pre class="code"> # hostname fc2</pre>
+<p> 启动生效:</p>
+<p> 修改/etc/sysconfig/network</p>
+
+<p>手工使用命令法是基于以太网卡已装入的情况下，编辑配置文件来配置网络的方法。具体步骤如下：　　</p>
+
+<h2>编辑/etc/rc.d/rc.local文件　　</h2>
+
+<p>在该文件中加入类似下列各行:　　</p>
+
+<pre class="code">#配置第一个以太网卡eth0的IP地址，子网掩码，UP起激活作用　
+/sbin/ifconfig，etho 163.1.5.125 netmask 255.255.0.0 UP　
+
+#配置并激活回环设备lo　
+/sbin/ifconfig lo 127.0.0.1 UP　
+/sbin/route add –host 127.0.0.1 lo　
+
+#让Linux将本地网的信息发送到eth0接口　
+/sbin/route add –net 163.1.5.125 netmask 255.255.0.0 eth0　
+
+#指定访问远程网络的缺省网关，假定缺省网关的IP地址为163.1.1.254　
+/sbin/route default gw 163.1.1.254 eth0　</pre>
+<h2>编辑/etc/resdv.conf文件　　</h2>
+
+<p>该文件作用是设置名称服务器。可加入下列内容。　　</p>
+
+<pre class="code">#指定本机域名为linux.net。　
+Domain linux.net　
+
+#域名称服务器(DNS)，可以是本地网，也可以是远程网上的。按nameserver的顺序#逐一查找。若未找到，则Linux放弃寻找。　
+Nameserver 163.1.1.4　
+Nameserver 10.55.0.33　</pre>
+<h2>编辑/etc/hosts.conf文件　　</h2>
+
+<p>设置主机文件表。可加入如下行：　</p>
+
+<pre class="code">order hosts，bind　
+multi on　
+163.1.5.125 lgx.linux.net lgx　</pre>
+<p>第一行表示：查找名称时，首先检查本地主机文件（hosts），然后按/etc/resolv.conf所指定的Nameservers顺序查找。　　</p>
+
+<p>第三行列出主机IP地址、主机名和别名。</p>
+
+<p>对/etc/rc.d/rc.local，/etc/hosts.conf，/etc/resolv.conf三个文件编辑后，必须重新启动机器。　　</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

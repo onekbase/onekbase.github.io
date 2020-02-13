@@ -1,0 +1,290 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="7.html"> 上一页</a><a href="9.html"> 下一页</a></div>
+<h2>1、menu.lst的写法之一；</h2>
+<p>首先我们看一下我的Fedora 4.0 中的/boot/grub/menu.lst 的内容； </p>
+<div class="code">default=0 <br />
+  timeout=5<br />
+  #splashimage=(hd0,6)/boot/grub/splash.xpm.gz<br />
+  hiddenmenu<br />
+  title   Fedora Core (2.6.11-1.1369_FC4)<br />
+        
+root (hd0,6)  <br />
+        
+kernel   /boot/vmlinuz-2.6.11-1.1369_FC4 ro root=LABEL=/  <br />
+        
+initrd   /boot/initrd-2.6.11-1.1369_FC4.img  <br />
+  title WinXp<br />
+        
+rootnoverify   (hd0,0)  <br />
+        
+chainloader +1  </div>
+<p>注解：<br />
+</p>
+<div class="code">default=0 </div>
+<p> default=0   是默认启动哪个系统，从0开始；每个操作系统的启动的定义都从title开始的，第一个title 在GRUB的启动菜单上显示为0,第二个启动为1，以此类推</p>
+<div class="code">timeout=5 </div>
+<p>  注：表示在开机后，GRUB画面出现几秒后开始以默认启动；如果在启动时，移动上下键，则解除这一规则；<br />
+#splashimage=(hd0,6)/boot/grub/splash.xpm.gz   注：GRUB的背景画面，这个是可选项；我不喜欢GRUB的背景画面，所以加#号注掉，也可以删除；</p>
+<div class="code">hiddenmenu </div>
+<p><strong>注解：</strong>隐藏GRUB的启动菜单，这项也是可选的，也可以用#号注掉；</p>
+<p>一般的情况下对Linux操作系统的启动，一般要包括四行；title 行；root行；kernel 行；initrd 行；</p>
+<h3>  <a name="1" id="1"></a>1）在menu.lst中 ，通过 root (hd[0-n],y)来指定/boot   所在的分区；</h3>
+<p>title XXXXX 注：title 后面加一个空格，title 是小写的，后面可以自己定义；比如FC4，自己定义一个名字就行；</p>
+<p> root   (hd[0-n],y) ，在本例中，我们看到的是root (hd0,6) ,root   (hd[0-n],y)表示的是/boot所在的分区；有时我们安装Linux的时候，大多是不设置/boot的，这时/boot和/所在的同一个分区； 这个root   (hd[0-n],y)很重要，因为/boot目录中虽然有grub目录，最为重要的是还有kernel   和initrd文件，这是Linux能启动起来最为重要东西；</p>
+<p>有的弟兄会问，root (hd[0-n],y)是怎么来的？</p>
+<p><strong>请参考：</strong>《在Linux系统中存储设备的两种表示方法》</p>
+<h3>  <a name="2" id="2"></a>2）在menu.lst中，kernel 命令行的写法；</h3>
+<p>kernel 一行，是通指定内核及Linux的/分区所在位置；</p>
+<p>比如例子中是；<br />
+</p>
+<div class="code">kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro   root=LABEL=/ </div>
+<p> 在这里以kernel   起始，指定Linux的内核的文件所处的绝对路径；因为内核是处在/boot目录中的，   如果/boot是独立的一个分区，则需要把boot省略；如果/boot是独立的分区，这行要写成:</p>
+<div class="code">kernel /vmlinuz-2.6.11-1.1369_FC4 ro root=LABEL=/  </div>
+<p>因为/boot所处的分区已经在title 下一行root   (hd[0-n],y)中指定了，所以就无需要再指明内核处在哪个分区了；另外Linux系统的硬盘分区的挂载配置文件在/etc/fstab ，原理是通过 mount   /dev/hd[a-z]X /boot 来进行的；您可以对照着来理解；</p>
+<p>ro 表示只读； root=LABEL=/ 来表示Linux的根所处的分区。LABEL=/   这是硬盘分区格式化为相应文件系统后所加的标签；如果您不了解什么是标签，也可以直接以/dev/hd[a-z]X   或者/dev/sd[a-z]X来表示；就看您的Linux是根分区是在哪个分区了。比如我的是在/dev/hda7 ，   那这里就可以写成root=/dev/hda7；</p>
+<p>如果查看系统运行所挂载的分区，请用 df -lh 来查看，就能明白是不是/boot是独立的分区，或者查看/etc/fstab也能知道； </p>
+<div class="code">[root@localhost ~]# df -lh<br />
+  Filesystem              容量  已用 可用 已用% 挂载点<br />
+  /dev/hda7              11G  9.2G  1.2G  90%   /<br />
+  /dev/shm              236M     0  236M   0% /dev/shm</div>
+<p>在这个例子中，我们可以发现   /boot并没有出现只有/dev/hda7，这表示/boot并不是独立的一个分区；所有的东西都包含在/中；于是我们在/boot中查看内核版本；<br />
+</p>
+<div class="code">[root@localhost ~]# ls   /boot/vmlinuz*<br />
+  /boot/vmlinuz-2.6.11-1.1369_FC4     注：看到内核vmlinuz所处的目录；</div>
+<p>于是我们就可以这样kernel 这行了； </p>
+<div class="code">kernel /boot/vmlinuz-2.6.11-1.1369_FC4  ro   root=/dev/hda7</div>
+<h3><strong> <a name="3" id="3"></a>3）initrd   命令行的写法；
+  </strong></h3>
+<p>如果是/boot独立一个分区，initrd   一行要把/boot中省略；如果/boot不是处于一个分区，而是和Linux的/分区处于同一分区，不应该省略；</p>
+<p>比如我们在2）中用的例子；现在拿到这里，我们应该首先查看 /boot中的initrd的文件名到底是什么； </p>
+<div class="code">[root@localhost ~]# ls   /boot/initrd*<br />
+  /boot/initrd-2.6.11-1.1369_FC4.img</div>
+<p>如果是通过df -lh 得知或查看/etc/fstab 也行， 得知/boot是独立的分区；这时initrd 应该写成； </p>
+<div class="code">initrd  /initrd-2.6.11-1.1369_FC4.img</div>
+<p>如果是 /boot不是独处一个分区，而是在/同一处一个分区， 则要写成； </p>
+<div class="code">initrd    /boot/initrd-2.6.11-1.1369_FC4.img</div>
+<h3>  <a name="4" id="4"></a>4）menu.lst第一种写法的总结和实践；</h3>
+<p>在这里，我们只说重要的，不重要的就一带而过了；</p>
+<h4>      1］用fdisk -l ；df   -lh ；more /etc/fstab来确认分区情况；</h4>
+<p>
+  我们过fdisk -l ；df -lh ; more   /etc/fstab 来确认/boot所在的分区，及Linux的根分区所在位置；</p>
+<p>比如我们确认/boot和Linux的/分区同处一个分区； </p>
+<div class="code">[root@localhost ~]# df -lh<br />
+  Filesystem              容量  已用 可用 已用% 挂载点<br />
+  /dev/hda7              11G  9.2G  1.2G  90%   /<br />
+  /dev/shm              236M     0  236M   0% /dev/shm</div>
+<p>然后我们/etc/fstab 中,查看/分所在的分区或分区标签是什么；<br />
+</p>
+<div class="code">[root@localhost ~]# more /etc/fstab<br />
+  # This file is   edited by fstab-sync - see 'man fstab-sync' for   details<br />
+  LABEL=/                 /                       ext3      defaults        1 1<br />
+  /dev/devpts             /dev/pts                devpts    gid=5,mode=620  0 0<br />
+  /dev/shm                /dev/shm                tmpfs     defaults        0 0<br />
+  /dev/proc               /proc                   proc      defaults        0 0<br />
+  /dev/sys                /sys                    sysfs     defaults        0 0<br />
+  LABEL=SWAP-hda1         swap                    swap      defaults        0 0<br />
+  /dev/hdc                /media/cdrecorder       auto      pamconsole,exec,noauto,managed 0 0</div>
+<p>经过上面的df -lh 和more /etc/fstab   的对照中得知，/boot并是独处一个分区，而是和/在同一个分区；这个Linux系统安装在/dev/hda7上，文件系统（此分区）的标签为LABEL=/   ，/boot也是处于/dev/hda7 ，/dev/hda7也可以说是 root (hd0,6)；</p>
+<h4>      2]查看内核vmlinuz的和initrd文件名的全称； </h4>
+<div class="code">[root@localhost ~]# ls -lh   /boot/vmlinuz*<br />
+  -rw-r--r--  1 root root 1.6M 2005-06-03    /boot/vmlinuz-2.6.11-1.1369_FC4<br />
+  [root@localhost ~]# ls -lh   /boot/initrd*<br />
+  -rw-r--r--  1 root root 1.1M 11月 26 22:30   /boot/initrd-2.6.11-1.1369_FC4.img</div>
+<h4>  3]开始写menu.lst ；</h4>
+<p>我们根据上面所提到的，可以写成如下的样子； </p>
+<div class="code">default=0  <br />
+  timeout=5<br />
+  title FC4<br />
+        
+root   (hd0,6)  <br />
+        
+kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro root=LABEL=/   <br />
+        
+initrd /boot/initrd-2.6.11-1.1369_FC4.img  </div>
+<p>也可以写成； </p>
+<div class="code">default=0  <br />
+  timeout=5<br />
+  title FC4<br />
+        
+root   (hd0,6)  <br />
+        
+kernel /boot/vmlinuz-2.6.11-1.1369_FC4 ro   root=/dev/hda7  <br />
+        
+initrd /boot/initrd-2.6.11-1.1369_FC4.img  </div>
+<p><strong>注解：</strong>上面两个不同之处在于一指定Linux的根/所在的分区时，一个是用了文件系统的标签，另一个没有用标签；</p>
+
+<div class="rpindex"><a href="9.html"> 下一页</a><a href="7.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

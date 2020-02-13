@@ -1,0 +1,271 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>内核配制详细说明</h1>
+<h2>1. Code maturity level options </h2>
+<p> 代码成熟等级。此处只有一项：prompt for development and/or incomplete code/drivers，如果你要试验现在仍处于实验阶段的功能，比如khttpd、IPv6等，就必须把该项选择为Y了；否则可以把它选择为N。 </p>
+<h2>2. Loadable module support </h2>
+<p> 对模块的支持。这里面有三项： </p>
+<p>Enable loadable module support：除非你准备把所有需要的内容都编译到内核里面，否则该项应该是必选的。 </p>
+<p> Set version inFORMation on all module symbols：可以不选它。 </p>
+<p> Kernel module loader：让内核在启动时有自己装入必需模块的能力，建议选上。 </p>
+<h2>3. Processor type and features </h2>
+<p> CPU类型。内容蛮多的，不一一介绍了，有关的几个如下： </p>
+<p>Processor family：根据你自己的情况选择CPU类型。 </p>
+<p> High Memory Support：大容量内存的支持。可以支持到4G、64G，一般可以不选。 </p>
+<p> Math emulation：协处理器仿真。协处理器是在386时代的宠儿，现在早已不用了。 </p>
+<p> MTTR support：MTTR支持。可不选。 </p>
+<p> Symmetric multi-processing support：对称多处理支持。除非你富到有多个CPU，否则就不用选了。 </p>
+<h2>4. General setup </h2>
+<p> 这里是对最普通的一些属性进行设置。这部分内容非常多，一般使用缺省设置就可以了。下面介绍一下经常使用的一些选项： </p>
+<p>Networking support：网络支持。必须，没有网卡也建议你选上。 </p>
+<p> PCI support：PCI支持。如果使用了PCI的卡，当然必选。 </p>
+<p> PCI access mode：PCI存取模式。可供选择的有BIOS、Direct和Any，选Any吧。 </p>
+<p> Support for hot-pluggabel devices：热插拔设备支持。支持的不是太好，可不选。 </p>
+<p> PCMCIA/CardBus support：PCMCIA/CardBus支持。有PCMCIA就必选了。 </p>
+<p> System V IPC </p>
+<p> BSD Process Accounting </p>
+<p> Sysctl support：以上三项是有关进程处理/IPC调用的，主要就是System V和BSD两种风格。如果你不是使用BSD，就按照缺省吧。 </p>
+<p> Power Management support：电源管理支持。 </p>
+<p> Advanced Power Management BIOS support：高级电源管理BIOS支持。 </p>
+<h2>5. Memory Technology Device（MTD） </h2>
+<p> MTD设备支持。可不选。 </p>
+<h2>6. Parallel port support </h2>
+<p> 并口支持。如果不打算使用串口，就别选了。 </p>
+<h2>7. Plug and Play configuration </h2>
+<p> 即插即用支持。虽然Linux对即插即用目前支持的不如Windows好，但是还是选上吧，这样你可以拔下鼠标之类的体验一下Linux下即插即用的感觉。 </p>
+<h2>8. Block devices </h2>
+<p> 块设备支持。这个就得针对自己的情况来选了，简单说明一下吧： </p>
+<p>Normal PC floppy disk support：普通PC软盘支持。这个应该必选。 </p>
+<p> XT hard disk support： </p>
+<p> Compaq SMART2 support： </p>
+<p> Mulex DAC960/DAC1100 PCI RAID Controller support：RAID镜像用的。 </p>
+<p> Loopback device support： </p>
+<p> Network block device support：网络块设备支持。如果想访问网上邻居的东西，就选上。 </p>
+<p> Logical volume manager（LVM）support：逻辑卷管理支持。 </p>
+<p> Multiple devices driver support：多设备驱动支持。 </p>
+<p> RAM disk support：RAM盘支持。 </p>
+<h2>9. Networking options </h2>
+<p> 网络选项。这里配置的是网络协议。内容太多了，不一一介绍了，自己看吧，如果你对网络协议有所了解的话，应该可以看懂的。如果懒得看，使用缺省选项（肯定要选中TCP/IP  networking哦）就可以了。让我们看看，TCP/IP、ATM、IPX、DECnet、Appletalk……支持的协议好多哦，IPv6也支持了，Qos  and/or fair queueing（服务质量公平调度）也支持了，还有kHTTPd，不过这些都还在实验阶段。 </p>
+<h2>10. Telephony Support </h2>
+<p> 电话支持。Linux下可以支持电话卡，这样你就可以在IP上使用普通的电话提供语音服务了。记住，电话卡可和modem没有任何关系哦。 </p>
+<h2>11. ATA/IDE/MFM/RLL support </h2>
+<p> 这个是有关各种接口的硬盘/光驱/磁带/软盘支持的，内容太多了，使用缺省的选项吧，如果你使用了比较特殊的设备，比如PCMCIA等，就到里面自己找相应的选项吧。 </p>
+<h2>12. SCSI support </h2>
+<p> SCSI设备的支持。我没有SCSI的设备，所以根本就不用选，如果你用了SCSI的硬盘/光驱/磁带等设备，自己找好了。 </p>
+<h2>13. Fusion MPT device support </h2>
+<p> 需要Fusion MPT兼容PCI适配器，不用选。 </p>
+<h2>14. I2O device support </h2>
+<p> 需要I2O接口适配器支持，在智能Input/Output（I2O）体系接口中使用。 </p>
+<h2>15. Network device support </h2>
+<p> 网络设备支持。上面选好协议了，现在该选设备了，可想而知，内容肯定多得很。还好还好，里面大概分类了，有ARCnet设备、Ethernet（10 or  100 Mbit）、Ethernet（1000Mbit）、Wireless LAN（non-hamradio）、Token Ring device、Wan  interfaces、PCMCIA network device support几大类。我用的是10/100M的以太网，看来只需要选则这个了。还是10/100M的以太网设备熟悉，内容虽然多，一眼就可以看到我所用的RealTeck  RTL-8139 PCI Fast Ethernet Adapter support，为了免得麻烦，编译到内核里面好了，不选M了，选Y。耐心点，一般说来你都能找到自己用的网卡。如果没有，你只好自己到厂商那里去要驱动了。 </p>
+<h2>16. Amateur Radio support </h2>
+<p> 配置业余无线广播。 </p>
+<h2>17. IrDA（infrared）support </h2>
+<p> 红外线支持。 </p>
+<h2>18. ISDN subsystem </h2>
+<p> 如果你使用ISDN上网，这个就必不可少了。 </p>
+<h2>19. Old CD-ROM drivers（not SCSI、not IDE） </h2>
+<p> 做的可真周到，原来那些非SCSI/IDE口的光驱谁还在用啊，自己选吧，用IDE的CD-ROM不用选。 </p>
+<h2>20. Character devices </h2>
+<p> 字符设备。这个内容又太多了，先使用缺省设置，需要的话自己就修改。把大类介绍一下吧： </p>
+<p>I2C support：I2C是Philips极力推动的微控制应用中使用的低速串行总线协议。如果你要选择下面的Video For Linux，该项必选。 </p>
+<p> Mice：鼠标。现在可以支持总线、串口、PS/2、C&amp;T 82C710 mouse port、PC110 digitizer pad，自己根据需要选择。 </p>
+<p> Joysticks：手柄。即使在Linux下把手柄驱动起来意义也不是太大，游戏太少了。 </p>
+<p> Watchdog Cards：虽然称为Cards，这个可以用纯软件来实现，当然也有硬件的。如果你把这个选中，那么就会在你的/dev下创建一个名为watchdog的文件，它可以记录你的系统的运行情况，一直到系统重新启动的1分钟左右。有了这个文件，你就可以恢复系统到重启前的状态了。 </p>
+<p> Video For Linux：支持有关的音频/视频卡。 </p>
+<p> Ftape, the floppy tape device driver： </p>
+<p> PCMCIA character device support： </p>
+<h2>21. File systems </h2>
+<p> 文件系统。内容又太多了，老法子，在缺省选项的基础上进行修改。介绍以下几项： </p>
+<p>Quota support：Quota可以限制每个用户可以使用的硬盘空间的上限，在多用户共同使用一台主机的情况中十分有效。 </p>
+<p> DOS FAT fs support：DOS FAT文件格式的支持，可以支持FAT16、FAT32。 </p>
+<p> ISO 9660 CD-ROM file system support：光盘使用的就是ISO 9660的文件格式。 </p>
+<p> NTFS file system support：ntfs是NT使用的文件格式。 </p>
+<p> /proc file system support：/proc文件系统是Linux提供给用户和系统进行交互的通道，建议选上，否则有些功能没法正确执行。 </p>
+<p>还有另外三个大类都规到这儿了：Network File Systems（网络文件系统）、Partition Types（分区类型）、Native  Language Support（本地语言支持）。值得一提的是Network File Systems里面的两种：NFS和SMB分别是Linux和Windows相互以网络邻居的形式访问对方所使用的文件系统，根据需要加以选择。 </p>
+<h2>22. Console drivers </h2>
+<p> 控制台驱动。一般使用VGA text console就可以了，标准的80*25的文本控制台。 </p>
+<h2>23. Sound </h2>
+<p> 声卡驱动。如果你能在列表中找到声卡驱动那自然最好，否则就试试OSS了。 </p>
+<h2>24. USB supprot </h2>
+<p> USB支持。很多USB设备，比如鼠标、调制解调器、打印机、扫描仪等，在Linux都可以得到支持，根据需要自行选择。 </p>
+<h2>25. Kernel hacking </h2>
+<p> 配置了这个，即使在系统崩溃时，你也可以进行一定的工作了。普通用户是用不着这个功能的。 </p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

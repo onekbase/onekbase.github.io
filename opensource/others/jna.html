@@ -1,0 +1,287 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+  <h1> JNA 的体验</h1>
+  <p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-07-29</strong></p>
+JNA（Java&nbsp;Native&nbsp;Access&nbsp;）提供一组Java工具类用于在运行期动态访问系统本地库（native&nbsp;library：如Window的dll）而不需要编写任何Native/JNI代码。开发人员只要在一个java接口中描述目标native&nbsp;library的函数与结构，JNA将自动实现Java接口到native&nbsp;function的映射。 
+<h2 > JNA的简单测试 </h2>
+    <p >在linx下使用jna调用本地方法的时候，需要将C写成的程序编译为so文件 </p>
+    <h3 > 1.&nbsp;test.c文件 </h3>
+    <pre class="code">#include&#60;stdio.h&#62; 
+    int&nbsp;add(int&nbsp;a,int&nbsp;b); 
+    int&nbsp;add(int&nbsp;a,int&nbsp;b) 
+    { 
+    &#160;&nbsp;&#160;&nbsp;&#160;&nbsp;int&nbsp;c&nbsp;=&nbsp;a&nbsp;+&nbsp;b&nbsp;; 
+    &#160;&nbsp;&#160;&nbsp;&#160;&nbsp;return&nbsp;c&nbsp;; 
+    }&#160; </pre>
+    <h3 > 2.&nbsp;编译为so动态链接库 </h3>
+    <pre class="code">&#160;gcc&nbsp;-fpic&nbsp;-c&nbsp;test.c&nbsp; 
+ gcc&nbsp;-shared&nbsp;-o&nbsp;libtest.so&nbsp;test.o </pre>
+    <p >ls看一下生成的文件： </p>
+    <pre class="code">libtest.so&nbsp;test.c&nbsp;test.o </pre>
+    <p >这样就会生成so文件了。&#160;这里为什么要命名为libtest.so而不是test.so呢？因为jna在找so文件的时候，要匹配前缀为lib的so文件 </p>
+    <h3 > 3.&nbsp;编写TestSo.java </h3>
+    接下来开始写java文件（需要下载jna.jar），我们写一个TestSo.java： 
+    <pre class="code"> import&nbsp;com.sun.jna.Library; 
+    import&nbsp;com.sun.jna.Native; 
+    public&nbsp;class&nbsp;TestSo&nbsp;{ 
+    public&nbsp;interface&nbsp;LgetLib&nbsp;extends&nbsp;Library&nbsp;{ 
+    //&nbsp;调用linux下面的so文件,注意，这里只要写test就可以了，不要写libtest，也不要加后缀 
+    LgetLib&nbsp;INSTANCE&nbsp;=&nbsp;(LgetLib)&nbsp;Native.loadLibrary("test",LgetLib.class); 
+    int&nbsp;add(int&nbsp;a,int&nbsp;b); 
+    } 
+    public&nbsp;int&nbsp;add(int&nbsp;a,int&nbsp;b){ 
+    return&nbsp;LgetLib.INSTANCE.add(a,b); 
+    } 
+    public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;{ 
+    TestSo&nbsp;ts&nbsp;=&nbsp;new&nbsp;TestSo(); 
+    int&nbsp;c&nbsp;=&nbsp;ts.add(10,20); 
+    System.out.println("10+20="+c); 
+    } </pre>
+    <h3 > 4.&nbsp;编译TestSo.java </h3>
+    <p >export&nbsp;CLASSPATH=$CLASSPATP:./jna.jar&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;&#160;&nbsp;//这里是设置环境变量 </p>
+    <p >javac&nbsp;TestSo.java </p>
+    <p >这里直接运行TestSo的话： </p>
+    <pre class="code">&#160;   java&nbsp;TestSo 
+    Exception&nbsp;in&nbsp;thread&nbsp;"main"&nbsp;java.lang.UnsatisfiedLinkError:&nbsp;Unable&nbsp;to&nbsp;load&nbsp;library&nbsp;'test':&nbsp;libtest.so:&nbsp;cannot&nbsp;open&nbsp;shared&nbsp;object&nbsp;file:&nbsp;No&nbsp;such&nbsp;file&nbsp;or&nbsp;directory 
+    at&nbsp;com.sun.jna.NativeLibrary.loadLibrary(NativeLibrary.java:163) 
+    at&nbsp;com.sun.jna.NativeLibrary.getInstance(NativeLibrary.java:236) 
+    at&nbsp;com.sun.jna.Library$Handler.&#60;init&#62;(Library.java:140) 
+    at&nbsp;com.sun.jna.Native.loadLibrary(Native.java:379) 
+    at&nbsp;com.sun.jna.Native.loadLibrary(Native.java:364) 
+    at&nbsp;TestSo$LgetLib.&#60;clinit&#62;(TestSo.java:7) 
+    at&nbsp;TestSo.add(TestSo.java:11) 
+    &#160;&nbsp;at&nbsp;TestSo.main(TestSo.java:15) </pre>
+    <p >这个错误是指找不到so文件。于是我们将so文件所在的目录设置到环境变量LD_LIBRARY_PATH中： </p>
+    <p >vim&nbsp;/etc/profile </p>
+    <p >在export&nbsp;PATH&nbsp;USER&nbsp;LOGNAME&nbsp;MAIL&nbsp;HOSTNAME&nbsp;HISTSIZE&nbsp;INPUTRC下面加入 </p>
+    <p >export&nbsp;LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${你的so目录} </p>
+    <p >之后，你可以检查一下设置的起没起效果：echo&nbsp;$LD_LIBRARY_PATH，如果出现你设置的内容就对了，如果没有，你可以重新打开一个窗口再查一下 </p>
+    <p >设置好环境变量之后，你就可以运行java类了： </p>
+    <p >java&nbsp;TestSo </p>
+    <p >10+20=30 </p>
+    <p >到此运行成功。 </p>
+    <p >如果你遇到了紧急的情事，而这个地方又搞不定，你可以暂时交so文件放到/usr/lib这个目录下面，一般是可以使程序运行的。 </p>
+  <h2 > Tesseract-ocr中JNA测试 </h2>
+  <pre class="code">package&nbsp;test; 
+    import&nbsp;java.io.File; 
+    import&nbsp;java.io.FileInputStream; 
+    import&nbsp;java.io.FileNotFoundException; 
+    import&nbsp;java.io.IOException; 
+    import&nbsp;java.io.InputStream; 
+    &nbsp;import&nbsp;com.sun.jna.Library; 
+    import&nbsp;com.sun.jna.Native; 
+    import&nbsp;com.sun.jna.Platform; 
+     
+    public&nbsp;class&nbsp;Main&nbsp;{ 
+    &#9;public&nbsp;interface&nbsp;LgetLib&nbsp;extends&nbsp;Library&nbsp;{ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LgetLib&nbsp;INSTANCE&nbsp;=&nbsp;(LgetLib)&nbsp;Native.loadLibrary("tesseract_api",LgetLib.class); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//char&nbsp;*Ocr(char&nbsp;*input,&nbsp;char&nbsp;*output,&nbsp;char&nbsp;*&nbsp;lang,int&nbsp;bytes_per_pixel,int&nbsp;bytes_per_line,int&nbsp;left,int&nbsp;top,int&nbsp;width,int&nbsp;height); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;TesseractRect(String&nbsp;input,int&nbsp;bytes_per_pixel,int&nbsp;bytes_per_line,int&nbsp;left,&nbsp;int&nbsp;top,int&nbsp;width,int&nbsp;height); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;Cube(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+    &#9;//public&nbsp;native&nbsp;String&nbsp;OCR(String&nbsp;input,String&nbsp;output,String&nbsp;lang,int&nbsp;bytes_per_pixel,int&nbsp;bytes_per_line,int&nbsp;left,int&nbsp;top,int&nbsp;width,&nbsp;int&nbsp;height); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;public&nbsp;String&nbsp;TesseractRect(String&nbsp;input,int&nbsp;bytes_per_pixel,int&nbsp;bytes_per_line,int&nbsp;left,&nbsp;int&nbsp;top,int&nbsp;width,int&nbsp;height){ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//return&nbsp;LgetLib.INSTANCE.TesseractRect(input,bytes_per_pixel,bytes_per_line,left,top,width,height); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;void&nbsp;Cube(){ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LgetLib.INSTANCE.Cube(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//二进制流时，bytes_per_pixel是0 
+    &#9;public&nbsp;static&nbsp;void&nbsp;main(String[]&nbsp;args)&nbsp;throws&nbsp;InstantiationException,&nbsp;IllegalAccessException,&nbsp;FileNotFoundException,&nbsp;IOException&nbsp;{ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main&nbsp;m&nbsp;=&nbsp;new&nbsp;Main();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;InputStream&nbsp;input_file&nbsp;=&nbsp;new&nbsp;FileInputStream(new&nbsp;File("/home/administrator/5.tif"));&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*&nbsp;&nbsp;if(input_file==null) 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("inputStream&nbsp;null"); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;input&nbsp;=&nbsp;input_file.toString(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//String&nbsp;output&nbsp;=&nbsp;"";&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringBuffer&nbsp;&nbsp;&nbsp;out&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;StringBuffer(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[]&nbsp;&nbsp;&nbsp;b&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;new&nbsp;&nbsp;&nbsp;byte[4096]; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int&nbsp;&nbsp;n;&nbsp;(n&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;input_file.read(b))!=-1;){ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out.append(new&nbsp;&nbsp;&nbsp;String(b,&nbsp;&nbsp;&nbsp;0,&nbsp;&nbsp;&nbsp;n)); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input=out.toString(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;System.out.println(input);&#9; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_pixel=0; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;bytes_per_line=50; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;left&nbsp;=0; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;top&nbsp;=&nbsp;0; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;width&nbsp;=1024; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int&nbsp;height&nbsp;=800; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m.TesseractRect(input,&nbsp;bytes_per_pixel,&nbsp;bytes_per_line,&nbsp;left,&nbsp;top,&nbsp;width,&nbsp;height);*/ 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//m.Cube(); 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} 
+    } 
+</pre>
+<h2 > 问题总结 </h2>
+    <p >发现是好多warning造成的，这些warning都是一些undefined&nbsp;reference问题。事实，读取图片已经成功，在跟踪到read_tiff_image(tif,&nbsp;&image);就发现警告undefined&nbsp;reference`IMAGE::IMAGE()问题。 </p>
+</div>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

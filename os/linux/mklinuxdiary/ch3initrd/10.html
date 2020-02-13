@@ -1,0 +1,218 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>动态编译busybox</h1>
+<p>进入Build Options时，不要选择Build  Busybox as a static binary,其他所有操作步骤跟静态编译一样，你会发现这样建立的文件系统无法启动，终端上打印出如下消息：</p>
+<pre class="code"> Kernel  panic-not synving:No init found. Try passing init=option to kernel.</pre>
+<p> 为什么会出现这种问题呢？这就得回到两种编译方式的特点上来。静态编译时是将所用到的库文件一起编译了进去，而动态编译时是在需要时才调用相应的库。我们选择动态编译后，没有添加任何库文件就运行，显然是会出错的。那么如何查看busybox可执行文件里使用的库呢。ldd和Readelf都可以显示。</p>
+<h2>ldd</h2>
+<p>下面是查看cat的库的结果，<span class="code">linux-gate.so.1</span>是与内核通信的，不用管。所有程序其实都是通过<span class="code">ld-linux.so.2</span>来找库文件的，它就是一个中介，必不可少。</p>
+<pre class="code">#ldd /bin/cat
+linux-gate.so.1 =&gt;  (0x00bfe000)
+libc.so.6 =&gt; /lib/libc.so.6 (0x00a4a000)
+/lib/ld-linux.so.2 (0x00a28000)
+</pre>
+<h2>readelf</h2>
+<p>下面是编译的ARM上的系统的库文件查找。</p>
+<pre class="code"># arm-uclibc-linux-readelf -d busybox 
+Dynamic section at offset 0xca014 contains 18 entries:
+
+标记 类型 名称/值
+0x00000001 (NEEDED) 共享库:[libm.so.0]
+0x00000001 (NEEDED) 共享库:[libc.so.0]
+0x0000000c (INIT) 0xbe24
+0x0000000d (FINI) 0xb2054
+0x00000004 (HASH) 0x80e8
+0x00000005 (STRTAB) 0xa500
+0x00000006 (SYMTAB) 0x8b70
+0x0000000a (STRSZ) 3259 (bytes)
+0x0000000b (SYMENT) 16 (bytes)
+0x00000015 (DEBUG) 0x0
+0x00000003 (PLTGOT) 0xda0cc
+0x00000002 (PLTRELSZ) 3040 (bytes)
+0x00000014 (PLTREL) REL
+0x00000017 (JMPREL) 0xb244
+0x00000011 (REL) 0xb1bc
+0x00000012 (RELSZ) 136 (bytes)
+0x00000013 (RELENT) 8 (bytes)
+0x00000000 (NULL) 0x0</pre>
+<p>  从上面的结果中，我们可以看到，busybox这个程序使用到了libm.so.0和libc.so.0两个库文件，实际上这是2个符号链接，分别指向libc-0.9.28.so和libuClibc-0.9.28.so。</p>
+<p>将以上四个文件分别拷贝到lib目录下。按理说，这样应该就可以了，但是仍然无法正常运行。显示的错误信息和刚刚没加库之前一样。可能的原因有2种：一是库文件没有添加全，二是库文件没有正确被加载。</p>
+<p>根据readelf显示的结果应该不是第一种原因。那么到底为什么没被正确加载呢？原来库文件的加载，还需要一个共享库加载器。找到对应的文件ld-uClibc-0.9.28.so和ld-uClibc.so.0添加到lib目录下后。运行正常。</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

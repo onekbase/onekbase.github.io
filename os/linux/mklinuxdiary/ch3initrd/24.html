@@ -1,0 +1,249 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>initrd切入linux文件系统</h1>
+<h2>initrd,典型的系统启动顺序</h2>
+<p align="left">1. boot loader加载内核并初始化ram disk <br />
+  2. 内核把initrd转化成正常的ram disk并释放initrd使用的内存 <br />
+  3. initrd作为root被挂载，赋予读写权限。 <br />
+  4. /linuxrc被执行（这可以是任何可执行文件，如脚本，运行在uid 0,可以做任何初始化）。 <br />
+  5. linuxrc挂载真正的根文件系统 <br />
+  6. linuxrc使用pivot_root系统调用把根文件系统放在根目录。 <br />
+  7. 正常的启动序列（/sbin/init）在根文件系统上执行。 <br />
+  8. initrd文件系统被移去。 </p>
+<p align="left">注意，改变根目录不牵扯卸载他。 挂载在initrd的文件系统仍然可以被访问。</p>
+<h2 align="left">如何改变根设备 </h2>
+<p align="left">整个过程包括如下几步： </p>
+<p align="left"> 1. 挂载新的根文件系统 <br />
+  2. 把他变成根文件系统 <br />
+  3. 删除所有对旧（Initrd）文件系统的访问 <br />
+  4. 卸载initrd文件系统，重定位ram disk </p>
+<p align="left">挂载新的根文件系统很容易：只需把他挂载到当前根下。例如： </p>
+<pre class="code"># mkdir /new-root 
+# mount -o ro /dev/hda1 /new-root </pre>
+<p align="left">根的转变伴随着pivot_root系统调用。pivot_root把当前的根转移到新根下的一个目录，并把新的根放到原来的地方。老根的目录必须在调用pivot_root前退出。例如： </p>
+<pre class="code"># cd /new-root 
+# mkdir initrd 
+# pivot_root . initrd </pre>
+<p align="left">现在，linuxrc进程可以仍然访问老的根。所有的这些引用可以通过如下命令释放： </p>
+<pre class="code"> # exec chroot . what-follows dev/console 2&gt;&amp;1 </pre>
+<p align="left">然后执行的就是新根下的init程序，例如/sbin/init。</p>
+<p align="left"> 如果新的根文件系统使用devfs,而/dev目录还不可用，devfs必须被挂载进来， 
+  在使用chroot之前，只有这样才有/dev/console设备。 </p>
+<h2 align="left">注意：</h2>
+<p align="left">privot_root执行的情况可能有所不同。为了保证兼容性，注意以下几点：</p>
+<ul>
+  <li>调用pivot_root之前，调用进程的当前目录应指向新的根 文件目录使用”.“作为第一个参数，老根的相对路径作为第二个参数。ch</li>
+  <li>root程序必须在就老的和新的根下都可以使用。</li>
+  <li>最后改变根到新的根下。</li>
+  <li>在执行命令中 使用dev/console的相对路径。 </li>
+</ul>
+<p align="left">&nbsp;</p>
+<p align="left">注意，initrd可以被卸载，而ram disk使用的内存可以被释放： </p>
+<pre class="code"># umount /initrd 
+# blockdev --flushbufs /dev/ram0 # /dev/rd/0 if using devfs </pre>
+<p align="left">initrd还可以使用NFS-mounted根，参考man pivot_root(8)。 </p>
+<h2 align="left">示例</h2>
+<p align="left">下面是redhat的linuxrc文件，其中用的是nash命令系统。</p>
+<pre class="code">#!/bin/nash
+
+echo &quot;Loading scsi_mod.o module&quot;
+<a href="../../linuxcmd/linuxcmdlist/sysset/insmod.html">insmod</a> /lib/scsi_mod.o 
+echo &quot;Loading sd_mod.o module&quot;
+<a href="../../linuxcmd/linuxcmdlist/sysset/insmod.html">insmod</a> /lib/sd_mod.o 
+echo &quot;Loading BusLogic.o module&quot;
+<a href="../../linuxcmd/linuxcmdlist/sysset/insmod.html">insmod</a> /lib/BusLogic.o 
+echo &quot;Loading jbd.o module&quot;
+<a href="../../linuxcmd/linuxcmdlist/sysset/insmod.html">insmod</a> /lib/jbd.o 
+echo &quot;Loading ext3.o module&quot;
+<a href="../../linuxcmd/linuxcmdlist/sysset/insmod.html">insmod</a> /lib/ext3.o 
+echo Mounting /proc filesystem
+mount -t proc /proc /proc
+echo Creating block devices
+mkdevices /dev
+echo Creating root device
+mkrootdev /dev/root
+echo 0x0100 &gt; /proc/sys/kernel/real-root-dev
+echo Mounting root filesystem
+mount -o defaults --ro -t ext3 /dev/root /sysroot
+pivot_root /sysroot /sysroot/initrd
+umount /initrd/proc</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

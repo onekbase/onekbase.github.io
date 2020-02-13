@@ -1,0 +1,196 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>fstab第三列：文件系统类型 </h1>
+<p> fstab中的第三列指示了设备或者分区的文件系统类型。它支持很多种类的文件系统，我们在这里只介绍最为常用的。如果想了解你的kernel目前支持哪些文件系统，可以查看/proc/filesystems的内容。如果这个字段定义为swap，这条纪录将关联到一个用于交换目的的文件或分区。如果这个字段定义为ignored，这行将被忽略。这对于显示目前没有使用的分区非常有用。 </p>
+<h3> ext2 和 ext3</h3>
+<p> Linux下的Ext2文件系统，是 GNU/Linux   系统中标准的文件系统，其特点为存取文件的性能极好，对于中小型的文件更显示出优势，这主要得利于其簇快取层的优良设计。至于Ext3文件系统，它属于一种日志文件系统，是对ext2系统的扩展。日志式文件系统的优越性在于，它会将整个磁盘的写入动作完整记录在磁盘的某个区域上，以便有需要时可以回朔追踪。由于详细纪录了每个细节，故当在某个过程中被中断时，系统可以根据这些记录直接回朔并重整被中断的部分，而不必花时间去检查其他的部分，故文件系统检测不一致时，重整的工作速度相当快，几乎不需要花时间。 </p>
+<h3> reiserfs</h3>
+<p>ReiserFS是一个非常优秀的文件系统。也是最早用于Linux的日志文件系统之一，其机制比Ext3要先进得多，风雷小弟一直使用的就是它，很多发行版现在也把它作为默认文件系统了。可惜其作者前段时间出事了……具体情况就不说了，也不知道下一代reiserfs4还能不能出来，因为ext4都有了。 </p>
+<h3> swap</h3>
+<p>Swap，即交换区，把它想象成虚拟内存就行了。 </p>
+<h3> vfat 和   ntfs</h3>
+<p>一看就知道是Windows分区格式了，呵呵。98，me等系统都是使用的vfat，也就是最流行的fat32格式，而NT系列则多使用NTFS，当然也不是固定的，因此2000或者XP系统要具体情况具体分析。当初Linux对NTFS的写入支持不好，所以大多数资料都建议用户使用vfat格式，但是现在支持已经很好了，即使不重新编译内核，也可以通过ntfs-3g来进行写入支持（具体方法请参考这篇文章），因此不用太在意这个了。 </p>
+<h3> auto</h3>
+<p>当然，这不是一个文件系统类型。auto只是表示，文件系统的类型将被自动检测。在上面的示例中，你会发现软驱和光驱的文件系统类型都是auto，为什么呢？因为它们的文件系统类型随时都可能改变，比如软驱，优盘这种设备，可能今天是vfat格式，明天你就把它格式化成了ntfs，因此，最明智的做法就是告诉系统，我没法确定这东西的当前类型，还是你自己检测吧。 </p>
+<h3> udf</h3>
+<p>由于刻录光驱越来越流行，现在很多发行版自带的fstab中，光驱的文件格式类型是UDF，UDF是Universal Disc   Format的缩写，与ISO 9660格式相容。它采用标准的封装写入技术（PW，Packet   Writing）将CD-R/CD-RW当作硬盘使用，用户可以在光盘上修改和删除文件。利用UDF格式进行刻录时，刻录软件将数据打包，并在内存中临时建立一个特殊文件目录表，同时接管系统对光盘的访问。 </p>
+<h3> iso9660</h3>
+<p>很多光驱也使用的这个选项。ISO9660是一种描述适合CD盘片的电脑文件结构的国际标准。采用此标准的盘片可以在不同的操作系统上使用，如MAC和Windows。</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
