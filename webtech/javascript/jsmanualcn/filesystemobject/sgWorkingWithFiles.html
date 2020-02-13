@@ -1,0 +1,468 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+
+<H1><A NAME="sgworkingwithfiles"></A>处理文件</H1>
+
+<P>有两种主要的文件处理类型：
+
+<UL type=disc>
+	<LI>创建、添加或删除数据，以及读取文件 </li>
+
+	<LI>移动、复制和删除文件 </li>
+</UL>
+
+<H2>创建文件</H2>
+
+<P>创建空文本文件（有时被叫做“文本流”）有三种方法。</P>
+
+<P>第一种方法是用 <B>CreateTextFile</B> 方法。 下面的示例示范了在 VBScript 中如何用这种方法来创建文本文件：</P>
+
+<PRE><CODE>Dim fso, f1
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE></PRE>
+
+<P>要在 JScript 中用这种方法，则使用下面的代码：</P>
+
+<PRE><CODE>var fso, f1;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE></PRE>
+
+<P>创建文本文件的第二种方法是，使用 <B>FileSystemObject</B> 对象的 <B>OpenTextFile</B> 方法，并设置 <B>ForWriting</B> 标志。在 VBScript 中，代码就像下面的示例一样： </P>
+
+<PRE><CODE>Dim fso, ts
+Const ForWriting = 2
+Set fso = CreateObject("Scripting. FileSystemObject")
+Set ts = fso.OpenTextFile("c:\test.txt", ForWriting, True)</CODE></PRE>
+
+<P>要在 JScript 中使用这种方法来创建文本文件，则使用下面的代码：</P>
+
+<PRE><CODE>var fso, ts;
+var ForWriting= 2;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+ts = fso.OpenTextFile("c:\\test.txt", ForWriting, true);</CODE></PRE>
+
+<P>创建文本文件的第三种方法是，使用 <B>OpenAsTextStream</B> 方法，并设置 <B>ForWriting</B> 标志。要使用这种方法，在 VBScript 中使用下面的代码：</P>
+
+<PRE><CODE>Dim fso, f1, ts
+Const ForWriting = 2
+Set fso = CreateObject("Scripting.FileSystemObject")
+fso.CreateTextFile ("c:\test1.txt")
+Set f1 = fso.GetFile("c:\test1.txt")
+Set ts = f1.OpenAsTextStream(ForWriting, True)</CODE></PRE>
+
+<P>在 JScript 中，则使用下面示例中的代码：</P>
+
+<PRE><CODE>var fso, f1, ts;
+var ForWriting = 2;
+fso = new ActiveXObject("Scripting.FileSystemObject");
+fso.CreateTextFile ("c:\\test1.txt");
+f1 = fso.GetFile("c:\\test1.txt");
+ts = f1.OpenAsTextStream(ForWriting, true);</CODE></PRE>
+
+<H2>添加数据到文件中</H2>
+
+<P>一旦创建了文本文件，使用下面的三个步骤向文件添加数据：</P>
+
+<P>打开文本文件。 </P>
+
+<P>写入数据。 </P>
+
+<P>关闭文件。 </P>
+
+<P>要打开现有的文件，则使用 FileSystemObject 对象的 OpenTextFile 方法或 File 对象的 OpenAsTextStream 方法。</P>
+
+<P>要写数据到打开的文本文件，则根据下表所述任务使用 TextStream 对象的 Write、WriteLine 或 WriteBlankLines 方法。</P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=72%>任务</TH>
+<TH width=28%>方法</TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>向打开的文本文件写数据，不用后续一个新行字符。</TD>
+<TD width=28%>Write</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>向打开的文本文件写数据，后续一个新行字符。</TD>
+<TD width=28%>WriteLine</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=72%>向打开的文本文件写一个或多个空白行。</TD>
+<TD width=28%>WriteBlankLines</TD>
+</TR>
+</TABLE><BR>
+
+<P>要关闭一个打开的文件，则使用 <B>TextStream</B> 对象的 <B>Close</B> 方法。</P>
+
+<P><B>注意&nbsp;&nbsp;</B>新行字符包含一个或几个字符（取决于操作系统），以把光标移动到下一行的开始位置（回车/换行）。注意某些字符串末尾可能已经有这个非打印字符了。</P>
+
+<P>下面的 VBScript 例子示范了如何打开文件，和同时使用三种写方法来向文件添加数据，然后关闭文件：</P>
+
+<PRE><CODE>Sub CreateFile()
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, tf</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set tf = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>写一行，并且带有新行字符。
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>向文件写三个新行字符。&nbsp;&nbsp;&nbsp;<CODE> &nbsp;&nbsp;&nbsp; </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;tf.WriteBlankLines(3) </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.") </CODE>
+<CODE>&nbsp;&nbsp;&nbsp;tf.Close</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>这个示例示范了在 JScript 中如何使用这三个方法：</P>
+
+<PRE><CODE>function CreateFile()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, tf;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>写一行，并且带有新行字符。
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteLine("Testing 1, 2, 3.") ;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>向文件写三个新行字符。<CODE>  </CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf.WriteBlankLines(3) ;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>tf.Write ("This is a test.");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>tf.Close();</CODE>
+<CODE>}</CODE></PRE>
+
+<H2>读取文件</H2>
+
+<P>要从文本文件读取数据，则使用 <B>TextStream</B> 对象的 <B>Read</B>、<B>ReadLine</B> 或 <B>ReadAll</B> 方法。下表描述了不同的任务应使用哪种方法。</P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=78%>任务</TH>
+<TH width=22%>方法</TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>从文件读取指定数量的字符。</TD>
+<TD width=22%>Read</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>读取一整行（一直到但不包括新行字符）。</TD>
+<TD width=22%>ReadLine</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=78%>读取文本文件的整个内容。</TD>
+<TD width=22%>ReadAll</TD>
+</TR>
+</TABLE><BR>
+
+<P>如果使用 <B>Read</B> 或 <B>ReadLine</B> 方法，并且想跳过数据的特殊部分，则使用 <B>Skip</B> 或 <B>SkipLine</B> 方法。read 方法的结果文本存在一个字符串中，该字符串可以显示在一个控件中，也可以用字符串函数（如 <B>Left</B>、<B>Right</B> 和 <B>Mid</B>）来分析，连接等等。</P>
+
+<P>下面的 VBScript 示例示范了如何打开文件，和如何写数据到文件中并从文件读取数据：</P>
+
+<PRE><CODE>Sub ReadFiles
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, ts, s</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Const ForReading = 1</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "Writing file &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine "Hello World"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>' </CODE>读取文件的内容。
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "Reading file &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Set ts = fso.OpenTextFile("c:\testfile.txt", ForReading)</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write "File contents = '" &amp; s &amp; "'"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts.Close</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>下面的代码示范了在 JScript 中做同样的事：</P>
+
+<PRE><CODE>function ReadFiles()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, f1, ts, s;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>var ForReading = 1;</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("Writing file &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteLine("Hello World");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.WriteBlankLines(1);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>读取文件的内容。
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("Reading file &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts = fso.OpenTextFile("c:\\testfile.txt", ForReading);</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>s = ts.ReadLine();</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>Response.Write("File contents = '" + s + "'");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>ts.Close();</CODE>
+<CODE>}</CODE></PRE>
+
+<H2>移动、复制和删除文件</H2>
+
+<P>FSO 对象模式各有两种方法移动、复制和删除文件，如下表所述。</P>
+
+<TABLE border=1 cellspacing=0 cols=2 frame=box rules=all>
+
+<TR VALIGN="top">
+<TH width=18%>任务</TH>
+<TH width=82%>方法</TH>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>移动文件</TD>
+<TD width=82%>File.Move 或 FileSystemObject.MoveFile</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>复制文件</TD>
+<TD width=82%>File.Copy 或 FileSystemObject.CopyFile</TD>
+</TR>
+
+<TR VALIGN="top">
+<TD width=18%>删除文件</TD>
+<TD width=82%>File.Delete 或 FileSystemObject.DeleteFile</TD>
+</TR>
+</TABLE><BR>
+
+<P>下面的 VBScript 示例，在驱动器 C 的根目录中创建一个文本文件，向其中写一些信息，然后把它移动到 \tmp 目录中，并在 \temp 中做一个备份，最后把它们从两个目录中删掉。</P>
+
+<P>要运行下面的示例，需要先在驱动器 C 的根目录中创建 \tmp 和 \temp 目录：</P>
+
+<PRE><CODE>Sub ManipFiles
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>Dim fso, f1, f2, s</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set fso = CreateObject("Scripting.FileSystemObject")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set f1 = fso.CreateTextFile("c:\testfile.txt", True)</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Writing file &lt;br&gt;"</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>f1.Write ("This is a test.")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>关闭文件。
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Moving file to c:\tmp &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>获取<CODE> C </CODE>的根目录<CODE>(C:\)</CODE>中的文件的句柄。
+&nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\testfile.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>把文件移动到<CODE> \tmp </CODE>目录。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\tmp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Copying file to c:\temp &lt;br&gt;"</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;'</CODE>把文件复制到<CODE> \temp </CODE>目录。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\temp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "Deleting files &lt;br&gt;"</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>获得文件当前位置的句柄。
+&nbsp;&nbsp;&nbsp;<CODE>Set f2 = fso.GetFile("c:\tmp\testfile.txt")</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Set f3 = fso.GetFile("c:\temp\testfile.txt")</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>'</CODE>删除文件。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Delete</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3.Delete</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write "All done!"</CODE>
+<CODE>End Sub</CODE></PRE>
+
+<P>下面的代码示范了在 JScript 中做同样的事：</P>
+
+<PRE><CODE>function ManipFiles()
+{
+</CODE>&nbsp;&nbsp;&nbsp;<CODE>var fso, f1, f2, s;</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;fso = new ActiveXObject("Scripting.FileSystemObject");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f1 = fso.CreateTextFile("c:\\testfile.txt", true);</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Writing file &lt;br&gt;");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>写一行。
+&nbsp;&nbsp;&nbsp;<CODE>f1.Write("This is a test.");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>关闭文件。
+&nbsp;&nbsp;&nbsp;<CODE>f1.Close();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Moving file to c:\\tmp &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>获取<CODE> C </CODE>的根目录<CODE>(C:\)</CODE>中的文件的句柄。
+&nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\testfile.txt");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>把文件移动到<CODE> \tmp </CODE>目录。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Move ("c:\\tmp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Copying file to c:\\temp &lt;br&gt;");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;// </CODE>把文件复制到<CODE> \temp </CODE>目录。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Copy ("c:\\temp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("Deleting files &lt;br&gt;");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>获得文件当前位置的句柄。
+&nbsp;&nbsp;&nbsp;<CODE>f2 = fso.GetFile("c:\\tmp\\testfile.txt");</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3 = fso.GetFile("c:\\temp\\testfile.txt");</CODE>
+&nbsp;&nbsp;&nbsp;<CODE>// </CODE>删除文件。
+&nbsp;&nbsp;&nbsp;<CODE>f2.Delete();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;f3.Delete();</CODE>
+<CODE>&nbsp;&nbsp;&nbsp;Response.Write("All done!");</CODE>
+}</PRE>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

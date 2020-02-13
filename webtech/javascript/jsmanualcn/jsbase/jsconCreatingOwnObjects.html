@@ -1,0 +1,270 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+
+<H1><A NAME="jsconcreatingownobjects"></A>创建自己的对象</H1>
+
+<P>要创建自己的对象实例，必须首先为其定义一个构造函数。构造函数创建一个新对象，赋予对象属性，并在合适的时候赋予方法。例如，下面的示例为 pasta 对象定义了构造函数。注意 <B>this</B> 关键字的使用，它指向当前对象。</P>
+
+<PRE><CODE>// pasta </CODE>是有四个参数的构造器。
+<CODE>function pasta(grain, width, shape, hasEgg)</CODE>
+{
+<CODE>    // </CODE>是用什么粮食做的？
+<CODE>    this.grain = grain;</CODE>
+
+<CODE>    // </CODE>多宽？（数值）
+<CODE>    this.width = width;     </CODE>
+
+<CODE>    // </CODE>横截面形状？（字符串）
+<CODE>    this.shape = shape;   </CODE>
+
+<CODE>// </CODE>是否加蛋黄？（<CODE>boolean</CODE>）
+<CODE>    this.hasEgg = hasEgg;  </CODE>
+<CODE>}</CODE></PRE>
+
+<P>定义了对象构造器后，用 <B>new</B> 运算符创建对象实例。</P>
+
+<PRE><CODE>var spaghetti = new pasta("wheat", 0.2, "circle", true);
+var linguine = new pasta("wheat", 0.3, "oval", true);</CODE></PRE>
+
+<P>可以给对象实例添加属性以改变该实例，但是用相同的构造器生成的其他对象定义中并不包括这些属性，而且除非你特意添加这些属性那么在其他实例中并不显示出来。如果要将对象所有实例的附加属性显示出来，必须将它们添加到构造函数或构造器原型对象（原型在高级文档中讨论）中。</P>
+
+<PRE><CODE>// spaghetti </CODE>的附加属性。
+<CODE>spaghetti.color = "pale straw";</CODE>
+<CODE>spaghetti.drycook = 7;</CODE>
+<CODE>spaghetti.freshcook = 0.5;</CODE>
+
+<CODE>var chowFun = new pasta("rice", 3, "flat", false); </CODE>
+<CODE>// chowFun </CODE>对象或其他现有的<CODE> pasta </CODE>对象
+<CODE>// </CODE>都没有添加到<CODE> spaghetti </CODE>对象
+<CODE>// </CODE>的三个新属性。
+
+
+<CODE>// </CODE>将属性‘<CODE>foodgroup</CODE>’加到<CODE> pasta </CODE>原型对象
+<CODE>// </CODE>中，这样<CODE> pasta </CODE>对象的所有实例都可以有该属性，
+<CODE>// </CODE>包括那些已经生成的实例。
+<CODE>pasta.prototype.foodgroup = "carbohydrates"</CODE>
+
+<CODE>// </CODE>现在<CODE> spaghetti.foodgroup</CODE>、<CODE>chowFun.foodgroup</CODE>，等等
+<CODE>// </CODE>均包含值“<CODE>carbohydrates</CODE>”。</PRE>
+
+<H2>在定义中包含方法</H2>
+
+<P>可以在对象的定义中包含方法（函数）。一种方法是在引用别处定义的函数的构造函数中添加一个属性。例如，下面的示例扩充上面定义的 pasta 构造函数以包含 <B>toString</B> 方法，该方法将在显示对象的值时被调用。</P>
+
+<PRE><CODE>// pasta </CODE>是有四个参数的构造器。
+<CODE>// </CODE>第一部分与上面相同。
+<CODE>function pasta(grain, width, shape, hasEgg)</CODE>
+{
+<CODE>    // </CODE>用什么粮食做的？
+<CODE>    this.grain = grain;</CODE>
+
+<CODE>    // </CODE>多宽？（数值）
+<CODE>    this.width = width;     </CODE>
+
+<CODE>    // </CODE>横截面形状？（字符串）
+<CODE>    this.shape = shape;   </CODE>
+
+<CODE>    // </CODE>是否加蛋黄？（<CODE>boolean</CODE>）
+<CODE>    this.hasEgg = hasEgg;  </CODE>
+
+<CODE>    // </CODE>这里添加<CODE> toString </CODE>方法（如下定义）。
+<CODE>    // </CODE>注意在函数的名称后没有加圆括号；
+<CODE>    // </CODE>这不是一个函数调用，而是
+<CODE>    // </CODE>对函数自身的引用。
+<CODE>    this.toString = pastaToString;</CODE>
+}
+
+<CODE>// </CODE>实际的用来显示<CODE> past </CODE>对象内容的函数。<CODE> </CODE>
+<CODE>function pastaToString()</CODE>
+<CODE>{</CODE>
+<CODE>    // </CODE>返回对象的属性。
+
+<CODE>    return "Grain: " + this.grain + "\n" +</CODE>
+<CODE>        "Width: " + this.width + "\n" +
+        "Shape: " + this.shape + "\n" +</CODE>
+<CODE>        "Egg?: " + Boolean(this.hasEgg);</CODE>
+<CODE>}</CODE>
+
+<CODE>var spaghetti = new pasta("wheat", 0.2, "circle", true);</CODE>
+<CODE>// </CODE>将调用<CODE> toString() </CODE>并显示<CODE> spaghetti </CODE>对象
+<CODE>// </CODE>的属性（需要<CODE>Internet </CODE>浏览器）。
+<CODE>window.alert(spaghetti);</CODE>
+</PRE>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,401 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>javascript中用字符创建Date时间对象</h1>
+<p>javascript中没有JAVA中的格式化字符串对象生成时间对象的方法，这里自己写一个晒一晒。
+</p>
+<pre class="brush:javascript">/**
+ * 创建时间对象 
+ * 格式：
+ * 2012-1-1 年月日型
+ * 2012-2-3 18:23:34 年月日时分秒型
+ * @param dtStr 
+ * @returns {Date}
+ */
+function newDate(dtStr){
+	var sp=/[- :]/;
+	var dtArr = dtStr.split(sp);
+	if(dtArr.length&gt;3)
+		return new Date(
+				parseInt(dtArr[0],10), //年
+				parseInt(dtArr[1],10) - 1,//月
+				parseInt(dtArr[2],10),//日
+				parseInt(dtArr[3],10),//时
+				parseInt(dtArr[4],10),//分
+				parseInt(dtArr[5],10)//秒
+				);
+	else
+		return new Date(
+				parseInt(dtArr[0],10), //年
+				parseInt(dtArr[1],10) - 1,//月
+				parseInt(dtArr[2],10)//日
+				);
+}</pre>
+<p>Date对象的方法列表 </p>
+<table width="96%" border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="bottom" width="25%"><strong>方法</strong></td>
+<td valign="bottom" width="74%"><strong>描述</strong></td>
+</tr>
+<tr>
+<td valign="top">Date()</td>
+<td valign="top" width="74%">返回当日的日期和时间。</td>
+</tr>
+<tr>
+<td valign="top">getDate()</td>
+<td valign="top" width="74%">从 Date 对象返回一个月中的某一天 (1 ~   31)。</td>
+</tr>
+<tr>
+<td valign="top">getDay()</td>
+<td valign="top" width="74%">从 Date 对象返回一周中的某一天 (0 ~ 6)。</td>
+</tr>
+<tr>
+<td valign="top">getMonth()</td>
+<td valign="top" width="74%">从 Date 对象返回月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td valign="top">getFullYear()</td>
+<td valign="top" width="74%">从 Date 对象以四位数字返回年份。</td>
+</tr>
+<tr>
+<td valign="top">getYear()</td>
+<td valign="top" width="74%">请使用 getFullYear() 方法代替。</td>
+</tr>
+<tr>
+<td valign="top">getHours()</td>
+<td valign="top" width="74%">返回 Date 对象的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td valign="top">getMinutes()</td>
+<td valign="top" width="74%">返回 Date 对象的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">getSeconds()</td>
+<td valign="top" width="74%">返回 Date 对象的秒数 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">getMilliseconds()</td>
+<td valign="top" width="74%">返回 Date 对象的毫秒(0 ~ 999)。</td>
+</tr>
+<tr>
+<td valign="top">getTime()</td>
+<td valign="top" width="74%">返回 1970 年 1 月 1 日至今的毫秒数。</td>
+</tr>
+<tr>
+<td valign="top">getTimezoneOffset()</td>
+<td valign="top" width="74%">返回本地时间与格林威治标准时间 (GMT) 的分钟差。</td>
+</tr>
+<tr>
+<td valign="top">getUTCDate()</td>
+<td valign="top" width="74%">根据世界时从 Date 对象返回月中的一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td valign="top">getUTCDay()</td>
+<td valign="top" width="74%">根据世界时从 Date 对象返回周中的一天 (0 ~ 6)。</td>
+</tr>
+<tr>
+<td valign="top">getUTCMonth()</td>
+<td valign="top" width="74%">根据世界时从 Date 对象返回月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td valign="top">getUTCFullYear()</td>
+<td valign="top" width="74%">根据世界时从 Date 对象返回四位数的年份。</td>
+</tr>
+<tr>
+<td valign="top">getUTCHours()</td>
+<td valign="top" width="74%">根据世界时返回 Date 对象的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td valign="top">getUTCMinutes()</td>
+<td valign="top" width="74%">根据世界时返回 Date 对象的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">getUTCSeconds()</td>
+<td valign="top" width="74%">根据世界时返回 Date 对象的秒钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top" nowrap="nowrap">getUTCMilliseconds()</td>
+<td valign="top" width="74%">根据世界时返回 Date 对象的毫秒(0 ~ 999)。</td>
+</tr>
+<tr>
+<td valign="top">parse()</td>
+<td valign="top" width="74%">返回1970年1月1日午夜到指定日期（字符串）的毫秒数。</td>
+</tr>
+<tr>
+<td valign="top">setDate()</td>
+<td valign="top" width="74%">设置 Date 对象中月的某一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td valign="top">setMonth()</td>
+<td valign="top" width="74%">设置 Date 对象中月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td valign="top">setFullYear()</td>
+<td valign="top" width="74%">设置 Date 对象中的年份（四位数字）。</td>
+</tr>
+<tr>
+<td valign="top">setYear()</td>
+<td valign="top" width="74%">请使用 setFullYear() 方法代替。</td>
+</tr>
+<tr>
+<td valign="top">setHours()</td>
+<td valign="top" width="74%">设置 Date 对象中的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td valign="top">setMinutes()</td>
+<td valign="top" width="74%">设置 Date 对象中的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">setSeconds()</td>
+<td valign="top" width="74%">设置 Date 对象中的秒钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">setMilliseconds()</td>
+<td valign="top" width="74%">设置 Date 对象中的毫秒 (0 ~ 999)。</td>
+</tr>
+<tr>
+<td valign="top">setTime()</td>
+<td valign="top" width="74%">以毫秒设置 Date 对象。</td>
+</tr>
+<tr>
+<td valign="top">setUTCDate()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中月份的一天 (1 ~ 31)。</td>
+</tr>
+<tr>
+<td valign="top">setUTCMonth()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的月份 (0 ~ 11)。</td>
+</tr>
+<tr>
+<td valign="top">setUTCFullYear()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的年份（四位数字）。</td>
+</tr>
+<tr>
+<td valign="top">setUTCHours()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的小时 (0 ~ 23)。</td>
+</tr>
+<tr>
+<td valign="top">setUTCMinutes()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的分钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">setUTCSeconds()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的秒钟 (0 ~ 59)。</td>
+</tr>
+<tr>
+<td valign="top">setUTCMilliseconds()</td>
+<td valign="top" width="74%">根据世界时设置 Date 对象中的毫秒 (0 ~ 999)。</td>
+</tr>
+<tr>
+<td valign="top">toSource()</td>
+<td valign="top" width="74%">返回该对象的源代码。</td>
+</tr>
+<tr>
+<td valign="top">toString()</td>
+<td valign="top" width="74%">把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toTimeString()</td>
+<td valign="top" width="74%">把 Date 对象的时间部分转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toDateString()</td>
+<td valign="top" width="74%">把 Date 对象的日期部分转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toGMTString()</td>
+<td valign="top" width="74%">请使用 toUTCString() 方法代替。</td>
+</tr>
+<tr>
+<td valign="top">toUTCString()</td>
+<td valign="top" width="74%">根据世界时，把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toLocaleString()</td>
+<td valign="top" width="74%">根据本地时间格式，把 Date 对象转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toLocaleTimeString()</td>
+<td valign="top" width="74%">根据本地时间格式，把 Date 对象的时间部分转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">toLocaleDateString()</td>
+<td valign="top" width="74%">根据本地时间格式，把 Date 对象的日期部分转换为字符串。</td>
+</tr>
+<tr>
+<td valign="top">UTC()</td>
+<td valign="top" width="74%">根据世界时返回 1970 年 1 月 1 日   到指定日期的毫秒数。</td>
+</tr>
+<tr>
+<td valign="top">valueOf()</td>
+<td valign="top" width="74%">返回 Date 对象的原始值。</td>
+</tr>
+</tbody>
+</table>
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

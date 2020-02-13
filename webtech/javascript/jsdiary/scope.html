@@ -1,0 +1,329 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>javascript作用域链和闭包</h1>
+<h2>作用域</h2>
+<p>作用域就是变量与函数的可访问范围。在javascript中分为全局作用域和局部作用域。  </p>
+<p>全局作用域：在代码中任何地方都能访问到的对象拥有全局作用域。在Web浏览器中，他指的就是window对象，该环境直到应用程序退出才被摧毁。</p>
+<p> 局部作用局：和全局作用域相反，局部作用域一般只在固定的代码片段内可访问到（最常见的例如函数内部），该环境中的代码被执行完毕后，该环境被摧毁。 </p>
+<h2>作用域链</h2>
+<p>函数对象有一个内部属性是[[Scope]]，该内部属性包含了函数被创建的作用域中对象的集合，这个集合被称为函数的作用域链（Scope chain）。 </p>
+<p> 当一个函数创建后，它的作用域链会被创建此函数的作用域中可访问的数据对象所填充。例如： </p>
+<pre class="brush:javascript">function add (num1,num2){
+     var sum = num1 + num2;
+     return sum;
+}</pre>
+<p>当函数add()创建后，它的作用域链中填入了一个单独的对象，这个对象表示所有范围定义的变量。该全局对象包括诸如window,navigator和document等等。如图说明了他们的关系： </p>
+<p><img src="images/js-scope.gif" />
+</p>
+<p>函数add的作用域会在被执行时用到：</p>
+<p> var total = add (5,10);
+</p>
+<p>执行这个函数时会创建一个称为"运行期上下文(execution context)"的内部对象。一个运行期上下文定义了一个函数值执行时的环境，他是独一无二的，当函数运行完毕，它就会被摧毁。
+</p>
+<p>如果对运行期上下文这个对象还是不明白看下面这个图： </p>
+<p><img src="images/js-scope-link.gif" />
+</p>
+<p>下面说下图中运行的过程：（对应图中的1，2，3）
+</p>
+<p>1.当运行期被创建时，它的作用域链初始化为当前运行函数的[[Scope]]属性中所包含的对象。</p>
+<p> 2.这些值按照他们出现在函数中的顺序，被复制到作用域链中。
+</p>
+<p>3.上面2过程一旦完成，一个被称为"活动对象"的新对象就会被创建，他被推入到作用域链的前端。
+</p>
+<p>4. 当1（运行期上下文）被摧毁，3（活动对象）也随之被摧毁。 </p>
+<h2>作用域链例子</h2>
+<pre class="brush:javascript">var num = 1;
+function total(){
+    alert(num);
+    var num = 2;
+}
+var num = 10;
+total();</pre>
+<p>最终结果是undefined，因为局部作用域中有num变量，但在调用后定义，所以调用时就undefined了。 </p>
+<h2>闭包</h2>
+<p>用简单的语句来描述JavaScript中的闭包的概念：由于JavaScript中，函数是对象，对象是属性的集合，而属性的值又可以是对象，则在函数内定义函数成为理所当然，如果在函数func内部声明函数inner，然后在函数外部调用inner，这个过程即产生了一个闭包。
+  
+  闭包的效果可以简单描述为“使函数外部可以读取函数内部的局部变量”。  </p>
+<p>闭包的一切效果都基于外部调用inner函数会导致func的上下文不会被摧毁。 </p>
+<pre class="brush:javascript">     function f1(){
+         var n=999;
+         nAdd=function(){
+             n+=1
+         }
+         function f2(){
+　　　　　　 alert(n);
+　　　　 }
+         return f2;
+  　 }
+     var result=f1();
+     result();  // 999   输出这个f2的返回值
+     nAdd();  //调用nAdd函数
+     result();  // 1000</pre>
+<p>因为f2的上下文依赖于f1的上下文所以在f1运行完后其上下文不会被摧毁，其中的值一直都存在着。 <img src="images/js-bibao.gif" />
+</p>
+<h2>闭包的用途</h2>
+<h3>对象的封闭</h3>
+<p>封装的效果为未经授权的客户代码无法访问到我们不公开的数据。看这个例子： </p>
+<pre class="brush:javascript">function Person(name) {
+	// private variable
+	var address = "The Earth";
+	// public method
+	this.getAddress = function() {
+		return address;
+	}
+	// public variable
+	this.name = name;
+}
+// public
+Person.prototype.getName = function() {
+	return this.name;
+}
+// public
+Person.prototype.setName = function(name) {
+	this.name = name;
+}</pre>
+&nbsp;
+
+<p>每一次new Person()时都会创建一个上下文，其中局部变量address就在其中。新创建的对象中会有一个方法getAddress()可以调用上下文中的address，这就形成闭包，使上下文的生命周期和创建的对象一样。每一个Person都会关联一个上下文，这样就可以实现属性的封闭了。 </p>
+<h3>缓存</h3>
+<p>设想我们有一个处理过程很耗时的函数对象，每次调用都会花费很长时间，那么我们就需要将计算出来的值存储起来，当调用这个函数的时候，首先在缓存中查找，如果找不到，则进行计算，然后更新缓存并返回值，如果找到了，直接返回查找到的值即可。闭包正是可以做到这一点，因为它不会释放外部的引用，从而函数内部的值可以得以保留。 </p>
+<pre class="brush:javascript">var CachedSearchBox = (function() {
+	var cache = {}, count = [];
+	return {
+		attachSearchBox : function(dsid) {
+			if (dsid in cache) {// 如果结果在缓存中
+				return cache[dsid];// 直接返回缓存中的对象
+			}
+			var fsb = new uikit.webctrl.SearchBox(dsid);// 新建
+			cache[dsid] = fsb;// 更新缓存
+			if (count.length &gt; 100) {// 保正缓存的大小&lt;=100
+				delete cache[count.shift()];
+			}
+			return fsb;
+		},
+		clearSearchBox : function(dsid) {
+			if (dsid in cache) {
+				cache[dsid].clearSelection();
+			}
+		}
+	};
+})();
+CachedSearchBox.attachSearchBox("input1");</pre>
+<p>这样，当我们第二次调用CachedSearchBox.attachSerachBox(“input1”)的时候，我们就可以从缓存中取道该对象，而不用再去创建一个新的searchbox对象。 </p>
+<h3>柯里化</h3>
+<p>柯里化就是预先将函数的某些参数传入，得到一个简单的函数，但是预先传入的参数被保存在闭包中，因此会有一些奇特的特性。 </p>
+<pre class="brush:javascript">var adder = function(num){
+    return function(y){
+        return num + y;
+    }
+}
+var inc = adder(1);
+var dec = adder(-1);</pre>
+<p>这里的inc/dec两个变量事实上是两个新的函数，可以通过括号来调用，比如下例中的用法： </p>
+<pre class="brush:javascript">//inc, dec现在是两个新的函数，作用是将传入的参数值(+/-)1
+alert(inc(99));//100
+alert (dec(101));//100
+alert (adder(100)(2));//102
+alert (adder(2)(100));//102</pre>
+<p>柯里化可以创建有状态的函数，函数的状态保存在其关联的上下文中。再看一个例子： </p>
+<pre class="brush:javascript">//update会返回一个函数，这个函数可以设置id属性为item的web元素的内容
+function update(item) {
+	return function(text) {
+		$("div#" + item).html(text);
+	};
+}
+// Ajax请求，当成功是调用参数callback
+function refresh(url, callback) {
+	var params = {
+		type : "echo",
+		data : ""
+	};
+	$.ajax({
+		type : "post",
+		url : url,
+		cache : false,
+		async : true,
+		dataType : "json",
+		data : params,
+		// 当异步请求成功时调用
+		success : function(data, status) {
+			callback(data);
+		},
+		// 当请求出现错误时调用
+		error : function(err) {
+			alert("error : " + err);
+		}
+	});
+}
+refresh("action.do?target=news", update("newsPanel"));
+refresh("action.do?target=articles", update("articlePanel"));
+refresh("action.do?target=pictures", update("picturePanel"));</pre>
+&nbsp;
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

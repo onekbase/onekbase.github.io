@@ -1,0 +1,298 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>javascript创建对象详解</h1>
+<h2>传统的方法</h2>
+<p>创建对象最简单的方法，就是创建一个Object对象，然后为它添加属性和方法。</p>
+
+<p>如果一个对象成员引用了一个函数，该成员就被称为一个&quot;方法&quot;，如果一个对象成员引用了一个非函数，该成员就被称为&quot;属性&quot;。
+</p>
+<p>看下面这个例子：</p>
+<pre class="brush:javascript">var person = new Object();
+person.name = &quot;Tony&quot;;  
+//创建了书一个方法（因为引用了函数）
+person.sayName = function(){   
+  //this前面讲过，指的是当前函数的对象，在这里指的就是person对象
+    alert(this.name);          
+};
+person.sayName();  //输出结果显而易见 Tony</pre>
+<p>缺点：使用同一个接口创建很多相似对象，会产生大量的重复代码。（为了解决这个问题---工厂模式出现了）</p>
+<h2>工厂模式</h2>
+<p>用函数来封装用特定接口创建对象的细节
+
+<p>比如下面这个例子：</p>
+<pre class="brush:javascript">function createPerson(name,age,job){ 
+    var o = new Object();              
+    o.name = name;
+    o.age = age;
+    o.job = job;
+    o.sayName = function(){
+        alert(this.name);
+    };
+    return o;
+}
+var person1 = createPerson(&quot;Tony&quot;,23,&quot;worker&quot;);
+var person2 = createPerson(&quot;Tom&quot;,18,&quot;student&quot;);
+person1.sayName();  //Tony
+person2.sayName();  //Tom</pre>
+<p>函数createPerson()能够根据接受的三个参数来创建一个包含<p>所有信息的Person对象。</p>
+
+<p>优点：解决了传统方法里创建多个相似对象的问题。</p>
+<p>缺点：没有解决对象识别的问题。（可以靠构造函数模式来解决）</p>
+<h2>构造函数模式</h2>
+可以创造特定类型的对象</p>
+<pre class="brush:javascript">function Person(name,age,job){
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.sayName = function(){
+        alert(this.name);
+    };
+}
+var person1 =new Person(&quot;Tony&quot;,23,&quot;worker&quot;);
+var person2 =new Person(&quot;Tom&quot;,18,&quot;student&quot;);
+person1.sayName();  //Tony
+person2.sayName();  //Tom</pre>
+<p>与工厂模式的不同之处：</p>
+
+<ol>
+  <li>没有显示地创建构造函数 </li>
+  <li>直接将属性和方法赋给了this对象 </li>
+  <li>没有return语句 </li>
+</ol>
+<p>优点：动态的传递参数</p>
+
+<p>缺点：每创建一个对象就会创建相同的方法函数对象，占用大量内存。（可以用原型模式来解决）</p>
+<pre class="brush:javascript">alert(person1.sayName == person2.sayName) //false</pre>
+<p>由上代码可以看出来，这两个Function实例并不相等，然而创建两个完成同样任务的Function实例没有必要。 </p>
+<h2>原型模式</h2>
+<p>将对象属性及方法定义都写在对象的prototype里面 </p>
+<pre class="brush:javascript">function Person(){
+} 
+Person.prototype.name = &quot;Tony&quot;;
+Person.prototype.age = 22;
+Person.prototype.job = &quot;worker&quot;;
+Person.prototype.sayName = function(){
+    alert(this.name);
+};
+var person1 = new Person();
+person1.sayName();//Tony
+var person2 = new Person();
+//这里就是原型模式的缺点：无法动态传递构造参数
+person2.sayName();//Tony
+//正好与上文中的构造函数相反，这里是相同的Function对象
+alert(person1.sayName == person2.sayName); //true</pre>
+<p>优点：每次创建对象时都是使用相同prototype中的方法，不会占用重复的内存
+  
+  缺点：无法动态传递构造参数（构造函数模式可以解决） </p>
+<h2>组合构造函数模式和原型模式</h2>
+<pre class="brush:javascript">function Person(name,age,job){   //构造函数模式
+    this.name = name;
+    this.age = age;
+    this.job =job;
+    this.friends = [&quot;S&quot;,&quot;C&quot;];
+}
+Person.prototype = {    //原型模式
+    constructor : Person,
+    sayName:function(){
+        alert(this.name);
+    }
+}
+var person1 = new Person(&quot;Tony&quot;,22,&quot;worker&quot;);
+var person2 = new Person(&quot;Tom&quot;,18,&quot;student&quot;);
+//person1里面添加了V,并不影响person2,因为他们引用的是不同数组
+person1.friends.push(&quot;V&quot;);   
+
+alert(person1.friends);     //s,c,v
+alert(person2.friends);     //s,c
+alert(person1.friends === person2.friends); //false
+alert(person1.sayName === person2.sayName); //true</pre>
+<p>优点：综合了constructor及prototype方式的优点，可以动态传递构造参数，并且方法函数对象也只创建一个。
+  
+  缺点：函数写在对象外面，不太符合面向对象的思想（可以用动态原型的方式来解决） </p>
+<h2>动态原型模式</h2>
+<p>加一个判断属性，来判断该对象是否已经被创建过，如果被创建过，则方法就不在构建 </p>
+<pre class="brush:javascript">function Person(name,age,job){
+    //属性
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    //方法
+    //只有在sayName方法不存时，才会添加到原型中
+    if(typeof this.sayName !=&quot;function&quot;){      
+        Person.prototype.sayName = function(){
+            alert(this.name);
+        };
+    }
+}
+var person = new Person(&quot;Tony&quot;,22,&quot;worker&quot;);
+person.sayName();</pre>
+<p>优点：将原型函数写在对象定义里面</p>
+<p>缺点：不支持继承 </p>
+  
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
