@@ -1,0 +1,971 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+
+      
+        
+        
+        
+        	<a href="chapter12.html">| 上一章</a> |
+        	<a href="index.html">目  录</a> |
+        	<a href="chapter14.html">下一章 </a> |
+        
+     
+
+
+  
+    
+    
+    
+<h1  >第十三章： 输出非HTML内容</h1>
+<p>通常当我们谈到开发网站时，主要谈论的是HTML。
+当然，Web远不只有HTML，我们在Web上用多种格式来发布数据： RSS、PDF、图片等。</p>
+<p>到目前为止，我们的注意力都是放在常见 HTML 代码生成上，但是在这一章中，我们将会对使用 Django 生成其它格式的内容进行简要介绍。</p>
+<p>Django拥有一些便利的内建工具帮助你生成常见的非HTML内容：</p>
+<ul >
+<li  ><p>RSS/Atom 聚合文件</p>
+</li>
+</ul>
+<ul >
+<li  ><p>站点地图 （一个XML格式文件，最初由Google开发，用于给搜索引擎提示线索）</p>
+</li>
+</ul>
+<p>我们稍后会逐一研究这些工具，不过首先让我们来了解些基础原理。</p>
+
+<h2  >基础: 视图和MIME类型 views and MIME-types</h2>
+<p>Recall from Chapter 3 that a view function is simply a Python function that takes a
+Web request and returns a Web response. 这个响应可以是一个Web页面的HTML内容，或者一个跳转，或者一个404 错误，或者一个XML文档，或者一幅图片，或者映射到任何东西上。</p>
+<p>更正式的说，一个Django视图函数 <em>必须</em></p>
+<ul >
+<li  ><p>接受一个 <tt >HttpRequest</tt> 实例作为它的第一个参数</p>
+</li>
+</ul>
+<ul >
+<li  ><p>返回一个 <tt >HttpResponse</tt> 实例</p>
+</li>
+</ul>
+<p>从一个视图返回一个非 HTML 内容的关键是在构造一个 <tt >HttpResponse</tt> 类时，需要指定 <tt >mimetype</tt> 参数。 通过改变 MIME 类型，我们可以告知浏览器将要返回的数据是另一种不同的类型。</p>
+<p>下面我们以返回一张PNG图片的视图为例。 为了使事情能尽可能的简单，我们只是读入一张存储在磁盘上的图片：</p>
+<pre class="code">
+from django.http import HttpResponse
+
+def my_image(request):
+    image_data = open(&quot;/path/to/my/image.png&quot;, &quot;rb&quot;).read()
+    return HttpResponse(image_data, mimetype=&quot;image/png&quot;)
+</pre>
+<p>就是这么简单。 如果改变 <tt >open()</tt> 中的图片路径为一张真实图片的路径，那么就可以使用这个十分简单的视图来提供一张图片，并且浏览器可以正确的显示它。</p>
+<p>另外我们必须了解的是&#8221;HttpResponse&#8221;对象应用了Python标准的文件应用程序接口(API)。 这就是说你可以在Python（或第三方库）任何用到文件的地方使用&#8221;HttpResponse&#8221;实例。</p>
+<p>下面将用 Django 生成 CSV 文件为例，说明它的工作原理。</p>
+
+
+<h2  >生成 CSV 文件</h2>
+<p>CSV 是一种简单的数据格式，通常为电子表格软件所使用。 它主要是由一系列的表格行组成，每行中单元格之间使用逗号(CSV 是 <em>逗号分隔数值(comma-separated values)</em> 的缩写)隔开。</p>
+<pre class="code">
+Year,Unruly Airline Passengers
+1995,146
+1996,184
+1997,235
+1998,200
+1999,226
+2000,251
+2001,299
+2002,273
+2003,281
+2004,304
+2005,203
+2006,134
+2007,147
+</pre>
+<p>备注</p>
+<p>The preceding listing contains real numbers! They come from the U.S. Federal
+Aviation Administration.</p>
+<p>Though CSV looks simple, its formatting details haven&#8217;t been universally agreed
+upon. 但是不同的软件会生成和使用不同的 CSV 的变种，在使用上会有一些不便。 幸运的是， Python 使用的是标准 CSV 库， <tt >csv</tt> ，所以它更通用。</p>
+<p>因为 <tt >csv</tt> 模块操作的是类似文件的对象，所以可以使用 <tt >HttpResponse</tt> 替换：</p>
+<pre class="code">
+import csv
+from django.http import HttpResponse
+
+# Number of unruly passengers each year 1995 - 2005. In a real application
+# this would likely come from a database or some other back-end data store.
+UNRULY_PASSENGERS = [146,184,235,200,226,251,299,273,281,304,203]
+
+def unruly_passengers_csv(request):
+    # Create the HttpResponse object with the appropriate CSV header.
+    response = HttpResponse(mimetype='text/csv')
+    response['Content-Disposition'] = 'attachment; filename=unruly.csv'
+
+    # Create the CSV writer using the HttpResponse as the &quot;file.&quot;
+    writer = csv.writer(response)
+    writer.writerow(['Year', 'Unruly Airline Passengers'])
+    for (year, num) in zip(range(1995, 2006), UNRULY_PASSENGERS):
+        writer.writerow([year, num])
+
+    return response
+</pre>
+<p>代码和注释可以说是很清楚，但还有一些事情需要特别注意：</p>
+<blockquote>
+<p>响应返回的是 <tt >text/csv</tt> MIME类型（而非默认的 <tt >text/html</tt> ）。这会告诉浏览器，返回的文档是CSV文件。</p>
+<p>响应会有一个附加的 <tt >Content-Disposition</tt> 头部，它包含有CSV文件的文件名。 这个头部（或者说，附加部分）会指示浏览器弹出对话框询问文件存放的位置（而不仅仅是显示）。 这个文件名是任意的，它会用在浏览器的另存为对话框中。 It will be used by
+browsers in the Save As dialog.</p>
+<p>To assign a header on an <tt >HttpResponse</tt> , just treat the <tt >HttpResponse</tt> as a
+dictionary and set a key/value.</p>
+<p>与创建CSV的应用程序界面（API）挂接是很容易的： 只需将 <tt >response</tt> 作为第一个变量传递给 <tt >csv.writer</tt> 。 <tt >csv.writer</tt> 函数希望获得一个文件类的对象， <tt >HttpResponse</tt> 正好能达成这个目的。</p>
+<p>调用 <tt >writer.writerow</tt> ，并且传递给它一个类似 list 或者 tuple 的可迭代对象，就可以在 CSV 文件中写入一行。</p>
+<p>CSV 模块考虑到了引用的问题，所以您不用担心逸出字符串中引号和逗号。 只要把信息传递给 <tt >writerow()</tt> ，它会处理好所有的事情。</p>
+</blockquote>
+<p>在任何需要返回非 HTML 内容的时候，都需要经过以下几步：
+创建一个 <tt >HttpResponse</tt> 响应对象（需要指定特殊的 MIME 类型）。</p>
+<p>下面是一些其它的例子</p>
+
+
+<h2  >生成 PDF 文件</h2>
+<p>便携文件格式 (PDF) 是由 Adobe 开发的格式，主要用于呈现可打印的文档，包含有 pixel-perfect 格式，嵌入字体以及2D矢量图像。 You can think of a PDF document as the digital
+equivalent of a printed document; indeed, PDFs are often used in distributing
+documents for the purpose of printing them.</p>
+<p>可以方便的使用 Python 和 Django 生成 PDF 文档需要归功于一个出色的开源库， ReportLab (<a  href="http://www.reportlab.org/rl_toolkit.html">http://www.reportlab.org/rl_toolkit.html</a>) 。动态生成 PDF 文件的好处是在不同的情况下，如不同的用户或者不同的内容，可以按需生成不同的 PDF 文件。 The
+advantage of generating PDF files dynamically is that you can create customized PDFs
+for different purposes say, for different users or different pieces of content.</p>
+<p>下面的例子是使用 Django 和 ReportLab 在 KUSports.com 上生成个性化的可打印的 NCAA 赛程表 (tournament brackets) 。</p>
+
+<h3  >安装 ReportLab</h3>
+<p>在生成 PDF 文件之前，需要安装 ReportLab 库。这通常是个很简单的过程： Its
+usually simple: just download and install the library from
+<a  href="http://www.reportlab.org/downloads.html">http://www.reportlab.org/downloads.html</a>.</p>
+<p>Note</p>
+<p>如果使用的是一些新的 Linux 发行版，则在安装前可以先检查包管理软件。 多数软件包仓库中都加入了 ReportLab 。</p>
+<p>比如，如果使用（杰出的） Ubuntu 发行版，只需要简单的 <tt >apt-get install python-reportlab</tt> 一行命令即可完成安装。</p>
+<p>使用手册（原始的只有 PDF 格式）可以从 <a  href="http://www.reportlab.org/rsrc/userguide.pdf">http://www.reportlab.org/rsrc/userguide.pdf</a> 下载，其中包含有一些其它的安装指南。</p>
+<p>在 Python 交互环境中导入这个软件包以检查安装是否成功。</p>
+<pre class="code">
+&gt;&gt;&gt; import reportlab
+</pre>
+<p>如果刚才那条命令没有出现任何错误，则表明安装成功。</p>
+
+
+<h3  >编写视图</h3>
+<p>和 CSV 类似，由 Django 动态生成 PDF 文件很简单，因为 ReportLab API 同样可以使用类似文件对象。</p>
+<p>下面是一个 Hello World 的示例：</p>
+<pre class="code">
+from reportlab.pdfgen import canvas
+from django.http import HttpResponse
+
+def hello_pdf(request):
+    # Create the HttpResponse object with the appropriate PDF headers.
+    response = HttpResponse(mimetype='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename=hello.pdf'
+
+    # Create the PDF object, using the response object as its &quot;file.&quot;
+    p = canvas.Canvas(response)
+
+    # Draw things on the PDF. Here's where the PDF generation happens.
+    # See the ReportLab documentation for the full list of functionality.
+    p.drawString(100, 100, &quot;Hello world.&quot;)
+
+    # Close the PDF object cleanly, and we're done.
+    p.showPage()
+    p.save()
+    return response
+</pre>
+<p>需要注意以下几点：</p>
+<ul >
+<li  ><p>这里我们使用的 MIME 类型是 <tt >application/pdf</tt> 。这会告诉浏览器这个文档是一个 PDF 文档，而不是 HTML 文档。 如果忽略了这个参数，浏览器可能会把这个文件看成 HTML 文档，这会使浏览器的窗口中出现很奇怪的文字。 If you leave off this
+information, browsers will probably interpret the response as HTML, which will
+result in scary gobbledygook in the browser window.</p>
+</li>
+</ul>
+<ul >
+<li  ><p>使用 ReportLab 的 API 很简单： 只需要将 <tt >response</tt> 对象作为 <tt >canvas.Canvas</tt> 的第一个参数传入。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>所有后续的 PDF 生成方法需要由 PDF 对象调用（在本例中是 <tt >p</tt> ），而不是 <tt >response</tt> 对象。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>最后需要对 PDF 文件调用 <tt >showPage()</tt> 和 <tt >save()</tt> 方法（否则你会得到一个损坏的 PDF 文件）。</p>
+</li>
+</ul>
+
+
+<h3  >复杂的 PDF 文件</h3>
+<p>如果您在创建一个复杂的 PDF 文档（或者任何较大的数据块），请使用 <tt >cStringIO</tt> 库存放临时生成的 PDF 文件。 <tt >cStringIO</tt> 提供了一个用 C 编写的类似文件对象的接口，从而可以使系统的效率最高。</p>
+<p>下面是使用 <tt >cStringIO</tt> 重写的 Hello World 例子：</p>
+<pre class="code">
+from cStringIO import StringIO
+from reportlab.pdfgen import canvas
+from django.http import HttpResponse
+
+def hello_pdf(request):
+    # Create the HttpResponse object with the appropriate PDF headers.
+    response = HttpResponse(mimetype='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename=hello.pdf'
+
+    temp = StringIO()
+
+    # Create the PDF object, using the StringIO object as its &quot;file.&quot;
+    p = canvas.Canvas(temp)
+
+    # Draw things on the PDF. Here's where the PDF generation happens.
+    # See the ReportLab documentation for the full list of functionality.
+    p.drawString(100, 100, &quot;Hello world.&quot;)
+
+    # Close the PDF object cleanly.
+    p.showPage()
+    p.save()
+
+    # Get the value of the StringIO buffer and write it to the response.
+    response.write(temp.getvalue())
+    return response
+</pre>
+
+
+
+<h2  >其它的可能性</h2>
+<p>使用 Python 可以生成许多其它类型的内容，下面介绍的是一些其它的想法和一些可以用以实现它们的库。 Here are
+a few more ideas and some pointers to libraries you could use to implement them:</p>
+<blockquote>
+<p><em>ZIP 文件</em> ：Python 标准库中包含有 <tt >zipfile</tt> 模块，它可以读和写压缩的 ZIP 文件。 它可以用于按需生成一些文件的压缩包，或者在需要时压缩大的文档。 如果是 TAR 文件则可以使用标准库 <tt >tarfile</tt> 模块。</p>
+<p><em>动态图片</em> ： Python 图片处理库 (PIL; <a  href="http://www.pythonware.com/products/pil/">http://www.pythonware.com/products/pil/</a>) 是极好的生成图片(PNG, JPEG, GIF 以及其它许多格式)的工具。 它可以用于自动为图片生成缩略图，将多张图片压缩到单独的框架中，或者是做基于 Web 的图片处理。</p>
+<p><em>图表</em> ： Python 有许多出色并且强大的图表库用以绘制图表，按需地图，表格等。 我们不可能将它们全部列出，所以下面列出的是个中的翘楚。</p>
+<ul >
+<li  ><p><tt >matplotlib</tt> (<a  href="http://matplotlib.sourceforge.net/">http://matplotlib.sourceforge.net/</a>) 可以用于生成通常是由 matlab 或者 Mathematica 生成的高质量图表。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >pygraphviz</tt> (<a  href="https://networkx.lanl.gov/wiki/pygraphviz">https://networkx.lanl.gov/wiki/pygraphviz</a>) 是一个 Graphviz 图形布局的工具 (<a  href="http://graphviz.org/">http://graphviz.org/</a>) 的 Python 接口，可以用于生成结构化的图表和网络。</p>
+</li>
+</ul>
+</blockquote>
+<p>总之，所有可以写文件的库都可以与 Django 同时使用。 The possibilities are immense.</p>
+<p>我们已经了解了生成“非HTML”内容的基本知识，让我们进一步总结一下。 Django拥有很多用以生成各类“非HTML”内容的内置工具。</p>
+
+
+<h2  >内容聚合器应用框架</h2>
+<p>Django带来了一个高级的聚合生成框架，它使得创建RSS和Atom feeds变得非常容易。</p>
+<p>什么是RSS？ 什么是Atom？</p>
+<p>RSS和Atom都是基于XML的格式，你可以用它来提供有关你站点内容的自动更新的feed。 了解更多关于RSS的可以访问 <a  href="http://www.whatisrss.com/">http://www.whatisrss.com/</a>, 更多Atom的信息可以访问 <a  href="http://www.atomenabled.org/">http://www.atomenabled.org/</a>.</p>
+<p>想创建一个联合供稿的源(syndication feed)，所需要做的只是写一个简短的python类。
+你可以创建任意多的源(feed)。</p>
+<p>高级feed生成框架是一个默认绑定到/feeds/的视图，Django使用URL的其它部分(在/feeds/之后的任何东西)来决定输出 哪个feed Django uses the remainder of the URL (everything after <tt >/feeds/</tt> ) to
+determine which feed to return.</p>
+<p>要创建一个 sitemap，你只需要写一个 <tt >Sitemap</tt> 类然后配置你的URLconf指向它。</p>
+
+<h3  >初始化</h3>
+<p>为了在您的Django站点中激活syndication feeds, 添加如下的 URLconf:</p>
+<pre class="code">
+(r'^feeds/(?P&lt;url&gt;.*)/$', 'django.contrib.syndication.views.feed',
+    {'feed_dict': feeds}
+),
+</pre>
+<p>这一行告诉Django使用RSS框架处理所有的以 <tt >&quot;feeds/&quot;</tt> 开头的URL. ( 你可以修改 <tt >&quot;feeds/&quot;</tt> 前缀以满足您自己的要求. )</p>
+<p>URLConf里有一行参数： <tt >{'feed_dict': feeds}</tt>，这个参数可以把对应URL需要发布的feed内容传递给 syndication framework</p>
+<p>特别的，feed_dict应该是一个映射feed的slug(简短URL标签)到它的Feed类的字典 你可以在URL配置本身里定义feed_dict，这里是一个完整的例子 You can define the <tt >feed_dict</tt> in the URLconf
+itself. Here&#8217;s a full example URLconf:</p>
+<pre class="code">
+from django.conf.urls.defaults import *
+from mysite.feeds import LatestEntries, LatestEntriesByCategory
+
+feeds = {
+    'latest': LatestEntries,
+    'categories': LatestEntriesByCategory,
+}
+
+urlpatterns = patterns('',
+    # ...
+    (r'^feeds/(?P&lt;url&gt;.*)/$', 'django.contrib.syndication.views.feed',
+        {'feed_dict': feeds}),
+    # ...
+)
+</pre>
+<p>前面的例子注册了两个feed:</p>
+<ul >
+<li  ><p><tt >LatestEntries``表示的内容将对应到``feeds/latest/</tt> .</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >LatestEntriesByCategory``的内容将对应到 ``feeds/categories/</tt> .</p>
+</li>
+</ul>
+<p>以上的设定完成之后，接下来需要自己定义 <tt >Feed</tt> 类</p>
+<p>一个 <tt >Feed</tt> 类是一个简单的python类，用来表示一个syndication feed. 一个feed可能是简单的 (例如一个站点新闻feed，或者最基本的，显示一个blog的最新条目)，也可能更加复杂(例如一个显示blog某一类别下所有条目的feed。 这里类别 category 是个变量).</p>
+<p>Feed类必须继承django.contrib.syndication.feeds.Feed，它们可以在你的代码树的任何位置</p>
+
+
+<h3  >一个简单的Feed</h3>
+<p>This simple example describes a feed of the latest five blog entries for a given
+blog:</p>
+<pre class="code">
+from django.contrib.syndication.feeds import Feed
+from mysite.blog.models import Entry
+
+class LatestEntries(Feed):
+    title = &quot;My Blog&quot;
+    link = &quot;/archive/&quot;
+    description = &quot;The latest news about stuff.&quot;
+
+    def items(self):
+        return Entry.objects.order_by('-pub_date')[:5]
+</pre>
+<p>要注意的重要的事情如下所示:</p>
+<ul >
+<li  ><p>子类 <tt >django.contrib.syndication.feeds.Feed</tt> .</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >title</tt> , <tt >link</tt> , 和 <tt >description</tt> 对应一个标准 RSS 里的 <tt >&lt;title&gt;</tt> , <tt >&lt;link&gt;</tt> , 和 <tt >&lt;description&gt;</tt> 标签.</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >items()</tt> 是一个方法，返回一个用以包含在包含在feed的 <tt >&lt;item&gt;</tt> 元素里的 list 虽然例子里用Djangos database API返回的 <tt >NewsItem</tt> 对象, <tt >items()</tt> 不一定必须返回 model的实例 Although this example returns
+<tt >Entry</tt> objects using Django&#8217;s database API, <tt >items()</tt> doesn&#8217;t have to
+return model instances.</p>
+</li>
+</ul>
+<p>还有一个步骤，在一个RSS feed里，每个(item)有一个(title)，(link)和(description)，我们需要告诉框架 把数据放到这些元素中 In an RSS feed, each <tt >&lt;item&gt;</tt> has a <tt >&lt;title&gt;</tt> ,
+<tt >&lt;link&gt;</tt> , and <tt >&lt;description&gt;</tt> . We need to tell the framework what data to put
+into those elements.</p>
+<blockquote>
+<p>如果要指定 <tt >&lt;title&gt;</tt> 和 <tt >&lt;description&gt;</tt> ，可以建立一个Django模板（见Chapter 4）名字叫 <tt >feeds/latest_title.html</tt> 和 <tt >feeds/latest_description.html</tt> ，后者是URLConf里为对应feed指定的 <tt >slug</tt> 。注意 <tt >.html</tt> 后缀是必须的。 Note that the <tt >.html</tt> extension is
+required.</p>
+<p>RSS系统模板渲染每一个条目，需要给传递2个参数给模板上下文变量：</p>
+<ul >
+<li  ><p><tt >obj</tt> : 当前对象 ( 返回到 <tt >items()</tt> 任意对象之一 )。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >site</tt> : 一个表示当前站点的 <tt >django.models.core.sites.Site</tt> 对象。 这对于 <tt >{{ site.domain }}</tt> 或者 <tt >{{ site.name }}</tt> 很有用。</p>
+</li>
+</ul>
+<p>如果你在创建模板的时候，没有指明标题或者描述信息，框架会默认使用 <tt >&quot;{{ obj }}&quot;</tt> ，对象的字符串表示。 (For model objects, this will be the
+<tt >__unicode__()</tt> method.</p>
+<p>你也可以通过修改 <tt >Feed</tt> 类中的两个属性 <tt >title_template</tt> 和 <tt >description_template</tt> 来改变这两个模板的名字。</p>
+<p>你有两种方法来指定 <tt >&lt;link&gt;</tt> 的内容。 Django 首先执行 <tt >items()</tt> 中每一项的 <tt >get_absolute_url()</tt> 方法。 如果该方法不存在，就会尝试执行 <tt >Feed</tt> 类中的 <tt >item_link()</tt> 方法，并将自身作为 <tt >item</tt> 参数传递进去。</p>
+<p><tt >get_absolute_url()</tt> 和 <tt >item_link()</tt> 都应该以Python字符串形式返回URL。</p>
+<p>对于前面提到的 <tt >LatestEntries</tt> 例子，我们可以实现一个简单的feed模板。 <tt >latest_title.html</tt> 包括：</p>
+</blockquote>
+<pre class="code">
+{{ obj.title }}
+</pre>
+<blockquote>
+<p>并且 <tt >latest_description.html</tt> 包含:</p>
+</blockquote>
+<pre class="code">
+{{ obj.description }}
+</pre>
+<blockquote>
+<p>这真是 <em>太</em> 简单了！</p>
+</blockquote>
+
+
+<h3  >一个更复杂的Feed</h3>
+<p>框架通过参数支持更加复杂的feeds。</p>
+<p>For example, say your blog offers an RSS feed for every distinct tag you&#8217;ve used to
+categorize your entries. 如果为每一个单独的区域建立一个 <tt >Feed</tt> 类就显得很不明智。</p>
+<p>取而代之的方法是，使用聚合框架来产生一个通用的源，使其可以根据feeds URL返回相应的信息。</p>
+<p>Your tag-specific feeds could use URLs like this:</p>
+<ul >
+<li  ><p><tt >http://example.com/feeds/tags/python/</tt> : Returns recent entries tagged with
+python</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >http://example.com/feeds/tags/cats/</tt> : Returns recent entries tagged with
+cats</p>
+</li>
+</ul>
+<p>固定的那一部分是 <tt >&quot;beats&quot;</tt> （区域）。</p>
+<p>举个例子会澄清一切。 下面是每个地区特定的feeds：</p>
+<pre class="code">
+from django.core.exceptions import ObjectDoesNotExist
+from mysite.blog.models import Entry, Tag
+
+class TagFeed(Feed):
+    def get_object(self, bits):
+        # In case of &quot;/feeds/tags/cats/dogs/mice/&quot;, or other such
+        # clutter, check that bits has only one member.
+        if len(bits) != 1:
+            raise ObjectDoesNotExist
+        return Tag.objects.get(tag=bits[0])
+
+    def title(self, obj):
+        return &quot;My Blog: Entries tagged with %s&quot; % obj.tag
+
+    def link(self, obj):
+        return obj.get_absolute_url()
+
+    def description(self, obj):
+        return &quot;Entries tagged with %s&quot; % obj.tag
+
+    def items(self, obj):
+        entries = Entry.objects.filter(tags__id__exact=obj.id)
+        return entries.order_by('-pub_date')[:30]
+</pre>
+<p>以下是RSS框架的基本算法，我们假设通过URL <tt >/rss/beats/0613/</tt> 来访问这个类：</p>
+<blockquote>
+<p>框架获得了URL <tt >/rss/beats/0613/</tt> 并且注意到URL中的slug部分后面含有更多的信息。 它将斜杠(<tt >&quot;/&quot;</tt> )作为分隔符，把剩余的字符串分割开作为参数，调用 <tt >Feed</tt> 类的 <tt >get_object()</tt> 方法。</p>
+<p>在这个例子中，添加的信息是 <tt >['0613']</tt> 。对于 <tt >/rss/beats/0613/foo/bar/</tt> 的一个URL请求， 这些信息就是 <tt >['0613', 'foo', 'bar']</tt> 。</p>
+<p><tt >get_object()</tt> 就根据给定的 <tt >bits</tt> 值来返回区域信息。</p>
+<p>In this case, it uses the Django database API to retrieve the <tt >Tag</tt> . Note
+that <tt >get_object()</tt> should raise <tt >django.core.exceptions.ObjectDoesNotExist</tt>
+if given invalid parameters. 在 <tt >Beat.objects.get()</tt> 调用中也没有出现 <tt >try</tt> /<tt >except</tt> 代码块。 函数在出错时抛出 <tt >Beat.DoesNotExist</tt> 异常，而 <tt >Beat.DoesNotExist</tt> 是 <tt >ObjectDoesNotExist</tt> 异常的一个子类型。</p>
+<p>为产生 <tt >&lt;title&gt;</tt> ， <tt >&lt;link&gt;</tt> ， 和 <tt >&lt;description&gt;</tt> 的feeds， Django使用 <tt >title()</tt> , <tt >link()</tt> , 和 <tt >description()</tt> 方法。 在上面的例子中，它们都是简单的字符串类型的类属性，而这个例子表明，它们既可以是字符串， <em>也可以是</em> 方法。 对于每一个 <tt >title</tt> ， <tt >link</tt> 和 <tt >description</tt> 的组合，Django使用以下的算法：</p>
+<ol >
+<li  ><p>试图调用一个函数，并且以 <tt >get_object()</tt> 返回的对象作为参数传递给 <tt >obj</tt> 参数。</p>
+</li>
+</ol>
+<ol  start="2">
+<li  ><p>如果没有成功，则不带参数调用一个方法。</p>
+</li>
+</ol>
+<ol  start="3">
+<li  ><p>还不成功，则使用类属性。</p>
+</li>
+</ol>
+<p>最后，值得注意的是，这个例子中的 <tt >items()</tt> 使用 <tt >obj</tt> 参数。
+对于 <tt >items</tt> 的算法就如同上面第一步所描述的那样，首先尝试 <tt >items(obj)</tt> ， 然后是 <tt >items()</tt> ，最后是 <tt >items</tt> 类属性（必须是一个列表）。</p>
+</blockquote>
+<p><tt >Feed</tt> 类所有方法和属性的完整文档，请参考官方的Django文档 (<a  href="http://www.djangoproject.com/documentation/0.96/syndication_feeds/">http://www.djangoproject.com/documentation/0.96/syndication_feeds/</a>) 。</p>
+
+
+<h3  >指定Feed的类型</h3>
+<p>默认情况下, 聚合框架生成RSS 2.0. 要改变这样的情况, 在 <tt >Feed</tt> 类中添加一个 <tt >feed_type</tt> 属性. To change that, add a
+<tt >feed_type</tt> attribute to your <tt >Feed</tt> class:</p>
+<pre class="code">
+from django.utils.feedgenerator import Atom1Feed
+
+class MyFeed(Feed):
+    feed_type = Atom1Feed
+</pre>
+<p>注意你把 <tt >feed_type</tt> 赋值成一个类对象，而不是类实例。 目前合法的Feed类型如表11-1所示。</p>
+<table  >
+<caption>表 11-1.  Feed 类型</caption>
+<colgroup>
+<col width="73%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th >Feed 类</th>
+<th >类型</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><tt >django.utils.feedgenerator.Rss201rev2Feed</tt></td>
+<td>RSS 2.01 (default)</td>
+</tr>
+<tr><td><tt >django.utils.feedgenerator.RssUserland091Feed</tt></td>
+<td>RSS 0.91</td>
+</tr>
+<tr><td><tt >django.utils.feedgenerator.Atom1Feed</tt></td>
+<td>Atom 1.0</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3  >闭包</h3>
+<p>为了指定闭包（例如，与feed项比方说MP3 feeds相关联的媒体资源信息），使用 <tt >item_enclosure_url</tt> ， <tt >item_enclosure_length</tt> ， 以及 <tt >item_enclosure_mime_type</tt> ，比如</p>
+<pre class="code">
+from myproject.models import Song
+
+class MyFeedWithEnclosures(Feed):
+    title = &quot;Example feed with enclosures&quot;
+    link = &quot;/feeds/example-with-enclosures/&quot;
+
+    def items(self):
+        return Song.objects.all()[:30]
+
+    def item_enclosure_url(self, item):
+        return item.song_url
+
+    def item_enclosure_length(self, item):
+        return item.song_length
+
+    item_enclosure_mime_type = &quot;audio/mpeg&quot;
+</pre>
+<p>当然，你首先要创建一个包含有 <tt >song_url</tt> 和 <tt >song_length</tt> （比如按照字节计算的长度）域的 <tt >Song</tt> 对象。</p>
+
+
+<h3  >语言</h3>
+<p>聚合框架自动创建的Feed包含适当的 <tt >&lt;language&gt;</tt> 标签(RSS 2.0) 或 <tt >xml:lang</tt> 属性(Atom). 他直接来自于您的 <tt >LANGUAGE_CODE</tt> 设置. This comes directly
+from your <tt >LANGUAGE_CODE</tt> setting.</p>
+
+
+<h3  >URLs</h3>
+<p><tt >link</tt> 方法/属性可以以绝对URL的形式（例如， <tt >&quot;/blog/&quot;</tt> ）或者指定协议和域名的URL的形式返回（例如 <tt >&quot;http://www.example.com/blog/&quot;</tt> ）。如果 <tt >link</tt> 没有返回域名，聚合框架会根据 <tt >SITE_ID</tt> 设置，自动的插入当前站点的域信息。 (See Chapter 16 for more on <tt >SITE_ID</tt> and the sites
+framework.)</p>
+<p>Atom feeds需要 <tt >&lt;link rel=&quot;self&quot;&gt;</tt> 指明feeds现在的位置。
+The syndication framework populates this automatically.</p>
+
+
+<h3  >同时发布Atom and RSS</h3>
+<p>一些开发人员想 <em>同时</em> 支持Atom和RSS。
+这在Django中很容易实现： 只需创建一个你的 <tt >feed</tt> 类的子类，然后修改 <tt >feed_type</tt> ，并且更新URLconf内容。 下面是一个完整的例子： Here&#8217;s a full example:</p>
+<pre class="code">
+from django.contrib.syndication.feeds import Feed
+from django.utils.feedgenerator import Atom1Feed
+from mysite.blog.models import Entry
+
+class RssLatestEntries(Feed):
+    title = &quot;My Blog&quot;
+    link = &quot;/archive/&quot;
+    description = &quot;The latest news about stuff.&quot;
+
+    def items(self):
+        return Entry.objects.order_by('-pub_date')[:5]
+
+class AtomLatestEntries(RssLatestEntries):
+    feed_type = Atom1Feed
+</pre>
+<p>这是与之相对应那个的URLconf：</p>
+<pre class="code">
+from django.conf.urls.defaults import *
+from myproject.feeds import RssLatestEntries, AtomLatestEntries
+
+feeds = {
+    'rss': RssLatestEntries,
+    'atom': AtomLatestEntries,
+}
+
+urlpatterns = patterns('',
+    # ...
+    (r'^feeds/(?P&lt;url&gt;.*)/$', 'django.contrib.syndication.views.feed',
+        {'feed_dict': feeds}),
+    # ...
+)
+</pre>
+
+
+
+<h2  >Sitemap 框架</h2>
+<p><em>sitemap</em> 是你服务器上的一个XML文件，它告诉搜索引擎你的页面的更新频率和某些页面相对于其它页面的重要性。 这个信息会帮助搜索引擎索引你的网站。</p>
+<p>例如，这是 Django 网站(<a  href="http://www.djangoproject.com/sitemap.xml">http://www.djangoproject.com/sitemap.xml</a>)sitemap的一部分：</p>
+<pre class="code">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;urlset xmlns=&quot;http://www.sitemaps.org/schemas/sitemap/0.9&quot;&gt;
+  &lt;url&gt;
+    &lt;loc&gt;http://www.djangoproject.com/documentation/&lt;/loc&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;0.5&lt;/priority&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;http://www.djangoproject.com/documentation/0_90/&lt;/loc&gt;
+    &lt;changefreq&gt;never&lt;/changefreq&gt;
+    &lt;priority&gt;0.1&lt;/priority&gt;
+  &lt;/url&gt;
+  ...
+&lt;/urlset&gt;
+</pre>
+<p>需要了解更多有关 sitemaps 的信息, 请参见 <a  href="http://www.sitemaps.org/">http://www.sitemaps.org/</a>.</p>
+<p>Django sitemap 框架允许你用 Python 代码来表述这些信息，从而自动创建这个XML文件。 To create a sitemap, you just need to write
+a <tt >Sitemap</tt> class and point to it in your URLconf.</p>
+
+<h3  >安装</h3>
+<p>要安装 sitemap 应用程序, 按下面的步骤进行:</p>
+<ol >
+<li  ><p>将 <tt >'django.contrib.sitemaps'</tt> 添加到您的 <tt >INSTALLED_APPS</tt> 设置中.</p>
+</li>
+</ol>
+<ol  start="2">
+<li  ><p>确保 <tt >'django.template.loaders.app_directories.load_template_source'</tt> 在您的 <tt >TEMPLATE_LOADERS</tt> 设置中。 默认情况下它在那里, 所以, 如果你已经改变了那个设置的话, 只需要改回来即可。</p>
+</li>
+</ol>
+<ol  start="3">
+<li  ><p>确定您已经安装了 sites 框架 (参见第14章).</p>
+</li>
+</ol>
+<p>Note</p>
+<p>sitemap 应用程序没有安装任何数据库表. 它需要加入到 <tt >INSTALLED_APPS</tt> 中的唯一原因是: 这样 <tt >load_template_source</tt> 模板加载器可以找到默认的模板. The only reason it
+needs to go into <tt >INSTALLED_APPS</tt> is so the <tt >load_template_source</tt> template
+loader can find the default templates.</p>
+
+
+<h3  >Initialization</h3>
+<p>要在您的Django站点中激活sitemap生成, 请在您的 URLconf 中添加这一行:</p>
+<pre class="code">
+(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps})
+</pre>
+<p>This line tells Django to build a sitemap when a client accesses <tt >/sitemap.xml</tt> .
+Note that the dot character in <tt >sitemap.xml</tt> is escaped with a backslash, because
+dots have a special meaning in regular expressions.</p>
+<p>sitemap文件的名字无关紧要，但是它在服务器上的位置却很重要。 搜索引擎只索引你的sitemap中当前URL级别及其以下级别的链接。 用一个实例来说，如果 <tt >sitemap.xml</tt> 位于你的根目录，那么它将引用任何的URL。 然而，如果你的sitemap位于 <tt >/content/sitemap.xml</tt> ，那么它只引用以 <tt >/content/</tt> 打头的URL。</p>
+<p>sitemap视图需要一个额外的必须的参数： <tt >{'sitemaps': sitemaps}</tt> .
+<tt >sitemaps</tt> should be a dictionary that maps a short section label (e.g., <tt >blog</tt>
+or <tt >news</tt> ) to its <tt >Sitemap</tt> class (e.g., <tt >BlogSitemap</tt> or <tt >NewsSitemap</tt> ).
+It may also map to an <em>instance</em> of a <tt >Sitemap</tt> class (e.g.,
+<tt >BlogSitemap(some_var)</tt> ).</p>
+
+
+<h3  >Sitemap 类</h3>
+<p><tt >Sitemap</tt> 类展示了一个进入地图站点简单的Python类片断.例如,一个 <tt >Sitemap</tt> 类能展现所有日志入口，而另外一个能够调度所有的日历事件。 For example, one <tt >Sitemap</tt> class could represent all the entries of
+your weblog, while another could represent all of the events in your events
+calendar.</p>
+<p>在最简单的例子中，所有部分可以全部包含在一个 <tt >sitemap.xml</tt> 中，也可以使用框架来产生一个站点地图，为每一个独立的部分产生一个单独的站点文件。</p>
+<p><tt >Sitemap</tt> 类必须是 <tt >django.contrib.sitemaps.Sitemap</tt> 的子类. 他们可以存在于您的代码树的任何地方。</p>
+<p>例如假设你有一个blog系统，有一个 <tt >Entry</tt> 的model，并且你希望你的站点地图包含所有连到你的blog入口的超链接。 你的 <tt >Sitemap</tt> 类很可能是这样的：</p>
+<pre class="code">
+from django.contrib.sitemaps import Sitemap
+from mysite.blog.models import Entry
+
+class BlogSitemap(Sitemap):
+    changefreq = &quot;never&quot;
+    priority = 0.5
+
+    def items(self):
+        return Entry.objects.filter(is_draft=False)
+
+    def lastmod(self, obj):
+        return obj.pub_date
+</pre>
+<p>声明一个 <tt >Sitemap</tt> 和声明一个 <tt >Feed</tt> 看起来很类似；这都是预先设计好的。</p>
+<p>如同 <tt >Feed</tt> 类一样， <tt >Sitemap</tt> 成员也既可以是方法，也可以是属性。 想要知道更详细的内容，请参见上文 《一个复杂的例子》章节。</p>
+<p>一个 <tt >Sitemap</tt> 类可以定义如下 方法/属性:</p>
+<blockquote>
+<p><tt >items</tt> (<strong>必需</strong> )：提供对象列表。 框架并不关心对象的 <em>类型</em> ；唯一关心的是这些对象会传递给 <tt >location()</tt> ， <tt >lastmod()</tt> ， <tt >changefreq()</tt> ，和 <tt >priority()</tt> 方法。</p>
+<p><tt >location</tt> （可选）： 给定对象的绝对URL。 绝对URL不包含协议名称和域名。 下面是一些例子：</p>
+<ul >
+<li  ><p>好的: <tt >'/foo/bar/'</tt> <tt >'/foo/bar/'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>差的: <tt >'example.com/foo/bar/'</tt> <tt >'example.com/foo/bar/'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>Bad: <tt >'http://example.com/foo/bar/'</tt></p>
+</li>
+</ul>
+<p>如果没有提供 <tt >location</tt> , 框架将会在每个 <tt >items()</tt> 返回的对象上调用 <tt >get_absolute_url()</tt> 方法.</p>
+<p><tt >lastmod</tt> (可选): 对象的最后修改日期, 作为一个Python <tt >datetime</tt> 对象. The object&#8217;s last modification date, as a Python
+<tt >datetime</tt> object.</p>
+<p><tt >changefreq</tt> （可选）： 对象变更的频率。 可选的值如下（详见Sitemaps文档）：</p>
+<ul >
+<li  ><p><tt >'always'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'hourly'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'daily'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'weekly'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'monthly'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'yearly'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'never'</tt></p>
+</li>
+</ul>
+<p><tt >priority</tt> （可选）： 取值范围在 <tt >0.0</tt> and <tt >1.0</tt> 之间，用来表明优先级。</p>
+</blockquote>
+
+
+<h3  >快捷方式</h3>
+<p>sitemap框架提供了一些常用的类。 在下一部分中会看到。</p>
+
+<h4  >FlatPageSitemap</h4>
+<p><tt >django.contrib.sitemaps.FlatPageSitemap</tt> 类涉及到站点中所有的flat page，并在sitemap中建立一个入口。 但仅仅只包含 <tt >location</tt> 属性，不支持 <tt >lastmod</tt> ， <tt >changefreq</tt> ，或者 <tt >priority</tt> 。</p>
+<p>参见第16章获取有关flat page的更多的内容.</p>
+
+
+<h4  >GenericSitemap</h4>
+<p><tt >GenericSitemap</tt> 与所有的通用视图一同工作（详见第9章）。</p>
+<p>你可以如下使用它，创建一个实例，并通过 <tt >info_dict</tt> 传递给通用视图。 唯一的要求是字典包含 <tt >queryset</tt> 这一项。 也可以用 <tt >date_field</tt> 来指明从 <tt >queryset</tt> 中取回的对象的日期域。 这会被用作站点地图中的 <tt >lastmod</tt> 属性。</p>
+<p>下面是一个使用 <tt >FlatPageSitemap</tt> and <tt >GenericSiteMap</tt> （包括前面所假定的 <tt >Entry</tt> 对象）的URLconf：</p>
+<pre class="code">
+from django.conf.urls.defaults import *
+from django.contrib.sitemaps import FlatPageSitemap, GenericSitemap
+from mysite.blog.models import Entry
+
+info_dict = {
+    'queryset': Entry.objects.all(),
+    'date_field': 'pub_date',
+}
+
+sitemaps = {
+    'flatpages': FlatPageSitemap,
+    'blog': GenericSitemap(info_dict, priority=0.6),
+}
+
+urlpatterns = patterns('',
+    # some generic view using info_dict
+    # ...
+
+    # the sitemap
+    (r'^sitemap\.xml$',
+     'django.contrib.sitemaps.views.sitemap',
+     {'sitemaps': sitemaps})
+)
+</pre>
+
+
+
+<h3  >创建一个Sitemap索引</h3>
+<p>sitemap框架同样可以根据 <tt >sitemaps</tt> 字典中定义的单独的sitemap文件来建立索引。 用法区别如下：</p>
+<ul >
+<li  ><p>您在您的URLconf 中使用了两个视图: <tt >django.contrib.sitemaps.views.index</tt> 和 <tt >django.contrib.sitemaps.views.sitemap</tt> . <tt >django.contrib.sitemaps.views.index</tt> and
+<tt >django.contrib.sitemaps.views.sitemap</tt> .</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >django.contrib.sitemaps.views.sitemap</tt> 视图需要带一个 <tt >section</tt> 关键字参数.</p>
+</li>
+</ul>
+<p>这里是前面的例子的相关的 URLconf 行看起来的样子:</p>
+<pre class="code">
+(r'^sitemap.xml$',
+ 'django.contrib.sitemaps.views.index',
+ {'sitemaps': sitemaps}),
+
+(r'^sitemap-(?P&lt;section&gt;.+).xml$',
+ 'django.contrib.sitemaps.views.sitemap',
+ {'sitemaps': sitemaps})
+</pre>
+<p>这将自动生成一个 <tt >sitemap.xml</tt> 文件, 它同时引用 <tt >sitemap-flatpages.xml</tt> 和 <tt >sitemap-blog.xml</tt> . <tt >Sitemap</tt> 类和 <tt >sitemaps</tt> 目录根本没有更改.</p>
+
+
+<h3  >通知Google</h3>
+<p>当你的sitemap变化的时候，你会想通知Google，以便让它知道对你的站点进行重新索引。 框架就提供了这样的一个函数：
+<tt >django.contrib.sitemaps.ping_google()</tt> 。</p>
+<p><tt >ping_google()</tt> 有一个可选的参数 <tt >sitemap_url</tt> ，它应该是你的站点地图的URL绝对地址（例如：</p>
+<p>如果不能够确定你的sitemap URL, <tt >ping_google()</tt> 会引发 <tt >django.contrib.sitemaps.SitemapNotFound</tt> 异常。</p>
+<p>我们可以通过模型中的 <tt >save()</tt> 方法来调用 <tt >ping_google()</tt> ：</p>
+<pre class="code">
+from django.contrib.sitemaps import ping_google
+
+class Entry(models.Model):
+    # ...
+    def save(self, *args, **kwargs):
+        super(Entry, self).save(*args, **kwargs)
+        try:
+            ping_google()
+        except Exception:
+            # Bare 'except' because we could get a variety
+            # of HTTP-related exceptions.
+            pass
+</pre>
+<p>一个更有效的解决方案是用 <tt >cron</tt> 脚本或任务调度表来调用 <tt >ping_google()</tt> ，该方法使用Http直接请求Google服务器，从而减少每次调用 <tt >save()</tt> 时占用的网络带宽。 The function makes an HTTP request to
+Google&#8217;s servers, so you may not want to introduce that network overhead each time
+you call <tt >save()</tt> .</p>
+<p>Finally, if <tt >'django.contrib.sitemaps'</tt> is in your <tt >INSTALLED_APPS</tt> , then your
+<tt >manage.py</tt> will include a new command, <tt >ping_google</tt> . This is useful for
+command-line access to pinging. For example:</p>
+<pre class="code">
+python manage.py ping_google /sitemap.xml
+</pre>
+
+
+
+<h2  >下一章</h2>
+<p>下面, 我们要继续深入挖掘所有的Django给你的很好的内置工具。
+<a  href="chapter14.html">Chapter 14</a> looks at all the tools you need to provide user-customized sites:
+sessions, users 和authentication.</p>
+
+
+
+    
+    
+  
+
+
+
+        
+	<a href="chapter12.html">| 上一章</a> |
+    	<a href="index.html">目  录</a> |
+    	<a href="chapter14.html">下一章 </a> |
+
+
+
+
+
+
+
+
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

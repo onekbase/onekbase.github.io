@@ -1,0 +1,738 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+
+      
+        
+        
+        
+        	<a href="chapter14.html">| 上一章</a> |
+        	<a href="index.html">目  录</a> |
+        	<a href="chapter16.html">下一章 </a> |
+        
+     
+
+
+  
+    
+    
+    
+<h1  >第十五章： 缓存机制</h1>
+<p>但是动态网站因为是动态的，也就是说每次用户访问一个页面，服务器要执行数据库查询，启动模板，执行业务逻辑到最终生成一个你所看到的网页，这一切都是动态即时生成的。 从处理器资源的角度来看，这是比较昂贵的。
+This is a lot more expensive, from a processing-overhead perspective, than your standard
+read-a-file-off-the-filesystem server arrangement.</p>
+<p>对于大多数网络应用来说，过载并不是大问题。 因为大多数网络应用并不是washingtonpost.com或Slashdot；它们通常是很小很简单，或者是中等规模的站点，只有很少的流量。 但是对于中等至大规模流量的站点来说，尽可能地解决过载问题是非常必要的。</p>
+<p>这就需要用到缓存了。</p>
+<p>缓存的目的是为了避免重复计算，特别是对一些比较耗时间、资源的计算。 下面的伪代码演示了如何对动态页面的结果进行缓存。</p>
+<pre class="code">
+given a URL, try finding that page in the cache
+if the page is in the cache:
+    return the cached page
+else:
+    generate the page
+    save the generated page in the cache (for next time)
+    return the generated page
+</pre>
+<p>为此，Django提供了一个稳定的缓存系统让你缓存动态页面的结果，这样在接下来有相同的请求就可以直接使用缓存中的数据，避免不必要的重复计算。 另外Django还提供了不同粒度数据的缓存，例如： 你可以缓存整个页面，也可以缓存某个部分，甚至缓存整个网站。</p>
+<p>Django也和&#8221;上游&#8221;缓存工作的很好，例如Squid(<a  href="http://www.squid-cache.org">http://www.squid-cache.org</a>)和基于浏览器的缓存，这些类型的缓存你不直接控制，但是你可以提供关于你的站点哪部分应该被缓存和怎样缓存的线索(通过HTTP头部)给它们 这些都是缓存类型，您不直接控制，但您可以向其中提供线索（通过HTTP标头）关于您网站的哪个部分应被缓存，以及如何。</p>
+
+<h2  >设定缓存</h2>
+<p>缓存系统需要一些少量的设定工作，即你必需告诉它你的缓存数据在哪里&#8212;在数据库，文件系统或者直接在内存中，这是影响你的缓存性能的重要决定，是的，一些缓存类型要比其它的快，内存缓存通常比文件系统或数据库缓存快，因为前者没有访问文件系统或数据库的过度连接 也就是说，你必须告诉它在您的缓存的数据是否应该存在一个数据库中，在文件系统，或直接在内存中。
+这是一个重要的决定，影响您的高速缓存的性能，是的，有些类型的缓存比其它类型快。</p>
+<p>你的缓存选择在你的settings文件的 <tt >CACHE_BACKEND</tt> 设置中，如果你使用缓存但没有指定 <tt >CACHE_BACKEND</tt> ，Django将默认使用 <tt >simple:///</tt> ，下面将解释 <tt >CACHE_BACKEND</tt> 的所有可得到的值 这里是一个为CACHE_BACKEND所有可用的值解释</p>
+
+<h3  >内存缓冲</h3>
+<p>迄今为止最快，最有效的高速缓存可Django的类型，Memcached的是一个完全基于内存的缓存框架，最初开发来处理高负荷的LiveJournal.com并随后开放，由Danga Interactive公司采购。 它的使用，如Facebook和维基百科网站，以减少数据库访问，并大幅提高站点的性能。</p>
+<p>Memcached在http://danga.com/memcached是免费的。它作为一个守护进程运行，并分配了特定数量的内存。 它只是提供了添加，检索和删除缓存中的任意数据的高速接口。 所有数据都直接存储在内存中，所以没有对使用的数据库或文件系统的开销。</p>
+<p>在安装了Memcached本身之后，你将需要安装Memcached Python绑定，它没有直接和Django绑定，这些绑定在一个单独的Python模块中，&#8217;memcache.py&#8217;，可以在http://www.djangoproject.com/thirdparty/python-memcached得到 这两个可用版本。 选择和安装以下模块之一：</p>
+<ul >
+<li  ><p>最快的可用选项是一个模块，称为cmemcache，在http://gijsbert.org/cmemcache。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>如果您无法安装cmemcache，您可以安装python - Memcached，在ftp://ftp.tummy.com/pub/python-memcached/。如果该网址已不再有效，只要到Memcached的网站http://www.danga.com/memcached/），并从客户端API的Python绑定。</p>
+</li>
+</ul>
+<p>若要使用Memcached的Django，设置CACHE_BACKEND到memcached：/ / IP：port/，其中IP是Memcached的守护进程的IP地址和port的端口Memcached的运行。</p>
+<p>在这个例子中，Memcached运行在本地主机 (127.0.0.1)上,端口为11211：</p>
+<pre class="code">
+CACHE_BACKEND = 'memcached://127.0.0.1:11211/'
+</pre>
+<p>Memcached的一个极好的特性是它在多个服务器分享缓存的能力，这意味着你可以在多台机器上运行Memcached进程，程序将会把这组机器当作一个*单独的*缓存，而不需要在每台机器上复制缓存值，为了让Django利用此特性，需要在CACHE_BACKEND里包含所有的服务器地址并用分号分隔
+这意味着您可以运行在多台机器Memcached的守护进程，该程序会当成一个单一缓存组机器，而无需重复每台机器上的缓存值。 要充分利用此功能，包括CACHE_BACKEND所有服务器的地址，用分号分隔。</p>
+<p>这个例子中，缓存在运行在172.19.26.240和172.19.26.242的IP地址和11211端口的Memcached实例间分享:</p>
+<pre class="code">
+CACHE_BACKEND = 'memcached://172.19.26.240:11211;172.19.26.242:11211/'
+</pre>
+<p>这个例子中，缓存在运行在172.19.26.240(端口11211)，172.19.26.242(端口11212)，172.19.26.244(端口11213)的Memcached实例间分享:</p>
+<pre class="code">
+CACHE_BACKEND = 'memcached://172.19.26.240:11211;172.19.26.242:11212;172.19.26.244:11213/'
+</pre>
+<p>最后关于Memcached的是基于内存的缓存有一个重大的缺点，因为缓存数据只存储在内存中，则如果服务器死机的话数据会丢失，显然内存不是为持久数据存储准备的，Django没有一个缓存后端是用来做持久存储的，它们都是缓存方案，而不是存储.但是我们在这里指出是因为基于内存的缓存特别的短暂 . 由于缓存的数据存储在内存中的数据将会丢失，如果您的服务器崩溃。
+显然，内存不打算永久存储数据，因此不依赖基于内存缓存仅作为您的存储数据缓存。 毫无疑问，在Django的缓存后端都应该用于永久储存他们都拟用于缓存的解决方案，但我们不是储存指出此点，这里是因为基于内存的缓存尤其暂时的。</p>
+
+
+<h3  >数据库缓存</h3>
+<p>作为您的缓存后端数据库表中，首先在数据库中创建通过运行这个命令缓存表：</p>
+<pre class="code">
+python manage.py createcachetable [cache_table_name]
+</pre>
+<p>这里的[cache_table_name]是要创建的数据库表名，名字可以是任何你想要的，只要它是合法的在你的数据库中没有被使用，这个命令在你的数据库创建一个遵循Django的数据库缓存系统期望形式的单独的表. （此名称可以是任何你想的，只要它是一个有效的表名，这不是已经在您的数据库中使用。）此命令创建数据库中的一个表，在正确的格式，Django的数据库缓存系统所期望的。</p>
+<p>一旦你创建了数据库表，设置你的CACHE_BACKEND设置为&#8221;db://tablename&#8221;，这里的tablename是数据库表的名字，在这个例子中，缓存表名为my_cache_table: 在这个例子中，高速缓存表的名字是my_cache_table：</p>
+<pre class="code">
+CACHE_BACKEND = 'db://my_cache_table'
+</pre>
+<p>数据库缓存后端使用你的settings文件指定的同一数据库，你不能为你的缓存表使用不同的数据库后端.
+您不能使用您的缓存表在不同的数据库后端。</p>
+<p>数据库缓存效果最佳，如果你已经有了一个快速，良好的索引数据库服务器。</p>
+
+
+<h3  >文件系统缓存</h3>
+<p>要存储的文件系统缓存的项目，使用&#8221;<a  href="file://">file://</a>&#8220;缓存类型CACHE_BACKEND。例如，缓存数据存储在/var/tmp/django_cache，使用此设置：</p>
+<pre class="code">
+CACHE_BACKEND = 'file:///var/tmp/django_cache'
+</pre>
+<p>注意例子中开头有三个前斜线，前两个是file://，第三个是目录路径的第一个字符，/var/tmp/django_cache，如果你使用Windows系统，把盘符字母放在file://后面，像这样:&#8217;<a  href="file://c:/foo/bar">file://c:/foo/bar</a>&#8216;. 头两项是file://，第三个是第一个字符的目录路径，/var/tmp/django_cache。如果你是Windows，之后提出file://，这样文件的驱动器号：</p>
+<pre class="code">
+file://c:/foo/bar
+</pre>
+<p>目录路径应该是*绝对*路径，即应该以你的文件系统的根开始，你在设置的结尾放置斜线与否无关紧要. 它不管你放在设置的结束斜线。</p>
+<p>确认该设置指向的目录存在并且你的Web服务器运行的系统的用户可以读写该目录，继续上面的例子，如果你的服务器以用户apache运行，确认/var/tmp/django_cache存在并且用户apache可以读写/var/tmp/django_cache目录 apache继续上面的例子，如果您的服务器运行作出的用户apache，确保目录/var/tmp/django_cache存在并且是可读和由用户可写。</p>
+<p>每个缓存值将被存储为单独的文件，其内容是Python的pickle模块以序列化(&#8220;pickled&#8221;)形式保存的缓存数据，每个文件的 文件名是缓存键，以规避开安全文件系统的使用 每个文件的名称是缓存键，除了文件系统使用的安全。</p>
+
+
+<h3  >本地内存缓存</h3>
+<p>如果你想要内存缓存的速度优势但没有能力运行Memcached，可以考虑使用本地存储器缓存后端，该缓存是多线程和线程安全 的，但是由于其简单的锁和内存分配策略它没有Memcached高效 此缓存的多进程和线程安全。 设置 <tt >CACHE_BACKEND</tt> 为 <tt >locmem:///</tt> 来使用它，例如:</p>
+<pre class="code">
+CACHE_BACKEND = 'locmem:///'
+</pre>
+<p>请注意，每个进程都有自己的私自缓存实例，这意味着没有跨进程缓存是可能的。 这显然也意味着本地内存缓存并不特别记忆效率，所以它可能不是一个生产环境不错的选择。 这是很好的发展。</p>
+
+
+<h3  >仿缓存（供开发时使用）</h3>
+<p>最后，Django提供一个假缓存的设置：</p>
+<p>这是有用的，如果你有一个生产基地，使用在不同地方的重型缓存，但开发/测试环境中，你不想来缓存和不希望要改变您的代码的特殊情况后者。 要激活虚拟缓存，就像这样设置CACHE_BACKEND：</p>
+<pre class="code">
+CACHE_BACKEND = 'dummy:///'
+</pre>
+
+
+<h3  >使用自定义缓存后端</h3>
+<p>尽管Django的包括针对缓存的支持后端的即开即用，有时你可能想使用自定义缓存后端。 要使用外部高速缓存与Django的后端，在最初使Python import 作为该计划的一部分（前部分的初步冒号）的CACHE_BACKEND URI的，像这样：</p>
+<pre class="code">
+CACHE_BACKEND = 'path.to.backend://'
+</pre>
+<p>如果您构建自己的后端，你可以使用标准的参考实现缓存后端。 django/core/cache/backends/你会发现在的Django的源目录。</p>
+<p>注意 如果没有一个真正令人信服的理由，如主机不支持他们，你要坚持到缓存后端使用Django中。 他们一直行之有效，易于使用。</p>
+
+
+<h3  >CACHE_BACKEND参数</h3>
+<p>每个缓存后端都可能使用参数，它们在CACHE_BACKEND设置中以查询字符串形式给出，合法的参数为: 他们给予查询字符串的CACHE_BACKEND设置样式。 有效参数如下：</p>
+<blockquote>
+<p><tt >timeout</tt>:用于缓存的过期时间，以秒为单位。 这个参数默认被设置为300秒（五分钟）</p>
+<p>filesystemmax_entries：对于locmem，database和后端，在高速缓存允许的最大条目数之前的旧值将被删除。 这个参数默认是300.</p>
+<p><tt >cull_frequency</tt> :当达到 <tt >max_entries</tt> 的时候,被接受的访问的比率。 实际的比率是 <tt >1/cull_frequency</tt> ,所以设置cull_frequency=2就是在达到 <tt >max_entries</tt> 的时候去除一半数量的缓存</p>
+<p>把 <tt >cull_frequency</tt> 的值设置为 <tt >0</tt> 意味着当达到 <tt >max_entries</tt> 时,缓存将被清空。 这将以很多缓存丢失为代价,大大提高接受访问的速度。</p>
+</blockquote>
+<p>在这个例子中， <tt >timeout</tt> 被设成 <tt >60</tt></p>
+<pre class="code">
+CACHE_BACKEND = &quot;memcached://127.0.0.1:11211/?timeout=60&quot;
+</pre>
+<p>而在这个例子中， <tt >timeout</tt> 设为 <tt >30</tt> 而 <tt >max_entries</tt> 为 <tt >400</tt> :</p>
+<pre class="code">
+CACHE_BACKEND = &quot;locmem:///?timeout=30&amp;max_entries=400&quot;
+</pre>
+<p>其中，非法的参数与非法的参数值都将被忽略。</p>
+
+
+
+<h2  >站点级 Cache</h2>
+<p>一旦高速缓存设置，最简单的方法是使用缓存缓存整个网站。
+您
+需要添加&#8217;django.middleware.cache.UpdateCacheMiddleware&#8217;和
+&#8216;django.middleware.cache.FetchFromCacheMiddleware&#8217;您的MIDDLEWARE_CLASSES设置，在这个例子为：</p>
+<pre class="code">
+MIDDLEWARE_CLASSES = (
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
+)
+</pre>
+<p>注意：</p>
+<p>不，这不是一个错字： 中间件的更新，必须先在列表中，而获取的中间件，必须最后。 的细节有点模糊，但看到下面的MIDDLEWARE_CLASSES订阅如果您想看到完整的故事。</p>
+<p>然后，在你的Django settings文件里加入下面所需的设置：</p>
+<ul >
+<li  ><p><tt >CACHE_MIDDLEWARE_SECONDS</tt> :每个页面应该被缓存的秒数</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >CACHE_MIDDLEWARE_KEY_PREFIX</tt> ：如果缓存被多个使用相同Django安装的网站所共享，那么把这个值设成当前网站名，或其他能代表这个Django实例的唯一字符串，以避免key发生冲突。 如果你不在意的话可以设成空字符串。</p>
+</li>
+</ul>
+<p>缓存中间件缓存每个没有GET或者POST参数的页面，即如果用户请求页面并在查询字符串里传递GET参数或者POST参数，中间件将不会尝试得到缓存版本的页面，如果你打算使用整站缓存，设计你的程序时牢记这点，例如，不要使用拥有查询字符串的URLs，除非那些页面可以不缓存
+或者，如果CACHE_MIDDLEWARE_ANONYMOUS_ONLY设置为True，只有匿名请求（即不是由登录的用户）将被缓存作出的声明。 如果想取消用户相关页面（user-specific pages）的缓存，例如Djangos 的管理界面，这是一种既简单又有效的方法。 CACHE_MIDDLEWARE_ANONYMOUS_ONLY，你应该确保你已经启动AuthenticationMiddleware。</p>
+<p>此外，缓存中间件自动设置在每个中HttpResponse几个标题：</p>
+<ul >
+<li  ><p>当一个新(没缓存的)版本的页面被请求时设置Last-Modified头部为当前日期/时间</p>
+</li>
+</ul>
+<ul >
+<li  ><p>设置Expires头部为当前日期/时间加上定义的CACHE_MIDDLEWARE_SECONDS</p>
+</li>
+</ul>
+<ul >
+<li  ><p>设置Cache-Control头部来给页面一个最大的时间&#8212;再一次，根据CACHE_MIDDLEWARE_SECONDS设置</p>
+</li>
+</ul>
+<p>参阅更多的中间件第17章。</p>
+<p>如果视图设置自己的缓存到期时间（即 它有一个最大，年龄在其缓存部分，控制头），那么页面将届满时为止，而不是CACHE_MIDDLEWARE_SECONDS缓存。使用django.views.decorators.cache的装饰，您可以轻松地设置视图的到期时间（使用cache_control装饰）或禁用缓存视图（使用never_cache装饰）。 请参阅使用其他头节下面有关这些装饰。</p>
+
+
+<h2  >视图级缓存</h2>
+<p>更加颗粒级的缓存框架使用方法是对单个视图的输出进行缓存。 <tt >django.views.decorators.cache</tt> defines a <tt >cache_page</tt> decorator that will
+automatically cache the view&#8217;s response for you. Its easy to use:</p>
+<pre class="code">
+from django.views.decorators.cache import cache_page
+
+def my_view(request):
+    # ...
+
+my_view = cache_page(my_view, 60 * 15)
+</pre>
+<p>Or, using Python 2.4&#8217;s decorator syntax:</p>
+<pre class="code">
+&#64;cache_page(60 * 15)
+def my_view(request):
+    # ...
+</pre>
+<p><tt >cache_page</tt> 只接受一个参数： 以秒计的缓存超时。 在前例中， &#8220;my_view()&#8221; 视图的结果将被缓存 15 分钟。 （注意： 为了提高可读性，该参数被书写为 <tt >60 * 15</tt> 。 <tt >60 * 15</tt> 将被计算为 <tt >900</tt> ，也就是说15 分钟乘以每分钟 60 秒。）</p>
+<p>和站点缓存一样，视图缓存与 URL 无关。 如果多个 URL 指向同一视图，每个视图将会分别缓存。 继续 <tt >my_view</tt> 范例，如果 URLconf 如下所示：</p>
+<pre class="code">
+urlpatterns = ('',
+    (r'^foo/(\d{1,2})/$', my_view),
+)
+</pre>
+<p>那么正如你所期待的那样，发送到 <tt >/foo/1/</tt> 和 <tt >/foo/23/</tt> 的请求将会分别缓存。 但一旦发出了特定的请求（如：</p>
+
+<h3  >在 URLconf 中指定视图缓存</h3>
+<p>前一节中的范例将视图硬编码为使用缓存，因为 <tt >cache_page</tt> 在适当的位置对 <tt >my_view</tt> 函数进行了转换。 该方法将视图与缓存系统进行了耦合，从几个方面来说并不理想。 例如，你可能想在某个无缓存的站点中重用该视图函数，或者你可能想将该视图发布给那些不想通过缓存使用它们的人。 解决这些问题的方法是在 URLconf 中指定视图缓存，而不是紧挨着这些视图函数本身来指定。</p>
+<p>完成这项工作非常简单： 在 URLconf 中用到这些视图函数的时候简单地包裹一个 <tt >cache_page</tt> 。以下是刚才用到过的 URLconf : Here&#8217;s the old URLconf from earlier:</p>
+<pre class="code">
+urlpatterns = ('',
+    (r'^foo/(\d{1,2})/$', my_view),
+)
+</pre>
+<p>以下是同一个 URLconf ，不过用 <tt >cache_page</tt> 包裹了 <tt >my_view</tt> ：</p>
+<pre class="code">
+from django.views.decorators.cache import cache_page
+
+urlpatterns = ('',
+    (r'^foo/(\d{1,2})/$', cache_page(my_view, 60 * 15)),
+)
+</pre>
+<p>如果采取这种方法, 不要忘记在 URLconf 中导入 <tt >cache_page</tt> .</p>
+
+
+
+<h2  >Template Fragment Caching</h2>
+<p>If you&#8217;re after even more control, you can also cache template fragments using the
+<tt >cache</tt> template tag. To give your template access to this tag, put <tt >{% load cache %}</tt>
+near the top of your template.</p>
+<p>The <tt >{% cache %}</tt> template tag caches the contents of the block for a given amount of
+time. 它至少需要两个参数: the cache timeout, in seconds, and the name to give
+the cache fragment. For example:</p>
+<pre class="code">
+{% load cache %}
+{% cache 500 sidebar %}
+    .. sidebar ..
+{% endcache %}
+</pre>
+<p>Sometimes you might want to cache multiple copies of a fragment depending on some dynamic
+data that appears inside the fragment. For example, you might want a separate cached copy
+of the sidebar used in the previous example for every user of your site. Do this by
+passing additional arguments to the <tt >{% cache %}</tt> template tag to uniquely identify the
+cache fragment:</p>
+<pre class="code">
+{% load cache %}
+{% cache 500 sidebar request.user.username %}
+    .. sidebar for logged in user ..
+{% endcache %}
+</pre>
+<p>It&#8217;s perfectly fine to specify more than one argument to identify the fragment. Simply
+pass as many arguments to <tt >{% cache %}</tt> as you need.</p>
+<p>The cache timeout can be a template variable, as long as the template variable resolves to
+an integer value. For example, if the template variable <tt >my_timeout</tt> is set to the value
+<tt >600</tt> , then the following two examples are equivalent:</p>
+<pre class="code">
+{% cache 600 sidebar %} ... {% endcache %}
+{% cache my_timeout sidebar %} ... {% endcache %}
+</pre>
+<p>This feature is useful in avoiding repetition in templates. You can set the timeout in a
+variable, in one place, and just reuse that value.</p>
+
+
+<h2  >低层次缓存API</h2>
+<p>有些时候，对整个经解析的页面进行缓存并不会给你带来太多，事实上可能会过犹不及。</p>
+<p>比如说，也许你的站点所包含的一个视图依赖几个费时的查询，每隔一段时间结果就会发生变化。 在这种情况下，使用站点级缓存或者视图级缓存策略所提供的整页缓存并不是最理想的，因为你可能不会想对整个结果进行缓存（因为一些数据经常变化），但你仍然会想对很少变化的部分进行缓存。</p>
+<p>For cases like this, Django exposes a simple, low-level cache API. You can use this API to
+store objects in the cache with any level of granularity you like. 你可以对所有能够安全进行 pickle 处理的 Python 对象进行缓存： 字符串、字典和模型对象列表等等；查阅 Python 文档可以了解到更多关于 pickling 的信息。 ）</p>
+<p>The cache module, <tt >django.core.cache</tt> , has a <tt >cache</tt> object that&#8217;s automatically
+created from the <tt >CACHE_BACKEND</tt> setting:</p>
+<pre class="code">
+&gt;&gt;&gt; from django.core.cache import cache
+</pre>
+<p>基本的接口是 <tt >set(key, value, timeout_seconds)</tt> 和 <tt >get(key)</tt> :</p>
+<pre class="code">
+&gt;&gt;&gt; cache.set('my_key', 'hello, world!', 30)
+&gt;&gt;&gt; cache.get('my_key')
+'hello, world!'
+</pre>
+<p><tt >timeout_seconds</tt> 参数是可选的, 并且默认为前面讲过的 <tt >CACHE_BACKEND</tt> 设置中的 <tt >timeout</tt> 参数.</p>
+<p>If the object doesn&#8217;t exist in the cache, <tt >cache.get()</tt> returns <tt >None</tt> :</p>
+<pre class="code">
+# Wait 30 seconds for 'my_key' to expire...
+
+&gt;&gt;&gt; cache.get('my_key')
+None
+</pre>
+<p>我们不建议在缓存中保存 <tt >None</tt> 常量，因为你将无法区分所保存的 <tt >None</tt> 变量及由返回值 <tt >None</tt> 所标识的缓存未中。</p>
+<p><tt >cache.get()</tt> 接受一个 <tt >缺省</tt> 参数。 其指定了当缓存中不存在该对象时所返回的值：</p>
+<pre class="code">
+&gt;&gt;&gt; cache.get('my_key', 'has expired')
+'has expired'
+</pre>
+<p>To add a key only if it doesn&#8217;t already exist, use the <tt >add()</tt> method. It takes the same
+parameters as <tt >set()</tt> , but it will not attempt to update the cache if the key specified
+is already present:</p>
+<pre class="code">
+&gt;&gt;&gt; cache.set('add_key', 'Initial value')
+&gt;&gt;&gt; cache.add('add_key', 'New value')
+&gt;&gt;&gt; cache.get('add_key')
+'Initial value'
+</pre>
+<p>If you need to know whether <tt >add()</tt> stored a value in the cache, you can check the
+return value. It will return <tt >True</tt> if the value was stored, <tt >False</tt> otherwise.</p>
+<p>There&#8217;s also a <tt >get_many()</tt> interface that only hits the cache once. <tt >get_many()</tt> 所返回的字典包括了你所请求的存在于缓存中且未超时的所有键值。</p>
+<pre class="code">
+&gt;&gt;&gt; cache.set('a', 1)
+&gt;&gt;&gt; cache.set('b', 2)
+&gt;&gt;&gt; cache.set('c', 3)
+&gt;&gt;&gt; cache.get_many(['a', 'b', 'c'])
+{'a': 1, 'b': 2, 'c': 3}
+</pre>
+<p>最后,你可以用 <tt >cache.delete()</tt> 显式地删除关键字。</p>
+<pre class="code">
+&gt;&gt;&gt; cache.delete('a')
+</pre>
+<p>You can also increment or decrement a key that already exists using the <tt >incr()</tt> or
+<tt >decr()</tt> methods, respectively. By default, the existing cache value will incremented or
+decremented by 1. Other increment/decrement values can be specified by providing an
+argument to the increment/decrement call. A ValueError will be raised if you attempt to
+increment or decrement a nonexistent cache key.:</p>
+<pre class="code">
+&gt;&gt;&gt; cache.set('num', 1)
+&gt;&gt;&gt; cache.incr('num')
+2
+&gt;&gt;&gt; cache.incr('num', 10)
+12
+&gt;&gt;&gt; cache.decr('num')
+11
+&gt;&gt;&gt; cache.decr('num', 5)
+6
+</pre>
+<p>Note</p>
+<p><tt >incr()</tt> /<tt >decr()</tt> methods are not guaranteed to be atomic. On those backends that
+support atomic increment/decrement (most notably, the memcached backend), increment and
+decrement operations will be atomic. However, if the backend doesn&#8217;t natively provide an
+increment/decrement operation, it will be implemented using a two-step retrieve/update.</p>
+
+
+<h2  >上游缓存</h2>
+<p>目前为止，本章的焦点一直是对你 <em>自己的</em> 数据进行缓存。 但还有一种与 Web 开发相关的缓存： caching performed by upstream caches. 有一些系统甚至在请求到达站点之前就为用户进行页面缓存。</p>
+<p>下面是上游缓存的几个例子：</p>
+<ul >
+<li  ><p>你的 ISP (互联网服务商)可能会对特定的页面进行缓存，因此如果你向 <a  href="http://example.com/">http://example.com/</a> 请求一个页面，你的 ISP 可能无需直接访问 example.com 就能将页面发送给你。 而 example.com 的维护者们却无从得知这种缓存，ISP 位于 example.com 和你的网页浏览器之间，透明地处理所有的缓存。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>你的 Django 网站可能位于某个 <em>代理缓存</em> 之后，例如 Squid 网页代理缓存 (<a  href="http://www.squid-cache.org/">http://www.squid-cache.org/</a>)，该缓存为提高性能而对页面进行缓存。 在此情况下 ，每个请求将首先由代理服务器进行处理，然后仅在需要的情况下才被传递至你的应用程序。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>你的网页浏览器也对页面进行缓存。 如果某网页送出了相应的头部，你的浏览器将在为对该网页的后续的访问请求使用本地缓存的拷贝，甚至不会再次联系该网页查看是否发生了变化。</p>
+</li>
+</ul>
+<p>上游缓存将会产生非常明显的效率提升，但也存在一定风险。 许多网页的内容依据身份验证以及许多其他变量的情况发生变化，缓存系统仅盲目地根据 URL 保存页面，可能会向这些页面的后续访问者暴露不正确或者敏感的数据。</p>
+<p>举个例子，假定你在使用网页电邮系统，显然收件箱页面的内容取决于登录的是哪个用户。 如果 ISP 盲目地缓存了该站点，那么第一个用户通过该 ISP 登录之后，他（或她）的用户收件箱页面将会缓存给后续的访问者。 这一点也不好玩。</p>
+<p>幸运的是， HTTP 提供了解决该问题的方案。 已有一些 HTTP 头标用于指引上游缓存根据指定变量来区分缓存内容，并通知缓存机制不对特定页面进行缓存。 我们将在本节后续部分将对这些头标进行阐述。</p>
+
+
+<h2  >使用 Vary 头标</h2>
+<p><tt >Vary</tt> 头标定义了缓存机制在构建其缓存键值时应当将哪个请求头标考虑在内。 例如，如果网页的内容取决于用户的语言偏好，该页面被称为根据语言而不同。</p>
+<p>缺省情况下，Django 的缓存系统使用所请求的路径（比如： <tt >&quot;/stories/2005/jun/23/bank_robbed/&quot;</tt> ）来创建其缓存键。</p>
+<p>要在 Django 完成这项工作，可使用便利的 <tt >vary_on_headers</tt> 视图修饰器，如下所示：</p>
+<pre class="code">
+from django.views.decorators.vary import vary_on_headers
+
+# Python 2.3 syntax.
+def my_view(request):
+    # ...
+my_view = vary_on_headers(my_view, 'User-Agent')
+
+# Python 2.4+ decorator syntax.
+&#64;vary_on_headers('User-Agent')
+def my_view(request):
+    # ...
+</pre>
+<p>在这种情况下，缓存装置（如 Django 自己的缓存中间件）将会为每一个单独的用户浏览器缓存一个独立的页面版本。</p>
+<p>使用 <tt >vary_on_headers</tt> 修饰器而不是手动设置 <tt >Vary</tt> 头标（使用像 <tt >response['Vary'] = 'user-agent'</tt> 之类的代码）的好处是修饰器在（可能已经存在的） <tt >Vary</tt> 之上进行 <em>添加</em> ，而不是从零开始设置，且可能覆盖该处已经存在的设置。</p>
+<p>你可以向 <tt >vary_on_headers()</tt> 传入多个头标：</p>
+<pre class="code">
+&#64;vary_on_headers('User-Agent', 'Cookie')
+def my_view(request):
+    # ...
+</pre>
+<p>该段代码通知上游缓存对 <em>两者</em> 都进行不同操作，也就是说 user-agent 和 cookie 的每种组合都应获取自己的缓存值。 举例来说，使用 <tt >Mozilla</tt> 作为 user-agent 而 <tt >foo=bar</tt> 作为 cookie 值的请求应该和使用 <tt >Mozilla</tt> 作为 user-agent 而 <tt >foo=ham</tt> 的请求应该被视为不同请求。</p>
+<p>由于根据 cookie 而区分对待是很常见的情况，因此有 <tt >vary_on_cookie</tt> 修饰器。 以下两个视图是等效的：</p>
+<pre class="code">
+&#64;vary_on_cookie
+def my_view(request):
+    # ...
+
+&#64;vary_on_headers('Cookie')
+def my_view(request):
+    # ...
+</pre>
+<p>传入 <tt >vary_on_headers</tt> 头标是大小写不敏感的； <tt >&quot;User-Agent&quot;</tt> 与 <tt >&quot;user-agent&quot;</tt> 完全相同。</p>
+<p>你也可以直接使用帮助函数：
+<tt >django.utils.cache.patch_vary_headers</tt> 。该函数设置或增加 <tt >Vary header</tt> ，例如：</p>
+<pre class="code">
+from django.utils.cache import patch_vary_headers
+
+def my_view(request):
+    # ...
+    response = render_to_response('template_name', context)
+    patch_vary_headers(response, ['Cookie'])
+    return response
+</pre>
+<p><tt >patch_vary_headers</tt> 以一个 <tt >HttpResponse</tt> 实例为第一个参数，以一个大小写不敏感的头标名称列表或元组为第二个参数。</p>
+
+
+<h2  >Controlling Cache: Using Other Headers</h2>
+<p>关于缓存剩下的问题是数据的私隐性以及关于在级联缓存中数据应该在何处储存的问题。</p>
+<p>通常用户将会面对两种缓存： 他或她自己的浏览器缓存（私有缓存）以及他或她的提供者缓存（公共缓存）。 公共缓存由多个用户使用，而受其他某人的控制。 这就产生了你不想遇到的敏感数据的问题，比如说你的银行账号被存储在公众缓存中。 因此，Web 应用程序需要以某种方式告诉缓存那些数据是私有的，哪些是公共的。</p>
+<p>解决方案是标示出某个页面缓存应当是私有的。 要在 Django 中完成此项工作，可使用 <tt >cache_control</tt> 视图修饰器： Example:</p>
+<pre class="code">
+from django.views.decorators.cache import cache_control
+
+&#64;cache_control(private=True)
+def my_view(request):
+    # ...
+</pre>
+<p>该修饰器负责在后台发送相应的 HTTP 头标。</p>
+<p>还有一些其他方法可以控制缓存参数。 例如, HTTP 允许应用程序执行如下操作:</p>
+<ul >
+<li  ><p>定义页面可以被缓存的最大次数。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>指定某个缓存是否总是检查较新版本，仅当无更新时才传递所缓存内容。 （一些缓存即便在服务器页面发生变化的情况下都可能还会传送所缓存的内容，只因为缓存拷贝没有过期。</p>
+</li>
+</ul>
+<p>在 Django 中，可使用 <tt >cache_control</tt> 视图修饰器指定这些缓存参数。 在本例中， <tt >cache_control</tt> 告诉缓存对每次访问都重新验证缓存并在最长 3600 秒内保存所缓存版本：</p>
+<pre class="code">
+from django.views.decorators.cache import cache_control
+
+&#64;cache_control(must_revalidate=True, max_age=3600)
+def my_view(request):
+    # ...
+</pre>
+<p>在 <tt >cache_control()</tt> 中，任何有效 <tt >Cache-Control</tt> HTTP 指令都是有效的。</p>
+<ul >
+<li  ><p><tt >public=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >private=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >no_cache=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >no_transform=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >must_revalidate=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >proxy_revalidate=True</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >max_age=num_seconds</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >s_maxage=num_seconds</tt></p>
+</li>
+</ul>
+<p>缓存中间件已经使用 <tt >CACHE_MIDDLEWARE_SETTINGS</tt> 设置设定了缓存头标 <tt >max-age</tt> 。如果你在 <tt >cache_control</tt> 修饰器中使用了自定义的 <tt >max_age</tt> ，该修饰器将会取得优先权，该头标的值将被正确地被合并。 ）</p>
+<p>If you want to use headers to disable caching altogether,
+<tt >django.views.decorators.cache.never_cache</tt> is a view decorator that adds headers to
+ensure the response won&#8217;t be cached by browsers or other caches. Example:</p>
+<pre class="code">
+from django.views.decorators.cache import never_cache
+
+&#64;never_cache
+def myview(request):
+    # ...
+</pre>
+
+
+<h2  >其他优化</h2>
+<p>Django 带有一些其它中间件可帮助您优化应用程序的性能:</p>
+<ul >
+<li  ><p><tt >django.middleware.http.ConditionalGetMiddleware</tt> 为现代浏览器增加了有条件地 GET 基于 <tt >ETag</tt> 和 <tt >Last-Modified</tt> 头标的响应的相关支持。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >django.middleware.gzip.GZipMiddleware</tt> 为所有现代浏览器压缩响应内容，以节省带宽和传送时间。</p>
+</li>
+</ul>
+
+
+<h2  >MIDDLEWARE_CLASSES 的顺序</h2>
+<p>If you use caching middleware, it&#8217;s important to put each half in the right place within
+the <tt >MIDDLEWARE_CLASSES</tt> setting. That&#8217;s because the cache middleware needs to know
+which headers by which to vary the cache storage. Middleware always adds something to the
+<tt >Vary</tt> response header when it can.</p>
+<p><tt >UpdateCacheMiddleware</tt> runs during the response phase, where middleware is run in
+reverse order, so an item at the top of the list runs <em>last</em> during the response phase.
+Thus, you need to make sure that <tt >UpdateCacheMiddleware</tt> appears <em>before</em> any other
+middleware that might add something to the <tt >Vary</tt> header. The following middleware
+modules do so:</p>
+<ul >
+<li  ><p>添加 <tt >Cookie</tt> 的 <tt >SessionMiddleware</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>添加 <tt >Accept-Encoding</tt> 的 <tt >GZipMiddleware</tt> ,</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >LocaleMiddleware</tt> adds <tt >Accept-Language</tt></p>
+</li>
+</ul>
+<p><tt >FetchFromCacheMiddleware</tt> , on the other hand, runs during the request phase, where
+middleware is applied first-to-last, so an item at the top of the list runs <em>first</em> during
+the request phase. The <tt >FetchFromCacheMiddleware</tt> also needs to run after other
+middleware updates the <tt >Vary</tt> header, so <tt >FetchFromCacheMiddleware</tt> must be <em>after</em>
+any item that does so.</p>
+
+
+<h2  >下一章</h2>
+<p>Django ships with a number of contrib packages optional features that can make your life
+easier. We&#8217;ve already covered a few of these: the admin site (<a href="chapter06.html">Chapter 6</a>) and the
+session/user framework (<a href="chapter14.html">Chapter 14</a>). <a href="chapter16.html">下一章 </a>中，我们将讲述Django中其他的子框架，将会有很多很酷的工具出现，你一定不想错过它们。</p>
+
+
+
+    
+    
+  
+
+
+
+        
+	<a href="chapter14.html">| 上一章</a> |
+    	<a href="index.html">目  录</a> |
+    	<a href="chapter16.html">下一章 </a> |
+
+
+
+
+
+
+
+
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

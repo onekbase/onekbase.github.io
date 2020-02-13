@@ -1,0 +1,1157 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+
+      
+        
+        
+        
+        	<a href="chapter08.html">| 上一章</a> |
+        	<a href="index.html">目  录</a> |
+        	<a href="chapter10.html">下一章 </a> |
+        
+     
+
+
+  
+    
+    
+    
+<h1  >第九章 模板高级进阶</h1>
+<p>虽然和Django的模板语言的大多数交互都是模板作者的工作，但你可能想定制和扩展模板引擎，让它做一些它不能做的事情，或者是以其他方式让你的工作更轻松。</p>
+<p>本章深入钻研Django的模板系统。 如果你想扩展模板系统或者只是对它的工作原理感觉到好奇，本章涉及了你需要了解的东西。 它也包含一个自动转意特征，当你继续使用django的时候随着时间推移你一定会注意这个安全考虑。</p>
+<p>如果你想把Django的模版系统作为另外一个应用程序的一部分（比如，仅使用django的模板系统而不使用Django框架的其他部分），那你一定要读一下“配置独立模式下的模版系统”这一节。</p>
+
+<h2  >模板语言回顾</h2>
+<p>首先，让我们快速回顾一下第四章介绍的若干专业术语</p>
+<blockquote>
+<p><em>模板</em> 是一个纯文本文件，或是一个用Django模板语言标记过的普通的Python字符串，一个模板可以包含区块标签和变量。 模板可以包含模板标签和变量。</p>
+<p><em>区块标签</em> 是在一个模板里面起作用的的标记，这个定义故意说的很含糊，比如，一个 区块标签可以生成内容，可以作为一个控制结构（ <tt >if</tt> 语句或 <tt >for</tt> 循环）， 可以获取数据库内容，或者访问其他的模板标签。 这个定义故意搞得模糊不清。 例如，一个模版标签能够产生作为控制结构的内容（一个 <tt >if</tt><tt >for</tt> 循环),</p>
+<p>区块标签被 <tt >{%</tt> 和 <tt >%}</tt> 包含：</p>
+</blockquote>
+<pre class="code">
+{% if is_logged_in %}
+    Thanks for logging in!
+{% else %}
+    Please log in.
+{% endif %}
+</pre>
+<blockquote>
+<p><em>变量</em> 是一个在模板里用来输出值的标记。</p>
+<p>变量标签被 <tt >{{</tt> 和 <tt >}}</tt> 包含：</p>
+</blockquote>
+<pre class="code">
+My first name is {{ first_name }}. My last name is {{ last_name }}.
+</pre>
+<blockquote>
+<p><em>context</em> 是一个传递给模板的名称到值的映射（类似Python字典）。</p>
+<p>模板 <em>渲染</em> 就是是通过从context获取值来替换模板中变量并执行所有的区块标签。</p>
+</blockquote>
+<p>关于这些基本概念更详细的内容，请参考第四章。</p>
+<p>本章的其余部分讨论了扩展模板引擎的方法。
+首先，我们快速的看一下第四章遗留的内容。</p>
+
+
+<h2  >RequestContext和Context处理器</h2>
+<p>你需要一段context来解析模板。 一般情况下，这是一个 <tt >django.template.Context</tt> 的实例，不过在Django中还可以用一个特殊的子类， <tt >django.template.RequestContext</tt> ，这个运用起来稍微有些不同。
+<tt >RequestContext</tt> 默认地在模板context中加入了一些变量，如 <tt >HttpRequest</tt> 对象或当前登录用户的相关信息。</p>
+<p>当你不想在一系例模板中都明确指定一些相同的变量时，你应该使用 <tt >RequestContext</tt> 。例如，看下面的四个视图： 例如，考虑这两个视图：</p>
+<pre class="code">
+from django.template import loader, Context
+
+def view_1(request):
+    # ...
+    t = loader.get_template('template1.html')
+    c = Context({
+        'app': 'My app',
+        'user': request.user,
+        'ip_address': request.META['REMOTE_ADDR'],
+        'message': 'I am view 1.'
+    })
+    return t.render(c)
+
+def view_2(request):
+    # ...
+    t = loader.get_template('template2.html')
+    c = Context({
+        'app': 'My app',
+        'user': request.user,
+        'ip_address': request.META['REMOTE_ADDR'],
+        'message': 'I am the second view.'
+    })
+    return t.render(c)
+</pre>
+<p>（注意，在这些例子中，我们故意 <em>不</em> 使用 <tt >render_to_response()</tt> 这个快捷方法，而选择手动载入模板，手动构造context对象然后渲染模板。 是为了能够清晰的说明所有步骤。</p>
+<p>每个视图都给模板传入了三个相同的变量： <tt >app</tt> 、 <tt >user</tt> 和 <tt >ip_address</tt> 。如果我们能把这些冗余去掉会不会看起来更好？</p>
+<p>创建 <tt >RequestContext</tt> 和 <strong>context处理器</strong> 就是为了解决这个问题。 Context处理器允许你设置一些变量，它们会在每个context中自动被设置好，而不必每次调用 <tt >render_to_response()</tt> 时都指定。 要点就是，当你渲染模板时，你要用 <tt >RequestContext</tt> 而不是 <tt >Context</tt> 。</p>
+<p>最直接的做法是用context处理器来创建一些处理器并传递给 <tt >RequestContext</tt> 。上面的例子可以用context processors改写如下：</p>
+<pre class="code">
+from django.template import loader, RequestContext
+
+def custom_proc(request):
+    &quot;A context processor that provides 'app', 'user' and 'ip_address'.&quot;
+    return {
+        'app': 'My app',
+        'user': request.user,
+        'ip_address': request.META['REMOTE_ADDR']
+    }
+
+def view_1(request):
+    # ...
+    t = loader.get_template('template1.html')
+    c = RequestContext(request, {'message': 'I am view 1.'},
+            processors=[custom_proc])
+    return t.render(c)
+
+def view_2(request):
+    # ...
+    t = loader.get_template('template2.html')
+    c = RequestContext(request, {'message': 'I am the second view.'},
+            processors=[custom_proc])
+    return t.render(c)
+</pre>
+<p>我们来通读一下代码：</p>
+<ul >
+<li  ><p>首先，我们定义一个函数 <tt >custom_proc</tt> 。这是一个context处理器，它接收一个 <tt >HttpRequest</tt> 对象，然后返回一个字典，这个字典中包含了可以在模板context中使用的变量。 它就做了这么多。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>我们在这四个视图函数中用 <tt >RequestContext</tt> 代替了 <tt >Context</tt> 。在context对象的构建上有两个不同点。
+一， <tt >RequestContext</tt> 的第一个参数需要传递一个 <tt >HttpRequest</tt> 对象，就是传递给视图函数的第一个参数（ <tt >request</tt> ）。二， <tt >RequestContext</tt> 有一个可选的参数 <tt >processors</tt> ，这是一个包含context处理器函数的list或者tuple。 在这里，我们传递了我们之前定义的函数 <tt >curstom_proc</tt> 。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>每个视图的context结构里不再包含 <tt >app</tt> 、 <tt >user</tt> 、 <tt >ip_address</tt> 等变量，因为这些由 <tt >custom_proc</tt> 函数提供了。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>每个视图 <em>仍然</em> 具有很大的灵活性，可以引入我们需要的任何模板变量。 在这个例子中， <tt >message</tt> 模板变量在每个视图中都不一样。</p>
+</li>
+</ul>
+<p>在第四章，我们介绍了 <tt >render_to_response()</tt> 这个快捷方式，它可以省掉调用 <tt >loader.get_template()</tt> ,然后创建一个 <tt >Context</tt> 对象，最后再调用模板对象的 <tt >render()</tt> 方法。 为了讲解context处理器底层是如何工作的，在上面的例子中我们没有使用 <tt >render_to_response()</tt> 。但是建议选择 <tt >render_to_response()</tt> 作为context的处理器。</p>
+<pre class="code">
+from django.shortcuts import render_to_response
+from django.template import RequestContext
+
+def custom_proc(request):
+    &quot;A context processor that provides 'app', 'user' and 'ip_address'.&quot;
+    return {
+        'app': 'My app',
+        'user': request.user,
+        'ip_address': request.META['REMOTE_ADDR']
+    }
+
+def view_1(request):
+    # ...
+    return render_to_response('template1.html',
+        {'message': 'I am view 1.'},
+        context_instance=RequestContext(request, processors=[custom_proc]))
+
+def view_2(request):
+    # ...
+    return render_to_response('template2.html',
+        {'message': 'I am the second view.'},
+        context_instance=RequestContext(request, processors=[custom_proc]))
+</pre>
+<p>在这，我们将每个视图的模板渲染代码写成了一个单行。</p>
+<p>虽然这是一种改进，但是，请考虑一下这段代码的简洁性，我们现在不得不承认的是在 <em>另外</em> 一方面有些过分了。 我们以代码冗余（在 <tt >processors</tt> 调用中）的代价消除了数据上的冗余（我们的模板变量）。 由于你不得不一直键入 <tt >processors</tt> ，所以使用context处理器并没有减少太多的打字次数。</p>
+<p>Django因此提供对 <em>全局</em> context处理器的支持。 <tt >TEMPLATE_CONTEXT_PROCESSORS</tt> 指定了 <em>总是</em> 使用哪些 <tt >context processors</tt> 。这样就省去了每次使用 <tt >RequestContext</tt> 都指定 <tt >processors</tt> 的麻烦^_^。</p>
+<p>默认情况下， <tt >TEMPLATE_CONTEXT_PROCESSORS</tt> 设置如下：</p>
+<pre class="code">
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+)
+</pre>
+<p>这个设置是一个可调用函数的Tuple，其中的每个函数使用了和上文中我们的 <tt >custom_proc</tt> 相同的接口： 接收一个request对象作为参数，返回一个包含了将被合并到context中的项的字典。</p>
+<p>每个处理器将会按照顺序应用。 也就是说如果你在第一个处理器里面向context添加了一个变量，而第二个处理器添加了同样名字的变量，那么第二个将会覆盖第一个。</p>
+<p>Django提供了几个简单的context处理器，有些在默认情况下被启用的。</p>
+
+<h3  >django.core.context_processors.auth</h3>
+<p>如果 <tt >TEMPLATE_CONTEXT_PROCESSORS</tt> 包含了这个处理器，那么每个 <tt >RequestContext</tt> 将包含这些变量：</p>
+<ul >
+<li  ><p><tt >user</tt> ：一个 <tt >django.contrib.auth.models.User</tt> 实例，描述了当前登录用户（或者一个 <tt >AnonymousUser</tt> 实例，如果客户端没有登录）。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >messages</tt> ：一个当前登录用户的消息列表（字符串）。 在后台，对每一个请求这个变量都调用 <tt >request.user.get_and_delete_messages()</tt> 方法。 这个方法收集用户的消息然后把它们从数据库中删除。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >perms</tt> ： <tt >django.core.context_processors.PermWrapper</tt> 的一个实例，包含了当前登录用户有哪些权限。</p>
+</li>
+</ul>
+<p>关于users、permissions和messages的更多内容请参考第12章。</p>
+
+
+<h3  >django.core.context_processors.debug</h3>
+<p>这个处理器把调试信息发送到模板层。 如果包含<tt >TEMPLATE_CONTEXT_PROCESSORS</tt>处理器，每一个<tt >RequestContext</tt>将包含这些变量：</p>
+<ul >
+<li  ><p><tt >debug</tt> ：你设置的 <tt >DEBUG</tt> 的值（ <tt >True</tt> 或 <tt >False</tt> ）。你可以在模板里面用这个变量测试是否处在debug模式下。</p>
+</li>
+</ul>
+<ul>
+<li  ><p><tt >sql_queries</tt> ：包含类似于 <a href="#id3">``</a>{&#8216;sql&#8217;: &#8230;, &#8216;time&#8217;: `` 的字典的一个列表， 记录了这个请求期间的每个SQL查询以及查询所耗费的时间。 这个列表是按照请求顺序进行排列的。</p>
+
+<p>System Message: WARNING/2 (<tt >&lt;string&gt;</tt>, line 315); <em><a href="#id4">backlink</a></em></p>
+<p>Inline literal start-string without end-string.</p>
+
+</li>
+</ul>
+<p>由于调试信息比较敏感，所以这个context处理器只有当同时满足下面两个条件的时候才有效：</p>
+<ul >
+<li  ><p><tt >DEBUG</tt> 参数设置为 <tt >True</tt> 。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>请求的ip应该包含在 <tt >INTERNAL_IPS</tt> 的设置里面。</p>
+</li>
+</ul>
+<p>Astute readers will notice that the <tt >debug</tt> template variable will never have
+the value <tt >False</tt> because, if <tt >DEBUG</tt> is <tt >False</tt> , then the <tt >debug</tt>
+template variable won&#8217;t be populated in the first place.</p>
+
+
+<h3  >django.core.context_processors.i18n</h3>
+<p>如果这个处理器启用，每个 <tt >RequestContext</tt> 将包含下面的变量：</p>
+<ul >
+<li  ><p><tt >LANGUAGES</tt> ： <tt >LANGUAGES</tt> 选项的值。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >LANGUAGE_CODE</tt> ：如果 <tt >request.LANGUAGE_CODE</tt> 存在，就等于它；否则，等同于 <tt >LANGUAGE_CODE</tt> 设置。</p>
+</li>
+</ul>
+<p>附录E提供了有关这两个设置的更多的信息。</p>
+
+
+<h3  >django.core.context_processors.request</h3>
+<p>如果启用这个处理器，每个 <tt >RequestContext</tt> 将包含变量 <tt >request</tt> ， 也就是当前的 <tt >HttpRequest</tt> 对象。 注意这个处理器默认是不启用的，你需要激活它。</p>
+<p>如果你发现你的模板需要访问当前的<tt >HttpRequest</tt>你就需要使用它:</p>
+<pre class="code">
+{{ request.REMOTE_ADDR }}
+</pre>
+
+
+<h3  >写Context处理器的一些建议</h3>
+<p>编写处理器的一些建议：</p>
+<ul >
+<li  ><p>使每个context处理器完成尽可能小的功能。 使用多个处理器是很容易的，所以你可以根据逻辑块来分解功能以便将来重用。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>要注意 <tt >TEMPLATE_CONTEXT_PROCESSORS</tt> 里的context processor 将会在 <em>每个</em> 模板中有效，所以要变量的命名不要和模板的变量冲突。 变量名是大小写敏感的，所以processor的变量全用大写是个不错的主意。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>只要它们存放在你的Python的搜索路径中，它们放在哪个物理路径并不重要，这样你可以在 <tt >TEMPLATE_CONTEXT_PROCESSORS</tt> 设置里指向它们。 也就是说，你要把它们放在app或者project目录里名为 <tt >context_processors.py</tt> 的文件。</p>
+</li>
+</ul>
+
+
+
+<h2  >html自动转意</h2>
+<p>从模板生成html的时候，总是有一个风险——变量包了含会影响结果html的字符。 例如，考虑这个模板片段：</p>
+<pre class="code">
+Hello, {{ name }}.
+</pre>
+<p>首先，这看起来是显示用户名的一个无害的途径，但是考虑如果用户输入如下的名字将会发生什么：</p>
+<pre class="code">
+&lt;script&gt;alert('hello')&lt;/script&gt;
+</pre>
+<p>用这个用户名，模板将被翻译成：</p>
+<pre class="code">
+Hello, &lt;script&gt;alert('hello')&lt;/script&gt;
+</pre>
+<p>这意味着浏览器将弹出JavaScript警告框！</p>
+<p>Similarly, what if the name contained a <tt >'&lt;'</tt> symbol, like this?</p>
+<p>&lt;b&gt;username</p>
+<p>那样的话模板结果被翻译成这样：</p>
+<pre class="code">
+Hello, &lt;b&gt;username
+</pre>
+<p>页面的剩余部分变成了粗体！</p>
+<p>显然，用户提交的数据不应该被盲目信任，直接插入到你的页面中。因为一个潜在的恶意的用户能够利用这类漏洞做坏事。 利用这类漏洞被Cross Site Scripting (XSS) 攻击。 关于安全的更多内容，请看20章</p>
+<p>为了避免这个问题，你有两个选择：</p>
+<ul >
+<li  ><p>一是你可以确保每一个不被信任的变量通过过滤器，它把潜在有害的html字符转换为无害的。<tt >escape</tt> 这是最初几年django的默认方案，但是这样的问题是把责任推给<em>you</em> 自己，开发者、模版作者，来确保转意每一件事情。 很容易就忘记转意数据。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>二是，你可以利用django的自动html转意。 这一章的剩余部分描述自动转意是如何工作的。</p>
+</li>
+</ul>
+<p>在django里默认情况下，每一个模板自动转意每一个变量标签的输出。 尤其是这五个字符。</p>
+<ul >
+<li  ><p><tt >&lt;</tt> is converted to <tt >&lt;</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>&gt; 被转换为&gt;</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >'</tt> (single quote) is converted to <tt >'</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >&quot;</tt> (double quote) is converted to <tt >&quot;</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >&amp;</tt> is converted to <tt >&amp;</tt></p>
+</li>
+</ul>
+<p>另外，我强调一下这个行为默认是开启的。 如果你正在使用django的模板系统，那么你是被保护的。</p>
+
+<h3  >如何关闭它</h3>
+<p>如果你不想数据被自动转意，在每一站点级别、每一模板级别或者每一变量级别你都能用两三中方法来关闭它。</p>
+<p>为什么要关闭它？ 因为有时候模板变量包含打算被翻译为原始html的数据，在这种情况下我们不想它们的内容被转意。 例如，你可能在数据库里存储了一块被信任的html，并且你想直接把它嵌入到你的模板里。 或者，你可能正在使用django的模板系统生成非html文本，比如一个e-mail信息。</p>
+
+<h4  >对于特殊的变量</h4>
+<p>用safe过滤器为单独的变量关闭自动转意：</p>
+<pre class="code">
+This will be escaped: {{ data }}
+This will not be escaped: {{ data|safe }}
+</pre>
+<p>Think of <em>safe</em> as shorthand for <em>safe from further escaping</em> or <em>can be safely
+interpreted as HTML</em> . In this example, if <tt >data</tt> contains <tt >'&lt;b&gt;'</tt> , the
+output will be:</p>
+<pre class="code">
+This will be escaped: &amp;lt;b&amp;gt;
+This will not be escaped: &lt;b&gt;
+</pre>
+
+
+<h4  >For Template Blocks</h4>
+<p>为了控制模板的自动转意,用标签autoescape来包装整个模板(或者模板中常用的部分),就像这样</p>
+<pre class="code">
+{% autoescape off %}
+    Hello {{ name }}
+{% endautoescape %}
+</pre>
+<p>autoescape 标签有两个参数on和off 同时,你可能想阻止一部分自动转意,对另一部分自动转意 这是一个模板的例子</p>
+<pre class="code">
+Auto-escaping is on by default. Hello {{ name }}
+
+{% autoescape off %}
+    This will not be auto-escaped: {{ data }}.
+
+    Nor this: {{ other_data }}
+    {% autoescape on %}
+        Auto-escaping applies again: {{ name }}
+    {% endautoescape %}
+{% endautoescape %}
+</pre>
+<p>auto-escaping 标签的作用域不仅可以影响到当前模板还可以通过include标签作用到其他标签,就像block标签一样 例如：</p>
+<pre class="code">
+# base.html
+
+{% autoescape off %}
+&lt;h1&gt;{% block title %}{% endblock %}&lt;/h1&gt;
+{% block content %}
+{% endblock %}
+{% endautoescape %}
+
+# child.html
+
+{% extends &quot;base.html&quot; %}
+{% block title %}This &amp; that{% endblock %}
+{% block content %}{{ greeting }}{% endblock %}
+</pre>
+<p>由于在base模板中自动转意被关闭,所以在child模板中自动转意也会关闭.因此,在下面一段HTML被提交时,变量greeting的值就为字符串Hello!</p>
+<pre class="code">
+&lt;h1&gt;This &amp; that&lt;/h1&gt;
+&lt;b&gt;Hello!&lt;/b&gt;
+</pre>
+
+
+
+<h3  >备注</h3>
+<p>通常,模板作者没必要为自动转意担心.
+基于pyhton的开发者(编写VIEWS视图和自定义过滤器)只需要考虑哪些数据不需要被转意,适时的标记数据,就可以让它们在模板中工作</p>
+<p>如果你正在编写一个模板而不知道是否要关闭自动转意,那就为所有需要转意的变量添加一个escape过滤器. 当自动转意开启时,使用escape过滤器似乎会两次转意数据,但其实没有任何危险.因为escape过滤器不作用于被转意的变量.</p>
+
+
+<h3  >Automatic Escaping of String Literals in Filter Arguments</h3>
+<p>就像我们前面提到的,过滤器也可以是字符串.</p>
+<pre class="code">
+{{ data|default:&quot;This is a string literal.&quot; }}
+</pre>
+<p>所有字符常量没有经过转义就被插入模板,就如同它们都经过了safe过滤 这是由于字符常量完全由模板作者决定,因此编写模板的时候必须确保文本的正确性.</p>
+<p>这意味着你必须这样写</p>
+<pre class="code">
+{{ data|default:&quot;3 &amp;lt; 2&quot; }}
+</pre>
+<p>而不是这样</p>
+<pre class="code">
+{{ data|default:&quot;3 &lt; 2&quot; }}  &lt;-- Bad! Don't do this.
+</pre>
+<p>来源于自变量的数据不受影响 如果必要,变量内容会自然的转义,因为它们始终都在模板作者的控制下.</p>
+
+
+
+<h2  >模板加载的内幕</h2>
+<p>一般说来，你会把模板以文件的方式存储在文件系统中，但是你也可以使用自定义的 <em>template loaders</em> 从其他来源加载模板。</p>
+<p>Django有两种方法加载模板</p>
+<ul >
+<li  ><p><tt >django.template.loader.get_template(template_name)</tt> ： <tt >get_template</tt> 根据给定的模板名称返回一个已编译的模板（一个 <tt >Template</tt> 对象）。 如果模板不存在，就触发 <tt >TemplateDoesNotExist</tt> 的异常。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >django.template.loader.select_template(template_name_list)</tt> ： <tt >select_template</tt> 很像 <tt >get_template</tt> ，不过它是以模板名称的列表作为参数的，并且它返回第一个存在的模板。 如果模板都不存在，将会触发 <tt >TemplateDoesNotExist</tt> 异常。
+If none of the templates exist, a <tt >TemplateDoesNotExist</tt> exception will
+be raised.</p>
+</li>
+</ul>
+<p>正如在第四章中所提到的，默认情况下这些函数使用 <tt >TEMPLATE_DIRS</tt> 的设置来载入模板。 但是，在内部这些函数可以指定一个模板加载器来完成这些繁重的任务。</p>
+<p>一些加载器默认被禁用，但是你可以通过编辑 <tt >TEMPLATE_LOADERS</tt> 设置来激活它们。 <tt >TEMPLATE_LOADERS</tt> 应当是一个字符串的元组，其中每个字符串都表示一个模板加载器。 这些模板加载器随Django一起发布。</p>
+<blockquote>
+<p><tt >django.template.loaders.filesystem.load_template_source</tt> : 这个加载器根据 <tt >TEMPLATE_DIRS</tt> 的设置从文件系统加载模板。</p>
+<p><tt >django.template.loaders.app_directories.load_template_source</tt> : 这个加 载器从文件系统上的Django应用中加载模板。 对 <tt >INSTALLED_APPS</tt> 中的每个应用，这个加 载器会查找一个 <tt >templates</tt> 子目录。 如果这个目录存在，Django就在那里寻找模板。</p>
+<p>这意味着你可以把模板和你的应用一起保存，从而使得Django应用更容易和默认模板一起发布。
+例如，如果 <tt >INSTALLED_APPS</tt> 包含 <tt >('myproject.polls','myproject.music')</tt> ，那么 <tt >get_template('foo.html')</tt> 会按这个顺序查找模板：</p>
+<ul >
+<li  ><p><tt >/path/to/myproject/polls/templates/foo.html</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >/path/to/myproject/music/templates/foo.html</tt></p>
+</li>
+</ul>
+<p>请注意加载器在首次被导入的时候会执行一个优化： 它会缓存一个列表，这个列表包含了 <tt >INSTALLED_APPS</tt> 中带有 <tt >templates</tt> 子目录的包。</p>
+<p>这个加载器默认启用。</p>
+<p><tt >django.template.loaders.eggs.load_template_source</tt> : 这个加载器类似 <tt >app_directories</tt> ，只不过它从Python eggs而不是文件系统中加载模板。 这个加载器默认被禁用；如果你使用eggs来发布你的应用，那么你就需要启用它。
+(Python eggs are a way of compressing Python code into a single file.)</p>
+</blockquote>
+<p>Django按照 <tt >TEMPLATE_LOADERS</tt> 设置中的顺序使用模板加载器。 它逐个使用每个加载器直至找到一个匹配的模板。</p>
+
+
+<h2  >扩展模板系统</h2>
+<p>既然你已经对模板系统的内幕了解多了一些，让我们来看看如何使用自定义的代码来拓展这个系统吧。</p>
+<p>绝大部分的模板定制是以自定义标签/过滤器的方式来完成的。 尽管Django模板语言自带了许多内建标签和过滤器，但是你可能还是需要组建你自己的标签和过滤器库来满足你的需要。 幸运的是，定义你自己的功能非常容易。</p>
+
+<h3  >创建一个模板库</h3>
+<p>不管是写自定义标签还是过滤器，第一件要做的事是给 <strong>template library</strong> 创建使Django能够勾入的机制。</p>
+<p>创建一个模板库分两步走：</p>
+<blockquote>
+<p>第一，决定哪个Django应用应当拥有这个模板库。
+如果你通过 <tt >manage.py startapp</tt> 创建了一个应用，你可以把它放在那里，或者你可以为模板库单独创建一个应用。 We&#8217;d
+recommend the latter, because your filters might be useful to you in future
+projects.</p>
+<p>无论你采用何种方式，请确保把你的应用添加到 <tt >INSTALLED_APPS</tt> 中。我们稍后会解释这一点。 We&#8217;ll explain this shortly.</p>
+<p>第二，在适当的Django应用包里创建一个 <tt >templatetags</tt> 目录。 这个目录应当和 <tt >models.py</tt> 、 <tt >views.py</tt> 等处于同一层次。 For example:</p>
+</blockquote>
+<pre class="code">
+books/
+    __init__.py
+    models.py
+    templatetags/
+    views.py
+</pre>
+<blockquote>
+<p>在 <tt >templatetags</tt> 中创建两个空文件： 一个 <tt >__init__.py</tt> （告诉Python这是 一个包含了Python代码的包）和一个用来存放你自定义的标签/过滤器定义的文件。 第二个文件 的名字稍后将用来加载标签。 例如，如果你的自定义标签/过滤器在一个叫作 <tt >poll_extras.py</tt> 的文件中，你需要在模板中写入如下内容：</p>
+</blockquote>
+<pre class="code">
+{% load poll_extras %}
+</pre>
+<blockquote>
+<p><tt >{% load %}</tt> 标签检查 <tt >INSTALLED_APPS</tt> 中的设置，仅允许加载已安装的Django应用程序中的模板库。 这是一个安全特性。</p>
+</blockquote>
+<p>如果你写了一个不和任何模型/视图关联的模板库，那么得到一个仅包含 <tt >templatetags</tt> 包的Django应用程序包是完全正常的。 对于在 <tt >templatetags</tt> 包中放置多少个模块没有做任何的限制。 需要了解的是：</p>
+<p>一旦创建了Python模块，你只需根据是要编写过滤器还是标签来相应的编写一些Python代码。</p>
+<p>To be a valid tag library, the module must contain a module-level variable
+named <tt >register</tt> that is an instance of <tt >template.Library</tt> . This is the
+data structure in which all the tags and filters are registered. 这个 <tt >template.Library</tt> 实例是包含所有已注册的标签及过滤器的数据结构。</p>
+<pre class="code">
+from django import template
+
+register = template.Library()
+</pre>
+<p>Note</p>
+<p>请阅读Django默认的过滤器和标签的源码，那里有大量的例子。 他们分别为： <tt >django/template/defaultfilters.py</tt> 和 <tt >django/template/defaulttags.py</tt> 。某些应用程序在 <tt >django.contrib</tt> 中也包含模板库。</p>
+<p>创建 <tt >register</tt> 变量后，你就可以使用它来创建模板的过滤器和标签了。</p>
+
+
+<h3  >自定义模板过滤器</h3>
+<p>自定义过滤器就是有一个或两个参数的Python函数:</p>
+<ul >
+<li  ><p>(输入)变量的值</p>
+</li>
+</ul>
+<ul >
+<li  ><p>参数的值， 可以是默认值或者完全留空</p>
+</li>
+</ul>
+<p>例如，在过滤器 <tt >{{ var|foo:&quot;bar&quot; }}</tt> 中 ，过滤器 <tt >foo</tt> 会被传入变量 <tt >var</tt> 和参数 <tt >bar</tt> 的内容。</p>
+<p>过滤器函数应该总有返回值，而且不能触发异常，它们都应该静静的失败。 如果有一个错误发生，它们要么返回原始的输入字符串，要么返回空的字符串，无论哪个都可以。 If there&#8217;s an error, they should
+return either the original input or an empty string, whichever makes more
+sense.</p>
+<p>这里是一些定义过滤器的例子：</p>
+<pre class="code">
+def cut(value, arg):
+    &quot;Removes all values of arg from the given string&quot;
+    return value.replace(arg, '')
+</pre>
+<p>And here&#8217;s an example of how that filter would be used to cut spaces from a
+variable&#8217;s value:</p>
+<pre class="code">
+{{ somevariable|cut:&quot; &quot; }}
+</pre>
+<p>大多数过滤器并不需要参数。 下面的例子把参数从你的函数中拿掉了：</p>
+<pre class="code">
+def lower(value): # Only one argument.
+    &quot;Converts a string into all lowercase&quot;
+    return value.lower()
+</pre>
+<p>当你在定义你的过滤器时，你需要用 <tt >Library</tt> 实例来注册它，这样就能通过Django的模板语言来使用了：</p>
+<pre class="code">
+register.filter('cut', cut)
+register.filter('lower', lower)
+</pre>
+<p><tt >Library.filter()</tt> 方法需要两个参数：</p>
+<ul >
+<li  ><p>过滤器的名称（一个字串）</p>
+</li>
+</ul>
+<ul >
+<li  ><p>过滤器函数本身</p>
+</li>
+</ul>
+<p>如果你使用的是Python 2.4或更新，你可以使用 <tt >register.filter()</tt> 作为一个装饰器：</p>
+<pre class="code">
+&#64;register.filter(name='cut')
+def cut(value, arg):
+    return value.replace(arg, '')
+
+&#64;register.filter
+def lower(value):
+    return value.lower()
+</pre>
+<p>像第二个例子中，如果你不使用 <tt >name</tt> 参数，那么Django将会使用函数名作为过滤器的名字。</p>
+<p>下面是一个完整的模板库的例子，提供了一个 <tt >cut</tt> 过滤器：</p>
+<pre class="code">
+from django import template
+
+register = template.Library()
+
+&#64;register.filter(name='cut')
+def cut(value, arg):
+    return value.replace(arg, '')
+</pre>
+
+
+<h3  >自定义模板标签</h3>
+<p>标签要比过滤器复杂些，标签几乎能做任何事情。</p>
+<p>第四章描述了模板系统的两步处理过程：
+编译和呈现。 为了自定义一个这样的模板标签，你需要告诉Django当遇到你的标签时怎样进行这过程。</p>
+<p>当Django编译一个模板时，它将原始模板分成一个个 <em>节点</em> 。每个节点都是 <tt >django.template.Node</tt> 的一个实例，并且具备 <tt >render()</tt> 方法。 于是，一个已编译的模板就是 <tt >Node</tt> 对象的一个列表。 For
+example, consider this template:</p>
+<pre class="code">
+Hello, {{ person.name }}.
+
+{% ifequal name.birthday today %}
+    Happy birthday!
+{% else %}
+    Be sure to come back on your birthday
+    for a splendid surprise message.
+{% endifequal %}
+</pre>
+<p>In compiled template form, this template is represented as this list of nodes:</p>
+<ul >
+<li  ><p>Text node: <tt >&quot;Hello, &quot;</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>Variable node: <tt >person.name</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>Text node: <tt >&quot;.\n\n&quot;</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>IfEqual node: <tt >name.birthday</tt> and <tt >today</tt></p>
+</li>
+</ul>
+<p>当你调用一个已编译模板的 <tt >render()</tt> 方法时，模板就会用给定的context来调用每个在它的节点列表上的节点的 <tt >render()</tt> 方法。 所以，为了定义一个自定义的模板标签，你需要明确这个模板标签转换为一个 <tt >Node</tt> （已编译的函数）和这个node的 <tt >render()</tt> 方法。 Thus,
+to define a custom template tag, you specify how the raw template tag is
+converted into a <tt >Node</tt> (the compilation function) and what the node&#8217;s
+<tt >render()</tt> method does.</p>
+<p>在下面的章节中，我们将详细解说写一个自定义标签时的所有步骤。</p>
+
+
+<h3  >编写编译函数</h3>
+<p>当遇到一个模板标签（template tag）时，模板解析器就会把标签包含的内容，以及模板解析器自己作为参数调用一个python函数。 这个函数负责返回一个和当前模板标签内容相对应的节点（Node）的实例。</p>
+<p>例如，写一个显示当前日期的模板标签： {% current_time %}，该标签会根据参数指定的 <tt >strftime</tt> 格式（参见：</p>
+<pre class="code">
+&lt;p&gt;The time is {% current_time &quot;%Y-%m-%d %I:%M %p&quot; %}.&lt;/p&gt;
+</pre>
+<p>Note</p>
+<p>没错, 这个模板标签是多余的，Django默认的 <tt >{% now %}</tt> 用更简单的语法完成了同样的工作。 这个模板标签在这里只是作为一个例子。</p>
+<p>这个函数的分析器会获取参数并创建一个 <tt >Node</tt> 对象:</p>
+<pre class="code">
+from django import template
+
+register = template.Library()
+
+def do_current_time(parser, token):
+    try:
+        # split_contents() knows not to split quoted strings.
+        tag_name, format_string = token.split_contents()
+    except ValueError:
+        msg = '%r tag requires a single argument' % token.split_contents()[0]
+        raise template.TemplateSyntaxError(msg)
+    return CurrentTimeNode(format_string[1:-1])
+</pre>
+<p>There&#8217;s a lot going here:</p>
+<ul >
+<li  ><p>Each template tag compilation function takes two arguments, <tt >parser</tt> and
+<tt >token</tt> . <tt >parser</tt> is the template parser object. We don&#8217;t use it in
+this example. <tt >token</tt> is the token currently being parsed by the parser.</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >token.contents</tt> 是包含有标签原始内容的字符串。 在我们的例子中，它是 <tt >'current_time &quot;%Y-%m-%d %I:%M %p&quot;'</tt> 。</p>
+</li>
+</ul>
+<ul >
+<li  ><p><tt >token.split_contents()</tt> 方法按空格拆分参数同时保证引号中的字符串在一起。 应该避免使用 <tt >token.contents.split()</tt> （仅是使用Python的标准字符串拆分），它不够健壮，因为它只是简单的按照 <em>所有</em> 空格进行拆分，包括那些引号引起来的字符串中的空格。 Its not as robust, as it naively splits on
+<em>all</em> spaces, including those within quoted strings.</p>
+</li>
+</ul>
+<ul >
+<li  ><p>这个函数负责抛出 <tt >django.template.TemplateSyntaxError</tt> ，同时提供所有语法错误的有用信息。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>不要把标签名称硬编码在你的错误信息中，因为这样会把标签名称和你的函数耦合在一起。 <tt >token.split_contents()[0]</tt></p>
+</li>
+</ul>
+<ul >
+<li  ><p>这个函数返回一个 <tt >CurrentTimeNode</tt> （稍后我们将创建它），它包含了节点需要知道的关于这个标签的全部信息。 在这个例子中，它只是传递了参数 <tt >&quot;%Y-%m-%d %I:%M %p&quot;</tt> 。模板标签开头和结尾的引号使用 <tt >format_string[1:-1]</tt> 除去。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>模板标签编译函数 <em>必须</em> 返回一个 <tt >Node</tt> 子类，返回其它值都是错的。</p>
+</li>
+</ul>
+
+
+<h3  >编写模板节点</h3>
+<p>编写自定义标签的第二步就是定义一个拥有 <tt >render()</tt> 方法的 <tt >Node</tt> 子类。 继续前面的例子，我们需要定义 <tt >CurrentTimeNode</tt> ：</p>
+<pre class="code">
+import datetime
+
+class CurrentTimeNode(template.Node):
+    def __init__(self, format_string):
+        self.format_string = str(format_string)
+
+    def render(self, context):
+        now = datetime.datetime.now()
+        return now.strftime(self.format_string)
+</pre>
+<p>这两个函数（ <tt >__init__</tt> 和 <tt >render</tt> ）与模板处理中的两步（编译与渲染）直接对应。 这样，初始化函数仅仅需要存储后面要用到的格式字符串，而 <tt >render()</tt> 函数才做真正的工作。</p>
+<p>与模板过滤器一样，这些渲染函数应该捕获错误，而不是抛出错误。 模板标签只能在编译的时候才能抛出错误。</p>
+
+
+<h3  >注册标签</h3>
+<p>最后，你需要用你的模块 <tt >Library</tt> 实例注册这个标签。
+注册自定义标签与注册自定义过滤器非常类似（如前文所述）。 实例化一个 <tt >template.Library</tt> 实例然后调用它的 <tt >tag()</tt> 方法。 For example:</p>
+<pre class="code">
+register.tag('current_time', do_current_time)
+</pre>
+<p><tt >tag()</tt> 方法需要两个参数:</p>
+<ul >
+<li  ><p>模板标签的名字（字符串）。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>编译函数。</p>
+</li>
+</ul>
+<p>和注册过滤器类似，也可以在Python2.4及其以上版本中使用 <tt >register.tag</tt> 修饰：</p>
+<pre class="code">
+&#64;register.tag(name=&quot;current_time&quot;)
+def do_current_time(parser, token):
+    # ...
+
+&#64;register.tag
+def shout(parser, token):
+    # ...
+</pre>
+<p>如果你像在第二个例子中那样忽略 <tt >name</tt> 参数的话，Django会使用函数名称作为标签名称。</p>
+
+
+<h3  >在上下文中设置变量</h3>
+<p>前一节的例子只是简单的返回一个值。 很多时候设置一个模板变量而非返回值也很有用。 那样，模板作者就只能使用你的模板标签所设置的变量。</p>
+<p>要在上下文中设置变量，在 <tt >render()</tt> 函数的context对象上使用字典赋值。 这里是一个修改过的 <tt >CurrentTimeNode</tt> ，其中设定了一个模板变量 <tt >current_time</tt> ，并没有返回它：</p>
+<pre class="code">
+class CurrentTimeNode2(template.Node):
+    def __init__(self, format_string):
+        self.format_string = str(format_string)
+
+    def render(self, context):
+        now = datetime.datetime.now()
+        context['current_time'] = now.strftime(self.format_string)
+        return ''
+</pre>
+<p>(We&#8217;ll leave the creation of a <tt >do_current_time2</tt> function, plus the
+registration of that function to a <tt >current_time2</tt> template tag, as exercises
+for the reader.)</p>
+<p>注意 <tt >render()</tt> 返回了一个空字符串。 <tt >render()</tt> 应当总是返回一个字符串，所以如果模板标签只是要设置变量， <tt >render()</tt> 就应该返回一个空字符串。</p>
+<p>你应该这样使用这个新版本的标签：</p>
+<pre class="code">
+{% current_time2 &quot;%Y-%M-%d %I:%M %p&quot; %}
+&lt;p&gt;The time is {{ current_time }}.&lt;/p&gt;
+</pre>
+<p>但是 <tt >CurrentTimeNode2</tt> 有一个问题: 变量名 <tt >current_time</tt> 是硬编码的。 这意味着你必须确定你的模板在其它任何地方都不使用 <tt >{{ current_time }}</tt> ，因为 <tt >{% current_time2 %}</tt> 会盲目的覆盖该变量的值。</p>
+<p>一种更简洁的方案是由模板标签来指定需要设定的变量的名称，就像这样：</p>
+<pre class="code">
+{% get_current_time &quot;%Y-%M-%d %I:%M %p&quot; as my_current_time %}
+&lt;p&gt;The current time is {{ my_current_time }}.&lt;/p&gt;
+</pre>
+<p>为此，你需要重构编译函数和 <tt >Node</tt> 类，如下所示：</p>
+<pre class="code">
+import re
+
+class CurrentTimeNode3(template.Node):
+    def __init__(self, format_string, var_name):
+        self.format_string = str(format_string)
+        self.var_name = var_name
+
+    def render(self, context):
+        now = datetime.datetime.now()
+        context[self.var_name] = now.strftime(self.format_string)
+        return ''
+
+def do_current_time(parser, token):
+    # This version uses a regular expression to parse tag contents.
+    try:
+        # Splitting by None == splitting by spaces.
+        tag_name, arg = token.contents.split(None, 1)
+    except ValueError:
+        msg = '%r tag requires arguments' % token.contents[0]
+        raise template.TemplateSyntaxError(msg)
+
+    m = re.search(r'(.*?) as (\w+)', arg)
+    if m:
+        fmt, var_name = m.groups()
+    else:
+        msg = '%r tag had invalid arguments' % tag_name
+        raise template.TemplateSyntaxError(msg)
+
+    if not (fmt[0] == fmt[-1] and fmt[0] in ('&quot;', &quot;'&quot;)):
+        msg = &quot;%r tag's argument should be in quotes&quot; % tag_name
+        raise template.TemplateSyntaxError(msg)
+
+    return CurrentTimeNode3(fmt[1:-1], var_name)
+</pre>
+<p>现在 <tt >do_current_time()</tt> 把格式字符串和变量名传递给 <tt >CurrentTimeNode3</tt> 。</p>
+
+
+<h3  >分析直至另一个块标签</h3>
+<p>模板标签可以像包含其它标签的块一样工作（想想 <tt >{% if %}</tt> 、 <tt >{% for %}</tt> 等）。 要创建一个这样的模板标签，在你的编译函数中使用 <tt >parser.parse()</tt> 。</p>
+<p>标准的 <tt >{% comment %}</tt> 标签是这样实现的：</p>
+<pre class="code">
+def do_comment(parser, token):
+    nodelist = parser.parse(('endcomment',))
+    parser.delete_first_token()
+    return CommentNode()
+
+class CommentNode(template.Node):
+    def render(self, context):
+        return ''
+</pre>
+<p><tt >parser.parse()</tt> 接收一个包含了需要分析块标签名的元组作为参数. 它返回一个 <tt >django.template.NodeList</tt> 实例, 它是一个包含了所有 <tt >Node</tt> 对象的列表,这些对象代表了分析器在遇到元组中任一标签名之 <em>前</em> 的内容. It
+returns an instance of <tt >django.template.NodeList</tt> , which is a list of all
+<tt >Node</tt> objects that the parser encountered <em>before</em> it encountered any of the
+tags named in the tuple.</p>
+<p>因此在前面的例子中， <tt >nodelist</tt> 是在 <tt >{% comment %}</tt> 和 <tt >{% endcomment %}</tt> 之间所有节点的列表，不包括 <tt >{% comment %}</tt> 和 <tt >{% endcomment %}</tt> 自身。</p>
+<p>在 <tt >parser.parse()</tt> 被调用之后，分析器还没有清除 <tt >{% endcomment %}</tt> 标签，因此代码需要显式地调用 <tt >parser.delete_first_token()</tt> 来防止该标签被处理两次。</p>
+<p>之后 <tt >CommentNode.render()</tt> 只是简单地返回一个空字符串。 在 <tt >{% comment %}</tt> 和 <tt >{% endcomment %}</tt> 之间的所有内容都被忽略。</p>
+
+
+<h3  >分析直至另外一个块标签并保存内容</h3>
+<p>在前一个例子中， <tt >do_comment()</tt> 抛弃了在 <tt >{% comment %}</tt> 和 <tt >{% endcomment %}</tt> 之间的所有内容。</p>
+<p>例如，这个自定义模板标签：</p>
+<pre class="code">
+{% upper %}
+    This will appear in uppercase, {{ user_name }}.
+{% endupper %}
+</pre>
+<p>就像前面的例子一样，我们将使用 <tt >parser.parse()</tt> 。这次，我们将产生的 <tt >nodelist</tt> 传递给 <tt >Node</tt> ：</p>
+<pre class="code">
+def do_upper(parser, token):
+    nodelist = parser.parse(('endupper',))
+    parser.delete_first_token()
+    return UpperNode(nodelist)
+
+class UpperNode(template.Node):
+    def __init__(self, nodelist):
+        self.nodelist = nodelist
+
+    def render(self, context):
+        output = self.nodelist.render(context)
+        return output.upper()
+</pre>
+<p>这里唯一的一个新概念是 <tt >UpperNode.render()</tt> 中的 <tt >self.nodelist.render(context)</tt> 。它对节点列表中的每个 <tt >Node</tt> 简单的调用 <tt >render()</tt> 。</p>
+<p>更多的复杂渲染示例请查看 <tt >django/template/defaulttags.py</tt> 中的 <tt >{% if %}</tt> 、 <tt >{% for %}</tt> 、 <tt >{% ifequal %}</tt> 和 <tt >{% ifchanged %}</tt> 的代码。</p>
+
+
+<h3  >简单标签的快捷方式</h3>
+<p>许多模板标签接收单一的字符串参数或者一个模板变量 引用,然后独立地根据输入变量和一些其它外部信息进行处理并返回一个字符串. 例如, 我们先前写的 <tt >current_time</tt> 标签就是这样一个例子. 我们给它格式字符串, 然后它把时间作为字符串返回. For example, the <tt >current_time</tt>
+tag we wrote earlier is of this variety. We give it a format string, and it
+returns the time as a string.</p>
+<p>为了简化这类标签，Django 提供了一个帮助函数：</p>
+<p>我们之前的的 <tt >current_time</tt> 函数于是可以写成这样：</p>
+<pre class="code">
+def current_time(format_string):
+    try:
+        return datetime.datetime.now().strftime(str(format_string))
+    except UnicodeEncodeError:
+        return ''
+
+register.simple_tag(current_time)
+</pre>
+<p>在Python 2.4中，也可以使用修饰语法：</p>
+<pre class="code">
+&#64;register.simple_tag
+def current_time(token):
+    # ...
+</pre>
+<p>有关 <tt >simple_tag</tt> 辅助函数，需要注意下面一些事情：</p>
+<ul >
+<li  ><p>传递给我们的函数的只有（单个）参数。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>在我们的函数被调用的时候，检查必需参数个数的工作已经完成了，所以我们不需要再做这个工作。</p>
+</li>
+</ul>
+<ul >
+<li  ><p>参数两边的引号（如果有的话）已经被截掉了，所以我们会接收到一个普通字符串。</p>
+</li>
+</ul>
+
+
+<h3  >包含标签</h3>
+<p>另外一类常用的模板标签是通过渲染 <em>其他</em> 模板显示数据的。 比如说，Django的后台管理界面，它使用了自定义的模板标签来显示新增/编辑表单页面下部的按钮。
+那些按钮看起来总是一样的，但是链接却随着所编辑的对象的不同而改变。 这就是一个使用小模板很好的例子，这些小模板就是当前对象的详细信息。</p>
+<p>这些排序标签被称为 <em>包含标签</em> 。如何写包含标签最好通过举例来说明。 Let&#8217;s write a tag that produces a list
+of books for a given <tt >Author</tt> object. We&#8217;ll use the tag like this:</p>
+<pre class="code">
+{% books_for_author author %}
+</pre>
+<p>结果将会像下面这样：</p>
+<pre class="code">
+&lt;ul&gt;
+    &lt;li&gt;The Cat In The Hat&lt;/li&gt;
+    &lt;li&gt;Hop On Pop&lt;/li&gt;
+    &lt;li&gt;Green Eggs And Ham&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>首先，我们定义一个函数，通过给定的参数生成一个字典形式的结果。 需要注意的是，我们只需要返回字典类型的结果就行了，它将被用做模板片断的context。 (译注：</p>
+<pre class="code">
+def books_for_author(author):
+    books = Book.objects.filter(authors__id=author.id)
+    return {'books': books}
+</pre>
+<p>接下来，我们创建用于渲染标签输出的模板。 在我们的例子中，模板很简单：</p>
+<pre class="code">
+&lt;ul&gt;
+{% for book in books %}
+    &lt;li&gt;{{ book.title }}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
+</pre>
+<p>最后，我们通过对一个 <tt >Library</tt> 对象使用 <tt >inclusion_tag()</tt> 方法来创建并注册这个包含标签。</p>
+<p>在我们的例子中，如果先前的模板在 <tt >polls/result_snippet.html</tt> 文件中，那么我们这样注册标签：</p>
+<pre class="code">
+register.inclusion_tag('book_snippet.html')(books_for_author)
+</pre>
+<p>Python 2.4 decorator syntax works as well, so we could have written this,
+instead:</p>
+<pre class="code">
+&#64;register.inclusion_tag('book_snippet.html')
+def books_for_author(author):
+    # ...
+</pre>
+<p>有时候，你的包含标签需要访问父模板的context。 为了解决这个问题，Django提供了一个 <tt >takes_context</tt> 选项。 如果你在创建模板标签时，指明了这个选项，这个标签就不需要参数，并且下面的Python函数会带一个参数： 就是当这个标签被调用时的模板context。</p>
+<p>例如，你正在写一个包含标签，该标签包含有指向主页的 <tt >home_link</tt> 和 <tt >home_title</tt> 变量。 Python函数会像这样：</p>
+<pre class="code">
+&#64;register.inclusion_tag('link.html', takes_context=True)
+def jump_link(context):
+    return {
+        'link': context['home_link'],
+        'title': context['home_title'],
+    }
+</pre>
+<p>函数的第一个参数 <em>必须</em> 是 <tt >context</tt> 。</p>
+<p>模板 <tt >link.html</tt> 可能包含下面的东西：</p>
+<pre class="code">
+Jump directly to &lt;a href=&quot;{{ link }}&quot;&gt;{{ title }}&lt;/a&gt;.
+</pre>
+<p>然后您想使用自定义标签时，就可以加载它的库，然后不带参数地调用它，就像这样：</p>
+<pre class="code">
+{% jump_link %}
+</pre>
+
+
+
+<h2  >编写自定义模板加载器</h2>
+<p>Djangos 内置的模板加载器（在先前的模板加载内幕章节有叙述）通常会满足你的所有的模板加载需求，但是如果你有特殊的加载需求的话，编写自己的模板加载器也会相当简单。 比如：</p>
+<p>一个模板加载器，也就是 <tt >TEMPLATE_LOADERS</tt> 中的每一项，都要能被下面这个接口所调用：</p>
+<pre class="code">
+load_template_source(template_name, template_dirs=None)
+</pre>
+<p>参数 <tt >template_name</tt> 是所加载模板的名称 (和传递给 <tt >loader.get_template()</tt> 或者 <tt >loader.select_template()</tt> 一样), 而 <tt >template_dirs</tt> 是一个可选的包含除去 <tt >TEMPLATE_DIRS</tt> 之外的搜索目录列表。</p>
+<p>如果加载器能够成功加载一个模板, 它应当返回一个元组：
+<tt >(template_source, template_path)</tt> 。在这里的 <tt >template_source</tt> 就是将被模板引擎编译的的模板字符串，而 <tt >template_path</tt> 是被加载的模板的路径。 由于那个路径可能会出于调试目显示给用户，因此它应当很快的指明模板从哪里加载而来。</p>
+<p>如果加载器加载模板失败，那么就会触发 <tt >django.template.TemplateDoesNotExist</tt> 异常。</p>
+<p>每个加载函数都应该有一个名为 <tt >is_usable</tt> 的函数属性。 这个属性是一个布尔值，用于告知模板引擎这个加载器是否在当前安装的Python中可用。 例如，如果 <tt >pkg_resources</tt> 模块没有安装的话，eggs加载器（它能够从python eggs中加载模板）就应该把 <tt >is_usable</tt> 设为 <tt >False</tt> ，因为必须通过 <tt >pkg_resources</tt> 才能从eggs中读取数据。</p>
+<p>一个例子可以清晰地阐明一切。 这儿是一个模板加载函数，它可以从ZIP文件中加载模板。 它使用了自定义的设置 <tt >TEMPLATE_ZIP_FILES</tt> 来取代了 <tt >TEMPLATE_DIRS</tt> 用作查找路径，并且它假设在此路径上的每一个文件都是包含模板的ZIP文件：</p>
+<pre class="code">
+from django.conf import settings
+from django.template import TemplateDoesNotExist
+import zipfile
+
+def load_template_source(template_name, template_dirs=None):
+    &quot;Template loader that loads templates from a ZIP file.&quot;
+
+    template_zipfiles = getattr(settings, &quot;TEMPLATE_ZIP_FILES&quot;, [])
+
+    # Try each ZIP file in TEMPLATE_ZIP_FILES.
+    for fname in template_zipfiles:
+        try:
+            z = zipfile.ZipFile(fname)
+            source = z.read(template_name)
+        except (IOError, KeyError):
+            continue
+        z.close()
+        # We found a template, so return the source.
+        template_path = &quot;%s:%s&quot; % (fname, template_name)
+        return (source, template_path)
+
+    # If we reach here, the template couldn't be loaded
+    raise TemplateDoesNotExist(template_name)
+
+# This loader is always usable (since zipfile is included with Python)
+load_template_source.is_usable = True
+</pre>
+<p>我们要想使用它，还差最后一步，就是把它加入到 <tt >TEMPLATE_LOADERS</tt> 。如果我们把这部分代码放到一个叫做 <tt >mysite.zip_loader</tt> 的包中，我们就需要把 <tt >mysite.zip_loader.load_template_source</tt> 加入到 <tt >TEMPLATE_LOADERS</tt> 中去。 If we put this code in a package called
+<tt >mysite.zip_loader</tt> , then we add <tt >mysite.zip_loader.load_template_source</tt>
+to <tt >TEMPLATE_LOADERS</tt> .</p>
+
+
+<h2  >配置独立模式下的模板系统</h2>
+<p>Note</p>
+<p>这部分只针对于对在其他应用中使用模版系统作为输出组件感兴趣的人。 如果你是在Django应用中使用模版系统，请略过此部分。</p>
+<p>通常，Django会从它的默认配置文件和由 <tt >DJANGO_SETTINGS_MODULE</tt> 环境变量所指定的模块中加载它需要的所有配置信息。 但是当你想在非Django应用中使用模版系统的时候，采用环境变量并不是很好的方法。</p>
+<p>为了解决这个问题，你需要使用附录E中所描述的手动配置选项。</p>
+<p>你可能会考虑至少要设置 <tt >TEMPLATE_DIRS</tt> （如果你打算使用模板加载器）， <tt >DEFAULT_CHARSET</tt> （尽管默认的 <tt >utf-8</tt> 编码相当好用），以及 <tt >TEMPLATE_DEBUG</tt> 。所有可用的选项都在附录E中详细描述，所有以 <tt >TEMPLATE_</tt> 开头的选项都可能使你感兴趣的。</p>
+
+
+<h2  >下一章</h2>
+<p>Continuing this section&#8217;s theme of advanced topics, the <a  href="chapter10.html">next chapter</a> covers
+advanced usage of Django models.</p>
+
+
+
+    
+    
+  
+
+
+
+        
+	<a href="chapter08.html">| 上一章</a> |
+    	<a href="index.html">目  录</a> |
+    	<a href="chapter10.html">下一章 </a> |
+
+
+
+
+
+
+
+
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
