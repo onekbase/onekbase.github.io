@@ -1,0 +1,334 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="105.html"> 上一页</a><a href="107.html"> 下一页</a></div>
+<h2>12.4 只读类</h2>
+<p>尽管在一些特定的场合，由clone()产生的本地副本能够获得我们希望的结果，但程序员（方法的作者）不得不亲自禁止别名处理的副作用。假如想制作一个库，令其具有常规用途，但却不能担保它肯定能在正确的类中得以克隆，这时又该怎么办呢？更有可能的一种情况是，假如我们想让别名发挥积极的作用——禁止不必要的对象复制——但却不希望看到由此造成的副作用，那么又该如何处理呢？</p>
+<p>一个办法是创建“不变对象”，令其从属于只读类。可定义一个特殊的类，使其中没有任何方法能造成对象内部状态的改变。在这样的一个类中，别名处理是没有问题的。因为我们只能读取内部状态，所以当多处代码都读取相同的对象时，不会出现任何副作用。</p>
+<p>作为“不变对象”一个简单例子，Java的标准库包含了“封装器”（wrapper）类，可用于所有基本数据类型。大家可能已发现了这一点，如果想在一个象Vector（只采用Object句柄）这样的集合里保存一个int数值，可以将这个int封装到标准库的Integer类内部。如下所示：</p>
+
+  <pre class="code">//: ImmutableInteger.java
+// The Integer class cannot be changed
+import java.util.*;
+
+public class ImmutableInteger {
+  public static void main(String[] args) {
+    Vector v = new Vector();
+    for(int i = 0; i &lt; 10; i++) 
+      v.addElement(new Integer(i));
+    // But how do you change the int
+    // inside the Integer?
+  }
+} ///:~</pre>
+
+<p>Integer类（以及基本的“封装器”类）用简单的形式实现了“不变性”：它们没有提供可以修改对象的方法。</p>
+<p>若确实需要一个容纳了基本数据类型的对象，并想对基本数据类型进行修改，就必须亲自创建它们。幸运的是，操作非常简单：</p>
+
+  <pre class="code">//: MutableInteger.java
+// A changeable wrapper class
+import java.util.*;
+
+class IntValue { 
+  int n;
+  IntValue(int x) { n = x; }
+  public String toString() { 
+    return Integer.toString(n);
+  }
+}
+
+public class MutableInteger {
+  public static void main(String[] args) {
+    Vector v = new Vector();
+    for(int i = 0; i &lt; 10; i++) 
+      v.addElement(new IntValue(i));
+    System.out.println(v);
+    for(int i = 0; i &lt; v.size(); i++)
+      ((IntValue)v.elementAt(i)).n++;
+    System.out.println(v);
+  }
+} ///:~</pre>
+
+<p>注意n在这里简化了我们的编码。</p>
+<p>若默认的初始化为零已经足够（便不需要构建器），而且不用考虑把它打印出来（便不需要toString），那么IntValue甚至还能更加简单。如下所示：</p>
+<pre  class="code">class IntValue { int n; }</pre>
+<p>将元素取出来，再对其进行造型，这多少显得有些笨拙，但那是Vector的问题，不是IntValue的错。</p>
+<h3>12.4.1 创建只读类</h3>
+<p>完全可以创建自己的只读类，下面是个简单的例子：</p>
+
+  <pre class="code">//: Immutable1.java
+// Objects that cannot be modified
+// are immune to aliasing.
+
+public class Immutable1 {
+  private int data;
+  public Immutable1(int initVal) {
+    data = initVal;
+  }
+  public int read() { return data; }
+  public boolean nonzero() { return data != 0; }
+  public Immutable1 quadruple() {
+    return new Immutable1(data * 4);
+  }
+  static void f(Immutable1 i1) {
+    Immutable1 quad = i1.quadruple();
+    System.out.println(&quot;i1 = &quot; + i1.read());
+    System.out.println(&quot;quad = &quot; + quad.read());
+  }
+  public static void main(String[] args) {
+    Immutable1 x = new Immutable1(47);
+    System.out.println(&quot;x = &quot; + x.read());
+    f(x);
+    System.out.println(&quot;x = &quot; + x.read());
+  }
+} ///:~</pre>
+
+<p>所有数据都设为private，可以看到没有任何public方法对数据作出修改。事实上，确实需要修改一个对象的方法是quadruple()，但它的作用是新建一个Immutable1对象，初始对象则是原封未动的。</p>
+<p>方法f()需要取得一个Immutable1对象，并对其采取不同的操作，而main()的输出显示出没有对x作任何修改。因此，x对象可别名处理许多次，不会造成任何伤害，因为根据Immutable1类的设计，它能保证对象不被改动。</p>
+<h3>12.4.2 “一成不变”的弊端</h3>
+<p>从表面看，不变类的建立似乎是一个好方案。但是，一旦真的需要那种新类型的一个修改的对象，就必须辛苦地进行新对象的创建工作，同时还有可能涉及更频繁的垃圾收集。对有些类来说，这个问题并不是很大。但对其他类来说（比如String类），这一方案的代价显得太高了。</p>
+<p>为解决这个问题，我们可以创建一个“同志”类，并使其能够修改。以后只要涉及大量的修改工作，就可换为使用能修改的同志类。完事以后，再切换回不可变的类。</p>
+<p>因此，上例可改成下面这个样子：</p>
+
+  <pre class="code">//: Immutable2.java
+// A companion class for making changes
+// to immutable objects.
+
+class Mutable {
+  private int data;
+  public Mutable(int initVal) {
+    data = initVal;
+  }
+  public Mutable add(int x) { 
+    data += x;
+    return this;
+  }
+  public Mutable multiply(int x) {
+    data *= x;
+    return this;
+  }
+  public Immutable2 makeImmutable2() {
+    return new Immutable2(data);
+  }
+}
+
+public class Immutable2 {
+  private int data;
+  public Immutable2(int initVal) {
+    data = initVal;
+  }
+  public int read() { return data; }
+  public boolean nonzero() { return data != 0; }
+  public Immutable2 add(int x) { 
+    return new Immutable2(data + x);
+  }
+  public Immutable2 multiply(int x) {
+    return new Immutable2(data * x);
+  }
+  public Mutable makeMutable() {
+    return new Mutable(data);
+  }
+  public static Immutable2 modify1(Immutable2 y){
+    Immutable2 val = y.add(12);
+    val = val.multiply(3);
+    val = val.add(11);
+    val = val.multiply(2);
+    return val;
+  }
+  // This produces the same result:
+  public static Immutable2 modify2(Immutable2 y){
+    Mutable m = y.makeMutable();
+    m.add(12).multiply(3).add(11).multiply(2);
+    return m.makeImmutable2();
+  }
+  public static void main(String[] args) {
+    Immutable2 i2 = new Immutable2(47);
+    Immutable2 r1 = modify1(i2);
+    Immutable2 r2 = modify2(i2);
+    System.out.println(&quot;i2 = &quot; + i2.read());
+    System.out.println(&quot;r1 = &quot; + r1.read());
+    System.out.println(&quot;r2 = &quot; + r2.read());
+  }
+} ///:~</pre>
+
+<p>和往常一样，Immutable2包含的方法保留了对象不可变的特征，只要涉及修改，就创建新的对象。完成这些操作的是add()和multiply()方法。同志类叫作Mutable，它也含有add()和multiply()方法。但这些方法能够修改Mutable对象，而不是新建一个。除此以外，Mutable的一个方法可用它的数据产生一个Immutable2对象，反之亦然。</p>
+<p>两个静态方法modify1()和modify2()揭示出获得同样结果的两种不同方法。在modify1()中，所有工作都是在Immutable2类中完成的，我们可看到在进程中创建了四个新的Immutable2对象（而且每次重新分配了val，前一个对象就成为垃圾）。</p>
+<p>在方法modify2()中，可看到它的第一个行动是获取Immutable2 y，然后从中生成一个Mutable（类似于前面对clone()的调用，但这一次创建了一个不同类型的对象）。随后，用Mutable对象进行大量修改操作，同时用不着新建许多对象。最后，它切换回Immutable2。在这里，我们只创建了两个新对象（Mutable和Immutable2的结果），而不是四个。</p>
+<p>这一方法特别适合在下述场合应用：</p>
+<ul>
+  <li>(1) 需要不可变的对象，而且</li>
+  <li>(2) 经常需要进行大量修改，或者</li>
+  <li>(3) 创建新的不变对象代价太高</li>
+</ul>
+<div class="rpindex"><a href="107.html"> 下一页</a><a href="105.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,830 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="128.html"> 上一页</a><a href="130.html"> 下一页</a></div>
+<h3>13.16.7 推荐编码方法</h3>
+<p>内部类是新的事件模型，并且事实上旧的事件模型连同新库的特征都被它好的支持，依赖老式的编程方法无疑增加了一个新的混乱的因素。现在有更多不同的方法为我们编写讨厌的代码。凑巧的是，这种代码显现在本书中和程序样本中，并且甚至在文件和程序样本中同SUN公司区别开来。在这一节中，我们将看到一些关于我们会和不会运行新AWT的争执，并由向我们展示除了可以原谅的情况，我们可以随时使用接收器类去解决我们的事件处理需要来结束。因为这种方法同样是最简单和最清晰的方法，它将会对我们学习它构成有效的帮助。</p>
+<p>在看到任何事以前，我们知道尽管Java 1.1向后兼容Java 1.0（也就是说，我们可以在1.1中编译和运行1.0的程序），但我们并不能在同一个程序里混合事件模型。换言之，当我们试图集成老的代码到一个新的程序中时，我们不能使用老式的action()方法在同一个程序中，因此我们必须决定是否对新程序使用老的，难以维护的方法或者升级老的代码。这不会有太多的竞争因为新的方法对老的方法而言是如此的优秀。</p>
+<h4>1. 准则：运行它的好方法</h4>
+<p>为了给我们一些事物来进行比较，这儿有一个程序例子演示向我们推荐的方法。到现在它会变得相当的熟悉和舒适。</p>
+
+  <pre class="code">//: GoodIdea.java
+// The best way to design classes using the new
+// Java 1.1 event model: use an inner class for
+// each different event. This maximizes 
+// flexibility and modularity.
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+public class GoodIdea extends Frame {
+  Button 
+    b1 = new Button(&quot;Button 1&quot;), 
+    b2 = new Button(&quot;Button 2&quot;);
+  public GoodIdea() {
+    setLayout(new FlowLayout());
+    b1.addActionListener(new B1L());
+    b2.addActionListener(new B2L());
+    add(b1);
+    add(b2);
+  }
+  public class B1L implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      System.out.println(&quot;Button 1 pressed&quot;);
+    }
+  }
+  public class B2L implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      System.out.println(&quot;Button 2 pressed&quot;);
+    }
+  }
+  public static void main(String[] args) {
+    Frame f = new GoodIdea();
+    f.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e){
+          System.out.println(&quot;Window Closing&quot;);
+          System.exit(0);
+        }
+      });
+    f.setSize(300,200);
+    f.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>这是颇有点微不足道的：每个按钮有它自己的印出一些事物到控制台的接收器。但请注意在整个程序中这不是一个条件语句，或者是一些表示“我想要知道怎样使事件发生”的语句。每块代码都与运行有关，而不是类型检验。也就是说，这是最好的编写我们的代码的方法；不仅仅是它更易使我们理解概念，至少是使我们更易阅读和维护。剪切和粘贴到新的程序是同样如此的容易。</p>
+<h4>2. 将主类作为接收器实现</h4>
+<p>第一个坏主意是一个通常的和推荐的方法。这使得主类（有代表性的是程序片或帧，但它能变成一些类）执行各种不同的接收器。下面是一个例子：</p>
+
+  <pre class="code">//: BadIdea1.java
+// Some literature recommends this approach,
+// but it's missing the point of the new event
+// model in Java 1.1
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+public class BadIdea1 extends Frame 
+    implements ActionListener, WindowListener {
+  Button 
+    b1 = new Button(&quot;Button 1&quot;), 
+    b2 = new Button(&quot;Button 2&quot;);
+  public BadIdea1() {
+    setLayout(new FlowLayout());
+    addWindowListener(this);
+    b1.addActionListener(this);
+    b2.addActionListener(this);
+    add(b1);
+    add(b2);
+  }
+  public void actionPerformed(ActionEvent e) {
+    Object source = e.getSource();
+    if(source == b1)
+      System.out.println(&quot;Button 1 pressed&quot;);
+    else if(source == b2)
+      System.out.println(&quot;Button 2 pressed&quot;);
+    else
+      System.out.println(&quot;Something else&quot;);
+  }    
+  public void windowClosing(WindowEvent e) {
+    System.out.println(&quot;Window Closing&quot;);
+    System.exit(0);
+  }
+  public void windowClosed(WindowEvent e) {}
+  public void windowDeiconified(WindowEvent e) {}
+  public void windowIconified(WindowEvent e) {}
+  public void windowActivated(WindowEvent e) {}
+  public void windowDeactivated(WindowEvent e) {}
+  public void windowOpened(WindowEvent e) {}  
+
+  public static void main(String[] args) {
+    Frame f = new BadIdea1();
+    f.setSize(300,200);
+    f.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>这样做的用途显示在下述三行里：</p>
+<pre class="code">addWindowListener(this);
+b1.addActionListener(this);
+b2.addActionListener(this);</pre>
+<p>因为Badidea1执行动作接收器和窗中接收器，这些程序行当然可以接受，并且如果我们一直坚持设法使少量的类去减少服务器检索期间的程序片载入的作法，它看起来变成一个不错的主意。但是：</p>
+<p>(1) Java 1.1版支持JAR文件，因此所有我们的文件可以被放置到一个单一的压缩的JAR文件中，只需要一次服务器检索。我们不再需要为Internet效率而减少类的数量。</p>
+(2)
+上面的代码的组件更加的少，因此它难以抓住和粘贴。注意我们必须不仅要执行各种各样的接口为我们的主类，但在actionPerformed()方法中，我们利用一串条件语句测试哪个动作被完成了。不仅仅是这个状态倒退，远离接收器模型，除此之外，我们不能简单地重复使用actionPerformed()方法因为它是指定为这个特殊的应用程序使用的。将这个程序例子与GoodIdea.java进行比较，我们可以正好捕捉一个接收器类并粘贴它和最小的焦急到任何地方。另外我们可以为一个单独的事件注册多个接收器类，允许甚至更多的模块在每个接收器类在每个接收器中运行。
+<h4>3. 方法的混合</h4>
+<p>第二个bad idea混合了两种方法：使用内嵌接收器类，但同样执行一个或更多的接收器接口以作为主类的一部分。这种方法无需在书中和文件中进行解释，而且我可以臆测到Java开发者认为他们必须为不同的目的而采取不同的方法。但我们却不必——在我们编程时，我们或许可能会倾向于使用内嵌接收器类。</p>
+
+  <pre class="code">//: BadIdea2.java
+// An improvement over BadIdea1.java, since it
+// uses the WindowAdapter as an inner class 
+// instead of implementing all the methods of
+// WindowListener, but still misses the
+// valuable modularity of inner classes
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+public class BadIdea2 extends Frame 
+    implements ActionListener {
+  Button 
+    b1 = new Button(&quot;Button 1&quot;), 
+    b2 = new Button(&quot;Button 2&quot;);
+  public BadIdea2() {
+    setLayout(new FlowLayout());
+    addWindowListener(new WL());
+    b1.addActionListener(this);
+    b2.addActionListener(this);
+    add(b1);
+    add(b2);
+  }
+  public void actionPerformed(ActionEvent e) {
+    Object source = e.getSource();
+    if(source == b1)
+      System.out.println(&quot;Button 1 pressed&quot;);
+    else if(source == b2)
+      System.out.println(&quot;Button 2 pressed&quot;);
+    else
+      System.out.println(&quot;Something else&quot;);
+  }
+  class WL extends WindowAdapter {
+    public void windowClosing(WindowEvent e) {
+      System.out.println(&quot;Window Closing&quot;);
+      System.exit(0);
+    }
+  }
+  public static void main(String[] args) {
+    Frame f = new BadIdea2();
+    f.setSize(300,200);
+    f.setVisible(true);
+  }
+} ///:~</pre>
+
+因为actionPerformed()动作完成方法同主类紧密地结合，所以难以复用代码。它的代码读起来同样是凌乱和令人厌烦的，远远超过了内部类方法。不合理的是，我们不得不在Java
+1.1版中为事件使用那些老的思路。
+<h4>4. 继承一个组件</h4>
+<p>创建一个新类型的组件时，在运行事件的老方法中，我们会经常看到不同的地方发生了变化。这里有一个程序例子来演示这种新的工作方法：</p>
+
+  <pre class="code">//: GoodTechnique.java
+// Your first choice when overriding components
+// should be to install listeners. The code is
+// much safer, more modular and maintainable.
+import java.awt.*;
+import java.awt.event.*;
+
+class Display {
+  public static final int
+    EVENT = 0, COMPONENT = 1,
+    MOUSE = 2, MOUSE_MOVE = 3,
+    FOCUS = 4, KEY = 5, ACTION = 6,
+    LAST = 7;
+  public String[] evnt;
+  Display() {
+    evnt = new String[LAST];
+    for(int i = 0; i &lt; LAST; i++)
+      evnt[i] = new String();
+  }
+  public void show(Graphics g) {
+    for(int i = 0; i &lt; LAST; i++)
+      g.drawString(evnt[i], 0, 10 * i + 10);
+  }
+}
+
+class EnabledPanel extends Panel {
+  Color c;
+  int id;
+  Display display = new Display();
+  public EnabledPanel(int i, Color mc) {
+    id = i;
+    c = mc;
+    setLayout(new BorderLayout());
+    add(new MyButton(), BorderLayout.SOUTH);
+    addComponentListener(new CL());
+    addFocusListener(new FL());
+    addKeyListener(new KL());
+    addMouseListener(new ML());
+    addMouseMotionListener(new MML());
+  }
+  // To eliminate flicker:
+  public void update(Graphics g) {
+    paint(g);
+  }
+  public void paint(Graphics  g) {
+    g.setColor(c);
+    Dimension s = getSize();
+    g.fillRect(0, 0, s.width, s.height);
+    g.setColor(Color.black);
+    display.show(g);
+  }
+  // Don't need to enable anything for this:
+  public void processEvent(AWTEvent e) {
+    display.evnt[Display.EVENT]= e.toString();
+    repaint();
+    super.processEvent(e);
+  }
+  class CL implements ComponentListener {
+    public void componentMoved(ComponentEvent e){
+      display.evnt[Display.COMPONENT] = 
+        &quot;Component moved&quot;;
+      repaint();
+    }
+    public void 
+    componentResized(ComponentEvent e) {
+      display.evnt[Display.COMPONENT] = 
+        &quot;Component resized&quot;;
+      repaint();
+    }
+    public void 
+    componentHidden(ComponentEvent e) {
+      display.evnt[Display.COMPONENT] = 
+        &quot;Component hidden&quot;;
+      repaint();
+    }
+    public void componentShown(ComponentEvent e){
+      display.evnt[Display.COMPONENT] = 
+        &quot;Component shown&quot;;
+      repaint();
+    }
+  }
+  class FL implements FocusListener {
+    public void focusGained(FocusEvent e) {
+      display.evnt[Display.FOCUS] = 
+        &quot;FOCUS gained&quot;;
+      repaint();
+    }
+    public void focusLost(FocusEvent e) {
+      display.evnt[Display.FOCUS] = 
+        &quot;FOCUS lost&quot;;
+      repaint();
+    }
+  }
+  class KL implements KeyListener {
+    public void keyPressed(KeyEvent e) {
+      display.evnt[Display.KEY] = 
+        &quot;KEY pressed: &quot;; 
+      showCode(e);
+    }
+    public void keyReleased(KeyEvent e) {
+      display.evnt[Display.KEY] = 
+        &quot;KEY released: &quot;; 
+      showCode(e);
+    }
+    public void keyTyped(KeyEvent e) {
+      display.evnt[Display.KEY] = 
+        &quot;KEY typed: &quot;;
+      showCode(e);
+    }
+    void showCode(KeyEvent e) {
+      int code = e.getKeyCode();
+      display.evnt[Display.KEY] += 
+        KeyEvent.getKeyText(code);
+      repaint();
+    }
+  }
+  class ML implements MouseListener {
+    public void mouseClicked(MouseEvent e) {
+      requestFocus(); // Get FOCUS on click
+      display.evnt[Display.MOUSE] = 
+        &quot;MOUSE clicked&quot;;
+      showMouse(e);
+    }
+    public void mousePressed(MouseEvent e) {
+      display.evnt[Display.MOUSE] = 
+        &quot;MOUSE pressed&quot;;
+      showMouse(e);
+    }
+    public void mouseReleased(MouseEvent e) {
+      display.evnt[Display.MOUSE] = 
+        &quot;MOUSE released&quot;;
+      showMouse(e);
+    }
+    public void mouseEntered(MouseEvent e) { 
+      display.evnt[Display.MOUSE] = 
+        &quot;MOUSE entered&quot;;
+      showMouse(e);
+    }
+    public void mouseExited(MouseEvent e) { 
+      display.evnt[Display.MOUSE] = 
+        &quot;MOUSE exited&quot;;
+      showMouse(e);
+    }
+    void showMouse(MouseEvent e) {
+      display.evnt[Display.MOUSE] += 
+        &quot;, x = &quot; + e.getX() + 
+        &quot;, y = &quot; + e.getY();
+      repaint();
+    }
+  }
+  class MML implements MouseMotionListener {
+    public void mouseDragged(MouseEvent e) {
+      display.evnt[Display.MOUSE_MOVE] = 
+        &quot;MOUSE dragged&quot;;
+      showMouse(e);
+    }
+    public void mouseMoved(MouseEvent e) {
+      display.evnt[Display.MOUSE_MOVE] = 
+        &quot;MOUSE moved&quot;;
+      showMouse(e);
+    }
+    void showMouse(MouseEvent e) {
+      display.evnt[Display.MOUSE_MOVE] += 
+        &quot;, x = &quot; + e.getX() + 
+        &quot;, y = &quot; + e.getY();
+      repaint();
+    }
+  }
+}
+
+class MyButton extends Button {
+  int clickCounter;
+  String label = &quot;&quot;;
+  public MyButton() {
+    addActionListener(new AL());
+  }
+  public void paint(Graphics g) {
+    g.setColor(Color.green);
+    Dimension s = getSize();
+    g.fillRect(0, 0, s.width, s.height);
+    g.setColor(Color.black);
+    g.drawRect(0, 0, s.width - 1, s.height - 1);
+    drawLabel(g);
+  }
+  private void drawLabel(Graphics g) {
+    FontMetrics fm = g.getFontMetrics();
+    int width = fm.stringWidth(label);
+    int height = fm.getHeight();
+    int ascent = fm.getAscent();
+    int leading = fm.getLeading();
+    int horizMargin = 
+      (getSize().width - width)/2;
+    int verMargin = 
+      (getSize().height - height)/2;
+    g.setColor(Color.red);
+    g.drawString(label, horizMargin, 
+      verMargin + ascent + leading);
+  }
+  class AL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      clickCounter++;
+      label = &quot;click #&quot; + clickCounter +
+        &quot; &quot; + e.toString();
+      repaint();
+    }
+  }
+}
+  
+public class GoodTechnique extends Frame {
+  GoodTechnique() {
+    setLayout(new GridLayout(2,2));
+    add(new EnabledPanel(1, Color.cyan));
+    add(new EnabledPanel(2, Color.lightGray));
+    add(new EnabledPanel(3, Color.yellow));
+  }
+  public static void main(String[] args) {
+    Frame f = new GoodTechnique();
+    f.setTitle(&quot;Good Technique&quot;);
+    f.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e){
+          System.out.println(e);
+          System.out.println(&quot;Window Closing&quot;);
+          System.exit(0);
+        }
+      });
+    f.setSize(700,700);
+    f.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>这个程序例子同样证明了各种各样的发现和显示关于它们的信息的事件。这种显示是一种集中显示信息的方法。一组字符串去获取关于每种类型的事件的信息，并且show()方法对任何图像对象都设置了一个句柄，我们采用并直接地写在外观代码上。这种设计是有意的被某种事件重复使用。</p>
+<p>激活面板代表了这种新型的组件。它是一个底部有一个按钮的彩色的面板，并且它由利用接收器类为每一个单独的事件来引发捕捉所有发生在它之上的事件，除了那些在激活面板过载的老式的processEvent()方法（注意它应该同样调用super.processEvent()）。利用这种方法的唯一理由是它捕捉发生的每一个事件，因此我们可以观察持续发生的每一事件。processEvent()方法没有更多的展示代表每个事件的字符串，否则它会不得不使用一串条件语句去寻找事件。在其它方面，内嵌接收类早已清晰地知道被发现的事件。（假定我们注册它们到组件，我们不需要任何的控件的逻辑，这将成为我们的目的。）因此，它们不会去检查任何事件；这些事件正好做它们的原材料。</p>
+<p>每个接收器修改显示字符串和它的指定事件，并且调用重画方法repaint()因此将显示这个字符串。我们同样能注意到一个通常能消除闪烁的秘诀：</p>
+<pre class="code">public void update(Graphics g) {
+     paint(g);
+}
+</pre>我们不会始终需要过载update()，但如果我们写下一些闪烁的程序，并运行它。默认的最新版本的清除背景然后调用paint()方法重新画出一些图画。这个清除动作通常会产生闪烁，但是不必要的，因为paint()重画了整个的外观。</p>
+<p>我们可以看到许多的接收器——但是，对接收器输入检查指令，但我们却不能接收任何组件不支持的事件。（不像BadTechnuque.java那样我们能时时刻刻看到）。</p>
+<p>试验这个程序是十分的有教育意义的，因为我们学习了许多的关于在Java中事件发生的方法。一则它展示了大多数开窗口的系统中设计上的瑕疵：它相当的难以去单击和释放鼠标，除非移动它，并且当我们实际上正试图用鼠标单击在某物体上时开窗口的会常常认为我们是在拖动。一个解决这个问题的方案是使用mousePressed()鼠标按下方法和mouseReleased()鼠标释放方法去代替mouseClicked()鼠标单击方法，然后判断是否去调用我们自己的以时间和4个像素的鼠标滞后作用的“mouseReallyClicked()真实的鼠标单击”方法。</p>
+<h4>5. 蹩脚的组件继承</h4>
+另一种做法是调用enableEvent()方法，并将与希望控制的事件对应的模型传递给它（许多参考书中都曾提及这种做法）。这样做会造成那些事件被发送至老式方法（尽管它们对Java
+1.1来说是新的），并采用象processFocusEvent()这样的名字。也必须要记住调用基础类版本。下面是它看起来的样子。
+<pre class="code">//: BadTechnique.java
+// It's possible to override components this way,
+// but the listener approach is much better, so
+// why would you?
+import java.awt.*;
+import java.awt.event.*;
+
+class Display {
+  public static final int
+    EVENT = 0, COMPONENT = 1,
+    MOUSE = 2, MOUSE_MOVE = 3,
+    FOCUS = 4, KEY = 5, ACTION = 6,
+    LAST = 7;
+  public String[] evnt;
+  Display() {
+    evnt = new String[LAST];
+    for(int i = 0; i &lt; LAST; i++)
+      evnt[i] = new String();
+  }
+  public void show(Graphics g) {
+    for(int i = 0; i &lt; LAST; i++)
+      g.drawString(evnt[i], 0, 10 * i + 10);
+  }
+}
+
+class EnabledPanel extends Panel {
+  Color c;
+  int id;
+  Display display = new Display();
+  public EnabledPanel(int i, Color mc) {
+    id = i;
+    c = mc;
+    setLayout(new BorderLayout());
+    add(new MyButton(), BorderLayout.SOUTH);
+    // Type checking is lost. You can enable and
+    // process events that the component doesn't
+    // capture:
+    enableEvents(
+      // Panel doesn't handle these:
+      AWTEvent.ACTION_EVENT_MASK |
+      AWTEvent.ADJUSTMENT_EVENT_MASK |
+      AWTEvent.ITEM_EVENT_MASK |
+      AWTEvent.TEXT_EVENT_MASK |
+      AWTEvent.WINDOW_EVENT_MASK |
+      // Panel can handle these:
+      AWTEvent.COMPONENT_EVENT_MASK |
+      AWTEvent.FOCUS_EVENT_MASK |
+      AWTEvent.KEY_EVENT_MASK |
+      AWTEvent.MOUSE_EVENT_MASK |
+      AWTEvent.MOUSE_MOTION_EVENT_MASK |
+      AWTEvent.CONTAINER_EVENT_MASK);
+      // You can enable an event without
+      // overriding its process method.
+  }
+  // To eliminate flicker:
+  public void update(Graphics g) {
+    paint(g);
+  }
+  public void paint(Graphics  g) {
+    g.setColor(c);
+    Dimension s = getSize();
+    g.fillRect(0, 0, s.width, s.height);
+    g.setColor(Color.black);
+    display.show(g);
+  }
+  public void processEvent(AWTEvent e) {
+    display.evnt[Display.EVENT]= e.toString();
+    repaint();
+    super.processEvent(e);
+  }
+  public void
+  processComponentEvent(ComponentEvent e) {
+    switch(e.getID()) {
+      case ComponentEvent.COMPONENT_MOVED:
+        display.evnt[Display.COMPONENT] = 
+          &quot;Component moved&quot;;
+        break;
+      case ComponentEvent.COMPONENT_RESIZED:
+        display.evnt[Display.COMPONENT] = 
+          &quot;Component resized&quot;;
+        break;
+      case ComponentEvent.COMPONENT_HIDDEN:
+        display.evnt[Display.COMPONENT] = 
+          &quot;Component hidden&quot;;
+        break;
+      case ComponentEvent.COMPONENT_SHOWN:
+        display.evnt[Display.COMPONENT] = 
+          &quot;Component shown&quot;;
+        break;
+      default:
+    }
+    repaint();
+    // Must always remember to call the &quot;super&quot;
+    // version of whatever you override:
+    super.processComponentEvent(e);
+  }
+  public void processFocusEvent(FocusEvent e) {
+    switch(e.getID()) {
+      case FocusEvent.FOCUS_GAINED:
+        display.evnt[Display.FOCUS] = 
+          &quot;FOCUS gained&quot;;
+        break;
+      case FocusEvent.FOCUS_LOST:
+        display.evnt[Display.FOCUS] = 
+          &quot;FOCUS lost&quot;;
+        break;
+      default:
+    }
+    repaint();
+    super.processFocusEvent(e);
+  }
+  public void processKeyEvent(KeyEvent e) {
+    switch(e.getID()) {
+      case KeyEvent.KEY_PRESSED:
+        display.evnt[Display.KEY] = 
+          &quot;KEY pressed: &quot;; 
+        break;
+      case KeyEvent.KEY_RELEASED:
+        display.evnt[Display.KEY] = 
+          &quot;KEY released: &quot;; 
+        break;
+      case KeyEvent.KEY_TYPED:
+        display.evnt[Display.KEY] = 
+          &quot;KEY typed: &quot;;
+        break;
+      default:
+    }
+    int code = e.getKeyCode();
+    display.evnt[Display.KEY] += 
+      KeyEvent.getKeyText(code);
+    repaint();
+    super.processKeyEvent(e);
+  }
+  public void processMouseEvent(MouseEvent e) {
+    switch(e.getID()) {
+      case MouseEvent.MOUSE_CLICKED:
+        requestFocus(); // Get FOCUS on click
+        display.evnt[Display.MOUSE] = 
+          &quot;MOUSE clicked&quot;;
+        break;
+      case MouseEvent.MOUSE_PRESSED:
+        display.evnt[Display.MOUSE] = 
+          &quot;MOUSE pressed&quot;;
+        break;
+      case MouseEvent.MOUSE_RELEASED:
+        display.evnt[Display.MOUSE] = 
+          &quot;MOUSE released&quot;;
+        break;
+      case MouseEvent.MOUSE_ENTERED: 
+        display.evnt[Display.MOUSE] = 
+          &quot;MOUSE entered&quot;;
+        break;
+      case MouseEvent.MOUSE_EXITED: 
+        display.evnt[Display.MOUSE] = 
+          &quot;MOUSE exited&quot;;
+        break;
+      default:
+    }
+    display.evnt[Display.MOUSE] += 
+      &quot;, x = &quot; + e.getX() + 
+      &quot;, y = &quot; + e.getY();
+    repaint();
+    super.processMouseEvent(e);
+  }
+  public void
+  processMouseMotionEvent(MouseEvent e) {
+    switch(e.getID()) {
+      case MouseEvent.MOUSE_DRAGGED:
+        display.evnt[Display.MOUSE_MOVE] = 
+          &quot;MOUSE dragged&quot;;
+        break;
+      case MouseEvent.MOUSE_MOVED:
+        display.evnt[Display.MOUSE_MOVE] = 
+          &quot;MOUSE moved&quot;;
+        break;
+      default:
+    }
+    display.evnt[Display.MOUSE_MOVE] += 
+      &quot;, x = &quot; + e.getX() + 
+      &quot;, y = &quot; + e.getY();
+    repaint();
+    super.processMouseMotionEvent(e);
+  }
+}
+
+class MyButton extends Button {
+  int clickCounter;
+  String label = &quot;&quot;;
+  public MyButton() {
+    enableEvents(AWTEvent.ACTION_EVENT_MASK);
+  }
+  public void paint(Graphics g) {
+    g.setColor(Color.green);
+    Dimension s = getSize();
+    g.fillRect(0, 0, s.width, s.height);
+    g.setColor(Color.black);
+    g.drawRect(0, 0, s.width - 1, s.height - 1);
+    drawLabel(g);
+  }
+  private void drawLabel(Graphics g) {
+    FontMetrics fm = g.getFontMetrics();
+    int width = fm.stringWidth(label);
+    int height = fm.getHeight();
+    int ascent = fm.getAscent();
+    int leading = fm.getLeading();
+    int horizMargin = 
+      (getSize().width - width)/2;
+    int verMargin = 
+      (getSize().height - height)/2;
+    g.setColor(Color.red);
+    g.drawString(label, horizMargin, 
+                 verMargin + ascent + leading);
+  }
+  public void processActionEvent(ActionEvent e) {
+    clickCounter++;
+    label = &quot;click #&quot; + clickCounter +
+      &quot; &quot; + e.toString();
+    repaint();
+    super.processActionEvent(e);
+  }
+}
+  
+public class BadTechnique extends Frame {
+  BadTechnique() {
+    setLayout(new GridLayout(2,2));
+    add(new EnabledPanel(1, Color.cyan));
+    add(new EnabledPanel(2, Color.lightGray));
+    add(new EnabledPanel(3, Color.yellow));
+    // You can also do it for Windows:
+    enableEvents(AWTEvent.WINDOW_EVENT_MASK);
+  }
+  public void processWindowEvent(WindowEvent e) {
+    System.out.println(e);
+    if(e.getID() == WindowEvent.WINDOW_CLOSING) {
+      System.out.println(&quot;Window Closing&quot;);
+      System.exit(0);
+    }
+  }
+  public static void main(String[] args) {
+    Frame f = new BadTechnique();
+    f.setTitle(&quot;Bad Technique&quot;);
+    f.setSize(700,700);
+    f.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>的确，它能够工作。但却实在太蹩脚，而且很难编写、阅读、调试、维护以及再生。既然如此，为什么还不使用内部接收器类呢？</p>
+<div class="rpindex"><a href="130.html"> 下一页</a><a href="128.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

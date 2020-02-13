@@ -1,0 +1,727 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="65.html"> 上一页</a><a href="67.html"> 下一页</a></div>
+<h3>8.7.5 决定实施方案</h3>
+从早些时候的那幅示意图可以看出，实际上只有三个集合组件：Map，List和Set。而且每个接口只有两种或三种实施方案。若需使用由一个特定的接口提供的功能，如何才能决定到底采取哪一种方案呢？
+为理解这个问题，必须认识到每种不同的实施方案都有自己的特点、优点和缺点。比如在那张示意图中，可以看到Hashtable，Vector和Stack的“特点”是它们都属于“传统”类，所以不会干扰原有的代码。但在另一方面，应尽量避免为新的（Java
+1.2）代码使用它们。
+其他集合间的差异通常都可归纳为它们具体是由什么“后推”的。换言之，取决于物理意义上用于实施目标接口的数据结构是什么。例如，ArrayList，LinkedList以及Vector（大致等价于ArrayList）都实现了List接口，所以无论选用哪一个，我们的程序都会得到类似的结果。然而，ArrayList（以及Vector）是由一个数组后推得到的；而LinkedList是根据常规的双重链接列表方式实现的，因为每个单独的对象都包含了数据以及指向列表内前后元素的句柄。正是由于这个原因，假如想在一个列表中部进行大量插入和删除操作，那么LinkedList无疑是最恰当的选择（LinkedList还有一些额外的功能，建立于AbstractSequentialList中）。若非如此，就情愿选择ArrayList，它的速度可能要快一些。
+作为另一个例子，Set既可作为一个ArraySet实现，亦可作为HashSet实现。ArraySet是由一个ArrayList后推得到的，设计成只支持少量元素，特别适合要求创建和删除大量Set对象的场合使用。然而，一旦需要在自己的Set中容纳大量元素，ArraySet的性能就会大打折扣。写一个需要Set的程序时，应默认选择HashSet。而且只有在某些特殊情况下（对性能的提升有迫切的需求），才应切换到ArraySet。
+<h4>1. 决定使用何种List</h4>
+为体会各种List实施方案间的差异，最简便的方法就是进行一次性能测验。下述代码的作用是建立一个内部基础类，将其作为一个测试床使用。然后为每次测验都创建一个匿名内部类。每个这样的内部类都由一个test()方法调用。利用这种方法，可以方便添加和删除测试项目。
+
+  <pre class="code">//: ListPerformance.java
+// Demonstrates performance differences in Lists
+package c08.newcollections;
+import java.util.*;
+
+public class ListPerformance {
+  private static final int REPS = 100;
+  private abstract static class Tester {
+    String name;
+    int size; // Test quantity
+    Tester(String name, int size) { 
+      this.name = name;
+      this.size = size;
+    }
+    abstract void test(List a);
+  }
+  private static Tester[] tests = {
+    new Tester(&quot;get&quot;, 300) { 
+      void test(List a) {
+        for(int i = 0; i &lt; REPS; i++) {
+          for(int j = 0; j &lt; a.size(); j++)
+            a.get(j);
+        }
+      }
+    },
+    new Tester(&quot;iteration&quot;, 300) { 
+      void test(List a) {
+        for(int i = 0; i &lt; REPS; i++) {
+          Iterator it = a.iterator();
+          while(it.hasNext())
+            it.next();
+        }
+      }
+    },
+    new Tester(&quot;insert&quot;, 1000) { 
+      void test(List a) {
+        int half = a.size()/2;
+        String s = &quot;test&quot;;
+        ListIterator it = a.listIterator(half);
+        for(int i = 0; i &lt; size * 10; i++)
+          it.add(s);
+      }
+    },
+    new Tester(&quot;remove&quot;, 5000) { 
+      void test(List a) {
+        ListIterator it = a.listIterator(3);
+        while(it.hasNext()) {
+          it.next();
+          it.remove();
+        }
+      }
+    },
+  };
+  public static void test(List a) {
+    // A trick to print out the class name:
+    System.out.println(&quot;Testing &quot; + 
+      a.getClass().getName());
+    for(int i = 0; i &lt; tests.length; i++) {
+      Collection1.fill(a, tests[i].size);
+      System.out.print(tests[i].name);
+      long t1 = System.currentTimeMillis();
+      tests[i].test(a);
+      long t2 = System.currentTimeMillis();
+      System.out.println(&quot;: &quot; + (t2 - t1));
+    }
+  }
+  public static void main(String[] args) {
+    test(new ArrayList());
+    test(new LinkedList());
+  }
+} ///:~</pre>
+
+内部类Tester是一个抽象类，用于为特定的测试提供一个基础类。它包含了一个要在测试开始时打印的字串、一个用于计算测试次数或元素数量的size参数、用于初始化字段的一个构建器以及一个抽象方法test()。test()做的是最实际的测试工作。各种类型的测试都集中到一个地方：tests数组。我们用继承于Tester的不同匿名内部类来初始化该数组。为添加或删除一个测试项目，只需在数组里简单地添加或移去一个内部类定义即可，其他所有工作都是自动进行的。
+首先用元素填充传递给test()的List，然后对tests数组中的测试计时。由于测试用机器的不同，结果当然也会有所区别。这个程序的宗旨是揭示出不同集合类型的相对性能比较。下面是某一次运行得到的结果：
+&nbsp; 类型&nbsp;&nbsp;&nbsp; 获取 反复 插入 删除
+ArrayList&nbsp; 110&nbsp; 270 1920 4780
+LinkedList 1870 7580 170 110
+可以看出，在ArrayList中进行随机访问（即get()）以及循环反复是最划得来的；但对于LinkedList却是一个不小的开销。但另一方面，在列表中部进行插入和删除操作对于LinkedList来说却比ArrayList划算得多。我们最好的做法也许是先选择一个ArrayList作为自己的默认起点。以后若发现由于大量的插入和删除造成了性能的降低，再考虑换成LinkedList不迟。
+<h4>2. 决定使用何种Set</h4>
+可在ArraySet以及HashSet间作出选择，具体取决于Set的大小（如果需要从一个Set中获得一个顺序列表，请用TreeSet；注释⑧）。下面这个测试程序将有助于大家作出这方面的抉择：
+
+  <pre class="code">//: SetPerformance.java
+package c08.newcollections;
+import java.util.*;
+
+public class SetPerformance {
+  private static final int REPS = 200;
+  private abstract static class Tester {
+    String name;
+    Tester(String name) { this.name = name; }
+    abstract void test(Set s, int size);
+  }
+  private static Tester[] tests = {
+    new Tester(&quot;add&quot;) { 
+      void test(Set s, int size) {
+        for(int i = 0; i &lt; REPS; i++) {
+          s.clear();
+          Collection1.fill(s, size);
+        }
+      }
+    },
+    new Tester(&quot;contains&quot;) { 
+      void test(Set s, int size) {
+        for(int i = 0; i &lt; REPS; i++)
+          for(int j = 0; j &lt; size; j++)
+            s.contains(Integer.toString(j));
+      }
+    },
+    new Tester(&quot;iteration&quot;) { 
+      void test(Set s, int size) {
+        for(int i = 0; i &lt; REPS * 10; i++) {
+          Iterator it = s.iterator();
+          while(it.hasNext())
+            it.next();
+        }
+      }
+    },
+  };
+  public static void test(Set s, int size) {
+    // A trick to print out the class name:
+    System.out.println(&quot;Testing &quot; + 
+      s.getClass().getName() + &quot; size &quot; + size);
+    Collection1.fill(s, size);
+    for(int i = 0; i &lt; tests.length; i++) {
+      System.out.print(tests[i].name);
+      long t1 = System.currentTimeMillis();
+      tests[i].test(s, size);
+      long t2 = System.currentTimeMillis();
+      System.out.println(&quot;: &quot; + 
+        ((double)(t2 - t1)/(double)size));
+    }
+  }
+  public static void main(String[] args) {
+    // Small:
+    test(new TreeSet(), 10);
+    test(new HashSet(), 10);
+    // Medium:
+    test(new TreeSet(), 100);
+    test(new HashSet(), 100);
+    // Large:
+    test(new HashSet(), 1000);
+    test(new TreeSet(), 1000);
+  }
+} ///:~</pre>
+
+⑧：TreeSet在本书写作时尚未成为一个正式的特性，但在这个例子中可以很轻松地为其添加一个测试。
+最后对ArraySet的测试只有500个元素，而不是1000个，因为它太慢了。
+类型 测试大小 添加 包含 反复
+<table>
+  <tr valign="top">
+    <td> 
+        Type
+      </td>
+    <td> 
+        Test size
+      </td>
+    <td> 
+        Add
+      </td>
+    <td> 
+        Contains
+      </td>
+    <td> 
+        Iteration
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        10
+      </td>
+    <td> 
+        22.0
+      </td>
+    <td> 
+        11.0
+      </td>
+    <td> 
+        16.0
+      </td>
+  </tr>
+  <tr valign="top">
+    <td> 
+        TreeSet 
+      </td>
+    <td> 
+        100
+      </td>
+    <td> 
+        22.5
+      </td>
+    <td> 
+        13.2
+      </td>
+    <td> 
+        12.1
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        1000
+      </td>
+    <td> 
+        31.1
+      </td>
+    <td> 
+        18.7
+      </td>
+    <td> 
+        11.8
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        10
+      </td>
+    <td> 
+        5.0
+      </td>
+    <td> 
+        6.0
+      </td>
+    <td> 
+        27.0
+      </td>
+  </tr>
+  <tr valign="top">
+    <td> 
+        HashSet 
+      </td>
+    <td> 
+        100
+      </td>
+    <td> 
+        6.6
+      </td>
+    <td> 
+        6.6
+      </td>
+    <td> 
+        10.9
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        1000
+      </td>
+    <td> 
+        7.4
+      </td>
+    <td> 
+        6.6
+      </td>
+    <td> 
+        9.5
+      </td>
+  </tr>
+</table>
+进行add()以及contains()操作时，HashSet显然要比ArraySet出色得多，而且性能明显与元素的多寡关系不大。一般编写程序的时候，几乎永远用不着使用ArraySet。
+3. 决定使用何种Map
+选择不同的Map实施方案时，注意Map的大小对于性能的影响是最大的，下面这个测试程序清楚地阐示了这一点：
+
+  <pre class="code">//: MapPerformance.java
+// Demonstrates performance differences in Maps
+package c08.newcollections;
+import java.util.*;
+
+public class MapPerformance {
+  private static final int REPS = 200;
+  public static Map fill(Map m, int size) {
+    for(int i = 0; i &lt; size; i++) {
+      String x = Integer.toString(i);
+      m.put(x, x);
+    }
+    return m;
+  }
+  private abstract static class Tester {
+    String name;
+    Tester(String name) { this.name = name; }
+    abstract void test(Map m, int size);
+  }
+  private static Tester[] tests = {
+    new Tester(&quot;put&quot;) { 
+      void test(Map m, int size) {
+        for(int i = 0; i &lt; REPS; i++) {
+          m.clear();
+          fill(m, size);
+        }
+      }
+    },
+    new Tester(&quot;get&quot;) { 
+      void test(Map m, int size) {
+        for(int i = 0; i &lt; REPS; i++)
+          for(int j = 0; j &lt; size; j++)
+            m.get(Integer.toString(j));
+      }
+    },
+    new Tester(&quot;iteration&quot;) { 
+      void test(Map m, int size) {
+        for(int i = 0; i &lt; REPS * 10; i++) {
+          Iterator it = m.entries().iterator();
+          while(it.hasNext())
+            it.next();
+        }
+      }
+    },
+  };
+  public static void test(Map m, int size) {
+    // A trick to print out the class name:
+    System.out.println(&quot;Testing &quot; + 
+      m.getClass().getName() + &quot; size &quot; + size);
+    fill(m, size);
+    for(int i = 0; i &lt; tests.length; i++) {
+      System.out.print(tests[i].name);
+      long t1 = System.currentTimeMillis();
+      tests[i].test(m, size);
+      long t2 = System.currentTimeMillis();
+      System.out.println(&quot;: &quot; + 
+        ((double)(t2 - t1)/(double)size));
+    }
+  }
+  public static void main(String[] args) {
+    // Small:
+    test(new Hashtable(), 10);
+    test(new HashMap(), 10);
+    test(new TreeMap(), 10);
+    // Medium:
+    test(new Hashtable(), 100);
+    test(new HashMap(), 100);
+    test(new TreeMap(), 100);
+    // Large:
+    test(new HashMap(), 1000);
+    test(new Hashtable(), 1000);
+    test(new TreeMap(), 1000);
+  }
+} ///:~</pre>
+
+由于Map的大小是最严重的问题，所以程序的计时测试按Map的大小（或容量）来分割时间，以便得到令人信服的测试结果。下面列出一系列结果（在你的机器上可能不同）：
+类型 测试大小 置入 取出 反复
+<table border="BORDER">
+  <tr valign="top">
+    <th width="63" colspan="1" rowspan="1" valign="top">  
+        Type 
+      </th>
+    <th width="54" colspan="1" rowspan="1" valign="top">  
+        Test size
+      </th>
+    <th width="45" colspan="1" rowspan="1" valign="top">  
+        Put
+      </th>
+    <th width="45" colspan="1" rowspan="1" valign="top">  
+        Get
+      </th>
+    <th width="54" colspan="1" rowspan="1" valign="top">  
+        Iteration
+      </th>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp; 
+         
+      </td>
+    <td> 
+        10
+      </td>
+    <td> 
+        11.0
+      </td>
+    <td> 
+        5.0
+      </td>
+    <td> 
+        44.0
+      </td>
+  </tr>
+  <tr valign="top">
+    <td> 
+        <b>Hashtable</b>
+      </td>
+    <td> 
+        100
+      </td>
+    <td> 
+        7.7
+      </td>
+    <td> 
+        7.7
+      </td>
+    <td> 
+        16.5
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        1000
+      </td>
+    <td> 
+        8.0
+      </td>
+    <td> 
+        8.0
+      </td>
+    <td> 
+        14.4
+      </td>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp; 
+         
+      </td>
+    <td> 
+        10
+      </td>
+    <td> 
+        16.0
+      </td>
+    <td> 
+        11.0
+      </td>
+    <td> 
+        22.0
+      </td>
+  </tr>
+  <tr valign="top">
+    <td> 
+        <b>TreeMap</b>
+      </td>
+    <td> 
+        100
+      </td>
+    <td> 
+        25.8
+      </td>
+    <td> 
+        15.4
+      </td>
+    <td> 
+        13.2
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        1000
+      </td>
+    <td> 
+        33.8
+      </td>
+    <td> 
+        20.9
+      </td>
+    <td> 
+        13.6
+      </td>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp; 
+         
+      </td>
+    <td> 
+        10
+      </td>
+    <td> 
+        11.0
+      </td>
+    <td> 
+        6.0
+      </td>
+    <td> 
+        33.0
+      </td>
+  </tr>
+  <tr valign="top">
+    <td> 
+        <b>HashMap</b>
+      </td>
+    <td> 
+        100
+      </td>
+    <td> 
+        8.2
+      </td>
+    <td> 
+        7.7
+      </td>
+    <td> 
+        13.7
+      </td>
+  </tr>
+  <tr valign="top">
+    <td></td>
+    <td> 
+        1000
+      </td>
+    <td> 
+        8.0
+      </td>
+    <td> 
+        7.8
+      </td>
+    <td> 
+        11.9
+      </td>
+  </tr>
+</table>
+即使大小为10，ArrayMap的性能也要比HashMap差——除反复循环时以外。而在使用Map时，反复的作用通常并不重要（get()通常是我们时间花得最多的地方）。TreeMap提供了出色的put()以及反复时间，但get()的性能并不佳。但是，我们为什么仍然需要使用TreeMap呢？这样一来，我们可以不把它作为Map使用，而作为创建顺序列表的一种途径。树的本质在于它总是顺序排列的，不必特别进行排序（它的排序方式马上就要讲到）。一旦填充了一个TreeMap，就可以调用keySet()来获得键的一个Set“景象”。然后用toArray()产生包含了那些键的一个数组。随后，可用static方法Array.binarySearch()快速查找排好序的数组中的内容。当然，也许只有在HashMap的行为不可接受的时候，才需要采用这种做法。因为HashMap的设计宗旨就是进行快速的检索操作。最后，当我们使用Map时，首要的选择应该是HashMap。只有在极少数情况下才需要考虑其他方法。
+此外，在上面那张表里，有另一个性能问题没有反映出来。下述程序用于测试不同类型Map的创建速度：
+
+  <pre class="code">//: MapCreation.java
+// Demonstrates time differences in Map creation
+package c08.newcollections;
+import java.util.*;
+
+public class MapCreation {
+  public static void main(String[] args) {
+    final long REPS = 100000;
+    long t1 = System.currentTimeMillis();
+    System.out.print(&quot;Hashtable&quot;);
+    for(long i = 0; i &lt; REPS; i++)
+      new Hashtable();
+    long t2 = System.currentTimeMillis();
+    System.out.println(&quot;: &quot; + (t2 - t1));
+    t1 = System.currentTimeMillis();
+    System.out.print(&quot;TreeMap&quot;);
+    for(long i = 0; i &lt; REPS; i++)
+      new TreeMap();
+    t2 = System.currentTimeMillis();
+    System.out.println(&quot;: &quot; + (t2 - t1));
+    t1 = System.currentTimeMillis();
+    System.out.print(&quot;HashMap&quot;);
+    for(long i = 0; i &lt; REPS; i++)
+      new HashMap();
+    t2 = System.currentTimeMillis();
+    System.out.println(&quot;: &quot; + (t2 - t1));
+  }
+} ///:~</pre>
+
+在写这个程序期间，TreeMap的创建速度比其他两种类型明显快得多（但你应亲自尝试一下，因为据说新版本可能会改善ArrayMap的性能）。考虑到这方面的原因，同时由于前述TreeMap出色的put()性能，所以如果需要创建大量Map，而且只有在以后才需要涉及大量检索操作，那么最佳的策略就是：创建和填充TreeMap；以后检索量增大的时候，再将重要的TreeMap转换成HashMap——使用HashMap(Map)构建器。同样地，只有在事实证明确实存在性能瓶颈后，才应关心这些方面的问题——先用起来，再根据需要加快速度。
+<div class="rpindex"><a href="67.html"> 下一页</a><a href="65.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

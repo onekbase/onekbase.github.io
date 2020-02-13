@@ -1,0 +1,399 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>ExportToXml类</h1>
+<p><span class="code">将具有Exportable Annotation的对象转换为xml格式文本</span></p>
+<p>ExportToXml类：此类的核心函数是exportObject和exportFields方法，前者输出对象的xml信息，后者输出对象成员变量的信息。由于对象类型和成员类型的多样性，所以采取了以下的逻辑：</p>
+<p> 在exportObject方法中，当对象类型为Collection和Map类型时，则需要递归调用exportObject进行处理；<br />
+  而如果对象类型不是Collection和Map类型的话，将判断对象类是否被Exportable   annotation修饰过：<br />
+  如果没有被修饰，则直接输出&lt;对象类名&gt;对象.toString()&lt;/对象类名&gt;作为xml绑定结果的一部分；<br />
+如果被修饰过，则需要调用exportFields方法对对象的成员变量进行xml绑定。</p>
+<p> 在exportFields方法中，首先取出对象的所有成员，然后获得被Persisitent   annotation修饰的成员。在其后的一句：field.setAccessible(true)是很重要的，因为bean类定义中的成员访问修饰都是private，所以为了避免java虚拟机检查对私有成员的访问权限，加上这一句是必需的。接着后面的语句便是输出&lt;成员名&gt;成员值&lt;/成员名&gt;这样的xml结构。像在exportObject方法中一般，仍然需要判断成员类型是否为Collection和Map类型，如果为上述两种类型之一，则要在exportFields中再次调用exportObject来处理这个成员。<br />
+</p>
+<pre class="code">import java.lang.reflect.Field;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.ArrayList;
+
+
+public class ExportToXml {
+        /**
+         * 返回对象的成员变量的值（字符串类型）
+         * @param field 对象的成员变量
+         * @param fieldTypeClass 对象的类型
+         * @param obj 对象
+         * @return 对象的成员变量的值（字符串类型）
+         */
+        private String getFieldValue(Field field,Class fieldTypeClass,Object obj){
+                String value=null;
+                
+                try{
+                        if (fieldTypeClass==String.class){
+                                value=(String)field.get(obj);
+                        }
+                        else if (fieldTypeClass==int.class){
+                                value=Integer.toString(field.getInt(obj));
+                        }
+                        else if (fieldTypeClass==long.class){
+                                value=Long.toString(field.getLong(obj));
+                        }
+                        else if (fieldTypeClass==short.class){
+                                value=Short.toString(field.getShort(obj));
+                        }
+                        else if (fieldTypeClass==float.class){
+                                value=Float.toString(field.getFloat(obj));
+                        }
+                        else if (fieldTypeClass==double.class){
+                                value=Double.toString(field.getDouble(obj));
+                        }
+                        else if (fieldTypeClass==byte.class){
+                                value=Byte.toString(field.getByte(obj));
+                        }
+                        else if (fieldTypeClass==char.class){
+                                value=Character.toString(field.getChar(obj));
+                        }
+                        else if (fieldTypeClass==boolean.class){
+                                value=Boolean.toString(field.getBoolean(obj));
+                        }
+                }
+                catch(Exception ex){
+                        ex.printStackTrace();
+                        value=null;
+                }
+                return value;
+        }
+        
+        /**
+         * 输出对象的字段，当对象的字段为Collection或者Map类型时，要调用exportObject方法继续处理
+         * @param obj 被处理的对象
+         * @throws Exception
+         */
+        public void exportFields(Object obj) throws Exception{
+                Exportable exportable=obj.getClass().getAnnotation(Exportable.class);        
+                if (exportable!=null){
+                        if (exportable.value().length()>0){
+//                                System.out.println("Class annotation Name:"+exportable.value());
+                        }
+                        else{
+//                                System.out.println("Class annotation Name:"+exportable.name());
+                        }
+                }
+                else{
+//                        System.out.println(obj.getClass()+"类不是使用Exportable标注过的");
+                }
+                
+                //取出对象的成员变量
+                Field[] fields=obj.getClass().getDeclaredFields();
+                
+                for(Field field:fields){
+                        //获得成员变量的标注
+                        Persistent fieldAnnotation=field.getAnnotation(Persistent.class);
+                        if (fieldAnnotation==null){
+                                continue;
+                        }
+                        //重要:避免java虚拟机检查对私有成员的访问权限
+                        field.setAccessible(true);
+                        Class typeClass=field.getType();
+                        String name=field.getName();
+                        String value=getFieldValue(field,typeClass,obj);
+                        
+                        //如果获得成员变量的值，则输出
+                        if (value!=null){
+                                System.out.println(getIndent()+"&lt;"+name+"&gt;\n"
+                                                +getIndent()+"\t"+value+"\n"+getIndent()+"&lt;/"+name+"&gt;");
+                        }
+                        //处理成员变量中类型为Collection或Map
+                        else if ((field.get(obj) instanceof Collection)||
+                                        (field.get(obj) instanceof Map)){
+                                exportObject(field.get(obj));
+                        }
+                        else{
+                                exportObject(field.get(obj));
+                        }
+                        
+                }
+        }
+        
+        //缩进深度
+        int levelDepth=0;
+        //防止循环引用的检查者，循环引用现象如：a包含b，而b又包含a
+        Collection&lt;Object&gt; cyclicChecker=new ArrayList&lt;Object>();
+        
+        /**
+         * 返回缩进字符串
+         * @return
+         */
+        private String getIndent(){
+                String s="";
+                for(int i=0;i&lt;levelDepth;i++){
+                        s+="\t";
+                }
+                return s;
+        }
+        /**
+         * 输出对象，如果对象类型为Collection和Map类型，则需要递归调用exportObject进行处理
+         * @param obj
+         * @throws Exception
+         */
+        public void exportObject(Object obj) throws Exception{
+                Exportable exportable=null;
+                String elementName=null;
+                
+                //循环引用现象处理
+                if (cyclicChecker.contains(obj)){
+                        return;
+                }
+                
+                cyclicChecker.add(obj);
+                
+                //首先处理Collection和Map类型
+                if (obj instanceof Collection){
+                        for(Iterator i=((Collection)obj).iterator();i.hasNext();){
+                                exportObject(i.next());
+                        }
+                }
+                else if (obj instanceof Map){
+                        for(Iterator i=((Map)obj).keySet().iterator();i.hasNext();){
+                                exportObject(i.next());
+                        }
+                }
+                else{
+
+                        exportable=obj.getClass().getAnnotation(Exportable.class);
+                        //如果obj已经被Exportable Annotation修饰过了（注意annotation是具有继承性的），
+                        //则使用其name作为输出xml的元素name
+                        if (exportable!=null){
+                                if (exportable.value().length()>0){
+                                        elementName=exportable.value();
+                                }
+                                else{
+                                        elementName=exportable.name();
+                                }
+                        }
+                        //未被修饰或者Exportable Annotation的值为空字符串，
+                        //则使用类名作为输出xml的元素name
+                        if (exportable==null||elementName.length()==0){
+                                elementName=obj.getClass().getSimpleName();
+                        }
+                        //输出xml元素头
+                        System.out.println(getIndent()+"&lt;"+elementName+"&gt;");
+                        levelDepth++;
+                        //如果没有被修饰，则直接输出其toString()作为元素值
+                        if (exportable==null){
+                                System.out.println(getIndent()+obj.toString());
+                        }
+                        //否则将对象的成员变量导出为xml
+                        else{
+                                exportFields(obj);
+                        }
+                        levelDepth--;
+                        //输出xml元素结尾
+                        System.out.println(getIndent()+"&lt;/"+elementName+"&gt;");
+                        
+                }
+                cyclicChecker.remove(obj);
+        }
+        
+        public static void main(String[] argv){
+                try{
+                        AddressForTest ad=new AddressForTest("China","Beijing",
+                                        "Beijing","winnerStreet","10");
+                        
+                        ExportToXml test=new ExportToXml();
+                        
+                        ArrayList&lt;String> telephoneList=new ArrayList&lt;String&gt;();
+                        telephoneList.add("66608888");
+                        telephoneList.add("66608889");
+                        
+                        ArrayList&lt;AddressForTest> adList=new ArrayList&lt;AddressForTest&gt;();
+                        adList.add(ad);
+                        
+                        AddressListForTest adl=new AddressListForTest("coolBoy",
+                                        18,telephoneList,adList,"some words");
+                        
+                        test.exportObject(adl);
+                }
+                catch(Exception ex){
+                        ex.printStackTrace();
+                }
+        }
+}
+</pre>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,308 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="82.html"> 上一页</a><a href="84.html"> 下一页</a></div>
+<h2>10.5 IO流的典型应用</h2>
+<p>尽管库内存在大量IO流类，可通过多种不同的方式组合到一起，但实际上只有几种方式才会经常用到。然而，必须小心在意才能得到正确的组合。下面这个相当长的例子展示了典型IO配置的创建与使用，可在写自己的代码时将其作为一个参考使用。注意每个配置都以一个注释形式的编号起头，并提供了适当的解释信息。</p>
+
+  <pre class="code">//: IOStreamDemo.java
+// Typical IO Stream Configurations
+import java.io.*;
+import com.bruceeckel.tools.*;
+
+public class IOStreamDemo {
+  public static void main(String[] args) {
+    try {
+      // 1. Buffered input file
+      DataInputStream in =
+        new DataInputStream(
+          new BufferedInputStream(
+            new FileInputStream(args[0])));
+      String s, s2 = new String();
+      while((s = in.readLine())!= null)
+        s2 += s + &quot;\n&quot;;
+      in.close();
+
+      // 2. Input from memory
+      StringBufferInputStream in2 =
+          new StringBufferInputStream(s2);
+      int c;
+      while((c = in2.read()) != -1)
+        System.out.print((char)c);
+
+      // 3. Formatted memory input
+      try {
+        DataInputStream in3 =
+          new DataInputStream(
+            new StringBufferInputStream(s2));
+        while(true)
+          System.out.print((char)in3.readByte());
+      } catch(EOFException e) {
+        System.out.println(
+          &quot;End of stream encountered&quot;);
+      }
+
+      // 4. Line numbering &amp; file output
+      try {
+        LineNumberInputStream li =
+          new LineNumberInputStream(
+            new StringBufferInputStream(s2));
+        DataInputStream in4 =
+          new DataInputStream(li);
+        PrintStream out1 =
+          new PrintStream(
+            new BufferedOutputStream(
+              new FileOutputStream(
+                &quot;IODemo.out&quot;)));
+        while((s = in4.readLine()) != null )
+          out1.println(
+            &quot;Line &quot; + li.getLineNumber() + s);
+        out1.close(); // finalize() not reliable!
+      } catch(EOFException e) {
+        System.out.println(
+          &quot;End of stream encountered&quot;);
+      }
+
+      // 5. Storing &amp; recovering data
+      try {
+        DataOutputStream out2 =
+          new DataOutputStream(
+            new BufferedOutputStream(
+              new FileOutputStream(&quot;Data.txt&quot;)));
+        out2.writeBytes(
+          &quot;Here's the value of pi: \n&quot;);
+        out2.writeDouble(3.14159);
+        out2.close();
+        DataInputStream in5 =
+          new DataInputStream(
+            new BufferedInputStream(
+              new FileInputStream(&quot;Data.txt&quot;)));
+        System.out.println(in5.readLine());
+        System.out.println(in5.readDouble());
+      } catch(EOFException e) {
+        System.out.println(
+          &quot;End of stream encountered&quot;);
+      }
+
+      // 6. Reading/writing random access files
+      RandomAccessFile rf =
+        new RandomAccessFile(&quot;rtest.dat&quot;, &quot;rw&quot;);
+      for(int i = 0; i &lt; 10; i++)
+        rf.writeDouble(i*1.414);
+      rf.close();
+
+      rf =
+        new RandomAccessFile(&quot;rtest.dat&quot;, &quot;rw&quot;);
+      rf.seek(5*8);
+      rf.writeDouble(47.0001);
+      rf.close();
+
+      rf =
+        new RandomAccessFile(&quot;rtest.dat&quot;, &quot;r&quot;);
+      for(int i = 0; i &lt; 10; i++)
+        System.out.println(
+          &quot;Value &quot; + i + &quot;: &quot; +
+          rf.readDouble());
+      rf.close();
+
+      // 7. File input shorthand
+      InFile in6 = new InFile(args[0]);
+      String s3 = new String();
+      System.out.println(
+        &quot;First line in file: &quot; +
+        in6.readLine());
+        in6.close();
+
+      // 8. Formatted file output shorthand
+      PrintFile out3 = new PrintFile(&quot;Data2.txt&quot;);
+      out3.print(&quot;Test of PrintFile&quot;);
+      out3.close();
+
+      // 9. Data file output shorthand
+      OutFile out4 = new OutFile(&quot;Data3.txt&quot;);
+      out4.writeBytes(&quot;Test of outDataFile\n\r&quot;);
+      out4.writeChars(&quot;Test of outDataFile\n\r&quot;);
+      out4.close();
+
+    } catch(FileNotFoundException e) {
+      System.out.println(
+        &quot;File Not Found:&quot; + args[0]);
+    } catch(IOException e) {
+      System.out.println(&quot;IO Exception&quot;);
+    }
+  }
+} ///:~</pre>
+
+<div class="rpindex"><a href="84.html"> 下一页</a><a href="82.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

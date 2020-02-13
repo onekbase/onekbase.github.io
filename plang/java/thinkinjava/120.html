@@ -1,0 +1,576 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="119.html"> 上一页</a><a href="121.html"> 下一页</a></div>
+<h3>13.16.2 事件和接收者类型</h3>
+所有AWT组件都被改变成包含addXXXListener()和removeXXXListener()方法，因此特定的接收器类型可从每个组件中增加和删除。我们会注意到“XXX”在每个场合中同样表示自变量的方法，例如，addFooListener(FooListener
+fl)。下面这张表格总结了通过提供addXXXListener()和removeXXXListener()方法，从而支持那些特定事件的相关事件、接收器、方法以及组件。
+<p>事件，接收器接口及添加和删除方法 支持这个事件的组件</p>
+<table>
+  <tr>
+    <th> Event, listener interface and add- 
+         and remove-methods</th>
+    <th> Components supporting this 
+         event</th>
+  </tr>
+  <tr>
+    <td> 
+        ActionEvent
+       ActionListener
+       addActionListener(&#160;)
+       removeActionListener(&#160;)</td>
+    <td> 
+        Button, List, TextField, MenuItem, and its derivatives including CheckboxMenuItem, Menu, and PopupMenu</td>
+  </tr>
+  <tr>
+    <td> 
+        AdjustmentEvent
+       AdjustmentListener
+       addAdjustmentListener(&#160;)
+       removeAdjustmentListener(&#160;)</td>
+    <td> 
+        Scrollbar
+      Anything
+       you create that implements the Adjustable interface</td>
+  </tr>
+  <tr>
+    <td> 
+        ComponentEvent
+       ComponentListener
+       addComponentListener(&#160;)
+       removeComponentListener(&#160;)</td>
+    <td>Component and its 
+         derivatives, including Button, Canvas, Checkbox, Choice, Container, Panel, Applet, ScrollPane, Window, Dialog, FileDialog, Frame, Label, List, Scrollbar, TextArea, and TextField</td>
+  </tr>
+  <tr>
+    <td> 
+        ContainerEvent
+       ContainerListener
+       addContainerListener(&#160;)
+       removeContainerListener(&#160;)</td>
+    <td>Container and its 
+         derivatives, including Panel, Applet, ScrollPane, Window, Dialog, FileDialog, and Frame</td>
+  </tr>
+  <tr>
+    <td> 
+        FocusEvent
+       FocusListener
+       addFocusListener(&#160;)
+       removeFocusListener(&#160;)</td>
+    <td>Component and its 
+         derivatives, including Button, Canvas, Checkbox, Choice, Container, Panel, Applet, ScrollPane, Window, Dialog, FileDialog, Frame Label, List, Scrollbar, TextArea, and TextField</td>
+  </tr>
+  <tr>
+    <td> 
+        KeyEvent
+       KeyListener
+       addKeyListener(&#160;)
+       removeKeyListener(&#160;)</td>
+    <td>Component and its 
+         derivatives, including Button, Canvas, Checkbox, Choice, Container, Panel, Applet, ScrollPane, Window, Dialog, FileDialog, Frame, Label, List, Scrollbar, TextArea, and TextField</td>
+  </tr>
+  <tr>
+    <td>MouseEvent (for both clicks
+      and 
+         motion)
+       MouseListener
+       addMouseListener(&#160;)
+       removeMouseListener(&#160;)</td>
+    <td>Component and its 
+         derivatives, including Button, Canvas, Checkbox, Choice, Container, Panel, Applet, ScrollPane, Window, Dialog, FileDialog, Frame, Label, List, Scrollbar, TextArea, and TextField</td>
+  </tr>
+  <tr>
+    <td>MouseEvent[55] (for both clicks and 
+         motion)
+       MouseMotionListener
+       addMouseMotionListener(&#160;)
+       removeMouseMotionListener(&#160;)</td>
+    <td>Component and its 
+         derivatives, including Button, Canvas, Checkbox, Choice, Container, Panel, Applet, ScrollPane, Window, Dialog, FileDialog, Frame, Label, List, Scrollbar, TextArea, and TextField</td>
+  </tr>
+  <tr>
+    <td> 
+        WindowEvent
+       WindowListener
+       addWindowListener(&#160;)
+       removeWindowListener(&#160;)</td>
+    <td>Window and its derivatives, 
+         including Dialog, FileDialog, and Frame</td>
+  </tr>
+  <tr>
+    <td> 
+        ItemEvent
+       ItemListener
+       addItemListener(&#160;)
+       removeItemListener(&#160;)</td>
+    <td>Checkbox, CheckboxMenuItem, Choice, List, and anything that 
+         implements the ItemSelectable interface</td>
+  </tr>
+  <tr>
+    <td> 
+        TextEvent
+       TextListener
+       addTextListener(&#160;)
+       removeTextListener(&#160;)</td>
+    <td> 
+        Anything derived from TextComponent, including TextArea and TextField</td>
+  </tr>
+</table>
+<p>⑤：即使表面上如此，但实际上并没有MouseMotiionEvent（鼠标运动事件）。单击和运动都合成到MouseEvent里，所以MouseEvent在表格中的这种另类行为并非一个错误。</p>
+<p>可以看到，每种类型的组件只为特定类型的事件提供了支持。这有助于我们发现由每种组件支持的事件，如下表所示：</p>
+<p>组件类型 支持的事件</p>
+<table>
+  <tr>
+    <th>  
+        Component type</th>
+    <th> Events supported by this 
+         component</th>
+  </tr>
+  <tr>
+    <td> 
+        Adjustable</td>
+    <td> 
+        AdjustmentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Applet</td>
+    <td>ContainerEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Button</td>
+    <td>ActionEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Canvas</td>
+    <td>FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Checkbox</td>
+    <td>ItemEvent, FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        CheckboxMenuItem</td>
+    <td>ActionEvent, 
+         ItemEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Choice</td>
+    <td>ItemEvent, FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Component</td>
+    <td>FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Container</td>
+    <td>ContainerEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Dialog</td>
+    <td>ContainerEvent, WindowEvent, 
+         FocusEvent, KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        FileDialog</td>
+    <td>ContainerEvent, WindowEvent, 
+         FocusEvent, KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Frame</td>
+    <td>ContainerEvent, WindowEvent, 
+         FocusEvent, KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Label</td>
+    <td>FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        List</td>
+    <td>ActionEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ItemEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Menu</td>
+    <td> 
+        ActionEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        MenuItem</td>
+    <td> 
+        ActionEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Panel</td>
+    <td>ContainerEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        PopupMenu</td>
+    <td> 
+        ActionEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Scrollbar</td>
+    <td>AdjustmentEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        ScrollPane</td>
+    <td>ContainerEvent, FocusEvent, 
+         KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        TextArea</td>
+    <td>TextEvent, FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        TextComponent</td>
+    <td>TextEvent, FocusEvent, KeyEvent, 
+         MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        TextField</td>
+    <td>ActionEvent, TextEvent, 
+         FocusEvent, KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+  <tr>
+    <td> 
+        Window</td>
+    <td>ContainerEvent, WindowEvent, 
+         FocusEvent, KeyEvent, MouseEvent, ComponentEvent</td>
+  </tr>
+</table>
+<p>一旦知道了一个特定的组件支持哪些事件，就不必再去寻找任何东西来响应那个事件。只需简单地：</p>
+<ul>
+  <li>(1) 取得事件类的名字，并删掉其中的“Event”字样。在剩下的部分加入“Listener”字样。这就是在我们的内部类里需要实现的接收器接口。</li>
+  <li>(2)
+    实现上面的接口，针对想要捕获的事件编写方法代码。例如，假设我们想捕获鼠标的移动，所以需要为MouseMotiionListener接口的mouseMoved()方法编写代（当然还必须实现其他一些方法，但这里有捷径可循，马上就会讲到这个问题）。 </li>
+  <li>(3) 为步骤2中的接收器类创建一个对象。随自己的组件和方法完成对它的注册，方法是在接收器的名字里加入一个前缀“add”。比如addMouseMotionListener()。</li>
+</ul>
+<p>下表是对接收器接口的一个总结：</p>
+<p>接收器接口 接口中的方法</p>
+<table>
+  <tr>
+    <th> Listener 
+         interface
+       w/ adapter</th>
+    <th> Methods in 
+         interface</th>
+  </tr>
+  <tr>
+    <td> 
+        ActionListener</td>
+    <td> 
+        actionPerformed(ActionEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        AdjustmentListener</td>
+    <td> 
+        adjustmentValueChanged(
+       AdjustmentEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        ComponentListener
+       ComponentAdapter</td>
+    <td> 
+        componentHidden(ComponentEvent)
+       componentShown(ComponentEvent)
+       componentMoved(ComponentEvent)
+       componentResized(ComponentEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        ContainerListener
+       ContainerAdapter</td>
+    <td> 
+        componentAdded(ContainerEvent)
+       componentRemoved(ContainerEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        FocusListener
+       FocusAdapter</td>
+    <td> 
+        focusGained(FocusEvent)
+       focusLost(FocusEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        KeyListener
+       KeyAdapter</td>
+    <td> 
+        keyPressed(KeyEvent)
+       keyReleased(KeyEvent)
+       keyTyped(KeyEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        MouseListener
+       MouseAdapter</td>
+    <td> 
+        mouseClicked(MouseEvent)
+       mouseEntered(MouseEvent)
+       mouseExited(MouseEvent)
+       mousePressed(MouseEvent)
+       mouseReleased(MouseEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        MouseMotionListener
+       MouseMotionAdapter</td>
+    <td> 
+        mouseDragged(MouseEvent)
+       mouseMoved(MouseEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        WindowListener
+       WindowAdapter</td>
+    <td> 
+        windowOpened(WindowEvent)
+       windowClosing(WindowEvent) 
+       windowClosed(WindowEvent) 
+       windowActivated(WindowEvent) 
+       windowDeactivated(WindowEvent) 
+       windowIconified(WindowEvent) 
+       windowDeiconified(WindowEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        ItemListener</td>
+    <td> 
+        itemStateChanged(ItemEvent)</td>
+  </tr>
+  <tr>
+    <td> 
+        TextListener</td>
+    <td> 
+        textValueChanged(TextEvent)</td>
+  </tr>
+</table>
+<h4>1. 用接收器适配器简化操作</h4>
+<p>在上面的表格中，我们可以注意到一些接收器接口只有唯一的一个方法。它们的执行是无轻重的，因为我们仅当需要书写特殊方法时才会执行它们。然而，接收器接口拥有多个方法，使用起来却不太友好。例如，我们必须一直运行某些事物，当我们创建一个应用程序时对帧提供一个WindowListener，以便当我们得到windowClosing()事件时可以调用System.exit(0)以退出应用程序。但因为WindowListener是一个接口，我们必须执行其它所有的方法即使它们不运行任何事件。这真令人讨厌。</p>
+<p>为了解决这个问题，每个拥有超过一个方法的接收器接口都可拥有适配器，它们的名我们可以在上面的表格中看到。每个适配器为每个接口方法提供默认的方法。（WindowAdapter的默认方法不是windowClosing()，而是System.exit(0)方法。）此外我们所要做的就是从适配器处继承并过载唯一的需要变更的方法。例如，典型的WindowListener我们会像下面这样的使用。</p>
+
+  <pre class="code">class MyWindowListener extends WindowAdapter {
+  public void windowClosing(WindowEvent e) {
+    System.exit(0);
+  }
+}</pre>
+
+<p>适配器的全部宗旨就是使接收器的创建变得更加简便。</p>
+<p>但所谓的“适配器”也有一个缺点，而且较难发觉。假定我们象上面那样写一个WindowAdapter：</p>
+
+  <pre class="code">class MyWindowListener extends WindowAdapter {
+  public void WindowClosing(WindowEvent e) {
+    System.exit(0);
+  }
+}</pre>
+
+<p>表面上一切正常，但实际没有任何效果。每个事件的编译和运行都很正常——只是关闭窗口不会退出程序。您注意到问题在哪里吗？在方法的名字里：是WindowClosing()，而不是windowClosing()。大小写的一个简单失误就会造成一个崭新的方法。但是，这并非我们关闭窗口时调用的方法，所以当然没有任何效果。</p>
+<div class="rpindex"><a href="121.html"> 下一页</a><a href="119.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

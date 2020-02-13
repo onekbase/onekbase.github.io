@@ -1,0 +1,581 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>UtilDB用于Android的sqlite数据库</h1>
+<pre class="code">import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import com.gzi.helper.Utils;
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+/**
+ * 要维护的方法：
+ * getValueByField(Cursor cur, Field field)
+ * 根据field的类型从Cursor中取数据生成对应对象
+ * 当有新类型需求时要在分支中加入新的处理分支
+ * putValueToContentValues(String cn, Object value,	Field f, ContentValues values) 
+ * 将对象转换成ContentValues接收的类型，也要处理
+ */
+public class UtilDB extends BeanUtils{
+	/**
+	 * 根据Cursor生成对应的Bean并加到指定列表中
+	 * 
+	 * @param cur Cursor
+	 * 
+	 * @param bc 对应Bean的class
+	 * 
+	 * @param bl 一个存在的与存储生成bean类型对象的列表
+	 */
+	public static &lt;T&gt; void addBeanToList(Cursor cur, Class&lt;T&gt; bc,
+			ArrayList&lt;T&gt; bl) throws BeanException {
+		if (bl == null)
+			return;// 列表不存在则返回
+		if (cur != null && cur.getCount() &gt; 0) {
+			T bean = null;
+			Object value = null;
+			Field[] fs = bc.getDeclaredFields();
+			ColumnHolder ch = null;
+			// 生成Bean的列表
+			while (cur.moveToNext()) {
+				bean = newBeanByClass(bc);
+				// 给bean实例赋值
+				for (Field f : fs) {
+					ch = new ColumnHolder(f);
+					// cn = ch.columnName;
+					if (!ch.isColumn)
+						continue;// 非数据库中的列忽略
+					value = getValueByField(cur, f,ch);
+					setFieldValue(f, value, bean);
+				}
+				// 加入到列表中
+				bl.add(bean);
+			}
+		}
+	}
+	/**
+	 * 根据Cursor生成对应的Bean的列表
+	 * 
+	 * @param cur Cursor
+	 * 
+	 * @param bc 对应Bean的class
+	 * 
+	 * @return 生成的Bean的列表,如果cur没记录返回空list
+	 */
+	public static &lt;T&gt; ArrayList&lt;T&gt; getBeans(Cursor cur, Class&lt;T&gt; bc)
+			throws BeanException {
+		ArrayList&lt;T&gt; bl = new ArrayList&lt;T&gt;();
+		if (cur != null && cur.getCount() &gt; 0) {
+			addBeanToList(cur, bc, bl);
+		}
+		return bl;
+	}
+	/**
+	 * 根据field的类型从Cursor中生成对应的对象
+	 * 
+	 * @param cur 游标对象
+	 * 
+	 * @param field 属性域
+	 * 
+	 * @return Object 可能为null
+	 */
+	private static Object getValueByField(Cursor cur, Field field,ColumnHolder ch)
+			throws BeanException {
+		String columnName = ch.columnName;
+		int ci = cur.getColumnIndex(columnName);
+		if (ci == -1)
+			return null;// 如果不存在此列则返回null
+		Class fieldClass = field.getType();
+		// 根据属性类型从Cursor中获取值
+		if (fieldClass == String.class)
+			return cur.getString(ci);
+		else if (fieldClass == int.class || fieldClass == Integer.class)
+			return cur.getInt(ci);
+		else if (fieldClass == Date.class) {
+			try {
+				return Utils.parseChinaDate(cur.getString(ci),
+						"yyyy-MM-dd HH:mm:ss");
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				throw new BeanException("Date类型转换错误", e);
+			}
+		}
+		// else if (fieldClass == ImageView.class) {
+		// 处理图片
+		// return cur.getBlob(ci);
+		// }
+		else if (fieldClass == Long.class)
+			return cur.getLong(ci);
+		else if (fieldClass == Double.class)
+			return cur.getDouble(ci);
+		else if (fieldClass == Float.class)
+			return cur.getFloat(ci);
+		else if (fieldClass == Short.class)
+			return cur.getShort(ci);
+		return null;
+	}
+	private static class ColumnHolder {
+		public String columnName;
+		public boolean canNull = true;
+		public boolean isKey = false;
+		public boolean isColumn = true;
+		public ColumnHolder(Field field) {
+			// 根据注释获取属性对应的列名
+			Column column = field.getAnnotation(Column.class);
+			if (column != null) {
+				if (!column.value().equals(Column.defaultColumnName))
+					columnName = column.value();
+				else
+					columnName = field.getName().toLowerCase();
+				
+				canNull = column.canNull();
+				isKey = column.isKey();
+				isColumn = column.isColumn();
+				
+			} else {
+				// 没有注释则根据属性名小写化后的名字作列名
+				columnName = field.getName().toLowerCase();
+				
+			}
+		}
+	}
+	private static class TableHolder {
+		public String tableName;
+		public TableHolder(Class bc) {
+			Table a = (Table) bc.getAnnotation(Table.class);
+			if (a != null)
+				tableName = a.value();
+			else
+				tableName = bc.getName().toLowerCase();
+		}
+	}
+	private static void putValueToContentValues(String cn, Object value,
+			Field f, ContentValues values) throws BeanException {
+		Class fieldClass = f.getType();
+		// 根据属性类型为values赋值
+		if (fieldClass == String.class)
+			values.put(cn, (String) value);
+		else if (fieldClass == int.class || fieldClass == Integer.class)
+			values.put(cn, (Integer) value);
+		else if (fieldClass == Date.class) {
+			try {
+				values.put(cn, Utils.formatGMTDate((Date) value,
+						"yyyy-MM-dd HH:mm:ss"));
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				throw new BeanException("Date类型转换错误", e);
+			}
+		}
+		// else if (fieldClass == ImageView.class) {
+		// 处理图片
+		// values.put(cn, (byte[])value);
+		// }
+		else if (fieldClass == Long.class)
+			values.put(cn, (Long) value);
+		else if (fieldClass == Double.class)
+			values.put(cn, (Double) value);
+		else if (fieldClass == Float.class)
+			values.put(cn, (Float) value);
+		else if (fieldClass == Short.class)
+			values.put(cn, (Short) value);
+	}
+/**
+ * 插入bean列表到数据库中
+ * @param beans
+ * @param db
+ * @return
+ * @throws BeanException
+ */
+	public static &lt;T&gt; long InsertBeanList(List&lt;T&gt; beans, SQLiteDatabase db)
+			throws BeanException {
+		db.beginTransaction();
+		try {
+			for (T bean : beans) {
+				InsertBean(bean, db);
+			}
+			db.setTransactionSuccessful();
+		} catch (BeanException e) {
+			// TODO Auto-generated catch block
+			db.endTransaction();
+			throw e;
+		} finally {
+			db.endTransaction();
+		}
+		return beans.size();
+	}
+	/**
+	 * 将bean插入到数据库中，bean中有canNull=false注释的属性一定不能为空，否则抛出异常
+	 * 
+	 * @param bean
+	 * 
+	 * @param db
+	 * 
+	 * @return  插入行的id
+	 */
+	public static &lt;T&gt; long InsertBean(T bean, SQLiteDatabase db)
+			throws BeanException {
+		Field[] fs = bean.getClass().getDeclaredFields();
+		ContentValues values = new ContentValues();
+		String cn = null;
+		Object value = null;
+		ColumnHolder ch = null;
+		for (Field f : fs) {
+			ch = new ColumnHolder(f);
+			cn = ch.columnName;
+			if (!ch.isColumn)
+				continue;// 非数据库中的列忽略
+			value = getFieldValue(bean, f);
+			// 当不能为空的属性为空时，抛出异常
+			if (value == null && !ch.canNull)
+				throw new BeanException("InsertBean属性不能为空：canNull=false注释,属性"
+						+ f.getName(), null);
+			if (value == null)
+				continue;
+			putValueToContentValues(cn, value, f, values);
+		}
+		long id = -1;
+		try {
+			id = db.insertOrThrow(new TableHolder(bean.getClass()).tableName,
+					null, values);
+		} catch (SQLException e) {
+			throw new BeanException("InsertBean插入记录不成功:" + e.getMessage(), e);
+		}
+		return id;
+	}
+	/**
+	 * 删除数据库中的记录，条件由传入的bean含有key注释的属性生成, 支持多列组成的主键, bean的其它属性不做处理，只处理含有key注释的属性
+	 * 
+	 * @param bean 含有主键的bean
+	 * 
+	 * @param db 可写数据库
+	 * 
+	 * @return 删除记录数，这里一定为1，因为是主键定的条件
+	 */
+	public static &lt;T&gt; int deleteBeanByKey(T bean, SQLiteDatabase db)
+			throws BeanException {
+		Field[] fs = bean.getClass().getDeclaredFields();
+		String cn = null;
+		Object value = null;
+		ColumnHolder ch = null;
+		String where = null;
+		for (Field f : fs) {
+			ch = new ColumnHolder(f);
+			if (!ch.isKey)
+				continue;// 不是key主键不做处理
+			cn = ch.columnName;
+			value = getFieldValue(bean, f);
+			// 当值为空，抛出异常，因為到這一定是主鍵類型，不能為空
+			if (value == null)
+				throw new BeanException("deleteBeanByKey属性不能为空：isKey=true注释属性"
+						+ f.getName(), null);
+			where = getWhere(where, cn, value);
+		}
+		if (where == null)
+			throw new BeanException("deleteBeanByKey删除记录：条件设置不正确where为空", null);
+		int count = -1;
+		count = db.delete(new TableHolder(bean.getClass()).tableName, where,
+				null);
+		return count;
+	}
+	/**
+	 * 对where追加项，格式为ColumnName=Value
+	 * 
+	 * @param where 要追加的字符串
+	 * 
+	 * @param cn 列名
+	 * 
+	 * @param value 要追加的值
+	 */
+	private static String getWhere(String where, String cn, Object value) {
+		if (where == null)
+			where = cn + "='" + String.valueOf(value) + "'";
+		else
+			where += " and " + cn + "='" + String.valueOf(value) + "'";
+		return where;
+	}
+	/**
+	 * 更新数据库中的记录，条件由传入的bean含有key注释的属性生成, 支持多列组成的主键
+	 * 
+	 * 除了key注释的属性的其它属性，只要不为null就会被更新。
+	 * 
+	 * key注释的属性不可更新，因为那样就相当于新建了一条记录了。
+	 * 
+	 * @param bean 含有主键的bean
+	 * 
+	 * @param db 可写数据库
+	 * 
+	 * @return 更新记录数，这里一定为1，因为是主键定的条件
+	 */
+	public static &lt;T&gt; int updateBeanByKey(T bean, SQLiteDatabase db)
+			throws BeanException {
+		Field[] fs = bean.getClass().getDeclaredFields();
+		ContentValues values = new ContentValues();
+		String cn = null;
+		Object value = null;
+		ColumnHolder ch = null;
+		String where = null;
+		for (Field f : fs) {
+			ch = new ColumnHolder(f);
+			cn = ch.columnName;
+			if (!ch.isColumn)
+				continue;// 非数据库中的列忽略
+			value = getFieldValue(bean, f);
+			if (ch.isKey) {
+				// 当值为空，抛出异常，因為到這一定是主鍵類型，不能為空
+				if (value == null)
+					throw new BeanException(
+							"deleteBeanByKey属性不能为空：isKey=true注释属性"
+									+ f.getName(), null);
+				where = getWhere(where, cn, value);
+			} else {
+				if (value == null)
+					continue;
+				putValueToContentValues(cn, value, f, values);
+			}
+		}
+		if (where == null)
+			throw new BeanException("updateBeanByKey更新记录：条件设置不正确where为空", null);
+		if (values.size() &lt;= 0)
+			throw new BeanException("updateBeanByKey更新记录：没有要更新的值", null);
+		int count = -1;
+		count = db.update(new TableHolder(bean.getClass()).tableName, values,
+				where, null);
+		return count;
+	}
+	/**
+	 * 更新数据库中的记录，条件由传入的bean含有key注释的属性生成, 支持多列组成的主键
+	 * 
+	 * 除了key注释的属性的其它属性，只要不为null就会被更新。
+	 * 
+	 * key注释的属性不可更新，因为那样就相当于新建了一条记录了。
+	 * 
+	 * @param bean 含有主键的bean列表
+	 * 
+	 * @param db 可写数据库
+	 * 
+	 * @return 更新记录数，这里一定为1，因为是主键定的条件
+	 */
+	public static &lt;T&gt; int updateBeanListByKey(ArrayList&lt;T&gt; beans,
+			SQLiteDatabase db) throws BeanException {
+		db.beginTransaction();
+		try {
+			for (T bean : beans) {
+				updateBeanByKey(bean, db);
+			}
+			db.setTransactionSuccessful();
+		} catch (BeanException e) {
+			// TODO Auto-generated catch block
+			db.endTransaction();
+			throw e;
+		} finally {
+			db.endTransaction();
+		}
+		return beans.size();
+	}
+	/**
+	 * 删除数据库中的记录，条件由传入的bean含有key注释的属性生成, 支持多列组成的主键, bean的其它属性不做处理，只处理含有key注释的属性
+	 * 
+	 * @param beans 含有主键的bean的列表
+	 * 
+	 * @param db 可写数据库
+	 * 
+	 * @return 删除记录数
+	 */
+	public static &lt;T&gt; int deleteBeanListByKey(ArrayList&lt;T&gt; beans,
+			SQLiteDatabase db) throws BeanException {
+		db.beginTransaction();
+		try {
+			for (T bean : beans) {
+				deleteBeanByKey(bean, db);
+			}
+			db.setTransactionSuccessful();
+		} catch (BeanException e) {
+			// TODO Auto-generated catch block
+			db.endTransaction();
+			throw e;
+		} finally {
+			db.endTransaction();
+		}
+		return beans.size();
+	}
+	
+}</pre>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

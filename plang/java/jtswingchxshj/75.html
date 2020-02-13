@@ -1,0 +1,505 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="74.html"> 上一页</a><a href="76.html"> 下一页</a></div>
+  <h2>12-7:使用JPopupMenu组件.</h2>
+  <h5> JPopupMenu的类层次结构图: </h5>
+  <pre>   java.lang.Object
+    --java.awt.Component
+     --java.awt.Container
+      --javax.swing.JComponent
+       --javax.swing.JPopupMenu</pre>
+  <p>JPopupMenu是一种特别形式的Menu,其性质与Menu几乎完全相同,但是PopupMenu并不固定在窗口的任何一个位置,而是由鼠标指
+    针和系统判断决定PopupMenu要出现在哪里.相信大家在使用许多软件时都有用过Popupmenu的功能,例如在使用Word文书编辑器软件
+    时,当我们在编辑区域的任一处按下鼠标右键,就会跳出一个PopupMenu菜单. </p>
+  <p>JPopupMenu构造函数: </p>
+  <ul>
+    <li>JPopupMenu():建立一个新的JPopupMenu; </li>
+    <li>JPopupMenu(String label):建立一个指定标题的JPopupMenu. </li>
+  </ul>
+  <h2><a name="a" id="a"></a>12-7-1:构造JPopupMenu组件:</h2>
+  <p> 由一表中我们可以知道JPopupMenu的构造方法并不复杂,两种构造方法的差异只在于是否赋予JPopupMenu一个标题文字.我们马上来
+    看下面这个范例,了解如何应用JPopupMenu. </p>
+  <pre class="code">import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.event.*;
+import javax.swing.border.*;
+import java.util.*;
+import com.incors.plaf.alloy.*;
+import com.incors.plaf.alloy.themes.glass.*;
+
+public class JPopupMenu1 extends JFrame {
+
+	JTextArea theArea = null;
+	static final String ComboStr[] = { "Times New Roman", "Dialog", "宋体", "黑体",
+			"楷体" };
+	JPopupMenu Popup = null;// 声明一个全局(Global)并设置初始值为null的JPopupMenu组件.
+
+	public JPopupMenu1() {
+
+		super("JPopupMenu1");
+		theArea = new JTextArea();
+		theArea.setEditable(false);
+		this.getContentPane()
+				.add(new JScrollPane(theArea), BorderLayout.CENTER);
+		JMenuBar MBar = new JMenuBar();
+		MBar.setOpaque(true);
+		JMenu mfile = buildFileMenu();
+		JToolBar theBar = buildToolBar();
+		this.getContentPane().add(theBar, BorderLayout.NORTH);
+		PopupPanel pp = new PopupPanel();// new一个PopupPanel组件来放置JPopupMenu.
+		this.getContentPane().add(pp, BorderLayout.SOUTH); // 将PopupPanel组件放置到窗口中.
+
+		MBar.add(mfile);
+		setJMenuBar(MBar);
+	}// end of JPopupMenu1()
+
+	/*****************
+	 * begin********************** 分别建立程序中菜单,工具栏和事件处理模式的部份,我们在此不再加以说明.
+	 ****************************************/
+	public JMenu buildFileMenu() {
+
+		JMenu thefile = new JMenu("File");
+		thefile.setMnemonic('F');
+
+		JMenuItem newf = new JMenuItem("New", new ImageIcon("icons/new24.gif"));
+		JMenuItem open = new JMenuItem("Open",
+				new ImageIcon("icons/open24.gif"));
+		JMenuItem close = new JMenuItem("Close", new ImageIcon(
+				"icons/close24.gif"));
+		JMenuItem quit = new JMenuItem("Exit",
+				new ImageIcon("icons/exit24.gif"));
+
+		newf.setMnemonic('N');
+		open.setMnemonic('O');
+		close.setMnemonic('L');
+		quit.setMnemonic('X');
+
+		newf.setAccelerator(KeyStroke.getKeyStroke('N',
+				java.awt.Event.CTRL_MASK, false));
+		open.setAccelerator(KeyStroke.getKeyStroke('O',
+				java.awt.Event.CTRL_MASK, false));
+		close.setAccelerator(KeyStroke.getKeyStroke('L',
+				java.awt.Event.CTRL_MASK, false));
+		quit.setAccelerator(KeyStroke.getKeyStroke('X',
+				java.awt.Event.CTRL_MASK, false));
+
+		newf.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theArea.append("- MenuItem New Performed -\n");
+			}
+		});
+
+		open.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theArea.append("- MenuItem Open Performed -\n");
+			}
+		});
+
+		close.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				theArea.append("- MenuItem Close Performed -\n");
+			}
+		});
+
+		quit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+
+		thefile.add(newf);
+		thefile.add(open);
+		thefile.add(close);
+		thefile.addSeparator();
+		thefile.add(quit);
+
+		return thefile;
+	}// end of buildFileMenu()
+
+	public JToolBar buildToolBar() {
+      
+      JToolBar toolBar = new JToolBar();
+      toolBar.setFloatable(true);
+      
+      ToolBarAction tba_new   = new ToolBarAction("new",new ImageIcon("icons/new24.gif"));
+      ToolBarAction tba_open  = new ToolBarAction("open",new ImageIcon("icons/open24.gif"));
+      ToolBarAction tba_close = new ToolBarAction("close",new ImageIcon("icons/close24.gif"));
+      
+      JButton JB;
+      JB = toolBar.add(tba_new);
+      JB.setActionCommand("#TooBar_NEW performed!");
+      JB.setToolTipText((String)tba_new.getValue(Action.NAME));
+      JB = toolBar.add(tba_open);
+      JB.setActionCommand("#ToolBar_OPEN performed!");
+      JB.setToolTipText((String)tba_open.getValue(Action.NAME));
+      JB = toolBar.add(tba_close);
+      JB.setActionCommand("#ToolBar_CLOSE performed!");
+      JB.setToolTipText((String)tba_close.getValue(Action.NAME));
+      
+      toolBar.addSeparator();
+      
+      ToolBarAction tba_B  = new ToolBarAction("bold",new ImageIcon("icons/bold24.gif"));
+      ToolBarAction tba_I  = new ToolBarAction("italic",new ImageIcon("icons/italic24.gif"));
+      ToolBarAction tba_U  = new ToolBarAction("underline",new ImageIcon("icons/underline24.gif")); 
+      JB = toolBar.add(tba_B);
+      JB.setActionCommand("#ToolBar_Bold performed!");
+      JB.setToolTipText((String)tba_B.getValue(Action.NAME));
+      JB = toolBar.add(tba_I);
+      JB.setActionCommand("#ToolBar_Italic performed!");
+      JB.setToolTipText((String)tba_I.getValue(Action.NAME));    
+      JB = toolBar.add(tba_U);
+      JB.setActionCommand("#ToolBar_Underline performed!");
+      JB.setToolTipText((String)tba_U.getValue(Action.NAME));
+      
+      toolBar.addSeparator();    
+      JLabel JLfont = new JLabel("Font Type");
+      toolBar.add(JLfont);
+      toolBar.addSeparator();
+      JComboBox jcb = new JComboBox(ComboStr);
+      jcb.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+      theArea.append("*Combobox "+((JComboBox)e.getSource()).getSelectedItem()+"
+      performed!\n");
+      }});
+      toolBar.add(jcb);
+      
+      return toolBar;
+      }//end of buildToolBar()
+
+	/*****************
+	 * End********************** 分别建立程序中菜单,工具栏和事件处理模式的部份,我们在此不再加以说明.
+	 ****************************************/
+
+	public static void main(String[] args) {
+		SwingUtil.setLookAndFeel();
+		JFrame F = new JPopupMenu1();
+		F.setSize(430, 200);
+		F.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});// end of addWindowListener
+		F.setVisible(true);
+	} // end of main
+
+	class ToolBarAction extends AbstractAction {
+
+		public ToolBarAction(String name, Icon icon) {
+			super(name, icon);
+		}
+
+		public void actionPerformed(ActionEvent e) {
+
+			try {
+				theArea.append(e.getActionCommand() + "\n");
+			} catch (Exception ex) {
+			}
+		}
+	}// end of inner class ToolBarAction
+
+	/*
+	 * 本方法建立inner class
+	 * PopupPanel.这个类继承JPanel并实作MouseListener,PopupMenuListener,ActionListener和
+	 * ActionListener等3个Listener
+	 * .MouseListener为处理鼠标事件的Listener,PopupMenuListener为Popup菜单事件的Listener,
+	 * ActionListener则是大家最熟悉用来处理JMenuItem事件的Listener.
+	 */
+	class PopupPanel extends JPanel implements MouseListener,
+			PopupMenuListener, ActionListener {
+
+		public PopupPanel() {
+
+			Popup = new JPopupMenu();// new 一个新的JPopupMenu.
+
+			JMenuItem theItem;
+
+			// 分别建立四个JMenuItem和其事件处理模式将将JMenuItem加入JPopupMenu中.
+			Popup.add(theItem = new JMenuItem("Cut", new ImageIcon(
+					"icons/cut24.gif")));// 建立JMenuItem组件.
+			theItem.addActionListener(this);// 将JMenuItem组件加入事件处理模式.
+			Popup.add(theItem = new JMenuItem("Copy", new ImageIcon(
+					"icons/copy24.gif")));
+			theItem.addActionListener(this);
+			Popup.add(theItem = new JMenuItem("Paste", new ImageIcon(
+					"icons/paste24.gif")));
+			theItem.addActionListener(this);
+			Popup.addSeparator();// 在JPopupMenu中加入分隔线,我们在前面有提到JPopupMenu和Menu大致上的性质是一样的,所以
+			// 在JPopupMenu中一样是以JMenuItem来当作选项的组件.
+			Popup.add(theItem = new JMenuItem("Page Setup..."));
+			theItem.addActionListener(this);
+
+			// 利用setBorder()方法将BevelBorder类当作参数传入,使JPopupMenu产生立体边框浮起的效果.我们也可以将参数设置改
+			// 为BevelBorder.LOWERED使得JPopupMenu产生立体边框凹陷的效果.
+			Popup.setBorder(new BevelBorder(BevelBorder.RAISED));
+
+			Popup.addPopupMenuListener(this); // 将JPopupMenu组件加入PopupMenu事件处理模式中.
+			addMouseListener(this);// 将PopupPanel类加入Mouse事件处理模式中.
+			theArea.addMouseListener(this);// 后面有说明
+
+		}// end of PopupPanel()
+
+		/*
+		 * 由于PopupPanel这个inner
+		 * class中实作了MouseListener,因此需要覆写mouseClicked(),mousePressed(),
+		 * mouseReleased
+		 * (),mouseEntered()和mouseExited()等5个方法.在这个范例里当mouseClicked(
+		 * ),mousePressed()
+		 * 和mouseReleased()等3个方法被触发时会调用checkPopup()方法来判断是否要将PopupMenu输出来.
+		 */
+		public void mouseClicked(MouseEvent me) {
+			checkPopup(me);
+		}
+
+		public void mousePressed(MouseEvent me) {
+			checkPopup(me);
+		}
+
+		public void mouseReleased(MouseEvent me) {
+			checkPopup(me);
+		}
+
+		public void mouseEntered(MouseEvent me) {
+		}
+
+		public void mouseExited(MouseEvent me) {
+		}
+
+		/*
+		 * checkPopup()方法.其中,在程序中利用isPopupTrigger()方法判断PopupMenu是否已经输出.若没有,则在程序中利用
+		 * show()方法将PopupMenu输出目前鼠标指针(利用getX()和getY()方法得知)的位置上.
+		 */
+		private void checkPopup(MouseEvent me) {
+			if (me.isPopupTrigger()) {
+				Popup.show(me.getComponent(), me.getX(), me.getY());
+			}
+		}// end of checkPopup()
+
+		/*
+		 * 由于PopupPanel这个inner
+		 * class实作了PopupMenuListener,因此需要覆写popupMenuWillBecomeVisible(),
+		 * popupMenuWillBecomeInvisible
+		 * ()方法和popupMenuCanceled()等3个方法.在这个范例里当这3个方法被触发后会在JTextArea中加入一个信息.
+		 */
+		public void popupMenuWillBecomeVisible(PopupMenuEvent pme) {
+			theArea.append("-PopupMenu Visibel!\n");
+		}
+
+		public void popupMenuWillBecomeInvisible(PopupMenuEvent pme) {
+			theArea.append("-PopupMenu Invisibel!\n");
+		}
+
+		public void popupMenuCanceled(PopupMenuEvent pme) {
+			theArea.append("-PopupMenu Hidden!\n");
+		}
+
+		// 当某个JMenuItem被触发后会在JTextArea中加入一个信息.
+		public void actionPerformed(ActionEvent ae) {
+			theArea.append("+Popup " + ae.getActionCommand() + " performed!\n");
+		}
+	}// end of inner class PopupPanel
+}// end of class JPopupMenu1
+
+class SwingUtil {
+	public static final void setLookAndFeel() {
+		try {
+			Font font = new Font("JFrame", Font.PLAIN, 12);
+			Enumeration keys = UIManager.getLookAndFeelDefaults().keys();
+
+			while (keys.hasMoreElements()) {
+				Object key = keys.nextElement();
+				if (UIManager.get(key) instanceof Font) {
+					UIManager.put(key, font);
+				}
+			}
+			AlloyLookAndFeel.setProperty("alloy.isLookAndFeelFrameDecoration",
+					"true");
+			AlloyTheme theme = new GlassTheme();
+			LookAndFeel alloyLnF = new AlloyLookAndFeel(theme);
+			UIManager.setLookAndFeel(alloyLnF);
+		} catch (UnsupportedLookAndFeelException ex) {
+			ex.printStackTrace();
+		}
+	}
+}</pre>
+  <h5>说明:</h5>
+  <p>(1):由于JPopupMenu只是一种Menu的组件,因此在使用JPopupMenu时我们都需要一个Container来放置JPopupMenu,在这里这们
+    选择使用JPanel组件来作为JPopupMenu的Container. </p>
+  <p>(2):这个程序的运行结果可发现JPopupMenu只有在JTextArea下缘,也就是JPanel的部份才有作用,因为我们并没有在JTextArea
+    中加入addMouseListener()方法,你可以在PopupPanel()构造函数中加入:
+    theArea.addMouseListener(this);
+    这行,就能够解决在JTextArea上无法显示JPopupMenu的问题.
+    </pre>
+  <div class="rpindex"><a href="76.html"> 下一页</a><a href="74.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

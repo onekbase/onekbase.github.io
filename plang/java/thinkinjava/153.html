@@ -1,0 +1,347 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="152.html"> 上一页</a><a href="154.html"> 下一页</a></div>
+<h2>15.5 一个Web应用</h2>
+<p>现在让我们想想如何创建一个应用，令其在真实的Web环境中运行，它将把Java的优势表现得淋漓尽致。这个应用的一部分是在Web服务器上运行的一个Java程序，另一部分则是一个“程序片”或“小应用程序”（Applet），从服务器下载至浏览器（即“客户”）。这个程序片从用户那里收集信息，并将其传回Web服务器上运行的应用程序。程序的任务非常简单：程序片会询问用户的E-mail地址，并在验证这个地址合格后（没有包含空格，而且有一个@符号），将该E-mail发送给Web服务器。服务器上运行的程序则会捕获传回的数据，检查一个包含了所有E-mail地址的数据文件。如果那个地址已包含在文件里，则向浏览器反馈一条消息，说明这一情况。该消息由程序片负责显示。若是一个新地址，则将其置入列表，并通知程序片已成功添加了电子函件地址。</p>
+<p>若采用传统方式来解决这个问题，我们要创建一个包含了文本字段及一个“提交”（Submit）按钮的HTML页。用户可在文本字段里键入自己喜欢的任何内容，并毫无阻碍地提交给服务器（在客户端不进行任何检查）。提交数据的同时，Web页也会告诉服务器应对数据采取什么样的操作——知会“通用网关接口”（CGI）程序，收到这些数据后立即运行服务器。这种CGI程序通常是用Perl或C写的（有时也用C++，但要求服务器支持），而且必须能控制一切可能出现的情况。它首先会检查数据，判断是否采用了正确的格式。若答案是否定的，则CGI程序必须创建一个HTML页，对遇到的问题进行描述。这个页会转交给服务器，再由服务器反馈回用户。用户看到出错提示后，必须再试一遍提交，直到通过为止。若数据正确，CGI程序会打开数据文件，要么把电子函件地址加入文件，要么指出该地址已在数据文件里了。无论哪种情况，都必须格式化一个恰当的HTML页，以便服务器返回给用户。</p>
+作为Java程序员，上述解决问题的方法显得非常笨拙。而且很自然地，我们希望一切工作都用Java完成。首先，我们会用一个Java程序片负责客户端的数据有效性校验，避免数据在服务器和客户之间传来传去，浪费时间和带宽，同时减轻服务器额外构建HTML页的负担。然后跳过Perl
+CGI脚本，换成在服务器上运行一个Java应用。事实上，我们在这儿已完全跳过了Web服务器，仅仅需要从程序片到服务器上运行的Java应用之间建立一个连接即可。正如大家不久就会体验到的那样，尽管看起来非常简单，但实际上有一些意想不到的问题使局面显得稍微有些复杂。用Java 
+1.1写程序片是最理想的，但实际上却经常行不通。到本书写作的时候，拥有Java 
+1.1能力的浏览器仍为数不多，而且即使这类浏览器现在非常流行，仍需考虑照顾一下那些升级缓慢的人。所以从安全的角度看，程序片代码最好只用Java
+1.0编写。基于这一前提，我们不能用JAR文件来合并（压缩）程序片中的.class文件。所以，我们应尽可能减少.class文件的使用数量，以缩短下载时间。好了，再来说说我用的Web服务器（写这个示范程序时用的就是它）。它确实支持Java，但仅限于Java
+1.0！所以服务器应用也必须用Java 1.0编写。
+<h3>15.5.1 服务器应用</h3>
+<p>现在讨论一下服务器应用（程序）的问题，我把它叫作NameCollecor（名字收集器）。假如多名用户同时尝试提交他们的E-mail地址，那么会发生什么情况呢？若NameCollector使用TCP/IP套接字，那么必须运用早先介绍的多线程机制来实现对多个客户的并发控制。但所有这些线程都试图把数据写到同一个文件里，其中保存了所有E-mail地址。这便要求我们设立一种锁定机制，保证多个线程不会同时访问那个文件。一个“信号机”可在这里帮助我们达到目的，但或许还有一种更简单的方式。</p>
+<p>如果我们换用数据报，就不必使用多线程了。用单个数据报即可“侦听”进入的所有数据报。一旦监视到有进入的消息，程序就会进行适当的处理，并将答复数据作为一个数据报传回原先发出请求的那名接收者。若数据报半路上丢失了，则用户会注意到没有答复数据传回，所以可以重新提交请求。</p>
+服务器应用收到一个数据报，并对它进行解读的时候，必须提取出其中的电子函件地址，并检查本机保存的数据文件，看看里面是否已经包含了那个地址（如果没有，则添加之）。所以我们现在遇到了一个新的问题。Java 
+1.0似乎没有足够的能力来方便地处理包含了电子函件地址的文件（Java 
+1.1则不然）。但是，用C轻易就可以解决这个问题。因此，我们在这儿有机会学习将一个非Java程序同Java程序连接的最简便方式。程序使用的Runtime对象包含了一个名为exec()的方法，它会独立机器上一个独立的程序，并返回一个Process（进程）对象。我们可以取得一个OutputStream，它同这个单独程序的标准输入连接在一起；并取得一个InputStream，它则同标准输出连接到一起。要做的全部事情就是用任何语言写一个程序，只要它能从标准输入中取得自己的输入数据，并将输出结果写入标准输出即可。如果有些问题不能用Java简便与快速地解决（或者想利用原有代码，不想改写），就可以考虑采用这种方法。亦可使用Java的“固有方法”（Native
+Method），但那要求更多的技巧，大家可以参考一下附录A。
+<h4>1. C程序</h4>
+<p>这个非Java应用是用C写成，因为Java不适合作CGI编程；起码启动的时间不能让人满意。它的任务是管理电子函件（E-mail）地址的一个列表。标准输入会接受一个E-mail地址，程序会检查列表中的名字，判断是否存在那个地址。若不存在，就将其加入，并报告操作成功。但假如名字已在列表里了，就需要指出这一点，避免重复加入。大家不必担心自己不能完全理解下列代码的含义。它仅仅是一个演示程序，告诉你如何用其他语言写一个程序，并从Java中调用它。在这里具体采用何种语言并不重要，只要能够从标准输入中读取数据，并能写入标准输出即可。</p>
+
+  <pre class="code">//: Listmgr.c
+// Used by NameCollector.java to manage 
+// the email list file on the server
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#define BSIZE 250
+
+int alreadyInList(FILE* list, char* name) {
+  char lbuf[BSIZE];
+  // Go to the beginning of the list:
+  fseek(list, 0, SEEK_SET);
+  // Read each line in the list:
+  while(fgets(lbuf, BSIZE, list)) {
+    // Strip off the newline:
+    char * newline = strchr(lbuf, '\n');
+    if(newline != 0) 
+      *newline = '\0';
+    if(strcmp(lbuf, name) == 0)
+      return 1;
+  }
+  return 0;
+}
+
+int main() {
+  char buf[BSIZE];
+  FILE* list = fopen(&quot;emlist.txt&quot;, &quot;a+t&quot;);
+  if(list == 0) {
+    perror(&quot;could not open emlist.txt&quot;);
+    exit(1);
+  }
+  while(1) {
+    gets(buf); /* From stdin */
+    if(alreadyInList(list, buf)) {
+      printf(&quot;Already in list: %s&quot;, buf);
+      fflush(stdout);
+    }
+    else {
+      fseek(list, 0, SEEK_END);
+      fprintf(list, &quot;%s\n&quot;, buf);
+      fflush(list);
+      printf(&quot;%s added to list&quot;, buf);
+      fflush(stdout);
+    }
+  }
+} ///:~</pre>
+
+<p>该程序假设C编译器能接受'//'样式注释（许多编译器都能，亦可换用一个C++编译器来编译这个程序）。如果你的编译器不能接受，则简单地将那些注释删掉即可。</p>
+<p>文件中的第一个函数检查我们作为第二个参数（指向一个char的指针）传递给它的名字是否已在文件中。在这儿，我们将文件作为一个FILE指针传递，它指向一个已打开的文件（文件是在main()中打开的）。函数fseek()在文件中遍历；我们在这儿用它移至文件开头。fgets()从文件list中读入一行内容，并将其置入缓冲区lbuf——不会超过规定的缓冲区长度BSIZE。所有这些工作都在一个while循环中进行，所以文件中的每一行都会读入。接下来，用strchr()找到新行字符，以便将其删掉。最后，用strcmp()比较我们传递给函数的名字与文件中的当前行。若找到一致的内容，strcmp()会返回0。函数随后会退出，并返回一个1，指出该名字已经在文件里了（注意这个函数找到相符内容后会立即返回，不会把时间浪费在检查列表剩余内容的上面）。如果找遍列表都没有发现相符的内容，则函数返回0。</p>
+<p>在main()中，我们用fopen()打开文件。第一个参数是文件名，第二个是打开文件的方式；a+表示“追加”，以及“打开”（或“创建”，假若文件尚不存在），以便到文件的末尾进行更新。fopen()函数返回的是一个FILE指针；若为0，表示打开操作失败。此时需要用perror()打印一条出错提示消息，并用exit()中止程序运行。</p>
+<p>如果文件成功打开，程序就会进入一个无限循环。调用gets(buf)的函数会从标准输入中取出一行（记住标准输入会与Java程序连接到一起），并将其置入缓冲区buf中。缓冲区的内容随后会简单地传递给alreadyInList()函数，如内容已在列表中，printf()就会将那条消息发给标准输出（Java程序正在监视它）。fflush()用于对输出缓冲区进行刷新。</p>
+<p>如果名字不在列表中，就用fseek()移到列表末尾，并用fprintf()将名字“打印”到列表末尾。随后，用printf()指出名字已成功加入列表（同样需要刷新标准输出），无限循环返回，继续等候一个新名字的进入。</p>
+<p>记住一般不能先在自己的计算机上编译此程序，再把编译好的内容上载到Web服务器，因为那台机器使用的可能是不同类的处理器和操作系统。例如，我的Web服务器安装的是Intel的CPU，但操作系统是Linux，所以必须先下载源码，再用远程命令（通过telnet）指挥Linux自带的C编译器，令其在服务器端编译好程序。</p>
+<h4>2. Java程序</h4>
+<p>这个程序先启动上述的C程序，再建立必要的连接，以便同它“交谈”。随后，它创建一个数据报套接字，用它“监视”或者“侦听”来自程序片的数据报包。</p>
+
+  <pre class="code">//: NameCollector.java
+// Extracts email names from datagrams and stores
+// them inside a file, using Java 1.02.
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
+public class NameCollector {
+  final static int COLLECTOR_PORT = 8080;
+  final static int BUFFER_SIZE = 1000;
+  byte[] buf = new byte[BUFFER_SIZE];
+  DatagramPacket dp = 
+    new DatagramPacket(buf, buf.length);
+  // Can listen &amp; send on the same socket:
+  DatagramSocket socket;
+  Process listmgr;
+  PrintStream nameList;
+  DataInputStream addResult;
+  public NameCollector() {
+    try {
+      listmgr =
+        Runtime.getRuntime().exec(&quot;listmgr.exe&quot;);
+      nameList = new PrintStream(
+        new BufferedOutputStream(
+          listmgr.getOutputStream()));
+      addResult = new DataInputStream(
+        new BufferedInputStream(
+          listmgr.getInputStream()));
+
+    } catch(IOException e) {
+      System.err.println(
+        &quot;Cannot start listmgr.exe&quot;);
+      System.exit(1);
+    }
+    try {
+      socket =
+        new DatagramSocket(COLLECTOR_PORT);
+      System.out.println(
+        &quot;NameCollector Server started&quot;);
+      while(true) {
+        // Block until a datagram appears:
+        socket.receive(dp);
+        String rcvd = new String(dp.getData(),
+            0, 0, dp.getLength());
+        // Send to listmgr.exe standard input:
+        nameList.println(rcvd.trim());
+        nameList.flush();
+        byte[] resultBuf = new byte[BUFFER_SIZE];
+        int byteCount = 
+          addResult.read(resultBuf);
+        if(byteCount != -1) {
+          String result = 
+            new String(resultBuf, 0).trim();
+          // Extract the address and port from 
+          // the received datagram to find out 
+          // where to send the reply:
+          InetAddress senderAddress =
+            dp.getAddress();
+          int senderPort = dp.getPort();
+          byte[] echoBuf = new byte[BUFFER_SIZE];
+          result.getBytes(
+            0, byteCount, echoBuf, 0);
+          DatagramPacket echo =
+            new DatagramPacket(
+              echoBuf, echoBuf.length,
+              senderAddress, senderPort);
+          socket.send(echo);
+        }
+        else
+          System.out.println(
+            &quot;Unexpected lack of result from &quot; +
+            &quot;listmgr.exe&quot;);
+      }
+    } catch(SocketException e) {
+      System.err.println(&quot;Can't open socket&quot;);
+      System.exit(1);
+    } catch(IOException e) {
+      System.err.println(&quot;Communication error&quot;);
+      e.printStackTrace();
+    }
+  }
+  public static void main(String[] args) {
+    new NameCollector();
+  }
+} ///:~</pre>
+
+NameCollector中的第一个定义应该是大家所熟悉的：选定端口，创建一个数据报包，然后创建指向一个DatagramSocket的句柄。接下来的三个定义负责与C程序的连接：一个Process对象是C程序由Java程序启动之后返回的，而且那个Process对象产生了InputStream和OutputStream，分别代表C程序的标准输出和标准输入。和Java
+IO一样，它们理所当然地需要“封装”起来，所以我们最后得到的是一个PrintStream和DataInputStream。
+<p>这个程序的所有工作都是在构建器内进行的。为启动C程序，需要取得当前的Runtime对象。我们用它调用exec()，再由后者返回Process对象。在Process对象中，大家可看到通过一简单的调用即可生成数据流：getOutputStream()和getInputStream()。从这个时候开始，我们需要考虑的全部事情就是将数据传给数据流nameList，并从addResult中取得结果。</p>
+和往常一样，我们将DatagramSocket同一个端口连接到一起。在无限while循环中，程序会调用receive()——除非一个数据报到来，否则receive()会一起处于“堵塞”状态。数据报出现以后，它的内容会提取到String
+rcvd里。我们首先将该字串两头的空格剔除（trim），再将其发给C程序。如下所示：
+<pre class="code">nameList.println(rcvd.trim());</pre>
+<p>之所以能这样编码，是因为Java的exec()允许我们访问任何可执行模块，只要它能从标准输入中读，并能向标准输出中写。还有另一些方式可与非Java代码“交谈”，这将在附录A中讨论。</p>
+<p>从C程序中捕获结果就显得稍微麻烦一些。我们必须调用read()，并提供一个缓冲区，以便保存结果。read()的返回值是来自C程序的字节数。若这个值为-1，意味着某个地方出现了问题。否则，我们就将resultBuf（结果缓冲区）转换成一个字串，然后同样清除多余的空格。随后，这个字串会象往常一样进入一个DatagramPacket，并传回当初发出请求的那个同样的地址。注意发送方的地址也是我们接收到的DatagramPacket的一部分。</p>
+<p>记住尽管C程序必须在Web服务器上编译，但Java程序的编译场所可以是任意的。这是由于不管使用的是什么硬件平台和操作系统，编译得到的字节码都是一样的。就就是Java的“跨平台”兼容能力。</p>
+<div class="rpindex"><a href="154.html"> 下一页</a><a href="152.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

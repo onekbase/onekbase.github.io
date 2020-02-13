@@ -1,0 +1,266 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="9.html"> 上一页</a><a href="11.html"> 下一页</a></div>
+  <h2>3-1-1:键盘事件处理:</h2>
+  <PRE>--------------------------------------------------------------------------------------------------------------
+          KeyListener                                          keyPressed(KeyEvent e)
+                                                               keyReleased(KeyEvent e)
+                                                               keyTyped(KeyEvent e)
+--------------------------------------------------------------------------------------------------------------</PRE>
+  <h5>KeyDemo.java</h5>
+  <pre class="code">import java.awt.*;
+  import java.awt.event.*;
+  import javax.swing.*;
+  
+  public class KeyDemo extends KeyAdapter implements ActionListener{
+  JFrame f=null;
+  JLabel label=null;
+  JTextField tField=null;
+  String keyString="";
+  
+  public KeyDemo(){
+  f=new JFrame("KeyEventDemo");
+  Container contentPane=f.getContentPane();
+  contentPane.setLayout(new GridLayout(3,1));
+  label=new JLabel();
+  tField=new JTextField();
+  tField.requestFocus();
+  tField.addKeyListener(this);
+  JButton b=new JButton("清除");
+  b.addActionListener(this);
+  contentPane.add(label);
+  contentPane.add(tField);
+  contentPane.add(b);
+  f.pack();
+  f.show();
+  f.addWindowListener(
+  new WindowAdapter(){
+  public void windowClosing(WindowEvent e){
+  System.exit(0);
+  }
+  }	
+  );
+  }
+  public void actionPerformed(ActionEvent e){
+  keyString="";
+  label.setText("");
+  tField.setText("");
+  tField.requestFocus();       
+  }
+  /*输入字母"O"之后，会产生新窗口*/
+  public void keyTyped(KeyEvent e){
+  char c=e.getKeyChar();/*注意getKeyChar()的用法*/
+  if (c=='o'){
+  JFrame newF=new JFrame("新窗口");
+  newF.setSize(200,200);
+  newF.show();
+  }
+  keyString=keyString+c;
+  label.setText(keyString);
+  }
+  public static void main(String[] args){
+  new KeyDemo();	
+  }
+  }</pre>
+  <p>除了上面所提的getKeyChar()方法外，KeyEvent类还有两个方法也常常被用到，那就是getKeyCode()与
+    getKeyModifiersText(int modifiers).键盘上每一个按钮都有对应码(Code),可用来查知用户按了什么键，
+    如[Shift]键code为16。利用getKeyCode()方法就可以得知这个码，不过读者要注意，这个方法在keyTyped()
+    上是无法检测出来的，因为keyTyped()只管用户输入的字符，而不会管到键盘的对应码，算是处理比较高层
+    事件的方法。也就是说keyTyped()方法是keyboad independent,因为不同的键盘可能有不同的对应码(如Windows
+    U.S. keyboard与windows French keyboard就有不同的对应码)。因此你一定要将getKeyCode()方法写在
+    keyPressed()或keyReleased()方法中才会有效，因为这两个方法是处理比较低层的方法。</p>
+  <p>另外getKeyModifiersText()方法可返回修饰键的字符串，如返回“Shift”字符串或是“Ctrl+Shift”字符串，
+    不过你要先传入modifiers参数。你可以直接使用getModifiers()方法来得到modifiers参数。这个方法是定义在
+    InputEvent类中，而KeyEvent继承它，因此就能直接使用这个方法。同样，你必须将getKeyModifiersText()与
+    getModifiers()方法放在keyPressed()或keyReleased()方法中才会有效。</p>
+  <h5><a name="a" id="a"></a>++ 注意</h5>
+  <p>1.KeyEvent类还有两个方法也常常被用到，那就是getKeyCode()与
+    getKeyModifiersText(int modifiers).键盘上每一个按钮都有对应码(Code),可用来查知用户按了什么键，
+    如[Shift]键code为16。利用getKeyCode()方法就可以得知这个码，不过读者要注意，这个方法在keyTyped()
+    上是无法检测出来的，因为keyTyped()只管用户输入的字符，而不会管到键盘的对应码，算是处理比较高层
+    事件的方法。也就是说keyTyped()方法是keyboad independent,因为不同的键盘可能有不同的对应码(如Windows
+    U.S. keyboard与windows French keyboard就有不同的对应码)。因此你一定要将getKeyCode()方法写在
+    keyPressed()或keyReleased()方法中才会有效，因为这两个方法是处理比较低层的方法。
+  <pre class="code">class test {
+	public static void main(String args[]) {
+		for (int i = 0; i < args.length; i++) {
+			System.out.println("File " + i + ":" + args[i]);
+		}
+		if (args.length <= 0) {
+			System.out.println("No files!");
+		}
+	}
+}</PRE>
+  <div class="rpindex"><a href="11.html"> 下一页</a><a href="9.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

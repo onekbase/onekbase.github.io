@@ -1,0 +1,365 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="77.html"> 上一页</a><a href="79.html"> 下一页</a></div>
+<h1>第10章 Java IO系统</h1>
+<p>“对语言设计人员来说，创建好的输入／输出系统是一项特别困难的任务。”</p>
+<p>由于存在大量不同的设计方案，所以该任务的困难性是很容易证明的。其中最大的挑战似乎是如何覆盖所有可能的因素。不仅有三种不同的种类的IO需要考虑（文件、控制台、网络连接），而且需要通过大量不同的方式与它们通信（顺序、随机访问、二进制、字符、按行、按字等等）。</p>
+Java库的设计者通过创建大量类来攻克这个难题。事实上，Java的IO系统采用了如此多的类，以致刚开始会产生不知从何处入手的感觉（具有讽刺意味的是，Java的IO设计初衷实际要求避免过多的类）。从Java
+<p>1.0升级到Java 1.1后，IO库的设计也发生了显著的变化。此时并非简单地用新库替换旧库，Sun的设计人员对原来的库进行了大手笔的扩展，添加了大量新的内容。因此，我们有时不得不混合使用新库与旧库，产生令人无奈的复杂代码。</p>
+本章将帮助大家理解标准Java库内的各种IO类，并学习如何使用它们。本章的第一部分将介绍“旧”的Java 
+1.0 IO流库，因为现在有大量代码仍在使用那个库。本章剩下的部分将为大家引入Java 
+1.1 IO库的一些新特性。注意若用Java 1.1编译器来编译本章第一部分介绍的部分代码，可能会得到一条“不建议使用该特性”（Deprecated 
+feature）警告消息。代码仍然能够使用；编译器只是建议我们换用本章后面要讲述的一些新特性。但我们这样做是有价值的，因为可以更清楚地认识老方法与新方法之间的一些差异，从而加深我们的理解（并可顺利阅读为Java
+1.0写的代码）。
+<h2>10.1 输入和输出</h2>
+可将Java库的IO类分割为输入与输出两个部分，这一点在用Web浏览器阅读联机Java类文档时便可知道。通过继承，从InputStream（输入流）衍生的所有类都拥有名为read()的基本方法，用于读取单个字节或者字节数组。类似地，从OutputStream衍生的所有类都拥有基本方法write()，用于写入单个字节或者字节数组。然而，我们通常不会用到这些方法；它们之所以存在，是因为更复杂的类可以利用它们，以便提供一个更有用的接口。因此，我们很少用单个类创建自己的系统对象。一般情况下，我们都是将多个对象重叠在一起，提供自己期望的功能。我们之所以感到Java的流库（Stream
+Library）异常复杂，正是由于为了创建单独一个结果流，却需要创建多个对象的缘故。
+<p>很有必要按照功能对类进行分类。库的设计者首先决定与输入有关的所有类都从InputStream继承，而与输出有关的所有类都从OutputStream继承。</p>
+<h3>10.1.1 InputStream的类型</h3>
+<p>InputStream的作用是标志那些从不同起源地产生输入的类。这些起源地包括（每个都有一个相关的InputStream子类）：</p>
+<ul>
+  <li>(1) 字节数组</li>
+  <li>(2) String对象</li>
+  <li>(3) 文件</li>
+  <li>(4) 
+    “管道”，它的工作原理与现实生活中的管道类似：将一些东西置入一端，它们在另一端出来。 </li>
+  <li>(5) 一系列其他流，以便我们将其统一收集到单独一个流内。</li>
+  <li>(6) 其他起源地，如Internet连接等（将在本书后面的部分讲述）。</li>
+</ul>
+<p>除此以外，FilterInputStream也属于InputStream的一种类型，用它可为“破坏器”类提供一个基础类，以便将属性或者有用的接口同输入流连接到一起。这将在以后讨论。</p>
+<table>
+  <tr>
+    <th>  
+        Class</th>
+    <th>  
+        Function</th>
+    <th> Constructor 
+         Arguments</th><th>  
+        How to use it</th>
+  </tr>
+
+  <tr>
+    <td> 
+        <b>ByteArray-InputStream</b></td>
+    <td>Allows a buffer in memory to be 
+         used as an <b>InputStream</b>.</td>
+    <td>The buffer from which to extract 
+         the bytes.</td> <td>As a source of data. Connect it to
+      a <b>FilterInputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+
+  <tr>
+    <td> 
+        <b>StringBuffer-InputStream</b></td>
+    <td> 
+        Converts a <b>String</b> into an <b>InputStream</b>.</td>
+    <td>A <b>String</b>. The underlying 
+         implementation actually uses a <b>StringBuffer</b>.</td>    <td>As a source of data. Connect it to
+      a <b>FilterInputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+ 
+  <tr>
+    <td> 
+        <b>File-InputStream</b></td>
+    <td>For reading information from a 
+         file.</td>
+    <td>A <b>String</b> representing the 
+         file name, or a <b>File</b> or <b>FileDescriptor</b> object.</td>    <td>As a source of data. Connect it to
+      a <b>FilterInputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+
+</table>
+<p>类 功能 构建器参数／如何使用</p>
+ByteArrayInputStream 允许内存中的一个缓冲区作为InputStream使用
+<p>从中提取字节的缓冲区／作为一个数据源使用。通过将其同一个FilterInputStream对象连接，可提供一个有用的接口</p>
+<p>StringBufferInputStream 将一个String转换成InputStream 一个String（字串）。基础的实施方案实际采用一个StringBuffer（字串缓冲）／作为一个数据源使用。通过将其同一个FilterInputStream对象连接，可提供一个有用的接口</p>
+<p>FileInputStream 用于从文件读取信息 代表文件名的一个String，或者一个File或FileDescriptor对象／作为一个数据源使用。通过将其同一个FilterInputStream对象连接，可提供一个有用的接口</p>
+<table>
+  <tr>
+    <td> 
+        <b>Piped-InputStream</b></td>
+    <td>Produces the data that&#8217;s
+      being written to the associated <b>PipedOutput-Stream</b>. Implements the 
+         &#8220;piping&#8221; concept.</td>
+    <td> 
+        <b>PipedOutputStream</b></td>  <td>As a source of data in
+      multithreading. Connect it to a <b>FilterInputStream</b> object to provide a 
+         useful interface.</td>
+  </tr>
+
+  <tr>
+    <td> 
+        <b>Sequence-InputStream</b></td>
+    <td> 
+        Coverts two or more <b>InputStream</b> objects into a single <b>InputStream</b>.</td>
+    <td>Two <b>InputStream</b> objects or 
+         an <b>Enumeration</b> for a container of <b>InputStream</b> objects.</td>    <td>As a source of data. Connect it to
+      a <b>FilterInputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+ 
+  <tr>
+    <td> 
+        <b>Filter-InputStream</b></td>
+    <td>Abstract class which is an 
+         interface for decorators that provide useful functionality to the other <b>InputStream</b> classes. See Table 10-3.</td>
+    <td> 
+        See Table 10-3.</td>    <td> 
+        See Table 10-3.</td>
+  </tr>
+
+</table>
+PipedInputString 产生为相关的PipedOutputStream写的数据。实现了“管道化”的概念
+<p>PipedOutputStream／作为一个数据源使用。通过将其同一个FilterInputStream对象连接，可提供一个有用的接口</p>
+SequenceInputStream 将两个或更多的InputStream对象转换成单个InputStream使用
+<p>两个InputStream对象或者一个Enumeration，用于InputStream对象的一个容器／作为一个数据源使用。通过将其同一个FilterInputStream对象连接，可提供一个有用的接口</p>
+FilterInputStream 
+对作为破坏器接口使用的类进行抽象；那个破坏器为其他InputStream类提供了有用的功能。参见表10.3
+<p>参见表10.3／参见表10.3</p>
+<h3>10.1.2 OutputStream的类型</h3>
+<p>这一类别包括的类决定了我们的输入往何处去：一个字节数组（但没有String；假定我们可用字节数组创建一个）；一个文件；或者一个“管道”。</p>
+<p>除此以外，FilterOutputStream为“破坏器”类提供了一个基础类，它将属性或者有用的接口同输出流连接起来。这将在以后讨论。</p>
+<h5>表10.2 OutputStream的类型</h5>
+<table>
+  <tr>
+    <th>  
+        Class</th>
+    <th>  
+        Function</th>
+    <th> Constructor 
+         Arguments</th>    <th>  
+        How to use it</th>
+  </tr>
+
+  <tr>
+    <td> 
+        <b>ByteArray-OutputStream</b></td>
+    <td>Creates a buffer in memory. All the 
+         data that you send to the stream is placed in this buffer.</td>
+    <td>Optional initial size of the 
+         buffer.</td>    <td>To designate the destination of
+      your data. Connect it to a <b>FilterOutputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+
+  <tr>
+    <td> 
+        <b>File-OutputStream</b></td>
+    <td>For sending information to a 
+         file.</td>
+    <td>A <b>String</b> representing the 
+         file name, or a <b>File</b> or <b>FileDescriptor</b> object.</td>    <td>To designate the destination of
+      your data. Connect it to a <b>FilterOutputStream</b> object to provide a useful 
+         interface.</td>
+  </tr>
+  
+  <tr>
+    <td> 
+        <b>Piped-OutputStream</b></td>
+    <td>Any information you write to this 
+         automatically ends up as input for the associated <b>PipedInput-Stream.</b> Implements the &#8220;piping&#8221; concept.</td>
+    <td> 
+        <b>PipedInputStream</b></td>    <td>To designate the destination of
+      your data for multithreading. Connect it to a <b>FilterOutputStream</b> object 
+         to provide a useful interface.</td>
+  </tr>
+ 
+  <tr>
+    <td> 
+        <b>Filter-OutputStream</b></td>
+    <td>Abstract class which is an 
+         interface for decorators that provide useful functionality to the other <b>OutputStream</b> classes. See Table 
+       10-4.</td>
+    <td> 
+        See Table 10-4.</td>    <td> 
+        See Table 10-4.</td>
+  </tr>
+
+</table>
+<p>类 功能 构建器参数／如何使用</p>
+ByteArrayOutputStream 
+在内存中创建一个缓冲区。我们发送给流的所有数据都会置入这个缓冲区。
+<p>可选缓冲区的初始大小／用于指出数据的目的地。若将其同FilterOutputStream对象连接到一起，可提供一个有用的接口</p>
+<p>FileOutputStream 将信息发给一个文件 用一个String代表文件名，或选用一个File或FileDescriptor对象／用于指出数据的目的地。若将其同FilterOutputStream对象连接到一起，可提供一个有用的接口</p>
+PipedOutputStream 我们写给它的任何信息都会自动成为相关的PipedInputStream的输出。实现了“管道化”的概念
+<p>PipedInputStream／为多线程处理指出自己数据的目的地／将其同FilterOutputStream对象连接到一起，便可提供一个有用的接口</p>
+FilterOutputStream 
+对作为破坏器接口使用的类进行抽象处理；那个破坏器为其他OutputStream类提供了有用的功能。参见表10.4
+<p>参见表10.4／参见表10.4</p>
+<div class="rpindex"><a href="79.html"> 下一页</a><a href="77.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

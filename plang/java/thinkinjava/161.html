@@ -1,0 +1,273 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="160.html"> 上一页</a><a href="162.html"> 下一页</a></div>
+<h2>16.2 观察器范式</h2>
+<p>观察器（Observer）范式解决的是一个相当普通的问题：由于某些对象的状态发生了改变，所以一组对象都需要更新，那么该如何解决？在Smalltalk的MVC（模型－视图－控制器）的“模型－视图”部分中，或在几乎等价的“文档－视图结构”中，大家可以看到这个问题。现在我们有一些数据（“文档”）以及多个视图，假定为一张图（Plot）和一个文本视图。若改变了数据，两个视图必须知道对自己进行更新，而那正是“观察器”要负责的工作。这是一种十分常见的问题，它的解决方案已包括进标准的java.util库中。</p>
+<p>在Java中，有两种类型的对象用来实现观察器范式。其中，Observable类用于跟踪那些当发生一个改变时希望收到通知的所有个体——无论“状态”是否改变。如果有人说“好了，所有人都要检查自己，并可能要进行更新”，那么Observable类会执行这个任务——为列表中的每个“人”都调用notifyObservers()方法。notifyObservers()方法属于基础类Observable的一部分。</p>
+<p>在观察器范式中，实际有两个方面可能发生变化：观察对象的数量以及更新的方式。也就是说，观察器范式允许我们同时修改这两个方面，不会干扰围绕在它周围的其他代码。</p>
+<p>下面这个例子类似于第14章的ColorBoxes示例。箱子（Boxes）置于一个屏幕网格中，每个都初始化一种随机的颜色。此外，每个箱子都“实现”（implement）了“观察器”（Observer）接口，而且随一个Observable对象进行了注册。若点击一个箱子，其他所有箱子都会收到一个通知，指出一个改变已经发生。这是由于Observable对象会自动调用每个Observer对象的update()方法。在这个方法内，箱子会检查被点中的那个箱子是否与自己紧邻。若答案是肯定的，那么也修改自己的颜色，保持与点中那个箱子的协调。</p>
+
+  <pre class="code">//: BoxObserver.java
+// Demonstration of Observer pattern using
+// Java's built-in observer classes.
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+// You must inherit a new type of Observable:
+class BoxObservable extends Observable {
+  public void notifyObservers(Object b) {
+    // Otherwise it won't propagate changes:
+    setChanged();
+    super.notifyObservers(b);
+  }
+}
+
+public class BoxObserver extends Frame {
+  Observable notifier = new BoxObservable();
+  public BoxObserver(int grid) {
+    setTitle(&quot;Demonstrates Observer pattern&quot;);
+    setLayout(new GridLayout(grid, grid));
+    for(int x = 0; x &lt; grid; x++)
+      for(int y = 0; y &lt; grid; y++)
+        add(new OCBox(x, y, notifier));
+  }   
+  public static void main(String[] args) {
+    int grid = 8;
+    if(args.length &gt; 0)
+      grid = Integer.parseInt(args[0]);
+    Frame f = new BoxObserver(grid);
+    f.setSize(500, 400);
+    f.setVisible(true);
+    f.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+          System.exit(0);
+        }
+      });
+  }
+}
+
+class OCBox extends Canvas implements Observer {
+  Observable notifier;
+  int x, y; // Locations in grid
+  Color cColor = newColor();
+  static final Color[] colors = { 
+    Color.black, Color.blue, Color.cyan, 
+    Color.darkGray, Color.gray, Color.green,
+    Color.lightGray, Color.magenta, 
+    Color.orange, Color.pink, Color.red, 
+    Color.white, Color.yellow 
+  };
+  static final Color newColor() {
+    return colors[
+      (int)(Math.random() * colors.length)
+    ];
+  }
+  OCBox(int x, int y, Observable notifier) {
+    this.x = x;
+    this.y = y;
+    notifier.addObserver(this);
+    this.notifier = notifier;
+    addMouseListener(new ML());
+  }
+  public void paint(Graphics  g) {
+    g.setColor(cColor);
+    Dimension s = getSize();
+    g.fillRect(0, 0, s.width, s.height);
+  }
+  class ML extends MouseAdapter {
+    public void mousePressed(MouseEvent e) {
+      notifier.notifyObservers(OCBox.this);
+    }
+  }
+  public void update(Observable o, Object arg) {
+    OCBox clicked = (OCBox)arg;
+    if(nextTo(clicked)) {
+      cColor = clicked.cColor;
+      repaint();
+    }
+  }
+  private final boolean nextTo(OCBox b) {
+    return Math.abs(x - b.x) &lt;= 1 &amp;&amp; 
+           Math.abs(y - b.y) &lt;= 1;
+  }
+} ///:~</pre>
+
+<p>如果是首次查阅Observable的联机帮助文档，可能会多少感到有些困惑，因为它似乎表明可以用一个原始的Observable对象来管理更新。但这种说法是不成立的；大家可自己试试——在BoxObserver中，创建一个Observable对象，替换BoxObservable对象，看看会有什么事情发生。事实上，什么事情也不会发生。为真正产生效果，必须从Observable继承，并在衍生类代码的某个地方调用setChanged()。这个方法需要设置“changed”（已改变）标志，它意味着当我们调用notifyObservers()的时候，所有观察器事实上都会收到通知。在上面的例子中，setChanged()只是简单地在notifyObservers()中调用，大家可依据符合实际情况的任何标准决定何时调用setChanged()。</p>
+<p>BoxObserver包含了单个Observable对象，名为notifier。每次创建一个OCBox对象时，它都会同notifier联系到一起。在OCBox中，只要点击鼠标，就会发出对notifyObservers()方法的调用，并将被点中的那个对象作为一个参数传递进去，使收到消息（用它们的update()方法）的所有箱子都能知道谁被点中了，并据此判断自己是否也要变动。通过notifyObservers()和update()中的代码的结合，我们可以应付一些非常复杂的局面。</p>
+<p>在notifyObservers()方法中，表面上似乎观察器收到通知的方式必须在编译期间固定下来。然而，只要稍微仔细研究一下上面的代码，就会发现BoxObserver或OCBox中唯一需要留意是否使用BoxObservable的地方就是创建Observable对象的时候——从那时开始，所有东西都会使用基本的Observable接口。这意味着以后若想更改通知方式，可以继承其他Observable类，并在运行期间交换它们。</p>
+<div class="rpindex"><a href="162.html"> 下一页</a><a href="160.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

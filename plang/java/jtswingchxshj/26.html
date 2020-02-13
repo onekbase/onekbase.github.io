@@ -1,0 +1,295 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="25.html"> 上一页</a><a href="27.html"> 下一页</a></div>
+  <h2>7-3:JList的使用:</h2>
+  <h5> 类层次结构图： </h5>
+  <pre>java.lang.Object
+     --java.awt.Component
+      --java.awt.Container
+       --javax.swing.JComponent
+        --javax.swing.JList</pre>
+  <p>JList与JCheckBox有点相似，都可以让你选择一到多个选项，较不同的是，JList的选项方式是整列选取。我们先来看看JList
+    所提供的构造函数，方便迅速建立JList对象,如下所示: </p>
+  <h5>JList构造函数: </h5>
+  <ul>
+    <li>JList():建立一个新的JList组件。</li>
+    <li> JList(ListModel dataModel):利用ListModel建立一个新的JList组件.</li>
+    <li> JList(Object[] listData):利用Array对象建立一个新的JList组件。 </li>
+    <li>JList(Vector listData):利用Vector对象建立一个新的JList组件。</li>
+  </ul>
+  <h2> <a name="a" id="a"></a>7-3-1:建立一般的JList:</h2>
+  <p> 一般我们若不需要在JList中加入Icon图像，通常会用第3或第4个构造函数建立JList对象。而这两个最大的不同在于使用Array对
+    象建立JList组件就无法改变项目的数量。对于项目数量经常改变的环境来说，以Vector对象来建立JList组件当然比较适合。例如
+    一个卖手机的店家，可能动不动就会有新手机上市，此时若用Array对象就不是很适当了!</p>
+  <p> 我们来看个范例看怎么构造一个简单的JList吧！ </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.Vector;
+
+public class JList1 {
+	public static void main(String args[]) {
+		JFrame f = new JFrame("JList");
+		Container contentPane = f.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 2));
+		String[] s = { "美国", "日本", "大陆", "英国", "法国" };
+		Vector v = new Vector();
+		v.addElement("Nokia 8850");
+		v.addElement("Nokia 8250");
+		v.addElement("Motorola V8088");
+		v.addElement("Motorola V3688x");
+		v.addElement("Panasonic GD92");
+		v.addElement("其他");
+
+		JList list1 = new JList(s);
+		list1.setBorder(BorderFactory.createTitledBorder("您最喜欢到哪个国家玩呢？"));
+
+		JList list2 = new JList(v);
+		list2.setBorder(BorderFactory.createTitledBorder("您最喜欢哪一种手机？"));
+
+		contentPane.add(new JScrollPane(list1));
+		contentPane.add(new JScrollPane(list2));
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+}</pre>
+  <p>在这个范例中，当窗口变小时，JList并不会有滚动(ScrollBar)的效果，所以可能无法看到比较下面的选项。若我们要有滚动的
+    效果，必须将JList放入滚动面版中(JScrollPane),如我们在程序改为:</p>
+  <ul>
+    <li> contentPane.add(new JScrollPane(list1)); </li>
+    <li>contentPane.add(new JScrollPane(list2));</li>
+  </ul>
+  <p> 如此就有滚动的效果了，若我们要有多个选项呢？在JList中有3种选择模式(Selection Mode)可供我们使用，分别是单一选择、
+    连续区间选择、与多重选择。我们可以在ListSelectionModel这个interface中找到这3个常数值，如下:
+    static int SINGLE_SELECTION:一次只能选择一个项目。 </p>
+  <p>static int SINGLE_INTERVAL_SELECTION:按住[shift]键，可以对某一边续的项目作选取。
+    static int MULTIPLE_INTERVAL_SELECTION:没有任何限制。可作单一选择，连续区间选择,或对不连续的项目作多重选择(按
+    住[Ctrl]键)。多得选择是java对JList的默认值，因此在上例中你可以在JList中作这3种模式的选择方式。 </p>
+  <p>设置选择模式可以利用JList所提供的setSelectionMode(int selectionMode)方法。例如，若我们将上例改成如下: </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.Vector;
+
+public class JList2 {
+	public static void main(String args[]) {
+		JFrame f = new JFrame("JList");
+		Container contentPane = f.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 3));
+		String[] s1 = { "美国", "日本", "大陆", "英国", "法国", "意大利", "澳洲", "韩国" };
+		String[] s2 = { "范志毅", "符兵", "周宁", "杨晨", "高锋", "南方", "其他" };
+		Vector v = new Vector();
+		v.addElement("Nokia 3310");
+		v.addElement("Nokia 8850");
+		v.addElement("Nokia 8250");
+		v.addElement("Motorola V8088");
+		v.addElement("Motorola V3688x");
+		v.addElement("Panasonic GD92");
+		v.addElement("Panasonic GD93");
+		v.addElement("NEC DB2100");
+		v.addElement("Alcatel OT500");
+		v.addElement("Philips Xenium 9@9 ");
+		v.addElement("Ericsson T29sc");
+		v.addElement("其他");
+
+		JList list1 = new JList(s1);
+		list1.setBorder(BorderFactory.createTitledBorder("您最喜欢到哪个国家玩呢？"));
+
+		JList list2 = new JList(s2);
+		list2.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		list2.setBorder(BorderFactory.createTitledBorder("您最喜欢哪个运动员呢？"));
+
+		JList list3 = new JList(v);
+		list3.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+		list3.setBorder(BorderFactory.createTitledBorder("您最喜欢哪一种手机？"));
+
+		contentPane.add(new JScrollPane(list1));
+		contentPane.add(new JScrollPane(list2));
+		contentPane.add(new JScrollPane(list3));
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+}</pre>
+  <div class="rpindex"><a href="27.html"> 下一页</a><a href="25.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

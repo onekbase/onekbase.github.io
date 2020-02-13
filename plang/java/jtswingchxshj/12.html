@@ -1,0 +1,320 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="11.html"> 上一页</a><a href="13.html"> 下一页</a></div>
+  <h2>4-1-2:Swing的容器结构与JLayeredPane的使用：</h2>
+  <h5>类层次结构图： </h5>
+  <PRE >java.lang.Object
+    --java.awt.Compontent
+    --java.awt.Container
+      --javax.swing.JComponent
+        --javax.swing.JLayeredPane</PRE>
+  <p>我们可把Swing容器的结构看似如下图所示：</p>
+  <pre>
+         |Grass Pane
+         |
+Root Pane|
+         |            |Content Pane
+         |Layered Pane|
+                      |Menu Bar</pre>
+  <p>其中,Root Pane可以看成是虚拟的容器，包含着Grass Pane、Layered Pane、Content Pane与Menu Bar.Swing的容器包括JApplet
+    ,JFrame,JDialog,JWindow与JInternalFrame都是构造在此结构上，JApplet、JFrame、JDialog、JWindow都是heavyweight容器，只
+    有JInternalFrame是lightweight容器。当我们要加入某个组件到Swing的容器中时，并不是直接加入到Root Pane,而是加入到
+    RootPane下面的某一成员(Layered Pane或Content Pane)</p>
+  <p>Content Pane与Menu Bar只是Layered Pane的其中一层，我们称此层为Frame-Content Layer.若你想知道Frame-Content Layer
+    在Layered Pane的层次是什么？你可以由JLayeredPane类中的Frame_Content_layer类常数取得。</p>
+  <p>由此我们可以知道，Layered Pane基本上可拥有非常多的“层”(Layer),那么如何分辨哪一层是在哪一层的上面或下面呢？
+    答案是Z_order.Z_order本身具有两个整数值，一个是代表层(Layer)的深度，另一个代表同层的相关位置(Position),当Z_order
+    的Layer数值越小时，表示其位置就在越底层，当Z_order的Layer数值越大时，表示其位置就在越上层。在JLayeredPane类中，共定
+    义了6个Z_order常数供用户参考，如下所示：</p>
+  <p>DEFAULT_LAYER:Z_order的Layer数值为0，以整数对象Integer(0)来表示，一般我们加入的组件若没有标记是第几层，默认值就
+    把组件放在此Default Layer中。</p>
+  <p>PALETTE_LAYER:Z_order的Layer数值为100，以整数对象Integer(100)来表示,位于Default Layer之上，一般用于放置可移动的
+    工具栏(Floatable Toolbar).</p>
+  <p>MODAL_LAYER:Z_order的Layer数值为200，以整数对象Integer(200)来表示,位于PALETTE_LAYER之上，一般用于放置对话框
+    (Dialog Box).</p>
+  <p> POPUP_LAYER:Z_order的Layer数值为300，以整数对象Integer(300)来表示,位于MODAL_LAYER之上，一般用于快捷菜单(Poup 
+    Menu)与工具栏提示(Tool Tips)中.</p>
+  <p>DRAG_LAYER:Z_order的Layer数值为400，以整数对象Integer(400)来表示,位于POPUP_LAYER之上，一般用于拖曳组件使其在不同
+    区域上.</p>
+  <p>FRAME_CONTENT_LAYER:Z_order的Layer数值为－30000，以整数对象Integer(－30000)来表示,一般来说，Frame Content Layer
+    最底层的是Layer，用来表示Content Pane与Menu Bar的位置，大部份情况我们不会更改到这个数值。</p>
+  <p> 一般程序会提供良好的Z-order自动管理机制，当然java也不例外，因此大部份情况我们不会使用到Z-order，因为系统会自动
+    帮我们管理得好好的。用户只需将所需的组件直接加入Content Pane即可，不需要知道它们之间的顺序关系。但如果今天您必须处
+    理对象之间的层次关系时，例如Word中你可以把某个绘图对象下推至下一层，你就必须亲自处理Z-order的关系了。</p>
+  <p>下面我们来看如何利用JLayeredPane来控制对象的层次关系：</p>
+  <p> 这个例子分别用7个JLabel对象层层相叠，每个JLabel对象都有不同的Z-order数值，形成7层相叠的效果！</p>
+  <h5> JLayeredPane1.java:</h5>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JLayeredPane1 extends JFrame {
+	public JLayeredPane1() {
+		super("JLayeredPane");
+		/*
+		 * 由小到大定义组件深度数值，也就是Z-order layer的大小。
+		 */
+		Integer[] layerConstants = { JLayeredPane.DEFAULT_LAYER,
+				JLayeredPane.PALETTE_LAYER, new Integer(101),
+				JLayeredPane.MODAL_LAYER, new Integer(201),
+				JLayeredPane.POPUP_LAYER, JLayeredPane.DRAG_LAYER };
+		/*
+		 * 定义每个JLabel的颜色
+		 */
+		Color[] colors = { Color.red, Color.blue, Color.magenta, Color.cyan,
+				Color.yellow, Color.green, Color.pink };
+		Point position = new Point(10, 10);
+		JLabel[] label = new JLabel[7];
+		JLayeredPane layeredPane = getLayeredPane();// 取得窗口的Layered Pane
+
+		for (int i = 0; i < 7; i++) {
+			label[i] = createLabel("第" + (i + 1) + "层", colors[i], position);
+			position.x = position.x + 20;
+			position.y = position.y + 20;
+			// 将组件(JLabel)放入Layered Pane中并给予深度(Z-order layer)的数值。
+			layeredPane.add(label[i], layerConstants[i]);
+		}
+		setSize(new Dimension(280, 280));
+		show();
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public JLabel createLabel(String content, Color color, Point position) {
+		JLabel label = new JLabel(content, JLabel.CENTER);
+		label.setVerticalAlignment(JLabel.TOP);
+		label.setBackground(color);
+		label.setForeground(Color.black);
+		label.setOpaque(true);
+		label.setBounds(position.x, position.y, 100, 100);
+		return label;
+	}
+
+	public static void main(String[] args) {
+		new JLayeredPane1();
+	}
+}</pre>
+  <p>从上面的例子可以看出，虽然“Button1”的层次比“按钮一”低，但它却显示在“按钮一”之上，原因"按钮一"是加在
+    Content Pane中而不是加在LayeredPane上，因此显示时以Content Pane与加在Content Pane上的组件来做层次的比较。</p>
+  <p> 从面的例子可以看出，Z-order layer数值越小的组件在越底层，也就会被Z-order layer值较大的组件所覆盖。那如果两个
+    组件都在同一层且相互重叠，怎么知道它们之间的层次关系呢？答案是利用Z-order的另外一个整数值：position。position
+    数值的关系跟 Z-order的layer数值恰好相反，在同一层中的对象，若position数值越小者则在越上层，position数值越大者则
+    在越下层。position的数值是从-1～n～1，n是指在同一层中组件的个数，数值-1代表最底层，意思跟n-1一样;数值0代表最上层。
+    你可以使用JLayeredPane类提供的moveToBack()方法将组件推至position为-1（最底端）的位置，或是使用moveToFront()方法
+    将组件推至position为0（最顶端）的位置。我们来看下面的范例：</p>
+  <h5> JLayeredPane3.java</h5>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JLayeredPane3 extends JFrame {
+	public JLayeredPane3() {
+		super("JLayeredPane");
+
+		JLabel label1 = new JLabel("左Label", JLabel.CENTER);
+		label1.setVerticalAlignment(JLabel.TOP);
+		label1.setBackground(Color.red);
+		label1.setForeground(Color.black);
+		label1.setOpaque(true);
+		label1.setBounds(20, 20, 150, 150);
+
+		JLabel label2 = new JLabel("右sLabe2", JLabel.CENTER);
+		label2.setVerticalAlignment(JLabel.TOP);
+		label2.setBackground(Color.red);
+		label2.setForeground(Color.black);
+		label2.setOpaque(true);
+		label2.setBounds(50, 50, 150, 150);
+
+		JLayeredPane layeredPane = getLayeredPane();
+		layeredPane.add(label1, new Integer(10), 1);
+		layeredPane.add(label2, new Integer(10), 0);
+
+		setSize(new Dimension(280, 280));
+		show();
+		addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String[] args) {
+		new JLayeredPane3();
+	}
+}</PRE>
+  <div class="rpindex"><a href="13.html"> 下一页</a><a href="11.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

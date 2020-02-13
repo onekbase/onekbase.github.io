@@ -1,0 +1,374 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="56.html"> 上一页</a><a href="58.html"> 下一页</a></div>
+  <h2>10-5:改变JTree的外观: </h2>
+  <p>你可以使用JComponent所提供的putClientProperty(Object key,Object value)方法来设置java默认的JTree外观，设置方式共有
+    3种: </p>
+  <ul>
+    <li>tree.putClientProperty("JTree.lineStyle","None"):java默认值。</li>
+    <li> tree.putClientProperty("JTree.lineStyle","Horizontal"):使JTree的文件夹间具有水平分隔线。 </li>
+    <li>tree.putClientProperty("JTree.lineStyle","Angled"):使JTree具有类似Windows文件管理器的直角连接线。
+      具体怎样做，可看上例.</li>
+  </ul>
+  <h2> <a name="a" id="a"></a>10-6:更换JTree节点图案:</h2>
+  <p> JTree利用TreeCellRenderer界面来运行绘制节点的工作，同样的，你不需要直接支实作这个界面所定义的方法，因为java本身提
+    供一个已经实作好的类来给我们使用，此类就是DefaultTreeCellRenderer,你可以在javax.swing.tree package中找到此类所提供
+    的方法。下面为使用DefaultTreeCellRenderer更改节点图案的一个例子: </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.tree.*;
+import com.incors.plaf.alloy.*;
+
+public class TreeDemo4 {
+	public TreeDemo4() {
+		JFrame f = new JFrame("TreeDemo");
+		Container contentPane = f.getContentPane();
+
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("资源管理器");
+		DefaultMutableTreeNode node1 = new DefaultMutableTreeNode("我的公文包");
+		DefaultMutableTreeNode node2 = new DefaultMutableTreeNode("我的电脑");
+		DefaultMutableTreeNode node3 = new DefaultMutableTreeNode("收藏夹");
+		DefaultMutableTreeNode node4 = new DefaultMutableTreeNode("Readme");
+		DefaultTreeModel treeModel = new DefaultTreeModel(root);
+		treeModel.insertNodeInto(node1, root, root.getChildCount());
+		treeModel.insertNodeInto(node2, root, root.getChildCount());
+		treeModel.insertNodeInto(node3, root, root.getChildCount());
+		treeModel.insertNodeInto(node4, root, root.getChildCount());
+
+		DefaultMutableTreeNode leafnode = new DefaultMutableTreeNode("公司文件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+		leafnode = new DefaultMutableTreeNode("个人信件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+		leafnode = new DefaultMutableTreeNode("私人文件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+
+		leafnode = new DefaultMutableTreeNode("本机磁盘(C:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+		leafnode = new DefaultMutableTreeNode("本机磁盘(D:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+		leafnode = new DefaultMutableTreeNode("本机磁盘(E:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+
+		DefaultMutableTreeNode node31 = new DefaultMutableTreeNode("网站列表");
+		treeModel.insertNodeInto(node31, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("奇摩站");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("职棒消息");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("网络书店");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+		try {
+			LookAndFeel alloyLnF = new AlloyLookAndFeel();
+			UIManager.setLookAndFeel(alloyLnF);
+		} catch (UnsupportedLookAndFeelException ex) {
+			// You may handle the exception here
+		}
+		// this line needs to be implemented in order to make JWS work properly
+		UIManager.getLookAndFeelDefaults().put("ClassLoader",
+				getClass().getClassLoader());
+
+		JTree tree = new JTree(treeModel);
+		tree.setRowHeight(20);
+		DefaultTreeCellRenderer cellRenderer = (DefaultTreeCellRenderer) tree
+				.getCellRenderer();
+		cellRenderer.setLeafIcon(new ImageIcon("..\\icons\\leaf.gif"));
+		cellRenderer.setOpenIcon(new ImageIcon("..\\icons\\open.gif"));
+		cellRenderer.setClosedIcon(new ImageIcon("..\\icons\\close.gif"));
+
+		cellRenderer.setFont(new Font("宋体", Font.PLAIN, 12));// 设置字体.
+		cellRenderer.setBackgroundNonSelectionColor(Color.white);
+		cellRenderer.setBackgroundSelectionColor(Color.yellow);
+		cellRenderer.setBorderSelectionColor(Color.red);
+		/*
+		 * 设置选时或不选时，文字的变化颜色
+		 */
+		cellRenderer.setTextNonSelectionColor(Color.black);
+		cellRenderer.setTextSelectionColor(Color.blue);
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setViewportView(tree);
+
+		contentPane.add(scrollPane);
+		f.pack();
+		f.setVisible(true);
+
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+
+	}
+
+	public static void main(String args[]) {
+
+		new TreeDemo4();
+	}
+}</pre>
+  Window Xp界面:
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.tree.*;
+import com.incors.plaf.alloy.*;
+
+public class TreeDemo3 {
+	public TreeDemo3() {
+		// 设置成Alloy界面样式
+		try {
+			AlloyLookAndFeel.setProperty("alloy.isLookAndFeelFrameDecoration",
+					"true");
+			LookAndFeel alloyLnF = new AlloyLookAndFeel();
+			JFrame.setDefaultLookAndFeelDecorated(true);
+			UIManager.setLookAndFeel(alloyLnF);
+		} catch (UnsupportedLookAndFeelException ex) {
+			// You may handle the exception here
+		}
+		// this line needs to be implemented in order to make JWS work properly
+		UIManager.getLookAndFeelDefaults().put("ClassLoader",
+				getClass().getClassLoader());
+
+		// JDialog.setDefaultLookAndFeelDecorated(true);
+		JFrame f = new JFrame("firstTree");
+
+		Container contentPane = f.getContentPane();
+		// if (contentPane instanceof JComponent) {
+		// ((JComponent) contentPane).setMinimumSize(new Dimension(100, 100));
+		// }
+		// Container contentPane = f.getContentPane();
+
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("资源管理器");
+		DefaultMutableTreeNode node1 = new DefaultMutableTreeNode("我的公文包");
+		DefaultMutableTreeNode node2 = new DefaultMutableTreeNode("我的电脑");
+		DefaultMutableTreeNode node3 = new DefaultMutableTreeNode("收藏夹");
+		DefaultMutableTreeNode node4 = new DefaultMutableTreeNode("Readme");
+
+		DefaultTreeModel treeModel = new DefaultTreeModel(root);
+		treeModel.insertNodeInto(node1, root, root.getChildCount());
+		treeModel.insertNodeInto(node2, root, root.getChildCount());
+		treeModel.insertNodeInto(node3, root, root.getChildCount());
+		treeModel.insertNodeInto(node4, root, root.getChildCount());
+
+		DefaultMutableTreeNode leafnode = new DefaultMutableTreeNode("公司文件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+		leafnode = new DefaultMutableTreeNode("个人信件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+		leafnode = new DefaultMutableTreeNode("私人文件");
+		treeModel.insertNodeInto(leafnode, node1, node1.getChildCount());
+
+		leafnode = new DefaultMutableTreeNode("本机磁盘(C:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+		leafnode = new DefaultMutableTreeNode("本机磁盘(D:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+		leafnode = new DefaultMutableTreeNode("本机磁盘(E:)");
+		treeModel.insertNodeInto(leafnode, node2, node2.getChildCount());
+
+		DefaultMutableTreeNode node31 = new DefaultMutableTreeNode("网站列表");
+		treeModel.insertNodeInto(node31, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("奇摩站");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("职棒消息");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+		leafnode = new DefaultMutableTreeNode("网络书店");
+		treeModel.insertNodeInto(leafnode, node3, node3.getChildCount());
+
+		JTree tree = new JTree(treeModel);
+		/* 改变JTree的外观* */
+		// tree.putClientProperty("JTree.lineStyle","Horizontal");
+		/* 改变JTree的外观* */
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setViewportView(tree);
+
+		contentPane.add(scrollPane);
+		f.pack();
+		f.setVisible(true);
+
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+
+	}
+
+	public static void main(String args[]) {
+
+		new TreeDemo3();
+	}
+}
+</pre>
+  </p>
+  <div class="rpindex"><a href="58.html"> 下一页</a><a href="56.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

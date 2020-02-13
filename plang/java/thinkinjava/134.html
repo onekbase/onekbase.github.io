@@ -1,0 +1,378 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="133.html"> 上一页</a><a href="136.html"> 下一页</a></div>
+<h3>13.19.10 弹出式菜单</h3>
+<p>JPopupMenu的执行看起来有一些别扭：我们必须调用enableEvents()方法并选择鼠标事件代替利用事件接收器。它可能增加一个鼠标接收器但MouseEvent从isPopupTrigger()处不会返回真值——它不知道将激活一个弹出菜单。另外，当我们尝试接收器方法时，它的行为令人不可思议，这或许是鼠标单击活动引起的。在下面的程序例子里一些事件产生了这种弹出行为：</p>
+
+  <pre class="code">//: Popup.java
+// Creating popup menus with Swing
+package c13.swing;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Popup extends JPanel {
+  JPopupMenu popup = new JPopupMenu();
+  JTextField t = new JTextField(10);
+  public Popup() {
+    add(t);
+    ActionListener al = new ActionListener() {
+      public void actionPerformed(ActionEvent e){
+        t.setText(
+          ((JMenuItem)e.getSource()).getText());
+      }
+    };
+    JMenuItem m = new JMenuItem(&quot;Hither&quot;);
+    m.addActionListener(al);
+    popup.add(m);
+    m = new JMenuItem(&quot;Yon&quot;);
+    m.addActionListener(al);
+    popup.add(m);
+    m = new JMenuItem(&quot;Afar&quot;);
+    m.addActionListener(al);
+    popup.add(m);
+    popup.addSeparator();
+    m = new JMenuItem(&quot;Stay Here&quot;);
+    m.addActionListener(al);
+    popup.add(m);
+    PopupListener pl = new PopupListener();
+    addMouseListener(pl);
+    t.addMouseListener(pl);
+  }
+  class PopupListener extends MouseAdapter {
+    public void mousePressed(MouseEvent e) {
+      maybeShowPopup(e);
+    }
+    public void mouseReleased(MouseEvent e) {
+      maybeShowPopup(e);
+    }
+    private void maybeShowPopup(MouseEvent e) {
+      if(e.isPopupTrigger()) {
+        popup.show(
+          e.getComponent(), e.getX(), e.getY());
+      }
+    }
+  }
+  public static void main(String args[]) {
+    Show.inFrame(new Popup(),200,150);
+  }
+} ///:~</pre>
+
+<p>相同的ActionListener被加入每个JMenuItem中，使其能从菜单标签中取出文字，并将文字插入JTextField。</p>
+<h3>13.19.11 列表框和组合框</h3>
+<p>列表框和组合框在Swing中工作就像它们在老的AWT中工作一样，但如果我们需要它，它们同样被增加功能。另外，它也更加的方便易用。例如，JList中有一个显示String数组的构建器（奇怪的是同样的功能在JComboBox中无效！）。下面的例子显示了它们基本的用法。</p>
+
+  <pre class="code">//: ListCombo.java
+// List boxes &amp; Combo boxes
+package c13.swing;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class ListCombo extends JPanel {
+  public ListCombo() {
+    setLayout(new GridLayout(2,1));
+    JList list = new JList(ButtonGroups.ids);
+    add(new JScrollPane(list));
+    JComboBox combo = new JComboBox();
+    for(int i = 0; i &lt; 100; i++)
+      combo.addItem(Integer.toString(i));
+    add(combo);
+  }
+  public static void main(String args[]) {
+    Show.inFrame(new ListCombo(),200,200);
+  }
+} ///:~</pre>
+
+<p>最开始的时候，似乎有点儿古怪的一种情况是JLists居然不能自动提供滚动特性——即使那也许正是我们一直所期望的。增加对滚动的支持变得十分容易，就像上面示范的一样——简单地将JList封装到JScrollPane即可，所有的细节都自动地为我们照料到了。</p>
+<h3>13.19.12 滑杆和进度指示条</h3>
+<p>滑杆用户能用一个滑块的来回移动来输入数据，在很多情况下显得很直观（如声音控制）。进程条从“空”到“满”显示相关数据的状态，因此用户得到了一个状态的透视。我最喜爱的有关这的程序例子简单地将滑动块同进程条挂接起来，所以当我们移动滑动块时，进程条也相应的改变：</p>
+
+  <pre class="code">//: Progress.java
+// Using progress bars and sliders
+package c13.swing;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.border.*;
+
+public class Progress extends JPanel {
+  JProgressBar pb = new JProgressBar();
+  JSlider sb = 
+    new JSlider(JSlider.HORIZONTAL, 0, 100, 60);
+  public Progress() {
+    setLayout(new GridLayout(2,1));
+    add(pb);
+    sb.setValue(0);
+    sb.setPaintTicks(true);
+    sb.setMajorTickSpacing(20);
+    sb.setMinorTickSpacing(5);
+    sb.setBorder(new TitledBorder(&quot;Slide Me&quot;));
+    pb.setModel(sb.getModel()); // Share model
+    add(sb);
+  }
+  public static void main(String args[]) {
+    Show.inFrame(new Progress(),200,150);
+  }
+} ///:~</pre>
+
+<p>JProgressBar十分简单，但JSlider却有许多选项，例如方法、大或小的记号标签。注意增加一个带标题的边框是多么的容易。</p>
+<h3>13.19.13 树</h3>
+<p>使用一个JTree可以简单地像下面这样表示：</p>
+<pre class="code">add(new JTree(new Object[] {&quot;this&quot;, &quot;that&quot;, &quot;other&quot;}));</pre>
+<p>这个程序显示了一个原始的树状物。树状物的API是非常巨大的，可是——当然是在Swing中的巨大。它表明我们可以做有关树状物的任何事，但更复杂的任务可能需要不少的研究和试验。幸运的是，在库中提供了一个妥协：“默认的”树状物组件，通常那是我们所需要的。因此大多数的时间我们可以利用这些组件，并且只在特殊的情况下我们需要更深入的研究和理解。</p>
+<p>下面的例子使用了“默认”的树状物组件在一个程序片中显示一个树状物。当我们按下按钮时，一个新的子树就被增加到当前选中的结点下（如果没有结点被选中，就用根结节）：</p>
+
+  <pre class="code">//: Trees.java
+// Simple Swing tree example. Trees can be made
+// vastly more complex than this.
+package c13.swing;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.tree.*;
+
+// Takes an array of Strings and makes the first
+// element a node and the rest leaves:
+class Branch {
+  DefaultMutableTreeNode r;
+  public Branch(String[] data) {
+    r = new DefaultMutableTreeNode(data[0]);
+    for(int i = 1; i &lt; data.length; i++)
+      r.add(new DefaultMutableTreeNode(data[i]));
+  }
+  public DefaultMutableTreeNode node() { 
+    return r; 
+  }
+}  
+
+public class Trees extends JPanel {
+  String[][] data = {
+    { &quot;Colors&quot;, &quot;Red&quot;, &quot;Blue&quot;, &quot;Green&quot; },
+    { &quot;Flavors&quot;, &quot;Tart&quot;, &quot;Sweet&quot;, &quot;Bland&quot; },
+    { &quot;Length&quot;, &quot;Short&quot;, &quot;Medium&quot;, &quot;Long&quot; },
+    { &quot;Volume&quot;, &quot;High&quot;, &quot;Medium&quot;, &quot;Low&quot; },
+    { &quot;Temperature&quot;, &quot;High&quot;, &quot;Medium&quot;, &quot;Low&quot; },
+    { &quot;Intensity&quot;, &quot;High&quot;, &quot;Medium&quot;, &quot;Low&quot; },
+  };
+  static int i = 0;
+  DefaultMutableTreeNode root, child, chosen;
+  JTree tree;
+  DefaultTreeModel model;
+  public Trees() {
+    setLayout(new BorderLayout());
+    root = new DefaultMutableTreeNode(&quot;root&quot;);
+    tree = new JTree(root);
+    // Add it and make it take care of scrolling:
+    add(new JScrollPane(tree), 
+      BorderLayout.CENTER);
+    // Capture the tree's model:
+    model =(DefaultTreeModel)tree.getModel();
+    JButton test = new JButton(&quot;Press me&quot;);
+    test.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e){
+        if(i &lt; data.length) {
+          child = new Branch(data[i++]).node();
+          // What's the last one you clicked?
+          chosen = (DefaultMutableTreeNode)
+            tree.getLastSelectedPathComponent();
+          if(chosen == null) chosen = root;
+          // The model will create the 
+          // appropriate event. In response, the
+          // tree will update itself:
+          model.insertNodeInto(child, chosen, 0);
+          // This puts the new node on the 
+          // currently chosen node.
+        }
+      }
+    });
+    // Change the button's colors:
+    test.setBackground(Color.blue);
+    test.setForeground(Color.white);
+    JPanel p = new JPanel();
+    p.add(test);
+    add(p, BorderLayout.SOUTH);
+  }
+  public static void main(String args[]) {
+    Show.inFrame(new Trees(),200,500);
+  }
+} ///:~</pre>
+
+<p>最重要的类就是分支，它是一个工具，用来获取一个字符串数组并为第一个字符串建立一个DefaultMutableTreeNode作为根，其余在数组中的字符串作为叶。然后node()方法被调用以产生“分支”的根。树状物类包括一个来自被制造的分支的二维字符串数组，以及用来统计数组的一个静态中断i。DefaultMutableTreeNode对象控制这个结节，但在屏幕上表示的是被JTree和它的相关（DefaultTreeModel）模式所控制。注意当JTree被增加到程序片时，它被封装到JScrollPane中——这就是它全部提供的自动滚动。</p>
+<p>JTree通过它自己的模型来控制。当我们修改这个模型时，模型产生一个事件，导致JTree对可以看见的树状物完成任何必要的升级。在init()中，模型由调用getModel()方法所捕捉。当按钮被按下时，一个新的分支被创建了。然后，当前选择的组件被找到（如果没有选择就是根）并且模型的insertNodeInto()方法做所有的改变树状物和导致它升级的工作。</p>
+<p>大多数的时候，就像上面的例子一样，程序将给我们在树状物中所需要的一切。不过，树状物拥有力量去做我们能够想像到的任何事——在上面的例子中我们到处都可看到“default（默认）”字样，我们可以取代我们自己的类来获取不同的动作。但请注意：几乎所有这些类都有一个具大的接口，因此我们可以花一些时间努力去理解这些错综复杂的树状物。</p>
+<div class="rpindex"><a href="136.html"> 下一页</a><a href="133.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

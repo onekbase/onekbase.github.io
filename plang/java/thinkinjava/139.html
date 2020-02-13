@@ -1,0 +1,282 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="138.html"> 上一页</a><a href="140.html"> 下一页</a></div>
+<h3>14.1.4 制作多个线程</h3>
+<p>现在考虑一下创建多个不同的线程的问题。我们不可用前面的例子来做到这一点，所以必须倒退回去，利用从Thread继承的多个独立类来封装run()。但这是一种更常规的方案，而且更易理解，所以尽管前例揭示了我们经常都能看到的编码样式，但并不推荐在大多数情况下都那样做，因为它只是稍微复杂一些，而且灵活性稍低一些。</p>
+<p>下面这个例子用计数器和切换按钮再现了前面的编码样式。但这一次，一个特定计数器的所有信息（按钮和文本字段）都位于它自己的、从Thread继承的对象内。Ticker中的所有字段都具有private（私有）属性，这意味着Ticker的具体实现方案可根据实际情况任意修改，其中包括修改用于获取和显示信息的数据组件的数量及类型。创建好一个Ticker对象以后，构建器便请求一个AWT容器（Container）的句柄——Ticker用自己的可视组件填充那个容器。采用这种方式，以后一旦改变了可视组件，使用Ticker的代码便不需要另行修改一道。</p>
+
+  <pre class="code">//: Counter4.java
+// If you separate your thread from the main
+// class, you can have as many threads as you
+// want.
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+
+class Ticker extends Thread {
+  private Button b = new Button(&quot;Toggle&quot;);
+  private TextField t = new TextField(10);
+  private int count = 0;
+  private boolean runFlag = true;
+  public Ticker(Container c) {
+    b.addActionListener(new ToggleL());
+    Panel p = new Panel();
+    p.add(t);
+    p.add(b);
+    c.add(p);
+  }
+  class ToggleL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      runFlag = !runFlag;
+    }
+  }
+  public void run() {
+    while (true) {
+      if(runFlag)
+        t.setText(Integer.toString(count++));
+       try {
+        sleep(100);
+      } catch (InterruptedException e){}
+    }
+  }
+}
+
+public class Counter4 extends Applet {
+  private Button start = new Button(&quot;Start&quot;);
+  private boolean started = false;
+  private Ticker[] s;
+  private boolean isApplet = true;
+  private int size;
+  public void init() {
+    // Get parameter &quot;size&quot; from Web page:
+    if(isApplet)
+      size = 
+        Integer.parseInt(getParameter(&quot;size&quot;));
+    s = new Ticker[size];
+    for(int i = 0; i &lt; s.length; i++)
+      s[i] = new Ticker(this);
+    start.addActionListener(new StartL());
+    add(start);
+  }
+  class StartL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      if(!started) {
+        started = true;
+        for(int i = 0; i &lt; s.length; i++)
+          s[i].start();
+      }
+    }
+  }
+  public static void main(String[] args) {
+    Counter4 applet = new Counter4();
+    // This isn't an applet, so set the flag and
+    // produce the parameter values from args:
+    applet.isApplet = false;
+    applet.size = 
+      (args.length == 0 ? 5 :
+        Integer.parseInt(args[0]));
+    Frame aFrame = new Frame(&quot;Counter4&quot;);
+    aFrame.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+          System.exit(0);
+        }
+      });
+    aFrame.add(applet, BorderLayout.CENTER);
+    aFrame.setSize(200, applet.size * 50);
+    applet.init();
+    applet.start();
+    aFrame.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>Ticker不仅包括了自己的线程处理机制，也提供了控制与显示线程的工具。可按自己的意愿创建任意数量的线程，毋需明确地创建窗口化组件。</p>
+<p>在Counter4中，有一个名为s的Ticker对象的数组。为获得最大的灵活性，这个数组的长度是用程序片参数接触Web页而初始化的。下面是网页中长度参数大致的样子，它们嵌于对程序片（applet）的描述内容中：</p>
+<pre class="code">&lt;applet code=Counter4 width=600 height=600&gt;
+&lt;param name=size value=&quot;20&quot;&gt;
+&lt;/applet&gt;</pre>
+<p>其中，param，name和value是所有Web页都适用的关键字。name是指程序中对参数的一种引用称谓，value可以是任何字串（并不仅仅是解析成一个数字的东西）。</p>
+<p>我们注意到对数组s长度的判断是在init()内部完成的，它没有作为s的内嵌定义的一部分提供。换言之，不可将下述代码作为类定义的一部分使用（应该位于任何方法的外部）：</p>
+<pre class="code">inst size = Integer.parseInt(getParameter(&quot;Size&quot;));
+Ticker[] s = new Ticker[size]</pre>
+<p>可把它编译出来，但会在运行期得到一个空指针违例。但若将getParameter()初始化移入init()，则可正常工作。程序片框架会进行必要的启动工作，以便在进入init()前收集好一些参数。</p>
+<p>此外，上述代码被同时设置成一个程序片和一个应用（程序）。在它是应用程序的情况下，size参数可从命令行里提取出来（否则就提供一个默认的值）。</p>
+<p>数组的长度建好以后，就可以创建新的Ticker对象；作为Ticker构建器的一部分，用于每个Ticker的按钮和文本字段就会加入程序片。</p>
+<p>按下Start按钮后，会在整个Ticker数组里遍历，并为每个Ticker调用start()。记住，start()会进行必要的线程初始化工作，然后为那个线程调用run()。</p>
+<p>ToggleL监视器只是简单地切换Ticker中的标记，一旦对应线程以后需要修改这个标记，它会作出相应的反应。</p>
+<p>这个例子的一个好处是它使我们能够方便地创建由单独子任务构成的大型集合，并以监视它们的行为。在这种情况下，我们会发现随着子任务数量的增多，机器显示出来的数字可能会出现更大的分歧，这是由于为线程提供服务的方式造成的。</p>
+<p>亦可试着体验一下sleep(100)在Ticker.run()中的重要作用。若删除sleep()，那么在按下一个切换按钮前，情况仍然会进展良好。按下按钮以后，那个特定的线程就会出现一个失败的runFlag，而且run()会深深地陷入一个无限循环——很难在多任务处理期间中止退出。因此，程序对用户操作的反应灵敏度会大幅度降低。</p>
+<div class="rpindex"><a href="140.html"> 下一页</a><a href="138.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

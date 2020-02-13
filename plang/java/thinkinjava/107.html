@@ -1,0 +1,291 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="106.html"> 上一页</a><a href="108.html"> 下一页</a></div>
+<h3>12.4.3 不变字串</h3>
+<p>请观察下述代码：</p>
+
+  <pre class="code">//: Stringer.java
+
+public class Stringer {
+  static String upcase(String s) {
+    return s.toUpperCase();
+  }
+  public static void main(String[] args) {
+    String q = new String(&quot;howdy&quot;);
+    System.out.println(q); // howdy
+    String qq = upcase(q);
+    System.out.println(qq); // HOWDY
+    System.out.println(q); // howdy
+  }
+} ///:~</pre>
+
+<p>q传递进入upcase()时，它实际是q的句柄的一个副本。该句柄连接的对象实际只在一个统一的物理位置处。句柄四处传递的时候，它的句柄会得到复制。</p>
+<p>若观察对upcase()的定义，会发现传递进入的句柄有一个名字s，而且该名字只有在upcase()执行期间才会存在。upcase()完成后，本地句柄s便会消失，而upcase()返回结果——还是原来那个字串，只是所有字符都变成了大写。当然，它返回的实际是结果的一个句柄。但它返回的句柄最终是为一个新对象的，同时原来的q并未发生变化。所有这些是如何发生的呢？</p>
+<h4>1. 隐式常数</h4>
+<p>若使用下述语句：</p>
+<pre class="code">String s = &quot;asdf&quot;;
+String x = Stringer.upcase(s);</pre>
+<p>那么真的希望upcase()方法改变自变量或者参数吗？我们通常是不愿意的，因为作为提供给方法的一种信息，自变量一般是拿给代码的读者看的，而不是让他们修改。这是一个相当重要的保证，因为它使代码更易编写和理解。</p>
+<p>为了在C++中实现这一保证，需要一个特殊关键字的帮助：const。利用这个关键字，程序员可以保证一个句柄（C++叫“指针”或者“引用”）不会被用来修改原始的对象。但这样一来，C++程序员需要用心记住在所有地方都使用const。这显然易使人混淆，也不容易记住。</p>
+<h4>2. 覆盖&quot;+&quot;和StringBuffer</h4>
+<p>利用前面提到的技术，String类的对象被设计成“不可变”。若查阅联机文档中关于String类的内容（本章稍后还要总结它），就会发现类中能够修改String的每个方法实际都创建和返回了一个崭新的String对象，新对象里包含了修改过的信息——原来的String是原封未动的。因此，Java里没有与C++的const对应的特性可用来让编译器支持对象的不可变能力。若想获得这一能力，可以自行设置，就象String那样。</p>
+<p>由于String对象是不可变的，所以能够根据情况对一个特定的String进行多次别名处理。因为它是只读的，所以一个句柄不可能会改变一些会影响其他句柄的东西。因此，只读对象可以很好地解决别名问题。</p>
+<p>通过修改产生对象的一个崭新版本，似乎可以解决修改对象时的所有问题，就象String那样。但对某些操作来讲，这种方法的效率并不高。一个典型的例子便是为String对象覆盖的运算符“+”。“覆盖”意味着在与一个特定的类使用时，它的含义已发生了变化（用于String的“+”和“+=”是Java中能被覆盖的唯一运算符，Java不允许程序员覆盖其他任何运算符——注释④）。</p>
+④：C++允许程序员随意覆盖运算符。由于这通常是一个复杂的过程（参见《Thinking
+<p>in C++》，Prentice-Hall于1995年出版），所以Java的设计者认定它是一种“糟糕”的特性，决定不在Java中采用。但具有讽剌意味的是，运算符的覆盖在Java中要比在C++中容易得多。</p>
+<p>针对String对象使用时，“+”允许我们将不同的字串连接起来：</p>
+
+  <pre class="code">String s = &quot;abc&quot; + foo + &quot;def&quot; + Integer.toString(47);</pre>
+
+<p>可以想象出它“可能”是如何工作的：字串&quot;abc&quot;可以有一个方法append()，它新建了一个字串，其中包含&quot;abc&quot;以及foo的内容；这个新字串然后再创建另一个新字串，在其中添加&quot;def&quot;；以此类推。</p>
+<p>这一设想是行得通的，但它要求创建大量字串对象。尽管最终的目的只是获得包含了所有内容的一个新字串，但中间却要用到大量字串对象，而且要不断地进行垃圾收集。我怀疑Java的设计者是否先试过种方法（这是软件开发的一个教训——除非自己试试代码，并让某些东西运行起来，否则不可能真正了解系统）。我还怀疑他们是否早就发现这样做获得的性能是不能接受的。</p>
+<p>解决的方法是象前面介绍的那样制作一个可变的同志类。对字串来说，这个同志类叫作StringBuffer，编译器可以自动创建一个StringBuffer，以便计算特定的表达式，特别是面向String对象应用覆盖过的运算符+和+=时。下面这个例子可以解决这个问题：</p>
+
+  <pre class="code">//: ImmutableStrings.java
+// Demonstrating StringBuffer
+
+public class ImmutableStrings {
+  public static void main(String[] args) {
+    String foo = &quot;foo&quot;;
+    String s = &quot;abc&quot; + foo +
+      &quot;def&quot; + Integer.toString(47);
+    System.out.println(s);
+    // The &quot;equivalent&quot; using StringBuffer:
+    StringBuffer sb = 
+      new StringBuffer(&quot;abc&quot;); // Creates String!
+    sb.append(foo);
+    sb.append(&quot;def&quot;); // Creates String!
+    sb.append(Integer.toString(47));
+    System.out.println(sb);
+  }
+} ///:~</pre>
+
+<p>创建字串s时，编译器做的工作大致等价于后面使用sb的代码——创建一个StringBuffer，并用append()将新字符直接加入StringBuffer对象（而不是每次都产生新对象）。尽管这样做更有效，但不值得每次都创建象&quot;abc&quot;和&quot;def&quot;这样的引号字串，编译器会把它们都转换成String对象。所以尽管StringBuffer提供了更高的效率，但会产生比我们希望的多得多的对象。</p>
+<h3>12.4.4 String和StringBuffer类</h3>
+<p>这里总结一下同时适用于String和StringBuffer的方法，以便对它们相互间的沟通方式有一个印象。这些表格并未把每个单独的方法都包括进去，而是包含了与本次讨论有重要关系的方法。那些已被覆盖的方法用单独一行总结。</p>
+<p>首先总结String类的各种方法：</p>
+<p>方法 自变量，覆盖 用途</p>
+<p>构建器 已被覆盖：默认，String，StringBuffer，char数组，byte数组 创建String对象</p>
+<p>length() 无 String中的字符数量</p>
+<p>charAt() int Index 位于String内某个位置的char</p>
+getChars()，getBytes 
+开始复制的起点和终点，要向其中复制内容的数组，对目标数组的一个索引
+<p>将char或byte复制到外部数组内部</p>
+<p>toCharArray() 无 产生一个char[]，其中包含了String内部的字符</p>
+equals()，equalsIgnoreCase() 用于对比的一个String
+<p>对两个字串的内容进行等价性检查</p>
+<p>compareTo() 用于对比的一个String 结果为负、零或正，具体取决于String和自变量的字典顺序。注意大写和小写不是相等的！</p>
+regionMatches() 这个String以及其他String的位置偏移，以及要比较的区域长度。覆盖加入了“忽略大小写”的特性
+<p>一个布尔结果，指出要对比的区域是否相同</p>
+startsWith() 可能以它开头的String。覆盖在自变量里加入了偏移
+<p>一个布尔结果，指出String是否以那个自变量开头</p>
+endsWith() 可能是这个String后缀的一个String
+<p>一个布尔结果，指出自变量是不是一个后缀</p>
+indexOf(),lastIndexOf() 已覆盖：char，char和起始索引，String，String和起始索引
+<p>若自变量未在这个String里找到，则返回-1；否则返回自变量开始处的位置索引。lastIndexOf()可从终点开始回溯搜索</p>
+<p>substring() 已覆盖：起始索引，起始索引和结束索引 返回一个新的String对象，其中包含了指定的字符子集</p>
+<p>concat() 想连结的String 返回一个新String对象，其中包含了原始String的字符，并在后面加上由自变量提供的字符</p>
+<p>relpace() 要查找的老字符，要用它替换的新字符 返回一个新String对象，其中已完成了替换工作。若没有找到相符的搜索项，就沿用老字串</p>
+<p>toLowerCase(),toUpperCase() 无 返回一个新String对象，其中所有字符的大小写形式都进行了统一。若不必修改，则沿用老字串</p>
+<p>trim() 无 返回一个新的String对象，头尾空白均已删除。若毋需改动，则沿用老字串</p>
+valueOf() 已覆盖：object，char[]，char[]和偏移以及计数，boolean，char，int，long，float，double
+<p>返回一个String，其中包含自变量的一个字符表现形式</p>
+<p>Intern() 无 为每个独一无二的字符顺序都产生一个（而且只有一个）String句柄</p>
+<p>可以看到，一旦有必要改变原来的内容，每个String方法都小心地返回了一个新的String对象。另外要注意的一个问题是，若内容不需要改变，则方法只返回指向原来那个String的一个句柄。这样做可以节省存储空间和系统开销。</p>
+<p>下面列出有关StringBuffer（字串缓冲）类的方法：</p>
+<p>方法 自变量，覆盖 用途</p>
+构建器 已覆盖：默认，要创建的缓冲区长度，要根据它创建的String
+<p>新建一个StringBuffer对象</p>
+<p>toString() 无 根据这个StringBuffer创建一个String</p>
+<p>length() 无 StringBuffer中的字符数量</p>
+<p>capacity() 无 返回目前分配的空间大小</p>
+<p>ensureCapacity() 用于表示希望容量的一个整数 使StringBuffer容纳至少希望的空间大小</p>
+setLength() 用于指示缓冲区内字串新长度的一个整数
+<p>缩短或扩充前一个字符串。如果是扩充，则用null值填充空隙</p>
+charAt() 表示目标元素所在位置的一个整数
+<p>返回位于缓冲区指定位置处的char</p>
+setCharAt() 代表目标元素位置的一个整数以及元素的一个新char值
+<p>修改指定位置处的值</p>
+getChars() 
+复制的起点和终点，要在其中复制的数组以及目标数组的一个索引
+<p>将char复制到一个外部数组。和String不同，这里没有getBytes()可供使用</p>
+append() 已覆盖：Object，String，char[]，特定偏移和长度的char[]，boolean，char，int，long，float，double
+<p>将自变量转换成一个字串，并将其追加到当前缓冲区的末尾。若有必要，同时增大缓冲区的长度</p>
+insert() 已覆盖，第一个自变量代表开始插入的位置：Object，String，char[]，boolean，char，int，long，float，double
+<p>第二个自变量转换成一个字串，并插入当前缓冲区。插入位置在偏移区域的起点处。若有必要，同时会增大缓冲区的长度</p>
+<p>reverse() 无 反转缓冲内的字符顺序</p>
+<p>最常用的一个方法是append()。在计算包含了+和+=运算符的String表达式时，编译器便会用到这个方法。insert()方法采用类似的形式。这两个方法都能对缓冲区进行重要的操作，不需要另建新对象。</p>
+<div class="rpindex"><a href="108.html"> 下一页</a><a href="106.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

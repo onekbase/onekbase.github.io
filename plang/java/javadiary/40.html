@@ -1,0 +1,260 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="39.html"> 上一页</a><a href="41.html"> 下一页</a></div>
+<h1><a
+href="1.html">Java Gossip: &#20851;于 this</a></h1>
+<p>考&#34385;下面&#36825;&#20010;&#31867;&#21035;：</p>
+<h5>Ball.java </h5>
+<pre class="code">
+public class Ball {
+	private double radius;
+	private String name;
+	public Ball() {
+		this(0.0, "no name");
+	}
+	public Ball(double radius, String name) {
+		this.radius = radius;
+		this.name = name;
+	}
+	public double getRadius() {
+		return radius;
+	}
+	public double getVolumn() {
+		return (4 / 3 * Math.PI * radius * radius * radius);
+	}
+	public String getName() {
+		return name;
+	}
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+}</pre>
+<p>&#24403;使用&#36825;&#20010;&#31867;&#21035;新增&#20004;&#20010;&#23545;象ball1与ball2&#26102;，ball1与ball2&#20250;各自&#25317;有自己的radius与name&#25968;据成&#21592;，然而方法成&#21592;在&#35760;&#24518; 体中&#21364;只有一份。 <br />
+<br />
+&#24403;使用ball1.getName()与b2.getName()方法取回name的名&#31216;&#26102;，即然&#31867;&#21035;的方法成&#21592;只有一份，getName()如何知 道它&#20256;回的name是ball1物件的，&#36824;是ball2物件的呢？ <br />
+<br />
+其&#23454;您使用&#23545;象名&#31216;&#26469;呼叫方法成&#21592;&#26102;，程序&#20250;&#23558;&#23545;象的&#21442;考告知方法成&#21592;，而在方法中，一&#20010;&#31867;&#21035;&#25968;据成&#21592;其&#23454;&#20250;&#38544;含一&#20010;this&#21442;考，&#36825;&#20010;this&#21442; 考&#20250;&#20648;存&#20256;&#36882;&#36827;&#26469;的&#23545;象&#21442;考，&#24403;您呼叫getRadius()函式&#26102;，其&#23454;相&#24403;于&#25191;行： </p>
+<pre class="code">public double getRadius() {
+	return this.radius;
+}</pre>
+<p>&#24403;ball1呼叫getRadius()方法&#26102;，this所&#21442;考的就是ball1所&#21442;考的&#23545;象，而使用ball2呼叫 getRadius()方法&#26102;，this所&#21442;考的就是ball2所&#21442;考的&#23545;象，所以getRadius()可以正确的得知&#35813;&#20256;回哪一&#20010;&#23545;象的radius &#25968;据。<br />
+<br />
+每一&#20010;&#31867;&#21035;的方法成&#21592;都&#20250;&#38544;含一&#20010;this&#21442;考，用&#26469;指向呼叫它的&#23545;象，&#24403;您在方法中使用&#25968;据成&#21592;&#26102;，都&#20250;&#38544;含的使用this指&#26631;，&#24403;然您也可以明确的指定，例如在函式定&#20041;&#26102;使用： </p>
+<pre class="code">public Ball(double radius, String name) {
+	this.radius = radius;
+	this.name = name;
+}</pre>
+<p>&#21442;&#25968;名&#31216;与&#25968;据成&#21592;名&#31216;相同&#26102;，&#20026;了&#35782;&#21035;是&#21442;&#25968;或是&#25968;据成&#21592;，我&#20204;必&#39035;明确的使用this&#21442;考&#26469;指定，但如果是下例&#21017;不用：</p>
+<pre class="code">public Ball(double r, String n) {
+	radius = r;?// 实际等于this.radius = r;
+	name = n;?// 实际等于this.name = n;
+}</pre>
+<p>
+再介&#32461;一&#20010;this&#21442;考的使用&#26102;机：&#24403;&#23545;象需要得知自己的&#20869;存地址&#26102;。&#36825;种例子很多，例如告知某&#20010;函式&#22788;理&#23545;象&#20026;自己、或在Java窗口程序中，注&#20876;&#23545;象本身&#20026;事件&#22788;理者，例如下面&#36825;&#20010;&#31616;&#21333;的Java程序中就有使用到this&#21442;考：</p>
+<pre class="code">
+public class GUIExample extends JFrame
+implements MouseListener {
+	// ....
+	// 实作事件处理的对象为自已
+	addMouseListener(this);?
+	// ....
+	// ==?鼠标事件实作 ==
+	public void mouseEntered(MouseEvent e) {
+		// .....
+	}
+	// ....
+}</pre>
+<p>&#36825;只是一&#20010;示范，告知您this&#21442;考的用法，如果日后您&#23398;到Java窗口程序的事件&#22788;理，相信&#36825;&#26679;的例子您&#20250;看到不少。<br />
+<br />
+this除了上面的用法之外，&#36824;有一种可以&#24102;&#21442;&#25968;的用法，主要是用于&#31867;&#21035;中呼叫建构方法，而避免直接以建构方法的名&#31216;&#26469;呼叫，例如：</p>
+<pre class="code">
+public class Ball {
+	private String name;
+	public Ball() {
+		this("No name");
+		....
+	}
+	public Ball(String name) {
+		this.name = name;
+		....
+	}
+}
+</pre>
+<p>&#24403;使用&#26080;&#21442;&#25968;的建构方法&#26102;，它&#20250;呼叫有&#21442;&#25968;的建构方法，&#36825;是this()一&#20010;&#24212;用的基本范例，如此，您不用在建构方法中撰&#20889;重复的程序代&#30721;。</p>
+<div class="rpindex"><a href="41.html"> 下一页</a><a href="39.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,385 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="171.html"> 上一页</a><a href="173.html"> 下一页</a></div>
+<h2>A.1.2 访问JNI函数：JNIEnv自变量</h2>
+<p>利用JNI函数，程序员可从一个固有方法的内部与JVM打交道。正如大家在前面的例子中看到的那样，每个JNI固有方法都会接收一个特殊的自变量作为自己的第一个参数：JNIEnv自变量——它是指向类型为JNIEnv_的一个特殊JNI数据结构的指针。JNI数据结构的一个元素是指向由JVM生成的一个数组的指针；该数组的每个元素都是指向一个JNI函数的指针。可从固有方法的内部发出对JNI函数的调用，做法是撤消对这些指针的引用（具体的操作实际很简单）。每种JVM都以自己的方式实现了JNI函数，但它们的地址肯定位于预先定义好的偏移处。</p>
+<p>利用JNIEnv自变量，程序员可访问一系列函数。这些函数可划分为下述类别：</p>
+<ul>
+  <li>■获取版本信息</li>
+  <li>■进行类和对象操作</li>
+  <li>■控制对Java对象的全局和局部引用</li>
+  <li>■访问实例字段和静态字段</li>
+  <li>■调用实例方法和静态方法</li>
+  <li>■执行字串和数组操作</li>
+  <li>■产生和控制Java异常</li>
+</ul>
+<p>JNI函数的数量相当多，这里不再详述。相反，我会向大家揭示使用这些函数时背后的一些基本原理。欲了解更详细的情况，请参阅自己所用编译器的JNI文档。</p>
+<p>若观察一下jni.h头文件，就会发现在#ifdef _cplusplus预处理器条件的内部，当由C++编译器编译时，JNIEnv_结构被定义成一个类。这个类包含了大量内嵌函数。通过一种简单而且熟悉的语法，这些函数让我们可以从容访问JNI函数。例如，前例包含了下面这行代码：</p>
+<pre class="code">(*jEnv)-&gt;ReleaseStringUTFChars(jEnv, jMsg,msg);</pre>
+<p>它在C++里可改写成下面这个样子：</p>
+<pre class="code">jEnv-&gt;ReleaseStringUTFChars(jMsg,msg);</pre>
+<p>大家可注意到自己不再需要同时撤消对jEnv的两个引用，相同的指针不再作为第一个参数传递给JNI函数调用。在这些例子剩下的地方，我会使用C++风格的代码。</p>
+<h4>1. 访问Java字串</h4>
+<p>作为访问JNI函数的一个例子，请思考上述的代码。在这里，我们利用JNIEnv的自变量jEnv来访问一个Java字串。Java字串采取的是Unicode格式，所以假若收到这样一个字串，并想把它传给一个非Unicode函数（如printf()），首先必须用JNI函数GetStringUTFChars()将其转换成ASCII字符。该函数能接收一个Java字串，然后把它转换成UTF-8字符（用8位宽度容纳ASCII值，或用16位宽度容纳Unicode；若原始字串的内容完全由ASCII构成，那么结果字串也是ASCII）。</p>
+<p>GetStringUTFChars是JNIEnv间接指向的那个结构里的一个字段，而这个字段又是指向一个函数的指针。为访问JNI函数，我们用传统的C语法来调用一个函数（通过指针）。利用上述形式可实现对所有JNI函数的访问。</p>
+<h2>A.1.3 传递和使用Java对象</h2>
+<p>在前例中，我们将一个字串传递给固有方法。事实上，亦可将自己创建的Java对象传递给固有方法。</p>
+<p>在我们的固有方法内部，可访问已收到的那些对象的字段及方法。</p>
+<p>为传递对象，声明固有方法时要采用原始的Java语法。如下例所示，MyJavaClass有一个public（公共）字段，以及一个public方法。UseObjects类声明了一个固有方法，用于接收MyJavaClass类的一个对象。为调查固有方法是否能控制自己的自变量，我们设置了自变量的public字段，调用固有方法，然后打印出public字段的值。</p>
+
+  <pre class="code">class MyJavaClass {
+  public void divByTwo() { aValue /= 2; }
+  public int aValue;
+}
+
+public class UseObjects {
+  public static void main(String [] args) {
+    UseObjects app = new UseObjects();
+    MyJavaClass anObj = new MyJavaClass();
+    anObj.aValue = 2;
+    app.changeObject(anObj);
+    System.out.println(&quot;Java: &quot; + anObj.aValue);
+  }
+  private native void 
+  changeObject(MyJavaClass obj);
+  static {
+    System.loadLibrary(&quot;UseObjImpl&quot;);
+  }
+}</pre>
+
+<p>编译好代码，并将.class文件传递给javah后，就可以实现固有方法。在下面这个例子中，一旦取得字段和方法ID，就会通过JNI函数访问它们。</p>
+
+  <pre class="code">JNIEXPORT void JNICALL
+Java_UseObjects_changeObject(
+  JNIEnv * env, jobject jThis, jobject obj) {
+  jclass cls;
+  jfieldID fid;
+  jmethodID mid;
+  int value;
+  cls = env-&gt;GetObjectClass(obj);
+  fid = env-&gt;GetFieldID(cls,
+        &quot;aValue&quot;, &quot;I&quot;);
+  mid = env-&gt;GetMethodID(cls,
+        &quot;divByTwo&quot;, &quot;()V&quot;);
+  value = env-&gt;GetIntField(obj, fid);
+  printf(&quot;Native: %d\n&quot;, value);
+  env-&gt;SetIntField(obj, fid, 6);
+  env-&gt;CallVoidMethod(obj, mid);
+  value = env-&gt;GetIntField(obj, fid);
+  printf(&quot;Native: %d\n&quot;, value);
+}</pre>
+
+<p>除第一个自变量外，C++函数会接收一个jobject，它代表Java对象引用“固有”的那一面——那个引用是我们从Java代码里传递的。我们简单地读取aValue，把它打印出来，改变这个值，调用对象的divByTwo()方法，再将值重新打印一遍。</p>
+<p>为访问一个字段或方法，首先必须获取它的标识符。利用适当的JNI函数，可方便地取得类对象、元素名以及签名信息。这些函数会返回一个标识符，利用它可访问对应的元素。尽管这一方式显得有些曲折，但我们的固有方法确实对Java对象的内部布局一无所知。因此，它必须通过由JVM返回的索引访问字段和方法。这样一来，不同的JVM就可实现不同的内部对象布局，同时不会对固有方法造成影响。</p>
+<p>若运行Java程序，就会发现从Java那一侧传来的对象是由我们的固有方法处理的。但传递的到底是什么呢？是指针，还是Java引用？而且垃圾收集器在固有方法调用期间又在做什么呢？</p>
+<p>垃圾收集器会在固有方法执行期间持续运行，但在一次固有方法调用期间，我们的对象可保证不会被当作“垃圾”收集去。为确保这一点，事先创建了“局部引用”，并在固有方法调用之后立即清除。由于它们的“生命期”与调用过程息息相关，所以能够保证对象在固有方法调用期间的有效性。</p>
+<p>由于这些引用会在每次函数调用的时候创建和破坏，所以不可在static变量中制作固有方法的局部副本（本地拷贝）。若希望一个引用在函数存在期间持续有效，就需要一个全局引用。全局引用不是由JVM创建的，但通过调用特定的JNI函数，程序员可将局部引用扩展为全局引用。创建一个全局引用时，需对引用对象的“生存时间”负责。全局引用（以及它引用的对象）会一直留在内存里，直到用特定的JNI函数明确释放了这个引用。它类似于C的malloc()和free()。</p>
+<p>A.1.4 JNI和Java异常</p>
+<p>利用JNI，可丢弃、捕捉、打印以及重新丢弃Java异常，就象在一个Java程序里那样。但对程序员来说，需自行调用专用的JNI函数，以便对异常进行处理。下面列出用于异常处理的一些JNI函数：</p>
+<p>■Throw()：丢弃一个现有的异常对象；在固有方法中用于重新丢弃一个异常。</p>
+<p>■ThrowNew()：生成一个新的异常对象，并将其丢弃。</p>
+<p>■ExceptionOccurred()：判断一个异常是否已被丢弃，但尚未清除。</p>
+<p>■ExceptionDescribe()：打印一个异常和堆栈跟踪信息。</p>
+<p>■ExceptionClear()：清除一个待决的异常。</p>
+<p>■FatalError()：造成一个严重错误，不返回。</p>
+<p>在所有这些函数中，最不能忽视的就是ExceptionOccurred()和ExceptionClear()。大多数JNI函数都能产生异常，而且没有象在Java的try块内的那种语言特性可供利用。所以在每一次JNI函数调用之后，都必须调用ExceptionOccurred()，了解异常是否已被丢弃。若侦测到一个异常，可选择对其加以控制（可能时还要重新丢弃它）。然而，必须确保异常最终被清除。这可以在自己的函数中用ExceptionClear()来实现；若异常被重新丢弃，也可能在其他某些函数中进行。但无论如何，这一工作是必不可少的。</p>
+<p>我们必须保证异常被彻底清除。否则，假若在一个异常待决的情况下调用一个JNI函数，获得的结果往往是无法预知的。也有少数几个JNI函数可在异常时安全调用；当然，它们都是专门的异常控制函数。</p>
+<p>A.1.5 JNI和线程处理</p>
+<p>由于Java是一种多线程语言，几个线程可能同时发出对一个固有方法的调用（若另一个线程发出调用，固有方法可能在运行期间暂停）。此时，完全要由程序员来保证固有调用在多线程的环境中安全进行。例如，要防范用一种未进行监视的方法修改共享数据。此时，我们主要有两个选择：将固有方法声明为“同步”，或在固有方法内部采取其他某些策略，确保数据处理正确地并发进行。</p>
+<p>此外，绝对不要通过线程传递JNIEnv，因为它指向的内部结构是在“每线程”的基础上分配的，而且包含了只对那些特定的线程才有意义的信息。</p>
+<p>A.1.6 使用现成代码</p>
+<p>为实现JNI固有方法，最简单的方法就是在一个Java类里编写固有方法的原型，编译那个类，再通过javah运行.class文件。但假若我们已有一个大型的、早已存在的代码库，而且想从Java里调用它们，此时又该如何是好呢？不可将DLL中的所有函数更名，使其符合JNI命名规则，这种方案是不可行的。最好的方法是在原来的代码库“外面”写一个封装DLL。Java代码会调用新DLL里的函数，后者再调用原始的DLL函数。这个方法并非仅仅是一种解决方案；大多数情况下，我们甚至必须这样做，因为必须面向对象引用调用JNI函数，否则无法使用它们。</p>
+<p>A.2 微软的解决方案</p>
+到本书完稿时为止，微软仍未提供对JNI的支持，只是用自己的专利方法提供了对非Java代码调用的支持。这一支持内建到编译器Microsoft 
+JVM以及外部工具中。只有程序用Microsoft Java编译器编译，而且只有在Microsoft
+<p>Java虚拟机（JVM）上运行的时候，本节讲述的特性才会有效。若计划在因特网上发行自己的应用，或者本单位的内联网建立在不同平台的基础上，就可能成为一个严重的问题。</p>
+<p>微软与Win32代码的接口为我们提供了连接Win32的三种途径：</p>
+<p>(1) J/Direct：方便调用Win32 DLL函数的一种途径，具有某些限制。</p>
+<p>(2) 本原接口（RNI）：可调用Win32 DLL函数，但必须自行解决“垃圾收集”问题。</p>
+<p>(3) Java/COM集成：可从Java里直接揭示或调用COM服务。</p>
+<p>后续的小节将分别探讨这三种技术。</p>
+写作本书的时候，这些特性均通过了Microsoft SDK for Java 2.0 beta 2的支持。可从微软公司的Web站点下载这个开发平台（要经历一个痛苦的选择过程，他们叫作“Active 
+Setup”）。Java SDK是一套命令行工具的集合，但编译引擎可轻易嵌入Developer
+<p>Studio环境，以便我们用Visual J++ 1.1来编译Java 1.1代码。</p>
+<p>A.3 J/Direct</p>
+J/Direct是调用Win32 DLL函数最简单的方式。它的主要设计目标是与Win32API打交道，但完全可用它调用其他任何API。但是，尽管这一特性非常方便，但它同时也造成了某些限制，且降低了性能（与RNI相比）。但J/Direct也有一些明显的优点。首先，除希望调用的那个DLL里的代码之外，没有必要再编写额外的非Java代码，换言之，我们不需要一个封装器或者代理／存根DLL。其次，函数自变量与标准数据类型之间实现了自动转换。若必须传递用户自定义的数据类型，那么J/Direct可能不按我们的希望工作。第三，就象下例展示的那样，它非常简单和直接。只需少数几行，这个例子便能调用Win32
+<p>API函数MessageBox()，它能弹出一个小的模态窗口，并带有一个标题、一条消息、一个可选的图标以及几个按钮。</p>
+
+  <pre class="code">public class ShowMsgBox {
+  public static void main(String args[]) 
+  throws UnsatisfiedLinkError   {
+    MessageBox(0,
+      &quot;Created by the MessageBox() Win32 func&quot;,
+      &quot;Thinking in Java&quot;, 0);
+  }
+  /** @dll.import(&quot;USER32&quot;) */
+  private static native int 
+  MessageBox(int hwndOwner, String text,
+    String title, int fuStyle);
+}</pre>
+
+令人震惊的是，这里便是我们利用J/Direct调用Win32 DLL函数所需的全部代码。其中的关键是位于示范代码底部的MessageBox()声明之前的@dll.import引导命令。它表面上看是一条注释，但实际并非如此。它的作用是告诉编译器：引导命令下面的函数是在USER32 
+DLL里实现的，而且应相应地调用。我们要做的全部事情就是提供与DLL内实现的函数相符的一个原型，并调用函数。但是毋需在Java版本里手工键入需要的每一个Win32
+<p>API函数，一个Microsoft Java包会帮我们做这件事情（很快就会详细解释）。为了让这个例子正常工作，函数必须“按名称”由DLL导出。但是，也可以用@dll.import引导命令“按顺序”链接。举个例子来说，我们可指定函数在DLL里的入口位置。稍后还会具体讲述@dll.import引导命令的特性。</p>
+<p>用非Java代码进行链接的一个重要问题就是函数参数的自动配置。正如大家看到的那样，MessageBox()的Java声明采用了两个字串自变量，但原来的C方案则采用了两个char指针。编译器会帮助我们自动转换标准数据类型，同时遵照本章后一节要讲述的规则。</p>
+最好，大家或许已注意到了main()声明中的UnsatisfiedLinkError异常。在运行期的时候，一旦链接程序不能从非Java函数里解析出符号，就会触发这一异常（事件）。这可能是由多方面的原因造成的：.dll文件未找到；不是一个有效的DLL；或者J/Direct未获您所使用的虚拟机的支持。为了使DLL能被找到，它必须位于Windows或Windows\System目录下，位于由PATH环境变量列出的一个目录中，或者位于和.class文件相同的目录。J/Direct获得了Microsoft
+<p>Java编译器1.02.4213版本及更高版本的支持，也获得了Microsoft JVM 4.79.2164及更高版本的支持。为了解自己编译器的版本号，请在命令行下运行JVC，不要加任何参数。为了解JVM的版本号，请找到msjava.dll的图标，并利用右键弹出菜单观察它的属性。</p>
+<p>A.3.1 @dll.import引导命令</p>
+<p>作为使用J/Direct唯一的途径，@dll.import引导命令相当灵活。它提供了为数众多的修改符，可用它们自定义同非Java代码建立链接关系的方式。它亦可应用于类内的一些方法，或应用于整个类。也就是说，我们在那个类内声明的所有方法都是在相同的DLL里实现的。下面让我们具体研究一下这些特性。</p>
+<p>1. 别名处理和按顺序链接</p>
+<p>为了使@dll.import引导命令能象上面显示的那样工作，DLL内的函数必须按名字导出。然而，我们有时想使用与DLL里原始名字不同的一个名字（别名处理），否则函数就可能按编号（比如按顺序）导出，而不是按名字导出。下面这个例子声明了FinestraDiMessaggio()（用意大利语说的“MessageBox”）。正如大家看到的那样，使用的语法是非常简单的。</p>
+
+  <pre class="code">public class Aliasing {
+  public static void main(String args[]) 
+  throws UnsatisfiedLinkError   {
+    FinestraDiMessaggio(0,
+      &quot;Created by the MessageBox() Win32 func&quot;,
+      &quot;Thinking in Java&quot;, 0);
+  }
+  /** @dll.import(&quot;USER32&quot;, 
+  entrypoint=&quot;MessageBox&quot;) */
+  private static native int 
+  FinestraDiMessaggio(int hwndOwner, String text,
+    String title, int fuStyle);
+}</pre>
+
+<p>下面这个例子展示了如何同DLL里并非按名字导出的一个函数建立链接，那个函数事实是按它们在DLL里的位置导出的。这个例子假设有一个名为MYMATH的DLL，这个DLL在位置编号3处包含了一个函数。那个函数获取两个整数作为自变量，并返回两个整数的和。</p>
+
+  <pre class="code">public class ByOrdinal {
+  public static void main(String args[]) 
+  throws UnsatisfiedLinkError {
+    int j=3, k=9;
+    System.out.println(&quot;Result of DLL function:&quot;
+      + Add(j,k));
+  }
+  /** @dll.import(&quot;MYMATH&quot;, entrypoint = &quot;#3&quot;) */
+  private static native int Add(int op1,int op2);
+}</pre>
+
+<p>可以看出，唯一的差异就是entrypoint自变量的形式。</p>
+<p>2. 将@dll.import应用于整个类</p>
+<p>@dll.import引导命令可应用于整个类。也就是说，那个类的所有方法都是在相同的DLL里实现的，并具有相同的链接属性。引导命令不会由子类继承；考虑到这个原因，而且由于DLL里的函数是自然的static函数，所以更佳的设计方案是将API函数封装到一个独立的类里，如下所示：</p>
+
+  <pre class="code">/** @dll.import(&quot;USER32&quot;) */
+class MyUser32Access {
+  public static native int 
+  MessageBox(int hwndOwner, String text,
+    String title, int fuStyle);
+  public native static boolean 
+  MessageBeep(int uType);
+}
+
+public class WholeClass {
+  public static void main(String args[]) 
+  throws UnsatisfiedLinkError {
+    MyUser32Access.MessageBeep(4);
+    MyUser32Access.MessageBox(0,
+      &quot;Created by the MessageBox() Win32 func&quot;,
+      &quot;Thinking in Java&quot;, 0);
+  }
+}</pre>
+
+由于MessageBeep()和MessageBox()函数已在不同的类里被声明成static函数，所以必须在调用它们时规定作用域。大家也许认为必须用上述的方法将所有Win32
+<p>API（函数、常数和数据类型）都映射成Java类。但幸运的是，根本不必这样做。</p>
+<p>A.3.2 com.ms.win32包</p>
+Win32 API的体积相当庞大——包含了数以千计的函数、常数以及数据类型。当然，我们并不想将每个Win32 
+API函数都写成对应Java形式。微软考虑到了这个问题，发行了一个Java包，可通过J/Direct将Win32 
+API映射成Java类。这个包的名字叫作com.ms.win32。安装Java SDK 2.0时，若在安装选项中进行了相应的设置，这个包就会安装到我们的类路径中。这个包由大量Java类构成，它们完整再现了Win32 
+API的常数、数据类型以及函数。包容能力最大的三个类是User32.class，Kernel.class以及Gdi32.class。它们包含的是Win32
+<p>API的核心内容。为使用它们，只需在自己的Java代码里导入即可。前面的ShowMsgBox示例可用com.ms.win32改写成下面这个样子（这里也考虑到了用更恰当的方式使用UnsatisfiedLinkError）：</p>
+
+  <pre class="code">import com.ms.win32.*;
+
+public class UseWin32Package {
+  public static void main(String args[]) {
+    try {
+      User32.MessageBeep(
+        winm.MB_ICONEXCLAMATION);
+      User32.MessageBox(0,
+        &quot;Created by the MessageBox() Win32 func&quot;,
+        &quot;Thinking in Java&quot;,
+        winm.MB_OKCANCEL |
+        winm.MB_ICONEXCLAMATION);
+    } catch(UnsatisfiedLinkError e) {
+      System.out.println(&quot;Can&#8217;t link Win32 API&quot;);
+      System.out.println(e);
+    }
+  }
+}</pre>
+
+<p>Java包是在第一行导入的。现在，可在不进行其他声明的前提下调用MessageBeep()和MessageBox()函数。在MessageBeep()里，我们可看到包导入时也声明了Win32常数。这些常数是在大量Java接口里定义的，全部命名为winx（x代表欲使用之常数的首字母）。</p>
+<p>写作本书时，com.ms.win32包的开发仍未正式完成，但已可堪使用。</p>
+<div class="rpindex"><a href="173.html"> 下一页</a><a href="171.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

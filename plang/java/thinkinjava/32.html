@@ -1,0 +1,509 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="31.html"> 上一页</a><a href="33.html"> 下一页</a></div>
+<h2>4.4 成员初始化</h2>
+<p>Java尽自己的全力保证所有变量都能在使用前得到正确的初始化。若被定义成相对于一个方法的“局部”变量，这一保证就通过编译期的出错提示表现出来。因此，如果使用下述代码：</p>
+<pre class="code">void f() {
+	int i;
+	i++;
+}
+</pre>
+<p>就会收到一条出错提示消息，告诉你i可能尚未初始化。当然，编译器也可为i赋予一个默认值，但它看起来更象一个程序员的失误，此时默认值反而会“帮倒忙”。若强迫程序员提供一个初始值，就往往能够帮他／她纠出程序里的“臭虫”。</p>
+<p>然而，若将基本类型（主类型）设为一个类的数据成员，情况就会变得稍微有些不同。由于任何方法都可以初始化或使用那个数据，所以在正式使用数据前，若还是强迫程序员将其初始化成一个适当的值，就可能不是一种实际的做法。然而，若为其赋予一个垃圾值，同样是非常不安全的。因此，一个类的所有基本类型数据成员都会保证获得一个初始值。可用下面这段小程序看到这些值：</p>
+
+  <pre class="code">//: InitialValues.java
+// Shows default initial values
+
+class Measurement {
+  boolean t;
+  char c;
+  byte b;
+  short s;
+  int i;
+  long l;
+  float f;
+  double d;
+  void print() {
+    System.out.println(
+      &quot;Data type      Inital value\n&quot; +
+      &quot;boolean        &quot; + t + &quot;\n&quot; +
+      &quot;char           &quot; + c + &quot;\n&quot; +
+      &quot;byte           &quot; + b + &quot;\n&quot; +
+      &quot;short          &quot; + s + &quot;\n&quot; +
+      &quot;int            &quot; + i + &quot;\n&quot; +
+      &quot;long           &quot; + l + &quot;\n&quot; +
+      &quot;float          &quot; + f + &quot;\n&quot; +
+      &quot;double         &quot; + d);
+  }
+}
+
+public class InitialValues {
+  public static void main(String[] args) {
+    Measurement d = new Measurement();
+    d.print();
+    /* In this case you could also say:
+    new Measurement().print();
+    */
+  }
+} ///:~</pre>
+
+<p>输入结果如下：</p>
+
+  <pre class="code">Data type      Inital value
+boolean        false
+char
+byte           0
+short          0
+int            0
+long           0
+float          0.0
+double         0.0</pre>
+
+<p>其中，Char值为空（NULL），没有数据打印出来。</p>
+<p>稍后大家就会看到：在一个类的内部定义一个对象句柄时，如果不将其初始化成新对象，那个句柄就会获得一个空值。</p>
+<h3>4.4.1 规定初始化</h3>
+<p>如果想自己为变量赋予一个初始值，又会发生什么情况呢？为达到这个目的，一个最直接的做法是在类内部定义变量的同时也为其赋值（注意在C++里不能这样做，尽管C++的新手们总“想”这样做）。在下面，Measurement类内部的字段定义已发生了变化，提供了初始值：</p>
+
+  <pre class="code">class Measurement {
+  boolean b = true;
+  char c = 'x';
+  byte B = 47;
+  short s = 0xff;
+  int i = 999;
+  long l = 1;
+  float f = 3.14f;
+  double d = 3.14159;
+  //. . .</pre>
+
+<p>亦可用相同的方法初始化非基本（主）类型的对象。若Depth是一个类，那么可象下面这样插入一个变量并进行初始化：</p>
+<pre class="code">class Measurement {
+	Depth o = new Depth();
+	boolean b = true;
+	// . . .</pre>
+<p>若尚未为o指定一个初始值，同时不顾一切地提前试用它，就会得到一条运行期错误提示，告诉你产生了名为“违例”（Exception）的一个错误（在第9章详述）。</p>
+<p>甚至可通过调用一个方法来提供初始值：</p>
+<pre class="code">class CInit {
+	int i = f();
+	//...
+}</pre>
+<p>当然，这个方法亦可使用自变量，但那些自变量不可是尚未初始化的其他类成员。因此，下面这样做是合法的：</p>
+<pre class="code">class CInit {
+	int i = f();
+	int j = g(i);
+	//...
+}</pre>
+<p>但下面这样做是非法的：</p>
+<pre  class="code">class CInit {
+	int j = g(i);
+	int i = f();
+	//...
+}</pre>
+<p>这正是编译器对“向前引用”感到不适应的一个地方，因为它与初始化的顺序有关，而不是与程序的编译方式有关。</p>
+<p>这种初始化方法非常简单和直观。它的一个限制是类型Measurement的每个对象都会获得相同的初始化值。有时，这正是我们希望的结果，但有时却需要盼望更大的灵活性。</p>
+<h3>4.4.2 构建器初始化</h3>
+<p>可考虑用构建器执行初始化进程。这样便可在编程时获得更大的灵活程度，因为我们可以在运行期调用方法和采取行动，从而“现场”决定初始化值。但要注意这样一件事情：不可妨碍自动初始化的进行，它在构建器进入之前就会发生。因此，假如使用下述代码：</p>
+<pre class="code">class Counter {
+	int i;
+	Counter() { i = 7; }
+	// . . .</pre>
+<p>那么i首先会初始化成零，然后变成7。对于所有基本类型以及对象句柄，这种情况都是成立的，其中包括在定义时已进行了明确初始化的那些一些。考虑到这个原因，编译器不会试着强迫我们在构建器任何特定的场所对元素进行初始化，或者在它们使用之前——初始化早已得到了保证（注释⑤）。</p>
+⑤：相反，C++有自己的“构建器初始模块列表”，能在进入构建器主体之前进行初始化，而且它对于对象来说是强制进行的。参见《Thinking
+in C++》。
+<h4>1. 初始化顺序</h4>
+<p>在一个类里，初始化的顺序是由变量在类内的定义顺序决定的。即使变量定义大量遍布于方法定义的中间，那些变量仍会在调用任何方法之前得到初始化——甚至在构建器调用之前。例如：</p>
+
+  <pre class="code">//: OrderOfInitialization.java
+// Demonstrates initialization order.
+
+// When the constructor is called, to create a
+// Tag object, you'll see a message:
+class Tag {
+  Tag(int marker) {
+    System.out.println(&quot;Tag(&quot; + marker + &quot;)&quot;);
+  }
+}
+
+class Card {
+  Tag t1 = new Tag(1); // Before constructor
+  Card() {
+    // Indicate we're in the constructor:
+    System.out.println(&quot;Card()&quot;);
+    t3 = new Tag(33); // Re-initialize t3
+  }
+  Tag t2 = new Tag(2); // After constructor
+  void f() {
+    System.out.println(&quot;f()&quot;);
+  }
+  Tag t3 = new Tag(3); // At end
+}
+
+public class OrderOfInitialization {
+  public static void main(String[] args) {
+    Card t = new Card();
+    t.f(); // Shows that construction is done
+  }
+} ///:~</pre>
+
+<p>在Card中，Tag对象的定义故意到处散布，以证明它们全都会在构建器进入或者发生其他任何事情之前得到初始化。除此之外，t3在构建器内部得到了重新初始化。它的输入结果如下：</p>
+
+  <pre class="code">Tag(1)
+Tag(2)
+Tag(3)
+Card()
+Tag(33)
+f()</pre>
+
+<p>因此，t3句柄会被初始化两次，一次在构建器调用前，一次在调用期间（第一个对象会被丢弃，所以它后来可被当作垃圾收掉）。从表面看，这样做似乎效率低下，但它能保证正确的初始化——若定义了一个过载的构建器，它没有初始化t3；同时在t3的定义里并没有规定“默认”的初始化方式，那么会产生什么后果呢？</p>
+<h4>2. 静态数据的初始化</h4>
+<p>若数据是静态的（static），那么同样的事情就会发生；如果它属于一个基本类型（主类型），而且未对其初始化，就会自动获得自己的标准基本类型初始值；如果它是指向一个对象的句柄，那么除非新建一个对象，并将句柄同它连接起来，否则就会得到一个空值（NULL）。</p>
+<p>如果想在定义的同时进行初始化，采取的方法与非静态值表面看起来是相同的。但由于static值只有一个存储区域，所以无论创建多少个对象，都必然会遇到何时对那个存储区域进行初始化的问题。下面这个例子可将这个问题说更清楚一些：</p>
+
+  <pre class="code">//: StaticInitialization.java
+// Specifying initial values in a
+// class definition.
+
+class Bowl {
+  Bowl(int marker) {
+    System.out.println(&quot;Bowl(&quot; + marker + &quot;)&quot;);
+  }
+  void f(int marker) {
+    System.out.println(&quot;f(&quot; + marker + &quot;)&quot;);
+  }
+}
+
+class Table {
+  static Bowl b1 = new Bowl(1);
+  Table() {
+    System.out.println(&quot;Table()&quot;);
+    b2.f(1);
+  }
+  void f2(int marker) {
+    System.out.println(&quot;f2(&quot; + marker + &quot;)&quot;);
+  }
+  static Bowl b2 = new Bowl(2);
+}
+
+class Cupboard {
+  Bowl b3 = new Bowl(3);
+  static Bowl b4 = new Bowl(4);
+  Cupboard() {
+    System.out.println(&quot;Cupboard()&quot;);
+    b4.f(2);
+  }
+  void f3(int marker) {
+    System.out.println(&quot;f3(&quot; + marker + &quot;)&quot;);
+  }
+  static Bowl b5 = new Bowl(5);
+}
+
+public class StaticInitialization {
+  public static void main(String[] args) {
+    System.out.println(
+      &quot;Creating new Cupboard() in main&quot;);
+    new Cupboard();
+    System.out.println(
+      &quot;Creating new Cupboard() in main&quot;);
+    new Cupboard();
+    t2.f2(1);
+    t3.f3(1);
+  }
+  static Table t2 = new Table();
+  static Cupboard t3 = new Cupboard();
+} ///:~</pre>
+
+Bowl允许我们检查一个类的创建过程，而Table和Cupboard能创建散布于类定义中的Bowl的static成员。注意在static定义之前，Cupboard先创建了一个非static的Bowl
+b3。它的输出结果如下：
+<pre class="code">Bowl(1)
+Bowl(2)
+Table()
+f(1)
+Bowl(4)
+Bowl(5)
+Bowl(3)
+Cupboard()
+f(2)
+Creating new Cupboard() in main
+Bowl(3)
+Cupboard()
+f(2)
+Creating new Cupboard() in main
+Bowl(3)
+Cupboard()
+f(2)
+f2(1)
+f3(1)</pre>
+
+static初始化只有在必要的时候才会进行。如果不创建一个Table对象，而且永远都不引用Table.b1或Table.b2，那么static
+Bowl b1和b2永远都不会创建。然而，只有在创建了第一个Table对象之后（或者发生了第一次static访问），它们才会创建。在那以后，static对象不会重新初始化。
+<p>初始化的顺序是首先static（如果它们尚未由前一次对象创建过程初始化），接着是非static对象。大家可从输出结果中找到相应的证据。</p>
+<p>在这里有必要总结一下对象的创建过程。请考虑一个名为Dog的类：</p>
+<ul>
+  <li>(1) 类型为Dog的一个对象首次创建时，或者Dog类的static方法／static字段首次访问时，Java解释器必须找到Dog.class（在事先设好的类路径里搜索）。</li>
+  <li>(2) 找到Dog.class后（它会创建一个Class对象，这将在后面学到），它的所有static初始化模块都会运行。因此，static初始化仅发生一次——在Class对象首次载入的时候。</li>
+  <li>(3) 创建一个new Dog()时，Dog对象的构建进程首先会在内存堆（Heap）里为一个Dog对象分配足够多的存储空间。</li>
+  <li>(4) 这种存储空间会清为零，将Dog中的所有基本类型设为它们的默认值（零用于数字，以及boolean和char的等价设定）。</li>
+  <li>(5) 进行字段定义时发生的所有初始化都会执行。</li>
+  <li>(6) 执行构建器。正如第6章将要讲到的那样，这实际可能要求进行相当多的操作，特别是在涉及继承的时候。</li>
+</ul>
+<h4>3. 明确进行的静态初始化</h4>
+<p>Java允许我们将其他static初始化工作划分到类内一个特殊的“static构建从句”（有时也叫作“静态块”）里。它看起来象下面这个样子：</p>
+
+  <pre class="code">class Spoon {
+  static int i;
+  static {
+    i = 47;
+  }
+  // . . .</pre>
+
+<p>尽管看起来象个方法，但它实际只是一个static关键字，后面跟随一个方法主体。与其他static初始化一样，这段代码仅执行一次——首次生成那个类的一个对象时，或者首次访问属于那个类的一个static成员时（即便从未生成过那个类的对象）。例如：</p>
+
+  <pre class="code">//: ExplicitStatic.java
+// Explicit static initialization
+// with the &quot;static&quot; clause.
+
+class Cup {
+  Cup(int marker) {
+    System.out.println(&quot;Cup(&quot; + marker + &quot;)&quot;);
+  }
+  void f(int marker) {
+    System.out.println(&quot;f(&quot; + marker + &quot;)&quot;);
+  }
+}
+
+class Cups {
+  static Cup c1;
+  static Cup c2;
+  static {
+    c1 = new Cup(1);
+    c2 = new Cup(2);
+  }
+  Cups() {
+    System.out.println(&quot;Cups()&quot;);
+  }
+}
+
+public class ExplicitStatic {
+  public static void main(String[] args) {
+    System.out.println(&quot;Inside main()&quot;);
+    Cups.c1.f(99);  // (1)
+  }
+  static Cups x = new Cups();  // (2)
+  static Cups y = new Cups();  // (2) 
+} ///:~</pre>
+
+<p>在标记为(1)的行内访问static对象c1的时候，或在行(1)标记为注释，同时(2)行不标记成注释的时候，用于Cups的static初始化模块就会运行。若(1)和(2)都被标记成注释，则用于Cups的static初始化进程永远不会发生。</p>
+<h4>4. 非静态实例的初始化</h4>
+<p>针对每个对象的非静态变量的初始化，Java 1.1提供了一种类似的语法格式。下面是一个例子：</p>
+
+  <pre class="code">//: Mugs.java
+// Java 1.1 &quot;Instance Initialization&quot;
+
+class Mug {
+  Mug(int marker) {
+    System.out.println(&quot;Mug(&quot; + marker + &quot;)&quot;);
+  }
+  void f(int marker) {
+    System.out.println(&quot;f(&quot; + marker + &quot;)&quot;);
+  }
+}
+
+public class Mugs {
+  Mug c1;
+  Mug c2;
+  {
+    c1 = new Mug(1);
+    c2 = new Mug(2);
+    System.out.println(&quot;c1 &amp; c2 initialized&quot;);
+  }
+  Mugs() {
+    System.out.println(&quot;Mugs()&quot;);
+  }
+  public static void main(String[] args) {
+    System.out.println(&quot;Inside main()&quot;);
+    Mugs x = new Mugs();
+  }
+} ///:~</pre>
+
+<p>大家可看到实例初始化从句：</p>
+
+  <pre class="code">  {
+    c1 = new Mug(1);
+    c2 = new Mug(2);
+    System.out.println(&quot;c1 &amp; c2 initialized&quot;);
+  }</pre>
+
+<p>它看起来与静态初始化从句极其相似，只是static关键字从里面消失了。为支持对“匿名内部类”的初始化（参见第7章），必须采用这一语法格式。</p>
+<div class="rpindex"><a href="33.html"> 下一页</a><a href="31.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

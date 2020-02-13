@@ -1,0 +1,293 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="30.html"> 上一页</a><a href="32.html"> 下一页</a></div>
+  <h2>7-4-2:利用ComboModel构造JComboBox:</h2>
+  <p> 如同JList一般，在JComboBox中也有一个构造函数是利用某种Model来构造。如下所示: </p>
+  <p>JComboBox(COmboBoxModel aModel)
+    ComboBoxModel是一个interface,里面定义了两个方法，分别是setSelectedItem()与getSelectedItem().这两个方法目的是让用
+    户选取某个项目后，可正确地显示出用户所选取的项目。下面是这两个方法的详细定义: </p>
+  <p>ComboBoxModel interface定义的方法： </p>
+  <ul>
+    <li>Object    getSelectedItem():返回所选取的项目值。 </li>
+    <li>Void      setSelectedItem(Object anItem):设置所选取的项目值.</li>
+  </ul>
+  <p> 与JList不同的是，JComboBox是利用ComboBoxModel,而不是ListModel.不过ComboBoxModel interface是继承ListModel interface
+    ,因此若我们要利用ComboBoxModel来构造JComboBox,除了要实作ComboBoxModel的两个方法外，还必须实作ListModel的所定义的4个
+    方法，这样的做法可说相当麻烦。 </p>
+  <p>在介绍JList时我们曾经提到AbstractListModel这个抽象类。这个抽象类实作了ListModel interface中的addListDataListener
+    ()、removeListDataListener()这两个方法。因此若我们继承AbstractListModel,则可少掉实作这两个方法，只需要实作
+    getElementAt()、getSize()、setSelectedItem()与getSelectedItem()这4个方法。这样的作法就显得比较简单一点.</p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JComboBox2 {
+	String[] s = { "美国", "日本", "大陆", "英国", "法国", "意大利", "澳洲", "韩国" };
+
+	public JComboBox2() {
+		JFrame f = new JFrame("JComboBox2");
+		Container contentPane = f.getContentPane();
+
+		ComboBoxModel mode = new UserDefineComboBoxModel();
+		JComboBox combo = new JComboBox(mode);
+		combo.setBorder(BorderFactory.createTitledBorder("你最喜欢到哪个国家去玩?"));
+		contentPane.add(combo);
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String[] args) {
+		new JComboBox2();
+	}
+
+	class UserDefineComboBoxModel extends AbstractListModel implements
+			ComboBoxModel {
+		String item = null;
+
+		public Object getElementAt(int index) {
+			return s[index++];
+		}
+
+		// 由于继承AbstractListModel抽象类。因此我们分别在程序中实作了getElementAt()与getSize()方法。
+		public int getSize() {
+			return s.length;
+		}
+
+		// 由于我们实现了ComboBoxModel
+		// interface.因此我们必须在程序中实作setSelectedItem()与getSelectedItem()方法.
+		public void setSelectedItem(Object anItem) {
+			item = (String) anItem;
+		}
+
+		public Object getSelectedItem() {
+			return item;
+		}
+	}
+}</pre>
+  <p>当程序要show出JComboBox时，系统会先自动调用getSize()方法，看看这个JComboBox长度有多少，然后再调用getElementAt()
+    方法，将String Array s中的值填入JComboBox中。当用户选择项目时，系统会调用getSelectedItem()方法，返回所选取的项目，并
+    利用setSelectedItem()方法，将选取项目放在JComboBox最前端。 </p>
+  <p> getElementAt()方法中的“index”参数，系统会自动由0计算，不过要自己作累加的操作，如程序中:
+    return s[index++]; </p>
+  <p>如同JList一般，java对于JComboBox也提供了另一个类，DefaultComboBoxModel实体类。此类继承了AbstractListModel抽象类，也
+    实作了ComboBoxModel interface.因此你不需要再实作getSize()、getElementAt()、setSelectedItem()与getSelectedItem()方法。
+    利用DefaultComboBoxModel这个类我们可以很方便地做到动态更改JComboBox的项目值。当你没有必要自己定义特殊的ComboBoxModel
+    时，使用DefaultComboBoxModel就显得非常的方便，我们来看下面的例子: </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JComboBox3 {
+	String[] s = { "美国", "日本", "大陆", "英国", "法国", "意大利", "澳洲", "韩国" };
+
+	public JComboBox3() {
+		JFrame f = new JFrame("JComboBox3");
+		Container contentPane = f.getContentPane();
+
+		ComboBoxModel mode = new AModel();
+		JComboBox combo = new JComboBox(mode);
+		combo.setBorder(BorderFactory.createTitledBorder("您最喜欢到哪个国家玩呢？"));
+		contentPane.add(combo);
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String[] args) {
+		new JComboBox3();
+	}
+
+	class AModel extends DefaultComboBoxModel {
+		AModel() {
+			for (int i = 0; i < s.length; i++)
+				addElement(s[i]);
+		}
+	}
+}</pre>
+  <p> 1.由于AModel继承DefaultComboBoxModel实体类，由AModel可得到一个ComboBoxModel实体对象。</p>
+  <p> 2.我们使AModel继承DefaultComboBoxModel实体类，因此就不需要再实作getElementAt()、getSize()、setSelectedItem()与
+    getSelectedItem()这4个方法，直接将所要的项目用addElement()方法加入即可。系统会自动将所加入的项目放进一个Vector
+    中，并在输出JComboBox时自动调用getSize()与getElementAt()方法。 </p>
+  </p>
+  <div class="rpindex"><a href="32.html"> 下一页</a><a href="30.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

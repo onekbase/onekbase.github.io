@@ -1,0 +1,346 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="80.html"> 上一页</a><a href="82.html"> 下一页</a></div>
+<h2>10.4 File类</h2>
+<p>File类有一个欺骗性的名字——通常会认为它对付的是一个文件，但实情并非如此。它既代表一个特定文件的名字，也代表目录内一系列文件的名字。若代表一个文件集，便可用list()方法查询这个集，返回的是一个字串数组。之所以要返回一个数组，而非某个灵活的集合类，是因为元素的数量是固定的。而且若想得到一个不同的目录列表，只需创建一个不同的File对象即可。事实上，“FilePath”（文件路径）似乎是一个更好的名字。本节将向大家完整地例示如何使用这个类，其中包括相关的FilenameFilter（文件名过滤器）接口。</p>
+<h3>10.4.1 目录列表器</h3>
+<p>现在假设我们想观看一个目录列表。可用两种方式列出File对象。若在不含自变量（参数）的情况下调用list()，会获得File对象包含的一个完整列表。然而，若想对这个列表进行某些限制，就需要使用一个“目录过滤器”，该类的作用是指出应如何选择File对象来完成显示。</p>
+<p>下面是用于这个例子的代码（或在执行该程序时遇到困难，请参考第3章3.1.2小节“赋值”）：</p>
+
+  <pre class="code">//: DirList.java
+// Displays directory listing
+package c10;
+import java.io.*;
+
+public class DirList {
+  public static void main(String[] args) {
+    try {
+      File path = new File(&quot;.&quot;);
+      String[] list;
+      if(args.length == 0)
+        list = path.list();
+      else 
+        list = path.list(new DirFilter(args[0]));
+      for(int i = 0; i &lt; list.length; i++)
+        System.out.println(list[i]);
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+}
+
+class DirFilter implements FilenameFilter {
+  String afn;
+  DirFilter(String afn) { this.afn = afn; }
+  public boolean accept(File dir, String name) {
+    // Strip path information:
+    String f = new File(name).getName();
+    return f.indexOf(afn) != -1;
+  }
+} ///:~</pre>
+
+<p>DirFilter类“实现”了interface FilenameFilter（关于接口的问题，已在第7章进行了详述）。下面让我们看看FilenameFilter接口有多么简单：</p>
+<pre class="code">public interface FilenameFilter {
+	boolean accept(文件目录, 字串名);
+}</pre>
+<p>它指出这种类型的所有对象都提供了一个名为accept()的方法。之所以要创建这样的一个类，背后的全部原因就是把accept()方法提供给list()方法，使list()能够“回调”accept()，从而判断应将哪些文件名包括到列表中。因此，通常将这种技术称为“回调”，有时也称为“算子”（也就是说，DirFilter是一个算子，因为它唯一的作用就是容纳一个方法）。由于list()采用一个FilenameFilter对象作为自己的自变量使用，所以我们能传递实现了FilenameFilter的任何类的一个对象，用它决定（甚至在运行期）list()方法的行为方式。回调的目的是在代码的行为上提供更大的灵活性。</p>
+<p>通过DirFilter，我们看出尽管一个“接口”只包含了一系列方法，但并不局限于只能写那些方法（但是，至少必须提供一个接口内所有方法的定义。在这种情况下，DirFilter构建器也会创建）。</p>
+<p>accept()方法必须接纳一个File对象，用它指示用于寻找一个特定文件的目录；并接纳一个String，其中包含了要寻找之文件的名字。可决定使用或忽略这两个参数之一，但有时至少要使用文件名。记住list()方法准备为目录对象中的每个文件名调用accept()，核实哪个应包含在内——具体由accept()返回的“布尔”结果决定。</p>
+<p>为确定我们操作的只是文件名，其中没有包含路径信息，必须采用String对象，并在它的外部创建一个File对象。然后调用getName()，它的作用是去除所有路径信息（采用与平台无关的方式）。随后，accept()用String类的indexOf()方法检查文件名内部是否存在搜索字串&quot;afn&quot;。若在字串内找到afn，那么返回值就是afn的起点索引；但假如没有找到，返回值就是-1。注意这只是一个简单的字串搜索例子，未使用常见的表达式“通配符”方案，比如&quot;fo?.b?r*&quot;；这种方案更难实现。</p>
+<p>list()方法返回的是一个数组。可查询这个数组的长度，然后在其中遍历，选定数组元素。与C和C++的类似行为相比，这种于方法内外方便游历数组的行为无疑是一个显著的进步。</p>
+<h4>1. 匿名内部类</h4>
+<p>下例用一个匿名内部类（已在第7章讲述）来重写显得非常理想。首先创建了一个filter()方法，它返回指向FilenameFilter的一个句柄：</p>
+
+  <pre class="code">//: DirList2.java
+// Uses Java 1.1 anonymous inner classes
+import java.io.*;
+
+public class DirList2 {
+  public static FilenameFilter 
+  filter(final String afn) {
+    // Creation of anonymous inner class:
+    return new FilenameFilter() {
+      String fn = afn;
+      public boolean accept(File dir, String n) {
+        // Strip path information:
+        String f = new File(n).getName();
+        return f.indexOf(fn) != -1;
+      }
+    }; // End of anonymous inner class
+  }
+  public static void main(String[] args) {
+    try {
+      File path = new File(&quot;.&quot;);
+      String[] list;
+      if(args.length == 0)
+        list = path.list();
+      else 
+        list = path.list(filter(args[0]));
+      for(int i = 0; i &lt; list.length; i++)
+        System.out.println(list[i]);
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+} ///:~</pre>
+
+<p>注意filter()的自变量必须是final。这一点是匿名内部类要求的，使其能使用来自本身作用域以外的一个对象。</p>
+<p>之所以认为这样做更好，是由于FilenameFilter类现在同DirList2紧密地结合在一起。然而，我们可采取进一步的操作，将匿名内部类定义成list()的一个参数，使其显得更加精简。如下所示：</p>
+
+  <pre class="code">//: DirList3.java
+// Building the anonymous inner class &quot;in-place&quot;
+import java.io.*;
+
+public class DirList3 {
+  public static void main(final String[] args) {
+    try {
+      File path = new File(&quot;.&quot;);
+      String[] list;
+      if(args.length == 0)
+        list = path.list();
+      else 
+        list = path.list(
+          new FilenameFilter() {
+            public boolean 
+            accept(File dir, String n) {
+              String f = new File(n).getName();
+              return f.indexOf(args[0]) != -1;
+            }
+          });
+      for(int i = 0; i &lt; list.length; i++)
+        System.out.println(list[i]);
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+} ///:~</pre>
+
+<p>main()现在的自变量是final，因为匿名内部类直接使用args[0]。</p>
+<p>这展示了如何利用匿名内部类快速创建精简的类，以便解决一些复杂的问题。由于Java中的所有东西都与类有关，所以它无疑是一种相当有用的编码技术。它的一个好处是将特定的问题隔离在一个地方统一解决。但在另一方面，这样生成的代码不是十分容易阅读，所以使用时必须慎重。</p>
+<h4>2. 顺序目录列表</h4>
+经常都需要文件名以排好序的方式提供。由于Java 1.0和Java 1.1都没有提供对排序的支持（从Java
+1.2开始提供），所以必须用第8章创建的SortVector将这一能力直接加入自己的程序。就象下面这样：
+<pre class="code">//: SortedDirList.java
+// Displays sorted directory listing
+import java.io.*;
+import c08.*;
+
+public class SortedDirList {
+  private File path;
+  private String[] list;
+  public SortedDirList(final String afn) {
+    path = new File(&quot;.&quot;);
+    if(afn == null)
+      list = path.list();
+    else
+      list = path.list(
+          new FilenameFilter() {
+            public boolean 
+            accept(File dir, String n) {
+              String f = new File(n).getName();
+              return f.indexOf(afn) != -1;
+            }
+          });
+    sort();
+  }
+  void print() {
+    for(int i = 0; i &lt; list.length; i++)
+      System.out.println(list[i]);
+  }
+  private void sort() {
+    StrSortVector sv = new StrSortVector();
+    for(int i = 0; i &lt; list.length; i++)
+      sv.addElement(list[i]);
+    // The first time an element is pulled from
+    // the StrSortVector the list is sorted:
+    for(int i = 0; i &lt; list.length; i++)
+      list[i] = sv.elementAt(i);
+  }
+  // Test it:
+  public static void main(String[] args) {
+    SortedDirList sd;
+    if(args.length == 0)
+      sd = new SortedDirList(null);
+    else
+      sd = new SortedDirList(args[0]);
+    sd.print();
+  }
+} ///:~</pre>
+
+<p>这里进行了另外少许改进。不再是将path（路径）和list（列表）创建为main()的本地变量，它们变成了类的成员，使它们的值能在对象“生存”期间方便地访问。事实上，main()现在只是对类进行测试的一种方式。大家可以看到，一旦列表创建完毕，类的构建器就会自动开始对列表进行排序。</p>
+这种排序不要求区分大小写，所以最终不会得到一组全部单词都以大写字母开头的列表，跟着是全部以小写字母开头的列表。然而，我们注意到在以相同字母开头的一组文件名中，大写字母是排在前面的——这对标准的排序来说仍是一种不合格的行为。Java
+<p>1.2已成功解决了这个问题。</p>
+<div class="rpindex"><a href="82.html"> 下一页</a><a href="80.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

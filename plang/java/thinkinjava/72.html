@@ -1,0 +1,220 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="71.html"> 上一页</a><a href="73.html"> 下一页</a></div>
+<h2>9.3 标准Java违例</h2>
+<p>Java包含了一个名为Throwable的类，它对可以作为违例“掷”出的所有东西进行了描述。Throwable对象有两种常规类型（亦即“从Throwable继承”）。其中，Error代表编译期和系统错误，我们一般不必特意捕获它们（除在特殊情况以外）。Exception是可以从任何标准Java库的类方法中“掷”出的基本类型。此外，它们亦可从我们自己的方法以及运行期偶发事件中“掷”出。</p>
+<p>为获得违例的一个综合概念，最好的方法是阅读由http://java.sun.com提供的联机Java文档（当然，首先下载它们更好）。为了对各种违例有一个大概的印象，这个工作是相当有价值的。但大家不久就会发现，除名字外，一个违例和下一个违例之间并不存在任何特殊的地方。此外，Java提供的违例数量正在日益增多；从本质上说，把它们印到一本书里是没有意义的。大家从其他地方获得的任何新库可能也提供了它们自己的违例。我们最需要掌握的是基本概念，以及用这些违例能够做什么。</p>
+<pre class="code">java.lang.Exception</pre>
+<p>这是程序能捕获的基本违例。其他违例都是从它衍生出去的。这里要注意的是违例的名字代表发生的问题，而且违例名通常都是精心挑选的，可以很清楚地说明到底发生了什么事情。违例并不全是在java.lang中定义的；有些是为了提供对其他库的支持，如util，net以及io等——我们可以从它们的完整类名中看出这一点，或者观察它们从什么继承。例如，所有IO违例都是从java.io.IOException继承的。</p>
+<h3>9.3.1 RuntimeException的特殊情况</h3>
+<p>本章的第一个例子是：</p>
+<pre class="code">if(t == null) 
+throw new NullPointerException();</pre>
+<p>看起来似乎在传递进入一个方法的每个句柄中都必须检查null（因为不知道调用者是否已传递了一个有效的句柄），这无疑是相当可怕的。但幸运的是，我们根本不必这样做——它属于Java进行的标准运行期检查的一部分。若对一个空句柄发出了调用，Java会自动产生一个NullPointerException违例。所以上述代码在任何情况下都是多余的。</p>
+<p>这个类别里含有一系列违例类型。它们全部由Java自动生成，毋需我们亲自动手把它们包含到自己的违例规范里。最方便的是，通过将它们置入单独一个名为RuntimeException的基础类下面，它们全部组合到一起。这是一个很好的继承例子：它建立了一系列具有某种共通性的类型，都具有某些共通的特征与行为。此外，我们没必要专门写一个违例规范，指出一个方法可能会“掷”出一个RuntimeException，因为已经假定可能出现那种情况。由于它们用于指出编程中的错误，所以几乎永远不必专门捕获一个“运行期违例”——RuntimeException——它在默认情况下会自动得到处理。若必须检查RuntimeException，我们的代码就会变得相当繁复。在我们自己的包里，可选择“掷”出一部分RuntimeException。</p>
+<p>如果不捕获这些违例，又会出现什么情况呢？由于编译器并不强制违例规范捕获它们，所以假如不捕获的话，一个RuntimeException可能过滤掉我们到达main()方法的所有途径。为体会此时发生的事情，请试试下面这个例子：</p>
+
+  <pre class="code">//: NeverCaught.java
+// Ignoring RuntimeExceptions
+
+public class NeverCaught {
+  static void f() {
+    throw new RuntimeException(&quot;From f()&quot;);
+  }
+  static void g() {
+    f();
+  }
+  public static void main(String[] args) {
+    g();
+  }
+} ///:~</pre>
+
+<p>大家已经看到，一个RuntimeException（或者从它继承的任何东西）属于一种特殊情况，因为编译器不要求为这些类型指定违例规范。</p>
+<p>输出如下：</p>
+<pre class="code">java.lang.RuntimeException: From f()
+at NeverCaught.f(NeverCaught.java:9)
+at NeverCaught.g(NeverCaught.java:12)
+at NeverCaught.main(NeverCaught.java:15)</pre>
+<p>所以答案就是：假若一个RuntimeException获得到达main()的所有途径，同时不被捕获，那么当程序退出时，会为那个违例调用printStackTrace()。</p>
+<p>注意也许能在自己的代码中仅忽略RuntimeException，因为编译器已正确实行了其他所有控制。因为RuntimeException在此时代表一个编程错误：</p>
+<ul>
+  <li>(1)
+    一个我们不能捕获的错误（例如，由客户程序员接收传递给自己方法的一个空句柄）。 </li>
+  <li>(2) 作为一名程序员，一个应在自己的代码中检查的错误（如ArrayIndexOutOfBoundException，此时应注意数组的大小）。</li>
+</ul>
+<p>可以看出，最好的做法是在这种情况下违例，因为它们有助于程序的调试。</p>
+<p>另外一个有趣的地方是，我们不可将Java违例划分为单一用途的工具。的确，它们设计用于控制那些讨厌的运行期错误——由代码控制范围之外的其他力量产生。但是，它也特别有助于调试某些特殊类型的编程错误，那些是编译器侦测不到的。</p>
+<div class="rpindex"><a href="73.html"> 下一页</a><a href="71.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

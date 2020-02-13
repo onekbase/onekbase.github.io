@@ -1,0 +1,432 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="146.html"> 上一页</a><a href="148.html"> 下一页</a></div>
+<h3>14.4.1 线程组</h3>
+<p>所有线程都隶属于一个线程组。那可以是一个默认线程组，亦可是一个创建线程时明确指定的组。在创建之初，线程被限制到一个组里，而且不能改变到一个不同的组。每个应用都至少有一个线程从属于系统线程组。若创建多个线程而不指定一个组，它们就会自动归属于系统线程组。</p>
+<p>线程组也必须从属于其他线程组。必须在构建器里指定新线程组从属于哪个线程组。若在创建一个线程组的时候没有指定它的归属，则同样会自动成为系统线程组的一名属下。因此，一个应用程序中的所有线程组最终都会将系统线程组作为自己的“父”。</p>
+<p>之所以要提出“线程组”的概念，很难从字面上找到原因。这多少为我们讨论的主题带来了一些混乱。一般地说，我们认为是由于“安全”或者“保密”方面的理由才使用线程组的。根据Arnold和Gosling的说法：“线程组中的线程可以修改组内的其他线程，包括那些位于分层结构最深处的。一个线程不能修改位于自己所在组或者下属组之外的任何线程”（注释①）。然而，我们很难判断“修改”在这儿的具体含义是什么。下面这个例子展示了位于一个“叶子组”内的线程能修改它所在线程组树的所有线程的优先级，同时还能为这个“树”内的所有线程都调用一个方法。</p>
+<p>①：《The Java Programming Language》第179页。该书由Arnold和Jams Gosling编著，Addison-Wesley于1996年出版</p>
+
+  <pre class="code">//: TestAccess.java
+// How threads can access other threads
+// in a parent thread group
+
+public class TestAccess {
+  public static void main(String[] args) {
+    ThreadGroup 
+      x = new ThreadGroup(&quot;x&quot;),
+      y = new ThreadGroup(x, &quot;y&quot;),
+      z = new ThreadGroup(y, &quot;z&quot;);
+    Thread
+      one = new TestThread1(x, &quot;one&quot;),
+      two = new TestThread2(z, &quot;two&quot;);
+  }
+}
+
+class TestThread1 extends Thread {
+  private int i;
+  TestThread1(ThreadGroup g, String name) {
+    super(g, name);
+  }
+  void f() {
+    i++; // modify this thread
+    System.out.println(getName() + &quot; f()&quot;);
+  }
+}
+
+class TestThread2 extends TestThread1 {
+  TestThread2(ThreadGroup g, String name) {
+    super(g, name);
+    start();
+  }
+  public void run() {
+    ThreadGroup g =
+      getThreadGroup().getParent().getParent();
+    g.list();
+    Thread[] gAll = new Thread[g.activeCount()];
+    g.enumerate(gAll);
+    for(int i = 0; i &lt; gAll.length; i++) {
+      gAll[i].setPriority(Thread.MIN_PRIORITY);
+      ((TestThread1)gAll[i]).f();
+    }
+    g.list();
+  }
+} ///:~</pre>
+
+<p>在main()中，我们创建了几个ThreadGroup（线程组），每个都位于不同的“叶”上：x没有参数，只有它的名字（一个String），所以会自动进入“system”（系统）线程组；y位于x下方，而z位于y下方。注意初始化是按照文字顺序进行的，所以代码合法。</p>
+<p>有两个线程创建之后进入了不同的线程组。其中，TestThread1没有一个run()方法，但有一个f()，用于通知线程以及打印出一些东西，以便我们知道它已被调用。而TestThread2属于TestThread1的一个子类，它的run()非常详尽，要做许多事情。首先，它获得当前线程所在的线程组，然后利用getParent()在继承树中向上移动两级（这样做是有道理的，因为我想把TestThread2在分级结构中向下移动两级）。随后，我们调用方法activeCount()，查询这个线程组以及所有子线程组内有多少个线程，从而创建由指向Thread的句柄构成的一个数组。enumerate()方法将指向所有这些线程的句柄置入数组gAll里。然后在整个数组里遍历，为每个线程都调用f()方法，同时修改优先级。这样一来，位于一个“叶子”线程组里的线程就修改了位于父线程组的线程。</p>
+<p>调试方法list()打印出与一个线程组有关的所有信息，把它们作为标准输出。在我们对线程组的行为进行调查的时候，这样做是相当有好处的。下面是程序的输出：</p>
+
+  <pre class="code">java.lang.ThreadGroup[name=x,maxpri=10]
+    Thread[one,5,x]
+    java.lang.ThreadGroup[name=y,maxpri=10]
+        java.lang.ThreadGroup[name=z,maxpri=10]
+            Thread[two,5,z]
+one f()
+two f()
+java.lang.ThreadGroup[name=x,maxpri=10]
+    Thread[one,1,x]
+    java.lang.ThreadGroup[name=y,maxpri=10]
+        java.lang.ThreadGroup[name=z,maxpri=10]
+            Thread[two,1,z]</pre>
+
+<p>list()不仅打印出ThreadGroup或者Thread的类名，也打印出了线程组的名字以及它的最高优先级。对于线程，则打印出它们的名字，并接上线程优先级以及所属的线程组。注意list()会对线程和线程组进行缩排处理，指出它们是未缩排的线程组的“子”。</p>
+<p>大家可看到f()是由TestThread2的run()方法调用的，所以很明显，组内的所有线程都是相当脆弱的。然而，我们只能访问那些从自己的system线程组树分支出来的线程，而且或许这就是所谓“安全”的意思。我们不能访问其他任何人的系统线程树。</p>
+<h4>1. 线程组的控制</h4>
+<p>抛开安全问题不谈，线程组最有用的一个地方就是控制：只需用单个命令即可完成对整个线程组的操作。下面这个例子演示了这一点，并对线程组内优先级的限制进行了说明。括号内的注释数字便于大家比较输出结果：</p>
+
+  <pre class="code">//: ThreadGroup1.java
+// How thread groups control priorities
+// of the threads inside them.
+
+public class ThreadGroup1 {
+  public static void main(String[] args) {
+    // Get the system thread &amp; print its Info:
+    ThreadGroup sys = 
+      Thread.currentThread().getThreadGroup();
+    sys.list(); // (1)
+    // Reduce the system thread group priority:
+    sys.setMaxPriority(Thread.MAX_PRIORITY - 1);
+    // Increase the main thread priority:
+    Thread curr = Thread.currentThread();
+    curr.setPriority(curr.getPriority() + 1);
+    sys.list(); // (2)
+    // Attempt to set a new group to the max:
+    ThreadGroup g1 = new ThreadGroup(&quot;g1&quot;);
+    g1.setMaxPriority(Thread.MAX_PRIORITY);
+    // Attempt to set a new thread to the max:
+    Thread t = new Thread(g1, &quot;A&quot;);
+    t.setPriority(Thread.MAX_PRIORITY);
+    g1.list(); // (3)
+    // Reduce g1's max priority, then attempt
+    // to increase it:
+    g1.setMaxPriority(Thread.MAX_PRIORITY - 2);
+    g1.setMaxPriority(Thread.MAX_PRIORITY);
+    g1.list(); // (4)
+    // Attempt to set a new thread to the max:
+    t = new Thread(g1, &quot;B&quot;);
+    t.setPriority(Thread.MAX_PRIORITY);
+    g1.list(); // (5)
+    // Lower the max priority below the default
+    // thread priority:
+    g1.setMaxPriority(Thread.MIN_PRIORITY + 2);
+    // Look at a new thread's priority before
+    // and after changing it:
+    t = new Thread(g1, &quot;C&quot;);
+    g1.list(); // (6)
+    t.setPriority(t.getPriority() -1);
+    g1.list(); // (7)
+    // Make g2 a child Threadgroup of g1 and
+    // try to increase its priority:
+    ThreadGroup g2 = new ThreadGroup(g1, &quot;g2&quot;);
+    g2.list(); // (8)
+    g2.setMaxPriority(Thread.MAX_PRIORITY);
+    g2.list(); // (9)
+    // Add a bunch of new threads to g2:
+    for (int i = 0; i &lt; 5; i++)
+      new Thread(g2, Integer.toString(i));
+    // Show information about all threadgroups
+    // and threads:
+    sys.list(); // (10)
+    System.out.println(&quot;Starting all threads:&quot;);
+    Thread[] all = new Thread[sys.activeCount()];
+    sys.enumerate(all);
+    for(int i = 0; i &lt; all.length; i++)
+      if(!all[i].isAlive())
+        all[i].start();
+    // Suspends &amp; Stops all threads in 
+    // this group and its subgroups:
+    System.out.println(&quot;All threads started&quot;);
+    sys.suspend(); // Deprecated in Java 1.2
+    // Never gets here...
+    System.out.println(&quot;All threads suspended&quot;);
+    sys.stop(); // Deprecated in Java 1.2
+    System.out.println(&quot;All threads stopped&quot;);
+  }
+} ///:~</pre>
+
+<p>下面的输出结果已进行了适当的编辑，以便用一页能够装下（java.lang.已被删去），而且添加了适当的数字，与前面程序列表中括号里的数字对应：</p>
+
+  <pre class="code">(1) ThreadGroup[name=system,maxpri=10]
+      Thread[main,5,system]
+(2) ThreadGroup[name=system,maxpri=9]
+      Thread[main,6,system]
+(3) ThreadGroup[name=g1,maxpri=9]
+      Thread[A,9,g1]
+(4) ThreadGroup[name=g1,maxpri=8]
+      Thread[A,9,g1]
+(5) ThreadGroup[name=g1,maxpri=8]
+      Thread[A,9,g1]
+      Thread[B,8,g1]
+(6) ThreadGroup[name=g1,maxpri=3]
+      Thread[A,9,g1]
+      Thread[B,8,g1]
+      Thread[C,6,g1]
+(7) ThreadGroup[name=g1,maxpri=3]
+      Thread[A,9,g1]
+      Thread[B,8,g1]
+      Thread[C,3,g1]
+(8) ThreadGroup[name=g2,maxpri=3]
+(9) ThreadGroup[name=g2,maxpri=3]
+(10)ThreadGroup[name=system,maxpri=9]
+      Thread[main,6,system]
+      ThreadGroup[name=g1,maxpri=3]
+        Thread[A,9,g1]
+        Thread[B,8,g1]
+        Thread[C,3,g1]
+        ThreadGroup[name=g2,maxpri=3]
+          Thread[0,6,g2]
+          Thread[1,6,g2]
+          Thread[2,6,g2]
+          Thread[3,6,g2]
+          Thread[4,6,g2]
+Starting all threads:
+All threads started</pre>
+
+<p>所有程序都至少有一个线程在运行，而且main()采取的第一项行动便是调用Thread的一个static（静态）方法，名为currentThread()。从这个线程开始，线程组将被创建，而且会为结果调用list()。输出如下：</p>
+
+  <pre class="code">(1) ThreadGroup[name=system,maxpri=10]
+      Thread[main,5,system]</pre>
+
+<p>我们可以看到，主线程组的名字是system，而主线程的名字是main，而且它从属于system线程组。</p>
+<p>第二个练习显示出system组的最高优先级可以减少，而且main线程可以增大自己的优先级：</p>
+
+  <pre class="code">(2) ThreadGroup[name=system,maxpri=9]
+      Thread[main,6,system]</pre>
+
+<p>第三个练习创建一个新的线程组，名为g1；它自动从属于system线程组，因为并没有明确指定它的归属关系。我们在g1内部放置了一个新线程，名为A。随后，我们试着将这个组的最大优先级设到最高的级别，并将A的优先级也设到最高一级。结果如下：</p>
+
+  <pre class="code">(3) ThreadGroup[name=g1,maxpri=9]
+      Thread[A,9,g1]</pre>
+
+<p>可以看出，不可能将线程组的最大优先级设为高于它的父线程组。</p>
+<p>第四个练习将g1的最大优先级降低两级，然后试着把它升至Thread.MAX_PRIORITY。结果如下：</p>
+
+  <pre class="code">(4) ThreadGroup[name=g1,maxpri=8]
+      Thread[A,9,g1]</pre>
+
+<p>同样可以看出，提高最大优先级的企图是失败的。我们只能降低一个线程组的最大优先级，而不能提高它。此外，注意线程A的优先级并未改变，而且它现在高于线程组的最大优先级。也就是说，线程组最大优先级的变化并不能对现有线程造成影响。</p>
+<p>第五个练习试着将一个新线程设为最大优先级。如下所示：</p>
+
+  <pre class="code">(5) ThreadGroup[name=g1,maxpri=8]
+      Thread[A,9,g1]
+      Thread[B,8,g1]</pre>
+
+<p>因此，新线程不能变到比最大线程组优先级还要高的一级。</p>
+<p>这个程序的默认线程优先级是6；若新建一个线程，那就是它的默认优先级，而且不会发生变化，除非对优先级进行了特别的处理。练习六将把线程组的最大优先级降至默认线程优先级以下，看看在这种情况下新建一个线程会发生什么事情：</p>
+
+  <pre class="code">(6) ThreadGroup[name=g1,maxpri=3]
+      Thread[A,9,g1]
+      Thread[B,8,g1]
+      Thread[C,6,g1]</pre>
+
+<p>尽管线程组现在的最大优先级是3，但仍然用默认优先级6来创建新线程。所以，线程组的最大优先级不会影响默认优先级（事实上，似乎没有办法可以设置新线程的默认优先级）。</p>
+<p>改变了优先级后，接下来试试将其降低一级，结果如下：</p>
+
+  <pre class="code">(7) ThreadGroup[name=g1,maxpri=3]
+      Thread[A,9,g1]
+      Thread[B,8,g1]
+      Thread[C,3,g1]</pre>
+
+<p>因此，只有在试图改变优先级的时候，才会强迫遵守线程组最大优先级的限制。</p>
+<p>我们在(8)和(9)中进行了类似的试验。在这里，我们创建了一个新的线程组，名为g2，将其作为g1的一个子组，并改变了它的最大优先级。大家可以看到，g2的优先级无论如何都不可能高于g1：</p>
+
+  <pre class="code">(8) ThreadGroup[name=g2,maxpri=3]
+(9) ThreadGroup[name=g2,maxpri=3]</pre>
+
+<p>也要注意在g2创建的时候，它会被自动设为g1的线程组最大优先级。</p>
+<p>经过所有这些实验以后，整个线程组和线程系统都会被打印出来，如下所示：</p>
+
+  <pre class="code">(10)ThreadGroup[name=system,maxpri=9]
+      Thread[main,6,system]
+      ThreadGroup[name=g1,maxpri=3]
+        Thread[A,9,g1]
+        Thread[B,8,g1]
+        Thread[C,3,g1]
+        ThreadGroup[name=g2,maxpri=3]
+          Thread[0,6,g2]
+          Thread[1,6,g2]
+          Thread[2,6,g2]
+          Thread[3,6,g2]
+          Thread[4,6,g2]</pre>
+
+<p>所以由线程组的规则所限，一个子组的最大优先级在任何时候都只能低于或等于它的父组的最大优先级。</p>
+本程序的最后一个部分演示了用于整组线程的方法。程序首先遍历整个线程树，并启动每一个尚未启动的线程。例如，system组随后会被挂起（暂停），最后被中止（尽管用suspend()和stop()对整个线程组进行操作看起来似乎很有趣，但应注意这些方法在Java
+<p>1.2里都是被“反对”的）。但在挂起system组的同时，也挂起了main线程，而且整个程序都会关闭。所以永远不会达到让线程中止的那一步。实际上，假如真的中止了main线程，它会“掷”出一个ThreadDeath违例，所以我们通常不这样做。由于ThreadGroup是从Object继承的，其中包含了wait()方法，所以也能调用wait(秒数×1000)，令程序暂停运行任意秒数的时间。当然，事前必须在一个同步块里取得对象锁。</p>
+ThreadGroup类也提供了suspend()和resume()方法，所以能中止和启动整个线程组和它的所有线程，也能中止和启动它的子组，所有这些只需一个命令即可（再次提醒，suspend()和resume()都是Java
+1.2所“反对”的）。
+<p>从表面看，线程组似乎有些让人摸不着头脑，但请注意我们很少需要直接使用它们。</p>
+<div class="rpindex"><a href="148.html"> 下一页</a><a href="146.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

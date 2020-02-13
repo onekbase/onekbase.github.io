@@ -1,0 +1,487 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="169.html"> 上一页</a><a href="171.html"> 下一页</a></div>
+<h2>17.3 复杂性理论</h2>
+下面要介绍的程序的前身是由Larry O'Brien原创的一些代码，并以由Craig
+Reynolds于1986年编制的“Boids”程序为基础，当时是为了演示复杂性理论的一个特殊问题，名为“凸显”（Emergence）。
+<p>这儿要达到的目标是通过为每种动物都规定少许简单的规则，从而逼真地再现动物的群聚行为。每个动物都能看到看到整个环境以及环境中的其他动物，但它只与一系列附近的“群聚伙伴”打交道。动物的移动基于三个简单的引导行为：</p>
+<ul>
+  <li>(1) 分隔：避免本地群聚伙伴过于拥挤。</li>
+  <li>(2) 方向：遵从本地群聚伙伴的普遍方向。</li>
+  <li>(3) 聚合：朝本地群聚伙伴组的中心移动。</li>
+</ul>
+<p>更复杂的模型甚至可以包括障碍物的因素，动物能预知和避免与障碍冲突的能力，所以它们能围绕环境中的固定物体自由活动。除此以外，动物也可能有自己的特殊目标，这也许会造成群体按特定的路径前进。为简化讨论，避免障碍以及目标搜寻的因素并未包括到这里建立的模型中。</p>
+<p>尽管计算机本身比较简陋，而且采用的规则也相当简单，但结果看起来是真实的。也就是说，相当逼真的行为从这个简单的模型中“凸显”出来了。</p>
+<p>程序以合成到一起的应用程序／程序片的形式提供：</p>
+
+  <pre class="code">//: FieldOBeasts.java
+// Demonstration of complexity theory; simulates 
+// herding behavior in animals. Adapted from
+// a program by Larry O'Brien lobrien@msn.com
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+import java.util.*;
+
+class Beast {
+  int
+    x, y,            // Screen position
+    currentSpeed;    // Pixels per second
+  float currentDirection;  // Radians
+  Color color;      // Fill color
+  FieldOBeasts field; // Where the Beast roams
+  static final int GSIZE = 10; // Graphic size
+
+  public Beast(FieldOBeasts f, int x, int y, 
+      float cD, int cS, Color c) {
+    field = f;
+    this.x = x;
+    this.y = y;
+    currentDirection = cD;
+    currentSpeed = cS;
+    color = c;
+  }
+  public void step() {
+    // You move based on those within your sight:
+    Vector seen = field.beastListInSector(this);
+    // If you're not out in front
+    if(seen.size() &gt; 0) {
+      // Gather data on those you see
+      int totalSpeed = 0;
+      float totalBearing = 0.0f;
+      float distanceToNearest = 100000.0f;
+      Beast nearestBeast = 
+        (Beast)seen.elementAt(0);
+      Enumeration e = seen.elements();
+      while(e.hasMoreElements()) {
+        Beast aBeast = (Beast) e.nextElement();
+        totalSpeed += aBeast.currentSpeed;
+        float bearing = 
+          aBeast.bearingFromPointAlongAxis(
+            x, y, currentDirection);
+        totalBearing += bearing;
+        float distanceToBeast = 
+          aBeast.distanceFromPoint(x, y);
+        if(distanceToBeast &lt; distanceToNearest) {
+          nearestBeast = aBeast;
+          distanceToNearest = distanceToBeast;
+        }
+      }
+      // Rule 1: Match average speed of those 
+      // in the list:
+      currentSpeed = totalSpeed / seen.size();
+      // Rule 2: Move towards the perceived
+      // center of gravity of the herd:
+      currentDirection = 
+        totalBearing / seen.size();
+      // Rule 3: Maintain a minimum distance 
+      // from those around you:
+      if(distanceToNearest &lt;= 
+         field.minimumDistance) {
+        currentDirection = 
+          nearestBeast.currentDirection;
+        currentSpeed = nearestBeast.currentSpeed;
+        if(currentSpeed &gt; field.maxSpeed) {
+          currentSpeed = field.maxSpeed;
+        }
+      }
+    } 
+    else {  // You are in front, so slow down
+      currentSpeed = 
+        (int)(currentSpeed * field.decayRate);
+    }
+    // Make the beast move:
+    x += (int)(Math.cos(currentDirection) 
+               * currentSpeed);
+    y += (int)(Math.sin(currentDirection)
+               * currentSpeed);
+    x %= field.xExtent;
+    y %= field.yExtent;
+    if(x &lt; 0)
+      x += field.xExtent;
+    if(y &lt; 0)
+      y += field.yExtent;
+  }
+  public float bearingFromPointAlongAxis (
+      int originX, int originY, float axis) {
+    // Returns bearing angle of the current Beast
+    // in the world coordiante system
+    try {
+      double bearingInRadians = 
+        Math.atan(
+          (this.y - originY) / 
+          (this.x - originX));
+      // Inverse tan has two solutions, so you 
+      // have to correct for other quarters:
+      if(x &lt; originX) {  
+        if(y &lt; originY) {
+          bearingInRadians += - (float)Math.PI;
+        } 
+        else {
+          bearingInRadians = 
+            (float)Math.PI - bearingInRadians;
+        }
+      }
+      // Just subtract the axis (in radians):
+      return (float) (axis - bearingInRadians);
+    } catch(ArithmeticException aE) {
+      // Divide by 0 error possible on this
+      if(x &gt; originX) {
+          return 0;
+      } 
+      else
+        return (float) Math.PI;
+    }
+  }
+  public float distanceFromPoint(int x1, int y1){
+    return (float) Math.sqrt(
+      Math.pow(x1 - x, 2) + 
+      Math.pow(y1 - y, 2));
+  }
+  public Point position() { 
+    return new Point(x, y);
+  }
+  // Beasts know how to draw themselves:
+  public void draw(Graphics g) {
+    g.setColor(color);
+    int directionInDegrees = (int)(
+      (currentDirection * 360) / (2 * Math.PI));
+    int startAngle = directionInDegrees - 
+      FieldOBeasts.halfFieldOfView;
+    int endAngle = 90;
+    g.fillArc(x, y, GSIZE, GSIZE, 
+      startAngle, endAngle);
+  }
+}
+
+public class FieldOBeasts extends Applet 
+    implements Runnable {
+  private Vector beasts;
+  static float 
+    fieldOfView = 
+      (float) (Math.PI / 4), // In radians
+    // Deceleration % per second:
+    decayRate = 1.0f, 
+    minimumDistance = 10f; // In pixels
+  static int
+    halfFieldOfView = (int)(
+      (fieldOfView * 360) / (2 * Math.PI)),
+    xExtent = 0,
+    yExtent = 0,
+    numBeasts = 50,
+    maxSpeed = 20; // Pixels/second
+  boolean uniqueColors = true;
+  Thread thisThread;
+  int delay = 25;
+  public void init() {
+    if (xExtent == 0 &amp;&amp; yExtent == 0) {
+      xExtent = Integer.parseInt(
+        getParameter(&quot;xExtent&quot;));
+      yExtent = Integer.parseInt(
+        getParameter(&quot;yExtent&quot;));
+    }
+    beasts = 
+      makeBeastVector(numBeasts, uniqueColors);
+    // Now start the beasts a-rovin':
+    thisThread = new Thread(this);
+    thisThread.start();
+  }
+  public void run() {
+    while(true) {
+      for(int i = 0; i &lt; beasts.size(); i++){
+        Beast b = (Beast) beasts.elementAt(i);
+        b.step();
+      }
+      try {
+        thisThread.sleep(delay);
+      } catch(InterruptedException ex){}
+      repaint(); // Otherwise it won't update
+    }
+  }
+  Vector makeBeastVector(
+      int quantity, boolean uniqueColors) {
+    Vector newBeasts = new Vector();
+    Random generator = new Random();
+    // Used only if uniqueColors is on:
+    double cubeRootOfBeastNumber = 
+      Math.pow((double)numBeasts, 1.0 / 3.0);
+    float colorCubeStepSize = 
+      (float) (1.0 / cubeRootOfBeastNumber);
+    float r = 0.0f;
+    float g = 0.0f;
+    float b = 0.0f;
+    for(int i = 0; i &lt; quantity; i++) {
+      int x = 
+        (int) (generator.nextFloat() * xExtent);
+      if(x &gt; xExtent - Beast.GSIZE) 
+        x -= Beast.GSIZE;
+      int y = 
+        (int) (generator.nextFloat() * yExtent);
+      if(y &gt; yExtent - Beast.GSIZE) 
+        y -= Beast.GSIZE;
+      float direction = (float)(
+        generator.nextFloat() * 2 * Math.PI);
+      int speed = (int)(
+        generator.nextFloat() * (float)maxSpeed);
+      if(uniqueColors) {
+        r += colorCubeStepSize;
+        if(r &gt; 1.0) {
+          r -= 1.0f;
+          g += colorCubeStepSize;
+          if( g &gt; 1.0) {
+            g -= 1.0f;
+            b += colorCubeStepSize;
+            if(b &gt; 1.0) 
+              b -= 1.0f;
+          }
+        }
+      }
+      newBeasts.addElement(
+        new Beast(this, x, y, direction, speed, 
+          new Color(r,g,b)));
+    }
+    return newBeasts;
+  }
+  public Vector beastListInSector(Beast viewer) {
+    Vector output = new Vector();
+    Enumeration e = beasts.elements();
+    Beast aBeast = (Beast)beasts.elementAt(0);
+    int counter = 0;
+    while(e.hasMoreElements()) {
+      aBeast = (Beast) e.nextElement();
+      if(aBeast != viewer) {
+        Point p = aBeast.position();
+        Point v = viewer.position();
+        float bearing = 
+          aBeast.bearingFromPointAlongAxis(
+            v.x, v.y, viewer.currentDirection);
+        if(Math.abs(bearing) &lt; fieldOfView / 2)
+         output.addElement(aBeast);
+      }
+    }
+    return output;
+  }
+  public void paint(Graphics g)  {
+    Enumeration e = beasts.elements();
+    while(e.hasMoreElements()) {
+      ((Beast)e.nextElement()).draw(g);
+    }
+  }
+  public static void main(String[] args)   {
+    FieldOBeasts field = new FieldOBeasts();
+    field.xExtent = 640;
+    field.yExtent = 480;
+    Frame frame = new Frame(&quot;Field 'O Beasts&quot;);
+    // Optionally use a command-line argument
+    // for the sleep time:
+    if(args.length &gt;= 1)
+      field.delay = Integer.parseInt(args[0]);
+    frame.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+          System.exit(0);
+        }
+      });
+    frame.add(field, BorderLayout.CENTER);
+    frame.setSize(640,480);
+    field.init();
+    field.start();
+    frame.setVisible(true);
+  }
+} ///:~</pre>
+
+尽管这并非对Craig Reynold的“Boids”例子中的行为完美重现，但它却展现出了自己独有的迷人之外。通过对数字进行调整，即可进行全面的修改。至于与这种群聚行为有关的更多的情况，大家可以访问Craig
+Reynold的主页——在那个地方，甚至还提供了Boids一个公开的3D展示版本：
+<pre class="code">http://www.hmt.com/cwr/boids.html</pre>
+<p>为了将这个程序作为一个程序片运行，请在HTML文件中设置下述程序片标志：</p>
+
+  <pre class="code">&lt;applet
+code=FieldOBeasts
+width=640
+height=480&gt;
+&lt;param name=xExtent value = &quot;640&quot;&gt;
+&lt;param name=yExtent value = &quot;480&quot;&gt;
+&lt;/applet&gt;</pre>
+
+  <h2><a name="a" id="a"></a>17.4 总结</h2>
+  通过本章的学习，大家知道运用Java可做到一些较复杂的事情。通过这些例子亦可看出，尽管Java必定有自己的局限，但受那些局限影响的主要是性能（比如写好文字处理程序后，会发现C++的版本要快得多——这部分是由于IO库做得不完善造成的；而在你读到本书的时候，情况也许已发生了变化。但Java的局限也仅此而已，它在语言表达方面的能力是无以伦比的。利用Java，几乎可以表达出我们想得到的任何事情。而与此同时，Java在表达的方便性和易读性上，也做足了功夫。所以在使用Java时，一般不会陷入其他语言常见的那种复杂境地。使用那些语言时，会感觉它们象一个爱唠叨的老太婆，哪有Java那样清纯、简练！而且通过Java
+1.2的JFC/Swing库，AWT的表达能力和易用性甚至又得到了进一步的增强。
+  <h2><a name="b" id="b"></a>17.5 练习</h2>
+  <p>(1) （稍微有些难度）改写FieldOBeasts.java，使它的状态能够保持固定。加上一些按钮，允许用户保存和恢复不同的状态文件，并从它们断掉的地方开始继续运行。请先参考第10章的CADState.java，再决定具体怎样做。</p>
+<p>(2) （大作业）以FieldOBeasts.java作为起点，构造一个自动化交通仿真系统。</p>
+<p>(3) （大作业）以ClassScanner.java作为起点，构造一个特殊的工具，用它找出那些虽然定义但从未用过的方法和字段。</p>
+<p>(4) （大作业）利用JDBC，构造一个联络管理程序。让这个程序以一个平面文件数据库为基础，其中包含了名字、地址、电话号码、E-mail地址等联系资料。应该能向数据库里方便地加入新名字。键入要查找的名字时，请采用在第15章的VLookup.java里介绍过的那种名字自动填充技术。</p>
+<div class="rpindex"><a href="171.html"> 下一页</a><a href="169.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

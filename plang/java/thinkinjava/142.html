@@ -1,0 +1,352 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="141.html"> 上一页</a><a href="143.html"> 下一页</a></div>
+<h3>14.2.2 Java如何共享资源</h3>
+<p>对一种特殊的资源——对象中的内存——Java提供了内建的机制来防止它们的冲突。由于我们通常将数据元素设为从属于private（私有）类，然后只通过方法访问那些内存，所以只需将一个特定的方法设为synchronized（同步的），便可有效地防止冲突。在任何时刻，只可有一个线程调用特定对象的一个synchronized方法（尽管那个线程可以调用多个对象的同步方法）。下面列出简单的synchronized方法：</p>
+<pre class="code">synchronized void f() { /* ... */ }
+synchronized void g() { /* ... */ }</pre>
+<p>每个对象都包含了一把锁（也叫作“监视器”），它自动成为对象的一部分（不必为此写任何特殊的代码）。调用任何synchronized方法时，对象就会被锁定，不可再调用那个对象的其他任何synchronized方法，除非第一个方法完成了自己的工作，并解除锁定。在上面的例子中，如果为一个对象调用f()，便不能再为同样的对象调用g()，除非f()完成并解除锁定。因此，一个特定对象的所有synchronized方法都共享着一把锁，而且这把锁能防止多个方法对通用内存同时进行写操作（比如同时有多个线程）。</p>
+每个类也有自己的一把锁（作为类的Class对象的一部分），所以synchronized
+static方法可在一个类的范围内被相互间锁定起来，防止与static数据的接触。
+<p>注意如果想保护其他某些资源不被多个线程同时访问，可以强制通过synchronized方访问那些资源。</p>
+<h4>1. 计数器的同步</h4>
+<p>装备了这个新关键字后，我们能够采取的方案就更灵活了：可以只为TwoCounter中的方法简单地使用synchronized关键字。下面这个例子是对前例的改版，其中加入了新的关键字：</p>
+
+  <pre class="code">//: Sharing2.java
+// Using the synchronized keyword to prevent
+// multiple access to a particular resource.
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+
+class TwoCounter2 extends Thread {
+  private boolean started = false;
+  private TextField 
+    t1 = new TextField(5),
+    t2 = new TextField(5);
+  private Label l = 
+    new Label(&quot;count1 == count2&quot;);
+  private int count1 = 0, count2 = 0;
+  public TwoCounter2(Container c) {
+    Panel p = new Panel();
+    p.add(t1);
+    p.add(t2);
+    p.add(l);
+    c.add(p);
+  }    
+  public void start() {
+    if(!started) {
+      started = true;
+      super.start();
+    }
+  }
+  public synchronized void run() {
+    while (true) {
+      t1.setText(Integer.toString(count1++));
+      t2.setText(Integer.toString(count2++));
+      try {
+        sleep(500);
+      } catch (InterruptedException e){}
+    }
+  }
+  public synchronized void synchTest() {
+    Sharing2.incrementAccess();
+    if(count1 != count2)
+      l.setText(&quot;Unsynched&quot;);
+  }
+}
+
+class Watcher2 extends Thread {
+  private Sharing2 p;
+  public Watcher2(Sharing2 p) { 
+    this.p = p;
+    start();
+  }
+  public void run() {
+    while(true) {
+      for(int i = 0; i &lt; p.s.length; i++)
+        p.s[i].synchTest();
+      try {
+        sleep(500);
+      } catch (InterruptedException e){}
+    }
+  }
+}
+
+public class Sharing2 extends Applet {
+  TwoCounter2[] s;
+  private static int accessCount = 0;
+  private static TextField aCount = 
+    new TextField(&quot;0&quot;, 10);
+  public static void incrementAccess() {
+    accessCount++;
+    aCount.setText(Integer.toString(accessCount));
+  }
+  private Button 
+    start = new Button(&quot;Start&quot;),
+    observer = new Button(&quot;Observe&quot;);
+  private boolean isApplet = true;
+  private int numCounters = 0;
+  private int numObservers = 0;
+  public void init() {
+    if(isApplet) {
+      numCounters = 
+        Integer.parseInt(getParameter(&quot;size&quot;));
+      numObservers = 
+        Integer.parseInt(
+          getParameter(&quot;observers&quot;));
+    }
+    s = new TwoCounter2[numCounters];
+    for(int i = 0; i &lt; s.length; i++)
+      s[i] = new TwoCounter2(this);
+    Panel p = new Panel();
+    start.addActionListener(new StartL());
+    p.add(start);
+    observer.addActionListener(new ObserverL());
+    p.add(observer);
+    p.add(new Label(&quot;Access Count&quot;));
+    p.add(aCount);
+    add(p);
+  }
+  class StartL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      for(int i = 0; i &lt; s.length; i++)
+        s[i].start();
+    }
+  }
+  class ObserverL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      for(int i = 0; i &lt; numObservers; i++)
+        new Watcher2(Sharing2.this);
+    }
+  }
+  public static void main(String[] args) {
+    Sharing2 applet = new Sharing2();
+    // This isn't an applet, so set the flag and
+    // produce the parameter values from args:
+    applet.isApplet = false;
+    applet.numCounters = 
+      (args.length == 0 ? 5 :
+        Integer.parseInt(args[0]));
+    applet.numObservers =
+      (args.length &lt; 2 ? 5 :
+        Integer.parseInt(args[1]));
+    Frame aFrame = new Frame(&quot;Sharing2&quot;);
+    aFrame.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e){
+          System.exit(0);
+        }
+      });
+    aFrame.add(applet, BorderLayout.CENTER);
+    aFrame.setSize(350, applet.numCounters *100);
+    applet.init();
+    applet.start();
+    aFrame.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>我们注意到无论run()还是synchTest()都是“同步的”。如果只同步其中的一个方法，那么另一个就可以自由忽视对象的锁定，并可无碍地调用。所以必须记住一个重要的规则：对于访问某个关键共享资源的所有方法，都必须把它们设为synchronized，否则就不能正常地工作。</p>
+<p>现在又遇到了一个新问题。Watcher2永远都不能看到正在进行的事情，因为整个run()方法已设为“同步”。而且由于肯定要为每个对象运行run()，所以锁永远不能打开，而synchTest()永远不会得到调用。之所以能看到这一结果，是因为accessCount根本没有变化。</p>
+<p>为解决这个问题，我们能采取的一个办法是只将run()中的一部分代码隔离出来。想用这个办法隔离出来的那部分代码叫作“关键区域”，而且要用不同的方式来使用synchronized关键字，以设置一个关键区域。Java通过“同步块”提供对关键区域的支持；这一次，我们用synchronized关键字指出对象的锁用于对其中封闭的代码进行同步。如下所示：</p>
+
+  <pre class="code">synchronized(syncObject) {
+  // This code can be accessed by only
+  // one thread at a time, assuming all
+  // threads respect syncObject's lock
+}</pre>
+
+<p>在能进入同步块之前，必须在synchObject上取得锁。如果已有其他线程取得了这把锁，块便不能进入，必须等候那把锁被释放。</p>
+<p>可从整个run()中删除synchronized关键字，换成用一个同步块包围两个关键行，从而完成对Sharing2例子的修改。但什么对象应作为锁来使用呢？那个对象已由synchTest()标记出来了——也就是当前对象（this）！所以修改过的run()方法象下面这个样子：</p>
+
+  <pre class="code">  public void run() {
+    while (true) {
+      synchronized(this) {
+        t1.setText(Integer.toString(count1++));
+        t2.setText(Integer.toString(count2++));
+      }
+      try {
+        sleep(500);
+      } catch (InterruptedException e){}
+    }
+  }</pre>
+
+<p>这是必须对Sharing2.java作出的唯一修改，我们会看到尽管两个计数器永远不会脱离同步（取决于允许Watcher什么时候检查它们），但在run()执行期间，仍然向Watcher提供了足够的访问权限。</p>
+<p>当然，所有同步都取决于程序员是否勤奋：要访问共享资源的每一部分代码都必须封装到一个适当的同步块里。</p>
+<h4>2. 同步的效率</h4>
+由于要为同样的数据编写两个方法，所以无论如何都不会给人留下效率很高的印象。看来似乎更好的一种做法是将所有方法都设为自动同步，并完全消除synchronized关键字（当然，含有synchronized
+<p>run()的例子显示出这样做是很不通的）。但它也揭示出获取一把锁并非一种“廉价”方案——为一次方法调用付出的代价（进入和退出方法，不执行方法主体）至少要累加到四倍，而且根据我们的具体现方案，这一代价还有可能变得更高。所以假如已知一个方法不会造成冲突，最明智的做法便是撤消其中的synchronized关键字。</p>
+<div class="rpindex"><a href="143.html"> 下一页</a><a href="141.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

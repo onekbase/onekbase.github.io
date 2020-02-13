@@ -1,0 +1,234 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="66.html"> 上一页</a><a href="68.html"> 下一页</a></div>
+<h3>8.7.6 未支持的操作</h3>
+<p>利用static（静态）数组Arrays.toList()，也许能将一个数组转换成List，如下所示：</p>
+
+  <pre class="code">//: Unsupported.java
+// Sometimes methods defined in the Collection
+// interfaces don't work!
+package c08.newcollections;
+import java.util.*;
+
+public class Unsupported {
+  private static String[] s = {
+    &quot;one&quot;, &quot;two&quot;, &quot;three&quot;, &quot;four&quot;, &quot;five&quot;,
+    &quot;six&quot;, &quot;seven&quot;, &quot;eight&quot;, &quot;nine&quot;, &quot;ten&quot;,
+  };
+  static List a = Arrays.toList(s);
+  static List a2 = Arrays.toList(
+    new String[] { s[3], s[4], s[5] });
+  public static void main(String[] args) {
+    Collection1.print(a); // Iteration
+    System.out.println(
+      &quot;a.contains(&quot; + s[0] + &quot;) = &quot; + 
+      a.contains(s[0]));
+    System.out.println(
+      &quot;a.containsAll(a2) = &quot; + 
+      a.containsAll(a2));
+    System.out.println(&quot;a.isEmpty() = &quot; +
+      a.isEmpty());
+    System.out.println(
+      &quot;a.indexOf(&quot; + s[5] + &quot;) = &quot; + 
+      a.indexOf(s[5]));
+    // Traverse backwards:
+    ListIterator lit = a.listIterator(a.size());
+    while(lit.hasPrevious())
+      System.out.print(lit.previous());
+    System.out.println();
+    // Set the elements to different values:
+    for(int i = 0; i &lt; a.size(); i++)
+      a.set(i, &quot;47&quot;);
+    Collection1.print(a);
+    // Compiles, but won't run:
+    lit.add(&quot;X&quot;); // Unsupported operation
+    a.clear(); // Unsupported
+    a.add(&quot;eleven&quot;); // Unsupported
+    a.addAll(a2); // Unsupported
+    a.retainAll(a2); // Unsupported
+    a.remove(s[0]); // Unsupported
+    a.removeAll(a2); // Unsupported
+  }
+} ///:~</pre>
+
+<p>从中可以看出，实际只实现了Collection和List接口的一部分。剩余的方法导致了不受欢迎的一种情况，名为UnsupportedOperationException。在下一章里，我们会讲述违例的详细情况，但在这里有必要进行一下简单说明。这里的关键在于“集合接口”，以及新集合库内的另一些接口，它们都包含了“可选的”方法。在实现那些接口的集合类中，或者提供、或者没有提供对那些方法的支持。若调用一个未获支持的方法，就会导致一个UnsupportedOperationException（操作未支持违例），这表明出现了一个编程错误。</p>
+<p>大家或许会觉得奇怪，不是说“接口”和基础类最大的“卖点”就是它们许诺这些方法能产生一些有意义的行为吗？上述违例破坏了那个许诺——它调用的一部分方法不仅不能产生有意义的行为，而且还会中止程序的运行。在这些情况下，类型的所谓安全保证似乎显得一钱不值！但是，情况并没有想象的那么坏。通过Collection，List，Set或者Map，编译器仍然限制我们只能调用那个接口中的方法，所以它和Smalltalk还是存在一些区别的（在Smalltalk中，可为任何对象调用任何方法，而且只有在运行程序时才知道这些调用是否可行）。除此以外，以Collection作为自变量的大多数方法只能从那个集合中读取数据——Collection的所有“read”方法都不是可选的。</p>
+<p>这样一来，系统就可避免在设计期间出现接口的冲突。而在集合库的其他设计方案中，最终经常都会得到数量过多的接口，用它们描述基本方案的每一种变化形式，所以学习和掌握显得非常困难。有些时候，甚至难于捕捉接口中的所有特殊情况，因为人们可能设计出任何新接口。但Java的“不支持的操作”方法却达到了新集合库的一个重要设计目标：易于学习和使用。但是，为了使这一方法真正有效，却需满足下述条件：</p>
+<p>(1) UnsupportedOperationException必须属于一种“非常”事件。也就是说，对于大多数类来说，所有操作都应是可行的。只有在一些特殊情况下，一、两个操作才可能未获支持。新集合库满足了这一条件，因为绝大多数时候用到的类——ArrayList，LinkedList，HashList和HashMap，以及其他集合方案——都提供了对所有操作的支持。但是，如果想新建一个集合，同时不想为集合接口中的所有方法都提供有意义的定义，同时令其仍与现有库配合，这种设计方法也确实提供了一个“后门”可以利用。</p>
+<p>(2) 若一个操作未获支持，那么UnsupportedOperationException（未支持的操作违例）极有可能在实现期间出现，则不是在产品已交付给客户以后才会出现。它毕竟指出的是一个编程错误——不正确地使用了一个类。这一点不能十分确定，通过也可以看出这种方案的“试验”特征——只有经过多次试验，才能找出最理想的工作方式。</p>
+<p>在上面的例子中，Arrays.toList()产生了一个List（列表），该列表是由一个固定长度的数组后推出来的。因此唯一能够支持的就是那些不改变数组长度的操作。在另一方面，若请求一个新接口表达不同种类的行为（可能叫作“FixedSizeList”——固定长度列表），就有遭遇更大的复杂程度的危险。这样一来，以后试图使用库的时候，很快就会发现自己不知从何处下手。</p>
+<p>对那些采用Collection，List，Set或者Map作为参数的方法，它们的文档应当指出哪些可选的方法是必须实现的。举个例子来说，排序要求实现set()和Iterator.set()方法，但不包括add()和remove()。</p>
+<div class="rpindex"><a href="68.html"> 下一页</a><a href="66.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,344 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="150.html"> 上一页</a><a href="152.html"> 下一页</a></div>
+<h2>15.3 服务多个客户</h2>
+<p>JabberServer可以正常工作，但每次只能为一个客户程序提供服务。在典型的服务器中，我们希望同时能处理多个客户的请求。解决这个问题的关键就是多线程处理机制。而对于那些本身不支持多线程的语言，达到这个要求无疑是异常困难的。通过第14章的学习，大家已经知道Java已对多线程的处理进行了尽可能的简化。由于Java的线程处理方式非常直接，所以让服务器控制多名客户并不是件难事。</p>
+<p>最基本的方法是在服务器（程序）里创建单个ServerSocket，并调用accept()来等候一个新连接。一旦accept()返回，我们就取得结果获得的Socket，并用它新建一个线程，令其只为那个特定的客户服务。然后再调用accept()，等候下一次新的连接请求。</p>
+<p>对于下面这段服务器代码，大家可发现它与JabberServer.java例子非常相似，只是为一个特定的客户提供服务的所有操作都已移入一个独立的线程类中：</p>
+
+  <pre class="code">//: MultiJabberServer.java
+// A server that uses multithreading to handle 
+// any number of clients.
+import java.io.*;
+import java.net.*;
+
+class ServeOneJabber extends Thread {
+  private Socket socket;
+  private BufferedReader in;
+  private PrintWriter out;
+  public ServeOneJabber(Socket s) 
+      throws IOException {
+    socket = s;
+    in = 
+      new BufferedReader(
+        new InputStreamReader(
+          socket.getInputStream()));
+    // Enable auto-flush:
+    out = 
+      new PrintWriter(
+        new BufferedWriter(
+          new OutputStreamWriter(
+            socket.getOutputStream())), true);
+    // If any of the above calls throw an 
+    // exception, the caller is responsible for
+    // closing the socket. Otherwise the thread
+    // will close it.
+    start(); // Calls run()
+  }
+  public void run() {
+    try {
+      while (true) {  
+        String str = in.readLine();
+        if (str.equals(&quot;END&quot;)) break;
+        System.out.println(&quot;Echoing: &quot; + str);
+        out.println(str);
+      }
+      System.out.println(&quot;closing...&quot;);
+    } catch (IOException e) {
+    } finally {
+      try {
+        socket.close();
+      } catch(IOException e) {}
+    }
+  }
+}
+
+public class MultiJabberServer {  
+  static final int PORT = 8080;
+  public static void main(String[] args)
+      throws IOException {
+    ServerSocket s = new ServerSocket(PORT);
+    System.out.println(&quot;Server Started&quot;);
+    try {
+      while(true) {
+        // Blocks until a connection occurs:
+        Socket socket = s.accept();
+        try {
+          new ServeOneJabber(socket);
+        } catch(IOException e) {
+          // If it fails, close the socket,
+          // otherwise the thread will close it:
+          socket.close();
+        }
+      }
+    } finally {
+      s.close();
+    }
+  } 
+} ///:~</pre>
+
+<p>每次有新客户请求建立一个连接时，ServeOneJabber线程都会取得由accept()在main()中生成的Socket对象。然后和往常一样，它创建一个BufferedReader，并用Socket自动刷新PrintWriter对象。最后，它调用Thread的特殊方法start()，令其进行线程的初始化，然后调用run()。这里采取的操作与前例是一样的：从套扫字读入某些东西，然后把它原样反馈回去，直到遇到一个特殊的&quot;END&quot;结束标志为止。</p>
+<p>同样地，套接字的清除必须进行谨慎的设计。就目前这种情况来说，套接字是在ServeOneJabber外部创建的，所以清除工作可以“共享”。若ServeOneJabber构建器失败，那么只需向调用者“掷”出一个违例即可，然后由调用者负责线程的清除。但假如构建器成功，那么必须由ServeOneJabber对象负责线程的清除，这是在它的run()里进行的。</p>
+<p>请注意MultiJabberServer有多么简单。和以前一样，我们创建一个ServerSocket，并调用accept()允许一个新连接的建立。但这一次，accept()的返回值（一个套接字）将传递给用于ServeOneJabber的构建器，由它创建一个新线程，并对那个连接进行控制。连接中断后，线程便可简单地消失。</p>
+<p>如果ServerSocket创建失败，则再一次通过main()掷出违例。如果成功，则位于外层的try-finally代码块可以担保正确的清除。位于内层的try-catch块只负责防范ServeOneJabber构建器的失败；若构建器成功，则ServeOneJabber线程会将对应的套接字关掉。</p>
+为了证实服务器代码确实能为多名客户提供服务，下面这个程序将创建许多客户（使用线程），并同相同的服务器建立连接。每个线程的“存在时间”都是有限的。一旦到期，就留出空间以便创建一个新线程。允许创建的线程的最大数量是由final
+int maxthreads决定的。大家会注意到这个值非常关键，因为假如把它设得很大，线程便有可能耗尽资源，并产生不可预知的程序错误。
+<pre class="code">//: MultiJabberClient.java
+// Client that tests the MultiJabberServer
+// by starting up multiple clients.
+import java.net.*;
+import java.io.*;
+
+class JabberClientThread extends Thread {
+  private Socket socket;
+  private BufferedReader in;
+  private PrintWriter out;
+  private static int counter = 0;
+  private int id = counter++;
+  private static int threadcount = 0;
+  public static int threadCount() { 
+    return threadcount; 
+  }
+  public JabberClientThread(InetAddress addr) {
+    System.out.println(&quot;Making client &quot; + id);
+    threadcount++;
+    try {
+      socket = 
+        new Socket(addr, MultiJabberServer.PORT);
+    } catch(IOException e) {
+      // If the creation of the socket fails, 
+      // nothing needs to be cleaned up.
+    }
+    try {    
+      in = 
+        new BufferedReader(
+          new InputStreamReader(
+            socket.getInputStream()));
+      // Enable auto-flush:
+      out = 
+        new PrintWriter(
+          new BufferedWriter(
+            new OutputStreamWriter(
+              socket.getOutputStream())), true);
+      start();
+    } catch(IOException e) {
+      // The socket should be closed on any 
+      // failures other than the socket 
+      // constructor:
+      try {
+        socket.close();
+      } catch(IOException e2) {}
+    }
+    // Otherwise the socket will be closed by
+    // the run() method of the thread.
+  }
+  public void run() {
+    try {
+      for(int i = 0; i &lt; 25; i++) {
+        out.println(&quot;Client &quot; + id + &quot;: &quot; + i);
+        String str = in.readLine();
+        System.out.println(str);
+      }
+      out.println(&quot;END&quot;);
+    } catch(IOException e) {
+    } finally {
+      // Always close it:
+      try {
+        socket.close();
+      } catch(IOException e) {}
+      threadcount--; // Ending this thread
+    }
+  }
+}
+
+public class MultiJabberClient {
+  static final int MAX_THREADS = 40;
+  public static void main(String[] args) 
+      throws IOException, InterruptedException {
+    InetAddress addr = 
+      InetAddress.getByName(null);
+    while(true) {
+      if(JabberClientThread.threadCount() 
+         &lt; MAX_THREADS)
+        new JabberClientThread(addr);
+      Thread.currentThread().sleep(100);
+    }
+  }
+} ///:~</pre>
+
+<p>JabberClientThread构建器获取一个InetAddress，并用它打开一个套接字。大家可能已看出了这样的一个套路：Socket肯定用于创建某种Reader以及／或者Writer（或者InputStream和／或OutputStream）对象，这是运用Socket的唯一方式（当然，我们可考虑编写一、两个类，令其自动完成这些操作，避免大量重复的代码编写工作）。同样地，start()执行线程的初始化，并调用run()。在这里，消息发送给服务器，而来自服务器的信息则在屏幕上回显出来。然而，线程的“存在时间”是有限的，最终都会结束。注意在套接字创建好以后，但在构建器完成之前，假若构建器失败，套接字会被清除。否则，为套接字调用close()的责任便落到了run()方法的头上。</p>
+<p>threadcount跟踪计算目前存在的JabberClientThread对象的数量。它将作为构建器的一部分增值，并在run()退出时减值（run()退出意味着线程中止）。在MultiJabberClient.main()中，大家可以看到线程的数量会得到检查。若数量太多，则多余的暂时不创建。方法随后进入“休眠”状态。这样一来，一旦部分线程最后被中止，多作的那些线程就可以创建了。大家可试验一下逐渐增大MAX_THREADS，看看对于你使用的系统来说，建立多少线程（连接）才会使您的系统资源降低到危险程度。</p>
+<div class="rpindex"><a href="152.html"> 下一页</a><a href="150.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

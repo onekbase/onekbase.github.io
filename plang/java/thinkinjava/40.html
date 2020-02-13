@@ -1,0 +1,239 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="39.html"> 上一页</a><a href="41.html"> 下一页</a></div>
+<h2>6.5 protected</h2>
+<p>现在我们已理解了继承的概念，protected这个关键字最后终于有了意义。在理想情况下，private成员随时都是“私有”的，任何人不得访问。但在实际应用中，经常想把某些东西深深地藏起来，但同时允许访问衍生类的成员。protected关键字可帮助我们做到这一点。它的意思是“它本身是私有的，但可由从这个类继承的任何东西或者同一个包内的其他任何东西访问”。也就是说，Java中的protected会成为进入“友好”状态。</p>
+我们采取的最好的做法是保持成员的private状态——无论如何都应保留对基
+<p>础的实施细节进行修改的权利。在这一前提下，可通过protected方法允许类的继承者进行受到控制的访问：</p>
+
+  <pre class="code">//: Orc.java
+// The protected keyword
+import java.util.*;
+
+class Villain {
+  private int i;
+  protected int read() { return i; }
+  protected void set(int ii) { i = ii; }
+  public Villain(int ii) { i = ii; }
+  public int value(int m) { return m*i; }
+}
+
+public class Orc extends Villain {
+  private int j;
+  public Orc(int jj) { super(jj); j = jj; }
+  public void change(int x) { set(x); }
+} ///:~</pre>
+
+<p>可以看到，change()拥有对set()的访问权限，因为它的属性是protected（受到保护的）。</p>
+<h2><a name="a" id="a"></a>6.6 累积开发</h2>
+<p>继承的一个好处是它支持“累积开发”，允许我们引入新的代码，同时不会为现有代码造成错误。这样可将新错误隔离到新代码里。通过从一个现成的、功能性的类继承，同时增添成员新的数据成员及方法（并重新定义现有方法），我们可保持现有代码原封不动（另外有人也许仍在使用它），不会为其引入自己的编程错误。一旦出现错误，就知道它肯定是由于自己的新代码造成的。这样一来，与修改现有代码的主体相比，改正错误所需的时间和精力就可以少很多。</p>
+<p>类的隔离效果非常好，这是许多程序员事先没有预料到的。甚至不需要方法的源代码来实现代码的再生。最多只需要导入一个包（这对于继承和合并都是成立的）。</p>
+<p>大家要记住这样一个重点：程序开发是一个不断递增或者累积的过程，就象人们学习知识一样。当然可根据要求进行尽可能多的分析，但在一个项目的设计之初，谁都不可能提前获知所有的答案。如果能将自己的项目看作一个有机的、能不断进步的生物，从而不断地发展和改进它，就有望获得更大的成功以及更直接的反馈。</p>
+<p>尽管继承是一种非常有用的技术，但在某些情况下，特别是在项目稳定下来以后，仍然需要从新的角度考察自己的类结构，将其收缩成一个更灵活的结构。请记住，继承是对一种特殊关系的表达，意味着“这个新类属于那个旧类的一种类型”。我们的程序不应纠缠于一些细树末节，而应着眼于创建和操作各种类型的对象，用它们表达出来自“问题空间”的一个模型。</p>
+<h2><a name="b" id="b"></a>6.7 上溯造型</h2>
+<p>继承最值得注意的地方就是它没有为新类提供方法。继承是对新类和基础类之间的关系的一种表达。可这样总结该关系：“新类属于现有类的一种类型”。</p>
+<p>这种表达并不仅仅是对继承的一种形象化解释，继承是直接由语言提供支持的。作为一个例子，大家可考虑一个名为Instrument的基础类，它用于表示乐器；另一个衍生类叫作Wind。由于继承意味着基础类的所有方法亦可在衍生出来的类中使用，所以我们发给基础类的任何消息亦可发给衍生类。若Instrument类有一个play()方法，则Wind设备也会有这个方法。这意味着我们能肯定地认为一个Wind对象也是Instrument的一种类型。下面这个例子揭示出编译器如何提供对这一概念的支持：</p>
+
+  <pre class="code">//: Wind.java
+// Inheritance &amp; upcasting
+import java.util.*;
+
+class Instrument {
+  public void play() {}
+  static void tune(Instrument i) {
+    // ...
+    i.play();
+  }
+}
+
+// Wind objects are instruments
+// because they have the same interface:
+class Wind extends Instrument {
+  public static void main(String[] args) {
+    Wind flute = new Wind();
+    Instrument.tune(flute); // Upcasting
+  }
+} ///:~</pre>
+
+<p>这个例子中最有趣的无疑是tune()方法，它能接受一个Instrument句柄。但在Wind.main()中，tune()方法是通过为其赋予一个Wind句柄来调用的。由于Java对类型检查特别严格，所以大家可能会感到很奇怪，为什么接收一种类型的方法也能接收另一种类型呢？但是，我们一定要认识到一个Wind对象也是一个Instrument对象。而且对于不在Wind中的一个Instrument（乐器），没有方法可以由tune()调用。在tune()中，代码适用于Instrument以及从Instrument衍生出来的任何东西。在这里，我们将从一个Wind句柄转换成一个Instrument句柄的行为叫作“上溯造型”。</p>
+<h3>6.7.1 何谓“上溯造型”？</h3>
+<p>之所以叫作这个名字，除了有一定的历史原因外，也是由于在传统意义上，类继承图的画法是根位于最顶部，再逐渐向下扩展（当然，可根据自己的习惯用任何方法描绘这种图）。因素，Wind.java的继承图就象下面这个样子：</p>
+<img src="images/6-1.gif" />
+<p>由于造型的方向是从衍生类到基础类，箭头朝上，所以通常把它叫作“上溯造型”，即Upcasting。上溯造型肯定是安全的，因为我们是从一个更特殊的类型到一个更常规的类型。换言之，衍生类是基础类的一个超集。它可以包含比基础类更多的方法，但它至少包含了基础类的方法。进行上溯造型的时候，类接口可能出现的唯一一个问题是它可能丢失方法，而不是赢得这些方法。这便是在没有任何明确的造型或者其他特殊标注的情况下，编译器为什么允许上溯造型的原因所在。</p>
+<p>也可以执行下溯造型，但这时会面临第11章要详细讲述的一种困境。</p>
+<h4>1. 再论合成与继承</h4>
+<p>在面向对象的程序设计中，创建和使用代码最可能采取的一种做法是：将数据和方法统一封装到一个类里，并且使用那个类的对象。有些时候，需通过“合成”技术用现成的类来构造新类。而继承是最少见的一种做法。因此，尽管继承在学习OOP的过程中得到了大量的强调，但并不意味着应该尽可能地到处使用它。相反，使用它时要特别慎重。只有在清楚知道继承在所有方法中最有效的前提下，才可考虑它。为判断自己到底应该选用合成还是继承，一个最简单的办法就是考虑是否需要从新类上溯造型回基础类。若必须上溯，就需要继承。但如果不需要上溯造型，就应提醒自己防止继承的滥用。在下一章里（多形性），会向大家介绍必须进行上溯造型的一种场合。但只要记住经常问自己“我真的需要上溯造型吗”，对于合成还是继承的选择就不应该是个太大的问题。</p>
+<div class="rpindex"><a href="41.html"> 下一页</a><a href="39.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

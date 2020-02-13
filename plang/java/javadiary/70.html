@@ -1,0 +1,239 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="69.html"> 上一页</a><a href="71.html"> 下一页</a></div>
+<h1>Java Gossip: 型&#24577;通配字符</h1>
+<p>假&#35774;您撰&#20889;了一&#20010;泛型&#31867;&#21035;：</p>
+<h5>GenericFoo.java </h5>
+<pre class="code">public class GenericFoo&lt;T&gt; {
+	private T foo;
+	public void setFoo(T foo) {
+		this.foo = foo;
+	}
+	public T getFoo() {
+		return foo;
+	}
+}</pre>
+<p> 分&#21035;使用下面的程序宣告了foo1与foo2&#20004;&#20010;&#21442;考名&#31216;：</p>
+<pre class="code">GenericFoo&lt;Integer&gt; foo1 = null;
+GenericFoo&lt;Boolean&gt; foo2 = null;</pre>
+<p> 那么 foo1 就只接受GenericFoo&lt;Integer&gt;的&#23454;例，而foo2只接受GenericFoo&lt;Boolean&gt;的&#23454;例。<br />
+<br />
+&#29616;在您有&#36825;么一&#20010;需求，您希望有一&#20010;&#21442;考名&#31216;foo可以接受所有下面的&#23454;例（List、Map或List接口以及其&#23454;接口的相&#20851;&#31867;&#21035;，在J2SE 5.0中已&#32463;&#38024;&#23545;泛型功能作了改&#20889;，在&#36825;&#36793;仍&#35831;&#23558;之&#24403;作界面就好，&#36825;是&#20026;了&#31616;化&#35828;明的考&#34385;）：</p>
+<pre class="code">foo = new GenericFoo&lt;ArrayList&gt;();
+foo = new GenericFoo&lt;LinkedList>();</pre>
+<p>&#31616;&#21333;的&#35828;，&#23454;例化型&#24577;持有者&#26102;，它必&#39035;是&#23454;作List的&#31867;&#21035;或其子&#31867;&#21035;，要宣告&#36825;么一&#20010;&#21442;考名&#31216;，您可以使用 '?' 通配字符，并使用&quot;extends&quot;&#20851;&#38190;&#35789;限定型&#24577;持有者的型&#24577;，例如：</p>
+<pre class="code">GenericFoo&lt;? extends List&gt; foo = null;
+foo = new GenericFoo&lt;ArrayList>();
+.....
+foo = new GenericFoo&lt;LinkedList>();
+....</pre>
+<p> 如果指定了不是&#23454;作List的&#31867;&#21035;或其子&#31867;&#21035;，&#21017;&#32534;&#35793;器&#20250;回&#25253;&#38169;&#35823;，例如：</p>
+<pre  class="code">GenericFoo&lt;? extends List&gt; foo = new GenericFoo&lt;HashMap&gt;();</pre>
+<p> 上面&#36825;段程序&#32534;&#35793;器&#20250;回&#25253;以下的&#38169;&#35823;：</p>
+<pre class="code">incompatible types
+found : GenericFoo&lt;java.util.HashMap>
+required: GenericFoo&lt;? extends java.util.List>
+GenericFoo&lt;? extends List> foo = new GenericFoo&lt;HashMap>();</pre>
+<p>&#36825;&#26679;的限定是很有用的，例如如果您想要自&#35746;一&#20010;showFoo()方法，方法的&#20869;容&#23454;作是&#38024;&#23545;List而制定的，例如：</p>
+<pre class="code">public void showFoo(GenericFoo foo) {
+// 针对List而制定的内容
+}</pre>
+<p> 您&#24403;然不希望任何的型&#24577;都可以&#20256;入showFoo()方法中，您可以使用以下的方式&#26469;限定，例如：</p>
+<pre class="code">public void showFoo(GenericFoo&lt;? extends List> foo) {
+// 
+}</pre>
+<p>&#36825;么一&#26469;，如果有粗心的程序&#35774;&#35745;人&#21592;&#20256;入了您不想要的型&#24577;，例如GenericFoo&lt;Boolean&gt;型&#24577;的&#23454;例，&#21017;&#32534;&#35793;器都&#20250;告&#35785;它&#36825;是不可行的，在宣告名&#31216;&#26102;如果指定了&lt;?&gt;而 不使用&quot;extends&quot;，&#21017;&#39044;&#35774;是允&#35768;Object及其下的子&#31867;，也就是所有的Java&#23545;象了，那&#20026;什么不直接使用GenericFoo宣告就好了，何 必要用GenericFoo&lt;?&gt;&#26469;宣告？使用通配字符有&#28857;要注意的是，透&#36807;使用通配字符宣告的名&#31216;所&#21442;考的&#23545;象，您&#27809;&#21150;法再&#23545;它加入新的&#36164; &#35759;，您只能取得它的信息或是移除它的信息，例如：</p>
+<pre class="code">GenericFoo&lt;String> foo = new GenericFoo&lt;String>();
+foo.setFoo("caterpillar");
+GenericFoo&lt;?> immutableFoo = foo;
+
+// 可以取得信息
+System.out.println(immutableFoo.getFoo());
+
+// 可透过immutableFoo来移去foo所参考实例内的信息
+immutableFoo.setFoo(null);
+
+// 不可透过immutableFoo来设定新的信息给foo所参考的实例
+// 所以下面这行无法通过编译
+//?immutableFoo.setFoo("良葛格");</pre>
+<p> 所以使用&lt;?&gt;或是&lt;? extends SomeClass&gt;的宣告方式，意味&#30528;您只能透&#36807;&#35813;名&#31216;&#26469;取得所&#21442;考&#23454;例的信息，或者是移除某些信息，但不能增加它的信息，因&#20026;只知道&#24403;中放置的 是SomeClass的子&#31867;，但不确定是什么&#31867;的&#23454;例，&#32534;&#35793;器不&#35753;您加入&#23545;象，理由是，如果可以加入&#23545;象的&#35805;，那么您就得&#35760;得取回的&#23545;象&#23454;例是什么形&#24577;， 然后&#36716;&#25442;&#20026;原&#26469;的型&#24577;方可&#36827;行操作，&#36825;就失去了使用泛型的意&#20041;。<br />
+<br />
+事&#23454;上，GenericFoo&lt;?&gt; immutableFoo相&#24403;于GenericFoo immutableFoo。</p>
+<p> 除了可以向下限制，您也可以向上限制，只要使用&quot;super&quot;&#20851;&#38190;&#35789;，例如：</p>
+<p>GenericFoo&lt;? super StringBuilder&gt; foo;</p>
+<p>
+  如此，foo就只接受 <a href="34.html">StringBuilder</a> 及其上&#23618;的父&#31867;型&#24577;之&#23545;象。</p>
+<div class="rpindex"><a href="71.html"> 下一页</a><a href="69.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

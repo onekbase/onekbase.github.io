@@ -1,0 +1,319 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="136.html"> 上一页</a><a href="138.html"> 下一页</a></div>
+<h3>14.1.2 针对用户界面的多线程</h3>
+<p>现在，我们也许能用一个线程解决在Counter1.java中出现的问题。采用的一个技巧便是在一个线程的run()方法中放置“子任务”——亦即位于go()内的循环。一旦用户按下Start按钮，线程就会启动，但马上结束线程的创建。这样一来，尽管线程仍在运行，但程序的主要工作却能得以继续（等候并响应用户界面的事件）。下面是具体的代码：</p>
+
+  <pre class="code">//: Counter2.java
+// A responsive user interface with threads
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+
+class SeparateSubTask extends Thread {
+  private int count = 0;
+  private Counter2 c2;
+  private boolean runFlag = true;
+  public SeparateSubTask(Counter2 c2) {
+    this.c2 = c2;
+    start();
+  }
+  public void invertFlag() { runFlag = !runFlag;}
+  public void run() {
+    while (true) {
+     try {
+      sleep(100);
+     } catch (InterruptedException e){}
+     if(runFlag) 
+       c2.t.setText(Integer.toString(count++));
+    }
+  }
+} 
+
+public class Counter2 extends Applet {
+  TextField t = new TextField(10);
+  private SeparateSubTask sp = null;
+  private Button 
+    onOff = new Button(&quot;Toggle&quot;),
+    start = new Button(&quot;Start&quot;);
+  public void init() {
+    add(t);
+    start.addActionListener(new StartL());
+    add(start);
+    onOff.addActionListener(new OnOffL());
+    add(onOff);
+  }
+  class StartL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      if(sp == null)
+        sp = new SeparateSubTask(Counter2.this);
+    }
+  }
+  class OnOffL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      if(sp != null)
+        sp.invertFlag();
+    }
+  }
+  public static void main(String[] args) {
+    Counter2 applet = new Counter2();
+    Frame aFrame = new Frame(&quot;Counter2&quot;);
+    aFrame.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+          System.exit(0);
+        }
+      });
+    aFrame.add(applet, BorderLayout.CENTER);
+    aFrame.setSize(300,200);
+    applet.init();
+    applet.start();
+    aFrame.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>现在，Counter2变成了一个相当直接的程序，它的唯一任务就是设置并管理用户界面。但假若用户现在按下Start按钮，却不会真正调用一个方法。此时不是创建类的一个线程，而是创建SeparateSubTask，然后继续Counter2事件循环。注意此时会保存SeparateSubTask的句柄，以便我们按下onOff按钮的时候，能正常地切换位于SeparateSubTask内部的runFlag（运行标志）。随后那个线程便可启动（当它看到标志的时候），然后将自己中止（亦可将SeparateSubTask设为一个内部类来达到这一目的）。</p>
+<p>SeparateSubTask类是对Thread的一个简单扩展，它带有一个构建器（其中保存了Counter2句柄，然后通过调用start()来运行线程）以及一个run()——本质上包含了Counter1.java的go()内的代码。由于SeparateSubTask知道自己容纳了指向一个Counter2的句柄，所以能够在需要的时候介入，并访问Counter2的TestField（文本字段）。</p>
+<p>按下onOff按钮，几乎立即能得到正确的响应。当然，这个响应其实并不是“立即”发生的，它毕竟和那种由“中断”驱动的系统不同。只有线程拥有CPU的执行时间，并注意到标记已发生改变，计数器才会停止。</p>
+<h4>1. 用内部类改善代码</h4>
+<p>下面说说题外话，请大家注意一下SeparateSubTask和Counter2类之间发生的结合行为。SeparateSubTask同Counter2“亲密”地结合到了一起——它必须持有指向自己“父”Counter2对象的一个句柄，以便自己能回调和操纵它。但两个类并不是真的合并为单独一个类（尽管在下一节中，我们会讲到Java确实提供了合并它们的方法），因为它们各自做的是不同的事情，而且是在不同的时间创建的。但不管怎样，它们依然紧密地结合到一起（更准确地说，应该叫“联合”），所以使程序代码多少显得有些笨拙。在这种情况下，一个内部类可以显著改善代码的“可读性”和执行效率：</p>
+
+  <pre class="code">//: Counter2i.java
+// Counter2 using an inner class for the thread
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.*;
+
+public class Counter2i extends Applet {
+  private class SeparateSubTask extends Thread {
+    int count = 0;
+    boolean runFlag = true;
+    SeparateSubTask() { start(); }
+    public void run() {
+      while (true) {
+       try {
+        sleep(100);
+       } catch (InterruptedException e){}
+       if(runFlag) 
+         t.setText(Integer.toString(count++));
+      }
+    }
+  } 
+  private SeparateSubTask sp = null;
+  private TextField t = new TextField(10);
+  private Button 
+    onOff = new Button(&quot;Toggle&quot;),
+    start = new Button(&quot;Start&quot;);
+  public void init() {
+    add(t);
+    start.addActionListener(new StartL());
+    add(start);
+    onOff.addActionListener(new OnOffL());
+    add(onOff);
+  }
+  class StartL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      if(sp == null)
+        sp = new SeparateSubTask();
+    }
+  }
+  class OnOffL implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      if(sp != null)
+        sp.runFlag = !sp.runFlag; // invertFlag();
+    }
+  }
+  public static void main(String[] args) {
+    Counter2i applet = new Counter2i();
+    Frame aFrame = new Frame(&quot;Counter2i&quot;);
+    aFrame.addWindowListener(
+      new WindowAdapter() {
+        public void windowClosing(WindowEvent e) {
+          System.exit(0);
+        }
+      });
+    aFrame.add(applet, BorderLayout.CENTER);
+    aFrame.setSize(300,200);
+    applet.init();
+    applet.start();
+    aFrame.setVisible(true);
+  }
+} ///:~</pre>
+
+<p>这个SeparateSubTask名字不会与前例中的SeparateSubTask冲突——即使它们都在相同的目录里——因为它已作为一个内部类隐藏起来。大家亦可看到内部类被设为private（私有）属性，这意味着它的字段和方法都可获得默认的访问权限（run()除外，它必须设为public，因为它在基础类中是公开的）。除Counter2i之外，其他任何方面都不可访问private内部类。而且由于两个类紧密结合在一起，所以很容易放宽它们之间的访问限制。在SeparateSubTask中，我们可看到invertFlag()方法已被删去，因为Counter2i现在可以直接访问runFlag。</p>
+<p>此外，注意SeparateSubTask的构建器已得到了简化——它现在唯一的用外就是启动线程。Counter2i对象的句柄仍象以前那样得以捕获，但不再是通过人工传递和引用外部对象来达到这一目的，此时的内部类机制可以自动照料它。在run()中，可看到对t的访问是直接进行的，似乎它是SeparateSubTask的一个字段。父类中的t字段现在可以变成private，因为SeparateSubTask能在未获任何特殊许可的前提下自由地访问它——而且无论如何都该尽可能地把字段变成“私有”属性，以防来自类外的某种力量不慎地改变它们。</p>
+<p>无论在什么时候，只要注意到类相互之间结合得比较紧密，就可考虑利用内部类来改善代码的编写与维护。</p>
+<div class="rpindex"><a href="138.html"> 下一页</a><a href="136.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

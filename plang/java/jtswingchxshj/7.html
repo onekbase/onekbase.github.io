@@ -1,0 +1,463 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="6.html"> 上一页</a><a href="8.html"> 下一页</a></div>
+  <h1>2－1：事件处理：</h1>
+  <PRE>
+Source                                    Event                                      Event Listener
+--------------------------------------------------------------------------------------------------------------
+AbstractButton                         ActionEvent                                  ActionListener
+(JButton,JtoggleButton,                ChangeEvent                                  ChangeListener
+JCheckBox,JRadioButton                 ItemEvent                                    ItemListener
+-------------------------------------------------------------------------------------------------------
+JTextField                             ActionEvent                                  ActionListener
+JpasswordField                         CaretEvent                                   CaretListener
+                                       DocumentEvent                                DocumentListener
+                                       UndoableEvent                                UndoableListener
+-------------------------------------------------------------------------------------------------------
+JTextArea                              CaretEvent                                   CaretListener
+                                       DocumentEvent                                DocumentListener
+                                       UndoableEvent                                UndoableListener
+-------------------------------------------------------------------------------------------------------
+JTextPane                              CaretEvent                                   CaretListener
+JEditorPane                            DocumentEvent                                DocumentListener
+                                       UndoableEvent                                UndoableListener
+                                       HyperlinkEvent                               HyperlinkListener
+-------------------------------------------------------------------------------------------------------
+JComboBox                              ActionEvent                                  ActionListener
+                                       ItemEvent                                    ItemListener
+-------------------------------------------------------------------------------------------------------
+JList                                  ListSelectionEvent                           ListSelectionListener
+                                       ListDataEvent                                ListDataListener
+-------------------------------------------------------------------------------------------------------
+JFileChooser                           ActionEvent                                  ActionListener
+-------------------------------------------------------------------------------------------------------
+JMenuItem                              ActionEvent                                  ActionListener
+                                       ChangeEvent                                  ChangeListener
+                                       ItemEvent                                    ItemListener
+                                       MenuKeyEvent                                 MenuKeyListener
+                                       MenuDragMouseEvent                           MenuDragMouseListener
+-------------------------------------------------------------------------------------------------------
+JMenu                                  MenuEvent                                    MenuListener
+-------------------------------------------------------------------------------------------------------
+JPopupMenu                             PopupMenuEvent                               PopupMenuListener
+-------------------------------------------------------------------------------------------------------
+JProgressBar                           ChangeEvent                                  ChangeListener
+-------------------------------------------------------------------------------------------------------
+JSlider                                ChangeEvent                                  ChangeListener
+-------------------------------------------------------------------------------------------------------
+JScrollBar                             AdjustmentEvent                              AdjustMentListener
+-------------------------------------------------------------------------------------------------------
+JTable                                 ListSelectionEvent                           ListSelectionListener
+                                       TableModeEvent                               TableModeListener
+                                       TableColumnModelEvent                        TableColumnModeListener
+                                       CellEditorEvent                              CellEditorListener
+-------------------------------------------------------------------------------------------------------
+JTabbedPane                            ChangeEvent                                  ChangeListener
+-------------------------------------------------------------------------------------------------------
+JTree                                  TreeSelectionEvent                           TreeSelectionListener
+                                       TreeExpansionEvent                           TreeExpansionListener
+                                       TreeWillExpandEvent                          TreeWillExpandListener
+                                       TreeModeEvent                                TreeModeListener     
+-------------------------------------------------------------------------------------------------------
+JTimer                                 ActionEvent                                  ActionListener
+-------------------------------------------------------------------------------------------------------     
+</PRE>
+  <h5>底层事件：</h5>
+  <pre> ---------------------------------------------------------------------------------------------------------------
+  
+  Event                                                                     Listener
+  ComponentEvent                                                        ComponentListener
+  ContainerEvent                                                        ConatainerListener
+  FocusEvent                                                            FocusListener
+  KeyEvent                                                              KeyListener
+  MouseEvent                                                            MouseListener
+  MouseMotionEvent                                                      MouseMotionListener
+  WindowEvent                                                           WindowListener</pre>
+  <p>ComponentEvent:主要处理组件大小的改变，位置的改变，或是可见与不可见状态(hidden or visible)等。</p>
+  <p>ContainerListener:主要在处理组件的加入或移出容器。</p>
+  <p>FocusListener:主要在处理焦点的取得或移开焦点等操作。</p>
+  <p> MouseListener:主要就是在处理鼠标是否在某个组件上，是否按下鼠标键，是否离开某个组件等操作，主要针对鼠标按键与位置
+    作处理。</p>
+  <p> MouseMotionListener:主要就是在追踪鼠标的位置，如(X,Y)坐标的位置，主人是针对鼠标坐标与拖曳操作作处理。</p>
+  <p>WindowListener:主要在处理窗口的所有操作。如处理active窗口或是de-active窗口，处理窗口的最大、最小化，处理窗口的关闭
+    、打开、退出等。</p>
+  <p>以上所述的每种EventListener都是一种interface,里面只有定义这个EventListener的interface,然后在这个类中，把要处理事
+    件的程序代码写在此interface的方法中。这是处理事件的标准操作，当然还有其他编写模式，如：利用inner class的匿名类方法
+    ，就可以不用在class后面加上implements EventListener的表示法，或是利用Adapter类，就不用一一将interface中的每种方法都
+    实现。</p>
+  <p> 让我们来了解一下，每一种EventListener的interface到底提供了哪几种方法要我们实现(Implement)!我们把事件区分成是由
+    Swing或是AWT所引发：</p>
+  <pre>Swing EventListener                                          Method
+  ----------------------------------------------------------------------------------------------------------------
+  CaretListener                                        caretUpdate(CaretEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  CellEditorListener                                   editingCanceled(ChangeEvent e)
+  editingStopped(ChangeEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ChangeListener                                       stateChanged(ChangeEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  DocumentListener                                     changedUpdate(DocumentEvent e)
+  insertUpdate(DocumentEvent e)
+  removeUpdate(DocumentEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  HyperlinkListener                                    hyperlinkUpdate(HyperlinkEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ListDataListener                                     contentsChanged(ListdataEvent e)
+  intervalAdded(ListDataEvent e)
+  intervalRemoved(ListDataEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ListSelectionListener                                valueChanged(ListSelectionEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  MenuDragMouseListener                                menuDragMouseDragged(MenuDragMouseEvent e)
+  menuDragMouseEntered(menuDragMouseEvent e)
+  menuDragMouseExited(MenuDragMouseEvent e)
+  menuDragMouseReleased(MenuDragMouseEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  MenuKeyListener                                      menuKeyPressed(MenuKeyEvent e)
+  menuKeyReleased(MenuKeyEvent e)
+  menuKeyTyped(MenuKeyEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  MenuListener                                         menuCanceled(MenuEvent e)
+  menuDeselected(MenuEvent e)
+  menuSelected(MenuEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  PopupMenuListener                                    popupMenuCanceled(PopupMenuEvent e)
+  popupMenuWillBecomeInvisible(PopupMenuEvent e)
+  popupMenuWillBecomeVisible(PopupMenuEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  TableColumnModelListener                             columnAdded(TableColumnModelEvent e)
+  columnMarginChanged(ChangeEvent e)
+  columnMoved(TableColumnModelEvent e)
+  columnRemoved(TableColumnModelEvent e)
+  columnSelectionChanged(ListSelectionEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  TableModelListener                                   tableChanged(TableModelEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  TreeExpansionListener                                treeCollapsed(TreeExpansionEvent event)
+  treeExpanded(TreeExpansionEvent event)
+  ---------------------------------------------------------------------------------------------------------------
+  TreeModelListener                                    treeNodesChanged(TreeModelEvent e)
+  treeNodesInserted(TreeModelEvent e)
+  treeNodesRemoved(TreeModelEvent e)
+  treeStructureChanged(TreeModelEvent e)
+  ---------------------------------------------------------------------------------------------------------------
+  TreeSelectionListener                                valueChanged(TreeSelectionEvent e)
+  ---------------------------------------------------------------------------------------------------------------
+  TreeWillExpandListener                               treeWillCollapse(TreeExpansionEvent event)
+  treeWillExpand(TreeExpansionEvent event)
+  ---------------------------------------------------------------------------------------------------------------
+  UndoableEditListener                                 undoableEditHappened(UndoableEditEvent e)
+  ---------------------------------------------------------------------------------------------------------------
+  </pre>
+  <pre>
+  AWT EventListener                                         Method                       
+  --------------------------------------------------------------------------------------------------------------
+  ActionListener                                       actionPerformed(ActionEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  AdjustmentListener                                   adjustmentValueChanged(AdjustmentEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ComponentListener                                    componentHidden(ComponentEvent e)
+  componentMoved(ComponentEvent e)
+  componentResized(ComponentEvent e)
+  componentShown(ComponentEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ContainerListener                                    componentAdded(ContainerEvent e)
+  componentRemoved(ContainerEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  FocusListener                                        focusGained(FocusEvent e)
+  focusLost(FocusEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  ItemListener                                         itemStateChanged(ItemEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  KeyListener                                          keyPressed(KeyEvent e)
+  keyReleased(KeyEvent e)
+  keyTyped(KeyEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  MouseListener                                        mouseClicked(MouseEvent e)
+  mouseEntered(MouseEvent e)
+  mouseExited(MouseEvent e)
+  mousePressed(MouseEvent e)
+  mouseReleased(MouseEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  MouseMotionListener                                  mouseDragged(MouseEvent e)
+  mouseMoved(MouseEvent e)
+  --------------------------------------------------------------------------------------------------------------
+  WindowListener                                       windowActivated(WindowEvent e)
+  windowClosed(WindowEvent e)
+  windowClosing(WindowEvent e)
+  windowDeactivated(WindowEvent e)
+  windowDeiconified(WindowEvent e)
+  windowIconified(WindowEvent e)
+  windowOpened(WindowEvent e)
+  ---------------------------------------------------------------------------------------------------------------</pre>
+  <h5>常用的Adapter类如下：</h5>
+  <pre> Adapter                                           对应的EventListener
+  ---------------------------------------------------------------------------------------------------------------
+  java.awt.event.ComponentAdapter                      ComponentListener
+  java.awt.event.ContainerAdapter                      ContainerListener
+  java.awt.event.FocusAdapter                          FocusListener
+  java.awt.event.KeyAdapter                            KeyListener
+  java.awt.event.MouseAdapter                          MouseListener
+  java.awt.event.MouseMotionAdapter                    MouseMotionListener
+  java.awt.event.WindowAdapter                         WindowListener
+  ---------------------------------------------------------------------------------------------------------------</pre>
+  <p>在java中提供两个方法让你知道到底是哪个组件触发了事件，那就是getSource()与getActionCommand();getActionCommand()
+    方法是ActionEvent类所提供，而getSource()方法是EventObject类所提供，但ActionEvent类继承了EventObject类，因此这两个
+    方法ActionEvent都可以使用，看下面的例子就知道了：</p>
+  <h5> EventDemo5.java</h5>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class EventDemo5 extends WindowAdapter implements ActionListener {
+	JButton b1 = null;
+	JButton b2 = null;
+
+	public EventDemo5() {
+		JFrame f = new JFrame("EventDemo5");
+		Container contentPane = f.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 2));
+		b1 = new JButton("按我有声音喔");
+		b2 = new JButton("按我可开新窗口");
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		contentPane.add(b1);
+		contentPane.add(b2);
+		f.pack();
+		f.show();
+		f.addWindowListener(this);
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == b1)// getSource判断哪个按钮被按下了。
+			Toolkit.getDefaultToolkit().beep();
+		if (e.getSource() == b2) {
+			JFrame newF = new JFrame("新窗口");
+			newF.setSize(200, 200);
+			newF.show();
+		}
+	}
+
+	public void windowClosing(WindowEvent e) {
+		System.exit(0);
+	}
+
+	public static void main(String args[]) {
+		new EventDemo5();
+	}
+}</pre>
+  <h5>EventDemo6.java</h5>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class EventDemo6 extends WindowAdapter implements ActionListener {
+	JButton b1 = null;
+	JButton b2 = null;
+
+	public EventDemo6() {
+		JFrame f = new JFrame("EventDemo6");
+		Container contentPane = f.getContentPane();
+		contentPane.setLayout(new GridLayout(1, 2));
+		b1 = new JButton("按我有声音喔");
+		b2 = new JButton("按我可开新窗口");
+		b1.addActionListener(this);
+		b2.addActionListener(this);
+		contentPane.add(b1);
+		contentPane.add(b2);
+		f.pack();
+		f.show();
+		f.addWindowListener(this);
+	}
+
+	public void actionPerformed(ActionEvent e) {
+		if ((e.getActionCommand()).equals("按我有声音喔")) // getActionCommand()方法会返回按钮上的文字字符串。
+			Toolkit.getDefaultToolkit().beep();
+		if ((e.getActionCommand()).equals("按我可开新窗口")) {
+			JFrame newF = new JFrame("新窗口");
+			newF.setSize(200, 200);
+			newF.show();
+		}
+	}
+
+	public void windowClosing(WindowEvent e) {
+		System.exit(0);
+	}
+
+	public static void main(String args[]) {
+		new EventDemo6();
+	}
+}</PRE>
+  <div class="rpindex"><a href="8.html"> 下一页</a><a href="6.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

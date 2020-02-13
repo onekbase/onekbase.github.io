@@ -1,0 +1,209 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="132.html"> 上一页</a><a href="134.html"> 下一页</a></div>
+<h1>Java Gossip: ResultSet 光&#26631;控制</h1>
+<p>之前在建立Statement或 PreparedStatement，您所使用的是Connection&#26080;&#21442;&#25968;的createStatement()与 preparedStatement()，&#36825;&#26679;取得的Statement其&#25191;行SQL后得到的ResultSet，&#23558;只能使用next()方法逐&#31508;取得查 &#35810;&#32467;果。<br />
+<br />
+您可以在建立Statement&#23545;象&#26102;指定resultSetType，可指定的&#21442;&#25968;有 ResultSet.TYPE_FORWARD_ONLY、ResultSet.TYPE_SCROLL_INSENSITIVE与 ResultSet.TYPE_SCROLL_SENSITIVE，在不指定的情&#20917;下，&#39044;&#35774;是第一&#20010;，也就是只能使用next()&#26469;逐&#31508;取得&#25968;据，指定第二&#20010;或第三&#20010;，&#21017;可以使用ResultSet的afterLast()、previous()、absolute()、relative()等方法。<br />
+<br />
+ResultSet.TYPE_SCROLL_INSENSITIVE与ResultSet.TYPE_SCROLL_SENSITIVE 的差&#21035;在于能否取得ResultSet改&#21464;值后的&#25968;据，另外您&#36824;必&#39035;指定resultSetConcurrency，有 ResultSet.CONCUR_READ_ONLY与ResultSet.CONCUR_UPDATABLE&#20004;&#20010;&#21442;&#25968;可以&#35774;定，前者表示只能&#35835;取 ResultSet的&#36164;料，后者表示可以直接使用ResultSet&#26469;操作&#25968;据&#24211;，&#36825;&#20250;在下一&#20010;主&#39064;后&#35828;明。<br />
+<br />
+createStatement()不&#32473;定&#21442;&#25968;&#26102;，&#39044;&#35774;是ResultSet.TYPE_FORWARD_ONLY、 ResultSet.CONCUR_READ_ONLY。<br />
+<br />
+&#36825;&#36793;先示范如何控制ResultSet的&#35835;取光&#26631;，在建立Statement&#26102;，您使用 ResultSet.TYPE_SCROLL_INSENSITIVE及ResultSet.CONCUR_READ_ONLY即可，下面&#36825;&#20010;例子示范&#20174; 查&#35810;到的&#25968;据最后一&#31508;&#24320;始往前&#35835;取：</p>
+<pre class="code">Statement stmt = conn.createStatement(
+				ResultSet.TYPE_SCROLL_INSENSITIVE,
+				ResultSet.CONCUR_READ_ONLY);
+ResultSet result = stmt.executeQuery(
+				"SELECT * FROM message");
+result.afterLast();
+while(result.previous()) {
+	System.out.print(result.getString("name") + "\t");
+	System.out.print(result.getString("email") + "\t");
+	System.out.print(result.getString("subject") + "\t");
+	System.out.print(result.getString("time") + "\t");
+	System.out.println(result.getString("memo") + "\t");
+}
+stmt.close();
+conn.close();</pre>
+<p> afterLast()&#20250;&#23558;ResultSet的&#35835;取光&#26631;移至最后一&#31508;&#25968;据之后，您使用previous()方法往前移&#21160;&#35835;取光&#26631;。<br />
+<br />
+您也可以使用absolute()方法指定查&#35810;到的&#25968;据之位置，例如absolute(4)表示第四&#31508;&#36164;料，absoulte(10)&#21017;是第十&#31508;&#25968;据，如果指定&#36127;&#25968;，&#21017;&#20174;最后往前&#25968;，例如absolute(-1)&#21017;是最后一&#31508;&#25968;据，若有100&#31508;&#25968;据，absoulte(-4)&#21017;是第97&#31508;&#36164;料。<br />
+<br />
+relative()方法&#21017;&#20174;目前光&#26631;&#22788;指定相&#23545;位置，例如若目前在第25&#31508;&#36164;料，&#21017;relative(-2)&#21017;表示第23&#31508;&#36164;料，而relative (4)&#21017;表示第29&#31508;&#36164;料。<br />
+<br />
+另外&#36824;有beforeFirst()，可以&#23558;光&#26631;移至&#25968;据的第一&#31508;之前，first()可以&#23558;光&#26631;移至第一&#31508;&#25968;据，而last()可以&#23558;光&#26631;移至最后一&#31508;&#25968;据。</p>
+<div class="rpindex"><a href="134.html"> 下一页</a><a href="132.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

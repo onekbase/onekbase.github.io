@@ -1,0 +1,414 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="31.html"> 上一页</a><a href="33.html"> 下一页</a></div>
+  <h3>7-4-3:建立有图像的JComboBox: </h3>
+  <p>在上一节中我们利用ListCellRenderer  interface在JList中加入Icon图像，而要在JComboBox中加入图像的方法也是一样的。我们必须实作ListCellRenderer interface所定义的方法getListCellRendererComponent.以下为这个方法的定义： </p>
+  <p>要先了解ListCellRenderer interface.我们必须由这个interface所定义的方法，将图像画在JComboBox中的每个项目。 </p>
+  <p>ListCellRenderer interface里只定义了一个方法，那就是getListCellRendererComponent,不过这个参数有点多，我们把它列出来
+    看看: </p>
+  <pre class="code">public Component getListCellRendererComponent(JList list,
+                                              Object value,
+                                              int index,
+                                              boolean isSelected,
+                                              boolean cellHasFocus)</pre>
+  <ul>
+    <li>list:即所要画上的图像的JComboBox组件。 </li>
+    <li>value:JComboBox项目值，如JComboBox.getModel().getElementAt(index)所返回的值。</li>
+    <li> index:为JComboBox项目的索引值，由0开始。 </li>
+    <li>isSelected与cellHasFocus:判断JComboBox中的项目是否有被选取或是有焦点置入。</li>
+  </ul>
+  <p> 上面这4个参数会在你设置JComboBox的绘图样式(setCellRenderer())时自动的由JComboBox组件提供，你只要关心怎么控制
+    getListCellRendererComponent()方法中的4个参数，而无需担心怎么参数传入。 </p>
+  <p>要在JList中加入Icon图像的技巧就是将JComboBox中的每一个项目当作是JLabel,因为JLabel在使用文字与图像上非常的方便，要设置JComboBox的图像，
+    必须使用setRenderer(ListCellRenderer cellRenderer){注:我们在JList中画上图像是利用JList所提供的setCellRenderer(ListCellRenderer 
+    cellRenderer)方法,读者请小心}这个方法。我们来看下面这个范例，你就能明白了!</p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JComboBox4 {
+	String[] s = { "西瓜", "苹果", "草莓", "香蕉", "葡萄" };
+
+	public JComboBox4() {
+		JFrame f = new JFrame("JComboBox");
+		Container contentPane = f.getContentPane();
+
+		JComboBox combo = new JComboBox(s);
+		combo.setBorder(BorderFactory.createTitledBorder("你最喜欢吃哪些水果?"));
+		combo.setRenderer(new ACellRenderer());
+		combo.setMaximumRowCount(3);
+
+		contentPane.add(combo);
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String[] args) {
+		new JComboBox4();
+	}
+}
+
+class ACellRenderer extends JLabel implements ListCellRenderer {
+	ACellRenderer() {
+		setOpaque(true);
+	}
+
+	public Component getListCellRendererComponent(JList list, Object value,
+			int index, boolean isSelected, boolean cellHasFocus) {
+		if (value != null) {
+			setText(value.toString());
+			setIcon(new ImageIcon(".\\icons\\fruit" + (index + 1) + ".jpg"));
+		}
+		if (isSelected) {
+			setBackground(list.getSelectionBackground());
+			setForeground(list.getSelectionForeground());
+		} else {
+			setBackground(list.getBackground());
+			setForeground(list.getForeground());
+		}
+		return this;
+	}
+}</pre>
+  <p>各们读者在运行这个程序时会发现，即使JComboBox的选项中有图标，但在选后图标却不会显示在显示列中，原因是在上面程序中
+    我们以String Array s建立JComboBox: </p>
+  <pre class="code"> JComboBox combo=new JComboBox(s);</pre>
+  <p> String Array s里面放的只是水果名称，而并没有图标。当我们使用setRenderer()方法来JComboBox时，只会绘制JComboBox的
+    选项部份，而最后显示在JComboBox上的值还是以String Array s为依据。因此JComboBox显示列就只会显示文字而已，而不会显示出
+    图形。要解决这个问题，我们必须改变JComboBox所传入的参数内容，也就是将原来的String Array s更改成具有图形的数据项。在
+    此我们是利用JComboBox(Object[] items)来建立有图像的JComboBox,我们所传进去的Object Array不应该只有文字，而必须连图标一
+    并传入。我们修改上个范例修改如下: </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JComboBox5 {
+	String[] s = { "西瓜", "苹果", "草莓", "香蕉", "葡萄" };
+	ImageIcon[] icons = new ImageIcon[5];;
+
+	public JComboBox5() {
+		JFrame f = new JFrame("JComboBox");
+		Container contentPane = f.getContentPane();
+		ItemObj[] obj = new ItemObj[5];
+
+		for (int i = 0; i < 5; i++) {
+			icons[i] = new ImageIcon(".\\icons\\fruit" + (i + 1) + ".jpg");
+			obj[i] = new ItemObj(s[i], icons[i]);
+		}
+
+		JComboBox combo = new JComboBox(obj);// 利用ItemObj Array
+												// obj当作是JComboBox的参数传入，构造出JComboBox.
+		combo.setBorder(BorderFactory.createTitledBorder("您喜欢吃哪些水果？"));
+		combo.setRenderer(new ACellRenderer());
+		combo.setMaximumRowCount(3);
+
+		contentPane.add(combo);
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String args[]) {
+		new JComboBox5();
+	}
+}
+
+class ItemObj {
+	String name;
+	ImageIcon icon;
+
+	public ItemObj(String name, ImageIcon icon) {
+		this.name = name;
+		this.icon = icon;
+	}
+}
+
+class ACellRenderer extends JLabel implements ListCellRenderer {
+	ACellRenderer() {
+		setOpaque(true);
+	}
+
+	public Component getListCellRendererComponent(JList list, Object value,
+			int index, boolean isSelected, boolean cellHasFocus) {
+		if (value != null) {
+			setText(((ItemObj) value).name);
+			setIcon(((ItemObj) value).icon);
+		}
+
+		if (isSelected) {
+			setBackground(list.getSelectionBackground());
+			setForeground(list.getSelectionForeground());
+		} else {
+			setBackground(list.getBackground());
+			setForeground(list.getForeground());
+		}
+
+		return this;
+	}
+}</pre>
+  <p>你可以发现，第一栏显示有图标显示出来了。当然你也可以利用ComboBoxModel方式来构造出有图标的JComboBox.我们来看下面
+    的例子: </p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class JComboBox6 {
+	String[] s = { "西瓜", "苹果", "草莓", "香蕉", "葡萄" };
+	ImageIcon[] icons = new ImageIcon[5];
+
+	public JComboBox6() {
+		JFrame f = new JFrame("JComboBox");
+		Container contentPane = f.getContentPane();
+		for (int i = 0; i < 5; i++) {
+			icons[i] = new ImageIcon(".\\icons\\fruit" + (i + 1) + ".jpg");
+		}
+		ComboBoxModel mode = new AModel();
+		JComboBox combo = new JComboBox(mode);
+		combo.setBorder(BorderFactory.createTitledBorder("您喜欢吃哪些水果？"));
+		combo.setRenderer(new ACellRenderer());
+		combo.setMaximumRowCount(3);
+
+		contentPane.add(combo);
+		f.pack();
+		f.show();
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String[] args) {
+		new JComboBox6();
+	}
+
+	/*
+	 * 我们用JComboBox(ComboBoxModel
+	 * aModel)来构造图标的JComboBox,因此我们在程序中编写一个继承DefaultComboBoxModel的 ComboBoxModel.
+	 */
+	class AModel extends DefaultComboBoxModel {
+		AModel() {
+			for (int i = 0; i < s.length; i++) {
+				ItemObj obj = new ItemObj(s[i], icons[i]);
+				addElement(obj);
+			}
+		}
+	}
+}
+
+class ItemObj {
+	String name;
+	ImageIcon icon;
+
+	public ItemObj(String name, ImageIcon icon) {
+		this.name = name;
+		this.icon = icon;
+	}
+}
+
+class ACellRenderer extends JLabel implements ListCellRenderer {
+	ACellRenderer() {
+		setOpaque(true);
+	}
+
+	public Component getListCellRendererComponent(JList list, Object value,
+			int index, boolean isSelected, boolean cellHasFocus) {
+		if (value != null) {
+			setText(((ItemObj) value).name);
+			setIcon(((ItemObj) value).icon);
+		}
+
+		if (isSelected) {
+			setBackground(list.getSelectionBackground());
+			setForeground(list.getSelectionForeground());
+		} else {
+			setBackground(list.getBackground());
+			setForeground(list.getForeground());
+		}
+
+		return this;
+	}
+}</pre>
+  <p>我们用JComboBox(ComboBoxModel aModel)来构造图标的JComboBox,因此我们在程序中编写一个继承DefaultComboBoxModel的
+    ComboBoxModel. </p>
+  <div class="rpindex"><a href="33.html"> 下一页</a><a href="31.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

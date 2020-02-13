@@ -1,0 +1,313 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="39.html"> 上一页</a><a href="41.html"> 下一页</a></div>
+  <h2>8－7：JTable的事件处理</h2>
+  <p> 在前面的介绍中，我们了解了数种在不同组件上的事件处理。同样，在JTable的事件大致均针对表格内容的异操作处理，包括字段内容改变，列数增加
+    或减少，行数增加或减少，或是表格的结构改变等等。这些事件我们称为TableModelEvent事件。要处理
+    TableModelEvent事件我们必须实现TableModelListener界面，此界面定义了一个方法，那就是tableChanged(),为了处理这些事件的种种
+    情况，在AbstractTableModel类中提供了下列方法来提示TableModelListener:表格内容已经改动了，如下所示：</p>
+  <ol>
+    <li> fireTableCellUpdated():发出表格中的某一个字段已经更改的事件信息。 </li>
+    <li>fireTableChanged():发出表格已经改动的事件信息。 </li>
+    <li>fireTableDataChanged():发出表格中的某字段已经更改的事件信息。</li>
+    <li> fireTableRowsDeleted():发出表格中的某几行已经删除的事件信息。 </li>
+    <li>fireTableRowsInserted():发出表格中的已经新增某几行的事件信息。</li>
+    <li> fireTableRowsUpdated():发出表格中的某几行已经修改的事件信息。 </li>
+    <li>fireTableStructureChanged():发出表格结构已经改变的事件信息，这里指的结构改变可能包括表格的列数已经改变。</li>
+  </ol>
+  <p> 在知道在表格中可能发生的事件后，我们要如何拦截这些事件的信息呢？在AbstractTableModel类中提供了一个注册listener的方法
+    ：addTableModelListener().在加入TableModelListener之后，我们就可以依照不同的事件做不同的处理了。</p>
+  <p> 先来看看下面的例子吧，这个例子主要是更改本章的ColumnModelTest.java范例，再加上一些功能。在这个范例中，我们针对用户对表格所做的修改加以处理，如果改的项目是数字，包括“语文”，“数学”字段，则我们直接将修改的值累加至"总分"字段，并检查其是  否及格且在“及格”字段作修改;而当我们勾起"作弊"列的Check Box选项时，若原本总分应为及格者，则设置为不及格，且总分改成119分。</p>
+  <pre class="code">import javax.swing.table.AbstractTableModel;
+import javax.swing.event.*;
+import javax.swing.table.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+
+public class TableEventHandle implements TableModelListener {
+	JTable table = null;
+	MyTable mt = null;
+	JLabel label = null; // 显示修改字段位置
+
+	public TableEventHandle() {
+
+		JFrame f = new JFrame();
+		mt = new MyTable();
+		mt.addTableModelListener(this);
+
+		table = new JTable(mt);
+
+		JComboBox c = new JComboBox();
+		c.addItem("Taipei");
+		c.addItem("ChiaYi");
+		c.addItem("HsinChu");
+		table.getColumnModel().getColumn(1).setCellEditor(
+				new DefaultCellEditor(c));
+
+		table.setPreferredScrollableViewportSize(new Dimension(550, 30));
+		JScrollPane s = new JScrollPane(table);
+
+		label = new JLabel("修改字段位置：");
+		f.getContentPane().add(s, BorderLayout.CENTER);
+		f.getContentPane().add(label, BorderLayout.SOUTH);
+		f.setTitle("TableEventHandle");
+		f.pack();
+		f.setVisible(true);
+
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	public void tableChanged(TableModelEvent e) {
+		int row = e.getFirstRow();
+		int column = e.getColumn();
+		label.setText("修改字段位置：" + (row + 1) + " 行 " + (column + 1) + " 列");
+		boolean cheat = ((Boolean) (mt.getValueAt(row, 6))).booleanValue();
+		int grade1 = ((Integer) (mt.getValueAt(row, 2))).intValue();
+		int grade2 = ((Integer) (mt.getValueAt(row, 3))).intValue();
+		int total = grade1 + grade2;
+		if (cheat) {
+			if (total > 120)
+				mt.mySetValueAt(new Integer(119), row, 4);
+			else
+				mt.mySetValueAt(new Integer(total), row, 4);
+			mt.mySetValueAt(new Boolean(false), row, 5);
+		} else {
+			if (total > 120)
+				mt.mySetValueAt(new Boolean(true), row, 5);
+			else
+				mt.mySetValueAt(new Boolean(false), row, 5);
+
+			mt.mySetValueAt(new Integer(total), row, 4);
+		}
+		table.repaint();
+	}
+
+	public static void main(String args[]) {
+
+		new TableEventHandle();
+	}
+}
+
+class MyTable extends AbstractTableModel {
+
+	Object[][] p = {
+			{ "阿呆", "Taipei", new Integer(66), new Integer(32),
+					new Integer(98), new Boolean(false), new Boolean(false) },
+			{ "阿瓜", "ChiaYi", new Integer(85), new Integer(69),
+					new Integer(154), new Boolean(true), new Boolean(false) } };
+
+	String[] n = { "姓名", "居住地", "语文", "数学", "总分", "及格", "作弊" };
+
+	public int getColumnCount() {
+		return n.length;
+	}
+
+	public int getRowCount() {
+		return p.length;
+	}
+
+	public String getColumnName(int col) {
+		return n[col];
+	}
+
+	public Object getValueAt(int row, int col) {
+		return p[row][col];
+	}
+
+	public Class getColumnClass(int c) {
+		return getValueAt(0, c).getClass();
+	}
+
+	public boolean isCellEditable(int rowIndex, int columnIndex) {
+		return true;
+	}
+
+	public void setValueAt(Object value, int row, int col) {
+		p[row][col] = value;
+		fireTableCellUpdated(row, col);
+	}
+
+	public void mySetValueAt(Object value, int row, int col) {
+		p[row][col] = value;
+	}
+}</PRE>
+  </p>
+  <div class="rpindex"><a href="41.html"> 下一页</a><a href="39.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

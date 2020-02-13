@@ -1,0 +1,371 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="74.html"> 上一页</a><a href="76.html"> 下一页</a></div>
+<h2>9.6 用finally清除</h2>
+<p>无论一个违例是否在try块中发生，我们经常都想执行一些特定的代码。对一些特定的操作，经常都会遇到这种情况，但在恢复内存时一般都不需要（因为垃圾收集器会自动照料一切）。为达到这个目的，可在所有违例控制器的末尾使用一个finally从句（注释④）。所以完整的违例控制小节象下面这个样子：</p>
+<pre class="code">try {
+	// 要保卫的区域：
+	// 可能“掷”出A,B,或C的危险情况
+} catch (A a1) {
+	// 控制器 A
+} catch (B b1) {
+	// 控制器 B
+} catch (C c1) {
+	// 控制器 C
+} finally {
+	// 每次都会发生的情况
+}</pre>
+<p>④：C++违例控制未提供finally从句，因为它依赖构建器来达到这种清除效果。</p>
+<p>为演示finally从句，请试验下面这个程序：</p>
+
+  <pre class="code">//: FinallyWorks.java
+// The finally clause is always executed
+
+public class FinallyWorks {
+  static int count = 0;
+  public static void main(String[] args) {
+    while(true) {
+      try {
+        // post-increment is zero first time:
+        if(count++ == 0)
+          throw new Exception();
+        System.out.println(&quot;No exception&quot;);
+      } catch(Exception e) {
+        System.out.println(&quot;Exception thrown&quot;);
+      } finally {
+        System.out.println(&quot;in finally clause&quot;);
+        if(count == 2) break; // out of &quot;while&quot;
+      }
+    }
+  }
+} ///:~</pre>
+
+<p>通过该程序，我们亦可知道如何应付Java违例（类似C++的违例）不允许我们恢复至违例产生地方的这一事实。若将自己的try块置入一个循环内，就可建立一个条件，它必须在继续程序之前满足。亦可添加一个static计数器或者另一些设备，允许循环在放弃以前尝试数种不同的方法。这样一来，我们的程序可以变得更加“健壮”。</p>
+<p>输出如下：</p>
+
+  <pre class="code">Exception thrown
+in finally clause
+No exception
+in finally clause</pre>
+
+<p>无论是否“掷”出一个违例，finally从句都会执行。</p>
+<h3>9.6.1 用finally做什么</h3>
+<p>在没有“垃圾收集”以及“自动调用破坏器”机制的一种语言中（注释⑤），finally显得特别重要，因为程序员可用它担保内存的正确释放——无论在try块内部发生了什么状况。但Java提供了垃圾收集机制，所以内存的释放几乎绝对不会成为问题。另外，它也没有构建器可供调用。既然如此，Java里何时才会用到finally呢？</p>
+⑤：“破坏器”（Destructor）是“构建器”（Constructor）的反义词。它代表一个特殊的函数，一旦某个对象失去用处，通常就会调用它。我们肯定知道在哪里以及何时调用破坏器。C++提供了自动的破坏器调用机制，但Delphi的Object
+<p>Pascal版本1及2却不具备这一能力（在这种语言中，破坏器的含义与用法都发生了变化）。</p>
+<p>除将内存设回原始状态以外，若要设置另一些东西，finally就是必需的。例如，我们有时需要打开一个文件或者建立一个网络连接，或者在屏幕上画一些东西，甚至设置外部世界的一个开关，等等。如下例所示：</p>
+
+  <pre class="code">//: OnOffSwitch.java
+// Why use finally?
+
+class Switch {
+  boolean state = false;
+  boolean read() { return state; }
+  void on() { state = true; }
+  void off() { state = false; }
+}
+
+public class OnOffSwitch {
+  static Switch sw = new Switch();
+  public static void main(String[] args) {
+    try {
+      sw.on();
+      // Code that can throw exceptions...
+      sw.off();
+    } catch(NullPointerException e) {
+      System.out.println(&quot;NullPointerException&quot;);
+      sw.off();
+    } catch(IllegalArgumentException e) {
+      System.out.println(&quot;IOException&quot;);
+      sw.off();
+    }
+  }
+} ///:~</pre>
+
+<p>这里的目标是保证main()完成时开关处于关闭状态，所以将sw.off()置于try块以及每个违例控制器的末尾。但产生的一个违例有可能不是在这里捕获的，这便会错过sw.off()。然而，利用finally，我们可以将来自try块的关闭代码只置于一个地方：</p>
+
+  <pre class="code">//: WithFinally.java
+// Finally Guarantees cleanup
+
+class Switch2 {
+  boolean state = false;
+  boolean read() { return state; }
+  void on() { state = true; }
+  void off() { state = false; }
+}
+
+public class WithFinally {
+  static Switch2 sw = new Switch2();
+  public static void main(String[] args) {
+    try {
+      sw.on();
+      // Code that can throw exceptions...
+    } catch(NullPointerException e) {
+      System.out.println(&quot;NullPointerException&quot;);
+    } catch(IllegalArgumentException e) {
+      System.out.println(&quot;IOException&quot;);
+    } finally {
+      sw.off();
+    }
+  }
+} ///:~</pre>
+
+<p>在这儿，sw.off()已移至一个地方。无论发生什么事情，都肯定会运行它。</p>
+<p>即使违例不在当前的catch从句集里捕获，finally都会在违例控制机制转到更高级别搜索一个控制器之前得以执行。如下所示：</p>
+
+  <pre class="code">//: AlwaysFinally.java
+// Finally is always executed
+
+class Ex extends Exception {}
+
+public class AlwaysFinally {
+  public static void main(String[] args) {
+    System.out.println(
+      &quot;Entering first try block&quot;);
+    try {
+      System.out.println(
+        &quot;Entering second try block&quot;);
+      try {
+        throw new Ex();
+      } finally {
+        System.out.println(
+          &quot;finally in 2nd try block&quot;);
+      }
+    } catch(Ex e) {
+      System.out.println(
+        &quot;Caught Ex in first try block&quot;);
+    } finally {
+      System.out.println(
+        &quot;finally in 1st try block&quot;);
+    }
+  }
+} ///:~</pre>
+
+<p>该程序的输出展示了具体发生的事情：</p>
+
+  <pre class="code">Entering first try block
+Entering second try block
+finally in 2nd try block
+Caught Ex in first try block
+finally in 1st try block</pre>
+
+<p>若调用了break和continue语句，finally语句也会得以执行。请注意，与作上标签的break和continue一道，finally排除了Java对goto跳转语句的需求。</p>
+<h3>9.6.2 缺点：丢失的违例</h3>
+<p>一般情况下，Java的违例实施方案都显得十分出色。不幸的是，它依然存在一个缺点。尽管违例指出程序里存在一个危机，而且绝不应忽略，但一个违例仍有可能简单地“丢失”。在采用finally从句的一种特殊配置下，便有可能发生这种情况：</p>
+
+  <pre class="code">//: LostMessage.java
+// How an exception can be lost
+
+class VeryImportantException extends Exception {
+  public String toString() {
+    return &quot;A very important exception!&quot;;
+  }
+}
+
+class HoHumException extends Exception {
+  public String toString() {
+    return &quot;A trivial exception&quot;;
+  }
+}
+
+public class LostMessage {
+  void f() throws VeryImportantException {
+    throw new VeryImportantException();
+  }
+  void dispose() throws HoHumException {
+    throw new HoHumException();
+  }
+  public static void main(String[] args) 
+      throws Exception {
+    LostMessage lm = new LostMessage();
+    try {
+      lm.f();
+    } finally {
+      lm.dispose();
+    }
+  }
+} ///:~</pre>
+
+<p>输出如下：</p>
+
+  <pre class="code">A trivial exception
+        at LostMessage.dispose(LostMessage.java:21)
+        at LostMessage.main(LostMessage.java:29)</pre>
+
+<p>可以看到，这里不存在VeryImportantException（非常重要的违例）的迹象，它只是简单地被finally从句中的HoHumException代替了。</p>
+<p>这是一项相当严重的缺陷，因为它意味着一个违例可能完全丢失。而且就象前例演示的那样，这种丢失显得非常“自然”，很难被人查出蛛丝马迹。而与此相反，C++里如果第二个违例在第一个违例得到控制前产生，就会被当作一个严重的编程错误处理。或许Java以后的版本会纠正这个问题（上述结果是用Java
+  1.1生成的）。</p>
+<div class="rpindex"><a href="76.html"> 下一页</a><a href="74.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

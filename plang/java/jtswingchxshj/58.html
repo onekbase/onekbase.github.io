@@ -1,0 +1,520 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="57.html"> 上一页</a><a href="59.html"> 下一页</a></div>
+  <h2>10-7:JTree的事件处理模式: </h2>
+  <p>在此节中，我们将详细介绍JTree两个常用的事件与处理，分别是TreeModeEvent与TreeSelectionEvent.
+    10-7-1:处理TreeModeEvent事件：</p>
+  <p> 当树的结构上有任何改变时，例如节点值改变了、新增节点、删除节点等，都会TreeModelEvent事件，要处理这样的事件必须实
+    作TreeModelListener界面，此界面定义了4个方法，如下所示: </p>
+  <h5>TreeModelListener方法: </h5>
+  <ul>
+    <li>Void              treeNodesChanged(TreeModelEvent e):当节点改变时系统就会云调用这个方法。</li>
+    <li> Void              treeNodesInserted(TreeModelEvent e):当新增节时系统就会去调用这个方法。 </li>
+    <li>Void              treeNodesRemoved(TreeModeEvent e):当删除节点时系统就会去调用这个方法。 </li>
+    <li>Void              treeStructureChanged(TreeModelEvent e):当树结构改变时系统就会去调用这个方法。</li>
+  </ul>
+  <p> TreeModelEvent类本身提供了5个方法，帮我们取得事件的信息，如下所示: </p>
+  <h5>TreeModelEvent方法： </h5>
+  <ul>
+    <li>int[]                getChildIndices():返回子节点群的索引值。</li>
+    <li> Object[]             getChildren():返回子节点群. </li>
+    <li>Object[]             getPath():返回Tree中一条path上(从root nod到leaf node)的节点。</li>
+    <li> TreePath             getTreePath():取得目前位置的Tree Path.</li>
+    <li> String               toString()：取得蝗字符串表示法. </li>
+  </ul>
+  <p>由TreeModelEvent的getTreePath()方法就可以得到TreePath对象，此对象就能够让我们知道用户目前正选哪一个节点，
+    TreePath类最常用的方法为：</p>
+  <ul>
+    <li> public  Object getLastPathComponent():取得最深（内）层的节点。</li>
+    <li> public int    getPathCount():取得此path上共有几个节点. </li>
+  </ul>
+  <p>我们来看下面这个例子，用户可以在Tree上编辑节点，按下[Enter]键后就可以改变原有的值，并将改变的值显示在下面的
+    JLabel中:</p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.tree.*;
+import com.incors.plaf.alloy.*;
+import com.incors.plaf.alloy.themes.bedouin.*;
+
+public class TreeDemo5 implements TreeModelListener {
+	JLabel label = null;
+	String nodeName = null; // 原有节点名称
+
+	public TreeDemo5() {
+		try {
+			AlloyLookAndFeel.setProperty("alloy.isLookAndFeelFrameDecoration",
+					"true");
+			AlloyTheme theme = new BedouinTheme();// 设置界面的外观，手册中共有5种样式
+			LookAndFeel alloyLnF = new AlloyLookAndFeel(theme);
+			UIManager.setLookAndFeel(alloyLnF);
+		} catch (UnsupportedLookAndFeelException ex) {
+			// You may handle the exception here
+		}
+		// this line needs to be implemented in order to make JWS work properly
+		UIManager.getLookAndFeelDefaults().put("ClassLoader",
+				getClass().getClassLoader());
+		JFrame f = new JFrame("TreeDemo");
+		Container contentPane = f.getContentPane();
+
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("资源管理器");
+		DefaultMutableTreeNode node1 = new DefaultMutableTreeNode("文件夹");
+		DefaultMutableTreeNode node2 = new DefaultMutableTreeNode("我的电脑");
+		DefaultMutableTreeNode node3 = new DefaultMutableTreeNode("收藏夹");
+		DefaultMutableTreeNode node4 = new DefaultMutableTreeNode("Readme");
+		root.add(node1);
+		root.add(node2);
+		root.add(node3);
+		root.add(node4);
+
+		DefaultMutableTreeNode leafnode = new DefaultMutableTreeNode("公司文件");
+		node1.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("个人信件");
+		node1.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("私人文件");
+		node1.add(leafnode);
+
+		leafnode = new DefaultMutableTreeNode("本机磁盘(C:)");
+		node2.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("本机磁盘(D:)");
+		node2.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("本机磁盘(E:)");
+		node2.add(leafnode);
+
+		DefaultMutableTreeNode node31 = new DefaultMutableTreeNode("网站列表");
+		node3.add(node31);
+
+		leafnode = new DefaultMutableTreeNode("天勤网站");
+		node31.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("足球消息");
+		node31.add(leafnode);
+		leafnode = new DefaultMutableTreeNode("网络书店");
+		node31.add(leafnode);
+
+		JTree tree = new JTree(root);
+		tree.setEditable(true);// 设置JTree为可编辑的
+		tree.addMouseListener(new MouseHandle());// 使Tree加入检测Mouse事件，以便取得节点名称
+		// 下面两行取得DefaultTreeModel,并检测是否有TreeModelEvent事件.
+		DefaultTreeModel treeModel = (DefaultTreeModel) tree.getModel();
+		treeModel.addTreeModelListener(this);
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setViewportView(tree);
+
+		label = new JLabel("更改数据为: ");
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		contentPane.add(label, BorderLayout.SOUTH);
+		f.pack();
+		f.setVisible(true);
+
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+
+	}
+
+	/*
+	 * 本方法实作TreeModelListener接口，本接口共定义四个方法，分别是TreeNodesChanged()
+	 * treeNodesInserted()、treeNodesRemoved()、treeNodesRemoved()、
+	 * treeStructureChanged().在此范例中我们只针对更改节点值的部份，因此只实作treeNodesChanged()方法.
+	 */
+	public void treeNodesChanged(TreeModelEvent e) {
+
+		TreePath treePath = e.getTreePath();
+		System.out.println(treePath);
+		// 下面这行由TreeModelEvent取得的DefaultMutableTreeNode为节点的父节点，而不是用户点选
+		// 的节点，这点读者要特别注意。要取得真正的节点需要再加写下面6行代码.
+		DefaultMutableTreeNode node = (DefaultMutableTreeNode) treePath
+				.getLastPathComponent();
+		try {
+			// getChildIndices()方法会返回目前修改节点的索引值。由于我们只修改一个节点，因此节点索引值就放在index[0]
+			// 的位置，若点选的节点为root
+			// node,则getChildIndices()的返回值为null,程序下面的第二行就在处理点选root
+			// node产生的NullPointerException问题.
+			int[] index = e.getChildIndices();
+			// 由DefaultMutableTreeNode类的getChildAt()方法取得修改的节点对象.
+			node = (DefaultMutableTreeNode) node.getChildAt(index[0]);
+		} catch (NullPointerException exc) {
+		}
+		// 由DefaultMutableTreeNode类getUserObject()方法取得节点的内容，或是写成node.toString()亦相同.
+		label.setText(nodeName + "更改数据为: " + (String) node.getUserObject());
+	}
+
+	public void treeNodesInserted(TreeModelEvent e) {
+	}
+
+	public void treeNodesRemoved(TreeModelEvent e) {
+	}
+
+	public void treeStructureChanged(TreeModelEvent e) {
+	}
+
+	public static void main(String args[]) {
+
+		new TreeDemo5();
+	}
+
+	// 处理Mouse点选事件
+	class MouseHandle extends MouseAdapter {
+		public void mousePressed(MouseEvent e) {
+			try {
+				JTree tree = (JTree) e.getSource();
+				// JTree的getRowForLocation()方法会返回节点的列索引值。例如本例中，“本机磁盘(D:)”的列索引值为4,此索引值
+				// 会随着其他数据夹的打开或收起而变支，但“资源管理器”的列索引值恒为0.
+				int rowLocation = tree.getRowForLocation(e.getX(), e.getY());
+
+				/*
+				 * JTree的getPathForRow()方法会取得从root
+				 * node到点选节点的一条path,此path为一条直线，如程序运行的图示若你点选“本机磁盘(E:)”,则Tree
+				 * Path为"资源管理器"-->"我的电脑"-->"本机磁盘(E:)",因此利用TreePath
+				 * 的getLastPathComponent()方法就可以取得所点选的节点.
+				 */
+
+				TreePath treepath = tree.getPathForRow(rowLocation);
+				TreeNode treenode = (TreeNode) treepath.getLastPathComponent();
+
+				nodeName = treenode.toString();
+			} catch (NullPointerException ne) {
+			}
+		}
+	}
+}</pre>
+  <p>注:上面的程序MouseHandle中: </p>
+  <pre class="code"> int rowLocation = tree.getRowForLocation(e.getX(), e.getY());
+    TreePath treepath = tree.getPathForRow(rowLocation);</pre>
+  <p>与：TreePath treepath=tree.getSelectionPath();  等价，可互换。 </p>
+  <p>我们将“我的电脑”改成“网上领居”: </p>
+  <p>我们再来看一个TreeModelEvent的例子，下面这个例子我们可以让用户自行增加、删除与修改节点：</p>
+  <pre class="code">import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.tree.*;
+import com.incors.plaf.alloy.*;
+import com.incors.plaf.alloy.themes.bedouin.*;
+
+public class TreeDemo6 implements ActionListener, TreeModelListener {
+	JLabel label = null;
+	JTree tree = null;
+	DefaultTreeModel treeModel = null;
+	String nodeName = null;// 原有节点名称
+
+	public TreeDemo6() {
+		try {
+			AlloyLookAndFeel.setProperty("alloy.isLookAndFeelFrameDecoration",
+					"true");
+			AlloyTheme theme = new BedouinTheme();
+			LookAndFeel alloyLnF = new AlloyLookAndFeel(theme);
+			UIManager.setLookAndFeel(alloyLnF);
+		} catch (UnsupportedLookAndFeelException ex) {
+			// You may handle the exception here
+		}
+		// this line needs to be implemented in order to make JWS work properly
+		UIManager.getLookAndFeelDefaults().put("ClassLoader",
+				getClass().getClassLoader());
+		JFrame f = new JFrame("TreeDemo6");
+		Container contentPane = f.getContentPane();
+
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("资源管理器");
+
+		tree = new JTree(root);
+		tree.setEditable(true);
+		tree.addMouseListener(new MouseHandle());
+		treeModel = (DefaultTreeModel) tree.getModel();
+		treeModel.addTreeModelListener(this);
+
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setViewportView(tree);
+
+		JPanel panel = new JPanel();
+		JButton b = new JButton("新增节点");
+		b.addActionListener(this);
+		panel.add(b);
+		b = new JButton("删除节点");
+		b.addActionListener(this);
+		panel.add(b);
+		b = new JButton("清除所有节点");
+		b.addActionListener(this);
+		panel.add(b);
+
+		label = new JLabel("Action");
+		contentPane.add(panel, BorderLayout.NORTH);
+		contentPane.add(scrollPane, BorderLayout.CENTER);
+		contentPane.add(label, BorderLayout.SOUTH);
+		f.pack();
+		f.setVisible(true);
+		f.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	// 本方法运行新增、删除、清除所有节点的程序代码.
+	public void actionPerformed(ActionEvent ae) {
+		if (ae.getActionCommand().equals("新增节点")) {
+			DefaultMutableTreeNode parentNode = null;
+			DefaultMutableTreeNode newNode = new DefaultMutableTreeNode("新节点");
+			newNode.setAllowsChildren(true);
+			TreePath parentPath = tree.getSelectionPath();
+
+			// 取得新节点的父节点
+			parentNode = (DefaultMutableTreeNode) (parentPath
+					.getLastPathComponent());
+
+			// 由DefaultTreeModel的insertNodeInto（）方法增加新节点
+			treeModel.insertNodeInto(newNode, parentNode, parentNode
+					.getChildCount());
+
+			// tree的scrollPathToVisible()方法在使Tree会自动展开文件夹以便显示所加入的新节点。若没加这行则加入的新节点
+			// 会被 包在文件夹中，你必须自行展开文件夹才看得到。
+			tree.scrollPathToVisible(new TreePath(newNode.getPath()));
+			label.setText("新增节点成功");
+		}
+		if (ae.getActionCommand().equals("删除节点")) {
+			TreePath treepath = tree.getSelectionPath();
+			if (treepath != null) {
+				// 下面两行取得选取节点的父节点.
+				DefaultMutableTreeNode selectionNode = (DefaultMutableTreeNode) treepath
+						.getLastPathComponent();
+				TreeNode parent = (TreeNode) selectionNode.getParent();
+				if (parent != null) {
+					// 由DefaultTreeModel的removeNodeFromParent()方法删除节点，包含它的子节点。
+					treeModel.removeNodeFromParent(selectionNode);
+					label.setText("删除节点成功");
+				}
+			}
+		}
+		if (ae.getActionCommand().equals("清除所有节点")) {
+
+			// 下面一行，由DefaultTreeModel的getRoot()方法取得根节点.
+			DefaultMutableTreeNode rootNode = (DefaultMutableTreeNode) treeModel
+					.getRoot();
+
+			// 下面一行删除所有子节点.
+			rootNode.removeAllChildren();
+
+			// 删除完后务必运行DefaultTreeModel的reload()操作，整个Tree的节点才会真正被删除.
+			treeModel.reload();
+			label.setText("清除所有节点成功");
+		}
+	}
+
+	public void treeNodesChanged(TreeModelEvent e) {
+		TreePath treePath = e.getTreePath();
+		DefaultMutableTreeNode node = (DefaultMutableTreeNode) treePath
+				.getLastPathComponent();
+		try {
+			int[] index = e.getChildIndices();
+			node = (DefaultMutableTreeNode) node.getChildAt(index[0]);
+		} catch (NullPointerException exc) {
+		}
+		label.setText(nodeName + "更改数据为:" + (String) node.getUserObject());
+	}
+
+	public void treeNodesInserted(TreeModelEvent e) {
+		System.out.println("new node insered");
+	}
+
+	public void treeNodesRemoved(TreeModelEvent e) {
+		System.out.println("node deleted");
+	}
+
+	public void treeStructureChanged(TreeModelEvent e) {
+		System.out.println("Structrue changed");
+	}
+
+	public static void main(String[] args) {
+		new TreeDemo6();
+	}
+
+	class MouseHandle extends MouseAdapter {
+		public void mousePressed(MouseEvent e) {
+			try {
+				JTree tree = (JTree) e.getSource();
+				int rowLocation = tree.getRowForLocation(e.getX(), e.getY());
+				TreePath treepath = tree.getPathForRow(rowLocation);
+				TreeNode treenode = (TreeNode) treepath.getLastPathComponent();
+				nodeName = treenode.toString();
+			} catch (NullPointerException ne) {
+			}
+		}
+	}
+}
+</pre>
+  <div class="rpindex"><a href="59.html"> 下一页</a><a href="57.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

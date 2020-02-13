@@ -1,0 +1,311 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="103.html"> 上一页</a><a href="105.html"> 下一页</a></div>
+<h2>12.3 克隆的控制</h2>
+<p>为消除克隆能力，大家也许认为只需将clone()方法简单地设为private（私有）即可，但这样是行不通的，因为不能采用一个基础类方法，并使其在衍生类中更“私有”。所以事情并没有这么简单。此外，我们有必要控制一个对象是否能够克隆。对于我们设计的一个类，实际有许多种方案都是可以采取的：</p>
+(1)
+保持中立，不为克隆做任何事情。也就是说，尽管不可对我们的类克隆，但从它继承的一个类却可根据实际情况决定克隆。只有Object.clone()要对类中的字段进行某些合理的操作时，才可以作这方面的决定。
+<p>(2) 支持clone()，采用实现Cloneable（可克隆）能力的标准操作，并覆盖clone()。在被覆盖的clone()中，可调用super.clone()，并捕获所有违例（这样可使clone()不“掷”出任何违例）。</p>
+(3)
+有条件地支持克隆。若类容纳了其他对象的句柄，而那些对象也许能够克隆（集合类便是这样的一个例子），就可试着克隆拥有对方句柄的所有对象；如果它们“掷”出了违例，只需让这些违例通过即可。举个例子来说，假设有一个特殊的Vector，它试图克隆自己容纳的所有对象。编写这样的一个Vector时，并不知道客户程序员会把什么形式的对象置入这个Vector中，所以并不知道它们是否真的能够克隆。
+<p>(4) 不实现Cloneable()，但是将clone()覆盖成protected，使任何字段都具有正确的复制行为。这样一来，从这个类继承的所有东西都能覆盖clone()，并调用super.clone()来产生正确的复制行为。注意在我们实现方案里，可以而且应该调用super.clone()——即使那个方法本来预期的是一个Cloneable对象（否则会掷出一个违例），因为没有人会在我们这种类型的对象上直接调用它。它只有通过一个衍生类调用；对那个衍生类来说，如果要保证它正常工作，需实现Cloneable。</p>
+<p>(5) 不实现Cloneable来试着防止克隆，并覆盖clone()，以产生一个违例。为使这一设想顺利实现，只有令从它衍生出来的任何类都调用重新定义后的clone()里的suepr.clone()。</p>
+<p>(6) 将类设为final，从而防止克隆。若clone()尚未被我们的任何一个上级类覆盖，这一设想便不会成功。若已被覆盖，那么再一次覆盖它，并“掷”出一个CloneNotSupportedException（克隆不支持）违例。为担保克隆被禁止，将类设为final是唯一的办法。除此以外，一旦涉及保密对象或者遇到想对创建的对象数量进行控制的其他情况，应该将所有构建器都设为private，并提供一个或更多的特殊方法来创建对象。采用这种方式，这些方法就可以限制创建的对象数量以及它们的创建条件——一种特殊情况是第16章要介绍的singleton（独子）方案。</p>
+<p>下面这个例子总结了克隆的各种实现方法，然后在层次结构中将其“关闭”：</p>
+
+  <pre class="code">//: CheckCloneable.java
+// Checking to see if a handle can be cloned
+
+// Can't clone this because it doesn't
+// override clone():
+class Ordinary {}
+
+// Overrides clone, but doesn't implement
+// Cloneable:
+class WrongClone extends Ordinary {
+  public Object clone()
+      throws CloneNotSupportedException {
+    return super.clone(); // Throws exception
+  }
+}
+
+// Does all the right things for cloning:
+class IsCloneable extends Ordinary 
+    implements Cloneable {
+  public Object clone() 
+      throws CloneNotSupportedException {
+    return super.clone();
+  }
+}
+
+// Turn off cloning by throwing the exception:
+class NoMore extends IsCloneable {
+  public Object clone() 
+      throws CloneNotSupportedException {
+    throw new CloneNotSupportedException();
+  }
+}
+
+class TryMore extends NoMore {
+  public Object clone() 
+      throws CloneNotSupportedException {
+    // Calls NoMore.clone(), throws exception:
+    return super.clone();
+  }
+}
+
+class BackOn extends NoMore {
+  private BackOn duplicate(BackOn b) {
+    // Somehow make a copy of b
+    // and return that copy. This is a dummy
+    // copy, just to make the point:
+    return new BackOn();
+  }
+  public Object clone() {
+    // Doesn't call NoMore.clone():
+    return duplicate(this);
+  }
+}
+
+// Can't inherit from this, so can't override
+// the clone method like in BackOn:
+final class ReallyNoMore extends NoMore {}
+
+public class CheckCloneable {
+  static Ordinary tryToClone(Ordinary ord) {
+    String id = ord.getClass().getName();
+    Ordinary x = null;
+    if(ord instanceof Cloneable) {
+      try {
+        System.out.println(&quot;Attempting &quot; + id);
+        x = (Ordinary)((IsCloneable)ord).clone();
+        System.out.println(&quot;Cloned &quot; + id);
+      } catch(CloneNotSupportedException e) {
+        System.out.println(
+          &quot;Could not clone &quot; + id);
+      }
+    }
+    return x;
+  }
+  public static void main(String[] args) {
+    // Upcasting:
+    Ordinary[] ord = { 
+      new IsCloneable(),
+      new WrongClone(),
+      new NoMore(),
+      new TryMore(),
+      new BackOn(),
+      new ReallyNoMore(),
+    };
+    Ordinary x = new Ordinary();
+    // This won't compile, since clone() is
+    // protected in Object:
+    //! x = (Ordinary)x.clone();
+    // tryToClone() checks first to see if
+    // a class implements Cloneable:
+    for(int i = 0; i &lt; ord.length; i++)
+      tryToClone(ord[i]);
+  }
+} ///:~</pre>
+
+<p>第一个类Ordinary代表着大家在本书各处最常见到的类：不支持克隆，但在它正式应用以后，却也不禁止对其克隆。但假如有一个指向Ordinary对象的句柄，而且那个对象可能是从一个更深的衍生类上溯造型来的，便不能判断它到底能不能克隆。</p>
+<p>WrongClone类揭示了实现克隆的一种不正确途径。它确实覆盖了Object.clone()，并将那个方法设为public，但却没有实现Cloneable。所以一旦发出对super.clone()的调用（由于对Object.clone()的一个调用造成的），便会无情地掷出CloneNotSupportedException违例。</p>
+<p>在IsCloneable中，大家看到的才是进行克隆的各种正确行动：先覆盖clone()，并实现了Cloneable。但是，这个clone()方法以及本例的另外几个方法并不捕获CloneNotSupportedException违例，而是任由它通过，并传递给调用者。随后，调用者必须用一个try-catch代码块把它包围起来。在我们自己的clone()方法中，通常需要在clone()内部捕获CloneNotSupportedException违例，而不是任由它通过。正如大家以后会理解的那样，对这个例子来说，让它通过是最正确的做法。</p>
+<p>类NoMore试图按照Java设计者打算的那样“关闭”克隆：在衍生类clone()中，我们掷出CloneNotSupportedException违例。TryMore类中的clone()方法正确地调用super.clone()，并解析成NoMore.clone()，后者掷出一个违例并禁止克隆。</p>
+<p>但在已被覆盖的clone()方法中，假若程序员不遵守调用super.clone()的“正确”方法，又会出现什么情况呢？在BackOn中，大家可看到实际会发生什么。这个类用一个独立的方法duplicate()制作当前对象的一个副本，并在clone()内部调用这个方法，而不是调用super.clone()。违例永远不会产生，而且新类是可以克隆的。因此，我们不能依赖“掷”出一个违例的方法来防止产生一个可克隆的类。唯一安全的方法在ReallyNoMore中得到了演示，它设为final，所以不可继承。这意味着假如clone()在final类中掷出了一个违例，便不能通过继承来进行修改，并可有效地禁止克隆（不能从一个拥有任意继承级数的类中明确调用Object.clone()；只能调用super.clone()，它只可访问直接基础类）。因此，只要制作一些涉及安全问题的对象，就最好把那些类设为final。</p>
+<p>在类CheckCloneable中，我们看到的第一个类是tryToClone()，它能接纳任何Ordinary对象，并用instanceof检查它是否能够克隆。若答案是肯定的，就将对象造型成为一个IsCloneable，调用clone()，并将结果造型回Ordinary，最后捕获有可能产生的任何违例。请注意用运行期类型鉴定（见第11章）打印出类名，使自己看到发生的一切情况。</p>
+<p>在main()中，我们创建了不同类型的Ordinary对象，并在数组定义中上溯造型成为Ordinary。在这之后的头两行代码创建了一个纯粹的Ordinary对象，并试图对其克隆。然而，这些代码不会得到编译，因为clone()是Object中的一个protected（受到保护的）方法。代码剩余的部分将遍历数组，并试着克隆每个对象，分别报告它们的成功或失败。输出如下：</p>
+
+  <pre class="code">Attempting IsCloneable
+Cloned IsCloneable
+Attempting NoMore
+Could not clone NoMore
+Attempting TryMore
+Could not clone TryMore
+Attempting BackOn
+Cloned BackOn
+Attempting ReallyNoMore
+Could not clone ReallyNoMore</pre>
+
+<p>总之，如果希望一个类能够克隆，那么：</p>
+<ul>
+  <li>(1) 实现Cloneable接口</li>
+  <li>(2) 覆盖clone()</li>
+  <li>(3) 在自己的clone()中调用super.clone()</li>
+  <li>(4) 在自己的clone()中捕获违例</li>
+</ul>
+<p>这一系列步骤能达到最理想的效果。</p>
+<div class="rpindex"><a href="105.html"> 下一页</a><a href="103.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

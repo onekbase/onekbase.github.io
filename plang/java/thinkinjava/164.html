@@ -1,0 +1,508 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="163.html"> 上一页</a><a href="165.html"> 下一页</a></div>
+<h2>16.5 抽象的应用</h2>
+<p>走到这一步，接下来该考虑一下设计方案剩下的部分了——在哪里使用类？既然归类到垃圾箱的办法非常不雅且过于暴露，为什么不隔离那个过程，把它隐藏到一个类里呢？这就是著名的“如果必须做不雅的事情，至少应将其本地化到一个类里”规则。看起来就象下面这样：</p>
+<img src="images/16-1.gif" />
+<p>现在，只要一种新类型的Trash加入方法，对TrashSorter对象的初始化就必须变动。可以想象，TrashSorter类看起来应该象下面这个样子：</p>
+<pre class="code">class TrashSorter extends Vector {
+      void sort(Trash t) { /* ... */ }
+}</pre>
+<p>也就是说，TrashSorter是由一系列句柄构成的Vector（系列），而那些句柄指向的又是由Trash句柄构成的Vector；利用addElement()，可以安装新的TrashSorter，如下所示：</p>
+<pre class="code">TrashSorter ts = new TrashSorter();
+ts.addElement(new Vector());</pre>
+<p>但是现在，sort()却成为一个问题。用静态方式编码的方法如何应付一种新类型加入的事实呢？为解决这个问题，必须从sort()里将类型信息删除，使其需要做的所有事情就是调用一个通用方法，用它照料涉及类型处理的所有细节。这当然是对一个动态绑定方法进行描述的另一种方式。所以sort()会在序列中简单地遍历，并为每个Vector都调用一个动态绑定方法。由于这个方法的任务是收集它感兴趣的垃圾片，所以称之为grab(Trash)。结构现在变成了下面这样：</p>
+<p><img src="images/16-2.gif" /> </p>
+<p>其中，TrashSorter需要调用每个grab()方法；然后根据当前Vector容纳的是什么类型，会获得一个不同的结果。也就是说，Vector必须留意自己容纳的类型。解决这个问题的传统方法是创建一个基础“Trash
+bin”（垃圾筒）类，并为希望容纳的每个不同的类型都继承一个新的衍生类。若Java有一个参数化的类型机制，那就也许是最直接的方法。但对于这种机制应该为我们构建的各个类，我们不应该进行麻烦的手工编码，以后的“观察”方式提供了一种更好的编码方式。</p>
+<p>OOP设计一条基本的准则是“为状态的变化使用数据成员，为行为的变化使用多性形”。对于容纳Paper（纸张）的Vector，以及容纳Glass（玻璃）的Vector，大家最开始或许会认为分别用于它们的grab()方法肯定会产生不同的行为。但具体如何却完全取决于类型，而不是其他什么东西。可将其解释成一种不同的状态，而且由于Java有一个类可表示类型（Class），所以可用它判断特定的Tbin要容纳什么类型的Trash。</p>
+用于Tbin的构建器要求我们为其传递自己选择的一个Class。这样做可告诉Vector它希望容纳的是什么类型。随后，grab()方法用Class
+BinType和RTTI来检查我们传递给它的Trash对象是否与它希望收集的类型相符。
+<p>下面列出完整的解决方案。设定为注释的编号（如*1*）便于大家对照程序后面列出的说明。</p>
+
+  <pre class="code">//: RecycleB.java
+// Adding more objects to the recycling problem
+package c16.recycleb;
+import c16.trash.*;
+import java.util.*;
+
+// A vector that admits only the right type:
+class Tbin extends Vector {
+  Class binType;
+  Tbin(Class binType) { 
+    this.binType = binType; 
+  }
+  boolean grab(Trash t) {
+    // Comparing class types:
+    if(t.getClass().equals(binType)) {
+      addElement(t);
+      return true; // Object grabbed
+    }
+    return false; // Object not grabbed
+  }
+}
+
+class TbinList extends Vector { //(*1*)
+  boolean sort(Trash t) {
+    Enumeration e = elements();
+    while(e.hasMoreElements()) {
+      Tbin bin = (Tbin)e.nextElement();
+      if(bin.grab(t)) return true;
+    }
+    return false; // bin not found for t
+  }
+  void sortBin(Tbin bin) { // (*2*)
+    Enumeration e = bin.elements();
+    while(e.hasMoreElements())
+      if(!sort((Trash)e.nextElement()))
+        System.out.println(&quot;Bin not found&quot;);
+  }
+}
+
+public class RecycleB {
+  static Tbin bin = new Tbin(Trash.class);
+  public static void main(String[] args) {
+    // Fill up the Trash bin:
+    ParseTrash.fillBin(&quot;Trash.dat&quot;, bin);
+
+    TbinList trashBins = new TbinList();
+    trashBins.addElement(
+      new Tbin(Aluminum.class));
+    trashBins.addElement(
+      new Tbin(Paper.class));
+    trashBins.addElement(
+      new Tbin(Glass.class));
+    // add one line here: (*3*)
+    trashBins.addElement(
+      new Tbin(Cardboard.class));
+
+    trashBins.sortBin(bin); // (*4*)
+
+    Enumeration e = trashBins.elements();
+    while(e.hasMoreElements()) {
+      Tbin b = (Tbin)e.nextElement();
+      Trash.sumValue(b);
+    }
+    Trash.sumValue(bin);
+  }
+} ///:~</pre>
+
+  <ul>
+    <li>(1) TbinList容纳一系列Tbin句柄，所以在查找与我们传递给它的Trash对象相符的情况时，sort()能通过Tbin继承。</li>
+    <li>(2) sortBin()允许我们将一个完整的Tbin传递进去，而且它会在Tbin里遍历，挑选出每种Trash，并将其归类到特定的Tbin中。请注意这些代码的通用性：新类型加入时，它本身不需要任何改动。只要新类型加入（或发生其他事件）时大量代码都不需要变化，就表明我们设计的是一个容易扩展的系统。</li>
+    <li>(3)
+      现在可以体会添加新类型有多么容易了。为支持添加，只需要改动几行代码。如确实有必要，甚至可以进一步地改进设计，使更多的代码都保持“固定”。 </li>
+    <li>(4) 一个方法调用使bin的内容归类到对应的、特定类型的垃圾筒里。</li>
+  </ul>
+  <h2><a name="a" id="a"></a>16.6 多重派遣</h2>
+  <p>上述设计方案肯定是令人满意的。系统内新类型的加入涉及添加或修改不同的类，但没有必要在系统内对代码作大范围的改动。除此以外，RTTI并不象它在RecycleA.java里那样被不当地使用。然而，我们仍然有可能更深入一步，以最“纯”的角度来看待RTTI，考虑如何在垃圾分类系统中将它完全消灭。</p>
+<p>为达到这个目标，首先必须认识到：对所有与不同类型有特殊关联的活动来说——比如侦测一种垃圾的具体类型，并把它置入适当的垃圾筒里——这些活动都应当通过多形性以及动态绑定加以控制。</p>
+<p>以前的例子都是先按类型排序，再对属于某种特殊类型的一系列元素进行操作。现在一旦需要操作特定的类型，就请先停下来想一想。事实上，多形性（动态绑定的方法调用）整个的宗旨就是帮我们管理与不同类型有特殊关联的信息。既然如此，为什么还要自己去检查类型呢？</p>
+<p>答案在于大家或许不以为然的一个道理：Java只执行单一派遣。也就是说，假如对多个类型未知的对象执行某项操作，Java只会为那些类型中的一种调用动态绑定机制。这当然不能解决问题，所以最后不得不人工判断某些类型，才能有效地产生自己的动态绑定行为。</p>
+为解决这个缺陷，我们需要用到“多重派遣”机制，这意味着需要建立一个配置，使单一方法调用能产生多个动态方法调用，从而在一次处理过程中正确判断出多种类型。为达到这个要求，需要对多个类型结构进行操作：每一次派遣都需要一个类型结构。下面的例子将对两个结构进行操作：现有的Trash系列以及由垃圾筒（Trash
+Bin）的类型构成的一个系列——不同的垃圾或废品将置入这些筒内。第二个分级结构并非绝对显然的。在这种情况下，我们需要人为地创建它，以执行多重派遣（由于本例只涉及两次派遣，所以称为“双重派遣”）。
+<h3>16.6.1 实现双重派遣</h3>
+<p>记住多形性只能通过方法调用才能表现出来，所以假如想使双重派遣正确进行，必须执行两个方法调用：在每种结构中都用一个来判断其中的类型。在Trash结构中，将使用一个新的方法调用addToBin()，它采用的参数是由TypeBin构成的一个数组。那个方法将在数组中遍历，尝试将自己加入适当的垃圾筒，这里正是双重派遣发生的地方。</p>
+<img src="images/16-3.gif" />
+<p>新建立的分级结构是TypeBin，其中包含了它自己的一个方法，名为add()，而且也应用了多形性。但要注意一个新特点：add()已进行了“过载”处理，可接受不同的垃圾类型作为参数。因此，双重满足机制的一个关键点是它也要涉及到过载。</p>
+<p>程序的重新设计也带来了一个问题：现在的基础类Trash必须包含一个addToBin()方法。为解决这个问题，一个最直接的办法是复制所有代码，并修改基础类。然而，假如没有对源码的控制权，那么还有另一个办法可以考虑：将addToBin()方法置入一个接口内部，保持Trash不变，并继承新的、特殊的类型Aluminum，Paper，Glass以及Cardboard。我们在这里准备采取后一个办法。</p>
+<p>这个设计方案中用到的大多数类都必须设为public（公用）属性，所以它们放置于自己的类内。下面列出接口代码：</p>
+
+  <pre class="code">//: TypedBinMember.java
+// An interface for adding the double dispatching
+// method to the trash hierarchy without 
+// modifying the original hierarchy.
+package c16.doubledispatch;
+
+interface TypedBinMember {
+  // The new method:
+  boolean addToBin(TypedBin[] tb);
+} ///:~</pre>
+
+<p>在Aluminum，Paper，Glass以及Cardboard每个特定的子类型内，都会实现接口TypeBinMember的addToBin()方法，但每种情况下使用的代码“似乎”都是完全一样的：</p>
+
+  <pre class="code">//: DDAluminum.java
+// Aluminum for double dispatching
+package c16.doubledispatch;
+import c16.trash.*;
+
+public class DDAluminum extends Aluminum 
+    implements TypedBinMember {
+  public DDAluminum(double wt) { super(wt); }
+  public boolean addToBin(TypedBin[] tb) {
+    for(int i = 0; i &lt; tb.length; i++)
+      if(tb[i].add(this))
+        return true;
+    return false;
+  }
+} ///:~</pre>
+
+
+  <pre class="code">//: DDPaper.java
+// Paper for double dispatching
+package c16.doubledispatch;
+import c16.trash.*;
+
+public class DDPaper extends Paper 
+    implements TypedBinMember {
+  public DDPaper(double wt) { super(wt); }
+  public boolean addToBin(TypedBin[] tb) {
+    for(int i = 0; i &lt; tb.length; i++)
+      if(tb[i].add(this))
+        return true;
+    return false;
+  }
+} ///:~</pre>
+
+
+  <pre class="code">//: DDGlass.java
+// Glass for double dispatching
+package c16.doubledispatch;
+import c16.trash.*;
+
+public class DDGlass extends Glass 
+    implements TypedBinMember {
+  public DDGlass(double wt) { super(wt); }
+  public boolean addToBin(TypedBin[] tb) {
+    for(int i = 0; i &lt; tb.length; i++)
+      if(tb[i].add(this))
+        return true;
+    return false;
+  }
+} ///:~</pre>
+
+
+  <pre class="code">//: DDCardboard.java
+// Cardboard for double dispatching
+package c16.doubledispatch;
+import c16.trash.*;
+
+public class DDCardboard extends Cardboard 
+    implements TypedBinMember {
+  public DDCardboard(double wt) { super(wt); }
+  public boolean addToBin(TypedBin[] tb) {
+    for(int i = 0; i &lt; tb.length; i++)
+      if(tb[i].add(this))
+        return true;
+    return false;
+  }
+} ///:~</pre>
+
+<p>每个addToBin()内的代码会为数组中的每个TypeBin对象调用add()。但请注意参数：this。对Trash的每个子类来说，this的类型都是不同的，所以不能认为代码“完全”一样——尽管以后在Java里加入参数化类型机制后便可认为一样。这是双重派遣的第一个部分，因为一旦进入这个方法内部，便可知道到底是Aluminum，Paper，还是其他什么垃圾类型。在对add()的调用过程中，这种信息是通过this的类型传递的。编译器会分析出对add()正确的过载版本的调用。但由于tb[i]会产生指向基础类型TypeBin的一个句柄，所以最终会调用一个不同的方法——具体什么方法取决于当前选择的TypeBin的类型。那就是第二次派遣。</p>
+<p>下面是TypeBin的基础类：</p>
+
+  <pre class="code">//: TypedBin.java
+// Vector that knows how to grab the right type
+package c16.doubledispatch;
+import c16.trash.*;
+import java.util.*;
+
+public abstract class TypedBin {
+  Vector v = new Vector();
+  protected boolean addIt(Trash t) {
+    v.addElement(t);
+    return true;
+  }
+  public Enumeration elements() {
+    return v.elements();
+  }
+  public boolean add(DDAluminum a) {
+    return false;
+  }
+  public boolean add(DDPaper a) {
+    return false;
+  }
+  public boolean add(DDGlass a) {
+    return false;
+  }
+  public boolean add(DDCardboard a) {
+    return false;
+  }
+} ///:~</pre>
+
+<p>可以看到，过载的add()方法全都会返回false。如果未在衍生类里对方法进行过载，它就会一直返回false，而且调用者（目前是addToBin()）会认为当前Trash对象尚未成功加入一个集合，所以会继续查找正确的集合。</p>
+<p>在TypeBin的每一个子类中，都只有一个过载的方法会被过载——具体取决于准备创建的是什么垃圾筒类型。举个例子来说，CardboardBin会过载add(DDCardboard)。过载的方法会将垃圾对象加入它的集合，并返回true。而CardboardBin中剩余的所有add()方法都会继续返回false，因为它们尚未过载。事实上，假如在这里采用了参数化类型机制，Java代码的自动创建就要方便得多（使用C++的“模板”，我们不必费事地为子类编码，或者将addToBin()方法置入Trash里；Java在这方面尚有待改进）。</p>
+<p>由于对这个例子来说，垃圾的类型已经定制并置入一个不同的目录，所以需要用一个不同的垃圾数据文件令其运转起来。下面是一个示范性的DDTrash.dat：</p>
+
+  <pre class="code">c16.DoubleDispatch.DDGlass:54
+c16.DoubleDispatch.DDPaper:22
+c16.DoubleDispatch.DDPaper:11
+c16.DoubleDispatch.DDGlass:17
+c16.DoubleDispatch.DDAluminum:89
+c16.DoubleDispatch.DDPaper:88
+c16.DoubleDispatch.DDAluminum:76
+c16.DoubleDispatch.DDCardboard:96
+c16.DoubleDispatch.DDAluminum:25
+c16.DoubleDispatch.DDAluminum:34
+c16.DoubleDispatch.DDGlass:11
+c16.DoubleDispatch.DDGlass:68
+c16.DoubleDispatch.DDGlass:43
+c16.DoubleDispatch.DDAluminum:27
+c16.DoubleDispatch.DDCardboard:44
+c16.DoubleDispatch.DDAluminum:18
+c16.DoubleDispatch.DDPaper:91
+c16.DoubleDispatch.DDGlass:63
+c16.DoubleDispatch.DDGlass:50
+c16.DoubleDispatch.DDGlass:80
+c16.DoubleDispatch.DDAluminum:81
+c16.DoubleDispatch.DDCardboard:12
+c16.DoubleDispatch.DDGlass:12
+c16.DoubleDispatch.DDGlass:54
+c16.DoubleDispatch.DDAluminum:36
+c16.DoubleDispatch.DDAluminum:93
+c16.DoubleDispatch.DDGlass:93
+c16.DoubleDispatch.DDPaper:80
+c16.DoubleDispatch.DDGlass:36
+c16.DoubleDispatch.DDGlass:12
+c16.DoubleDispatch.DDGlass:60
+c16.DoubleDispatch.DDPaper:66
+c16.DoubleDispatch.DDAluminum:36
+c16.DoubleDispatch.DDCardboard:22</pre>
+
+<p>下面列出程序剩余的部分：</p>
+
+  <pre class="code">//: DoubleDispatch.java
+// Using multiple dispatching to handle more
+// than one unknown type during a method call.
+package c16.doubledispatch;
+import c16.trash.*;
+import java.util.*;
+
+class AluminumBin extends TypedBin {
+  public boolean add(DDAluminum a) {
+    return addIt(a);
+  }
+}
+
+class PaperBin extends TypedBin {
+  public boolean add(DDPaper a) {
+    return addIt(a);
+  }
+}
+
+class GlassBin extends TypedBin {
+  public boolean add(DDGlass a) {
+    return addIt(a);
+  }
+}
+
+class CardboardBin extends TypedBin {
+  public boolean add(DDCardboard a) {
+    return addIt(a);
+  }
+}
+
+class TrashBinSet {
+  private TypedBin[] binSet = {
+    new AluminumBin(),
+    new PaperBin(),
+    new GlassBin(),
+    new CardboardBin()
+  };
+  public void sortIntoBins(Vector bin) {
+    Enumeration e = bin.elements();
+    while(e.hasMoreElements()) {
+      TypedBinMember t = 
+        (TypedBinMember)e.nextElement();
+      if(!t.addToBin(binSet))
+        System.err.println(&quot;Couldn't add &quot; + t);
+    }
+  }
+  public TypedBin[] binSet() { return binSet; }
+}
+
+public class DoubleDispatch {
+  public static void main(String[] args) {
+    Vector bin = new Vector();
+    TrashBinSet bins = new TrashBinSet();
+    // ParseTrash still works, without changes:
+    ParseTrash.fillBin(&quot;DDTrash.dat&quot;, bin);
+    // Sort from the master bin into the 
+    // individually-typed bins:
+    bins.sortIntoBins(bin);
+    TypedBin[] tb = bins.binSet();
+    // Perform sumValue for each bin...
+    for(int i = 0; i &lt; tb.length; i++)
+      Trash.sumValue(tb[i].v);
+    // ... and for the master bin
+    Trash.sumValue(bin);
+  }
+} ///:~</pre>
+
+<p>其中，TrashBinSet封装了各种不同类型的TypeBin，同时还有sortIntoBins()方法。所有双重派遣事件都会在那个方法里发生。可以看到，一旦设置好结构，再归类成各种TypeBin的工作就变得十分简单了。除此以外，两个动态方法调用的效率可能也比其他排序方法高一些。</p>
+<p>注意这个系统的方便性主要体现在main()中，同时还要注意到任何特定的类型信息在main()中都是完全独立的。只与Trash基础类接口通信的其他所有方法都不会受到Trash类中发生的改变的干扰。</p>
+<p>添加新类型需要作出的改动是完全孤立的：我们随同addToBin()方法继承Trash的新类型，然后继承一个新的TypeBin（这实际只是一个副本，可以简单地编辑），最后将一种新类型加入TrashBinSet的集合初化化过程。</p>
+<div class="rpindex"><a href="165.html"> 下一页</a><a href="163.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

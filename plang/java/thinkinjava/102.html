@@ -1,0 +1,339 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="101.html"> 上一页</a><a href="103.html"> 下一页</a></div>
+<h3>12.2.7 用Vector进行深层复制</h3>
+<p>下面让我们复习一下本章早些时候提出的Vector例子。这一次Int2类是可以克隆的，所以能对Vector进行深层复制：</p>
+
+  <pre class="code">//: AddingClone.java
+// You must go through a few gyrations to
+// add cloning to your own class.
+import java.util.*;
+
+class Int2 implements Cloneable {
+  private int i;
+  public Int2(int ii) { i = ii; }
+  public void increment() { i++; }
+  public String toString() {
+    return Integer.toString(i);
+  }
+  public Object clone() {
+    Object o = null;
+    try {
+      o = super.clone();
+    } catch (CloneNotSupportedException e) {
+      System.out.println(&quot;Int2 can't clone&quot;);
+    }
+    return o;
+  }
+}
+
+// Once it's cloneable, inheritance
+// doesn't remove cloneability:
+class Int3 extends Int2 {
+  private int j; // Automatically duplicated
+  public Int3(int i) { super(i); }
+}
+
+public class AddingClone {
+  public static void main(String[] args) {
+    Int2 x = new Int2(10);
+    Int2 x2 = (Int2)x.clone();
+    x2.increment();
+    System.out.println(
+      &quot;x = &quot; + x + &quot;, x2 = &quot; + x2);
+    // Anything inherited is also cloneable:
+    Int3 x3 = new Int3(7);
+    x3 = (Int3)x3.clone();
+
+    Vector v = new Vector();
+    for(int i = 0; i &lt; 10; i++ )
+      v.addElement(new Int2(i));
+    System.out.println(&quot;v: &quot; + v);
+    Vector v2 = (Vector)v.clone();
+    // Now clone each element:
+    for(int i = 0; i &lt; v.size(); i++)
+      v2.setElementAt(
+        ((Int2)v2.elementAt(i)).clone(), i);
+    // Increment all v2's elements:
+    for(Enumeration e = v2.elements();
+        e.hasMoreElements(); )
+      ((Int2)e.nextElement()).increment();
+    // See if it changed v's elements:
+    System.out.println(&quot;v: &quot; + v);
+    System.out.println(&quot;v2: &quot; + v2);
+  }
+} ///:~</pre>
+
+<p>Int3自Int2继承而来，并添加了一个新的基本类型成员int j。大家也许认为自己需要再次覆盖clone()，以确保j得到复制，但实情并非如此。将Int2的clone()当作Int3的clone()调用时，它会调用Object.clone()，判断出当前操作的是Int3，并复制Int3内的所有二进制位。只要没有新增需要克隆的句柄，对Object.clone()的一个调用就能完成所有必要的复制——无论clone()是在层次结构多深的一级定义的。</p>
+<p>至此，大家可以总结出对Vector进行深层复制的先决条件：在克隆了Vector后，必须在其中遍历，并克隆由Vector指向的每个对象。为了对Hashtable（散列表）进行深层复制，也必须采取类似的处理。</p>
+<p>这个例子剩余的部分显示出克隆已实际进行——证据就是在克隆了对象以后，可以自由改变它，而原来那个对象不受任何影响。</p>
+<h3>12.2.8 通过序列化进行深层复制</h3>
+<p>若研究一下第10章介绍的那个Java 1.1对象序列化示例，可能发现若在一个对象序列化以后再撤消对它的序列化，或者说进行装配，那么实际经历的正是一个“克隆”的过程。</p>
+<p>那么为什么不用序列化进行深层复制呢？下面这个例子通过计算执行时间对比了这两种方法：</p>
+
+  <pre class="code">//: Compete.java
+import java.io.*;
+
+class Thing1 implements Serializable {}
+class Thing2 implements Serializable {
+  Thing1 o1 = new Thing1();
+}
+
+class Thing3 implements Cloneable {
+  public Object clone() {
+    Object o = null;
+    try {
+      o = super.clone();
+    } catch (CloneNotSupportedException e) {
+      System.out.println(&quot;Thing3 can't clone&quot;);
+    }
+    return o;
+  }
+}
+
+class Thing4 implements Cloneable {
+  Thing3 o3 = new Thing3();
+  public Object clone() {
+    Thing4 o = null;
+    try {
+      o = (Thing4)super.clone();
+    } catch (CloneNotSupportedException e) {
+      System.out.println(&quot;Thing4 can't clone&quot;);
+    }
+    // Clone the field, too:
+    o.o3 = (Thing3)o3.clone();
+    return o;
+  }
+}
+
+public class Compete {
+  static final int SIZE = 5000;
+  public static void main(String[] args) {
+    Thing2[] a = new Thing2[SIZE];
+    for(int i = 0; i &lt; a.length; i++)
+      a[i] = new Thing2();
+    Thing4[] b = new Thing4[SIZE];
+    for(int i = 0; i &lt; b.length; i++)
+      b[i] = new Thing4();
+    try {
+      long t1 = System.currentTimeMillis();
+      ByteArrayOutputStream buf = 
+        new ByteArrayOutputStream();
+      ObjectOutputStream o =
+        new ObjectOutputStream(buf);
+      for(int i = 0; i &lt; a.length; i++)
+        o.writeObject(a[i]);
+      // Now get copies:
+      ObjectInputStream in =
+        new ObjectInputStream(
+          new ByteArrayInputStream(
+            buf.toByteArray()));
+      Thing2[] c = new Thing2[SIZE];
+      for(int i = 0; i &lt; c.length; i++)
+        c[i] = (Thing2)in.readObject();
+      long t2 = System.currentTimeMillis();
+      System.out.println(
+        &quot;Duplication via serialization: &quot; +
+        (t2 - t1) + &quot; Milliseconds&quot;);
+      // Now try cloning:
+      t1 = System.currentTimeMillis();
+      Thing4[] d = new Thing4[SIZE];
+      for(int i = 0; i &lt; d.length; i++)
+        d[i] = (Thing4)b[i].clone();
+      t2 = System.currentTimeMillis();
+      System.out.println(
+        &quot;Duplication via cloning: &quot; +
+        (t2 - t1) + &quot; Milliseconds&quot;);
+    } catch(Exception e) {
+      e.printStackTrace();
+    }
+  }
+} ///:~</pre>
+
+<p>其中，Thing2和Thing4包含了成员对象，所以需要进行一些深层复制。一个有趣的地方是尽管Serializable类很容易设置，但在复制它们时却要做多得多的工作。克隆涉及到大量的类设置工作，但实际的对象复制是相当简单的。结果很好地说明了一切。下面是几次运行分别得到的结果：</p>
+<p>的确</p>
+
+  <pre class="code">Duplication via serialization: 3400 Milliseconds
+Duplication via cloning: 110 Milliseconds
+
+Duplication via serialization: 3410 Milliseconds
+Duplication via cloning: 110 Milliseconds
+
+Duplication via serialization: 3520 Milliseconds
+Duplication via cloning: 110 Milliseconds</pre>
+
+<p>除了序列化和克隆之间巨大的时间差异以外，我们也注意到序列化技术的运行结果并不稳定，而克隆每一次花费的时间都是相同的。</p>
+<div class="rpindex"><a href="103.html"> 下一页</a><a href="101.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

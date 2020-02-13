@@ -1,0 +1,308 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="100.html"> 上一页</a><a href="102.html"> 下一页</a></div>
+<h3>12.2.5 Object.clone()的效果</h3>
+<p>调用Object.clone()时，实际发生的是什么事情呢？当我们在自己的类里覆盖clone()时，什么东西对于super.clone()来说是最关键的呢？根类中的clone()方法负责建立正确的存储容量，并通过“按位复制”将二进制位从原始对象中复制到新对象的存储空间。也就是说，它并不只是预留存储空间以及复制一个对象——实际需要调查出欲复制之对象的准确大小，然后复制那个对象。由于所有这些工作都是在由根类定义之clone()方法的内部代码中进行的（根类并不知道要从自己这里继承出去什么），所以大家或许已经猜到，这个过程需要用RTTI判断欲克隆的对象的实际大小。采取这种方式，clone()方法便可建立起正确数量的存储空间，并对那个类型进行正确的按位复制。</p>
+<p>不管我们要做什么，克隆过程的第一个部分通常都应该是调用super.clone()。通过进行一次准确的复制，这样做可为后续的克隆进程建立起一个良好的基础。随后，可采取另一些必要的操作，以完成最终的克隆。</p>
+<p>为确切了解其他操作是什么，首先要正确理解Object.clone()为我们带来了什么。特别地，它会自动克隆所有句柄指向的目标吗？下面这个例子可完成这种形式的检测：</p>
+
+  <pre class="code">//: Snake.java
+// Tests cloning to see if destination of
+// handles are also cloned.
+
+public class Snake implements Cloneable {
+  private Snake next;
+  private char c;
+  // Value of i == number of segments
+  Snake(int i, char x) {
+    c = x;
+    if(--i &gt; 0)
+      next = new Snake(i, (char)(x + 1));
+  }
+  void increment() {
+    c++;
+    if(next != null)
+      next.increment();
+  }
+  public String toString() {
+    String s = &quot;:&quot; + c;
+    if(next != null)
+      s += next.toString();
+    return s;
+  }
+  public Object clone() {
+    Object o = null;
+    try {
+      o = super.clone();
+    } catch (CloneNotSupportedException e) {}
+    return o;
+  }
+  public static void main(String[] args) {
+    Snake s = new Snake(5, 'a');
+    System.out.println(&quot;s = &quot; + s);
+    Snake s2 = (Snake)s.clone();
+    System.out.println(&quot;s2 = &quot; + s2);
+    s.increment();
+    System.out.println(
+      &quot;after s.increment, s2 = &quot; + s2);
+  }
+} ///:~</pre>
+
+<p>一条Snake（蛇）由数段构成，每一段的类型都是Snake。所以，这是一个一段段链接起来的列表。所有段都是以循环方式创建的，每做好一段，都会使第一个构建器参数的值递减，直至最终为零。而为给每段赋予一个独一无二的标记，第二个参数（一个Char）的值在每次循环构建器调用时都会递增。</p>
+<p>increment()方法的作用是循环递增每个标记，使我们能看到发生的变化；而toString则循环打印出每个标记。输出如下：</p>
+
+  <pre class="code">s = :a:b:c:d:e
+s2 = :a:b:c:d:e
+after s.increment, s2 = :a:c:d:e:f</pre>
+
+<p>这意味着只有第一段才是由Object.clone()复制的，所以此时进行的是一种“浅层复制”。若希望复制整条蛇——即进行“深层复制”——必须在被覆盖的clone()里采取附加的操作。</p>
+<p>通常可在从一个能克隆的类里调用super.clone()，以确保所有基础类行动（包括Object.clone()）能够进行。随着是为对象内每个句柄都明确调用一个clone()；否则那些句柄会别名变成原始对象的句柄。构建器的调用也大致相同——首先构造基础类，然后是下一个衍生的构建器……以此类推，直到位于最深层的衍生构建器。区别在于clone()并不是个构建器，所以没有办法实现自动克隆。为了克隆，必须由自己明确进行。</p>
+<h3>12.2.6 克隆合成对象</h3>
+<p>试图深层复制合成对象时会遇到一个问题。必须假定成员对象中的clone()方法也能依次对自己的句柄进行深层复制，以此类推。这使我们的操作变得复杂。为了能正常实现深层复制，必须对所有类中的代码进行控制，或者至少全面掌握深层复制中需要涉及的类，确保它们自己的深层复制能正确进行。</p>
+<p>下面这个例子总结了面对一个合成对象进行深层复制时需要做哪些事情：</p>
+
+  <pre class="code">//: DeepCopy.java
+// Cloning a composed object
+
+class DepthReading implements Cloneable {
+  private double depth;
+  public DepthReading(double depth) { 
+    this.depth = depth;
+  }
+  public Object clone() {
+    Object o = null;
+    try {
+      o = super.clone();
+    } catch (CloneNotSupportedException e) {
+      e.printStackTrace();
+    }
+    return o;
+  }
+}
+
+class TemperatureReading implements Cloneable {
+  private long time;
+  private double temperature;
+  public TemperatureReading(double temperature) {
+    time = System.currentTimeMillis();
+    this.temperature = temperature;
+  }
+  public Object clone() {
+    Object o = null;
+    try {
+      o = super.clone();
+    } catch (CloneNotSupportedException e) {
+      e.printStackTrace();
+    }
+    return o;
+  }
+}
+
+class OceanReading implements Cloneable {
+  private DepthReading depth;
+  private TemperatureReading temperature;
+  public OceanReading(double tdata, double ddata){
+    temperature = new TemperatureReading(tdata);
+    depth = new DepthReading(ddata);
+  }
+  public Object clone() {
+    OceanReading o = null;
+    try {
+      o = (OceanReading)super.clone();
+    } catch (CloneNotSupportedException e) {
+      e.printStackTrace();
+    }
+    // Must clone handles:
+    o.depth = (DepthReading)o.depth.clone();
+    o.temperature = 
+      (TemperatureReading)o.temperature.clone();
+    return o; // Upcasts back to Object
+  }
+}
+
+public class DeepCopy {
+  public static void main(String[] args) {
+    OceanReading reading = 
+      new OceanReading(33.9, 100.5);
+    // Now clone it:
+    OceanReading r = 
+      (OceanReading)reading.clone();
+  }
+} ///:~</pre>
+
+<p>DepthReading和TemperatureReading非常相似；它们都只包含了基本数据类型。所以clone()方法能够非常简单：调用super.clone()并返回结果即可。注意两个类使用的clone()代码是完全一致的。</p>
+<p>OceanReading是由DepthReading和TemperatureReading对象合并而成的。为了对其进行深层复制，clone()必须同时克隆OceanReading内的句柄。为达到这个目标，super.clone()的结果必须造型成一个OceanReading对象（以便访问depth和temperature句柄）。</p>
+<div class="rpindex"><a href="102.html"> 下一页</a><a href="100.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
