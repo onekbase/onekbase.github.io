@@ -1,0 +1,321 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="73.html"> 上一页</a><a href="75.html"> 下一页</a></div>
+<h2>9．5 使用成员函数
+  </p>
+</h2>
+<p>
+     
+  当从基类派生出一个派生类时，派生类的成员函数可能需要访问基类的某些成员函数。</p>
+<h5>
+  
+  软件工程视点9. 2</h5>
+<p>
+       
+  派生类不能直接访问其基类的private成员。</p>
+<p>
+    
+  这是C++中关键的软件工程视点。如果派生类能访问其基类的private成员，那么就会破坏基类的封装性。隐藏private成员有助于测试、调试和正确地修改系统。如果派生类能访问其基类的private成员，那么从派生类派生出的类也应该能访问这些成员，这样就会传递对private数据的访问权，从而使封装所带来的益处在整个类层次上损失殆尽。</p>
+<h2>
+  <a name="9.6" id="9.6"></a>9．6 在派生类中重定义基类成员   </h2>
+<p>
+       
+  派生类可以通过提供同样签名的新版本(如果签名不同，则是函数重载而不是函数重定义)重新定义基类成员函数。派生类引用该函数时会自动选择派生类中的版本。作用域运算符可用来从派生类中访问基类的该成员函数的版本。</p>
+<h5>
+  
+  常见编程错误9．3</h5>
+<p>
+       
+  派生类中重新定义基类的成员函数时，为完成某些附加工作．派生类版本通常要调用基类中的该函数版本。不使用作用域运算符会由于派生类成员函数实际上调用了自身而引起无穷递归。这样会使系统用光内存，是致命的运行时错误。</p><p>
+       
+  考察一个简单的类Employee，它存储雇员的姓(成员firstName)和名(成员lastName)。这种信息对于所有雇员(包括Employee的派生类的雇员)是很普遍的。现在假设从雇员类Employee派生出了小时工类HourlyWorker、计件工类PieceWorker、老板类Boss和销售员类CommissionWorker。小时工每周工作40小时，超过40小时部分的报酬是平时的1．5倍；计件工是按生产的工作计算报酬的，每件的报酬是固定的，假设他只生成一种类型的工件，因而类PieceWorker的private数据成员是生产的工件数量和每件的报酬；老板每周有固定的薪水；销售员每周有小部分固定的基本工资加上其每周销售额的固定百分比。为简单起见，此处只研究类Empbyee和派生类HourlyWorker。</p><p>
+       
+  本章的第二个例子见图9．5。第1行到47行分别是类Employee的定义和其成员函数的定义，第48行到94行分别是类HoudyWorker的定义和其成员函数的定义，第95行到结束是类继承层次Employee/HourlyWorker的驱动程序，该程序很简单，仅仅建立并初始化了类HourlyWorker的对象，然后调用类HourlyWorker的成员函数print输出对象的数据。</p>
+  <pre class="code">
+   // Fig. 9.5: employ.h
+ // Definition of class Employee
+ #ifndef EMPLOY_H
+ #define EMPLOY_H
+ class Employee {
+ public:
+   Employee( const char *, const char * );  // constructor
+   void print() const;  // output first an last name
+  ~Employee();         // destructor
+ private:
+   char *firstName;    // dynamically allocated string
+   char * lastName;    // dynamically allocated string
+ } ;
+ #endif
+ // Fig. 9.5: employ.cpp
+ // Member function definitions for class Employee
+ #include < string.h>
+ #include < assert.h>
+ #include "employ.h"
+ // Constructor dynamically allocates space for the
+ // first and last name and uses strcpy to copy
+ // the first and last names into the object.
+ Employee::Employee( const char *first, const char *last )
+ {
+   firstName = new char( strlen( first ) + 1);
+   assert( firstName != 0 ); // terminate if not allocated
+   strcpy( firstName, first );
+   lastName = new char( strlen( last ) + 1 );
+   assert( lastName != 0 );  // terminate if not allocated
+   strcpy( lastName, last );
+ }
+ // Output employee name
+ void Employee::print() const
+   {cout << firstName << ' ' << lastName; }
+ // Destructor deallocates dynamically allocated memory
+ Employee::~Employee()
+ {
+   delete [] firstName;  // reclaim dynamic memory
+   delete [] lastName;   // reclaim dynamic memory
+ }
+ // Fig. 9.5: hourly.h
+ // Definition of class HourlyWorker
+ #ifndef HOURLY_H
+ #define HOURLY_H
+ #include "employ.h"
+ class HourlyWorker : public Employee {
+ public:
+   HourlyWorker( const char*, const char*, double, double );
+   double getPayO const;  // calculate and return salary
+   void print() const;    // overridden base-class print
+ private:
+   double wage;          // wage per hour
+   double hours;         // hours worked for week
+ };
+ #endif
+ // Fig. 9.5: hourly.cpp
+ // Member function definitions for class HourlyWorker
+ #include < iostream.h>
+ #include < iomanip.h>
+ #include "hourly.h"
+ // Constructor for class HourlyWorker
+ HourlyWorker::HourlyWorker(constchar*first,
+                       const char *last,
+                       double initHours, double initwage )
+   : Employee( first, last )  // call base-class constructor
+ {
+   hours = initHours;  // should validate
+   wage = initWage;   // should validate
+ }
+ // Get the HourlyWorker's pay
+ double HourlyWorker::getPay() const { return wage * hours; }
+ // Print the HourlyWorker's name and pay
+ void HourlyWorker::print() const
+ {
+   cout << "HourlyWorker::print() is executing\n\n";
+   Employee::print();  // call base-class print function
+   cout <<" is an hourly worker with pay of $"
+        << setiosflags( ios::fixed | ios::showpoint )
+       << setprecision( 2 ) << getPay() << endl;
+ }
+ // Fig. 9.5: fig.09_05.cpp
+ // Overriding a base-class member function in a
+ // derived class.
+ #include < iostream.h>
+ #include "hourly.h"
+ int main()
+ {
+   HourlyWorker h( "Bob", "Smith", 40.0, 10.00 );
+   h.print();
+   return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p><p>
+  HourlyWorker::print() is   executing</p><p>
+  Bob Smith is an hourly worker with pay of   $400.00</p><p>
+                                 
+  图 9.5 在派生类中重新定义基类的成员函数</p><p>
+       
+  类Employee的定义由两个private   char*类型的数据成员(fisttName和lastName)和三个成员函数(构造函数、析构函数和print函数)组成。构造函数接收两个字符串，并动态分配存储字符串的字符数组。宏assert(见第18章)用来确定是否为firstName和lastName分配了内存。如果没有，程序终止并返回一条出错信息，该信息指出了被测试的条件以及条件所在的行号和文件。由于Employee的数据是private类型，所以只能用成员函数print访问数据，函数print非常简单，仅仅输出雇员的姓和名。析构函数将动态分配的内存交还给系统(防止内存泄漏)。</p><p>
+       
+  类HoudyWorker对类Employee的继承是public继承。类定义的第一行指定了这种继承方式：</p><p>
+     
+  class   HourlyWorker：public   EmPloyee</p><p>
+  HourlyWorker的public接口包括Employee的函数print和HourlyWorker的成员函数getPay和print。注意，类HourlyWorker定义了其自身的print函数(使用同样的函数原型Employee：print())，所以类HourlyWorker有权访问两个print函数。类HourlyWorker还包含用来计算雇员的每周薪水的private数据成员wage和hours。</p><p>
+       
+  HourlyWorker的构造函数用成员初始化值语法将字符串first和last传递给Employee的构造函数，从而初始化了基类的成员，然后再初始化成员wage和hours。成员函数getPay用来计算HourlyWorker的工资。</p><p>
+       
+  类HourlyWorker的成员函数print重新定义Employee的print成员函数。为提供更多的功能而在派生类中重新定义基类的成员函数是常有的事。被重新定义的函数有时候为执行一些新任务而要调用基类中的函数版本。在本例中，派生类函数print调用基类Employee的print函数输出了雇员的名字(基类print函数是惟一能访问该类private数据的函数)，派生类的print函数输出了雇员的工资。</p><p>
+  调用基类print函数的方法如下：</p><p>
+       
+  Employee::print()；</p><p>
+  因为基类函数和派生类函数的名字相同，所以必须在基类函数前使用基类名和作用域运算符，否则将调用派生类的函数版本(即类HourlyWorker的print函数调用其自身)，从而导致无穷递归。
+</p>
+  <div class="rpindex"><a href="75.html"> 下一页</a><a href="73.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

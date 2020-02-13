@@ -1,0 +1,430 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="82.html"> 上一页</a><a href="84.html"> 下一页</a></div>
+  <h2>10．7 新类和动态关联
+    </p>
+  </h2>
+  <p> 对于预先知道所有可能的类的系统来说，多态性和虚函数当然会运行得很好，但是当向系统中添加各种各样的新类时，它们同样也会运行得很好。动态关联(也叫滞后关联)允许向系统中添加新类。对于要被编译的虚函数调用来说，编译时可以不必知道对象的类型。在运行时，虚函数调用和被调用对象的成员函数相匹配。</p>
+  <p> 屏幕管理程序可以不经过重新编译就可以处理添加到系统中的新的显示对象，draw函数的调用还是和原来的一样，新对象自己包含了实际的显示能力，这样就可以很容易地给系统增加功能，同时也鼓励软件复用。</p>
+  <p> 动态关联可以使独立软件供应商(ISV)在不透露其秘密的情况下发行软件。发行的软件可以只包括头文件和对象文件，不必透露源代码。软件开发者可以利用继承机制从ISV提供的类中派生出新类。和ISV提供的类一起运行的软件也能够和派生类一起运行，并且能够通过动态关联使用这些派生类中重定义的虚函数。</p>
+  <p> 109节将介绍综合的多态性实例研究。10。10节将深入介绍多态、虚函数与动态关联如伺在C++中实现。</p>
+  <h2> <a name="10.8" id="10.8"></a>10．8 虚析构函数</h2>
+  <p> 用多态性处理动态分配的类层次结构中的对象时存在一个问题。如果delete运算符用于指向派生类对象的基类指针，而程序中又显式地用该运算符删除每一个对象，那么，不管基类指针所指向的对象是何种类型，也不管每个类的析构函数名是不相同的这样一种情况，系统都会为这些对象调用基类的析构函数。</p>
+  <p> 这种问题有一种简单的解决办法，即将基类析构函数声明为虚析构函数。这样就会使所有派生类的析构函数自动成为虚析构函数(即使它们与基类析构函数名不同)。这时，如果像上面那样使用delete运算符时，系统会调用相应类的析构函数。记住，删除派生类对象时，同时删除派生类对象的基类部分，基类析构函数在派生类析构函数之后自动执行。</p>
+  <h5> 编程技巧10．2</h5>
+  <p> 如果一个类拥有虚函数，即使该类不需要虚析构函数也给它提供一个虚析构函数，这样能够使该类的派生类包含正确调用的析构函数。</p>
+  <p> 常见编程错误10．2</p>
+  <p> 将构造函数声明为虚函数是语法错误。构造函数不能是虚函数。</p>
+  <h2> <a name="10.9" id="10.9"></a>10．9 实例研究：继承接口和实现</h2>
+  <p> 下面的范例(见图10．2)要重新考察上一章中的Point、cirele、Cylinder类的层次结构，只不过这里类的层次结构的顶层是抽象基类Shape。类Shape中有一个纯虚函数printShapeName和print，所以它是一个抽象基类。类shape中还包含其他两个虚函数area和volume，它们都有默认的实现(返回0值)。类Point从类shape中继承了这两个函数的实现，由于点的面积和体积是0，所以这种继承是合理的。类circle从类Point中继承了函数volume，但circle本身提供了函数area的实现。Cylinder对函数area和volume提供了自己的实现。</p>
+  <p> 注意，尽管Shape是一个抽象基类，但是仍然可以包含某些成员函数的实现，并且这些实现是可继承的。类shape以四个虚函数的形式提供了一个可继承的接口(类层次结构中的所有的成员都将包含这些虚函数)，该类还提供了要在类层次结构头几层的派生类中使用的一些实现。</p>
+  <h5> 软件工程视点10．8</h5>
+  <p> 一个类可以从基类继承接口和(或)实现。为实现继承而设计的层次结构倾向于在高层具有某些功能，为接口继承而设计的层次结构则倾向于在较低层具有某些功能。对于前者，每个新派生类继承基类中定义的一个或几个成员函数，新的派生类使用基类定义；对于后者，基类指定一个或几个函数，层次中每个对象都要一样调用(即有相同的签名)，但各个派生类提供自己对该函数的实现方法。</p>
+  <pre class="code">
+  // Fig. 10.2: shape.h
+ // Definition of abstract base class Shape
+ #ifndef SHADE_H
+ #define SHADE_H
+ #include < iostream.h>
+ class Shape {
+ public:
+    virtual double area() const { return 0.0; }
+   virtual double volume() const { return 0.0; }
+   // pure virtual functions overridden in derived classes
+   virtual void printShapeName() const = 0;
+   virtual void print() const = 0;
+ };
+ #endif
+ // Fig. 10.2: point1.h
+ // Definition of class Point
+ #ifndef POINT1_H
+ #include "shape.h"
+ class Point : public Shape {
+ public:
+   Point( int = 0, int = 0 );  // default constructor
+   void setPoint( int, int );
+   int getX() const { return x; }
+   int getY() const { return y; }
+   virtual void printShapeName() const { cout << "Point: "; }
+   virtual void print() const;
+ private:
+   int x, y;  // x and y coordinates of Point
+ };
+ #endif
+ // Fig. 10.2:point1.cpp
+ // Member function definitions for class Point
+ #include "point1.h"
+ Point::Point( int a, int b ) { setPoint( a, b ); }
+ void Point::sefPoint( int a, int b }
+ {
+   x = a;
+   y = b;
+ }
+ void Point::print() const
+  { cout << '[' << x << ", "<< y << '] '; }
+ // Fig. 10.2: circle1.h
+ // Definition of class Circle
+ #ifndef CIRCLE1_H
+ #define CIRCLE1_H
+ #include "point1.h"
+ class Circle : public Point {
+ public:
+   // default constructor
+   Circle( double r = 0.0, int x = 0, int y = 0 );
+   void setRadius( double );
+   double getRadius() const;
+   virtual double area() const;
+   virtual void printShapeName() const { cout << "Circle: "; }
+   virtual void print() const;
+ private:
+   double radius;  // radius of Circle
+ };
+ #endif
+ // Fig. 10.2: circlel.cpp
+ // Member function definitions for class Circle
+ #include "circie1.h"
+ Circle::Circle( double r, int a, int b )
+   : Point( a, b )  // call base-class constructor
+ { setRadius( r ); }
+ void Circle::setRadius( double r ) { radius = r > 0 ? r : 0; }
+ double Circle::getRadius() const { return radius; }
+ double Circle::area() const
+   { return 3.14159 * radius * radius; }
+ void Circle::print() const
+ {
+   Point::print();
+   cout << "; Radius =" << radius;
+ }
+ // Fig. 10.2: cylindrl.h
+ // Definition of class Cylinder
+ #ifndef CYLINDR1_H
+ #define CYLINDR1_H
+ #include "circle1.h"
+ class Cylinder : public Circle {
+ public:
+   // default constructor
+   Cylinder( double h = 0.0, double r = 0.0,
+             int x = 0, int y = 0 );
+   void setHeight( double );
+   double getHeight() const;
+   virtual double area() const;
+   virtual double volume() const;
+   virtual void printShapeName() const {cout << "Cylinder: ";}
+   virtual void print() const;
+ private:
+   double height;  // height of Cylinder
+ };
+ #endif
+ // Fig. 10.2: cylindr1.cpp
+ // Member and friend function definitions for class Cylinder
+ #include "cylindr1.h"
+ Cylinder::Cylinder( double h, double r, int x, int y )
+   : Circle( r, x, y )  // call base-class constructor
+ { setHeight( h ); }
+ void Cylinder::setHeight( double h )
+   { height = h > 0 ? h : 0; }
+ double Cylinder::getHeight() const { return height; }
+ double Cylinder::area() const
+ {
+   // surface area of Cylinder
+   return 2 * Circle::area() +
+ * 3.14159 * getRadiusO * height;
+ }
+ double Cylinder::volume() const
+   { return Circle::area() * height; }
+ void Cylinder::print() const 
+ {
+   Circle::print();
+   cout << "; Height =" << height;
+ }
+ // Fig. 10.2: figl0_02.cpp
+ // Driver for shape, point, circle, cylinder hierarchy
+ #include < iostream.h>
+ #include < iomanip.h>
+ #include "shape.h"
+ #include "point1.h"
+ #include "circle1.h"
+ #include "cylindr1.h"
+ void virtualViaPointer( const Shape * );
+ void virtualViaReference( const Shape & );
+ int main()
+ {
+   cout << setiosflags( ios::fixed | ios::showpoint )
+       << setprecision( 2 );
+   Point point( 7, 11 );              // create a Point
+   Circle circle( 3.5, 22, 8 );         // create a Circle
+   Cylinder cylinder( 10, 3.3, 10, 10 );  // create a Cylinder
+   point.printShapeName();   // static binding
+   point.print();           // static binding
+   cout << '\n';
+   circle.printShapeName();  // static binding
+   circle.print();          // static binding
+   cout << '\n';
+   cylinder.printShapeName(); // static binding
+   cylinder.print();        // static binding
+   cout << "\n\n";
+   Shape *arrayOfShapes[ 3 ];  // array of base-class pointers
+   // aim arrayOfShapes[ 0 ] at derived-class Point object
+   arrayOfShapes[ 0 ] = &point;
+   // aim arrayOfShapes[ 1 ] at derived-class Circle object
+   arrayOfShapes[ 1 ] = &circle;
+   // aim arrayOfShapes[ 2 ] at derived-class Cylinder object
+   arrayOfShapes[ 2 ] = &cylinder;
+   // Loop through arrayOfShapes and call virtualViaPointer
+   // to print the shape name, attributes, area, and volume
+   // of each object using dynamic binding.
+   cout << "Virtual function calls made off"
+        << "base-class pointers\n";
+   for ( int i = 0; i < 3; i++ )
+      virtualViaPointer( arrayOfShape[ i ] );
+   // Loop through arrayOfShapes and call virtualViaReference
+   // to print the shape name, attributes, area, and volume
+   // of each object using dynamic binding.
+   cout << "Virtual function calls made off"
+        << "base-class references\n";
+   for (int j = 0; j < 3; j++ )
+      virtualViaReference( *arrayOfShapes[ j ] );
+   return 0;
+ }
+ // Make virtual function calls off a base-class pointer
+ // using dynamic binding.
+ void virtualViaPointer( const Shape *baseClassPtr )
+ {
+   baseClassPtr->printShapeName();
+   baseClassPtr->print();
+   cout << "\nArea = "<< baseClassPtr->area()
+       << "\nVolume =" << baseClassPtr->volume() << "\n\n";
+ }
+ // Make virtual function calls off a base-class reference
+ // using dynamic binding.
+ void virtualViaReference( const Shape &baseClassRef )
+ {
+   baseClassRef.printShapeName();
+   baseClassRef.print();
+   cout << "\nArea = "<< baseClassRef.area()
+        << "\nVolume  "<< baseClassRef.volume() << "\n\n";
+ }
+</pre>
+  <p> 输出结果：</p>
+  <p> Point: [ 7, 11   ]</p>
+  <p> Circle: [ 22, 8 ]; Radius 3.50</p>
+  <p> Cylinder: [ 10, 10 ] ; Radius= 3.30;   Height= 10.00</p>
+  <p> Virtual function calls made off base-class   pointers</p>
+  <p> Point: [7, 11]</p>
+  <p> Area = 0.00</p>
+  <p> Volume = 0.00</p>
+  <p> Circle: [ 22,   8]; Radius = 3.50</p>
+  <p> Area = 38.48</p>
+  <p> Volume = 0.00</p>
+  <p> Cylider: [ 10,10 ];   Radius = 3.30; Height = 10.00</p>
+  <p> Area = 275.77</p>
+  <p> Volume = 342.12</p>
+  <p> Virtual   function calls made off base-class pointers</p>
+  <p> Point: [ 7, 11]</p>
+  <p> Area =   0.00</p>
+  <p> Volume = 0.00</p>
+  <p> Circle: [ 22, 8] ; Radius = 3.50</p>
+  <p> Area =   38.48</p>
+  <p> Volume = 0.00</p>
+  <p> Cylinder:[10, 10]; Radius = 3.30; Height =   10.00</p>
+  <p> Area = 275.77</p>
+  <p> Volume = 342.12</p>
+  <h5> 图10．2定义抽象基类Shape</h5>
+  <p> 基类Shape由三个public虚函数组成，不包含任何数据。函数print和printShapeName是纯虚函数，因此它们要在每个派生类中重新定义。函数area和volume都返回0.0，当派生类需要对面积(area)和(或)体积(volume)有不同的计算方法时，这些函数就需要在派生类中重新定义。注意Shape是个抽象类，包含一些“不纯”的虚函数(area和volume)。抽象类可以包含非虚函数和通过派生类继承的数据。</p>
+  <p> 类Point是通过public继承从类Shape派生来的。因为Point没有面积和体积(均为0．0)，所以类中没有重新定义基类成员函数area和volume，而是从类Shape中继承这两个函数。函数printShapeName和print是虚函数(在基类被定义为纯虚函数)的实现，如果不在类Point中重新定义这些函数，那么Point仍然为抽象类则不能实例化Point对象。其他成员函数包括：将新的x和y坐标值赋绐Point对象(即点)的一个”set”函数和返回Point对象的x和y坐标值的“get”函数。</p>
+  <p> 类Circle是通过public继承从类Point派生来的。因为它没有体积，所以类中没有重新定义基类成员函数volume，而是从类Shape中继承。Circle是有面积的，因此要重新定义函数area。函数printShapeName和print是虚函数(在基类中被定义为纯虚函数)的实现。如果此处不重新定义该函数，则会继承类Point中该函数的版本。其他成员函数包括为Circle对象设置新的radius(半径值)的“set”函数和返回Circle对象的radius的“get”函数。</p>
+  <p> 类Cylinder是通过public继承从类Circle派生来的。因为Cylinder对象的面积和体积同Circle的不同，所以需要在类中重新定义函数area和volume。函数printShapeName和print是虚函数(在基类中被定义为纯虚函数)的实现。如果此处不重新定义该函数，则会继承类Circle中该函数的版本。</p>
+  <p> 类中还包括一个设置Cylinder对象height(高度)的“set”函数和一个读取Cylinder对象(圆柱体)的height的”get”函数。</p>
+  <p> 驱动程序一开始就分别实例化了类Point的对象point、类Circle的对象circle和类Cylinder的对象cylinder。程序随后调用了每个对象的printShapeName和print函数，并输出每一个对象的信息以验证对象初始化的正确性。每次调用printShapeName和print(第164行到第173行)都使用静态关联，编译器在编译时知道调用printShapeName和print的每种对象类型。</p>
+  <p> 接着把指针数组arrayOfShapes的每个元素声明为Shape*类型，诙数组用来指向每个派生类对象。首先把对象point的地址赋给了arrayOfShapes[O](第179行)、把对象circle的地址赋给了arrayOfShapes[1](第182行)、把对象cylinder的地址赋给了arrayOfShapes[2](第185行)。</p>
+  <p> 然后用for结构(第193行)遍历arrayOfShapes数组，并对每个数组元素调用函数virtualViaPointer</p>
+  <p> (第194行)：</p>
+  <p> virtualViaPointer(arrayOfShapes[ i ])；</p>
+  <p> 函数virtualViaPointer用baseClassPtr(类型为constShape*)参数接收arrayOfShapes数组中存放的地址。每次执行virtualViaPointer时，调用下列4个虚函数：</p>
+  <pre class="code">baseClassPtr->printShapeName()
+baseClassPtr->print()
+baseClassPtr->area()
+baseClassPtr->Volume()</pre>
+  <p> 这些调用方法对执行时baseClassPtr所指的对象调用一个虚函数，对象类型无法在编译时确定。输出中显示了对每个类调用的相应函数。首先，辅出字符串“Point:”和相应的point对象，面积和体积的计算结果都是0.00。然后，输出字符串“Circle:”和circle对象的圆心及半径，程序计算出了对象circle的面积，返回体积值为0.00。最后，输出字符串“Cylinder:”以及相应的cylinder对象的底面圆心、半径和高，程序计算出了对象cylinder的面积和体积。所有调用函数printShapeName、print、area以及volume的虚函数都是在运行时用动态关联解决的。</p>
+  <p> 最后用for结构(第202行遍历arrayOfShapes数组，并对每个数组元素调用函数virtualViaReference</p>
+  <p> (第203行)：</p>
+  <p> virtualViaReference(*arrayofShapes[ j ])；</p>
+  <p> 函数virtualViaReference用baseClassRef(类型为constShape&amp;)参数接收对arrayOfShapes数组中存放的地址的引用(通过复引用)。每次执行virtualViaReference时，调用下列4个虚函数：</p>
+  <pre class="code">baseClassRef.printShapeName()
+baseClassRef.print()
+baseClassRef.area()
+baseClassRef.volume()</pre>
+  <p> 这些调用方法对执行时baseClassRef所指的对象调用上述函数。输出中使用基类引用与使用基类指针时产生的结果是相同的。 </p>
+  <div class="rpindex"><a href="84.html"> 下一页</a><a href="82.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

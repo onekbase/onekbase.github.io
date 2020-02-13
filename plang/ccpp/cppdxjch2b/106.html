@@ -1,0 +1,297 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="105.html"> 上一页</a><a href="107.html"> 下一页</a></div>
+  <h2>13．12 
+    构造函数、析构函数与异常处理  </h2>
+  <p> 首先要处理前面已经提到但还没有完全解决的问题。构造函数中发现错误时会发生什么情况 
+    例如，String构造函数在new失败和无法取得保持String的内部表示所需空间时如何响应 
+    问题是构造函数无法返回数值，如何让外部知道对象没有顺利构造呢，一种方案是返回没有正确构造的对象，希望对象使用者通过相应测试确定该对象是不能使用的对象。另一种方案是在构造函数之外设置一些变量。抛出的异常向外部传递失败的构造函数信息．并负责处理这个故障。</p>
+  <p>要捕获异常，异常处理器要访问所抛出对象的复制构造函数(默认成员的副本也有效)。 </p>
+  <p>构造函数中抛出异常时，对抛出异常之前要构造的对象调用析构函数。 </p>
+  <p>抛出异常之前每个try块中构造的自动对象都调用析构函数。异常在开始执行处理器时处理，这时堆栈解退一定已经完成。如果堆栈解退调用析构函数而抛出异常，则调用terminate。如果对象有成员函数．且如果异常在外层对象构造完成之前抛出，则执行发生异常之前所构造成员对象的析构函数。如果发生异常时部分构造了对象数组，则只调用已构造数组元素的析构函数。 </p>
+  <p>异常可能越过通常释放资源的代码，从而造成资源泄漏。要解决这个问题，一种方法是在请求资源时初始化一个局部对象，发生异常时，调用析构函数井释放资源。 </p>
+  <p>要捕获析构函数中抛出的异常，可以将调用析构函数的函数放在try块中，并提供相应类型的catch处理器。所抛出对象的析构函数在异常处理器执行完毕之后执行。 </p>
+  <h2> <a name="13.13" id="13.13"></a>13．13 
+    异常与继承</h2>
+  <p>可以从共用基类派生各种异常类。如果catch捕获基类类型异常对象的指针或引用，则也可以捕获该基类所派生的异常对象的指针或引用。这样允许相关错误的多态处理。 </p>
+  <h5>调试与调试提示13．2 </h5>
+  <p>利用异常继承使异常处理器可以用相当简单的符号捕获相关错误。虽然可以捕获每个派生类异常对象的指针或引用，但更简练的方法是捕获基类异常对象的指针或引用，另外．如果程序员忘记测试一个或几个派生类指针或引用，则捕获每个派生类异常对象的指针或引用容易造成错误。 </p>
+  <h2> <a name="13.14" id="13.14"></a>13．14 
+    处理new故障</h2>
+  <p>处理new故障的方法有多种。到目前为止．我们介绍过用宏assert测试new返回的值。如果返回值为0，则assert宏终止程序。这不是处理new故障的健壮机制，它不允许我们用任何方法从故障恢复。ANSI/ISO   C++草案标准指定，出现new故障时抛出bad_alloc异常(在头文件  &lt;new&gt;中定义)。但许多编译器目前还不支持草案标准，仍然在new故障时返回0。本节介绍三个new故障的例子。第一个例子用Microsoft的Visual   C++5.0编译，仍然在new故障时返回0。第二和第三个例子用Metrowerks Code Warrior Professional   Releasel中的C++编译器编译，出现new故障时，它抛出bad_alloc异常。我们在不同的运行Windows95的计其机上测试三个程序，每台机器的内存和硬盘空间各不相同。</p>
+  <p>图13．4演示了new请求分配内存失败时返回0。第10行的for结构循环10次，每次循环分配5000000个double值的数组(即40000000字节，因为double通常为8个字节)。第13行的if结构测试每次new操作中是否顺利分配内存。如果new请求内存失败并返回0，则打印”Memory   allocation failed
+    ”消息，循环终止。 </p>
+    <pre class="code"> // Fig. 13.4: fig13_04.cpp
+ // Demonstrating new returning 0
+ // when memory is not allocated
+ #include &lt;iostream.h&gt;
+ int main()
+ {
+   double *ptr[ 10 ];
+  for (int i = 0; i < 10; i++ ) {
+     ptr[ i] = new double[ 5000000 ];
+     if ( ptr[ i ] == 0 ) { // new failed to allocate memory
+        cout << "Memory allocation failed for ptr[ "
+             << i << "]\n";
+        break;
+     }
+     else
+      cout << "Allocated 5000000 doubles in ptr[ "
+           << i << "]\n";
+   }
+  return 0;
+ }
+</pre>
+     
+  <h5>输出结果:</h5>
+  <pre>Allocated 5000000 doubles in ptr[ 0 ]
+Allocated 5000000 doubles in ptr[ 1 ]
+Memory allocation failed for ptr[ 2 ]</pre>
+  <h5>图 13.4 new 请求内存失败时返回 0 </h5>
+  <p>输出表示new失败和循环终止之前只进行了两欠循环。不同系统中的输出可能不同，取决于实际内存和可用的虚拟内存的磁盘空间。 </p>
+  <p>图13.5演示了new请求内存失败时返回bad_alloc。第12行的for结构循环0次，每次循环分配5 000 000个double值的数组(即40 000   000字节，因为double通常为8个字节)。如果new失败并抛出bad_alloc异常，则终止循环，程序继续第18行的异常处理泫程捕获和处理异常，打印  &quot;Exception   occurred&quot;消息，然后exception what()返回异常特定消息的字符串(对于bad_alloc为&quot;Alloccation   Failure&quot;)。输出表示new失败和抛出bad_alloc异常之前只进行了三次循环。不同系统中的输出可能不同，取决于实际内存和可用的虚拟内存的磁盘空间。</p>
+  <pre class="code">// Fig. 13.5: fig13_05.cpp
+ // Demonstrating new throwing bad alloc
+ // when memory is not allocated
+ #include &lt;iostream&gt;
+ #include &lt;new&gt;
+ int main()
+ {
+   double *ptr[ 10 ];
+   try {
+       for( int i = 0; i < 10; i++ ) {
+         ptr[ i ] = new double[ 5000000 ];
+         cout << "Allocated 5000000 doubles in ptr[ "
+             << i << " ]\n";
+       }
+   }
+   catch ( bad_alloc exception ) {
+     cout << "Exception occurred:"
+         << exception.what() << endl;
+   }
+   return 0;
+ }
+</pre>
+  <h5>输出结果:</h5>
+      <pre>Allocated 5000000 doubles in ptr[ 0 ]
+Allocated 5000000 doubles in ptr[ 1 ]
+Allocated 5000000 doubles in ptr[ 2 ]
+Exception occurred: Allocation Failure</pre>
+      <h5>图 13.5 new请求内存失败时返回   bad_alloc </h5>
+  <p>编译器对new故障处理的方法各不相同。一般情况下，许多当前的和原来的C++编译器在new失败时默认返回0。有些编译器在包括头文件  &lt;new&gt;&lt;或&lt;new.h，)时支持抛出异常。有些编译器(如Code   Warrior Professional Release   1)不管是否包括头文件&lt;new&gt;默认抛出bad_alloc。详见编译器文档中关于编译器对new故障处理方法的说明。</p>
+  <p>ANSI/SO   C++草案标准指定标准支持的编译器在new失败时仍然可以用返回0的版本。为此，头文件  &lt;new&gt;定义类型nothrow，使用如下：</p>
+  double‘*ptr = new(nothrow)double[5000000]； </pre>
+  <p>上述语句表示用不支持抛出bad_alloc异常的new版本(即nothrow)分配5000000个double值的数组。 </p>
+  <h5>软件工程视点13. 11 </h5>
+  <p>为了使程序更健壮，ANSI/ISO   c++草案标准建议程序员应使用抛出bad_alloc异常的new版本。 </p>
+  <p>还可以用其他特性进行new故障处理。函数set_new_handler(原型在头文件  &lt;new&gt;或&lt;new．h&gt;中)取一个函数指针作为参数，所指函数不取参数并返回void。函数指针注册为new失败时要调用的函数。这样就向程序员提供了处理每个new故障的一致方法，而不管故障发生在程序中哪个地方。</p>
+  <p>程序中用set_new_handler注册new处理器之后，new不会在故障时抛出bad_alloc。 </p>
+  <p>new运算符实际上是一个循环，请求所要的内存。如果内存分配成功，则new返回该内存的指针。如果内存分配失败，且没有用set_new_handler注册new处理器函数，则new抛出bad_alloc异常。如果new无法分配内存而注册了new处理器函数，则调用new处理器函数。C++草案标准指定new处理器函数应完成下列任务： </p>
+  <p>1．通过删除其他动态分配内存以获得更多的内存空间，然后返回new运算符中的循环，试图再次分配内存。 </p>
+  <p>2．抛出bad_alloc类型的异常。 </p>
+  <p>3．调用函数abort或exit(都在  &lt;csdtlib&gt;或&lt;stdlib.h，头文件中定义)终止程序。</p>
+  <p>图13．6的程序演示set_new_handler。函数customNewHandler只是打印错误消息和调用abort终止程序。输出显示new失败和抛出bad_alloc异常之前循环进行了三次迭代。不同系统中的输出可能不同，取决于实际内存和可用的虚拟内存的磁盘空间。 </p>
+  
+  <pre class="code"> // rig．13．6：fig13_06.cpp
+ // Demonstrating set_new_handler
+ #include &lt;iostream.h&gt;
+ #include &lt;new.h&gt;
+ #include &lt;stdlib.h&gt;
+ void customNewHandler()
+ {
+   cerr << "customNewHandler was called";
+   abort();
+ }
+ int main()
+ {
+   double * ptr[ 10 ];
+   setnewhandler(customNewHandler);
+   for ( int i = 0; i < 10; i++ ) {
+     ptr[ i ]   new double[ 5000000 ];
+         cout << "Allocated 5000000 doubles in ptr[ "
+         << i << "]\n";
+   }
+   return 0;
+ }
+</pre>
+  <h5>输出结果:</h5>
+  <pre>Allocated 5000000 doubles in ptr[ 0 ]
+Allocated 5000000 doubles in ptr[ 1 ]
+Allocated 5000000 doubles in ptr[ 2 ]
+CustomNewHandler was called</pre>
+  <h5>图 13.6   演示set_new_handler  </h5>
+   
+  
+<div class="rpindex"><a href="107.html"> 下一页</a><a href="105.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

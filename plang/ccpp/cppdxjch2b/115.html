@@ -1,0 +1,383 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="114.html"> 上一页</a><a href="116.html"> 下一页</a></div>
+  <h2>14．11   实例研究：事务处理程序
+    </p>
+  </h2>
+  <p> 下面介绍一个有实际意义的使用随机访问文件的事务处理程序。该程序维护银行的账目信息。</p>
+  <p> 程序能够更新、添加和删除账号，并且能够把所有当前账号的格式化清单存储在一个用于打印的文本文件中。我们假定已经通过执行图14.11中的程序建立了文件eredit.dat，并用图14.12的程序插入了初始值。</p>
+  <p> 程序有五个选项(第5个选项终止程序)。选项1调用函数textFile把所有的格式化的账号存储在文本文件print.txt中(以后可能要打印这个文件)。函数textFile取一个fstream对象作为参数，用于从eredit.dat文件输入数据。函数textFile用istream成员函数read和图14.14介绍的顺序文件访问方法从credit．dat输入数据。使用14.10节讨论的函数outputLine将数据输出到print．txt文件。注意textFile用istream成员函数seek保证文件位置指针在文件开头。选择了选项1后，文件accounts．txt中包含如下内容： </p>
+  <pre>Account    Last Name   First Name    Balance
+29         Brown       Nancy         -24.54
+33         Dunn        Stacey        314.33
+37         Barker      Doug            0.00
+88         Smith       Dave          258.34
+96         Stone       Sam            34.98</pre>
+  <p> 选项2调用函数updateRecord更新账号。该函数只更新已存在的记录，所以函数首先检查用户指定的记录是否为空。用istream成员函数read把记录读到结构client中，然后把成员clientaccountNumber与0比较。如果client．accountNumber为0，说明该条记录中不包含信息，因此打印出说明该记录为空的消息，然后再显示出选项菜单。如果记录中包含信息，函数utxlateR~rd用函数outputLine在屏上显示记录，并输入事务金额、计算新的结算结果以及把记录重写到文件中。选项2的典型输出如下所示． </p>
+  <pre>Enter account to update (1 - 100): 37
+37        Barker     Doug           0.00
+Enter charge (+) or payment (-): +87.99</pre>
+  <p> 选项3调用函数newRecord把新的账号添加到文件中。如果用户键人了一个已有的账号，函数newReeord显示出说明该账号已存在的消息，并再次显示出选项菜单。函数添加新记录的过程与图14．12中的程序所用的方法相同。选项3的典型输出如下所示： </p>
+  <pre>Enter new account number(1 - 100): 22
+Enter lastname, firstname, balance
+? Johnston Sarah 247.45
+</pre>
+  <p> 选项4调用函数deleteRecord删除文件中的一条记录。提示用户输入账号，只能删除已存在的记录，如果该账号的记录为空，函数显示出账号不存在的错误消息。如果存在该账号，通过将空记录(blankClient)复制到文件中重新初始化该记录。删除记录时会显示一个消息。选项4的典型输出如下所示： </p>
+  <pre>Enter account to delete(1 - 100): 29
+Account #29 deleted.
+</pre>
+  <p> 打开&quot;credit dat&quot;   文件时，要用ios::和ios::out的或操作生成fstream对象以便读写。</p>
+  <pre class="code">
+ // Fig. 14.15: figl4_15.cpp
+ // This program reads a random access file sequentially,
+ // updates data already written to the file, creates new
+ // data to be placed in the file, and deletes data
+ // already in the file.
+ #include &lt;iostream.h&gt;<br /> #include &lt;fstream.b&gt;<br /> #include &lt;iomanip.h&gt;<br /> #include &lt;stdlib.h&gt;
+ #include "clntdata.h"
+ int enterChoice();
+ void textFile( fstream& );
+ void updateRecord( fstream& );
+ void newRecord( fstream& );
+ void deleteRecord( fstream& );
+ void outputLine( ostream&, const clientData & );
+ int getAccount( const char * );
+ enum Choices { TEXTFILE = 1, UPDATE, NEW, DELETE, END } ;
+ int main()
+ {
+   fstream inOutCredit( "credit.dat", ios::in | ios::out );
+   if ( !inOutCredit ) {
+     cerr << "File could not be opened." << endl;
+     exit ( 1 );
+   }
+   int choice;
+ while ( ( choice = enetrChoice() ) != END){
+     switch ( choice ) {
+       case TEXTFILE:
+          textFile( inOutCredit );
+          break;
+       case UPDATE:
+          updateReeord( inOutCredit );
+          break;
+       case NEW:
+          newRecord( inOutCredit );
+          break;
+       case DELETE:
+          deleteRecord( inOutCredit );
+          break;
+       default:
+          cerr << "Incorrect cholce\n";
+          break;
+     }
+     inOutCredit.clear();  // resets end-of-file indicator
+     }
+   return 0;
+ }
+ // Prompt for and input menu choice
+ int enterChoice()
+ {
+     cout << "\nEnter your choice" << endl
+          << "i - store a formatted text file of accounts\n"
+          << "   called \"print.txt\" for printing\n"
+          << "2 - update an account\n"
+          << "3 - add a new account\n"
+          << "4 - delete an account\n"
+          << "5 - end program\n? ";
+     int menuChoice;
+     cin >> menuChoice;
+     return menuChoice;
+ }
+ // Create formatted text file for printing
+ void textFile( fstream &readFromFile )
+ {
+   ofstream outPrintFile( "print.txt", ios::out );
+   if ( !outPrintFile ) {
+     cerr << "File could not be opened." << endl;
+     exit( 1 );
+     }
+   outPrintFile << setiosflags( ios::left ) << setw( 10 )
+      << "Account" << setw( 16 ) << "Last Name" << setw( 11 )
+      << "First Name" << resetiosflags( ios::left )
+      << setw( 10 ) << "Balance" << endl;
+   readFromFile.seekg(0);
+   clientData client;
+   readFromFile.read( reinterpret_cast<char *>( &client ),
+                                        sizeof( clientData ) );
+   while (!readFromFile.eof() ) {
+     if ( client.accountNumber != O )
+        outputLine( outPrintFile, client );
+     readFromFile.read( reinterpret_cast<char *>( &client ),
+                     sizeof( clientData ) );
+   }
+ }
+ // Update an account's balance
+ void updateRecord( fstream &updateFile )
+ {
+   int account = getAccount( "Enter account to update" );
+   updateFile.seekg( ( account - I ) * sizeof( clientData ) );
+   clientData client;
+   updateFile.read( reinterpret_cast<char *>( &client ),
+                 sizeof( clientData ) );
+   if ( client.accountNumber != 0 ) {
+     outputLine( cout, client );
+     cout << "\nEnter charge (+) or payment (-): ";
+     float transaction;   // charge or payment
+     cin >> transaction;  // should validate
+     client.balance += transaction;
+     outputLine( cout, client );
+     updateFile.seekp((account-1) * sizeof(clientData));
+     updateFile.write(
+        reinterpret cast<const char *>( &client ),
+        sizeof( clientData ) );
+   }
+    else
+      cerr << "Account #" << account
+           << " has no information." << endl;
+ }
+ // Create and insert new record
+ void newRecord( fstream &insertInFile )
+ {
+   int account = getAccount( "Enter new account number" );
+   insertInFile.seekg( ( account-1 ) * sizeof( clientData  );
+   clientData client;
+   insertInFile.read( reinterpret cast<char *>( &client ),
+                  sizeof( clientData ) );
+    if ( client.accountNumber == 0 ) {
+       cout << "Enter lastname, firstname, balance\n? ";
+       cin >> client.lastName >> client.firstName
+                              >> client.balance;
+       client.accountNumber = account;
+       insertInFile.seekp( ( account - 1) *
+                             sizeof( clientData ) );
+       insertInFile.write(
+                             reinterpret_cast<const char *>( &client ),
+                             sizeof( clientData ) );
+    }
+    else
+       cerr << "Account #" << account 
+            << " already contains information." << endl;
+ }
+ // Delete an existing record         
+ void deleteRecord( fstream &deleteFromFile )
+ {
+   int account = getAccount( "Enter account to delete" );
+   deleteFromFile.seekg((account-1) * sizeof( clientData ) );
+   clientData client;
+   deleteFromFile.read( reinterpret_cast<char *> &client ),
+                    sizeof( clientData ) );
+   if ( client.accountNumber != 0 ) {
+     clientData blankClient = { 0, "", "", 0.0 };
+     deleteFromFile.seekp( ( account - 1) *
+                       sizeof( clientData ) );
+     deleteFromFile.write(
+        reinterpret cast<const char *>( &blankClient ),
+        sizeof( clientData ) );
+     cout << "Account #" << account << " deleted." << endl;
+   }
+   else
+     cerr << "Account #" << account << " is empty." << endl;
+ }
+ // output a line of client infomation
+ void outputLine( ostream &output, const clientData &c )
+ {
+   output << setiosflags( ios::left ) << setw( 10 )
+          << c.accountNumber << setw( 16 ) << c.lastName
+          << setw( 11 } << c.firstNeme << setw( 10 )
+          << setprecision( 2 ) << resetiosflags( ios::left )
+          << setiosflags( ios::fixed | ios::showpoint )
+          << c.balance << '\n';
+ }
+ // Get an account number from the keyboard
+ int getAccount( const char *prompt )
+ {
+   int account;
+   do {
+     cout << prompt << " (1 - 1oo): ";
+     cin >> account;
+   } while ( account < 1 || account > 100 );
+ return account;
+ }
+</pre>
+  <p>图14.15 银行账目程序    </p>
+  </p>
+  <h2> <a name="14.12" id="14.12"></a>14．12   对象的输入／输出
+    </p>
+  </h2>
+  <p> 本章和第11章介绍C++的面向对象式的输入，输出。但我们的例子主要考虑传统数据类型的I／O而不是用户自定义类对象的I／O。第8章介绍了如何用运算符重载输入与输出类对象。我们通过对相应的istream重载流读取运算符&gt;&gt;进行对象输入，通过对相应的ostream重载流插入运算符&lt;&lt;进行对象输出。两种情况下都只输入和输出对象的数据成员，而且都是对特定的抽象数据类型对象有意义的方式进行。对象成员函数在计箅机内部提供，在数据输入时通过重载流插入运算符而与数据值组合。</p>
+  <p> 对象的数据成员输出到磁盘文件时，就会丢失对象的类型信息。我们存盘的只有数据，而没有类型信息。如果读取这个数据的程序知道其对应的对象类型，则数据读取到该类型的对象。 </p>
+  <p> 如果同一文件中存放不同类型的对象，则会发生有趣的问题，如何在读取到程序中时区分它们(或其数据成员集合)呢当然，问题在于对象通常没有类型域(见第10章“虚函数和多态性”中的介绍)。 </p>
+  <p> 一个方法是让每个重载的输出运算符输出类型代码，放在表示一个对象的数据成员集合前面。 </p>
+  <p> 然后对象输人总是以读取类型代码域开头，并用switch语句调用相应的重载函数。尽管这个方法没有多态编程那么巧妙，但提供了在文件中保持对象并在需要时读取的机制。 </p>
+  <div class="rpindex"><a href="116.html"> 下一页</a><a href="114.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

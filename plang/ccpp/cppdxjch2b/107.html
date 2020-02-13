@@ -1,0 +1,245 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="106.html"> 上一页</a><a href="108.html"> 下一页</a></div>
+  
+  <h2>13．15   auto_ptr类与动态内存分配 </h2>
+  <p> 一个常见的编程习惯是在空闲存储区中动态分配内存(可能是对象)，将该内存的地址赋给一个指针，使用这个指针操作内存，并在该内存不再需要时用delete释放内存。如果内存分配之后和执行delete语句之前发生异常，则可能发生内存泄漏。ANSI／ISO   C++草案标准提供&lt;memory&gt;头文件中的auto_ptr类模板，可以解决这个问题。</p>
+  <p>auto_ptr类对象维护动态分配内存的指针。当auto_ptr对象超出范围时，对指针数据成员进行一个delete操作。auto_ptr类模板提供了+和-  &gt;运算符．因此auto_ptr对象可以像普通指针变量一样使用。图13.7演示auto_ptr对象指向Integer类对象(在第8行到第18行定义)。</p>
+  <pre class="code">// Fig. 13.7: fig13_07.cpp
+ // Demonstrating auto_ptr
+ #include &lt;iostream&gt;
+ #include &lt;memory&gt;
+ using namespace std;
+ class Integer {
+ public:
+   Integer( int i = 0 ) : value( i )
+     {cout << "Constructor for Integer " << value << endl; }
+   ~Integer()
+     {cout << "Destructor for Integer " << value << endl; }
+   void setInteger( int i ) { value = i; }
+   int getInteger() const { return value; }
+ private:
+   int value;
+ };
+ int main()
+ {
+   cout << "Creating an auto_ptr object that points "
+       << "to an Integer\n";
+   auto_ptr< Integer > ptrToInteger( new Integer( 7 ) );
+   cout << "using the auto_ptr to manipulate the Integer\n";
+   ptrToInteger->setInteger( 99 );
+   cout << "Integer after setInteger: "
+       << ( *ptrToInteger ).getInteger()
+       << "\nTerminating program" << endl;
+   return 0;
+ }
+</pre>
+  <h5> 输出结果：</h5>
+  <pre>Creating an auto_ptr object that points to an Integer
+Constructor for Integer 7
+Using the auto_ptr to manipulate the Integer
+Integer after setInteger: 99
+Terminating program
+Destruct for Integer 99</pre>
+  <h5>图 13．7演示auto_ptr</h5>
+  <p>
+  第25行： auto_ptr&lt;Integer&gt; ptrToInteger(new   Integer(7 ));</pre>
+  <p> 生成aut_ptr对象ptrToInteger并用动态分配Inleger对象的指针(包含数值7)初始化。</p>
+  <p>第28行： </p>
+  ptrToInteger-  &gt;setInteger(99)；</pre>
+  <p> 用auto_ptr重载-&gt;运算符和函数调用运算符()调用ptrToInteger所指Integer对象的setInteger函数。</p>
+  <p>第30行： </p>
+  (*ptrToInteger)．getInteger() </pre>
+  <p> 用auto_ptr重载*运算符复引用ptrToInteger，然后用圆点运算符和函数调用运算符()调用ptrTolmeger所指Integer对象的getInteger函数。</p>
+  由于ptrToInteger是main中的局部自动变量，因此main终止时删除ptrToInteger。这样就强制删除ptrToInteger所指的Integer对象，从而强制调用Integer类的析构函数。更重要的是这个方法可以防止内存泄漏。
+  </p>
+  <h2><a name="13.16" id="13.16"></a>13．16 标准库异常层次  </h2>
+  <p> 经验表明，异常是可以分类的。C++草案标准提供了标准库异常层次。这个层次以基类excephon开始(在头文件&lt;exception&gt;中定义)，该基类提供服务what()，在每个派生类中重定义，发出相应的错误消息。</p>
+  <p>从基类exception可以派生直接派生类runtime_error和Iogic_error(都在头文件  &lt;stdexcept&gt;中定义)，每个派生类又可以派生其他类。</p>
+  <p>从exception中还可以派生由于C++语言特性而抛出的异常，例如，new抛出bad_alloc(13.14节)．dynamic_cast抛出bad_cast(第2l章)，typeid抛出bad_typeid(第21章)。如果发生意外异常时，通过在函数的抛出表中加上std::bad_exeeption，unexpected()抛出bad_exception而不是(默认)终止程序或调用set_unexpected指定的另一函数。 </p>
+  <p>logic_error类是几个标准异常类的基类，表示程序逻辑中的错误，可以通过编写正确的代码来防止。下面介绍其中的一些类。invalid_argument类表示向函数传入无效参数(可以通过编写正确的代码来防止)。length_error类表示长度大于所操作对象允许的最大长度(第19章处理string时会抛出length_error异常)。out_of_range类表示数组和string下标之粪的值超界。 </p>
+  <p>runtime_error类是几个其他异常类的基类，表示程序中只能在执行时发现的错误。overflow_error类表示发生运算上溢错误；underflow_error类表示发生运算下溢错误。 </p>
+  <h5>软件工程视点13.12 </h5>
+  <p>标准exception层次只是一个起点．用户可“抛出标准异常、抛出从标准异常派生的异常或抛出不是从标准异常派生的异常。 </p>
+  <h5>常见编程错误13.14 </h5>
+  <p>用户自定义异常类不一定从exception类派生。 
+    因此catch(exception并井不保证捕获程序可能遇到的各种异常。 </p>
+  <h5>测试与调试提示13. 3 </h5>
+  要捕获try块可能抛出的所有异常，用catch(...)。
+  </p>
+  &nbsp;</p>
+   
+  
+<div class="rpindex"><a href="108.html"> 下一页</a><a href="106.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

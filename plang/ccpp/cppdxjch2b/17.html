@@ -1,0 +1,572 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <p>
+  <div class="lpindex"><a href="index.html">首页</a><a href="16.html"> 上一页</a><a href="18.html"> 下一页</a></div>
+  <h2>2.14 for重复结构</h2>
+  <p> for重复结构处理计数器控制循环的所有细节。要演示for的功能，可以改写图2.16的程序，结果如图2．17。</p>
+  <p>执行for重复结构时，声明控制变量counter并将其初始化为1。然后检查循环条件counter  &lt;=10。由于counter的初始值为1，因此条件满足，打印Counter的值(1)。然后在表达式Counter++中递增控制变量counter，再次进行循环和测试循环条件。由于这时控制变量等于2，没有超过最后值，因此程序再次执行语句体。这个过程一直继续，直到控制变量counter递增到11，使循环条件的测试失败，重复终止。程序继续执行for结构后面的第一条语句(这里是程序末尾的return浯句)。</p>
+  <pre class="code">// Fig. 2.17:fig02 17.cpp
+// Counter-controlled repetition with the for structure
+#include < iostream.h>
+int main()
+{
+	// Initialization, repetition condition, and incrementing
+	// are all included in the for structure header.
+	for ( iht counter = 1; counter <= 10; counter++ )
+	cout << counter << endl;
+	return O;
+}
+</pre>
+  <h5>图   2.17   用for结构的计数器控制重复 </h5>
+  <p> 图2.18更进一步研究了图2.17中的for结构。注意for结构指定计数器控制重复所需的每个项目。如果for结构体中有多条语句，则应把语句体放在花括号中。</p>
+  <p>注意图2.17用循环条件counter  &lt;=10。如果循环条件变为counter&lt;lO，则循环只执行9次，这种常见的逻辑错误称为差1错误。</p>
+  <pre class="code">              for
+               关键字   控制变量名           控制变量终值
+                 ↓         ↓                     ↓
+                for ( int counter = 1; counter <= 10; counter++)
+                                       -------------
+                                    ↑          ↑           ↑
+                            控制变量初始化   循环条件     控制变量递增
+
+                                   图 2.18 典型for首部的组件</pre>
+  <h5>常见编程错误2.13 </h5>
+  <p>while或for条件中使用不正确的关系运算符和不正确的循环计数器终值会导致差1的错误。 </p>
+  <h5>编程技巧2.20 </h5>
+  <p>在while或for条件中使用终值和用关系运算符  &lt;=可以避免差1的错误。例如，对打印1到10的循环，循环条件应为counter&lt;=10而不是counter&lt;10(导致差1错误)或counter(虽然正确)。许多程序员喜欢基于O的计数，在循环中重复10次．courter初姑化为O，循环条件测试为counter&lt;10。</p>
+  <p>for结构的一般格式如下： </p>
+  <pre class="code">for(expression1；expression2；expression3) 
+        statement  </pre>
+  <p> 其中expression1初始化循环控制变量的值，expression2是循环条件，expression3递增控制变量。大</p>
+  <p> 多数情况下，for结构可以表示为等价的while结构：</p>
+  <pre class="code">  expression1
+    while(expression2){
+        statement
+        expression3；
+    }</pre>
+  <p> 惟一的例外将在2.18节介绍。</p>
+  <p>如果for结构首部中的expression1(初始化部分)定义控制变量(即控制变量类型在变量名前  面指定)．则该控制变量只能在for结构体中使用，即控制变量值是for结构之外所未知的。这种限制控制变量名的用法称为变量的作用域(scope)。变量的作用域定义其在程序中的使用范围。作用域将在第3章“函数”中介绍。</p>
+  <h5>常见编程错误2.14 </h5>
+  <p>如果for结构首部中的初始化部分定义控制变量，则在该结构体之后使用这个控制变量是个语法错误。 </p>
+  <h5>可移植性提示2.1 </h5>
+  <p>在新的C++草案标准中，for结构初始化部分声明的控制变量范围与旧式的C++编译器中不同。旧式的c++编译器产生的C++代码在支持新的C++草案标准妁编译器中编译时可能遭到破坏。可以用两个编工程策略防止这个问题：在每个for结构中定义不同名称的控制变量或者在多个for结构中定义相同名称的控制变量，并在第一个for循环之外和之前定义控制变量。 </p>
+  <p>有时，exprossion1和expression3是由逗号分开的表达式列表。这里用逗号作为逗号运算符(comma   operator)，保证从左向右求值表达式列表。逗号运算符在所有C++运算符中的优先级量低。逗号分隔表达式列表的值和类型是列表中最右边表达式的值和类型。逗号运算符最常用于for结构，其主要用途是让程序员使用多个初始化表达式或多个递增表达式。例如，一个for结构中可能有多个控制变量需要初始化和递增。 </p>
+  <h5>编程技巧2.21 </h5>
+  <p>只把涉及控制变量的表达式放在for结构的初始化和递增部分。其他变量的操作应放在循环之前(如果像初初化语句一样只执行一次)或循环体中(如果对每个循环环执行一次，如递增和递减语句)。 </p>
+  <p>for结构中的三个表达式是可选的。如果省略expression2，则C++假设循环条件为真，从而生成无限循环。如果程序其他地方初始化控制变量，则可以省略expression1。如果for语句体中的语句计算增量或不需要增量，则可以省略expression3。for结构中的增量表达式就像是for语句体末尾的独立语句。因此，下列表达式：</p>
+  <p>在for结构的递增部分都是等价的。许多程序员喜欢counter++，因为递增在执行循环体之后发生，因此，后置自增形式似乎更自然。由于这里递增的变量没有出现在表达式中，因此前置自增与后置自增的效果相同。for结构首部中的两个分号是必需的。 </p>
+  <h5>常见编程错误2.15</h5>
+  <p> for结构首部中的两个分号改成逗号会造成语法错误。</p>
+  <h5>常见编程错误2.16 </h5>
+  <p>将分号放在for结构首部的右括号后面令使该for结构体变为空语句．通常是个逻辑错误。 </p>
+  <h5>软件工程视点2.9 </h5>
+  <p>将分号放在紧接着for结构首部的后面有时可以生成所谓的延迟循环。这种for的循环体是空语句，表示计算空循环的次数。例如，可以用空循环减慢程序速度，以避免其在屏幕上输出太快，无法阅读。 </p>
+  <p>for结构的初始化、循环条件和递增部分可以用算术表达式。例如，假设x=2和y=10，如果x和y的值在循环体中不被修改，则下列语句： </p>
+  <pre class="code">for   (int j= x； j   &lt;= 4* x* y； j += y/ x )</pre>
+  <p> 等于下列语句：</p>
+  <pre class="code">for(int   j=2；j  &lt;=80；j+=5)</pre>
+  <p>for结构的增量也可能是负数(实际上是递减，循环向下计数)。 </p>
+  <p>如果循环条件最初为false，则for结构体不执行，执行for后面的语句。for结构中经常打印控制变量或用控制变量进行计算，控制变量常用于控制重复而不在for结构体中提及这些控制变量。</p>
+  <h5>编程技巧2.22 </h5>
+  <p>尽管控制变量值可以在for循环体中改变，但最好不要这样做，固为这样可能造成一定的逻辑错误。 </p>
+  <p>for结构的流程图与while结构相似。例如，图2.19显示了下列for语句的流程图： </p>
+  <pre class="code">for(int counter=l；counter >=10；counter++)
+cout << counter<< endl；</pre>
+  <p>从这个流程图可以看出初始化发生一次，井在每次执行结构体语句之后递增。注意，流程图(除了小圆框和流程之外)也只能包含表示操作的矩形框和表示判断的菱形框。这是我们强调的操作/判断编程模型。程序员的任务就是根据算法使用堆栈和嵌套两种方法组合其他几种控制结构，然后在这些框中填入算法所要的操作和判断，从而生成程序。</p>
+  <h2><a name="2.15" id="2.15"></a>2.15 for结构使用举例</h2>
+  <p> 下面的例子显示for结构中改变控制变量的方法。在每个例子中．我们都编写相应的for结构首部。注意循环中递减控制变量的关系运算符的改变。</p>
+  <p> a)将控制变量从1变到100，增量为1。</p>
+  <pre class="code">  for(int i=l;i&lt;=100；i++)</pre>
+  <p> b)将控制变量从100变到1，增量为-1。</p>
+  <pre class="code">  for(int i=100；i&gt;=1; i--)</pre>
+  <h5> 常见编程错误2.17</h5>
+  <p> 循环向下计数时如果循环条件中不使用正确的关系运算符(如在向下计算到1的循环中使用i&lt;=1)通常是个逻辑错误，会在程序运行时产生错误结果。</p>
+  <p> c)控制变量的变化范围为7到77。</p>
+  <pre class="code">  for(int i= 7；i &lt;= 77； i+= 7)</pre>
+  <p> d)控制变量的变化范围为20到2。</p>
+  <pre class="code">  for(int i=20；i&gt;=2；i-=2)</pre>
+  <p> c)按所示数列改变控制变量值：2、‘、8、11、14、17、20。</p>
+  <pre class="code">  for(int j=2；j&lt;=20；j+=3)</pre>
+  <p> f)按所示数列改变控制变量值：99、88、77、66、55、44、33、22、ll、O。</p>
+  <pre class="code">  for(int j=99； j&gt;=O；   j-=11)</pre>
+  <p> 下面两个例子提供for结构的简单应用。图2.20所示的程序用for结构求2到100的所有整数的总和。</p>
+  <p> 注意图2.20中for结构体可以用下列逗号运算符合并成for首部的右边部分：</p>
+  <pre class="code">for(int number = 2; // initialization
+
+number <= 100; // continuation condition
+sum += number, number += 2) // total and increment</pre>
+  <p> 初始化sum=0也可以合并到for的初始化部分。</p>
+  <pre class="code">f// Fig. 2.20: figO2_20.cpp
+// Summation with for
+#include < iostream.h>
+int main()
+{
+	int sum = O;
+	for (int number = 2; number <= 100; number += 2 )
+	sum += number;
+	cout << "Sum is "<< sum << endl;
+	return O;
+}
+</pre>
+  <p> 输出结果：</p>
+  <p> sum is 2550</p>
+  <p> 图2.20   用for语句求和</p>
+  <h5> 编程技巧2.23</h5>
+  <p> 尽管for前面的语句和for结构体的语句通常可以合并到for的首部中，但最好不要这么做，因为这样会使程序更难阅读。</p>
+  <h5> 编程技巧1.24</h5>
+  <p> 尽可能将控制结构首部的长度限制为一行。</p>
+  <p> 下列用for结构计算复利。考虑下列问题：</p>
+  <p> 一个人在银行存款1000.00美元，每利率为5%。假设所有利息留在账号中，则计算10年间每年年末的金额并打印出来。用下列公式求出金额：</p>
+  <pre class="code">  a=P(1+r)n</pre>
+  <p> 其中：</p>
+  <p> P是原存款(本金)</p>
+  <p> r是年利率</p>
+  <p> n是年数</p>
+  <p> a是年未本息</p>
+  <p> 这个问题要用一个循环对10年的存款进行计算。解答如图2.21</p>
+  <p> for结构执行循环体10次，将控制变量从1变到10，增量为1。C++中没有指数运算符，因此要用标准库函数pow。函数pow(x，y)计算x的y次方值。函数pow取两个类型为double的参数并返回double值。类型double与float相似，但double类型的变量能存放比float精度更大的数值。C++把常量(如图2.21中的1000.0和.05)当作double类型处理。</p>
+  <pre class="code">// Fig. 2.21: fig02_21.cpp
+// Calculating compound interest
+#include &lt;iostream.h&gt;<br />#include &lt;iomanip.h&gt;<br />#include &lt;math.h&gt;
+int main()
+{
+	double amount,           // amount on deposit
+	principal = 1000.0,  // starting principal
+	rate = .05;        // interest rate
+	cout << "Year" << setw( 21 )
+	<< "Amount on deposit" << endl;
+	for ( int year = 1; year <= 10; year++ ) {
+		amount = principal * pow{ 1.0 + rate, year );
+			cout << setw( 4 ) << year
+			<< setiosflags( ios::fixed I ios::showpoint )
+				<< setw( 21 ) << setprecision( 2 )
+				<< amount << endl;
+			}
+		}
+</pre>
+  <pre>输出结果：
+Year     Amount on  deposic
+1                  1050.00
+2                  1102.50
+3                  1157.62
+4                  1215.51
+5                  1276.28
+6                  1340.10
+7                  1407.10
+8                  1477.46
+9                  1551.33
+10                 1628.89 </pre>
+  <h5> 图 2.21   用for结构计算复利</h5>
+  <p> 这个程序必须包括math.h才能编译。函数pow要求两个double参数，注意year是个整数。math.h文件中的信息告诉编译器将year值转换为临时double类型之后再调用函数。这些信息放在pow的函数原型(function   prototype)中。第3章将介绍函数原型并总结pow函数和其他数学库函数。</p>
+  <h5> 常见编程错误1.18</h5>
+  <p> 程序中使用数学库函数而不包括math.h头文件是个语法错误。</p>
+  <p> 程序中将变量amount、principal和rate声明为double类型，这是为了简单起见，因为我们要涉及存款数额的小数部分，要采用数值中允许小数的类型。但是，这可能造成麻烦，下面简单介绍用float和double表示数值时可能出现的问题(假设打印时用setprecision(2))：机器中存放的两个float类型的值可能是14.234(打印14.23)和18.673(打印18.67)。这两个值相加时，内部和为32.907，打印32.91。结果输出如下：</p>
+  <pre>   14.23
+ + 18.67
+-----------
+   32.91</pre>
+  <p> 但这个加式的和应为32.90。</p>
+  <h5> 编程技巧2.25</h5>
+  <p> 不要用float和double表示一些货币值。浮点数是不精确的，可能导致错误，产生不准确的货币值。练习中将介绍用整数值进行货币计算。注意：c++类库可以用于正确地进行货币计算。</p>
+  <p> 输出语句：</p>
+  <pre class="code">cout<< setw(4)<< year
+    << setiosflags(10s：：fixed  los：：showpoint)
+    <<   setw(21) <<  setpreclsion(2)
+    <<   amount<< endl；</pre>
+  <p> 用参数化流操纵算于setw、setiosflags和setprecision指定的格式打印变量year和amount的值。调用selw(4)指定下一个值的输出域宽(field   width)为4，即至少用4个字符位置打印这个值。如果输出的值宽度少于4个字符位，则该值默认在输出域中右对齐(ishljustl^ed)，如果输出的值宽度大于4个字符，则该值将输出域宽扩大到能放下这个值为止。调用setiosflag(ios::left)可以指定输出的值为左对齐(1eft   justified)。</p>
+  <p> 上述输出中的其余格式表示变量amount打印成带小数点的定点值(用setiosflags(ios::fixed |   ios::showpoint)指定)，在输出域的21个字符位中右对齐(用setw(21)指定)，小数点后面为两位(用setprecision(2)指定)。我们将在第11章介绍C++强大的输入/输出格式功能。</p>
+  <p> 注意计算1.o+rate作为pow函数的参数，包含在for语句体中。事实上，这个计算产生的结果在每次循环时相同，因此是重复计算(是一种浪费)。</p>
+  <h5> 性能提示2.5</h5>
+  <p> 避免把不改变数值的表达式放在循环中。但即使把不改变数值的表达式放在循环中，如今的许多复杂优化编译器也全自动地把这种表达式放到循环之外，产生优化机器语言代码。</p>
+  <h5> 性能提示2.6</h5>
+  <p> 许多编译器中有优化特性，可以改进所写的代码，但最好一开始就编写优化的代码。为了增加趣味性，本章练习中提供了一个peter Minuit问题，演示了复利计算的精彩之处。 </p>
+  <h2><a name="2.16" id="2.16"></a>2.16   switch多项选择结构</h2>
+  <p> 前面介绍了if单项选择结构和if/else双项选择结构。有时算法中包含一系列判断，用一个变量或表达式测试每个可能的常量值，并相应采取不同操作。C++提供的switch多项选择结构可以进行这种判断。</p>
+  <p> switch结构包括一系列case标记和一个可选default情况。图2.22中的程序用switch计算学生考试的每一级人数。</p>
+  <pre class="code">// Fig. 2.22:fig02 22.cpp
+// Counting letter grades
+#include < iostream.h>
+int main()
+{
+int grade, // one grade
+aCount = 0, // number of A's
+bCount = 0, // number of B's
+cCount = O, // number of C's
+dCount = 0, // number of D's
+fCount = 0; // number of F's
+
+cout << "Enter the letter grades." << endl
+<< "Enter the EOF character to end input." << endl;
+
+while ( ( grade = cin.get() ) != EOF ) {
+
+switch ( grade ) { // switch nested in while
+
+case 'A': // grade was uppercase a
+case 'a': // or lowercase a
+++aCount;
+break; // necessary to exit switch
+
+case 'B': // grade was uppercase B
+case 'b': // or lowercase b
+++bCount;
+break;
+
+case 'C': // grade was uppercase C
+case 'c': // or lowercase c
+++cCount;
+break;
+
+case 'D': // grade was uppercase D
+case 'd': // or lowercase d
+++dCount;
+break;
+
+case 'F': // grade was uppercase F
+case 'f': // or lowercase f
+++fCount;
+break;
+
+case '\n': // ignore newlines,
+case '\t': // tabs,
+case ' ': // and spaces in input
+break;
+
+default: // catch all other characters
+cout << "Incorrect letter grade entered."
+
+<< "Enter a new grade." << endl;
+break; // optional
+}
+}
+cout << "\n\nTotals for each letter grade are:"
+"\nA: "<< aCount
+<< "\nB: " << bCount
+<< "\nC: "<< cCount
+<< "\nD: "<< dCount
+<< "\nF: "<< fCount << endl;
+
+return 0;
+}
+</pre>
+  <pre>输出结果：
+Enter the letter grades.
+Enter the EOF character to end input.
+A
+B
+C
+C
+A
+D
+F
+C
+E
+Incorrect letter grade entered. Enter a new grade.
+D
+A
+B
+Totals for each letter grade are:
+A: 3
+B: 2
+C: 3
+D: 2
+F: 1</pre>
+  <h5>图2.22 使用switch举例
+    </p>
+    <br />
+  </h5>
+  <p> 程序中，用户输入一个班代表成绩的字母。在while首部中：</p>
+  <pre class="code">while(   (grade=cin.get())   !=EOF)  </pre>
+  <p> 首先执行参数化赋值(grade=cin.get())。cin.get()函数从键盘读取一个字符，并将这个字符存放在整型变量grade中。cin.get()中使用的圆点符号将在第6章中介绍。字符通常存放在char类型的变量中，但是，C++的一个重要特性是可以用任何整数数据类型存放字符，因为它们在计算机中表示为1个字节的整数。这样，我们根据使用情况，可以把把字符当作整数或字符。例如，下列语句：</p>
+  <pre class="code">cout << "The character(" <<'a' << ") has the value "
+
+<< static_cast <int> ('a') << endl；</pre>
+  <p> 打印字符a及其整数值如下所示： </p>
+  <h5>The character (a) has the value   97 </h5>
+  <p> 整数97是计算机中该字符的数字表示。如今许多计算机都使用ASCII(AmericanStandardCodefor</p>
+  <p> lnformationInterehange，美国标准信息交换码)字符集(character   set)，其中97表示小写字母“a”。附录中列出了ASCII字符及其十进制值的列表。</p>
+  <p>赋值语句的整个值为等号左边变量指定的值。这样，赋值语句grade=cin.get()的值等于cin.get()返回的值，赋给变量grade。 </p>
+  <p>赋值语句可以用于同时初始化多个变量。例如： </p>
+  <p>a = b = c =   O； </p>
+  <p> 首先进行赋值c=o(因为：运算符从右向左结合)，然后将c=0的值赋给变量b(为0)，最后将b=(c=0)的值赋给变量a(也是0)。程序中，赋值语句grade=cin.get()的值与EOF值(表示文件结束的符号)比较。我们用EOF(通常取值为-1)作为标记值。用户输入一个系统识别的组合键，表示文件结束，没有更多要输入的数据。EOF是&lt;iostream.h&gt;头文件中定义的符号化整型常量。如果grade的取值为EOF，则程序终止。我们选择将这个程序中的字符表示为int，因为EOF取整数值(通常取值为-1)。</p>
+  <h5>可移植性提示2.2 </h5>
+  <p>表示文件结束的组合键与系统有关。 </p>
+  <h5>可移植性提示2.3 </h5>
+  <p>测试符号化常量EOF而不是测试-1能使程序更容易移植。ANSI标准要求EOF取负整数值，但不一定是-1。这样，EOF在不同系统中可能取不同的值。 </p>
+  <p>在UNIX和许多其他系统中．表示文件结束的输入如下： </p>
+  <p> &lt;ctrl-d&gt;</p>
+  <p> 即同时按ctrl键和d键。而在DEC公司的VAX   VMS或Microsoft公司的MS-DOS等系统中，表示文件结束的输人如下：</p>
+  <p> &lt;ctrl-z&gt;</p>
+  <p>用户通过键盘输入成绩。按Enter(或Return)键时，cin.get()函数一次读取一个字符。如果输入的字符不是文件结束符，则进入switch结构。关键字switch后面是括号中的变量名grade，称为控制表达式(controlling   expression)。控制表达式的值与每个case标记比较。假设用户输入成绩c，则c自动与switch中的每个case比较。如果找到匹配的(case'C:')，则执行该case语句。对于字母C的case语句中．cCount加1，并用break语句立即退出switch结构。注意，与其他控制结构不同的是，有多个语句的case不必放在花括号中。 </p>
+  <p>break语句使程序控制转到switch结构后面的第一条语句。break语句使switch结构中的其他case不会一起运行。如果switch结构中不用break语句，则每次结构中发现匹配时，执行所有余下case中的语句(这个特性在几个case要完成相同操作时有用，见图2.22的程序)。如果找不到匹配，则执行default   case并打印一个错误消息。 </p>
+  <p>每个case有一个或几个操作。switch结构与其他结构不同，多个语句的case不必放在花括号中。图2.23显示了一般的swish多项选择结构(每个case用一个break语句)的流程图。 </p>
+  从流程图中可以看出，case末尾的每个break语句使控制立即退出switch结构。注意,流程图(除了小圆框和流程之外)也只能包含矩形框和菱形框。这是我们强调的操作/判断编程模型。程序员的任务就是根据算法需要用堆栈和嵌套两种方法组合其他几种控制结构，然后填入算法所要的操作和判断，从而生成程序。嵌套控制结构很常见，但程序中很少出现嵌套swilch结构。
+  <h5> 常见编程错误2.19</h5>
+  <p>switch结构中需要break语句时而忘记使用break语句是十逻辑措误。 </p>
+  <h5>常见编程错误2.20 </h5>
+  <p>省略switch结构中case字样与测试值之间的空格可能造成逻辑错误。例如，写成case3：而不是写成case   3：只会生成一个无用标号(详见第18章)。这样，switch结构的控制表达式取值为3时，switch结构不会进行相应操作。 </p>
+  <h5>编程技巧2.26 </h5>
+  <p>应在switch结构中提供default case。switch语句中没有显式测试的case在没有default   case时自动忽略。而包括default case则可以提醒程序员需要处理异常条件，但有时也不需要default处理。 </p>
+  <h5>编程技巧2.27 </h5>
+  <p>尽管swish结构中的case语句和default case语句可以按任何顺序出现，但比较好的编程习惯是把default   case放在最后。 </p>
+  <h5>编程技巧2.18 </h5>
+  <p>把default   case放在switch结构中的最后不需要break语句。有些程序更加上这个break以使程序更清晰，并 </p>
+  <p> 和其他case对称。</p>
+  <p>在图2.22中的switch结构中，第46到第49行： </p>
+  <pre class="code">case ' '： 
+
+case '	'： 
+
+case ' ' ： 
+
+break； </pre>
+  <p> 使程序跳过换行符、制表符和空白字符。一次读取一个字符可能造成一些问题。要让程序读取字符，就要按键盘上的Enter键将字符发送到计算机中，在要处理的字符后面输入换行符。这个换行符通常需要特殊处理，才能使程序正确工作。通过在switch结构中包含case语句，可以防止在每次输入中遇到换行符、制表符或空格时default   case打印错误消息。</p>
+  <h5>常见编程错误2.21 </h5>
+  <p>一次读取一个字符时不处理输入中遇到的换行符和其他空白字符可能造成逻辑错误。 </p>
+  <p>注意几个标号列在一起时(如图2.22中的case'D'：case   'd'：)表示每case发生一组相同的操作。 </p>
+  <p>使用switch结构时，记住它只用于测试常量整型表达式(constant integral   expression)，即求值为一个常量整数值的字符常量和整型常量的组合。字符常量表示为单引号中的特定字符(如，'A')，而整型常量表示为整数值。 </p>
+  <p>本书介绍面向对象编程时，会介绍实现switch逻辑的更精彩方法。我们使用多态方法生成比使用switch逻辑的程序更清晰、更简洁、更易维护和扩展的程序。 </p>
+  <p>C++之类可移植语言应有更灵活的数据类型长度，不同应用可能需要不同长度的整数。C++提供了几种表示整数的数据类型。每种类型的整数值范围取决于特定的计算机硬件。除了类型int和char外，C++还提供short(short   int的缩写)和long(long   int的缩写)类型。short整数的取值范围是±32767。 </p>
+  <p> 对于大多数整数计算，使用long类型的整数已经足够。long整数的取值范围是±2147483647。在大多数系统中，int等价于short或long。int的取值范围在short和long的取值范围之间。char数据类型可以表示计算机字符集中的任何字符，char数据类型也可以表示小整数。</p>
+  <h5>可移植性提示 2.4 </h5>
+  <p>由于int的长度随系统不同而不同，因此如果要处理超过±32767的数值，应使用long整数，以便在几个不同计算机系统中运行。 </p>
+  <h5>性能提示2.7 </h5>
+  <p>在内存有限或要求执行速度的面向性能的情况中，可以考虑用较小的整数长度。 </p>
+  <h5>性能提示 2.8 </h5>
+  <p>如果操作程序的机器指令不如自然长度整数那么有效(例如要进行符号扩展)，则用较小的整数长度会使程序减慢。 </p>
+  <h5>常见编程错误2.22 </h5>
+  <p>在switch结构中提供相同的case标号是个语法错误。 </p>
+  <h2> <a name="2.17" id="2.17"></a>2.17 do/while重复结构</h2>
+  <p>do/while重复结构与while结构相似。在while结构中，先在循环开头测试循环条件之后再执行循环体。do/while重复结构执行循环体之后再测试循环条件，因此，do/while结构至少执行循环体一次。do/while结构终止时，继续执行while语句后面的话句。注意，如果结构体中只有一条浯句，则不必在do/while结构中使用花括号。但通常还是加上花括号，避免棍淆while与do/while重复结构。 </p>
+  <p> 例如：</p>
+  <pre class="code">while (condition)  </pre>
+  <p> 通常当作while结构的首部。结构体中只有一条语句的do/while结构中不使用花括号时：</p>
+  <pre class="code">do 
+
+statement 
+
+while ( condition )； </pre>
+  <p> 最后一行while(condition)可能被误解成while结构包含空语句。这样，只有一个语句的do/while结构通常写成如下形式：</p>
+  <pre class="code"> // Fig. 2.24: fig0224.cpp<br /> // Using the do/while repetition structure<br /> #include &lt;iostream.h&gt;<br /> int main()<br /> {<br />     int counter = l;<br />      <br />   do {<br />     cout &lt;&lt; counter &lt;&lt;  &quot; &quot;  ;<br />  } while ( ++counter &lt;= 10 );<br />  cout &lt;&lt; endl;<br />  return 0;<br />  }</pre>
+  <p>输出结果： </p>
+  <p>1   2   3   4     5   6 7   8   9   lO</p>
+  <h2><a name="2.18" id="2.18"></a>2.18   break和continue语句</h2>
+  <p> break和continue语句改变控制流程。break语句在while、for、do/while或switch结构中执行时，使得程序立即退出这些结构，从而执行该结构后面的第一条语句。break语句常用于提前从循环退出或跳过switch结构的其余部分(如图2.22)。图2.26演示了for重复结构中的break语句，if结构发现x变为5时执行break，从而终止for语句，程序继续执行for结构后面的cout语句。循环只执行四次。</p>
+  <p>注意这个程序中控制变量x在for结构首部之外定义。这是因为我们要在循环体中和循环执行完毕之后使用这个控制变量。 </p>
+  <p>continue语句在while、for或do/while结构中执行时跳过该结构体的其余语句，进入下一轮循环。在while和do/while结构中，循环条件测试在执行continue语句之后立即求值。在for结构中，执行递增表达式，然后进行循环条件测试。前面曾介绍过．while结构可以在大多数情况下取代for结构。但如果while结构中的递增表达式在continue语句之后，则会出现例外。这时，在测试循环条件之前没有执行递增，并且while与for的执行方式是不同的。图2.27在for结构中用continue语句跳过该结构的输出语句，进入下一轮循环。 </p>
+  <pre class="code"> // Fig．2．26：fig02 26.cpp
+ // Usinq the break statement in a for structure
+ #include< ostream．h>
+ int main()
+ {
+ // x declared here so it can be used after the loop
+ int x;
+ for ( x = 1; x <= 10; x++ ) {
+ if { x == 5 )
+ break; // break loop only if x is 5
+ cout << x <<" ";
+ }
+ cout << " Broke out of loop at x of" << x << endl;
+ return O;
+ }</pre>
+  <p> 输出结果：</p>
+  <p>l 2 3 4 </p>
+  <p>Broke out of loop at x of 5 </p>
+  <p>图2.26 for重复结构中的break语句 </p>
+  <pre class="code">  // Fig. 2.27: figO2_OT.cpp
+  // Using the continue statement in a for structure
+ #include < iostream.h>
+ int main()
+ {
+    for ( iht x = 1; x <- 10; x++ } {
+       if {x==5)
+         continue;  // skip remaining code in loop
+                  // only if x is 5
+      cout << x <<" ";
+  }
+      cout << "\nUsed continue to skip printing the value 5"
+             << endl;
+      return O;
+ }</pre>
+  <p> l 2 3 4 5 6 7 9 9 10</p>
+  <p>USed continue to skip printing the value   5 </p>
+  <p>图 2.27 在for结构用continue语句 </p>
+  <h5>编程技巧2.30 </h5>
+  <p>有些程序员认为break和continue会破坏结构化编程。由于这些语句可以通过后面要介绍的结构化编程方法实现，因此这些程序员不用break和continue。 </p>
+  <h5>性能提示 2.9 </h5>
+  <p>正确使用break和continue语句能比后面要介绍的通过结构化编程方法的实现速度更快。 </p>
+  <h5>软件工程视点2.10 </h5>
+  达到高质量软件工程与实现最佳性能软件之间有一定冲突。通常，要达到一个目标，就要牺牲另一个目标。
+  </p>
+  <div class="rpindex"><a href="18.html"> 下一页</a><a href="16.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

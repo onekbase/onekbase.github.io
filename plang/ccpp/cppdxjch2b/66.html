@@ -1,0 +1,296 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="65.html"> 上一页</a><a href="67.html"> 下一页</a></div>
+<h2>8．4 用作类成员与友元函数的运算符函数
+  </p>
+</h2>
+<p>
+       
+  运算符函数既可以是成员函数，也可以是非成员函数。非成员函数通常是友元函数。成员函数是用this指针隐式地访问类对象的某个参数，非成员函数的调用必须明确地列出该参数。</p>
+<p>
+       
+  在重载运算符()、[]、-&gt;，或者任何赋值运算符时，运算符重载函数必须声明为类的一个成员。对于其他的运算符运算符重载函数可以是非成员函数。</p>
+<p>
+       
+  不管运算符函数是成员函数还是非成员函数，运算符在表达式中的使用方式是相同的。哪种实现方式更好呢</p><p>
+       
+  当运算符函数是一个成员函数时，最左边的操作数(或者只有最左边的操作数)必须是运算符类的一个类对象(或者是对该类对象的引用)。如果左边的操作数必须是一个不同类的对象，或者是一个内部类型的对象，该运算符函数必须作为一个非成员函数来实现(正如8．5节中分别重载运算符&lt;&lt;和&gt;&gt;作为流插入运算符和流读取运算符一样)。运算符函数作为非成员函数直接访问该类的private或者protected成员时，该函数必须是一个友元。</p><p>
+       
+  重载的&lt;&lt;运算符必须有一个类型为ostream&amp;的左操作数(例如表达式cout&lt;&lt;classObject中的cout)，因此它必须是一个非成员函数。类似地，重载&gt;&gt;运算符必须有一个类型为istream&amp;的左操作数(如表达式cin   &gt;&gt;   classObject中的cin)，所以它也必须是一个非成员函数。此外，这两个重载的运算符函数都需要访问输出或输入的类对象的private数据成员，因此出于性能考虑，这些重载的运算符函数通常都是类的友元函数。</p>
+  <h5>
+    性能提示8．1</h5>
+  <p>
+       
+  可以把一个运算符作为一个非成员、非友元函数重载。但是，这样的运算符函数访问类的private和protected数据时必须使用类的public接口中提供的“set”或者“get'’函数(即设置数据和读取数据的函数)、调用这些函数的开销会降低性能，因此必须内联这些函数以提高性能。</p><p>
+       
+  只有当二元运算符的最左边的操作数是该类的一个对象时，或者当一元运算符的操作数是该类的一个对象时．才需调用特定类的运算符成员函数。</p><p>
+       
+  选择非成员函数重载运算符的另外一个原因是使运算符具有可交换性。例如：假定有longint类型的一个对象number和类HugeInteger的一个对象bigInteger1(本章的练习中开发了类HugeInteger，该类中的整数可以是任意大小，不受机器字长的限制)。如果要求加法运算符(+)生成一个临时的HugeInteger对象，它是HugeInteger和longint类型对象的和(如表达式bigInteger1+number)，或者是longint和HugeInteger类型对象的和(如表达式number+bigIntegerl)，那么上述的加法运算符就要具有可交换性(正如通常的加法一样)。问题在于，如果把运算符作为成员函数重载，类的对象必须出现在运算符的左边，所以要将运算符函数作为一个非成员的友元重载，这样才能允许HugeInteger对象出现在加法运算符的右边。处理HugeInteger对象在左边的operator+函数依然可以是一个成员函数。记住，非成员函数不一定要是友元，只要类的public接口中有相应set和get函数，有内联的set和get函数则更好。</p>
+  <h2>
+    <a name="8.5" id="8.5"></a>8．5 重载流插入与流读取运算符</h2>
+  <p>
+       
+  C++的流读取运算&gt;&gt;和流插入运算符&lt;&lt;可用来输入输出标准类型的数据。这两个运算符是C++编译器在类库中提供的，可以处理包括类C语言中的char*字符串和指针在内的每一种内部数据类型。也可以重载运两个运算符以输入输出用户自定义类型的数据。图8．3中的程序演示了重载的流读取运算符和流插入运算符，它们用来处理用户自定义的电话号码类PhoneNumber的数据。程序假定输入的电话号码是正确的，错误检测留给读者在练习中完成。</p>
+  <pre class="code">
+  // Fig. 8.3: fig0S03.cpp
+ // Overloading the stream-insertion and
+ // stream-extraction operators.
+ #include < iostream.h>
+ #include < iomanip.h>
+ class PhoneNumber {
+   friend ostream &operator<<( ostream&, const PhoneNumber & );
+   friend istream &operator>>( istream&, PhoneNumber & );
+ private:
+   char areaCode[ 4 ];  // 3-digit area code and null
+   char exchang[ 4 ];  // 3-digit exchange and null
+   char line[ 5 ];     // 4-digit line and null
+ };
+ // Overloaded stream-insertion operator (cannot be
+ // a member function if we would like to invoke-ti with
+ // cout << somePhoneNumber;).
+ ostream &operator<<( ostream &output, const PhoneNumber &num)
+ {
+   output << "(" << num.areaCode << ")"
+          << num.exchange <<  "-"  << num.line;
+   return output;    // enables cout << a << b << c;
+ }
+ istream &operator>>( istream &input, PhoneNumber &num )
+ {
+   input.ignore();                    // skip (
+   input >> setw( 4 ) >> num,areaCode; // input area code
+                                      // skip ) and space
+   input >> setw( 4 ) >> num.exchange; // input exchange
+   input.ignore();
+   input >> setw( 5 ) >> num.line;    // input line
+   return input;     // enables cin >> a >> b >> c;
+ }
+ int main()
+ {
+   PhoneNumber phone;  //  create object phone
+   cout << "Enter phone number in the form (123)  456-7890:\n";
+   // cin >> phone invokes operator>> function by
+   // issuing the call operator>>( ein, phone ).
+    cin >> phone;
+   // cout << phone invokes operator<< function by
+   // issuing the call operator<<( eout, phone ).
+   cout << "The phone number entered was: "<< phone << endl;
+   return 0;
+ }
+</pre>
+  <p>
+  Enter phone number in the form   (123) 456-7890:</p>
+  <p>
+  (800) 555-1212</p><p>
+  The phone number entered was: (800)   555-1212</p>
+  <p>
+  图 8.3 用户自定义的流插入和流读取运算符</p>
+  <p>
+  流读取运算符函数operator&gt;&gt;(第27行)含有两个参数，一个是对istream的引用(即程序中的input)，另一个则是对用户自定义类型PhoneNumer的引用(即程序中的num)。函数返回一个对istream的引用。在图8.   3的程序中，运算符函数operator&gt;&gt;用来把下述格式的电话号码输入到类PhoneNumber的对象中:</p>
+  <p>
+     
+  (800) 555 =   1212</p><p>
+  当编译器遇到main()函数中的表达式：</p><p>
+     
+  cin &gt;&gt; phone</p><p>
+  编译器将生成函数调用：</p><p>
+       
+  operator &gt;&gt;   (cin，phone)；</p><p>
+  当执行该调用时，引用参数input成为cin的一个别名，Num成为Phone的一个别名。运算符函数使用istream成员函数getline，将电话号码的三部分作为字符串分别读到被引用的PhoneNumber对象(运算符函数中的num和main函数中的phone)的areaCode、exchange和line成员中。流操纵算子sesetw保证将正确的字符数读入到字符数组中。回忆一下，我们曾经使用cin和setw限制读入的字符数比参数少1(例如setw(4)只允许读入3个字符，留出一个位置保存null终止符)。通过调用istream的成员函数ignore跳过括号、空格、破折号等等(ignore函数删除输入流中指定数目的字符，默认个数为1)。函数operator&gt;&gt;返回对isream对象的引用input(即cin)，因而能够在PhoneNumber对象的输入操作完成后，继续执行对PhoneNumber的其他对象或者其他数据类型对象的输入操作。例如，可以像下面那样输入两个PhoneNumber对象：</p>
+  <p>
+  cin   &gt;&gt; phone1 &gt;&gt; phone2；</p>
+  <p>
+  首先是表达式cin &gt;&gt; phone1产生如下调用：</p><p>
+       
+  operator &gt;&gt; (cin，phone1)；</p><p>
+  该调用返回cin并把它作为cin &gt;&gt;   phone1的值，因此表达式的其余部分将被简单地解释为cin &gt;&gt; phone2，这将通过下列调用执行：</p><p>
+     
+  operator   &gt;&gt; (cin，phone2)；</p><p>
+       
+  流插入运算符有两个参数，一个是对ostream的引用(即output)，另一个是对用户自定义类型PhoneNumber的引用(即   num)，函数返回一个对ostream的引用。函数operator&lt;&lt;显示了PhoneNumber的对象。当编译器遇到main函数中的表达式：</p><p>
+       
+  cout &lt;&lt; phone</p><p>
+  编译器生成非成员函数调用：</p><p>
+     
+  operator &lt;&lt;   (cout，phone)；</p><p>
+  因为电话号码的各个部分是以字符串的格式存储的，所以函数operator&lt;&lt;以字符串形式显示它们。</p><p>
+       
+  注意，函数operator&lt;&lt;和operator&gt;&gt;在类PhoneNumber中被声明为友元函数而不是成员函数。因为要把类PhoneNumber的对象作为运算符的右操作数，所以这些运算符函数必须是非成员函数。要把运算符重载为成员函数，类的操作数(类的对象)必须出现在运算符的左边，如果重载的输入和输出运算符必须直接访问类的非public成员，则必须把它们声明为友元。另外，还要注意operator&lt;&lt;   参数表中引用的PhoneNumber是const类型(因为只输出PhoneNumber)，而operator&gt;&gt;参数表中引用的PhoneNumber是非const类型(由于PhoneNumber对象要修改成在该对象中存放输入的电话号码)。</p>
+  <h5>
+    
+    软件工程视点8. 3</h5>
+  <p>
+     
+  无需修改类ostream 和   istream的声明和private数据成员就可以给用户自定义类型添加新的输入/输出能力。这种方式提高了C++语言的可扩展性，可扩展性是C++的最具吸引力的特点。</p>
+  <div class="rpindex"><a href="67.html"> 下一页</a><a href="65.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

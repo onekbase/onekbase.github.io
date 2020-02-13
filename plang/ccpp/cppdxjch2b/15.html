@@ -1,0 +1,520 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+    <div class="lpindex"><a href="index.html">首页</a><a href="14.html"> 上一页</a><a href="16.html"> 下一页</a></div>
+  <h2>2.8 构造算法：实例研究1(计数器控制重复)</h2>
+  <p> 要演示如何开发算法，我们要解决几个全班平均成绩的问题。考虑下列问题：</p>
+  <p> 班里有10个学生参加测验，可以提供考试成绩(0到100的整数值)，以确定全班平均成绩。</p>
+  <p> 全班平均成绩等于全班成绩总和除以班里人数。计算机上解决这个问题的算法是辅人每人的成绩，进行平均计算，然后打印结果。</p>
+  下面用伪代码列出要执行的操作，指定这些操作执行的顺序。我们用计数器控制重复(counter-conttrolled repetition)一次一个地输人每人的成绩。这种方法用计数器(counter)变量控制一组语句执行的次数。本例中，计数器超过10时，停止重复。本节介绍伪代码算法(如图2.6)和对应程序(如图2.7)。下节介绍如何开发这个伪代码算法。计数器控制重复通常称为确定重复(definiterepetition)，因为循环执行之前，已知重复次数。
+  <p> 注意算法中引用了总数(total)和计数器。总数变量用于累计一系列数值的和。计数器变量用于计数，这里计算输人的成绩数。存放总数的变量通常应先初始化为0之后再在程序中使用，否则总和会包括总数的内存地址中存放的原有数值。</p>
+  <pre class="code">  Set total to zero
+   Set grade counter to one
+      While grade counter is less than or equal to ten
+              Input the next grade
+              Add the grade i.to the total
+              Add one to the grade counter
+      Set the class average to the total divided by ten
+      Print the class average</pre>
+  <p> 图2.6 用计数器控制重复解决全班平均成绩问题的伪代码算法</p>
+  <pre class="code">// Fig. 2.7: fig0207.cpp
+// Class average program with counter-controlled repetition
+#include &lt;iostream.h&gt;
+int main()
+{
+	int total,          // sum of grades
+	gradeCounter,  // number of grades entered
+	grade,        // one grade
+	average;      // average of grades
+	// initialization phase
+	total = 0;                           // clear total
+	gradeCounter = 1;                     // prepare to loop
+	// processing phase
+	while ( gradeCounter <= 10 ) {          // loop 10 times
+		cout << "Enter grade: ";          // prompt for input
+		cin >> grade;                   // input grade
+		total = total + grade;            // add grade to total
+		gradeCounter = gradeCounter + 1;    // increment counter
+	}
+	// termination phase
+	average - total / 10;             // integer division
+	cout << "Class average is "<< average << endl;
+	return 0;  // indicate program ended successfully
+}
+</pre>
+  <p> 输出结果：</p>
+  <pre class="code">    Enter grade: 98
+    Enter grade: 76
+    Enter grade: 71
+    Enter grade: 87
+    Enter grade: 83
+    Enter grade: 90
+    Enter grade: 57
+    Enter grade: 79
+    Enter grade: 82
+    Enter grade: 94
+    Class average is 81</pre>
+  <h5> 图2.7  用计数器控制重复解决全班平均成绩问题的C++程序和示例输出</h5>
+  <p>根据使用情况，计数器变量通常应先初始化为0或1(下面会分别举例说明)。未初始化变量会包含垃圾值“garbage”value)，也称为未定义值(undefined</p>
+  <p> value)，为该变量保存内存地址中最后存放的值。</p>
+  <h5> 常见编程错误2.6</h5>
+  如果不初始化计数器和总和变量，则程序的结果可能不正确．这是一种逻辑错误。
+  <h5> 编程技巧2.7</h5>
+  一定要初始化计数器和总和变量。
+  <h5> 编程技巧2.8</h5>
+  <p>每个变量在单独一行中声明。注意程序中的平均计算产生一个整数结果。实际上，本例中的成绩总和是817，除以10时应得到81.7，是个带小数点的数，下节将介绍如何处理这种值(称为浮点数)。 </p>
+  <h5> 常见编程错误2.7</h5>
+  <p> 在计数器控制循环中，由于循环计数器(每人循环加1时)比最大合法值多1(例如，从1算到10时为11)．因此在循环之后用计数器值进行计算通常会出现差1的错误。</p>
+  <p> 图2.7中，如果第21行用gradeCounter而不是10进行计算，则这个程序的输出显示数值74。</p>
+  <h2><a name="2.9" id="2.9"></a>2.9构造算法与自上而下逐步完善：实例研究2(标记控制重复)</h2>
+  <p> 下面将全班平均成绩问题一般化，考虑如下问题：</p>
+  <p> 开发一个计算全班平均成绩的程序，在每次程序运行时处理任意个成绩数。</p>
+  <p> 在第一个全班平均成绩例子中，成绩个数(10)是事先预置的。而本例中，则不知道要输入多少个成绩，程序要处理任意个成绩数。程序怎么确定何时停止输入成绩呢?何时计算和打印全班平均成绩呢?</p>
+  一种办法是用一个特殊值作为标记值(sentinelvalue)，也称信号值(signalvalue)、哑值(dummy 
+  value)或标志值(flag value)，表示数据输入结束(“end of data 
+  entry”)用户输入成绩，直到输入所有合法成绩。然后用户输入一个标记值，表示最后一个成绩已经输入。标记控制重复(sentinel-controlled 
+  repetition)也称为不确定重复(indefinite repetition)，因为执行循环之前无法事先知道重复次数。
+  <p> 显然，标记值不能与可接受的输入值混淆起来。由于考试成绩通常是非负整数，因此可以用-1作标记值。这样，全班平均成绩程序可以处理95、96、75、74、89和-l之类的输人流。程序计算并打印成绩95、96、75、74和89的全班平均成绩(不计入-1，因为它是标记值)。</p>
+  <h5> 常见编程错误2.8</h5>
+  <p> 将选择的标记值与可接受的输入值混淆时会造成逻辑错误。</p>
+  我们用自上而下逐步完善(top-down，stepwise
+  <p> refinement)的方法开发计算全班平均成绩的程序，这是开发结构化程序的重要方法。我们首先生成上层伪代码表示：</p>
+  <pre class="code">  Determine  the  class  avcraqe  for  the quiz</pre>
+  <p> 上层伪代码只是一个语句，表示程序的总体功能。这样．上层等于是程序的完整表达式。但上层通常无法提供编写C++程序所需的足够细节。因此要开始完善过程。我们将上层伪代码分解为一系列的小任务，按其需要完成的顺序列出。这个结果就是下列第一步完善(first，refinement)：</p>
+  <pre class="code">Initialize variables
+    Input,sum,and count the quiz grades
+    Calculate and print the class average</pre>
+  <p> 这里只用了顺序结构，所有步骤按顺序逐步执行。</p>
+  <h5> 软件工程视点2.4</h5>
+  <p> 上层伪代码及每一步完善都是算法的完整定义，只是详细程度不同而已。</p>
+  <h5> 软件工程视点2.5</h5>
+  <p> 许多程序可以在逻辑上分为三个阶段：初初化阶段将程序变量初始化，处理阶段输入数据值和相应调整程序变量，结束阶段计算和打印最后结果。</p>
+  上述“软件工程视点”通常是自上而下过程第一步完善的全部工作。要进行下一步完善(即第二步完善，second
+  <p> refinement)，我们要指定特定变量，要取得数字的动态和以及计算机处理的数值个数，用一个变量接收每个输入的成绩值，一个变量保存计算平均值。下列伪代码语句：</p>
+  <pre class="code">      Initialize variables</pre>
+  <p>可以细化成：</p>
+  <pre class="code"> Initialize total to zero
+    Initialize counter to zero</pre>
+  <p> 注意，只有total和counter变量要先初始化再使用，average和grade变量(分别计算平均值和用户输入)不需要初始化．因为它们的值会在计算或输入时重定义。</p>
+  <p> 下列伪代码语句：</p>
+  <pre class="code">Input, sum, and count the quiz grades</pre>
+  <p> 需要用重复结构(即循环)连续输入每个成绩。由于我们事先不知道要处理多少个成绩，因此使用标记控制重复。用户一次一项地输入合法成绩。输入最后一个合法成绩后，用户输人标记值。程序在每个成绩输入之后测试其是否为标记值．如果用户输入标记值，则顺序循环终止。上述伪代码语句的第二步完善如下：</p>
+  <pre class="code">   Input the first grade (possibly the sentinel)
+    While the user has not as yet entered the sentinel
+   Add this grade into the running total
+    Add one to the grade counter
+    Input the next grade (possibly the sentinel)</pre>
+  <p> 注意，在这个伪代码中，我们没有在while结构体中使用花括号，只是在while下面将这些语句缩排表示它们属于while。伪代码只是非正式的程序开发辅助工具。</p>
+  <p> 下列伪代码语句可以完善如下：</p>
+  <pre class="code"> If the counter is not equal to zero
+     Set the average to the total divided by the counter
+     Print the average
+    else
+      Print "No grades were entered"
+</pre>
+  注意我们这里要测试除数为0的可能性，这是个致命逻辑错误，如果没有发现，则会使程序失败(通常称为爆炸或崩溃)。图2.8显示了全班平均成绩问题第二步完善的完整伪代码语句。
+  <h5> 常见编程错误2.9</h5>
+  <p> 除数为0是个致命逻辑错误。</p>
+  <h5> 编程技巧2.9</h5>
+  <p> 进行除法时，要测试除数为0的可能性，并在程序中进行相应处理(如打印一个错误消息)．而不是让致命逻辑错误发生。</p>
+  <p> 图2.6和图2.8的伪代码中增加了一些空行，使伪代码更易读。空行将程序分成不同阶段。</p>
+  <p> 图2.8所示的伪代码算法解决更一般的全班平均成绩问题，这个算法只进行了第二步完善，还需要进一步完善。</p>
+  <pre class="code"> Initialize total to zero
+    Initialize counter to zero
+
+    Input the first grade (possibly the sentinel)
+    While the user has not as yet entered the sentinel
+       Add this grade into the running total
+       Add one to the grade counter
+       Input the next grade (possibly the sentinel)
+
+    if the counter is not rqual to zero
+       Set the average to the total divided by the counter
+       Print the average
+    else
+       Print "No grades were entered"</pre>
+  <p> 图2．8  用标记符控制重复解决全班平均成绩问题的伪代码算法</p>
+  <h5> 软件工程视点2.6</h5>
+  <p> 伪代码算法的细节足以将伪代码变为C++代码时，程序员即可停止自上而下逐步完善的过程，然后就可方便地实现C++程序。</p>
+  <p> 图2.9显示了C++程序和示例执行结果。尽管只输入整数成绩，但结果仍然可能产生带小数点的平均成绩，即实数。int类型无法表示实数，程序中引入float数据类型处理带小数点的数(也称为浮点数，floatingpoint 
+    number)，并引入特殊的强制类型转换运算符(cast operator)处理平均值计算。这些特性将在程序之后详细介绍。</p>
+  <pre class="code">// Fig. 2.9: fig02_09.cpp
+// Class average program with sentinel-controlled repetition.
+#include &lt;iostream.h&gt;<br />#include &lt;iomanip.h&gt;
+int main()
+{
+	int total,    // sum of grades
+	gradeCounter, // number of grades entered
+	grade;      // one grade
+	float average;  // number with decimal point for average
+	// initialization phase
+	total = 0;
+	gradeCounter = 0;
+	// processing phase
+	cout << "Enter grade, -1 to end: ";
+	cin >> grade;
+	while ( grade !=-1 ) {
+		total = total + grade;
+		gradeCounter = gradeCounter + 1;
+		cout << "Enter grade, -1 to end: ";
+		cin >> grade;
+	}
+	// termination phase
+if ( gradeCounter != 0 } {
+	average - static_cast< float >( total ) / gradeCounter;
+	cout << "Class average is "<< setprecision{ 2 )
+		<< setiosflags( ios::fixed | ios::showpoint )
+			<< average << endl;
+		}
+		else
+			cout << "NO grades were entered" << endl;
+			return 0;        // indicate program ended successfully
+		}</pre>
+  <p>输出结果：</p>
+  <pre class="code">   Enter grade, -1 to end: 75
+    Enter grade, -1 to end: 94
+    Enter grade, -1 to end: 97
+    Enter grade,-1 to end: 88
+    Enter grade, -1 to end: 70
+    Enter grade, -1 to end: 64
+    Enter grade, -1 to end: 83
+    Enter grade, -1 to end: 89
+    Enter grade, -1 to end: -1
+    Class average is 82.50</pre>
+  <p> 图2.9  用标记符控制重复解决全班平均成绩问题的C++程序和示例执行结果</p>
+  <p> 注意图2.9中while循环中的复合语句。如果没有花括号，则循环体中的最后三条语句会放到循环以外，使计算机错误地理解如下代码：</p>
+  <pre class="code">   while { grade ! = -1 )
+       total - total + grade;
+    gradeCounter = gradeCounter + 1;
+    cout << "Enter grade, -1 to end:";
+    cin >> grade;
+</pre>
+  <p> 如果用户输入的第一个成绩不是-l，则会造成无限循环。</p>
+  <p> 注意下列语句：</p>
+  <pre class="code">   cin &gt;&gt;grade;</pre>
+  <p> 前面用一个输出语句提示用户输入。</p>
+  <h5> 编程技巧2.10</h5>
+  <p> 提示用户进行每个键盘输入。提示应表示输入形式和任何特殊输入值(如用户终止循环时输入的标记值)。</p>
+  <h5> 编程技巧2.11</h5>
+  <p> 在标记控制循环中，提示请求输入数据项目时应显式指定标记值是什么值。</p>
+  平均值并不一定总是整数值，而常常是包含小数的值，如7.2或-93.5。这些值称为浮点数，用数据类型float表示。变量average声明为数据类型float，以获得计算机结果中的小数。但total/gradeCounter的计算结果是整数，因为total和gradeCounter都是整数变量。两个整数相除是整除(integer
+  <p> division)，小数部分丢失(即截尾，truncated)。由于先要进行计算，因此小数部分在将结果赋给average之前已经丢失。要用整数值进行浮点数计算，就要先生成用于计算的临时浮点数值。</p>
+  <p>C++提供了一元强制类型转换运算符(unary cast operator)。下列语句：</p>
+  <pre class="code">average = static cast&lt; float &gt;(total) /gradeCounter;</pre>
+  包括一元强制类型转换运算符static_cast&lt;float&gt;()，生成用于计算的临时浮点数值(total)。这样使用强制类型转换运算符称为显式类型转换(explicit conversion)。total中存放的值还是整数，而计算时则用浮点数值(total的临时float版本)除以整数gradcCounter。c++编译器只能对操作数的数据类型一致的表达式求值。要保证操作数的数据类型一致，编译器对所选择的操作数进行提升(promotion)操作(也称为隐式类型转换，implicit 
+  conversion)。例如，在包含数据类型float和int的表达式中，int操作数提升为float。本例中，gradeCounter提升为float之后进行计算，将浮点数除法得到的结果赋给average。本章稍后将介绍所有标准数据类型及其提升顺序。任何数据类型都可用强制类型转换运算符，static_cast运算符由关键字statlc 
+  cast加尖括号(&lt;&gt;)中的数据类型名组成。强制类型转换运算符是个一元运算符(unary perator)，即只有一个操作数的运算符。第1章曾介绍过二元算术运算符。C++也支持一元正(+)、负(-)运算符，程序员可以编写-7、+5之类的表达式。强制类型转换运算符从右向左结合，其优先级高于正(+)、负(-)运算符等其他一元运算符，该优先级高于运算符*、/和%，但低于括号的优先级。优先级表中用static_cast&lt;type&gt;()表示强制类型转换运算符。
+  <p> 图2.9中格式化功能将在第11章详细介绍，这里先做一简要介绍。下列输出语句中调用</p>
+  <pre class="code"> setpreclslon(2)：
+        cout<<"Class average is" << setprecision(2)
+        << Setiosflaqs(iOS::fixed |iOS::showpoint)
+        << averaqe<< endl；
+</pre>
+  表示float变量average打印小数点右边的位数为两位精度(precision)，例如92.37，这称为参数化流操纵算子(parameterized stream manipulator)。使用这些调用的程序要包含下列预处理指令：
+  <pre class="code">        #include&lt;iomanip.h&gt;</pre>
+  注意endl是非参数化流操纵算子(nonparameterized stream 
+  manipulator)，不需要iomanip.h头文件。如果不指定精度，则浮点数值通常输出六位精度(即默认精度，default precision)，但稍后也会介绍一个例外。上述语句中的流操纵算子setiosflags(ios::fixed |ios::showpoInt)设置两个输出格式选项ios::fixed和ios::showpoint。垂直条(1)分隔setiosflags调用中的多个选项(垂直条将在第16章详细介绍)。选项ios::fixed使浮点数值以浮点格式(而不是科学计数法，见第ll章)输出。即使数值为整数，ios::showpoInt选项也会强制打印小数点和尾部O，如88.OO。如果不用ios::showpoint选项，则C++将该整数显示为88，不打印小数点和尾部o。程序中使用上述格式时，将打印的值取整，表示小数点位数，但内存中的值保持不变。例如，数值87.945和67.543分别输出为87.95和67.54。
+  <h5> 常见编程错误2.10</h5>
+  <p> 如莱在使用浮点敷时认为其精确地表示了敷值．则全得到不正确的蛄柬。浮点敷雇大多数计算机上都采用近似表示。</p>
+  <h5> 编程技巧2.12</h5>
+  <p> 不要比较浮点数值的相等和不等性，而要测试差值绝对值是否小于指定的值。</p>
+  <p> 尽管浮点数算不总是100％精确，但其用途很广。例如，我们说正常体温98.6(华氏温度)时，并不需要精确地表示，如果温度计上显示98.6度．实际上可能是98.5999473210643度。这里显示98.6对大多数应用已经足够了。</p>
+  <p> 另一种得到浮点数的方法是通过除法。10除以3得到3.333333……，是无限循环小敷。计算机只分配固定空间保存这种值，因此只能保存浮点值的近似值。</p>
+  <h2><a name="2.10" id="2.10"></a>2.10构造算法与自上而下逐步完善：实例研究3(嵌套控制结构) </h2>
+  <p> 下面介绍另一个问题。这里还是用伪代码和自上而下逐步完善的方法构造算法，然后编写相应的C++程序。我们介绍过按顺序堆叠的控制结构，就像小孩堆积木一样。这里显示C++中控制结构的另一种方法，称为嵌套控制结构。</p>
+  <h5> 考虑下列问题：</h5>
+  学校开了一门课，让学生参加房地产经纪人证书考试。去年，几个学生读完这门课并参加了证    
+  书考试。学校想知道学生考试情况，请编写一个程序来总结这个结果。已经得到了10个学生
+  <p> 的名单，每个姓名后面写1时表示考试通过，写2时表示没有通过。</p>
+  <p> 程序应分析考试结果，如下所示：</p>
+  1．输入每个考试成绩(即l或2)，每次程序请求另一个考试成绩时，在屏幕上显示消息“Enter result&quot;。
+  <p> 2．计算每种类型的考试成绩数。</p>
+  <p> 3．显示总成绩，表示及格人数和不及格人数。</p>
+  4．如果超过8个学生及格，则打印消息“Raise 
+  tuition”。
+  <p> 认真分析上述问题后，我们做出下列结论：</p>
+  <p> 1．程序要处理10个考试成绩，用计数器控制循环。</p>
+  <p> 2．每个考试成绩为数字l或2，每次程序读取考试成绩时，程序要确定成绩是否为数字1或2。</p>
+  <p> 我们的算法中测试1，如果不是l，则我们假设其为2(本章末尾的练习会考虑这个假设的结果)。</p>
+  <p> 3，使用两个计数器，分别计算及格人数和不及格人数。</p>
+  <p> 4．程序处理所有结果之后，要确定是否有超过8个学生及格。</p>
+  <p> 下面进行自上而下逐步完善的过程。首先是上层的伪代码表示：</p>
+  <pre class="code">    Analyze exam results and decide if tuition should be raised</pre>
+  <p> 我们再次强调，顶层是程序的完整表达，但通常要先进行几次完善之后才能将伪代码自然演变成C++程序。我们的第一步完善为：</p>
+  <pre class="code">Initialize variables
+    lnput the ten quiz qrades and COU~t passes and failures
+    Print a sugary Of the cxam results and decide if tuition should be raised
+</pre>
+  <p> 这里虽然有整个程序的完整表达式，但还需要进一步完善。我们要提供特定变量。要用两个计数器分别计算，用一个计数器控制循环过程，用一个变量保存用户输入。伪代码语句：</p>
+  <pre class="code">        Initialize variables</pre>
+  <p> 可以细分如下：</p>
+  <pre class="code">Initialize passes to zero
+    lnitialize failules to  zero
+Inltiallze student  counter to  One
+</pre>
+  <p> 注意．这里只初始化计数器和总和。伪代码语句：</p>
+  <pre class="code">  Input the ten quiz grades and count Passes and faiLures</pre>
+  <p> 要求循环输入每个考试成绩。我们事先知道共有10个成绩，因此可以用计数器控制循环。在循环中(即嵌套在循环中)，用一个双项选择结构确定考试成绩为数字1或2，并递增相应的计数器。上述伪代码语句细化如下：</p>
+  <pre class="code">Initialize passes to zero
+    lnitialize failules to  zero
+Inltiallze student  counter to  One
+</pre>
+  <p> 注意这里用空行分开if/else控制结构，以提高程序可读性。伪代码语句：</p>
+  <pre class="code">Print a sugary Of the exam results and declde if tuition should be raised</pre>
+  <p> 可以细化如下：</p>
+  <pre class="code">  Print the number of passes
+    Print the number of filuies
+    if more than eight students Passed
+    Priht "Raise tuition"</pre>
+  <p> 图2.10显示了完整的第2步完善结果。注意这里用空行分开while结构，以提高程序可读性。</p>
+  <pre class="code">    Initlalize passes to zero
+    Init±a1ize failures to zero
+    lnitlallze student counter to one
+    while student counter is less than or equal to ten
+    Input the next exam result
+    if the student Passed
+    Add one to passes
+    else
+    Add one to failures
+    Add one to student  counter
+    Priht the number of passes
+    Prirt the number of filures
+    if more than eight students passed
+    Print”Raise tuition'’
+</pre>
+  <h5> 图2.10检查考试成绩的伪代码</h5>
+  <p> 这个伪代码语句已经足以转换为C++程序。图2.11显示了C++程序及示例的执行结果。注意，</p>
+  <p> 我们利用C++的一个特性，可以在声明中进行变量初始化。循环程序可能在每次循环开头要求初始</p>
+  <p> 化，这种初始化通常在赋值语句中进行。</p>
+  <pre class="code">// Fig. 2.11: fig02_ll.cpp
+#include &lt;iostream.h&gt;
+int main()
+{
+	// initialize variables in declarations
+	int passes = 0,      // number of passes
+	Passes = v;   // number or passes
+	failures = 0,       // number of failures
+	studentCounter = 1,  // student counter
+	result;            // oue exam result
+	// process 10 students; counter-controlled loop
+	while ( studentCounter <= 10 ) {
+		cout << "Enter result (1=pass,2=fail): ";
+		cin >> result;
+		if { result == 1 }      // if/else nested in while
+			passes = passes + 1;
+			else
+				failures = failures + 1;
+				studentcounter = studentCounter + 1;
+				)
+				// termination phase
+				cout << "Failed" << failures << endl;
+				if ( passes > 8 )
+					cout << "Raise tuition "<< endl;
+					return 0;  // successful termination
+</pre>
+  <p> 输出结果：</p>
+  <pre class="code">    Enter result (l=pass,2=fail}: 1
+    Enter result (l=pass,2=fail): 2
+    Enter result (l=pass,2=fail): 1
+    Enter result (l=pass,2=fail): 1
+    Enter result (l=pass,2=fail): 1
+    Enter result (l=pass,2=fail)  1
+    Enter result (l=pass,2=fail): 2
+    Enter result {l=pass,2=fail): 1
+    Enter result (l=pass,2=fail): 1
+    Enter result )1=pass,2=fail): 2
+    Passed 6
+    Failed 4
+
+    Enter result (a=pass,2=Fail): 1
+    Enter result (l=pass,2=fail): 1
+    Enter result (l=pass,2=fail)  1
+    Enter result (1-pass,2=fail): 2
+    Enter result {l=pass,2=fail): 1
+    Enter result (l=pass,2=fail): 1
+    Enter result {1=Pass,2=fail)：1
+    Enter result(1=pass，2=fail)：1
+    Enter result(1=pass，2=fail)：1
+    Enter result(1=pass，2=fail)：1
+    Passed 9
+    Failed 1
+    Raise tuition</pre>
+  <p> 图2.11  检查考试成绩的C++程序及示例执行结果</p>
+  <h5> 编程技巧2.13</h5>
+  <p> 在声明中进行变量初初化可以帮助程序员避免数据表初始化问题。</p>
+  <h5> 软件工程视点2.7</h5>
+  <p> 经验表明，计算机问题最难解决的部分是开发解决方案的算法。一旦确定正确算法后，从算法生成C++程序的过程通常是相当简单的。</p>
+  <h5> 软件工程视点2.8</h5>
+  许多熟练的程序员不必用伪代码之类的程序开发工具即可编写程序。这些程序员认为其最终目标是解决计算机上的问题，编写伪代码只会延迟最终产品的推出。尽管这种方法在简单和热悉的问题中能行得通，但在大型复杂项目中则可能导致严重的错误和延迟。
+  <div class="rpindex"><a href="16.html"> 下一页</a><a href="14.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

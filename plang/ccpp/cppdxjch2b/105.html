@@ -1,0 +1,297 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="104.html"> 上一页</a><a href="106.html"> 下一页</a></div>
+
+ 
+<h2>13．8  再抛出异常</h2>
+<p>  捕获异常的处理器也可以决定不处理异常或释放资源，然后让其他处理器处理这个异常。这时，处理器只要再抛出异常，如下所示：</p>        
+<p>  throw；  </p>   
+<p>  这种不带参数的throw再抛出异常。如果开始没有抛出异常，则再抛出异常调用terminate。</p>   
+        
+<h5>  常见编程错误13．12  </h5>
+<p>  将空throw语句放在catch处理器之外，执行这种throw会调用terminate。即使处理器能处理异常，不管这个异常是否进行处理，处理器仍然可以再抛出异常以便在处理器之外继续处理。再抛出异常由外层try块检测，由所在try块之后列出的异常处理器处理。  </p>   
+        
+<h5>  软件工程视点13．10  </h5>
+<p>  用catch(...)进行与异常类型无关的恢复，如释放共用资源。可以再抛出异常以警示更具体的外展catch块。  </p>   
+
+<p>  图13．2的程序演示了再抛出异常。在main第26行的try块中，调用函数throwwExcepion。在函数throwException的try块中，第13行的throw语句抛出标准库类exception的实例(在头文件  &lt;exception&gt;中定义)。这个异常在第15行的catch处理器中立即捕获，打印一个错误消息，然后再抛出异常。因此终止函数throwException并将控制返回main中的try/catch块。第30行再次捕获异常并打印一个错误消息。</p>   
+ <pre class="code"> &// Fig. 13.2: fig13_02.cpp
+ // Demonstration of rethrowing an exception.
+ #include &lt;iostream&gt;
+ #include &lt;exception&gt;
+ using namespace std;
+ void throwException() throw ( exception )
+{
+   // Throw an exception and immediately catch it.
+   try {
+     cout << "Function throwException\n";
+     throw exception();  // generate exception
+   }
+   catch( exception e )
+   {
+     cout << "Exception handled in function throwException\n";
+     throw;  // rethrow exception for further processing
+   }
+   cout << "This also should not print\n";
+ }
+ int main()
+ {
+   try {
+     throwException();
+     cout << "This should not print\n";
+   }
+   catch ( exception e )
+   {
+     cout << "Exception handled in main\n";
+   }
+   cout << "Program control continues after catch in main"
+        << endl;
+   return 0;
+ }
+</pre>
+  <p>  输出结果：</p>
+  <pre class="code">Function throwException
+Exception handled in function throwException
+Exception handled in main
+Program control continues after catch in main
+</pre>
+  <h5>图 13.2   再抛出异常  </h5>
+ <h2><a name="13.9" id="13.9"></a>13．9    异常指定</h2>
+<p>异常指定可以由指定函数抛出一列异常：  </p>      
+int g( float h )   throw (a, b, c)       
+{      // function body        
+}  </pre>        
+<p>可以限制从函数抛出的异常类型。函数声明中可以指定异常类型作为异常指定(也称为抛出表，throw   list)。异常指定列出可抛出的异常。函数可以抛出指定异常或派生类型。尽管这样好像保证不会抛出其他异常类型，但其实也可以抛出其他异常类型。如果抛出异常指定中没有列出的异常，则调用函数unexpected。  </p>        
+<p>将throw(即空异常指定)放在函数的参数表之后表示该函数不抛出任何异常。但这种函数仍然可以抛出异常，这时也调用函数unexpected。  </p>   
+        
+<h5>常见编程错误13．11  </h5>
+<p>如果抛出函数异常指定中没有的异常，则调用函数unexpcted不带异常指定的函数可以抛出任何异常：  </p>      
+void   g()；    // this function can throw any exception  </pre>        
+<p>unexpected函数的含义可以调用函数set_unexpected重新定义。  </p>   
+        
+<p>异常处理的一个有趣方面是函数在throw表达式中包含函数异常指定中未列出的异常时，编译器不产生语法错误。函数在执行时抛出这个异常之后才会捕获错误。  </p>        
+<p>如果函数抛出特定类的类型的异常，则函数也可以抛出用public继承从该类派生的所有类异常。  </p>   
+   
+<h2><a name="13.10" id="13.10"></a>13．10  处理意外异常</h2>
+<p>函数unexpected调用set_unexpected函数指定的函数。如果没有用set_unexpected函数指定函数，则默认调用terminate。  </p>        
+<p>函数terminate可以显式调用，在无法捕获抛出的异常时、在异常处理期间打乱堆栈时、作为调用unexpected的默认操作时或在异常导致堆栈解退时析构函数抛出异常的情况下都会调用terminate。  </p>        
+<p>函数set_terminate可以指定调用terminate时调用的函数，否则terminate调用abort。  </p>
+<p>函数赞set_terminate和set_unexpected的函数原型分别在头文件  &lt;terminate.h)和&lt;unexpected.h&gt;中。</p>        
+<p>函数set_terminate和set_unexpected分别返回terminatee和unexpected调用的最后一个函数的指针。这样就使程序员可以保存函数指针，以便后面恢复。  </p>        
+<p>函数set_terminate和set_unexpected取函数指针为参数。每个参数指向返回类型为void和无参数的函数。  </p>        
+<p>如果用户自定义终止函数的景后一个操作不是退出程序，则执行用户自定义终止函数的其他语句之后自动调用abort函数终止程序。  </p>   
+   
+<h2><a name="13.11" id="13.11"></a>13．11  堆栈解退</h2>
+<p>特定范围中拄出异常而未捕获时，函数调用堆栈解退，试图在外层try/catch块中捕获这个异常。函数调用堆栈解退表示未捕获异常的函数终止，删除函数的所有局部变量，控制返回函数调用点。如果函数调用点在try块中，则试捕获这个异常，如果函数调用点不在try块中或没有捕获这个异常，则再次发生堆栈解退。上节曾介绍过，如果程序不捕获异常，则调用函数terminate以终止程序。图13．3的程序演示了堆栈解退。  </p>   
+<pre class="code"> // Fig. 13.3: fig13_03.cpp
+ // Demonstrating stack unwinding.
+ #include &lt;iostream&gt;
+ #include &lt;stdexcept&gt;
+ using namespace std;
+ void function3() throw ( runtime_error )
+ {
+   throw runtimeerror( "runtime_error in function3" );
+ }
+ void function2() throw ( runtimeerror )
+ {
+   function3();
+ }
+ void functionl() throw ( runtime_error )
+ {
+   function2();
+ }
+ int main()
+ {
+   try {
+     functionl();
+   }
+   catch ( runtime_error e }
+   {
+     cout << "Exception occurred: "<< e.what() << endl;
+   }
+   return 0;
+ }
+</pre>
+<h5>输出结果：</h5>
+Exception occurred:   runtime_error in function3</pre>   
+                                      
+<h5>图 13.3   堆栈解退  </h5>
+<p>在main中，第25行的try块调用function1。然后第18行定义的function1调用funclion2。然后第13行定义的function2调用function3。function3的第10行抛出exception对象。由于第10行不在try块中，因此发生堆栈解退，function3终止．控制返回function2(第15行)。由于第15行不在try块中，再次发生堆栈解退，function2终止，控制返回funetio1(第20行)。由于第20行不在try块中，又一次发生堆栈解退，fonetion1终止，控制返回main(第26行)。由于第26行在try块中，可以捕获异常，并在try块后面第一个匹配的catch处理器中处理(第28行)。  </p>   
+ 
+
+
+ 
+
+<div class="rpindex"><a href="106.html"> 下一页</a><a href="104.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

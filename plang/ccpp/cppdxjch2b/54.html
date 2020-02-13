@@ -1,0 +1,371 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="53.html"> 上一页</a><a href="55.html"> 下一页</a></div>
+<h2>6．14 使用数据成员和成员函数</h2>
+<p>
+  员函数调整客户的银行借贷(例如BanLAccount类的private数据成员)。</p><p>
+     
+类通常提供public成员函数，让类的客户设置(写入)或读取(取得)private数据成员的值。这些函数通常称为get和set。更具体地说，设置数据成员interestRate的成员函数通常称为setInterestRate，读取数据成员IntersetRate的值通常称为getInterestRate。读取函数也称为“查询”函数。  </p>
+  <p>
+     
+提供get和set函数与指定数据成员为public同样重要，这是C++语言在软件工程中的另一优势。如果数据成员为public，则程序中的任何函数可以随意读取和写入这个数据成员。如果数据成员为private．则public   get函数可以让其他函数读取数据，而且数据的显示和格式化也可以用get函数控制。public   set函数通常用于检查数据成员的修改，保证新值是适当的数据项目。例如，如果想把一个月的日期号数设置为37会被禁止，将人的身高设置为负值也会被禁止，将数字量设置为字母值也会被拒绝，将一个人的成绩设置为185分(取百分制时)同样也会被拒绝等等。  </p>
+  <h5>软件工程视点6. 22 </h5>
+  <p>
+     
+指定private数据成员并通过public成员函数控制这些数据成员的访问(特别是写入访问)可以保证数据的完整性。  </p>
+  <h5>
+    测试与调试提示6．5  </h5>
+  <p>
+     
+指定private数据成员并不能自动保证数据完整性，程序员还要提供验证检查。但C++提供了让程序员方便地设计更好的程序的框架。  </p>
+  <h5>
+    编程技巧6．7  </h5>
+  <p>
+     
+设置private数据值的成员函数应验证所要新值是否正确，如果不正确，则set数应将Privte数据成员设置为相应的一致状态。  </p>
+  <p>
+  试图要对数据成员指定无效值时，应当提醒类客户。类的set函数常写成返回一个值，表示试图对数据成员指定无效值。这样就使类的客户可以测试set函数的返回值，确定其操作的对象是否为有效对象，并在对象无效时采取相应操作。  </p>
+  <p>
+     
+图6．1O将Time类扩展成包括private数据成员hour、minute和second的get和set函数。set函数严格控制数据成员的设置。如果想把数据成员设置为无效值，则会把数据成员设置为0(从而使数据成员保持一致状态)。每个get函数只是返回相应数据成员的值。程序首先用set函数设置Time对象t的private数据成员为有效值，接着用get函数读取这个值以便输出。然后set函数要将hour和second成员设置为无效值并将minute成员设置为有效值，并用get函数读取这个值以便输出。输出表明,无效值使得数据成员设置为0。最后，程序将时间设置为11：58：00并用函数incrementMinutes增加3分钟。函数incrementMinutes是个非成员函数，它调用get和set成员函数增加minute成员的值。尽管这样的方法实现了所需的功能，但是多次函数调用降低了程序的性能。下一章将介绍用友元函数消除多次函数调用的性能负担。  </p>
+  <h5>
+    
+    常见编程错误6．11  </h5>
+  <p>
+     
+构造函数可以调用类的其他成员函数，如set和get函数，但由于构造函数初始化对象，因此数据成员可能还处于不一致状态。数据成员在初始化之前使用可能造成逻辑错误。  </p>
+  <pre class="code">
+ // Fig. 6.10: time3.h
+ // Declaration of the Time class.
+ // preprocessor directives that
+ // prevent multiple inclusions of header file
+ #ifndef TIME3_H
+ #define TIME3_H
+ class Time {
+ public:
+   Time( int = 0, int = 0, int= 0 );  // constructor
+   // set functions
+   void setTime( int, int, int ); // set hour, minute, se
+   void setHour( iht );  // set hour
+   void setMinute( int ); // set minute
+   void setSecond( int ); // set second
+   // get functions
+   int getHourO;       // return hour
+   int getMinute();      // return minute
+   int getSecond();      // return second
+   void printMilitary();  // output military time
+   void printStandard();  // output standard time
+ private:
+   int hour;           // 0 - 23
+   int minute;          // 0 - 59
+   int second;          // 0 - 59
+ }
+ #endif
+ // Fig. 6.10: time3.cpp
+ // Member function defintions for Time class
+ #include "time3.h"
+ #include < iostream.h>
+ // Constructor function to initialize private data.
+ // Default values are 0 (see class definition).
+ Time::Time( int hr, int min, int sec )
+  { setTime( hr, min, sec ); }
+ // Set the values of hour, minute, and second.
+ void Time::setTime(int h,int m,int s)
+ {
+   setHour( h );
+   setMinute( m );
+   setSecond( s );
+ }
+ // Set the hour value
+ void Time::setHour(int h)
+ {hour = (h>0 && h <24 )? h: 0;}
+ // Set the minute value
+ void Time::setMinute( int m )
+   { minute = ( m >= 0 && m  60 ) ? m : 0; }
+ // Set the second value
+ void Time::setSecond( int s
+ { second = ( s >= 0 && s < 60 ) ? s : 0; }
+ // Get the hour value
+ int Time::getHour() { return hour;}
+ // Get the minute value
+ int Time::getMinute() { return minute; }
+ // Get the second value
+ int Time::getSecond() { return second; }
+ // Print time is military format
+ void Time::printMilitary()
+ {
+   cout << ( hour < 10 ? "0" :  "" ) << hour << ":"
+       << ( minute < 10 ? "0" :  "" ) << minute;
+  }
+ // Print time in standard format
+ void Time::printStandard{)
+ {
+     cout << ( { hour == 0 II hour == 12 ) ? 12 : hour % 12 )
+          << ":" << ( minute < 10 ? "0" :  "" ) << minute
+          << ":" << ( second < 10 ? "0" :  "" ) << second
+          << ( hour < 12 ? "AM" : "PM" );
+ }
+ // Fig. 6.10: fig06_lO.cpp
+ #include < iostream.h>
+ // Demonstrating the Time class ser and get functions
+ #include< iostream.h>
+ #include "time3.h"
+ void incrementMinutes( Time &, const iht );
+ int main()
+ {
+     Time t;
+    t.setHour{ 17 );
+    t.setMinute( 34 );
+    t.setSecond( 25 );
+     cout << "Result of setting all valid values:\n;
+          <<    our:  << t.getHour()
+          << " Minute: " << t.getMinute()
+          <<" Second: "<< t.getSecond();
+     t.setHour( 234 );   // invalid hour set to 0
+     t.setMinute( 43 );
+   t.setSecond( 6373 );     // invalid second set to 0
+   cout << "\n\nResult of attempting to set invalid hour and"
+        <<  "second:\m Hour: "<< t.getHour()
+        <<" Minute: "<< t.getMinute()
+        <<" Second: "<< t.getSecond() << "\n\n";
+   t.setTime( 11, 58, 0 );
+   incrementMinutes( t, 3 );
+  return 0;
+ }
+ void incrementMinutes(Time &tt, const int count)
+ {
+   cout << "Incrementing minute" << count
+       << "times:\nStart time: ";
+   tt.priatStandard();
+   for (int i = 0; i < count; i++ ) {
+     tt.setMinute( (tt.getMinute() + 1 ) % 60);
+      if (tt.getMinute() == 0 )
+        tt.setHour( ( tt.getHour() + 1 ) % 24);
+     cout << "\nminute + 1: ";
+     tt.printStandard();
+   }
+   cout << endl;
+ }
+</pre>
+  <p>
+  输出结果：</p>
+  <p>
+  Result of setting all valid values:</p><p>
+       
+Hour: 17 Minute:   34 Second: 25  </p><p>
+  Result of attempting to set inv]id hour and second:</p><p>
+         
+Hour: 0 Minute: 43 Second: 0  </p><p>
+  Incrementing minute 3 times:</p><p>
+  Start time:   11:58:00 AM</p><p>
+  minute + 1; 11:59:00 AM</p><p>
+  mioute + 1:12:00:00 PM</p><p>
+  minute +   1:12:01:00 PM</p>
+  <p>
+  图 6．10 使用set和get函数  </p>
+  <p>
+  从软件工程角度看，使用set函数非常重要，因为它们可以进行有效性检查。set和get函数还有其他重要的软件工程优势。  </p>
+  <h5>
+    软件工程视点6．23  </h5>
+  <p>
+     
+通过set和get函数访问private数据不仅能防止数据成员接受无效值，而且还使类的客户J需要考虑数据成员的表达方式。这样，如果数据表达方式因故改变(通常是为了减少所需存储量或提高性能)，只要成员函数提   供的接口不变，那么只需改变成员函数而不必改变客户，但客户可能需要重新编译。  </p>
+  <h2><a name="6.15" id="6.15"></a>6．15   微妙的陷阱：返回对private数据成员的引用</h2>
+  <p>
+       
+  对象的引用是对象名的别名，因此可以放在赋值浯句左边，在这种情况中，引用可以成为可接收赋值的左值。要使用这种功能，就要让类的public成员函数返回对该类private数据成员的非const引用。</p><p>
+     
+图6．11用简化的Time类演示如何返回private数据成员的引用。调用badSetHour函数返回的引用作为private数据成员hour的别名。函数调用可以按任何使用private数据成员的方式使用，包括作为赋值语句的左值。  </p>
+  <h5>
+    编程技巧6．8  </h5>
+  <p>
+   
+不要让类的public成员函数返回对该类private数据成员的非const引用(或指针)，返回这种引用会破坏类的封装。  </p>
+  <pre class="code"> // Fig. 6.11: time4.h<br /> // Declaration of the Time class.<br /> // Member functions defined in time4.cpp<br /> // Fig. 6.11: time4.h<br /> // Declaration of the Time class.<br /> // Member functions defined in time4.cpp<br /> // preprocessor directives that<br /> // prevent multiple inclusions of header file<br /> #ifndef TIME4_H<br /> #define TIME4_H<br /> class Time {<br /> public<br />   Time( int = 0, int = 0, int = 0 );<br />   void setTime( int, int, int );<br />   int getHour();<br />   int &amp;badSetHour( int );  // DANGEROUS reference return<br /> private:<br />   int hour;<br />   int minute;<br />   int second;<br /> };<br /> #endif<br /> // Fig. 6.11: time4.cpp<br /> // Member function definitions for Time class.<br /> #include &quot;time4.h&quot;<br /> #include &lt;iostream.h&gt;<br /> // Constructor function to initialize private data.<br /> // Calls member function setTime to set variables.<br /> // Default values are 0 (see class definition).<br /> Time::Time( int hr, int min, int sec )<br />   { setTime( hr, min, sec ); }<br /> // Set the values of hour, minute, and second.<br /> void Time::setTime( int h, int m, int s )<br />{<br />   hour  = ( h &gt;= o &amp;&amp; h &lt; 24 ) ? h : 0;<br />   minute  ( m &gt;= 0 &amp;&amp; m &lt; 60 ) ?  m : 0;<br />   second = ( s &gt;= 0 &amp;&amp; s &lt; 60 ) ? s : 0;<br /> }<br /> // Get the hour value<br /> int Time::getHour() { return hour; ]<br /> // POOR PROGRAMMING PRACTICE:<br /> // Returning a reference to a private data member.<br /> int &amp;Time::badSetHour( int hh )<br /> {<br />   hour = ( hh &gt;= 0 &amp;&amp; hh &lt; 24 ) ? hh : 0;<br />   return hour;  // DANGEROUS reference return<br /> }<br /> // Fig. 6.11: fig06_11.cpp<br /> // Demonstrating a public member function that<br /> // returns a reference to a private data member.<br /> // Time class has been triced for this example.<br /> #include &lt;iostream.h&gt;<br /> #include &quot;time4.h&quot;<br /> int main()<br /> {<br />   Time t;<br />   int &amp;hourRef = t.badSetHour( 20 );<br />   cout &lt;&lt; &quot;Hour before modification: &quot;&lt;&lt; hourRef;<br />   hourRef = 30;  // modification with invalid value<br />   cout &lt;&lt; &quot;\nHour after modification: &quot;&lt;&lt; t.getHour();<br />   // Dangerous: Function call that returns<br />   // a reference can be used as an lvalue!<br />   t.badSetHour(12) = 74;<br />   cout &lt;&lt; &quot;\n\n*******************************************\n&quot;<br />        &lt;&lt; &quot;POOR PROGRkMMING PRACTICE!!!!!!!!\n&quot;<br />        &lt;&lt; &quot;badSetHour as an lvalue, Hour:&quot;<br />        &lt;&lt; t.getHour()<br />        &lt;&lt; &quot;\n*************************************** &lt;&lt; endl;<br />   return 0;<br /> }<br /> // preprocessor directives that<br /> // prevent multiple inclusions of header file<br /> #ifndef TIME4_H<br /> #define TIME4_H<br /> class Time {<br /> public<br />   Time( int = 0, int = 0, int = 0 );<br />   void setTime( int, int, int );<br />   int getHour();<br />   int &amp;badSetHour( int );  // DANGEROUS reference return<br /> private:<br />   int hour;<br />   int minute;<br />   int second;<br /> };<br /> #endif<br /> // Fig. 6.11: time4.cpp<br /> // Member function definitions for Time class.<br /> #include &quot;time4.h&quot;<br /> #include &lt;iostream.h&gt;<br /> // Constructor function to initialize private data.<br /> // Calls member function setTime to set variables.<br /> // Default values are 0 (see class definition).<br /> Time::Time( int hr, int min, int sec )<br />   { setTime( hr, min, sec ); }<br /> // Set the values of hour, minute, and second.<br /> void Time::setTime( int h, int m, int s )<br />{<br />   hour  = ( h &gt;= o &amp;&amp; h &lt; 24 ) ? h : 0;<br />   minute  ( m &gt;= 0 &amp;&amp; m &lt; 60 ) ?  m : 0;<br />   second = ( s &gt;= 0 &amp;&amp; s &lt; 60 ) ? s : 0;<br /> }<br /> // Get the hour value<br /> int Time::getHour() { return hour; ]<br /> // POOR PROGRAMMING PRACTICE:<br /> // Returning a reference to a private data member.<br /> int &amp;Time::badSetHour( int hh )<br /> {<br />   hour = ( hh &gt;= 0 &amp;&amp; hh &lt; 24 ) ? hh : 0;<br />   return hour;  // DANGEROUS reference return<br /> }<br /> // Fig. 6.11: fig06_11.cpp<br /> // Demonstrating a public member function that<br /> // returns a reference to a private data member.<br /> // Time class has been triced for this example.<br /> #include &lt;iostream.h&gt;<br /> #include &quot;time4.h&quot;<br /> int main()<br /> {<br />   Time t;<br />   int &amp;hourRef = t.badSetHour( 20 );<br />   cout &lt;&lt; &quot;Hour before modification: &quot;&lt;&lt; hourRef;<br />   hourRef = 30;  // modification with invalid value<br />   cout &lt;&lt; &quot;\nHour after modification: &quot;&lt;&lt; t.getHour();<br />   // Dangerous: Function call that returns<br />   // a reference can be used as an lvalue!<br />   t.badSetHour(12) = 74;<br />   cout &lt;&lt; &quot;\n\n*******************************************\n&quot;<br />        &lt;&lt; &quot;POOR PROGRkMMING PRACTICE!!!!!!!!\n&quot;<br />        &lt;&lt; &quot;badSetHour as an lvalue, Hour:&quot;<br />        &lt;&lt; t.getHour()<br />        &lt;&lt; &quot;\n*************************************** &lt;&lt; endl;<br />   return 0;<br /> }
+  </pre>
+  <p>
+  输出结果：</p><p>
+  Hour before modification: 20</p><p>
+  Hour after   modification: 30</p>
+  <p>
+  *********************************</p><p>
+  POOR PROGRAMMING   PRACTICE!!!!!!!!</p><p>
+  badSetHour as an lvalue, Hour:   74</p><p>
+  *********************************</p>
+  <p>
+  图 6．11 返回对private数据成员引用  </p>
+  <p>
+  程序首先声明Time对象t和引用hourRef(把调用t.badSetHour(20)返回的引用赋给hourRef)。程序显示别名hourRef的值。然后用这个别名设置hour的值为30(无效值)并再次显示该值。最后，用函数调用本身作为左值并赋值74(另一无效值)，再次显示该值。  </p>
+  <div class="rpindex"><a href="55.html"> 下一页</a><a href="53.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

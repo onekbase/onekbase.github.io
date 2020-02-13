@@ -1,0 +1,808 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<p><div class="lpindex"><a href="index.html">首页</a><a href="31.html"> 上一页</a><a href="33.html"> 下一页</a></div>
+<h2>4．4 使用数组的举例</h2>
+<p>图4．3的程序用for重复结构将10个元家的整型数组n的元素初始化为0，并用表格形式打印数组。第一个输出语句显示for结构中所打印列的列标题。记住，setw指定下一个值的输出域宽。   </p>
+  <p>可以在数组声明中用等号和逗号分隔的列表(放在花括号中)将数组中的元素初始化。程序4．4将七个元素的整型数组初始化并用表格形式打印数组。   </p>
+
+<pre class="code"> // Fig. 4.3: fig04_03.cpp
+ // initializing an array
+ #include &lt;iostream.h&gt;<br /> #include &lt;iomanip.h&gt;
+  int main()
+ {
+   int i, n[10];
+  for ( i = 0; i < 10; i++ )       // initialize array
+    n[ i ] = 0;
+  cout << "Element" << setw( 13 ) << "Value" << endl;
+  for(i=0;i<10;i++)             // print array
+    cout << setw( 7 ) << i << setw( 13 ) << n[ i ] << endl;
+   return O;
+ }</pre>
+<p>  输出结果：</p>
+<p>Element       value</p>
+<p>  0                 0</p>
+<p>  1               0</p>
+<p>  2               0</p>
+<p>  3                 0</p>
+<p>  4               0</p>
+<p>  5               0</p>
+<p>  6                 0</p>
+<p>  7               0</p>
+<p>  8               0</p>
+<p>  9                 0</p>
+<p>图4.3 将10个元素的整型数组n的元素初始化为0   </p>
+                               
+
+<pre class="code">// Fig. 4.4:fig04 04.cpp
+ // Initializing an array with a declaration
+ #include &lt;iostream.h&gt;<br /> #include &lt;iomanip.h&gt;
+ int main()
+ {
+    int n[ 10 ] = { 32, 27, 64, 18, 95, 14, 90, 70, 60, 37 };
+    cout << "Element" << setw( 13 ) << "Value" << endl;
+    for ( int i = 0; i < 10; i++ )
+         cout << setw( 7 ) << i << setw( 13 ) << n[ i ] << endl;
+    return 0;
+ }</pre>
+输出结果：
+<p>  Element     Value</p>
+<p>  0           32</p>
+<p>  1             27</p>
+<p>  2           64</p>
+<p>  3           18</p>
+<p>  4           95</p>
+<p>  5             14</p>
+<p>  6           9O</p>
+<p>  7           7O</p>
+<p>  8           6O</p>
+<p>  9             37</p>
+<p>图4．4 用声明将数组中的元素初始化  </p>
+                           
+<p>如果初始化的元素比数组中的元素少，则其余元素自动初始化为0。例如，可以用下列声明将图4．3中数组n的元素初始化为0：  </p>
+  <pre class="code">int n[1O] =   {O};  </pre>
+<p>  其显式地将第一个元素初始化为0，隐式地将其余元素自动初始化为0，因为初始化值比数组中的元素少。程序员至少要显式地将第一个元素初始化为0，才能将其余元素自动初始化为0。图4．3的方法可以在程序执行时重复进行。</p>
+<h5>常见编程错误4．2  </h5>
+<p>需要初始化数组元素而没有初始化数组元素是个逻辑错误。  </p>
+   
+<p>下列数组声明是个逻辑错误：  </p>
+   
+<p>int n[5]   = { 32，27， 64， 18， 95， 14}；  </p>
+   
+<p>因为有6个初始化值，而数组只有5个元素。  </p>
+  <h5>常见编程错误4．3  </h5>
+  <p>初始化值超过数组元素个数是个逻辑错误。  </p>
+  <p>如果带初始化值列表的声明中省略数组长度，则数组中的元素个数就是初始化值列表中的元素个数。例如：  </p>
+   
+<p>int n[] = { 1， 2， 3，   4， 5}；  </p>
+<p>  生成五个元素的数组。</p>
+   
+<h5>性能提示4．1  </h5>
+<p>如果不用执行时的赋值语句初始化数组而用数组初始化值列表在编译时初始化数组，则程序执行速度更快。  </p>
+  <p>图4．5的程序将10个元素的数组s初始化为整数2、4、6、…20，并以表格形式打印数组。这些数值是将循环计数器的值乘以2再加上2产生的。  </p>
+<pre class="code">// Fig. 4.5: figO405.cpp
+ // Initialize array s to the even integers from 2 to 20.
+ #include < iostream.h>
+ #include < iomanip.h>
+ int main()
+    const int arraySize = 10;
+    int j, s[arraySize];
+   for ( j = 0; j < arraySize; j++ )  // set the values
+       si [j] = 2 + 2* j;
+    cout << "Element" << setw( 13 ) << "Value" << endl;
+    for ( j - 0; j < arraysize; j++ )  // print the values
+       cout << setw( 7 ) << j << setw( 13 ) << s[ j ] << endl;
+    return 0;
+ }</pre>
+<p>  输出结果:</p>
+<p>  Element                Value</p>
+<p>  0                       2</p>
+<p>  1                     4</p>
+<p>  2                       6</p>
+<p>  3                     8</p>
+<p>  4                    10</p>
+<p>  5                      12</p>
+<p>  6                    14</p>
+<p>  7                      16</p>
+<p>  8                    18</p>
+<p>  9                      20</p>
+
+                             
+<p>图4．5 将产生的值赋给数组元素  </p>
+
+<p>  下列语句：</p>
+  <pre class="code">const int   arraySlze：1O  </pre>
+<p>  用const限定符声明常量变量arrayySize的值为10。常量变量应在声明时初始化为常量表达式，此后不能改变(图4．6和图4．7)。常量变量也称为命名常量(named   constant)或只读变量(read-only   variable)。</p>
+<p>  注意，常量变量一词是自相矛盾的，称为逆喻(像“龙虾”之类的名词)。</p>
+
+<pre class="code">// Fig. 4.6: fig04_06.cpp
+ // Using a properly initialized constant variable
+ #include < iostream.h>
+ int main()
+ {
+    const int x - 7;  // initialized constant variable
+    cout << "The value of constant variable x is:"
+       << x << endl;
+   return 0;
+ }</pre>
+<p>  输出结果：</p>
+ 
+<p>The value of constant variable x is：   7  </p>
+
+                              
+<p>图4．6 正确地初始化和使用常量变量  </p>
+
+<pre class="code">// Fig. 4.7:fig04 07.cpp
+ // A const object must be initialized
+ int main()
+ {
+   const int x;  // Error: x must be initialized
+   x = 7;       // Error: cannot modify a const variable
+  return 0;
+}</pre>
+<p>  输出结果：</p>
+<p>  Compiling FIG04-7.CPP:</p>
+   
+<p>Error FIG04_7．CPP   6：Constant variable，x’must be initialized  </p>
+   
+<p>Error FIG04_7．CPP 8：Cannot   modify a const object  </p>
+
+                                    
+<p>图4．7const   对象应初始化  </p>
+   
+
+   
+<h5>常见编程错误4．4  </h5>
+<p>在执行语句中对常量变量赋值是个语法错误。  </p>
+  <p>常量变量可以放在任何出现常量表达式的地方。图4．5中，用常量变量arraySize指定数组s的长度：  </p>
+   
+<p>int j，s[arraySize]；     </p>
+   
+<h5>幸常见编程错误4．5  </h5>
+<p>只能用常量声明自动和静态数蛆，否则是个语法错误。  </p>
+  <p>用常量变量声明数组长度使程序的伸缩性更强。图4．5中，要让第一个for循环填上1000个数组元素，只要将anaySize的值从10变为1000即可。如果不用常量变量arraySize，则要在程序中进行三处改变才能处理1000个数组元素。随着程序加大，这个方法在编写清晰的程序中越来越有用。  </p>
+  <h5>软件工程视点4．1  </h5>
+  <p>将每个数组的长度定义为常量变量而不是常量，能使程序的伸缩性更强。  </p>
+   
+  <h5>编程技巧4．1  </h5>
+  <p>将每个数组的长度定义为常量变量而不是常量，能使程序更清晰。这个方法可以取消“魔数”，例如，在处理10元素数组的程序中重复出现长度10使数字10人为地变得重要，程序中存在的与数组长度无关的其他数字10时可能使读者搞乱。  </p>
+  <p>图4，8中的程序求12个元素的整型数组a中的元素和，for循环体中的语句进行求和。请注意，数组a的初始化值通常是用户从键盘输入的。例如，下列for结构：  </p>
+  <pre class="code">for ( int j=0; j < arraySize；j++ )
+cin >>a[j]；</pre>
+  <p>  一次一个地从键盘读取数值,并将数值存放在元素a[j]中。</p>
+  <p>下一个例子用数组汇总调查中收集的数据。考虑下列问题：  </p>
+  <p>40个学生用1到10的分数评价学生咖啡屋中的食品质量(1表示很差，10表示很好)。将40个值放在整型数组中，并汇总调查结果。  </p>
+  <p>这是典型的数组应用(如图4．9)。我们要汇总每种回答(1到10)的个数。数组responses是40个元素的评分数组。我们用11个元素的数组frequency计算每个答案的个数，忽略第一个元素frequeney[0]，因为用1分对应frequency[1]而不是对应frequency[0]更好理解。这样可以直接用回答的分数作为frequency数组的下标。  </p>
+
+<pre class="code">// Fig. 4.8:fig04 OS.cppf
+ // Compute the sum of the elements of the array
+ #include < iostream.h>
+ int main()
+ {
+     const iht arraySize = 12;
+     int a[ arraySize ] = { 1, 3, 5, 4, 7, 2, 99,
+, 45, 67, 89, 45 };
+     int total = 0;
+     for (int i = 0; i < arraySize ; i++ )
+        total += a[ i ];
+     cout << "Total of array element values is "<< total << endl;
+     return 0;
+ }
+</pre>
+<p>  输出结果：</p>
+  <p>Total of array element values is 383  </p>
+
+                                       
+<p>图4．8计算数组元素和  </p>
+
+<pre class="code"> // Fig. 4.9: fig04_09.cpp
+ // Student poll program
+ #include < iostream.h>
+ #include < iomanip.h>
+ int main()
+    const int responseSize = 40, frequencySize = 11;
+    int responses[ responseSize I = { 1, 2, 6, 4, 8, 5, 9, 7, 8,
+, 1, 6, 3, 8, 6, 10, 3, 8, 2, 7, 6, 5, 7, 6, 8, 6, 7,
+, 6, 6, 5, 6, 7, 5, 6, 4, 8, 6, 8, 10 ];
+   int frequency [ frequencySize ] = { 0 };
+   for (int answer = 0; answer < responseSize; answer++ )
+     ++frequency [ responses[ answer ] ];
+   cout << "Rating" << setw( 17 ) << "Frequency" << endl;
+   for ( int rating = 1; rating < frequencySize; rating++ )
+     cout << setw( 6 ) << rating
+         << setw( 17 ) << frequency [ rating ] << endl;
+     return 0;
+ }</pre>
+<p>  输出结果：</p>
+<p>  Rating       Frequency</p>
+<p>  1           2</p>
+<p>  2           2</p>
+<p>  3           2</p>
+<p>  4             2</p>
+<p>  5           5</p>
+<p>  6           11</p>
+<p>  7           5</p>
+<p>  8             7</p>
+<p>  9           l</p>
+<p>  10           3</p>
+
+                             
+<p>图4.9   学生调查分析程序  </p>
+
+<h5>  编程技巧4．2</h5>
+<p>努力保证程序的清晰性，有时甚至可以为保证程序清晰而牺牲内存与处理器时间的使用效率。  </p>
+  <h5>性能堤示4．2  </h5>
+  <p>有时性能考虑比保证程序的清晰性更重要。  </p>
+  <p>第一个for循环一次一个地从responses数组取得回答，并将frequeney数组中的10个计数器(frequency[l]到frequency[10])之一加1。这个循环中的关键语句如下：  </p>
+  <pre class="code">++frequency[   responses[answer  &gt;；</pre>
+<p>  这个语句根据responses[answer]的值相应递增frequency计数器。例如，计数器answer为0时，responses[answer]为1，因此“++frequency[responses[answer&gt;；”实际解释如下：</p>
+  <pre class="code">++frequency[1]；  </pre>
+<p>  将数组下标为1的元素加1。计数器answer为1时，responses[answer]为2，因此&quot;++frqueney[responses[answer&gt;；”实际解释如下：</p>
+  <p>++frequency[2]；  </p>
+<p>  将数组下标为2的元素加1。计数器answer为2时，response[answer]为6，因此&quot;++frequency[responses</p>
+<p>  [answer&gt;；”实际解释如下：</p>
+  <pre class="code">++frequency[6];  </pre>
+<p>  将数组下标为6的元素加1等等。注意，不管调查中处理多少个回答，都只需要11个元素的数组(忽略元素0)即可汇总结果。如果数据中包含13之类的无效值，则程序对frequency[13]加1，在数组边界之外。C++没有数组边界检查，无法阻止计算机到引用不存在的元素。</p>
+<p>这样执行程序可能超出数组边界，而不产生任伺警告。程序员应保证所有数组引用都在数组边界之内。C++是个可扩展语言，第8章介绍扩展C++，用类将数组实现为用户自定义类型。新的数组定义能进行许多C++内建数组中没有的操作，例如，可以直接比较数组，将一个数组赋给另一数组，用cin和cout输入和输出整个数组，自动初始化数组，防止访问超界数组元素和改变下标范围(甚至改变下标类型)，使数组第一个元素下标不一定为0。</p>
+<h5>常见编程错误4．6  </h5>
+  <p>引用超出数组边界的元素是个执行时的逻辑错误，而不是语法错误。  </p>
+   
+  <h5>测试与调试提示4．1  </h5>
+  <p>对数组进行循环操作时，数组下标不能低于0，不能高于数组中的元素总数(应比数组中的元素总数少1)。保证避免循环终止条件访问超界数组元素。  </p>
+  <h5>测试与调试提示4．2  </h5>
+  <p>程序应验证所有输入值的正确性，防止错误信息影响程序计算。  </p>
+   
+  <h5>可移植性提示4. 1  </h5>
+  <p>访问超界数组元素所带来的影响(通常很严重)是与系统有关。  </p>
+   
+  <h5>测试与调试提示4．3  </h5>
+  <p>第6章开始介绍类时，将介绍如何开发“智能”数组，可以在运行时自动检查所有下标引用在边界之内。使用这种智能数组能消除一定的缺陷。  </p>
+<p>  下一个例子(图4．10)从数组读取数值，并用条形图或直方图进行描述。打印每个数值，然后在数字旁边打印该数字所指定星号个数的条形图。嵌套for循环实现绘制条形图。注意用endl结束直方图。</p>
+  <h5>常见编程错误4．7  </h5>
+  <p>尽管一个for循环和另一个嵌套for循环中可以用相同计数器变量，但这通常是个逻辑错误。  </p>
+<pre class="code">// Fig. 4.10: fig04_10.cpp
+ // Histogram printing program
+ #include < iostream.h>
+ #include < iomanip.h>
+ int main()
+ {
+   const int arraySize = 10;
+   int n[ arraySize ] = { 19, 3, 15, 7, 11, 9, 13, 5, 17, 1 };
+  cout << "Element" << setw( 13 ) << "Value"
+      << setw( 17 ) << "Histogram" << endl;
+  for (int i = 0; i < arraySize ; i++ ) {
+     cout << setw( 7 ) << i << setw( 13 )
+         << n[ i ] << setw( 9 );
+     for ( int j = 0; j < n[ i ] ; j++ )   // print one bar
+        cout << '*';
+     cout << endl;
+  }
+  return 0;
+ }</pre>
+<p>输出结果：</p>
+<p>  Element     Value       Histogram</p>
+<p>  0             19         *******************</p>
+<p>  1           3         ***</p>
+<p>  2             15         ***************</p>
+<p>  3           7         *******</p>
+<p>  4             11         ************</p>
+<p>  $           9         *********</p>
+<p>  6             13         *************</p>
+<p>  7           5         ******</p>
+<p>  8             17         *****************</p>
+<p>  9           1</p>
+
+
+<p>  测试与调试提示4．4</p>
+  <p>尽管for循环中的计数器变量可以修改，但这样容易造成一些缺陷，应当避免。  </p>
+  <p>第3章介绍了投骰子程序(参见图3．8)，就是将六面体骰子投6000次，测试随机数产生器是否真的产生随机数。图4．11显示了这个程序的数组版本。  </p>
+
+<pre class="code">// Fig. 4.11: figo411.cpp
+ // Roll a six-sided die 6000 times
+ #include &lt;iostream.h&gt;
+ #include &lt;iomanip.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;time.h&gt;
+ int main()
+ {
+    const iht arraySize = 7;
+    int face, frequency[ arraySize ] = { 0 };
+    stand( time( 0 ) );
+    for ( int roll =1; roll <= 6000; roll++ )
+      ++frequency[ 1 + rand() % 6 ]; // replaces 20-line switch
+                               // of Fig. 3.8
+    cout << "Face" << setw( 13 ) << "Frequency" << endl;
+   // ignore element 0 in the frequency array
+   for ( face = 1; face < arraySize ; face++ )
+      cout << setw{ 4 ) << face
+          << setw( 13 ) << frequency[ face ] << endl;
+    return 0;
+ }
+</pre>
+<p>  输出结果：</p>
+<p>  Face       Frequency</p>
+<p>  1         1037</p>
+<p>  2         987</p>
+<p>  3         1013</p>
+<p>  4           1028</p>
+<p>  5         952</p>
+<p>  6         983</p>
+
+<p>  图4.ll   用数组而不用switch结构设计投骰子程序</p>
+  <p>前面只介绍了整型数组，但数组可以是任何类型，下面要介绍如何用字符数组存放字符串。前面介绍的字符串处理功能只有用cout和  &lt;&lt;输入字符串，“hello'’之类的字符串其实就是一个字符数组。字符数组有几个特性。</p>
+  <p>字符数组可以用字符串直接量初始化。例如，下列声明：  </p>
+   
+<pre class="code">char string1[] =     &quot;first&quot;;</pre>
+<p>  将数组string1的元素初始化为字符串&quot;first&quot;中的各个元索。上述声明中string1的长度是编译器根据字符串长度确定的。注意，字符串“first”包括五个字符加一个特殊字符串终止符，称为空字符(null   character)，这样，字符串string1实际上包含6个元素。空字符对应的字符常量为'\0'(反斜杠加0)，所有字符串均用这个空字符结尾。表示字符串的字符数组应该足以放置字符中中的所有字符和空字符。</p>
+  <p>字符数组还可以用初始化值列表中的各个字符常量初始化。上述语句也可以写成：  </p>
+   
+<pre class="code">char string1[] ={ 'f', 'i', 'r',   's', 't', '\0'   }  </pre>
+
+<p>  由于字符串其实是字符数组，因此可以用数组下标符号直接访问字符串中的各个字符。例如，string1[O]是字符'f'，string1[3]是字符's'。</p>
+  <p>我们还可以用cin和  &gt;&gt;直接从键盘输入字符数组。例如，下列声明：</p>
+   
+<p>char   string2[20]；  </p>
+<p>  生成的字符数组能存放19个字符和一个null终止符的字符串。</p>
+   
+<p>下列语句：  </p>
+  <p>cin  &gt;&gt;string2；</p>
+<p>  从键盘中将字符串读取到string2中。注意，上述语句中只提供了数组名，没有提供数组长度的信息。程序员要负责保证接收字符串的数组能够放置用户从键盘输入的任何字符串。cin从键盘读取字符，直到遇到第一个空白字符，它不管数组长度如何。这样，用cin和&gt;&gt;输人数据可能插入到数组边界之外(5．12节介绍如何防止插入到数组边界之外)。</p>
+
+  <h5>常见编程错误4．8  </h5>
+  <p>如果cin  &gt;&gt;提供足够大的数组，则键盘输入时可能造成数据丢失和其他严重的运行时错误。</p>
+  <p>可以用cout和  &lt;&lt;输出表示空字符终止字符串的字符数组。下列语句打印数组string2：</p>
+  <pre class="code">cout  &lt;&lt;string2&lt;&lt;endl；</pre>
+<p>  注意cout&lt;&lt;和cin&gt;&gt;一样不在乎字符数组的长度。一直打印字符串的字符，直到遇到null终止符为止。</p>
+  <p>图4．12演示直接用字符串初始化字符数组、将字符串读取到字符数组中、将字符数组作为字符串打印以及访问字符串的各个字符。  </p>
+<pre class="code">// Fig. 4_12: fig04_12.cpp
+ // Treating character arrays as strings
+ #include < iostream.h>
+ int main()
+ {
+   char string1[ 20 ], string2[] = "string literal";
+   cout << "Enter a string: ";
+  cin >> string1;
+  cout << "string1 is: "<< string1
+      << "\nstring2 is: " << string2
+      << "stringl with spaces between characters is:\n";
+  for ( int i = 0; string1[ i ] != '\0'; i++ )
+     cout << string1[ i ] << ' ';
+  cin >> stringl;  // reads "there"
+  cout << "\nstring1 is: "<< string1 << endl;
+  cout << endl;
+  return 0;
+ }</pre>
+<p>  输出结果：</p>
+<p>  Enter a string: Hello   there</p>
+<p>  string1 is: Hello</p>
+<p>  string2 is: string literal</p>
+<p>  string1 with spaces   between characters is:</p>
+<p>  Hello</p>
+<p>  string1 is:   there</p>
+
+                          
+<p>图4．12将字符数组当作字符串  </p>
+
+  <p>图4．12用for结构在string1数组中循环，并打印各个字符，用空格分开。for结构的条件string1[i]!='\0'在遇到字符串的null终止符之前一直为真。  </p>
+  <p>第3章介绍了存储类说明符static。函数体中的static局部变量在程序执行期间存在，但只能在函数体中访问该变量。  </p>
+   
+  <h5>性能提示4.3  </h5>
+  <p>可以用static对局部数组声明，使该数组不必在每次调用函数时生成和初始化，该数组在程序中每次退出函数时不会删除，这样可以提高性能。  </p>
+  <p>声明为static的数组在程序装入时初始化。如果程序员不把static数组显式初始化，则编译器将这个数组初始化为0。  </p>
+  <p>图4．13显示了带有声明为static的局部效组的staticArrayInit函数和带自动局部数组的automaticArrayInit函数。staticArrayInit调用两次，编译器将static局部数组初始化为0。该函数打印数组，将每个元素加5，然后再次打印该数组；函数第二次调用时．static数组包含第一次调用时所存放的值。函数automaticArrayInit也调用两次，但自动局部数组的元素用数值1、2、3初始化。该函数打印数组，将每个元素加5，然后再次打印该数组；函数第二次调用时，数组重新初始化为1、2、3，因为这个数组是自动存储类。  </p>
+
+<pre class="code"> // Fig. 4.13: fig0413.cpp
+ // Static arrays are initialized to zero
+ #include < iostream.h>
+ void staticArrayInit( void );
+ void automaticArrayInit( void );
+ int main()
+ {
+    cout << "First call to each function:\n";
+    staticArrayInit();
+    automaticArrayInit();
+    cout << "\n\nSecond call to each function:\n";
+    staticArrayInit();
+    automaticArrayInit();
+    cout << endl;
+    return 0;
+ // function to demonstrate a static local array
+ void staticArrayInit( void )
+ {
+    static iht arrayl[ 3 ] ;
+    int i;
+    cout << "\nValues on entering staticArrayInit:\n";
+    for ( i = 0; i < 3; i++ )
+       cout << "array1[ " << i << " ] =" << array1[ i ] << " ";
+    cout << "\nValues on exiting staticArrayInit:\n";
+    for ( i = 0; i < 3; i++ )
+       cout << "array1[ " << i << " ] = "
+           << ( arrayl[ i ] += 5 ) <<" ";
+ }
+ // function to demonstrate an automatic local array
+ void automaticArrayInit( void )
+ {
+     int i, array2[ 3 ] = { 1, 2, 3 };
+     cout << "\n\nValues on entering automaticArrayInit:\n";
+     for ( i = 0; i < 3; i++ )
+        cout << "array2[ "<< i << "] = "<< array2[ i ] <<  " " ;
+     cout << "\nValues on exiting automaticArrayInit:\n";
+     for ( i = 0; i < 3; i++ }
+        cout << "array2[ "<< i << "] ="
+            << ( array2[ i ] += 5 ) <<  " " ;
+ }</pre>
+<p>输出结果：</p>
+<p>  First call to each function:</p>
+
+<p>  Values on entering   staticArrayInit:</p>
+<p>  arrayl[ 0 ] = 0 array1[ 1 I = 0 array1[ 2 ] = 0</p>
+<p>  Values on   exiting staticArrayInit:</p>
+<p>  arrayl[ 0 ] = 5 array1[ 1 ] = 5 array1[ 2 ] =   S</p>
+
+<p>  Values on entering automaticArrayInit:</p>
+<p>  array2[ 0 ] = 1 array2[ 1 ] =   2 array2[ 2 ] = 3</p>
+<p>  Values on exitimg automaticArraylmit:</p>
+<p>  arrayl[ 0 ] = 6   array2[ 1 ] = 7 array2[ 2 ] = 8</p>
+
+<p>  second call to each   function:</p>
+
+<p>  Values on entering staticArrayImit:</p>
+<p>  arrayl[ 0 ] = 5 arrayl[   1 ] = 5 arrayl[ 2 ] = 5</p>
+<p>  Values on exiting staticArrayInit:</p>
+<p>  arrayl[ 0 ] =   10 arrayl[ 1 ] = 10 arrayl[ 2 ] = 10</p>
+
+<p>  Values on entering   automaticArrayInit:</p>
+<p>  array2[ 0 ] = 1array[ 1 ] = 2array2[ 2 ] =   3</p>
+
+<p>  Values on exiting automaticArrayInit:</p>
+<p>  array2[ 0 ] = 6 array2[ 1 ] =   7 array2[ 2 ] = 8</p>
+
+
+                                 
+<p>图4．13   比较static数组初始化和自动数组初始化  </p>
+
+   
+<h5>常见编程错误4．9  </h5>
+<p>假设每次调用函数时函数局部static数组的元素初始化为0将导致程序中的逻辑错误。  </p>
+
+<h2>  <a name="4.5" id="4.5"></a>4．5 将数组传递给函</h2>
+<p>要将数组参数传递给函数，需指定不带方括号的数组名。例如，如果数组hourlyTemperatures声明如下：  </p>
+   
+<pre class="code">int   hourlyTemperatures[24]；  </pre>
+<p>    则下列函数调用语句：</p>
+  <pre class="code">modifyArray(hourlyTemperatutes，24)；  </pre>
+<p>    将数组hourlyTemperatures及其长度传递给函数modifyArray。将数组传递给函数时，通常也将其长度传递给函数，使函数能处理数组中特定的元素个数(否则要在被调用函数中建立这些信息，甚至要把数组长度放在全局变量中)。第8章介绍Array类时，将把数组长度设计在用户自定义类型中，每个Array对象生成时都“知道”自己的长度。这样，将Array对象传递给函数时，就不用把数组长度作为参数一起传递。</p>
+  <p>C++使用模拟的按引用调用，自动将数组传递绐函数，被调用函数可以修改调用者原数组中的元素值。数组名的值为数组中第一个元素的地址。由于传递数组的开始地址，因此被调用函数知道数组的准确存放位置。因此，被调用函数在函数体中修改数组元素时．实际上是修改原内存地址中的数组元素。  </p>
+
+  <h5>性能提示4．4  </h5>
+  <p>模拟按引用调用传递数组时才能有性能上的意义。如果数组按值传递，则是传递每个元素的副本。对于经常传递的大数组，这是很费时间的，而且存放数组副本要占用很大空间。  </p>
+  <h5>软件工程视点4．2  </h5>
+  <p>也可以按值传递数组(用第6章介绍的简单方法)，但很少使用。  </p>
+
+  <p>尽管模拟按引用调用传递整个数组，但各个数组元素和简单变量一样是按值传递。这种简单的单个数据称为标量(scalar 或scalar   quanity)。要将数组元素传递给函数，用数组元素的下标名作为函数调用中的参数。第5章将介绍标量(即各个变量和数组元素)的模拟按引用调用。  </p>
+  <p>要让函数通过函数调用接收数组，函数的参数表应指定接收数组。例如，函数modifyArray的函数苜部可能如下所示：  </p>
+   
+<pre class="code">void   modifyArray(int b[]，int   arraySize)  </pre>
+<p>    表示modifyArray要在参数b中接收整型数组并在参数arraySize中接收数组元素个数。数组方括号中的数组长度不是必需的，如果包括，则编译器将其忽略。由于模拟按引用调用传递数组，因此被调用函数使用数组名b时，实际上引用调用者的实际数组(上例中为数组hourlyTemperatures)。第5章介绍表示函数接收数组的其他符号，这些符号基于数组与指针之间的密切关系。</p>
+     
+<p>注意modlfyArray函数原型的表示方法：  </p>
+   
+<pre class="code">void   modifyArray(int[]，int)；  </pre>
+<p>    这个原型也可以改写成：</p>
+   
+<pre class="code">void modifyArray( int   anyArrayName[]，int( anyVariableName )  </pre>
+<p>    但第3章曾介绍过，C++编译器忽略函数原型中的变量名。</p>
+
+  <h5>编程技巧4．3  </h5>
+  <p>有些程序员在函数原型中包括变量名，使程序更清晰，编译器将忽略这个名称。  </p>
+  <p>记住，函数原型告诉编译器参数个数和参数类型(按参数出现的顺序)。  </p>
+  <p>图4．14的程序演示了传递整个数组与传递数组元素之间的差别。程序首先打印整型数组a的五个元素,然后将a及其长度传递给函数modifyArray，其中将a数组中的元素乘以2，然后在main中重新打印a。从输出可以看出，实际由modifyAnay修改a的元素。现在程序打印a[3]的值并将其传递给函数modifyElement。函数modifyElement将参数乘以2。然后打印新值。注意在main中重新打印a[3]时，它没有修改，因为各个数组元素是按值调用传递。  </p>
+<pre class="code"> // Fig. 4.14: fig0414.cpp
+ // Passing arrays and individual array elements to functions
+ #include < iostream.h>
+ #include < iomanip.h>
+ void modifyArray( int [], int );  // appears strange
+ void modifyElement( int );
+  int main()
+ {
+    const int arraySize = 5;
+    iht i, a[ arraySize ] = { 0, 1, 2, 3, 4 };
+    cout << "Effects of passing entire array call-by-reference:"
+        << "\n\nThe values of the original array are:\n";
+  for( i=0;i< arraySize; i++ )
+      cout(<< setw( 3 ) << a[ i ];
+    cout << endl;
+    // array a passed call-by-reference
+    modifyArray( a, arraySize );
+    cout << "The values of the modified array are:\n";
+    for ( i = 0; i < arraySize; i++ )
+      cout << setw( 3 ) << a[ i ] ;
+    cout << "\n\n\n"
+        << "Effects of passing array element call-by-value:"
+    <<"\n\nThe value of a[3] is "<< a[3] <<'\n';
+     modifyElement( a[ 3 ] );
+     cout << "The value of a[ 3 ] is "<< a[ 3 ] << endl;
+     return 0;
+ }
+ void modifyArray( int b[ ], int sizeofArray )
+ {
+     for ( int j = 0; j < sizeofArray; j++ )
+        b[ j ] *= 2;
+ }
+ void modifyElement( int e )
+ {
+     cout << "Value in modifyElement is"
+        <<(e *= 2 ) << endl;
+ }</pre>
+<p>输出结果：</p>
+<p>  Effects of passing entire array   call-by-Value:</p>
+
+<p>  The values of the original array are:</p>
+     
+<p>0 1 2 3   4  </p>
+<p>  The values of the modified array are:</p>
+     
+<p>0 2 4 6 8  </p>
+
+<p>  Effects of   passing array element call-by-value:</p>
+
+<p>  The value of a[3] is 6</p>
+<p>  Value in   modifyElement is 12</p>
+<p>  The value of a[3] is   6</p>
+
+                             
+<p>图4．14 向函数传递数组和数组元素  </p>
+
+  <p>有时程序中的函数不能修改数组元素。由于总是模拟按引用调用传递数组．因此数组中数值的修改很难控制。C++提供类型限定符const，可以防止修改函数中的数组值。数组参数前面加上const限定符时，数组元素成为函数体中的常量，要在函数体中修改数组元素会造成语法错误。这样，程序员就可以纠正程序，使其不修改数组元素。  </p>
+  <p>图4．15演示了const限定符。函数tryToModifyArray定义参数const int   b[],指定数组b为常量，不能修改。函数想修改数组元素会造成语法错误“Canot modify const   object”。const限定符将在第7章再次介绍。  </p>
+
+<pre class="code"> // Fig. 4.15: fig04_lS.cpp<br /> // Demonstrating the const type qualifier<br /> #include &lt;iostream.h&gt;<br /> void tryToModifyArray( const int [] );<br /> int main()<br /> {<br />     int a[] = {10,20,30};<br />    tryToModifyArray( a );<br />    cout &lt;&lt; a[ 0 ] &lt;&lt; ' ' &lt;&lt; a[ 1 ] &lt;&lt; ' ' &lt;&lt; a[ 2 ] &lt;&lt; '\n';<br />    return 0;<br /> }<br /> void tryToModifyArray( const int b[] )<br /> {<br />    b[ 0 ] /= 2;   // error<br />    b[ 1 ] /= 2;   // error<br />    b[ 2 ] /= 2;   // error<br /> }</pre>
+<p>输出结果：</p>
+<p>  Compiling FIG04 15.CPP:</p>
+<p>  Error   FIG04_iS.CPP 18: Canot modify a const object</p>
+<p>  Error FIG04_iS.CPP 19: Canot   modify a const object</p>
+<p>  Error FIG04 15.CPP 20: Canot modify a const   object</p>
+<p>  Warning FIG04_15,CPP 21: Parameter 'b' is never   used</p>
+
+                                  
+<p>图4.15 演示const限定符  </p>
+   
+
+  <h5>常见编程错误4．10  </h5>
+  <p>忘记数组按引用传递以至于修改数组可能造成逻辑错误。  </p>
+   
+  <h5>软件工程视点4．3   ．  </h5>
+  const限定符可以用于函数定义中的数组参数，防止函数体中修改原数组，这是最低权限原则的另一个例子。函数不能提供修改数姐的功能，除非确实有必要。  </p>
+  <h2><a name="4.6" id="4.6"></a>4．6   排序数组</h2>
+  <p>  排序(sort)数组(即将数据排成特定顺序，如升序或降序)是一个重要的计算应用。银行按账号排序所有支票，使每个月末可以准备各个银行报表。电话公司按姓氏排序账号清单并在同一姓氏中按名字排序，以便于找到电话号码。几乎每个公司都要排序一些数据，有时要排序大量数据。</p>
+<p>  排序数据是个复杂问题，是计算机科学中大量研究的课题。本章介绍最简单的排序机制，在本章练习和第15章中，我们要介绍更复杂的机制以达到更高的性能。</p>
+
+  <h5>性能提示4．5  </h5>
+  <p>有时最简单的算法性能太差，但易于编写、测试和调试。更复杂的算法在需要实现最高性能时才会用到。  </p>
+  <p>图4．16的程序排列10个元素数组a的值，按升序排列。我们使用冒泡排序(bubble sort   sinkingsort)方法，较少的数值慢慢从下往上“冒”，就像水中的气泡一样，而较大的值则慢慢往下沉。这个方法在数组中多次操作，每一次都比较一对相邻元素。如果某一对为升序(或数值相等)，则将数值保持不变。如果某一对为降序，则将数值交换。  </p>
+
+<pre class="code"> // Fig. 4.16:fig04 16.cpp
+ // This program sorts an array's values into
+ // ascending order
+ #include < iostream.h>
+ #include < iomanip.h>
+ int main{)
+ {
+   const int arraySize = 10;
+  int a[ arraySize ] = { 2, 6, 4, 8, 10, 12, 89, 68, 45, 37 };
+  int i, hold;
+  cout << "Data items in original order\n";
+  for ( i = 0; i < arraySize; i++ )
+     cout << setw( 4 ) << a[i ] ;
+  for (int pass = 0; pass < arraySize - 1; pass++ ) // passes
+     for ( i = 0; i < arraySize - 1; i++ )     // one pass
+        if ( a[i ] > a[i + 1 ] ) {     // one comparison
+          hold  a[i ];              // one swap
+          a[i ] = a[i + 1 ];
+          a[i + 1 ] = hold;
+        }
+   cout << "\nData items in ascending order\n";
+   for ( i = 0; i < arraySize; i++ )
+     cout << setw( 4 ) << a[ i ];
+   cout << endl;
+   return 0;
+ }
+</pre>
+<p>  输出结果：</p>
+ 
+<p>Data items in Oriqinal order  </p>
+   
+<p>2     6   4   8   10   12   89   68   45   37  </p>
+   
+<p>Data items in   ascendinq order  </p>
+   
+<p>2   4   6   8   10   12   37   45   68     89  </p>
+
+                                     <p>图4．16用冒泡法排序数组  </p>
+
+
+<p>程序首先比较a[0]与a[1]，然后比较a[1]与a[2]，接着是a[2]与a[3]，一直到比较a[8]与a[9]。尽管有10个元素，但只进行9次比较。由于连续进行比较，因此一次即可能将大值向下移动多位，但小值只能向上移动一位。第1遍，即可把最大的值移到数组底部，变为a[9]。第2遍，即可将第2大的值移到a[8]第9遍，将第9大的值移到a[1]。最小值即为a[0]，因此，只进行9次比较即可排序10个元素的数组。  </p>
+  <p>排序是用嵌套for循环完成的。如果需要交换，则用三条赋值语句完成：  </p>
+   
+<pre class="code">hold = a[ i ];； 
+a[i] = a[ i+1 ]； 
+a[ i+1 ] = hold； </pre>
+   
+<p>  其中附加的变量hold临时保存要交换的两个值之一。只有两个赋值语句是无法进行交换的：</p>
+  <pre class="code">a[ i ] = a [ i+1 ]; 
+a[ i+l] =a[ i]; </pre>
+   
+<p>  例如，如果a[i]为7而a[i+1]为5．则第一条赋值语句之后,两个值均为5，数值7丢失，因此要先用变量ho1d临时保存要交换的两个值之一。</p>
+  冒泡排序的主要优点是易于编程。但冒泡排序的速度很慢，这在排序大数组时更明显。练习中要开发更有效的冒泡排序程序，介绍一些比冒泡排序更有效的方法。高级课题中将介绍更深入的排序与查找问题。  </p>
+<div class="rpindex"><a href="33.html"> 下一页</a><a href="31.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

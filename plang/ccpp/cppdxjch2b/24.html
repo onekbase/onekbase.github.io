@@ -1,0 +1,306 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<p><div class="lpindex"><a href="index.html">首页</a><a href="23.html"> 上一页</a><a href="25.html"> 下一页</a></div>
+<h2>3.9    案例：机会游戏与enum简介</h2>
+<p>  一个最常见的机会游戏是投骰子游戏，游戏规则如下：</p>
+      
+<p>游戏者投两枚骰子，每个骰于有六面，这些面包含1、2、3、4、5、6个点。投两枚骰于之后，计算点数之和。如果第一次投时的和为7或11，则游戏者获胜。如果第一次投时的和2、3或12，则游戏者输，庄家赢。如果第一次投时的和为4、5、6、8、9或10，则这个和成为游戏者的点数。</p>
+<p>要想赢，就要继续投骰子，直到赚到点数。如果投七次之后还没有赚到点数，则游戏者输。 </p>
+<p>图3．10中的程序模拟了投骰子游戏，图3．1l显示了几个示例的执行结果。  </p>
+<pre class="code"> // Fig. 3.10: figO3_lO.cpp
+ // Craps
+ #include &lt;iostream.h&gt;<br /> #include &lt;stdlib.h&gt;<br /> #include &lt;time.h&gt;
+ int rollDice( void );  // function prototype
+ int main ( )
+ {
+      enum status{CONTINUE,WON,LOST};
+      int sum, myPoint;
+      status gameStatus;
+      srand( time( NULL ) );
+      sum = rollDice( );          // first roll of the dice
+      switch ( sum ) {
+             case 1:
+             case 11:              // win on first roll
+                  gameStatus = WON;
+                  break;
+             case 2:
+             case 3:
+               case 12:              // lose on first roll
+        gameStatus = LOST;
+        break;
+     default:              // remember point
+        gameStatus = CONTINUE;
+        myPoint = sum;
+        cout << "point is "<< myPoint << endl;
+        break;             // optional
+   while { gameStatus == CONTINUE ) {   // keep rolling
+     sum = rollDice( );
+     if ( sum = myPoknt )      // win by making point
+        gameStatus = wON;
+     else
+        if ( sum == 7 }        // lose by rolling 7
+          gameStatus = LOST;
+     }
+   if ( gameStatus == WON )
+     cout << "Player wins" << end1;
+   else
+     cout << "Player loses" << endl;
+   return 0;
+ }
+ int rollDice( void )
+ {
+   int diel, die2, workSum;
+   die1 = 1 + rand( ) % 6;
+   die2 = 1 + rand( ) % 6;
+   workSum = diel + die2;
+   cout << "Player rolled" << diel <<" + "<< die2
+        << " = " << workSum << endl;
+   return workSum;
+ }</pre>
+<h5>图 3.10 模拟投骰子游戏的程序  </h5>
+<p>  </p>
+<pre class="code">Player rolled 6 + 5 = 11
+
+Player wins
+
+Player rolled 6 + 6 = 12
+
+Player loses
+
+Player rolled 4 + 6 = 10
+
+Point is 10
+
+Player rolled 2 + 4 = 6
+
+Player rolled 6 + 5 11
+
+Player rolled 3 + 3 = 6
+
+Player rolled 6 + 4 10
+
+Player wins
+
+Player rolled 1 + 3 = 4
+
+Point is q
+
+Player rolled 1 + 4 = 5
+
+Player rolled 5 + 4 9
+
+Player rolled 4 + 6 - 10
+
+Player rolled 6 + 3 - 9
+
+Player rolled 1 + 2 = 3
+
+Player rolled 5 + 2 = 7
+
+Player loses</pre>
+<h5>图 3.11   投骰子游戏程序示例的执行结果  </h5>
+<p>  注意，游戏者首先要投两枚骰子，后面也是。我们定义rollDice函数投骰子、计算并打印点数和。函数rollDice定义一次，但可从程序的两个地方调用。有趣的是，rollDice不取参数，因此在参数表中用void表示。函数rollDice返回投两枚骰子的点数和，因此在函数首部定义的返回类型为int。</p>
+<p>这个游戏相当复杂。游戏者第一次投两枚骰子时可能输也可能赢，也可能投好几次才会定出输赢。变量gameStatus跟踪这个状态，将其声明为Status类型。下列语句：  </p>
+      
+<pre class="code">enum Status{  CONTIEUE，WON，LOST);  </pre>
+  
+<p>生成用户自定义类型(user-defined type)即枚举类型(enume   ration)枚举类型由关键字enum和类型名(这里是Status)构成，是—组用标识符表示的整数常量。这些枚举常量(enume ration   constant)的值从0开始，增量为1，但也可以指定其他的增量值。在上述枚举中，CONTINUE指定为数值0，WON指定为数值1，LOST指定为数值2。enum中的标识符必须惟一，但不同枚举常量可以取相同的值。  </p>
+    
+<h5>编程技巧3．7  </h5>
+<p>作为用户自定义类型名的标识符，其第一个字母应大写。</p>
+<p>用户自定义类型Status的变量只能赋给枚举中声明的三个值之一。游戏获胜时，gameStatus设置为WON；游戏失败时，gameStatus设置为LOST；否则gameStatus设置为CONTINUE．可以再次投骰子。 </p>
+<h5>常见编程错误3.17  </h5>
+<p>对枚举类型变量指定等价于枚常量的整数值是个语法错误。  </p>
+    
+<h5>另—个常用枚举是：  </h5>
+<pre class="code">enum   Months  {JAN = 1，FEB，MAR，APR,  MAY，JUN，   JUL，AUG，SEP，OCT，NOV，DEC}；  </pre>
+<p>  生成用户自定义类型Months，用枚举常量表示一年的月份。由于上述枚举中第一个值显式指定为1，因此其余值每次递增1，取值为1到12。任何枚举常量可以在枚举定义中指定一个整数值，后面的值用1递增。</p>
+    
+<h5>常见编程错误3.18  </h5>
+<p>定义枚举常量之后，想对枚举常量指定另一个值是个语法错误。  </p>
+    
+<h5>编程技巧3.8  </h5>
+<p>枚举常量名用大写字母能使枚举常量在程序中更醒目，使程序更注意到枚举常量不是变量。  </p>
+    
+<h5>编程技巧3.9  </h5>
+<p>用枚举而不用整数常量能使程序更清晰。  </p>
+      
+<p>第一次投骰子之后，如果游戏获胜，则跳过while结构体，因为gameStatus不等于CONTINUE。  </p>
+<p>  程序进入if/else结构，在gameStatus等于WON时打印“Playerwins&quot;，在gameStatus等于LOST时打印“Playerloses&quot;。</p>
+      
+<p>第一次投骰子之后,如果游戏没有结束，则sum保存在myPoint中，由于gameStatus等于CONTINUE，因此执行while结构中的程序。每次执行while结构中的程序时，调用rollDice产生新的sum。如果sum符合myPoint，则gameStatus设置为WON，while测试失败，if/else结构打印“Playerwins”，终止执行。如果sum等于7，则gameStatus设置为LOST,while测试失败，if/el~结构打印“Playerloses”，终止执行。  </p>
+      
+注意其中使用了前面介绍的各种程序控制机制。投骰子程序使用两个函数main和rollDice，并使用switch、while、if/else和嵌套if结构。练习中，我们要介绍投骰子程序的各种有趣的特点。  </p>
+<div class="rpindex"><a href="25.html"> 下一页</a><a href="23.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

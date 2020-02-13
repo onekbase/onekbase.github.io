@@ -1,0 +1,460 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<p><div class="lpindex"><a href="index.html">首页</a><a href="44.html"> 上一页</a><a href="46.html"> 下一页</a></div>
+<h2>5．12 字符与字符串处理简介
+  </p>
+</h2>
+<p>  本节要介绍一些字符串处理的标准库函数。这里介绍的技术适用于开发文本编辑器、字处理器、桌面排版软件、计算机化打字系统和其他文本处理软件。我们这里使用基于指针的字符串，本书稍后还将介绍把字符串作为成熟的对象。</p>
+<h3>  5．12．1 字符与字符串基础</h3>
+字符是C++编程语言的基本组件。每个程序都是由一系列字符用有意义的方式组合而成的，计算机将其解释为一系列指令，用来完成一组任务。程序可能包含字符常量(character   constant)。字符常量是表示为单引号字符的整数值。字符常量的值是机器字符集中该字符的整数值。例如，'z'表示z的整数值(在ASCII字符集中为122)，'\n'表示换行符的整数值(在ASCII字符集中为10)。
+<p>字符串就是把—系列字符当作一个单元处理。字符串可能包含字母、数字和+、-、*、/、$等各种特殊字符(special   character)。C++中的字符串直接量(string literal)或字符串常量(string constant)放在双引号中如下所示：</p>
+       
+<p>  ”John Q．Doe”   (姓名)</p>
+   
+<p>”9999 Nain Street”   (街道)  </p>
+     
+<p>”Waltham，Massachusetts”   (州)  </p>
+   
+<p>”(201)555—1212”   (电话号码)  </p>
+     
+<p>C++中的字符串是以null终止符('\0')结尾的字符数组。通过字符串中第一个字符的指针来访问字符串。字符串的值是字符串中第一个字符的地址(常量)，这样，c++中可以说字符串是个常量指针，是指向字符串中第一个字符的指针。从这个意义上说，字符串像数组一样，因为数组名也是第一个元素的(常量)指针。  </p>
+     
+<p>可以在声明中将字符串指定为字符数组或char*类型的变量。下列声明：  </p>
+   
+<pre class="code">char color[] = "blue"；
+char *ColorPtr = "blue";</pre>
+   
+<p>分别将变量初始化为  &quot;blue&quot;。第一个声明生成5个元素的数组color，包含字符'b'、'l'、'u'、'e'和'w'。第二个声明生成指针变量colorPtr，指向内存中的字符串&quot;blue&quot;。</p>
+     
+<h5>可移植性提示5. 5  </h5>
+<p>用字符串直接量初始化char*类型的变量时，有些编译器将字符串放在内存中无法修改字符串的位置。如果要修改字符串直接量，则应将其存放在字符数组中，以便在所有系统中修改。  </p>
+     
+<p>声明char color[]={  &quot;blue&quot;};也可以改写成：</pre>
+<pre class="code">char color[] =   {'b','l','u','e','\0'}；  </pre>
+<p>  声明包含字符串的字符数组时，数组应足够大能存放字符串及其null终止符。上述声明自动根据初始化值列表中提供的初始化值的个数确定数组长度。</p>
+     
+<h5>常见编程错误5．15  </h5>
+<p>字符数组中没有分配能存放字符串及其null终止符的足够空间。  </p>
+   
+<h5>常见编程错误5．16  </h5>
+<p>生成或使用不包含null终止符的字符串。  </p>
+   
+<h5>编程技技巧5．5  </h5>
+<p>在字符数组中存放字符串时，一定要保证能存放要存的最长字符串。C++允许存放任意长度的字符串。如果字符串长度超过字符数组长度，则越界字符会改写数组后面的内存地址中存放的数据。  </p>
+     
+<p>字符串可以用cin通过流读取赋给数组。例如，下列语句将字符串赋给字符数组word[20]:  </p>
+   
+<pre class="code">cin   &gt;&gt;   word；</pre>
+<p>  用户输入的字符串存放在word中。上述语句读取字符，直到遇到空格、制表符、换行符或文件结束符。注意，字符串不能超过19个字符，因为还要留下nUll终止符的空间。第2章介绍的setw流操纵算子可以用于保证读取到word的字符串不超过字符数组长度。例如，下列语句：</p>
+
+<pre class="code">cin     &gt;&gt; setw( 20 ) &gt;&gt; word；</pre>
+     
+<p>指定cin最多读取19个字符到数组word中，并将数组第20个位置用于保存字符串的null终止符。setw流操作算子只能用于输入的下一个值。  </p>
+     
+<p>有时，可以将整行文本输入数组中。为此，C++提供了cin.getline函数。cin.getline函数取三个参数：存放该行文本的字符数组、长度和分隔符。例如，下列程序段：  </p>
+     
+<pre class="code">&char sentence[80]； 
+cin.getline(sentence，80，' ')； </pre>
+     
+<p>  声明80个字符的数组sentence，然后从键盘读取一行文本到该数组中。函数遇到分隔符'
+'、输入文件结束符或读取的字符数比第二个参数的长度少1时停止读取字符(最后一个字符位置用于保存字符串的null终止符)。如果遇到分隔符，则读取该分隔符并不再读入下一字符。cin.getline函数的第三个参数默认值为'
+'，因此上述函数调用也可以改写成：</p>
+     
+<pre class="code">cin.getline(sentence，80)；  </pre>
+<p>  第11章“C++输入/输出流”中将会详细介绍cin.getline和其他函数。</p>
+     
+<h5>常见编程错误 5．17  </h5>
+<p>将单个字符作为字符串处理可能导致致命的运行时错误。字符串是指针，可以对应一个大整数。而单个字符是个小整数(0--255的ASCII值)在许多系统中．这会导致错误，因为低内存地址是用于特殊用途的，如操作系统中断处理器，因此会发生“访问无效”的错误。  </p>
+     
+<h5>常见编程错误5．18  </h5>
+<p>需要字符串参数时将字符传入函数可能导致致命的运行时错误。  </p>
+   
+<h5>常见编程错误5．19  </h5>
+<p>需要字符参数时将字符串传入函数是个语法错误。  </p>
+<h3>  5．12．2 字符串处理库的字符串操作函数</h3>
+<p>字符串处理库提供许多操作字符串数据、比较字符串、搜索字符串中的字符与其他字符串、将字符串标记化(将字符串分成各个逻辑组件)和确定字符串长度的字符串操作函数。本节介绍字符串处理库(标准库)中常用的字符串操作函数。图5．29总结了这些函数。  </p>
+     
+<p>注意图5．29中的几个函数包含size_t数据类型的参数。这是在头文件  &lt;stddef.h)&lt;标准库中的头文件，标准库中还有许多其他标准库头文件，包括&lt;string.h，)中定义为unsigned   int或unsigned long之类的无符号整数类型。</p>
+   
+<h5>常见编程错误5. 20  </h5>
+<p>使用字符串处理库中的函数而不包括  &lt;string.h&gt;头文件。</p>
+     
+<p>函数stcpy将第二个参数(字符串)复制到第一个参数(字符数组)中，这个字符数组的长度应当足以放下字符串及其null终止符。函数strncpy与strcpy相似，只是strncpy指定从字符串复制到字符数组的字符数。注意函数strncpy不一定复制第二个参数的null终止符，null终止符要在复制的字符数比字符中长度至少多1时才复制。例如，如果第二个参数为“test”，则只在strncpy的第三个参数至少为5(  &quot;test&quot;的长度加null终止符)时才复制null终止符。如果第三个参数大于5，则数组后面添加null终止符，直到写入第三个参数指定的总字符数。</p>
+  <pre class="code">  函数原型            函数说明 <br />    char *strcpy(char *s1,const char *s2)<br />                        将字符串s2复制到字符数组s1中、返回s1的值<br />    char *strncpy(char *s1,char *s2,size_t n)<br />                        将字符串s2中最多n个字符复制到字符数组s1中，返回s1的值<br />    char *strcat(char *s1,const char *s2)<br />                        将字符串s2添加到字符串s1后面。s2的第一个字符重定义s1的null终止符。返<br />                        回s1的值<br />    char *strncat(char *s1,const char *s2,size_t n)<br />                        将字符串s2中最多n个字符添加到字符串s1后面。s2的第一个字符重定义s1的<br />                        null终止符。返回s1的值<br />    int strcmp(const char *s1,const char *s2)<br />                        比较字符串s1与字符串s2函数在s1等于、小于或大于s2时分别返回0、小于0或<br />                        大于0的值<br />    int strncmp(const char *s1,const char *s2,size_t n)<br />                        比较字符串s1中的n个字符与字符串s2。函数在s1等于、小于或大于s2时分别<br />                        返回0、小于0或大于0的值<br />    char *strtok(char *s1,const char *s2)<br />                        用一系列strtok调用将s1字符串标记化(将字符串分成各个逻辑组件，如同一<br />                        行文本中的每个单词)，用字符串s2所包含的字符分隔。首次调用时包含s1为<br />                        第一个参数，后面调用继续标记化同一字符串，包含NULL为第一个参数。每次<br />                        调用时返回当前标记的指针。如果函数调用时不再有更多标记，则返回NULL<br />    size_t strlen(const char *s)<br />                        确定字符串的长度，返回null终止符之前的字符数<br /></pre>
+                           
+<p>图5．29 字符串处理库的字符串操作函数  </p>
+
+     
+<h5>常见错误5．21  </h5>
+<p>第三个参数小于或等于第二个参数的宇符串长度时不在strncpy的第一个参数中添加null终止料可能造成严重的运行时错误。  </p>
+     
+<p>图5.30的程序用strcpy将数组x中的整个字符串复制到数组y中，并用strncpy将数组x的前14个字符复制到数组2中。将null字符('\0')添加到数组z,因为程序中调用strncpy时没有写入null终止符(第三个参数小于或等于第二个参数的字符串长度)。  </p>
+<pre class="code"> // Fig. 5.30:fig05 30.cpp
+ // using strcpy and strncpy
+ #include < iostream.h>
+ #include < string.h>
+ int main()
+ {
+     char x[] = "Happy Birthday to You";
+     char x[ 25 ], Z[ 15 ];
+    cout << "The string in array x is: "<< x
+         << "\nThe string in array y is: "<< strcpy( y, x )
+         << '\n';
+    strncpy( z, x, 14 );  // does not copy null character
+    z[ 14 ] = '\0';
+    cout << "The string in array z is: " << z << endl;
+    return 0;
+ }</pre>
+<p>  输出结果：</p>
+<p>  The string in array x is: Happy Birthday to You</p>
+<p>  The   stringin   array y is: Happy Birthday to You</p>
+<p>  The string in array z is: Happy   Birthday</p>
+
+                         
+<p>图5．30使用stcpy和strncpy函数  </p>
+
+     
+<p>函数strcat将第二个参数(字符串)添加到第一个参数(字符数组)中。第二个参数的第一个字符代替终止第一个参数中字符串的null终止符('\0')。程序员要保证存放第一个字符串的数组应足以存放第一个字符串、第二个字符串和null终止符(从第二个字符串复制)的合并长度。函数strncat从第二个字符串添加指定字符数到第一个字符串中，并在结果中添加null终止符。图5．31的程序演示了函数stcat和strncat。  </p>
+     
+<p>图5．32用strcmp和strncmp比较三个字符串。函数strcmp一次一个字符地比较第一个字符串参数与第二个字符串参数。如果字符串相等，则函数返回0；如果第一个字符串小于第二个字符串，则函数返回负值；如果第一个字符串大于第二个字符串，则函数返回正值。函数strncmp等价于函数strcmp，只是strncmp只比较到指定字符数。函数strncmp不比较字符串中null终止符后面的字符。  </p>
+<p>  程序打印每次函数调用返回的整数值。</p>
+
+     
+<h5>常见编程错误5. 22  </h5>
+<p>假设strcmp和strncmp在参数相等时返回1是个逻辑错误。strcmp和strncmp在参数相等时返回0(C++的false值)。因此测试两个字符串的相等性时，strcmp和strncmp的结果应与0比较，确定字符串是否相等。  </p>
+
+<pre class="code">// Fig. 5.31:fig05 31.cpp
+ // using strcat and strncat
+ #include < iostream.h>
+ #include < string.h>
+ int main()
+ {
+   char s1[ 20 ] = "Happy ";
+   char s2[] = "New Year ";
+  char s3[ 40 ] = "";
+  cout << "s1 =" << s1 << "\ns2 =" << s2;
+  cout << "\nstrcat(s1, S2) = "<< strcat( s1, s2 );
+  cout << "\nstrncat(s3, s1, 6) =" << strncat( S3, s1, 6 );
+  cout << "\nstrcat(s3, s1) = "<< strcat( S3, s1 ) << endl;
+  return 0;
+ }
+</pre>
+<p>  输出结果：</p>
+<p>  s1 = Happy</p>
+<p>  s2 = New   Year</p>
+<p>  strcat(sl, s2) = Happy New Year</p>
+<p>  $trncat{s3, s1, 6) =   Happy</p>
+<p>  strcat(s3, s1) = Happy Happy New   Year</p>
+                                         
+
+                               
+<p>图 5.31 使用strcat和strncat函数  </p>
+
+<pre class="code"> // Fig. 5.32: fig0532.cpp
+ #include < iostream.h>
+ #include < iomanip.h>
+ #include < string.h>
+ int main()
+ {
+   char *s1 = "Happy New Year";
+   char *s2 = "Happy New Year";
+   char *s3 = "Happy Holidays";
+   cout << "s1 =" << s1 << "\ns2 = "<< s2
+       << "\ns3 = "<< s3 << "\n\nstrcmp(s1, S2) ="
+       << setw( 2 ) << strcmp( s1, s2 )
+       << "\nstrcmp(s1, s3) = "<< setw( 2 )
+       << strcmp( s1, s3 ) << "\nstrcmp(s3, s1) ="
+       << setw( 2 ) << strcmp( s3, s1 );
+     cout << "\n\nstrncmp(s1,  s3,  6) = "<< setw( 2 )
+        << strncmp( si, s3, 6)    << "\nstrncmp(sl, s3, 7) ="
+       << setw( 2 ) << strncmp( s1, s3, 7 )
+       << "\nstrncmp(s3, s1, 7) ="
+       << setw( 2 ) << strncmp( s3, s1, 7 ) << endl;
+   return 0;
+ }</pre>
+<p>  输出结果:</p>
+<p>  s1 = Happy New   Year</p>
+<p>  s2 = Happy New Year</p>
+<p>  s3 = Happy Holidays</p>
+<p>  strcmp(s1, s2) =   0</p>
+<p>  strcmp (s1, s3) = 1</p>
+<p>  strcmp (s3, s1) = -1</p>
+<p>  strncmp(s1, s3, 6) =   0</p>
+<p>  strncmp(s1, s3, 7) = 1</p>
+<p>  strncmp(s3, s1, 7) =   -1</p>
+
+                                       
+<p>图 5.32   使用strcmp和strncmp函数  </p>
+
+     
+<p>要了解一个字符串大于或小于另一字符串的含义，可以考虑一系列姓氏的字母顺序表。读者一定会把“Jones  &quot;放在“Smith&quot;之前，因为&quot;Jones&quot;的第一个字母在&quot;Smith&quot;的第一个字母之前。</p>
+    
+<p>但字母表中不仅有26个字母，而是个字母顺序表，每个字母在表中有特定位置。“z”不仅表示字母，而且是字母表中第二十六个字母。  </p>
+     
+<p>计算机怎么知道一个字母在另一字母之前呢所有字符在计算机中均表示为数字代码，计算机比较两个字符串时实际上是比较字符串中字符的数字代码。  </p>
+
+     
+<h5>可移植性提示5．6  </h5>
+<p>不同计算机上可能用不同的内部数字代码表示字符。  </p>
+   
+<h5>可移植性提示5．7  </h5>
+<p>不要显式测试ASCII码如“if(ch ==65)”，而要用对应的字符常量，例如  &quot;if(ch == 'A')&quot;   为了实现标准化字符表示,大多数计算机厂家将机器设计成使用两种常用编码系统：ASCII和EBCDIC。ASCII指“美国标准信息交换码”(American   Standard Code for infomation Interchange)，EBCDIC指“扩展二进制编码的十进制交换码”(Extended   Binary CodedDecimal Interchange Code)。还有其他编码系统．但这是两种最常用的编码系统。</p>
+     
+<p>ASCII和EBCDIC称为字符编码(character code)或字符集(character   set)。字符串和字符操作实际上是在操作相应的数字代码，而不是操作字符本身。因此C++中字符和小整数具有互换性。由于数字代码之间有大于、等于、小于的关系，因此可以将不同字符或字符串通过字符编码相互比较。  </p>
+     
+<p>附录B列出了ASCII字符编码。  </p>
+   
+<p>函数strtok将字符串分解为一系列标记(token)标记就是一系列用分隔符(delimiting   chracter，通常是空格或标点符号)分开的字符。例如，在一行文本中，每个单词可以作为标记，空格是分隔符。  </p>
+     
+<p>需要多次调用strtok才能将字符串分解为标记(假设字符串中包含多个标记)。第一次调用strtok包含两个参数，即要标记化的字符串和包含用来分隔标记的字符的字符串(即分隔符)：在图5．33的例子中，下列语句：  </p>
+     
+<pre class="code">tokenPtr = Strtok(string,   &quot;   &quot;)；</pre>
+<p>  将tokenPtr赋给string中第一个标记的指针。strtok的第二个参数””表示string中的标记用空格分开。</p>
+<p>  函数strtok搜索string中不是分隔符(空格)的第一个字符，这是第一个标记的开头。然后函数寻找字符串中的下一个分隔符，将其换成null(，w，)字符,这是当前标记的终点。函数strtok保存string中标记后面的下一个字符的指针，并返回当前标记的指针。</p>
+     
+<p>后面再调用strtok时，第一个参数为NULL，继续将string标记化。NULL参数表示调用strtok继续从string中上次调用strtok时保存的位置开始标记化。如果调用strtok时已经没有标记，则strtok返回NULL。图5．33的程序用strtok将字符串”This   is sentence with 7   tokens”标记化。分别打印每个标记。注意strtok修改输入字符串，因此，如果调用strtok之后还要在程序中使用这个字符串，则应复制这个字符串。  </p>
+
+     
+<h5>常见编程错误5．23  </h5>
+<p>没有认识到strtok修改正在标记化的字符串，调用sstrtok后还在程序中使用这个字符串(以为还是原字符串)   函数strlen取一个字符串作为参数，并返回字符串中的字符个数，长度中不包括null终止符。  </p>
+     
+<p>图5.34的程序演示了函数strlen。  </p>
+
+<pre class="code"> // Fig. 5.33:fig05 33.cpp
+ // Using strtok
+ #include < iostream.h>
+ #include < string.h>
+ int main()
+ {
+   char string[] = "This is a sentence with 7 tokens";
+   char *tokenPtr;
+   cout << "The string to be tokenized is:\n" << string
+        << "\n\nThe tokens are:\n";
+  tokenPtr = strtok( string, " " );
+   while ( tokenPtr != NULL ) {
+     cout << tokenPtr << '\n';
+     tokenPtr = strtok( NULL, " " );
+   }
+   return 0;
+ }</pre>
+<p>  输出结果：</p>
+<pre>The string to be tokenized is:
+
+This is a sentence with 7 tokens
+
+The tokens are:
+
+This
+
+is
+
+a
+
+sentence
+
+7
+
+tokens</pre>
+                                             
+
+                                   
+<p>图 5.33 使用strtok 函数  </p>
+
+<pre class="code"> // Fig. 5.34: fig05_34.cpp
+ // Using strlen
+ #include < iostream.h>
+ #include< string.h>
+ int main()
+ {
+     char *string1 = "abcdefghijklmnopqrstuvwxyz";
+     char *string2 = "four";
+    char string3 = "Boston";
+    cout << "The length of \"" << string1
+         &lt;&lt; &quot;\&quot; is &quot;&lt;&lt; strlen( string1 )
+         &lt;&lt; &quot;\nThe length of \&quot;&quot; &lt;&lt; string2
+         << "\" is" << strlen( string2 )
+         << "\nThe length of \"" << string3
+         << "\" is "<< strlen( string3 ) << endl;
+    return 0;
+ }
+</pre>
+<p>  输出结果：</p>
+<p>  The length of   &quot;abcdefghijklmnopqrstuvwxyz&quot; is 26</p>
+<p>  The length of &quot;four&quot; is   4</p>
+                                             
+
+                               
+<h5>图 5．34 使用strlen函数  </h5>
+<div class="rpindex"><a href="46.html"> 下一页</a><a href="44.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

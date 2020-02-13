@@ -1,0 +1,662 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="66.html"> 上一页</a><a href="68.html"> 下一页</a></div>
+<h2>8．6 重载一元运算符
+  </p>
+</h2>
+<p>
+       
+  类的一元运算符可重载为一个没有参数的非static成员函数或者带有一个参数的非成员函数，参数必须是用户自定义类型的对象或者对该对象的引用。实现重载运算符的成员函数应为非static，以便访问类的非static数据。记住，static成员函数只能访问类的static数据成员。</p><p>
+       
+  本章稍后要用重载的一元运算符“!”测试一个字符串是否为空并返回一个布尔值。当把一元运算符(如“!”)重载为没有参数的非static成员函数时，如果s是String类的对象或是对String类对象的引用，那么编译器在遇到表达式!s时会生成函数调用s．operator!()。操作数s是类的对象，它调用了String类的成员函数operator!。类定义中的函数声明如下：</p><pre class="code">class String{
+public：
+bool operator!() const；</pre>
+  <p>
+      
+  把一元运算符(如“!”)重载为带有一个参数的非成员函数时，参数有两种不同的情况。一种情况是该参数是某个对象(需要对象的副本，因此函数不作用于原对象)，另一种情况是该参数是对某个对象的引用(不复制原对象，因此函数会作用于原对象)。如果参数s是String类的一个对象或对String类对象的引用，则!s将被处理为operator!(s)，调用String类的非成员友元函数。String类声明如下：</p>
+  <pre class="code">class string {
+friend bool operator!(const String&)；
+}；
+  </pre>
+  <h5>
+    
+    编程技巧8．6</h5>
+  <p>
+       
+  重载一元运算符时，把运算符函数用作类的成员而不用作友元函数。因为友元的使用破坏了类的封装，所以除非绝对必要，否则应尽量避免使用友元函数和友元类。</p>
+  <h2><a name="8.7" id="8.7"></a>8．7 重载二元运算符</h2>
+  <p>
+       
+  二元运算符可以重载为带有一个参数的非static成员函数，或者带有两个参数的非成员函数(参数之—必须是类的对象或者是对类的对象的引用)。</p><p>
+       
+  本章稍后要重载运算符+=，当把它重载为带有一个参数的String类的非static成员函数时，如果y和z是String类的对象，则y ==   z将被处理为y.operator+=(z)，调用成员函数operator+=，声明如下：</p><pre class="code">class String{
+public：
+const String&operator+=(const String &)；
+}；</pre>
+  <p>
+       
+  二元运算符+=也可以重载为带有两个参数的非成员函数，其中的一个参数必须是类的对象或者是对类的对象的引用。如果y和z是String类的对象，则y +=   z将被处理为operator+=(y，z)，调用友元函数operator+=，声明如下：</p><pre class="code">class String{
+friend const String&operator+=(String &，
+const String &)；
+}；</pre>
+  <h2>
+    <a name="8.8" id="8.8"></a>8．8   实例研究：Array类</h2>
+  <p>
+       
+  在C和C++中，数组是一种指针，因而数组存在许多导致错误的陷阱。例如，由于C和C++不检测下标是否超出数组的边界而使程序导致越界错误；大小为n的数组的下标必须是0、1、2…、   n-1，下标是不允许改变的；不能一次入输人或输出整个数组，而只能单独读取或者输出每个数组元素；不能用相等运算符或者关系运算符比较两个数组(因为数组名仅仅是指向内存中数组起始位置的指针)；当把一个数组传递给一个能处理任意大小数组的常用函数时，数组的大小也必须作为一个额外的参数传递给该函数；不能用赋值运算符把一个数组赋给另一个数组(因为数组名是const类型指针，而常量指针不能用于赋值运算符的左边)。尽管所有这些处理能力似乎应该是很自然的，但是C和C++都没有提供这种能力。然而，C++提供了实现这种能力的手段，这就是运算符重载。</p><p>
+       
+  本节的范例建立了一个数组类，它能检测范围以确保数组下标不会越界，允许用赋值运算符把一个数组赋给另外一个数组。数组对象自动知道数组的大小，因而不用将数组的大小传送给函数。可以用流读取运算符和流插入运算符输入输出整个数组。还可以用相等运算符==和!=比较数组。范例程序中的数组类用一个static成员跟踪程序中实例化数组对象的数目。</p><p>
+       
+  本例将加深读者对数据抽象的认识。当然，读者还可以增加数组类的其他功能，类的开发是十分有趣并富有挑战性的。</p><p>
+       
+  图8．4中的程序演示了类Array和用于该类的重载运算符。首先来看一下main函数中的驱动程序，然后再探讨类的定义以及类的每个成员和友元函数的定义。</p>
+  <pre class="code">
+  // Fig. 8.4: arrayl.h
+ // Simple class Array (for integers}
+ #ifndef ARRAY1_H
+ #define ARRAY1_H
+ #include < iostream.h>
+ class Array {
+   friend ostream &operator<<( ostream &, const Array & );
+l0  friend istream &operator>>( istream &, Array & );
+ public:
+   Array( int = 10 );               // default constructor
+   Array( const Array & );           // copy constructor
+   ~Array();                       // destructor
+   int getSize() const;              // return size
+   const Array &operator=( const Array & ); // assign arrays
+   bool operator==( const Array & ) const;  // compare equal
+   // Determine if two arrays are not equal and
+   // return true, otherwise return false (uses operator==).
+   bool operator!=( const Array &right ) const
+     { return ! ( *this == right ); }
+   int &operator[] ( int );           // subscript operator
+   const int &operator[]( int ) const;  // subscript operator
+   static int getArrayCount();        // Return count of
+                                 // arrays instantiated.
+ private:
+   int size; // size of the array
+   int *ptr; // pointer to first element of array
+   static int arrayCount;  // # of Arrays instantiated
+ } ;
+ #endif
+ // Fig 8.4: arrayl.cpp
+ // Member function definitions for class Array
+ #include < iostream.h>
+ #include < iomanip.h>
+ #include < stdlib.h>
+ #include < assert.h>
+ #include "array1.h"
+ // Initialize static data member at file scope
+ int Array::arrayCount = 0;  // no objects yet
+ // Default constructor for class Array (default size 10)
+ Array::Array( int arraySize )
+ {
+   size = ( arraySize > 0 ? arraySize : 10 );
+   ptr = new int[ size ] ; // create space for array
+   assert( ptr != 0 );   // terminate if memory not allocated
+   ++arrayCount;        // count one more object
+   for (int i = 0; i < size; i++ )
+     ptr[ i ] = 0;        // initialize array
+ }
+ // Copy constructor for class Array
+ // must receive a reference to prevent infinite recursion
+ Array::Array( const Array &init ) : size( intit.size )
+ {
+   ptr = new int[ size ] ; // create space for array
+   assert( ptr != 0 );     // terminate if memory not allocated
+   ++arrayCount;         // count one more object
+   for (int i = 0; i < size; i++ )
+     ptr[ i ]   init.ptr[ i ];  // copy init into object
+ }
+ // Destructor foi class Array
+ Array::~Array()
+ {
+   delete [] ptr;          // reclaim space for array
+   --arrayCount;           // one fewer objects
+ }
+ // Get the size of the array
+ int Array::getSize() const { return size; }
+ // Overloaded assignment operator
+ // const return avoids: ( al = a2 } = a3
+ const Array &Array::operator=( const Array &right )
+ {
+     if ( &right != this ) {  // check for self-assignment
+     // for arrays of different sizes, deallocate original
+     // left side array, then allocate new left side array.
+     if ( size != right.size ) {
+        delete [] ptr;       // reclaim space
+        size = right.size;    // resize this object
+        ptr = new int[ size ]; // create space for array copy
+        assert( ptr != 0 );   // terminate if not allocated
+     }
+     for (int i = 0; i < size; i++ )
+        ptr[ i ] = right.ptr[ i ];  // copy array into object
+    }
+    return *this;  // enables x = y = z;
+ }
+ // Determine if two arrays are equal and
+ // return true, otherwise return false.
+ bool Array::oprator==( const Array &right )const
+ {
+    if ( size != right.size )
+       return false;   // arrays of different sizes
+    for (int i =0; i < size; i++ )
+       if ( ptr[ i ]  != right.ptr[ i ] )
+          return false; // arrays are not equal
+   return true;       // arrays are equal
+ }
+ // reference return creates an lvalue
+ int &Array::operator[] ( int subscript )
+ {
+   // check for subscript out of range error
+   assert( 0 <= subscript && subscript < size );
+   return ptr[ subscript ]; // reference return
+ }
+ // Overloaded subscript operator for const Arrays
+ // const reference return creates an value
+ const int &Array::operator[ ] (int subscript ) const
+ {
+   // check for subscript out of range error
+   assert( 0 <= subscript && subscript < size );
+   return ptr[ subscript ]; // const reference return
+ }
+ // Return the number of Array objects instantiated
+ // static functions cannot be const
+ int Array::getArrayCount() { return  arrayCount; }
+ // Overloaded input operator for class Array;
+ // inputs values for entire array.
+ istream &operator>>( istream &input, Array &a )
+ {
+   for ( int i = 0; i < a.size; i++ )
+     input >> a.ptr[ i ];
+   return input;  // enables cin >> x >> y;
+ }
+ // Overloaded output operator for class Array
+ ostream &operator<<( ostream &output, const Array &a )
+ {
+    int i;
+    for ( i = O; i < a.size; i++ ) {
+      output << setw( 12 ) << a.ptr[ i ];
+    if ( ( i + 1 ) % 4 == 0 ) // 4 numbers per row of output
+      output << endl;
+   }
+   if( i % 4 != 0 )
+      output << endl;
+   return output;  // enables cout << ~ << y;
+ }
+ // Fig. 8.4:fig08 04.cpp
+ // Driver for simple class Array
+ #include < iostream.h>
+ #include "arrayl.h"
+ int main()
+ {
+    // no objects yet
+    cout << "# of arrays instantiated = "
+        << Array::getArrayCount() << '\n';
+   // create two arrays and print Array count
+   Array integers1( 7 ), integers2;
+   cout << "# of arrays instantiated = "
+       << Array::getArrayCount() << "\n\n";
+   // print integersl size and contents
+   cout << "Size of array integers1 is"
+        << integers1.getSize()
+        << "\nArray after initialization:\n"
+        << integersl << '\n';
+   // print integers2 size and contents
+   cout << "Size of array integers2 is "
+        <<  integers2.getSize()
+        << "\nArray after initialization:\n"
+       << integers2 << '\n';
+   // input and print integersl and integers2
+   cout << "Input 17 integers:\n";
+   cin >> integers1 >> integers2;
+   cout << "After input, the arrays contain:\n"
+        << "integersl:\n" << infegers1
+        << "integers2:\n" << integers2 << '\n';
+   // use overloaded inequality (!=) operator
+   cout << "Evaluating: integers1 != integers2\n";
+   if ( integers1 != integers2 )
+      cout << "They are not equal\n";
+  // create array integers3 using integers1 as an
+  // initlizer; print size and contente
+   Array integers3( integers1 );
+   cout << "\nSize of array integers3 is"
+        << integers3.getSize()
+        << "\nArray after initialization:\n"
+        << integers3 << '\n';
+   // use overloaded assignment (=) operator
+   cout << "Assigning integers2 to integers1:\n";
+   integers1 = integers2;
+   cout << "integersl:\n" << integers1
+        << "integers2:\n" << integers2 << '\n';
+   // use overloaded equality (==) operator
+   cout << "Evaluating: integers1 == integers2\n";
+   if ( integers1 == integers2 )
+     cout << "They are equal\n\n";
+   // use overloaded subscript operator to create rvalue
+   cout << "integers1[ 5 ] is "<< integers1[ 5 ] << '\n';
+   // use overloaded subscript operator to create lvalue
+   cout << "Assigning 1000 to integers1[ 5 ]\ n";
+        <<  integers1[ 5 ] = 1000;
+   cout << "integers1:\n" << integers1 << '\n';
+   // attempt to use out of range subscript
+   integers1[ 15 ] = 1000;  // ERROR: out of range
+   return 0;
+ }
+</pre>
+ <p>
+  输出结果:</p>
+ <pre># of arrays instantiated = 0
+# of arrays instantiated  2
+
+Size of array integersl is 7
+Array after initialization:
+                   0         0         0        0
+                   0         0         0        0
+ Size of array integers2 is 10
+Array after initialization:
+                   0         0         0        0
+                   0         0         0        0
+                   0         0
+ Input 17 integers:
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+ After input, the arrays contain:
+ integersl:
+                    1         2         3        4
+                    5         6         7
+
+integers2:
+                  8         9         10         11
+                 12        13         14         15
+                 16        17
+Evaluating:integers1 != integers2
+They are not equal
+
+Size of array integers3 is 7
+Array after initialization:
+                  1         2         3          4
+                  5         6         7
+Assigning integers2 to inteqersl:
+integersl:
+                  8         9         10         11
+                 12        13         14         15
+                 16        17
+integers2:
+                  8         9         10         11
+                 12        13         14         15
+                 16        17
+Evaluating: integersl == integers2
+They are equal
+integersl[ 5] is = 13
+Assigning 1000 to integersl[ 5 ]
+integersl:
+                  8         9         10         11
+                 12      1000         14         15
+                 16        17
+
+Attempt to assign 1000 to integersl[15]
+Assertion failed: 0 <= subscript && subscript < size,
+ file Arrayl.cpp, line 87
+
+abnormal program termination</pre>
+
+  <h5>
+    
+    图 8.4 用重载运算符演示Array类</h5>
+  <p>
+       
+  类Array的static类变量arrayCount包含了程序执行过程中实例化的Arrayy对象的个数，该值由第176行的static成员函数getArrayCount返回。程序实例化子类Array的两个对象(第179行)，对象integees1有7个元素．对象integers2有10个元素(默认的元素个数由类Array的构造函数指定)。</p><p>
+        
+  第181行再次调用getArrayCount，取得类变量arrayCount的值。第184到第187行用成员函数getSize确定arrayintegers1的长度，并使用Array重载流插入运算符输出integer1，以证实构造函数正确地初始化了数组的元素。接下来，第190到第193行的程序先输出数组integers2的长度，然后用重载的流插入运算符输出integer2数组。</p><p>
+       
+  完成上述工作后，程序提示用户输入17个整数，Array重载流读取运算符并使用下列语句(第197行)：</p><p>
+     
+  cin &gt;&gt; integers1   &gt;&gt;   integers2；</p><p>
+  把这些值读入到两个数组中，前7个整数保存在integers1中，其余的则保存在intergers2中。为了证实输入操作的正确性，程序用流插入运算符输出了这两个数组(第198到第200行)。</p><p>
+       
+  接下来，程序通过测试条件(第204行)：</p><p>
+     
+  integers1 !=   integers2</p><p>
+  来验证重载的不相等运算符!=，输出结果表明这两个数组确实不相等。</p><p>
+       
+  第209行程序实例化第三个数组integers3并用数组integers1对其初始化，这将调用Array复制构造函数将integers1复制到integers3中。我们将在后面详细讨论复制构造函数。</p><p>
+       
+  程序在第211到第214行输出integers3的长度，并使用Array重载流插入运算符输出integers3，以证实构造函数正确地初始化数组。</p><p>
+       
+  接下来，第218行通过下列语句测试重载的赋值运算符(=)：</p><p>
+     
+  integers1 =   integers2；</p><p>
+  然后打印出这两个数组来验证赋值的正确性。原来的integere1中只有7个整数，现在必须要使其能容纳integers2中的10个元素的副本。重载的赋值运算符可以改变原先的integers1的大小并复制integer2中的元素。</p><p>
+       
+  接下来，第224行用重载的运算符==；测试赋值后integers1和integers2是否相等。</p><p>
+       
+  接下来，第228行用重载的下标运算符引用integers1[5](integers1数组范围内的一个元素)，这个带下标的数组名作为右值来打印integersl[5]的值，第232行将integers[5]放在赋值语句左边并赋给其一个新值1000，注意，operator[]返回引用并作为左值使用(在确定了5是在integers1的长度范围内)。</p><p>
+       
+  第237行程序试图将1000赋给integers[15](越界的元素)。Array重载了[]运算符捕获到该错误并中止程序。</p><p>
+       
+  有意思的是，数组下标运算符不仅仅可用于数组，还可以用于从其他各种容器类(如链表、字符串、字典等等)中选择元素。此外，下标不仅仅是整数，还可以是字符、字符串、浮点数甚至是用户自定义的对象。</p><p>
+       
+  上面介绍了程序是如何执行的。下面再分析—下类的首部和成员函数的定义。第29行到第3l行</p>
+  <pre class="code">     int size；// size Of the array
+    int *ptr；// pointer to first element of array
+    static int arrayCount；// # of Arrays instantiated</pre>
+  <p>
+     
+  是类的private数据成员，包括一个int类型指针ptr(指向Array对象中存储整型的动态分配数组)、一个表示数组元素个数的size成员以及一个表示已经实例化的数组对象数目的static成员arrayCount。</p><p>
+       
+  第9行和第10行：</p><pre class="code">friend ostream &operator<<(ostream &，const Array &)；
+friend istream &operator<<(istream &，Array &)；</pre>
+  <p>
+   
+  声明了重载的流插入、流读取运算符是类Array的友元。当编译器遇到表达式：</p><p>
+     
+  cout &lt;&lt;   arrayObject</p><p>
+   
+  通过生成operator&lt;&lt;(cout，arrayObject)来调用函数operator&lt;(ostream   &amp;, constArray &amp;)。当编译器遇到表达式：</p><p>
+   
+  cin &gt;&gt;   arrayObject</p><p>
+  通过生成operator&gt;&gt;(cin，arrayObjeet)来调用函数operatpr&gt;&gt;(istream   &amp;, Array &amp;)。</p><p>
+       
+  因为Array对象总是在流插入运算符和流读取运算符的右边，所以这两个运算符函数不能是Array的成员函数。如果这些运算符函数是Array的成员函数，则可以用下列的语句(可能会出现意外情况)输入和输出Array：</p>
+  <p>
+       
+  arrayObject &lt;&lt; cout；</p>
+  <p>arrayObject &gt;&gt; cin；</p>
+  <p>
+       
+  函数operator&lt;&lt;(在第151行定义)打印由size指定的存储在ptr中的数组元素的个数，而函数operator&gt;&gt;(在第142行定义)则把数据直接输入到ptr所指向的数组中。为了能够分别实现连续的输入输出，这两个运算符都返回了一个合适的引用。</p><p>
+       
+  代码行：</p><p>
+     
+  Array(int= 1O);   // default   Constructor</p><p>
+  声明了类的默认构造函数，并且指定数组元素的默认大小为10。当编译器遇到如下声明：</p><p>
+     
+  Array   integers1(7)；</p><p>
+  或与之等价的形式：</p><p>
+     
+  Array integers1 =   7；</p><p>
+  编译器将调用默认构造函数(本例中默认构造函数实际上接收一个int参数，默认值为10)。默认构造函数(第47行定义)验证参数并赋值给Size数据成员，用new分配数组所需的空间，将new返回的指针赋给数据成员ptr，然后用assert测试new操作是否成功，并递增arrayCount的值，最后用for循环将数组的所有元素初始化为0。如果没有将Array初始化，也可以在以后读取相应的值，但这样做会降低程序的可执行性。Array和任何对象都应随时保持正确初始化和一致的状态。</p><p>
+       
+  第13行：</p><p>
+     
+  Array(const Array &amp;)； // copy   Constructor</p><p>
+  是一个复制构造函数(第60行定义),它通过建立现有Array对象的副本来初始化Array对象。必须要小心对待这种复制操作，避免两个Array对象指向同一块动态分配的存储区，默认的成员复制更容易发生这种问题。不论何时需要复制对象时都会调用复制构造函数，如在传值调用时、从被调用函数返回一个对象时、或把某个对象初始化为同类的另外一个对象的副本时。当声明创建类Array的一个对象并用另外一个对象对它初始化时，调用复制构造函数。例如下列声明：</p><p>
+       
+  Array integers3(integers1)；</p><p>
+  或者与之等价的声明：</p><p>
+     
+  Array integers3 =   integersl；</p>
+  <h5>
+    
+    常见程错误8．6</h5>
+  <p>
+       
+  注意复制构造函数要按引用调用，而不是按值调用，否则复制构追函数调用会造成无穷递归(这是个致命逻辑错误)，因为对于按值调用，建立传入复制构造函数的对象副本会造成复制构造函数的递归调用。</p><p>
+       
+  复制构造函数Array使用成员初始化值将数组的size值复制到新数组的数据成员size中，用new分配新数组所需的空间，把new返回的指针赋给数据成员Ptr，然后用assert测试new操作是否成功，并递增arrayCount的值，最后用for循环将数组的所有元素作为初始值复制到新数组中。</p>
+  <h5>
+    
+    常见编程错误8. 7</h5>
+  <p>
+     
+  如果构造函数简单地将源对象的指针复制到目标对象的指针，则这两个对象将指向同一块动态分配的内</p><p>
+     
+  存块，执行析构函数时将释放该内存决，从而导致另外一个对象的Ptr没有定义，这种情况可能令引起严重的</p><p>
+   
+  运行时错误。</p>
+  <h5>
+    
+    软件工程视点8．4</h5>
+  <p>
+     
+  通常要把构造函数、析构函数、重载的赋值运算符以及复制构这造函数一起提供给使用动态内存分配的类。</p><p>
+       
+  第14行：</p><p>
+     
+  ~Array()；   //   destructor</p><p>
+  声明了类的析构函数(第71行定义)。当撤消类Array的某个对象时，自动调用析构函数。析构函数用delete[]释放在构造函数中用new动态分配的内存块，然后递减arraycount的值。</p><p>
+       
+  第15行：</p><p>
+     
+  int getSize() const；   // return size</p><p>
+  声明了读取数组大小的函数。</p><p>
+       
+  第16行：</p><p>
+     
+  const Array &amp;operator= ( const Array &amp;)；   // assign   arrays</p><p>
+  声明了重载的赋值运算符函数。当编译器遇到表达式：</p><p>
+     
+  integers1 =   integers2；</p><p>
+  就会通过产生如下代码调用函数operator=：</p><p>
+       
+  integers1.operator=(integers2)</p><p>
+  成员函数operator=(第82行定义)测试了这种赋值是否是自我赋值。如果是，则跳过赋值操作(即对象已经是其自身，无需再赋值)。如果不是，则成员函数确定两个数组长度是否相同，如果是，则左边Array对象的原始整数数组不重新分配。否则成员函数operator=用delete释放目标数组原先动态分配的空间，将源数组的数据成员size复制到目标数组的size，用new分配目标数组所需的空间并将new返回的指针赋给数组的Ptr成员，用assert测试new操作是否成功，最后再用for循环将源数组的每一个元素复制到目标数组中。不管这种操作是否是自我赋值，成员函数都返回当前对象</p><p>
+  (即*this)，这种处理方式允许诸如x=y=z这样的连续赋值。</p>
+  <h5>
+    
+    常见编程错误8．8</h5>
+  <p>
+       
+  类的对象包含指向动态分配的内存的指针，但如果没有为它提供重载的赋值运算符和复制构造函数则会</p><p>
+  造成逻辑错误。</p>
+  <h5>
+    
+    软件工程视点8.   5</h5>
+  <p>
+     
+  把赋值运算符定义为类的private成员可以防止将一个类对象赋给另外一个类对象。</p>
+  <h5>
+    
+    软件工程视点8．6</h5>
+  <p>
+       
+  只要重载的赋值运算符和复制构造函数为private，就可以防止复制类对象。</p><p>
+     
+  第17行：</p><p>
+     
+  bool operator=(const   Array &amp;)const；   // compare equal声明了重载的相等运算符。当编译器遇到malll函数中的如下表达式时：</p><p>
+       
+  integers1 == integeis2</p><p>
+  编译器通过生成如下代码来调用operator == 成员函数：</p><p>
+       
+  integers1.operator==(integers2)</p><p>
+       
+  如果数组的size成员不相等，则operator==成员函数立即返回false，否则，成员函数开始成对比较相应的元素。如果它们全都相等，则返回true,一旦发现某一对元素不同则立即返回false。</p><p>
+       
+  第21到第22行：</p><pre class="code">bool operator!=(const Array &right)const
+{ return ! ( *this == right)；}</pre>
+  <p>
+  声明了重载的不相等运算符(!=)。成员函数中oprator!=根据重载的相等运算符定义。该函数定义用重载operator==函数确定一个Array是否等于另一个Array，然后返回结果的相反值。这样编写oprator!=函数使程序员可以复用operator==函数，减少类中需要编写的代码量。另外，operator!=的完整函数定义在Array头文件中，使编译器可以内联operator!=的定义，消除额外函数调用的开销。</p><p>
+       
+  第24到第25行：</p><pre class="code">int &operator[](int)； // subscript operator
+const int &operator[](int)const； // subscript operator</pre>
+  <p>
+  声明了两个重载的下标运算符(分别在第118和128行定义)。当编译器遇到main函数中的如下表达式时：</p><p>
+       
+  integers1[ 5] </p><p>
+  编译器通过生成下列代码来调用重载的operator[]成员函数：</p><p>
+     
+  integers1.operator[]   (5)</p><p>
+  constArray对象使用下标运算符时，编译器调用operator的[]的const版本。operator[]成员函数首先测试下标是否越界。如果越界，则程序异常中止。如果没有越界，则对operator==的非const版本返回相应的数组元素作为引用，以便使它能用作左值(如用在赋值语句的左边)。而对operator[]的const版本返回右值。</p><p>
+       
+  第26行：</p><p>
+     
+  static int getArrayCount()；   // return count of Arrays</p><p>
+     
+声明了static成员函数getArrayCount。即使在不存在类Array的对象中，该成员函数也返回静态数据成员arrayCount的值。</p>
+ 
+
+<div class="rpindex"><a href="68.html"> 下一页</a><a href="66.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

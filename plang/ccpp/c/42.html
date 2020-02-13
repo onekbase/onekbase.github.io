@@ -1,0 +1,285 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="41.html"> 上一页</a><a href="43.html"> 下一页</a></div>
+  <h2><a name="8.8" id="8.8"></a>8.8局部变量和全局变量</h2>
+  <p>在讨论函数的形参变量时曾经提到，形参变量只在被调用期间才分配内存单元，调用结束立即释放。这一点表明形参变量只有在函数内才是有效的，离开该函数就不能再使用了。这种变量有效性的范围称变量的作用域。不仅对于形参变量，Ｃ语言中所有的量都有自己的作用域。变量说明的方式不同，其作用域也不同。Ｃ语言中的变量，按作用域范围可分为两种，即局部变量和全局变量。</p>
+  <h3>8.8.1 局部变量</h3>
+  <p> 局部变量也称为内部变量。局部变量是在函数内作定义说明的。其作用域仅限于函数内，
+    离开该函数后再使用这种变量是非法的。</p>
+  <p>例如：</p>
+  <pre class="code">int f1(int a)        /*函数f1*/
+{
+    int b,c;      
+    ……
+}
+a,b,c有效
+ int f2(int x)        /*函数f2*/
+ {
+    int y,z; 
+   ……
+ }
+ x,y,z有效
+ main()
+ {
+   int m,n; 
+   ……
+}      
+m,n有效
+</pre>
+  <p>在函数f1内定义了三个变量，a为形参，b,c为一般变量。在 f1的范围内a,b,c有效，或者说a,b,c变量的作用域限于f1内。同理，x,y,z的作用域限于f2内。m,n的作用域限于main函数内。关于局部变量的作用域还要说明以下几点：</p>
+  <p>1)主函数中定义的变量也只能在主函数中使用，不能在其它函数中使用。同时，主函数中也不能使用其它函数中定义的变量。因为主函数也是一个函，它与其它函数是平行关系。这一点是与其它语言不同的，应予以注意。</p>
+  <p>2)形参变量是属于被调函数的局部变量，实参变量是属于主调函数的局部变量。</p>
+  <p>3)允许在不同的函数中使用相同的变量名，它们代表不同的对象，分配不同的单元，互不干扰，也不会发生混淆。如在前例中，形参和实参的变量名都为n，是完全允许的。</p>
+  <p>4)在复合语句中也可定义变量，其作用域只在复合语句范围内。</p>
+  <p>例如：</p>
+  <pre class="code">  main()
+    {
+      int s,a;
+      ……
+    {
+      int b;
+      s=a+b;
+      ……                 /*b作用域*/
+    }
+    ……                   /*s,a作用域*/
+}
+</pre>
+  <h5>【例8.12】</h5>
+  <pre class="code">main()
+{
+    int i=2,j=3,k;
+    k=i+j;
+    {
+      int k=8;
+      printf("%d\n",k);
+    }
+    printf("%d\n",k);
+}
+</pre>
+  <p>本程序在main中定义了i,j,k三个变量，其中k未赋初值。而在复合语句内又定义了一个变量k，并赋初值为8。应该注意这两个k不是同一个变量。在复合语句外由main定义的k起作用，而在复合语句内则由在复合语句内定义的k起作用。因此程序第4行的k为main所定义，其值应为5。第7行输出k值，该行在复合语句内，由复合语句内定义的k起作用，其初值为8，故输出值为8，第9行输出i，k值。i是在整个程序中有效的，第7行对i赋值为3，故以输出也为3。而第9行已在复合语句之外，输出的k应为main所定义的k，此k值由第4 行已获得为5，故输出也为5。</p>
+  <h3>8.8.2 全局变量</h3>
+  <p>全局变量也称为外部变量，它是在函数外部定义的变量。它不属于哪一个函数，它属于一个源程序文件。其作用域是整个源程序。在函数中使用全局变量，一般应作全局变量说明。
+    只有在函数内经过说明的全局变量才能使用。全局变量的说明符为extern。但在一个函数之前定义的全局变量，在该函数内使用可不再加以说明。</p>
+  <p>例如：</p>
+  <pre class="code">    int a,b;          /*外部变量*/
+    void f1()         /*函数f1*/
+    {
+      ……
+    }
+    float x,y;        /*外部变量*/
+    int fz()          /*函数fz*/
+    {
+      ……
+    }
+    main()           /*主函数*/
+    {
+      ……
+    }
+</pre>
+  <p>从上例可以看出a、b、x、y 都是在函数外部定义的外部变量，都是全局变量。但x,y 定义在函数f1之后，而在f1内又无对x,y的说明，所以它们在f1内无效。a,b定义在源程序最前面，因此在f1,f2及main内不加说明也可使用。</p>
+  <h5>【例8.13】输入正方体的长宽高l,w,h。求体积及三个面x*y,x*z,y*z的面积。</h5>
+  <pre class="code">int s1,s2,s3;
+int vs( int a,int b,int c)
+{
+    int v;
+    v=a*b*c;
+    s1=a*b;
+    s2=b*c;
+    s3=a*c;
+    return v;
+}
+main()
+{
+ int v,l,w,h;
+ printf("\ninput length,width and height\n");
+ scanf("%d%d%d",&l,&w,&h);
+ v=vs(l,w,h);
+ printf("\nv=%d,s1=%d,s2=%d,s3=%d\n",v,s1,s2,s3);
+}
+</pre>
+  <h5>【例8.14】外部变量与局部变量同名。</h5>
+  <pre class="code">int a=3,b=5;       /*a,b为外部变量*/
+max(int a,int b)   /*a,b为外部变量*/
+{int c;
+ c=a>b?a:b;
+ return(c);
+}
+main()
+{int a=8;
+ printf("%d\n",max(a,b));
+}
+</pre>
+  <p>如果同一个源文件中，外部变量与局部变量同名，则在局部变量的作用范围内，外部变量被“屏蔽”，即它不起作用。</p>
+  <div class="rpindex"><a href="43.html"> 下一页</a><a href="41.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

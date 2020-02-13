@@ -1,0 +1,524 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<h1>linux下C语言开发常见问题总结</h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-06-24</strong></p>
+<p>笔者于2011年6月26日就得去公司工作，在休息的两天中，闲着无聊，就整理了一些在linux中C语言开发时常遇到的问题，并做以记录。</p>
+<h2>1.指针参数是如何传递内存的？ </h2>
+<p>如果函数的参数是一个指针，不要指望用该指针去申请动态内存。示例1-1中，Test函数 <br />
+  的语句GetMemory(str,  100)并没有使str获得期望的内存，str依旧是NULL，为什么？ <pre class="code">
+  void GetMemory(char *p, int num)<br />
+  {<br />
+  p = (char *)malloc(sizeof(char) * num);<br />
+  }<br />
+  void Test(void)<br />
+  {<br />
+  char *str = NULL;<br />
+  GetMemory(str, 100);&nbsp;// str 仍然为 NULL <br />
+  strcpy(str, &quot;hello&quot;);&nbsp;// 运行错误 <br />
+  }</pre>
+  示例1-1 试图用指针参数申请动态内存 <br />
+  毛病出在函数GetMemory中。编译器总是要为函数的每个参数制作临时副本，指针参数p的副本是 _p，编译器使 _p =p。如果函数体内的程序修改了_p的内容，就导致参数p的内容作相应的修改。这就是指针可以用作输出参数的原因。在本例中，_p申请了新的内存，只是把_p所指的内存地址改变了，但是p丝毫未变。所以函数GetMemory并不能输出任何东西。事实上，每执行一次GetMemory就会泄露一块内存，因为没有用free释放内存。 <br />
+  如果非得要用指针参数去申请内存，那么应该改用&ldquo;指向指针的指针&rdquo;，见示例1-2。 <pre class="code">
+  void GetMemory2(char **p, int num)<br />
+  {<br />
+  *p = (char *)malloc(sizeof(char) * num);<br />
+  }<br />
+  void Test2(void)<br />
+  {<br />
+  char *str = NULL;<br />
+  GetMemory2(&amp;str, 100); // 注意参数是 &amp;str，而不是str<br />
+  strcpy(str, &quot;hello&quot;);&nbsp;<br />
+  cout&lt;&lt; str &lt;&lt; endl;<br />
+  free(str); <br />
+  }</pre>
+  示例1-2用指向指针的指针申请动态内存 <br />
+  由于&ldquo;指向指针的指针&rdquo;这个概念不容易理解，我们可以用函数返回值来传递动态内存。这种方法更加简单，见示例1-3。 <pre class="code">
+  char *GetMemory3(int num)<br />
+  {<br />
+  char *p = (char *)malloc(sizeof(char) *  num);<br />
+  return p;<br />
+  }<br />
+  void Test3(void)<br />
+  {<br />
+  char *str = NULL;<br />
+  str = GetMemory3(100); <br />
+  strcpy(str, &quot;hello&quot;);<br />
+  cout&lt;&lt; str &lt;&lt; endl;<br />
+  free(str); <br />
+  }</pre>
+  示例1-3 用函数返回值来传递动态内存 <br />
+  用函数返回值来传递动态内存这种方法虽然好用，但是常常有人把return语句用错了。这里强调不要用return语句返回指向&ldquo;栈内存&rdquo;的指针，因为该内存在函数结束时自动消亡，见示例1-4。 <pre class="code">
+  char *GetString(void)<br />
+  {<br />
+  char p[] = &quot;hello world&quot;;<br />
+  return p;&nbsp;// 编译器将提出警告 <br />
+  }<br />
+  void Test4(void)<br />
+  {<br />
+  char *str = NULL;<br />
+  str = GetString(); // str 的内容是垃圾 <br />
+  cout&lt;&lt; str &lt;&lt; endl;<br />
+  }</pre>
+  示例1-4 return语句返回指向&ldquo;栈内存&rdquo;的指针 <br />
+  用调试器逐步跟踪Test4，发现执行str = GetString语句后str不再是NULL指针，但是str的内容不是&ldquo;hello world&rdquo;而是垃圾。 <br />
+  如果把示例1-4改写成示例1-5，会怎么样？ <pre class="code">
+  char *GetString2(void)<br />
+  {<br />
+  char *p = &quot;hello world&quot;;<br />
+  return p;<br />
+  }<br />
+  void Test5(void)<br />
+  {<br />
+  char *str = NULL;<br />
+  str = GetString2();<br />
+  cout&lt;&lt; str &lt;&lt; endl;<br />
+  }</pre>
+  示例1-5 return语句返回常量字符串 <br />
+  函数Test5运行虽然不会出错，但是函数GetString2的设计概念却是错误的。因为GetString2内的&ldquo;hello world&rdquo;是常量字符串，位于静态存储区，它在程序生命期内恒定不变。无论什么时候调用GetString2，它返回的始终是同一个&ldquo;只读&rdquo;的内存块。 <br />
+  <strong>总结</strong>：<br />
+  函数参数的传递分为：值传送和引用（指针）传送。前者将变量的复本传给函数的形参，形参的改变不会引起变量原值得改变；后者将变量的地址传给形参，形参的改变将引起变量的改变。 </p>
+<h2>2.C语言开发常见其他问题总结</h2>
+<p>（1）再次重申：如果函数的参数是指针，千万不要用该指针申请动态内存。 <br />
+  （2）&nbsp;exit退出整个程序；return退出所在的函数。 <br />
+  （3）&nbsp;静态链接库的编译</p>
+<ul>
+  <li>cc -c mm.c</li>
+</ul>
+<p>ar r libmm.a mm.o//编译静态连接库,2步走 <br />
+  静态连接库是在编译的时候将函数库连接进程序 <br />
+  如何调用静态连接库： <br />
+  cc -o nn nn.c -L/usr/work/lib -Bstatic -lmm<br />
+  //其中-Bstatic可以省略 </p>
+<ul>
+  <li>cc -dy -G　-o libmm.so mm.c </li>
+</ul>
+<p>另外，再加上-K PIC后可以提高内存的使用率 <br />
+  //编译动态链接库，它是在程序启动的时候才连接需要的函数 <br />
+  所以利用动态链接库的程序比静态链接库要小得多 <br />
+  需要的环境变量 :（注意：不要忘记设） <br />
+  LD_LIBRARY_PATH：增加链接程序搜索路径。 <br />
+  LD_RUN_PATH：指定动态链接程序的搜索路径。 <br />
+  例如：LD_LIBRARY_PATH=/usr/work/lib;export  LD_LIBRARY_PATH<br />
+  如何调用libmyfun.so:<br />
+  cc -o mm mm.c -L/usr/work/lib -Bdynamic  -lmyfun<br />
+  LD_LIBRARY_PATH必须设置，否则运行mm的时候找不到libmyfun.so!<br />
+  （4）查看动态链接库<br />
+  察看程序调用了哪些动态链接库利用ldd:&nbsp;<br />
+  ldd mm&nbsp;输出入下： <br />
+  dynamic linker: nn: file loaded:  /usr/work/zzy/libmyfun.so<br />
+  dynamic linker: nn: file loaded:  /usr/lib/libc.so.1<br />
+  （5）&nbsp;char *str1;<br />
+  char *str2;<br />
+  (str1==str)<br />
+  //这种写法正确，它是指str1和str2指向了同一块内存，即地址相等&nbsp;...<br />
+  if (strcmp(str1,str2)==0)//它是指str1和str2所指向的内存中的内容相等 <br />
+  （6）变量作用域</p>
+<ul>
+  <li>全局变量和静态全局变量只能在程序的开始初始化一次。非静态局部变量在进入定义 </li>
+</ul>
+<p>他们的程序块的每个入口多次初始化。静态局部变量也只初始化一次。 </p>
+<ul>
+  <li>静态变量分为：静态全局变量和静态局部变量。 </li>
+  <li>静态全局变量只在他所在的文件中生存，别的文件不可以用extern对其进行声明。</li>
+  <li>静态局部变量只在两个函数之间跳转，虽然超过作用域，但是这个变量的生存期为整 </li>
+</ul>
+<p>个程序。 <br />
+  （7）变量的存储方式：extern、register、static、auto。<br />
+  函数存储默认为extern&nbsp;<br />
+  （8）char *str=&quot;abc&quot;;<br />
+  printf(&quot;%d\n&quot;,str);//打印地址 <br />
+  printf(&quot;%s\n&quot;,str);//打印字符串 <br />
+  （9）初始化数据段。通常将此段称为数据段，它包含了程序中需赋初值的变量。例如，C程序中任何函数之外的说明： <br />
+  int maxcount = 99;使此变量以初值存放在初始化数据段中。 <br />
+  初始化数据段一般是全局变量和静态变量。 <br />
+  （10）非初始化数据段。通常将此段称为b s s段，这一名称来源于早期汇编程序的一个操作符， <br />
+  意思是&ldquo;block  started by symbol（由符号开始的块）&rdquo;，在程序开始执行之前，内核将此段初始化为0。函数外的说明： <br />
+  long sum[1000] ;<br />
+  使此变量存放在非初始化数据段中。 <br />
+  （11）栈。自动变量以及每次函数调用时所需保存的信息都存放在此段中。每次函数调用时， <br />
+  其返回地址、以及调用者的环境信息（例如某些机器寄存器）都存放在栈中。然后，新被调 <br />
+  用的函数在栈上为其自动和临时变量分配存储空间。通过以这种方式使用栈，C函数可以递归调用。 <br />
+  （12）堆。通常在堆中进行动态存储分配。由于历史上形成的惯例，堆位于非初始化数据段顶和栈底之间。 <br />
+  初始化的数据----由exec 赋初值 <br />
+  初始化的数据------由exec从程序文件中读到 <br />
+  正文--------------由exec从程序文件中读到&nbsp;<br />
+  注：平常所说的堆栈即为栈(stack)<br />
+  （13）&nbsp;函数名: memcpy <br />
+  功 能: 从源source中拷贝n个字节到目标destin中 <br />
+  用 法: void *memcpy(void *destin, void *source, unsigned n); <br />
+  他同strcpy的区别就是memcpy可以给结构赋值： <pre class="code">
+  struct JieGou jg1;<br />
+  struct JieGou jg2;<br />
+  memcpy(jg1,jg2,sizeof(struct JieGou));</pre>
+  （14）&nbsp;char *str1=&quot;abcd&quot;;<br />
+  此时分配的内存既不在栈中，也不在堆中，而是在静态存储区域。 <br />
+  char str2[]=&quot;dfdfdf&quot;;<br />
+  //这里分配的内存在栈中。 <br />
+  （15）&nbsp;在用delete或用free释放指针p所指的内存后，只是p所指的内存释放了。变量p还是存在的。 <br />
+  应该马上显式地将p置为NULL，以防下次使用p时发生错误。示例程序如下：<br />
+  if(p==NULL);<br />
+  strcpy(p,&quot;dkfjdf&quot;);//p是个野指针，指向了一堆垃圾 <br />
+  &ldquo;野指针&rdquo;不是NULL指针，是指向&ldquo;垃圾&rdquo;内存的指针。人们一般不会错用NULL指针， <br />
+  因为用if语句很容易判断。但是&ldquo;野指针&rdquo;是很危险的，if语句对它不起作用。 <br />
+  &ldquo;野指针&rdquo;的成因主要有两种： </p>
+<ul>
+  <li>指针变量没有被初始化。任何指针变量刚被创建时不会自动成为NULL指针，它的缺省值是随机的， </li>
+</ul>
+<p>它会乱指一气。所以，指针变量在创建的同时应当被初始化，要么将指针设置为NULL，要么让它指向 <br />
+  合法的内存。例如 <br />
+  char *p = NULL;<br />
+  char *str = (char *) malloc(100);</p>
+<ul>
+  <li>指针p被free或者delete之后，没有置为NULL，让人误以为p是个合法的指针。</li>
+  <li>不要将BOOL值TRUE和FALSE对应于1和0进行编程。大多数编程语言将FALSE定义为0，  任何非0值都是TRUE。Visual C++将TRUE定义为1，而Visual Basic则将 </li>
+</ul>
+<p>TRUE定义为-1。示例程序如下： <pre class="code">
+  <strong>BOOL&nbsp;flag;</strong><br />
+  …<br />
+  if(flag)&nbsp;{ // do something }&nbsp;// 正确的用法 <br />
+  if(flag==TRUE)&nbsp;{ // do something  }&nbsp;// 危险的用法 <br />
+  if(flag==1)&nbsp;{ // do something  }&nbsp;// 危险的用法 <br />
+  if(!flag)&nbsp;{ // do something }&nbsp;// 正确的用法 <br />
+  if(flag==FALSE) { // do something }&nbsp;//  不合理的用法 <br />
+  if(flag==0)&nbsp;{ // do something  }&nbsp;// 不合理的用法 </pre>
+<ul>
+  <li>小心不要将&quot;= =&quot;写成&quot;=&quot;，编译器不会自动发现这种错误。 </li>
+  <li>不要将123写成0123，后者是八进制的数值。 </li>
+  <li>将自己经常犯的编程错误记录下来，制成表格贴在计算机旁边。 </li>
+</ul>
+<p>（16）以下是我编程时采用的命名约定： </p>
+<ul>
+  <li>宏定义用大写字母加下划线表示，如MAX_LENGTH； </li>
+  <li>函数用大写字母开头的单词组合而成，如SetName, GetName ； </li>
+  <li>指针变量加前缀p，如 *pNode ； </li>
+  <li>BOOL 变量加前缀b，如 bFlag ； </li>
+  <li>int&nbsp;变量加前缀i，如 iWidth ； </li>
+  <li>float 变量加前缀f，如 fWidth ； </li>
+  <li>double变量加前缀d，如 dWidth ； </li>
+  <li>字符串变量加前缀str，如 strName ； </li>
+  <li>枚举变量加前缀e，如 eDrawMode ； </li>
+  <li>类的成员变量加前缀m_，如 m_strName,  m_iWidth ； </li>
+</ul>
+<p>对于 int, float,  double 型的变量，如果变量名的含义十分明显，则不加前缀，避免烦琐。 <br />
+  如用于循环的int型变量 i,j,k ；float 型的三维坐标（x,y,z）等。 <br />
+  （17）strcpy与memcpy的区别 <br />
+  strcpy(str1,str2)是将str2连带'\0'一同拷贝到str1,比如：str1=&quot;aaaa&quot;,str2=&quot;bbb&quot;， <br />
+  则结果str1=&quot;bbb&quot;,导致str1碰到'\0'，自动终止字符串 <br />
+  memcpy(str1,str2,strlen(str2))是将str2的bbb（不带'\0'）拷贝到str1中，结果为 <br />
+  str1=&quot;bbba&quot;<br />
+  这里注意：strlen(str2)=3&nbsp;sizeof(str2)=4&nbsp;所以如果不想覆盖str1中其余的字符， <br />
+  则不能用sizeof。<br />
+  strncpy与memcpy功能一样。 <br />
+  （18）跨平台申请内存 <br />
+  malloc(sizeof(char)*(strlen(str)+1))<br />
+  char str[]=&quot;hello world&quot;;<br />
+  char str1[9]<br />
+  这两种情况sizeof(str)=12；sizeof(str1)=9；strlen(str)=11;strlen(str1)=0;<br />
+  char *p=str;<br />
+  sizeof (p)=4<br />
+  如果将str[]用作参数例如fun(char str[100])<br />
+  则sizeof(str）=4而不是100，因为此时字符串数组自动退化为指针，而指针在内存中占用4个字节。<br />
+  （19）char *str = &quot;ABCD&quot;;<br />
+  str[0]='M';//将导致错误，因为这种方式是在静态存储区分配内存 <br />
+  如果用strcpy(str,&quot;BBBB&quot;)会出错,因为char *str没有动态分配内存，而是指向了静态存储区。<br />
+  其相对于常量字符串，是不可以修改的。<br />
+  如果写成:<br />
+  char *str = (char *)malloc(100)<br />
+  strcpy (str,&quot;ABCD&quot;);<br />
+  str[0] = 'M';即可 <br />
+  char str[4] = &quot;ABC&quot;;<br />
+  str[0]='N';<br />
+  则str =  &quot;NBC&quot;;因为是在栈上分配内存 <br />
+  （20）new 必须与delete对应，动态内存必须要手工释放，动态内存分配的析构函数只会在使用delete的时候被调用。 <br />
+  （21）如果文件中的记录格式为定长，长度为99，则定义：<br />
+  char *strBuf[101]//99+'\n'+'\0';<br />
+  fgets(strBuf,101,fp)//从fp中读取100个字符包括\r,都作为一个字符串,最后以'\r'结束(fgets中读取字符串的长度是101-1），这样输出到另一个文件的时候fprint(fp1,&quot;%s&quot;,strBuf)自动回车，不用在%s后加\n。<br />
+  如果用fread(strBuf,100,1,fp)这样的写法即可。<br />
+  但是之前必须执行memset(strBuf,  '\0', sizeof(strBuf))，否则会出现很乱的字符，而fgets不存在这个问题，不知道为什么。总之，在使用字符串之前，最好memset一下。 <br />
+  无论用fgets还是fread读取的文件的记录结果strlen(strBuf)不是99，而是100。 <br />
+  另外：int  fread(void *buf, int size, int count,FILE *stream)表示从文件中读取count（字段数）个字段，每个字段大小为size，函数返回实际读取的字段数。如果函数要求的字段数超过实际文件存放的字段数，举例说明： <br />
+  文件内容如下： <br />
+  AAAAAAAAAA<br />
+  AAAAABBBBB<br />
+  AAAAA<pre class="code">
+  while(fread(strBuf,11,1,fp))<br />
+  {<br />
+  printf(&quot;str=[%s]\n&quot;,str);<br />
+  }</pre>
+  如果用fread读文件while(fread(strBuf,11,1,fp))只能读两条出来，前两条返回1，第三条返回0。因为第三条只有6个字节（连着回车符），不满足长度为11的条件，所以fread读文件的话，最实用于定长文件。但是第三条fread也将值赋给了strBuf,只是不满足条件返回了0。第三条的格式： </p>
+<ul>
+  <li>没有memset(str,'\0',sizeof (str))；</li>
+</ul>
+<p>[AAAAA（此处一个回车符） <br />
+  BBBB（此处一个回车符）——这部分是上一个串留下的部分 <br />
+  ]</p>
+<ul>
+  <li>有memset(str,'\0',sizefo(str))</li>
+</ul>
+<p>[AAAAA（此处一个回车符） <br />
+  ]<br />
+  在例如： <br />
+  AAAAAAAAAA<br />
+  AAAAA<br />
+  AAAAAAAAAA<br />
+  这种情况会跨行截取11个字节，第一条正常，第二条就变为： <br />
+  [AAAAA(此处是一个回车符)<br />
+  AAAAA]<br />
+  如下例所示： <pre class="code">
+  #include &lt;stdio.h&gt;<br />
+  #include &lt;stdlib.h&gt;<br />
+  #include &lt;memory.h&gt;<br />
+  int main()<br />
+  {<br />
+  int i =0;<br />
+  FILE *fp,*fp1,*fp2;<br />
+  char str[10]=&quot;370706751&quot;;<br />
+  char str1[11];<br />
+  memset(str1,'\0',sizeof(str1));//将str1用\0填充<br />
+  fp = fopen(&quot;e:\\d_vim\\test.txt&quot;,  &quot;w&quot;);<br />
+  if (fp == NULL)<br />
+  {<br />
+  printf(&quot;create file error!\n&quot;);<br />
+  return -1;<br />
+  }<br />
+  fprintf(fp, &quot;%s\n\0&quot;,str);<br />
+  fprintf(fp, &quot;%s\n\0&quot;,str);<br />
+  fclose(fp);<br />
+  fp1 =  fopen(&quot;e:\\d_vim\\test.txt&quot;, &quot;r&quot;);<br />
+  if (fp1 == NULL)<br />
+  {<br />
+  printf(&quot;create file error!\n&quot;);<br />
+  return -1;<br />
+  }<br />
+  fp2 =  fopen(&quot;e:\\d_vim\\test1.txt&quot;, &quot;w&quot;);<br />
+  if (fp2 == NULL)<br />
+  {<br />
+  printf(&quot;create file error!\n&quot;);<br />
+  return -1;<br />
+  }<br />
+  while (fgets(str1,11,fp1) )<br />
+  {<br />
+  i++;<br />
+  printf(&quot;%s&quot;,str1);//读取test.txt中内容，放入str1中，并在终端显示出来<br />
+  fprintf(fp2,&quot;%s&quot;,str1);//将text.txt中的内容，写入text1.txt中<br />
+  }<br />
+  fclose(fp1);<br />
+  fclose(fp2);//千万勿忘记fclose<br />
+  printf(&quot;record num = [%d]\n&quot;,i);<br />
+  system(&quot;pause&quot;);<br />
+  }</pre>
+  运行结果：<br />
+370706751<br />
+  370706751</p>
+<p>record num = [2]<br />
+  而且，在e:\d_vim\test.txt中有两行内容：<br />
+  370706751<br />
+  370706751<br />
+  在e:\d_vim\test1.txt中有两行内容：<br />
+  370706751<br />
+  370706751<br />
+  （22）防止野指针。
+ <pre class="code"> Object object1 = new Object();<br />
+  ......<br />
+  delete object1;<br />
+  object1 = NULL;</pre>
+  <p>好的编程习惯，最后置为NULL，防止野指针，因为虽然内存释放了，但是指向一堆垃圾。 <br />
+    （23）memcpy、strncmp和strncpy与memcpy
+    <pre class="code">int main(int argc ,  char *arge[])<br />
+    {<br />
+    char  str[]=&quot; aaaaaaaaa\0bbbbb&quot;;<br />
+    char  str1[]=&quot; aaaaaaaaa&quot;;<br />
+    if  (memcmp(str,str1,17) == 0)<br />
+    printf(&quot;equal\n&quot;);<br />
+    if  (strncmp(str,str1,17) == 0)<br />
+    printf(&quot;--equal\n&quot;); <br />
+    }</pre>
+    输出结果：--equal
+  <p>从上例可以看出strncmp和memcmp的区别,strncmp会截断字符串str与str1判断，所以输出相等，但是memcmp会将'\0'带入比较所以不相等。 <br />
+  同理，strncpy与memcpy的区别也一样。 <pre class="code">
+  int main(int argc , char *arge[])<br />
+  {<br />
+  char str[18]=&quot; aaaaaaaaa\0bbbbb&quot;;<br />
+  char str2[18];<br />
+  strncpy(str2,str,17);<br />
+  for (int i=0; i&lt;17; i++)<br />
+  {<br />
+  printf(&quot;str2[%d]=[%c]\n&quot;, i,  str2[i]);<br />
+  }<br />
+  memcpy(str2,str,17);<br />
+  for (int i=0; i&lt;17; i++)<br />
+  {<br />
+  printf(&quot;str2[%d]=[%c]\n&quot;, i,  str2[i]);<br />
+  }<br />
+  }</pre>
+  memcpy会输出'\0'后面的bbbbb,而strncpy不会输出。<br />
+  归纳起来，就是说strncpy和strncmp遇到\0会将字符串截断，后续的就不再管了，而memcmp和memcpy遇到\0则将其当作两个字符串来看待哦。</p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,379 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="50.html"> 上一页</a><a href="52.html"> 下一页</a></div>
+<h2>6．8 控制对成员的访问</h2>
+<p>
+     
+  成员访问说明符public和private(和第9章“继承”中介绍的protected)可以控制类数据成员和成员函数的访问。类的默认访问模式是private，因此类的首部和第一个标号之间的所有成员的类型都是private。每个标号之后，采用该标号表示的方式，直到遇到下一个标号或遇到类定义的右花括号(})。标号public、private和protedted可以重复，但这种情况不常用，容易造成混乱。</p><p>
+     
+类的private成员只能由类的成员函数(和第7章介绍的友元)访问，public成虽则可以由程序中的任何函数访问。  </p><p>
+     
+public成员的主要用途是向类的客户提供类的服务(行为)，这组服务形成类的public接口。类的客户不必关心类如何完成任务。类的private成员和public成员函数的定义是类的客户无法访问的。  </p><p>
+  这些组件形成类的实现方法(implementation)。</p>
+<h5>
+  软件工程视点6．13  </h5>
+<p>
+     
+C++提倡程序独立于实现方法。对于独立于实现方法的代码，改变类的实现方法时，代码不需要改变，但可能需要重新编译。  </p>
+<h5>
+  常见编程错误6．6  </h5>
+<p>
+   
+除了由类的成员函数(和第7章介绍的友元)访问外，其他函数想访问类的private成员是个语法错误。  </p>
+<p>
+  图6．6演示了private类成员只能用public成员函数通过public类接口访问。编译这个程序时，编译器产生两个错误，表示每个语句中指定的private成员无法访问。图6．6包含time1.h并和图6．5的time1.cpp一起编译。  </p>
+<h5>
+  编程技巧6．3  </h5>
+<p>
+     
+如果在类定义中先列出private成员，尽管程序默认的访问模式为private，但最好还是显式使用private标号，这样可以使程序更清晰。我们喜欢先列出public成员以强调类的接口。  </p><pre class="code"> // Fig. 6.6:fig06 06.cpp
+ // Demonstrate errors resulting from attempts
+ // to access private class members.
+ #include < iostream.h>
+ #include "time1.h"
+ int main()
+ {
+   Time t;
+   // Error: 'Time::hour' is not accessible
+   t.hour = 7;
+   // Error: 'Time::minute' is not accessible
+   cout << "minute =" << t.minute;
+   return 0;
+ }</pre>
+<p>输出结果：</p><p>
+  Compilin9 FIG06 06.CPP:</p><p>
+  Error   FIG06 06.CPP 12: 'Time::hour' is not accessible</p><p>
+  Error FIG06_06.CPp 15:   'Time::minute' is not accessible</p>
+  <p>
+                                     
+  图6.6 访问类的private成员的错误  </p>
+  <h5>
+    编程技巧6．4  </h5>
+  <p>
+   
+尽管public和private标号可以重复和混合，但最好先将所有public成员列成一组，然后将所有private成  </p><p>
+   
+员列成一组，这样可以使客户集中注意类的public接口，而不是注意类的实现方法。  </p>
+<h5>
+  软件工程视点6．14  </h5>
+<p>
+     
+让类的所有数据成员保持private。让Public成员函数设置private数据成员的值并取得private数据成员的  </p><p>
+   
+值。这种结构能隐藏类的实现方法，减少错误和提高程序的可修改性。  </p>
+<p>
+  类的客户可能是另一类的成员函数，也可能是全局函数(即文件中类c语言的“松散”函数，不是任何类的成员函数)。  </p>
+<p>
+     
+类成员的默认访问方式为private。类成员的访问方式可以显式设置为public、protected(见第9章)和private。struct成员的默认访问方式为public。struct的成员的访问方式也可以设置为Public、protected或private。  </p>
+<h5>
+  较件工程视点6．15  </h5>
+<p>
+   
+类设计人员用public、protected或private成员实现信息隐藏和最低权限原则。  </p><p>
+     
+类数据为private并不表示客户不能改变这个数据。客户可以通过这个类的成员函数或友元改变这个数据，但这些函数的设计应保证数据完整性。  </p><p>
+     
+访问类的private数据应当用称为访问函数access funotion)或访问方法(access   method)的成员函数严格控制。例如，要让客户读取private数据的值,类可以提供一个get函数。要让客户修改private数据的值，类可以提供一个set函数。这种修改似乎会破坏private数据的专用性，但set成员函数可以提供数据验证功能(如范围检查)，保证数值设置正确，set函数也可以在接口使用的数据形式与实现方法使用的数据形式之间进行换算。get函数不必以原始形式显示数据,该函数可以编辑数据，限制客户可以看到的数据。  </p>
+<h5>
+  软件工程视点6．16  </h5>
+<p>
+     
+类设计人员不必提供每个private数据成员的get和set函数，只在需要时才提供数据成员的get和set函数。  </p>
+<h5>
+  测试与调试提示6．3  </h5>
+<p>
+     
+将类的数据成员指定为private、类的成员函数指定为public有助于调试，因为数据操作问题局部化在类成员函数或类的友元中。  </p>
+<h2>
+  <a name="6.9" id="6.9"></a>6．9 访问函数与工具函数</h2>
+<p>
+     
+并非所有成员函数都要用public指定为类接口的一部分。有些成员函数保持private，作为类中 其他函数的工具函数(utility   function)。  </p>
+<h5>
+  软件工程视点6．17  </h5>
+<p>
+     
+成员函数分为几大类：读取和返回私有数据成员值的函数、设置私有数据成员值的函数、实现类特性的   函数和进行各种类操作的函数(如初始化类对象、指定类对象、将类与内部类型或其他类进行相互转换以及处理奥对象内存)。  </p><p>
+     
+访问函数可以读取和显示数据。访问函数的另一常见用法是测试条件的真假，这种函数称为判定函数(predicate   funchon)。任何容器类都有的isEmpty函数(如链表、堆栈和队列)就是判定函   数。程序先测试isEmpty，再从容器对象中读取下一个项目。判定函数isFull于测试容器类对象还有没有多余的存储空间。Time类的判定函数包括isAM和isPM。  </p><p>
+     
+图6．7演示了工具函数(或称为帮助函数)的使用。工具函数不是类接口的一部分，而是private成员函数，支持类中其他函数的操作。类的客户不能使用工具函数。  </p>
+<pre class="code">// Fig. 6.7: salesp.h
+ // SalesPerson Class definition
+ // Member functions defined in salesp.cpp
+ #ifndef SALESPH
+ #define SALESPH
+class SalesPerson {
+ public:
+   SalesPerson();             // constructor
+  void getSalesFromUser(); // get sales figures from keyboard
+  void setSales( int, double ); // User supplies one month's
+                           // sales figures.
+  void printAnnualSales();
+ private:
+  double totalAnnualSales();  // utility function
+  double sales[ 12 ];         // 12 monthly sales figures
+ };
+ #endif
+ // Fig. 6.7: salesp.cpp
+ // Member functions for class SalesPerson
+ #include < iostream.h>
+ #include < iomanip.h>
+ // Constructor function initializes array
+ {
+   for (int i = 0; i < 12; i++ )
+      sales[ i ] = 0.0;
+ }
+ // Function to get 12 sales figures from tha user
+ // at the keyboard
+ {
+   double salesFigure;
+   for (int i = 0; i < 12; i++ ) {
+     cout << "Enter sales amountfor month"
+                        << i + 1 << ": ";
+     cin >> salesFigure;
+      setSales( i, salesFigure );
+   }
+ }
+ // Function to set one of the 12 monthly sales figures.
+ Note that the month value must be from 0 to 11
+ void SalesPerson::setSales( int month, double amount )
+ {
+    if ( month >= 0 && month < 12 && amount > 0 )
+     sales[ month ] = amount;
+   else
+  cout << "Inalid month or sales figure" << endl;
+ }
+ // Print the total annual sales
+ void SalesPerson::printAnnualSales()
+{
+   cout << setprecision( 2 )
+       << setiosflags( ios::fixed I ios::showpoint )
+       << "\nThe total annual sales are: $"
+       << totalAnnualSales() << endl;
+ }
+ // Private utility function to total annual sales
+ double SalesPerson::totalAnnualSales()
+ {
+   double total = 0.0;
+   for (int i = 0; i < 12; i++ )
+      total += sales[ i ];
+   return total;
+ }
+ // Fig.67:fig06_07.cpp
+ // Demonstrating a utility function
+ // Compile with salesp.cpp
+ #include "salesp.h"
+ int main()
+ {
+   SalesPerson s;       // create SalesPerson object s
+   s.getSalesFromUser();  // note simple sequential code
+   s.printAnnualSales();  // no control structures in main
+   return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p>
+  <p>
+    Enter sales amount for month 1:5314.76</p><p>
+    Enter sales amount   for month 2:4292.38</p><p>
+    Enter sales amount for month 3:4589.83</p><p>
+    Enter sales   amount for month 4:5534.03</p><p>
+    Enter sales amount for month 5:4376.34</p><p>
+    Enter   sales amount for month 6:5698.45</p><p>
+    Enter sales amount for month   7:4439.22</p><p>
+    Enter sales amount for month 8:5893.57</p><p>
+    Enter sales amount for   month 9:4909.67</p><p>
+    Enter sales amount fez month 10:5123.45</p><p>
+    Enter sales amount   for month 11:2024.97</p><p>
+    Enter sales amount for month 12:5923.92</p><p>
+    The total   annual sales are: $60120.58</p>
+    <p>
+  图   6．7使用工具函数  </p>
+    <p>
+  
+  SalesPerson类中的表示12个月销售数据的数组用构造函数初始化为0，并用setSales函数设置为用户提供的值。public成员函数printAnnualSales打印最近11个月的总销售额。工具函数，TotalAnnualSales为PrintAnnualSales计算12个月的总销售额。成员函数printAnnudSales将销售数据转换为美元金额格式。  </p>
+    <p>
+     
+注意main中只有一个简单的成员函数调用，没有任何控制结构。  </p>
+    <h5>
+  软件工程视点6．18  </h5>
+    <p>
+     
+面向对象编程的一个现象是定义类之后，生成和操作这个类的对象通常只要一个简单的成员函数调用，  </p><p>
+    没有任何或只有少量控制结构。相反，类成员函数的实现则通常需要控制结构。
+</p>
+<div class="rpindex"><a href="52.html"> 下一页</a><a href="50.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

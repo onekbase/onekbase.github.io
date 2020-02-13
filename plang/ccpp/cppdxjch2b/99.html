@@ -1,0 +1,286 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="98.html"> 上一页</a><a href="100.html"> 下一页</a></div>
+<h2>12.5 类模板与无类型参数
+  </p>
+</h2>
+<p>
+     
+  上节的Sstack类模扳只用模板首部的类型参数，也可以使用无类型参数(non-type   parameter)，无类型参数可以有默认参数，一般将无类型参数当作Const处理。例如，模板首都可以取int elements参数，如下所示：</p><p>
+       
+  template&lt;class T，int elements&gt; // note non-type parameter然后下列声明：</p><p>
+       
+  Stack&lt;double，100) mostRecentSalesFigures；</p><p>
+     
+  实例化(在编译时)100个元素的Stack模板类mostRecentSalesFigures(使用double值)。这个模板类的类型为Stack&lt;double,100&gt;。类的首部可以包含private数据成员，数组声明如下：</p><p>
+       
+  T stackHolder[elements]；   // array tO hold stack contents</p>
+  <h5>
+    性能提示12．2</h5>
+  <p>
+       
+  如果可能，在编译时指定容器类(如数组类和堆栈类)的长度(可能通过非类型模板长度参数)可以消除用new动态生成空间的执行时开销。</p>
+  <h5>
+    软件工程视点12．3</h5>
+  <p>
+       
+  如果可能，在编译时指定容器类的长度(可能通过非典型模板长度参数)以避免new无法取得所要内存时造成致命的造行时错误。</p>
+  <p>
+  练习中要用无类型参数生成第8章开发的Array类的模板。这个模板可以用编译时指定类型的指定元素个数实例化Array对象，而不必在运行时动态生成Array对象的空间。</p>
+  <p>
+       
+  不符合常用类模板的特定类型的类可以重定义该类型的类模板。例如，可以用一个Array类模板实例化任何类型的数组。程序员可以控制某个类型Array类的实例化，如Martian，只要建立类名为Array&lt;Martian&gt;的新类即可。</p>
+  <h2>
+    <a name="12.6" id="12.6"></a>12.6模板与继承</h2>
+  <p>
+     
+  模板与继承关系如下所示：</p><p>
+     
+  ●类模板可以从模板类派生。</p><p>
+       
+  ●类模板可以从非模板类派生。</p><p>
+     
+  ●模板类可以从类模板派生。</p><p>
+       
+  ●非模板类可以从类模板中派生。</p>
+  <h2>
+    <a name="12.7" id="12.7"></a>12.7   模板与友元</h2>
+  <p>
+  
+  函数和整个类都可以声明为非模板类友元。使用类模板，可以声明各种各样的友元关系。友元可以在类模板与全局函数间、另一个类(可能是模板类)的成员函数间或整个类中(可能是模板类)建立。建立这种友元关系的符号可能很繁琐。</p><p>
+       
+  在下列X类的类模板中声明为：</p><p>
+     
+  template&lt;class T&gt;class X</p><p>
+  下列友元声明：</p><p>
+     
+  friend   void f1()；</p><p>
+  使函数f1成为从上述类模板实例化的每个模板类的友元。</p><p>
+     
+  在下列X类的类模板中声明为：</p><p>
+       
+  template&lt;class T&gt;class X</p><p>
+  下列友元声明：</p><p>
+     
+  friend void f2(X&lt; T &gt;   6);</p><p>
+  对特定类型T(如float)使函数f2(X&lt;float&gt;&amp;)成为X&lt;float&gt;的友元。</p><p>
+       
+  在类模板中，可以声明另一个类的成员函数是类模板产生的任何模板类的友元。只要用类名和二元作用域运算符指定其它类的成员函数名。例如，在下列X类的类模板中声明为：</p><p>
+       
+  template&lt;class T&gt;class X</p><p>
+  下列友元声明：</p><p>
+     
+  friend void   A::f4()；</p><p>
+  使A类的成员函数f4成为上述类模板实例化的任何模板类的友元。</p><p>
+     
+  在下列X类的类模板中声明为：</p><p>
+       
+  template&lt;class T&gt;class X</p><p>
+  下列友元声明：</p><p>
+     
+  friend void C&lt; T &gt;::f5(   X&lt; T &gt; &amp; )；</p><p>
+   
+  对特定类型T(如float)使成员函数：</p><p>
+     
+  C&lt;float&gt;::f5( X&lt;   float&gt; &amp; )；</p><p>
+  成为X&lt;float&gt;模板类的友元函数。</p><p>
+     
+  在下列X类的类模板中声明为：</p><p>
+       
+  template&lt;Class T&gt;Class X</p><p>
+   
+  可以声明第二个类Y，如下所示：</p><p>
+     
+  friend class Y；</p><p>
+     
+  使Y类的每个成员函数成为X的类模板产生的每个模板类的友元。</p><p>
+     
+  在下列X类的类模板中声明为：</p><p>
+     
+  template&lt;class   T&gt;class X</p><p>
+   
+  可以声明第二个类Z，如下所示：</p><p>
+     
+  friend class Z&lt; T &gt;；</p><p>
+     
+  使模板类用特定类型T(如float)实例化时，class   Z&lt;float&gt;的所有成员成为模板类X&lt;float&gt;的友元。</p>
+  <h2>
+    <a name="12.8" id="12.8"></a>12.8 模板与static成员</h2>
+  <p>
+     
+  在非模板类中，类的所有对象共享一个static数据成员，Static数据成员应在文件范围内初始化。</p><p>
+       
+  从类模板实例化的每个模板类有自己的类模板static数据成员，该模板类的所有对象共享一个Static数据成员。和非模板类的static数据成员一样，模板类的static数据成员也应在文件范围内初始化。每个模板类有自己的类摸板的static数据成员副本。</p>
+  <div class="rpindex"><a href="100.html"> 下一页</a><a href="98.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

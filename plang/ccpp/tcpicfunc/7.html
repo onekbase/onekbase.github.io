@@ -1,0 +1,337 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<title>画点,画线_基本画图函数_图形方式</title>
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="6.html"> 上一页</a><a href="8.html"> 下一页</a></div>
+<h1><b>第三章　图形方式</b></h1>
+<h3>第四节　基本画图函数</h3>
+<p>    
+基本图形函数包括画点，线以及其它一些基本图形的函数。本节对这些函数作一全面的介绍。</p>     
+<h4>１、画点</h4>
+<h5>    
+  Ｉ. 画点函数 void far putpixel(int x, int y, int color);&nbsp;</h5>
+<p>该函数表示有指定的象元画一个按color      
+所确定颜色的点。对于颜色color的值可从表3中获得而对x, y是指图形象元的坐标。</p>
+<p>     
+在图形模式下，是按象元来定义坐标的。对VGA适配器，它的最高分辨率为640x480，其中640为整个屏幕从左到右所有象元的个数，480为整个屏幕从上到下所有象元的个数。屏幕的左上角坐标为(0,0)，右下角坐标为(639,      
+479)，水平方向从左到右为x 轴正向，垂直方向从上到下为y轴正向。TURBO      
+C的图形函数都是相对于图形屏幕坐标，即象元来说的。</p>
+<p>     
+关于点的另外一个函数是：</p>
+<pre class="code"> int far getpixel(int x, int y);  </pre>
+<p>它获得当前点(x, y)的颜色值。&nbsp;</p>
+<h5>II、有关坐标位置的函数&nbsp;</h5>
+<ul>
+  <li>&nbsp;int      
+    far getmaxx(void);返回x轴的最大值。</li>
+  <li>&nbsp;int      
+    far getmaxy(void); 返回y轴的最大值。</li>
+  <li>&nbsp;int      
+    far getx(void); 返回游标在x轴的位置。</li>
+  <li> &nbsp;void far gety(void); 返回游标有y轴的位置。</li>
+  <li>&nbsp;void      
+    far moveto(int x, int y); 移动游标到(x, y)点，不是画点，在移动过程中亦画点。</li>
+  <li>void far moverel(int dx, int dy); 移动游标从现行位置(x, y)移动到(x+dx,      
+    y+dy)的位置，移动过程中不画点。</li>
+</ul>
+<h4>     
+  ２、画线</h4>
+<h5>     
+  I. 画线函数</h5>
+<p>     
+TURBO C提供了一系列画线函数，下面分别叙述：&nbsp;</p>      
+<ul>
+  <li>void      
+    far line(int x0, int y0, int x1, int y1); 画一条从点(x0, y0)到(x1, y1)的直线。</li>
+  <li>void far lineto(int x, int y); 画一作从现行游标到点(x, y)的直线。</li>
+  <li>void      
+    far linerel(int dx, int dy); 画一条从现行游标(x，y)到按相对增量确定的点(x+dx,      
+    y+dy)的直线。</li>
+  <li>void far circle(int x, int y, int radius); 以(x, y)为圆心，radius为半径，画一个圆。</li>
+  <li>void far arc(int x, int y, int stangle, int endangle,int radius); 以(x,y)为圆心，radius为半径，从stangle开始到endangle结束(用度表示)画一段圆弧线。</li>
+</ul>
+<p>在TURBO C中规定x轴正向为0 度，逆时针方向旋转一周， 依次为90,180,      
+270和360度(其它有关函数也按此规定，不再重述)。&nbsp;</p>      
+<ul>
+  <li><strong>void      
+    ellipse(int x, int y, int stangle, int endangle,int xradius,int yradius);</strong><br />
+    以(x,      
+    y)为中心，xradius，yradius为x轴和y轴半径，从角stangle 开始到endangle结束画一段椭圆线，当stangle=0，endangle=360时，      
+    画出一个完整的椭圆。</li>
+  <li><strong>void      
+    far rectangle(int x1, int y1, int x2, inty2);</strong><br />
+    以(x1, y1)为左上角，(x2, y2)为右下角画一个矩形框。&nbsp;</li>
+  <li><strong>void      
+    far drawpoly(int numpoints, int far *polypoints); </strong><br />
+    画一个顶点数为numpoints,各顶点坐标由polypoints给出的多边形。polypoints整型数组必须至少有2      
+    倍顶点数个无素。每一个顶点的坐标都定义为x,y，并且x在前。值得注意的是当画一个封闭的多边形时，numpoints      
+    的值取实际多边形的顶点数加一，并且数组polypoints中第一个和最后一个点的坐标相同。</li>
+</ul>
+<p>     
+下面举一个用drawpoly()函数画箭头的例子。</p>
+<pre class="code">
+#include&lt;stdlib.h>
+#include&lt;graphics.h>
+int main()
+{
+	int gdriver, gmode, i;
+	int arw[16]={200,102,300,102,300,107,330,
+	100,300,93,300,98,200,98,200,102};
+	gdriver=DETECT;
+	initgraph(&gdriver, &gmode, "c:\\caic\\bgi");
+	setbkcolor(BLUE);
+	cleardevice();
+	setcolor(12); /*设置作图颜色*/
+	drawpoly(8, arw); /*画一箭头*/
+	getch();
+	closegraph();
+	return 0;
+}</pre>
+<h5>     
+  II、设定线型函数</h5>
+<p>    
+在没有对线的特性进行设定之前，TURBO C      
+用其默认值，即一点宽的实线，但TURBO C      
+也提供了可以改变线型的函数。</p>      
+<p>线型包括：宽度和形状。其中宽度只有两种选择：一点宽和三点宽。而线的形状则有五种。</p>      
+<p>下面介绍有关线型的设置函数。</p>      
+<pre class="code">&nbsp;void far setlinestyle(int linestyle,unsigned upattern,int thickness);</pre>
+<p>该函数用来设置线的有关信息，其中linestyle是线形状的规定，见下表。</p>
+<p>     
+有关线的形状(linestyle)</p><pre >     
+━━━━━━━━━━━━━━━━━━━━━━━━━     
+符号常数           数值         含义    
+─────────────────────────    
+SOLID_LINE           0          实线    
+DOTTED_LINE          1          点线    
+CENTER_LINE          2          中心线    
+DASHED_LINE          3          点画线    
+USERBIT_LINE         4          用户定义线    
+━━━━━━━━━━━━━━━━━━━━━━━━━</pre>
+<p>&nbsp;thickness是线的宽度，见下表。</p> 
+<p>
+有关线宽(thickness)</p><pre >
+━━━━━━━━━━━━━━━━━━━━━━━━━
+符号常数     数值    含义     
+─────────────────────────     
+NORM_WIDTH    1     一点宽     
+THIC_WIDTH    3     三点宽     
+━━━━━━━━━━━━━━━━━━━━━━━━━ </pre>
+<p>对于upattern，只有linestyle选USERBIT_LINE      
+时才有意义 (选其它线型，uppattern取0即可)。此时uppattern的16位二进制数的每一位代表一个象元，如果那位为1，则该象元打开，否则该象元关闭。&nbsp;</p>     
+<pre class="code">void far getlinesettings(struct linesettingstypefar *lineinfo);</pre>
+<p>该函数将有关线的信息存放到由lineinfo      
+  指向的结构中，表中linesettingstype的结构如下：</p>
+<pre class="code">
+struct linesettingstype{
+	int linestyle;
+	unsigned upattern;
+	int thickness;
+}</pre>
+<p>例如下面两句程序可以读出当前线的特性&nbsp;</p>      
+<pre class="code">struct  linesettingstype *info;      
+getlinesettings(info);</pre><p>     
+void far setwritemode(int mode);该函数规定画线的方式。如果mode=0，则表示画线时将所画位置的原来信息覆盖了(这是TURBO      
+C的默认方式)。如果mode=1，      
+则表示画线时用现在特性的线与所画之处原有的线进行异或(XOR)操作，      
+实际上画出的线是原有线与现在规定的线进行异或后的结果。因此，当线的特性不变，进行两次画线操作相当于没有画线。</p><p>     
+有关线型设定和画线函数的例子如下所示。</p>
+<pre class="code">
+#include&lt;stdlib.h>
+#include&lt;graphics.h>
+int main()
+{
+	int gdriver, gmode, i;
+	gdriver=DETECT;
+	initgraph(&gdriver, &gmode, "c:\\caic\\bgi");
+	setbkcolor(BLUE);
+	cleardevice();
+	setcolor(GREEN);
+	circle(320, 240, 98);
+	setlinestyle(0, 0, 3); /*设置三点宽实线*/
+	setcolor(2);
+	rectangle(220, 140, 420, 340);
+	setcolor(WHITE);
+	setlinestyle(4, 0xaaaa, 1);
+	/*设置一点宽用户定义线*/
+	line(220, 240, 420, 240);
+	line(320, 140, 320, 340);
+	getch();
+	closegraph();
+	return 0;
+}</pre>
+<div class="rpindex"><a href="8.html"> 下一页</a><a href="6.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

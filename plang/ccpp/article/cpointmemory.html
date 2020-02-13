@@ -1,0 +1,292 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<h1>C语言指针与内存分配 </h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-06-24</strong></p>
+<p>在linux下用C语言做开发也有一段时间了，今天随手翻了一本linux C开发书籍，发现这些知识是那么的熟悉，然而却不是自己的。只因，好些都自己用过了，但从未曾总结过，今天就索性将其总结出来。尤其是指针和内存分配这里：初始化的变量、全局变量、static变量、函数、malloc等声明的变量到底在内存中是如何被分配的呢？ </p>
+<h2>1.字符串指针 </h2>
+<pre class="code">
+char * str1;</pre>
+  str1 只是一个指针，指针指向的空间还没有分配，所以此时用strcpy向str1所指向的内存
+  中拷贝内容将出错。利用malloc动态分配指向的内存（在堆中）。
+  <pre class="code">str1=(char  *)malloc(10) or str1=(char *)malloc(sizeof(char) * num)</pre>
+<p>分配num个char
+  所占有的字节（一般是1个字节）数空间，用完后必须用free释放内存空间。这与在栈中自动
+  分配的内存不同，栈中的内存在函数结束后自动释放。 </p>
+<h2>2.字符串数组 </h2>
+<pre class="code">char  str2[10];</pre>
+<p>字符数组的赋值要么在声明时初始化(=&quot;dfdf&quot;or ={'a','b','c','d'}，要末一个字符的赋值，str[0]= ;str[1]= ;...... 或者strcpy(str2,&quot;aaaaaa&quot;)(因为内存空间已分好）;
+  如果char str2[10];  str2=&quot;abcdefgjk&quot;;就会出错，因为str2表示数组str2[10]的首地址，在声明数组时已经分配好了地址值，不是变量，而是常量。strcpy(str2,&quot;aaaaaa&quot;)这种数组初始化方式，是将&quot;aaaaaa&quot;拷贝到以str2为开始地址的内存空间当中。 </p>
+<h2>3.字符串指针和数组的关系 </h2>
+<pre class="code">&nbsp;&nbsp;&nbsp;    char *str1;<br />
+  &nbsp;&nbsp;&nbsp;  char str2[10]=&quot;dfdf&quot;;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str1=str2;</pre>
+  //将指针str1指向以str2为首地址的内存空间，即现在str2和str1表示内存中的同一区域.</p>
+<h2>4.strcpy在字符串指针的应用 </h2>
+<pre class="code">      char *  str3=&quot;aaaaaaaaaaaaaaa&quot;;<br />
+  &nbsp;&nbsp;  char * str2=&quot;bbbb&quot;;<br />
+  &nbsp;&nbsp;  strcpy(str3,str2);</pre>
+  //这时的str2和str3就不指向同一内存空间，因为str3在初始化时已经分配了指向的内存空间；此时只是将str2所指向的内存的内容拷贝到str3所指向的内存空间的内容（注意：str3指向的内存空间的大小最好大于str2所指向的内存空间的大小,否则，可能将其他变量的内存覆盖。另外，c语言对数组不做越界检查，使用时候小心，否则出现不可预料的错误）。 </p>
+<h2>5.类型变量的内存分配 </h2>
+<p>其它如int,double,float,short等类型，在申明变量时内存空间就已经分配好了。例如： 
+ <pre class="code">      int i=1;<br />  &nbsp;&nbsp;  int j;<br />
+      j=i;<br />
+      j=2;<br />
+      printf(&quot;i=[%d];j=[%d]\n&quot;,i,j);</pre>
+  输出结果为i=1;j=2</p>
+<h2>6.指针和句柄的关系 </h2>
+面向对象编程例如java中的对象声明，句柄和指针的情况类似 <br />
+  <pre class="code">&nbsp;&nbsp;&nbsp;  Object  myObj = NEW&nbsp;&nbsp; Object()</pre>
+  &nbsp;&nbsp;&nbsp;  对象句柄myObj指向New在内存中创建的实例 <br />
+  &nbsp;&nbsp;&nbsp;  声明了对象以后必须实例化，才能调用对象的方法。 <br />
+ <pre class="code"> &nbsp;&nbsp;&nbsp;  ObjectA youObj=New ObjectA();&nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;  myObj=youObj//myObj和youObj同时指向ObjectA的实例 </pre>
+<h2>7.图例 </h2>
+<pre class="code">char  *str1=&quot;abcd&quot;,*str2=&quot;cde&quot;;</pre>
+<p>&quot;abcd&quot;的首地址为2000，&quot;cde&quot;的首地址为2004，分别存放在str1和str2。 <br />
+  address(int类型） address(int类型)strings  or object<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ------<br />
+  str1&nbsp;&nbsp;&nbsp;  |2000|&nbsp;&nbsp; -----------------2000|&nbsp;&nbsp;&nbsp; |: memory1<br />
+  &nbsp;&nbsp;&nbsp;  ------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ...<br />
+  str2&nbsp;&nbsp;&nbsp;  |2004|&nbsp;&nbsp; -----------------2004|&nbsp;&nbsp;&nbsp; |: memory2<br />
+  &nbsp;&nbsp;&nbsp;  ------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ... <br />
+  (1)&nbsp;&nbsp;&nbsp;&nbsp;  str1=str2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //str1的值变为2004，指向了memory2<br />
+  (2)&nbsp;&nbsp;&nbsp;  strcpy(str1,str2);//将memory2的内容&quot;cde&quot;拷贝到memory1,str1仍指向memory1</p>
+<h2>8.总结 </h2>
+<p>&nbsp;&nbsp;&nbsp;  内存的地址是固定的，而地址所指向的内存中的内容是变化的。 <br />
+  &nbsp;&nbsp;&nbsp;  指针是存放地址的变量。 <br />
+  &nbsp;&nbsp;&nbsp;  strcpy是内存区域中的内容的拷贝，而内存的地址是固定不变的。 <br />
+  &nbsp;&nbsp;&nbsp;  字符数组char str[10]；与 char *str；的区别： <br />
+  &nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;  字符数组在变量声明时即已分配了内存空间，也就是说他的地址已经确定了，而字符指针没有指向内存空间（除了char *str=&quot;dfdf&quot;)。 <br />
+  &nbsp;&nbsp;&nbsp;  字符数组中str表示数组的首地址，是一个常量，str等于一个固定的内存地址，所以永远不能在等号左边被赋值（除了声明变量初始化时，char str[10]=&quot;sssssss&quot;),<br />
+  &nbsp;&nbsp;&nbsp;  只能利用strcpy来改变他所指向的内存空间的内容。 <br />
+  &nbsp;&nbsp;&nbsp;  而char *str中str是一个变量，可以指向任意内存空间,；str=str2只表示将str指向地址str2指向的内存空间；他同样必须用strcpy来改变str所指向的内存区域的内容。 <br />
+  &nbsp;&nbsp;&nbsp;  注意：指针仅仅起指向的作用！ <br />
+  &nbsp;&nbsp;&nbsp;  最常见的例子是： <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  fgets(str,1000,fp);//预先定义str为字符数组char str[1000]。 </p>
+<h2>9. 局部变量的内存分配 </h2>
+<p>C语言函数中的局部变量的空间一般都是放在堆栈里面.在进入函数前,通过&quot;SUB SP,+XX&quot;来为这些局部变量分配堆栈空间.然后同样通过BP来对这些局部变量进行访问.函数结束时,&quot;MOV  SP,BP&quot;还原堆栈指针,局部变量随之而消失.最后以&quot;POP BP&quot;还原BP,结束该函数.<br />
+  值得注意的是,C语言会自动为C函数中经常使用int类型变量设置成resigter int.这样的局部变量就不是使用堆栈空间的了,而就是直接使用SI寄存器.</p>
+<h2>10.&nbsp;&nbsp;&nbsp;字符串的操作 </h2>
+<pre class="code">        char str[10];<br />
+  &nbsp;&nbsp;&nbsp;  struct aa&nbsp;&nbsp; bb;<br />
+  &nbsp;&nbsp;&nbsp;  ........<br />
+  &nbsp;&nbsp;&nbsp;  memset(str,'\0',sizeof(str));//清空内存，赋值为10个'\0'字符 <br />
+  &nbsp;&nbsp;&nbsp;  memset(&amp;bb,0,sizeof(struct aa));</pre>
+  &nbsp;&nbsp;&nbsp;  从文件中逐行读取，可以处理完一行，memset一下，再读取下一行&nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strcat(str1,str2);//也要注意str1最好是定长的数组，如果是指针还要初始化，还要长度。 <br />
+  &nbsp;&nbsp;&nbsp;  字符串比较大小只能用strcmp,strncmp<br />
+  &nbsp;&nbsp;&nbsp;  strcmp(str1,str2)//&nbsp;&nbsp;&nbsp; =0相等，否则不等 <br />
+  &nbsp;&nbsp;&nbsp;  strncmp(str1,str2,n)//&nbsp;&nbsp;&nbsp; 比较str1和str2的前n个字符 <br />
+  &nbsp;&nbsp;&nbsp;  函数：&nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;  atoi//将字符串转为整数 <br />
+  &nbsp;&nbsp;&nbsp;  char *itoa(int value, char *string, int radix); //将整数转为字符串 
+<h2>11.sizeof和strlen的区别及其在字符串中的应用 </h2>
+<p>char *str1;<br />
+  &nbsp;&nbsp;&nbsp;  str1=(char *)malloc(sizeof(char) * num)<br />
+  &nbsp;&nbsp;&nbsp;  给指针分配他所指向的内存空间的大小，sizeof函数是取得变量类型或者变量所占用 <br />
+  &nbsp;&nbsp;&nbsp;  的内存字节数。例如：&nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;  sizeof(int)//结果为4（个字节） <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  sizeof(double)//结果为8（个字节） <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  char str[]=&quot;qqqqqq&quot;;sizeof(str)//结果为7（个字节）,不要漏掉'\0'！ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  char *str=&quot;qqqqqq&quot;;sizeof(str)//结果为4（个字节）(32为操作系统),因为str是指针变量！ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  注意：指针变量（存放地址的变量）的sizeof值一般都为4，不要将所占用内存大小和字符串度混淆！ <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  例如：char str[10]={'a','b','c'};<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  strlen(str)//值为3<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  sizeof(str)//值为10<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  sizeof(char) * strlen(str)//值为3<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  C语言中数组定义几位，元素的最大个数就是几位。例如char str[10];元素的最大个数 为10，只不过字符数组自动在最末尾加'\0',所以定义字符数组的时候要小心，你想定义一个有2个字符的数组，就要char str[3];留出一位给'\0'，strlen为2，sizeof为3！ </p>
+<h2>12. return在内存分配中的应用 </h2>
+<p>return语句不可返回指向&ldquo;栈内存&rdquo;的&ldquo;指针&rdquo;或者&ldquo;引用&rdquo;，因为该内存在函数体结束时被自动销毁。但是可以return一个在&ldquo;栈内存&rdquo;的整型变量，因为返回的是内存中的值。 <br />
+  &nbsp;&nbsp;&nbsp;  例如 
+ <pre class="code"> &nbsp;&nbsp;&nbsp;  char * Func(void)<br />
+  &nbsp;&nbsp;&nbsp;  {<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  char str[] = &ldquo;hello world&rdquo;;&nbsp;&nbsp;&nbsp; // str的内存位于栈上 <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  .......<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return str; <br />
+  //函数结束时候str为首地址的内存即刻释放，只是返回一个内存的地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+  &nbsp;&nbsp;&nbsp;  }<br />
+  &nbsp;&nbsp;&nbsp;  main( )<br />
+  &nbsp;&nbsp;&nbsp;  {&nbsp;&nbsp;&nbsp; char *str1;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  str1=Func;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;%s\n&quot;,str);// 将导致错误 </pre>
+<h2>&nbsp;&nbsp;13.内存分配的三种方式 </h2>
+<p>（1）静态内存分配。在内存的数据区上创建。内存在程序编译的时候就已经分配好。 <br />
+  &nbsp;&nbsp;&nbsp;  这块内存在程序的整个运行期间都存在。例如 已经初始化的变量，全局变量，static变量。 <br />
+  （2）在栈上创建。在执行函数时，函数内局部变量的存储单元都可以在栈上创建，函数执行结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限，也属于动态内存分配。 <br />
+  （3）从堆上分配，亦称动态内存分配。程序在运行的时候用malloc或new申请任意多少的内存，程序员自己负责在何时用free或delete释放内存。动态内存的生存期由我们决定，使用非常灵活， <br />
+  但问题也最多。 <br />
+  按照编译原理的观点,程序运行时的内存分配有三种策略,分别是静态的,栈式的,和堆式的。 <br />
+  &nbsp;&nbsp; 静态存储分配是指在编译时就能确定每个数据目标在运行时刻的存储空间需求,因而在编译时就可以给他们分配固定的内存空间。这种分配策略要求程序代码中不允许有可变数据结构(比如可变数组)的存在,也不允许有嵌套或者递归的结构出现,因为它们都会导致编译程序无法计算准确的存储空间需求。 <br />
+  &nbsp;&nbsp; 栈式存储分配也可称为动态存储分配,是由一个类似于堆栈的运行栈来实现的。和静态存储分配相反,在栈式存储方案中,程序对数据区的需求在编译时是完全未知的,只有到运行的时候才能够知道,但是规定在运行中进入一个程序模块时,必须知道该程序模块所需的数据区大小才能够为其分配内存。和我们在数据结构所熟知的栈一样,栈式存储分配按照先进后出的原则进行分配。 <br />
+  &nbsp;&nbsp; 静态存储分配要求在编译时能知道所有变量的存储要求,栈式存储分配要求在过程的入口处必须知道所有的存储要求,而堆式存储分配则专门负责在编译时或运行时模块入口处都无法确定存储要求的数据结构的内存分配,比如可变长度串和对象实例。堆由大片的可利用块或空闲块组成，堆中的内存可以按照任意顺序分配和释放。 </p>
+  <p align="right"><a href="cpointproblem.html">指针和内存相关问题以及linux C开发常见问题总结</a></p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

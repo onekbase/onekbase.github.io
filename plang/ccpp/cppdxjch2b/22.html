@@ -1,0 +1,388 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<p><div class="lpindex"><a href="index.html">首页</a><a href="21.html"> 上一页</a><a href="23.html"> 下一页</a></div>
+<h2>3.5 函数定义</h2>
+<p>  前面介绍的每个程序都有一个main函数，调用标准库函数完成工作。现在要考虑程序员如何编写自定义函数。</p>
+     
+<p>考虑一个程序，用自定义函数，square计算整数1到10的平方(如图3.3)。  </p>
+<pre class="code">// Fig. 3.3: fig03_03.cpp
+ // Creating and using a progra~er-defined function
+ #include <iostream.h>&lt;iostream.h&gt;
+ int square( int );  // function prototype(函数原型)
+ int main( )
+  (
+   for ( in x = 1; x <= 10; x++ )
+  cout<< square( x ) <<  " "  ;
+   cout << endl;
+   return 0;
+ }
+ // Function definition(函数定义)
+ int square( int y )
+ (
+   return y * y;
+O }</pre>
+<p>输出结果：</p>
+   
+  l   4   9   16   25 36   49   64   8l     lOO</p>
+<p>                         图 3.3 生成和使用自定义函数</p>
+<h5>编程技巧3.2</h5>
+<p>  在函数定义之间加上空行，分隔函数和提高程序可读性。</p>
+     
+<p>main中调用函数square如下所示：  </p>
+   
+<p>square(x)  </p>
+   
+<p>函数square在参数y中接收x值的副本。然后square计算y*y，所得结果返回main中调用square的位置，并显示结果，注意函数调用不改变x的值。这个过程用for重复结构重复十次。  </p>
+     
+<p>square定义表示square需要整数参数y。函数名前面的关键字int表示square返回一个整数结果。square中的return语句将计算结果返回调用函数。  </p>
+     
+<p>第5行：  </p>
+   
+<pre class="code">int square(int)；  </pre>
+   
+<p>是个函数原型(functionprototype)。括号中的数据类型int告诉编译器，函数square要求调用者提供整数值。函数名square左边的数据类型int告诉编译器，函数square向调用者返回整数值。编译器通过函数原型检查square调用是否包含正确的返回类型、参数个数、参数类型和参数顺序。如果函数定义出现在程序中首次使用该函数之前，则不需要函数原型，这种情况下，函数定义也作为函数原型。如果图33中第17行到第20行在main之前，则第5行的函数原型是不需要的。函数原型将在第3.6节详细介绍。  </p>
+     
+<p>函数定义格式如下：  </p>
+<pre class="code">return-value-type function-name(parameter-list)
+{
+declarations and statements 
+}</pre>
+<p>  函数名(function-name)是任何有效标识符，返回值类型(return-value-type)是函数向调用者返回值的数据类型，返回值类型void表示函数没有返回值。不指定返回值类型时默认为int。</p>
+   
+<h5>常见编程错误3.2  </h5>
+<p>如果函数原型指定返回类型不是int，则函数定义中省略返回值类型是个语法错误。  </p>
+     
+<h5>常见编程错误3.3  </h5>
+<p>需要返回值的函数中不返回值是个语法错误。  </p>
+   
+<h5>常见编程错误3.4  </h5>
+<p>返回类型声明为void的函数中返回值是个语法错误。  </p>
+   
+<h5>编程技巧3.3  </h5>
+<p>尽管省略返回类型时默认为int，但最好显式指定返回类型。  </p>
+     
+<p>参数表是逗号分隔的清单，包含函数被调用时接受的参数声明。如果函数不接受任何值，则参数表为void或空白。函数参数表中的每个参数应显式指定类型。  </p>
+     
+<h5>常见编程错误1.5  </h5>
+<p>同类函数参数应声明为float x，float y而不是float x,y,参数声明float   x、y实际上会报告编译错误，因为参数表中的每个参数应显式指定类型。  </p>
+   
+<h5>常见编程错误3.6  </h5>
+<p>将分号放在函数定义中参数表的右括号之后是个语法槽误。  </p>
+   
+<h5>常见编程错误3.7  </h5>
+<p>函数中再次把函数参数定义为局部变量是个语法错误。  </p>
+   
+<h5>编程技巧3.4  </h5>
+<p>向函数传递参数和函数定义中的对应参数可以同名，但最好不要同名，以免引起歧义。  </p>
+   
+<h5>常见编程错误1.8  </h5>
+<p>函数调用中的()实际上是C++中的运算符，使函数可以被调用。如果函数不取参数，则省略函数调用中的()并不是语法错误，但函数可能会在需要的时候不能调用。  </p>
+     
+<p>花括号中的声明(declaration)和语句(statement)构成函数体(fuction   body)，函数体也称为块(block)，块是包括声明的复合语句。变量可以在任何块中声明，而且块也可以嵌套。任何情况下不能在一个函数中定义另一个函数。  </p>
+     
+<h5>常见编程错误3.9  </h5>
+<p>在一个函数中定义另一个函数是个语法错误。  </p>
+
+<h5>编程技巧3.5  </h5>
+<p>选择有意义的函数名和有意义的参数名能使程序更易读，避免大量使用注释语句。  </p>
+   
+<h5>软件工程视点3.5  </h5>
+<p>函数应能放在一个编辑器窗口中。不管函数有多长，应该都能很好地完成一个任务。小函数能提高函数的复用性。  </p>
+   
+<h5>软件工程视点3.6  </h5>
+<p>程序应写成一组小函数的集合．使得程序更容易编写、调试、维护和修改。  </p>
+   
+<h5>软件工程视点3.7  </h5>
+<p>需要大量参数的函数可能要完成大量的任务。应把函数分成更小的函数来完成各个任务，函数的首部最好能在一行中放下。  </p>
+   
+<h5>常见编程错误3.10  </h5>
+<p>如果函数原型、函数首部与函数调用的形参和实参的个数、类型、顺序以及返回值类型不相符，则是个语法错误。  </p>
+     
+<p>将控制返回函数调用点的方法有三种。如果函数不返回结果，则控制在到达函数结束的右花括号时或执行下列语句时返回：  </p>
+     
+<p>return；  </p>
+<p>  如果函数返回结果，则下列语句：</p>
+   
+<p>return expression；  </p>
+<p>  向调用者返回表达式的值。</p>
+     
+<p>第二个例子用自定义函数maximum确定和返回三个整数中的最大值(如图3.4)。输入三个整数，然后将整数传递到maximum中，确定最大值。这个值用maximum中的return语句返回main。返回的值赋给变量largest，然后打印。  </p>
+<pre class="code"> // Fig. 3.4: fig0304.cpp
+ // Finding the maximum of three integers
+ #include < iostream.h>
+ int maximum( int, int, int );  // function prototype(函数原型)
+ int main( )
+ {
+   int a, b, c;
+   cout << "Enter three integers: ";
+   cin >> a >> b >> c;
+   // a, b and c below are arguments to
+   // the maximum function call(函数调用)
+   cout << "Maximum is: "<< maximum( a, b, c ) << endl;
+   return 0;
+ }
+  // function maximum definition
+ // x, y and z below are parameters to
+ // the maximum function definition
+ int maximum( int x, int y, int z )
+ {
+   int max = x;
+   if { z > max )
+     max = z;
+   return max;
+ }
+</pre>
+<pre>输出结果： Enter three integers： 22 85 17
+
+Maximum is： 85 
+
+Enter three integers： 92 35 14
+
+Maximum is： 92 
+
+Enter three integers： 45 19 98
+
+Maximum is： 98
+图3.4 自定义函数maximum  </p>
+</pre>
+<h2><a name="3.6" id="3.6"></a>3.6 函数原型</h2>
+<p>  C++的最重要特性之一是函数原型(function   prototype)函数原型告诉编译器函数名称、函数返回的数据类型、函数要接收的参数个数、参数类型和参数顺序，编译器用函数原型验证函数调用。</p>
+<p>  旧版C语言不进行这种检查，因此函数调用出错时，编译器可能无法发现错误。这种调用可能造成致命执行时错误或非致命执行时错误，导致很难确认的逻辑错误，函数原型能纠正这个缺陷。</p>
+<h5>软件工程视点3.8  </h5>
+<p>C++中要求函数原型。用#include预处理指令从相应库的头文件中取得标准库函数的函数原型。也可以用#include取得包含读者和小组成员使用的函数原型的头文件。  </p>
+     
+<h5>软件工程视点3.9  </h5>
+<p>如果函数定义出现在程序中首次使用函数之前，则不需要函数原型，这时函数定义就作为函数原型。  </p>
+     
+<p>图3.4中maximum函数原型为：  </p>
+   
+<pre class="code">int   maximum(int，int，int);  </pre>
+<p>  这个原型表示maximum取三个int类型参数，返回int类型结果。注意这个函数原型与maximum函</p>
+<p>  数定义的首部相同，只是不包括参数名(x、y、z)。</p>
+     
+<h5>编程技巧3.6  </h5>
+<p>许多程序置用函数原型中的参数名来说明函数，编译器将忽略这些名称。  </p>
+<h5>  常见编程错误3.11</h5>
+<p>忘记函数原型末尾的分号是个语法错误。  </p>
+     
+<p>函数原型中包括函数名和参数类型的部分称为函数签名(function signature)或签名(signature)。函数签名不包括函数返回类型。  </p>
+     
+<h5>常见编程错误3.12  </h5>
+<p>函数调用不符合函数原型是个语法错误。  </p>
+   
+<h5>常见编程错误3.13  </h5>
+<p>函数定义不符合函数原型是个语法错误。  </p>
+   
+<p>作为上述“常见编程错误”的例子．图3.4中如果函数原型写成：  </p>
+   
+<pre class="code">void maximum(   int，int，int )；  </pre>
+ 
+<p>则编译器报告错误，因为函数原型中的void返回类型与函数首部中的int返回类型不同。  </p>
+     
+<p>函数原型的另一个重要特性是强制参数类型转换(coercion of   argument)，即强制参数为相应类型。例如，数学库函数sqrt可以用整数参数调用，虽然math.h中的函数原型指定double参数，但函数仍然可以顺利工作。下列语句：  </p>
+     
+<pre class="code">cout  &lt;&lt;sqrt(4))；</pre>
+   
+<p>能正确地求值sqrt(4)，并打印结果2。函数原型使编译器将整数参数值4变为double值4.0，然后再传人sqrt中。一般来说．与函数原型中参数类型不完全相符的参数值转换为正确类型之后再进行函数调用。这种转换可能在不遵照C++提升规则(promotion   rule)时造成不正确的结果。提升规则指定一种类型转换为另一种类型时怎样才能不丢失数据。在上述sqrt的例子中，int自动转换为double而不改变数值，但如果将double转换为int，则会截去double的小数部分。将大整数的类型变为小整数的类型(例如long变为short)可能造成数值改变。  </p>
+     
+<p>提升规则适用于包含两种或多种数据类型的表达式，这种表达式也称为混合类型表达式(mixed-type   expressionL混合类型表达式中每个值的类型提升为表达式中最高的类型(实际上是生成每个值的临时值并在表达式中使用，原值保持不变)。提升的另一个常见用法是在函数参数类型不符合函数定义中指定的参数类型时。图3.5显示了内部数据类型由高到低的顺序。  </p>
+</p>
+<pre>        数据类型 
+        long double
+        double
+        float
+        unsigned long int                        (同unsigned long)
+        long int                                 (同long)
+        unsigned int                             (同unsigned)
+        int
+        unsigned short int                       (同unsigned short)
+        short int                                (同short)
+        unsigned char
+        short
+        char
+ </pre>
+                             
+<p>  图 3.5 内部数据类型由高到低的顺序</p>
+<p>将数值转换为较低类型可能导致数值不正确。因此，要将数值转换为较低类型，只能显式将该值赋给较低类型的变量或使用强制类型转换运算符。函数参数值变为函数原型中的参数类型．就像直接赋给这些类型的变量一样。如果square函数使用整型参数(图3．3)而用浮点参数调用，则该参数换算为int(将数值转换为较低类型)，square通常返回不正确的值。例如，square(4.5)返回16而不是20.25。  </p>
+   
+<h5>常见编程错误7.14  </h5>
+<p>将提升规则中较高的数据类型变为较低的数据类型可能改变数据值。  </p>
+     
+<h5>常见编程错误1.15  </h5>
+<p>函数未定义先调用时如果不定义函数原型属于语法错误。  </p>
+   
+<h5>软件工程视点3.10  </h5>
+在文件中，放在任何函数定义之外的函数原型可用于该函数原型之后所有对该函数的调用。放在函数之中的函数原型只适用于该函数中的调用。  </p>
+<div class="rpindex"><a href="23.html"> 下一页</a><a href="21.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

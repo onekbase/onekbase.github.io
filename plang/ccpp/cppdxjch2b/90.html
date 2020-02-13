@@ -1,0 +1,397 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="89.html"> 上一页</a><a href="91.html"> 下一页</a></div>
+<h2>11. 4 输入流
+  </p>
+</h2>
+<p>
+       
+  下面我们要讨论流的输入，这是用流读取运算符(即重载的运算符&gt;&gt;)实现的。流读取运算符通常会跳过输人流中的空格、tab键、换行符等等的空白字符，稍后将介绍如何改变这种行为。当遇到输入流中的文件结束符时，流读取运算符返回0(false);否则，流读取运算符返回对调用该运算符的对象的引用。每个输入流都包含一组用于控制流状态(即格式化、出错状态设置等)的状态位。当输入类型有错时，流读取运算符就会设置输人流的failbit状态位；如果操作失败则设置badbit状态位，后面会介绍如何在I/O操作后测试这些状态位。11．7节和11．8节详细讨论了流的状态位。</p>
+<h3>
+  11．4．1 流读取运算符</h3>
+<p>
+     
+  图11．9中的范例程序用cin对象和重载的流读取运算符&gt;&gt;读取了两个整数。注意流读运算符可以连续使用。</p>
+<pre class="code">
+// Fig. 11.9: figll_09.cpp
+ // Calculating the sum of two integers input from the keyboard
+ // with the cin oct and the stream-extraction operator.
+ #include < iostream.h>
+ int main()
+{
+   int x, y;
+  cout << "Enter two integers: ";
+  cin >> x >> y;
+  cout << "Sum of" << x << "and "<< y << "is:"
+       << ( x + y ) << endl;
+  return 0;
+ } </pre>
+<p>
+  输出结果：</p><p>
+  Enter two integers: 30 92</p><p>
+  Sum of 30 and 92 is:   122</p>
+  <p>
+  图 11.9 计算用cin和流读取运算符从键盘输入的两个整数值的和</p>
+  <p>
+  如果运算符&gt;&gt;和&lt;&lt;的优先级相对较高就会出现问题。例如，在图11．10的程序中，如果条件表达式没有用括号括起来，程序就得不到正确的编译(读者可以试一下)。</p>
+  <pre class="code">
+ // Fig. 11.10: figlll0.cpp
+ // Avoiding a precedence problem between the stream-insertion
+ // operator and the conditional operator.
+ // Need parentheses around the conditional expression.
+ #include < iostream.h>
+ int main()
+   int x, y;
+  cout << "Enter two integers: ";
+  cin >> x >> y;
+  cout << x << ( x == y ? "is" : "is not" )
+      << "equal to "<< y << endl;
+  return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p>
+  <p>
+  Enter   two integers: 7 5</p><p>
+  7 is not equal to 5</p>
+  <p>
+  Enter two integers: 8 8</p>
+  <p>
+  8 is   equal to 8</p>
+  <p>
+  图 11.10   避免在流插入运算符和条件运算符之间出现优先级错误</p>
+  <h5>
+    常见编程错误 11.1</h5>
+  <p>
+           
+  试图从类ostream的对象(或其它只有输出功能的流)中读取数据</p>
+  <h5>
+    常见编程错误 11.2</h5>
+  <p>
+           
+  试图把数据写入类istream的对象(或其它只有输入功能的流)</p>
+  <h5>
+    常见编程错误 11.3</h5>
+  <p>
+           
+  在流插入运算符&lt;&lt;或流读取运算符&gt;&gt;的优先级相对较高时没有用圆括号强制实现正确的计算顺序</p>
+  <p>
+  我们通常在while循环结构的首部用流读取运算符输入一系列值。当遇到文件结束符时，读取运算符返回0false)。图11．11中的程序用于查找某次考试的最高成绩。假定事先不知道有多少个考试成绩，并且用户会输入表示成绩输入完毕的文件结束符。当用户输入文件结束符时，while循环结构中的条件(cin&gt;&gt;grade)将变为0(即false)。</p>
+  <h5>
+    可移植性提示11．1</h5>
+  <p>
+       
+  提示用户如何从键盘结束输入时，让用户输入文件结束符结束输入而不是提示输入&lt;ctrl&gt;-d(UNIX与Macintosh所使用的)或&lt;ctrl-z(PC与VAX所使用的)。</p>
+  <p>
+  在图11.   11中，cin&gt;&gt;grade可以作为条件，因为基类ios(继承istream的类)提供一个重载的强制类型转换运算符，将流变成void*类型的指针。如果读取数值时发生错误或遇到文件结束符，则指针值为0。编译器能够隐式使用void*类型的强制转换运算符。</p>
+  <pre class="code">// Fig. 11.11: figll_ll.cpp
+ // Stream-extraction operator returning false on end-of-file.
+ #include < iostream.h>
+ int main()
+ {
+   int grade, highestGrade = -1;
+     cout << "Enter grade (enter end-of-file to end): ";
+  while ( cin >> grade){
+     if ( grade > highestGrade )
+        highestGrade = grade;
+     cout << "Enter grade (enter end-of-file to end): ";
+   }
+   cout << "\n\nHighest grade is: "<< highestGrade << endl;
+   return 0;
+ }
+  </pre>
+  <p>
+  输出结果：</p><p>
+  Enter grade (enter   end-of-file to end): 67</p><p>
+  Enter grade (enter end-of-file to end): 87</p><p>
+  Enter   grade (enter end of file to end): 73</p><p>
+  Enter grade (enter end-of-file to end):   95</p><p>
+  Enter grade (enter end-of-file to end): 34</p><p>
+  Enter grade (enter   end-of-file to end): 99</p><p>
+  Entergrade (enter end-of-file to end):^   z</p><p>
+  Heighest grade is:   99</p>
+  <p>
+                            
+  图 11.11   流读取运算符在遇到文件结束符时返回false</p>
+  <h3>
+    11．4．2 成员函数get和getline</h3>
+  <p>
+       
+  不带参数的get函数从指定的输入流中读取(输入)一个字符(包括空白字符)，并返回该字符作为函数调用的值；当遇到输入流中的文件结束符时，该版本的get函数返回EOF。</p><p>
+       
+  图11．12中的程序把成员函数eof和get用于输入流cin，把成员函数put用于输出漉cout。程序首先输出了cin.eof()的值，输出值为0(false)表明没有在cin中遇到文件结束符。然后，程序让用户键入以文件结束符结尾的一行文本(在IBMPC兼容系统中，文件结束符用&lt;ctrl&gt;-z表示;在UNIX和Macintosh系统中，文件结束符用&lt;ctrl&gt;-d表示)。程序逐个读取所输入的每个字符，井调用成员函数put将所读取的内容送往输出流cout。当遇到文件结束符时，while循环终止，输出cin.eof()的值，输出值为1(true)表示已接收到了cin中的文件结束符。注意，程序中使用了类istream中不带参数</p><p>
+  的get成员函数，其返回值是所输入的字符。</p>
+  <pre class="code">
+  // Fig. 11.12: figll_12.cpp
+ // Using member functions get, put and eof.
+ #include < iostream.h>
+ int main()
+ {
+   char c;
+   cout << "Before input, cin.eof() is "<< cin.eof()
+       << "\nEnter a sentence followed by end-of-file:\n";
+   while ( ( c = cin.get() ) != EOF )
+     cout.put( c );
+   cout << "\nEOF in this system is: "<< c;
+   cout << "\nAfter input, cin.eof() is "<< cin.eof() << endl;
+   return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p><p>
+  Before input, cin.eof()   is 0</p><p>
+  Enter a sentence followed by end-of-file:</p><p>
+  Testing the get and put   member functions^z</p><p>
+  Testing the get and put member functions</p><p>
+  EOF in this   system is: -1</p><p>
+  After input cin.eof() is 1</p>
+  <h5>
+    图   11.12 使用成员函数get.put和eof</h5>
+  <p>
+  带一个字符型参数的get成员函数自动读取输人流中的下一个字符(包括空白字符)。当遇到文件结束符时，该版本的函数返回0，否则返回对istream对象的引用，并用该引用再次调用get函数。</p>
+  <p>
+       
+  带有三个参数的get成员函数的参数分别是接收字符的字符数组、字符数组的大小和分隔符(默认值为'\n')。函数或者在读取比指定的最大字符数少一个字符后结束，或者在遇到分隔符时结束。为使字符数组(被程序用作缓冲区)中的输入字符串能够结束，空字符会被插入到字符数组中。函数不把分隔符放到字符数组中，但是分隔符仍然会保留在输人流中。图11．13的程序比较了cin(与流读取运算符一起使用)和cin.get的输入结果。注意调用cin.get时未指定分隔符，因此用默认的'\n'。</p><p>
+  </p>
+  <pre class="code">
+// Fig. 11.13: figll 13.cpp
+ // contrasting input of a string with cin and cin.get.
+ #include < iostream.h>
+ int main()
+{
+   const int SIZE = 80;
+   char buffer1[ SIZE ], buffer2[ SIZE ] ;
+  cout << "Enter a sentence:\n";
+  cin >> buffer1;
+  cout << "\nThe string read with cin was:\n"
+       << buffer1 << "n\n";
+  cin.get( buffer2, SIZE );
+  cout << "The string read with cin.get was:\n"
+       << buffer2 << endl;
+  return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p><p>
+  Enter a   sentence:</p><p>
+  Contrasting string input with cin and cin.get</p><p>
+  The string read   with cin was:</p><p>
+  Contrasting</p>
+  <p>
+  The string read with cin.get was:</p>
+  <p>
+  string   input with cin and cin.get</p>
+  <p>
+  图 11.13   比较用cin和cin.get输入的字符串的结果</p>
+  <p>
+  成员函数getline与带三个参数的get函数类似，它读取一行信息到字符数组中，然后插入一个空字符。所不同的是，getline要去除输入流中的分隔符(即读取字符并删除它)，但是不把它存放在字符数组中。图11.14中的程序演示了用getline输入一行文本。</p>
+  <pre class="code">
+// Fig. 11.14: figll_14.cpp
+ // Character input with member function getline.
+ #include < iostream.h>
+ int main()
+{
+   const SIZE = 80;
+   char buffe[ SIZE ];
+  cout << "Enter a sentence:\n";
+  cin.getline( buffer, SIZE );
+  cout << "\nThe sentence entered is:\n" << buffer << endl;
+  return 0;
+ } </pre>
+  <p>
+  输出结果：</p><p>
+  Enter a sentence:</p><p>
+  Using the getline member   function</p>
+  <p>
+  The sentence entered is:</p>
+  <p>
+  Using the getline member   function</p>
+  <p>
+  图 11.14   用成员函数getline输入字符</p>
+  <h3>
+    11．4．3   istream类中的其他成员函数(peek、putback和ignore)</h3>
+  <p>
+       
+  成员函数ignore用于在需要时跳过流中指定数量的字符(默认个数是1)，或在遇到指定的分隔符(默认分隔符是EOF，使得ignore在读文件的时候跳过文件末尾)时结束。</p><p>
+       
+  成员函数putback将最后一次用get从输人流中提取的字符放回到输入流中。对于某些应用程序．该函数是很有用的。例如，如果应用程序需要扫描输入流以查找用特定字符开始的域，那么当输入该字符时，应用程序要把该字符放回到输入流中，这样才能使该字符包含到要被输入的数据中。</p><p>
+       
+  成员函数peek返回输入流中的下一个字符，但并不将其从输入流中删除。</p>
+  <h3>
+    11．4．4 类型安全的I/O</h3>
+  <p>
+       
+  C++提供类型安全的I/O。重载运算符&lt;&lt;和&gt;&gt;是为了接收指定类型的数据。如果接收了非法的数据类型，那么系统就会设置各种错误标志，用户可通过测试这些标志判断I/O操作的成功与失败。这种处理方法能够使程序保持控制权。11．8节要讨论这些错误标志。</p>
+  <div class="rpindex"><a href="91.html"> 下一页</a><a href="89.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

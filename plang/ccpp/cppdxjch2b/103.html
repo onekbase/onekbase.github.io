@@ -1,0 +1,264 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="102.html"> 上一页</a><a href="104.html"> 下一页</a></div>
+  <h2>13．5   简单异常处理例例子：除数为0  </h2>
+  <p>下面考虑一个简单异常处理例子。图13.1的程序用try、throw和catch检测除数为0的异常情况，表示并处理除数为0的异常。  </p>
+   
+   <pre class="code">// Fig. 13.1:fig13_01.cpp
+ // A simple exception handling example.
+ // Checking for a divide-by zero exception.
+ #include <iostream.h>
+ // Class DivideByZeroException to be used in exception
+ // handling for throwing an exception on a division by zero.
+ class DivideByZeroException {
+ public:
+   DivideByZeroException()
+      : message( "attempted to divide by zero" ) { }
+   const char *what() const { return message; }
+ private:
+   const char *message;
+ };
+ // Definition of function quotient, Demonstrates throwing
+ // an exception when a divide-by-zero exception is encountered.
+ double quotient( int numerator, int denominator )
+  {
+   if ( denominator == 0 )
+     throw DivideByZeroException();
+   return staticcast< double > ( numerator ) / denominator;
+ }
+ // Driver program
+ int main()
+ {
+   int nunber1, number2;
+   double result;
+   cout << "Enter two integers (end-of-file to end): ";
+   while ( cin >> number1 >> number2 ) {
+     // the try block wraps the code that may throw an
+     // exception and the code that should not execute
+     // if an exception occurs
+     try {
+        result = quotient( numberl, number2 );
+        cout << "The quotient is: "<< result << endl;
+     }
+     catch ( DivideByZeroException ex ) { // exception handler
+        cout << "Exception occurred: "<< ex.what() << '\n';
+     }
+     cout << "\nEnter two integers (end-of-file to end): ";
+        }
+   cout << endl;
+   return 0;     // terminate normally
+ }
+ </pre>
+   
+  <h5>输出结果：</h5>
+   <pre>Enter tow integers (end-of-file to end); l00 7
+The quotient is: 14.2857
+
+Enter tow integers (end-of-file to end); 100 0
+Exception occurred: attempted to divide by zero
+
+Enter tow integers (end-of-file to end); 33 9
+The quotient is: 3.66667
+
+Enter tow integers {end-of-file to end):</pre>
+   <h5>图   13.1 简单的异常处理例子：除数为0的异常 </h5>
+  <p>第一个输出显示执行成功。第二个除数为0，程序发现错误并发出错误消息。 </p>
+  <p>现在考虑main中的驱动程序。程序提示并输入两个整数。注意numbcr1和number2的局部声明。 </p>
+  <p>然后程序继续执行try块，其中的代码可能抛出异常。注意try块中并没有显式列出可能造成错误的实际除法，而是通过quotient函数调用实际除法的代码。函数quotient实际抛出除数为0的异常对象，将在稍后介绍。一般来说，错误可能通过娜块中的代码体现，可能通过函数调用体现，也可能通过try块的代码中启动的深层嵌套函数调用体现。 </p>
+  <p>try块后面是个catch块，包含除数为0的异常的异常处理器。一般来说，try块中抛出异常时，catch块捕获这个异常，表明符合所抛出异常的相应类型。图13．1中，catch块指定捕获DivideByZeroException类型的异常对象，这种对象符合函数quotient中抛出的异常对象。该异常处理器发出一个错误消息并返回，这里返回1表示因为错误而终止。异常处理器也可以更加复杂。 </p>
+  <p>执行时，如果try块中的代码设有抛出异常．则立即跳过try块后面的所有catch异常处理器，执行catch异常处理器后面的第一条语句，图13．1中执行return语句，返回0表示正常终止。 </p>
+  <p>下面看看DivideByZeroExeeption类和quotient函数的定义。在函数quotient中，if语句确定除数为O时．U语句体发出一个throw语句，指定异常对象的构造函数名。这样就生成DivideByZemEx~ption的类对象。try块之后的catch语句(指定类型DivideByZeroException)捕获这个对象。 </p>
+  <p> DivideByZemExeeption类的构造函数只是将message数据成员指向字符串”Dividebyzero”。catch处理器指定的参数(这里为参数error)中接收抛出的对象，井通过调用public访问函数printMessage打印这个消息。</p>
+  <h5>编程技巧13．4 </h5>
+  <p>将每种执行时错误与相应命名的异常对象相关联能提高程序的清晰性。 </p>
+  <h2> <a name="13.6" id="13.6"></a>13. 6   抛出异常 </h2>
+  <p>throw关键字表示发生了异常，称为抛出异常。throw通常指定一个操作数(我们将介绍不指定操作数的特殊情况)。throw的操作数可以是任何类型，如果操作数是个对象，则称为异常对象。也可以抛出条件表达式而不是抛出对象，可以抛出不用于错误处理的对象。 </p>
+  <p>抛出异常时，指定相应类型的最近一个异常处理器(对抛出该异常的try块)捕获这个异常。try块的异常处理紧接在try块后面。 </p>
+  <p>抛出异常时，生成和初始化throw操作数的一个临时副本，然后这个临时对象初始化异常处理器中的参数。异常处理器执行完毕和退出时，删除临时对象。 </p>
+  <h5>软件工柱视点13．5 </h5>
+  <p>如果需要传递导致异常的错误信息，则可以把这种信息放在抛出对象中。catch处理器包含引用该信息的参数名。 </p>
+  <h5>软件工程视点13．6 </h5>
+  <p>也可以抛出对象而不传递信息，这时只要知道抛出这种类型的对象提供了异常处理器完成工作所需的足够信息。 </p>
+  <p>抛出异常时，控制退出当前try块，进入try块后面相应的catch处理器(如果有)。抛出点也可能深深嵌套在try块内，控制仍将传入这个catch处理器；抛出点也可以深深嵌套在函数调用中，控制也会转人这个catch处理器。 </p>
+  <p>try块可能不包含错误检查和throw语句，但try块中所指的代码可能导致执行构造函数中的错误检查代码。try块代码可能对数组类对象加上数组下标，其operator[]成员函数可以重载成抛出下标超界错误的异常。任何函数调用均可调用可能抛出异常的代码或另一可能抛出异常的函数。 </p>
+  <p>尽管异常可以终止程序执行，但也不一定需要终止程序执行。但异常会终止异常所在的程序块。 </p>
+  <h5>常见编程错误11．3 </h5>
+  <p>异常只能在try决中抛出，如果在try块之外抛出异常，则可能调用terminate。 </p>
+  <h5>常见编程错误13．4 </h5>
+  <p>可以抛出条件异常。但一定要小心．因为上升规则可能使条件表达式返回的值与所要类型不同。例如，从同一条件表达式抛出int或double时，条件表达式将int变成double。因此，结果总是由参数为double的处理器捕获，而不是有时由参数为double的处理器捕获，有时由参数为int的处理器捕获。 </p>
+  </p>
+   
+  
+<div class="rpindex"><a href="104.html"> 下一页</a><a href="102.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

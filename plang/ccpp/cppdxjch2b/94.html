@@ -1,0 +1,296 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="93.html"> 上一页</a><a href="95.html"> 下一页</a></div>
+  <h3>11．7．8   设置及清除格式标志(flags、setiosflags、resetosflags)
+    </p>
+  </h3>
+  <p> 无参数的成员函数flags只返回格式标志的当前设置(long类型的值)。带一个long类型参数的成员函数flags按参数指定的格式设置标志，返回以前的标志设置。flags的参数中未指定的任何格式都会被清除。图11．18的程序用成员函数flags设置新的格式状态和保存以前的格式状态，然后恢复原来的格式设置。</p>
+  <pre class="code">
+ // Fig. 11.28: fig11_28.cpp
+ // Demonstrating the flags member function.
+ #include &lt;iostream.h&gt;
+ int main()
+ {
+   int i = 1000;
+   double d = 0.0947625;
+   cout << "The value of the flags variable is:"
+       << cout.flags()
+       << "\nPrint int and double in original format:\n"
+       << i << '\t' << d << "\n\n";
+   long originalFormat =
+         cout.flags( ios::oct | ios::scientific );
+   cout << "The value of the flags variable is:"
+       << cout.flags()
+       << "\nPrint int and double in a new format\n"
+       << "specified using the flags member function:\n"
+       << i << '\t' << d << "\n\n";
+   cout.flags( originalFormat );
+   cout << "The value of the flags variable is:"
+       << cout.flags()
+       << "\nPrint values in original format again:\n"
+       << i << '\t' << d << endl;
+   return 0;
+ }
+</pre>
+  <p> 输出结果：</p>
+  <p> The value of the flags variable is: 0</p>
+  <p> Print int and double   in original format:</p>
+  <p> 1000   0.0947628</p>
+  <p> The value of the flags variable   is: 4040</p>
+  <p> Print iht and double in a new format</p>
+  <p> Specified using the flags   member function:</p>
+  <p> 1750   9.476280e-002</p>
+  <p> The value of the flags variable   is: 0</p>
+  <p> Print values in original format again:</p>
+  <p> 1000     0.0947628</p>
+  <p> 图 11.28   演示成员函数flags</p>
+  <p> 成员函数serf设置参数所指定的格式标志，并返回long类型的标志设置值，例如：</p>
+  <p> long   previousFlagSettings=</p>
+  <p> cout.setf(ios::showpoint | ios::showpos)；</p>
+  <p> 带两个long型参数的setf成员函数．例如：</p>
+  <p> cout.setf(ios::left，ios::adjustfield)；</p>
+  <p> 首先清除ios::adjustfield位，然后设置ios::left标志。该版本的setf用于与ios::basefield(用ios::dec、</p>
+  <p> ios::oct和ios::hex表示)、ios::floatfield(用ios::scientific和ios::fixed表示)和ios::adjustfiald(用ios::</p>
+  <p> left、ios::right和ios::internal表示)相关的位段。</p>
+  <p> 成员函数unsetf清除指定的标志并返回清除前的标志值。</p>
+  <h2> <a name="11.8" id="11.8"></a>11．8 流错误状态</h2>
+  <p> 可以用类ios中的位测试流的状态。类ios是输入/输出类istream、ostream和iostream的基类。</p>
+  <p> 当遇到文件结束符时，输人流中自动设置eofbit。可以在程序中使用成员函数eof确定是否已经到达文件尾。如果cin遇到了文件结束符，那么函数调用：</p>
+  <p>cin.eof()</p>
+  <p> 返回true，否则返回false。</p>
+  <p> 当流中发生格式错误时，虽然会设置failbit，但是字符并末丢失。成员函数fail判断流操作是否失败，这种错误通常可修复。</p>
+  <p> 当发生导致数据丢失的错误时，设置badbit。成员函数bad判断流操作是否失败，这种严重错误通常不可修复。</p>
+  <p> 如果eofbit、failbit或badbit都没有设置，则设置goodbit。</p>
+  <p> 如果函数bad、fail和eof全都返回false，则成员函数good返回true。程序中应该只对“好”的流进行I/O操作。</p>
+  <p> 成员函数rdstate返回流的错误状态。例如．函数调用cout.rdstate将返回流的状态，随后可以用一条switch语句测试该状态，测试工作包括检查ios::eofbit、ios::badbit、ios::failbit和ios::goodbit。</p>
+  <p> 测试流状态的较好方法是使用成员函数eof、bad、fail和good，使用这些函数不需要程序员熟知特定的状态位。</p>
+  <p> 成员函数clear通常用于把—个流的状态恢复为“好”，从而可以对该流继续执行I/O操作。由于clear的默认参数为ios::goodbit，所以下列语句：</p>
+  <p> cin．clear()；</p>
+  <p> 清除cin，并为流设置goodbit。下列语句：</p>
+  <p> cin.clear(ios::failbit)</p>
+  <p> 实际上给流设置了failbit。在用自定义类型对cin执行输入操作或遇到问题时，用户可能需要这么做。clear这个名字用在这里似乎并不合适，但规定就是如此。</p>
+  <p> 图11．29中的程序演示了成员函数rdstate、eof、fail、bad、good和clear的使用。</p>
+  <p> 只要badbit和failbit中有一个被置位，成员函数operator!就返回true。只要badbit和failbit中有一个被置位，成员函数operator   void*就返回false。这些函数可用于文件处理过程中测试选择结构或循环结构条件的true/false情况。 </p>
+  <pre class="code">
+  // Fig. 11.29: fig11_29.cpp
+ // Testing error states.
+ #include &lt;iostream.h&gt;
+ int main()
+ {
+   int x;
+   cout << "Before a bad input operation:"
+        << "\ncin.rdstate(): " << cin.rdstate()
+       << "\n   cin.eof(): "<< cin.eof()
+       << "In  cin.fail(): "<< cin.fail()
+       << "\n   cin.bad(): " << cin.bad()
+       << "\n  cin.good(): "<< cin.good()
+       << "\n\nExpects an integer, but enter a character: ";
+   cin >> x;
+   cout << "\nEnter a bad input operation:"
+       << "\ncin.rdstate(): "<< cin.rdstate()
+       << "\n   cin.eof(): "<< cin.eof()
+       << "\n  cin.fail(): " << cin.fail()
+       << "\n   cin.bad(): "<< cin.badO
+       << "\n  cin.geed()  " << cin.good() << "\n\n";
+   cin.clear();
+   cout << "After cin.clear()"
+       << "\ncin.fail(): "<< cin.fail()
+       << "\ncin.good(): "<< cin.good{) << endl;
+   return 0;
+ }</pre>
+  <p> 输出结果：</p>
+  <p> Before a bad input operation:</p>
+  <p> cin.rdstate(): 0</p>
+  <p> cin.eof(): 0</p>
+  <p> cin.fail() 0</p>
+  <p> tin.bad(): 0</p>
+  <p> cin.good():   0</p>
+  <p> Expects an integer, but enter a character: A</p>
+  <p> After a bad input   operation:</p>
+  <p> cin.eof(): 0</p>
+  <p> cin.fail(): 2</p>
+  <p> cin.bad():   0</p>
+  <p> cin.good(): 0</p>
+  <p> After cin.clear()</p>
+  <p> cin. fail():0</p>
+  <p> cin.good():   1</p>
+  <p> 图 11.29 测试错误状态</p>
+  <h2> <a name="11.9" id="11.9"></a>11．9 把输出流连到输入流上</h2>
+  <p> 交互式应用程序通常要分别用类istream和ostream输入和输出数据。当提示信息出现在屏幕上时，用户输入一个数据来响应。显然，提示信息必须在执行输入操作前出现。在有输出缓冲区的情况下，只有在缓冲区已满时、在程序中明确地刷新输出缓冲区时或因程序结束而自动刷新输出缓冲区时，输出信息才会显示到屏幕上。为保证输出要在下一个输入前显示，C++提供了成员函数tie，该函数可以实现输入/输出操作的同步，也就是把这两个操作“系在一起”。例如，函数调用：</p>
+  <p> cin.tie(&amp;cout)；</p>
+  <p> 把cout(ostream的对象)连到cin(istream的对象)上。实际上，C++为了建立用户的标准输入/输出环境而自动执行了这个操作，所以这个专门的调用其实是多余的。但是，用户可以显式地把其他配对的输入/输出流“系”在一起。使用函数调用：</p>
+  <p> inputStream.tie(0)；</p>
+  <p> 可以从一个输出流中解开输入流inputStream。</p>
+  <div class="rpindex"><a href="95.html"> 下一页</a><a href="93.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

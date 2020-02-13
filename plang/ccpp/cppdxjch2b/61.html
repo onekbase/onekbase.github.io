@@ -1,0 +1,420 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<div class="lpindex"><a href="index.html">首页</a><a href="60.html"> 上一页</a><a href="62.html"> 下一页</a></div>
+<h2>7．6 动态内存分配与new和delete运算符
+  </p>
+</h2>
+<p>
+       
+  new和delete运算符提供了比C语言的malloc和free函数调用更好的动态分配内存方法(对任何内部或用户自定义类型)。考虑下列代码：</p><p>
+       
+  TypeName *typeNamePtr；</p><p>
+  在ANSI C语言中，要为TypeName类型对象动态分配内存，可以用下列语句：</p><p>
+       
+  typeNamePtr = malloc(sizeof(TypeName))；</p><p>
+   
+  这就要求调用malloc函数和显式使用sizeof运算符，在ANSI   C之前的C语言版本中，还要将malloc返回的指针进行类型转换(TypeName   *)。malloe函数中没有提供初始化所分配内存块的方法。而在C++中，只要用下列语句；</p><p>
+     
+  typeNamePtr = new   TypeName；</p><p>
+   
+  new运算符自动生成正确长度的对象并调用对象构造函数和返回正确类型的指针。如果new无法找到内存空间，则它在ANSI/ISO   C++草案标准之前的C++版本中返回。指针(注意，第13章介绍了如何在ANSI/ISO   C++草案标准中处理New故障。我们要显示new如何“抛出”异常，如何”捕获”与处理异常)。要在C++中释放这个对象的空间，就要用delete运算符，如下所示：</p><p>
+       
+  delete typeNamePtr；</p><p>
+     
+  C++允许对新生成的对象提供初始化值，如下所示：</p><p>
+     
+  float *thingPtr = new   float(3.14159)；</p><p>
+   
+  将新生成的对象float初始化为3.14159。</p><p>
+       
+  可以生成10个元素的整型数组并赋给arrayPtr，如下所示：</p><p>
+     
+  int *arrayPtr = new int[lO];</p><p>
+     
+  这个数组可以用下列语句删除：</p><p>
+     
+  delete []   arrayPtr；</p><p>
+  可以看出，使用neW和delete而不用malloc和free还有其他好处。neW自动调用构造函数，delete自动调用析构函数。
+  </p>
+  <h5>
+    
+    常见编程错误7. 8</h5>
+  <p>
+       
+  将new和delete动态分配内存的方法与malloc和free动态分配内存的方法混合使用是个逻辑错误：malloc分配的空间无法用delete释放，new生成的对象无法用free删除。</p>
+  <h5>
+    
+    常见编程错误7. 9</h5>
+  <p>
+       
+  用delete而不是delete[]删除数组可能导致运行时的逻辑错误。为了避免这个问题，数组生成的内存空间要用delete[]运算符删除，各个元素生成的内存空间要用delete运算符删除。</p>
+  <h5>
+    
+    编程技巧7. 3</h5>
+  <p>
+       
+  C++程序也可以包含用malloc生成和用free删除的存储空间以及用new生成和用delete删除的对象。但最好还是使用new和delete。</p>
+  <h2>
+    <a name="7.7" id="7.7"></a>7．7 static类成员</h2>
+  <p>
+         
+  类的每个对象有自己的所有数据成员的副本，有时类的所有对象应共享变量的一个副本，因此可以使用static类变量。stattic类变量表示的是类范围中所有对象共享的信息。static类成员的声明以static关键字开始。</p><p>
+       
+  下面用一个视频游戏的例子说明static类共享数据的作用。假设视频游戏中有Martian和其他太空人。每个Martian都很勇敢，只要有5个Martian存在，就可以攻击其他太空人。如果Martian的人数不到5个，则不能进行攻击。因此每个Martian都要知道martianCount。我们在Martian类中提供一个martianCount数据成员，这样，每个Martian有该数据成员的副本，每次生成新Martian时，都要更新每个Martian中的martianCount，这样既浪费空间又浪费时间。为此，我们将martianCount声明为static，这样就使martianCount成为类中共享的数据。每个Martian都可以访问martianCount，就像是自己的数据成员一样，但C++只需维护martianCount的一个静态副本，这样可以节省空间。让Martian构造函数递增静态martianCount还能节省时间，因为只有一个副本，不需要对每个Martian对象递增martianCount。</p>
+  <h5>
+    
+    性能提示7．4</h5>
+  <p>
+     
+  如果一个数据副本就足够使用，用static数据成员可以节省存储空间。</p><p>
+       
+  数据成员count维护Employee类实例化的对象个数。Employee类的对象存在时，可以通过Employee对象的任何成员函数引用成员count，本例中，构造函数和析构函数都引用了count。</p>
+  <h5>
+    
+    常见编程错误 7. 10</h5>
+  <p>
+     
+  在文件范围的static类变量定义中包括satic关键字是个语法错误。</p>
+  <pre class="code">
+ // Fig. 7.9: employl.h
+ // An employee class
+ #ifndef EMPLOY1_H
+ #define EMPLOy1_H
+ class Employee {
+ public:
+   Employee( const char*, const char* );  // constructor
+   ~Employee();                   // destructor
+   const char *getFirstName() const;  // return first name
+   const char *getLastName() const;  // return last name
+   // static member function
+   static int getCount();  // return # objects instantiated
+ private:
+   char *firstName;
+   char *lastName;
+   // static data member
+   static int count;  // number of objects instantiated
+ };
+ #endif
+ // Fig. 7.9: employl.cpp
+ // Member function definitions for class Employee
+ #include < iostream.h>
+ #include < string.h>
+ #include < assert.h>
+ #include "employ1.h"
+ // Initialize the static data member
+ int Employee::count = O;
+ // Define the static member function that
+ // returns the number of employee objects instantiated.
+ int Employee::getCount() { return count; }
+ // Constructor dynamically allocates space for the
+ // first and last name and uses strcpy to copy
+ // the first and last names into the object
+ Employee::Employee( const char *first, const char *last )
+ {
+   firstName = new char[ strlen( first ) + 1 ];
+   assert( firstName != 0 );  // ensure memory allocated
+   strcpy( firstName, first );
+   lastName = new char[ strlen( last ) + 1 ];
+   assert( lastName ! = 0 );   // ensure memory allocated
+   strcpy( lastName, last );
+   ++count;  // increment static count of employees
+   cout << "Employee constructor for" << firstName
+        << ' ' << lastName <<" called." << endl;
+ }
+ // Destructor deallocates dynamically allocated memory
+ Employee::~Employee()
+ {
+   cout << "~Employee() called for" << firstName
+        << ' ' << lastName << endl;
+   delete [] firstName;  // recapture memory
+   delete [] lastName;  // zecapture memory
+   --count;  // decrement static count of employees
+ }
+ // Return first name of employee
+ const char *Employee::getFirstName() const
+ {
+   // Const before return type prevents client modifying
+   // private data. Client should copy returned string before
+   return firstName;
+ }
+ // Return last name of employee
+ const char *Employee::getLastName() const
+ {
+   // Const before return type prevents client modifying
+   // private data. Client should copy returned string before
+   // destructor deletes storage to prevent undefined pointer.
+    return lastName;
+ }
+ // Fig. 7.9: fig0709.cpp
+ // Driver to tast the employee class
+ #include < iostream.h>
+ #inelude "employ1.h"
+ int main()
+ {
+    cout << "Number of employees before instantiation is"
+         << Employee::getCount() << endl;  // use class
+    Employee *e1Ptr = new Employee( "Susan", "Baker" );
+    Employee *e2Ptr = new Employee( "Robert", "Jones" );
+    cout << "Number of employees after instantiation is"
+         << e1Ptr->getCount();
+   cout << "\n\nEmployee 1:"
+        << e1Ptr ->getFirstName()
+        <<  " "  << e1Ptr->getLastName()
+        << "\nEmployee 2:"
+        &lt;&lt; e2Ptr-&gt;getFirstName()
+        &lt;&lt; &quot; &quot;&lt;&lt; e2Ptr -&gt; getLastName() &lt;&lt; &quot;\n\n&quot;;
+   delete e1Ptr;  // recapture memory
+   e1Ptr = 0;
+   delete e2Ptr;  // recapture memory
+   e2Ptr = 0;
+   cout << "Number of employees after deletion is"
+        << Employee::getCount() << endl;
+   return 0;
+ }
+</pre>
+  <p>
+  输出结果：</p><p>
+  Number of   employees before instantiation is 0</p><p>
+  Employee constructor for Susan Baker   called.</p><p>
+  Employee constructor for Robert Jones called.</p><p>
+  Number of employees   after instantiation is 2</p><p>
+  Employee 1: Susan Baker</p><p>
+  Employee 2: Robert   Jones</p><p>
+  ~ Employee() called for Susan Baker</p><p>
+  ~ Employee() called for   Robert Jones</p><p>
+  Number of employees after deletion is   0</p>
+  <h5>
+    
+    图7. 9 用static数据成员维护类的对象个数</h5>
+  <p>
+       
+  Employee类的对象不存在时，仍然可以引用成员count，但只能通过调用static成员函数getCount：</p><p>
+       
+  Employee::getCount()</p><p>
+     
+  本例中，函数getCount确定当前实例化的Employee对象个数。注意，程序中没有实例化的对象时，发出employee::getCount()函数调用。但如果有实例化的对象，则可以通过一个对象调用函数getCount，见第97行和第98行的语句：</p>
+  <pre class="code">cout << "Number of employees after instantiation is "
+     &lt;<<elPtr—>getCount()；</pre><p>
+       
+  注意，调用e2Ptr-&gt;getCount()和Employee::getCount()也能使上述语句运行。</p>
+  <h5>
+    
+    软件工程视点7．13</h5>
+  <p>
+     
+  有些公司的软件工程标准要求所有static成员函数只能对类名句柄调用，而不能对对象句柄调用。</p><p>
+       
+  如果成员函数不访问非static类数据成员和成员函数，则可以声明为static。与非static成员函数不同的是，static成员函数没有this指针，因为static类数据成员和成员函数是独立于类对象而存在的。</p>
+  <h5>
+    
+    常见编程错误7.11</h5>
+  <p>
+     
+  在static成员函数中引用this指针是个语法错误。</p>
+  <h5>
+    
+    常见编程错语7．12</h5>
+  <p>
+       
+  将static成员函数声明为const是个语法错误。</p>
+  <h5>
+    
+    软件工程视点7.14</h5>
+  <p>
+       
+  即使在类没有实例化任何对象时，类的static数据成员和成员函数就已经存在并可使用。</p><p>
+       
+  第94行和第95行用运算符new动态分配两个Employee对象。分配每个Employee对象时调用其构造函数。第107行和第109行用delete释放两个Employee对象的内存空间时，调用其析构函数。</p>
+  <h5>
+    
+    编程技巧7．4</h5>
+  <p>
+     
+  删除动态分配内存后，设置指向该内存的指针指向0，辽样就切断了指针与前面所分配内存的连接。</p><p>
+       
+  注意Employee构造函数中使用了assert。assert宏在assert.h头文件中定义，测试条件值。如果表达式值为false，则assert发出错误消息，并调用abort函数(在一般实用程序头文件stdlib.h中)终止程序执行。这是个有用的调试工具，可以测试变量是否有正确值。在这个程序中，assert确定new运算符能否满足动态分配内存的请求。例如，在Employee构造函数中，下列语句(也称为断言)：</p><p>
+       
+  assert(firstName!=O)；</p><p>
+  测试指针fi~tNme以确定其是否不等于0。如果上述语句中的条件为true，则程序继续执行，不被中断。如果上述语句中的条件为false，则程序打印一个错误消息，包括行号、测试条件和断言所在的文件名，然后程序终止。程序员可以从这个代码区域找出错误。第13章&quot;异常处理&quot;中将介绍处理执行时错误的更好方法。</p><p>
+       
+  断言不一定要在调试完成后删除。程序不再用这个断言进行调试时，只要在程序文件开头插入下列语句即可：</p><p>
+     
+  #define NDEBUG</p><p>
+     
+  这时预处理程序忽略所有断言而不必由程序员手工删除每条断言。</p><p>
+       
+  注意函数getFirstName和getLastName的实现方法向类的客户返回常量字符指针。在这个实现方法中，如果客户要保留姓和名的副本，则客户要在取得对象的常量字符指针之后负责复制Employee对象的动态分配内存。注章，还可以使用getFirstName和getlastName让客户向每个函数传递字符数组和数组长度。然后函数可以将姓或名复制到客户提供的字符数组中。
+</p>
+  <div class="rpindex"><a href="62.html"> 下一页</a><a href="60.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,394 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+<p><div class="lpindex"><a href="index.html">首页</a><a href="42.html"> 上一页</a><a href="44.html"> 下一页</a></div>
+<h2>5．10 实例研究：洗牌与发牌
+  </p>
+</h2>
+<p>  本节用随机数产生器开发一个洗牌与发牌程序。这个程序可以用于实现玩某种牌的游戏程序。</p>
+     
+<p>为了解决一些微妙的性能问题，我们故意用次优洗牌与发牌算法。练习中要开发更有效的算法。  </p>
+     
+<p>利用自上而下逐步完善的方法，我们开发一个程序，洗52张牌并发52张牌。自上而下逐步完善的方法在解决大而复杂的问题时特别有用。  </p>
+   
+<p>我们用4 x   13的双下标数组deck表示要玩的牌(如图5．23)。行表示花色，0表示红心，1表示方块，2表示梅花，3表示黑桃。列表示牌的面值，0到9对应A到10,10到12对应J、Q、K。我们要装入字符串数组suit，用字符串表示4个花色,用字符串数组face的字符串表示13张牌的面值。  </p>
+     
+<p>这堆牌可以进行如下的洗牌：首先将数组deck清空，然后随机选择row(0--3)和column(0—12)。将数字插入数组元素deck[row][column](表示这个牌是洗出的牌中要发的第一张牌)。继续这个过程，在deck数组中随机插入数字2、3、…52，表示洗出的牌中要发的第二、三、…、五十二张牌。在deck数组填上牌号时，一张牌可能选择两次，即选择的时候deck[row][column]为非0值。  </p>
+     
+忽略这个选择，随机重复选择其他row和colunm，直到找出未选择的牌。最后，在52个deck元素中插入1到52的值。这时，就完全洗好了牌。  
+
+<p ><img src="images/200351916273285209.jpg"/></p>
+<p>                  </p>
+                                
+<p>  图5．23   双下标数组deck表示要玩的牌</p>
+<p>这个洗牌算法在随机重复选择已经洗过的牌时可能需要无限长的时间。这种现象称为无穷延迟(indefinite   postponement)。练习中将介绍更好的洗牌算法，消陈无穷延迟。  </p>
+ 
+<h5>性能提示5．3  </h5>
+<p>有时自然方式的算法可能包含无穷延迟等微妙的性能问题，应寻找能避免无穷延迟的算法。  </p>
+<p>要发第一张牌，我们要寻找匹配1的deck[row][column]元素，这是用嵌套for结构进行的，n，w取。到3t   column取。到12。这个数组元素对应哪种牌呢suit数组预先装入了四种花色，因此要取花色，只要打印字符串suit[row]；同样，要取牌值，只要打印字符串face[column]还要打印字符串”of  &quot;，按正确的顺序打印，即可得到每张牌如”King   of Clubs&quot;、”Ace of Diamonds'，等等。</p>
+     
+<p>下面用自上而下逐步完善的方法进行。顶层为：  </p>
+   
+<p>Shuffle and   deal 52 cards  </p>
+<p>  第一步完善结果为：</p>
+<pre class="code">Initialize the suit array 
+
+Initialize the face array 
+
+Initialize the deck array Shuffle the deck
+
+Deal 52 cards </pre>
+   
+<p>”Shumelhedeck”可以展开成：</p>
+       
+<pre class="code">For each of the 52 cards
+
+Place card number in randomly selected unoccupied slot of deck </pre>
+     
+<p>  &quot;Deal 52 cards&quot; 可以展开成:</p>
+     
+<pre class="code">For each of the 52 cards 
+
+Find card number in deck array and print face and suit of card 
+</pre>
+     
+<p>  合在一起得到第二步完善结果为：</p>
+ 
+<pre class="code">Initialize the suit array 
+
+Initialize the face array 
+
+Initialize the deck array 
+
+For each of the 52 cards 
+
+Place card number in randomly selected unoccupied slot of deck 
+
+For each of the 52 cards 
+
+Find card number in deck array and print face and suit of card </pre>
+   
+<p>  &quot;Place eard numberin radomly selected unoccupied   slot of deck&quot; 可以展开成：</p>
+
+<pre class="code">Choose slot of deck randomly 
+While chosen slot of deck has been previously chosen
+
+Choose slot of deck randomly 
+
+Place card number in chosen slot of deck </pre>
+<p>  &quot;Find card numberin deck array and printface and suit of card&quot;   可以展开成:</p>
+   
+<pre class="code">For each slot of the deck array 
+
+If slot contains card number 
+
+Print the face and suit of the card 
+</pre>
+   
+<p>  合在一起得到第三步完善结果为：</p>
+<pre class="code">Initialize the suit array
+
+Initialize the face array
+
+Initialize the deck array
+
+For each of the 52 cards
+
+Choose slot of deck randomly 
+
+While slot of deck has been previously chosen
+
+Choose slot of deck randomly 
+
+Place card number in chosen slot of deck 
+
+For each of the 52 cards
+
+For each slot of deck array 
+
+If slot contains desired card number 
+
+Print the face and suit of the card 
+</pre>
+<p>  这样就完成了完善过程。注意，如果将洗牌与发牌算法组合成每张牌在放到牌堆上时进行发牌，则这个程序能更加有效。我们选择分别编程这些操作，因为通常是先洗后发，而不是边洗边发。</p>
+     
+<p>图5．24显示了洗牌与发牌程序，图5．25显示了示例执行结果。注意函数deal中使用的输出格式：  </p>
+<pre class="code">cout << setw( 5 ) << setiosflags( ios::right )
+<< wFace[ column ] << "of"
+<< setw( 8 ) << setiosflags( ios::left )
+<< wSuit[ row ]
+<< (card % 2 ==0 '\n': '\t'); </pre>
+       
+<p>上述输出语句使牌的面值在5个字符的域中右对齐输出，而花色在8个字符的域中左对齐输出。输出打印成两列格式。如果输出的牌在第一列，则在后面输出一个制表符，移到第二列，否则输出换行符。</p>
+<pre class="code">   // Fig. 5.24: fig05_24.cpp
+ // Card shuffling and dealing program
+ #include &lt;iostream.h&gt;<br /> #include &lt;iomanip.h&gt;<br /> #include &lt;stdlib.h&gt;<br /> #include &lt;time.h&gt;
+ void shuffle( iht [][ 13 ] );
+ void deal( const int [][ 13 ], const char *[], const char *[] );
+ int main()
+ {
+   const char * suit[ 4 ] =
+     { "Hearts", "Diamonds", "Clubs", "Spades" };
+   const char * face[ 13 ] =
+     { "Ace", "Deuce", "Three", "Four",
+       "Five", "Six", "Seven", "Eight",
+       "Nine", "Ten", "Jack", "Queen", "King" };
+   int deck[ 4 ][ 13 ] = { 0 } ;
+   srand( time( 0 ) );
+   shuffle( deck );
+   deal( deck, face, suit ):
+   return 0;
+ }
+ void shuffle( int wDeck[ ][ 13 ] )
+ {
+   int row, column;
+   for(int card = 1; card <= 52; card++ ) {
+     do{ 
+        row = rand() % 4;
+        column = rand() % 13;
+     } while( wDeck[ row ][ column ] != 0 );
+     wDeck[ row ][ columo ] = card;
+   }
+ }
+ void deal( const int wDeck[ ][ 13 ], const char * wFace[ ] ,
+         const char *wSuit[] )
+ {
+   for (int card = 1; card <= 52; card++ )
+     for ( int row = 0; row <= 3; row++ )
+        for ( int column = 0; column <= 12; column++ )
+  if ( wDeck[ row][ column ]  = card )
+     cout << setw(8) << setiosflags( ios::right )
+          << wFace[ column ] <<" of"
+           << setw( 8 ) << setiosflags( ios::left )
+           << wSuit[ row ]
+           << ( card % 2 == 0 ? ,'\n' : '\t' );
+ }  </pre>
+
+<p>  输出结果：</p>
+     
+<p>Six of Clubs             Seven of   Diamonds  </p>
+       
+<p>Ace of Spades               Ace of Diamonds  </p>
+       
+<p>Ace   of Hearts             Queen of Diamonds  </p>
+     
+<p>Queen of Clubs               Seven of Hearts  </p>
+       
+<p>Ten of Hearts             Deuce of Clubs  </p>
+         
+<p>Ten of Spades             Three of Spades  </p>
+       
+<p>Ten of   Diamonds             Four of Spades  </p>
+       
+<p>Four of Diamonds             Ten   of Clubs  </p>
+       
+<p>Six of Diamonds             six of Spades  </p>
+     
+<p>Eight of   Hearts             Three of Diamonds  </p>
+     
+<p>Nine of Hearts             Three   of Hearts  </p>
+     
+<p>Deuce of Spades               six of Hearts  </p>
+       
+<p>Five of   Clubs             Eight of Clubs  </p>
+     
+<p>Deuce of Diamonds           Eight of   Spades  </p>
+       
+<p>Five of Spades             King of Clubs  </p>
+       
+<p>King of   Diamonds             Jack of Spades  </p>
+     
+<p>Deuce of Hearts             Queen   of Hearts  </p>
+       
+<p>Ace of Clubs               King of Spades  </p>
+     
+<p>Three of   Clubs               King of Hearts  </p>
+       
+<p>Nine of Clubs               Nine of   Spades  </p>
+       
+<p>Four of Hearts             Queen of Spades  </p>
+     
+<p>Eight of   Diamonds             Nine of Diamonds  </p>
+       
+<p>Jack of Diamonds             Seven of Clubs  </p>
+       
+<p>Five of Hearts             Five of Diamonds  </p>
+         
+<p>Four of Clubs               Jack of Hearts  </p>
+       
+<p>Jack of Clubs               Seven of Spades  </p>
+                       
+<h5>图5．25   洗牌与发牌程序的执行结果</h5>
+<p>发牌算法中有个缺点，一旦找到匹配之后，即使第一次就找到，两个内层的for结构仍然继续搜索deck中的其余元素。练习中要纠正这个缺点。</p>
+<div class="rpindex"><a href="44.html"> 下一页</a><a href="42.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

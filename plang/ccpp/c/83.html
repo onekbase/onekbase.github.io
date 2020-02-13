@@ -1,0 +1,252 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="82.html"> 上一页</a><a href="84.html"> 下一页</a></div>
+  <h2><a name="13.5" id="13.5"></a>13.5文件的随机读写</h2>
+  <p>前面介绍的对文件的读写方式都是顺序读写，即读写文件只能从头开始，顺序读写各个数据。
+    但在实际问题中常要求只读写文件中某一指定的部分。为了解决这个问题可移动文件内部的位置指针到需要读写的位置，再进行读写，这种读写称为随机读写。</p>
+  <p>实现随机读写的关键是要按要求移动位置指针，这称为文件的定位。</p>
+  <h3>13.5.1 文件定位</h3>
+  <p> 移动文件内部位置指针的函数主要有两个，即 rewind 函数和fseek函数。</p>
+  <p>rewind函数前面已多次使用过，其调用形式为：</p>
+  <p> rewind(文件指针);</p>
+  <p>它的功能是把文件内部的位置指针移到文件首。</p>
+  <p>下面主要介绍fseek函数。</p>
+  <p>fseek函数用来移动文件内部位置指针，其调用形式为：</p>
+  <p> fseek(文件指针,位移量,起始点);</p>
+  <p>其中：</p>
+  <p>“文件指针”指向被移动的文件。</p>
+  <p> “位移量”表示移动的字节数，要求位移量是long型数据，以便在文件长度大于64KB 时不会出错。当用常量表示位移量时，要求加后缀“L”。</p>
+  <p> “起始点”表示从何处开始计算位移量，规定的起始点有三种：文件首，当前位置和文件尾。</p>
+  <p>其表示方法如下表。</p>
+  <table width="200" border="1" cellpadding="0" cellspacing="0" >
+    <tr>
+      <td><p>起始点</p></td>
+      <td><p>表示符号</p></td>
+      <td><p>数字表示</p></td>
+    </tr>
+    <tr>
+      <td><p>文件首</p></td>
+      <td><p>SEEK_SET</p></td>
+      <td><p>0</p></td>
+    </tr>
+    <tr>
+      <td><p>当前位置</p></td>
+      <td><p>SEEK_CUR</p></td>
+      <td><p>1</p></td>
+    </tr>
+    <tr>
+      <td><p>文件末尾</p></td>
+      <td><p>SEEK_END</p></td>
+      <td><p>2</p></td>
+    </tr>
+  </table>
+  <p>例如：</p>
+  <pre class="code">fseek(fp,100L,0);</pre>
+  <p>其意义是把位置指针移到离文件首100个字节处。</p>
+  <p>还要说明的是fseek函数一般用于二进制文件。在文本文件中由于要进行转换，故往往计算的位置会出现错误。</p>
+  <h3>13.5.2 文件的随机读写</h3>
+  <p>在移动位置指针之后，即可用前面介绍的任一种读写函数进行读写。由于一般是读写一个数据据块，因此常用fread和fwrite函数。</p>
+  <p>下面用例题来说明文件的随机读写。</p>
+  <h5>【例13.8】在学生文件stu_list中读出第二个学生的数据。</h5>
+  <pre class="code">#include<stdio.h> &lt;stdio.h&gt;
+struct stu
+{
+  char name[10];
+  int num;
+  int age;
+  char addr[15];
+}boy,*qq;
+main()
+{
+  FILE *fp;
+  char ch;
+  int i=1;
+  qq=&boy;
+  if((fp=fopen("stu_list","rb"))==NULL)
+  {
+    printf("Cannot open file strike any key exit!");
+    getch();
+    exit(1);
+  }
+  rewind(fp);
+  fseek(fp,i*sizeof(struct stu),0);
+  fread(qq,sizeof(struct stu),1,fp);
+  printf("\n\nname\tnumber      age      addr\n");
+  printf("%s\t%5d  %7d      %s\n",qq->name,qq->num,qq->age,
+          qq->addr);
+}
+</pre>
+  <p>文件stu_list已由例13.6的程序建立，本程序用随机读出的方法读出第二个学生的数据。程序中定义boy为stu类型变量，qq为指向boy的指针。以读二进制文件方式打开文件，程序第22行移动文件位置指针。其中的i值为1，表示从文件头开始，移动一个stu类型的长度，然后再读出的数据即为第二个学生的数据。</p>
+  <div class="rpindex"><a href="84.html"> 下一页</a><a href="82.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

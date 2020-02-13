@@ -1,0 +1,525 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+
+  <div class="lpindex"><a href="index.html">首页</a><a href="81.html"> 上一页</a><a href="83.html"> 下一页</a></div>
+  <h2>10．6   实例研究：利用多态性的工资单系统
+   
+  </h2>
+  <p> 下面的范例程序用虚函数和多态性根据雇员的类型完成工资单的计算(见图10．1)。所用的基类是雇员类Employee，其派生类包括：老板类Boss，不管工作多长时间他总是有固定的周薪；销售员类CommissionWorker，他的收入是一小部分基本工资加上销售额的一定的百分比；计件工类PieceworkWorker，他的收入取决他生产的工件数量；小时工类HourlyWorker，他的收入以小时计算，再加上加班费。</p>
+  <p> 函数earnings的调用当然要普遍适用于所有的雇员。每人收入的计算方法取决于它属于哪一类雇员。因为这些类都是由基类Employee派生出来的，所以函数earnings在基类Employee中被声明为virtual，并在每个派生类中都正确地实现earnings。为计算任何雇员的收入，程序简单地使用了一个指向该雇员对象的基类指针并调用函数earnings。在一个实际的工资单系统中，各种雇员对象可能保存在一个数组(链表)中，数组每个指针都是Employee   *类型，然后程序遍历链表中的每一个节点，并在每一个节点处用Employee *指针调用对象的earnings函数。</p>
+  <p> 下面看一看类Employee。该类的public成员函数包括：构造函数，该构造函数有两个参数，第一个参数是雇员的姓，第二个参数是雇员的名；析构函数，用来释放动态分配的内存；两个“get”函数，分别返回雇员的姓和名；纯虚函数earnings和虚函数print。为什么要把earnings函数声明为纯虚函数呢因为在类Employee中提供这个函数的实现是没有意义的，将它声明为纯虚函数表示要在派生类中而不是在基类中提供具体的实现。对于具有广泛含义的雇员，我们不能计算出他的收入，而必须首先知道该雇员的类型。程序员不会试图在基类Employee中调用该纯虚函数，所有的派生类根据相应的实现为这些类重定义earnings。</p>
+  <p> 类Boss是通过public继承从类Employee派生出来的，它的public成员函数包括：构造函数，构造函数有三个参数，即雇员的姓和名以及周薪，为了初始化派生类对象中基类部分的成员firstName和lastName，雇员的姓和名传递给了类Employee的构造函数；“set”函数，用来把新值赋绐private数据成员weeklySalary；虚函数earnings，用来定义如何计算Boss的工资；虚函数print，它输出雇员类型，然后调用Employee:print()输出员工姓名。</p>
+  <p> 类CommissionWorker是通过public继承从类Employee派生出的，它的public成员函数包括：构造函数，构造函数有五个参数，即姓、名、基本工资、回扣及产品销售量，井将姓和名传递给了类Employee的构造函数；&quot;set&quot;函数，用于将新值赋给private数据成员salary、commission和quantity；</p>
+  <p> 虚函数earnings，用来定义如何计算CommissionWorker的工资；虚函数print，输出雇员类型，然后调用Employs:print()输出员工姓名。</p>
+  <p> 类PieceWorker是通过public继承从类Employee派生出来的，public成员函数包括：构造函数，构造函数有四个参数，即计件工的姓、名、每件产品的工资以及生产的产品数量，并将姓和名传递给了类Employee的构造函数；&quot;set&quot;函数，用来将新值赋给private数据成员wagePerPiece和quantity；</p>
+  <p> 虚函数earnings，用来定义如何计算PieceWorker的工资；虚函数print，它输出雇员类型，然后调用   Employee:print()输出员工姓名。</p>
+  <p> 类HourlyWorker是通过public继承从类Employee派生出来的，public成员函数包括:   构造函数，构造函数有四个参数，即姓、名、每小时工资及工作的时间数，并将姓、名传递给了类Employee的构造函数；“set”函数，将新值赋给private数据成员wage和hours；虚函数earnings，用来定义如何计算HourlyWorker的工资；虚函数print，输出雇员类型，然后调用Employee:print()输出员工姓名。</p>
+  <pre class="code">
+ // Fig. 10.1: employ2.h
+ // Abstract base class Employee
+ #ifndef EMPLOY2_H
+ #define EMPLOY2_H
+  #include< iostream.h>
+  class Employee {
+ public:
+    Employee( const char *, const char * );
+   ~Employee();  // destructor reclaims memory
+   const char *getFirstName() const;
+    const char *getLastName() const;
+   // Pure virtual function makes Employee abstract base class
+   virtual double earnings() const = 0;  // pure virtual
+   virtual void print() const;          // virtual
+ private:
+   char *firstName;
+   char *lastName;
+ };
+ #endif
+ // Fig. 10.1: employ2.cpp
+ // Member function definitions for
+ // abstract base class Employee.
+ // Note: No definitions given for pure virtual functions.
+ #include < string.h>
+ #include < assert.h>
+ #include "employ2.h"
+ // Constructor dynamically allocates space for the
+ // first and last name and uses strcpy to copy
+ // the first and last names into the object.
+ Employee::Employee( const char *first, const char *last )
+ {
+   firstName = new char strlen( first ) + 1 ];
+   assert( firstName != 0 );   // test that new worked
+   strcpy( firstName, first );
+   lastName = new char strlen( last ) + 1 ] ;
+   assert( lastName != 0 );    // test that new worked
+   strcpy( lastName, last );
+ }
+ // Destructor deallocates dynamically allocated memory
+ Employee::~Employee()
+ {
+   delete [] firstName;
+   delete [] lastName;
+ }
+ // Return a pointer to the first name
+ // Const return type prevents caller from modifying private
+ // deletes dynamic storage to prevent undefined pointer.
+ const char *Employee::getFirstName() const
+ {
+   return firstName;  // caller must delete memory
+ }
+ // Return a pointer to the last name
+ // Const return type prevents caller from modifying private
+ // data. Caller should copy returned string before destructor
+ // deletes dynamic storage to prevent undefined pointer
+ const char *Employee::getLastName() const
+ {
+    return lastName;  // caller must delete memory
+ }
+ // Print the name of the Employee
+ void Employee::print() const
+   { cout << firstName << ' ' << lastName; }
+ // Fig. 10.1: boss1.h
+ #ifndef BOSS1_H
+ #include "employ2.h"
+ class Boss : public Employee {
+ public:
+   Boss( const char *, const char *, double = 0.0 );
+   void setWeeklySalary( double );
+   virtual double earnings() const;
+   virtual void print() const;
+ private:
+   double weeklySalary;
+ };
+ #endif
+ // Fig. 10.1: boss1.cpp
+ // Member function definitions for class Boss
+ #include "boss1.h"
+ // Constructor function for class Boss
+ BOSS::BOSS( const char *first, const char *last, double s )
+   : Employee( first, last )  // call base-class constructor
+ { setWeeklySalary( s ); }
+ // Set the Boss's salary
+ void Boss::setWeeklySalary( double s )
+   { weeklySalary = s > 0 ? s : 0; }
+ // Get the BOSS'S pay
+ double Boss::earnings() const  { return weeklySalary; }
+ // Print the BOSS'S name
+ void Boss::print() const
+ {
+   cout << "\n          Boss: ";
+   Employee::print();
+ }
+ / Fig. 10.1: commisl.h
+ #ifndef COMMIS1_H
+ #define COMMIS1_H
+ #include "employ2.h"
+ class commissionWorker : public Employee {
+ public:
+   CommissionWorker( const char *, const char *,
+                     double = 0.0, double = 0.0,
+                     int= 0 );
+   void setSalary( double );
+   void setCommission( double );
+   void setQuantity( int );
+   virtual double earnings() const;
+   virtual void print() const;
+ private:
+   double salary;      // base salary per week
+   double commission;  // amount per item sold
+   int quantity;      // total items sold for week
+ };
+ #endif
+ // Fig. 10.1; commis1.cpp
+ // Member function definitions for class CommissionWorker
+ #include < iostream.h>
+ #include "commis1.h"
+ // Constructor for class CommissionWorker
+ CommissionWorker::CommissionWorker( const char * first,
+               const char *last, double s, double c, int q )
+   : Employee( first, last )  // call base-class constructor
+ {
+   setSalary( s );
+   setCommission( c );
+   setQuantity( q );
+ }
+ // Set CommissionWorker's weekly base salary
+ void CommissionWorker::setSalary( double s )
+   { salary = s > 0 ? s : 0; }
+ // Set CommissionWorker's conunission
+ void CommissionWorker::setCommission( double c )
+   { commission = c > 0 ? c : 0; }
+ // Set commissionWorker's quantity sold
+ void CommissionWorker::setQuantity( int q )
+   { quantity = q > 0 ? q : 0; }
+// Determine CommissionWorker's earnings
+ double CommissionWorker::earnings() const
+   { return salary + commission * quantity; }
+ // Print the CommissionWorker's name
+ void CommissionWorker::print() const
+ {
+   cout << "\nCommission worker: ";
+   Employee::print();
+ }
+ // Fig. 10.1: piecel.h
+ // pieceWorker class derived from Employee
+ #ifndef PIECE1_H
+ #define PIECE1_H
+ #include "employ2.h"
+ class PieceWorker : public Employee {
+ public:
+   PieceWorker( const char *, const char *,
+   double = 0.0, int = 0);
+   void setWage( double );
+   void setQuantity( int );
+   virtual double earnings() const;
+   virtual void print() const;
+ private:
+   double wagePerPiece; // wage for each piece output
+   int quantity;       // output for week
+ };
+ #endif
+ // Fig. 10.1: piecel.cpp
+ // Member function definitions for class pieceWorker
+ #include < iostream.h>
+ #include "piecel.h"
+ // Constructor for class PieceWorker
+ pieceWorker::pieceWorker( const char *first, const char *last,
+                          double w, int q )
+   : Employee( first, last )  // call base-class constructor
+ {
+   setWage( w );
+   setQuantity( q );
+ }
+ // Set the wage
+ void PieceWorker::setwage( double w )
+   { wagePerPiece = w > 0 ? w : 0; }
+ // Set the number of items output
+ void PieceWorker::setQuantity( int q )
+   { quantity = q > 0 ? q : 0; }
+ // Determine the PieceWorker's earnings
+ double PieceWorker::earnings() const
+   { return quantity * wagePerPiece; }
+ // Print the PieceWorker's name
+ void PieceWorker::print() const
+ {
+   cout << "\n    Piece worker: ";
+   Employee::print();
+ }
+ // Fig. 10.1: hourlyl.h
+ // Definition of class HourlyWorker
+ #ifndef HOURLY1_H
+ #define HOURLY1_H
+ #include "employ2.h"
+ 
+ class HourlyWorker : public Employee {
+ public:
+   HourlyWorker( const char *, const char *,
+                 double = 0.0, double = 0.0);
+   void setWage( double );
+   void setHours( double );
+   virtual double earnings() const;
+   virtual void print () const;
+ private:
+   double wage;  // wage per hour
+   double hours;  // hours worked for week
+ } ;
+ #endif
+ // Fig. 10.1: hourly1.cpp
+ // Member function definitions for class HourlyWorker
+ #include < iostream.h>
+ #include "hourly1.h"
+ // Constructor for class HourlyWorker
+ HourlyWorker::HourlyWorker( const char *first,
+                             const char *last,
+                             double w, double h }
+   : Employee( first, last )  // call base-class constructor
+ {
+    setwage( w );
+    setHours( h );
+ }
+ // Set the wage
+ void HourlyWorker::setwage( double w )
+   { wage = w > 0 ? w : 0; }
+ // Set the hours worked
+ void HourlyWorker::setHours( double h )
+   { hours = h >= 0 && h < 168 ? h : 0; }
+ // Get the HourlyWorker's pay
+ double HourlyWorker::earnings() const
+ {
+   if ( hours <= 40 ) // no overtime
+     return wage * hours;
+   else            // overtime is paid at wage * 1.5
+      return 40 * wage + ( hours - 4O ) * wage * 1.5;
+ }
+ // Print the HourlyWorker's name
+ {
+   cout << "\n   Hourly worker: ";
+   Employee::print();
+ }
+ // Fig. 10.1: figl0_01.cpp
+ // Driver for Employee hierarchy
+ #include <iostream.h>
+ #include <iomanip.h>
+ #include "employ2.h
+ #include "boss1.h"
+ #include "commis1.h"
+ #include "piece1.h"
+ #include "hourly1.h"
+ void virtualViaPointer( const Employee * );
+ void virtualViaReference( const Employee & );
+ int main()
+ {
+    // set output formatting
+   cout << setiosflags( ios::fixed | ios::showpoint )
+        << setprecision( 2 );
+   Boss b( "John", "Smith", 800.00 );
+   b.print();                        // static binding
+   cout << "earned $" << b.earnings();   // static binding
+   virtualViaPointer( &b );        // uses dynamic binding
+   virtualViaReferenee( b );       // uses dynamic binding
+   CommissionWorker c( "Sue", "Jones", 200.0, 3.0, 150 );
+   c.print();                        // static binding
+   cout << "earned $" << c.earnings();   // static binding
+   virtualViaPointer( &c )/        // uses dynamic binding
+   virtualViaReference( c );       // uses dynamic binding
+   PieceWorker p( "Bob", "Lewis", 2.5, 200 );
+   p.print();                        // static binding
+   cout << "earned $" << p.earnings();   // static binding
+   virtualViaPointer( &p );        // uses dynamic binding
+   virtualViaReference( p );       // uses dynamic binding
+   HourlyWorker h( "Karen", "Price", 18.75, 40 );
+   h.print();                        // static binding
+   cout << "earned $" << h.earnings();   // static binding
+   virtualViaPointer( &h );        // uses dynamic binding
+   virtualViaReference( h );       // uses dynamic binding
+   cout << endl;
+   return 0;
+ }
+ // Make virtual function calls off a base-class pointer
+ // using dynamic binding.
+ void virtualViaPointer( const Employee *baseClassPtr )
+ {
+   baseClassPtr->print();
+   cout << "earned $" << baseClassPtr->earnings();
+ }
+ // Make virtual function calls off a base-class reference
+ // using dynamic binding.
+ void virtualViaReference( const Employee &baseClassRef )
+ {
+   baseClassRef.print();
+   cout << " earned $ " << baseclassRef.earnings();
+ }
+</pre>
+  <p> 输出结果：</p>
+  <p> BOSS: John Smith   earned $800,00</p>
+  <p> Boss: John Smith earned   $800.00</p>
+  <p> Boss: John Smith earned $800.00</p>
+  <p> Commission Worker: Sue   Jones earned $650.00</p>
+  <p> Commission worker: Sue Jones earned   $650.00</p>
+  <p> Commission worker: Sue Jones earned $650,00</p>
+  <p> Piece worker: Bob   Lewis earned $500.00</p>
+  <p> Piece worker: Bob Lewis earned $500.00</p>
+  <p> Piece worker: Bob Lewis earned $500.00</p>
+  <p> Hourly worker: Karen Price earned   $550.00</p>
+  <p> Hourly worker: Karen Price earned $050.00</p>
+  <p> Hourly worker: Karen   Price earned $550.00</p>
+  <h5> 图10. 1   Employee类层次的多态性</h5>
+  <p> 驱动程序main函数中的四小段代码是类似的，因此我们只讨论处理Boss对象的第一段代码。</p>
+  <p> 第302行：</p>
+  <p> Boss   b(&quot;John&quot;，&quot;Smith&quot;，800.OO)；</p>
+  <p> 实例化了类Boss的派生类对象b，并为构造函数提供了参数(即姓和名以及固定的周薪)。</p>
+  <p> 第303行：</p>
+  <p> b.print()；   // static   binding</p>
+  <p> 用圆点成员选择运算符显式地调用类Boss中的成员函数print。在编译时就可以知道被调用函数的对象类型，所以它是静态关联。使用该调用是为了和用动态关联调用函数print做一比较。</p>
+  <p> 第304行：</p>
+  <p> cout &lt;&lt; &quot; earned $ &quot; &lt;&lt; b.earnings()；   // static   binding</p>
+  <p> 用圆点成员选择运算符显式地调用类Boss中的成员函数earnings，这也是一例静态关联。使用该调用是为了和用动态关联调用函数earnings做一比较。</p>
+  <p> 第305行：</p>
+  <p> virtualViaPointer(&amp;b)；   // uses dynamic   binding</p>
+  <p> 用派生类对象b的地址调用函数virtualViaPointer(第331行)。函数在参数baseClassPtr中接收这个地址，该参数声明为constEmployee   *，这正是实现多态性所必须要做的。</p>
+  <p> 第333行：</p>
+  <p> baseClassPtr-&gt;print()</p>
+  <p> 调用baseClassPtr所指向对象的成员函数print。由于print在基类中被声明为虚函数，因此系统调用了派生类对象的print函数(仍然是多态性行为)。该函数调用是一例动态关联，即用基类指针调用虚函数，以便在执行时才确定调用哪一个函数。</p>
+  <p> 第334行：</p>
+  <p> cout&lt;&lt;&quot;earned $   &quot;&lt;&lt;baseClassPtr—&gt;earnings()；</p>
+  <p> 调用baseClassPtr所指向对象的成员函数earnings。由于earnings在基类中被声明为虚函数，因此系统调用了派生类对象的earnings函数，这也是动态关联的一个范例。</p>
+  <p> 第306行：</p>
+  <p> virtualViaReference(b)；   // uses dynamic   binding</p>
+  <p> 调用函数vitualViaRefrence(第339行)演示多态性也可以用基类引用调用虚函数来完成。该函数在参数baseClassRef中接收对象b，该参数声明为constEmployee&amp;。这就是通过引用来影响多态行为。</p>
+  <p> 第341行：</p>
+  <p> baseClassRef.print()；</p>
+  <p> 调用baseClassRef所引用对象的成员函数print。由于print在基类中被声明为虚函数，因此系统调用了派生类对象的print函数。该函数调用是一例动态关联，即用基类引用调用函数，以便在执行时才确定调用哪一个函数。</p>
+  <p> 第342行：</p>
+  <p> cout&lt;&lt; &quot;earned $ &quot;&lt;&lt;baseClassRef.earnings()；</p>
+  <p> 调用baseClassRef所引用对象的成员函数earnings。由于earnings在基类中被声明为虚函数，因此系统调用了派生类对象的earnings函数，这也是动态关联的一个范例。 </p>
+  <div class="rpindex"><a href="83.html"> 下一页</a><a href="81.html"> 上一页</a><a href="index.html">首页</a></div>
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
