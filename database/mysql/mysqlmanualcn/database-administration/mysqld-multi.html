@@ -1,0 +1,335 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.1.5.&nbsp;mysqld_multi：管理多个MySQL服务器的程序</h1>
+
+          
+        
+      
+      <p>mysqld_multi可以管理多个帧听不同Unix套接字文件和TCP/IP端口的连接的mysqld
+        进程。它可以启动或停止服务器，或报告它们的当前状态。</p>
+      <p>程序寻找my.cnf中的[mysqld<i>N</i>]组(或--config-file选项指定的文件)。<i>N</i> 可以为任何正整数。在下面的讨论中该数字指选项组号，或<i>GNR</i>。组号区别各选项组，并用作mysqld_multi的参数来指定想要启动、停止哪个服务器或获取哪个服务器的状态报告。这些组中的选项与将用来启动mysqld的[mysqld]组中的相同。(例如，参见<a href="mysql-server.html" title="2.9.2.2. Starting and Stopping MySQL Automatically">2.9.2.2节，“自动启动和停止MySQL”</a>）。但是，当使用多个服务器时，需要每个服务器使用自己的选项值，例如Unix套接字文件和TCP/IP端口号。关于在多服务器环境中，每个服务器对应唯一选项的详细信息，参见<a href="multiple-servers.html" title="5.12. Running Multiple MySQL Servers on the Same Machine">5.12节，“在同一台机器上运行多个MySQL服务器”</a>。</p>
+      <p>要想调用mysqld_multi，使用下面的语法：</p>
+      <pre>shell&gt; mysqld_multi [<i>options</i>] {start|stop|report} [<i>GNR</i>[,<i>GNR</i>] ...]</pre>
+      <p> start、stop和report表示你想要执行的操作。你可以在单个服务器或多个服务器上执行指定的操作，取决于选项名后面的<i>GNR</i> 列。如果没有该列，mysqld_multi为选项文件中的所有服务器执行该操作。</p>
+      <p>每个<i>GNR</i>值代表一个选项组号或组号范围。<i>GNR</i>值应为选项文件中组名末尾的号。例如，组[mysqld17]的<i>GNR</i>为17。要想指定组号的范围，用破折号间隔开第1个和最后1个号。<i>GNR</i>值10-13代表组[mysqld10]到[mysqld13]。可以在命令行中指定多个组或组范围，用逗号间隔开。<i>GNR</i>列不能有空格字符(空格或tab)；空格字符后面的内容将被忽略掉。</p>
+      <p>该命令使用选项组[mysqld17]启动单个服务器：</p>
+      <pre>shell&gt; mysqld_multi start 17</pre>
+      <p>该命令停止多个服务器，使用选项组[mysql8]和[mysqld10]至[mysqld13]：</p>
+      <pre>shell&gt; mysqld_multi stop 8,10-13</pre>
+      <p>使用该命令列出设置选项文件的示例：</p>
+      <pre>shell&gt; mysqld_multi --example</pre>
+      <p>mysqld_multi支持下面的选项：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --config-file=<i>name</i></p>
+      <p>指定选项文件名。这关系到mysqld_multi从哪里寻找[mysqld<i>N</i>]选项组。没有该选项，从通用my.cnf文件读所有选项。选项不影响 
+        mysqld_multi从哪里读取自己的选项，总是从通用my.cnf文件的[mysqld_multi]组读取。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --example</p>
+      <p>显示示例选项文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --help</p>
+      <p>显示帮助消息并退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --log=<i>name</i></p>
+      <p>指定日志文件名。如果该文件存在，后面为日志输出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --mysqladmin=<i>prog_name</i></p>
+      <p>用来停止服务器的mysqladmin二进制。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --mysqld=<i>prog_name</i></p>
+      <p>可用的mysqld二进制。请注意你还可以将该选项的值指定为mysqld_safe。选项被传递给 
+        mysqld。确保在PATH环境变量设定值或mysqld_safe中有mysqld所在目录。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --no-log</p>
+      <p>按照标准输出打印日志信息，不要写入日志文件。默认情况下，输出写入日志文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --password=<i>password</i></p>
+      <p>调用mysqladmin时使用的MySQL账户的密码。请注意该密码值不是可选项，不象其它MySQL程序。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --silent </p>
+      <p>禁用警告。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --tcp-ip</p>
+      <p>通过TCP/IP端口而不是Unix套接字文件来连接每个MySQL服务器。(如果找不到套接字文件， 
+        服务器仍然可以运行，但只能通过 TCP/IP端口访问）。默认情况下，使用Unix套接字文件进行连接。该选项影响stop和report操作。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --user=<i>user_name</i></p>
+      <p>调用mysqladmin时使用的MySQL账户的用户名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --verbose </p>
+      <p>更详细。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --version</p>
+      <p>显示版本信息并退出。</p>
+      <p>关于mysqld_multi的一些注解：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        确保停止mysqld服务器(用mysqladmin程序)的MySQL账户在各个服务器中的用户名和密码相同。并且应确保账户具有SHUTDOWN权限。如果你想要管理的服务器的管理账户有许多不同的用户名或密码，你需要在每个服务器上创建一个账户，并具有相同的用户名和密码。例如，你可以执行下面的命令为每个服务器设置一个普通multi_admin账户：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shell&gt; mysql -u root -S /tmp/mysql.sock -p<i>root_password</i>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT SHUTDOWN ON *.*
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; TO &#39;multi_admin&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;multipass&#39;；</pre>
+      <p>参见<a href="privileges.html" title="5.7.2. How the Privilege System Works">5.7.2节，“权限系统工作原理”</a>。你必须为每个mysqld服务器执行该操作。当连接时适当更改连接参数。请注意账户名的主机部分必须允许你用multi_admin从你想要运行mysqld_multi的主机进行连接。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果你使用mysqld_safe来启动mysqld(例如，--mysqld=mysqld_safe)，--pid-file选项很重要。每个mysqld应有自己的进程ID文件。使用mysqld_safe而不使用mysqld的好处是mysqld_safe“守护”其mysqld进程，如果用kill
+        
+        
+        –9发送的信号或由于其它原因（例如分段故障）进程终止，则重启进程。请注意mysqld_safe脚本需要你从某个位置启动它。这说明运行mysqld_multi前你必须进入某个目录。如果启动时有问题，请参见mysqld_safe脚本。特别是要检查下列行：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----------------------------------------------------------------
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MY_PWD=`pwd`
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # Check if we are starting this relative (for the binary release)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if test -d $MY_PWD/data/mysql -a -f ./share/mysql/english/errmsg.sys -a \
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -x ./bin/mysqld
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ----------------------------------------------------------------</pre>
+      <p>参见<a href="mysqld-safe.html" title="5.1.3. mysqld_safe — MySQL Server Startup Script">5.1.3节，“mysqld_safe：MySQL服务器启动脚本”</a>。上述行执行的测试应成功，否则你可能遇到了问题。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        每个mysqld的Unix套接字文件和TCP/IP端口号必须不同。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        你可能想要为mysqld使用--user选项，但为此你需要用Unix
+        
+        root用户运行mysqld_multi脚本。选项文件中有选项不要紧；如果你不是超级用户，并且你用自己的Unix账户重启mysqld进程，你只会得到警告。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        重要：确保mysqld进程启动所用Unix账户可以完全访问数据目录。<em>不要</em>使用Unix 
+        root账户，除非你<em>知道</em>你在做什么。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        非常重要：使用mysqld_multi前，确保理解传递给mysqld服务器的选项的含义以及你<i>为什么</i>想要独立的mysqld进程。应清楚 
+        在相同的数据目录下使用多个mysqld服务器的危险。使用单独的数据目录，除非你<em>知道</em>你在做什么。在线程系统中，在相同的数据目录下启动多个服务器不会得到超性能。参见<a href="multiple-servers.html" title="5.12. Running Multiple MySQL Servers on the Same Machine">5.12节，“在同一台机器上运行多个MySQL服务器”</a>。</p>
+      <p>下面的示例显示了你如何设置选项文件来使用mysqld_multi。专门省去第1个和第5个[mysqld<i>N</i>]组来说明你的选项文件可以稍有不同。这样给你更大的灵活性。mysqld程序重启或停止的顺序由它们在选项文件中的顺序决定。</p>
+      <pre># This file should probably be in your home dir (~/.my.cnf)
+# or /etc/my.cnf
+# Version 2.1 by Jani Tolonen
+&nbsp;
+[mysqld_multi]
+mysqld&nbsp;&nbsp;&nbsp;&nbsp; = /usr/local/bin/mysqld_safe
+mysqladmin = /usr/local/bin/mysqladmin
+user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = multi_admin
+password&nbsp;&nbsp; = multipass
+&nbsp;
+[mysqld2]
+socket&nbsp;&nbsp;&nbsp;&nbsp; = /tmp/mysql.sock2
+port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 3307
+pid-file&nbsp;&nbsp; = /usr/local/mysql/var2/hostname.pid2
+datadir&nbsp;&nbsp;&nbsp; = /usr/local/mysql/var2
+language&nbsp;&nbsp; = /usr/local/share/mysql/english
+user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = john
+&nbsp;
+[mysqld3]
+socket&nbsp;&nbsp;&nbsp;&nbsp; = /tmp/mysql.sock3
+port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 3308
+pid-file&nbsp;&nbsp; = /usr/local/mysql/var3/hostname.pid3
+datadir&nbsp;&nbsp;&nbsp; = /usr/local/mysql/var3
+language&nbsp;&nbsp; = /usr/local/share/mysql/swedish
+user&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= monty
+&nbsp;
+[mysqld4]
+socket&nbsp;&nbsp;&nbsp;&nbsp; = /tmp/mysql.sock4
+port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 3309
+pid-file&nbsp;&nbsp; = /usr/local/mysql/var4/hostname.pid4
+datadir&nbsp;&nbsp;&nbsp; = /usr/local/mysql/var4
+language&nbsp;&nbsp; = /usr/local/share/mysql/estonia
+user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = tonu
+&nbsp;
+[mysqld6]
+socket&nbsp;&nbsp;&nbsp;&nbsp; = /tmp/mysql.sock6
+port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 3311
+pid-file&nbsp;&nbsp; = /usr/local/mysql/var6/hostname.pid6
+datadir&nbsp;&nbsp;&nbsp; = /usr/local/mysql/var6
+language&nbsp;&nbsp; = /usr/local/share/mysql/japanese
+user&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = jani</pre>
+      <p>参见<a href="connecting.html" title="4.3.2. Using Option Files">4.3.2节，“使用选项文件”</a>。
+    
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,292 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 17.8.&nbsp;MySQL簇的已知限制</h1>
+
+        
+      
+    
+    <p>在本节中，我们列出了5.1.x系列中对MySQL簇的一些已知限制，并与使用MyISAM和InnoDB存储引擎时可用的特性进行了比较。目前，尚不打算在即将推出的MySQL 
+      5.1版本中处理这些问题，但是，我们将在后续的版本系列中，提供这方面的补丁和修正。如果你检查了MySQL缺陷数据库（http://bugs.mysql.com）中的“簇”类别，可发现我们打算在即将推出的MyAQL 
+      5.1版中更正的已知缺陷（如果标记为“5.1”的话）。</p>
+    <p>（注释：在本节末尾，列出了在当前版本中已解决的MySQL 5.0簇中的一些事宜）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      语法中的不兼容性（运行已有的应用程序时导致错误）：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持文本索引。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持Geometry数据类型（WKT和WKB）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      限制或行为中的不兼容性（运行已有的应用程序时可能导致错误）：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      没有事务的部分回滚功能。重复键或类似错误会导致整个事务的回滚。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      存在很多可配置的硬限制，但能使用簇中的可用主内存设置限制。关于配置参数的完整清单，请参见<a href="mysql-cluster-config-file.html" title="17.4.4. Configuration File">17.4.4节，“配置文件”</a>。大多数配置参数可在线升级。这些硬限制包括：</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      数据库内存大小和索引内存大小（分别是DataMemory和IndexMemory）。</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      对于能够执行的最大事务数，可使用配置参数MaxNoOfConcurrentOperations进行设置。注意批量加载，TRUNCATE 
+      TABLE和ALTER 
+      TABLE是通过运行多个事务作为特殊情况进行处理的，因而不受该限制的约束。</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      与表和索引有关的不同限制。例如，每表的最大有序索引数是由MaxNoOfOrderedIndexes确定的。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在NDB表中，数据库名称、表名称和属性名称不能与其他表处理程序中的一样长。属性名称将被截短至31个字符，截短后如果不是唯一的，将导致错误。数据库名称和表名的总最大长度为122个字符（也就是说，NDB簇表名的最大长度为122个字符减去该表所属的数据库的名称中的字符数）。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      所有的簇表行具有固定长度。这意味着（例如），如果表中有仅包含相对较小值的1个或多个VARCHAR字段，与使用MyISAM引擎的相同表和数据相比，使用NDB存储引擎时需要更多的内存和磁盘空间。换句话讲，对于VARCHAR列，它所需的存储空间与具有相同大小的CHAR列所需的相同。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      簇数据库中的最大表数目限制为1792。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      每表的最大属性数限制为128。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      任一行的最大允许大小为8K，<em>不包括保存在BLOB列中的数据。</em></p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      每键的最大属性数为32。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持的特性（不会导致错误，但不被支持或强制）：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      外键结构将被忽略，就像在MyISAM表中那样。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      保存点以及对保存点的回滚将被忽略，就像在MyISAM中那样。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      性能以及与限制有关的事宜</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      由于对NDB存储引擎的连续访问，存在查询性能问题，与MyISAM或InnoDB的情形相比，执行很多范围扫描时，开销相对昂贵。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持范围统计中的记录，在某些情况下，这会造成非最优查询计划。可采用USE 
+      INDEX或FORCE 
+      INDEX规避该问题。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      对于使用USING 
+      HASH创建的唯一性哈希索引，如果NULL是键的一部分，不能使用这类索引访问表。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      MySQL簇不支持磁盘上的持续提交。提交将被复制，但不保证在提交时会将日志写入磁盘。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      丢失特性：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      唯一支持的隔离级别是READ_COMMITTED（InnoDB支持READ_COMMITTED、READ_COMMITTED、REPEATABLE_READ和SERIALIZABLE）。关于其如何影响簇数据库备份和恢复的更多信息，请参见<a href="mysql-cluster-backup-troubleshooting.html" title="17.6.5.5. Backup Troubleshooting">17.6.5.5节，“备份故障诊断与排除”</a>。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持磁盘上的持续提交。提交将被复制，但不保证在提交时会将日志写入磁盘。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      与多MySQL服务器有关的问题（与MyISAM或InnoDB无关）：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      运行多个MySQL服务器时，ALTER 
+      TABLE未完全锁定（无分布式表锁定）。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      如果在多个MySQL服务器上进行了更新，MySQL复制功能不能正确处理。但是，如果数据库分区方案是在应用级别上完成的，而且在这些分区上非发生事务，那么可使复制功能正确工作。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      对于访问相同MySQL簇的多MySQL服务器，不支持数据库的自动发现（autodiscovery）功能。但是，在情况下，支持对表的自动发现（autodiscovery）功能。这意味着，创建了名为<i>db_name</i>的数据库后，或使用1个MySQL服务器导入了该数据库后，应在访问相同MySQL簇的每个额外MySQL服务器上发出CREATE 
+      DATABASE <i>db_name</i>语句（从MySQL 5.0.2开始，你还能使用CREATE 
+      SCHEMA <i>db_name</i>;）。一旦对给定MySQL服务器完成了该操作，服务器应能检测到数据库表，而不产生错误。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      仅与MySQL簇有关的事宜（与MyISAM或InnoDB无关）：</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      簇中使用的所有机器必须具有相同的体系结构，也就是说，所有承载节点的机器必须是big-endian或little-endian，不能混合使用这两者。例如，不能用运行在PPC上的管理节点指挥运行在x86机器上的数据节点。该限制不适用于简单运行mysql或其他客户端（可能会访问簇的SQL节点）的机器。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不能像使用ALTER 
+      TABLE或CREATE 
+      INDEX完成的那样执行在线方案更改，这是因为NDB簇不支持这类变更的自动检测（但是，能够导入或创建使用不同存储引擎的表，然后使用“ALTER 
+      TABLE <i>tbl_name</i> ENGINE=NDBCLUSTER;”将其转换为NDB。在这类情况下，需要发出FLUSH 
+      TABLES命令，强制簇发现变化）。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不能在线增加或舍弃节点（此时必须重启簇）。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      使用多个管理服务器时：</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      必须在连接字符串中明确为节点指定ID，这是因为，在多个管理服务器上，自动分配的节点ID不能正常工作。</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      必须十分小心，确保所有的管理服务器具有相同的配置。簇对此方面不进行任何特殊检查，</p>
+    <p > §&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      要想使管理节点能发现彼此的存在，创建了簇后必须重启所有的数据节点（详细解释请参见Bug 
+      #13070）。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不支持用于数据节点的多个网络接口。如果使用了这类接口，很容易导致问题，原因在于，在出现某一数据节点失败的情况下，SQL节点将等待以确认该数据节点是否出现问题，但由于该数据节点的另一路径仍保持打开状态，SQL节点永远不会收到该确认信息。这会导致簇无法工作。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      数据节点的最大数目为48。</p>
+    <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      MySQL簇中总的最大节点数为63。在该数值中包括所有的MySQL服务器（SQL节点），数据节点和管理服务器。</p>
+    <p>考虑到本节开始时设定的条件，我们力图使上面列出的信息尽可能完全。你可以将任何遇到的差异通报到MySQL缺陷数据库，http://bugs.mysql.com/。如果我们不打算在MySQL 
+      5.1中更正该问题，我们会将其添加到列表中。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

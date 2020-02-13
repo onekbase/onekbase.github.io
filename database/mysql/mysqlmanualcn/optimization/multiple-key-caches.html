@@ -1,0 +1,257 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.4.6.2.&nbsp;多键高速缓冲</h1>
+
+            
+          
+        
+        <p> 对键高速缓冲的共享访问可以提高性能但不能完全消除线程之间的竟争。它们仍然竞争对键高速缓冲缓存区的访问进行管理的控制结构。为了进一步降低
+          键高速缓冲访问竟争，MySQL 
+          5.1还提供了多个键高速缓冲，允许你为不同的键高速缓冲分配不同的表索引。</p>
+        <p> 有多个键高速缓冲时，当为给定的MyISAM表处理查询时，服务器必须知道使用哪个缓存。默认情况，所有MyISAM表索引被缓存到默认
+          键高速缓冲中。要想为具体键高速缓冲分配表索引，应使用CACHE 
+          INDEX语句(参见<a href="" title="13.5.5.1. CACHE INDEX Syntax">13.5.5.1节，“CACHE 
+          INDEX语法”</a>)。</p>
+        <p> 例如，下面的语句将表t1、t2和t3的索引分配给名为hot_cache的
+          键高速缓冲：</p>
+        <pre>mysql&gt; CACHE INDEX t1, t2, t3 IN hot_cache;
++---------+--------------------+----------+----------+
+| Table&nbsp;&nbsp; | Op&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Msg_type | Msg_text |
++---------+--------------------+----------+----------+
+| test.t1 | assign_to_keycache | status&nbsp;&nbsp; | OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| test.t2 | assign_to_keycache | status&nbsp;&nbsp; | OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| test.t3 | assign_to_keycache | status&nbsp;&nbsp; | OK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
++---------+--------------------+----------+----------+
+&nbsp;</pre>
+        <p> 可以用SET 
+          GLOBAL参数设置语句或使用服务器启动选项设置在CACHE 
+          INDEX语句中引用的键高速缓冲的大小来创建键高速缓冲。例如：</p>
+        <pre>mysql&gt; SET GLOBAL keycache1.key_buffer_size=128*1024;</pre>
+        <p> 要想删除键高速缓冲，将其大小设置为零：</p>
+        <pre>mysql&gt; SET GLOBAL keycache1.key_buffer_size=0;</pre>
+        <p> 请注意不能删除默认键高速缓冲。删除默认键高速缓冲的尝试将被忽略：</p>
+        <pre>mysql&gt; set global key_buffer_size = 0;
+&nbsp;
+mysql&gt; show variables like &#39;key_buffer_size&#39;;
++-----------------+---------+
+| Variable_name&nbsp;&nbsp; | Value&nbsp;&nbsp; |
++-----------------+---------+
+| key_buffer_size | 8384512 |
++-----------------+---------+
+&nbsp;</pre>
+        <p> 键高速缓冲变量是结构式系统变量，有一个名和组件。对于keycache1.key_buffer_size，keycache1是缓存变量名，key_buffer_size是缓存组件。关于引用结构式
+          键高速缓冲系统变量所使用的语法的描述，参见<a href="" title="9.4.1. Structured System Variables">9.4.1节，“结构式系统变量”</a></p>
+        <p> 默认情况下，表索引被分配给服务器启动时创建的主要(默认)键高速缓冲。当
+          键高速缓冲被删除后，所有分配给它的索引被重新分配给默认键高速缓冲。</p>
+        <p> 对于一个忙的服务器，我们建议采用使用三个键高速缓冲的策略：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          占用为所有键高速缓冲分配的空间的20%的“热”键高速缓冲。该缓存用于频繁用于搜索但没有更新的表。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          占用为所有键高速缓冲分配的空间的20%的“冷”键高速缓冲。该缓存用于中等大小、大量修改的表，例如临时表。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          占用键高速缓冲空间的20%的“温”键高速缓冲。使用它作为默认
+          键高速缓冲，默认情况被所有其它表使用。</p>
+        <p> 使用3个键高速缓冲有好处的一个原因是对一个键高速缓冲结构的访问不会阻挡对其它的访问。访问分配给一个缓存的表的查询不会与访问分配给其它缓存的表的查询竞争。由于其它原因也会提高性能：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          热缓存只用于检索查询，因此其内容决不会被修改。结果是，无论何时需要从硬盘上拉入索引块，选择用于替换的缓存块的内容不需要先刷新。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于分配给热缓存的索引，如果没有查询需要索引扫描，很有可能对应索引B-树的非叶子节点的索引块仍然在缓存中。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          当更新的节点位于缓存中并且不需要先从硬盘读入时，为临时表频繁执行的更新操作会执行得更快。如果临时表的索引的大小可以与冷键高速缓冲相比较，很可能更新的节点位于缓存中。</p>
+        <p> CACHE INDEX在一个表和
+          键高速缓冲之间建立一种联系，但每次服务器重启时该联系被丢失。如果你想要每次服务器重启时该联系生效，一个发办法是使用选项文件：包括配置
+          键高速缓冲的变量设定值，和一个init-file选项用来命名包含待执行的CACHE 
+          INDEX语句的一个文件。例如：</p>
+        <pre>key_buffer_size = 4G
+hot_cache.key_buffer_size = 2G
+cold_cache.key_buffer_size = 2G
+init_file=/path/to/data-directory/mysqld_init.sql</pre>
+        <p> 每次服务器启动时执行mysqld_init.sql中的语句。该文件每行应包含一个SQL语句。下面的例子分配几个表，分别对应hot_cache和cold_cache：</p>
+        <pre>CACHE INDEX a.t1, a.t2, b.t3 IN hot_cache
+CACHE INDEX a.t4, b.t5, b.t6 IN cold_cache</pre>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

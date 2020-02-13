@@ -1,0 +1,316 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 16.4.&nbsp;创建handlerton</h1>
+
+        
+      
+    
+    <p>handlerton（“单个处理程序”的简称）定义了存储引擎，并包含指向函数的函数指针，它以整体方式作用在引擎上，而函数工作在单独的处理程序实例中。在这类函数的一些示例中，包含用于处理注释和回滚的事务函数。</p>
+    <p>下面给出了一个来自EXAMPLE存储引擎的示例：</p>
+    <pre>handlerton example_hton= {
+&nbsp; &quot;EXAMPLE&quot;,
+&nbsp; SHOW_OPTION_YES,
+&nbsp; &quot;Example storage engine&quot;, 
+&nbsp;&nbsp;DB_TYPE_EXAMPLE_DB,
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Initialize */
+&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* slot */
+&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* savepoint size. */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* close_connection */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* savepoint */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* rollback to savepoint */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* release savepoint */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* commit */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* rollback */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* prepare */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* recover */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* commit_by_xid */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* rollback_by_xid */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* create_cursor_read_view */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* set_cursor_read_view */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* close_cursor_read_view */
+&nbsp; example_create_handler,&nbsp;&nbsp;&nbsp; /* Create a new handler */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Drop a database */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Panic call */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Release temporary latches */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Update Statistics */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Start Consistent Snapshot */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Flush logs */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Show status */
+&nbsp; NULL,&nbsp;&nbsp;&nbsp; /* Replication Report Sent Binlog */
+&nbsp; HTON_CAN_RECREATE
+};</pre>
+    <p>下面给出了来自handler.h的handlerton定义：</p>
+    <pre>typedef struct
+&nbsp; {
+&nbsp;&nbsp;&nbsp; const char *name;
+&nbsp;&nbsp;&nbsp; SHOW_COMP_OPTION state;
+&nbsp;&nbsp;&nbsp; const char *comment;
+&nbsp;&nbsp;&nbsp; enum db_type db_type;
+&nbsp;&nbsp;&nbsp; bool (*init)();
+&nbsp;&nbsp;&nbsp; uint slot;
+&nbsp;&nbsp;&nbsp; uint savepoint_offset;
+&nbsp;&nbsp;&nbsp; int&nbsp; (*close_connection)(THD *thd);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*savepoint_set)(THD *thd, void *sv);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*savepoint_rollback)(THD *thd, void *sv);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*savepoint_release)(THD *thd, void *sv);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*commit)(THD *thd, bool all);
+&nbsp;&nbsp; &nbsp;int&nbsp; (*rollback)(THD *thd, bool all);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*prepare)(THD *thd, bool all);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*recover)(XID *xid_list, uint len);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*commit_by_xid)(XID *xid);
+&nbsp;&nbsp;&nbsp; int&nbsp; (*rollback_by_xid)(XID *xid);
+&nbsp;&nbsp;&nbsp; void *(*create_cursor_read_view)();
+&nbsp;&nbsp;&nbsp; void (*set_cursor_read_view)(void *);
+&nbsp;&nbsp;&nbsp; void (*close_cursor_read_view)(void *);
+&nbsp;&nbsp;&nbsp; handler *(*create)(TABLE *table);
+&nbsp;&nbsp;&nbsp; void (*drop_database)(char* path);
+&nbsp;&nbsp;&nbsp; int (*panic)(enum ha_panic_function flag);
+&nbsp;&nbsp;&nbsp; int (*release_temporary_latches)(THD *thd);
+&nbsp;&nbsp;&nbsp; int (*update_statistics)();
+&nbsp;&nbsp;&nbsp; int (*start_consistent_snapshot)(THD *thd);
+&nbsp;&nbsp;&nbsp; bool (*flush_logs)();
+&nbsp;&nbsp;&nbsp; bool (*show_status)(THD *thd, stat_print_fn *print, enum ha_stat_type stat);
+&nbsp;&nbsp;&nbsp; int (*repl_report_sent_binlog)(THD *thd, char *log_file_name, my_off_t end_offset);
+&nbsp;&nbsp;&nbsp; uint32 flags;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;} handlerton;&nbsp; </pre>
+    <p>共有30个handlerton元素，但只有少量元素是强制性的（明确地讲是前4个元素和第21个元素）。</p>
+    <p>1.&nbsp;&nbsp;&nbsp;
+      存储引擎的名称。这是创建表时将使用的名称（CREATE 
+      TABLE ... ENGINE = <i>FOO</i>;）。</p>
+    <p> 2.&nbsp;&nbsp;&nbsp;
+      确定使用SHOW 
+      STORAGE ENGINES命令时是否列出存储引擎。</p>
+    <p> 3.&nbsp;&nbsp;&nbsp;
+      存储引擎注释，对使用SHOW 
+      STORAGE ENGINES命令时显示的存储引擎的描述。</p>
+    <p> 4.&nbsp;&nbsp;&nbsp;
+      在MySQL服务器内唯一识别存储引擎的整数。内置存储引擎使用的常数定义在handler.h文件中。作为创建常数的可选方法，可使用大于25的整数。</p>
+    <p> 5.&nbsp;&nbsp;&nbsp; 
+      指向存储引擎初始化程序的指针。仅当启动服务器时才调用该函数，以便在实例化处理程序之前，存储引擎类能执行必要的内务操作。</p>
+    <p>6.&nbsp;&nbsp;&nbsp;
+      插槽。保存每连接的信息时，每个存储引擎在thd中有自己的内存区域（实际上为指针）。它是作为thd-&gt;ha_data[<i>foo</i>_hton.slot]访问的。插槽编号在调用<i>foo</i>_init()后由MySQL初始化。</p>
+    <p>7.&nbsp;&nbsp;&nbsp;
+      保存点偏移。为了保存每个savepoint数据，为存储引擎提供了请求的大小（典型情况下为0）。</p>
+    <p>必须以静态方式初始化savepoint偏移，使其具有所有的内存大小，以便保存每个savepoint的信息。在<i>foo</i>_init之后，它被更改为savepoint存储区域的偏移，存储引擎不需要使用它。</p>
+    <p>8.&nbsp;&nbsp;&nbsp;
+      由事务性存储引擎使用，清理其存储段内分配的内存，和／或回滚任何未完成的事务。</p>
+    <p>9.&nbsp;&nbsp;&nbsp;
+      由事务性存储引擎选择性使用，创建savepoint（保存点），并将其保存到提供的内存中。</p>
+    <p>10.指向处理程序rollback_to_savepoint()函数的函数指针。它用于在事务期间返回savepoint。仅对支持保存点的存储引擎才会填充它。</p>
+    <p>11.指向处理程序release_savepoint()函数的函数指针。它用于在事务期间释放保存点的资源。仅对支持保存点的存储引擎才会填充它。 </p>
+    <p>12.指向处理程序commit()函数的函数指针。它用于提交事务。仅对支持事务的存储引擎才会填充它。 </p>
+    <p>13.指向处理程序rollback()函数的函数指针。它用于回滚交易。仅对支持事务的存储引擎才会填充它。 </p>
+    <p> 14.XA事务性存储引擎所需。为提交操作准备事务。将XID与事务关联起来。</p>
+    <p> 15.XA事务性存储引擎所需。恢复由XID标识的事务。 </p>
+    <p> 16.XA事务性存储引擎所需。提交由XID标识的事务。</p>
+    <p> 17.XA事务性存储引擎所需。回滚由XID标识的事务。</p>
+    <p>18.与服务器端光标一起使用，尚未实施。</p>
+    <p>19.与服务器端光标一起使用，尚未实施。 </p>
+    <p>20.与服务器端光标一起使用，尚未实施。</p>
+    <p>21.<em>MANDATORY</em>：构造并返回处理程序实例。</p>
+    <p>22.撤销方案时，如果存储引擎需要执行特殊步骤时使用（如在使用表空间的存储引擎中使用）。</p>
+    <p>23.清理在服务器关闭和崩溃时调用的函数。</p>
+    <p> 24.InnoDB特殊函数。</p>
+    <p>25.在启动SHOW 
+      STATUS时调用InnoDB特殊函数。</p>
+    <p>26.调用InnoDB特殊函数以开始连续读取。</p>
+    <p>27.调用它，指明应将日志刷新为可靠的存储。</p>
+    <p>28.在存储引擎上提供可被人员读取的状态信息。</p>
+    <p> 29.InnoDB特殊函数用于复制。</p>
+    <p> 30.Handlerton标志，通常与ALTER 
+      TABLE相关。可能的值定义于sql/handler.h文件中，并在此列出；</p>
+    <pre>31.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_NO_FLAGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+32.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_CLOSE_CURSORS_AT_COMMIT (1 &lt;&lt; 0)
+33.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_ALTER_NOT_SUPPORTED &nbsp;&nbsp;&nbsp;&nbsp;(1 &lt;&lt; 1)
+34.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_CAN_RECREATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1 &lt;&lt; 2)
+35.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_FLUSH_AFTER_RENAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1 &lt;&lt; 3)
+36.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #define HTON_NOT_USER_SELECTABLE&nbsp;&nbsp;&nbsp;&nbsp; (1 &lt;&lt; 4)</pre>
+    <p> HTON_ALTER_NOT_SUPPORTED由FEDERATED存储引擎使用，用以指明存储引擎不接受AFTER 
+      TABLE语句。</p>
+    <p> HTON_FLUSH_AFTER_RENAME指明，重命名表后 ，必须调用FLUSH 
+      LOGS。</p>
+    <p> HTON_NOT_USER_SELECTABLE指明存储引擎不能由用户选择，而是用作系统存储引擎，如用于二进制日志的伪存储引擎。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

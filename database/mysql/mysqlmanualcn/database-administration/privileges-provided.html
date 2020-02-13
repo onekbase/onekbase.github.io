@@ -1,0 +1,418 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.7.3.&nbsp;MySQL提供的权限</h1>
+
+          
+        
+      
+      
+      <p>账户权限信息被存储在mysql数据库的user、db、host、tables_priv、columns_priv和procs_priv表中。在MySQL启动时并在<a href="privilege-changes.html" title="5.7.7. When Privilege Changes Take Effect">5.7.7节，“权限更改何时生效”</a>所说的情况时，服务器将这些数据库表内容读入内存。</p>
+      <p>GRANT和REVOKE语句所用的涉及权限的名称显示在下表，还有在授权表中每个权限的表列名称和每个权限有关的上下文。关于每个权限的含义相关的详细信息参见<a href="adding-users.html" title="13.5.1.3. GRANT and REVOKE Syntax">13.5.1.3节，“GRANT和REVOKE语法”</a>。</p>
+      <table border="1" cellpadding="0" style="margin-left: -.4pt" id="table13">
+        <tr>
+          <td><p>权限</td>
+          <td><p>列</td>
+          <td><p> 上下文</td>
+        </tr>
+        <tr>
+          <td><p> CREATE</td>
+          <td><p> Create_priv</td>
+          <td><p>数据库、表或索引</td>
+        </tr>
+        <tr>
+          <td><p> DROP</td>
+          <td><p> Drop_priv</td>
+          <td><p>数据库或表</td>
+        </tr>
+        <tr>
+          <td><p> GRANT OPTION</td>
+          <td><p> Grant_priv</td>
+          <td><p>数据库、表或保存的程序</td>
+        </tr>
+        <tr>
+          <td><p> REFERENCES</td>
+          <td><p> References_priv</td>
+          <td><p>数据库或表</td>
+        </tr>
+        <tr>
+          <td><p> ALTER</td>
+          <td><p> Alter_priv</td>
+          <td><p>表</td>
+        </tr>
+        <tr>
+          <td><p> DELETE</td>
+          <td><p> Delete_priv</td>
+          <td><p>表</td>
+        </tr>
+        <tr>
+          <td><p> INDEX</td>
+          <td><p> Index_priv</td>
+          <td valign="top"><p>表</td>
+        </tr>
+        <tr>
+          <td><p> INSERT</td>
+          <td><p> Insert_priv</td>
+          <td valign="top"><p>表</td>
+        </tr>
+        <tr>
+          <td><p> SELECT</td>
+          <td><p> Select_priv</td>
+          <td valign="top"><p>表</td>
+        </tr>
+        <tr>
+          <td><p> UPDATE</td>
+          <td><p> Update_priv</td>
+          <td valign="top"><p>表</td>
+        </tr>
+        <tr>
+          <td><p> CREATE VIEW</td>
+          <td><p> Create_view_priv</td>
+          <td><p>视图</td>
+        </tr>
+        <tr>
+          <td><p> SHOW VIEW</td>
+          <td><p> Show_view_priv</td>
+          <td><p>视图</td>
+        </tr>
+        <tr>
+          <td><p> ALTER ROUTINE</td>
+          <td><p> Alter_routine_priv</td>
+          <td valign="top"><p>保存的程序</td>
+        </tr>
+        <tr>
+          <td><p> CREATE ROUTINE</td>
+          <td><p> Create_routine_priv</td>
+          <td valign="top"><p>保存的程序</td>
+        </tr>
+        <tr>
+          <td><p> EXECUTE</td>
+          <td><p> Execute_priv</td>
+          <td valign="top"><p>保存的程序</td>
+        </tr>
+        <tr>
+          <td><p> FILE</td>
+          <td><p> File_priv</td>
+          <td><p>服务器主机上的文件访问</td>
+        </tr>
+        <tr>
+          <td><p> CREATE TEMPORARY TABLES</td>
+          <td><p> Create_tmp_table_priv</td>
+          <td><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> LOCK TABLES</td>
+          <td><p> Lock_tables_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> CREATE USER</td>
+          <td><p> Create_user_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> PROCESS</td>
+          <td><p> Process_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> RELOAD</td>
+          <td><p> Reload_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> REPLICATION CLIENT</td>
+          <td><p> Repl_client_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> REPLICATION SLAVE</td>
+          <td><p> Repl_slave_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> SHOW DATABASES</td>
+          <td><p> Show_db_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> SHUTDOWN</td>
+          <td><p> Shutdown_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+        <tr>
+          <td><p> SUPER</td>
+          <td><p> Super_priv</td>
+          <td valign="top"><p>服务器管理</td>
+        </tr>
+      </table>
+      <p>当从早期的没有CREATE VIEW、SHOW 
+        VIEW、CREATE 
+        ROUTINE、ALTER 
+        ROUTINE和EXECUTE权限的版本的MySQL中升级时，要想使用这些权限，你必须使用MySQL分发提供的mysql_fix_privilege_tables脚本升级
+        授权表。参见<a href="privileges-provided.html" title="2.10.2. Upgrading the Grant Tables">2.10.2节，“升级授权表”</a>。</p>
+      <p>如果启用了二进制记录，要想创建或修改保存的程序，你还需要SUPER权限，详细描述见<a href="server-system-variables.html" title="20.4. Binary Logging of Stored Routines and Triggers">20.4节，“存储子程序和触发程序的二进制日志功能”</a>。</p>
+      <p>通过CREATE和DROP权限，你可以创建新数据库和表，或删除(移掉)已有数据库和表。<em>如果你将</em><i>mysql</i><em>数据库中的</em><i>DROP</i><em>权限授予某用户，用户可以删掉MySQL访问权限保存的数据库。</em></p>
+      <p> SELECT、INSERT、UPDATE和DELETE权限允许你在一个数据库现有的表上实施操作。 </p>
+      <p>SELECT语句只有在他们真正从一个表中检索行时才需要SELECT权限。一些SELECT语句不访问表，甚至没有任何到服务器上的数据库里的存取任何东西的许可。例如，你可使用mysql客户端作为一个简单的计算器来评估未引用表的表达式：</p>
+      <pre>mysql&gt; SELECT 1+1;
+mysql&gt; SELECT PI()*2;</pre>
+      <p>INDEX权限允许你创建或删除索引。INDEX适用已有表。如果你具有某个表的CREATE权限，你可以在CREATE 
+        TABLE语句中包括索引定义。</p>
+      <p>通过ALTER权限，你可以使用ALTER 
+        TABLE来更改表的结构和重新命名表。</p>
+      <p>需要CREATE ROUTINE权限来创建保存的程序（函数和程序），ALTER 
+        ROUTINE权限来更改和删除保存的程序，EXECUTE来执行保存的程序。</p>
+      <p>GRANT权限允许你把你自己拥有的那些权限授给其他的用户。可以用于数据库、表和保存的程序。</p>
+      <p>FILE权限给予你用LOAD 
+        DATA INFILE和SELECT 
+        ... INTO OUTFILE语句读和写服务器上的文件，任何被授予FILE权限的用户都能读或写MySQL服务器能读或写的任何文件。(说明用户可以读任何数据库目录下的文件，因为服务器可以访问这些文件）。
+        FILE权限允许用户在MySQL服务器具有写权限的目录下创建新文件。不能覆盖已有文件。</p>
+      <p>其余的权限用于管理性操作，它使用mysqladmin程序或SQL语句实施。下表显示每个管理性权限允许你执行的mysqladmin命令：</p>
+      <table border="1" cellpadding="0" style="margin-left: -.4pt" id="table14">
+        <tr>
+          <td width="85" style="width:63.75pt;padding:.75pt .75pt .75pt .75pt"><p>权限</td>
+          <td width="886" style="width:664.2pt;padding:.75pt .75pt .75pt .75pt"><p> 权限拥有者允许执行的命令</td>
+        </tr>
+        <tr>
+          <td width="85" style="width:63.75pt;padding:.75pt .75pt .75pt .75pt"><p> RELOAD</td>
+          <td width="886" style="width:664.2pt;padding:.75pt .75pt .75pt .75pt"><p> flush-hosts,
+              
+              flush-logs, 
+              
+              flush-privileges, 
+              
+              flush-status, 
+              
+              flush-tables, 
+              
+              flush-threads, 
+              refresh,
+              
+              reload</td>
+        </tr>
+        <tr>
+          <td width="85" style="width:63.75pt;padding:.75pt .75pt .75pt .75pt"><p> SHUTDOWN</td>
+          <td width="886" style="width:664.2pt;padding:.75pt .75pt .75pt .75pt"><p> shutdown</td>
+        </tr>
+        <tr>
+          <td width="85" style="width:63.75pt;padding:.75pt .75pt .75pt .75pt"><p> PROCESS</td>
+          <td width="886" style="width:664.2pt;padding:.75pt .75pt .75pt .75pt"><p> processlist</td>
+        </tr>
+        <tr>
+          <td width="85" style="width:63.75pt;padding:.75pt .75pt .75pt .75pt"><p> SUPER</td>
+          <td width="886" style="width:664.2pt;padding:.75pt .75pt .75pt .75pt"><p> kill</td>
+        </tr>
+      </table>
+      <p>reload命令告诉服务器将授权表重新读入内存。flush-privileges是reload的同义词，refresh命令清空所有表并打开并关闭记录文件，其它flush-<i>xxx</i>命令执行类似refresh的功能，但是范围更有限，并且在某些情况下可能更好用。例如，如果你只是想清空记录文件，flush-logs比refresh是更好的选择。</p>
+      <p>shutdown命令关掉服务器。只能从mysqladmin发出命令。没有相应的SQL语句。</p>
+      <p> processlist命令显示在服务器内执行的线程的信息（即其它账户相关的客户端执行的语句）。kill命令杀死服务器线程。你总是能显示或杀死你自己的线程，但是你需要PROCESS权限来显示或杀死其他用户和SUPER权限启动的线程。参见<a href="server-shutdown.html" title="13.5.5.3. KILL Syntax">13.5.5.3节，“KILL语法”</a>。
+    
+    
+      
+        
+           拥有CREATE TEMPORARY 
+            TABLES权限便可以使用CREATE 
+            TABLE语句中的关键字TEMPORARY。
+            <p> 拥有LOCK TABLES权限便可以直接使用LOCK 
+              TABLES语句来锁定你拥有SELECT权限的表。包括使用写锁定，可以防止他人读锁定的表。</p>
+            <p>拥有REPLICATION 
+              CLIENT权限便可以使用SHOW 
+              MASTER STATUS和SHOW 
+              SLAVE STATUS。</p>
+            <p>REPLICATION SLAVE权限应授予从服务器所使用的将当前服务器连接为主服务器的账户。没有这个权限，从服务器不能发出对主服务器上的数据库所发出的更新请求。</p>
+            <p>拥有SHOW DATABASES权限便允许账户使用SHOW 
+              DATABASE语句来查看数据库名。没有该权限的账户只能看到他们具有部分权限的数据库， 如果数据库用--skip-show-database选项启动，则根本不能使用这些语句。请注意全局权限指数据库的权限。</p>
+            <p>总的说来，只授予权限给需要他们的那些用户是好主意，但是你应该在授予FILE和管理权限时试验特定的警告：</p>
+            <ul type="disc">
+              <li> FILE权限可以被滥用于将服务器主机上MySQL能读取的任何文件读入到数据库表中。包括任何人可读的文件和服务器数据目录中的文件。可以使用SELECT访问数据库表，然后将其内容传输到客户端上。</li>
+              <li> GRANT权限允许用户将他们的权限给其他用户。有不同的权限并有GRANT权限的2个用户可以合并权限。</li>
+              <li> ALTER权限可以用于通过重新命名表来推翻权限系统。</li>
+              <li> SHUTDOWN权限通过终止服务器可以被滥用完全拒绝为其他用户服务。</li>
+              <li> PROCESS权限能被用来察看当前执行的查询的明文文本，包括设定或改变密码的查询。</li>
+              <li> SUPER权限能用来终止其它用户或更改服务器的操作方式。</li>
+              <li>授给mysql数据库本身的权限能用来改变密码和其他访问权限信息。密码被加密存储，所以恶意的用户不能简单地读取他们以知道明文密码。然而，具有user表Password列写访问权限的用户可以更改账户的密码，并可以用该账户连接MySQL服务器。</li>
+            </ul>
+            <p>有一些事情你不能用MySQL权限系统做到：</p>
+            <ul type="disc">
+              <li>你不能明显地指定某个给定的用户应该被拒绝访问。即，你不能明显地匹配用户然后拒绝连接。</li>
+              <li>你不能指定用户有权创建立或删除数据库中的表，但不能创建或删除数据库本身。</li>
+            </ul>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

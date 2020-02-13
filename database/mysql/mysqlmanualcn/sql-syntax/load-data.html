@@ -1,0 +1,463 @@
+
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.2.5. LOAD DATA INFILE语法</h1>
+
+          
+        
+      
+      
+      <pre>LOAD DATA [LOW_PRIORITY | CONCURRENT] [LOCAL] INFILE &#39;<i>file_name</i>.txt&#39;
+&nbsp;&nbsp;&nbsp; [REPLACE | IGNORE]
+&nbsp;&nbsp;&nbsp; INTO TABLE <i>tbl_name</i>
+&nbsp;&nbsp;&nbsp; [FIELDS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [TERMINATED BY &#39;<i>string</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[OPTIONALLY] ENCLOSED BY &#39;<i>char</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ESCAPED BY &#39;<i>char</i>&#39; ]
+&nbsp;&nbsp;&nbsp; ]
+&nbsp;&nbsp;&nbsp; [LINES
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [STARTING BY &#39;<i>string</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [TERMINATED BY &#39;<i>string</i>&#39;]
+&nbsp;&nbsp;&nbsp; ]
+&nbsp;&nbsp;&nbsp; [IGNORE <i>number</i> LINES]
+&nbsp;&nbsp;&nbsp; [(<i>col_name_or_user_var</i>,...)]
+&nbsp;&nbsp;&nbsp; [SET <i>col_name</i> = <i>expr</i>,...)]</pre>
+      <p>LOAD DATA INFILE语句用于高速地从一个文本文件中读取行，并装入一个表中。文件名称必须为一个文字字符串。</p>
+      <p>要了解有关INSERT和LOAD DATA 
+        INFILE的效率的对比和有关LOAD DATA INFILE加速的更多信息，请参见<a href="" title="7.2.16. Speed of INSERT Statements">7.2.16节，“INSERT语句的速度”</a>。</p>
+      <p>由character_set_database系统变量指示的字符集被用于解释文件中的信息。SET 
+        NAMES和character_set_client的设置不会影响对输入的解释。</p>
+      <p>注意，目前不能载入UCS2数据文件。</p>
+      <p>您也可以通过使用mysqlimport应用程序载入数据文件；通过向服务器发送一个LOAD 
+        DATA INFILE语句实现此功能。--local选项用于使mysqlimport从客户主机中读取数据文件。如果客户端和服务器支持压缩协议，则您可以指定—compress选项提高在慢速网络中的性能。请参见<a href="" title="8.10. mysqlimport — A Data Import Program">8.10节，“mysqlimport：数据导入程序</a>。</p>
+      <p>如果您使用LOW_PRIORITY，则LOAD 
+        DATA语句的执行被延迟，直到没有其它的客户端从表中读取为止。</p>
+      <p>如果一个MyISAM表满足同时插入的条件（即该表在中间有空闲块），并且您对这个MyISAM表指定了CONCURRENT，则当LOAD 
+        DATA正在执行时，其它线程会从表中重新获取数据。即使没有其它线程在同时使用本表格，使用本选项也会略微影响LOAD 
+        DATA的性能。</p>
+      <p>如果指定了LOCAL，则被认为与连接的客户端有关：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果指定了LOCAL，则文件会被客户主机上的客户端读取，并被发送到服务器。文件会被给予一个完整的路径名称，以指定确切的位置。如果给定的是一个相对的路径名称，则此名称会被理解为相对于启动客户端时所在的目录。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果LOCAL没有被指定，则文件必须位于服务器主机上，并且被服务器直接读取。</p>
+      <p>当在服务器主机上为文件定位时，服务器使用以下规则：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果给定了一个绝对的路径名称，则服务器使用此路径名称。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果给定了带有一个或多个引导组件的相对路径名称，则服务器会搜索相对于服务器数据目录的文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果给定了一个不带引导组件的文件名称，则服务器会在默认数据库的数据库目录中寻找文件。</p>
+      <p>注意，这些规则意味着名为./myfile.txt的文件会从服务器数据目录中被读取，而名为myfile.txt的同样的文件会从默认数据库的数据库目录中读取。例如，下面的LOAD 
+        DATA语句会从db1数据库目录中读取文件data.txt，因为db1是当前数据库。即使语句明确把文件载入到db2数据库中的表里，也会从db1目录中读取。</p>
+      <pre>mysql&gt; USE db1;
+mysql&gt; LOAD DATA INFILE &#39;data.txt&#39; INTO TABLE db2.my_table;</pre>
+      <p>注意，使用正斜杠指定Windows路径名称，而不是使用反斜杠。如果您使用反斜杠，您必须使用两个。</p>
+      <p>出于安全原因，当读取位于服务器中的文本文件时，文件必须位于数据库目录中，或者是全体可读的。另外，要对服务器文件使用LOAD 
+        DATA INFILE，您必须拥有FILE权限。</p>
+      <p>见<a href="" title="5.7.3. Privileges Provided by MySQL">5.7.3节，“MySQL提供的权限”</a>。</p>
+      <p>与让服务器直接读取文件相比，使用LOCAL速度略慢，这是因为文件的内容必须通过客户端发送到服务器上。不过，您不需要FILE权限来载入本地文件。</p>
+      <p>只有当您的服务器和您的客户端都许可时，LOCAL才可运行。例如，如果使用—local-infile=0启动mysqld，则LOCAL不运行。请参见<a href="" title="5.6.4. Security Issues with LOAD DATA LOCAL">5.6.4节，“LOAD DATA LOCAL安全问题”</a>。</p>
+      <p>如果您需要LOAD DATA来从一个管道中读取，您可以使用以下方法（此处我们把/目录清单载入一个表格）：</p>
+      <pre>mkfifo /mysql/db/x/x
+chmod 666 /mysql/db/x/x
+find / -ls &gt; /mysql/db/x/x
+mysql -e &quot;LOAD DATA INFILE &#39;x&#39; INTO TABLE x&quot; x</pre>
+      <p>有些输入记录把原有的记录复制到唯一关键字值上。REPLACE和IGNORE关键字用于控制这些输入记录的操作。</p>
+      <p>如果您指定了REPLACE，则输入行会替换原有行（换句话说，与原有行一样，对一个主索引或唯一索引具有相同值的行）。请参见<a href="replace.html" title="13.2.6. REPLACE Syntax">13.2.6节，“REPLACE语法”</a>。</p>
+      <p>如果您指定IGNORE，则把原有行复制到唯一关键字值的输入行被跳过。如果您这两个选项都不指定，则运行情况根据LOCAL关键词是否被指定而定。不使用LOCAL时，当出现重复关键字值时，会发生错误，并且剩下的文本文件被忽略。使用LOCAL时，默认的运行情况和IGNORE被指定时的情况相同；这是因为在运行中间，服务器没有办法中止文件的传输。</p>
+      <p>如果您希望在载入运行过程中忽略外键的限制，您可以在执行LOAD DATA前发送一个SET 
+        FOREIGN_KEY_CHECKS=0语句。</p>
+      <p>如果您对一个空的MyISAM表使用LOAD DATA 
+        INFILE，则所有的非唯一索引会被创建在一个独立批中（对于REPAIR TABLE）。当您有许多索引时，这通常会使LOAD 
+        DATA INFILE大大加快。通常，LOAD DATA INFILE的速度会非常快，但是在某些极端情况下，您可以在把文件载入到表中之前使用ALTER 
+        TABLE...DISABLE KEYS关闭LOAD DATA INFILE，或者在载入文件之后使用ALTER 
+        TABLE...ENABLE KEYS再次创建索引，使创建索引的速度更快。请参见<a href="" title="7.2.16. Speed of INSERT Statements">7.2.16节，“INSERT语句的速度”</a>。</p>
+      <p>LOAD DATA INFILE是SELECT...INTO 
+        OUTFILE的补语。（见<a href="select.html" title="13.2.7. SELECT Syntax">13.2.7节，“SELECT语法”</a>。）要从一个表中把数据写入一个文件中，应使用SELECT...INTO 
+        OUTFILE。要读取文件，放回到表中，应使用LOAD DATA INFILE。FIELDS和LINES子句的语法对于两个语句是一样的。两个子句都是自选的，但是如果两个都被指定了，FIELDS必须位于LINES的前面。</p>
+      <p>如果您指定了一个FIELDS子句，则每个亚子句（TERMINATED 
+        BY, [OPTIONALLY] ENCLOSED BY和ESCAPED BY）也是自选的。不过，您必须指定其中至少一个。</p>
+      <p>如果您不指定FIELDS子句，则默认值为假设您写下如下语句时的值：</p>
+      <pre>FIELDS TERMINATED BY &#39;\t&#39; ENCLOSED BY &#39;&#39; ESCAPED BY &#39;\\&#39;</pre>
+      <p>如果您不指定LINES子句，则默认值为假设您写下如下语句时的值：</p>
+      <pre>LINES TERMINATED BY &#39;\n&#39; STARTING BY &#39;&#39;</pre>
+      <p>换句话说，当读取输入值时，默认值会使LOAD DATA INFILE按如下方式运行：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在新行处寻找行的边界。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        不会跳过任何行前缀。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在制表符处把行分解为字段。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        不希望字段被包含在任何引号字符之中。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        出现制表符、新行、或在‘\’前有‘\’时，理解为作为字段值一部分的文字字符。</p>
+      <p>相反的，当编写输出值时，默认值会使SELECT...INTO OUTFILE按如下方式运行：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在字段之间写入制表符。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        不把字段包含在任何引号字符中。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当字段值中出现制表符、新行或‘\’时，使用‘\’进行转义。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在行的末端写入新行。</p>
+      <p>注意，要写入FIELDS ESCAPED BY ‘\\’，您必须为待读取的值指定两个反斜杠，作为一个单反斜杠使用。</p>
+      <p>注释：如果您已经在Windows系统中生成了文本文件，您可能必须使用LINES 
+        TERMINATED BY ‘\r\n’来正确地读取文件，因为Windows程序通常使用两个字符作为一个行终止符。部分程序，比如WordPad，当编写文件时，可能会使用\r作为行终止符。要读取这样的文件，应使用LINES 
+        TERMINATED BY ‘\r’。</p>
+      <p>如果所有您希望读入的行都含有一个您希望忽略的共用前缀，则您可以使用&#39;<i>prefix_string</i>&#39;来跳过前缀（和前缀前的字符）。如果某行不包括前缀，则整个行被跳过。注释：<i>prefix_string</i>会出现在一行的中间。</p>
+      <p>示例： </p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;/tmp/test.txt&#39;
+&nbsp;&nbsp;&nbsp; -&gt; INTO TABLE test LINES STARTING BY &quot;xxx&quot;;</pre>
+      <p>使用此语句，您可以读入包含有如下内容的文件：</p>
+      <pre>xxx&quot;row&quot;,1
+something xxx&quot;row&quot;,2</pre>
+      <p>并只得到数据(&quot;row&quot;,1)和(&quot;row&quot;,2)。</p>
+      <p>IGNORE <i>number</i> LINES选项可以被用于在文件的开始处忽略行。例如，您可以使用IGNORE 
+        1 LINES来跳过一个包含列名称的起始标题行：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;/tmp/test.txt&#39;
+&nbsp;&nbsp;&nbsp; -&gt; INTO TABLE test IGNORE 1 LINES;</pre>
+      <p>当您联合使用SELECT...INTO OUTFILE和LOAD 
+        DATA INFILE来从一个数据库中把数据写入一个文件中，然后再读取文件，返回到数据库中时，用于两个语句的field-和line-handling选项必须匹配。否则，LOAD 
+        DATA INFILE不会正确地理解文件的内容。假设您使用SELECT...INTO 
+        OUTFILE来编写一个的文件，字段由逗号分隔：</p>
+      <pre>mysql&gt; SELECT * INTO OUTFILE &#39;data.txt&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;,&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM table2;</pre>
+      <p>要读取由逗号分隔的文件并返回，则正确的语句应该是：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;data.txt&#39; INTO TABLE table2
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;,&#39;;</pre>
+      <p>如果您尝试使用以下所示的语句读入文件，则不会运行，因为该语句命令LOAD DATA INFILE寻找位于字段之间的制表符：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;data.txt&#39; INTO TABLE table2
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;\t&#39;;</pre>
+      <p>结果很可能是，每个输入行被理解为一个单一字段。</p>
+      <p>LOAD DATA INFILE也可以被用于读取从外源中获取的文件。例如，一个dBASE格式的文件具有以逗号分隔并且包含在双引号中的字段。如果文件中的各行以新行为结尾，则此处所示的语句描述了您可以用于载入文件的field-和line-handling选项：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;data.txt&#39; INTO TABLE <i>tbl_name</i>
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;,&#39; ENCLOSED BY &#39;&quot;&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LINES TERMINATED BY &#39;\n&#39;;</pre>
+      <p>所有field-或line-handling选项都可以指定一个空字符串(&#39;&#39;)。如果字符串不是空的，则FIELDS 
+        [OPTIONALLY] ENCLOSED BY和FIELDS ESCAPED BY值必须为单一字符。FIELDS 
+        TERMINATED BY, LINES STARTING BY和LINES 
+        TERMINATED BY值可以超过一个字符。例如，要编写由回车/换行成对字符作为结尾的行，或读取包含这类行的文件，则应指定一个LINES 
+        TERMINATED BY ‘\r\n’子句。</p>
+      <p>如果jokes被由%%组成的行分隔，要读取包含jokes的文件，您可以这么操作：</p>
+      <pre>mysql&gt; CREATE TABLE jokes
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; (a INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; joke TEXT NOT NULL);
+mysql&gt; LOAD DATA INFILE &#39;/tmp/jokes.txt&#39; INTO TABLE jokes
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; LINES TERMINATED BY &#39;\n%%\n&#39; (joke);</pre>
+      <p>FIELDS [OPTIONALLY] ENCLOSED BY用于控制字段的引号。对于（SELECT...INTO 
+        OUTFILE），如果您忽略了词语OPTIONALLY，则所有的字段都被包含在ENCLOSED 
+        BY字符串中。此处展示了此类输出的一个示例（使用逗号作为字段分隔符）：</p>
+      <pre>&quot;1&quot;,&quot;a string&quot;,&quot;100.20&quot;
+&quot;2&quot;,&quot;a string containing a , comma&quot;,&quot;102.20&quot;
+&quot;3&quot;,&quot;a string containing a \&quot; quote&quot;,&quot;102.20&quot;
+&quot;4&quot;,&quot;a string containing a \&quot;, quote and comma&quot;,&quot;102.20&quot;</pre>
+      <p>如果您指定了OPTINALLY，则ENCLOSED 
+        BY字符只被用于包含具有字符串数据类型（比如CHAR, BINARY, TEXT或ENUM）的列中的值：</p>
+      <pre>1,&quot;a string&quot;,100.20
+2,&quot;a string containing a , comma&quot;,102.20
+3,&quot;a string containing a \&quot; quote&quot;,102.20
+4,&quot;a string containing a \&quot;, quote and comma&quot;,102.20</pre>
+      <p>注意，如果在字段值内出现ENCLOSED BY字符，则通过使用ESCAPED 
+        BY字符作为前缀，对ENCLOSED BY字符进行转义。另外，要注意，如果您指定了一个空的ESCAPED 
+        BY值，则可能会生成不能被LOAD DATA INFILE正确读取的输出值。例如，如果转义符为空字符，则刚显示的先前输出值应显示如下。请观察，第四行中的第二个字段在引号后面包含一个逗号，该引号（错误地）显示出来，作为字段的结尾：</p>
+      <pre>1,&quot;a string&quot;,100.20
+2,&quot;a string containing a , comma&quot;,102.20
+3,&quot;a string containing a &quot; quote&quot;,102.20
+4,&quot;a string containing a &quot;, quote and comma&quot;,102.20</pre>
+      <p>对于输入值，ENCLOSED BY字符被从字段字的末尾剥离。（不论OPTIONALLY是否被指定都会剥离；OPTIONALLY对输入值的解释没有影响。）如果ENCLOSED 
+        BY字符前面带有ESCAPED BY字符，则被理解为当前字段值的一部分。</p>
+      <p>如果字段以ENCLOSED BY字符为开始，当出现这类字符时，只有后面接着字段或行TERMINATED 
+        BY序列时，这类字符被认为是一个字段值的结尾。为了避免意思不明确，当在一个字段值中出现ENCLOSED 
+        BY字符时，此字符可以重复书写，并被理解为单一的字符。例如，如果指定了ENCLOSED 
+        BY &#39;&quot;&#39;，则按照以下方法操作引号：</p>
+      <pre>&quot;The &quot;&quot;BIG&quot;&quot; boss&quot;&nbsp; -&gt; The &quot;BIG&quot; boss
+The &quot;BIG&quot; boss&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; The &quot;BIG&quot; boss
+The &quot;&quot;BIG&quot;&quot; boss&nbsp;&nbsp;&nbsp; -&gt; The &quot;&quot;BIG&quot;&quot; boss</pre>
+      <p>FIELDS ESCAPED BY用于控制如何写入或读取特殊字符。如果FIELDS 
+        ESCAPED BY字符不是空字符，则可以在输出中用于对以下字符加前缀：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FIELDS ESCAPED BY字符</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FIELDS [OPTIONALLY] ENCLOSED BY字符</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        FIELDS TERMINATED BY和LINES 
+        TERMINATED BY值的第一个字符</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ASCII 0（在转义符之后编写的字符实际上是ASCII‘0’，而不是一个值为0的字节）</p>
+      <p>如果FIELDS ESCAPED BY字符为空字符，则没有字符被转义，并且NULL被作为NULL输出，而不是\N。去指定一个空的转义符不是一个好办法，特别是如果数据的字段值包含任何刚给定的清单中的字符时，更不能这么做。</p>
+      <p>对于输入值，如果FIELDS ESCAPED BY字符不是空字符，则出现这种字符时会被剥离，然后以下字符被作为字段值的一部分。例外情况是，被转义的‘0’或‘N’（例如，\0或\N，此时转义符为‘\’）。这些序列被理解为ASCII 
+        NUL（一个零值字节）和NULL。用于NULL处理的规则在本节的后部进行说明。</p>
+      <p>要了解有关‘\’-escape语法的更多信息，请参见<a href="" title="9.1. Literal Values">9.1节，“文字值”</a>。</p>
+      <p>在特定情况下，field-和line-handling选项相互影响：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果LINES TERMINATED BY是空字符串，并且FIELDS 
+        TERMINATED BY不是空字符串，则各行以FIELDS TERMINATED BY作为结尾。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果FIELDS TERMINATED BY和FIELDS 
+        ENCLOSED BY值均为空值(&#39;&#39;)，则使用固定行（无分隔）格式。使用固定行格式时，在字段之间不使用分隔符（但是您仍然可以有行终止符）。列值使用列的显示宽度进行写入和读取。例如，如果某列被定义为INT(7)，则使用7字符字段写入列值。输出时，通过读取7个字符获取列值。</p>
+      <p>LINES TERMINATED BY仍然用于分隔行。如果某行不包含所有字段，则其余的各列被设置到默认值。如果您没有行终止符，您应该把终止符设置为&#39;&#39;。在此情况下，文本文件必须包含每行的所有字段。</p>
+      <p>固定行格式也会影响NULL值的操作，这将在以后进行介绍。注意，如果您正在使用一个多字节字符集，则固定规格格式不会运行。</p>
+      <p>根据正在使用中的FIELDS和LINES选项的不同，NULL值的操作有所变化：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于默认的FIELDS和LINES值，NULL被作为\N的字段值编写，用于输出；\N字段值被作为NULL读取，用于输入（假设ESCAPED 
+        BY字符为‘\’）。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果FIELDS ENCLOSED BY不是空值，则包含以文字词语NULL为值的字段被作为NULL值读取。这与被FIELDS 
+        ENCLOSED BY字符包围的词语NULL不同。该词语被作为字符串&#39;NULL&#39;读取。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果FIELDS ESCAPED BY是空值，则NULL被作为词语NULL写入。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        采用固定行格式时（当FIELDS TERMINATED BY和FIELDS 
+        ENCLOSED BY均为空值时采用），NULL被作为一个空字符串写入。注意，这会导致在被写入文件时，表中的NULL值和空字符串均无法辨别，这是因为两者都被作为空字符串写入。如果您需要在读取文件并返回时能够分辨两者，则您不应使用固定行格式。</p>
+      <p>LOAD DATA INFILE不支持有些情况：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        固定规格行（FIELDS TERMINATED BY和FIELDS 
+        ENCLOSED BY均为空值）和BLOB或TEXT列。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您指定了一个分隔符，并且该分隔符与其它的前缀一样，则LOAD DATA 
+        INFILE不能正确地理解输入值。例如，下面的FIELDS子句会导致问题：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIELDS TERMINATED BY &#39;&quot;&#39; ENCLOSED BY &#39;&quot;&#39;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果FIELDS ESCAPED BY为空值，则包含FIELDS 
+        ENCLOSED BY或LINES TERMINATED BY的字段值后面再接FIELDS 
+        TERMINATED BY值会导致LOAD DATA INFILE过早地停止读取一个字段或行。出现这种情况的原因是LOAD 
+        DATA INFILE不能正确地决定字段或行值在哪里结束。</p>
+      <p>以下的例子载入了persondata表中的所有列：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;persondata.txt&#39; INTO TABLE persondata;</pre>
+      <p>默认情况下，如果在LOAD DATA INFILE语句的末尾处没有设列清单时，则输入行预计会包含一个字段，用于表中的每个列。如果您只想载入一个表的部分列，则应指定一个列清单：</p>
+      <pre>mysql&gt; LOAD DATA INFILE &#39;persondata.txt&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INTO TABLE persondata (col1,col2,...);</pre>
+      <p>如果输入文件中各字段的顺序与表中各列的顺序不同，您也必须指定一个列清单。否则，MySQL不能把输入字段和表中的列匹配起来。</p>
+      <p>列清单可以包含列名称或用户变量。支持SET子句。这使您可以把输入值赋予用户变量，然后在把结果赋予列之前，对这些值进行变换。</p>
+      <p>SET子句中的用户变量可以采用多种方式使用。以下例子使用数据文件中的第一列，直接用于t1.column1的值。在用户变量被用于t2.column2值之前，把第二列赋予用户变量。该变量从属于一个分割运行。</p>
+      <pre>LOAD DATA INFILE &#39;file.txt&#39;
+&nbsp; INTO TABLE t1
+&nbsp; (column1, @var1)
+&nbsp; SET column2 = @var1/100;</pre>
+      <p>SET子句可以被用于提供不是来源于输入文件的值。以下语句把column3设置为当前的日期和时间：</p>
+      <pre>LOAD DATA INFILE &#39;file.txt&#39;
+&nbsp; INTO TABLE t1
+&nbsp; (column1, column2)
+&nbsp; SET column3 = CURRENT_TIMESTAMP;</pre>
+      <p>您也可以通过把输入值赋予一个用户变量，同时不把变量赋予表中的列，来丢弃此输入值：</p>
+      <pre>LOAD DATA INFILE &#39;file.txt&#39;
+&nbsp; INTO TABLE t1
+&nbsp; (column1, @dummy, column2, @dummy, column3);</pre>
+      <p>列/变量清单和SET子句的使用受到以下限定：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在SET子句中的赋值应只含有位于赋值操作符的左侧的列名称。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以在SET赋值的右侧使用子查询。如果子查询可以返回一个值，并且此值将被赋予到一个列中，则此子查询只能是标量子查询。另外，您不能使用子查询从一个正在被载入的表中选择。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于于列/变量清单或SET子句，被IGNORE子句忽略的行不被处理。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当载入采用固定行格式的数据时，不能使用用户变量，因为用户变量没有显示宽度。</p>
+      <p>当处理一个输入行时，LOAD DATA会依据列/变量清单和SET子句，把行拆分成字段，并使用值。然后，得到的行被插入表中。如果有用于表的BEFORE 
+        INSERT或AFTER INSERT触发器，则在插入行之前和插入行之后分别启动触发器。</p>
+      <p>如果一个输入行含有过多的字段，则多余的字段被忽略，并且警告的数量增加。</p>
+      <p>如果一个输入行含有的字段过少，则输入字段缺失的表中的列被设置为默认值。默认值赋值在<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>中进行了说明。</p>
+      <p>如果字段值缺失，则对一个空字段值会被按不同方式理解：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于字符串类型，列被设置为空字符串。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于数字类型，列被设置为0。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于日期和时间类型，列被设置为该类型相应的“zero”。请参见<a href="" title="11.3. Date and Time Types">11.3节，“日期和时间类型”</a>。</p>
+      <p>如果您明确地把一个空字符串赋予一个INSERT或UPDATE语句中的字符串类型、数字类型或日期或时间类型，则产生的这些值相同。</p>
+      <p>只有在两种情况下TIMESTAMP列被设置为当前日期和时间。一种情况时当列有一个NULL值（也就是\N）时；另一种情况是（仅对于第一个TIMESTAMP列），当一个字段清单被指定时，TIMESTAMP列会从字段清单中被略去。</p>
+      <p>LOAD DATA INFILE把所有的输入值当作字符串，所以您不能按照使用INSERT语句的方式使用ENUM或SET列的数字值。所有的ENUM和SET值必须被指定为字符串。</p>
+      <p>当LOAD DATA INFILE语句结束时，会按以下格式返回一个信息字符串： </p>
+      <pre>Records: 1&nbsp; Deleted: 0&nbsp; Skipped: 0&nbsp; Warnings: 0</pre>
+      <p>如果您正在使用C API，您可以通过调用mysql_info()函数获取有关语句的信息。请参见<a href="load-data.html" title="25.2.3.34. mysql_info()">25.2.3.34节，“mysql_info()”</a>。</p>
+      <p>当值通过INSERT语句被插入时或出现相同情况时，会发生警告（见<a href="insert.html" title="13.2.4. INSERT Syntax">13.2.4节，“INSERT语法”</a>）。例外情况是，当输入行中字段过多或过少时，LOAD 
+        DATA INFILE也生成警告。这些警告并不存储；警告的数量只用于指示运行是否良好。</p>
+      <p>您可以使用SHOW WARNINGS来得到第一批max_error_count警告的清单，作为有关运行错误的信息。请参见<a href="show-warnings.html" title="13.5.4.22. SHOW WARNINGS Syntax">13.5.4.22节，“SHOW 
+        WARNINGS语法”</a>。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

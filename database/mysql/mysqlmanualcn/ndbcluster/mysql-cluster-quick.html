@@ -1,0 +1,295 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 17.4.3.&nbsp;MySQL簇的快速测试设置</h1>
+
+          
+        
+      
+    
+    
+      
+        
+           为了帮助你熟悉基本概念，我们将介绍功能性MySQL簇的最简单的可能配置。然后，按照本章相关部分提供的信息，你应能设计自己所需的配置。
+            <p> 首先，应以系统根用户身份通过执行下述命令创建配置目录，如/var/lib/mysql-cluster：</p>
+            <pre>shell&gt; mkdir /var/lib/mysql-cluster</pre>
+            <p>在该目录下，使用下述信息创建名为config.ini的文件，针对系统的情况，用恰当的值替换HostName和DataDir。</p>
+            <pre># file &quot;config.ini&quot; - showing minimal setup consisting of 1 data node,
+# 1 management server, and 3 MySQL servers.
+# The empty default sections are not required, and are shown only for
+# the sake of completeness.
+# Data nodes must provide a hostname but MySQL Servers are not required
+# to do so.
+# If you don&#39;t know the hostname for your machine, use localhost.
+# The DataDir parameter also has a default value, but it is recommended to
+# set it explicitly.
+# Note: DB, API, and MGM are aliases for NDBD, MYSQLD, and NDB_MGMD
+# respectively. DB and API are deprecated and should not be used in new
+# installations.
+[NDBD DEFAULT]
+NoOfReplicas= 1
+&nbsp;
+[MYSQLD DEFAULT]
+[NDB_MGMD DEFAULT]
+[TCP DEFAULT]
+&nbsp;
+[NDB_MGMD]
+HostName= myhost.example.com
+&nbsp;
+[NDBD]
+HostName= myhost.example.com
+DataDir= /var/lib/mysql-cluster
+&nbsp;
+[MYSQLD]
+[MYSQLD]
+[MYSQLD]</pre>
+            <p>现在，能够按下述方式启动管理服务器：</p>
+            <pre>shell&gt; cd /var/lib/mysql-cluster
+shell&gt; ndb_mgmd</pre>
+            <p>接下来，通过运行ndbd启动单个DB节点。首次为给定的DB节点启动ndbd时，应使用“—initial”选项，如下所示：</p>
+            <pre>shell&gt; ndbd --initial</pre>
+            <p>对于后续的ndbd启动，通常不需要使用该选项：</p>
+            <pre>shell&gt; ndbd</pre>
+            <p>这是因为，--initial选项将删除该数据节点的所有已有数据和日志文件（以及所有的表元数据），并创建新的数据和日志文件。该规则的一项例外是：添加了新数据节点后重启簇并从备份进行恢复之时。</p>
+            <p>默认情况下，ndbd将在端口1186上查找本地主机上的管理服务器。</p>
+            <p>注释：如果从二进制tarball安装了MySQL，需要明确指定ndb_mgmd和ndbd服务器的路径。（正常情况下，它们位于/usr/local/mysql/bin目录下）。</p>
+            <p>最后，进入MySQL数据目录（通常是/var/lib/mysql或/usr/local/mysql/data），并确保my.cnf文件包含启用NDB存储引擎所需的选项：</p>
+            <pre>[mysqld]
+ndbcluster</pre>
+            <p>现在，你能按通常方式启动MySQL服务器：</p>
+            <pre>shell&gt; mysqld_safe --user=mysql &amp;</pre>
+            <p>等待一段时间，确认MySQL服务器正在恰当运行。如果发现通知用mysql停止，请检查服务器的.err文件，找出错误。</p>
+            <p>如果到目前为止一切正常，可使用簇启动它：</p>
+            <pre>shell&gt; mysql
+Welcome to the MySQL monitor.&nbsp; Commands end with ; or \g.
+Your MySQL connection id is 1 to server version: 5.1.2-alpha-Max
+&nbsp;
+键入’help;’或’\h’获取帮助。键入’\c’清空缓冲区。
+&nbsp;
+mysql&gt; SHOW ENGINES\G
+&nbsp;
+...
+*************************** 12. row ***************************
+Engine: NDBCLUSTER
+Support: YES
+Comment: Clustered, fault-tolerant, memory-based tables
+*************************** 13. row ***************************
+Engine: NDB
+Support: YES
+Comment: Alias for NDBCLUSTER
+...</pre>
+            <p>（注意，上例输出中显示的行号可能与你的系统上显示的不同，具体情况取决于使用的MySQL版本，以及配置它的方式）。</p>
+            <pre>shell&gt; mysql
+Welcome to the MySQL monitor.&nbsp; Commands end with ; or \g.
+Your MySQL connection id is 1 to server version: 5.1.2-alpha-Max
+&nbsp;
+键入’help;’或’\h’获取帮助。键入’\c’清空缓冲区。
+&nbsp;
+mysql&gt; USE test;
+Database changed
+&nbsp;
+mysql&gt; CREATE TABLE ctest (i INT) ENGINE=NDBCLUSTER;
+Query OK, 0 rows affected (0.09 sec)
+&nbsp;
+mysql&gt; SHOW CREATE TABLE ctest \G
+*************************** 1. row ***************************
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Table: ctest
+Create Table: CREATE TABLE `ctest` (
+&nbsp; `i` int(11) default NULL
+) ENGINE=ndbcluster DEFAULT CHARSET=latin1
+1 row in set (0.00 sec)</pre>
+            <p>要想检查是否恰当设置了节点，可启动管理客户端：</p>
+            <pre>shell&gt; ndb_mgm</pre>
+            <p>随后，为了获得关于簇状态的报告，可从管理客户端内使用SHOW命令：</p>
+            <pre>NDB&gt; SHOW
+Cluster Configuration
+---------------------
+[ndbd(NDB)]&nbsp;&nbsp;&nbsp;&nbsp; 1 node(s)
+id=2&nbsp;&nbsp;&nbsp; @127.0.0.1&nbsp; (Version: 3.5.3, Nodegroup: 0, Master)
+&nbsp;
+[ndb_mgmd(MGM)] 1 node(s)
+id=1&nbsp;&nbsp;&nbsp; @127.0.0.1&nbsp; (Version: 3.5.3)
+&nbsp;
+[mysqld(API)]&nbsp;&nbsp; 3 node(s)
+id=3&nbsp;&nbsp;&nbsp; @127.0.0.1&nbsp; (Version: 3.5.3)
+id=4 (not connected, accepting connect from any host)
+id=5 (not connected, accepting connect from any host)</pre>
+            <p>此时，你成功地设置了工作的MySQL簇。现在，你能使用由ENGINE=NDBCLUSTER或其别名ENGINE=NDB创建的表，将数据保存到簇中。</p>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

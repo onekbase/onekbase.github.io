@@ -1,0 +1,245 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>第2天 linux下安装qt及测试</h1>
+  <p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-08-02</strong></p>
+  <p>在windows下安装完毕后，在具体功能需求没有出来之前，我又在linux下安装了qt，我的linux是ubuntu10.04的。</p>
+  <h2>ubutnu下安装qt </h2>
+  <p>安装有2中方式：</p>
+  <p>（1）下载源码，在linux下进行编译，安装；</p>
+  <p>（2）直接用ubuntu的apt-get install的方法来进行安装。</p>
+  <p>我们选择了第二种方式。</p>
+  <p>只要运&nbsp;行以下命令就行：<pre class="code">
+    sudo&#160;apt-get&#160;install&#160;qt4-dev-tools&#160;qt4-doc&#160;qt4-qtconfig&#160;qt4-demos&#160;qt4-designer</pre>
+    注意在这个版本的软件包中，qt4-dev-tools&#160;包&nbsp;含了Qt&#160;Assistant及Qt&#160;Linguist等工具，因此不需要单独安装这两个工具。其它的qt4-doc&#160;是&nbsp;帮助文档，包含了Qt中各个类库的详细说明以及丰富的例子程序，&nbsp;可以使用Qt&#160;Assistant&#160;工具来打开阅读。qt4-qtconfig&#160;是&nbsp;配置Qt环境的一个对话框，一般默认就行了，很少有必要去更改。qt4-demos&#160;包&nbsp;含很多可以运行起来的可执行文件以及源代码。qt4-designer是&nbsp;用来设计GUI界面的设计器。<br>
+    为了连&nbsp;接MySQL数据库，需要安装连接MySQL的驱动程序：<pre class="code">
+    sudo&#160;apt-get&#160;install&#160;libqt4-sql-mysql</pre>
+    比起在Windows下安装和配置Qt的MySQL驱动来说，简直太方便了。如果还需要其它的没有默认安装的Qt库，可以在命令行输入&#160;sudo&#160;apt-get&#160;install&#160;libqt4-&#160;然&nbsp;后按tab键自动补全，就会列出所有以libqt4-&#160;开&nbsp;头的软件包。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+如果，在项目中还需要其他的库，则可以通过sudo&nbsp;apt-get&nbsp;install&nbsp;qt4(tab键来获取），选择安装。<br>
+最&nbsp;后，关于集成开发环境我觉得QDevelop很不错，它跟Qt&#160;Designer结合的很好，而且有提示类成员函数的功能。运行以下&nbsp;命令安装：<pre class = "code">
+&#160;sudo&#160;apt-get&#160;install&#160;qdevelop&#160;</pre>
+这样，使用Qdevelop编写代码和编译、调试，使用Qt&#160;Designer设计界面，开发效率较高。 </p>
+  <p >或者用 </p>
+  <p >sudo&nbsp;apt-get&nbsp;install&nbsp;qtcreator </p>
+  <p >来安装qtcreator。 </p>
+  <p >在qtcreator中的测试例子： </p>
+<h2> 测试1 </h2>
+<p >新建一个空的Qt应用工程helloworld，在其中新建一个helloworld.cpp文件，输入以下代码： </p>
+<pre class="code">#include&nbsp;&#60;qapplication.h&#62; 
+#include&nbsp;&#60;qpushbutton.h&#62; 
+ 
+int&nbsp;main(int&nbsp;argc,char&nbsp;**argv) 
+{ 
+&nbsp;&nbsp;&nbsp;&nbsp;QApplication&nbsp;hello(argc,argv); 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;QPushButton&nbsp;helloBtn("helloworld",0); 
+&nbsp;&nbsp;&nbsp;&nbsp;helloBtn.resize(100,50); 
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;helloBtn.show(); 
+&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;hello.exec(); 
+} </pre>
+运行结果如图1所示：
+<p ><img src="images/2_wps_clip_image-27475.png"></p>
+图1&nbsp;运行结果 
+<h2 > 测试2 </h2>
+<p >第二次测试时，新建了一个Qt4&nbsp;GUI&nbsp;Application工程，名为hello，类名称为HelloMainWin，新建完毕后，直接运行，得出如图2所示的结果： </p>
+<p ><img src="images/2_wps_clip_image-26406.png" ></p>
+图2&nbsp;运行结果
+<h2 > Ubuntu下qt+eclipse开发环境搭建 </h2>
+<p >以前，ubuntu和windows下边都是在qtcreator，或者Qdevelop中，现在既然已经在ubuntu下边已经安装了eclipse&nbsp;c/c++，那么还是很想在eclipse中集成开发一下子，再次总结一下子。 </p>
+<p >（1）确保ubuntu下边有eclipse&nbsp;c/c++，而且能够跑起来c/c++程序。 </p>
+<p >这一步很简单，<br>
+  我直接讲<a href="http://www.eclipse.org/downloads/download.html?file=/technology/epp/downloads/release/galileo/SR1/eclipse-cpp-galileo-SR1-linux-gtk.tar.gz" >Eclipse&nbsp;IDE&nbsp;for&nbsp;C/C++&nbsp;Developers&nbsp;(79&nbsp;MB)</a>&#160;&nbsp;，再配上Qt&nbsp;For&nbsp;Eclipse的插件：<a href="http://qt.nokia.com/developer/eclipse-integration" target="_blank">Qt&nbsp;Eclipse&nbsp;Integration&nbsp;for&nbsp;C++</a><br>
+&#160;&#160;  把Eclipse&nbsp;C++下载完成后直接解压,在Terminal&nbsp;中输入以下命令，我是直接解压在桌面<pre class="code">
+  tar&nbsp;-zxvf&nbsp;Eclipse&nbsp;IDE&nbsp;for&nbsp;C/C++&nbsp;Developers&nbsp;</pre>
+  然后在相同的目录把Qt&nbsp;Eclipse&nbsp;Integration&nbsp;for&nbsp;C++也解压<pre class="code">
+  tar&nbsp;-zxvf&#160;&nbsp;Qt&nbsp;Eclipse&nbsp;Integration&nbsp;for&nbsp;C++</pre>
+  完成的工作就是把把两个包解压。<br>
+  下&nbsp;面一步是启动Eclipse,启动完成后<br>
+  通过菜单&#8220;Window&#8221;&nbsp;-&#62;&nbsp;"Preferences..."，进入参数设置框，在Qt里面添加我们刚才安装的位置和版本号<pre class="code">
+  bin:/usr/bin<br>
+  include:/usr/include/qt4</pre>
+  这&nbsp;样就配置好了，可以开发Qt了<br>
+  写个示例代码吧：<pre class="code">
+  #include&nbsp;&#60;QApplication&#62;
+  #include&nbsp;&#60;QWidget&#62;
+  #include&nbsp;&#60;QPushButton&#62;
+  int&nbsp;main(int&nbsp;argc,char&nbsp;*argv[])
+  {
+  &#160;&#160;&#160;&#160;&#160;&nbsp;QApplication&nbsp;app(argc,argv);
+  &#160;&#160;&#160;&#160;&#160;&nbsp;QWidget&#160;&nbsp;*parent=new&nbsp;QWidget();
+  &#160;&#160;&#160;&#160;&#160;&nbsp;parent-&#62;resize(400,300);
+  &#160;&#160;&#160;&#160;&#160;&nbsp;parent-&#62;show();
+  &#160;&#160;&#160;&#160;&#160;&nbsp;QPushButton&nbsp;*btn=new&nbsp;QPushButton("this&nbsp;is&nbsp;a&nbsp;test",parent);
+  &#160;&#160;&#160;&#160;&#160;&nbsp;btn-&#62;show();
+  &#160;&#160;&#160;&#160;&#160;&nbsp;return&nbsp;app.exec();
+}</pre>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,339 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>25.2.3.51. mysql_real_connect()</h1>
+
+            
+          
+        
+        
+        <p>MYSQL *mysql_real_connect(MYSQL 
+          *mysql, const char *host, const char *user, const char *passwd, 
+          const char *db, unsigned int port, const char *unix_socket, 
+          unsigned long client_flag) </p>
+        <p>描述</p>
+        <p> mysql_real_connect()尝试与运行在主机上的MySQL数据库引擎建立连接。在你能够执行需要有效MySQL连接句柄结构的任何其他API函数之前，mysql_real_connect()必须成功完成。</p>
+        <p>参数的指定方式如下：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          第1个参数应是已有MYSQL结构的地址。调用mysql_real_connect()之前，必须调用mysql_init()来初始化MYSQL结构。通过mysql_options()调用，可更改多种连接选项。请参见<a href="mysql-options.html" title="25.2.3.48. mysql_options()">25.2.3.48节，“mysql_options()”</a>。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          “host”的值必须是主机名或IP地址。如果“host”是NULL或字符串&quot;localhost&quot;，连接将被视为与本地主机的连接。如果操作系统支持套接字（Unix）或命名管道（Windows），将使用它们而不是TCP/IP连接到服务器。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          “user”参数包含用户的MySQL登录ID。如果“user”是NULL或空字符串&quot;&quot;，用户将被视为当前用户。在UNIX环境下，它是当前的登录名。在Windows 
+          ODBC下，必须明确指定当前用户名。请参见<a href="" title="26.1.9.2. Configuring a MyODBC DSN on Windows">26.1.9.2节，“在Windows上配置MyODBC DSN”</a>。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          “passwd”参数包含用户的密码。如果“passwd”是NULL，仅会对该用户的（拥有1个空密码字段的）用户表中的条目进行匹配检查。这样，数据库管理员就能按特定的方式设置MySQL权限系统，根据用户是否拥有指定的密码，用户将获得不同的权限。</p>
+        <p> 注释：调用mysql_real_connect()之前，不要尝试加密密码，密码加密将由客户端API自动处理。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          “db”是数据库名称。如果db为NULL，连接会将默认的数据库设为该值。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          如果“port”不是0，其值将用作TCP/IP连接的端口号。注意，“host”参数决定了连接的类型。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          如果unix_socket不是NULL，该字符串描述了应使用的套接字或命名管道。注意，“host”参数决定了连接的类型。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          client_flag的值通常为0，但是，也能将其设置为下述标志的组合，以允许特定功能：</p>
+        <table border="1" cellpadding="0" id="table9">
+          <tr>
+            <td><p> 标志名称</td>
+            <td><p> 标志描述</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_COMPRESS</td>
+            <td><p>使用压缩协议。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_FOUND_ROWS</td>
+            <td><p>返回发现的行数（匹配的），而不是受影响的行数。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_IGNORE_SPACE</td>
+            <td><p>允许在函数名后使用空格。使所有的函数名成为保留字。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_INTERACTIVE</td>
+            <td><p>关闭连接之前，允许interactive_timeout（取代了wait_timeout）秒的不活动时间。客户端的会话wait_timeout变量被设为会话interactive_timeout变量的值。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_LOCAL_FILES</td>
+            <td><p>允许LOAD 
+                DATA LOCAL处理功能。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_MULTI_STATEMENTS</td>
+            <td><p>通知服务器，客户端可能在单个字符串内发送多条语句（由‘;’隔开）。如果未设置该标志，将禁止多语句执行。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_MULTI_RESULTS</td>
+            <td><p> 通知服务器，客户端能够处理来自多语句执行或存储程序的多个结果集。如果设置了CLIENT_MULTI_STATEMENTS，将自动设置它。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_NO_SCHEMA</td>
+            <td><p>禁止<i>db_name.tbl_name.col_name</i>语法。它用于ODBC。如果使用了该语法，它会使分析程序生成错误，在捕获某些ODBC程序中的缺陷时，它很有用。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_ODBC</td>
+            <td><p>客户端是ODBC客户端。它将mysqld变得更为ODBC友好。</td>
+          </tr>
+          <tr>
+            <td><p> CLIENT_SSL</td>
+            <td><p>使用SSL（加密协议）。该选项不应由应用程序设置，它是在客户端库内部设置的。</td>
+          </tr>
+        </table>
+        <p>对于某些参数，能够从选项文件获得取值，而不是取得mysql_real_connect()调用中的确切值。为此，在调用mysql_real_connect()之前，应与MYSQL_READ_DEFAULT_FILE或MYSQL_READ_DEFAULT_GROUP选项一起调用mysql_options()。随后，在mysql_real_connect()调用中，为准备从选项文件读取值的每个参数指定“无值”值：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于host，指定NULL值或空字符串(&quot;&quot;)。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于user，指定NULL值或空字符串。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于passwd，指定NULL值。（对于密码，mysql_real_connect()调用中的空字符串的值不能被选项文件中的字符串覆盖，这是因为，空字符串明确指明MySQL账户必须有空密码）。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于db，指定NULL值或空字符串</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于port，指定“0”值。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对于unix_socket，指定NULL值。</p>
+        <p>对于某一参数，如果在选项文件中未发现值，将使用它的默认值，如本节前面介绍的那样。</p>
+        <p>返回值</p>
+        <p>如果连接成功，返回MYSQL*连接句柄。如果连接失败，返回NULL。对于成功的连接，返回值与第1个参数的值相同。</p>
+        <p>错误</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_CONN_HOST_ERROR </p>
+        <p>无法连接到MySQL服务器。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_CONNECTION_ERROR </p>
+        <p>无法连接到本地MySQL服务器。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_IPSOCK_ERROR </p>
+        <p>无法创建IP套接字。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_OUT_OF_MEMORY </p>
+        <p>内存溢出。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_SOCKET_CREATE_ERROR </p>
+        <p>无法创建Unix套接字。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_UNKNOWN_HOST </p>
+        <p>无法找到主机名的IP地址。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_VERSION_ERROR </p>
+        <p> 协议不匹配，起因于：试图连接到具有特定客户端库（该客户端库使用了不同的协议版本）的服务器。如果使用很早的客户端库来建立与较新的服务器（未使用“--old-protocol”选项开始的）的连接，就会出现该情况。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_NAMEDPIPEOPEN_ERROR </p>
+        <p>无法在Windows平台下创建命名管道。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_NAMEDPIPEWAIT_ERROR </p>
+        <p>在Windows平台下等待命名管道失败。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_NAMEDPIPESETSTATE_ERROR </p>
+        <p>在Windows平台下获取管道处理程序失败。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_SERVER_LOST </p>
+        <p>如果connect_timeout 
+          &gt; 0，而且在连接服务器时所用时间长于connect_timeout秒，或在执行init-command时服务器消失。</p>
+        <p>示例：</p>
+        <pre>MYSQL mysql;
+&nbsp;
+mysql_init(&amp;mysql);
+mysql_options(&amp;mysql,MYSQL_READ_DEFAULT_GROUP,&quot;your_prog_name&quot;);
+if (!mysql_real_connect(&amp;mysql,&quot;host&quot;,&quot;user&quot;,&quot;passwd&quot;,&quot;database&quot;,0,NULL,0))
+{
+&nbsp;&nbsp;&nbsp; fprintf(stderr, &quot;Failed to connect to database: Error: %s\n&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql_error(&amp;mysql));
+}</pre>
+        <p>通过使用mysql_options()，MySQL库将读取my.cnf文件的[client]和[your_prog_name]部分，以确保程序工作，即使某人以某种非标准的方式设置MySQL也同样。</p>
+        <p>注意，一旦建立了连接，mysql_real_connect()将设置再连接标志（MYSQL结构的组成部份）的值，在低于5.0.3版的API中，将其设为“1”，在较新的版本中，将其设为“0”。对于该标志，值“1”表示，如果因连接丢失而无法执行语句，放弃前，将尝试再次连接到服务器。从MySQL 
+          5.0.13开始，可以对mysql_options()使用MYSQL_OPT_RECONNECT选项，对再连接行为进行控制。
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>Android中使用HTTP服务
+HttpClient API</h1>
+<p>在Android中，除了使用java.net包下的API访问HTTP服务之外，我们还可以换一种途径去完成工作。Android  SDK附带了Apache的HttpClient API。Apache  HttpClient是一个完善的HTTP客户端，它提供了对HTTP协议的全面支持，可以使用HTTP  GET和POST进行访问。下面我们就结合实例，介绍一下HttpClient的使用方法。</p>
+<p>我们新建一个http项目。</p>
+<p>在这个项目中，我们不需要任何的Activity，所有的操作都在单元测试类HttpTest.java中完成。</p>
+<p>因为使用到了单元测试，所以在这里先介绍一下如何配置Android中的单元测试。所有配置信息均在AndroidManifest.xml中完成：</p>
+<pre class="code">&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.scott.http"
+      android:versionCode="1"
+      android:versionName="1.0"&gt;
+    &lt;application android:icon="@drawable/icon" android:label="@string/app_name"&gt;
+        &lt;!-- 配置测试要使用的类库 --&gt;
+        &lt;uses-library android:name="android.test.runner"/&gt;
+    &lt;/application&gt;
+    &lt;!-- 配置测试设备的主类和目标包 --&gt;
+    &lt;instrumentation android:name="android.test.InstrumentationTestRunner"
+					 android:targetPackage="com.scott.http"/&gt;
+	&lt;!-- 访问HTTP服务所需的网络权限 --&gt;
+	&lt;uses-permission android:name="android.permission.INTERNET"/&gt;
+	&lt;uses-sdk android:minSdkVersion="8" /&gt;
+&lt;/manifest&gt; </pre>
+<p>然后，我们的单元测试类需要继承android.test.AndroidTestCase类，这个类本身是继承junit.framework.TestCase，并提供了getContext()方法，用于获取Android上下文环境，这个设计非常有用，因为很多Android  API都是需要Context才能完成的。</p>
+<p>现在让我们来看一下我们的测试用例，HttpTest.java代码如下：</p>
+<pre class="code">import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+import junit.framework.Assert;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.mime.MultipartEntity;
+import org.apache.http.entity.mime.content.InputStreamBody;
+import org.apache.http.entity.mime.content.StringBody;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+
+import android.test.AndroidTestCase;
+
+public class HttpTest extends AndroidTestCase {
+	
+	private static final String PATH = "http://192.168.1.57:8080/web";
+	
+	public void testGet() throws Exception {
+		HttpClient client = new DefaultHttpClient();
+    	HttpGet get = new HttpGet(PATH + "/TestServlet?id=1001&name=john&age=60");
+    	HttpResponse response = client.execute(get);
+    	if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+        	InputStream is = response.getEntity().getContent();
+        	String result = inStream2String(is);
+        	Assert.assertEquals(result, "GET_SUCCESS");
+    	}
+	}
+	
+	public void testPost() throws Exception {
+		HttpClient client = new DefaultHttpClient();
+		HttpPost post = new HttpPost(PATH + "/TestServlet");
+		List&lt;NameValuePair&gt; params = new ArrayList&lt;NameValuePair&gt;();
+		params.add(new BasicNameValuePair("id", "1001"));
+		params.add(new BasicNameValuePair("name", "john"));
+		params.add(new BasicNameValuePair("age", "60"));
+		HttpEntity formEntity = new UrlEncodedFormEntity(params);
+		post.setEntity(formEntity);
+		HttpResponse response = client.execute(post);
+		if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+        	InputStream is = response.getEntity().getContent();
+        	String result = inStream2String(is);
+        	Assert.assertEquals(result, "POST_SUCCESS");
+    	}
+	}
+	
+	public void testUpload() throws Exception {
+		InputStream is = getContext().getAssets().open("books.xml");
+		HttpClient client = new DefaultHttpClient();
+		HttpPost post = new HttpPost(PATH + "/UploadServlet");
+		InputStreamBody isb = new InputStreamBody(is, "books.xml");
+		MultipartEntity multipartEntity = new MultipartEntity();
+		multipartEntity.addPart("file", isb);
+		multipartEntity.addPart("desc", new StringBody("this is description."));
+		post.setEntity(multipartEntity);
+		HttpResponse response = client.execute(post);
+		if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+        	is = response.getEntity().getContent();
+        	String result = inStream2String(is);
+        	Assert.assertEquals(result, "UPLOAD_SUCCESS");
+    	}
+	}
+	
+	//将输入流转换成字符串
+	private String inStream2String(InputStream is) throws Exception {
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		byte[] buf = new byte[1024];
+		int len = -1;
+		while ((len = is.read(buf)) != -1) {
+			baos.write(buf, 0, len);
+		}
+		return new String(baos.toByteArray());
+	}
+}
+</pre>
+<p>因为此文件包含三个测试用例，所以我将会逐个介绍一下。</p>
+<p>首先，需要注意的是，我们定位服务器地址时使用到了IP，因为这里不能用localhost，服务端是在windows上运行，而本单元测试运行在Android平台，如果使用localhost就意味着在Android内部去访问服务，可能是访问不到的，所以必须用IP来定位服务。</p>
+<p>我们先来分析一下testGet测试用例。我们使用了HttpGet，请求参数直接附在URL后面，然后由HttpClient执行GET请求，如果响应成功的话，取得响应内如输入流，并转换成字符串，最后判断是否为GET_SUCCESS。</p>
+<p>testGet测试对应服务端Servlet代码如下：</p>
+<pre class="code">@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+		throws ServletException, IOException {
+		System.out.println("doGet method is called.");
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String age = request.getParameter("age");
+		System.out.println("id:" + id + ", name:" + name + ", age:" + age);
+		response.getWriter().write("GET_SUCCESS");
+	}</pre>
+<p> 然后再说testPost测试用例。我们使用了HttpPost，URL后面并没有附带参数信息，参数信息被包装成一个由NameValuePair类型组成的集合的形式，然后经过UrlEncodedFormEntity处理后调用HttpPost的setEntity方法进行参数设置，最后由HttpClient执行。</p>
+<p>testPost测试对应的服务端代码如下：</p>
+<pre class="code">@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+		throws ServletException, IOException {
+		System.out.println("doPost method is called.");
+		String id = request.getParameter("id");
+		String name = request.getParameter("name");
+		String age = request.getParameter("age");
+		System.out.println("id:" + id + ", name:" + name + ", age:" + age);
+		response.getWriter().write("POST_SUCCESS");
+	}</pre>
+<p>上面两个是最基本的GET请求和POST请求，参数都是文本数据类型，能满足普通的需求，不过在有的场合例如我们要用到上传文件的时候，就不能使用基本的GET请求和POST请求了，我们要使用多部件的POST请求。下面介绍一下如何使用多部件POST操作上传一个文件到服务端。</p>
+<p>由于Android附带的HttpClient版本暂不支持多部件POST请求，所以我们需要用到一个HttpMime开源项目，该组件是专门处理与MIME类型有关的操作。因为HttpMime是包含在HttpComponents 项目中的，所以我们需要去apache官方网站下载HttpComponents，然后把其中的HttpMime.jar包放到项目中去。</p>
+<p>然后，我们观察testUpload测试用例，我们用HttpMime提供的InputStreamBody处理文件流参数，用StringBody处理普通文本参数，最后把所有类型参数都加入到一个MultipartEntity的实例中，并将这个multipartEntity设置为此次POST请求的参数实体，然后执行POST请求。服务端Servlet代码如下：</p>
+<pre class="code">import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemFactory;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
+@SuppressWarnings("serial")
+public class UploadServlet extends HttpServlet {
+	
+	@Override
+	@SuppressWarnings("rawtypes")
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		boolean isMultipart = ServletFileUpload.isMultipartContent(request);
+		if (isMultipart) {
+			FileItemFactory factory = new DiskFileItemFactory();
+			ServletFileUpload upload = new ServletFileUpload(factory);
+			try {
+				List items = upload.parseRequest(request);
+				Iterator iter = items.iterator();
+				while (iter.hasNext()) {
+				    FileItem item = (FileItem) iter.next();
+				    if (item.isFormField()) {
+				    	//普通文本信息处理
+				    	String paramName = item.getFieldName();
+				        String paramValue = item.getString();
+				        System.out.println(paramName + ":" + paramValue);
+				    } else {
+				    	//上传文件信息处理
+				        String fileName = item.getName();
+				        byte[] data = item.get();
+				        String filePath = getServletContext().getRealPath("/files") + "/" + fileName;
+				        FileOutputStream fos = new FileOutputStream(filePath);
+				        fos.write(data);
+				        fos.close();
+				    }
+				}
+			} catch (FileUploadException e) {
+				e.printStackTrace();
+			}
+		}
+		response.getWriter().write("UPLOAD_SUCCESS");
+	}
+}
+</pre>
+<p>服务端使用apache开源项目FileUpload进行处理，所以我们需要commons-fileupload和commons-io这两个项目的jar包，对服务端开发不太熟悉的朋友可以到网上查找一下相关资料。</p>
+<p>介绍完上面的三种不同的情况之后，我们需要考虑一个问题，在实际应用中，我们不能每次都新建HttpClient，而是应该只为整个应用创建一个HttpClient，并将其用于所有HTTP通信。此外，还应该注意在通过一个HttpClient同时发出多个请求时可能发生的多线程问题。针对这两个问题，我们需要改进一下我们的项目：</p>
+<p>1.扩展系统默认的Application，并应用在项目中。</p>
+<p>2.使用HttpClient类库提供的ThreadSafeClientManager来创建和管理HttpClient。</p>
+<p>其中MyApplication扩展了系统的Application，代码如下：</p>
+<pre class="code">import org.apache.http.HttpVersion;
+import org.apache.http.client.HttpClient;
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.conn.ssl.SSLSocketFactory;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.params.HttpProtocolParams;
+import org.apache.http.protocol.HTTP;
+
+import android.app.Application;
+
+public class MyApplication extends Application {
+
+	private HttpClient httpClient;
+	
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		httpClient = this.createHttpClient();
+	}
+	
+	@Override
+	public void onLowMemory() {
+		super.onLowMemory();
+		this.shutdownHttpClient();
+	}
+	
+	@Override
+	public void onTerminate() {
+		super.onTerminate();
+		this.shutdownHttpClient();
+	}
+	
+	//创建HttpClient实例
+	private HttpClient createHttpClient() {
+		HttpParams params = new BasicHttpParams();
+		HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+		HttpProtocolParams.setContentCharset(params, HTTP.DEFAULT_CONTENT_CHARSET);
+		HttpProtocolParams.setUseExpectContinue(params, true);
+		
+		SchemeRegistry schReg = new SchemeRegistry();
+		schReg.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
+		schReg.register(new Scheme("https", SSLSocketFactory.getSocketFactory(), 443));
+		
+		ClientConnectionManager connMgr = new ThreadSafeClientConnManager(params, schReg);
+		
+		return new DefaultHttpClient(connMgr, params);
+	}
+	
+	//关闭连接管理器并释放资源
+	private void shutdownHttpClient() {
+		if (httpClient != null && httpClient.getConnectionManager() != null) {
+			httpClient.getConnectionManager().shutdown();
+		}
+	}
+	
+	//对外提供HttpClient实例
+	public HttpClient getHttpClient() {
+		return httpClient;
+	}
+}
+</pre>
+<p>我们重写了onCreate()方法，在系统启动时就创建一个HttpClient；重写了onLowMemory()和onTerminate()方法，在内存不足和应用结束时关闭连接，释放资源。需要注意的是，当实例化DefaultHttpClient时，传入一个由ThreadSafeClientConnManager创建的一个ClientConnectionManager实例，负责管理HttpClient的HTTP连接。</p>
+<p>然后，想要让我们这个加强版的&ldquo;Application&rdquo;生效，需要在AndroidManifest.xml中做如下配置：</p>
+<pre class="code">&lt;application  android:name=".MyApplication" ...&gt;
+...
+&lt;/application&gt;</pre>
+<p>如果我们没有配置，系统默认会使用android.app.Application，我们添加了配置，系统就会使用我们的com.scott.http.MyApplication，然后就可以在context中调用getApplication()来获取MyApplication实例。</p>
+<p>有了上面的配置，我们就可以在活动中应用了，HttpActivity.java代码如下：</p>
+<pre class="code">import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class HttpActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		Button btn = (Button) findViewById(R.id.btn);
+		btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				execute();
+			}
+		});
+		
+	}
+	
+	private void execute() {
+		try {
+			MyApplication app = (MyApplication) this.getApplication();	//获取MyApplication实例
+			HttpClient client = app.getHttpClient();	//获取HttpClient实例
+			HttpGet get = new HttpGet("http://192.168.1.57:8080/web/TestServlet?id=1001&name=john&age=60");
+			HttpResponse response = client.execute(get);
+			if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+	        	InputStream is = response.getEntity().getContent();
+	        	String result = inStream2String(is);
+	        	Toast.makeText(this, result, Toast.LENGTH_LONG).show();
+	    	}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//将输入流转换成字符串
+	private String inStream2String(InputStream is) throws Exception {
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		byte[] buf = new byte[1024];
+		int len = -1;
+		while ((len = is.read(buf)) != -1) {
+			baos.write(buf, 0, len);
+		}
+		return new String(baos.toByteArray());
+	}
+}
+</pre>
+</body>
+</html>

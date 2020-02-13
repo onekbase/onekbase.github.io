@@ -1,0 +1,632 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+<h1>使用AIDL设计和调用远程接口</h1>
+
+
+<p>在Android中， 每个应用程序都可以有自己的进程。
+在写UI应用的时候， 经常要用到Service。 在不同的进程中，怎样传递对象呢？  
+在Android平台中不允许跨进程内存共享。 因此传递对象， 只能把对象拆分成操作系统能理解的简单形式，所以，他们需要把对象拆分成操作系统能理解的简单形式，以便伪装成对象跨越边界访问。 
+</p>
+
+<p>写"marshall"的代码是繁琐而枯燥的工作，好在AIDL提供了比较实在的工具以便让它更有趣。
+</p>
+
+<p>AIDL (Android Interface Definition Language )是Android接口描述语言，属于Eclipse
+            plugin 管理)。通过Eclipse plugin ，AIDL可以自动产生java并编译，这些都工具位于<code>tools/</code>目录。 </li>
+    <li><strong><a href="#implementtheinterface">实现AIDL接口方法</a></strong> -
+        
+        
+         编译器会根据AIDL接口, 产生一个JAVA接口(并且实现一些必要的附加方法供IPC调用)。
+         这个接口有一个名为Stub的内部抽象类，你必须创建一个类来扩展这个Stub内部抽象类（Stub内部抽象类名称为<em>接口名称</em>.Stub），
+         并实现了远程调用需要的几个方法，这些方法定义于 .aidl文件中。</li>
+         
+    <li><strong><a href="#exposingtheinterface">向客户端开放接口</a></strong> - 
+        
+        如果写的是Service，应该扩展该Service并重载Service.onBind(Intent)方法
+        来返回一个实现上述接口的类的实例。
+        
+        
+        </li>
+</ol>
+<h3>创建.aidl文件<a name="aidlsyntax"></a></h3>
+<p>AIDL语法很简单,可以用来声明一个带一个或多个方法的接口，也可以传递参数和返回值。 
+	这些参数和返回值可以是任意类型,甚至在其他AIDL生成的接口上也可以这样。  <em>然而, 需要注意的重点
+		</em>你<em>必须</em>导入所有的non-built-in类型,
+    <em>即使他们定义的package和你的interface一样也要导入</em>。
+    AIDL支持的数据类型如下: </p>
+<ul>
+    <li> Java编程语言中基本类型(int, boolean, etc)
+        &mdash; 不需要 <code>import</code> 再次声明。 </li>
+    <li>以下的类  (不需要 <code>import</code> 声明):
+        <ul>
+            <li><strong>String</strong></li>
+            <li><strong>List</strong> - List中所有的元素都必须是被支持的同一种数据类型中的一个, 
+            	包括其他AIDL生成的Interface和Parcelables。 List可以作为泛型类来灵活使用(e.g.
+                List&lt;String&gt;)。
+                实际上这些类将却是ArrayList,虽然调用的还是名称为List接口。 </li>
+            <li><strong>Map</strong> -  Map中所有的元素都必须是被支持同一种数据类型中的一个, 
+            	包括其他AIDL生成的Interface和Parcelables。 泛型化的Map, (e.g. 不支持Map&lt;String,Integer&gt;
+                这种形式）。
+                实际操作中使用的却是HashMap,不过使用的名字依然是Map接口。</li>
+            <li><strong>CharSequence</strong> - CharSequence的作用是可以被TextView</li>和其他Widget对象使用。
+        </ul>
+    </li>
+    <li>其他的，可以根据需要，使用<code>import</code>声明，所以import声明是必须的。</li>
+    <li>封装<a href="#parcelable">Parcelable 协议</a> 需要使用自定义的类是值传递，所以<code>import</code> 也是必须的。</li>
+</ul>
+<p>下面是AIDL的基本语法:</p>
+<pre>// AIDL 文件, 文件名<em>SomeClass</em>.aidl
+// 文件可以有注释
+// 在import和package声明以前的注释将被忽略
+// 但是可以在接口/方法/属性之前添加注释
+
+
+// package位置声明
+package com.android.sample;
+
+// 需要声明的类
+// import引入声明
+import com.android.sample.IAtmService;
+
+// 接口定义
+interface IBankAccountService {
+    
+    // 可以有0到多个参数，可以有0到1个返回值
+    int getAccountBalance();
+    void setOwnerNames(in List&lt;String&gt; names);
+    
+    // 方法中的参数可以在其他AIDL中被定义
+    BankAccount createAccount(in String name, int startingDeposit, in IAtmService atmService);
+
+    // 所有非non-Java原始参数(e.g., int, bool, etc) 都必须
+    // 标明参数方向. 有效的参数方向 in, out, inout. (Java原始参数默认是in形式参数，并且没有其他方式)。
+    // 限制参数方向是根据实际需要来定，要注意的是不注明参数方向将会耗费大量资源来真理匹配该参数的方向。
+    int getCustomerList(in String branch, out String[] customerList);
+}</pre>
+
+<h3>实现接口<a name="implementtheinterface"></a></h3>
+<p>AIDL 生成接口的名称与.aidl文件名称是一样的。
+	如果使用Eclipse插件, AIDL被将会自动创建 
+	(而用不着先运行AIDL工具然后再创建项目)。
+    如果你还准备通过原始方式来搞，那你只能运行AIDL工具了。 </p>
+<p>编译器会根据AIDL接口, 产生一个名为Stub的内部抽象类，它声明的所有方法都将出现在.aidl文件中。
+    Stub类包含一部分有用的的方法，比如asInterface()，它执行一个IBinder(在 applicationContext.bindService()执行成功后传给客户端onServiceConnected()方法)，
+    并且返回一个接口实例以便调用IPC方法。详情参见<a href="#calling">Calling an IPC Method</a>。
+    </p>
+<p>接口的大概步骤就是扩展<em>YourInterface</em>.Stub和实现方法。(
+你可以创建一个aidl文件并实现stub方法而不用绑定-AndRoid创建过程在java文件之前会处理aidl文件。
+)
+</p>
+<p>下面是一个实现调用接口IRemoteService的例子，使用匿名实例公开一个简单的方法gerPid()：
+    </p>
+<pre>//在同一个项目中不需要import IRemoteService。
+private final IRemoteService.Stub mBinder = new IRemoteService.Stub(){
+    public int getPid(){
+        return Process.myPid();
+    }
+}</pre>
+<p>关于实现接口方法的几个规则: </p>
+<ul>
+    <li>抛出的异常不要返回给调用者。</li>
+    <li>IPC调用是同步的。如果你知道一个IPC服务需要超过几毫秒的时间才能完成地话，
+    	 你应该避免在Activity/View 的主线程中调用。 
+    	 也就是IPC调用会挂起应用程序导致界面失去响应。
+    	 这种情况应该考虑单独一个线程来处理。</li>
+    <li>只有方法才获得支持，不能在AIDL接口中声明静态属性</li>
+</ul>
+
+<h3>向客户端开放接口<a name="exposingtheinterface" id="exposingtheinterface"></a></h3>
+<p>既然你已经实现接口，现在需要对客户端开放接口的访问。
+    这就是所谓的 &quot;发布服务&quot; 发布一个服务，就是继承 Service并使用 Service.onBind(Intent)方法
+    返回到实例的接口实现。
+    
+    下面这个代码片段是一个服务允许客户端访问的IRemoteService接口。</p>
+<pre>public class RemoteService extends Service {
+...
+    @Override
+    public IBinder onBind(Intent intent) {
+        // 选择返回接口，如果只有一个接口，那么直接放回即可
+        if (IRemoteService.class.getName().equals(intent.getAction())) {
+            return mBinder;
+        }
+        if (ISecondary.class.getName().equals(intent.getAction())) {
+            return mSecondaryBinder;
+        }
+        return null;
+    }
+
+    /**
+     *  通过IDL定义IRemoteInterface 
+     */
+    private final IRemoteService.Stub mBinder = new IRemoteService.Stub() {
+        public void registerCallback(IRemoteServiceCallback cb) {
+            if (cb != null) mCallbacks.register(cb);
+        }
+        public void unregisterCallback(IRemoteServiceCallback cb) {
+            if (cb != null) mCallbacks.unregister(cb);
+        }
+    };
+
+    /**
+     * secondary接口
+     */
+    private final ISecondary.Stub mSecondaryBinder = new ISecondary.Stub() {
+        public int getPid() {
+            return Process.myPid();
+        }
+        public void basicTypes(int anInt, long aLong, boolean aBoolean,
+                float aFloat, double aDouble, String aString) {
+        }
+    };
+
+}</pre>
+
+<a name="parcelable"></a>
+<h3>Parcelables的参数值传递</h3>
+
+<p>如果你有类需要通过AIDL接口从一个进程发送到另一个，你可以使用Parcelables的参数值传递。
+你必须确保类代码可以被IPC接收端所使用。通常这意味着一开始你就要和service进行通讯。 
+</p>
+<p>要支持Parcelable协议需要注意以下五个部分:</b>
+<ol>
+<li>你创建的类要实现 Parcelable接口。</li>
+<li>通过<code>public void writeToParcel(Parcel out)</code> 方法把当前对象打包。</li>
+<li>通过<code>public void readFromParcel(Parcel in)</code> 方法从包中读取信息到对象中。</li>
+<li>向类中添加一个静态成员<code>CREATOR</code>，该象可以实现Parcelable.Creator接口</li>
+<li>最后（这不是最重要的）:
+<ul>
+<li>如果你是使用Eclipse/ADT工具开发, 按照以下步骤来做:
+<ol type="a">
+<li>进入Package Explorer视图模式，右击项目节点。</li>
+<li>选择 <strong>Android Tools</strong> > <strong>Create Aidl preprocess file
+for Parcelable classes</strong>。</li>
+<li>这将在项目根目录创建一个可被调用的"project.aidl" 文件。
+	它可以自动编译aidl文件为parcelable类。</li>
+</ol>
+</li>
+<li>
+如果是使用Ant工具或者其他编译工具，就需要创建一个aidl文件用来定义你的parcelable 类(如下所示)。
+如果其他编译工具，不需要把aidl文件添加到编译过程中。类似于C语言中的头文件，aidl文件不需要编译。
+</li>
+</ul>
+</li>
+</ul>
+<p>
+	AIDL将使用代码中生成的这些方法和成员来伪装或解读对象。 </p>
+<p>下面这个例子说明了Rect 类如何实现了Parcelable协议。</p>
+
+<pre class="prettyprint">
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public final class Rect implements Parcelable {
+    public int left;
+    public int top;
+    public int right;
+    public int bottom;
+
+    public static final Parcelable.Creator&lt;Rect&gt; CREATOR = new Parcelable.Creator&lt;Rect&gt;() {
+        public Rect createFromParcel(Parcel in) {
+            return new Rect(in);
+        }
+
+        public Rect[] newArray(int size) {
+            return new Rect[size];
+        }
+    };
+
+    public Rect() {
+    }
+
+    private Rect(Parcel in) {
+        readFromParcel(in);
+    }
+
+    public void writeToParcel(Parcel out) {
+        out.writeInt(left);
+        out.writeInt(top);
+        out.writeInt(right);
+        out.writeInt(bottom);
+    }
+
+    public void readFromParcel(Parcel in) {
+        left = in.readInt();
+        top = in.readInt();
+        right = in.readInt();
+        bottom = in.readInt();
+    }
+}
+</pre>
+
+<p>Rect.aidl示例</p>
+
+<pre class="prettyprint">
+package android.graphics;
+
+// 定义Rect，AIDL才能找到并且实现parcelable接口协议。
+parcelable Rect;
+</pre>
+
+<p>Rect类中的伪装是相当简单的。仔细查看Parcel类中的其他方法，，你会看到其他各种值你都可以写进Parcel。</p>
+
+<p class="warning"><b>警告:</b> 
+不要忽视从其他进程接收数据时的安全性考虑。
+在本例中，rect将从parcel中读四个数字，而你的工作则是确保这些都在可接受的值
+得范围内而不管调用者想要干什么。<a href="../devel/security.html">Security and Permissions in Android</a> 中有更多关于如何
+确保应用程序安全的信息。 
+</p>
+
+<h2>调用一个IPC方法<a name="calling"></a></h2>
+<p>调用类调用远程接口的步骤:  </p>
+<ol>
+    <li>声明一个接口类型的变量，该接口类型在.aidl文件中定义。 </li>
+    <li>实现ServiceConnection。 </li>
+    <li>调用Context.bindService()，并在ServiceConnection实现中进行传递。</li>
+    <li>在ServiceConnection.onServiceConnected()实现中，
+    	 你会收到一些IBinder实例(被调用 <em>service</em>)。
+    	 调用 <code><em>YourInterfaceName</em>.Stub.asInterface((IBinder)<em>service</em>)</code> 将参数转换为<em>YourInterface</em> 类型。</li>
+    <li>调用接口中定义的方法。你总会捕捉到
+        DeadObjectException异常， w该异常在连接断开时被抛出。它只会被远程方法抛出。</li>
+    <li>断开连接，调用接口实例中的Context.unbindService()方法。 </li>
+</ol>
+<p>调用IPC服务需要注意几点:</p>
+<ul>
+    <li>通过过程对对象引用的统计。</li>
+    
+    <li>匿名对象可以通过方法参数发送。</li>
+</ul>
+<p>下面的代码展示了在ApiDemos项目从远程Activity例子中调用AIDL创建Service的过程。</p>
+<p><pre class="Code prettyprint">public class RemoteServiceBinding extends Activity {
+    /** 初始化主要接口*/
+    IRemoteService mService = null;
+    /** 其他接口 */
+    ISecondary mSecondaryService = null;
+
+    Button mKillButton;
+    TextView mCallbackText;
+
+    private boolean mIsBound;
+
+    /**
+     * 标准的activity初始化，设置UI
+     */
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.remote_service_binding);
+
+        //按钮点击事件监听
+        Button button = (Button)findViewById(R.id.bind);
+        button.setOnClickListener(mBindListener);
+        button = (Button)findViewById(R.id.unbind);
+        button.setOnClickListener(mUnbindListener);
+        mKillButton = (Button)findViewById(R.id.kill);
+        mKillButton.setOnClickListener(mKillListener);
+        mKillButton.setEnabled(false);
+
+        mCallbackText = (TextView)findViewById(R.id.callback);
+        mCallbackText.setText("Not attached.");
+    }
+
+    /**
+     * 类与main函数交互
+     */
+    private ServiceConnection mConnection = new ServiceConnection() {
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // 连接建立时被调用的服务，客户端可以通过IDL接口与该Service通信。
+            
+            mService = IRemoteService.Stub.asInterface(service);
+            mKillButton.setEnabled(true);
+            mCallbackText.setText("Attached.");
+
+            // 监视服务
+            try {
+                mService.registerCallback(mCallback);
+            } catch (RemoteException e) {
+                // 异常抛出，服务崩溃之前可以做的一些事情; 
+            }
+
+            // 回显信息
+            Toast.makeText(RemoteServiceBinding.this, R.string.remote_service_connected,
+                    Toast.LENGTH_SHORT).show();
+        }
+
+        public void onServiceDisconnected(ComponentName className) {
+            // 服务异常断开连接 -- 比如进程崩溃
+            mService = null;
+            mKillButton.setEnabled(false);
+            mCallbackText.setText("Disconnected.");
+
+            // 回显信息
+            Toast.makeText(RemoteServiceBinding.this, R.string.remote_service_disconnected,
+                    Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    /**
+     * 类与secondary接口的交互.
+     */
+    private ServiceConnection mSecondaryConnection = new ServiceConnection() {
+        public void onServiceConnected(ComponentName className,
+                IBinder service) {
+            // 连接一个Secondary与连接其他接口的方法一样
+            mSecondaryService = ISecondary.Stub.asInterface(service);
+            mKillButton.setEnabled(true);
+        }
+
+        public void onServiceDisconnected(ComponentName className) {
+            mSecondaryService = null;
+            mKillButton.setEnabled(false);
+        }
+    };
+
+    private OnClickListener mBindListener = new OnClickListener() {
+        public void onClick(View v) {
+            // 界面和代码动作绑定之后，允许其他应用通过远程服务的方式调用该组件，已完成相同的重复的工作
+            
+            bindService(new Intent(IRemoteService.class.getName()),
+                    mConnection, Context.BIND_AUTO_CREATE);
+            bindService(new Intent(ISecondary.class.getName()),
+                    mSecondaryConnection, Context.BIND_AUTO_CREATE);
+            mIsBound = true;
+            mCallbackText.setText("Binding.");
+        }
+    };
+
+    private OnClickListener mUnbindListener = new OnClickListener() {
+        public void onClick(View v) {
+            if (mIsBound) {
+                // 注销服务
+                if (mService != null) {
+                    try {
+                        mService.unregisterCallback(mCallback);
+                    } catch (RemoteException e) {
+                        // 异常信息处理，不过一般情况没什么需要做的
+                    }
+                }
+
+                //断开连接
+                unbindService(mConnection);
+                unbindService(mSecondaryConnection);
+                mKillButton.setEnabled(false);
+                mIsBound = false;
+                mCallbackText.setText("Unbinding.");
+            }
+        }
+    };
+
+    private OnClickListener mKillListener = new OnClickListener() {
+        public void onClick(View v) {
+            // 需要获知进程的PID才能结束本地服务，
+            // 好在我们的服务可以方便的返回一些有用的信息
+            if (mSecondaryService != null) {
+                try {
+                    int pid = mSecondaryService.getPid();
+                    // 使用这个API可以结束任何已知PID的进程
+                    // 比如只运行一个进程的应用，在运行过程中，会产生一些附加进程，这些进程会共享一个UID，
+                    // 结束这个UID，那么其他的附加进程也会被一起结束
+
+                    Process.killProcess(pid);
+                    mCallbackText.setText("Killed service process.");
+                } catch (RemoteException ex) {
+                    // 进程结束失败，显示一个失败通知
+
+                    Toast.makeText(RemoteServiceBinding.this,
+                            R.string.remote_call_failed,
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        }
+    };
+
+    // ----------------------------------------------------------------------
+    // 回调示例代码
+    // ----------------------------------------------------------------------
+
+    /**
+     * 实现远程服务的回调
+     */
+    private IRemoteServiceCallback mCallback = new IRemoteServiceCallback.Stub() {
+        /**
+         * 被调用的远程服务定时返回新的值。
+         */
+        public void valueChanged(int value) {
+            mHandler.sendMessage(mHandler.obtainMessage(BUMP_MSG, value, 0));
+        }
+    };
+
+    private static final int BUMP_MSG = 1;
+
+    private Handler mHandler = new Handler() {
+        @Override public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case BUMP_MSG:
+                    mCallbackText.setText("Received from service: " + msg.arg1);
+                    break;
+                default:
+                    super.handleMessage(msg);
+            }
+        }
+
+    };
+}</pre></p>
+
+<p>树上蹭灰 2008-10-04</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,288 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>12.7.1.&nbsp;布尔全文搜索
+  </h3>
+</h1>
+<dd>
+<p> 利用IN 
+  BOOLEAN MODE修改程序， MySQL 也可以执行布尔全文搜索：</p>
+  <pre>mysql&gt; SELECT * FROM articles WHERE MATCH (title,body)
+&nbsp;&nbsp;&nbsp; -&gt; AGAINST (&#39;+MySQL -YourSQL&#39; IN BOOLEAN MODE);
++----+-----------------------+-------------------------------------+
+| id | title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | body&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
++----+-----------------------+-------------------------------------+
+|&nbsp; 1 | MySQL Tutorial&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | DBMS stands for DataBase ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|&nbsp; 2 | How To Use MySQL Well | After you went through a ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|&nbsp; 3 | Optimizing MySQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | In this tutorial we will show ...&nbsp;&nbsp; |
+|&nbsp; 4 | 1001 MySQL Tricks&nbsp;&nbsp;&nbsp;&nbsp; | 1. Never run mysqld as root. 2. ... |
+|&nbsp; 6 | MySQL Security&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | When configured properly, MySQL ... |
++----+-----------------------+-------------------------------------+</pre>
+  <p> 这个问询检索所有包含单词“MySQL”的行，但<i>不</i>检索包含单词“YourSQL”的行。</p>
+  <p> 布尔全文搜索具有以下特点： </p>
+  <ul type="disc">
+    <li> 它们不使用 
+      50% 域值。. </li>
+    <li> 它们不会按照相关性渐弱的顺序将行进行分类。你可以从上述问询结果中看到这一点：相关性最高的行是一个包含两个“MySQL” 
+      的行，但它被列在最后的位置，而不是开头位置。 </li>
+    <li> 即使没有FULLTEXT，它们仍然可以工作，尽管这种方式的搜索执行的速度非常之慢。 </li>
+    <li> 最小单词长度全文参数和最大单词长度全文参数均适用。 </li>
+    <li> 停止字适用。</li>
+  </ul>
+  <p> 布尔全文搜索的性能支持以下操作符：&nbsp; </p>
+  <ul type="disc">
+    <li> + </li>
+  </ul>
+  <p> 一个前导的加号表示该单词<i>必须</i> 出现在返回的每一行的开头位置。 </p>
+  <ul type="disc">
+    <li> - </li>
+  </ul>
+  <p> 一个前导的减号表示该单词<i>一定不能</i>出现在任何返回的行中。 </p>
+  <ul type="disc">
+    <li> (无操作符) </li>
+  </ul>
+  <p> 在默认状态下(当没有指定 
+              + 或–的情况下)，该单词可有可无，但含有该单词的行等级较高。这和MATCH() 
+  ... AGAINST()不使用IN BOOLEAN MODE修改程序时的运作很类似。&nbsp;&nbsp; </p>
+  <ul type="disc">
+    <li> &gt; &lt; </li>
+  </ul>
+  <p> 这两个操作符用来改变一个单词对赋予某一行的相关值的影响。 &gt; 操作符增强其影响，而 
+  &lt;操作符则减弱其影响。请参见下面的例子。&nbsp; </p>
+  <ul type="disc">
+    <li> ( ) </li>
+  </ul>
+  <p> 括号用来将单词分成子表达式。括入括号的部分可以被嵌套。 </p>
+  <ul type="disc">
+    <li> ~ </li>
+  </ul>
+  <p> 一个前导的代字号用作否定符， 
+  用来否定单词对该行相关性的影响。 这对于标记“noise（无用信息）”的单词很有用。包含这类单词的行较其它行等级低，但因其可能会和-号同时使用，因而不会在任何时候都派出所有无用信息行。</p>
+  <ul type="disc">
+    <li> * </li>
+  </ul>
+  <p> 星号用作截断符。于其它符号不同的是，它应当被<i>追加</i>到要截断的词上。 </p>
+  <ul type="disc">
+    <li> &quot; </li>
+  </ul>
+  <p> 一个被括入双引号的短语 
+              (‘&quot;’) 只和<i>字面上</i>包含该短语<i>输入格式</i>的行进行匹配。全文引擎将短语拆分成单词，在FULLTEXT索引中搜索该单词。&nbsp;&nbsp;
+    非单词字符不需要严密的匹配：短语搜索只要求符合搜索短语包含的单词且单词的排列顺序相同的内容。例如， 
+  &quot;test phrase&quot; 符合 &quot;test, phrase&quot;。 </p>
+  <p> 若索引中不存在该短语包含的单词，则结果为空。例如，若所有单词都是禁用词，或是长度都小于编入索引单词的最小长度，则结果为空。 </p>
+  <p> 以下例子展示了一些使用布尔全文符号的搜索字符串：</p>
+  <ul type="disc">
+    <li> &#39;apple banana&#39; </li>
+  </ul>
+  <p> 寻找包含至少两个单词中的一个的行。 </p>
+  <ul type="disc">
+    <li> &#39;+apple +juice&#39; </li>
+  </ul>
+  <p> 寻找两个单词都包含的行。 </p>
+  <ul type="disc">
+    <li> &#39;+apple macintosh&#39; </li>
+  </ul>
+  <p> 寻找包含单词“apple”的行，若这些行也包含单词“macintosh”， 
+  则列为更高等级。 </p>
+  <ul type="disc">
+    <li> &#39;+apple -macintosh&#39; </li>
+  </ul>
+  <p> 寻找包含单词“apple” 
+  但不包含单词 “macintosh”的行。 </p>
+  <ul type="disc">
+    <li> &#39;+apple +(&gt;turnover &lt;strudel)&#39; </li>
+  </ul>
+  <p> 寻找包含单词“apple”和“turnover” 
+              的行，或包含“apple” 和“strudel”的行 
+              (无先后顺序),然而包含 “apple 
+  turnover”的行较包含“apple strudel”的行排列等级更为高。</p>
+  <ul type="disc">
+    <li> &#39;apple*&#39; </li>
+  </ul>
+  <p> 寻找包含“apple”、“apples”、“applesauce”或“applet”的行。</p>
+  <ul type="disc">
+    <li> &#39;&quot;some words&quot;&#39; </li>
+  </ul>
+  <p> 寻找包含原短语“some 
+              words”的行 (例如,包含“some 
+              words of wisdom” 的行，而非包含&nbsp; “some 
+              noise words”的行)。注意包围词组的‘&quot;’ 
+  符号是界定短语的操作符字符。它们不是包围搜索字符串本身的引号。</p>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

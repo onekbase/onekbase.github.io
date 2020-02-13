@@ -1,0 +1,367 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><!--end of htmlmiddle--><h1 >用ActivityGroup实现tab分页和导航框架</h1>
+<p >加载Activity时只改变非导航部分，导航一直不变。</p>
+<p >包括点击导航加载Activity，也包括点击Activity控件加载Activity。</p>
+<p >加载的Activity可以改变导航的内容。</p>
+<p ><img src="1.png" width="327" height="629" /></p>
+<p ><strong>ActivityGroupActivity  </strong></p>
+<p >关键方法：</p>
+<pre class="code">    public void loadActivity(String id,Class c){
+    	container.removeAllViews();
+        container.addView(getLocalActivityManager().startActivity(
+                id,new Intent(this, c)
+                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                .getDecorView());
+    }</pre>
+<p>加载Activity到当前Activity的container控件中。</p>
+<pre class="code">public class ActivityGroupActivity extends ActivityGroup {
+
+    private ScrollView container = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // 隐藏标题栏
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        // 设置视图
+        setContentView(R.layout.main);
+
+        container = (ScrollView) findViewById(R.id.containerBody);
+        // 模块2
+        ImageView btnModule2 = (ImageView) findViewById(R.id.btnModule2);
+        btnModule2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	loadActivity("Module2", ModuleView2.class);
+                
+            }
+        });
+
+        // 模块3
+        ImageView btnModule3 = (ImageView) findViewById(R.id.btnModule3);
+        btnModule3.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            	loadActivity("Module3", ModuleView3.class);
+            }
+        });
+    }
+    public void loadActivity(String id,Class c){
+    	container.removeAllViews();
+        container.addView(getLocalActivityManager().startActivity(
+                id,new Intent(this, c)
+                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+                .getDecorView());
+    }
+}</pre>
+<p ><strong>main.xml</strong></p>
+<pre class="code">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="fill_parent"&gt;
+    &lt;LinearLayout android:gravity="center_horizontal"
+         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"&gt;
+        &lt;TextView android:id="@+id/cust_title" android:textColor="@android:color/white"
+            android:textSize="28sp" android:text="模块1" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"&gt;&lt;/TextView&gt;
+    &lt;/LinearLayout&gt;
+    &lt;!-- 中间动态加载View --&gt;
+    &lt;ScrollView android:measureAllChildren="true" android:id="@+id/containerBody"
+        android:layout_weight="1" android:layout_height="fill_parent"
+        android:layout_width="fill_parent"&gt;
+    &lt;/ScrollView&gt;
+    &lt;LinearLayout android:background="@android:color/black"
+        android:layout_gravity="bottom" android:orientation="horizontal"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"&gt;
+        &lt;!-- 功能模块按钮1 --&gt;
+        &lt;!-- 功能模块按钮2 --&gt;
+        &lt;ImageView android:id="@+id/btnModule2" android:src="@android:drawable/ic_dialog_info"
+            android:layout_marginLeft="7dp" android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /&gt;
+        &lt;!-- 功能模块按钮3 --&gt;
+        &lt;ImageView android:id="@+id/btnModule3" android:src="@android:drawable/ic_dialog_alert"
+            android:layout_marginLeft="7dp" android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /&gt;
+
+
+        &lt;TextView
+            android:id="@+id/menutext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" /&gt;
+
+    &lt;/LinearLayout&gt;
+&lt;/LinearLayout&gt;</pre>
+<p ><strong>ModuleView3&nbsp;&nbsp;</strong></p>
+<p >有两个事件，一个改变导航，一个加载Activity。</p>
+<p >关键在于this.getParent()会等到框架Activity的引用。更好的方法是自定义一个Application，在其中有一个框架Activity的引用。这样在每个Activity中都可以通过this.getApplication()来找到框架Activity的引用。由框架Activity加载Activity的方法也可以放在Application直接调用。</p>
+<pre class="code">public class ModuleView3  extends Activity{
+	TextView t;
+	 protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        // 隐藏标题栏
+	        requestWindowFeature(Window.FEATURE_NO_TITLE);
+	        // 设置视图
+	        setContentView(R.layout.l3);
+	        Button b=(Button) this.findViewById(R.id.button1);
+	        final ActivityGroupActivity aga=
+	(ActivityGroupActivity)this.getParent();
+	        t=(TextView)aga.findViewById(R.id.menutext);
+	        b.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					t.setText("Click By Button1");
+				}
+	        	
+	        });
+	        b=(Button) this.findViewById(R.id.button2);
+	        b.setOnClickListener(new OnClickListener(){
+
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					aga.loadActivity("Module1", ModuleView4.class);
+				}
+	        	
+	        });
+	 }
+}</pre>
+<p ><strong>L3.xml</strong></p>
+<pre class="code">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" &gt;
+
+    &lt;TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" /&gt;
+
+    &lt;TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" /&gt;
+
+    &lt;TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" /&gt;
+
+    &lt;Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="改变导航" /&gt;
+
+    &lt;Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开另一个Activity" /&gt;
+
+&lt;/LinearLayout&gt;</pre>
+<p ><strong>ModuleView2&nbsp;&nbsp;和ModuleView4</strong></p>
+<p >代码一样。布局文件一个有两个TextView一个只有一个CheckBox。</p>
+<pre class="code">public class ModuleView2  extends Activity{
+	 protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        // 隐藏标题栏
+	        requestWindowFeature(Window.FEATURE_NO_TITLE);
+	        // 设置视图
+	        setContentView(R.layout.l2);
+	 }
+}</pre>
+
+<p ><strong>图 </strong></p>
+<p >第一个Activity </p>
+<p ><img width="350" height="622" src="ActivityGroup_wps_clip_image-16392.png"> </p>
+<p >第二个Activity </p>
+<p ><img width="353" height="536" src="ActivityGroup_wps_clip_image-28569.png"> </p>
+<p >改变导航条 </p>
+<p ><img width="354" height="630" src="ActivityGroup_wps_clip_image-22942.png"> </p>
+<p >从第三个Activity加载第四个Activity </p>
+<p ><img width="329" height="584" src="ActivityGroup_wps_clip_image-31192.png"> </p>
+<p>&nbsp;</p>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

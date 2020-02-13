@@ -1,0 +1,242 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 3.5.&nbsp;在批处理模式下使用mysql</h1>
+
+        
+      
+    
+    
+  
+    
+      
+         在前面的章节中，你交互式地使用mysql输入查询并且查看结果。你也可以以批模式运行mysql。为了做到这些，把你想要运行的命令放在一个文件中，然后告诉mysql从文件读取它的输入：
+          <pre>shell&gt; mysql &lt; <i>batch-file</i></pre>
+          <p>如果在Windows下运行mysql，并且文件中有一些可以造成问题的特殊字符，可以这样操作：</p>
+          <pre>C:\&gt; mysql -e &quot;source <i>batch-file</i>&quot;</pre>
+          <p>如果你需要在命令行上指定连接参数，命令应为：</p>
+          <pre>shell&gt; mysql -h <i>host</i> -u <i>user</i> -p &lt; <i>batch-file</i>
+Enter password: ********</pre>
+          <p>当这样操作mysql时，则创建一个脚本文件，然后执行脚本。</p>
+          <p>如果你想在语句出现错误的时候仍想继续执行脚本，则应使用--force命令行选项。</p>
+          <p>为什么要使用一个脚本？有很多原因：</p>
+          <ul type="disc">
+            <li>如果你需要重复运行查询(比如说，每天或每周)，可以把它编成一个脚本，则每次执行时不必重新键入。</li>
+            <li>可以通过拷贝并编辑脚本文件从类似的现有的查询生成一个新查询。</li>
+            <li> 当你正在开发查询时，批模式也是很有用的，特别对多行命令或多语句命令序列。如果你犯了一个错误，你不必重新输入所有内容，只需要编辑脚本来改正错误，然后告诉mysql再次执行脚本。</li>
+            <li>如果你有一个产生多个输出的查询，你可以通过一个分页器而不是盯着它翻屏到屏幕的顶端来运行输出：</li>
+          </ul>
+          <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shell&gt; mysql &lt; batch-file | more</pre>
+          <ul type="disc">
+            <li>你可以捕捉文件中的输出以便进行进一步的处理：</li>
+          </ul>
+          <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shell&gt; mysql &lt; batch-file &gt; mysql.out</pre>
+          <ul type="disc">
+            <li>你可以将脚本分发给另外的人，以便他们也能运行命令。</li>
+            <li>某些情况不允许交互地使用，例如, 
+              当你从一个cron任务中运行查询时。在这种情况下，你必须使用批模式。</li>
+          </ul>
+          <p> 当你以批模式运行mysql时，比起你交互地使用它时，其默认输出格式是不同的(更简明些)。例如，当交互式运行SELECT 
+            DISTINCT species FROM pet时，输出应为：</p>
+          <p>&nbsp; </p>
+          <pre>+---------+
+| species |
++---------+
+| bird&nbsp;&nbsp;&nbsp; |
+| cat&nbsp;&nbsp;&nbsp;&nbsp; |
+| dog&nbsp;&nbsp;&nbsp;&nbsp; |
+| hamster |
+| snake&nbsp;&nbsp; |
++---------+</pre>
+          <p>但是当以批模式运行时，输出应为：</p>
+          <pre>species
+bird
+cat
+dog
+hamster
+snake</pre>
+          <p>如果你想要在批模式中得到交互输出格式，使用mysql 
+            -t。为了回显以输出被执行的命令，使用mysql 
+            -vvv。</p>
+          <p>你还可以使用源代码或 
+            \.命令从mysql提示符运行脚本：</p>
+          <pre>mysql&gt; source filename;
+mysql&gt; \. filename</pre>
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

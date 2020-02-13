@@ -1,0 +1,275 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.4.5.&nbsp;MySQL如何使用索引</h1>
+
+          
+        
+      
+      
+      <p> 索引用于快速找出在某个列中有一特定值的行。不使用索引，MySQL必须从第1条记录开始然后读完整个表直到找出相关的行。表越大，花费的时间越多。如果表中查询的列有一个索引，MySQL能快速到达一个位置去搜寻到数据文件的中间，没有必要看所有数据。如果一个表有1000行，这比顺序读取至少快100倍。注意如果你需要访问大部分行，顺序读取要快得多，因为此时我们避免磁盘搜索。</p>
+      <p> 大多数MySQL索引(PRIMARY 
+        KEY、UNIQUE、INDEX和FULLTEXT)在B树中存储。只是空间列类型的索引使用R-树，并且MEMORY表还支持hash索引。</p>
+      <p> 字符串自动地压缩前缀和结尾空格。参见<a href="data-size.html" title="13.1.4. CREATE INDEX Syntax">13.1.4节，“CREATE 
+        INDEX语法”</a>。</p>
+      <p> 总的来说，按后面的讨论使用索引。本节最后描述hash索引(用于MEMORY表)的特征。</p>
+      <p> 索引用于下面的操作：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        快速找出匹配一个WHERE子句的行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        删除行。如果可以在多个索引中进行选择，MySQL通常使用找到最少行的索引。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当执行联接时，从其它表检索行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对具体有索引的列<i>key_col</i>找出MAX()或MIN()值。由预处理器进行优化，检查是否对索引中在key_<i>col</i>之前发生所有关键字元素使用了WHERE <i>key_part_#</i> = <i>constant</i>。在这种情况下，MySQL为每个MIN()或MAX()表达式执行一次关键字查找，并用常数替换它。如果所有表达式替换为常量，查询立即返回。例如：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT MIN(<i>key_part2</i>),MAX(<i>key_part2</i>)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;FROM <i>tbl_name</i> WHERE <i>key_part1</i>=10;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果对一个可用关键字的最左面的前缀进行了排序或分组(例如，ORDER 
+        BY key_part_1,key_part_2)，排序或分组一个表。如果所有关键字元素后面有DESC，关键字以倒序被读取。参见<a href="order-by-optimization.html" title="7.2.12. How MySQL Optimizes ORDER BY">7.2.12节，“MySQL如何优化ORDER BY”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在一些情况中，可以对一个查询进行优化以便不用查询数据行即可以检索值。如果查询只使用来自某个表的数字型并且构成某些关键字的最左面前缀的列，为了更快，可以从索引树检索出值。</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT <i>key_part3</i> FROM <i>tbl_name</i>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;WHERE <i>key_part1</i>=1</pre>
+      <p> 假定你执行下面的SELECT语句：</p>
+      <pre>mysql&gt; SELECT * FROM <i>tbl_name</i> WHERE col1=val1 AND col2=val2;</pre>
+      <p> 如果col1和col2上存在一个多列索引，可以直接取出相应行。如果col1和col2上存在单列索引，优化器试图通过决定哪个索引将找到更少的行来找出更具限制性的索引并且使用该索引取行。</p>
+      <p> 如果表有一个多列索引，优化器可以使用最左面的索引前缀来找出行。例如，如果有一个3列索引(col1,col2,col3)，则已经对(col1)、(col1,col2)和(col1,col2,col3)上的搜索进行了索引。</p>
+      <p> 如果列不构成索引最左面的前缀，MySQL不能使用局部索引。假定有下面显示的SELECT语句。</p>
+      <pre>&nbsp;
+SELECT * FROM <i>tbl_name</i> WHERE col1=val1;
+SELECT * FROM <i>tbl_name</i> WHERE col1=val1 AND col2=val2;
+&nbsp;
+SELECT * FROM <i>tbl_name</i> WHERE col2=val2;
+SELECT * FROM <i>tbl_name</i> WHERE col2=val2 AND col3=val3;
+&nbsp;</pre>
+      <p> 如果 
+        (col1，col2，col3)有一个索引，只有前2个查询使用索引。第3个和第4个查询确实包括索引的列，但(col2)和(col2，col3)不是 
+        
+        (col1，col2，col3)的最左边的前缀。</p>
+      <p> 也可以在表达式通过=、&gt;、&gt;=、&lt;、&lt;=或者BETWEEN操作符使用B-树索引进行列比较。如果LIKE的参数是一个不以通配符开头的常量字符串，索引也可以用于LIKE比较。例如，下面的SELECT语句使用索引：</p>
+      <pre>SELECT * FROM <i>tbl_name</i> WHERE <i>key_col</i> LIKE &#39;Patrick%&#39;;
+SELECT * FROM <i>tbl_name</i> WHERE <i>key_col</i> LIKE &#39;Pat%_ck%&#39;;</pre>
+      <p> 在第1个语句中，只考虑带&#39;Patrick&#39; 
+        &lt;=key_<i>col</i> &lt; &#39;Patricl&#39;的行。在第2个语句中，只考虑带&#39;Pat&#39; 
+        &lt;=key_<i>col</i> &lt; &#39;Pau&#39;的行。</p>
+      <p> 下面的SELECT语句不使用索引：</p>
+      <pre>SELECT * FROM <i>tbl_name</i> WHERE <i>key_col</i> LIKE &#39;%Patrick%&#39;;
+SELECT * FROM <i>tbl_name</i> WHERE <i>key_col</i> LIKE <i>other_col</i>;</pre>
+      <p> 在第一条语句中，LIKE值以一个通配符字符开始。在第二条语句中，LIKE值不是一个常数。</p>
+      <p> 如果使用... LIKE &#39;%<i>string</i>%&#39;并且<i>string</i>超过3个字符，MySQL使用<em>Turbo 
+        Boyer-Moore算法</em>初始化字符串的模式然后使用该模式来更快地进行搜索。</p>
+      <p> 如果<i>col_name</i>被索引，使用<i>col_name</i> IS NULL的搜索将使用索引。</p>
+      <p> 任何不跨越WHERE子句中的所有AND级的索引不用于优化查询。换句话说，为了能够使用索引，必须在每个AND组中使用索引前缀。</p>
+      <p> 下面的WHERE子句使用索引：</p>
+      <pre>... WHERE <i>index_part1</i>=1 AND <i>index_part2</i>=2 AND <i>other_column</i>=3
+&nbsp;&nbsp;&nbsp; /* <i>index</i> = 1 OR <i>index</i> = 2 */
+... WHERE <i>index</i>=1 OR A=10 AND <i>index</i>=2
+&nbsp;&nbsp;&nbsp; /* optimized like &quot;<i>index_part1</i>=&#39;hello&#39;&quot; */
+... WHERE <i>index_part1</i>=&#39;hello&#39; AND <i>index_part3</i>=5
+&nbsp;&nbsp;&nbsp; /* Can use index on <i>index1</i> but not on <i>index2</i> or <i>index3</i> */
+... WHERE <i>index1</i>=1 AND <i>index2</i>=2 OR <i>index1</i>=3 AND <i>index3</i>=3;</pre>
+      <p> 下面的WHERE子句不使用索引：</p>
+      <pre>&nbsp;&nbsp;&nbsp; /* <i>index_part1</i> is not used */
+... WHERE <i>index_part2</i>=1 AND <i>index_part3</i>=2
+&nbsp;
+&nbsp;&nbsp;&nbsp; /*&nbsp; Index is not used in both parts of the WHERE clause&nbsp; */
+... WHERE <i>index</i>=1 OR A=10
+&nbsp;
+&nbsp;&nbsp;&nbsp; /* No index spans all rows&nbsp; */
+... WHERE <i>index_part1</i>=1 OR <i>index_part2</i>=10</pre>
+      <p> 有时MySQL不使用索引，即使有可用的索引。一种情形是当优化器估计到使用索引将需要MySQL访问表中的大部分行时。(在这种情况下，表扫描可能会更快些，因为需要的搜索要少）。然而，如果此类查询使用LIMIT只搜索部分行，MySQL则使用索引，因为它可以更快地找到几行并在结果中返回。</p>
+      <p> Hash索引还有一些其它特征：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        它们只用于使用=或&lt;=&gt;操作符的等式比较(但<em>很快</em>)。它们用于比较
+        操作符，例如发现范围值的&lt;。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        优化器不能使用hash索引来加速ORDER 
+        BY操作。(该类索引不能用来按顺序搜索下一个条目）。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        MySQL不能确定在两个值之间大约有多少行(这被范围优化器用来确定使用哪个索引)。如果你将一个MyISAM表改为hash-索引的MEMORY表，会影响一些查询。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        只能使用整个关键字来搜索一行。(用B-树索引，任何关键字的最左面的前缀可用来找到行）。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

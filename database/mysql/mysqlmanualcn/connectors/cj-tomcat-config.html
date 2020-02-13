@@ -1,0 +1,323 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.4.2.&nbsp;与Tomcat一起使用Connector/J</h1>
+
+            
+          
+        
+        <p>下述内容基于关于Tomcat-5.x的指<a name="id3063315">示说明，</a>http://jakarta.apache.org/tomcat/tomcat-5.0-doc/jndi-datasource-examples-howto.html，在编写本文档时它是最新的。</p>
+        <p>首先安装与Connector/J in $CATALINA_HOME/common/lib一起提供的.jar文件，以便它能用于已安装的所有应用程序。</p>
+        <p>其次，在定义Web应用程序的Context（场景）内，通过为$CATALINA_HOME/conf/server.xml增加声明资源，配置JNDI 
+          DataSource：</p>
+        <pre >&lt;Context ....&gt;
+
+  ...
+
+  &lt;Resource name="jdbc/MySQLDB"
+               auth="Container"
+               type="javax.sql.DataSource"/&gt;
+
+  &lt;!-- The name you used above, must match _exactly_ here!
+
+       The connection pool will be bound into JNDI with the name
+       "java:/comp/env/jdbc/MySQLDB"
+  --&gt;
+
+  &lt;ResourceParams name="jdbc/MySQLDB"&gt;
+    &lt;parameter&gt;
+      &lt;name&gt;factory&lt;/name&gt;
+      &lt;value&gt;org.apache.commons.dbcp.BasicDataSourceFactory&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- Don't set this any higher than max_connections on your
+         MySQL server, usually this should be a 10 or a few 10's
+         of connections, not hundreds or thousands --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;maxActive&lt;/name&gt;
+      &lt;value&gt;10&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- You don't want to many idle connections hanging around
+         if you can avoid it, only enough to soak up a spike in
+         the load --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;maxIdle&lt;/name&gt;
+      &lt;value&gt;5&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- Don't use autoReconnect=true, it's going away eventually
+         and it's a crutch for older connection pools that couldn't
+         test connections. You need to decide if your application is
+         supposed to deal with SQLExceptions (hint, it should), and
+         how much of a performance penalty you're willing to pay
+         to ensure 'freshness' of the connection --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;validationQuery&lt;/name&gt;
+      &lt;value&gt;SELECT 1&lt;/value&gt;
+    &lt;/parameter&gt;
+
+   &lt;!-- The most conservative approach is to test connections
+        before they're given to your application. For most applications
+        this is okay, the query used above is very small and takes
+        no real server resources to process, other than the time used
+        to traverse the network.
+
+        If you have a high-load application you'll need to rely on
+        something else. --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;testOnBorrow&lt;/name&gt;
+      &lt;value&gt;true&lt;/value&gt;
+    &lt;/parameter&gt;
+
+   &lt;!-- Otherwise, or in addition to testOnBorrow, you can test
+        while connections are sitting idle --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;testWhileIdle&lt;/name&gt;
+      &lt;value&gt;true&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- You have to set this value, otherwise even though
+         you've asked connections to be tested while idle,
+         the idle evicter thread will never run --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;timeBetweenEvictionRunsMillis&lt;/name&gt;
+      &lt;value&gt;10000&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- Don't allow connections to hang out idle too long,
+         never longer than what wait_timeout is set to on the
+         server...A few minutes or even fraction of a minute
+         is sometimes okay here, it depends on your application
+         and how much spikey load it will see --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;minEvictableIdleTimeMillis&lt;/name&gt;
+      &lt;value&gt;60000&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- Username and password used when connecting to MySQL --&gt;
+
+    &lt;parameter&gt;
+     &lt;name&gt;username&lt;/name&gt;
+     &lt;value&gt;someuser&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;parameter&gt;
+     &lt;name&gt;password&lt;/name&gt;
+     &lt;value&gt;somepass&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- Class name for the Connector/J driver --&gt;
+
+    &lt;parameter&gt;
+       &lt;name&gt;driverClassName&lt;/name&gt;
+       &lt;value&gt;com.mysql.jdbc.Driver&lt;/value&gt;
+    &lt;/parameter&gt;
+
+    &lt;!-- The JDBC connection url for connecting to MySQL, notice
+         that if you want to pass any other MySQL-specific parameters
+         you should pass them here in the URL, setting them using the
+         parameter tags above will have no effect, you will also
+         need to use &amp;amp; to separate parameter values as the
+         ampersand is a reserved character in XML --&gt;
+
+    &lt;parameter&gt;
+      &lt;name&gt;url&lt;/name&gt;
+      &lt;value&gt;jdbc:mysql://localhost:3306/test&lt;/value&gt;
+    &lt;/parameter&gt;
+
+  &lt;/ResourceParams&gt;
+&lt;/Context&gt;</pre>
+        <p> 一般而言，应遵循关于相应Tomcat版本的安装说明，这是因为，在Tomcat中配置数据源的方式会随时变化，很不幸，如果在XML文件中使用了错误的语法，很可能会以异常结束，如下所示：</p>
+        <pre >Error: java.sql.SQLException: Cannot load JDBC driver class 'null ' SQL
+state: null </pre>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

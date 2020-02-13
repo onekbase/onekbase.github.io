@@ -1,0 +1,225 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.4.9.&nbsp;MySQL如何打开和关闭表</h1>
+
+          
+        
+      
+      
+      <p> table_cache、max_connections和max_tmp_tables系统变量影响服务器保持打开的文件的最大数量。如果你增加这些值其中的一个或两个，会遇到操作系统为每个进程打开文件描述符的数量强加的限制。许多操作系统允许你增加打开的文件的限制，尽管该方法随系统的不同而不同。查阅操作系统文档以确定是否可以增加限制以及如何操作。</p>
+      <p> table_cache与max_connections有关。例如，对于200个并行运行的连接，应该让表的缓存至少有200 
+        * <i>N</i>，这里<i>N</i>是可以执行的查询的一个联接中表的最大数量。还需要为临时表和文件保留一些额外的文件描述符。</p>
+      <p> 确保操作系统可以处理table_cache设置所指的打开的文件描述符的数目。如果table_cacheis设得太高，MySQL可能为文件描述符耗尽资源并拒绝连接，不能执行查询，并且很不可靠。还必须考虑到MyISAM存储引擎需要为每个打开的表提供两个文件描述符。可以在mysqld_safe中使用--open-files-limit启动选项来增加MySQL适用的文件描述符的数量。参见<a href="" title="A.2.17. File Not Found">A.2.17节，“文件未找到”</a>。</p>
+      <p> 打开表的缓存可以保持在table_cache条。
+        默认为64；可以用mysqld的--table_cache选项来更改。请注意 
+        MySQL可以临时打开更多的 表以执行查询。</p>
+      <p> 在下面的条件下，未使用的表将被关闭并从表缓存中移出：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当缓存满了并且一个线程试图打开一个不在缓存中的表时。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当缓存包含超过table_cache个条目，并且缓存中的表不再被任何线程使用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当表刷新操作发生。当执行FLUSH 
+        TABLES语句或执行mysqladmin flush-tables或mysqladmin 
+        refresh命令时会发生。</p>
+      <p> 当表缓存满时，服务器使用下列过程找到一个缓存入口来使用：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当前未使用的表被释放，以最近最少使用顺序。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果缓存满了并且没有表可以释放，但是一个新表需要打开，缓存必须临时被扩大。</p>
+      <p> 如果缓存处于一个临时扩大状态并且一个表从在用变为不在用状态，它被关闭并从缓存中释放。</p>
+      <p> 对每个并发访问打开一个表。这意味着，如果2个线程访问同一个表或在同一个查询中访问表两次(例如，将表连接为自身时)，表需要被打开两次。每个并行的打开要求在表缓存中有一个条目。任何表的第一次打开占2个文件描述符：一个用于数据文件另一个用于索引文件。表的每一次额外使用仅占一个数据文件的文件描述符。索引文件描述符在所有线程之间共享。</p>
+      <p> 如果你正用HANDLER <i>tbl_name</i> OPEN语句打开一个表，将为该线程专门分配一个表。该表不被其它线程共享，只有线程调用HANDLER <i>tbl_name</i> CLOSE或线程终止后才被关闭。表关闭后，被拉回表缓存中(如果缓存不满)。参见<a href="" title="13.2.3. HANDLER Syntax">13.2.3节，“HANDLER语法”</a>。</p>
+      <p> 可以通过检查mysqld的状态变量Opened_tables确定表缓存是否太小：</p>
+      <pre>mysql&gt; SHOW STATUS LIKE &#39;Opened_tables&#39;;
++---------------+-------+
+| Variable_name | Value |
++---------------+-------+
+| Opened_tables | 2741&nbsp; |
++---------------+-------+</pre>
+      <p>如果值很大，即使你没有发出许多FLUSH 
+        TABLES语句，也应增加表缓存的大小。参见<a href="insert-speed.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>和<a href="server-parameters.html" title="5.3.4. Server Status Variables">5.3.4节，“服务器状态变量”</a>。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

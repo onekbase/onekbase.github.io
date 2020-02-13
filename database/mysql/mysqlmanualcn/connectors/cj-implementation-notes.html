@@ -1,0 +1,252 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.3.2.&nbsp;JDBC API实施说明</h1>
+
+            
+          
+        
+      
+      
+        
+          
+             MySQL Connector/J通过了Sun 
+              JDBC兼容测试套件公共版中的所有测试。但是，在很多场合下，对于应如何实施特定的功能，JDBC规范并未给出明确的规定，或者说，该规范允许有一定的实施范围。
+              <p> 在本节中，就特定实施方案将如何影响MySQL Connector/J的使用方式，给出了接口层面上的详细介绍。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Blob </p>
+              <p> Blob实施不允许“原地”调整（它们是“副本”，正如DatabaseMetaData.locatorsUpdateCopies()方法所指明的那样）。因此，应使用对应的PreparedStatement.setBlob()或ResultSet.updateBlob()（对于可更新结果集）方法，将变化保存到数据库中。</p>
+              <p>自Connector/J version 
+                3.1.0开始，通过在JDBC 
+                URL中添加属性“emulateLocators=true”，能够使用定位器模拟Blob。随后，必须使用带有列值的列别名，在你编写的用于检索Blob的SELECT中，将列值设为Blob列的世纪名称。SELECT还必须仅引用1个表，该表必须有1个主键，而且SELECT必须涵盖构成主键的所有列。随后，驱动程序将延期加载实际的Blob数据，直至检索了Blob并在其上调用了检索方法为止（getInputStream(), 
+                getBytes(),等）。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                CallableStatement </p>
+              <p>自Connector/J 3.1.1开始，当通过CallableStatement接口连接到MySQL 
+                5.0或更高版本时，可支持存储程序。目前，不支持CallableStatement的getParameterMetaData()方法。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Clob </p>
+              <p> Clob实施不允许“原地”调整（它们是“副本”，正如DatabaseMetaData.locatorsUpdateCopies()方法所指明的那样）。因此，应使用PreparedStatement.setClob()方法将变更保存到数据库中。JDBC 
+                API没有ResultSet.updateClob()方法。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Connection </p>
+              <p> 与MM.MySQL的早期版本不同，“isClosed()”不会对服务器即行Ping操作以确定服务器是否有效。按照JDBC规范，如果在连接上调用了“closed()”，它仅返回“真”。如果需要确定连接是否依然有效，应发出简单查询，如“SELECT 
+                1”。如果连接不再有效，驱动程序将抛出异常。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                DatabaseMetaData </p>
+              <p> 对于外键信息（getImported/ExportedKeys()和getCrossReference()），仅在“InnoDB”类性的表中可用。但是，驱动程序会使用“SHO<a name="id3040348">W 
+                CREATE TABLE”来检索该信息，因此，当其他表类型支持外键时，驱动程序也能支持它们。</a></p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Driver </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                PreparedStatement </p>
+              <p> PreparedStatements是由驱动程序实现的，这是应为MySQL未提供预处理语句功能。出于该原因，驱动程序不实施getParameterMetaData()或getMetaData()，这是因为，它要求驱动程序在客户端上具有完整的SQL语法分析程序。</p>
+              <p>从3.1.0版MySQL 
+                Connector/J开始，当服务器支持时，将使用服务器端预处理语句和“二进制编码”的结果集。</p>
+              <p> 使用带有“large”参数（这类参数是通过setBinaryStream()、setAsciiStream()、setUnicodeStream()、setBlob()或setClob()设置的）的服务器端预处理语句时应谨慎。如果打算再次执行已将任何“large”参数更改为非“large”参数的语句，需要调用clearParameters()，并再次设置所有参数。其原因如下：</p>
+              <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                设置了参数时，驱动程序会将“large”数据“out-of-band”发送给服务器端的预处理语句（执行预处理语句之前）。</p>
+              <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                一旦完成，将关闭用于读取客户端上数据的流（根据JDBC规范），而且不能再次读取流。</p>
+              <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                如果参数从“large”变为非“large”，驱动程序必须复位预处理语句的服务器端状态，以便允许已更改的参数区带以前的“large”值。这将删除已发送给服务器的所有“large”数据，因而需要通过setBinaryStream()、setAsciiStream()、setUnicodeStream()、setBlob()或setClob()方法再次发送数据。</p>
+              <p> 因而，如果你打算将参数类型更改为非“large”类型，必须调用clearParameters()，并在重新执行预处理语句之前再次设置预处理语句的所有参数。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                ResultSet </p>
+              <p> 在默认情况下，ResultSets（结果集）是可完全检索的，并被保存在内存中。对于大多数情况，这是最有效的操作方式，而且还应归因于更容易实施的MySQL网络协议设计。如果你正在处理具有大量行或大数据的ResultSets，而且无法在JVM内为所需内存分配大量空间，可以通知驱动程序以“流”方式返回结果，一次一行。</p>
+              <p>要想允许该功能，需要以下述方式创建1个语句实例：</p>
+              <pre>stmt = conn.createStatement(java.sql.ResultSet.TYPE_FORWARD_ONLY,
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.sql.ResultSet.CONCUR_READ_ONLY);
+stmt.setFetchSize(Integer.MIN_VALUE);</pre>
+              <p>正向、只读结果集，以及Integer.MIN_VALUE的组合用于指示驱动程序以“流”方式按行处理结果集。此后，对于该语句创建的结果集，将按行检索。</p>
+              <p> 对于该方式，有一些需注意的事项。能够在连接上发出任何其他查询之前，应读取结果集中的所有行（或关闭结果集），否则将抛出异常。</p>
+              <p> 能够释放这些锁定语句（无论它们是MyISAM表级锁定，还是某些其他存储引擎如InnoDB中的行级锁定）的最早时刻是完成语句时。</p>
+              <p> 如果语句在事务的范围内，当事务完成后将释放锁定（它意味着语句需首先完成）。与大多数其他数据库一样，在读取了语句上所有的未决结果集或关闭了语句的活动结果集之前，语句不会结束。</p>
+              <p> 因此，如果正在使用“流式”结果，如果希望保持对特定表的同时访问，而这些表被生成结果集的语句所引用，就应尽快地处理“流式”结果。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                ResultSetMetaData </p>
+              <p>仅当使用MySQL服务器4.0或更高版本时，“isAutoIncrement()”方法才能正确工作。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Statement </p>
+              <p>使用版本低于3.2.1的JDBC驱动程序，而且所连接的服务器版本低于5.0.3时，除了像前面介绍的那样切换结果集外，“setFetchSize()”方法不起作用。</p>
+              <p>MySQL不支持SQL光标，而且JDBC驱动程序也不能模拟它们，因此“setCursorName()”没有效果。</p>
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

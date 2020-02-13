@@ -1,0 +1,226 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.6.2.2. LOAD 
+                DATA FROM MASTER语法</h1>
+
+            
+          
+        
+        
+        <pre>LOAD DATA FROM MASTER</pre>
+        <p>本命令用于对主服务器进行快照，并拷贝到从属服务器上。它可以更新MASTER_LOG_FILE和MASTER_LOG_POS的值，这样，从属服务器就可以从正确的位置开始进行复制。使用--replicate-*-do-*和--replicate-*-ignore-*选项指定的表和数据库排除规则均被兑现。--replicate-rewrite-db没有被考虑。这是因为使用本选项，用户就可以设置一个例如--replicate-rewrite-db=db1-&gt;db3和--replicate-rewrite-db=db2-&gt;db3的非唯一映射。当从主服务器载入表时，该映射会使从属服务器发生混淆。</p>
+        <p>本语句的使用受以下条件的制约：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          只对MyISAM表起作用。如果试图载入一个非MyISAM表，会导致以下错误：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ERROR 1189 (08S01): Net error reading from master</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          当拍摄快照时，会获得对主服务器的全局读取锁定。在载入操作期间，该锁定会阻止对主服务器的更新。</p>
+        <p>如果您正在载入大表，您可能必须对主服务器和从属服务器均增加net_read_timeout和net_write_timeout值。请参见<a href="create-table.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。</p>
+        <p>注意，LOAD DATA FROM MASTER不从mysql数据库拷贝任何表。这可以更容易地让主服务器和从属服务器拥有不同的用户和权限。</p>
+        <p>LOAD DATA FROM MASTER语句要求用于连接主服务器的复制帐户，以便让主服务器拥有RELOAD和SUPER权限，并让所有您想要载入的主服务器表拥有SELECT权限。所有的用户不拥有SELECT权限的主服务器表均被LOAD 
+          DATA FROM MASTER忽略。这是因为主服务器会对用户隐藏它们：LOAD 
+          DATA FROM MASTER会调用SHOW DATABASES以了解要载入的主服务器数据库，但是SHOW 
+          DATABASES只会返回用户有部分权限的数据库。请参见<a href="show-databases.html" title="13.5.4.6. SHOW DATABASES Syntax">13.5.4.6节，“SHOW 
+          DATABASES语法”</a>。在从属服务器方面，发布LOAD DATA FROM 
+          MASTER的用户应拥有授权，以取消或创建被复制的数据库和表。
+      
+      
+        
+          
+            
+              <h4 ><a name="load-table-from-master"></a>13.6.2.3. LOAD 
+                TABLE <em >tbl_name</em> FROM 
+                MASTER语法</h4>
+            
+          
+        
+        
+        <pre>LOAD TABLE <i>tbl_name</i> FROM MASTER</pre>
+        <p>用于把表的拷贝从主服务器转移到从属服务器。本语句的主要作用是调试LOAD DATA 
+          FROM MASTER。它要求用于连接主服务器的帐户拥有对主服务器的RELOAD和SUPER权限，并拥有对要载入的主服务器表的SELECT权限。在从属服务器方面，发布LOAD 
+          TABLE FROM MASTER的用户应拥有取消和创建表的权限。</p>
+        <p>用于LOAD DATA FROM MASTER的条件也适用于这里。举例说明，LOAD 
+          TABLE FROM MASTER仅对于MyISAM表起作用。对LOAD 
+          DATA FROM MASTER的暂停注意也适用。</p>
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

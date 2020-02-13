@@ -1,0 +1,234 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>5.9.2.1.&nbsp;备份策略</h1>
+
+            
+          
+        
+        <p>我们都知道必须按计划定期进行备份。可以用几个工具完全备份(在某个时间点的数据快照)MySQL。例如，InnoDB 
+          Hot Backup为InnoDB数据文件提供在线非数据块物理备份，mysqldump提供在线逻辑备份。这里使用mysqldump。</p>
+        <p>假定我们在星期日下午1点进行了备份，此时负荷较低。下面的命令可以完全备份所有数据库中的所有InnoDB表：</p>
+        <pre>shell&gt; mysqldump --single-transaction --all-databases &gt; backup_sunday_1_PM.sql</pre>
+        <p>这是在线非块备份，不会干扰对表的读写。我们以前假定我们的表为InnoDB表，因此--single-transaction使用一致性地读，并且保证mysqldump所看见的数据不会更改。(其它客户端对InnoDB表进行的更改不会被mysqldump进程看见）。如果我们还有其它类型的表，我们必须假定在备份过程中它们不会更改。例如，对于mysql数据库中的MyISAM表，我们必须假定在备份过程中没有对MySQL账户进行管理更改。</p>
+        <p>mysqldump命令产生的.sql文件包含一系列SQL
+          INSERT语句，可以用来重载转储的表。</p>
+        <p> 需要进行完全备份，但有时不方便。会产生大的备份文件并需要花时间来生成。从某个角度，完全备份并不理想，因为每个成功的完全备份包括所有数据，甚至自从上一次完全备份以来没有更改的部分。完成了初使完全备份后，进行增量备份会更有效。这样备份文件要小得多，备份时间也较短。不利之处是，恢复时不能只重载完全备份来恢复数据。还必须要用增量备份来恢复增量更改。</p>
+        <p>要想进行增量备份，我们需要保存增量更改。应使用--log-bin选项启动MySQL服务器，以便更新数据时将这些更改保存到文件中。该选项启用二进制日志，因此服务器写将每个更新数据的SQL语句写入MySQL二进制日志。让我们看看用--log-bin选项启动的已经运行多日的MySQL服务器的数据目录。我们找到以下MySQL二进制日志文件：</p>
+        <pre>-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp; 1277324 Nov 10 23:59 gbichot2-bin.000001
+-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 Nov 10 23:59 gbichot2-bin.000002
+-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 79 Nov 11 11:06 gbichot2-bin.000003
+-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 508 Nov 11 11:08 gbichot2-bin.000004
+-rw-rw---- 1 guilhem&nbsp; guilhem 220047446 Nov 12 16:47 gbichot2-bin.000005
+-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp;&nbsp; 998412 Nov 14 10:08 gbichot2-bin.000006
+-rw-rw---- 1 guilhem&nbsp; guilhem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 361 Nov 14 10:07 gbichot2-bin.index</pre>
+        <p>每次重启，MySQL服务器用序列中的下一个编号创建一个新的二进制日志文件。当服务器运行时，你还可以通过执行FLUSH 
+          LOGS SQL语句或mysqladmin 
+          flush-logs命令，告诉服务器关闭当前的二进制日志文件并创建一个新文件。mysqldump也有一个选项来清空日志。数据目录中的.index文件包含该目录下所有MySQL二进制日志的清单。该文件用于复制。</p>
+        <p>恢复时MySQL二进制日志很重要，因为它们是增量备份。如果进行完全备份时确保清空了日志，则后面创建的二进制日志文件包含了备份后的所有数据更改。让我们稍稍修改前面的mysqldump命令，让它在完全备份时能够清空 
+          MySQL二进制日志，以便转储文件包含包含新的当前的二进制日志：</p>
+        <pre>shell&gt; mysqldump --single-transaction --flush-logs --master-data=2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --all-databases &gt; backup_sunday_1_PM.sql</pre>
+        <p>执行该命令后，数据目录则包含新的二进制日志文件，gbichot2-bin.000007。结果.sql文件包含下列行：</p>
+        <pre>-- Position to start replication or point-in-time 恢复时y from
+-- CHANGE MASTER TO MASTER_LOG_FILE=&#39;gbichot2-bin.000007&#39;,MASTER_LOG_POS=4;</pre>
+        <p>因为mysqldump命令可以执行完全备份，这些行表示两件事情：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          .sql文件包含所有写入gbichot2-bin.000007二进制日志文件或最新的文件之前的更改。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          备份后所记录的所有数据更改不出现在.sql中，但出现在gbichot2-bin.000007二进制日志文件或最新的文件中。</p>
+        <p>在星期一下午1点，我们可以清空日志开始新的二进制日志文件来创建增量备份。例如，执行mysqladmin 
+          flush-logs命令创建gbichot2-bin.000008。星期日下午1点的完全备份和星期一下午1点之间的所有更改为文件gbichot2-bin.000007。该增量备份很重要，因此最好将它复制到安全的地方。(例如，备份到磁带或DVD上，或复制到另一台机器上）。在星期二下午1点，执行另一个mysqladmin 
+          flush-logs命令。星期一下午1点和星期二下午1点之间的所有所有更改为文件gbichot2-bin.000008(也应复制到某个安全的地方)。</p>
+        <p>MySQL二进制日志占据硬盘空间。要想释放空间，应随时清空。操作方法是删掉不再使用的二进制日志，例如进行完全备份时：</p>
+        <pre>shell&gt; mysqldump --single-transaction --flush-logs --master-data=2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --all-databases --delete-master-logs &gt; backup_sunday_1_PM.sql</pre>
+        <p>注释：如果你的服务器为复制主服务器，用mysqldump 
+          --delete-master-logs删掉MySQL二进制日志很危险，因为从服务器可能还没有完全处理该二进制日志的内容。</p>
+        <p>PURGE MASTER 
+          LOGS语句的描述中解释了为什么在删掉MySQL二进制日志之前应进行确认。参见<a href="" title="13.6.1.1. PURGE MASTER LOGS Syntax">13.6.1.1节，“PURGE 
+          MASTER LOGS语法”</a>。
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,477 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>
+                  15.2.6
+                  .4.外键约束</h1>
+
+              
+            
+          
+          <p>InnoDB也支持外键约束。InnoDB中对外键约束定义的语法看起来如下：
+            
+          </p>
+          <pre>[CONSTRAINT <i>symbol</i>] FOREIGN KEY [<i>id</i>] (<i>index_col_name</i>, ...)
+
+&nbsp;&nbsp;&nbsp; REFERENCES <i>tbl_name</i> (<i>index_col_name</i>, ...)
+
+&nbsp;&nbsp;&nbsp; [ON DELETE {RESTRICT | CASCADE | SET NULL | NO ACTION}]
+
+&nbsp;&nbsp;&nbsp; [ON UPDATE {RESTRICT | CASCADE | SET NULL | NO ACTION}]
+</pre>
+          <p>外键定义服从下列情况：
+            
+          </p>
+          
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              所有tables必须是InnoDB型，它们不能是临时表。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在引用表中，必须有一个索引，外键列以同样的顺序被列在其中作为第一列。这样一个索引如果不存在，它必须在
+              引用表里被自动创建。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在引用表中，必须有一个索引，被引用的列以同样的顺序被列在其中作为第一列。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              不支持对外键列的索引前缀。这样的后果之一是BLOB和TEXT列不被包括在一个外键中，这是因为对这些列的索引必须总是包含一个前缀长度。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              如果CONSTRAINT<i>symbol</i>被给出，它在数据库里必须是唯一的。如果它没有被给出，InnoDB自动创建这个名字。
+              
+            </p>
+          
+          <p>InnoDB拒绝任何试着在子表创建一个外键值而不匹配在父表中的候选键值的INSERT或UPDATE操作。一个父表有一些匹配的行
+            的子表，InnoDB对任何试图更新或删除该父表中候选键值的UPDATE或DELETE操作有所动作，这个动作取决于用FOREIGN KEY子句的ON UPDATE和ON DETETE子句指定的<em>referential action</em>。当用户试图从一个父表删除或更新一行之时，且在子表中有一个或多个匹配的行，InnoDB根据要采取的动作有五个选择：</p>
+          
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              CASCADE:    
+              从父表删除或更新且自动删除或更新子表中匹配的行。ON DELETE CASCADE和ON  
+              UPDATE CASCADE都可用。在两个表之间，你不应定义若干在父表或子表中的同一列采取动作的ON UPDATE CASCADE子句。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              SET NULL:    
+              从父表删除或更新行，并设置子表中的外键列为NULL。如果外键列没有指定NOT NULL限定词，这就是唯一合法的。ON  
+              DELETE SET NULL和ON UPDATE SET NULL子句被支持。</p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              NO ACTION: 在ANSI               
+              SQL-92标准中，NO ACTION意味这不采取动作，就是如果有一个相关的外键值在被参考的表里，删除或更新主要键值的企图不被允许进行（Gruber, <em>掌握SQL</em>,    
+              2000:181）。 InnoDB拒绝对父表的删除或更新操作。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              RESTRICT: 拒绝对父表的删除或更新操作。NO ACTION和RESTRICT都一样，删除ON 
+              DELETE或ON UPDATE子句。（一些数据库系统有延期检查，并且NO ACTION是一个延期检查。在MySQL中，外键约束是被立即检查的，所以NO 
+              ACTION和RESTRICT是同样的）。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              SET DEFAULT:    
+              这个动作被解析程序识别，但InnoDB拒绝包含ON DELETE SET DEFAULT或ON UPDATE  
+              SET DEFAULT子句的表定义。
+              
+            </p>
+          
+          <p>当父表中的候选键被更新的时候，InnoDB支持同样选择。选择CASCADE，在子表中的外键
+            列被设置为父表中候选键的新值。以同样的方式，如果在子表更新的列参考在另一个表中的外键，更新级联。
+            
+          </p>
+          <p>注意，InnoDB支持外键在一个表内引用，在这些情况下，子表实际上意味这在表内附属的记录。
+            
+          </p>
+          <p>InnoDB需要对外键和被引用键的索引以便外键检查可以快速进行且不需要一个表扫描。对外键的索引被自动创建。这是相对于一些老版本，在老版本中索引必须明确创建，否则外键约束的创建会失败。
+            
+          </p>
+          <p>在InnoDB内，外键里和被引用列里相应的列必须有类似的内部数据类型，以便它们不需类型转换就可被比较。整数类型的大小和符号必须相同。字符串类型的长度不需要相同。如果你指定一个SET NULL动作，请确认你没有在子表中宣告该
+            列为为<i>NOT NULL</i>。
+            
+          </p>
+          <p>如果MySQL从CREATE TABLE语句报告一个错误号1005，并且错误信息字符串指向errno    
+            150，这意思是因为一个外键约束被不正确形成，表创建失败。类似地，如果ALTER  
+            TABLE失败，且它指向errno 150，    
+            那意味着对已变更的表，外键定义会被不正确的形成。你可以使用SHOW  
+            INNODB STATUS来显示一个对服务器上最近的InnoDB外键错误的详细解释。
+            
+          </p>
+          <p>注释：InnoDB不对那些
+            外键或包含NULL列的被引用键值检查外键约束。
+            
+          </p>
+          <p>对SQL标准的背离：如果在父表内有数个行，其中有相同的
+            被引用键值，然后InnoDB在外键检查中采取动作，就仿佛其它有相同键值的父行不存在一样。例如，如果你已定义一个RESTRICT类型的约束，并且有一个带数个父行的子行，InnoDB不允许任何对这些父行的删除。
+            
+          </p>
+          <p>居于对应外键约束的索引内的记录，InnoDB通过深度优先选法施行级联操作。</p>
+          <p>对SQL标准的背离： 如果ON UPDATE CASCADE或ON     
+            UPDATE SET NULL递归更新相同的表，之前在级联过程中该表一被更新过，它就象RESTRICT一样动作。这意味着你不能使用自引用ON UPDATE CASCADE或者ON UPDATE  
+            SET NULL操作。这将阻止级联更新导致的无限循环。另一方面，一个自引用的ON DELETE SET NULL是有可能的，就像一个自引用ON DELETE CASCADE一样。
+            级联操作不可以被嵌套超过15层深。
+            
+          </p>
+          <p>对SQL标准的背离： 类似一般的MySQL，在一个插入，删除或更新许多行的SQL语句内，InnoDB逐行检查UNIQUE和FOREIGN KEY约束。按照SQL的标准，
+            默认的行为应被延迟检查，即约束仅在整个SQL语句被处理之后才被检查。直到InnoDB实现延迟的约束检查之前，一些事情是不可能的，比如删除一个通过外键参考到自身的记录。
+            
+          </p>
+          <p>注释：当前，触发器不被级联外键的动作激活。
+            
+          </p>
+          <p>一个通过单列外键联系起父表和子表的简单例子如下：
+            
+          </p>
+          <pre>CREATE TABLE parent(id INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIMARY KEY (id)
+
+) TYPE=INNODB;
+
+CREATE TABLE child(id INT, parent_id INT,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INDEX par_ind (parent_id),
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOREIGN KEY (parent_id) REFERENCES parent(id)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON DELETE CASCADE
+
+) TYPE=INNODB;
+</pre>
+          <p>如下是一个更复杂的例子，其中一个product_order表对其它两个表有外键。一个外键引用一个product表中的双列索引。另一个
+            引用在customer表中的单行索引：
+            
+          </p>
+          <pre>CREATE TABLE product (category INT NOT NULL, id INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; price DECIMAL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIMARY KEY(category, id)) TYPE=INNODB;
+
+CREATE TABLE customer (id INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIMARY KEY (id)) TYPE=INNODB;
+
+CREATE TABLE product_order (no INT NOT NULL AUTO_INCREMENT,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; product_category INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; product_id INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; customer_id INT NOT NULL,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIMARY KEY(no),
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INDEX (product_category, product_id),
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOREIGN KEY (product_category, product_id)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REFERENCES product(category, id)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON UPDATE CASCADE ON DELETE RESTRICT,
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INDEX (customer_id),
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOREIGN KEY (customer_id)
+
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REFERENCES customer(id)) TYPE=INNODB;
+</pre>
+          <p>InnoDB允许你用ALTER TABLE往一个表中添加一个新的
+            外键约束：
+            
+          </p>
+          <pre>ALTER TABLE yourtablename
+
+&nbsp;&nbsp;&nbsp; ADD [CONSTRAINT <i>symbol</i>] FOREIGN KEY [<i>id</i>] (<i>index_col_name</i>, ...)
+
+&nbsp;&nbsp;&nbsp; REFERENCES <i>tbl_name</i> (<i>index_col_name</i>, ...)
+
+&nbsp;&nbsp;&nbsp; [ON DELETE {RESTRICT | CASCADE | SET NULL | NO ACTION}]
+
+&nbsp;&nbsp;&nbsp; [ON UPDATE {RESTRICT | CASCADE | SET NULL | NO ACTION}]
+</pre>
+          <p>记住先创建需要的索引。你也可以用ALTER 
+            TABLE往一个表添加一个自引用外键约束。
+            
+          </p>
+          <p><a name="id2939447"></a><a name="id2939456"></a><a name="id2939466"></a>InnoDB也支持使用ALTER TABLE来移除
+            外键：
+            
+          </p>
+          <pre>ALTER TABLE <i>yourtablename</i> DROP FOREIGN KEY <i>fk_symbol</i>;
+</pre>
+          <p>当年创建一个外键之时，如果FOREIGN KEY子句包括一个CONSTRAINT名字，你可以引用那个名字来移除
+            外键。另外，当外键被创建之时，fk_symbol值被InnoDB内部保证。当你想要移除一个外键之时，要找出标记，请使用SHOW     
+            CREATE TABLE语句。例子如下：
+            
+          </p>
+          <pre>mysql&gt; SHOW CREATE TABLE ibtest11c\G
+
+*************************** 1. row ***************************
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Table: ibtest11c
+
+Create Table: CREATE TABLE `ibtest11c` (
+
+&nbsp; `A` int(11) NOT NULL auto_increment,
+
+&nbsp; `D` int(11) NOT NULL default '0',
+
+&nbsp; `B` varchar(200) NOT NULL default '',
+
+&nbsp; `C` varchar(175) default NULL,
+
+&nbsp; PRIMARY KEY&nbsp; (`A`,`D`,`B`),
+
+&nbsp; KEY `B` (`B`,`C`),
+
+&nbsp; KEY `C` (`C`),
+
+&nbsp; CONSTRAINT `0_38775` FOREIGN KEY (`A`, `D`)
+
+REFERENCES `ibtest11a` (`A`, `D`)
+
+ON DELETE CASCADE ON UPDATE CASCADE,
+
+&nbsp; CONSTRAINT `0_38776` FOREIGN KEY (`B`, `C`)
+
+REFERENCES `ibtest11a` (`B`, `C`)
+
+ON DELETE CASCADE ON UPDATE CASCADE
+
+) ENGINE=INNODB CHARSET=latin1
+
+1 row in set (0.01 sec)
+
+&nbsp;
+
+mysql&gt; ALTER TABLE ibtest11c DROP FOREIGN KEY 0_38775;
+</pre>
+          <p> InnoDB解析程序允许你在FOREIGN 
+            KEY ... REFERENCES ...子句中用`（backticks)把表和列名名字围起来。InnoDB解析程序也考虑到lower_case_table_names系统变量的设置。
+            
+          </p>
+          <p>InnoDB返回一个表的外键定义作为SHOW CREATE TABLE语句输出的一部分：
+            
+          </p>
+          <pre>SHOW CREATE TABLE <i>tbl_name</i>;
+</pre>
+          <p>从这个版本起，mysqldump也将表的正确定义生成到转储文件中，且并不忘记
+            外键。
+            
+          </p>
+          <p>你可以如下对一个表显示外键约束：</p>
+          <pre>SHOW TABLE STATUS FROM <i>db_name</i> LIKE '<i>tbl_name</i>';
+</pre>
+          <p>外键约束被列在输出的Comment列。</p>
+          <p>当执行外键检查之时，InnoDB对它照看着的子或父记录设置共享的行级锁。InnoDB立即检查外键约束，检查不对事务提交延迟。
+            
+          </p>
+          <p>要使得对有外键关系的表重新载入转储文件变得更容易，mysqldump自动在转储输出中包括一个语句设置FOREIGN_KEY_CHECKS为0。这避免在转储被重新装载之时，与不得不被以特别顺序重新装载的表相关的问题。也可以手动设置这个变量：
+            
+          </p>
+          <pre>mysql&gt; SET FOREIGN_KEY_CHECKS = 0;
+
+mysql&gt; SOURCE <i>dump_file_name</i>;
+
+mysql&gt; SET FOREIGN_KEY_CHECKS = 1;
+</pre>
+          <p>如果转储文件包含对外键是不正确顺序的表，这就以任何顺序导入该表。这样也加快导入操作。设置FOREIGN_KEY_CHECKS为0，对于在LOAD  
+            DATA和ALTER TABLE操作中忽略外键限制也是非常有用的。
+            
+          </p>
+          <p>InnoDB不允许你删除一个被FOREIGN KEY表约束
+            引用的表，除非你做设置SET FOREIGN_KEY_CHECKS=0。当你移除一个表的时候，在它的创建语句里定义的约束也被移除。
+            
+          </p>
+          <p>如果你重新创建一个被移除的表，它必须有一个遵从于也引用它的外键约束的定义。它必须有正确的列名和类型，并且如前所述，它必须对被
+            引用的键有索引。如果这些不被满足，MySQL返回错误号1005    
+            并在错误信息字符串中指向errno
+            150。
+              
+            
+          </p>
+        
+        
+          
+            
+              
+                
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

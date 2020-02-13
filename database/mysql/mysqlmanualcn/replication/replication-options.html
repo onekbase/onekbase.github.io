@@ -1,0 +1,469 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 6.8.&nbsp;复制启动选项</h1>
+
+        
+      
+    
+    <p>在主服务器和从服务器上，均必须使用server-id选项为每个服务器建立唯一的复制ID。你应为每个主服务器和从服务器从1到2<sup>32</sup>–1的范围挑一个唯一的正整数。例如：server-id=3</p>
+    <p>用于主服务器上控制二进制日志的选项的相关描述见<a href="replication-features.html" title="5.11.3. The Binary Log">5.11.3节，“二进制日志”</a>。</p>
+    <p>下表描述了可以用于MySQL 5.1从属复制服务器的选项。你可以在命令行中或在选项文件中指定这些选项。</p>
+    <p>某些从服务器复制选项按特殊方式处理，当从服务器启动时如果master.info文件存在并且包含选项值，它们将被忽略掉。下面的选项按这种方式处理：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-host</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-user</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-password</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-port</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-connect-retry</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl-ca</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl-capath</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl-cert</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl-cipher</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl-key</p>
+    <p>5.1中的master.info文件格式包括对应SSL选项的值。并且，文件格式包括文件中的行号，如同第1行。如果你将旧的服务器升级到新的版本，新服务器启动时自动将smaster.info文件升级到新的格式。然而，如果将新服务器降级到旧的版本，首次启动旧版本的服务器之前应删除第1行。</p>
+    <p>如果从服务器启动时master.info文件不存在，选项采用选项文件或命令行中指定的值。首次将服务器作为从服务器启动时，或者已经运行RESET 
+      SLAVE然后已经关闭并重启从服务器时会发生。</p>
+    <p>如果从服务器启动时master.info文件存在，服务器忽略那些选项。使用master.info文件中发现的值。</p>
+    <p>如果你使用与master.info文件中相对应的启动选项的不同的值重启从服务器，启动选项的不同的值不会生效，因为服务器继续使用master.info文件。要想使用启动选项的不同的值，必须删除master.info文件并重启从服务器，或(最好是)在从服务器运行时使用CHANGE 
+      MASTER TO语句重新设置值。</p>
+    <p>假定在my.cnf文件中指定该选项：</p>
+    <pre>[mysqld]
+master-host=some_host</pre>
+    <p>第1次作为复制从服务器启动服务器时，从my.cnf文件读取并使用选项。服务器然后记录master.info文件中的值。下次启动服务器时，它只从服务器的master.info文件读取主服务器主机值并忽略选项文件中的值。如果你修改my.cnf文件为some_other_host指定其它主服务器主机，更改仍然不会生效。你应使用CHANGE 
+      MASTER TO。</p>
+    <p>因为服务器给已有master.info文件的优先权高于刚刚描述的启动选项，可以选择不使用这些值的启动选项，而是使用CHANGE 
+      MASTER TO语句来指定。参见<a href="" title="13.6.2.1. CHANGE MASTER TO Syntax">13.6.2.1节，“CHANGE 
+      MASTER TO语法”</a>。</p>
+    <p>下面的例子显示了如何更广泛地使用启动选项来配置从服务器：</p>
+    <pre>[mysqld]
+server-id=2
+master-host=db-master.mycompany.com
+master-port=3306
+master-user=pertinax
+master-password=freitag
+master-connect-retry=60
+report-host=db-slave.mycompany.com</pre>
+    <p>下面列出了控制复制的启动选项：许多选项可以在服务器运行时通过CHANGE 
+      MASTER TO语句重新进行设置。其它选项，例如--replicate-*选项，只能在从服务器启动时进行设置。我们计划将修复该问题。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --logs-slave-updates</p>
+    <p> 通常情况，从服务器从主服务器接收到的更新不记入它的二进制日志。该选项告诉从服务器将其SQL线程执行的更新记入到从服务器自己的二进制日志。为了使该选项生效，还必须用--logs-bin选项启动从服务器以启用二进制日志。如果想要应用链式复制服务器，应使用--logs-slave-updates。例如，可能你想要这样设置：</p>
+    <pre >A -&gt; B -&gt; C</pre>
+    <p>也就是说，A为从服务器B的主服务器，B为从服务器C的主服务器。为了能工作，B必须既为主服务器又为从服务器。你必须用--logs-bin启动A和B以启用二进制日志，并且用--logs-slave-updates选项启动B。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --logs-warnings</p>
+    <p>让从服务器向错误日志输出更详细的关于其执行操作的消息。例如，通知你网络/连接失败后已经成功重新连接，并通知你每个从服务器线程如何启动。该选项默认启用；要想禁用它，使用--skip-logs-warnings。放弃的连接不记入错误日志，除非该值大于1。</p>
+    <p>请注意该选项的效果不限于复制。可以对服务器的部分动作产生警告。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-connect-retry=<i>seconds</i></p>
+    <p> 在主服务器宕机或连接丢失的情况下，从服务器线程重新尝试连接主服务器之前睡眠的秒数。如果主服务器.info文件中的值可以读取则优先使用。如果未设置，
+      默认值为60。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-host=<i>host</i></p>
+    <p>主复制服务器的主机名或IP地址。如果没有给出该选项，从服务器线程不启动。如果主服务器.info文件中的值可以读取则优先使用。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-info-file=<i>file_name</i></p>
+    <p>从服务器用于记录主服务器的相关信息使用的文件名。默认名为数据目录中的mysql.info。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-password=<i>password</i></p>
+    <p>连接主服务器时从服务器线程用于鉴定的账户的密码。如果主服务器.info文件中的值可以读取则优先使用。如果未设置，假定
+      密码为空。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-port=<i>port_number</i></p>
+    <p>主服务器正帧听的TCP/IP端口号。如果主服务器.info文件中的值可以读取则优先使用。如果未设置，假定使用编译进来的设定值。如果你未曾用configure选项进行修改，该值应为3306。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-ssl、--master-ssl-ca=<i>file_name</i>、--master-ssl-capath=<i>directory_name</i>、--master-ssl-cert=<i>file_name</i>、--master-ssl-cipher=<i>cipher_list</i>、--master-ssl-key=<i>file_name</i></p>
+    <p>这些选项用于使用SSL设置与主服务器的安全复制连接。它们的含义与<a href="" title="5.8.7.6. SSL Command-Line Options">5.8.7.6节，“SSL命令行选项”</a>中描述的相应—ssl、--ssl-ca、--ssl-capath、--ssl-cert、--ssl-cipher、--ssl-key选项相同。如果主服务器.info文件中的值可以读取则优先使用。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-user=<i>username</i></p>
+    <p>连接主服务器时从服务器线程用于鉴定的账户的用户名。该账户必须具有REPLICATION 
+      SLAVE权限。如果主服务器.info文件中的值可以读取则优先使用。如果未设置主服务器用户，假定使用用户test。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --max-relay-logs-size=<i>size</i></p>
+    <p>自动循环中继日志。参见<a href="replication-auto-increment.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --read-only</p>
+    <p>该选项让从服务器只允许来自从服务器线程或具有SUPER权限的用户的更新。可以确保从服务器不接受来自客户的更新。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --relay-log=<i>file_name</i></p>
+    <p>中继日志名。默认名为<i>host_name-relay-bin.nnnnnn</i>，其中<i>host_name</i>是从服务器主机的名，<i>nnnnnn</i>表示中继日志在编号序列中创建。如果中继日志太大(并且你不想降低max_relay_log_size)，需要将它们放到数据目录之外的其它地方，或者如果想要通过硬盘之间的负载均衡提高速度，可以指定选项创建与主机名无关的中继日志名。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --relay-log-index=<i>file_name</i></p>
+    <p>中继日志索引文件使用的位置和名称。默认名为<i>host_name-relay-bin.index</i>，其中<i>host_name</i>为从服务器名。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --relay-log-info-file=<i>file_name</i></p>
+    <p>从服务器用于记录中继日志相关信息的文件名。默认名为数据目录中的relay-log.info。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --relay-log-purge={0|1}</p>
+    <p>禁用或启用不再需要中继日志时是否自动清空它们。默认值为1(启用)。这是一个全局变量，可以用SET 
+      GLOBAL Relay_log_purge动态更改。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --relay-log-space-limit=<i>size</i></p>
+    <p>限制所有中继日志在从服务器上所占用空间的上限(0值表示“无限制”)。从服务器主机硬盘空间有限时很有用。达到限制后，I/O线程停止从主服务器读取二进制日志中的事件，直到SQL线程被闭锁并且删除了部分未使用的中继日志。请注意该限制并不是绝对的：有可能SQL线程删除中继日志前需要更多的事件。在这种情况下，I/O线程将超过限制，直到SQL线程可以删除部分中继日志。(不这样做将会造成死锁）。--relay-log-space-limit的值不能小于--max-relay-logs-size(或如果--max-relay-logs-size为0，选--max-binlog-size)的值的两倍。在这种情况下，有可能I/O线程等待释放空间，因为超过了--relay-log-space-limit，但SQL线程没有要清空的中继日志，不能满足I/O线程的需求。强制I/O线程临时忽视--relay-log-space-limit。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-do-db=<i>db_name</i></p>
+    <p>告诉从服务器限制默认数据库(由USE所选择)为<i>db_name</i>的语句的复制。要指定多个数据库，应多次使用该选项，每个数据库使用一次。请注意不复制跨数据库的语句，例如当已经选择了其它数据库或没有数据库时执行UPDATE <i>some_db.some_table</i> SET foo=&#39;bar&#39;。如果需要跨数据库进行更新，使用--replicate-wild-do-table=<i>db_name</i>.%。请读取该选项列表后面的注意事项。</p>
+    <p>一个不能按照期望工作的例子：如果用--replicate-do-db=sales启动从服务器，并且在主服务器上执行下面的语句，UPDATE语句不会复制：</p>
+    <pre >USE prices;
+UPDATE sales.january SET amount=amount+1000;</pre>
+    <p>如果需要跨数据库进行更新，应使用--replicate-wild-do-table=<i>db_name</i>.%。</p>
+    <p>“只检查默认数据库”行为的主要原因是语句自己很难知道它是否应被复制(例如，如果你正使用跨数据库的多表DELETE语句或多表UPDATE语句)。如果不需要，只检查默认数据库比检查所有数据库要快得多。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-do-table=<i>db_name.tbl_name</i></p>
+    <p> 告诉从服务器线程限制对指定表的复制。要指定多个表，应多次使用该选项，每个表使用一次。同--replicate-do-db对比，允许跨数据库更新。请读取该选项列表后面的注意事项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-ignore-db=<i>db_name</i></p>
+    <p>告诉从服务器不要复制默认数据库(由USE所选择)为<i>db_name</i>的语句。要想忽略多个数据库，应多次使用该选项，每个数据库使用一次。如果正进行跨数据库更新并且不想复制这些更新，不应使用该选项。请读取该选项后面的注意事项。</p>
+    <p>一个不能按照期望工作的例如：如果用--replicate-ignore-db=sales启动从服务器，并且在主服务器上执行下面的语句，UPDATE语句不会复制：</p>
+    <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; USE prices;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UPDATE sales.january SET amount=amount+1000;</pre>
+    <p>如果需要跨数据库更新，应使用--replicate-wild-ignore-table=<i>db_name</i>.%。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-ignore-table=<i>db_name.tbl_name</i> </p>
+    <p>告诉从服务器线程不要复制更新指定表的任何语句(即使该语句可能更新其它的表)。要想忽略多个表，应多次使用该选项，每个表使用一次。同--replicate-ignore-db对比，该选项可以跨数据库进行更新。请读取该选项后面的注意事项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-wild-do-table=<i>db_name.tbl_name</i></p>
+    <p>告诉从服务器线程限制复制更新的表匹配指定的数据库和表名模式的语句。模式可以包含‘%’和‘_’通配符，与LIKE模式匹配操作符具有相同的含义。要指定多个表，应多次使用该选项，每个表使用一次。该选项可以跨数据库进行更新。请读取该选项后面的注意事项。</p>
+    <p>例如：--replicate-wild-do-table=foo%.bar%只复制数据库名以foo开始和表名以bar开始的表的更新。</p>
+    <p>如果表名模式为%，可匹配任何表名，选项也适合数据库级语句(CREATE 
+      DATABASE、DROP 
+      DATABASE和ALTER 
+      DATABASE)。例如，如果使用--replicate-wild-do-table=foo%.%，如果数据库名匹配模式foo%，则复制数据库级语句。</p>
+    <p>要想在数据库或表名模式中包括通配符，用反斜线对它们进行转义。例如，要复制名为my_own%db的数据库的所有表，但不复制my1ownAABCdb数据库的表，应这样转义‘_’和‘%’字符：--replicate-wild-do-table=my\_own\%db。如果在命令行中使用选项，可能需要双反斜线或将选项值引起来，取决于命令解释符。例如，用bash外壳则需要输入--replicate-wild-do-table=my\\_own\\%db。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-wild-ignore-table=<i>db_name.tbl_name</i></p>
+    <p> 告诉从服务器线程不要复制表匹配给出的通配符模式的语句。要想忽略多个表，应多次使用该选项，每个表使用一次。该选项可以跨数据库进行更新。请读取该选项后面的注意事项。</p>
+    <p>例如：--replicate-wild-ignore-table=foo%.bar%不复制数据库名以foo开始和表名以bar开始的表的更新。</p>
+    <p>关于匹配如何工作的信息，参见--replicate-wild-do-table选项的描述。在选项值中包括通配符的规则与--replicate-wild-ignore-table相同。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-rewrite-db=<i>from_name</i>-&gt;<i>to_name</i></p>
+    <p>告诉从服务器如果默认数据库(由USE所选择)为主服务器上的<i>from_name</i>，则翻译为<i>to_name</i>。只影响含有表的语句(不是类似CREATE 
+      DATABASE、DROP 
+      DATABASE和ALTER 
+      DATABASE的语句)，并且只有<i>from_name</i>为主服务器上的默认数据库时。该选项不可以跨数据库进行更新。请注意在测试--replicate-*规则之前翻译数据库名。</p>
+    <p>如果在命令行中使用该选项， ‘&gt;’字符专用于命令解释符，应将选项值引起来。例如：</p>
+    <pre>shell&gt; mysqld --replicate-rewrite-db=&quot;<i>olddb</i>-&gt;<i>newdb</i>&quot;</pre>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --replicate-same-server-id</p>
+    <p>将用于从服务器上。通常可以默认设置为0以防止循环复制中的无限循环。如果设置为1，该从服务器不跳过有自己的服务器id的事件；通常只在有很少配置的情况下有用。如果使用--logs-slave-updates不能设置为1。请注意默认情况下如果有从服务器的id，服务器I/O线程不将二进制日志事件写入中继日志(该优化可以帮助节省硬盘的使用)。因此如果想要使用--replicate-same-server-id，让从服务器读取自己的SQL线程执行的事件前，一定要用该选项启动。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --report-host=<i>slave_name</i></p>
+    <p>从服务器注册过程中报告给主服务器的主机名或IP地址。该值出现在主服务器上SHOW 
+      SLAVE HOSTS的输出中。如果不想让从服务器自己在主服务器上注册，则不设置该值。请注意从服务器连接后，主服务器仅仅从TCP/IP套接字读取从服务器的IP号是不够的。由于 
+      
+      
+      NAT和其它路由问题，IP可能不合法，不能从主服务器或其它主机连接从服务器。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --report-port=<i>slave_port</i></p>
+    <p>连接从服务器的TCP/IP端口号，从服务器注册过程中报告给主服务器。只有从服务器帧听非默认端口或如果有一个特殊隧道供主服务器或其它客户连接从服务器时才设置它。如果你不确定，不设置该选项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --skip-slave-start</p>
+    <p>告诉从服务器当服务器启动时不启动从服务器线程。使用START 
+      SLAVE语句在以后启动线程。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --slave_compressed_protocol={0|1}</p>
+    <p>如果该选项设置为 1，如果从服务器和主服务器均支持，使用压缩从服务器/主服务器协议。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --slave-load-tmpdir=<i>file_name</i></p>
+    <p>从服务器创建临时文件的目录名。该选项默认等于tmpdir系统变量的值。当从服务器SQL线程复制LOAD 
+      DATA INFILE语句时，从中继日志将待装载的文件提取到临时文件，然后将这些文件装入到表中。如果装载到主服务器上的文件很大，从服务器上的临时文件也很大。因此，建议使用该选项告诉从服务器将临时文件放到文件系统中有大量可用空间的目录下。在这种情况下，也可以使用--relay-log选项将中继日志放到该文件系统中，因为中继日志也很大。--slave-load-tmpdir应指向基于硬盘的文件系统，而非基于内存的文件系统：从服务器需要用临时文件在机器重启时用于复制LOAD 
+      DATA INFILE。系统启动过程中操作系统也不能清除该目录。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --slave-net-timeout=<i>seconds</i></p>
+    <p> 放弃读之前从主服务器等候更多数据的秒数，考虑到连接中断和尝试重新连接。超时后立即开始第1次重试。由--master-connect-retry选项控制重试之间的间隔。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --slave-skip-errors=[<i>err_code1</i>,<i>err_code2</i>,... 
+      | all]</p>
+    <p> 通常情况，当出现错误时复制停止，这样给你一个机会手动解决数据中的不一致性问题。该选项告诉从服务器SQL线程当语句返回任何选项值中所列的错误时继续复制。</p>
+    <p>如果你不能完全理解为什么发生错误，则不要使用该选项。如果复制设置和客户程序中没有bug，并且MySQL自身也没有bug，应不会发生停止复制的错误。滥用该选项会使从服务器与主服务器不能保存同步，并且你找不到原因。</p>
+    <p>对于错误代码，你应使用从服务器错误日志中错误消息提供的编号和SHOW 
+      SLAVE STATUS的输出。服务器错误代码列于<a href="../error-handling/index.html">附录B：</a><a href="../error-handling/index.html" title="Appendix B. Error Codes and Messages"><i>错误代码和消息</i></a>。</p>
+    <p>你也可以(但不应)使用不推荐的all值忽略所有错误消息，不考虑所发生的错误。无需而言，如果使用该值，我们不能保证数据的完整性。在这种情况下，如果从服务器的数据与主服务器上的不相近请不要抱怨(或编写bug报告)。<em>已经警告你了</em>。</p>
+    <p>例如：</p>
+    <pre >--slave-skip-errors=1062,1053
+--slave-skip-errors=all</pre>
+    <p>从服务器按下面评估--replicate-*规则，确定是否执行或忽视语句：</p>
+    <p>1.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-do-db或--replicate-ignore-db规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：测试--binlog-do-db和--binlog-ignore-db(参见<a href="replication-features.html" title="5.11.3. The Binary Log">5.11.3节，“二进制日志”</a>)。测试结果是什么？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      忽视语句：忽视并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      许可语句：不立即执行语句。推迟决策；继续下一步。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：继续下一步。</p>
+    <p>2.&nbsp;&nbsp;&nbsp;
+      我们目前正执行保存的程序或函数吗？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：执行查询并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：继续下一步。</p>
+    <p>3.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-*-table规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：执行查询并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：继续下一步并开始按所示顺序评估表规则(首先是非通配规则，然后是通配规则)。只有待更新的表根据这些规则进行比较(INSERT 
+      INTO sales SELECT * FROM prices:只有sales根据这些规则进行比较)。如果要更新几个表(多表语句)，第1个匹配的表(匹配“do”或“ignore”)获赢。也就是说，根据这些规则比较第1个表。然后，如果不能进行决策，根据这些规则比较第2个表等等。</p>
+    <p>4.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-do-table规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：表匹配吗？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：执行查询并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：继续下一步。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：继续下一步。</p>
+    <p>5.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-ignore-table规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：表匹配吗？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：忽视查询并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：继续下一步。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：继续下一步。</p>
+    <p>6.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-wild-do-table规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：表匹配吗？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：执行查询并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：继续下一步。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：继续下一步。</p>
+    <p>7.&nbsp;&nbsp;&nbsp;
+      是否有--replicate-wild-ignore-table规则？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：表匹配吗？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：忽视查询并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：继续下一步。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：继续下一步。</p>
+    <p>8.&nbsp;&nbsp;&nbsp;
+      没有匹配的--replicate-*-table规则。要根据这些规则测试其它表吗？</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>是</em>：执行循环。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>否</em>：我们现在已经测试了所有待更新的表，结果不能匹配任何规则。是否有--replicate-do-table或--replicate-wild-do-table规则？</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>有</em>：有“do”规则但不匹配。忽视查询并退出。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>没有</em>：执行查询并退出。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,521 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 8.2.&nbsp;myisampack：生成压缩、只读MyISAM表</h1>
+
+        
+      
+    
+    <p> myisampack工具可以压缩MyISAM表.MYIsampack分别压缩表中的每一列。通常，myisampack可以将数据文件压缩到40%-70%。</p>
+    <p> 当以后使用表时，解压缩列需要的信息被读入内存。当访问具体的记录时性能会更好，因为你只需要解压缩一个记录。</p>
+    <p> MySQL使用mmap()对压缩的表进行内存映射。如果mmap()不工作，MySQL返回到普通读/写文件操作。</p>
+    <p> 请注意：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      如果用--skip-external-locking选项调用mysqld服务器，如果在压缩过程中表可能被更新，调用myisampack不是一个好注意。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      表压缩后，它变为只读。这是故意的(例如当访问CD上的压缩的表时)。允许写入到压缩的表位于我们的TODO列表中，但优先级较低。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      myisampack可以压缩BLOB或TEXT列。旧版本ISAM表的pack_isam程序不可以。</p>
+    <p> 调用myisampack的方法：</p>
+    <pre>shell&gt; myisampack [<i>options</i>] <i>filename</i> ...</pre>
+    <p> 文件名应为索引(.MYI)文件的文件名。如果不在数据库目录，应指定文件的路径名。允许忽略.MYI扩展名。</p>
+    <p> myisampack支持下面的选项：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --help，-？</p>
+    <p> 显示帮助消息并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --backup，-b</p>
+    <p> 使用<i>tbl_name</i>.OLD名备份表数据文件。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      ---debug[=<i>debug_options</i>]，-# 
+      [<i>debug_options</i>]</p>
+    <p> 写调试日志。<i>debug_options</i>字符串通常为&#39;d:t:o,<i>file_name</i>&#39;。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --force，-f</p>
+    <p> 产生一个压缩的表，即使它比原始表大，或如果以前调用myisampack的中间文件存在。(myisampack压缩表时在数据库目录中创建一个名为<i>tbl_name</i>.TMD的中间文件。如果杀掉myisampack，.TMD文件会被删除）。通常情况，如果myisampack发现<i>tbl_name</i>.TMD存在则退出并提示错误。用--force，myisampack则一定压缩表。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      -join=<i>big_tbl_name</i>，-j <i>big_tbl_name</i></p>
+    <p> 将命令行中的所有表联接为一个表<i>big_tbl_name</i>。将要连接的所有表必须有相等的结构(相同的列名和类型，相同的索引等等)。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --pack length=<i>len</i>，-p <i>len</i></p>
+    <p> 指定记录长度存储大小，以字节计。值应为1、2或者3。myisampack保存所有长度指针为1、2或者3字节的行。在大多数正常情况下，myisampack在开始压缩文件前可以确定准确的长度值，但在压缩过程中它可以提示它可能已经使用了一个短的长度。在这种情况下，myisampack输出一条提示，下次你压缩同一文件时，你可以使用更短的记录长度。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --silent，-s</p>
+    <p> 沉默模式。只有发生错误时才写输出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --test，-t</p>
+    <p> 没有实际地压缩表，只是测试压缩。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --tmpdir=<i>path</i>，-T <i>path</i></p>
+    <p> 使用myisamchk创建临时文件的目录。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --verbose，-v</p>
+    <p> 冗长模式。写压缩操作过程相关信息和其结果。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --version，-V</p>
+    <p> 显示版本信息并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --wait，-w</p>
+    <p> 如果表正使用则等待并重试。如果用--skip-external-locking选项调用了mysqld服务器，如果在压缩过程中表可能被更新，调用myisampack不是一个好注意。</p>
+    <p>下面的顺序命令说明了典型的表压缩会话：</p>
+    <pre>shell&gt; ls -l station.*
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 994128 Apr 17 19:00 station.MYD
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53248 Apr 17 19:00 station.MYI
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5767 Apr 17 19:00 station.frm
+&nbsp;
+shell&gt; myisamchk -dvv station
+&nbsp;
+MyISAM file:&nbsp;&nbsp;&nbsp;&nbsp; station
+Isam-version:&nbsp; 2
+Creation time: 1996-03-13 10:08:58
+Recover time:&nbsp; 1997-02-02&nbsp; 3:06:43
+Data records:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1192&nbsp; Deleted blocks:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+Datafile parts:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1192&nbsp; Deleted data:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+Datafile pointer (bytes):&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp; Keyfile pointer (bytes): &nbsp;&nbsp;&nbsp;&nbsp;2
+Max datafile length:&nbsp;&nbsp; 54657023&nbsp; Max keyfile length:&nbsp;&nbsp; 33554431
+Recordlength:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 834
+Record format: Fixed length
+&nbsp;
+table description:
+Key Start Len Index&nbsp;&nbsp; Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Root&nbsp; Blocksize&nbsp;&nbsp;&nbsp; Rec/key
+1&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp; unique&nbsp; unsigned long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+2&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp; 30&nbsp; multip. text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10240&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+&nbsp;
+Field Start Length Type
+1&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; 1
+2&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 4
+3&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 4
+4&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 1
+5&nbsp;&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp; 20
+6&nbsp;&nbsp;&nbsp;&nbsp; 31&nbsp;&nbsp;&nbsp; 1
+7&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp; 30
+8&nbsp;&nbsp;&nbsp;&nbsp; 62&nbsp;&nbsp;&nbsp; 35
+9&nbsp;&nbsp;&nbsp;&nbsp; 97&nbsp; &nbsp;&nbsp;35
+10&nbsp;&nbsp;&nbsp; 132&nbsp;&nbsp; 35
+11&nbsp;&nbsp;&nbsp; 167&nbsp;&nbsp; 4
+12&nbsp;&nbsp;&nbsp; 171&nbsp;&nbsp; 16
+13&nbsp;&nbsp;&nbsp; 187&nbsp;&nbsp; 35
+14&nbsp;&nbsp;&nbsp; 222&nbsp;&nbsp; 4
+15&nbsp;&nbsp;&nbsp; 226&nbsp;&nbsp; 16
+16&nbsp;&nbsp;&nbsp; 242&nbsp;&nbsp; 20
+17&nbsp;&nbsp;&nbsp; 262&nbsp;&nbsp; 20
+18&nbsp;&nbsp;&nbsp; 282&nbsp;&nbsp; 20
+19&nbsp;&nbsp;&nbsp; 302&nbsp;&nbsp; 30
+20&nbsp;&nbsp;&nbsp; 332&nbsp;&nbsp; 4
+21&nbsp;&nbsp;&nbsp; 336&nbsp;&nbsp; 4
+22&nbsp;&nbsp;&nbsp; 340&nbsp;&nbsp; 1
+23&nbsp;&nbsp;&nbsp; 341&nbsp;&nbsp; 8
+24&nbsp;&nbsp;&nbsp; 349&nbsp;&nbsp; 8
+25&nbsp;&nbsp;&nbsp; 357&nbsp;&nbsp; 8
+26&nbsp;&nbsp;&nbsp; 365&nbsp;&nbsp; 2
+27&nbsp;&nbsp; &nbsp;367&nbsp;&nbsp; 2
+28&nbsp;&nbsp;&nbsp; 369&nbsp;&nbsp; 4
+29&nbsp;&nbsp;&nbsp; 373&nbsp;&nbsp; 4
+30&nbsp;&nbsp;&nbsp; 377&nbsp;&nbsp; 1
+31&nbsp;&nbsp;&nbsp; 378&nbsp;&nbsp; 2
+32&nbsp;&nbsp;&nbsp; 380&nbsp;&nbsp; 8
+33&nbsp;&nbsp;&nbsp; 388&nbsp;&nbsp; 4
+34&nbsp;&nbsp;&nbsp; 392&nbsp;&nbsp; 4
+35&nbsp;&nbsp;&nbsp; 396&nbsp;&nbsp; 4
+36&nbsp;&nbsp;&nbsp; 400&nbsp;&nbsp; 4
+37&nbsp;&nbsp;&nbsp; 404&nbsp;&nbsp; 1
+38&nbsp;&nbsp;&nbsp; 405&nbsp;&nbsp; 4
+39&nbsp;&nbsp;&nbsp; 409&nbsp;&nbsp; 4
+40&nbsp;&nbsp;&nbsp; 413&nbsp;&nbsp; 4
+41&nbsp;&nbsp;&nbsp; 417&nbsp;&nbsp; 4
+42&nbsp;&nbsp;&nbsp; 421&nbsp;&nbsp; 4
+43&nbsp;&nbsp;&nbsp; 425&nbsp;&nbsp; 4
+44&nbsp;&nbsp;&nbsp; 429&nbsp;&nbsp; 20
+45&nbsp;&nbsp;&nbsp; 449&nbsp;&nbsp; 30
+46&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp; 1
+47&nbsp;&nbsp;&nbsp; 480&nbsp;&nbsp; 1
+48&nbsp;&nbsp;&nbsp; 481&nbsp;&nbsp; 79
+49&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp; 79
+50&nbsp;&nbsp;&nbsp; 639&nbsp;&nbsp; 79
+51&nbsp;&nbsp;&nbsp; 718&nbsp;&nbsp; 79
+52&nbsp;&nbsp;&nbsp; 797&nbsp;&nbsp; 8
+53&nbsp;&nbsp;&nbsp; 805&nbsp;&nbsp; 1
+54&nbsp;&nbsp;&nbsp; 806&nbsp;&nbsp; 1
+55&nbsp;&nbsp;&nbsp; 807&nbsp;&nbsp; 20
+56&nbsp;&nbsp;&nbsp; 827&nbsp;&nbsp; 4
+57&nbsp;&nbsp;&nbsp; 831&nbsp;&nbsp; 4
+&nbsp;
+shell&gt; myisampack station.MYI
+Compressing station.MYI: (1192 records)
+- Calculating statistics
+&nbsp;
+normal:&nbsp;&nbsp;&nbsp;&nbsp; 20&nbsp; empty-space:&nbsp;&nbsp; 16&nbsp; empty-zero:&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp; empty-fill:&nbsp; 11
+pre-space:&nbsp;&nbsp; 0&nbsp; end-space:&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp; table-lookups:&nbsp;&nbsp; 5&nbsp; zero:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7
+Original trees:&nbsp; 57&nbsp; After join: 17
+- Compressing file
+87.14%
+Remember to run myisamchk -rq on compressed tables
+&nbsp;
+shell&gt; ls -l station.*
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 127874 Apr 17 19:00 station.MYD
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 55296 Apr 17 19:04 station.MYI
+-rw-rw-r--&nbsp;&nbsp; 1 monty&nbsp;&nbsp;&nbsp; my&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5767 Apr 17 19:00 station.frm
+&nbsp;
+shell&gt; myisamchk -dvv station
+&nbsp;
+MyISAM file:&nbsp;&nbsp;&nbsp;&nbsp; station
+Isam-version:&nbsp; 2
+Creation time: 1996-03-13 10:08:58
+Recover time:&nbsp; 1997-04-17 19:04:26
+Data records:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1192&nbsp; Deleted blocks:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+Datafile parts:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1192&nbsp; Deleted data:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0
+Datafile pointer (bytes):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp; Keyfile pointer (bytes):&nbsp;&nbsp;&nbsp;&nbsp; 1
+Max datafile length:&nbsp;&nbsp;&nbsp; 16777215&nbsp; Max keyfile length:&nbsp;&nbsp;&nbsp;&nbsp; 131071
+Recordlength:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 834
+Record format: Compressed
+&nbsp;
+table description:
+Key Start Len Index&nbsp;&nbsp; Type&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Root&nbsp; Blocksize&nbsp;&nbsp;&nbsp; Rec/key
+1&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp; unique&nbsp; unsigned long&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10240&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+2&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp; 30&nbsp; multip. text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54272&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+&nbsp;
+Field Start Length Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Huff tree&nbsp; Bits
+1&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; 0
+2&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+3&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+4&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+5&nbsp;&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; table-lookup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp; 0
+6&nbsp;&nbsp;&nbsp;&nbsp; 31&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+7&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp; 30&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 9
+8&nbsp;&nbsp;&nbsp;&nbsp; 62&nbsp;&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always, no empty&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 9
+9&nbsp;&nbsp;&nbsp;&nbsp; 97&nbsp;&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp; 9
+10&nbsp;&nbsp;&nbsp; 132&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always, no empty&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 9
+11&nbsp;&nbsp;&nbsp; 167&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+12&nbsp;&nbsp;&nbsp; 171&nbsp;&nbsp; 16&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always, no empty&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 9
+13&nbsp;&nbsp;&nbsp; 187&nbsp;&nbsp; 35&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always, no empty&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 9
+14&nbsp;&nbsp;&nbsp; 222&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+15&nbsp;&nbsp;&nbsp; 226&nbsp;&nbsp; 16&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always, no empty&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 9
+16&nbsp;&nbsp;&nbsp; 242&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; no endspace, not_always&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 9
+17&nbsp;&nbsp;&nbsp; 262&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; no endspace, no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp; 9
+18&nbsp;&nbsp;&nbsp; 282&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; no endspace, no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; 9
+19&nbsp;&nbsp;&nbsp; 302&nbsp;&nbsp; 30&nbsp;&nbsp;&nbsp;&nbsp; no endspace, no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp; 9
+20&nbsp;&nbsp;&nbsp; 332&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+21&nbsp;&nbsp;&nbsp; 336&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+22&nbsp;&nbsp;&nbsp; 340&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+23&nbsp;&nbsp;&nbsp; 341&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; table-lookup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9&nbsp;&nbsp;&nbsp;&nbsp; 0
+24&nbsp;&nbsp;&nbsp; 349&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; table-lookup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp;&nbsp; 0
+25&nbsp;&nbsp;&nbsp; 357&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+26&nbsp;&nbsp;&nbsp; 365&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+27&nbsp;&nbsp;&nbsp; 367&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+28&nbsp;&nbsp;&nbsp; 369&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+29&nbsp;&nbsp;&nbsp; 373&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; table-lookup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11&nbsp;&nbsp;&nbsp;&nbsp; 0
+30&nbsp;&nbsp;&nbsp; 377&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+31&nbsp;&nbsp;&nbsp; 378&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+32&nbsp;&nbsp;&nbsp; 380&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+33&nbsp;&nbsp;&nbsp; 388&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+34&nbsp;&nbsp;&nbsp; 392&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; table-lookup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12&nbsp;&nbsp;&nbsp;&nbsp; 0
+35&nbsp;&nbsp;&nbsp; 396&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13&nbsp;&nbsp;&nbsp;&nbsp; 9
+36&nbsp;&nbsp;&nbsp; 400&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+37&nbsp;&nbsp;&nbsp; 404&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+38&nbsp;&nbsp;&nbsp; 405&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+39&nbsp;&nbsp;&nbsp; 409&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+40&nbsp;&nbsp;&nbsp; 413&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+41&nbsp;&nbsp;&nbsp; 417&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+42&nbsp;&nbsp;&nbsp; 421&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+43&nbsp;&nbsp;&nbsp; 425&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; always zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+44&nbsp;&nbsp;&nbsp; 429&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+45&nbsp;&nbsp;&nbsp; 449&nbsp;&nbsp; 30&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+46&nbsp;&nbsp;&nbsp; 479&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp;&nbsp; 4
+47&nbsp;&nbsp;&nbsp; 480&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14&nbsp;&nbsp;&nbsp;&nbsp; 4
+48&nbsp;&nbsp;&nbsp; 481&nbsp;&nbsp; 79&nbsp;&nbsp;&nbsp;&nbsp; no endspace, no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 15&nbsp;&nbsp;&nbsp;&nbsp; 9
+49&nbsp;&nbsp;&nbsp; 560&nbsp;&nbsp; 79&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+50&nbsp;&nbsp;&nbsp; 639&nbsp;&nbsp; 79&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+51&nbsp;&nbsp;&nbsp; 718&nbsp;&nbsp; 79&nbsp;&nbsp;&nbsp;&nbsp; no endspace&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16&nbsp;&nbsp;&nbsp;&nbsp; 9
+52&nbsp;&nbsp;&nbsp; 797&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+53&nbsp;&nbsp;&nbsp; 805&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 17&nbsp;&nbsp;&nbsp;&nbsp; 1
+54&nbsp;&nbsp;&nbsp; 806&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+55&nbsp;&nbsp;&nbsp; 807&nbsp;&nbsp; 20&nbsp;&nbsp;&nbsp;&nbsp; no empty&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; 9
+56&nbsp;&nbsp;&nbsp; 827&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9
+57&nbsp;&nbsp;&nbsp; 831&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no zeros, zerofill(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; 9</pre>
+    <p> myisampack显示下面的各种信息：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      normal</p>
+    <p> 不需要进行额外压缩的列的数量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      empty-space</p>
+    <p> 只包含空格的列的数量；占一个比特。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      empty-zero</p>
+    <p> 只包含二进制零的列的数量；占一个比特。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      empty-fill</p>
+    <p> 不占该类全字节范围的整数列的数量；这些列被改为较小的类型。例如，如果所有值的范围为从-128到127，BIGINT列(8个字节)可以保存为TINYINT列(1个字节)。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      pre-space</p>
+    <p> 用引导空格保存的十进制列的数量。在这种情况下，每个值包含一个引导空格的数量计数。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      end-space</p>
+    <p> 有大量结尾空格的列的数量。在这种情况下，每个值包含一个结尾空格的数量计数。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      table-lookup</p>
+    <p> 该列只有少量的不同的值，在进行哈夫曼压缩前被转换为一个ENUM。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      zero</p>
+    <p> 所有值为零的列的数量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      Original trees</p>
+    <p> 哈夫曼树的最初数量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      After join</p>
+    <p> 联接树以节省一些头空间之后留下的哈夫曼树的数量。</p>
+    <p> 表被压缩后，myisamchk -dvv为每列输出详细信息：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      Type</p>
+    <p> 列的类型。该值可以包含下面的任何描述符：</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      constant</p>
+    <p> 所有行具有相同的值。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      no endspace</p>
+    <p> 不保存结尾空格。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      no endspace，not_always</p>
+    <p> 不保存结尾空格并且对于所有的值不压缩结尾空格。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      no endspace，no 
+      empty</p>
+    <p> 不保存结尾空格。不保存空值。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      table-lookup</p>
+    <p> 列被转换为一个ENUM。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      zerofill(<i>n</i>)</p>
+    <p> 值中最有意义的<i>n</i>字节总为0，并且不保存。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      no zeros</p>
+    <p> 不保存零。</p>
+    <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      always zeros</p>
+    <p> 用一个位保存零值。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      Huff tree</p>
+    <p> 列相关的哈夫曼树的数量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      Bits</p>
+    <p> 哈夫曼树使用的位数。</p>
+    <p> 运行myisampack后，必须运行myisamchk以重新创建索引。此时，你也可以排序索引块并创建MySQL优化器需要的统计信息以更有效地工作：</p>
+    <pre>shell&gt; myisamchk -rq --sort-index --analyze tbl_name.MYI</pre>
+    <p> 将压缩的表安装到MySQL数据库目录中后，应执行mysqladmin 
+      flush-tables以强制mysqld使用新的表。</p>
+    <p>要想解压缩一个压缩的表，使用myisamchk或isamchk的--unpack选项。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

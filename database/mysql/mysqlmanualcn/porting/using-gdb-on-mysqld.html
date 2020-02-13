@@ -1,0 +1,254 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>E.1.3. 在gdb环境下调试mysqld</h1>
+
+          
+        
+      
+      
+      <p> 如果mysqld崩溃了，在大多数系统上，你也可是从gdb启动mysqld来获取更多信息。 </p>
+      <p> Linux上，有一些老版本的gdb，如果你想要能调试mysqld线程，你必须使用run --one-threadsome。在这种情况下，你可以一次只激活一个线程。我们推荐你升级到gdb 5.1 ASAP 
+        ，这个版本上线程调试工作得更好！ </p>
+      <p> NTPL 线程（Linux上的新线程库）可能会在gdb下运行mysqld时遇到问题。一些症状如下：</p>
+      
+        <ul type="disc">
+          <li>
+            <p> mysqld 在启动过程中挂起（在它写ready for connections之前）。 </p>
+          </li>
+          <li>
+            <p> mysqld 在调用pthread_mutex_lock()或pthread_mutex_unlock()过程中崩溃。 </p>
+          </li>
+        </ul>
+      
+      <p> 在这种情况下你应该在启动gdb之前在外壳上设置如下环境变量： </p>
+      <pre >LD_ASSUME_KERNEL=2.4.1
+export LD_ASSUME_KERNEL
+</pre>
+      <p> 在gdb下运行mysqld时，你应该用--skip-stack-trace来禁止堆栈跟踪，以便能捕获gdb内的段错误。</p>
+      <p> 在MySQL 4.0.14和以上版本，你应该对mysqld使用--gdb选项。 这会为SIGINT安装一个中断处理器（需要用^C停止mysqld来设置断点），并且禁止堆栈跟踪和核心文件处理。</p>
+      <p> 当gdb没有给旧线程释放内存的整个时间里，如果你做了大量的新连接，在gdb下调试MySQL是非常困难的。你可以通过带 -O thread_cache_size= 'max_connections
+        +1' 启动mysqld 
+        来避免这个问题。在多数情况下，只使用-O
+        thread_cache_size=5'就受益无穷了！ </p>
+      <p> 如果mysqld带着SIGSEGV信号死掉了，而你想在Linux上转储核心，你可以带--core-file选项启动mysqld。这个核心文件可以被用来生成
+        向后跟踪，它可以帮你找出mysqld 
+        为何死掉： </p>
+      <pre >shell&gt; gdb mysqld core
+gdb&gt;   backtrace full
+gdb&gt;   exit
+</pre>
+      <p> 请参阅<a href="debugging-server.html" title="A.4.2. What to Do If MySQL Keeps Crashing">A.4.2节，“如果MySQL依旧崩溃，该如何去做”</a>。 </p>
+      <p> 如果你在Linux上使用gdb 4.17.x 
+        或以上版本，你应该安装一个带有如下信息的 .gdb 文件到你当前目录： </p>
+      <pre >set print sevenbit off
+handle SIGUSR1 nostop noprint
+handle SIGUSR2 nostop noprint
+handle SIGWAITING nostop noprint
+handle SIGLWP nostop noprint
+handle SIGPIPE nostop
+handle SIGALRM nostop
+handle SIGHUP nostop
+handle SIGTERM nostop noprint
+</pre>
+      <p> 如果你用gdb调试线程遇到问题，你应该下载gdb 5.x版本并用它试一下调试。新版本的 gdb 
+        大大改善了线程处理！ </p>
+      <p> 下面是如何调试mysqld的例子：</p>
+      <pre >shell&gt; gdb /usr/local/libexec/mysqld
+gdb&gt; run
+...
+backtrace full # Do this when mysqld crashes
+</pre>
+      <p> 把上面的输入写进一个用mysqlbug生成的邮件里，发送到综合MySQL邮件列表。请参阅<a href="compiling-for-debugging.html" title="1.7.1.1. The MySQL Mailing Lists">1.7.1.1节，“MySQL 
+        邮件列表”</a>。 </p>
+      <p> 如果mysqld 挂起，你可以试着用一些诸如strace 
+        或
+        /usr/proc/bin/pstack 这样的系统工具连检查mysqld 
+        在哪里挂起。 </p>
+      <pre >strace /tmp/log libexec/mysqld
+</pre>
+      
+      <p> 如果你使用 Perl DBI 接口，你可以使用trace方法或设置DBI_TRACE环境变量来打开调试信息。 </p>
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

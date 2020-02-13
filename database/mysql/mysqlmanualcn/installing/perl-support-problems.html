@@ -1,0 +1,274 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 2.13.3.&nbsp;使用Perl DBI/DBD接口的问题</h1>
+
+          
+        
+      
+      
+      <p>如果Perl报告它不能发现../mysql/mysql.so模块，可能试因为Perl不能定位共享库libmysqlclient.so。</p>
+      <p>可以使用下面的方法修复该问题：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        用perl 
+        Makefile.PL -static -config而不要用perl 
+        Makefile.PL编译DBD：：mysql分发版。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        将libmysqlclient.so复制到其它共享库所在的目录 
+        (可能为/usr/lib
+        或/lib)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        修改用来编译DBD：：mysql的-L选项，反应libmysqlclient.so的实际位置。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在Linux中，你可以将libmysqlclient.so的目录路径名增加到/etc/ld.so.conf文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        将libmysqlclient.so的目录路径名增加到LD_RUN_PATH环境变量。一些系统使用LD_LIBRARY_PATH。</p>
+      <p>注意如果连接器没有找到另一个库，你还可能需要修改-L选项。例如，如果因为libc在/lib下并且连接命令指定了-L/usr/lib，连接器不能找到它，将-L选项更改为-L/lib或在连接命令中增加-L/lib。</p>
+      <p>如果你遇到下面的DBD：：mysql错误，你可能使用了gcc(或使用了用gcc编译的旧的二进制)：</p>
+      <pre>/usr/bin/perl: can&#39;t resolve symbol &#39;__moddi3&#39;
+/usr/bin/perl: can&#39;t resolve symbol &#39;__divdi3&#39;</pre>
+      <p>当构建mysql.so库是在连接命令中增加-L/usr/lib/gcc-lib/... 
+        -lgcc(当编译Perl客户端时检查生成mysql.so的make的输出)。-L选项应指定libgcc.a在系统中的安装目录的路径名。</p>
+      <p>该问题的另一个原因是Perl和MySQL没有用gcc编译。在这种情况下，你可以用gcc编译二者来解决。</p>
+      <p>当你运行测试时你会从DBD：：mysql看见下面的错误：</p>
+      <pre>t/00base............install_driver(mysql) failed:
+Can&#39;t load &#39;../blib/arch/auto/DBD/mysql/mysql.so&#39; for module DBD::mysql:
+../blib/arch/auto/DBD/mysql/mysql.so: undefined symbol:
+uncompress at /usr/lib/perl5/5.00503/i586-linux/DynaLoader.pm line 169.</pre>
+      <p>这意味着你需要在连接行包括-lz
+        压缩库。可以通过更改文件lib/DBD/mysql/Install.pm的下列行来实现：</p>
+      <pre>$sysliblist .= &quot; -lm&quot;;</pre>
+      <p>更改为：</p>
+      <pre>$sysliblist .= &quot; -lm -lz&quot;;</pre>
+      <p>然后，你必须运行make realclean 然后重新安装。</p>
+      <p>如果你想要在SCO上安装DBI，需要在DBI-<i>xxx</i> 和每个子目录中编辑Makefile。请注意下面的更新假定使用gcc 
+        2.95.2或更新版：</p>
+      <pre>旧：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 新：
+CC = cc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CC = gcc
+CCCDLFLAGS = -KPIC -W1,-Bexport&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CCCDLFLAGS = -fpic
+CCDLFLAGS = -wl,-Bexport&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CCDLFLAGS =
+&nbsp;
+LD = ld&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LD = gcc -G -fpic
+LDDLFLAGS = -G -L/usr/local/lib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDDLFLAGS = -L/usr/local/lib
+LDFLAGS = -belf -L/usr/local/lib&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDFLAGS = -L/usr/local/lib
+&nbsp;
+LD = ld&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LD = gcc -G -fpic
+OPTIMISE = -Od&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OPTIMISE = -O1
+&nbsp;
+旧：
+CCCFLAGS = -belf -dy -w0 -U M_XENIX -DPERL_SCO5 -I/usr/local/include
+&nbsp;
+新：
+CCFLAGS = -U M_XENIX -DPERL_SCO5 -I/usr/local/include</pre>
+      <p>这些更改是必需的，因为用icc或cc编译的Perl动态装载器不装载DBI模块。</p>
+      <p>如果你想要在不支持动态链接(例如 SCO)的系统中使用Perl模块，可以生成一个包括DBI和DBD：：mysql的静态版本的Perl。方法是生成一个用DBI代码连接的Perl版本，并将它安装到当前Perl的顶级目录。然后构建一个含DBD代码连接的Perl版本并安装。</p>
+      <p>在SCO中，必须将下面的环境变量设置为：</p>
+      <pre>LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/usr/progressive/lib</pre>
+      <p>Or：</p>
+      <pre>LD_LIBRARY_PATH=/usr/lib:/lib:/usr/local/lib:/usr/ccs/lib:\
+&nbsp;&nbsp;&nbsp; /usr/progressive/lib:/usr/skunk/lib
+LIBPATH=/usr/lib:/lib:/usr/local/lib:/usr/ccs/lib:\
+&nbsp;&nbsp;&nbsp; /usr/progressive/lib:/usr/skunk/lib
+MANPATH=scohelp:/usr/man:/usr/local1/man:/usr/local/man:\
+&nbsp;&nbsp;&nbsp; /usr/skunk/man:</pre>
+      <p>首先，在DBD分发版的安装目录运行下述命令来创建一个包括静态连接的DBD模块的Perl：</p>
+      <pre>shell&gt; perl Makefile.PL -static -config
+shell&gt; make
+shell&gt; make install
+shell&gt; make perl</pre>
+      <p>然后必须安装新的Perl。make 
+        perl的输出表示安装时需要执行的make命令。在SCO中，为make 
+        -f Makefile.aperl inst_perl MAP_TARGET=perl。</p>
+      <p>然后，使用刚刚创建的Perl，在DBD：：mysql分发版的安装目录运行下述命令来创建另一个Perl，应包括静态连接的DBD：：mysql：</p>
+      <pre>shell&gt; perl Makefile.PL -static -config
+shell&gt; make
+shell&gt; make install
+shell&gt; make perl</pre>
+      <p>最后，应当安装新的Perl。make 
+        perl的输出指示了使用的命令。
+    
+  
+
+
+  <hr>
+  <p> 这是MySQL参考手册的翻译版本，关于MySQL参考手册，请访问dev.mysql.com.。原始参考手册为英文版，与英文版参考手册相比，本翻译版可能不是最新的。
+
+
+
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

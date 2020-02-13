@@ -1,0 +1,646 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<div class="g-unit" id="gc-pagecontent">
+
+
+<div id="jd-content">
+
+<div class="jd-descr">
+<h1>Tutorial: Notepad Exercise 1</h1>
+
+<p><em>In this exercise, you will construct a simple notes list that lets the
+user add new notes but not edit them. The exercise demonstrates:</em></p>
+<ul>
+<li><em>The basics of <code>ListActivities</code> and creating and handling menu
+options. </em></li>
+<li><em>How to use a SQLite database to store the notes.</em></li>
+<li><em>How to bind data from a database cursor into a ListView using a
+SimpleCursorAdapter.</em></li>
+<li><em>The basics of screen layouts, including how to lay out a list view, how
+you can add items to the activity menu, and how the activity handles those menu
+selections. </em></li>
+</ul>
+
+<div style="float:right;white-space:nowrap">
+<span style="color:#BBB;">
+	[floating 
+    layout (for example, a dialog
+    or alert), 
+    or perhaps you don't need a layout at all (the Activity will be invisible 
+    to the user unless you specify some kind of layout for it to use).</p>
+    </div>
+    
+    <p>Open the <code>notepad_list.xml</code> file in <code>res/layout</code>
+and 
+    take a look at it. (You may have to
+    hit the <em>xml</em> tab, at the bottom, in order to view the XML markup.)</p>
+     
+    <p>This is a mostly-empty layout definition file. Here are some
+    things you should know about a layout file:</p>
+
+   
+  <ul>
+    <li>
+      All Android layout files must start with the XML header line:
+      <code>&lt;?xml version="1.0" encoding="utf-8"?&gt;</code>.    </li>
+    <li>
+      The next definition will often (but not always) be a layout
+      definition of some kind, in this case a <code>LinearLayout</code>.    </li>
+    <li>
+      The XML namespace of Android should always be defined in
+      the top level component or layout in the XML so that <code>android:</code> tags can
+      be used through the rest of the file:
+      <p><code>xmlns:android="http://schemas.android.com/apk/res/android"</code></p>
+    </li>
+  </ul>
+
+  <h2 style="clear:right;">Step 4</h2>
+    <p>We need to create the layout to hold our list. Add code inside
+    of the <code>LinearLayout</code> element so the whole file looks like this: </p>
+    <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;&gt;
+
+  &lt;ListView android:id=&quot;@android:id/list&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;/&gt;
+  &lt;TextView android:id=&quot;@android:id/empty&quot;
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:text=&quot;@string/no_notes&quot;/&gt;
+
+&lt;/LinearLayout&gt;
+</pre>
+  <ul>
+    <li>
+      The <strong>&#64;</strong> symbol in the id strings of the <code>ListView</code> and 
+      <code>TextView</code> tags means 
+      that the XML parser should parse and expand the rest of
+      the id string and use an ID resource.</li>
+    <li>
+      The <code>ListView</code> and <code>TextView</code> can be
+      thought as two alternative views, only one of which will be displayed at once.
+      ListView will be used when there are notes to be shown, while the TextView
+      (which has a default value of "No Notes Yet!" defined as a string
+      resource in <code>res/values/strings.xml</code>) will be displayed if there 
+      aren't any notes to display.</li>
+    <li>The <code>list</code> and <code>empty</code> IDs are
+      provided for us by the Android platform, so, we must 
+      prefix the <code>id</code> with <code>android:</code> (e.g., <code>@android:id/list</code>).</li>
+    <li>The View with the <code>empty</code> id is used 
+      automatically when the ListAdapter has no data for the ListView. The 
+      ListAdapter knows to look for this name by default. Alternatively, you could change the      
+      default empty view by using setEmptyView(View)
+      on the ListView.
+      <p>
+      More broadly, the <code>android.R</code> class is a set of predefined 
+      resources provided for you by the platform, while your project's 
+      <code>R</code> class is the set of resources your project has defined.
+      Resources found in the <code>android.R</code> resource class can be
+      used in the XML files by using the <code>android:</code> name space prefix      
+      (as we see here).</p>
+    </li>
+  </ul>
+
+  <h2 style="clear:right;">Step 5</h2>
+
+	  <div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+      background-color:#FFFFEE;margin-right:0px;
+      margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">Resources and the R class</h2>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">The folders under res/ in the Eclipse project are for resources. 
+     There is a specific structure to the
+     folders and files under res/.</p>
+    <p style="padding-left:.5em;font-size:12px;
+margin:0; padding:.0em .5em .5em 1em;">Resources defined in these folders and files will have
+    corresponding entries in the R class allowing them to be easily accessed
+    and used from your application. The R class is automatically generated using the contents
+    of the res/ folder by the eclipse plugin (or by aapt if you use the command line tools).
+    Furthermore, they will be bundled and deployed for you as part of the application.</p>
+    </p>
+  </div>
+    <p>To make the list of notes in the ListView, we also need to define a View for each row:</p>
+  <ol>
+    <li>
+      Create a new file under <code>res/layout</code> called 
+      <code>notes_row.xml</code>.    </li>
+    <li>
+      Add the following contents (note: again the XML header is used, and the
+      first node defines the Android XML namespace)<br>
+      <pre style="overflow:auto">
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;TextView android:id=&quot;&#64;+id/text1&quot;
+    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;wrap_content&quot;
+    android:layout_height=&quot;wrap_content&quot;/&gt;</pre>
+    <p>
+      This is the View that will be used for each notes title row &mdash; it has only
+      one text field in it.    </p>
+    <p>In this case we create a new id called <code>text1</code>. The
+      <strong>+</strong> after the <strong>@</strong> in the id string indicates that the id should
+      be automatically created as a resource if it does not already exist, so we are defining
+      <code>text1</code> on the fly and then using it.</p>
+    </li>
+    <li>Save the file.</li>
+  </ol>
+      <p>Open the <code>R.java</code> class in the
+      project and look at it, you should see new definitions for
+      <code>notes_row</code> and <code>text1</code> (our new definitions)
+      meaning we can now gain access to these from the our code. </p>
+
+  <h2 style="clear:right;">Step 6</h2>
+<p>Next, open the <code>Notepadv1</code> class in the source. In the following steps, we are going to
+    alter this class to become a list adapter and display our notes, and also
+    allow us to add new notes.</p>
+
+<p><code>Notepadv1</code> will inherit from a subclass
+    of <code>Activity</code> called a <code>ListActivity</code>, 
+    which has extra functionality to accommodate the kinds of 
+    things you might want to do with a list, for
+    example: displaying an arbitrary number of list items in rows on the screen,
+    moving through the list items, and allowing them to be selected.</p>
+
+<p>Take a look through the existing code in <code>Notepadv1</code> class.
+    There is a currently an unused private field called <code>mNoteNumber</code> that
+    we will use to create numbered note titles.</p>
+    <p>There are also three override methods defined:
+    <code>onCreate</code>, <code>onCreateOptionsMenu</code> and
+    <code>onOptionsItemSelected</code>; we need to fill these
+    out:</p>
+    <ul>
+      <li><code>onCreate()</code> is called when the activity is
+      started &mdash; it is a little like the "main" method for an Activity. We use
+      this to set up resources and state for the activity when it is
+      running.</li>
+     <li><code>onCreateOptionsMenu()</code> is used to populate the
+      menu for the Activity. This is shown when the user hits the menu button,
+and
+      has a list of options they can select (like "Create
+      Note"). </li>
+     <li><code>onOptionsItemSelected()</code> is the other half of the
+      menu equation, it is used to handle events generated from the menu (e.g.,
+      when the user selects the "Create Note" item).
+      </li>
+    </ul>
+    
+  <h2>Step 7</h2>
+    <p>Change the inheritance of <code>Notepadv1</code> from
+<code>Activity</code>
+    to <code>ListActivity</code>:</p> 
+    <pre>public class Notepadv1 extends ListActivity</pre>
+    <p>Note: you will have to import <code>ListActivity</code> into the
+Notepadv1
+    class using Eclipse, <strong>ctrl-shift-O</strong> on Windows or Linux, or
+    <strong>cmd-shift-O</strong> on the Mac (organize imports) will do this for you
+    after you've written the above change.</p>
+
+  <h2>Step 8</h2>
+    <p>Fill out the body of the <code>onCreate()</code> method.</p>
+    <p>Here we will set the title for the Activity (shown at the top of the
+    screen), use the <code>notepad_list</code> layout we created in XML, 
+    set up the <code>NotesDbAdapter</code> instance that will
+    access notes data, and populate the list with the available note
+    titles:</p>
+    <ol>
+    <li>
+      In the <code>onCreate</code> method, call <code>super()</code> with the 
+      <code>savedInstanceState</code> parameter that's passed in.</li>
+    <li>
+      Call <code>setContentView()</code> and pass <code>R.layout.notepad_list</code>.</li>
+    <li>
+      At the top of the class, create a new private class field called <code>mDbHelper</code> of class
+      <code>NotesDbAdapter</code>.
+    </li>
+    <li>
+      Back in the <code>onCreate</code> method, construct a new
+<code>NotesDbAdapter</code>
+      instance and assign it to the <code>mDbHelper</code> field (pass
+      <code>this</code> into the constructor for <code>DBHelper</code>)
+    </li>
+    <li>
+      Call the <code>open()</code> method on <code>mDbHelper</code> to open (or create) the
+      database.
+    </li>
+    <li>
+      Finally, call a new method <code>fillData()</code>, which will get the data and
+      populate the ListView using the helper &mdash; we haven't defined this method yet.    </li>
+  </ol>
+    <p>
+      <code>onCreate()</code> should now look like this:</p>
+      <pre>
+    &#64;Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.notepad_list);
+        mDbHelper = new NotesDbAdapter(this);
+        mDbHelper.open();
+        fillData();
+    }</pre>
+      <p>And be sure you have the <code>mDbHelper</code> field definition (right
+      under the mNoteNumber definition): </p>
+      <pre>    private NotesDbAdapter mDbHelper;</pre>
+
+  <h2>Step 9</h2>
+
+      <div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+      background-color:#FFFFEE;margin-right:0px;
+      margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">More on menus</h2>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">The notepad application we are constructing only scratches the 
+     surface with menus. </p>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">You can also add
+shortcut keys for menu items, create
+submenus and even add
+menu items to other applications!. </p>
+  </div>
+
+<p>Fill out the body of the <code>onCreateOptionsMenu()</code> method.</p>
+
+<p>We will now create the "Add Item" button that can be accessed by pressing the menu
+button on the device. We'll specify that it occupy the first position in the menu.</p>
+
+  <ol>
+    <li>
+      In <code>strings.xml</code> resource (under <code>res/values</code>), add
+      a new string named "menu_insert" with its value set to <code>Add Item</code>:
+     <pre>&lt;string name="menu_insert"&gt;Add Item&lt;/string&gt;</pre>
+      <p>Then save the file and return to <code>Notepadv1</code>.</p>
+    </li>
+    <li>Create a menu position constant at the top of the  class:
+      <pre>public static final int INSERT_ID = Menu.FIRST;</pre>
+    </li>
+    <li>In the <code>onCreateOptionsMenu()</code> method, change the 
+    <code>super</code> call so we capture the boolean return as <code>result</code>. We'll return this value at the end.</li>
+    <li>Then add the menu item with <code>menu.add()</code>.</li>
+  </ol>
+  <p>The whole method should now look like this: 
+      <pre>
+    &#64;Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        boolean result = super.onCreateOptionsMenu(menu);
+        menu.add(0, INSERT_ID, 0, R.string.menu_insert);
+        return result;
+    }</pre>
+  <p>The arguments passed to <code>add()</code> indicate: a group identifier for this menu (none,
+  in this case), a unique ID (defined above), the order of the item (zero indicates no preference),
+  and the resource of the string to use for the item.</p>
+
+<h2 style="clear:right;">Step 10</h2>
+    <p>Fill out the body of the <code>onOptionsItemSelected()</code> method:</p>
+    <p>This is going
+    to handle our new "Add Note" menu item.  When this is selected, the
+    <code>onOptionsItemSelected()</code> method will be called with the
+    <code>item.getId()</code> set to <code>INSERT_ID</code> (the constant we
+    used to identify the menu item). We can detect this, and take the
+    appropriate actions:</p>
+  <ol>
+    <li>
+      The <code>super.onOptionsItemSelected(item)</code> method call goes at the
+      end of this method &mdash; we want to catch our events first!    </li>
+    <li>
+      Write a switch statement on <code>item.getItemId()</code>.   
+      <p>In the case of <var>INSERT_ID</var>, call a new method, <code>createNote()</code>,
+      and return true, because we have handled this event and do not want to
+      propagate it through the system.</p>
+    </li>
+    <li>Return the result of the superclass' <code>onOptionsItemSelected()</code>
+    method at the end.</li>
+   </ol>
+    <p>
+      The whole <code>onOptionsItemSelect()</code> method should now look like
+      this:</p>
+      <pre>
+    &#64;Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case INSERT_ID:
+            createNote();
+            return true;
+        }
+       
+        return super.onOptionsItemSelected(item);
+    }</pre>
+
+<h2>Step 11</h2>
+    <p>Add a new <code>createNote()</code> method:</p>
+    <p>In this first version of
+    our application, <code>createNote()</code> is not going to be very useful.
+We will simply
+    create a new note with a title assigned to it based on a counter ("Note 1",
+    "Note 2"...) and with an empty body. At present we have no way of editing
+    the contents of a note, so for now we will have to be content making one
+    with some default values:</p>
+  <ol>
+    <li>Construct the name using "Note" and the counter we defined in the class: <code>
+      String noteName = "Note " + mNoteNumber++</code></li>
+    <li>
+      Call <code>mDbHelper.createNote()</code> using <code>noteName</code> as the
+      title and <code>""</code> for the body 
+    </li>
+    <li>
+      Call <code>fillData()</code> to populate the list of notes (inefficient but
+      simple) &mdash; we'll create this method next.</li>
+  </ol>
+    <p>
+      The whole <code>createNote()</code> method should look like this: </p>
+      <pre>
+    private void createNote() {
+        String noteName = &quot;Note &quot; + mNoteNumber++;
+        mDbHelper.createNote(noteName, &quot;&quot;);
+        fillData();
+    }</pre>
+
+
+<h2>Step 12</h2>
+      <div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+      background-color:#FFFFEE;margin-right:0px;
+      margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">List adapters</h2>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">Our example uses a SimpleCursorAdapter to bind a database Cursor
+     into a ListView, and this is a common way to use a ListAdapter. Other options exist like ArrayAdapter which 
+     can be used to take a List or Array of in-memory data and bind it in to
+     a list as well.</p>
+  </div>
+  
+  <p>Define the <code>fillData()</code> method:</p>
+   <p>This
+    method uses <code>SimpleCursorAdapter,</code> which takes a database <code>Cursor</code> 
+    and binds it to fields provided in the layout. These fields define the row elements of our list 
+    (in this case we use the <code>text1</code> field in our
+    <code>notes_row.xml</code> layout), so this allows us to easily populate the list with
+    entries from our database.</p>
+    <p>To do this we have to provide a mapping from the <code>title</code> field in the returned Cursor, to
+    our <code>text1</code> TextView, which is done by defining two arrays: the first a string array
+    with the list of columns to map <em>from</em> (just "title" in this case, from the constant 
+    <code>NotesDbAdapter.KEY_TITLE</code>) and, the second, an int array
+    containing references to the views that we'll bind the data <em>into</em> 
+    (the <code>R.id.text1</code> TextView).</p>
+    <p>This is a bigger chunk of code, so let's first take a look at it:</p>
+
+    <pre>
+    private void fillData() {
+        // Get all of the notes from the database and create the item list
+        Cursor c = mDbHelper.fetchAllNotes();
+        startManagingCursor(c);
+
+        String[] from = new String[] { NotesDbAdapter.KEY_TITLE };
+        int[] to = new int[] { R.id.text1 };
+        
+        // Now create an array adapter and set it to display using our row
+        SimpleCursorAdapter notes =
+            new SimpleCursorAdapter(this, R.layout.notes_row, c, from, to);
+        setListAdapter(notes);
+    }</pre>
+    
+  <p>Here's what we've done:</p>
+  <ol>
+    <li>
+      After obtaining the Cursor from <code>mDbHelper.fetchAllNotes()</code>, we 
+      use an Activity method called
+      <code>startManagingCursor()</code> that allows Android to take care of the
+      Cursor lifecycle instead of us needing to worry about it. (We will cover the implications
+      of the lifecycle in exercise 3, but for now just know that this allows Android to do some
+      of our resource management work for us.)</li>
+    <li>
+      Then we create a string array in which we declare the column(s) we want 
+      (just the title, in this case), and an int array that defines the View(s)
+      to which we'd like to bind the columns (these should be in order, respective to 
+      the string array, but here we only have one for each).</li>
+    <li>
+      Next is the SimpleCursorAdapter instantiation. 
+      Like many classes in Android, the SimpleCursorAdapter needs a Context in order to do its
+      work, so we pass in <code>this</code> for the context (since subclasses of Activity 
+      implement Context). We pass the <code>notes_row</code> View we created as the receptacle
+      for the data, the Cursor we just created, and then our arrays.</li>
+   </ol>
+    <p>
+      In the future, remember that the mapping between the <strong>from</strong> columns and <strong>to</strong> resources
+      is done using the respective ordering of the two arrays. If we had more columns we wanted
+      to bind, and more Views to bind them in to, we would specify them in order, for example we
+      might use <code>{ NotesDbAdapter.KEY_TITLE, NotesDbAdapter.KEY_BODY }</code> and
+      <code>{ R.id.text1, R.id.text2 }</code> to bind two fields into the row (and we would also need
+      to define text2 in the notes_row.xml, for the body text). This is how you can bind multiple fields
+      into a single row (and get a custom row layout as well).</p>
+    <p>
+      If you get compiler errors about classes not being found, ctrl-shift-O or
+      (cmd-shift-O on the mac) to organize imports. 
+    </p>
+    
+<h2 style="clear:right;">Step 13</h2>
+    <p>Run it!
+  <ol>
+    <li>
+      Right click on the <code>Notepadv1</code> project.</li>
+    <li>
+      From the popup menu, select <strong>Run As</strong> &gt; 
+      <strong>Android Application</strong>.</li>
+    <li>
+      If you see a dialog come up, select Android Launcher as the way of running
+      the application (you can also use the link near the top of the dialog to
+      set this as your default for the workspace; this is recommended as it will
+      stop the plugin from asking you this every time).</li>
+    <li>Add new notes by hitting the menu button and selecting <em>Add
+    Item</em> from the menu.</li>
+  </ol>
+
+<h2 style="clear:right;">Solution and Next Steps</h2>
+    <p>You can see the solution to this class in <code>Notepadv1Solution</code>
+from
+the zip file to compare with your own.</p>
+
+<p>Once you are ready, move on to <a href="tutorial-ex2.html">Tutorial
+Exercise 2</a> to add the ability to create, edit and delete notes.</p>
+<p><a href="tutorial.html">Back to the Tutorial main page...</a></p>
+
+
+</div>
+
+</div>
+</div><!-- end gc-pagecontent -->
+
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

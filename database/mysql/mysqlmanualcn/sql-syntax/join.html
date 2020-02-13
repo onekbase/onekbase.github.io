@@ -1,0 +1,457 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.2.7.1. JOIN语法</h1>
+
+            
+          
+        
+        
+        <p>MySQL支持以下JOIN语法。这些语法用于SELECT语句的<i>table_references</i>部分和多表DELETE和UPDATE语句：</p>
+        <pre ><em >table_references:</em>
+    <em >table_reference</em> [, <em >table_reference</em>] …
+
+<em >table_reference</em>:
+    <em >table_factor</em>
+  | <em >join_table</em>
+
+<em >table_factor</em>:
+    <em >tbl_name</em> [[AS] <em >alias</em>]
+        [{USE|IGNORE|FORCE} INDEX (<em >key_list</em>)]
+  | ( <em >table_references</em> )
+  | { OJ <em >table_reference</em> LEFT OUTER JOIN <em >table_reference</em>
+        ON <em >conditional_expr</em> }
+
+<em >join_table</em>:
+    <em >table_reference</em> [INNER | CROSS] JOIN <em >table_factor</em> [<em >join_condition</em>]
+  | <em >table_reference</em> STRAIGHT_JOIN <em >table_factor</em>
+  | <em >table_reference</em> STRAIGHT_JOIN <em >table_factor</em> ON <em >condition</em>
+  | <em >table_reference</em> LEFT [OUTER] JOIN <em >table_reference</em> <em >join_condition</em>
+  | <em >table_reference</em> NATURAL [LEFT [OUTER]] JOIN <em >table_factor</em>
+  | <em >table_reference</em> RIGHT [OUTER] JOIN <em >table_reference</em> <em >join_condition</em>
+  | <em >table_reference</em> NATURAL [RIGHT [OUTER]] JOIN <em >table_factor</em>
+
+<em >join_condition</em>:
+    ON <em >conditional_expr</em>
+  | USING (<em >column_list</em>)
+</pre>
+        <p>一个表引用还被称为一个联合表达式。</p>
+        <p>与SQL标准相比，<i>table_factor</i>的语法被扩展了。SQL标准只接受<i>table_reference</i>，而不是圆括号内的一系列条目。</p>
+        <p>如果我们把一系列<i>table_reference</i>条目中的每个逗号都看作相当于一个内部联合，则这是一个稳妥的扩展。例如：</p>
+        <pre>SELECT * FROM t1 LEFT JOIN (t2, t3, t4)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON (t2.a=t1.a AND t3.b=t1.b AND t4.c=t1.c)</pre>
+        <p>相当于：</p>
+        <pre>SELECT * FROM t1 LEFT JOIN (t2 CROSS JOIN t3 CROSS JOIN t4)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON (t2.a=t1.a AND t3.b=t1.b AND t4.c=t1.c)</pre>
+        <p>在MySQL中，CROSS JOIN从语法上说与INNER 
+          JOIN等同（两者可以互相替换。在标准SQL中，两者是不等同的。INNER 
+          JOIN与ON子句同时使用，CROSS 
+          JOIN以其它方式使用。</p>
+        <p>通常，在只含有内部联合运行的联合表达式中，圆括号可以被忽略。MySQL也支持嵌套的联合（见<a href="" title="7.2.10. How MySQL Optimizes Nested Joins">7.2.10节，“MySQL如何优化嵌套Join”</a>）。</p>
+        <p>通常，您不应对ON部分有任何条件。ON部分用于限定在结果集合中您想要哪些行。但是，您应在WHERE子句中指定这些条件。这条规则有一些例外。</p>
+        <p>在前面的清单中显示的{ OJ 
+          ... LEFT OUTER JOIN ...}语法的目的只是为了保持与ODBC的兼容性。语法中的花括号应按字面书写；该括号不是中间语法。中间语法用于语法描述的其它地方。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          表引用可以使用<i>tbl_name</i> AS <i>alias_name</i>或<i>tbl_name 
+          alias_name</i>指定别名：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; SELECT t1.name, t2.salary FROM employee AS t1, info AS t2
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE t1.name = t2.name;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; SELECT t1.name, t2.salary FROM employee t1, info t2
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE t1.name = t2.name;</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          ON条件句是可以被用于WHERE子句的格式的任何条件表达式。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          如果对于在LEFT JOIN中的ON或USING部分中的右表没有匹配的记录，则所有列被设置为NULL的一个行被用于右表。如果一个表在其它表中没有对应部分，您可以使用这种方法在这种表中查找记录：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; SELECT table1.* FROM table1
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN table2 ON table1.id=table2.id
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE table2.id IS NULL;</pre>
+        <p>本例查找在table1中含有一个id值的所有行。同时，在table2中没有此id值（即，table1中的所有行在table2中没有对应的行）。本例假设table2.id被定义为NOT 
+          NULL。请参见<a href="join.html" title="7.2.9. How MySQL Optimizes LEFT JOIN and RIGHT JOIN">7.2.9节，“MySQL如何优化LEFT JOIN和RIGHT 
+          JOIN”</a>。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          USING(<i>column_list</i>)子句用于为一系列的列进行命名。这些列必须同时在两个表中存在。如果表a和表b都包含列c1, 
+          c2和c3，则以下联合会对比来自两个表的对应的列：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a LEFT JOIN b USING (c1,c2,c3)</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          两个表的NATURAL [LEFT] JOIN被定义为与INNER 
+          JOIN语义相同，或与使用USING子句的LEFT 
+          JOIN语义相同。USING子句用于为同时存在于两个表中的所有列进行命名。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          INNER JOIN和，（逗号）在无联合条件下是语义相同的：两者都可以对指定的表计算出笛卡儿乘积（也就是说，第一个表中的每一行被联合到第二个表中的每一行）。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          RIGHT JOIN的作用与LEFT 
+          JOIN的作用类似。要使代码可以在数据库内移植，建议您使用LEFT JOIN代替RIGHT 
+          JOIN。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          STRAIGHT_JOIN与JOIN相同。除了有一点不一样，左表会在右表之前被读取。STRAIGH_JOIN可以被用于这样的情况，即联合优化符以错误的顺序排列表。</p>
+        <p>您可以提供提示，当从一个表中恢复信息时，MySQL应使用哪个索引。通过指定USE 
+          INDEX（key_list），您可以告知MySQL只使用一个索引来查找表中的行。另一种语法IGNORE 
+          INDEX（key_list）可以被用于告知MySQL不要使用某些特定的索引。如果EXPLAIN显示MySQL正在使用来自索引清单中的错误索引时，这些提示会有用处。</p>
+        <p>您也可以使用FORCE INDEX，其作用接近USE 
+          INDEX（key_list），不过增加了一项作用，一次表扫描被假设为代价很高。换句话说，只有当无法使用一个给定的索引来查找表中的行时，才使用表扫描。</p>
+        <p>USE KEY、IGNORE KEY和FORCE 
+          KEY是USE INDEX、IGNORE 
+          INDEX和FORCE INDEX的同义词。</p>
+        <p>注释：当MySQL决定如何在表中查找行并决定如何进行联合时，使用USE 
+          INDEX、IGNORE INDEX和FORCE 
+          INDEX只会影响使用哪些索引。当分解一个ORDER BY或GROUP 
+          BY时，这些语句不会影响某个索引是否被使用。</p>
+        <p>部分的联合示例：</p>
+        <pre>mysql&gt; SELECT * FROM table1,table2 WHERE table1.id=table2.id;
+mysql&gt; SELECT * FROM table1 LEFT JOIN table2 ON table1.id=table2.id;
+mysql&gt; SELECT * FROM table1 LEFT JOIN table2 USING (id);
+mysql&gt; SELECT * FROM table1 LEFT JOIN table2 ON table1.id=table2.id
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN table3 ON table2.id=table3.id;
+mysql&gt; SELECT * FROM table1 USE INDEX (key1,key2)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE key1=1 AND key2=2 AND key3=3;
+mysql&gt; SELECT * FROM table1 IGNORE INDEX (key3)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WHERE key1=1 AND key2=2 AND key3=3;</pre>
+        <p>见<a href="join.html" title="7.2.9. How MySQL Optimizes LEFT JOIN and RIGHT JOIN">7.2.9节，“MySQL如何优化LEFT JOIN和RIGHT 
+          JOIN”</a>。</p>
+        <p>注释：自然联合和使用USING的联合，包括外部联合变量，依据SQL:2003标准被处理。这些变更时MySQL与标准SQL更加相符。不过，对于有些联合，这些变更会导致不同的输出列。另外，有些查询在旧版本（5.0.12以前）工作正常，但也必须重新编写，以符合此标准。对于有关当前联合处理和旧版本中的联合处理的效果的对比，以下列表提供了更详细的信息。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          NATURAL联合或USING联合的列会与旧版本不同。特别是，不再出现冗余的输出列，用于SELECT 
+          *扩展的列的顺序会与以前不同。</p>
+        <p>示例：</p>
+        <pre>CREATE TABLE t1 (i INT, j INT);
+CREATE TABLE t2 (k INT, j INT);
+INSERT INTO t1 VALUES(1,1);
+INSERT INTO t2 VALUES(1,1);
+SELECT * FROM t1 NATURAL JOIN t2;
+SELECT * FROM t1 JOIN t2 USING (j);</pre>
+        <p>对于旧版本，语句会产生以下输出：</p>
+        <pre>+------+------+------+------+
+| i&nbsp;&nbsp;&nbsp; | j&nbsp;&nbsp;&nbsp; | k&nbsp;&nbsp;&nbsp; | j&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |
++------+------+------+------+
++------+------+------+------+
+| i&nbsp;&nbsp;&nbsp; | j&nbsp;&nbsp;&nbsp; | k&nbsp;&nbsp;&nbsp; | j&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |
++------+------+------+------+</pre>
+        <p>在第一个SELECT语句中，列i同时出现在两个表中，为一个联合列，所以，依据标准SQL，该列在输出中只出现一次。与此类似，在第二个SELECT语句中，列j在USING子句中被命名，应在输出中只出现一次。但是，在两种情况下，冗余的列均没被消除。另外，依据标准SQL，列的顺序不正确。</p>
+        <p>现在，语句产生如下输出：</p>
+        <pre>+------+------+------+
+| j&nbsp;&nbsp;&nbsp; | i&nbsp;&nbsp;&nbsp; | k&nbsp;&nbsp;&nbsp; |
++------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |
++------+------+------+
++------+------+------+
+| j&nbsp;&nbsp;&nbsp; | i&nbsp;&nbsp;&nbsp; | k&nbsp;&nbsp;&nbsp; |
++------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |
++------+------+------+</pre>
+        <p>冗余的列被消除，并且依据标准SQL，列的顺序是正确的：</p>
+        <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          第一，两表共有的列，按在第一个表中的顺序排列</p>
+        <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          第二，第一个表中特有的列，按该表中的顺序排列</p>
+        <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          第三，第二个表中特有的列，按该表中的顺序排列</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          对多方式自然联合的估算会不同。方式要求重新编写查询。假设您有三个表t1(a,b),
+          t2(c,b)和t3(a,c)，每个表有一行：t1(1,2),
+          t2(10,2)和t3(7,10)。同时，假设这三个表具有NATURAL 
+          JOIN：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SELECT … FROM t1 NATURAL JOIN t2 NATURAL JOIN t3;</pre>
+        <p>在旧版本中，第二个联合的左操作数被认为是t2，然而它应该为嵌套联合（t1 
+          NATURAL JOIN t2）。结果，对t3的列进行检查时，只检查其在t2中的共有列。如果t3与t1有共有列，这些列不被用作equi-join列。因此，在旧版本的MySQL中，前面的查询被转换为下面的equi-join：</p>
+        <pre>SELECT … FROM t1, t2, t3
+&nbsp; WHERE t1.b = t2.b AND t2.c = t3.c;</pre>
+        <p>此联合又省略了一个equi-join谓语（t1.a 
+          = t3.a）。结果是，该联合产生一个行，而不是空结果。正确的等价查询如下：</p>
+        <pre>SELECT … FROM t1, t2, t3
+&nbsp; WHERE t1.b = t2.b AND t2.c = t3.c AND t1.a = t3.a;</pre>
+        <p>如果您要求在当前版本的MySQL中获得和旧版本中相同的查询结果，应把自然联合改写为第一个equi-join。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在旧版本中，逗号操作符（，）和JOIN均有相同的优先权，所以联合表达式t1, 
+          t2 JOIN t3被理解为((t1, 
+          t2) JOIN t3)。现在，JOIN有更高的优先权，所以表达式被理解为(t1, 
+          (t2 JOIN t3))。这个变更会影响使用ON子句的语句，因为该子句只参阅联合操作数中的列。优先权的变更改变了对什么是操作数的理解。</p>
+        <p>示例：</p>
+        <pre>CREATE TABLE t1 (i1 INT, j1 INT);
+CREATE TABLE t2 (i2 INT, j2 INT);
+CREATE TABLE t3 (i3 INT, j3 INT);
+INSERT INTO t1 VALUES(1,1);
+INSERT INTO t2 VALUES(1,1);
+INSERT INTO t3 VALUES(1,1);
+SELECT * FROM t1, t2 JOIN t3 ON (t1.i1 = t3.i3);</pre>
+        <p>在旧版本中，SELECT是合法的，因为t1, 
+          t2被隐含地归为(t1,t2)。现在，JOIN取得了优先权，因此用于ON子句的操作数是t2和t3。因为t1.i1不是任何一个操作数中的列，所以结果是出现在&#39;on 
+          clause&#39;中有未知列&#39;t1.i1&#39;的错误。要使联合可以被处理，用使用圆括号把前两个表明确地归为一组，这样用于ON子句的操作数为(t1,t2)和t3：</p>
+        <pre>SELECT * FROM (t1, t2) JOIN t3 ON (t1.i1 = t3.i3);</pre>
+        <p>本变更也适用于INNER JOIN，CROSS 
+          JOIN，LEFT JOIN和RIGHT 
+          JOIN。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在旧版本中，ON子句可以参阅在其右边命名的表中的列。现在，ON子句只能参阅操作数。</p>
+        <p>示例：</p>
+        <pre>CREATE TABLE t1 (i1 INT);
+CREATE TABLE t2 (i2 INT);
+CREATE TABLE t3 (i3 INT);
+SELECT * FROM t1 JOIN t2 ON (i1 = i3) JOIN t3;</pre>
+        <p>在旧版本中，SELECT语句是合法的。现在该语句会运行失败，出现在&#39;on 
+          clause&#39;中未知列&#39;i3&#39;的错误。这是因为i3是t3中的一个表，而t3不是ON子句中的操作数。本语句应进行如下改写：</p>
+        <pre>SELECT * FROM t1 JOIN t2 JOIN t3 ON (i1 = i3);</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在旧版本中，一个USING子句可以被改写为一个ON子句。ON子句对比了相应的列。例如，以下两个子句具有相同的语义：</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a LEFT JOIN b USING (c1,c2,c3)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a LEFT JOIN b ON a.c1=b.c1 AND a.c2=b.c2 AND a.c3=b.c3</pre>
+        <p>现在，这两个子句不再是一样的：</p>
+        <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在决定哪些行满足联合条件时，两个联合保持语义相同。</p>
+        <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在决定哪些列显示SELECT *扩展时，两个联合的语义不相同。USING联合选择对应列中的合并值，而ON联合选择所有表中的所有列。对于前面的USING联合，SELECT 
+          *选择这些值：</p>
+        <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COALESCE(a.c1,b.c1), COALESCE(a.c2,b.c2), COALESCE(a.c3,b.c3)</pre>
+        <p>对于ON联合，SELECT 
+          *选择这些值：</p>
+        <pre>a.c1, a.c2, a.c3, b.c1, b.c2, b.c3</pre>
+        <p>使用内部联合时，COALESCE(a.c1,b.c1)与a.c1或b.c1相同，因为两列将具有相同的值。使用外部联合时（比如LEFT 
+          JOIN），两列中有一列可以为NULL。该列将会从结果中被忽略。
+      
+      
+        
+          
+            
+              <h4 ><a name="union"></a>13.2.7.2. UNION语法<br>
+                &nbsp;</h4>
+            
+          
+        
+        
+    
+    
+      
+        
+          
+            <pre>SELECT ...
+UNION [ALL | DISTINCT]
+SELECT ...
+[UNION [ALL | DISTINCT]
+SELECT ...]</pre>
+            <p>UNION用于把来自许多SELECT语句的结果组合到一个结果集合中。</p>
+            <p>列于每个SELECT语句的对应位置的被选择的列应具有相同的类型。（例如，被第一个语句选择的第一列应和被其它语句选择的第一列具有相同的类型。）在第一个SELECT语句中被使用的列名称也被用于结果的列名称。</p>
+            <p>SELECT语句为常规的选择语句，但是受到如下的限定：</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              只有最后一个SELECT语句可以使用INTO 
+              OUTFILE。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              HIGH_PRIORITY不能与作为UNION一部分的SELECT语句同时使用。如果您对第一个SELECT指定了HIGH_PRIORITY，则不会起作用。如果您对其它后续的SELECT语句指定了HIGH_PRIORITY，则会产生语法错误。</p>
+            <p>如果您对UNION不使用关键词ALL，则所有返回的行都是唯一的，如同您已经对整个结果集合使用了DISTINCT。如果您指定了ALL，您会从所有用过的SELECT语句中得到所有匹配的行。</p>
+            <p>DISTINCT关键词是一个自选词，不起任何作用，但是根据SQL标准的要求，在语法中允许采用。（在MySQL中，DISTINCT代表一个共用体的默认工作性质。）</p>
+            <p>您可以在同一查询中混合UNION ALL和UNION 
+              DISTINCT。被混合的UNION类型按照这样的方式对待，即DISTICT共用体覆盖位于其左边的所有ALL共用体。DISTINCT共用体可以使用UNION 
+              DISTINCT明确地生成，或使用UNION（后面不加DISTINCT或ALL关键词）隐含地生成。</p>
+            <p>如果您想使用ORDER BY或LIMIT子句来对全部UNION结果进行分类或限制，则应对单个地SELECT语句加圆括号，并把ORDER 
+              BY或LIMIT放到最后一个的后面。以下例子同时使用了这两个子句：</p>
+            <pre>(SELECT a FROM <i>tbl_name</i> WHERE a=10 AND B=1)
+UNION
+(SELECT a FROM <i>tbl_name</i> WHERE a=11 AND B=2)
+ORDER BY a LIMIT 10;</pre>
+            <p>这种ORDER BY不能使用包括表名称（也就是，采用<i>tbl_name</i>.<i>col_name</i>格式的名称）列引用。可以在第一个SELECT语句中提供一个列别名，并在ORDER 
+              BY中参阅别名，或使用列位置在ORDER BY中参阅列。（首选采用别名，因为不建议使用列位置。）</p>
+            <p>另外，如果带分类的一列有别名，则ORDER BY子句必须引用别名，而不能引用列名称。以下语句中的第一个语句必须运行，但是第二个会运行失败，出现在&#39;order 
+              clause&#39;中有未知列&#39;a&#39;的错误：</p>
+            <pre>(SELECT a AS b FROM t) UNION (SELECT ...) ORDER BY b;
+(SELECT a AS b FROM t) UNION (SELECT ...) ORDER BY a;</pre>
+            <p>To apply ORDER BY 
+              or LIMIT to an individual
+              SELECT, place the clause inside 
+              the parentheses that enclose the 
+              SELECT:&nbsp;&nbsp; 为了对单个SELECT使用ORDER 
+              BY或LIMIT，应把子句放入圆括号中。圆括号包含了SELECT：</p>
+            <pre>(SELECT a FROM <i>tbl_name</i> WHERE a=10 AND B=1 ORDER BY a LIMIT 10)
+UNION
+(SELECT a FROM <i>tbl_name</i> WHERE a=11 AND B=2 ORDER BY a LIMIT 10);</pre>
+            <p>圆括号中用于单个SELECT语句的ORDER BY只有当与LIMIT结合后，才起作用。否则，ORDER 
+              BY被优化去除。</p>
+            <p>UNION结果集合中的列的类型和长度考虑了被所有SELECT语句恢复的数值。例如，考虑如下语句：</p>
+            <pre>mysql&gt; SELECT REPEAT(&#39;a&#39;,1) UNION SELECT REPEAT(&#39;b&#39;,10);
++---------------+
+| REPEAT(&#39;a&#39;,1) |
++---------------+
+| a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+| bbbbbbbbbb&nbsp;&nbsp;&nbsp; |
++---------------+</pre>
+            <p>（在部分早期版本的MySQL中，第二行已被删节到长度为1。）</p>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

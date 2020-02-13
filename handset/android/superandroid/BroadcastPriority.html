@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>android有序广播优先级和接收顺序
+</h1>
+<p>优先级高的接收器先接收。</p>
+<p>优先级相同，动态注册的广播接收器先于静态注册。</p>
+<p>优先级相同，注册类型相同，先注册先接收。</p>
+<p>所以要保证第一个动态注册就是最先接收者。Receiver一般注册在服务里，所以要保证服务开机第一个启动。</p>
+<p>示例：</p>
+<pre class="code">if(filter==null){
+	filter = new IntentFilter(ACTION);  
+	 filter.setPriority(2147483647);  
+}
+if(r==null){
+
+  r= new SmsReceiver();  
+  
+}
+registerReceiver(r, filter); </pre>
+<p>其中2147483647为最大int型整数。有人说优先级最大为1000，这个可以看看源码，但最大整数很保险。</p>
+<pre class="code">&lt;receiver android:name=&quot;.SmsReceiver&quot; &gt;
+
+   &lt;intent-filter android:priority=&quot;2147483647&quot;&gt;
+
+    &lt;action android:name=&quot;android.provider.Telephony.SMS_RECEIVED&quot; /&gt;                    
+
+   &lt;/intent-filter&gt;
+
+&lt;/receiver&gt;
+</pre>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.1.3.&nbsp;使用CallableStatements以执行存储程序</h1>
+
+            
+          
+        
+        <p>从MySQL服务器5.0版开始，与Connector/J 3.1.1或更新版本一起使用时，可完全实现java.sql.CallableStatement接口，但getParameterMetaData()方法例外。</p>
+        <p>在MySQL参考手册的“存储程序和函数”一节中，介绍了MySQL存储程序的语法。</p>
+        <p>通过JDBC的CallableStatement接口，Connector/J指明了存储程序的功能。</p>
+        <p>在下面的示例中，给出了1个存储程序，它返回增量为1的inOutParam的值，并通过inputParam传递了作为ResultSet的字符串。</p>
+        <a name="id3057089"></a>
+          <p > 示例26.3.&nbsp;存储程序示例</p>
+          <pre>CREATE PROCEDURE demoSp(IN inputParam VARCHAR(255), INOUT inOutParam INT)
+BEGIN
+&nbsp;&nbsp;&nbsp; DECLARE z INT;
+&nbsp;&nbsp;&nbsp; SET z = inOutParam + 1;
+&nbsp;&nbsp;&nbsp; SET inOutParam = z;
+&nbsp;
+&nbsp;&nbsp;&nbsp; SELECT inputParam;
+&nbsp;
+&nbsp;&nbsp;&nbsp; SELECT CONCAT(&#39;zyxw&#39;, inputParam);
+END</pre>
+          <p>要想与Connector/J一起使用demoSp，可采取下述步骤：</p>
+          <p> 1.&nbsp;&nbsp;&nbsp;
+            使用Connection.prepareCall()准备可调用语句。</p>
+          <p> 注意，必须使用JDBC转义语法，而且必须使用包含占位符的圆括号：</p>
+          <p >示例26.4.
+            使用Connection.prepareCall()</p>
+          <pre>导入java.sql.CallableStatement：
+&nbsp;
+...
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Prepare a call to the stored procedure &#39;demoSp&#39;
+&nbsp;&nbsp;&nbsp; // with two parameters
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Notice the use of JDBC-escape syntax ({call ...})
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; CallableStatement cStmt = conn.prepareCall(&quot;{call demoSp(?, ?)}&quot;);
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.setString(1, &quot;abcdefg&quot;);</pre>
+          <h3>注释：</h3>
+          <p> Connection.prepareCall()是一种开销很大的方法，原因在于驱动程序执行的支持输出参数的元数据检索。出于性能方面的原因，应在你的代码中再次使用CallableStatement实例，通过该方式，使对Connection.prepareCall()的不必要调用降至最低。</p>
+          <p> 2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            注册输出参数（如果有的话）</p>
+          <p>为了检索输出参数的值（创建存储程序时指定为OUT或INOUT的参数），JDBC要求在CallableStatement接口中使用各种registerOutputParameter()方法来执行语句之前指定它们：</p>
+          <p >示例26.5.
+            注册输出参数</p>
+          <pre>导入java.sql.Types：
+&nbsp;
+...
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Connector/J supports both named and indexed
+&nbsp;&nbsp;&nbsp; // output parameters. You can register output
+&nbsp;&nbsp;&nbsp; // parameters using either method, as well
+&nbsp;&nbsp;&nbsp; // as retrieve output parameters using either
+&nbsp;&nbsp;&nbsp; // method, regardless of what method was
+&nbsp;&nbsp;&nbsp; // used to register them.
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // The following examples show how to use
+&nbsp;&nbsp;&nbsp; // the various methods of registering
+&nbsp;&nbsp;&nbsp; // output parameters (you should of course
+&nbsp;&nbsp;&nbsp; // use only one registration per parameter).
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Registers the second parameter as output
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.registerOutParameter(2);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Registers the second parameter as output, and
+&nbsp;&nbsp;&nbsp; // uses the type &#39;INTEGER&#39; for values returned from
+&nbsp;&nbsp;&nbsp; // getObject()
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.registerOutParameter(2, Types.INTEGER);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Registers the named parameter &#39;inOutParam&#39;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.registerOutParameter(&quot;inOutParam&quot;);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Registers the named parameter &#39;inOutParam&#39;, and
+&nbsp;&nbsp;&nbsp; // uses the type &#39;INTEGER&#39; for values returned from
+&nbsp;&nbsp;&nbsp; // getObject()
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.registerOutParameter(&quot;inOutParam&quot;, Types.INTEGER);
+&nbsp;
+...</pre>
+          <p> 3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            设置输入参数（如果有的话）</p>
+          <p>输入以及输入／输出参数是作为PreparedStatement对象而设置的。但是，CallableStatement也支持按名称设置参数：</p>
+          <p >示例26.6.
+            设置CallableStatement输入参数</p>
+          <pre>...
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Set a parameter by index
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.setString(1, &quot;abcdefg&quot;);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Alternatively, set a parameter using
+&nbsp;&nbsp;&nbsp; // the parameter name
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.setString(&quot;inputParameter&quot;, &quot;abcdefg&quot;);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Set<a name="id3056998"> the &#39;in/out&#39; parameter using an index</a>
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.setInt(2, 1);
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Alternatively, set the &#39;in/out&#39; parameter
+&nbsp;&nbsp;&nbsp; // by name
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; cStmt.setInt(&quot;inOutParam&quot;, 1);
+&nbsp;
+...</pre>
+          <p> 4.&nbsp;&nbsp;&nbsp;
+            执行CallableStatement，并检索任何结果集或输出参数。</p>
+          <p>尽管CallableStatement支持调用任何语句执行方法（executeUpdate()，executeQuery()或execute()），最灵活的方法是调用execute()，这是因为，采用该方法，你无需事先知道存储程序是否将返回结果集：</p>
+          <p >示例26.7.
+            检索结果和输出参数值</p>
+          <pre>...
+&nbsp;
+&nbsp;&nbsp;&nbsp; boolean hadResults = cStmt.execute();
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Process all returned result sets
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; while (hadResults) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ResultSet rs = cStmt.getResultSet();
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // process result set
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hadResults = cStmt.getMoreResults();
+&nbsp;&nbsp;&nbsp; }
+&nbsp;
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Retrieve output parameters
+&nbsp;&nbsp;&nbsp; //
+&nbsp;&nbsp;&nbsp; // Connector/J supports both index-based and
+&nbsp;&nbsp;&nbsp; // name-based retrieval
+&nbsp;&nbsp;&nbsp; //
+&nbsp;
+&nbsp;&nbsp;&nbsp; int outputValue = cStmt.getInt(1); // index-based
+&nbsp;
+&nbsp;&nbsp;&nbsp; outputValue = cStmt.getInt(&quot;inOutParam&quot;); // name-based
+&nbsp;
+...</pre>
+          <p></p>
+        
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

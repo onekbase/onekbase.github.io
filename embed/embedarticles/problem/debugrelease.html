@@ -1,0 +1,264 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>debug及release的相关问题</h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-05-28</strong></p>
+<h2>Debug和release</h2>
+<p>我们在编写程序进行编译、调试、运行的时候，经常会碰到debug和release，想一想也该总结一下子二者的区别了，呵呵。<br>
+  下边以C语言为例，来进行介绍debug和release的区别。<br>
+  Debug通常称为调试版本，它包含调试信息，并且不作任何优化，便于程序员调试程序。<br>
+  Release称为发布版本，它往往是进行了各种优化，使得程序在代码大小和运行速度上都是最优的，以便用户很好地使用。<br>
+  Debug 和 Release 的真正秘密，在于一组编译选项。<br>
+  其实，程序的调试信息和优化是独立的，即使release也可以经过一些编译选项来进行适当的调试。<br>
+  下面列出了分别针对二者的选项（当然除此之外还有其他一些，如/Fd /Fo，但区别并不重要，通常他们也不会引起 Release 版错误，在此不讨论）</p>
+<h2>Debug </h2>
+<h3>  /MDd /MLd 或 /MTd </h3>
+<p>使用 Debug runtime library (调试版本的运行时刻函数库) 。</p>
+<h3> /Od </h3>
+<p>关闭优化开关。</p>
+<h3> /D &quot;_DEBUG&quot; </h3>
+<p>相当于 #define  _DEBUG,打开编译调试代码开关 (主要针对assert函数) 。</p>
+<h3> /ZI </h3>
+<p>创建 Edit and continue(编辑继续)数据库，这样在调试过程中如果修改了源代码不需重新编译 /GZ 可以帮助捕获内存错误 。</p>
+<h3>  /Gm </h3>
+<p>打开最小化重链接开关， 减少链接时间。</p>
+<h2>Release </h2>
+<h3>  /MD /ML 或 /MT </h3>
+<p>使用发布版本的运行时刻函数库。 </p>
+<h3> /O1 或 /O2</h3>
+<p> 优化开关，使程序最小或最快 。</p>
+<h3> /D &quot;NDEBUG&quot; </h3>
+<p>关闭条件编译调试代码开关  (即不编译assert函数) </p>
+<h3>  /GF </h3>
+<p>合并重复的字符串， 并将字符串常量放到只读内存， 防止被修改。</p>
+<p> 实际上，Debug 和 Release 并没有本质的界限，他们只是一组编译选项的集合，编译器只是按照预定的选项行动。事实上，我们甚至可以修改这些选项，从而得到优化过的调试版本或是带跟踪语句的发布版本。 </p>
+<h2>Release 版会可能出现的问题</h2>
+<p>有了上面的介绍，我们再来逐个对照这些选项看看 Release 版错误是怎样产生的。</p>
+<h3>1.Runtime Library</h3>
+<p>链接哪种运行时刻函数库通常只对程序的性能产生影响。调试版本的 Runtime Library 包含了调试信息，并采用了一些保护机制以帮助发现错误，因此性能不如发布版本。编译器提供的 Runtime Library 通常很稳定，不会造成 Release 版错误；倒是由于 Debug  的 Runtime Library 加强了对错误的检测，如堆内存分配，有时会出现 Debug 有错但 Release 正常的现象。应当指出的是，如果 Debug 有错，即使 Release 正常，程序肯定是有 Bug 的，只不过可能是 Release 版的某次运行没有表现出来而已。</p>
+<h3>2.优化</h3>
+<p>这是造成错误的主要原因，因为关闭优化时源程序基本上是直接翻译的，而打开优化后编译器会作出一系列假设。这类错误主要有以下几种。<br>
+  （1）.帧指针(Frame Pointer)省略（简称FPO）：在函数调用过程中，所有调用信息（返回地址、参数）以及自动变量都是放在栈中的。若函数的声明与实现不同（参数、返回值、调用方式），就会产生错误，但 Debug 方式下，栈的访问通过 EBP 寄存器保存的地址实现，如果没有发生数组越界之类的错误（或是越界&ldquo;不多&rdquo;），函数通常能正常执行；Release 方式下，优化会省略 EBP 栈基址指针，这样通过一个全局指针访问栈就会造成返回地址错误是程序崩溃。<br>
+  C++ 的强类型特性能检查出大多数这样的错误，但如果用了强制类型转换，就不行了。你可以在 Release 版本中强制加入/Oy-编译选项来关掉帧指针省略，以确定是否为此类错误。此类错误通常有：MFC 消息响应函数书写错误。正确的应为：
+  <pre class="code">   afx_msg LRESULT OnMessageOwn<br>
+  (WPARAM wparam, LPARAM lparam);</pre>
+  ON_MESSAGE 宏包含强制类型转换。防止这种错误的方法之一是重定义 ON_MESSAGE 宏，把下列代码加到  stdafx.h 中（在#include  &quot;afxwin.h&quot;之后）,函数原形错误时编译会报错。
+  <pre class="code">  #undef ON_MESSAGE<br>
+  #define ON_MESSAGE(message, memberFxn) \<br>
+  {<br>
+  message, 0, 0, 0, AfxSig_lwl, \<br>
+  (AFX_PMSG)(AFX_PMSGW)<br>
+  (static_cast&lt; LRESULT (AFX_MSG_CALL \<br>
+  CWnd::*)(WPARAM, LPARAM) &gt; (&amp;memberFxn)<br>
+  },</pre>
+  （2）volatile 型变量：volatile 告诉编译器该变量可能被程序之外的未知方式修改（如系统、其他进程和线程）。优化程序为了使程序性能提高，常把一些变量放在寄存器中（类似于register关键字），而其他进程只能对该变量所在的内存进行修改，而寄存器中的值没变。如果你的程序是多线程的，或者你发现某个变量的值与预期的不符而你确信已正确的设置了，则很可能遇到这样的问题。这种错误有时会表现为程序在最快优化出错而最小优化正常。把你认为可疑的变量加上 volatile 试试。<br>
+  （3）变量优化：优化程序会根据变量的使用情况优化变量。例如，函数中有一个未被使用的变量，在  Debug 版中它有可能掩盖一个数组越界，而在 Release 版中，这个变量很可能被优化调，此时数组越界会破坏栈中有用的数据。当然，实际的情况会比这复杂得多。与此有关的错误有非法访问，包括数组越界、指针错误等。例如：
+  <pre class="code">void fn(void)<br>
+  {<br>
+  int i;<br>
+  i = 1;<br>
+  int a[4];<br>
+  {<br>
+  int j;<br>
+  j = 1;<br>
+  }<br>
+  a[-1] = 1;<br>
+  //当然错误不会这么明显，例如下标是变量<br>
+  a[4] = 1;<br>
+  }</pre>
+  j 虽然在数组越界时已出了作用域，但其空间并未收回，因而 i 和 j 就会掩盖越界。而 Release 版由于 i、j 并起很大作用可能会被优化掉，从而使栈被破坏。</p>
+<h3>3. DEBUG 与  NDEBUG </h3>
+<p>当定义了 _DEBUG 时，assert() 函数会被编译，而 NDEBUG 时不被编译。此外，TRACE()  宏的编译也受 _DEBUG 控制。<br>
+  所有这些断言都只在 Debug版中才被编译，而在 Release 版中被忽略。唯一的例外是 VERIFY()。事实上，这些宏都是调用了assert()函数，只不过附加了一些与库有关的调试代码。如果你在这些宏中加入了任何程序代码，而不只是 布尔表达式（例如赋值、能改变变量值的函数调用等），那么Release版都不会执行这些操作，从而造成错误。初学者很容易犯这类错误，查找的方法也很简 单，因为这些宏都已在上面列出，只要利用 VC++ 的 Find in Files 功能在工程所有文件中找到用这些宏的地方再一一检查即可。另外，有些高手可能还会加入 #ifdef  _DEBUG 之类的条件编译，也要注意一下。<br>
+  顺便值得一提的是VERIFY()宏，这个宏允许你将程序代码放在布尔表达式里。这个宏通常用来检查 Windows API的返回值。有些人可能为这个原因而滥用VERIFY()，事实上这是危险的，因为VERIFY()违反了断言的思想，不能使程序代码和调试代码完全 分离，最终可能会带来很多麻烦。因此，专家们建议尽量少用这个宏。</p>
+<h3>4./GZ 选项</h3>
+<p>这个选项会做以下这些事：<br>
+  (1) 初始化内存和变量。包括用 0xCC 初始化所有自动变量，0xCD (  Cleared Data ) 初始化堆中分配的内存（即动态分配的内存，例如 new ），0xDD ( Dead Data  ) 填充已被释放的堆内存（例如 delete ），0xFD( deFencde Data ) 初始化受保护的内存（debug 版在动态分配内存的前后加入保护内存以防止越界访问），其中括号中的词是微软建议的助记词。这样做的好处是这些值都很大，作为指针是不可能的（而且 32 位系统中指针很少是奇数值，在有些系统中奇数的指针会产生运行时错误），作为数值也很少遇到，而且这些值也很容易辨认，因此这很有利于在 Debug 版中发现 Release 版才会遇到的错误。要特别注意的是，很多人认为编译器会用0来初始化变量，这是错误的（而且这样很不利于查找错误）。<br>
+  (2)通过函数指针调用函数时，会通过检查栈指针验证函数调用的匹配性。（防止原形不匹配）<br>
+  (3)函数返回前检查栈指针，确认未被修改。（防止越界访问和原形不匹配，与第二项合在一起可大致模拟帧指针省略 FPO ）通常 /GZ 选项会造成 Debug 版出错而 Release 版正常的现象，因为  Release 版中未初始化的变量是随机的，这有可能使指针指向一个有效地址而掩盖了非法访问。除此之外，/Gm/GF等选项造成错误的情况比较少，而且他们的效果显而 易见，比较容易发现。</p>
+<h2>Release 版的程序进行调试</h2>
+<p>遇到Debug成功但Release失败，显然是一件很沮丧的事，而且往往无从下手。如果你看了以上的分析，结合错误的具体表现，很快找出了错误，固然很好。但如果一时找不出，以下给出了一些在这种情况下的策略。<br>
+  （1）前面已经提过，Debug和Release只是一组编译选项的差别，实际上并没有什么定义能区分二者。我们可以修改Release版的编译选项来缩小错误范围。如上所述，可以把Release 的选项逐个改为与之相对的应Debug选项，如/MD改为/MDd、/O1改为/Od，或运行时间优化改为程序大小优化。注意，一次只改一个选项，看改哪个选项时错误消失，再对应该选项相关的错误，针对性地查找。这些选项在Project\Settings...中都可以直接通过列表选取，通常不要手动修改。由于以上的分析已相当全面，这个方法是最有效的。<br>
+  （2）在编程过程中就要时常注意测试 Release 版本，以免最后代码太多，时间又很紧。<br>
+  （3）在 Debug 版中使用 /W4 警告级别，这样可以从编译器获得最大限度的错误信息，比如 if( i =0 )就会引起 /W4 警告。不要忽略这些警告，通常这是你程序中的 Bug 引起的。但有时 /W4 会带来很多冗余信息，如未使用的函数参数警告，而很多消息处理函数都会忽略某些参数。我们可以用:
+  <pre class="code">  #progma warning(disable: 4702)<br>
+  //禁止<br>
+  //...<br>
+  #progma warning(default: 4702)<br>
+  //重新允许来暂时禁止某个警告，或使用<br>
+  #progma warning(push, 3) <br>
+  //设置警告级别为 /W3<br>
+  //...<br>
+  #progma warning(pop)<br>
+  //重设为 /W4</pre>
+  来暂时改变警告级别，有时你可以只在认为可疑的那一部分代码使用 /W4。<br>
+  （4）你也可以像Debug一样调试你的Release版，只要加入调试符号。在Project/Settings...  中，选中 Settings for &quot;Win32  Release&quot;，选中 C/C++ 标签，Category 选 General，Debug Info 选 Program Database。再在 Link 标签 Project  options 最后加上 &quot;/OPT:REF&quot;  (引号不要输)。这样调试器就能使用 pdb 文件中的调试符号。<br>
+  (5)但调试时你会发现断点很难设置，变量也很难找到……，这些都被优化过了。不过令人庆幸的是，Call  Stack窗口仍然工作正常，即使帧指针被优化，栈信息（特别是返回地址）仍然能找到。这对定位错误很有帮助。</p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

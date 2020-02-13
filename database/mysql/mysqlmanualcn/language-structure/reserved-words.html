@@ -1,0 +1,616 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 9.6.&nbsp;MySQL中保留字的处理</h1>
+
+        
+      
+    
+    
+    <p> 尝试使用一个识别符，例如使用嵌入式MySQL数据类型或函数名作为表名或列名，例如TIMESTAMP或GROUP，会造成一个常见问题。允许你这样操作(例如，ABS可以作为一个列名)。但是，默认情况下，在数调用中在函数名和后面的‘(’字符之间不允许有空格。该要求使函数调用与列名引用不同。</p>
+    <p> 该行为的不利结果是在某些上下文中省略一个空格会使识别符解释为函数名。例如，该语句合法：</p>
+    <pre>mysql&gt; CREATE TABLE abs (val INT)；</pre>
+    <p>但省略abs后面的空格会造成语法错误，因为省略后该语句好像要调用ABS()函数：</p>
+    <pre>mysql&gt; CREATE TABLE abs(val INT);</pre>
+    <p> 如果SQL服务器模式包括IGNORE_SPACE模式值，服务器允许函数调用时在函数名和后面的‘(’字符之间有空格。这样使函数名被视为保留字。结果是，与函数名相同的识别符必须按照<a href="legal-names.html" title="9.2. Database, Table, Index, Column, and Alias Names">9.2节，“数据库、表、索引、列和别名”</a>中所描述的引起来。SQL服务器模式按照<a href="reserved-words.html" title="5.3.2. The Server SQL Mode">5.3.2节，“SQL服务器模式”</a>中所描述的进行控制。</p>
+    <p> 限定名中句点后面的字必须为一个识别符，因此不需要将它引起来，即使它是一个保留字。</p>
+    <p>在MySQL中，下表中的字显式被保留。其中大多数字进制被标准SQL用作列名和/或表名(例如，GROUP)。少数被保留了，因为MySQL需要它们，(目前)使用yacc解析程序。保留字被引起来后可以用作识别符。</p>
+    
+      <table border="1">
+        <colgroup>
+        <col>
+        <col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>ADD</td>
+            <td>ALL</td>
+            <td>ALTER</td>
+          </tr>
+          <tr>
+            <td>ANALYZE</td>
+            <td>AND</td>
+            <td>AS</td>
+          </tr>
+          <tr>
+            <td>ASC</td>
+            <td>ASENSITIVE</td>
+            <td>BEFORE</td>
+          </tr>
+          <tr>
+            <td>BETWEEN</td>
+            <td>BIGINT</td>
+            <td>BINARY</td>
+          </tr>
+          <tr>
+            <td>BLOB</td>
+            <td>BOTH</td>
+            <td>BY</td>
+          </tr>
+          <tr>
+            <td>CALL</td>
+            <td>CASCADE</td>
+            <td>CASE</td>
+          </tr>
+          <tr>
+            <td>CHANGE</td>
+            <td>CHAR</td>
+            <td>CHARACTER</td>
+          </tr>
+          <tr>
+            <td>CHECK</td>
+            <td>COLLATE</td>
+            <td>COLUMN</td>
+          </tr>
+          <tr>
+            <td>CONDITION</td>
+            <td>CONNECTION</td>
+            <td>CONSTRAINT</td>
+          </tr>
+          <tr>
+            <td>CONTINUE</td>
+            <td>CONVERT</td>
+            <td>CREATE</td>
+          </tr>
+          <tr>
+            <td>CROSS</td>
+            <td>CURRENT_DATE</td>
+            <td>CURRENT_TIME</td>
+          </tr>
+          <tr>
+            <td>CURRENT_TIMESTAMP</td>
+            <td>CURRENT_USER</td>
+            <td>CURSOR</td>
+          </tr>
+          <tr>
+            <td>DATABASE</td>
+            <td>DATABASES</td>
+            <td>DAY_HOUR</td>
+          </tr>
+          <tr>
+            <td>DAY_MICROSECOND</td>
+            <td>DAY_MINUTE</td>
+            <td>DAY_SECOND</td>
+          </tr>
+          <tr>
+            <td>DEC</td>
+            <td>DECIMAL</td>
+            <td>DECLARE</td>
+          </tr>
+          <tr>
+            <td>DEFAULT</td>
+            <td>DELAYED</td>
+            <td>DELETE</td>
+          </tr>
+          <tr>
+            <td>DESC</td>
+            <td>DESCRIBE</td>
+            <td>DETERMINISTIC</td>
+          </tr>
+          <tr>
+            <td>DISTINCT</td>
+            <td>DISTINCTROW</td>
+            <td>DIV</td>
+          </tr>
+          <tr>
+            <td>DOUBLE</td>
+            <td>DROP</td>
+            <td>DUAL</td>
+          </tr>
+          <tr>
+            <td>EACH</td>
+            <td>ELSE</td>
+            <td>ELSEIF</td>
+          </tr>
+          <tr>
+            <td>ENCLOSED</td>
+            <td>ESCAPED</td>
+            <td>EXISTS</td>
+          </tr>
+          <tr>
+            <td>EXIT</td>
+            <td>EXPLAIN</td>
+            <td>FALSE</td>
+          </tr>
+          <tr>
+            <td>FETCH</td>
+            <td>FLOAT</td>
+            <td>FLOAT4</td>
+          </tr>
+          <tr>
+            <td>FLOAT8</td>
+            <td>FOR</td>
+            <td>FORCE</td>
+          </tr>
+          <tr>
+            <td>FOREIGN</td>
+            <td>FROM</td>
+            <td>FULLTEXT</td>
+          </tr>
+          <tr>
+            <td>GOTO</td>
+            <td>GRANT</td>
+            <td>GROUP</td>
+          </tr>
+          <tr>
+            <td>HAVING</td>
+            <td>HIGH_PRIORITY</td>
+            <td>HOUR_MICROSECOND</td>
+          </tr>
+          <tr>
+            <td>HOUR_MINUTE</td>
+            <td>HOUR_SECOND</td>
+            <td>IF</td>
+          </tr>
+          <tr>
+            <td>IGNORE</td>
+            <td>IN</td>
+            <td>INDEX</td>
+          </tr>
+          <tr>
+            <td>INFILE</td>
+            <td>INNER</td>
+            <td>INOUT</td>
+          </tr>
+          <tr>
+            <td>INSENSITIVE</td>
+            <td>INSERT</td>
+            <td>INT</td>
+          </tr>
+          <tr>
+            <td>INT1</td>
+            <td>INT2</td>
+            <td>INT3</td>
+          </tr>
+          <tr>
+            <td>INT4</td>
+            <td>INT8</td>
+            <td>INTEGER</td>
+          </tr>
+          <tr>
+            <td>INTERVAL</td>
+            <td>INTO</td>
+            <td>IS</td>
+          </tr>
+          <tr>
+            <td>ITERATE</td>
+            <td>JOIN</td>
+            <td>KEY</td>
+          </tr>
+          <tr>
+            <td>KEYS</td>
+            <td>KILL</td>
+            <td>LABEL</td>
+          </tr>
+          <tr>
+            <td>LEADING</td>
+            <td>LEAVE</td>
+            <td>LEFT</td>
+          </tr>
+          <tr>
+            <td>LIKE</td>
+            <td>LIMIT</td>
+            <td>LINEAR</td>
+          </tr>
+          <tr>
+            <td>LINES</td>
+            <td>LOAD</td>
+            <td>LOCALTIME</td>
+          </tr>
+          <tr>
+            <td>LOCALTIMESTAMP</td>
+            <td>LOCK</td>
+            <td>LONG</td>
+          </tr>
+          <tr>
+            <td>LONGBLOB</td>
+            <td>LONGTEXT</td>
+            <td>LOOP</td>
+          </tr>
+          <tr>
+            <td>LOW_PRIORITY</td>
+            <td>MATCH</td>
+            <td>MEDIUMBLOB</td>
+          </tr>
+          <tr>
+            <td>MEDIUMINT</td>
+            <td>MEDIUMTEXT</td>
+            <td>MIDDLEINT</td>
+          </tr>
+          <tr>
+            <td>MINUTE_MICROSECOND</td>
+            <td>MINUTE_SECOND</td>
+            <td>MOD</td>
+          </tr>
+          <tr>
+            <td>MODIFIES</td>
+            <td>NATURAL</td>
+            <td>NOT</td>
+          </tr>
+          <tr>
+            <td>NO_WRITE_TO_BINLOG</td>
+            <td>NULL</td>
+            <td>NUMERIC</td>
+          </tr>
+          <tr>
+            <td>ON</td>
+            <td>OPTIMIZE</td>
+            <td>OPTION</td>
+          </tr>
+          <tr>
+            <td>OPTIONALLY</td>
+            <td>OR</td>
+            <td>ORDER</td>
+          </tr>
+          <tr>
+            <td>OUT</td>
+            <td>OUTER</td>
+            <td>OUTFILE</td>
+          </tr>
+          <tr>
+            <td>PRECISION</td>
+            <td>PRIMARY</td>
+            <td>PROCEDURE</td>
+          </tr>
+          <tr>
+            <td>PURGE</td>
+            <td>RAID0</td>
+            <td>RANGE</td>
+          </tr>
+          <tr>
+            <td>READ</td>
+            <td>READS</td>
+            <td>REAL</td>
+          </tr>
+          <tr>
+            <td>REFERENCES</td>
+            <td>REGEXP</td>
+            <td>RELEASE</td>
+          </tr>
+          <tr>
+            <td>RENAME</td>
+            <td>REPEAT</td>
+            <td>REPLACE</td>
+          </tr>
+          <tr>
+            <td>REQUIRE</td>
+            <td>RESTRICT</td>
+            <td>RETURN</td>
+          </tr>
+          <tr>
+            <td>REVOKE</td>
+            <td>RIGHT</td>
+            <td>RLIKE</td>
+          </tr>
+          <tr>
+            <td>SCHEMA</td>
+            <td>SCHEMAS</td>
+            <td>SECOND_MICROSECOND</td>
+          </tr>
+          <tr>
+            <td>SELECT</td>
+            <td>SENSITIVE</td>
+            <td>SEPARATOR</td>
+          </tr>
+          <tr>
+            <td>SET</td>
+            <td>SHOW</td>
+            <td>SMALLINT</td>
+          </tr>
+          <tr>
+            <td>SPATIAL</td>
+            <td>SPECIFIC</td>
+            <td>SQL</td>
+          </tr>
+          <tr>
+            <td>SQLEXCEPTION</td>
+            <td>SQLSTATE</td>
+            <td>SQLWARNING</td>
+          </tr>
+          <tr>
+            <td>SQL_BIG_RESULT</td>
+            <td>SQL_CALC_FOUND_ROWS</td>
+            <td>SQL_SMALL_RESULT</td>
+          </tr>
+          <tr>
+            <td>SSL</td>
+            <td>STARTING</td>
+            <td>STRAIGHT_JOIN</td>
+          </tr>
+          <tr>
+            <td>TABLE</td>
+            <td>TERMINATED</td>
+            <td>THEN</td>
+          </tr>
+          <tr>
+            <td>TINYBLOB</td>
+            <td>TINYINT</td>
+            <td>TINYTEXT</td>
+          </tr>
+          <tr>
+            <td>TO</td>
+            <td>TRAILING</td>
+            <td>TRIGGER</td>
+          </tr>
+          <tr>
+            <td>TRUE</td>
+            <td>UNDO</td>
+            <td>UNION</td>
+          </tr>
+          <tr>
+            <td>UNIQUE</td>
+            <td>UNLOCK</td>
+            <td>UNSIGNED</td>
+          </tr>
+          <tr>
+            <td>UPDATE</td>
+            <td>USAGE</td>
+            <td>USE</td>
+          </tr>
+          <tr>
+            <td>USING</td>
+            <td>UTC_DATE</td>
+            <td>UTC_TIME</td>
+          </tr>
+          <tr>
+            <td>UTC_TIMESTAMP</td>
+            <td>VALUES</td>
+            <td>VARBINARY</td>
+          </tr>
+          <tr>
+            <td>VARCHAR</td>
+            <td>VARCHARACTER</td>
+            <td>VARYING</td>
+          </tr>
+          <tr>
+            <td>WHEN</td>
+            <td>WHERE</td>
+            <td>WHILE</td>
+          </tr>
+          <tr>
+            <td>WITH</td>
+            <td>WRITE</td>
+            <td>X509</td>
+          </tr>
+          <tr>
+            <td>XOR</td>
+            <td>YEAR_MONTH</td>
+            <td>ZEROFILL</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <p>MySQL允许部分关键字用做未引起来的识别符，因为许多人以前曾使用过它们。下面列出了一些例子：</p>
+    
+      <ul type="disc">
+        <li>
+          <p> ACTION </p>
+        </li>
+        <li>
+          <p> BIT </p>
+        </li>
+        <li>
+          <p> DATE </p>
+        </li>
+        <li>
+          <p> ENUM </p>
+        </li>
+        <li>
+          <p> NO </p>
+        </li>
+        <li>
+          <p> TEXT </p>
+        </li>
+        <li>
+          <p> TIME </p>
+        </li>
+        <li>
+          <p> TIMESTAMP </p>
+        </li>
+      </ul>
+    
+  
+
+
+  <hr>
+  <p> 这是MySQL参考手册的翻译版本，关于MySQL参考手册，请访问dev.mysql.com.。原始参考手册为英文版，与英文版参考手册相比，本翻译版可能不是最新的。
+
+
+
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

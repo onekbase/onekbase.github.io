@@ -1,0 +1,825 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.1.5. CREATE TABLE语法</h1>
+
+          
+        
+      
+      
+        <dl>
+          <dt><a href="silent-column-changes.html"> 13.1.5.1. 沉寂的列规格变更</a></dt>
+        </dl>
+      
+      
+      <pre>CREATE [TEMPORARY] TABLE [IF NOT EXISTS] <i>tbl_name</i>
+&nbsp;&nbsp;&nbsp; [(<i>create_definition</i>,...)]
+&nbsp;&nbsp;&nbsp; [<i>table_options</i>] [<i>select_statement</i>]</pre>
+      <p>或：</p>
+      <pre>CREATE [TEMPORARY] TABLE [IF NOT EXISTS] <i>tbl_name</i>
+&nbsp;&nbsp;&nbsp; [(] LIKE <i>old_tbl_name</i> [)];
+&nbsp;
+<i>create_definition</i>:
+&nbsp;&nbsp;&nbsp; <i>column_definition</i>
+&nbsp; | [CONSTRAINT [<i>symbol</i>]] PRIMARY KEY [<i>index_type</i>] (<i>index_col_name</i>,...)
+&nbsp; | KEY [<i>index_name</i>] [<i>index_type</i>] (<i>index_col_name</i>,...)
+&nbsp; | INDEX [<i>index_name</i>] [<i>index_type</i>] (<i>index_col_name</i>,...)
+&nbsp; | [CONSTRAINT [<i>symbol</i>]] UNIQUE [INDEX]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<i>index_name</i>] [<i>index_type</i>] (<i>index_col_name</i>,...)
+&nbsp; | [FULLTEXT|SPATIAL] [INDEX] [<i>index_name</i>] (<i>index_col_name</i>,...)
+&nbsp; | [CONSTRAINT [<i>symbol</i>]] FOREIGN KEY
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [<i>index_name</i>] (<i>index_col_name</i>,...) [<i>reference_definition</i>]
+&nbsp; | CHECK (<i>expr</i>)
+&nbsp;
+<i>column_definition</i>:
+&nbsp;&nbsp;&nbsp; <i>col_name</i> <i>type</i> [NOT NULL | NULL] [DEFAULT <i>default_value</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [AUTO_INCREMENT] [UNIQUE [KEY] | [PRIMARY] KEY]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [COMMENT &#39;<i>string</i>&#39;] [<i>reference_definition</i>]
+&nbsp;
+<i>type</i>:
+&nbsp;&nbsp;&nbsp; TINYINT[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | SMALLINT[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | MEDIUMINT[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | INT[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | INTEGER[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | BIGINT[(<i>length</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | REAL[(<i>length</i>,<i>decimals</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | DOUBLE[(<i>length</i>,<i>decimals</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | FLOAT[(<i>length</i>,<i>decimals</i>)] [UNSIGNED] [ZEROFILL]
+&nbsp; | DECIMAL(<i>length</i>,<i>decimals</i>) [UNSIGNED] [ZEROFILL]
+&nbsp; | NUMERIC(<i>length</i>,<i>decimals</i>) [UNSIGNED] [ZEROFILL]
+&nbsp; | DATE
+&nbsp; | TIME
+&nbsp; | TIMESTAMP
+&nbsp; | DATETIME
+&nbsp; | CHAR(<i>length</i>) [BINARY | ASCII | UNICODE]
+&nbsp; | VARCHAR(<i>length</i>) [BINARY]
+&nbsp; | TINYBLOB
+&nbsp; | BLOB
+&nbsp; | MEDIUMBLOB
+&nbsp; | LONGBLOB
+&nbsp; | TINYTEXT [BINARY]
+&nbsp; | TEXT [BINARY]
+&nbsp; | MEDIUMTEXT [BINARY]
+&nbsp; | LONGTEXT [BINARY]
+&nbsp; | ENUM(<i>value1</i>,<i>value2</i>,<i>value3</i>,...)
+&nbsp; | SET(<i>value1</i>,<i>value2</i>,<i>value3</i>,...)
+&nbsp; | <i>spatial_type</i>
+&nbsp;
+<i>index_col_name</i>:
+&nbsp;&nbsp;&nbsp; <i>col_name</i> [(<i>length</i>)] [ASC | DESC]
+&nbsp;
+<i>reference_definition</i>:
+&nbsp;&nbsp;&nbsp; REFERENCES <i>tbl_name</i> [(<i>index_col_name</i>,...)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [MATCH FULL | MATCH PARTIAL | MATCH SIMPLE]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ON DELETE <i>reference_option</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [ON UPDATE <i>reference_option</i>]
+&nbsp;
+<i>reference_option</i>:
+&nbsp;&nbsp;&nbsp; RESTRICT | CASCADE | SET NULL | NO ACTION
+&nbsp;
+<i>table_options</i>: <i>table_option</i> [<i>table_option</i>] ...
+&nbsp;
+<i>table_option</i>:
+&nbsp;&nbsp;&nbsp; {ENGINE|TYPE} = <i>engine_name</i>
+&nbsp; | AUTO_INCREMENT = <i>value</i>
+&nbsp; | AVG_ROW_LENGTH = <i>value</i>
+&nbsp; | [DEFAULT] CHARACTER SET <i>charset_name</i> [COLLATE <i>collation_name</i>]
+&nbsp; | CHECKSUM = {0 | 1}
+&nbsp; | COMMENT = &#39;<i>string</i>&#39;
+&nbsp; | CONNECTION = &#39;<i>connect_string</i>&#39;
+&nbsp; | MAX_ROWS = <i>value</i>
+&nbsp; | MIN_ROWS = <i>value</i>
+&nbsp; | PACK_KEYS = {0 | 1 | DEFAULT}
+&nbsp; | PASSWORD = &#39;<i>string</i>&#39;
+&nbsp; | DELAY_KEY_WRITE = {0 | 1}
+&nbsp; | ROW_FORMAT = {DEFAULT|DYNAMIC|FIXED|COMPRESSED|REDUNDANT|COMPACT}
+&nbsp; | UNION = (<i>tbl_name</i>[,<i>tbl_name</i>]...)
+&nbsp; | INSERT_METHOD = { NO | FIRST | LAST }
+&nbsp; | DATA DIRECTORY = &#39;<i>absolute path to directory</i>&#39;
+&nbsp; | INDEX DIRECTORY = &#39;<i>absolute path to directory</i>&#39;
+&nbsp;
+<i>partition_options</i>:
+&nbsp;&nbsp;&nbsp; PARTITION BY
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [LINEAR] HASH(<i>expr</i>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; [LINEAR] KEY(<i>column_list</i>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; RANGE(<i>expr</i>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp; LIST(<i>column_list</i>)
+&nbsp;&nbsp;&nbsp; [PARTITIONS <i>num</i>]
+&nbsp;&nbsp;&nbsp; [&nbsp; SUBPARTITION BY
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [LINEAR] HASH(<i>expr</i>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | [LINEAR] KEY(<i>column_list</i>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [SUBPARTITIONS(<i>num</i>)]&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;&nbsp; [(<i>partition_definition</i>), [(<i>partition_definition</i>)], ...]
+&nbsp;
+<i>partition_definition</i>:
+&nbsp;&nbsp;&nbsp; PARTITION <i>partition_name</i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [VALUES { 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LESS THAN (<i>expr</i>) | MAXVALUE 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| IN (<i>value_list</i>) }]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[STORAGE] ENGINE [=] <i>engine-name</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [COMMENT [=] <i>&#39;comment_text&#39;</i> ]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [DATA DIRECTORY [=] &#39;<i>data_dir</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [INDEX DIRECTORY [=] &#39;<i>index_dir</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [MAX_ROWS [=] <i>max_number_of_rows</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [MIN_ROWS [=] <i>min_number_of_rows</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [TABLESPACE [=] (<i>tablespace_name</i>)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [NODEGROUP [=] <i>node_group_id</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [(<i>subpartition_definition</i>), [(<i>subpartition_definition</i>)], ...]
+&nbsp;
+<i>subpartition_definition</i>:
+&nbsp;&nbsp;&nbsp; SUBPARTITION <i>logical_name</i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [[STORAGE] ENGINE [=] <i>engine-name</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [COMMENT [=] <i>&#39;comment_text&#39;</i> ]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [DATA DIRECTORY [=] &#39;<i>data_dir</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [INDEX DIRECTORY [=] &#39;<i>index_dir</i>&#39;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [MAX_ROWS [=] <i>max_number_of_rows</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [MIN_ROWS [=] <i>min_number_of_rows</i>]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [TABLESPACE [=] (<i>tablespace_name</i>)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [NODEGROUP [=] <i>node_group_id</i>]
+&nbsp;
+<i>select_statement:</i>
+&nbsp;&nbsp;&nbsp; [IGNORE | REPLACE] [AS] SELECT ...&nbsp;&nbsp; (<i>Some legal select statement</i>)</pre>
+      <p>CREATE TABLE用于创建带给定名称的表。您必须拥有表CREATE权限。</p>
+      <p>允许的表名称的规则列于<a href="create-database.html" title="9.2. Database, Table, Index, Column, and Alias Names">9.2节，“数据库、表、索引、列和别名”</a>中。默认的情况是，表被创建到当前的数据库中。如果表已存在，或者如果没有当前数据库，或者如果数据库不存在，则会出现错误。</p>
+      <p>表名称被指定为<i>db_name.tbl_name</i>，以便在特定的数据库中创建表。不论是否有当前数据库，都可以通过这种方式创建表。如果您使用加引号的识别名，则应对数据库和表名称分别加引号。例如，`mydb`.`mytbl`是合法的，但是`mydb.mytbl`不合法。</p>
+      <p>在创建表格时，您可以使用TEMPORARY关键词。只有在当前连接情况下，TEMPORARY表才是可见的。当连接关闭时，TEMPORARY表被自动取消。这意味着两个不同的连接可以使用相同的临时表名称，同时两个临时表不会互相冲突，也不与原有的同名的非临时表冲突。（原有的表被隐藏，直到临时表被取消时为止。）您必须拥有CREATE 
+        TEMPORARY TABLES权限，才能创建临时表。</p>
+      <p>如果表已存在，则使用关键词IF NOT EXISTS可以防止发生错误。注意，原有表的结构与CREATE 
+        TABLE语句中表示的表的结构是否相同，这一点没有验证。注释：如果您在CREATE 
+        TABLE...SELECT语句中使用IF NOT EXISTS，则不论表是否已存在，由SELECT部分选择的记录都会被插入。</p>
+      <p>MySQL通过数据库目录中的.frm表格式（定义）文件表示每个表。表的存储引擎也可能会创建其它文件。对于MyISAM表，存储引擎可以创建数据和索引文件。因此，对于每个MyISAM表<i>tbl_name</i>，有三个磁盘文件：</p>
+      <table border="1" cellpadding="0" id="table2">
+        <tr>
+          <td><p> 文件</td>
+          <td><p> 作用</td>
+        </tr>
+        <tr>
+          <td><p><i> tbl_name</i>.frm</td>
+          <td><p>表格式（定义）文件</td>
+        </tr>
+        <tr>
+          <td><p><i> tbl_name</i>.MYD</td>
+          <td><p>数据文件</td>
+        </tr>
+        <tr>
+          <td><p><i> tbl_name</i>.MYI</td>
+          <td><p>索引文件</td>
+        </tr>
+      </table>
+      <p>用于表示表的由存储引擎创建的文件在<a href="../storage-engines/index.html" title="Chapter 15. Storage Engines and Table Types">第15章：<i>存储引擎和表类型</i></a>中描述。</p>
+      <p>要了解有关各种列类型的性质的一般说明，请参见<a href="../column-types/index.html" title="Chapter 11. Column Types">第11章：列类型</a>。要了解有关空间列类型的说明，请参见<a href="../spatial-extensions-in-mysql/index.html">第19章：</a><a href="../spatial-extensions-in-mysql/index.html" title="Chapter 19. Spatial Extensions in MySQL"><i>MySQL中的空间扩展</i></a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果没有指定是NULL或是NOT 
+        NULL，则列在创建时假定指定为NULL。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        一个整数列可以拥有一个附加属性AUTO_INCREMENT。当您向一个已编入索引的AUTO_INCREMENT列中插入一个NULL值（建议）或0时，此列被设置为下一个序列的值。通常情况下为<i>value</i>+1，此处<i>value</i>是当前在表中的列的最大值。AUTO_INCREMENT序列从1开始。这样的列必须被定义为一种整数类型，请参见<a href="" title="11.1.1. Overview of Numeric Types">11.1.1节，“数值类型概述”</a>中的叙述。（值1.0不是整数）。请参见<a href="insert.html" title="25.2.3.36. mysql_insert_id()">25.2.3.36节，“mysql_insert_id()”</a>。</p>
+      <p>为--sql-mode服务器选项或sql_mode系统变量指定NO_AUTO_VALUE_ON_ZERO特征位，这样可以把0存储到AUTO_INCREMENT列中，同时不生成一个新的序列值。请参见<a href="show-variables.html" title="5.3.1. mysqld Command-Line Options">5.3.1节，“mysqld命令行选项”</a>。</p>
+      <p>注释：有时候，每个表只有一个AUTO_INCREMENT列，此列必须编制索引，不能有DEFAULT值。一个AUTO_INCREMENT列只有在只包含正数的情况下，才能运行正常。插入一个负数会被认为是插入了一个非常大的正数。这样做是为了避免当数字由正数转为负数时出现精度问题，同时也为了确保AUTO_INCREMENT列中不会包含0。</p>
+      <p>对于MyISAM和BDB表，您可以在一个多列关键字中指定一个AUTO_INCREMENT次级列。请参见<a href="create-table.html" title="3.6.9. Using AUTO_INCREMENT">3.6.9节，“使用AUTO_INCREMENT”</a>。</p>
+      <p>为了让MySQL与部分ODBC应用软件相兼容，您可以使用以下查询方法找到最后一个插入行的AUTO_INCREMENT值：</p>
+      <pre>SELECT * FROM <i>tbl_name</i> WHERE <i>auto_col</i> IS NULL</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        字符列的定义可以包括一个CHARACTER SET属性，用来指定字符集，也可以指定列的整序。要了解详细情况，请参见<a href="../charset/index.html" title="Chapter 10. Character Set Support">第10章：<i>字符集支持</i></a>。CHARSET是CHARACTER 
+        SET的同义词。</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE t (c CHAR(20) CHARACTER SET utf8 COLLATE utf8_bin);</pre>
+      <p>MySQL 5.1理解，在字符列定义中的长度规约以字符为单位。（有些早期版本以字节为单位。）</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        DEFAULT子句用于为列指定一个默认值。默认值必须为一个常数，不能为一个函数或一个表达式，有一种情况例外。例如，一个日期列的默认值不能被设置为一个函数，如NOW()或CURRENT_DATE。不过，有一种例外，您可以对TIMESTAMP列指定CURRENT_TIMESTAMP为默认值。请参见<a href="" title="11.3.1.1. TIMESTAMP Properties as of MySQL 4.1">11.3.1.1节，“MySQL 4.1中的TIMESTAMP属性”</a>。</p>
+      <p>BLOB和TEXT列不能被赋予默认值。</p>
+      <p>如果在列定义中没有明确的DEFAULT值，则MySQL按照如下规则确定默认值：</p>
+      <p>如果列可以使用NULL作为值，则使用DEFAULT 
+        NULL子句对列进行定义。（在MySQL的早期版本中也如此。）</p>
+      <p>如果列不能使用NULL作为值，则MySQL对列进行定义时不使用DEFAULT子句。输入数据时，如果INSERT或REPLACE语句不包括列的值，则MySQL依据当时的有效的SQL模式操作列：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        如果严格模式没有被启用，则MySQL会根据列数据类型，把列设置为明确的默认值。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+        如果严格模式已被启用，则事务表会出现错误，语句被回滚。对于非事务表，会出现错误，不过，如果错误出现在一个多行语句中的第二行或后续行，则以前的各行将被插入。</p>
+      <p>假设表t按下面的方法进行定义：</p>
+      <pre>CREATE TABLE t (i INT NOT NULL);</pre>
+      <p>在这种情况下，i没有明确的默认值，所以在严格模式中，每个后续语句都会产生一个错误，并且没有行被插入。当未使用严格模式时，只有第三个语句产生错误；明确的默认值被插入到前两个语句中，但是第三个语句会出现错误，因为DEFAULT(i)不会产生一个值：</p>
+      <pre>INSERT INTO t VALUES();
+INSERT INTO t VALUES(DEFAULT);
+INSERT INTO t VALUES(DEFAULT(i));</pre>
+      <p>见<a href="create-table.html" title="5.3.2. The Server SQL Mode">5.3.2节，“SQL服务器模式”</a>。</p>
+      <p>对于一个给定的表，您可以使用SHOW 
+        CREATE TABLE语句来查看那些列有明确的DEFAULT子句。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于列的评注可以使用COMMENT选项来进行指定。评注通过SHOW 
+        CREATE TABLE和SHOW FULL COLUMNS语句显示。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        属性SERIAL可以用作BIGINT 
+        UNSIGNED NOT NULL AUTO_INCREMENT UNIQUE的别名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        KEY通常是INDEX同义词。如果关键字属性PRIMARY 
+        KEY在列定义中已给定，则PRIMARY KEY也可以只指定为KEY。这么做的目的是与其它数据库系统兼容。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在UNIQUE索引中，所有的值必须互不相同。如果您在添加新行时使用的关键字与原有行的关键字相同，则会出现错误。例外情况是，如果索引中的一个列允许包含NULL值，则此列可以包含多个NULL值。此例外情况不适用于BDB表。在BDB中，带索引的列只允许一个单一NULL。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        PRIMARY KEY是一个唯一KEY，此时，所有的关键字列必须定义为NOT 
+        NULL。如果这些列没有被明确地定义为NOT NULL，MySQL应隐含地定义这些列。一个表只有一个PRIMARY 
+        KEY。如果您没有PRIMARY KEY并且一个应用程序要求在表中使用PRIMARY 
+        KEY，则MySQL返回第一个UNIQUE索引，此索引没有作为PRIMARY 
+        KEY的NULL列。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在已创建的表中，PRIMARY KEY的位置最靠前，然后是所有的UNIQUE索引，然后是非唯一索引。这可以帮助MySQL优化程序选择优先使用哪个索引，并且更快速的检测出重复的UNIQUE关键字。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        PRIMARY KEY可以是一个多列索引。但是，在列规约中使用PRIMARY 
+        KEY关键字属性无法创建多列索引。这么做只能把一个列标记为主列。您必须使用一个单独的PRIMARY 
+        KEY（index_col_name, 
+        ...）子句。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果PRIMARY KEY或UNIQUE索引只包括一个列，并且此列为整数类型，则您也可以在SELECT语句中把此列作为_rowid引用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在MySQL中，PRIMARY 
+        KEY的名称为PRIMARY。对于其它索引，如果您没有赋予名称，则索引被赋予的名称与第一个已编入索引的列的名称相同，并自选添加后缀（_2, 
+        _3,...），使名称为唯一名称。您可以使用SHOW INDEX FROM <i>tbl_name</i>来查看表的索引名称。请参见<a href="show-index.html" title="13.5.4.11. SHOW INDEX Syntax">13.5.4.11节，“SHOW 
+        INDEX语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        部分存储引擎允许您在创建索引时指定索引类型。<i>index_type</i>指示语句的语法是USING 
+        type_name。</p>
+      <p>示例：</p>
+      <pre>CREATE TABLE lookup
+&nbsp; (id INT, INDEX USING BTREE (id))
+&nbsp; ENGINE = MEMORY;</pre>
+      <p>要了解有关USING的详细说明，请参见<a href="create-index.html" title="13.1.4. CREATE INDEX Syntax">13.1.4节，“CREATE 
+        INDEX语法”</a>。</p>
+      <p>要了解有关MySQL如何使用索引的更多信息，请参见<a href="create-index.html" title="7.4.5. How MySQL Uses Indexes">7.4.5节，“MySQL如何使用索引”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在MySQL 5.1中，只有MyISAM，InnoDB, 
+        BDB和MEMORY存储引擎支持在含有NULL值的列中编索引。在其它情况下，您必须定义已编索引的列为NOT 
+        NULL，否则会出现错误。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在一个索引规约中使用<i>col_name</i>(<i>length</i>)语法，您可以创建一个索引，此索引只使用一个CHAR或VARCHAR列的第一个<i>length</i>字符。只对列值的前缀编制索引可以使索引文件大大减小。请参见<a href="" title="7.4.3. Column Indexes">7.4.3节，“列索引”</a>。</p>
+      <p>MyISAM和InnoDB存储引擎也支持对BLOB和TEXT列编索引。当对BLOB或TEXT列编索引时，您必须为索引指定一个前缀长度。例如：</p>
+      <pre>CREATE TABLE test (blob_col BLOB, INDEX(blob_col(10)));</pre>
+      <p>对于MyISAM和InnoDB表，前缀最长可以为1000字节，对于其它表格类型，最长可以为255字节。注意前缀长度限值以字节为单位，而在CREATE 
+        TABLE语句中的前缀长度用字符数目来表述。当为一个使用多字节字符集的列指定前缀长度时，一定要考虑到这一点。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        一个<i>index_col_name</i>规约可以以ASC或DESC结尾。这些关键词可以在将来进行扩展，用于指定升序或降序的索引值存储。当前，这些关键词被分析但是被忽略；索引值均以升序储存。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当您在SELECT中的TEXT列或BLOB列中使用ORDER 
+        BY或GROUP BY时，服务器只使用初始的字节数目对值进行分类。字节数目由max_sort_length系统变量进行指示。请参见<a href="" title="11.4.3. The BLOB and TEXT Types">11.4.3节，“BLOB和TEXT类型”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以创建特殊的FULLTEXT索引，用于全文搜索。只有MyISAM表类型支持FULLTEXT索引。FULLTEXT索引只可以从CHAR, 
+        VARCHAR和TEXT列中创建。整个列都会被编入索引；不支持对部分列编索引。如果已指定，前缀长度会被忽略。要了解运行的详细说明，请参见<a href="create-table.html" title="12.7. Full-Text Search Functions">12.7节，“全文搜索功能”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以为空间列类型创建SPATIAL索引。只有MyISAM表支持空间类型，已编索引的列必须声明为NOT 
+        NULL。请参见<a href="../spatial-extensions-in-mysql/index.html">第19章：</a><a href="../spatial-extensions-in-mysql/index.html" title="Chapter 19. Spatial Extensions in MySQL"><i>MySQL中的空间扩展</i></a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        InnoDB表支持对外键限制条件进行检查。请参见<a href="create-table.html" title="15.2. The InnoDB Storage Engine">15.2节，“InnoDB存储引擎”</a>。注意，在InnoDB中，FOREIGN 
+        KEY语法比本节开始时介绍的CREATE TABLE语句的语法更严格：被引用的表中的列必须有明确的命名。InnoDB支持外键的ON 
+        DELETE和ON UPDATE两种操作。有关精确语法的说明，请参见<a href="update.html" title="15.2.6.4. FOREIGN KEY Constraints">15.2.6.4节，“FOREIGN 
+        KEY约束”</a>。</p>
+      <p>对于其它存储引擎，MySQL服务器对CREATE 
+        TABLE语句中的FOREIGN KEY和REFERENCES语法进行分析，但不采取进一步的行动。所有的存储引擎均对CHECK子句进行分析，但是忽略CHECK子句。请参见<a href="" title="1.8.5.5. Foreign Keys">1.8.5.5节，“外键”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于MyISAM表，每个NULL列要多占用一位，进位到距离最近的字节。最大记录长度（以字节为单位）按照如下方法计算：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; row length = 1
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (<i>sum of column lengths</i>)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (<i>number of NULL columns</i> + <i>delete_flag</i> + 7)/8
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (<i>number of variable-length columns</i>)</pre>
+      <p>对于采用静态记录格式的表，<i>delete_flag</i>为1。静态表在行记录中使用一位用作位标记。位标记指示该行是否已被删除。对于动态表，<i>delete_flag</i>为0，因为在动态行标题中已存储了位标记。</p>
+      <p>这些计算方法不适用于InnoDB表。对于InnoDB表，NULL列的存储量与NOT 
+        NULL列的存储量没有区别。</p>
+      <p>ENGINE和TYPE选项用于为表指定存储引擎。ENGINE是首选的选项名称。</p>
+      <p>ENGINE和TYPE选项采用以下值：</p>
+      <table border="1" cellpadding="0" id="table3">
+        <tr>
+          <td><p> 存储引擎</td>
+          <td><p> 说明</td>
+        </tr>
+        <tr>
+          <td><p> ARCHIVE</td>
+          <td><p>档案存储引擎。请参见<a href="insert-delayed.html" title="15.8. The ARCHIVE Storage Engine">15.8节，“ARCHIVE存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> BDB</td>
+          <td><p>带页面锁定的事务安全表。也称为BerkeleyDB。请参见<a href="" title="15.5. The BDB (BerkeleyDB) Storage Engine">15.5节，“BDB (BerkeleyDB)存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> CSV</td>
+          <td><p>值之间用逗号隔开的表。请参见<a href="" title="15.9. The CSV Storage Engine">15.9节，“CSV存储引擎</a>。</td>
+        </tr>
+        <tr>
+          <td><p> EXAMPLE</td>
+          <td><p>示例引擎。请参见<a href="" title="15.6. The EXAMPLE Storage Engine">15.6节，“EXAMPLE存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> FEDERATED</td>
+          <td><p>可以访问远程表的存储引擎。请参见<a href="" title="15.7. The FEDERATED Storage Engine">15.7节，“FEDERATED存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> HEAP</td>
+          <td><p>见<a href="create-table.html" title="15.4. The MEMORY (HEAP) Storage Engine">15.4节，“MEMORY (HEAP)存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p>(<em>OBSOLETE</em>)
+              ISAM</td>
+          <td><p>在MySQL 5.1中没有此引擎。如果您要从以前的版本升级到MySQL 
+              5.1，您应该在进行升级前把原有的ISAM表转换为MyISAM表。请参见<a href="../storage-engines/index.html" title="Chapter 15. Storage Engines and Table Types">第15章：<i>存储引擎和表类型</i></a>。</td>
+        </tr>
+        <tr>
+          <td><p> InnoDB</td>
+          <td><p>带行锁定和外键的事务安全表。请参见<a href="create-table.html" title="15.2. The InnoDB Storage Engine">15.2节，“InnoDB存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> MEMORY</td>
+          <td><p>本表类型的数据只保存在存储器里。（在早期MySQL版本中被称为HEAP。）</td>
+        </tr>
+        <tr>
+          <td><p> MERGE</td>
+          <td><p>MyISAM表的集合，作为一个表使用。也称为MRG_MyISAM。请参见<a href="create-table.html" title="15.3. The MERGE Storage Engine">15.3节，“MERGE存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> MyISAM</td>
+          <td><p>二进制轻便式存储引擎，此引擎是MySQL所用的默认存储引擎。请参见<a href="create-table.html" title="15.1. The MyISAM Storage Engine">15.1节，“MyISAM存储引擎”</a>。</td>
+        </tr>
+        <tr>
+          <td><p> NDBCLUSTER</td>
+          <td><p>成簇表，容错表，以存储器为基础的表。也称为NDB。请参见<a href="../ndbcluster/index.html">第17章：</a><a href="../ndbcluster/index.html" title="Chapter 17. MySQL Cluster"><i>MySQL簇</i></a>。</td>
+        </tr>
+      </table>
+      <p>要了解有关MySQL存储引擎的更多信息，请参见<a href="../storage-engines/index.html" title="Chapter 15. Storage Engines and Table Types">第15章：<i>存储引擎和表类型</i></a>。</p>
+      <p>如果被指定的存储引擎无法利用，则MySQL使用MyISAM代替。例如，一个表定义包括ENGINE=BDB选项，但是MySQL服务器不支持BDB表，则表被创建为MyISAM表。这样，如果您在主机上有事务表，但在从属机上创建的是非交互式表（以加快速度）时，可以进行复制设置。在MySQL 
+        5.1中，如果没有遵守存储引擎规约，则会出现警告。</p>
+      <p>其它表选项用于优化表的性质。在多数情况下，您不必指定表选项。这些选项适用于所有存储引擎，另有说明除外：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        AUTO_INCREMENT </p>
+      <p>表的初始AUTO_INCREMENT值。在MySQL 
+        5.1中，本选项只适用于MyISAM和MEMORY表。InnoDB也支持本选项。如果引擎不支持AUTO_INCREMENT表选项，则要设置引擎的第一个auto-increment值，需插入一个“假”行。该行的值比创建表后的值小一，然后删除该假行。</p>
+      <p>对于在CREATE TABLE语句中支持AUTO_INCREMENT表选项的引擎，您也可以使用ALTER 
+        TABLE <i>tbl_name</i> AUTO_INCREMENT = <i>n</i>来重新设置AUTO_INCREMENT值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        AVG_ROW_LENGTH </p>
+      <p>表中平均行长度的近似值。只需要对含尺寸可变的记录的大型表进行此项设置。</p>
+      <p > 当创建一个MyISAM表时，MySQL使用MAX_ROWS和AVG_ROW_LENGTH选项的乘积来确定得出的表有多大。如果有一个选项未指定，则表的最大尺寸为65,536TB数据。（如果操作系统不支持这么大的文件，则表的尺寸被限定在操作系统的限值处。）如果您想缩小指针尺寸使索引更小，速度更快，并且您不需要大文件，则您可以通过设置myisam_data_pointer_size系统变量来减少默认指针的尺寸。（见<a href="create-table.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。）如果您希望所有的表可以扩大，超过默认限值，并且愿意让表稍微慢点，并稍微大点，则您可以通过设置此变量增加默认指针的尺寸。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        [DEFAULT] CHARACTER SET </p>
+      <p>用于为表指定一个默认字符集。CHARSET是CHARACTER 
+        SET的同义词。</p>
+      <p>对于CHARACTER 
+        SET. </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        COLLATE </p>
+      <p>用于为表指定一个默认整序。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CHECKSUM </p>
+      <p>如果您希望MySQL随时对所有行进行实时检验求和（也就是，表变更后，MySQL自动更新检验求和），则应把此项设置为1。这样做，表的更新速度会略微慢些，但是更容易寻找到受损的表。CHECKSUM 
+        TABLE语句用于报告检验求和（仅限于MyISAM）。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        COMMENT </p>
+      <p>表的注释，最长60个字符。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        CONNECTION </p>
+      <p>FEDERATED表的连接字符串。（
+        注释：较早版本的MySQL使用COMMENT选项用于连接字符串。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        MAX_ROWS </p>
+      <p> 您打算储存在表中的行数目的最大值。这不是一个硬性限值，而更像一个指示语句，指示出表必须能存储至少这么多行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        MIN_ROWS </p>
+      <p>您打算存储在表中的行数目的最小值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        PACK_KEYS </p>
+      <p>如果您希望索引更小，则把此选项设置为1。这样做通常使更新速度变慢，同时阅读速度加快。把选项设置为0可以取消所有的关键字压缩。把此选项设置为DEFAULT时，存储引擎只压缩长的CHAR或VARCHAR列（仅限于MyISAM）。</p>
+      <p>如果您不使用PACK_KEYS，则默认操作是只压缩字符串，但不压缩数字。如果您使用PACK_KEYS=1，则对数字也进行压缩。</p>
+      <p>在对二进制数字关键字进行压缩时，MySQL采用前缀压缩：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        每个关键字需要一个额外的字节来指示前一个关键字中有多少字节与下一个关键字相同。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        指向行的指针以高位字节优先的顺序存储在关键字的后面，用于改进压缩效果。</p>
+      <p> 这意味着，如果两个连续行中有许多相同的关键字，则后续的“相同”的关键字通常只占用两个字节（包括指向行的指针）。与此相比，常规情况下，后续的关键字占用storage_size_for_key 
+        + pointer_size（指针尺寸通常为4）。但是，只有在许多数字相同的情况下，前缀压缩才有好处。如果所有的关键字完全不同，并且关键字不能含有NULL值，则每个关键字要多使用一个字节。（在这种情况中，储存压缩后的关键字的长度的字节与用于标记关键字是否为NULL的字节是同一字节。）</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        PASSWORD </p>
+      <p>使用密码对.frm文件加密。在标准MySQL版本中，本选项不起任何作用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        DELAY_KEY_WRITE </p>
+      <p>如果您想要延迟对关键字的更新，等到表关闭后再更新，则把此项设置为1（仅限于MyISAM）。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ROW_FORMAT </p>
+      <p>定义各行应如何储存。当前，此选项只适用于MyISAM表。对于静态行或长度可变行，此选项值可以为FIXED或DYNAMIC。myisampack用于把类型设置为COMPRESSED。请参见<a href="" title="15.1.3. MyISAM Table Storage Formats">15.1.3节，“MyISAM表的存储格式”</a>。</p>
+      <p>在默认情况下，InnoDB记录以压缩格式存储（ROW_FORMAT=COMPACT）。通过指定ROW_FORMAT=REDUNDANT，仍然可以申请用于较早版本的MySQL中的非压缩格式。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        RAID_TYPE </p>
+      <p>在MySQL 5.0中,RAID支持被删除了。要了解有关RAID的说明，请参见http://dev.mysql.com/doc/refman/4.1/en/create-table.html。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        UNION </p>
+      <p>当您想要把一组相同的表当作一个表使用时，采用UNION。UNION仅适用于MERGE表。请参见<a href="create-table.html" title="15.3. The MERGE Storage Engine">15.3节，“MERGE存储引擎”</a>。</p>
+      <p>对于您映射到一个MERGE表上的表，您必须拥有SELECT, 
+        UPDATE和DELETE权限。（注释：以前，所有被使用的表必须位于同一个数据库中，并作为MERGE表。这些限制不再适用。）</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        INSERT_METHOD </p>
+      <p>如果您希望在MERGE表中插入数据，您必须用INSERT_METHOD指定应插入行的表。INSERT_METHOD选项仅用于MERGE表。使用FIRST或LAST把行插入到第一个或最后一个表中；或者使用NO，阻止插入行。请参见<a href="create-table.html" title="15.3. The MERGE Storage Engine">15.3节，“MERGE存储引擎”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        DATA 
+        DIRECTORY,
+        INDEX DIRECTORY </p>
+      <p>通过使用DATA 
+        DIRECTORY=&#39;<i>directory</i>&#39;或INDEX 
+        DIRECTORY=&#39;<i>directory</i>&#39;，您可以指定MyISAM存储引擎放置表格数据文件和索引文件的位置。注意，目录应是通向目录的完整路径（不是相对路径）。</p>
+      <p>仅当您没有使用--skip-symbolic-links选项时，DATA 
+        DIRECTORY,
+        INDEX DIRECTORY才能使用。操作系统必须有一个正在工作的、线程安全的realpath()调用。要了解全面信息，请参见<a href="" title="7.6.1.2. Using Symbolic Links for Tables on Unix">7.6.1.2节，“在Unix平台上使用表的符号链接</a>”。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于用CREATE TABLE创建的表，可以使用<i>partition_options</i>控制分区。如果使用了<i>partition_options</i>，则其中必须包含至少一个PARTITION 
+        BY子句。本子句包含用于确定分区的函数；该函数会返回一个整值，范围从1到<i>num</i>。此处<i>num</i>为分区的数目。此函数中可以使用的选项显示在下面的清单中。
+        要点：在本节开始时介绍的用于<i>partition_options</i>的语法中显示的选项，并不是都能用于所有分区类型。要了解各种类型具体的信息
+        ，请参见以下各类型的清单。要了解有关在MySQL中的分区的操作和使用情况的全面说明，以及要了解表创建的示例和与MySQL分区有关的其它命令，请参见<a href="create-table.html">第18章：</a><a href="create-table.html" title="Chapter 18. Partitioning"><i>分区</i></a>。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        HASH（<i>expr</i>）：用于混编一个或多个列，创建一个关键字，用于放置行，并确定行的位置。<i>expr</i>是一个表达式，使用一个或多个表中的列。该表达式可以是任何能够生成单一整值的合法的MySQL表达式（包括MySQL函数）。例如，这些都是有效的CREATE 
+        TABLE语句，语句中使用了PARTITION BY HASH：</p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE t1 (col1 INT, col2 CHAR(5)) 
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION BY HASH(col1);
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE t1 (col1 INT, col2 CHAR(5))
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION BY HASH( ORD(col2) );
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE t1 (col1 INT, col2 CHAR(5), col3 DATETIME)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION BY HASH ( YEAR(col3) );</pre>
+      <p>VALUES LESS THAN或VALUES 
+        IN子句不能和PARTITION BY HASH一起使用。</p>
+      <p>PARTITION BY HASH使用<i>expr</i>被分区数目所除后的余数（也就是模数）。要了解示例和其它信息，请参见<a href="" title="18.2.3. HASH Partitioning">18.2.3节，“HASH分区”</a>。</p>
+      <p>LENEAR关键词需要一种不同的算法。在这种情况下，通过一次或多次逻辑AND运算得出的结果，计算出存储记录的分区的数目。要了解线形混编的讨论和示例，请参见<a href="create-table.html" title="18.2.3.1. LINEAR HASH Partitioning">18.2.3.1节，“LINEAR 
+        HASH分区”</a>。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        KEY(<i>column_list</i>)：与HASH近似，除了有一点不一样，即MySQL提供了混编函数，以保证均匀的数据分布。<i>column_list</i>自变量只是各列的一个清单。本示例显示了由关键字进行分区的一个简单的表，分为4个分区：</p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE tk (col1 INT, col2 CHAR(5), col3 DATE)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION BY KEY(col3)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITIONS 4;</pre>
+      <p>采用LINEAR关键词，您可以对由关键字分区的表进行线形分区。这与由HASH进行分区的表格有同样的效果；也就是说，使用&amp;操作符查找分区数目，而不是使用模数（详细说明见<a href="create-table.html" title="18.2.3.1. LINEAR HASH Partitioning">18.2.3.1节，“LINEAR 
+        HASH分区”</a>和<a href="" title="18.2.4. KEY Partitioning">18.2.4节，“KEY分区”</a>）。本示例采用了关键字线形分区，用来在5个分区之间分配数据：</p>
+      <pre>CREATE TABLE tk (col1 INT, col2 CHAR(5), col3 DATE)
+ &nbsp;&nbsp;&nbsp;PARTITION BY LINEAR KEY(col3)
+&nbsp;&nbsp;&nbsp; PARTITIONS 5;</pre>
+      <p>VALUES LESS THAN或VALUES 
+        IN子句不能和PARTITION BY KEY一起使用。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        RANGE：在此情况下，<i>expr</i>使用一套VALUES 
+        LESS THAN操作符显示了某一范围内的值。当使用范围分区时，您必须使用VALUES 
+        LESS THAN定义至少一个分区。VALUES IN不能和范围分区一起使用。</p>
+      <p>VALUES LESS THAN可以与一个文字值同时使用，或者与一个可以求算单一值的表达式同时使用。</p>
+      <p>举例说明，假设您有一个表，您希望采用以下方法对包含年份值的一列进行分区：</p>
+      <table border="1" cellpadding="0" id="table4">
+        <tr>
+          <td><p>分区编号：</td>
+          <td><p>年份范围：</td>
+        </tr>
+        <tr>
+          <td><p>0</td>
+          <td><p>1990以前</td>
+        </tr>
+        <tr>
+          <td><p>1</td>
+          <td><p>1991 - 1994</td>
+        </tr>
+        <tr>
+          <td><p>2</td>
+          <td><p>1995 - 1998</td>
+        </tr>
+        <tr>
+          <td><p>3</td>
+          <td><p>1999 - 2002</td>
+        </tr>
+        <tr>
+          <td><p>4</td>
+          <td><p>2003 - 2005</td>
+        </tr>
+        <tr>
+          <td><p>5</td>
+          <td><p>2006年以后</td>
+        </tr>
+      </table>
+      <p>采用这种分区方法的表可以通过如下CREATE 
+        TABLE语句实现：</p>
+      <pre>CREATE TABLE t1 (
+&nbsp;&nbsp;&nbsp; year_col INT, 
+&nbsp;&nbsp;&nbsp;&nbsp;some_data INT 
+) 
+PARTITION BY RANGE (year_col) (
+&nbsp;&nbsp;&nbsp; PARTITION p0 VALUES LESS THAN (1991),
+&nbsp;&nbsp;&nbsp; PARTITION p1 VALUES LESS THAN (1995),
+&nbsp;&nbsp;&nbsp; PARTITION p2 VALUES LESS THAN (1999),
+&nbsp;&nbsp;&nbsp; PARTITION p3 VALUES LESS THAN (2002),
+&nbsp;&nbsp;&nbsp; PARTITION p4 VALUES LESS THAN (2006),
+&nbsp;&nbsp;&nbsp; PARTITION p5 VALUES LESS THAN MAXVALUE
+);</pre>
+      <p> PARTITION ... VALUES LESS THAN ...语句按顺序执行。VALUES 
+        LESS THAN MAXVALUE的作用是指定大于最大值的“其余”的值。</p>
+      <p>注意，VALUES LESS THAN子句按顺序执行，执行方式类似于switch 
+        ... case语段的一部分（许多编程语言，如C, Java和PHP也如此）。也就是说，子句必须按照这样一种方法排列，每一个后续的VALUES 
+        LESS THAN中指定的上限值大于前一个VALUES LESS THAN中指定的上限值，并在清单的最后加一个参照性的MAXVALUE。</p>
+      <p>VALUES IN与一系列的值同时使用。举例说明，您可以创建如下的分区方法：</p>
+      <pre>CREATE TABLE client_firms (
+&nbsp;&nbsp;&nbsp; id INT,
+&nbsp;&nbsp;&nbsp; name VARCHAR(35)
+)
+PARTITION BY RANGE (id) (
+&nbsp;&nbsp;&nbsp; PARTITION r0 VALUES IN (1, 5, 9, 13, 17, 21),
+&nbsp;&nbsp;&nbsp; PARTITION r1 VALUES IN (2, 6, 10, 14, 18, 22),
+&nbsp;&nbsp;&nbsp; PARTITION r2 VALUES IN (3, 7, 11, 15, 19, 23),
+&nbsp;&nbsp;&nbsp; PARTITION r3 VALUES IN (4, 8, 12, 16, 20, 24)
+);</pre>
+      <p>当前，与VALUES IN...同时使用的值必须只包含整数值。</p>
+      <p>（因为此表只使用VALUES IN表达式进行分区，您也可以用PARTITION 
+        BY LIST代替，而不是使用PARTITION BY RANGE。请参见下一条。）</p>
+      <p>在使用VALUES LESS THAN或VALUES 
+        IN情况下，每个分区使用PARTITION <i>name</i>定义，此处<i>name</i>是分区的标识名，后面接VALUES...子句。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        LIST(<i>expr</i>)：当根据含有一系列限定性值（例如州代码或国家代码）的列进行分区时使用。在这种情况下，所有与特定的州或国家有关的记录都被分配到一个单一分区中，或者可以预留出一个分区，用于一系列特定的州或国家。LIST(<i>expr</i>)与RANGE类似，除了一点以外，即只有VALUES 
+        IN可以被用于为每个分区指定值。</p>
+      <p>当使用清单分区时，您必须使用VALUES 
+        IN定义至少一个分区。VALUES LESS THAN不能与PARTITION 
+        BY LIST一起使用。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        分区数目可以使用PARTITION <i>num</i>子句，自选进行指定，此处，<i>num</i>是分区的数目。如果本子句和其它PARTITION子句同时使用，则<i>num</i>必须与使用PARTITION子句说明的分区的总数相等。</p>
+      <p>注释：不论您在创建一个由RANGE或LIST进行分区的表时是否使用了PARTITIONS子句，您必须在表定义中包括至少一个PARTITION 
+        VALUES（见后）。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        一个分区可以自选分隔成多个子分区。使用自选的SUBPARTITION BY子句可以指示。子分区可以由HASH或KEY进行分隔。两种方法建立的子分区均为LINEAR。分隔子分区时的操作方式与以前描述的分区类型的操作方式一样。（无法由LIST或RANGE进行子分区分隔。）</p>
+      <p>使用SUBPARTITIONS关键词，后面接一个整值，可以对子分区的数目进行指示。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用一个<i>partition_definition</i>子句可以对每个分区分别进行定义。下面是组成这个子句的各个部分：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        PARTITION <i> partition_name</i>：用于为分区指定一个逻辑名称。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        VALUE子句：对于范围分区，每个分区必须包括一个VALUES 
+        LESS THAN子句；对于清单分区，您必须为每个分区指定一个VALUES IN子句。本子句用于确定哪些行将被存储到此分区中。要了解语法示例，请参见<a href="create-table.html">第18章：</a><a href="create-table.html" title="Chapter 18. Partitioning"><i>分区</i></a>中对分区类型的讨论。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        自选的COMMENT子句可以用于描述分区。注释必须加单引号。举例说明：</p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COMMENT = &#39;Data for the years previous to 1999&#39;</pre>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        DATA DIRECTORY和INDEX 
+        DIRECTORY可以被用于指示本分区的数据和索引各自的存储位置的目录。<i>data_dir</i>和<i>index_dir</i>都必须是绝对系统路径。例如：</p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CREATE TABLE th (id INT, name VARCHAR(30), adate DATE)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PARTITION BY LIST(YEAR(adate))
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION p1999 VALUES IN (1995, 1999, 2003) DATA DIRECTORY = &#39;/var/appdata/95/data&#39; INDEX DIRECTORY = &#39;/var/appdata/95/idx&#39;,
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION p2000 VALUES IN (1996, 2000, 2004) DATA DIRECTORY = &#39;/var/appdata/96/data&#39; INDEX DIRECTORY = &#39;/var/appdata/96/idx&#39;,
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION p2001 VALUES IN (1997, 2001, 2005) DATA DIRECTORY = &#39;/var/appdata/97/data&#39; INDEX DIRECTORY = &#39;/var/appdata/97/idx&#39;,
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;PARTITION p2000 VALUES IN (1998, 2002, 2006) DATA DIRECTORY = &#39;/var/appdata/98/data&#39; INDEX DIRECTORY = &#39;/var/appdata/98/idx&#39;
+);</pre>
+      <p>DATA DIRECTORY和INDEX 
+        DIRECTORY的操作方法与CREATE TABLE语句中的<i>table_option</i>子句的操作方法一样。此<i>table_option</i>子句用于位于MyISAM表管理程序下的各表。</p>
+      <p> 可以为每个分区指定一个数据目录和一个索引目录。如果不指定，则数据和索引被存储在默认的MySQL数据目录中。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        MAX_ROWS和MIN_ROWS分别用于将被存储在分区中的行数目最大值和行数目最小值。<i>max_number_of_rows</i>和<i>min_number_of_rows</i>的值必须为正整数。和具有同样名称的桌面选项一样，<i>max_number_of_rows</i>和<i>min_number_of_rows</i>只作为对服务器的“建议”值，并不是硬性限值。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        自选的TABLESPACE子句可以用于为分区指定一个桌面空间。仅用于MySQL 
+        Cluster。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        自选的[STORAGE] ENGINE子句可以把本分区中表的类型改为指定的类型。表的类型可以是本MySQL服务器支持的所有类型。STORAGE关键字和等号(=)均为自选项。如果没有使用此选项设置分区存储引擎，则适用于整个表的引擎可以用于此分区。</p>
+      <p>注释：分区管理程序对于PARTITION和SUBPARTITION均接受[STORAGE] 
+        ENGINE选项。目前，此子句的使用方式仅限于对所有的分区或子分区设置同一个存储引擎，如果试图在同一个表内对不同的分区或子分区设置不同的存储引擎，则会出现错误ERROR 
+        1469 (HY000)：在本版本的MySQL中，不允许在各分区中混用管理程序。我们打算在将来的MySQL 
+        5.1版本中加入这种对分区的限定。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        NODEGROUP选项可以用于使本分区可以作为节点组的一部分，节点组使用<i>node_group_id</i>识别。本选项仅适用于MySQL 
+        Cluster。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        分区定义可以自选地包含一个或多个<i>subpartition_definition</i>子句。每个这种子句至少包括SUBPARTITION <i>name</i>，此处，<i>name</i>是子分区的识别名称。除了用SUBPARTITION代替PARTITION关键词外，用于子分区定义的语法与用于分区定义的语法一样。</p>
+      <p>子分区必须由HASH或KEY完成，并且只能对RANGE或LIST分区进行子分区。请参见<a href="" title="18.2.5. Subpartitioning">18.2.5节，“子分区”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        分区可以修改、合并、添加到表中，或从表中删去。要了解有关完成这些任务的MySQL命令的基本说明，请参见<a href="alter-table.html" title="13.1.2. ALTER TABLE Syntax">13.1.2节，“ALTER 
+        TABLE语法”</a>。要了解详细的说明和示例，请参见<a href="alter-table.html" title="18.3. Partition Management">18.3节，“分区管理”</a>。</p>
+      <p>您可以在CREATE TABLE语句的末尾添加一个SELECT语句，在一个表的基础上创建表。</p>
+      <pre>CREATE TABLE <i>new_tbl</i> SELECT * FROM <i>orig_tbl</i>;</pre>
+      <p>MySQL会对SELECT中的所有项创建新列。举例说明：</p>
+      <pre>mysql&gt; CREATE TABLE test (a INT NOT NULL AUTO_INCREMENT,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PRIMARY KEY (a), KEY(b))
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TYPE=MyISAM SELECT b,c FROM test2;</pre>
+      <p>本语句用于创建含三个列（a, b, c）的MyISAM表。注意，用SELECT语句创建的列附在表的右侧，而不是覆盖在表上。参考以下示例：</p>
+      <pre>mysql&gt; SELECT * FROM foo;
++---+
+| n |
++---+
+| 1 |
++---+
+&nbsp;
+mysql&gt; CREATE TABLE bar (m INT) SELECT n FROM foo;
+Query OK, 1 row affected (0.02 sec)
+Records: 1&nbsp; Duplicates: 0&nbsp; Warnings: 0
+&nbsp;
+mysql&gt; SELECT * FROM bar;
++------+---+
+| m&nbsp;&nbsp;&nbsp; | n |
++------+---+
+| NULL | 1 |
++------+---+
+1 row in set (0.00 sec)</pre>
+      <p>对应于表foo中的每一行，在表bar中插入一行，含有表foo中的值以及新列中的默认值。</p>
+      <p>在由CREATE TABLE...SELECT生成的表中，只在CREATE 
+        TABLE部分中命名的列首先出现。在两个部分中都命名的列和只在SELECT部分中命名的列随后出现。也可以通过指定CREATE 
+        TABLE部分中的列覆盖SELECT列中的数据类型。</p>
+      <p>如果在把数据复制到表中时出现错误，则表会自动被取消，不会被创建。</p>
+      <p>CREATE TABLE...SELECT不会自动创建任何索引。索引需要专门创建，以便使语句的灵活性更强。如果您希望为已创建的表建立索引，您应在SELECT语句前指定索引。</p>
+      <pre>mysql&gt; CREATE TABLE bar (UNIQUE (n)) SELECT n FROM foo;</pre>
+      <p>列的类型会发生部分转化。例如，AUTO_INCREAMENT属性不会被保留，VARCHAR列会变成CHAR列。</p>
+      <p>当使用CREATE...SELECT创建表时，在查询时一定要对功能调用和表达式起别名。如果不起别名，则CREATE语句会出现错误或者生成不符合需要的列名称。</p>
+      <pre>CREATE TABLE artists_and_works
+SELECT artist.name, COUNT(work.artist_id) AS number_of_works
+FROM artist LEFT JOIN work ON artist.id = work.artist_id
+GROUP BY artist.id;</pre>
+      <p>您也可以明确地为一个已生成的列指定类型：</p>
+      <pre>CREATE TABLE foo (a TINYINT NOT NULL) SELECT b+1 AS a FROM bar;</pre>
+      <p>根据其它表的定义（包括在原表中定义的所有的列属性和索引），使用LIKE创建一个空表:</p>
+      <pre>CREATE TABLE <i>new_tbl</i> LIKE <i>orig_tbl</i>;</pre>
+      <p>CREATE TABLE...LIKE不会复制对原表或外键定义指定的DATA 
+        DIRECTORY或INDEX DIRECTORY表选项。</p>
+      <p>您可以在SELECT前增加IGNORE或REPLACE，指示如何对复制唯一关键字值的记录进行操纵。使用IGNORE后，如果新记录复制了原有的唯一关键字值的记录，则新记录被丢弃。使用REPLACE后，新记录替换具有相同的唯一关键字值的记录。如果没有指定IGNORE或REPLACE，则出现多重唯一关键字值时会导致发生错误。</p>
+      <p>为了确保更新日志/二进位日志可以被用于再次创建原表，MySQL不允许在CREATE 
+        TABLE...SELECT过程中进行联合插入。</p>
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

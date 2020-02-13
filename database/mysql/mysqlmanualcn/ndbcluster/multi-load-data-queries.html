@@ -1,0 +1,337 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 17.3.5.&nbsp;加载示例数据并执行查询</h1>
+
+          
+        
+      
+      <p>与没有使用簇的MySQL相比，在MySQL簇内操作数据的方式没有太大的区别。执行这类操作时应记住两点：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        表必须用ENGINE=NDB或ENGINE=NDBCLUSTER选项创建，或用ALTER 
+        TABLE选项更改，以使用NDB簇存储引擎在簇内复制它们。如果使用mysqldump的输出从已有数据库导入表，可在文本编辑器中打开SQL脚本，并将该选项添加到任何表创建语句，或用这类选项之一替换任何已有的ENGINE（或TYPE）选项。例如，假定在另一个MySQL服务器（不支持MySQL簇）上有样本世界数据库，而且你打算导出城市表的定义：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shell&gt; mysqldump --add-drop-table world City &gt; city_table.sql</pre>
+      <p>在所得的city_table.sql文件中，将包含这条表创建语句（以及导入表数据所需的INSERT语句）：</p>
+      <pre>DROP TABLE IF EXISTS City;
+CREATE TABLE City (
+ID int(11) NOT NULL auto_increment,
+Name char(35) NOT NULL default &#39;&#39;,
+CountryCode char(3) NOT NULL default &#39;&#39;,
+District char(20) NOT NULL default &#39;&#39;,
+Population int(11) NOT NULL default &#39;0&#39;,
+PRIMARY KEY&nbsp; (ID)
+) ENGINE=MyISAM;
+&nbsp;
+INSERT INTO City VALUES (1,&#39;Kabul&#39;,&#39;AFG&#39;,&#39;Kabol&#39;,1780000);
+INSERT INTO City VALUES (2,&#39;Qandahar&#39;,&#39;AFG&#39;,&#39;Qandahar&#39;,237500);
+INSERT INTO City VALUES (3,&#39;Herat&#39;,&#39;AFG&#39;,&#39;Herat&#39;,186800);
+# (remaining INSERT statements omitted)</pre>
+      <p>需要确认MySQL为该表使用了NDB存储引擎。有两种完成该任务的方法。其中一种方法是，在将表导入簇数据库之前更改其定义，使其类似于（仍使用“城市”作为示例）：</p>
+      <pre>DROP TABLE IF EXISTS City;
+CREATE TABLE City (
+ID int(11) NOT NULL auto_increment,
+Name char(35) NOT NULL default &#39;&#39;,
+CountryCode char(3) NOT NULL default &#39;&#39;,
+District char(20) NOT NULL default &#39;&#39;,
+Population int(11) NOT NULL default &#39;0&#39;,
+PRIMARY KEY&nbsp; (ID)
+) ENGINE=NDBCLUSTER;
+&nbsp;
+INSERT INTO City VALUES (1,&#39;Kabul&#39;,&#39;AFG&#39;,&#39;Kabol&#39;,1780000);
+INSERT INTO City VALUES (2,&#39;Qandahar&#39;,&#39;AFG&#39;,&#39;Qandahar&#39;,237500);
+INSERT INTO City VALUES (3,&#39;Herat&#39;,&#39;AFG&#39;,&#39;Herat&#39;,186800);
+# (etc.)</pre>
+      <p> 对于将成为簇数据库组成部份的每个表，均需要为其定义执行上述操作。完成该任务的最简单方法是，简单地在world.sql文件上执行“查找-替换”，并用ENGINE=NDBCLUSTER替换所有的TYPE=MyISAM实例。如果你不打算更改该文件，也可使用ALTER 
+        TABLE。详情请参见下面的介绍。</p>
+      <p>假定你已在簇的SQL节点上创建了名为“world”的数据库，随后可使用mysql命令行客户端读取city_table.sql，并按通常方式创建和填充对应的表：</p>
+      <pre>shell&gt; mysql world &lt; city_table.sql</pre>
+      <p>请记住，上述命令必须在运行SQL节点的主机上执行，这点十分重要。对于本例，应在IP地址为192.168.0.20的机器上执行。</p>
+      <p>要想在SQL节点上创建世界数据库的副本，请将文件保存到/usr/local/mysql/data，然后运行：</p>
+      <pre>shell&gt; cd /usr/local/mysql/data
+shell&gt; mysql world &lt; world.sql</pre>
+      <p>当然，SQL脚本必须能被mysql系统用户读取。如果将文件保存到了不同的目录下，请作相应的调整。</p>
+      <p>注意，在MySQL 5.1中，NDB簇不支持自动发现数据库的功能，这点很重要（请参见<a href="mysql-cluster-limitations.html" title="17.8. Known Limitations of MySQL Cluster">17.8节，“MySQL簇的已知限制”</a>）。这意味着，一旦在一个数据节点上创建了世界（world）数据库和它的表，在簇中的每个SQL节点上还需要发出命令CREATE 
+        DATABASE world（从MySQL 5.0.2开始，可以使用CREATE 
+        SCHEMA world取而代之），后跟FLUSH 
+        TABLES。这样，节点就能识别数据库并读取其表定义。</p>
+      <p>在SQL节点上运行SELECT查询与在MySQL服务器的任何其他实例上运行查询没有区别。要想从命令行运行查询，首先应按照通常方式登录到MySQL监视器：</p>
+      <pre>shell&gt; mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.&nbsp; Commands end with ; or \g.
+Your MySQL connection id is 1 to server version: 5.1.2-alpha
+&nbsp;
+键入’help;’或’\h’获取帮助。键入’\c’清空缓冲区。
+&nbsp;
+mysql&gt;</pre>
+      <p>如果在导入MySQL脚本之前未更改表定义中的ENGINE=子句，应在此时运行下述命令：</p>
+      <pre>mysql&gt; USE world;
+mysql&gt; ALTER TABLE City ENGINE=NDBCLUSTER;
+mysql&gt; ALTER TABLE Country ENGINE=NDBCLUSTER;
+mysql&gt; ALTER TABLE CountryLanguage ENGINE=NDBCLUSTER;</pre>
+      <p>注意，在这里我们简单地使用了MySQL服务器密码为空的默认根用户账户。当然，在生产设置下，安装MySQL服务器时，总应遵守标准的安全方法措施，包括设置牢靠的根用户密码，并为用户创建具有完成任务所需的权限的用户账户。关于这方面的更多信息，请参见<a href="" title="5.7. The MySQL Access Privilege System">5.7节，“MySQL访问权限系统”</a>。</p>
+      <p>需要关注的是，当簇节点彼此访问时不使用MySQL的权限系统，设置或更改MySQL用户账户（包括根用户账户）不影响节点之间的交互，它们仅对访问SQL节点的应用程序有效。</p>
+      <p>能够以通常的方式选择数据库，并对表执行SELECT查询，就像退出MySQL监视器一样：</p>
+      <pre>mysql&gt; USE world;
+mysql&gt; SELECT Name, Population FROM City ORDER BY Population DESC LIMIT 5;
++-----------+------------+
+| 名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | 人口 |
++-----------+------------+
+| 孟买&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp; 10500000 |
+| 汉城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 9981619 |
+| 圣保罗&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 9968485 |
+| 上海&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 9696300 |
+| 雅加达&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; 9604900 |
++-----------+------------+
+5 rows in set (0.34 sec)
+&nbsp;
+mysql&gt; \q
+Bye
+&nbsp;
+shell&gt;</pre>
+      <p>使用MySQL的应用程序能够使用标准的API。重要的是应记住，你的应用程序必须访问SQL节点，而不是MGM或存储节点。在下面的简单示例中，介绍了使用PHP 
+        5的mysqli扩展（运行在位于网络中其他位置的Web服务器上）执行相同查询的方法：</p>
+      <pre>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;
+&nbsp; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&nbsp; &lt;meta http-equiv=&quot;Content-Type&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; content=&quot;text/html; charset=iso-8859-1&quot;&gt;
+&nbsp; &lt;title&gt;SIMPLE mysqli SELECT&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;?php
+&nbsp; # connect to SQL node:
+&nbsp; $link = new mysqli(&#39;192.168.0.20&#39;, &#39;root&#39;, &#39;&#39;, &#39;world&#39;);
+&nbsp; # parameters for mysqli constructor are:
+&nbsp; #&nbsp;&nbsp; host, user, password, database
+&nbsp;
+&nbsp; if( mysqli_connect_errno() )
+&nbsp;&nbsp;&nbsp; die(&quot;Connect failed: &quot; . mysqli_connect_error());
+&nbsp;
+&nbsp; $query = &quot;SELECT Name, Population
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FROM City
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORDER BY Population DESC
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LIMIT 5&quot;;
+&nbsp;
+&nbsp; # if no errors...
+&nbsp; if( $result = $link-&gt;query($query) )
+&nbsp; {
+?&gt;
+&lt;table border=&quot;1&quot; width=&quot;40%&quot; cellpadding=&quot;4&quot; cellspacing =&quot;1&quot;&gt;
+&nbsp; &lt;tbody&gt;
+&nbsp; &lt;tr&gt;
+&nbsp;&nbsp;&nbsp; &lt;th width=&quot;10%&quot;&gt;City&lt;/th&gt;
+&nbsp;&nbsp;&nbsp; &lt;th&gt;Population&lt;/th&gt;
+&nbsp; &lt;/tr&gt;
+&lt;?
+&nbsp;&nbsp;&nbsp; # then display the results...
+&nbsp;&nbsp;&nbsp; while($row = $result-&gt;fetch_object())
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&lt;tr&gt;\n&nbsp; &lt;td align=\&quot;center\&quot;&gt;%s&lt;/td&gt;&lt;td&gt;%d&lt;/td&gt;\n&lt;/tr&gt;\n&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $row-&gt;Name, $row-&gt;Population);
+?&gt;
+&nbsp; &lt;/tbody
+&lt;/table&gt;
+&lt;?
+&nbsp; # ...and verify the number of rows that were retrieved
+&nbsp;&nbsp;&nbsp; printf(&quot;&lt;p&gt;Affected rows: %d&lt;/p&gt;\n&quot;, $link-&gt;affected_rows);
+&nbsp; }
+&nbsp; else
+&nbsp;&nbsp;&nbsp; # otherwise, tell us what went wrong
+&nbsp;&nbsp;&nbsp; echo mysqli_error();
+&nbsp;
+&nbsp; # free the result set and the mysqli connection object
+&nbsp; $result-&gt;close();
+&nbsp; $link-&gt;close();
+?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>我们假定运行在Web服务器上的进程能够访问SQL节点的IP地址。</p>
+      <p>采用类似的风格，可以使用MySQL C 
+        API、Perl-DBI、Python-mysql、或MySQL 
+        AB自己的连接器来执行数据定义和操控任务，就像正常使用MySQL那样。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        另外还请记住，<em>每个</em><i>NDB表</i><em>必须有一个主键</em>。如果在创建表时用户未定义主键，NDB簇存储引擎将自动生成隐含的主键。（注释：该隐含
+        键也将占用空间，就像任何其他的表索引一样。由于没有足够的内存来容纳这些自动创建的键，出现问题并不罕见）。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

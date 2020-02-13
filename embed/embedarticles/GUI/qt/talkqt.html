@@ -1,0 +1,220 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>谈谈我对Qt的理解</h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-06-22</strong></p>
+<blockquote> 
+  <h2>前言</h2>
+  <p>进入研究生后（2010-09-02），刚开始一直专注于研究嵌入式系统开发。用实验室ARM10(pxa-270-s)做实验，从理解嵌入式开发过程；交叉编译环境搭建过程；熟悉嵌入式基础开发（多线程应用程序设计、端口程序嵌入式WEB服务器实验、网络传输实验、GPS  通讯实验、音频应用实验、红外通讯应用实验），其中GPS通讯实验、音频应用实验、红外通讯应用实验，这3部分由于没有实际的设备，只有外围接口，也就没有进一步深入地了解了；嵌入式图形界面开发Qt，对这一部分比较痴迷，就一直钻进去了，同时也伴随着编译linux内核等实践活动。<br>
+    一步一步地走过来，来现在为止2011-6-22，感觉还是对Qt较为熟悉和亲切。如今想找个实习，也宁愿选择做Qt这个模块。<br>
+    这几天一直能够陆续地参见一些面试，那么昨天面试的时候，被问到一个问题：也不到你对Qt的理解到什么地步了？<br>
+    我以为能够独立地完成Qt的编译和移植，已经算是很牛了，结果那个面试官三言两语地：有源码可以编译，移植都有现成的交叉编译工具链，挺简单的呀！<br>
+    回来我内心一直无法平静，久久地思考，我到底对Qt了解有多么深入呢？<br>
+    终于在面试的第二天，也就是今天静下来，总结一下子自己对Qt的理解了。</p>
+  <h2>Qt到底是什么呢？</h2>
+  <p>在这里没有人逼问你，除了你自己，所以如果读者您也是学习Qt的，那么请在这里闭着眼睛，也想一想自己对Qt的理解。因为下边所述全是笔者对Qt的理解，并用自己的语言表述了出来。<br>
+    Qt是一个C++的框架。<br>
+    对框架的理解：建立在C++语言的之上，有了自己的更高级的接口和机制。<br>
+    Qt是跨平台的。<br>
+    对跨平台的理解：一次编码，随处编译；区别于JAVA的一次编译，随处可以运行；原因是Qt的编译和操作系统有关。<br>
+    Qt是一个图形界面开发库。<br>
+    对库的理解：就是在搭建好开发环境之后，根据对库的路径的设置来找到编译该程序所需要的头文件和动态链接文件。<br>
+    Qt是一个包含500多个类和9000多个函数的库。<br>
+    且有多个模块，程序员可以根据自己的实际需要调用不同的部分。<br>
+    Qt有自己的开发工具。<br>
+    开发工具包括：Kdevelop、Qdevelop、Qt Creator、qt-designer。<br>
+    当然也可以在eclipse-c/c++中开发。</p>
+  <h2>Qt可以简单到如此？</h2>
+  <p>在我学习Qt的时候，集中了解并实践了Qt的开发环境和所使用的工具，并掌握了具的体的搭建过程；那么翻开书本开始学习。<br>
+    先后从课本上学习了：Qt对话框、Qt窗体、窗体布局、Qt的槽和信号、Qt的事件。<br>
+    我觉着自己可以利用Qt做自己的东西了。<br>
+    还真是做了一些东西呢，比如网站上的作品：<br>
+  <a href="http://www.iteedu.com/works/embedded/qt/index.html">http://www.iteedu.com//works/embedded/qt/index.html</a>。<br>
+    所以，请读者相信：上边所列出来的全是Qt的核心内容和机制，掌握了这些，其他都是一些根据实际需要所产生的模块，比如网络模块QNetWork、QopenGl等。而且学习其他模块的时候，需要相应的基础知识，比如QNetWork，其前提是对网络技术本身就已经很熟悉了。<br>
+    现在应该可以回答那个问题了：Qt确实可以简单到如此！因为真正属于它本身的核心东西就那么些呢。</p>
+  <h2>Qt可以复杂到如此吗？</h2>
+  <p>如今要找实习了，才发现公司中生产的产品所用的Qt远远不是那些基础的、核心的东西可以解决的。Qt的实际应用总是结合着实际的一门技术。比如目前比较流行的嵌入式电视浏览器，到Qt实现的时候，就得同时熟悉：webkit、ui设计（结合css、javascript等所实现的动态效果）。这些东西又熟悉，又陌生。熟悉是因为很久以前曾经接触过，陌生是因为好久没用了。<br>
+    其他模块：<br>
+    QtXml、QtXmlPatterns、QtSvg、QtOpenGL、phonon、ActiveQt、QtDBus、QtDeclarative、QtMeeGoGraphicsSystemHelper、QtMultimedia、QtNetwork、QtOpenVG、QtScript、QtScriptTools、QtSql、QtTest、QtUiTools、QtWebKit。<br>
+    到目前2011-6-22为止，笔者还是有些迷茫和向往。<br>
+    迷茫：东西多了，不可能每个都很精通；<br>
+    向往：精通一个就可以了，但是需要实践。<br>
+    也就是说，目前我只是对静态界面设计较为熟悉，而对于动态，则处于了解状态。</p>
+  <h2>Qt的前景</h2>
+  <p>在跟导师聊天中，得到的结论是：Qt自从被诺基亚收购后，走上了开源和商业版，就注定它必然有一个走向衰亡的结局。<br>
+    我糊涂了，同时有自己的看法和坚持。<br>
+    笔者觉着Qt本身的机制是相当的好；且Qt开源，其具有的优势是，厂家完全利用开源的Qt机制来做成属于自己的特有的YUI框架，这也是一个本身经验上积累。<br>
+    昨天去面试，面试官的解释是：Qt不会走向衰败，商业版只是跟着芯片走，而真正做软件的还是用开源的Qt。<br>
+    这让我的心里更为踏实和宽慰。<br>
+    虽然Win7的已经改换成了severlight，并且据说也不支持Qt了，但是我们依然可以在开系统linux上进行开发哦，呵呵。<br>
+    事实上，Qt 随处可见.。Qt 不断的取得各种进展, 尤其是在低端Linux设备以及一些轻量级设备上。Qt一直致力于提供一个利于创新和差异化的平台,&nbsp; 举个例子, Dreamworks 把他们内部所有制作动画的工具都换成了Qt, 并制作出了许多优秀的电影如&rdquo; 超级大坏蛋&rdquo;和&rdquo;训龙记&rdquo;。<br>
+    加油，come on!</p>
+</blockquote>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

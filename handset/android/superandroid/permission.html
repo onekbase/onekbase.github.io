@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>Android声明使用自定义权限
+</h1>
+<p>Android定义了一种权限方案来保护设备上的资源和功能。例如，在默认情况下，应用程序无法访问联系人列表、拨打电话等。下面就以拨打电话为例介绍一下系统对权限的要求。一般在我们的应用中，如果要用到拨打电话的功能，我们会这样编码：</p>
+<pre class="code">	Uri uri = Uri.parse("tel:12345678");
+	Intent intent = new Intent(Intent.ACTION_CALL, uri);
+	startActivity(intent);</pre>
+<p>默认情况下，我们无权访问拨打电话的Activity，控制台将会报以下异常信息：</p>
+<pre class="code">ERROR/AndroidRuntime: java.lang.SecurityException: Permission Denial: 
+starting Intent { act=android.intent.action.CALL dat=tel:12345678 cmp=com.android.phone/.OutgoingCallBroadcaster }
+...... 
+requires android.permission.CALL_PHONE</pre>
+<p>我们是缺少了CALL_PHONE这个权限，这个权限是Android系统自带的phone应用里定义的权限：</p>
+<pre class="code">......
+&lt;uses-permission android:name="android.permission.CALL_PHONE" /&gt;
+......
+&lt;activity android:name="OutgoingCallBroadcaster"
+                android:permission="android.permission.CALL_PHONE"
+                android:theme="@android:style/Theme.NoDisplay"
+                android:configChanges="orientation|keyboardHidden"&gt;
+            &lt;!-- CALL action intent filters, for the various ways
+                 of initiating an outgoing call. --&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.CALL" /&gt;
+                &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+                &lt;data android:scheme="tel" /&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.CALL" /&gt;
+                &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+                &lt;data android:scheme="voicemail" /&gt;
+            &lt;/intent-filter&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.CALL" /&gt;
+                &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+                &lt;data android:mimeType="vnd.android.cursor.item/phone" /&gt;
+                &lt;data android:mimeType="vnd.android.cursor.item/phone_v2" /&gt;
+                &lt;data android:mimeType="vnd.android.cursor.item/person" /&gt;
+            &lt;/intent-filter&gt;
+&lt;/activity&gt;
+......</pre>
+<p>想要使用此功能，必须在我们的AndroidManifest.xml文件中声明使用此权限：</p>
+<pre class="code">&lt;application ...&gt;
+...
+&lt;/application&gt;
+&lt;uses-permission android:name="android.permission.CALL_PHONE"/&gt;</pre>
+<p>这告诉系统，我们的应用使用了此权限，我们有权访问拨打电话的Activity。</p>
+<p>我们不仅要问，为什么系统会这样设计呢？答案是为了保护用户资源的安全。要想使用此功能，必须在应用中声明权限信息，这样一来，在用户安装此应用时系统会从应用中提取出权限信息，告诉用户该应用使用到了哪些功能，由用户判断该应用是否损害自己的安全。</p>
+<p>接下来由我来演示一下权限的定义和使用，我们建立一个phone项目。</p>
+<p>我们设计的流程是在MainActivity中点击按钮，然后跳转到PhoneActivity中，我们会为PhoneActiivty定义相应的权限。</p>
+<p>我们先看一下MainActivity和PhoneActivity的代码：</p>
+<p>MainActivity.java如下:</p>
+<pre class="code">import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(MainActivity.this, PhoneActivity.class));
+			}
+		});
+    }
+}</pre>
+<p>PhoneActivity.java如下:</p>
+<pre class="code">import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class PhoneActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		TextView tv = new TextView(this);
+		tv.setText("Yes! It works.");
+		setContentView(tv);
+	}
+}
+</pre>
+<p>最重要的是AndroidManifest.xml文件，我们所有的权限声明配置都在此文件中完成：</p>
+<pre class="code">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.iteedu.phone"
+      android:versionCode="1"
+      android:versionName="1.0"&gt;
+    
+    &lt;!-- 声明一个权限  --&gt;
+    &lt;permission android:protectionLevel="normal" 
+    			android:name="iteedu.permission.MY_CALL_PHONE"/&gt;
+    			
+    &lt;application android:icon="@drawable/icon" android:label="@string/app_name"&gt;
+        &lt;activity android:name=".MainActivity"
+                  android:label="@string/app_name"&gt;
+            &lt;intent-filter&gt;
+                &lt;action android:name="android.intent.action.MAIN" /&gt;
+                &lt;category android:name="android.intent.category.LAUNCHER" /&gt;
+            &lt;/intent-filter&gt;
+        &lt;/activity&gt;
+        &lt;!-- 为Activity应用已定义的权限 --&gt;
+        &lt;activity android:name=".PhoneActivity" 
+        		  android:permission="iteedu.permission.MY_CALL_PHONE"&gt;
+        	&lt;intent-filter&gt;
+        		&lt;!-- 注意这个action 在其他应用中可使用此action访问此Activity --&gt;
+        		&lt;action android:name="iteedu.intent.action.MY_CALL"/&gt;
+        		&lt;category android:name="android.intent.category.DEFAULT" /&gt;
+        	&lt;/intent-filter&gt;
+       	&lt;/activity&gt;
+    &lt;/application&gt;
+    &lt;!-- 在同一应用中访问PhoneActivity也需要加上权限 --&gt;
+    &lt;uses-permission android:name="iteedu.permission.MY_CALL_PHONE"/&gt;
+    &lt;uses-sdk android:minSdkVersion="8" /&gt;
+&lt;/manifest&gt;</pre>
+<p>需要注意的是，在声明权限时需要一个android:protectionLevel的属性，它代表&ldquo;风险级别&rdquo;。必须是以下值之一：</p>
+<p>normal、dangerous、signature、signatureOrSystem。</p>
+<p>normal表示权限是低风险的，不会对系统、用户或其他应用程序造成危害。</p>
+<p>dangerous表示权限是高风险的，系统将可能要求用户输入相关信息，才会授予此权限。</p>
+<p>signature告诉Android，只有当应用程序所用数字签名与声明此权限的应用程序所有数字签名相同时，才能将权限授给它。</p>
+<p>signatureOrSystem告诉Android，将权限授给具有相同数字签名的应用程序或Android包类，这一级别适用于非常特殊的情况，比如多个供应商需要通过系统影像共享功能时。</p>
+<p>另外一个是android:permissionGroup属性，表示一个权限组。可以将权限放在一个组中，但对于自定义权限，应该避免设置此属性。如果确实希望设置此属性，可以使用以下属性代替：android.permission-group.SYSTEM_TOOLS。</p>
+<p>以上过程都是在一个内部完成的，现在假如我们的这个phone应用作为系统内置的应用，做为开发者，我们新建一个app，然后访问phone应用里的PhoneActivity。</p>
+<p>我们在MainActivity里放置一个按钮，点击之后跳转到phone应用的PhoneActivity中。MainActivity.java代码如下：</p>
+<pre class="code">import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button btn = (Button) findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent("iteedu.intent.action.MY_CALL");
+				startActivity(intent);
+			}
+		});
+    }
+}</pre>
+<p>然后我们需要在AndroidManifest.xml文件中配置相应的权限：</p>
+<pre class="code">&lt;application ...&gt;
+...
+&lt;/application&gt;
+&lt;uses-permission android:name="iteedu.permission.MY_CALL_PHONE"/&gt;</pre>
+<p>点击按钮，就可以顺利地跳转到PhoneActivity了。</p>
+</body>
+</html>

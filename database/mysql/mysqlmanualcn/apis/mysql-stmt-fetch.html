@@ -1,0 +1,476 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>25.2.7.11. mysql_stmt_fetch()</h1>
+
+            
+          
+        
+        
+        <p>int 
+          mysql_stmt_fetch(MYSQL_STMT *stmt) </p>
+        <p>描述</p>
+        <p> mysql_stmt_fetch()返回结果集中的下一行。仅能当结果集存在时调用它，也就是说，调用了能创建结果集的mysql_stmt_execute()之后，或当mysql_stmt_execute()对整个结果集即行缓冲处理后调用了mysql_stmt_store_result()。</p>
+        <p>使用mysql_stmt_bind_result()绑定的缓冲，mysql_stmt_fetch()返回行数据。对于当前列集合中的所有列，它将返回缓冲内的数据，并将长度返回到长度指针。</p>
+        <p>调用mysql_stmt_fetch()之前，应用程序必须绑定所有列。</p>
+        <p>如果获取的数据值是NULL值，对应MYSQL_BIND结构的*is_null值将包含TRUE 
+          (1)。否则，将根据应用程序指定的缓冲类型，在*buffer和*length内返回数据及其长度。每个数值类型和临时类型都有固定的长度，请参见下面的表格。字符串类型的长度取决于由data_length指明的实际数据值的长度。</p>
+        <table border="1" cellpadding="0" id="table14">
+          <tr>
+            <td><p> 类型</td>
+            <td><p> 长度</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_TINY</td>
+            <td><p>1</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_SHORT</td>
+            <td><p>2</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_LONG</td>
+            <td><p>4</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_LONGLONG</td>
+            <td><p>8</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_FLOAT</td>
+            <td><p>4</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_DOUBLE</td>
+            <td><p>8</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_TIME</td>
+            <td><p> sizeof(MYSQL_TIME)</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_DATE</td>
+            <td><p> sizeof(MYSQL_TIME)</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_DATETIME</td>
+            <td><p> sizeof(MYSQL_TIME)</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_STRING</td>
+            <td><p> data length</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_TYPE_BLOB</td>
+            <td><p> data_length</td>
+          </tr>
+        </table>
+        <p>返回值</p>
+        <table border="1" cellpadding="0" id="table15">
+          <tr>
+            <td><p> 返回值</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>0</td>
+            <td><p>成功，数据被提取到应用程序数据缓冲区。</td>
+          </tr>
+          <tr>
+            <td><p>1</td>
+            <td><p>出现错误。通过调用mysql_stmt_errno()和mysql_stmt_error()，可获取错误代码和错误消息。</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_NO_DATA</td>
+            <td><p>不存在行／数据。</td>
+          </tr>
+          <tr>
+            <td><p> MYSQL_DATA_TRUNCATED</td>
+            <td><p>出现数据截短。</td>
+          </tr>
+        </table>
+        <p>不返回MYSQL_DATA_TRUNCATED，除非用mysql_options()启用了截短通报功能。返回该值时，为了确定截短的参数是哪个，可检查MYSQL_BIND参数结构的错误成员。</p>
+        <p>错误</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_COMMANDS_OUT_OF_SYNC </p>
+        <p>以不恰当的顺序执行了命令。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_OUT_OF_MEMORY </p>
+        <p>内存溢出。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_SERVER_GONE_ERROR </p>
+        <p>MySQL服务器不可用。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_SERVER_LOST </p>
+        <p>在查询过程中，与服务器的连接丢失。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_UNKNOWN_ERROR </p>
+        <p>出现未知错误。 </p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          CR_UNSUPPORTED_PARAM_TYPE </p>
+        <p>缓冲类型为MYSQL_TYPE_DATE、MYSQL_TYPE_TIME、MYSQL_TYPE_DATETIME、或MYSQL_TYPE_TIMESTAMP，但数据类型不是DATE、TIME、DATETIME、或TIMESTAMP。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          从mysql_stmt_bind_result()返回所有其他不支持的转换错误。</p>
+        <p>示例：</p>
+        <p>在下面的示例中，介绍了使用mysql_stmt_result_metadata()、mysql_stmt_bind_result()和mysql_stmt_fetch()从表中获取数据的方法。（在本示例中，将检索在<a href="mysql-stmt-execute.html" title="25.2.7.10. mysql_stmt_execute()">25.2.7.10节，“mysql_stmt_execute()”</a>一节的示例中插入的两行内容）。假定mysql变量具有有效的连接句柄。 </p>
+        <pre>#define STRING_SIZE 50
+&nbsp;
+#define SELECT_SAMPLE &quot;SELECT col1, col2, col3, col4 FROM test_table&quot;
+&nbsp;
+MYSQL_STMT&nbsp;&nbsp;&nbsp; *stmt;
+MYSQL_BIND&nbsp;&nbsp;&nbsp; bind[4];
+MYSQL_RES&nbsp;&nbsp;&nbsp;&nbsp; *prepare_meta_result;
+MYSQL_TIME&nbsp;&nbsp;&nbsp; ts;
+unsigned long length[4];
+int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; param_count, column_count, row_count;
+short&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; small_data;
+int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int_data;
+char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; str_data[STRING_SIZE];
+my_bool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; is_null[4];
+&nbsp;
+/* Prepare a SELECT query to fetch data from test_table */
+stmt = mysql_stmt_init(mysql);
+if (!stmt)
+{
+&nbsp; fprintf(stderr, &quot; mysql_stmt_init(), out of memory\n&quot;);
+&nbsp; exit(0);
+}
+if (mysql_stmt_prepare(stmt, SELECT_SAMPLE, strlen(SELECT_SAMPLE)))
+{
+&nbsp; fprintf(stderr, &quot; mysql_stmt_prepare(), SELECT failed\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}
+fprintf(stdout, &quot; prepare, SELECT successful\n&quot;);
+&nbsp;
+/* Get the parameter count from the statement */
+param_count= mysql_stmt_param_count(stmt);
+fprintf(stdout, &quot; total parameters in SELECT: %d\n&quot;, param_count);
+&nbsp;
+if (param_count != 0) /* validate parameter count */
+{
+&nbsp; fprintf(stderr, &quot; invalid parameter count returned by MySQL\n&quot;);
+&nbsp; exit(0);
+}
+&nbsp;
+/* Fetch result set meta information */
+prepare_meta_result = mysql_stmt_result_metadata(stmt);
+if (!prepare_meta_result)
+{
+&nbsp; fprintf(stderr,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot; mysql_stmt_result_metadata(), returned no meta information\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}
+&nbsp;
+/* Get total columns in the query */
+column_count= mysql_num_fields(prepare_meta_result);
+fprintf(stdout, &quot; total columns in SELECT statement: %d\n&quot;, column_count);
+&nbsp;
+if (column_count != 4) /* validate column count */
+{
+&nbsp; fprintf(stderr, &quot; invalid column count returned by MySQL\n&quot;);
+&nbsp; exit(0);
+}
+&nbsp;
+/* Execute the SELECT query */
+if (mysql_stmt_execute(stmt))
+{
+&nbsp; fprintf(stderr, &quot; mysql_stmt_execute(), failed\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}
+&nbsp;
+/* Bind the result buffers for all 4 columns before fetching them */
+&nbsp;
+memset(bind, 0, sizeof(bind));
+&nbsp;
+/* INTEGER COLUMN */
+bind[0].buffer_type= MYSQL_TYPE_LONG;
+bind[0].buffer= (char *)&amp;int_data;
+bind[0].is_null= &amp;is_null[0];
+bind[0].length= &amp;length[0];
+&nbsp;
+/* STRING COLUMN */
+bind[1].buffer_type= MYSQL_TYPE_STRING;
+bind[1].buffer= (char *)str_data;
+bind[1].buffer_length= STRING_SIZE;
+bind[1].is_null= &amp;is_null[1];
+bind[1].length= &amp;length[1];
+&nbsp;
+/* SMALLINT COLUMN */
+bind[2].buffer_type= MYSQL_TYPE_SHORT;
+bind[2].buffer= (char *)&amp;small_data;
+bind[2].is_null= &amp;is_null[2];
+bind[2].length= &amp;length[2];
+&nbsp;
+/* TIMESTAMP COLUMN */
+bind[3].buffer_type= MYSQL_TYPE_TIMESTAMP;
+bind[3].buffer= (char *)&amp;ts;
+bind[3].is_null= &amp;is_null[3];
+bind[3].length= &amp;length[3];
+&nbsp;
+/* Bind the result buffers */
+if (mysql_stmt_bind_result(stmt, bind))
+{
+&nbsp; fprintf(stderr, &quot; mysql_stmt_bind_result() failed\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}
+&nbsp;
+/* Now buffer all results to client */
+if (mysql_stmt_store_result(stmt))
+{
+&nbsp; fprintf(stderr, &quot; mysql_stmt_store_result() failed\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}
+&nbsp;
+/* Fetch all rows */
+row_count= 0;
+fprintf(stdout, &quot;Fetching results ...\n&quot;);
+while (!mysql_stmt_fetch(stmt))
+{
+&nbsp; row_count++;
+&nbsp; fprintf(stdout, &quot;&nbsp; row %d\n&quot;, row_count);
+&nbsp;
+&nbsp; /* column 1 */
+&nbsp; fprintf(stdout, &quot;&nbsp;&nbsp; column1 (integer)&nbsp; : &quot;);
+&nbsp; if (is_null[0])
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; NULL\n&quot;);
+&nbsp; else
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; %d(%ld)\n&quot;, int_data, length[0]);
+&nbsp;
+&nbsp; /* column 2 */
+&nbsp; fprintf(stdout, &quot;&nbsp;&nbsp; column2 (string)&nbsp;&nbsp; : &quot;);
+&nbsp; if (is_null[1])
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; NULL\n&quot;);
+&nbsp; else
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; %s(%ld)\n&quot;, str_data, length[1]);
+&nbsp;
+&nbsp; /* column 3 */
+&nbsp; fprintf(stdout, &quot;&nbsp;&nbsp; column3 (smallint) : &quot;);
+&nbsp; if (is_null[2])
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; NULL\n&quot;);
+&nbsp; else
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; %d(%ld)\n&quot;, small_data, length[2]);
+&nbsp;
+&nbsp; /* column 4 */
+&nbsp; fprintf(stdout, &quot;&nbsp;&nbsp; column4 (timestamp): &quot;);
+&nbsp; if (is_null[3])
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; NULL\n&quot;);
+&nbsp; else
+&nbsp;&nbsp;&nbsp; fprintf(stdout, &quot; %04d-%02d-%02d %02d:%02d:%02d (%ld)\n&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ts.year, ts.month, ts.day,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ts.hour, ts.minute, ts.second,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; length[3]);
+&nbsp; fprintf(stdout, &quot;\n&quot;);
+}
+&nbsp;
+/* Validate rows fetched */
+fprintf(stdout, &quot; total rows fetched: %d\n&quot;, row_count);
+if (row_count != 2)
+{
+&nbsp; fprintf(stderr, &quot; MySQL failed to return all rows\n&quot;);
+&nbsp; exit(0);
+}
+&nbsp;
+/* Free the prepared result metadata */
+mysql_free_result(prepare_meta_result);
+&nbsp;
+&nbsp;
+/* Close the statement */
+if (mysql_stmt_close(stmt))
+{
+&nbsp; fprintf(stderr, &quot; failed while closing the statement\n&quot;);
+&nbsp; fprintf(stderr, &quot; %s\n&quot;, mysql_stmt_error(stmt));
+&nbsp; exit(0);
+}</pre>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

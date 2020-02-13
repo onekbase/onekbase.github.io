@@ -1,0 +1,253 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>stripped、dynamic linking以及Sysv相关问题</h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-05-28</strong></p>
+<h2>问题的引出</h2>
+<p> 在编译完毕qt之后，file file libqte.so.2.3.10后：<br />
+libqte.so.2.3.10: ELF 32-bit LSB shared  object, ARM, version 1, dynamically linked, not stripped</p>
+<p>网上还有其他一些file结果：<br />
+  libqte.so.2.3.2: ELF 32-bit LSB shared  object, ARM, version 1 (SYSV), stripped</p>
+<p>问题：<br />
+  所以我就很想知道到底什么是stripped、dynamically linked、sysv？</p>
+<h2>Stripped</h2>
+<p>有stripped，那么肯定也有not stripped，而且它们俩是相对的。</p>
+<p>Stripped和not stripped的最大区别：<br />
+  stripped：将程序中的符号表的信息剔除掉了，这样子编译出来的可执行文件体积比较小；<br />
+  not stripped：则反之，但是就是因为其保留了这些信息，所以便于调试。</p>
+<h2>Dynamically linked</h2>
+<p>提起Dynamically linked，则要归结到库的概念和应用了，所以我就系统地了解了一下子，并愿意贴出来，跟大家一起分享。</p>
+<p>库的目的是将类似的功能封装在一个单元集中。这些单元可以被其他开发人员共享，并称其为模块化编程，也就是说从模块中编译程序。Linux支持两种类型的库，每种都有自己的优点和缺点。静态库在编译程序时，将库中相应的功能绑定到程序中；然而动态库则不同，它是当程序在运行时才被加载的。图1显示了linux库的层次结构。 </p>
+<p><img width="344" height="151" src="images/dynamicstripsysv_clip_image001.gif" /></p>
+<blockquote>
+  <blockquote>
+    <p>图1 linux库的层次结构</p>
+  </blockquote>
+</blockquote>
+<p>你可以通过两种方式来使用共享库的：要么在程序运行时动态地链接，要么在用户的控制下进行动态地加载。这篇文章将讨论着两种方式。 </p>
+<p>静态库对于功能少的小程序中是有益的。然而对于需要多个库的程序来说，共享库则可以减少程序的内存占用（包括磁盘上的和运行时的内存）。这是因为多个程序可以同时使用一个共享库，因此在一个时间，内存中只需要保留一个共享库的副本即可。使用静态库，每一个正在运行的程序库都有个库的副本。 </p>
+<p>GNU / Linux提供两种方法来处理共享库（每个方法都是Sun&nbsp;Solaris起源）。你可以动态链接共享库，并在执行时，使用Linux系统加载库（除非它已经在内存中了）。另一种方案是有选择性地调用进程中的库函数，被称为动态加载。采用动态加载，程序可以加载一个特定的库（除非已经加载），然后调用该库中的某一特定功能。&nbsp;（图2显示了这两种方法。）这是在建立支持插件的应用程序时所共同使用的模式。</p>
+<p><img width="341" height="265" src="images/dynamicstripsysv_clip_image001_0000.gif" /></p>
+<blockquote>
+  <blockquote>
+    <p>图2 动态链接 </p>
+  </blockquote>
+</blockquote>
+<p>Linux的动态链接 </p>
+<p>现在，让我们深入探讨了在Linux中使用动态链接的共享库的过程。当用户启动应用程序时，它们是调用一个可执行的和链接格式（ELF）的镜像。内核始于加载ELF映像到用户空间的虚拟内存的过程。内核注意到一个名为ELF段，被称为.interp，这表明动态链接器要被使用（/lib/ld-linux.so），如清单1所示。这类似于在UNIX中所解释定义的脚本文件（#!/bin/sh）：只是在不同的上下文中使用。 </p>
+<p>清单1 使用只readelf命令来展示程序的头文件 
+<pre class="code">mtj@camus:~/dl$ <strong>readelf -l dl</strong><br />
+Elf file type is EXEC (Executable file)<br />
+  Entry point 0x8048618<br />
+  There are 7 program headers, starting at offset 52<br />
+  Program Headers:<br />
+  Type           Offset   VirtAddr    PhysAddr   FileSiz MemSiz  Flg Align<br />
+  PHDR           0x000034 0x08048034 0x08048034  0x000e0 0x000e0 R E 0x4<br />
+  INTERP         0x000114 0x08048114 0x08048114 0x00013  0x00013 R   0x1<br />
+  [Requesting program interpreter: /lib/ld-linux.so.2]<br />
+  LOAD           0x000000 0x08048000 0x08048000 0x00958  0x00958 R E 0x1000<br />
+  LOAD           0x000958 0x08049958 0x08049958  0x00120 0x00128 RW  0x1000<br />
+  DYNAMIC        0x00096c 0x0804996c  0x0804996c 0x000d0 0x000d0 RW  0x4<br />
+  NOTE           0x000128 0x08048128 0x08048128  0x00020 0x00020 R   0x4<br />
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000  0x00000 RW  0x4<br />
+  ...<br />
+  mtj@camus:~dl$</pre>
+<p>请注意，ld-linux.so本身就是一个ELF共享库，但它是静态编译的，并不依赖于共享库。当需要动态链接时，内核自动启动动态链接器（ELF解释器），它先初始化自身，然后加载指定的共享对象（除非已加载）。之后，它执行必要的再定位，包括目标共享对象所使用的共享对象。&nbsp;LD_LIBRARY_PATH环境变量定义了可用的共享对象的路径。完成后，控制权转移回原来的程序，开始执行。&nbsp;</p>
+<h3>Linxu中的动态加载 </h3>
+<p>其实Linux会为给定的程序自动装载和链接库，它可以分享这个应用程序本身的控制。在这种情况下，这一过程被称为动态加载。有了动态加载，应用程序可以指定一个特定的库来加载，然后将其作为一个可执行库来使用（即调用其中的函数）。然而，正如你前边所学，共享库动态加载功能，只不过是一个标准的共享库（ELF共享对象）。事实上，ld-linux动态链接作为ELF加载器和解释器仍然参与了这项工作的过程。 <br />
+  动态加载（DL）的API可以动态加载共享库，并允许将其提供给用户空间的程序。API虽然小，但是它提供程序需要的所有东西，并在程序执行背后做了好多工作，完整的API见表1。 </p>
+<p>表1 完整的API</p>
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="76"><br />
+      Function </td>
+    <td width="438"><p>Description</p></td>
+  </tr>
+  <tr>
+    <td width="76"><p>dlopen</p></td>
+    <td width="438"><p>打开一个动态链接库 </p></td>
+  </tr>
+  <tr>
+    <td width="76"><p>dlsym</p></td>
+    <td width="438"><p>获取所打开文件对象的描述符地址 </p></td>
+  </tr>
+  <tr>
+    <td width="76"><p>dlerror</p></td>
+    <td width="438"><p>返回最后一次发生错误的信息字符串 </p></td>
+  </tr>
+  <tr>
+    <td width="76"><p>dlclose</p></td>
+    <td width="438"><p>Closes an object file关闭一个文件对象 </p></td>
+  </tr>
+</table>
+<h2>Sysv</h2>
+sysv是linux的启动机制。<br />
+  <p>sysV是UNIX的两大分支之一,现在的UNIX和类UNIX系统根据其发展分支可以分为sysV分支和BSD分支,这两个分支是最初的UNIX分化出来的最初的AT&amp;T实验室的UNIX系统到了第5版,也是就system V (sysV) 后就分化成了BSD分支和sysV分支, 两者的最大区别就是启动过程的运行等级机制有很大区别. linux是sysV风格的UNIX系统,freeBSD是BSD风格的UNIX系统, 但是现在这个界限也在慢慢模糊掉, 两种分支的系统取长补短,相互渗透。</p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

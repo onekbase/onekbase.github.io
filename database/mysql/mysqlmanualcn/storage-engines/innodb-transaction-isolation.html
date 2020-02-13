@@ -1,0 +1,280 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>
+                  15.2.10
+                  .3.&nbsp;InnoDB和TRANSACTION               
+                  ISOLATION LEVEL
+                  
+                </h1>
+
+              
+            
+          
+          <p>按照SQL:1992 
+            事务隔离级别，InnoDB默认是可重复读的（REPEATABLE 
+            READ）。MySQL/InnoDB 提供SQL标准所描述的所有四个事务隔离级别。你可以在命令行用--transaction-isolation选项，或在选项文件里，为所有连接设置
+            默认隔离级别。例如，你可以在my.inf文件的[mysqld]节里类似如下设置该选项：globally
+            
+          </p>
+          <pre>[mysqld]
+
+transaction-isolation = {READ-UNCOMMITTED | READ-COMMITTED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | REPEATABLE-READ | SERIALIZABLE}
+</pre>
+          <p>用户可以用SET 
+            TRANSACTION语句改变单个会话或者所有新进连接的隔离级别。它的语法如下：
+            
+          </p>
+          <pre>SET [SESSION | GLOBAL] TRANSACTION ISOLATION LEVEL
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {READ UNCOMMITTED | READ COMMITTED
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | REPEATABLE READ | SERIALIZABLE}
+</pre>
+          <p>注意，对--transaction-isolation选项的级别名中有连字符，但在对SET TRANSACTION语句的级别名中没有。
+            
+          </p>
+          <p>默认的行为是为下一个（未开始）事务设置隔离级别。如果你使用GLOBAL关键字，语句在全局对从那点开始创建的所有新连接（除了不存在的连接）设置
+            默认事务级别。你需要SUPER全县来做这个。使用SESSION 关键字集为将来在当前连接上执行的事务设置默认事务级别
+            。
+            
+          </p>
+          <p>任何客户端都能自由改变会话隔离级别（甚至在事务的中间），或者为下一个事务设置隔离级别。
+            
+          </p>
+          <p>你可以用下列语句查询全局和会话事务隔离级别：
+            
+          </p>
+          <pre>SELECT @@global.tx_isolation;
+
+SELECT @@tx_isolation;
+</pre>
+          <p>在行级锁定中，InnoDB使用next-key锁定。这意味着除了索引记录，InnoDB也可以把索引记录前的间隙锁定到其它用户所做的紧接该索引记录之前的块插入上。一个next-key锁定指向一个锁定住一个索引记录和它之前的间隙的锁定。一个间隙锁定指仅锁住一些索引记录之前的间隙的锁定。
+            
+          </p>
+          <p>InnoDB中每个隔离级别的详细描述如下：
+            
+          </p>
+          
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              READ UNCOMMITTED
+              
+            </p>
+            <p>SELECT语句以非锁定方式被执行，但是一个可能更早期版本的记录会被用到。因此，使用这个隔离级别，比如，读是不连贯的。着也被称为&ldquo;脏读&rdquo;（dirty read）。另外，这个隔离级别象READ COMMITTED一样作用。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              READ COMMITTED
+              
+            </p>
+            <p>一个有些象Oracle的隔离级别。所有SELECT ... FOR UPDATE和SELECT ... LOCK IN SHARE MOD语句仅锁定索引记录，而不锁定记录前的间隙，因而允许随意紧挨着已锁定的记录插入新记录。UPDATE和DELETE语句使用一个带唯一搜索条件的唯一的索引仅锁定找到的索引记录，而不包括记录前的间隙。在范围类型UPDATE和DELETE语句，InnoDB必须对范围覆盖的间隙设置next-key锁定或间隙锁定以及其它用户做的块插入。这是很必要的，因为要让MySQL复制和恢复起作用，&ldquo;幽灵行&rdquo;必须被阻止掉。
+              
+            </p>
+            <p>持续读行为如同在Oracle中：即使在同一事务内， 每个持续读设置并读取它自己的新快照。请参阅<a href="innodb-consistent-read.html" title="15.2.10.4.&nbsp;Consistent Non-Locking Read">15.2.10.4节，“持续非锁定读&rdquo;</a>。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              REPEATABLE READ
+              
+            </p>
+            <p>这是InnoDB的默认隔离级别。带唯一搜索条件使用唯一索引的SELECT ... FOR 
+              UPDATE, SELECT ... LOCK IN SHARE MODE, UPDATE 和DELETE语句只锁定找到的索引记录，而不锁定记录前的间隙。用其它搜索条件，这些操作采用next-key锁定，用next-key锁定或者间隙锁定锁住搜索的索引范围，并且阻止其它用户的新插入。
+              
+            </p>
+            <p>在持续读中，有一个与之前隔离级别重要的差别：在这个级别，在同一事务内所有持续读读取由第一次读所确定的同一快照。这个惯例意味着如果你在同一事务内发出数个无格式SELECT语句，这些SELECT语句对相互之间也是持续的，请参阅<a href="innodb-consistent-read.html" title="15.2.10.4.&nbsp;Consistent Non-Locking Read">15.2.10.4节，“持续非锁定读&rdquo;</a>。
+              
+            </p>
+            <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              SERIALIZABLE
+              
+            </p>
+            <p>这个级别类似REPEATABLE READ，但是所有无格式SELECT语句被
+              隐式转换成SELECT ... LOCK IN SHARE MODE。
+              
+            </p>
+          
+        
+        
+          
+            
+              
+                
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

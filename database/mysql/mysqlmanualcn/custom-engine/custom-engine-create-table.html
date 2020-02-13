@@ -1,0 +1,243 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 16.7.&nbsp;创建表</h1>
+
+        
+      
+    
+    <p>一旦实例化了处理程序，所需的第1个操作很可能是创建表。</p>
+    <p>你的存储引擎必须实现<a title="16.14.3.&nbsp;create"  href="custom-engine-api-reference-create.html">create()</a>虚拟函数：</p>
+    <pre>virtual int create(const char *name, TABLE *form, HA_CREATE_INFO *info)=0;</pre>
+    <p>该函数应创建所有必须的文件，然后关闭表。MySQL服务器将调用随后需打开的表。</p>
+    <p>*name参数是表的名称。*form参数是st_table结构，该结构定义了表并与MySQL服务器已创建的<i>tablename</i>.frm文件的内容匹配。在大多数情况下，存储引擎不需要更改<i>tablename</i>.frm文件，也没有支持该操作的预置功能。</p>
+    <p>*info参数是包含CREATE 
+      TABLE语句用于创建表所需信息的结构。该结构定义于handler.h文件中，并为了便于参考列于下面：</p>
+    <pre>typedef struct st_ha_create_information
+&nbsp; {
+&nbsp;&nbsp;&nbsp; CHARSET_INFO *table_charset, *default_table_charset;
+&nbsp;&nbsp;&nbsp; LEX_STRING connect_string;
+&nbsp;&nbsp;&nbsp; const char *comment,*password;
+&nbsp;&nbsp;&nbsp; const char *data_file_name, *index_file_name;
+&nbsp;&nbsp;&nbsp; const char *alias;
+&nbsp;&nbsp;&nbsp; ulonglong max_rows,min_rows;
+&nbsp;&nbsp;&nbsp; ulonglong auto_increment_value;
+&nbsp;&nbsp;&nbsp; ulong table_options;
+&nbsp;&nbsp;&nbsp; ulong avg_row_length;
+&nbsp;&nbsp;&nbsp; ulong raid_chunksize;
+&nbsp;&nbsp;&nbsp; ulong used_fields;
+&nbsp;&nbsp;&nbsp; SQL_LIST merge_list;
+&nbsp;&nbsp;&nbsp; enum db_type db_type;
+&nbsp;&nbsp;&nbsp; enum row_type row_type;
+&nbsp;&nbsp;&nbsp; uint null_bits;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* NULL bits at start of record */
+&nbsp;&nbsp;&nbsp; uint options;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* OR of HA_CREATE_ options */
+&nbsp;&nbsp;&nbsp; uint raid_type,raid_chunks;
+&nbsp;&nbsp;&nbsp; uint merge_insert_method;
+&nbsp;&nbsp;&nbsp; uint extra_size;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* length of extra data segment */
+&nbsp;&nbsp;&nbsp; bool table_existed;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* 1 in create if table existed */
+&nbsp;&nbsp;&nbsp; bool frm_only;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* 1 if no ha_create_table() */
+&nbsp;&nbsp;&nbsp; bool varchar;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* 1 if table has a VARCHAR */
+&nbsp; } HA_CREATE_INFO;</pre>
+    <p>基本的存储引擎能忽略*form和*info的内容，这是因为，真正所需的是创建存储引擎所使用的数据文件，以及对数据文件的可能初始化操作（假定存储文件是基于文件的）。</p>
+    <p>下面给出了来自CSV存储引擎的实施示例：</p>
+    <pre>int ha_tina::create(const char *name, TABLE *table_arg,
+&nbsp; HA_CREATE_INFO *create_info)
+&nbsp; {
+&nbsp;&nbsp;&nbsp; char name_buff[FN_REFLEN];
+&nbsp;&nbsp;&nbsp; File create_file;
+&nbsp;&nbsp;&nbsp; DBUG_ENTER(&quot;ha_tina::create&quot;);
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;if ((create_file= my_create(fn_format(name_buff, name, &quot;&quot;, &quot;.CSV&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MY_REPLACE_EXT|MY_UNPACK_FILENAME),0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O_RDWR | O_TRUNC,MYF(MY_WME))) &lt; 0)
+&nbsp;&nbsp;&nbsp; DBUG_RETURN(-1);
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;my_close(create_file,MYF(0));
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;DBUG_RETURN(0);
+&nbsp; }</pre>
+    <p>在前面的例子中，CSV引擎未引用*table_arg或*create_info参数，而是简单地创建了所需的数据文件，关闭它们，并返回。</p>
+    <p>my_create和my_close函数是定义于src/include/my_sys.h文件中的助手函数。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,948 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.3.1.&nbsp;Driver/Datasource类名，URL语法，以及Connector/J的配置属性</h1>
+
+            
+          
+        
+        <a name="id3058353"></a> 在MySQL 
+          Connector/J中实现了java.sql.Driver的类名是“com.mysql.jdbc.Driver”。“org.gjt.mm.mysql.Driver”类名任是可用的，以保持与MM.MySQL的向后兼容性。注册驱动程序，或配置软件以使用MySQL 
+          Connector/J时，应使用该类名。
+          <p>用于MySQL Connector/J的JDBC 
+            URL格式如下，方括号“[, ]”的项为可选项：</p>
+          <pre>jdbc:mysql://[host][,failoverhost...][:port]/[database][?propertyName1][=propertyValue1][&amp;propertyName2][=propertyValue2]...</pre>
+          <p> 如果未指定主机名，默认为“127.0.0.1”。如果未指定端口，默认为“3306”，它是MySQL服务器的默认端口号。</p>
+          <pre>jdbc:mysql://[host:port],[host:port].../[database][?propertyName1][=propertyValue1][&amp;propertyName2][=propertyValue2]...</pre>
+          <p> 如果未指定数据库，将使用无“当前”数据库进行连接。在这种情况下，需要在连接实例上调用“setCatalog()”方法，或在SQL中使用数据库名指定完整的表名（即“SELECT 
+            dbname.tablename.colname FROM 
+            dbname.tablename...”）。不指定连接时使用的数据库，该选项通常仅在创建用于处理多个数据库的工具时才有用，例如GUI数据库管理器。</p>
+          <p>MySQL 
+            Connector/J支持故障切换功能。这样，就允许驱动程序切换至“从”主机上，并仍能执行只读查询。仅当连接处于autoCommit(true)状态时，才会出现故障切换，这是因为当事务正在进行时，无法可靠地保证故障切换。在事务/连接结束后，大多数应用服务器和连接池均会将autoCommit设置为“真”。</p>
+          <p>故障切换功能具有下述行为方式：</p>
+          <p> 如果URL属性“autoReconnect”为“假”：故障切换仅会在连接初始化过程中出现，当驱动程序判断第1台主机再次可用时，将返回。</p>
+          <p> 如果URL属性“autoReconnect”为“真”：当驱动程序判断连接失败时（在任意查询之前），将出现故障切换，而且当驱动程序判断第1台主机再次可用时（发出queriesBeforeRetryMaster查询之后），将返回第1台主机。</p>
+          <p> 在任何一种情况下，当你连接到经过故障切换的服务器时，会将连接设置为只读状态，因此，对于会更改数据的查询来说，将抛出异常（MySQL服务器不会处理该查询）。</p>
+          <p>配置属性定义了Connector/J与MySQL服务器进行连接的方式。除非作了其他说明，否则可以为DataSource对象或Connection对象设置属性。</p>
+          <p>可采用下述方式的一种设置Configuration（配置）属性：</p>
+          <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            在java.sql.DataSource的MySQL实施实例上使用set*()方法（它是使用java.sql.DataSource实施实例时的首选方法）：</p>
+          <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            com.mysql.jdbc.jdbc2.optional.MysqlDataSource </p>
+          <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource </p>
+          <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            作为传递给DriverManager.getConnection()或Driver.connect()的java.util.Properties实例中的
+            键/值对。</p>
+          <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            作为URL中的JDBC URL参数，以传递给java.sql.DriverManager.getConnection()、java.sql.Driver.connect()、或javax.sql.DataSource的setURL()方法的MySQL实施实例。</p>
+          <h3>注释：</h3>
+          <p>如果你用来配置JDBC 
+            URL的方法是基于XML的，需要使用XML字符“&amp;amp;”来隔开配置参数，“&amp;”是XML的保留字符。</p>
+          <p>在下面的表各中，列出了这些属性：</p>
+          <p >表26.1.&nbsp;连接属性&nbsp;</p>
+          <table border="1" cellpadding="0" width="1244" style="width: 933.1pt" id="table17">
+            <thead>
+              <tr>
+                <td><p align="center"> 属性名</td>
+                <td><p align="center"> 定义</td>
+                <td><p align="center"> 要求？</td>
+                <td><p align="center"> 默认值</td>
+                <td><p align="center"> 版本</td>
+              </tr>
+            </thead>
+            <tr>
+              <td colspan="5"><p><em> Connection/Authentication（连接／鉴定）</em></td>
+            </tr>
+            <tr>
+              <td><p>user</td>
+              <td><p>连接的用户</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>全部</td>
+            </tr>
+            <tr>
+              <td><p>password</td>
+              <td><p>连接时使用的密码。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>全部</td>
+            </tr>
+            <tr>
+              <td><p> socketFactory</td>
+              <td><p> 驱动程序用于创建与服务器套接字连接的类的名称。该类必须实现了接口“com.mysql.jdbc.SocketFactory”，并有公共无参量构造函数。</td>
+              <td><p>No</td>
+              <td><p> com.mysql.jdbc.StandardSocketFactory</td>
+              <td><p>3.0.3</td>
+            </tr>
+            <tr>
+              <td><p> connectTimeout</td>
+              <td><p> 套接字连接的超时（单位为毫秒），0表示无超时。仅对JDK-1.4或更新版本有效。默认值为“0”。</td>
+              <td><p>No</td>
+              <td><p>0</td>
+              <td><p>3.0.1</td>
+            </tr>
+            <tr>
+              <td><p> socketTimeout</td>
+              <td><p>网络套接字连接的超时（默认值0表示无超时）。</td>
+              <td><p>No</td>
+              <td><p>0</td>
+              <td><p>3.0.1</td>
+            </tr>
+            <tr>
+              <td><p>useConfigs</td>
+              <td><p> 在解析URL属性或应用用户指定的属性之前，加载由逗号“,”分隔的配置属性列表。在文档的“配置”部分中解释了这些配置。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td><p> interactiveClient</td>
+              <td><p>设置CLIENT_INTERACTIVE标志，根据INTERACTIVE_TIMEOUT而不是WAIT_TIMEOUT向MySQL通报超时连接。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> propertiesTransform</td>
+              <td><p> com.mysql.jdbc.ConnectionPropertiesTransform的1个实施实例，在尝试连接之前，驱动程序将使用它来更改传递给驱动的URL属性。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.1.4</td>
+            </tr>
+            <tr>
+              <td><p> useCompression</td>
+              <td><p>与服务器进行通信时采用zlib压缩（真／假）？ 
+                  默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.17</td>
+            </tr>
+            <tr>
+              <td colspan="5"><p><em> High 
+                  Availability and Clustering（高可用性和簇集）</em></td>
+            </tr>
+            <tr>
+              <td><p> autoReconnect</td>
+              <td><p>驱动程序是否应尝试再次建立失效的和／或死连接？ 
+                  如果允许，对于在失效或死连接上发出的查询（属于当前事务），驱动程序将抛出异常，但在新事务的连接上发出下一个查询时，将尝试再连接。不推荐使用该特性，这是因为，当应用程序不能恰当处理SQLExceptions时，它会造成与会话状态和数据一致性有关的副作用，设计它的目的仅用于下述情况，即，当你无法配置应用程序来恰当处理因死连接和／或无效连接导致的SQLExceptions时。作为可选方式，可将MySQL服务器变量“wait_timeout”设置为较高的值，而不是默认的8小时。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>1.1</td>
+            </tr>
+            <tr>
+              <td><p> autoReconnectForPools</td>
+              <td><p>使用适合于连接池的再连接策略（默认值为“假”）。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> failOverReadOnly</td>
+              <td><p>在autoReconnect模式下出现故障切换时，是否应将连接设置为“只读”？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.12</td>
+            </tr>
+            <tr>
+              <td><p> reconnectAtTxEnd</td>
+              <td><p>如果将autoReconnect设置为“真”，在每次事务结束后驱动程序是否应尝试再连接？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.10</td>
+            </tr>
+            <tr>
+              <td><p> roundRobinLoadBalance</td>
+              <td><p>启用了autoReconnect而且failoverReadonly为“假”时，是否应按照循环方式挑选要连接的主机？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> queriesBeforeRetryMaster</td>
+              <td><p> 出现故障切换（使用多主机故障切换）并返回主机之前发出的查询数。无论首先满足了哪个条件，“queriesBeforeRetryMaster”或“secondsBeforeRetryMaster”，均会再次与主机进行连接。默认值为“50”。</td>
+              <td><p>No</td>
+              <td><p>50</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p> secondsBeforeRetryMaster</td>
+              <td><p> 出现故障切换后，在尝试再次连接到主服务器之前，驱动程序应等待的时间？ 
+                  无论首先满足了哪个条件，“queriesBeforeRetryMaster”或“secondsBeforeRetryMaster”，均会再次与主机进行连接。单位为秒，默认值为30。</td>
+              <td><p>No</td>
+              <td><p>30</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p> enableDeprecatedAutoreconnect</td>
+              <td><p> 自3.2版开始，自动再连接功能受到冷落，在3.3版中将删除该功能。将该属性设置为“真”可禁止检查配置的特性。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.2.1</td>
+            </tr>
+            <tr>
+              <td colspan="5"><p><em> Security（安全）</em></td>
+            </tr>
+            <tr>
+              <td><p> allowMultiQueries</td>
+              <td><p> 在一条语句中，允许使用“;”来分隔多条查询（真／假，默认值为“假”）。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.1</td>
+            </tr>
+            <tr>
+              <td><p>useSSL</td>
+              <td><p>与服务器进行通信时使用SSL（真／假），默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p>requireSSL</td>
+              <td><p>要求SSL连接，useSSL=true？ 默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> allowUrlInLocalInfile</td>
+              <td><p>驱动程序在是“LOAD DATA LOCAL 
+                  INFILE”语句中否允许URL？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.4</td>
+            </tr>
+            <tr>
+              <td><p>paranoid</td>
+              <td><p> 采取措施，防止在错误信息中泄漏敏感信息，并可可能时清除保存敏感数据的数据结构？ 默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.1</td>
+            </tr>
+            <tr>
+              <td colspan="5"><p><em> Performance Extensions（性能扩展）</em></td>
+            </tr>
+            <tr>
+              <td><p> metadataCacheSize</td>
+              <td><p> 如果将cacheResultSetMetaData设置为“真”，对cacheResultSetMetadata的查询次数（默认值为50）。</td>
+              <td><p>No</td>
+              <td><p>50</td>
+              <td><p>3.1.1</td>
+            </tr>
+            <tr>
+              <td><p> prepStmtCacheSize</td>
+              <td><p>如果允许预处理语句缓冲功能，应缓冲处理多少条预处理语句？</td>
+              <td><p>No</td>
+              <td><p>25</td>
+              <td><p>3.0.10</td>
+            </tr>
+            <tr>
+              <td><p> prepStmtCacheSqlLimit</td>
+              <td><p> 如果允许预处理语句缓冲功能，驱动程序将执行解析缓冲处理的最大SQL是什么？</td>
+              <td><p>No</td>
+              <td><p>256</td>
+              <td><p>3.0.10</td>
+            </tr>
+            <tr>
+              <td><p> maintainTimeStats</td>
+              <td><p> 驱动程序是否应维持各种内部定时器，以允许空闲时间计算，以及与服务器的连接失败时允许提供更详细的错误消息？ 
+                  将该属性设置为“假”，对于每次查询，至少能减少两次对System.getCurrentTimeMillis()的调用。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p> blobSendChunkSize</td>
+              <td><p> 组块，当通过ServerPreparedStatements发送BLOB/CLOB时使用。</td>
+              <td><p>No</td>
+              <td><p>1048576</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p> cacheCallableStmts</td>
+              <td><p> 驱动程序是否应对CallableStatements的解析过程执行缓冲处理。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> cachePrepStmts</td>
+              <td><p> 驱动程序是否应对客户端预处理语句的PreparedStatements的解析过程执行缓冲处理，是否应检查服务器端预处理语句的适用性以及服务器端预处理语句本身？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.10</td>
+            </tr>
+            <tr>
+              <td><p> cacheResultSetMetadata</td>
+              <td><p> 驱动程序是否应对用于Statements和PreparedStatements的ResultSetMetaData执行缓冲处理？ 
+                  要求 JDK-1.4+，真／假，默认为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.1</td>
+            </tr>
+            <tr>
+              <td><p> cacheServerConfiguration</td>
+              <td><p>驱动程序是否应根据每条URL对“HOW 
+                  VARIABLES”和“SHOW COLLATION”的结果执行缓冲处理？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td><p> dontTrackOpenResources</td>
+              <td><p> JDBC规范要求驱动程序自动跟踪和关闭资源，但是，如果你的应用程序不能明确调用作用在语句或结果集上的close()，可能会导致内存泄漏。将该属性设置为“真”，可放宽该限制，对于某些应用程序，会提供更高的内存效率。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p> dynamicCalendars</td>
+              <td><p> 需要时，驱动程序是否应检索默认日历，或根据连接／会话对其进行缓冲处理？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td><p> elideSetAutoCommits</td>
+              <td><p>如果使用MySQL-4.1或更高版本，当服务器的状态与Connection.setAutoCommit(boolean)请求的状态不匹配时，驱动程序是否仅应发出“set 
+                  autocommit=n”查询？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> holdResultsOpenOverStatementClose</td>
+              <td><p> 驱动程序是否应按照JDBC规范的要求关闭Statement.close()上的结果集？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p> locatorFetchBufferSize</td>
+              <td><p> 如果将“emulateLocators”配置为“真”，当获取关于getBinaryInputStream的BLOB数据时，缓冲区的大小应是多少？</td>
+              <td><p>No</td>
+              <td><p>1048576</td>
+              <td><p>3.2.1</td>
+            </tr>
+            <tr>
+              <td><p> useFastIntParsing</td>
+              <td><p> 是否使用内部“String-&gt;Integer”转换子程序来避免创建过多对象？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.4</td>
+            </tr>
+            <tr>
+              <td><p> useLocalSessionState</td>
+              <td><p> 驱动程序是否应引用autocommit的内部值，以及由Connection.setAutoCommit()和Connection.setTransactionIsolation()设置的事务隔离，而不是查询数据库？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p>useNewIO</td>
+              <td><p>驱动程序是否应将java.nio.* 
+                  interfaces用于网络通信（真／假），默认为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> useReadAheadInput</td>
+              <td><p>从服务器读取数据时，是否使用较新的、优化的非成组缓冲输入流？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td colspan="5"><p><em> Debuging/Profiling（调试/仿形）</em></td>
+            </tr>
+            <tr>
+              <td><p>logger</td>
+              <td><p> 实现了com.mysql.jdbc.log.Log的类的名称，com.mysql.jdbc.log.Log用于记录消息（默认为“com.mysql.jdbc.log.StandardLogger”，它会将日志记录到STDERR）。</td>
+              <td><p>No</td>
+              <td><p> com.mysql.jdbc.log.StandardLogger</td>
+              <td><p>3.1.1</td>
+            </tr>
+            <tr>
+              <td><p>profileSQL</td>
+              <td><p> 跟踪查询以及它们对已配制记录器的执行/获取次数（真／假），默认为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> reportMetricsIntervalMillis</td>
+              <td><p> 如果允许“gatherPerfMetrics”，记录它们的频率是多少（单位毫秒）？</td>
+              <td><p>No</td>
+              <td><p>30000</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> maxQuerySizeToLog</td>
+              <td><p>调试或仿形时，控制将记录的查询的最大长度／大小。</td>
+              <td><p>No</td>
+              <td><p>2048</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> packetDebugBufferSize</td>
+              <td><p> 当“enablePacketDebug”为“真”时，需要保留的最大信息包数目。</td>
+              <td><p>No</td>
+              <td><p>20</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> slowQueryThresholdMillis</td>
+              <td><p> 如果允许“logSlowQueries”，在将查询记录为“慢”之前的查询时间是多少（毫秒）？</td>
+              <td><p>No</td>
+              <td><p>2000</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> useUsageAdvisor</td>
+              <td><p>驱动程序是否应发出“使用情况”警告，就DBC和MySQL 
+                  Connector/J的恰当和高效使用给出建议（真／假，默认为“假”）？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.1</td>
+            </tr>
+            <tr>
+              <td><p> autoGenerateTestcaseScript</td>
+              <td><p> 驱动程序是否应将正在执行的SQL（包括服务器端预处理语句）转储到STDERR？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p> dumpQueriesOnException</td>
+              <td><p> 驱动程序是否应将发送至服务器的查询内容转储到SQLExceptions中？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> enablePacketDebug</td>
+              <td><p> 允许时，将保留“packetDebugBufferSize”信息包的环形缓冲区，并当在驱动程序代码的关键区域抛出异常时进行转储。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> explainSlowQueries</td>
+              <td><p> 如果允许了“logSlowQueries”，驱动程序是否应在服务器上自动发出“EXPLAIN”，并以WARN级别将结果发送给配置好的日志？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> logSlowQueries</td>
+              <td><p> 是否要记录时间长于“slowQueryThresholdMillis”的查询？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p> traceProtocol</td>
+              <td><p>是否应记录跟踪级网络协议？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td colspan="5"><p><em> Miscellaneous（其他）</em></td>
+            </tr>
+            <tr>
+              <td><p>useUnicode</td>
+              <td><p>处理字符串时，驱动程序是否应使用Unicode字符编码？ 
+                  仅应在驱动程序无法确定字符集映射，或你正在强制驱动程序使用MySQL不是固有支持的字符集时（如UTF-8）才应使用。真／假，默认为“真”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>1.1g</td>
+            </tr>
+            <tr>
+              <td><p> characterEncoding</td>
+              <td><p> 如果“useUnicode”被设置为“真”，处理字符串时，驱动程序应使用什么字符编码？ 
+                  默认为“autodetect”。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>1.1g</td>
+            </tr>
+            <tr>
+              <td><p> characterSetResults</td>
+              <td><p>字符集，用于通知服务器以何种字符集返回结果。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.0.13</td>
+            </tr>
+            <tr>
+              <td><p> connectionCollation</td>
+              <td><p>如果设置了它，将通知服务器通过“set 
+                  collation_connection”使用该校对。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.0.13</td>
+            </tr>
+            <tr>
+              <td><p> sessionVariables</td>
+              <td><p> 以逗号隔开的“名称／值”对列表，当驱动程序建立了连接后，以“SET SESSION 
+                  ...”的方式将其发送给服务器。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.1.8</td>
+            </tr>
+            <tr>
+              <td><p> allowNanAndInf</td>
+              <td><p> 驱动程序是否应在PreparedStatement.setDouble()中允许NaN或+/- 
+                  INF值？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td><p> autoDeserialize</td>
+              <td><p>驱动程序是否应自动检测并串并转换保存在BLOB字段中的对象？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.5</td>
+            </tr>
+            <tr>
+              <td><p> capitalizeTypeNames</td>
+              <td><p>是否将DatabaseMetaData中的类型名转换为大写？ 
+                  通常仅在使用WebObjects时有用，真／假。默认为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>2.0.7</td>
+            </tr>
+            <tr>
+              <td><p> clobberStreamingResults</td>
+              <td><p> 这会使“流式”结果集被自动关闭，如果在所有数据尚未从服务器中读取完之前，执行了另一查询，正在从服务器流出的任何未完成数据均将丢失。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.9</td>
+            </tr>
+            <tr>
+              <td><p> continueBatchOnError</td>
+              <td><p>如果一条语句失败，驱动程序是否应继续处理批命令？ 
+                  JDBC规范允许任何一种方式（默认为“真”）。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.3</td>
+            </tr>
+            <tr>
+              <td><p> createDatabaseIfNotExist</td>
+              <td><p> 如果不存在，创建URL中给定的数据库。假定用户具有创建数据库的权限。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p> emptyStringsConvertToZero</td>
+              <td><p>驱动程序是否应允许从空字符串字段到数值“0”的转换？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.8</td>
+            </tr>
+            <tr>
+              <td><p> emulateLocators</td>
+              <td><p>N/A</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> emulateUnsupportedPstmts</td>
+              <td><p> 驱动程序是否应检测不被服务器支持的预处理语句，并用客户端模拟版替换它们？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p> ignoreNonTxTables</td>
+              <td><p>是否忽略关于回退的非事务表？ 默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.9</td>
+            </tr>
+            <tr>
+              <td><p> jdbcCompliantTruncation</td>
+              <td><p>连接到支持告警的服务器时（MySQL 
+                  4.1.0和更高版本），当按照JDBC的要求截短数据时，驱动程序是否应抛出java.sql.DataTruncation异常？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.2</td>
+            </tr>
+            <tr>
+              <td><p>maxRows</td>
+              <td><p>返回的最大行数（0，默认值表示返回所有行）。</td>
+              <td><p>No</td>
+              <td><p>-1</td>
+              <td><p>all versions</td>
+            </tr>
+            <tr>
+              <td><p> noDatetimeStringSync</td>
+              <td><p>不保证ResultSet.getDatetimeType().toString().equals(ResultSet.getString()。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p> nullCatalogMeansCurrent</td>
+              <td><p>当DatabaseMetadataMethods请求“目录”参数时，值“Null”是否意味着使用当前目录？ 
+                  它不兼容JDBC，但符合驱动程序早期版本的传统行为。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.8</td>
+            </tr>
+            <tr>
+              <td><p> nullNamePatternMatchesAll</td>
+              <td><p> 接受*pattern参数的DatabaseMetaData方法是否应将null按对待“％”的相同方式处理（不兼容JDBC，但驱动程序的早期版本能接受与规范的这类偏离）。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.8</td>
+            </tr>
+            <tr>
+              <td><p>pedantic</td>
+              <td><p>严格遵守JDBC规范。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.0</td>
+            </tr>
+            <tr>
+              <td><p> relaxAutoCommit</td>
+              <td><p> 如果驱动程序所连接的MySQL服务器的版本不支持事务，仍允许调用commit()、rollback()和setAutoCommit()？真／假，默认为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>2.0.13</td>
+            </tr>
+            <tr>
+              <td><p> retainStatementAfterResultSetClose</td>
+              <td><p>调用ResultSet.close()后，驱动程序是否应将语句引用保存在结果集中？ 
+                  在JDBC-4.0后，与JDBC不兼容。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.11</td>
+            </tr>
+            <tr>
+              <td><p> rollbackOnPooledClose</td>
+              <td><p> 当连接池中的逻辑连接关闭时，驱动程序是否应发出rollback()？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.15</td>
+            </tr>
+            <tr>
+              <td><p>runningCTS13</td>
+              <td><p>允许在Sun与JDBC兼容的testsuite 
+                  1.3版中处理缺陷。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.7</td>
+            </tr>
+            <tr>
+              <td><p> serverTimezone</td>
+              <td><p> 覆盖时区的检测/映射。当服务器的时区为映射到Java时区时使用。</td>
+              <td><p>No</td>
+              <td><p>&nbsp;</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p> strictFloatingPoint</td>
+              <td><p>仅在兼容性测试的早期版本中使用。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.0</td>
+            </tr>
+            <tr>
+              <td><p> strictUpdates</td>
+              <td><p> 驱动程序是否应对可更新结果集进行严格检查（选择所有的主键）？真／假，默认为“真”。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.4</td>
+            </tr>
+            <tr>
+              <td><p> tinyInt1isBit</td>
+              <td><p> 驱动程序是否应将数据类型TINYINT(1)当作BIT类型对待？创建表时，服务器会执行BIT -&gt; 
+                  TINYINT(1)操作。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.16</td>
+            </tr>
+            <tr>
+              <td><p> transformedBitIsBoolean</td>
+              <td><p> 如果驱动程序将TINYINT(1)转换为不同的类型，为了与MySQL-5.0兼容，驱动程序是否应使用BOOLEAN取代BIT？这是因为MySQL-5.0具有BIT类型。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p>ultraDevHack</td>
+              <td><p>由于UltraDev已损坏，并为所有语句发出了prepareCall()，需要时，是否要为prepareCall()创建PreparedStatements? </p>
+                <p>真／假，默认值为“假”。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>2.0.3</td>
+            </tr>
+            <tr>
+              <td><p> useHostsInPrivileges</td>
+              <td><p> 在DatabaseMetaData.getColumn/TablePrivileges()中为用户添加“@hostname”。真／假，默认为“真”。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p> useOldUTF8Behavior</td>
+              <td><p>与4.0和更早版本的服务器进行通信时，使用UTF-8。</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.1.6</td>
+            </tr>
+            <tr>
+              <td><p> useOnlyServerErrorMessages</td>
+              <td><p> 对服务器返回的错误消息，不事先设定“标准的”SQLState错误消息。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.15</td>
+            </tr>
+            <tr>
+              <td><p> useServerPrepStmts</td>
+              <td><p>如果服务器支持，是否使用服务器端预处理语句？ 默认值为“真”。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.0</td>
+            </tr>
+            <tr>
+              <td><p> useSqlStateCodes</td>
+              <td><p> 使用SQL标准状态码取代“传统的”X/Open/SQL状态码，真／假，默认为“真”。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.3</td>
+            </tr>
+            <tr>
+              <td><p> useStreamLengthsInPrepStmts</td>
+              <td><p>是否采用PreparedStatement/ResultSet.setXXXStream()方法调用中的流长度参数？真／假，默认为“真”。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p>useTimezone</td>
+              <td><p> 是否在客户端和服务器时区间转换时间／日期类型（真／假，默认为“假”）？</td>
+              <td><p>No</td>
+              <td><p>false</td>
+              <td><p>3.0.2</td>
+            </tr>
+            <tr>
+              <td><p> useUnbufferedInput</td>
+              <td><p>不使用BufferedInputStream来从服务器读取数据。</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.0.11</td>
+            </tr>
+            <tr>
+              <td><p> yearIsDateType</td>
+              <td><p>JDBC驱动程序是否应将MySQL类型“YEAR”当作java.sql.Date或SHORT对待？</td>
+              <td><p>No</td>
+              <td><p>true</td>
+              <td><p>3.1.9</td>
+            </tr>
+            <tr>
+              <td><p> zeroDateTimeBehavior</td>
+              <td><p>当驱动程序遇到全由0组成的DATETIME值时，应出现什么？MySQL使用它来表示无效日期。有效值是“exception”、“round”和“convertToNull”。</td>
+              <td><p>No</td>
+              <td><p>exception</td>
+              <td><p>3.1.4</td>
+            </tr>
+          </table>
+          <p>通过“socketFactory”属性，使用NamedPipeSocketFactory，在Windows 
+            NT/2000/XP平台上，通过命名管道，Connector/J也支持对MySQL的访问。如果不使用namedPipePath属性，将使用<a  href="cj-configuration-properties.html">\\.\pipe\MySQL</a>的默认值。如果使用NamedPipeSocketFactory，将忽略JDBC 
+            url中的主机名和端口号。</p>
+          <p>在URL中添加下述属性可启用NamedPipeSocketFactory：</p>
+          <p>&nbsp;</p>
+          <p>socketFactory=com.mysql.jdbc.NamedPipeSocketFactory </p>
+          <p>命名管道仅能当连接到位于相同物理机器上的MySQL时才能正常工作，该机器上应使用了JDBC驱动程序。在简单的性能测试中，命名管道的访问速度比标准的TCP/IP访问块30～50％。</p>
+          <p>使用com.mysql.jdbc.NamedPipeSocketFactory或com.mysql.jdbc.StandardSocketFactory中的示例代码，可创建你自己的套接字代理。
+        
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

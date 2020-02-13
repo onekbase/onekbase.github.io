@@ -1,0 +1,249 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>Qt/Embedded移植问题总结大全</h1>
+<p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-05-24</strong></p>
+<blockquote> 
+  <p>在进行Qt/Embedded移植过程中，遇到一些问题，现在整理一下子，愿和大家一起分享。</p>
+  <h2>1.Qte-2.3.10的移植问题</h2>
+  <h3>1）Qte-2.3.10源码的语法问题</h3>
+  <p>源码在编译过程中，有两处语法错误：</p>
+  <p>（1）切换到目录下：cd $QTEDIR/include，利用gvim qvaluestack.h打开该文件，将第57行的代码做以修改，</p>
+  <p>remove( this-&gt;fromLast() );改为this-&gt;remove(  this-&gt;fromLast() );</p>
+  <p>（2）切换到目录下：cd $QTEDIR/include，利用gvim qwindowsystem_qws.h打开该文件，在class类声明中，添加</p>
+  <p>class QWSInputMethod;</p>
+  <p>class QWSGestureMethod;</p>
+  <p>即可。</p>
+  <p>其实，所谓的语法错误，可能是由于编译器的版本太高导致的。</p>
+  <h3>2）Qte-2.3.10编译一直出错问题</h3>
+  <p>在configuer完毕后，每次make的时候，均会出错，真是让人郁闷，后来才发现是也是源码中的错误：</p>
+  <p>（1）gvim  $TMAKEDIR/lib/qws/linux-arm-g++/tmake.conf，在前边<a href="qteyz/qteyzx.html">移植</a>中已经介绍了。</p>
+  <p>将&nbsp;  TMAKE_CC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  TMAKE_CXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = arm-linux-g++<br>
+&nbsp;&nbsp;&nbsp;&nbsp; TMAKE_LINK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp; TMAKE_LINK_SHLIB&nbsp; = arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp; TMAKE_AR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  = arm-linux-ar cqs<br>
+&nbsp; 改为<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  TMAKE_CC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  TMAKE_CXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-g++<br>
+&nbsp;&nbsp;&nbsp;&nbsp; TMAKE_LINK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-g++<br>
+&nbsp;&nbsp;&nbsp;&nbsp; TMAKE_LINK_SHLIB&nbsp; = arm-linux-g++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  TMAKE_AR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = arm-linux-ar  cqs</p>
+  <p>（2）gvim $QTEDIR/configs/linux-arm-g++-shared</p>
+  <p> 将&nbsp;  SYSCONF_CXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = arm-linux-g++<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  SYSCONF_CC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp; SYSCONF_LINK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  = arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp; SYSCONF_LINK_SHLIB&nbsp; = arm-linux-gcc<br>
+&nbsp;&nbsp;&nbsp;&nbsp;  SYSCONF_AR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = arm-linux-ar  cqs<br>
+ 改为<br /> 
+ &nbsp;  SYSCONF_CXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-g++<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;  SYSCONF_CC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-gcc<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; SYSCONF_LINK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  = arm-linux-g++<br>
+  &nbsp;&nbsp;&nbsp;&nbsp; SYSCONF_LINK_SHLIB&nbsp; = arm-linux-g++<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;  SYSCONF_AR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =  arm-linux-ar cqs</p>
+<p>(3) 其他3个文件修改的地方同$QTEDIR/configs/linux-arm-g++-shared相同，请参照前面自己修改：</p>
+  <p>givm  $QTEDIR/configs/linux-arm-g++-shared-debug<br>
+  givm $QTEDIR/configs/linux-arm-g++-static<br>
+  givm $QTEDIR/configs/linux-arm-g++-static-debug</p>
+  <h2>2.qte-4.7.3编译及其问题总结</h2>
+  <p>笔者觉着qte-2.3.10过于老，目前qt已经升级到4.7.3版本了，而且新添加了好些很实用的功能。上述版本还停留在Qt3.0以前的老版本中。于是就又编译了qte-4.7.3。.</p>
+  <h3>1)qte-4.7.3编译过程</h3>
+  <p>（1）下载qte-4.7.3源码，和tslib（支持触摸屏类库）；</p>
+  <p>（2）解压qte-4.7.3到任意目录，并且重新命名；</p>
+  <p>（3）确保linux系统中已经安装了交叉编译器arm-linux-gcc-4.3.2或者更高版本；</p>
+  <p>（4）安装tslib1.4 </p>
+  <p> 下载tslib1.4，解压 ；<br />
+    进入解压的目录运行&nbsp;执行./autogen.sh ；<br />
+    执行./configure  --prefix=/opt/tslib/ --host=arm-linux ac_cv_func_malloc_0_nonnull=yes&nbsp;，经过一段时间的编译 ；<br />
+    执行make  install ；<br />
+    修改/opt/tslib/etc/ts.conf，把第二行的#号去掉(这样做的主要目的是为了在移植到板子上的时候，可以制定输入模块)； 在/etc/profile中加入 
+    export PATH=/opt/tslib:$PATH 
+  。</p>
+  <p>（5）编译qte4.7.3-arm <br />
+    <br />
+    开始进行配置选项 ；<br />
+    ./configure -prifix /home/rock/pxa270Qt/qte-4.7.3 -embedded arm -release  -opensource -fast -no-accessibility -no-scripttools -no-mmx -no-multimedia  -no-svg -no-3dnow -no-sse -no-sse2 -silent -qt-libpng -qt-libjpeg -no-libmng  -no-libtiff -no-multimedia -make libs -nomake tools -nomake examples -nomake  docs -nomake demo -no-nis -no-cups -no-iconv -no-dbus -no-openssl -xplatform  qws/linux-arm-g++ -little-endian -qt-freetype -depths 8,16,32 -qt-gfx-linuxfb  -no-gfx-transformed -no-gfx-multiscreen -no-gfx-vnc -no-gfx-qvfb -qt-kbd-linuxinput  -no-glib -qt-mouse-tslib -I /home/rock/pxa270Qt/qte-4.7.3/tslib/include -L /home/rock/pxa270Qt/qte-4.7.3/tslib/lib  <br />
+    开始进行交叉编译make&nbsp;此过程要经历很长的一段时间 ；<br />
+    在交叉编译成功后运行make  install安装，这里会默认安装到
+    /usr/local/Trolltech/QtEmbedded-4.7.0-arm ；<br />
+    这个时候qte的编译就成功了。</p>
+  <p>其中配置选项可以通过 ./configure --help来获取具体的配置选项含义，最后选择自己需要的选项。其中选项-qt-mouse-tslib后边跟着tslib的相关路径。</p>
+  <p>安装的时候，也可以选择安装在那里，例如上述配置中就是安装在/home/rock/pxa270Qt/qte-4.7.3目录中；而且要注意源码目录和安装目录必须分开。</p>
+  <h3>2）qte-4.7.3移植问题总结</h3>
+  <p>编译过程中如果注意上述的细节问题，不会出错，但是环境搭建好了之后，编译完毕的Qt程序，比如hello：file hello，发现其是&quot;for kernel 2.6.32&quot;的，也就是说要求arm平台的内核是2.6.32或者更高的。</p>
+  <p>这造成将hello移植到开发板上之后，发现：./hello -qws之后，提示：cannot find the file or directory。</p>
+  <p>（1）第一次采用的是交叉编译器arm-linux-gcc-4.4.3来编译qte-4.7.3，结果成功后，编译出来的程序是&quot;for kernel 2.6.32&quot;。</p>
+  <p>（2）第二次采用的是交叉编译器arm-linux-gcc-4.3.2来编译qte-4.7.3，结果成功后，编译出来的程序是&quot;for kernel 2.6.14&quot;。</p>
+  <p>通过上述两个环境所编译出来的Qt程序，在移植到开发板上时，都无法运行，即系统不识别该文件。</p>
+  <p>这种问题的解决方法需要通过升级开发板的内核。<br>
+    <br>
+</p>
+</blockquote>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

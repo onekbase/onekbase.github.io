@@ -1,0 +1,217 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> A.5.8.&nbsp;与浮点比较有关的问题</h1>
+
+          
+        
+      
+    
+  
+  
+    
+      
+         注意，下述部分主要与DOUBLE和FLOAT列相关，原因在于浮点数的不准确本质。MySQL使用64位十进制数值的精度执行DECIMAL操作，当处理DECIMAL列时，应能解决大多数常见的不准确问题。
+          <p> 浮点数有时会导致混淆，这是因为它们无法以准确值保存在计算机体系结构中。你在屏幕上所看到的值通常不是数值的准确值。对于FLOAT和DOUBLE列类型，情况就是如此。DECIMAL列能保存具有准确精度的值，这是因为它们是由字符串表示的。</p>
+          <p>在下面的示例中，介绍了使用DOUBLE时的问题：</p>
+          <pre>mysql&gt; CREATE TABLE t1 (i INT, d1 DOUBLE, d2 DOUBLE);
+mysql&gt; INSERT INTO t1 VALUES (1, 101.40, 21.40), (1, -80.00, 0.00),
+&nbsp;&nbsp;&nbsp; -&gt; (2, 0.00, 0.00), (2, -13.20, 0.00), (2, 59.60, 46.40),
+&nbsp;&nbsp;&nbsp; -&gt; (2, 30.40, 30.40), (3, 37.00, 7.40), (3, -29.60, 0.00),
+&nbsp;&nbsp;&nbsp; -&gt; (4, 60.00, 15.40), (4, -10.60, 0.00), (4, -34.00, 0.00),
+&nbsp;&nbsp;&nbsp; -&gt; (5, 33.00, 0.00), (5, -25.80, 0.00), (5, 0.00, 7.20),
+&nbsp;&nbsp;&nbsp; -&gt; (6, 0.00, 0.00), (6, -51.40, 0.00);
+&nbsp;
+mysql&gt; SELECT i, SUM(d1) AS a, SUM(d2) AS b
+&nbsp;&nbsp;&nbsp; -&gt; FROM t1 GROUP BY i HAVING a &lt;&gt; b;
+&nbsp;
++------+-------+------+
+| i&nbsp;&nbsp;&nbsp; | a&nbsp;&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; |
++------+-------+------+
+| &nbsp;&nbsp;&nbsp;1 |&nbsp; 21.4 | 21.4 |
+|&nbsp;&nbsp;&nbsp; 2 |&nbsp; 76.8 | 76.8 |
+|&nbsp;&nbsp;&nbsp; 3 |&nbsp;&nbsp; 7.4 |&nbsp; 7.4 |
+|&nbsp;&nbsp;&nbsp; 4 |&nbsp; 15.4 | 15.4 |
+|&nbsp;&nbsp;&nbsp; 5 |&nbsp;&nbsp; 7.2 |&nbsp; 7.2 |
+|&nbsp;&nbsp;&nbsp; 6 | -51.4 |&nbsp;&nbsp;&nbsp; 0 |
++------+-------+------+</pre>
+          <p>结果是正确的。尽管前5个记录看上去不应能进行比较测试（a和b的值看上去没有什么不同），但它们能进行比较，这是因为显示的数值间的差异在十分位左右，具体情况取决于计算机的体系结构。</p>
+          <p>如果列d1和d2定义为DECIMAL而不是DOUBLE，SELECT查询的结果仅包含1行，即上面显示的最后1行。</p>
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

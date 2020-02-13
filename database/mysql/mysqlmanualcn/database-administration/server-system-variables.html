@@ -1,0 +1,1551 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.3.3.&nbsp;服务器系统变量</h1>
+
+          
+        
+      
+      
+        <dl>
+          <dt><a href="dynamic-system-variables.html"> 5.3.3.1. 动态系统变量</a></dt>
+        </dl>
+      
+      
+      <p> 服务器将维护许多表示其配置的系统变量。所有变量均有默认值。可以在命令行中或选项文件设置选项在服务器启动时对它们进行设置。大多数可以在运行时使用SET语句来设置。</p>
+      <p>mysqld服务器维护两种变量。全局变量影响服务器的全局操作。会话变量影响具体客户端连接相关操作。</p>
+      <p>服务器启动时，将所有全局变量初始化为默认值。可以在选项文件或命令行中指定的选项来更改这些默认值。服务器启动后，通过连接服务器并执行SET 
+        GLOBAL <i>var_name</i>语句可以更改动态全局变量。要想更改全局变量，必须具有SUPER权限。</p>
+      <p>服务器还为每个客户端连接维护会话变量。连接时使用相应全局变量的当前值对客户端会话变量进行初始化。客户可以通过SET 
+        SESSION <i>var_name</i>语句来更改动态会话变量。设置会话变量不需要特殊权限，但客户可以只更改自己的会话变量，而不更改其它客户的会话变量。</p>
+      <p> 任何访问全局变量的客户端都可以看见对全局变量的更改。但是，它只影响在更改后连接的从该全局变量初始化相应会话变量的客户端。它不会影响已经连接上的客户端的会话变量(甚至是执行SET 
+        GLOBAL语句的客户端)。</p>
+      <p>当使用启动选项设置变量时，变量值可以使用后缀K、M或G分别表示千字节、兆字节或gigabytes。例如，下面的命令启动服务器时的键值缓冲区大小为16 
+        megabytes：</p>
+      <pre>mysqld --key_buffer_size=16M</pre>
+      <p>后缀的大小写美关系；16M和16m是同样的。</p>
+      <p>运行时，使用SET语句来设置系统变量。此时，不能使用后缀，但值可以采取下列表达式：</p>
+      <pre>mysql&gt; SET sort_buffer_size = 10 * 1024 * 1024;</pre>
+      <p>要想显式指定是否设置全局或会话变量，使用GLOBAL或SESSION选项：</p>
+      <pre>mysql&gt; SET GLOBAL sort_buffer_size = 10 * 1024 * 1024;
+mysql&gt; SET SESSION sort_buffer_size = 10 * 1024 * 1024;</pre>
+      <p>两个选项均没有，则语句设置会话变量。</p>
+      <p> <a href="dynamic-system-variables.html" title="5.3.3.1. Dynamic System Variables"> 5.3.3.1节，“动态系统变量”</a>中列出了可以在运行时设置的变量。</p>
+      <p>如果你想用SET语句限制系统变量可设的最大值，可以在服务器启动时通过--maximum-<i>var_name</i>形式的选项来指定。例如，要想防止query_cache_size的值运行时超过32MB，使用选项--maximum-query_cache_size=32M。</p>
+      <p>你可以通过SHOW VARIABLES语句查看系统变量及其值。详细信息参见<a href="dynamic-system-variables.html" title="9.4. System Variables">9.4节，“系统变量”</a>。</p>
+      <pre >mysql&gt; SHOW VARIABLES;
++---------------------------------+-------------------------------------------+
+| Variable_name                   | Value                                     |
++---------------------------------+-------------------------------------------+
+| auto_increment_increment        | 1                                         |
+| auto_increment_offset           | 1                                         |
+| automatic_sp_privileges         | ON                                        |
+| back_log                        | 50                                        |
+| basedir                         | /home/jon/bin/mysql/                      |
+| binlog_cache_size               | 32768                                     |
+| bulk_insert_buffer_size         | 8388608                                   |
+| character_set_client            | latin1                                    |
+| character_set_connection        | latin1                                    |
+| character_set_database          | latin1                                    |
+| character_set_results           | latin1                                    |
+| character_set_server            | latin1                                    |
+| character_set_system            | utf8                                      |
+| character_sets_dir              | /home/jon/bin/mysql/share/mysql/charsets/ |
+| collation_connection            | latin1_swedish_ci                         |
+| collation_database              | latin1_swedish_ci                         |
+| collation_server                | latin1_swedish_ci                         |
+| completion_type                 | 0                                         |
+| concurrent_insert               | 1                                         |
+| connect_timeout                 | 5                                         |
+| datadir                         | /home/jon/bin/mysql/var/                  |
+| date_format                     | %Y-%m-%d                                  |
+| datetime_format                 | %Y-%m-%d %H:%i:%s                         |
+| default_week_format             | 0                                         |
+| delay_key_write                 | ON                                        |
+| delayed_insert_limit            | 100                                       |
+| delayed_insert_timeout          | 300                                       |
+| delayed_queue_size              | 1000                                      |
+| div_precision_increment         | 4                                         |
+| engine_condition_pushdown       | OFF                                       |
+| expire_logs_days                | 0                                         |
+| flush                           | OFF                                       |
+| flush_time                      | 0                                         |
+| ft_boolean_syntax               | + -&gt;&lt;()~*:""&amp;|                            |
+| ft_max_word_len                 | 84                                        |
+| ft_min_word_len                 | 4                                         |
+| ft_query_expansion_limit        | 20                                        |
+| ft_stopword_file                | (built-in)                                |
+| group_concat_max_len            | 1024                                      |
+| have_archive                    | YES                                       |
+| have_bdb                        | NO                                        |
+| have_blackhole_engine           | YES                                       |
+| have_compress                   | YES                                       |
+| have_crypt                      | YES                                       |
+| have_csv                        | YES                                       |
+| have_example_engine             | NO                                        |
+| have_federated_engine           | NO                                        |
+| have_geometry                   | YES                                       |
+| have_innodb                     | YES                                       |
+| have_isam                       | NO                                        |
+| have_ndbcluster                 | DISABLED                                  |
+| have_openssl                    | NO                                        |
+| have_partition_engine           | YES                                       |
+| have_query_cache                | YES                                       |
+| have_raid                       | NO                                        |
+| have_rtree_keys                 | YES                                       |
+| have_symlink                    | YES                                       |
+| init_connect                    |                                           |
+| init_file                       |                                           |
+| init_slave                      |                                           |
+| innodb_additional_mem_pool_size | 1048576                                   |
+| innodb_autoextend_increment     | 8                                         |
+| innodb_buffer_pool_awe_mem_mb   | 0                                         |
+| innodb_buffer_pool_size         | 8388608                                   |
+| innodb_checksums                | ON                                        |
+| innodb_commit_concurrency       | 0                                         |
+| innodb_concurrency_tickets      | 500                                       |
+| innodb_data_file_path           | ibdata1:10M:autoextend                    |
+| innodb_data_home_dir            |                                           |
+| innodb_doublewrite              | ON                                        |
+| innodb_fast_shutdown            | 1                                         |
+| innodb_file_io_threads          | 4                                         |
+| innodb_file_per_table           | OFF                                       |
+| innodb_flush_log_at_trx_commit  | 1                                         |
+| innodb_flush_method             |                                           |
+| innodb_force_recovery           | 0                                         |
+| innodb_lock_wait_timeout        | 50                                        |
+| innodb_locks_unsafe_for_binlog  | OFF                                       |
+| innodb_log_arch_dir             |                                           |
+| innodb_log_archive              | OFF                                       |
+| innodb_log_buffer_size          | 1048576                                   |
+| innodb_log_file_size            | 5242880                                   |
+| innodb_log_files_in_group       | 2                                         |
+| innodb_log_group_home_dir       | ./                                        |
+| innodb_max_dirty_pages_pct      | 90                                        |
+| innodb_max_purge_lag            | 0                                         |
+| innodb_mirrored_log_groups      | 1                                         |
+| innodb_open_files               | 300                                       |
+| innodb_support_xa               | ON                                        |
+| innodb_sync_spin_loops          | 20                                        |
+| innodb_table_locks              | ON                                        |
+| innodb_thread_concurrency       | 20                                        |
+| innodb_thread_sleep_delay       | 10000                                     |
+| interactive_timeout             | 28800                                     |
+| join_buffer_size                | 131072                                    |
+| key_buffer_size                 | 8388600                                   |
+| key_cache_age_threshold         | 300                                       |
+| key_cache_block_size            | 1024                                      |
+| key_cache_division_limit        | 100                                       |
+| language                        | /home/jon/bin/mysql/share/mysql/english/  |
+| large_files_support             | ON                                        |
+| large_page_size                 | 0                                         |
+| large_pages                     | OFF                                       |
+| license                         | GPL                                       |
+| local_infile                    | ON                                        |
+| locked_in_memory                | OFF                                       |
+| log                             | ON                                        |
+| log_bin                         | ON                                        |
+| log_bin_trust_routine_creators  | OFF                                       |
+| log_error                       | /home/jon/bin/mysql/var/master1.err       |
+| log_slave_updates               | OFF                                       |
+| log_slow_queries                | OFF                                       |
+| log_warnings                    | 1                                         |
+| long_query_time                 | 10                                        |
+| low_priority_updates            | OFF                                       |
+| lower_case_file_system          | OFF                                       |
+| lower_case_table_names          | 0                                         |
+| max_allowed_packet              | 1048576                                   |
+| max_binlog_cache_size           | 4294967295                                |
+| max_binlog_size                 | 1073741824                                |
+| max_connect_errors              | 10                                        |
+| max_connections                 | 100                                       |
+| max_delayed_threads             | 20                                        |
+| max_error_count                 | 64                                        |
+| max_heap_table_size             | 16777216                                  |
+| max_insert_delayed_threads      | 20                                        |
+| max_join_size                   | 4294967295                                |
+| max_length_for_sort_data        | 1024                                      |
+| max_relay_log_size              | 0                                         |
+| max_seeks_for_key               | 4294967295                                |
+| max_sort_length                 | 1024                                      |
+| max_tmp_tables                  | 32                                        |
+| max_user_connections            | 0                                         |
+| max_write_lock_count            | 4294967295                                |
+| multi_range_count               | 256                                       |
+| myisam_data_pointer_size        | 6                                         |
+| myisam_max_sort_file_size       | 2147483647                                |
+| myisam_recover_options          | OFF                                       |
+| myisam_repair_threads           | 1                                         |
+| myisam_sort_buffer_size         | 8388608                                   |
+| ndb_autoincrement_prefetch_sz   | 32                                        |
+| ndb_cache_check_time            | 0                                         |
+| ndb_force_send                  | ON                                        |
+| ndb_index_stat_cache_entries    | 32                                        |
+| ndb_index_stat_enable           | ON                                        |
+| ndb_index_stat_update_freq      | 20                                        |
+| ndb_use_exact_count             | ON                                        |
+| ndb_use_transactions            | ON                                        |
+| net_buffer_length               | 16384                                     |
+| net_read_timeout                | 30                                        |
+| net_retry_count                 | 10                                        |
+| net_write_timeout               | 60                                        |
+| new                             | OFF                                       |
+| old_alter_table                 | OFF                                       |
+| old_passwords                   | OFF                                       |
+| open_files_limit                | 1024                                      |
+| optimizer_prune_level           | 1                                         |
+| optimizer_search_depth          | 62                                        |
+| pid_file                        | /home/jon/bin/mysql/var/hostname.pid1     |
+| port                            | 3306                                      |
+| preload_buffer_size             | 32768                                     |
+| protocol_version                | 10                                        |
+| query_alloc_block_size          | 8192                                      |
+| query_cache_limit               | 1048576                                   |
+| query_cache_min_res_unit        | 4096                                      |
+| query_cache_size                | 0                                         |
+| query_cache_type                | ON                                        |
+| query_cache_wlock_invalidate    | OFF                                       |
+| query_prealloc_size             | 8192                                      |
+| range_alloc_block_size          | 2048                                      |
+| read_buffer_size                | 131072                                    |
+| read_only                       | OFF                                       |
+| read_rnd_buffer_size            | 262144                                    |
+| relay_log_purge                 | ON                                        |
+| relay_log_space_limit           | 0                                         |
+| rpl_recovery_rank               | 0                                         |
+| secure_auth                     | OFF                                       |
+| server_id                       | 1                                         |
+| skip_external_locking           | ON                                        |
+| skip_networking                 | OFF                                       |
+| skip_show_database              | OFF                                       |
+| slave_compressed_protocol       | OFF                                       |
+| slave_load_tmpdir               | /tmp/                                     |
+| slave_net_timeout               | 3600                                      |
+| slave_skip_errors               | OFF                                       |
+| slave_transaction_retries       | 10                                        |
+| slow_launch_time                | 2                                         |
+| socket                          | /tmp/mysql.sock                           |
+| sort_buffer_size                | 2097144                                   |
+| sql_mode                        |                                           |
+| sql_notes                       | ON                                        |
+| sql_warnings                    | ON                                        |
+| storage_engine                  | MyISAM                                    |
+| sync_binlog                     | 0                                         |
+| sync_frm                        | ON                                        |
+| sync_replication                | 0                                         |
+| sync_replication_slave_id       | 0                                         |
+| sync_replication_timeout        | 10                                        |
+| system_time_zone                | EST                                       |
+| table_cache                     | 64                                        |
+| table_lock_wait_timeout         | 50                                        |
+| table_type                      | MyISAM                                    |
+| thread_cache_size               | 0                                         |
+| thread_stack                    | 196608                                    |
+| time_format                     | %H:%i:%s                                  |
+| time_zone                       | SYSTEM                                    |
+| timed_mutexes                   | OFF                                       |
+| tmp_table_size                  | 33554432                                  |
+| tmpdir                          |                                           |
+| transaction_alloc_block_size    | 8192                                      |
+| transaction_prealloc_size       | 4096                                      |
+| tx_isolation                    | REPEATABLE-READ                           |
+| updatable_views_with_limit      | YES                                       |
+| version                         | 5.1.2-alpha-log                           |
+| version_comment                 | Source distribution                       |
+| version_compile_machine         | i686                                      |
+| version_compile_os              | suse-linux                                |
+| wait_timeout                    | 28800                                     |
++---------------------------------+-------------------------------------------+
+218 rows in set (0.03 sec)
+</pre>
+      
+      <p>此处描述了大多数系统变量。没有版本的变量在所有MySQL 5.1 
+        发布中适用。关于其使用历史信息，请参见<em>MySQL 
+        5.0参考指南</em>和<em>MySQL 4.1参考指南</em>。InnoDB系统变量列于 <a href="server-system-variables.html" title="15.2.4. InnoDB Startup Options"> 15.2.4节，“InnoDB启动选项”</a>。</p>
+      <p>若没有另行规定，缓冲区大小、长度和堆栈大小的单位均为字节。</p>
+      <p>关于这些变量的调节信息参见<a href="server-options.html" title="7.5.2. Tuning Server Parameters">7.5.2节，“调节服务器参数”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        auto_increment_increment</p>
+      <p> auto_increment_increment和auto_increment_offset用于主服务器－主服务器（master-to-master）复制，并可以用来控制AUTO_INCREMENT列的操作。两个变量均可以设置为全局或局部变量，并且假定每个值都可以为1到65,535之间的整数值。将其中一个变量设置为0会使该变量为1。如果试图将这些变量设置为大于65,535或小于0的值，则会将该值设置为65,535。如果向将auto_increment_increment或auto_increment_offset设置为非整数值，则会给出错误，并且变量的实际值在这种情况下保持不变。</p>
+      <p>这两个变量影响AUTO_INCREMENT列的方式：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+        auto_increment_increment控制列中的值的增量值。例如: </p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| Variable_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Value |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_increment | 1&nbsp;&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_offset&nbsp;&nbsp;&nbsp; | 1&nbsp;&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2 rows in set (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; CREATE TABLE autoinc1 (col INT NOT NULL AUTO_INCREMENT PRIMARY KEY);
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 0 rows affected (0.04 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SET @auto_increment_increment=10;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 0 rows affected (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| Variable_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Value |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_increment | 10&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_offset&nbsp;&nbsp;&nbsp; | 1&nbsp;&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2 rows in set (0.01 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; INSERT INTO autoinc1 VALUES (NULL), (NULL), (NULL), (NULL);
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 4 rows affected (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Records: 4&nbsp; Duplicates: 0&nbsp; Warnings: 0
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SELECT col FROM autoinc1;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| col |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; 1 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 11 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 21 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 31 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;4 rows in set (0.00 sec)</pre>
+      <p>(注明如何使用SHOW 
+        VARIABLES来获取这些变量的当前值）。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+        auto_increment_offset确定AUTO_INCREMENT列值的起点。假定在与前面的例子的相同的会话中执行下面的命令：</p>
+      <pre>o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SET @auto_increment_offset=5;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 0 rows affected (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| Variable_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Value |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_increment | 10&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| auto_increment_offset&nbsp;&nbsp;&nbsp; | 5&nbsp;&nbsp;&nbsp;&nbsp; |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+--------------------------+-------+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2 rows in set (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; CREATE TABLE autoinc2 (col INT NOT NULL AUTO_INCREMENT PRIMARY KEY);
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 0 rows affected (0.06 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; INSERT INTO autoinc2 VALUES (NULL), (NULL), (NULL), (NULL);
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Query OK, 4 rows affected (0.00 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Records: 4&nbsp; Duplicates: 0&nbsp; Warnings: 0
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;mysql&gt; SELECT col FROM autoinc2;
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;| col |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp;&nbsp; 5 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 15 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 25 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;|&nbsp; 35 |
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;+-----+
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;4 rows in set (0.02 sec)
+o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</pre>
+      <p>如果auto_increment_offset的值大于auto_increment_increment的值，则auto_increment_offset的值被忽略。</p>
+      <p>如果其中一个或两个变量被更改了，然后更改插入到包含AUTO_INCREMENT列的表中的新行，结果可能看上去有问题，由于计算AUTO_INCREMENT系列值时没有考虑列内已经存在的值，并且插入的下一个值是列内最小的值，大于AUTO_INCREMENT列内已有的最大值。换句话说，数值的计算方法为：</p>
+      <p> auto_increment_offset+ <i> N</i> * auto_increment_increment</p>
+      <p>其中<i>N</i>为系列内的正整数值[1,2,3,...]。例如：</p>
+      <pre >mysql&gt; SHOW VARIABLES LIKE &#39;auto_inc%&#39;;
++--------------------------+-------+
+| Variable_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Value |
++--------------------------+-------+
+| auto_increment_increment | 10&nbsp;&nbsp;&nbsp; |
+| auto_increment_offset&nbsp;&nbsp;&nbsp; | 5&nbsp;&nbsp;&nbsp;&nbsp; |
++--------------------------+-------+
+2 rows in set (0.00 sec)
+&nbsp;
+mysql&gt; SELECT col FROM autoinc1;
++-----+
+| col |
++-----+
+|&nbsp;&nbsp; 1 |
+|&nbsp; 11 |
+|&nbsp; 21 |
+|&nbsp; 31 |
++-----+
+4 rows in set (0.00 sec)
+&nbsp;
+mysql&gt; INSERT INTO autoinc1 VALUES (NULL), (NULL), (NULL), (NULL);
+Query OK, 4 rows affected (0.00 sec)
+Records: 4&nbsp; Duplicates: 0&nbsp; Warnings: 0
+&nbsp;
+mysql&gt; SELECT col FROM autoinc1;
++-----+
+| col |
++-----+
+|&nbsp;&nbsp; 1 |
+|&nbsp; 11 |
+|&nbsp; 21 |
+|&nbsp; 31 |
+|&nbsp; 35 |
+|&nbsp; 45 |
+|&nbsp; 55 |
+|&nbsp; 65 |
++-----+
+8 rows in set (0.00 sec)</pre>
+      <p> auto_increment_increment和auto_increment_offset所示的值可以生成系列5 
+        + <i> N</i> * 10,即，[5,15,25,35,45,...]。在INSERT前col
+        列内最大的值为31,AUTO_INCREMENT数列的下一个值为35,因此col中插入的值从该点开始，结果如SELECT查询所示。</p>
+      <p> 一定要记住不可能将这两个变量的结果限制到一个表中，因此不会替代其它数据库管理系统提供的序列；这些变量控制MySQL服务器上all表AUTO_INCREMENT列的所有行为。如果某个变量设为全局变量，则只有通过局部设置将全局值更改和覆盖后或mysqld重启后其作用方可改变；如果局部设置，则新值影响所有表的AUTO_INCREMENT列，在这个会话期间当前用户在这些表中插入了新行，除非在会话期间更改了这些值。</p>
+      <p> auto_increment_increment的
+        默认值为1。参见<a href="" title="6.12. Auto-Increment in Multi-Master Replication">6.12节，“多服务器复制中的Auto-Increment”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        auto_increment_offset</p>
+      <p>该变量的默认值为1。详见auto_increment_increment的描述。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        back_log</p>
+      <p>MySQL有的主要连接请求的数量。当主MySQL线程在短时间内得到许多连接请求时发挥作用。主线程需要花一些时间(尽管很少)来检查连接并启动一个新线程。back_log值说明MySQL临时停止响应新请求前在短时间内可以堆起多少请求。如果你需要在短时间内允许大量连接，可以增加该数值。</p>
+      <p>换句话说，该值为“进”TCP/IP连接帧听队列的大小。操作系统有该队列自己的限制值。本手册中Unix
+        listen()系统调用页应有更详细的信息。该变量最大值请查阅OS文档。企图将back_log设置为高于你的操作系统限值是徒劳无益的。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        basedir</p>
+      <p>MySQL安装基准目录。可以用--basedir选项设置该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_cache_size</p>
+      <p>为BDB表缓存索引和行分配的缓冲区的大小。如果你不使用BDB表，你应用--skip-bdb启动mysqld以便不浪费该缓存。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_home</p>
+      <p> BDB表基准目录。应与datadir变量的值相同。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_log_buffer_size</p>
+      <p>为BDB表缓存索引和行分配的缓冲区的大小。如果你不使用BDB表，你应将该值设置为0或用--skip-bdb启动mysqld以便不浪费该缓存。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_logdir</p>
+      <p> BDB存储引擎写它日志文件的目录。可以用--bdb-logdir选项设置该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_max_lock</p>
+      <p>在BDB表下可以激活的最大锁数(默认为10,000)。如果当你执行长事务或当mysqld必须检查许多行来计算查询时出现下面的错误，你应增加该值：</p>
+      <pre >bdb: Lock table is out of available locks
+Got error 12 from ...</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_shared_data</p>
+      <p>如果你正使用--bdb-shared-data应为ON。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bdb_tmpdir</p>
+      <p> --bdb-tmpdir选项的值。</p>
+      <p>&nbsp; </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        binlog_cache_size</p>
+      <p>在事务过程中容纳二进制日志SQL语句的缓存大小。二进制日志缓存是服务器支持事务存储引擎并且服务器启用了二进制日志(--log-bin选项)的前提下为每个客户端分配的内存。如果你经常使用大的，多语句事务，你可以增加该值以获得更有的性能。Binlog_cache_use和Binlog_cache_disk_use状态变量可以用来调整该变量的大小。参见<a href="binary-log.html" title="5.11.3. The Binary Log">5.11.3节，“二进制日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        bulk_insert_buffer_size</p>
+      <p> MyISAM
+        使用专用树状缓存来使INSERT 
+        ... SELECT、INSERT 
+        ... VALUES (...)、(...)、 
+        ...和LOAD 
+        DATA INFILE的大块插入更快。该变量用每线程的字节数限制缓存树的大小。将它设置为0禁用优化。注释：只有向非空表添加数据时才使用该缓存。
+        默认值是8MB。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_client</p>
+      <p>来自客户端的语句的字符集。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_connection</p>
+      <p>用于没有字符集导入符的文字和数字－字符串转换。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_database</p>
+      <p> 默认数据库使用的字符集。当默认数据库更改时，服务器则设置该变量。如果没有默认数据库，变量的值同character_set_server。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_results</p>
+      <p>用于向客户端返回查询结果的字符集。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_ 
+        server</p>
+      <p>服务器的默认字符集。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_set_system</p>
+      <p>服务器用来保存识别符的字符集。该值一定是utf8。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        character_sets_dir</p>
+      <p>字符集安装目录。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        collation_connection</p>
+      <p>连接字符集的校对规则。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        collation_database</p>
+      <p> 默认数据库使用的校对规则。当默认数据库改变时服务器则设置该变量。如果没有默认数据库，变量的值同collation_server。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        collation_server</p>
+      <p>服务器的默认校对规则。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        completion_type</p>
+      <p>事务结束类型：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        如果该值为0(默认)，COMMIT和ROLLBACK不受影响。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        如果该值为1，COMMIT和ROLLBACK分别等同于COMMIT 
+        AND CHAIN和ROLLBACK 
+        AND CHAIN。(新事务用刚刚结束的事务相同的间隔等级立即启动）。 </p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        如果该值为2，COMMIT和ROLLBACK分别等同于COMM它RELEASE和ROLLBACK 
+        RELEASE。(事务终止后，服务器断开）。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        concurrent_insert</p>
+      <p>如果为ON(默认值)，MySQL允许INSERT和SELECT语句在中间没有空数据块的MyISAM表中并行运行。你可以用--safe或--skip-new启动mysqld关闭该选项。</p>
+      <p>该变量为整数，有3个值：</p>
+      <table border="1" cellpadding="0" id="table4">
+        <tr>
+          <td width="44" style="width:33.35pt;padding:.75pt .75pt .75pt .75pt"><p>值</td>
+          <td width="866" style="width:649.85pt;padding:.75pt .75pt .75pt .75pt"><p>描述</td>
+        </tr>
+        <tr>
+          <td width="44" style="width:33.35pt;padding:.75pt .75pt .75pt .75pt"><p>0</td>
+          <td width="866" style="width:649.85pt;padding:.75pt .75pt .75pt .75pt"><p>关</td>
+        </tr>
+        <tr>
+          <td width="44" style="width:33.35pt;padding:.75pt .75pt .75pt .75pt"><p>1</td>
+          <td width="866" style="width:649.85pt;padding:.75pt .75pt .75pt .75pt"><p>(默认)在没有空数据块的MyISAM表中启用并行插入</td>
+        </tr>
+        <tr>
+          <td width="44" style="width:33.35pt;padding:.75pt .75pt .75pt .75pt"><p>2</td>
+          <td width="866" style="width:649.85pt;padding:.75pt .75pt .75pt .75pt"><p>为所有MyISAM表启用并行插入。如果表有空记录或正被另一线程使用，新行将插入到表的最后。如果表未使用，MySQL将进行普通读锁定并将新行插入空记录。</td>
+        </tr>
+      </table>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        connect_timeout</p>
+      <p> mysqld服务器用Bad 
+        handshake响应前等待连接包的秒数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        datadir</p>
+      <p>MySQL数据目录。可以用--datadir选项设置该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        date_format</p>
+      <p>该变量未使用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        datetime_format</p>
+      <p>该变量未使用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        default_week_format</p>
+      <p> WEEK()
+        函数使用的默认模式。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        delay_key_write</p>
+      <p>该选项只适用MyISAM表。它具有下述值可以影响CREATE 
+        TABLE语句使用的DELAY_KEY_WRITE表选项的处理。</p>
+      <table border="1" cellpadding="0" id="table5">
+        <tr>
+          <td><p>选项</td>
+          <td><p>描述</td>
+        </tr>
+        <tr>
+          <td><p> OFF</td>
+          <td><p> DELAY_KEY_WRITE被忽略。</td>
+        </tr>
+        <tr>
+          <td><p> ON</td>
+          <td><p>MySQL在CREATE 
+              TABLE中用DELAY_KEY_WRITE选项。这是
+              默认值。</td>
+        </tr>
+        <tr>
+          <td><p> ALL</td>
+          <td><p>用启用DELAY_KEY_WRITE选项创建表的相同方法对所有新打开表的进行处理。</td>
+        </tr>
+      </table>
+      <p>如果启用了DELAY_KEY_WRITE，说明使用该项的表的键缓冲区在每次更新索引时不被清空，只有关闭表时才清空。遮掩盖可以大大加快键的写操作，但如果你使用该特性，你应用--myisam-recover选项启动服务器，为所有MyISAM表添加自动检查(例如，--myisam-recover=BACKUP,FORCE)。参见<a href="server-options.html" title="5.3.1. mysqld Command-Line Options">5.3.1节，“mysqld命令行选项”</a>和<a href="server-options.html" title="15.1.1. MyISAM Startup Options">15.1.1节，“MyISAM启动选项”</a>。</p>
+      <p>请注意--external-locking不为使用延迟键写入的表提供索引破坏保护。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        delayed_insert_limit</p>
+      <p>插入delayed_insert_limit
+        延迟行后，INSERT 
+        DELAYED 处理器线程检查是否有挂起的SELECT语句。如果有，在继续插入延迟的行之前，允许它们先执行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        delayed_insert_timeout</p>
+      <p> INSERT DELAYED处理器线程终止前应等待INSERT语句的时间。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        delayed_queue_size</p>
+      <p>这是各个表中处理INSERT 
+        DELAYED语句时队列中行的数量限制。如果队列满了，执行INSERT 
+        DELAYED语句的客户端应等待直到队列内再有空间。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        div_precision_increment</p>
+      <p>该变量说明用/操作符执行除操作的结果可增加的精确度的位数。
+        默认值是4。最小和最大值分别为0和30。下面的示例说明了增加
+        默认值的结果。</p>
+      <pre >mysql&gt; SELECT 1/7;
++--------+
+| 1/7&nbsp;&nbsp;&nbsp; |
++--------+
+| 0.1429 |
++--------+
+mysql&gt; SET div_precision_increment = 12;
+mysql&gt; SELECT 1/7;
++----------------+
+| 1/7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
++----------------+
+| 0.142857142857 |
++----------------+</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        engine_condition_pushdown</p>
+      <p>该变量适用于NDB。默认值为0(OFF)：如果你执行类似查询SELECT 
+        * FROM t WHERE mycol = 42，其中mycol为没有索引的列，当满了的表扫描每个NDB节点时，执行该查询。每个节点使用WHERE条件将每一行发送给MySQL服务器。如果engine_condition_pushdown被设置为1(ON)，该条件“pushed 
+        down”给存储引擎并发送给NDB节点。每个节点都执行扫描，并只向MySQL服务器发送回匹配条件的行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        expire_logs_days</p>
+      <p>二进制日志自动删除的天数。默认值为0,表示“没有自动删除”。启动时和二进制日志循环时可能删除。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        flush</p>
+      <p>如果用--flush选项启动mysqld该值为ON。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        flush_time</p>
+      <p>如果设为非零值，每隔flush_time秒则关闭所有表以释放硬盘资源并同步未清空的数据。我们建议只在Windows 
+        9x或Me，或有最小资源的系统中使用该选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ft_boolean_syntax</p>
+      <p>使用IN 
+        BOOLEAN MODE执行的布尔全文搜索支持的操作符系列。参见<a href="" title="12.7.1. Boolean Full-Text Searches">12.7.1节，“布尔全文搜索”</a>。</p>
+      <p>默认变量值为 
+        &#39;+ -&gt;&lt;()~*:&quot;&quot;&amp;|&#39;。更改这些值的规则是：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        操作符函数由其在字符串内的位置决定。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        替换值必须是14个字符。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        每个字符必须为ASCII码非文字数字字符。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        第1个或第2个字符必须为空格。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        除非语句在第11个字符和第12个字符处引用了操作符，否则不允许复制。这两个字符可以不相同，但这是唯一可能的两个。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        位置10、13和14(默认设置为‘:’、‘&amp;’和‘|’)保留用于将来扩展。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ft_max_word_len</p>
+      <p> FULLTEXT索引中所包含的字的最大长度。</p>
+      <p> 注释：更改该变量后必须重建FULLTEXT索引。应使用REPAIR 
+        TABLE <i>tbl_name</i> QUICK。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ft_min_word_len</p>
+      <p> FULLTEXT索引中所包含的字的最小长度。</p>
+      <p> 注释：更改该变量后必须重建FULLTEXT索引。应使用REPAIR 
+        TABLE <i>tbl_name</i> QUICK。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ft_query_expansion_limit</p>
+      <p>使用WITH 
+        QUERY EXPANSION进行全文搜索的最大匹配数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        ft_stopword_file</p>
+      <p> 用于读取全文搜索的停止字清单的文件。该文件中的所有字都会用到；注释不重要。默认情况下，使用内嵌式停止字清单(如myisam/ft_static.c文件中所定义)。将该变量设置为空字符串(&#39;&#39;)则禁用停止字过滤。</p>
+      <p> 注释：更改该变量或停止字文件的内容后必须重建FULLTEXT索引。应使用REPAIR 
+        TABLE <i>tbl_name</i> QUICK。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        group_concat_max_len</p>
+      <p>允许的GROUP_CONCAT()函数结果的最大长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_archive</p>
+      <p>如果mysqld支持ARCHIVE表则为YES，否则为NO。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_bdb</p>
+      <p>如果mysqld支持BDB表则为YES。如果使用--skip-bdb则为DISABLED。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_blackhole_engine</p>
+      <p>如果mysqld支持BLACKHOLE表则为YES，否则为NO。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_compress</p>
+      <p>是否zlib压缩库适合该服务器。如果不适合，不能使用COMPRESS()和UNCOMPRESS()函数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_crypt</p>
+      <p>是否crypt()系统调用适合该服务器。如果不适合，不能使用CRYPT()函数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_csv</p>
+      <p>如果mysqld支持ARCHIVE表则为YES，否则为NO。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_example_engine</p>
+      <p>如果mysqld支持EXAMPLE表则为YES，否则为NO。</p>
+      <p> have_federated_engine</p>
+      <p>如果mysqld支持FEDERATED表则为YES，否则为NO。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_geometry</p>
+      <p>是否服务器支持空间数据类型。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_innodb</p>
+      <p>如果mysqld支持InnoDB表则为YES。如果使用--skip-innodb则为DISABLED。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_isam</p>
+      <p>在MySQL 5.1中,只是为了向后兼容显示该值，并且总是NO，因为不再支持ISAM表。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_ndbcluster</p>
+      <p>如果mysqld支持NDB 
+        CLUSTER表则为YES。如果使用了--skip-ndbcluster则为DISABLED。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_partition_engine</p>
+      <p>如果mysqld支持分区则为YES。在MySQL 
+        5.1.1中加入。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_openssl</p>
+      <p>如果mysqld支持客户端/服务器协议的SSL(加密)则为YES。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_query_cache</p>
+      <p>如果mysqld支持查询缓存则为YES。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_raid</p>
+      <p>如果mysqld支持RAID选项则为YES。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_rtree_keys</p>
+      <p> RTREE索引是否可用。(用于MyISAM表的空间索引）。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        have_symlink</p>
+      <p>是否启用符号链接支持。在Unix中需要用于支持DATA 
+        DIRECTORY和INDEX 
+        DIRECTORY表选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        init_connect</p>
+      <p>服务器为每个连接的客户端执行的字符串。字符串由一个或多个SQL语句组成。要想指定多个语句，用分号间隔开。例如，每个客户端开始时默认启用autocommit模式。没有全局服务器变量可以规定autocommit默认情况下应禁用，但可以用init_connect来获得相同的效果：</p>
+      <pre >SET GLOBAL init_connect=&#39;SET AUTOCOMMIT=0&#39;;</pre>
+      <p> 还可以在命令行或选项文件中设置该变量。要想使用选项文件设置变量，应包括下述行：</p>
+      <pre >[mysqld]
+init_connect=&#39;SET AUTOCOMMIT=0&#39;</pre>
+      <p>请注意init_connect的内容并不为拥有SUPER权限的用户执行；实际是内容设置错误(包含错误查询，例如语法错误)，这样使所有连接失败。不为SUPER用户执行，使SUPER用户可以打开连接并固定init_connect。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        init_file</p>
+      <p>启动服务器时用--init-file选项指定的文件名。文件中包含服务器启动时要执行的SQL语句。每个语句必须在同一行中并且不能包括注释。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        init_slave</p>
+      <p>该变量类似init_connect，但是每次SQL线程启动时从服务器应执行该字符串。该字符串的格式与init_connect变量相同。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        innodb_<i>xxx</i></p>
+      <p> InnoDB系统变量列入<a href="server-system-variables.html" title="15.2.4. InnoDB Startup Options">15.2.4节，“InnoDB启动选项”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        interactive_timeout</p>
+      <p>服务器关闭交互式连接前等待活动的秒数。交互式客户端定义为在mysql_real_connect()中使用CLIENT_INTERACTIVE选项的客户端。又见wait_timeout。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        join_buffer_size</p>
+      <p>用于完全联接的缓冲区的大小(当不使用索引的时候使用联接操作)。一般情况获得快速联接的最好方法是添加索引。当增加索引时不可能通过增加join_buffer_size值来获得快速完全联接。将为两个表之间的每个完全联接分配联接缓冲区。对于多个表之间不使用索引的复杂联接，需要多联接缓冲区。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        key_buffer_size</p>
+      <p> MyISAM表的索引块分配了缓冲区，由所有线程共享。key_buffer_size是索引块缓冲区的大小。键值缓冲区即为键值缓存。</p>
+      <p> key_buffer_size的最大允许设定值为4GB。有效最大值可以更小，取决于可用物理RAM和操作系统或硬件平台强加的每个进程的RAM限制。</p>
+      <p>增加该值，达到你可以提供的更好的索引处理(所有读和多个写操作)。通常为主要运行MySQL的机器内存的25%。但是，如果你将该值设得过大(例如，大于总内存的50%)，系统将转换为页并变得极慢。MySQL依赖操作系统来执行数据读取时的文件系统缓存，因此你必须为文件系统缓存留一些空间。</p>
+      <p>同时写多行时要想速度更快，应使用LOCK 
+        TABLES。参见<a href="backup.html" title="13.4.5. LOCK TABLES and UNLOCK TABLES Syntax">13.4.5节，“LOCK 
+        TABLES和UNLOCK TABLES语法”</a>。</p>
+      <p>你可以通过执行SHOW 
+        STATUS语句并检查Key_read_requests、Key_reads、Key_write_requests和Key_writes状态变量来检查键值缓冲区的性能。参见<a href="" title="13.5.4. SHOW Syntax">13.5.4节，“SHOW语法”</a>。</p>
+      <p> Key_reads/Key_read_requests比例一般应小于0.01。如果你使用更新和删除，Key_writes/Key_write_requests比例通常接近1，但如果你更新时会同时影响到多行或如果你正使用DELAY_KEY_WRITE表选项，可能小得多。</p>
+      <p>用key_buffer_size结合Key_blocks_unused状态变量和缓冲区块大小，可以确定使用的键值缓冲区的比例。从key_cache_block_size服务器变量可以获得缓冲区块大小。使用的缓冲区的比例为：</p>
+      <pre >1 - ((Key_blocks_unused * key_cache_block_size) / key_buffer_size)</pre>
+      <p>该值为约数，因为键值缓冲区的部分空间被分配用作内部管理结构。</p>
+      <p>可以创建多个MyISAM键值缓存。4GB限制可以适合每个缓存，而不是一个组。参见<a href="server-system-variables.html" title="7.4.6. The MyISAM Key Cache">7.4.6节，“MyISAM键高速缓冲”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        key_cache_age_threshold</p>
+      <p>该值控制将缓冲区从键值缓存热子链(sub-chain)降级到温子链(sub-chain)。如果值更低，则降级更快。最小值为100。
+        默认值是300。参见<a href="server-system-variables.html" title="7.4.6. The MyISAM Key Cache">7.4.6节，“MyISAM键高速缓冲”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        key_cache_block_size</p>
+      <p>键值缓存内块的字节大小。默认值是1024。参见<a href="server-system-variables.html" title="7.4.6. The MyISAM Key Cache">7.4.6节，“MyISAM键高速缓冲”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        key_cache_division_limit</p>
+      <p> 键值缓存缓冲区链热子链和温子链的划分点。该值为缓冲区链用于温子链的百分比。允许的值的范围为1到100。
+        默认值是100。参见<a href="server-system-variables.html" title="7.4.6. The MyISAM Key Cache">7.4.6节，“MyISAM键高速缓冲”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        language</p>
+      <p>错误消息所用语言。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        &nbsp;large_file_support</p>
+      <p> mysqld编译时是否使用了大文件支持选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        large_pages</p>
+      <p>说明是否启用了大页面支持。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        license</p>
+      <p>服务器的许可类型。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        local_infile</p>
+      <p>是否LOCAL支持LOAD 
+        DATA INFILE语句。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        locked_in_memory</p>
+      <p>是否用–memlock将mysqld锁在内存中。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        log</p>
+      <p>是否启用将所有查询记录到常规查询日志中。参见<a href="query-log.html" title="5.11.2. The General Query Log">5.11.2节，“通用查询日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        log_bin</p>
+      <p>是否启用二进制日志。参见<a href="binary-log.html" title="5.11.3. The Binary Log">5.11.3节，“二进制日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        log_bin_trust_routine_creators</p>
+      <p> 若启用了二进制记录，则该变量适用。它控制是否可以信任保存的程序的作者不会创建向二进制日志写入不安全事件的程序。如果设置为0(默认情况)，不允许用户创建或修改保存的程序，除非他们不仅拥有CREATE 
+        ROUTINE或ALTER 
+        ROUTINE权限还拥有SUPER权限。</p>
+      <p>设置为0还强制限制，程序必须用DETERMINISTIC
+        特征或用READS SQL 
+        DATA或NO 
+        SQL特征声明。如果变量设置为1,MySQL不对保存程序的创建强加限制。</p>
+      <p>参见<a href="server-system-variables.html" title="20.4. Binary Logging of Stored Routines and Triggers">20.4节，“存储子程序和触发程序的二进制日志功能”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        log_error</p>
+      <p>错误日志的位置。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        log_slave_updates</p>
+      <p> 是否从服务器从主服务器收到的更新应记入从服务器自己的二进制日志。要想生效，必须启用从服务器的二进制记录。参见<a href="server-options.html" title="6.8. Replication Startup Options">6.8节，“复制启动选项”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        log_slow_queries</p>
+      <p>是否记录慢查询。用long_query_time变量的值来确定“慢查询”。参见<a href="slow-query-log.html" title="5.11.4. The Slow Query Log">5.11.4节，“慢速查询日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        log_warnings</p>
+      <p>是否产生其它警告消息。默认情况下启用。放弃的连接不记入错误日志，除非值大于1。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        long_query_time</p>
+      <p>如果查询时间超过该值，则增加Slow_queries状态变量。如果你正使用--log-slow-queries选项，则查询记入慢查询日志文件。用实际时间测量该值，而不是CPU时间，因此低于轻负载系统阈值的查询可能超过重负载系统的阈值。参见<a href="slow-query-log.html" title="5.11.4. The Slow Query Log">5.11.4节，“慢速查询日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        low_priority_updates</p>
+      <p>如果设置为1，所有INSERT、UPDATE、DELETE和LOCK 
+        TABLE WRITE语句将等待直到受影响的表没有挂起的SELECT或LOCK 
+        TABLE READ。该变量以前叫做sql_low_priority_updates。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        lower_case_file_system</p>
+      <p>该变量说明是否数据目录所在的文件系统对文件名的大小写敏感。ON说明对文件名的大小写不敏感，OFF表示敏感。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        &nbsp; 
+        lower_case_table_names</p>
+      <p>如果设置为1,表名用小写保存到硬盘上，并且表名比较时不对大小写敏感。如果设置为2，按照指定的保存表名，但按照小写来比较。该选项还适合数据库名和表的别名。参见<a href="" title="9.2.2. Identifier Case Sensitivity">9.2.2节，“识别符大小写敏感性”</a>。</p>
+      <p>如果你正使用InnoDB表，你应在所有平台上将该变量设置为1，强制将名字转换为小写。</p>
+      <p>如果运行MySQL的系统对文件名的大小写不敏感(例如Windows或Mac 
+        OS X)，你不应将该变量设置为0。如果启动时没有设置该变量，并且数据目录所在文件系统对文件名的大小写不敏感，MySQL自动将lower_case_table_names设置为2。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_allowed_packet</p>
+      <p>包或任何生成的/中间字符串的最大大小。</p>
+      <p>包消息缓冲区初始化为net_buffer_length字节，但需要时可以增长到max_allowed_packet字节。该值默认很小，以捕获大的(可能是错误的)数据包。</p>
+      <p>如果你使用大的BLOB
+        列或长字符串，你必须增加该值。应同你想要使用的最大的BLOB一样大。max_allowed_packet的协议限制为1GB。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_binlog_cache_size</p>
+      <p>如果多语句事务需要更大的内存，你会得到错误Multi-statement 
+        transaction required more than &#39;max_binlog_cache_size&#39; bytes of 
+        storage。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_binlog_size</p>
+      <p> 如果二进制日志写入的内容超出给定值，日志就会发生滚动。你不能将该变量设置为大于1GB或小于4096字节。
+        默认值是1GB。</p>
+      <p> 请注意如果你正使用事务：事务以一个块写入二进制日志，因此不不能被几个二进制日志拆分。因此，如果你有大的事务，二进制日志可能会大于max_binlog_size。</p>
+      <p>如果max_relay_log_size为0,
+        
+        max_binlog_size的值也适用于中继日志。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_connect_errors</p>
+      <p>如果中断的与主机的连接超过该数目，该主机则阻塞后面的连接。你可以用 
+        
+        FLUSH HOSTS语句解锁锁定的主机。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_connections</p>
+      <p>允许的并行客户端连接数目。增大该值则增加mysqld
+        需要的文件描述符的数量。关于文件描述符限制的注释参见<a href="server-system-variables.html" title="7.4.9. How MySQL Opens and Closes Tables">7.4.9节，“MySQL如何打开和关闭表”</a>。还可参见<a href="" title="A.2.6. Too many connections">A.2.6节，“连接数过多”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_delayed_threads</p>
+      <p>不要启动大于该数目的线程来处理INSERT 
+        DELAYED语句。如果所有INSERT 
+        DELAYED线程已经在使用，你想在新表中插入数据，行 插入时好像未指定DELAYED属性。如果你将该值设置为0,MySQL不会创建线程来处理DELAYED行；其结果是完全禁用了DELAYED。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_error_count</p>
+      <p>保存由SHOW 
+        ERRORS或SHOW 
+        WARNINGS显示的错误、警告和注解的最大数目。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_heap_table_size</p>
+      <p>该变量设置MEMORY 
+        (HEAP)表可以增长到的最大空间大小。该变量用来计算MEMORY表的MAX_ROWS值。在已有的MEMORY表上设置该变量没有效果，除非用CREATE 
+        TABLE或TRUNCATE 
+        TABLE等语句重新创建表。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_insert_delayed_threads</p>
+      <p>该变量为max_delayed_threads的同义词。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_join_size</p>
+      <p>不允许可能需要检查多于max_join_size行(为单个表语句)或行组合(为多个表语句)或可能执行大于max_join_size次硬盘查询的SELECT语句。通过设置该值，你可以捕获键使用不正确并可能花很长时间的SELECT语句。如果用户想要执行没有WHERE子句的花较长时间或返回数百万行的联接，则设置它。</p>
+      <p>将该变量设置为DEFAULT之外的值，将SQL_BIG_SELECTS的值重设为0。如果你重新设置SQL_BIG_SELECTS值，max_join_size变量被忽略。</p>
+      <p> 如果查询结果位于查询缓存中，则不检查结果大小，因为前面已经计算了结果，不会要求服务器将它发送给客户端。</p>
+      <p>该变量以前叫做sql_max_join_size。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_length_for_sort_data</p>
+      <p>确定使用的filesort算法的索引值大小的限值。参见<a href="" title="7.2.12. How MySQL Optimizes ORDER BY">7.2.12节，“MySQL如何优化ORDER BY”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_relay_log_size</p>
+      <p> 如果复制从服务器写入中继日志时超出给定值，则滚动中继日志。通过该变量你可以对中继日志和二进制日志设置不同的限制。但是，将该变量设置为0，MySQL可以对二进制日志和中继日志使用max_binlog_size。max_relay_log_size必须设置在4096字节和1GB(包括)之间，或为0。
+        默认值是0。参见<a href="" title="6.3. Replication Implementation Details">6.3节，“复制实施细节”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_seeks_for_key</p>
+      <p>限制根据键值寻找行时的最大搜索数。MySQL优化器假定当用扫描键在表内搜索匹配的行时，不需要超过该数量的键值搜索，而不管键的实际基数是什么(参见<a href="" title="13.5.4.11. SHOW INDEX Syntax">13.5.4.11节，“SHOW 
+        INDEX语法”</a>)。将该值设置为较低的值(100?)，你可以强制MySQL选择键值而不选择表扫描。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_sort_length</p>
+      <p>当排序BLOB或TEXT值时使用的字节数。只使用每个值的前max_sort_length字节；其它的被忽略。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_tmp_tables</p>
+      <p>客户端可以同时打开的临时表的最大数。(但该选项还未生效）。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_user_connections</p>
+      <p>任何给定的MySQL账户允许的最大同时连接数。0值表示“没有限制”。</p>
+      <p>该变量具有全局范围和(只读)会话范围。会话变量的的值与全局变量的值相同，除非当前账户具有非零MAX_USER_CONNECTIONS资源限制。在这种情况下，会话值反应了账户限制。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        max_write_lock_count</p>
+      <p>超过写锁定限制后，允许部分读锁定。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_data_pointer_size</p>
+      <p>默认指针大小，单位是字节，当未指定MAX_ROWS选项时，CREATE 
+        TABLE使用该变量创建MyISAM表。该变量不能小于2或大于7。 
+        默认值是6。参见<a href="" title="A.2.11. The table is full">A.2.11节，“表已满”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        (<em>DEPRECATED</em>)
+        
+        
+        myisam_max_extra_sort_file_size</p>
+      <p> 注释：MySQL 
+        5.1不支持该变量。详细信息参见<em>MySQL 
+        5.0 参考手册</em>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_max_sort_file_size</p>
+      <p>重建MyISAM索引(在REPAIR 
+        TABLE、ALTER 
+        TABLE或LOAD 
+        DATA INFILE过程中)时，允许MySQL使用的临时文件的最大空间大小。如果文件的大小超过该值，则使用键值缓存创建索引，要慢得多。该值的单位为字节。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_recover_options</p>
+      <p> --myisam-recover选项的值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_repair_threads</p>
+      <p>如果该值大于1，在Repair 
+        by sorting过程中并行创建MyISAM表索引(每个索引在自己的线程内)。
+        默认值是1。注释：多线程维护仍然是<em>alpha</em> 编码。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_sort_buffer_size</p>
+      <p>当在REPAIR 
+        TABLE或用CREATE 
+        INDEX创建索引或ALTER 
+        TABLE过程中排序 
+        MyISAM索引分配的缓冲区。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        myisam_stats_method</p>
+      <p>当为MyISAM表搜集关于索引值分发的统计信息时服务器如何处理NULL值。该变量有两个可能的值，nulls_equal和nulls_unequal。对于nulls_equal，认为所有NULL索引值时相等的，并形成一个数值组，其空间大小等于NULL值的数。对于nulls_unequal，NULL值认为是不相等的，每个NULL形成一个数值组，大小为1。</p>
+      <p>方法用于生成表统计信息，影响优化器如何选择索引来执行查询，详细描述见<a href="server-system-variables.html" title="7.4.7. MyISAM Index Statistics Collection">7.4.7节，“MyISAM索引统计集合”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        multi_read_range</p>
+      <p>指定范围选择过程中发送到存储引擎的范围的最大值。默认值是256。向引擎发送多个范围可以大大改进某些选择的性能，特别是对NDBCLUSTER。该引擎需要向所有节点发送范围请求，同时发送许多请求可以大大降低通信成本。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        named_pipe</p>
+      <p>(只适用Windows)说明服务器是否支持命名管道连接。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        net_buffer_length</p>
+      <p> 在查询之间将通信缓冲区重设为该值。一般情况不应改变，但如果内存很小，可以将它设置为期望的客户端发送的SQL语句的长度。如果语句超出该长度，缓冲区自动扩大，直到max_allowed_packet字节。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        net_read_timeout</p>
+      <p>中断读前等待连接的其它数据的秒数。当服务器从客户端读数时，net_read_timeout指控制何时中断的超时值。当服务器向客户端写时，net_write_timeout指控制何时中断的超时值。又见slave_net_timeout。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        net_retry_count</p>
+      <p>如果某个通信端口的读操作中断了，在放弃前重试多次。在FreeBSD中该值应设得很高，因为内部中断将发送至所有线程。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        net_write_timeout</p>
+      <p>中断写之前等待块写入连接的秒数。又见net_read_timeout。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        new</p>
+      <p>在MySQL 4.0中使用该变量来打开4.1中的一些行为，并用于向后兼容性。在MySQL 
+        5.1中,它的值一直是OFF.</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        old_passwords</p>
+      <p>是否服务器应为MySQL用户账户使用pre-4.1-style密码。参见<a href="password-hashing.html" title="A.2.3. Client does not support authentication protocol">A.2.3节，“客户端不支持鉴定协议”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        one_shot</p>
+      <p>这不是一个变量，但当设置变量是可以使用它。其描述见<a href="server-system-variables.html" title="13.5.3. SET Syntax">13.5.3节，“SET语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        one_shot</p>
+      <p>这不是一个变量，但当设置变量是可以使用它。其描述见<a href="server-system-variables.html" title="13.5.3. SET Syntax">13.5.3节，“SET语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        open_files_limit</p>
+      <p>操作系统允许mysqld打开的文件的数量。这是系统允许的实际值，可能与你在启动选项中赋给mysqld的值不同。若在系统中MySQL不能更改打开的文件的数量，则该值为0。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        optimizer_prune_level</p>
+      <p>在查询优化从优化器搜索空间裁减低希望局部计划中使用的控制方法。0值禁用该方法，以便优化器进行穷举搜索。值为1使优化器根据中间方案中得出的行数来裁减方案。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        optimizer_search_depth </p>
+      <p> 查询优化器进行的搜索的最大深度。如果值大于查询中的关系数则查询方案比较佳，但生成查询执行方案需要的时间更长。值大于查询中的关系数则返回的执行方案更快，但方案远没有优化。如果设置为0,
+        系统自动选择合理的值。如果设置为查询中使用的表的最大数加2,优化器转换为MySQL 
+        5.0.0(和以前的版本)中使用的算法并搜索。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        pid_file</p>
+      <p>进程ID (PID)文件的路径名。可以用--pid-file选项设置该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        plugin_dir</p>
+      <p>插件目录的路径。在MySQL 5.1.2中加入了该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        port</p>
+      <p>服务器帧听TCP/IP连接所用端口。可以用--port选项设置该变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        preload_buffer_size</p>
+      <p>重载索引时分配的缓冲区大小。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        protocol_version</p>
+      <p>MySQL服务器使用的客户端/服务器协议的版本。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_alloc_block_size</p>
+      <p> 为查询分析和执行过程中创建的对象分配的内存块大小。如果内存分段过程中遇到问题，将该变量增加一位会有帮助。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_cache_limit</p>
+      <p>不要缓存大于该值的结果。默认值是1048576(1MB)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_cache_min_res_unit</p>
+      <p>查询缓存分配的最小块的大小(字节)。
+        默认值是4096(4KB)。关于该变量的调节信息参见<a href="query-cache-configuration.html" title="5.13.3. Query Cache Configuration">5.13.3节，“查询高速缓冲配置”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_cache_size</p>
+      <p>为缓存查询结果分配的内存的数量。默认值是0，即禁用查询缓存。请注意即使query_cache_type设置为0也将分配此数量的内存。详细信息参见<a href="query-cache-configuration.html" title="5.13.3. Query Cache Configuration">5.13.3节，“查询高速缓冲配置”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_cache_type</p>
+      <p>设置查询缓存类型。设置GLOBAL值可以设置后面的所有客户端连接的类型。客户端可以设置SESSION值以影响他们自己对查询缓存的使用。下面的表显示了可能的值：</p>
+      <table border="1" cellpadding="0" id="table6">
+        <tr>
+          <td><p>选项</td>
+          <td><p>描述</td>
+        </tr>
+        <tr>
+          <td><p> 0或OFF</td>
+          <td><p>不要缓存或查询结果。请注意这样不会取消分配的查询缓存区。要想取消，你应将query_cache_size设置为0。</td>
+        </tr>
+        <tr>
+          <td><p> 1或ON</td>
+          <td><p>缓存除了以SELECT 
+              SQL_NO_CACHE开头的所有查询结果。</td>
+        </tr>
+        <tr>
+          <td><p> 2或DEMAND</td>
+          <td><p>只缓存以SELECT 
+              SQL_NO_CACHE开头的查询结果。</td>
+        </tr>
+      </table>
+      <p>该变量默认设为ON。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_cache_wlock_invalidate</p>
+      <p>一般情况，当客户端对MyISAM表进行WRITE锁定时，如果查询结果位于查询缓存中，则其它客户端未被锁定，可以对该表进行查询。将该变量设置为1，则可以对表进行WRITE锁定，使查询缓存内所有对该表进行的查询变得非法。这样当锁定生效时，可以强制其它试图访问表的客户端来等待。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        query_prealloc_size</p>
+      <p> 用于查询分析和执行的固定缓冲区的大小。在查询之间该缓冲区不释放。如果你执行复杂查询，分配更大的query_prealloc_size值可以帮助提高性能，因为它可以降低查询过程中服务器分配内存的需求。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        range_alloc_block_size</p>
+      <p>范围优化时分配的块的大小。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        read_buffer_size</p>
+      <p>每个线程连续扫描时为扫描的每个表分配的缓冲区的大小(字节)。如果进行多次连续扫描，可能需要增加该值，
+        默认值为131072。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        read_only</p>
+      <p>当变量对复制从服务器设置为ON时，从服务器不允许更新，除非通过从服务器的线程或用户拥有SUPER权限。可以确保从服务器不接受客户端的更新命令。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        relay_log_purge</p>
+      <p>当不再需要中继日志时禁用或启用自动清空中继日志。默认值是1(启用)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        read_rnd_buffer_size</p>
+      <p> 当排序后按排序后的顺序读取行时，则通过该缓冲区读取行，避免搜索硬盘。将该变量设置为较大的值可以大大改进ORDER 
+        BY的性能。但是，这是为每个客户端分配的缓冲区，因此你不应将全局变量设置为较大的值。相反，只为需要运行大查询的客户端更改会话变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        secure_auth</p>
+      <p>如果用--secure-auth选项启动了MySQL服务器，它将阻塞有旧格式(4.1之前)密码的所有账户所发起的连接。在这种情况下，该变量的值为ON，否则为OFF。</p>
+      <p>如果你想要防止使用旧格式的密码(致使网络通信不安全)，你应启用该选项。</p>
+      <p>如果启用该选项并且授权表为pre-4.1格式，服务器启动失败并且会出现错误。参见<a href="password-hashing.html" title="A.2.3. Client does not support authentication protocol">A.2.3节，“客户端不支持鉴定协议”</a>。</p>
+      <p> 当用于客户端选项时，如果服务器需要该客户端账户的旧格式的密码，则客户端拒绝连接该服务器。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        server_id</p>
+      <p> --server-id选项的值。用于主复制服务器和从复制服务器。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        shared_memory</p>
+      <p>(只用于Windows)服务器是否允许共享内存连接。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        shared_memory_base_name</p>
+      <p>(只用于Windows)说明服务器是否允许共享内存连接，并为共享内存设置识别符。当在单台机器上运行多个MySQL实例时很有用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        skip_external_locking</p>
+      <p>如果mysqld使用外部锁定，该值为OFF。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        skip_networking</p>
+      <p>如果服务器只允许本地(非TCP/IP)连接，该值为ON。在Unix中，本地连接使用Unix套接字文件。在Windows中，本地连接使用命名管道或共享内存。在NetWare中，只支持TCP/IP连接，因此不要将该变量设置为ON。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        skip_show_database</p>
+      <p>防止不具有SHOW 
+        DATABASES权限的人们使用SHOW 
+        DATABASES语句。如果你担心用户能够看见属于其它用户的数据库，这样设置可以提高安全性。其效果取决于SHOW 
+        DATABASES权限：如果变量值为ON，只允许具有SHOW 
+        DATABASES权限的人们使用SHOW 
+        DATABASES 
+        语句，并且该语句将显示所有数据库名。如果值为OFF，允许所有用户执行SHOW 
+        DATABASES，但只显示用户具有SHOW 
+        DATABASES或其它权限的数据库的名称。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slave_compressed_protocol</p>
+      <p>如果主、从服务器均支持，确定是否使用从/主压缩协议。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slave_load_tmpdir</p>
+      <p>从服务器为复制LOAD 
+        DATA INFILE语句创建临时文件的目录名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slave_net_timeout</p>
+      <p>放弃读操作前等待主/从连接的更多数据的等待秒数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slave_skip_errors</p>
+      <p>从服务器应跳过(忽视)的复制错误。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slave_transaction_retries</p>
+      <p>如果由于ofInnoDB死锁或超过InnoDB的innodb_lock_wait_timeout或NDBCLUSTER的TransactionDeadlockDetectionTimeout或TransactionInactiveTimeout，复制从服务器SQL线程未能执行事务，在提示错误并停止前它自动重复slave_transaction_retries次。
+        默认值是10。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        slow_launch_time</p>
+      <p>如果创建线程的时间超过该秒数，服务器增加Slow_launch_threads状态变量。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        socket</p>
+      <p><em> Unix平台</em>：用于本地客户端连接的套接字文件。默认为/var/lib/mysql/mysql.sock。</p>
+      <p><em> Windows</em>：用于本地客户端连接的命名管道名。默认为mysql。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        sort_buffer_size</p>
+      <p>每个排序线程分配的缓冲区的大小。增加该值可以加快ORDER 
+        BY或GROUP 
+        BY操作。参见<a href="" title="A.4.4. Where MySQL Stores Temporary Files">A.4.4节，“MySQL将临时文件储存在哪里”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        sql_mode</p>
+      <p>当前的服务器SQL模式，可以动态设置。参见<a href="server-sql-mode.html" title="5.3.2. The Server SQL Mode">5.3.2节，“SQL服务器模式”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        sql_slave_skip_counter</p>
+      <p>从服务器应跳过的来自主服务器的事件数。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        storage_engine</p>
+      <p>该变量是table_typeis的同义词。在MySQL 
+        5.1中,首选storage_engine。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        sync_binlog</p>
+      <p>如果为正，当每个sync_binlog&#39;th写入该二进制日志后，MySQL服务器将它的二进制日志同步到硬盘上(fdatasync())。请注意如果在autocommit模式，每执行一个语句向二进制日志写入一次，否则每个事务写入一次。
+        默认值是0，不与硬盘同步。值为1是最安全的选择，因为崩溃时，你最多丢掉二进制日志中的一个语句/事务；但是，这是最慢的选择(除非硬盘有电池备份缓存，从而使同步工作较快)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        sync_frm</p>
+      <p>如果该变量设为1,当创建非临时表时它的.frm文件被同步到硬盘上(fdatasync())；这样较慢但出现崩溃时较安全。
+        默认值为1。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        system_time_zone</p>
+      <p>服务器系统时区。当 
+        服务器开始执行时，它继承机器默认时区设置值，可以由运行服务器的账户或在启动脚本中进行修改。该值用来设置system_time_zone。典型情况用TZ环境变量来指定时区。还可以用mysqld_safe脚本的--timez选项来指定。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        table_cache</p>
+      <p>所有线程打开的表的数目。增大该值可以增加mysqld需要的文件描述符的数量。你可以检查Opened_tables状态变量来检查你是否需要增加表缓存。参见<a href="server-status-variables.html" title="5.3.4. Server Status Variables">5.3.4节，“服务器状态变量”</a>。如果Opened_tables值较大，并且多次执行FLUSH 
+        TABLES(只是强制关闭所有表并重新)，则应增加table_cache变量的值。</p>
+      <p>关于表缓存的详细信息，参见<a href="server-system-variables.html" title="7.4.9. How MySQL Opens and Closes Tables">7.4.9节，“MySQL如何打开和关闭表”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        table_type</p>
+      <p>默认表类型(存储引擎)。要想在服务器启动时设置表类型，使用--default-table-type选项。参见<a href="server-options.html" title="5.3.1. mysqld Command-Line Options">5.3.1节，“mysqld命令行选项”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        thread_cache_size</p>
+      <p>服务器应缓存多少线程以便重新使用。当客户端断开连接时，如果线程少于thread_cache_size，则客户端的线程被放入缓存。当请求线程时如果允许可以从缓存中重新利用线程，并且只有当缓存空了时才会创建新线程。如果新连接很多，可以增加该变量以提高性能。(一般情况，如果线程执行得很好，性能提高不明显)。检查Connections和Threads_created状态变量的差(详见<a href="server-status-variables.html" title="5.3.4. Server Status Variables">5.3.4节，“服务器状态变量”</a>)，你可以看见线程缓存的效率。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        thread_concurrency</p>
+      <p>在Solaris中，mysqld用该值调用thr_setconcurrency()。该函数使应用程序向线程系统提供需要同时运行的期望的线程数目的提示。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        thread_stack</p>
+      <p>每个线程的堆栈大小。用crash-me测试检测出的许多限制取决于该值。
+        默认值足够大，可以满足普通操作。参见<a href="" title="7.1.4. The MySQL Benchmark Suite">7.1.4节，“MySQL基准套件”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        time_format</p>
+      <p>该变量为使用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        time_zone</p>
+      <p>当前的时区。初使值是&#39;SYSTEM&#39;(使用system_time_zone的值)，但可以用--default-time-zone选项在服务器启动时显式指定。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        tmp_table_size</p>
+      <p>如果内存内的临时表超过该值，MySQL自动将它转换为硬盘上的MyISAM表。如果你执行许多高级GROUP 
+        BY查询并且有大量内存，则可以增加tmp_table_size的值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        tmpdir</p>
+      <p>保存临时文件和临时表的目录。该变量可以设置为几个路径，按round-robin模式使用。在Unix中应该用冒号(‘:’)间隔开路径，在Windows、NetWare和OS/2中用分号(‘；’)。</p>
+      <p>用来将负荷分散到几个物理硬盘上。如果MySQL服务器为复制从服务器，你不应将tmpdir设置为指向基于内存的文件系统上的目录或当服务器主机重启时声明的目录。复制从服务器需要部分临时文件来在机器重启后仍可用，以便它可以复制临时表或执行LOAD 
+        DATA INFILE操作。如果服务器重启时临时文件夹中的文件丢失了，则复制失败。但是，如果你使用MySQL 
+        4.0.0或更新版本，你可以使用 
+        slave_load_tmpdir变量设置从服务器的临时目录。在这种情况下，从服务器不再使用常规tmpdir，说明你可以将tmpdir设置到一个非固定位置。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        transaction_alloc_block_size</p>
+      <p>为保存将保存到二进制日志中的事务的查询而分配的内存块的大小(字节)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        transaction_prealloc_size</p>
+      <p>为transaction_alloc_blocks分配的固定缓冲区的大小（字节），在两次查询之间不会释放。使该值足够大，将所有查询固定到一个事务中，可以避免多次malloc()调用。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        tx_isolation</p>
+      <p>默认事务隔离级别。默认值为REPEATABLE-READ。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        updatable_views_with_limit</p>
+      <p>该变量控制如果更新包含LIMIT子句，是否可以在当前表中使用不包含主关键字的视图进行更新。(通常用GUI工具生成这类更新)。更新指UPDATE或DELETE语句。这儿主关键字指PRIMARY 
+        KEY，或一个UNIQUE索引，其中任何列不可以包含NULL。</p>
+      <p>该变量有两个值：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+        1或YES：只发出警告(没有错误消息)。这是
+        默认值。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        
+        0或NO：禁止更新。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        version</p>
+      <p>服务器版本号。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        version_bdb</p>
+      <p> BDB存储引擎版本。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        version_comment</p>
+      <p> configure脚本有一个--with-comment选项，当构建MySQL时可以进行注释。该变量包含注释值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        version_compile_machine</p>
+      <p>MySQL构建的机器或架构的类型。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        version_compile_os</p>
+      <p>MySQL构建的操作系统的类型。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        wait_timeout</p>
+      <p>服务器关闭非交互连接之前等待活动的秒数。</p>
+      <p>在线程启动时，根据全局wait_timeout值或全局interactive_timeout值初始化会话wait_timeout值，取决于客户端类型(由mysql_real_connect()的连接选项CLIENT_INTERACTIVE定义)。又见interactive_timeout。</p>
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

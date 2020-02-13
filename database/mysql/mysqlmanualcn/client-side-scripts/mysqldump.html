@@ -1,0 +1,496 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 8.8.&nbsp;mysqldump：数据库备份程序</h1>
+
+        
+      
+    
+    <p> mysqldump客户端可用来转储数据库或搜集数据库进行备份或将数据转移到另一个SQL服务器(不一定是一个MySQL服务器)。转储包含创建表和/或装载表的SQL语句。</p>
+    <p> 如果你在服务器上进行备份，并且表均为MyISAM表，应考虑使用mysqlhotcopy，因为可以更快地进行备份和恢复。参见<a href="mysqlhotcopy.html" title="8.9. mysqlhotcopy — A Database Backup Program">8.9节，“mysqlhotcopy：数据库备份程序”</a>。</p>
+    <p> 有3种方式来调用mysqldump：</p>
+    <pre>shell&gt; mysqldump [options] <i>db_name</i> [<i>tables</i>]
+shell&gt; mysqldump [options] ---database <i>DB1</i> [<i>DB2</i> <i>DB3</i>...]
+shell&gt; mysqldump [options] --all--database</pre>
+    <p> 如果没有指定任何表或使用了---database或--all--database选项，则转储整个数据库。</p>
+    <p> 要想获得你的版本的mysqldump支持的选项，执行mysqldump ---help。</p>
+    <p> 如果运行mysqldump没有--quick或--opt选项，mysqldump在转储结果前将整个结果集装入内存。如果转储大数据库可能会出现问题。该选项默认启用，但可以用--skip-opt禁用。</p>
+    <p> 如果使用最新版本的mysqldump程序生成一个转储重装到很旧版本的MySQL服务器中，不应使用--opt或-e选项。</p>
+    <p> mysqldump支持下面的选项：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      ---help，-？</p>
+    <p> 显示帮助消息并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --add-drop--database</p>
+    <p> 在每个CREATE 
+      DATABASE语句前添加DROP 
+      DATABASE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --add-drop-tables</p>
+    <p> 在每个CREATE 
+      TABLE语句前添加DROP 
+      TABLE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --add-locking</p>
+    <p> 用LOCK 
+      TABLES和UNLOCK 
+      TABLES语句引用每个表转储。重载转储文件时插入得更快。参见<a href="" title="7.2.16. Speed of INSERT Statements">7.2.16节，“INSERT语句的速度”</a>。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --all--database，-A</p>
+    <p> 转储所有数据库中的所有表。与使用---database选项相同，在命令行中命名所有数据库。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --allow-keywords</p>
+    <p> 允许创建关键字列名。应在每个列名前面加上表名前缀。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      ---comments[={0|1}]</p>
+    <p> 如果设置为 
+      0，禁止转储文件中的其它信息，例如程序版本、服务器版本和主机。--skip—comments与---comments=0的结果相同。
+      默认值为1，即包括额外信息。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --compact</p>
+    <p> 产生少量输出。该选项禁用注释并启用--skip-add-drop-tables、--no-set-names、--skip-disable-keys和--skip-add-locking选项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --compatible=<i>name</i></p>
+    <p> 产生与其它数据库系统或旧的MySQL服务器更兼容的输出。值可以为ansi、mysql323、mysql40、postgresql、oracle、mssql、db2、maxdb、no_key_options、no_tables_options或者no_field_options。要使用几个值，用逗号将它们隔开。这些值与设置服务器SQL模式的相应选项有相同的含义。参见<a href="mysql-command-options.html" title="5.3.2. The Server SQL Mode">5.3.2节，“SQL服务器模式”</a>。</p>
+    <p> 该选项不能保证同其它服务器之间的兼容性。它只启用那些目前能够使转储输出更兼容的SQL模式值。例如，--compatible=oracle
+      不映射Oracle类型或使用Oracle注释语法的数据类型。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --complete-insert，-c</p>
+    <p> 使用包括列名的完整的INSERT语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --compress，-C</p>
+    <p> 压缩在客户端和服务器之间发送的所有信息（如果二者均支持压缩）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --create-option</p>
+    <p> 在CREATE 
+      TABLE语句中包括所有MySQL表选项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      ---database，-B</p>
+    <p> 转储几个数据库。通常情况，mysqldump将命令行中的第1个名字参量看作数据库名，后面的名看作表名。使用该选项，它将所有名字参量看作数据库名。CREATE 
+      DATABASE IF NOT EXISTS <i>db_name</i>和USE <i>db_name</i>语句包含在每个新数据库前的输出中。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      ---debug[=<i>debug_options</i>]，-# 
+      [<i>debug_options</i>]</p>
+    <p> 写调试日志。<i>debug_options</i>字符串通常为&#39;d:t:o,<i>file_name</i>&#39;。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --default-character-set=<i>charset</i></p>
+    <p> 使用<i>charset</i>as默认字符集。参见<a href="mysqladmin.html" title="5.10.1. The Character Set Used for Data and Sorting">5.10.1节，“数据和排序用字符集”</a>。如果没有指定，mysqldump使用utf8。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --delayed-insert </p>
+    <p> 使用INSERT 
+      DELAYED语句插入行。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --delete-master-logs</p>
+    <p> 在主复制服务器上，完成转储操作后删除二进制日志。该选项自动启用--master-data。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --disable-keys，-K</p>
+    <p> 对于每个表，用/*!40000 
+      ALTER TABLE <i>tbl_name</i> DISABLE KEYS */;和/*!40000 
+      ALTER TABLE <i>tbl_name</i> ENABLE KEYS */;语句引用INSERT语句。这样可以更快地装载转储文件，因为在插入所有行后创建索引。该选项只适合MyISAM表。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --extended-insert，-e</p>
+    <p> 使用包括几个VALUES列表的多行INSERT语法。这样使转储文件更小，重载文件时可以加速插入。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --fields-terminated-by=...，--fields-enclosed-by=...，--fields-optionally-enclosed-by=...，--fields-escaped-by=...，--行-terminated-by=...</p>
+    <p> 这些选项结合-T选项使用，与LOAD 
+      DATA INFILE的相应子句有相同的含义。参见<a href="mysqldump.html" title="13.2.5. LOAD DATA INFILE Syntax">13.2.5节，“LOAD 
+      DATA INFILE语法”</a>。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --first-slave，-x</p>
+    <p> 不赞成使用，现在重新命名为--lock-all-tables。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --flush-logs，-F</p>
+    <p> 开始转储前刷新MySQL服务器日志文件。该选项要求RELOAD权限。请注意如果结合--all--database(或-A)选项使用该选项，<em>根据每个转储的数据库</em>刷新日志。例外情况是当使用--lock-all-tables或--master-data的时候：在这种情况下，日志只刷新一次，在所有 
+      表被锁定后刷新。如果你想要同时转储和刷新日志，应使用--flush-logs连同--lock-all-tables或--master-data。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --force，-f</p>
+    <p> 在表转储过程中，即使出现SQL错误也继续。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --host=<i>host_name</i>，-h <i>host_name</i></p>
+    <p> 从给定主机的MySQL服务器转储数据。默认主机是localhost。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --hex-blob</p>
+    <p> 使用十六进制符号转储二进制字符串列(例如，&#39;abc&#39;
+      变为0x616263)。影响到的列有BINARY、VARBINARY、BLOB。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --lock-all-tables，-x</p>
+    <p> 所有数据库中的所有表加锁。在整体转储过程中通过全局读锁定来实现。该选项自动关闭--single-transaction和--lock-tables。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --lock-tables，-l</p>
+    <p> 开始转储前锁定所有表。用READ 
+      LOCAL锁定表以允许并行插入MyISAM表。对于事务表例如InnoDB和BDB，--single-transaction是一个更好的选项，因为它不根本需要锁定表。</p>
+    <p> 请注意当转储多个数据库时，--lock-tables分别为每个数据库锁定表。因此，该选项不能保证转储文件中的表在数据库之间的逻辑一致性。不同数据库表的转储状态可以完全不同。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --master-data[=<i>value</i>]</p>
+    <p> 该选项将二进制日志的位置和文件名写入到输出中。该选项要求有RELOAD权限，并且必须启用二进制日志。如果该选项值等于1，位置和文件名被写入CHANGE 
+      MASTER语句形式的转储输出，如果你使用该SQL转储主服务器以设置从服务器，从服务器从主服务器二进制日志的正确位置开始。如果选项值等于2，CHANGE 
+      MASTER语句被写成SQL注释。如果<i>value</i>被省略，这是默认动作。</p>
+    <p> --master-data选项启用--lock-all-tables，除非还指定--single-transaction(在这种情况下，只在刚开始转储时短时间获得全局读锁定。又见--single-transaction。在任何一种情况下，日志相关动作发生在转储时。该选项自动关闭--lock-tables。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --no-create-db，-n</p>
+    <p> 该选项禁用CREATE 
+      DATABASE /*!32312 IF NOT EXISTS*/ db_name语句，如果给出---database或--all--database选项，则包含到输出中。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --no-create-info，-t</p>
+    <p> 不写重新创建每个转储表的CREATE 
+      TABLE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --no-data，-d</p>
+    <p> 不写表的任何行信息。如果你只想转储表的结构这很有用。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --opt</p>
+    <p> 该选项是速记；等同于指定 
+      --add-drop-tables--add-locking 
+      --create-option --disable-keys--extended-insert --lock-tables --quick 
+      --set-charset。它可以给出很快的转储操作并产生一个可以很快装入MySQL服务器的转储文件。<em>该选项默认开启，但可以用</em><i>--skip-opt</i><em>禁用</em>。要想只禁用确信用-opt启用的选项，使用--skip形式；例如，--skip-add-drop-tables或--skip-quick。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --password[=<i>password</i>]，-p[<i>password</i>]</p>
+    <p> 连接服务器时使用的密码。如果你使用短选项形式(-p)，<em>不能在选项和密码之间有一个空格</em>。如果在命令行中，忽略了--password或-p选项后面的
+      密码值，将提示你输入一个。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --port=<i>port_num</i>，-P 
+      port_<i>num</i></p>
+    <p> 用于连接的TCP/IP端口号。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --protocol={TCP | SOCKET | 
+      PIPE | MEMORY}</p>
+    <p> 使用的连接协议。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --quick，-q</p>
+    <p> 该选项用于转储大的表。它强制mysqldump从服务器一次一行地检索表中的行而不是检索所有行并在输出前将它缓存到内存中。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --quote-names，-Q</p>
+    <p> 用‘`’字符引用数据库、表和列名。如果服务器SQL模式包括ANSI_QUOTES选项，用‘&quot;’字符引用名。默认启用该选项。可以用--skip-quote-names禁用，但该选项应跟在其它选项后面，例如可以启用--quote-names的--compatible。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --result-file=<i>file</i>，-r <i>file</i></p>
+    <p> 将输出转向给定的文件。该选项应用在Windows中，因为它禁止将新行‘\n’字符转换为‘\r\n’回车、返回/新行序列。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --routines，-R</p>
+    <p> 在转储的数据库中转储存储程序(函数和程序)。使用---routines产生的输出包含CREATE 
+      PROCEDURE和CREATE 
+      FUNCTION语句以重新创建子程序。但是，这些语句不包括属性，例如子程序定义者或创建和修改时间戳。这说明当重载子程序时，对它们进行创建时定义者应设置为重载用户，时间戳等于重载时间。</p>
+    <p> 如果你需要创建的子程序使用原来的定义者和时间戳属性，不使用--routines。相反，使用一个具有mysql数据库相应权限的MySQL账户直接转储和重载mysql.proc表的内容。</p>
+    <p> 该选项在MySQL 5.1.2中添加进来。在此之前，存储程序不转储。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --set-charset</p>
+    <p> 将SET 
+      NAMES <i>default_character_set</i>加到输出中。该选项默认启用。要想禁用SET 
+      NAMES语句，使用--skip-set-charset。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --single-transaction</p>
+    <p> 该选项从服务器转储数据之前发出一个BEGIN 
+      SQL语句。它只适用于事务表，例如InnoDB和BDB，因为然后它将在发出BEGIN而没有阻塞任何应用程序时转储一致的数据库状态。</p>
+    <p> 当使用该选项时，应记住只有InnoDB表能以一致的状态被转储。例如，使用该选项时任何转储的MyISAM或HEAP表仍然可以更改状态。</p>
+    <p> --single-transaction选项和--lock-tables选项是互斥的，因为LOCK 
+      TABLES会使任何挂起的事务隐含提交。</p>
+    <p> 要想转储大的表，应结合--quick使用该选项。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --socket=<i>path</i>，-S <i>path</i></p>
+    <p> 当连接localhost(为默认主机)时使用的套接字文件。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --skip--comments</p>
+    <p> 参见---comments选项的描述。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --tab=<i>path</i>，-T <i>path</i></p>
+    <p> 产生tab分割的数据文件。对于每个转储的表，mysqldump创建一个包含创建表的CREATE 
+      TABLE语句的<i>tbl_name</i>.sql文件，和一个包含其数据的<i>tbl_name</i>.txt文件。选项值为写入文件的目录。</p>
+    <p> 默认情况，.txt数据文件的格式是在列值和每行后面的新行之间使用tab字符。可以使用--fields-<i>xxx</i>和--行--<i>xxx</i>选项明显指定格式。</p>
+    <p>注释：该选项只适用于mysqldump与mysqld服务器在同一台机器上运行时。你必须具有FILE权限，并且服务器必须有在你指定的目录中有写文件的许可。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --tables</p>
+    <p> 覆盖---database或-B选项。选项后面的所有参量被看作表名。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --triggers</p>
+    <p> 为每个转储的表转储触发器。该选项默认启用；用--skip-triggers禁用它。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --tz-utc</p>
+    <p> 在转储文件中加入SET 
+      TIME_ZONE=&#39;+00:00&#39;以便TIMESTAMP列可以在具有不同时区的服务器之间转储和重载。(不使用该选项，TIMESTAMP列在具有本地时区的源服务器和目的服务器之间转储和重载）。--tz-utc也可以保护由于夏令时带来的更改。--tz-utc默认启用。要想禁用它，使用--skip-tz-utc。该选项在MySQL 
+      5.1.2中加入。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --user=<i>user_name</i>，-u <i>user_name</i></p>
+    <p> 连接服务器时使用的MySQL用户名。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --verbose，-v</p>
+    <p> 冗长模式。打印出程序操作的详细信息。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --version，-V</p>
+    <p> 显示版本信息并退出。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --where=&#39;<i>where-condition</i>&#39;,
+      
+      -w &#39;<i>where-condition</i>&#39;</p>
+    <p> 只转储给定的WHERE条件选择的记录。请注意如果条件包含命令解释符专用空格或字符，一定要将条件引用起来。</p>
+    <p> 例如：</p>
+    <pre >&quot;--where=user=&#39;jimf&#39;&quot;
+&quot;-wuserid&gt;1&quot;
+&quot;-wuserid&lt;1&quot;</pre>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      --xml，-X</p>
+    <p> 将转储输出写成XML。</p>
+    <p> 还可以使用--var_name=value选项设置下面的变量：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      max_allowed_packet</p>
+    <p> 客户端/服务器之间通信的缓存区的最大大小。最大为1GB。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      net_buffer_length</p>
+    <p>客户端/服务器之间通信的缓存区的初始大小。当创建多行插入语句时(如同使用选项--extended-insert或--opt)，mysqldump创建长度达net_buffer_length的行。如果增加该变量，还应确保在MySQL服务器中的net_buffer_length变量至少这么大。</p>
+    <p> 还可以使用--set-variable=<i>var_name</i>=<i>value</i>或-O <i>var_name</i>=<i>value</i>语法设置变量。然而，现在不赞成使用该语法。</p>
+    <p> mysqldump最常用于备份一个整个的数据库：</p>
+    <pre>shell&gt; mysqldump --opt <i>db_name</i> &gt; <i>backup-file.sql</i></pre>
+    <p> 你可以这样将转储文件读回到服务器：</p>
+    <pre>shell&gt; mysql <i>db_name</i> &lt; <i>backup-file.sql</i></pre>
+    <p> 或者为：</p>
+    <pre>shell&gt; mysql -e &quot;source /<i>path-to--backup/backup-file.sql</i>&quot; <i>db_name</i></pre>
+    <p> mysqldump也可用于从一个MySQL服务器向另一个服务器复制数据时装载数据库：</p>
+    <pre>shell&gt; mysqldump --opt <i>db_name</i> | mysql --host=<i>remote_host</i> -C <i>db_name</i></pre>
+    <p> 可以用一个命令转储几个数据库：</p>
+    <pre>shell&gt; mysqldump ---database <i>db_name1</i> [<i>db_name2</i> ...] &gt; my_databases.sql</pre>
+    <p> 如果你想要转储所有数据库，使用--all--database选项：</p>
+    <pre>shell&gt; mysqldump --all-databases &gt; all_databases.sql</pre>
+    <p>如果表保存在InnoDB存储引擎中，mysqldump提供了一种联机备份的途径(参见下面的命令)。该备份只需要在开始转储时对所有表进行全局读锁定(使用FLUSH 
+      TABLES WITH READ LOCK)。获得锁定后，读取二进制日志的相应内容并将锁释放。因此如果并且只有当发出FLUSH...时正执行一个长的更新语句，MySQL服务器才停止直到长语句结束，然后转储则释放锁。因此如果MySQL服务器只接收到短(&quot;短执行时间&quot;)的更新语句，即使有大量的语句，也不会注意到锁期间。</p>
+    <pre>shell&gt; mysqldump --all-databases --single-transaction &gt; all_databases.sql</pre>
+    <p>对于点对点恢复(也称为“前滚”，当你需要恢复旧的备份并重放该备份以后的更改时)，循环二进制日志(参见<a href="mysqlbinlog.html" title="5.11.3. The Binary Log">5.11.3节，“二进制日志”</a>)或至少知道转储对应的二进制日志内容很有用：</p>
+    <pre>shell&gt; mysqldump --all-databases --master-data=2 &gt; all_databases.sql
+或
+shell&gt; mysqldump --all-databases --flush-logs --master-data=2 &gt; all_databases.sql</pre>
+    <p> 如果表保存在InnoDB存储引擎中，同时使用--master-data和--single-transaction提供了一个很方便的方式来进行适合点对点恢复的联机备份。</p>
+    <p>关于备份的详细信息，参见<a href="mysqlbinlog.html" title="5.9.1. Database Backups">5.9.1节，“数据库备份”</a>。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,356 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 12.9.4.&nbsp;其他函数</h1>
+
+            <ul type="disc">
+              <li> DEFAULT(<i>col_name</i>) </li>
+            </ul>
+            <p> 返回一个表列的默认值。若该列没有默认值则会产生错误。 </p>
+            <p> mysql&gt; UPDATE t SET i = DEFAULT(i)+1 WHERE id &lt; 100;</p>
+            <ul type="disc">
+              <li> FORMAT(<i>X</i>,<i>D</i>) </li>
+            </ul>
+            <p> 将数字<i>X</i> 的格式写为&#39;#,###,###.##&#39;,以四舍五入的方式保留小数点后 <i> D</i> 位， 
+              并将结果以字符串的形式返回。若&nbsp; <i>D</i> 为 
+              0, 则返回结果不带有小数点，或不含小数部分。 </p>
+            <p> mysql&gt; SELECT FORMAT(12332.123456, 4);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; &#39;12,332.1235&#39;</p>
+            <p> mysql&gt; SELECT FORMAT(12332.1,4);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; &#39;12,332.1000&#39;</p>
+            <p> mysql&gt; SELECT FORMAT(12332.2,0);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; &#39;12,332&#39;</p>
+            <ul type="disc">
+              <li> GET_LOCK(<i>str</i>,<i>timeout</i>) </li>
+            </ul>
+            <p> 设法使用字符串<i>str</i> 给定的名字得到一个锁， 超时为<i>timeout</i> 秒。若成功得到锁，则返回 1，若操作超时则返回0&nbsp; 
+              (例如,由于另一个客户端已提前封锁了这个名字 
+              ),若发生错误则返回NULL (诸如缺乏记忆或线程mysqladmin 
+              kill 被断开 )。假如你有一个用GET_LOCK()得到的锁，当你执行RELEASE_LOCK()或你的连接断开(正常或非正常)时，这个锁就会解除。 </p>
+            <p> 这个函数可用于执行应用程序锁或模拟记录锁定。名称被锁定在服务器范围内。假如一个名字已经被一个客户端封锁， 
+              GET_LOCK() 
+              会封锁来自另一个客户端申请封锁同一个名字的任何请求。这使对一个封锁名达成协议的客户端使用这个名字合作执行建议锁。然而要知道它也允许不在一组合作客户端中的一个客户端封锁名字，不论是服役的还是非故意的，这样阻止任何合作中的客户端封锁这个名字。一个减少这种情况发生的办法就是使用数据库特定的或应用程序特定的封锁名。例如，&nbsp;
+              使用<i>db_name.str</i>或 <i> app_name.str</i> 形式的封锁名。</p>
+            <p> mysql&gt; SELECT GET_LOCK(&#39;lock1&#39;,10);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 1</p>
+            <p> mysql&gt; SELECT IS_FREE_LOCK(&#39;lock2&#39;);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 1</p>
+            <p> mysql&gt; SELECT GET_LOCK(&#39;lock2&#39;,10);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 1</p>
+            <p> mysql&gt; SELECT RELEASE_LOCK(&#39;lock2&#39;);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 1</p>
+            <p> mysql&gt; SELECT RELEASE_LOCK(&#39;lock1&#39;);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; NULL</p>
+            <p> 注意，第二个 RELEASE_LOCK()调用返回 
+              NULL ，原因是锁&#39;lock1&#39; 杯第二个GET_LOCK()调用解开。</p>
+            <ul type="disc">
+              <li> INET_ATON(<i>expr</i>) </li>
+            </ul>
+            <p> 给出一个作为字符串的网络地址的点地址表示，返回一个代表该地址数值的整数。地址可以是4或8比特地址。 </p>
+            <p> mysql&gt; SELECT INET_ATON(&#39;209.207.224.40&#39;);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 3520061480</p>
+            <p> 产生的数字总是按照网络字节顺序。如上面的例子，数字按照 209×256<sup>3</sup> + 207×256<sup>2</sup> + 224×256 
+              + 40 进行计算。</p>
+            <p> INET_ATON() 
+              
+              也能理解短格式 IP 地址：</p>
+            <p> mysql&gt; SELECT INET_ATON(&#39;127.0.0.1&#39;), INET_ATON(&#39;127.1&#39;);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; 2130706433, 2130706433</p>
+            <p> 注释：
+              
+              在存储由INET_ATON()
+              产生的值时，推荐你使用 INT UNSIGNED 列。假如你使用 
+              (带符号) INT列, 
+              则相应的第一个八位组大于127的IP 
+              地址值会被截至&nbsp; 2147483647 (即, 
+              INET_ATON(&#39;127.255.255.255&#39;) 所返回的值)。请参见<a href="miscellaneous-functions.html" title="11.2. Numeric Types">11.2节，“数值类型”</a>。 </p>
+            <ul type="disc">
+              <li> INET_NTOA(<i>expr</i>) </li>
+            </ul>
+            <p> 给定一个数字网络地址 (4 或 8 比特),返回作为字符串的该地址的电地址表示。</p>
+            <p> mysql&gt; SELECT INET_NTOA(3520061480);</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; &#39;209.207.224.40&#39;</p>
+            <ul type="disc">
+              <li> IS_FREE_LOCK(<i>str</i>) </li>
+            </ul>
+            <p> 检查名为<i>str</i>的锁是否可以使用 
+              (换言之,没有被封锁)。若锁可以使用，则返回&nbsp; 
+              1&nbsp; (没有人在用这个锁), 若这个锁正在被使用，则返回0
+              ，出现错误则返回 NULL&nbsp; (诸如不正确的参数 
+              )。</p>
+            <ul type="disc">
+              <li> IS_USED_LOCK(<i>str</i>) </li>
+            </ul>
+            <p> 检查名为<i>str</i>的锁是否正在被使用(换言之,被封锁)。若被封锁，则返回使用该锁的客户端的连接标识符。否则返回 
+              NULL。</p>
+            <ul type="disc">
+              <li> MASTER_POS_WAIT(<i>log_name</i>,<i>log_pos</i>[,<i>timeout</i>]) </li>
+            </ul>
+            <p> 该函数对于控制主从同步很有用处。它会持续封锁，直到从设备阅读和应用主机记录中所有补充资料到指定的位置。返回值是其为到达指定位置而必须等待的记录事件的数目。若从设备SQL线程没有被启动、从设备主机信息尚未初始化、参数不正确或出现任何错误，则该函数返回 
+              NULL。若超时时间被超过，则返回-1。若在MASTER_POS_WAIT()
+              等待期间，从设备SQL线程中止，则该函数返回 
+              NULL。若从设备由指定位置通过，则函数会立即返回结果。 </p>
+            <p> 假如已经指定了一个<i>超时时间</i>值，当 <i>超时时间 </i> 秒数经过后MASTER_POS_WAIT()会停止等待。<i>超时时间</i> 必须大于 0；一个为零或为负值的 <i> 超时时间</i> 表示没有超市时间。&nbsp; </p>
+            <ul type="disc">
+              <li> NAME_CONST(<i>name</i>,<i>value</i>) </li>
+            </ul>
+            <p> 返回给定值。 当用来产生一个结果集合列时, NAME_CONST()促使该列使用给定名称。&nbsp; </p>
+            <p> mysql&gt; SELECT NAME_CONST(&#39;myname&#39;, 14);</p>
+            <p> +--------+</p>
+            <p> | myname |</p>
+            <p> +--------+</p>
+            <p> |&nbsp;&nbsp;&nbsp;&nbsp; 14 |</p>
+            <p> +--------+</p>
+            <p> 这个函数被添加进 MySQL 5.0.12。它只做内部使用。 
+              服务器在书写来自包含局部程序变量的存储程序的语句时会用到它，详见<a href="" title="20.4. Binary Logging of Stored Routines and Triggers">20.4节，“存储子程序和触发程序的二进制日志功能”</a>。你可能会在mysqlbinlog 的书橱中看到这个函数。 </p>
+            <ul type="disc">
+              <li> RELEASE_LOCK(<i>str</i>) </li>
+            </ul>
+            <p> 解开被GET_LOCK()获取的，用字符串<i>str</i> 所命名的锁。若锁被解开，则返回&nbsp; 1，若改线程尚未创建锁，则返回0 
+              (此时锁没有被解开 ), 若命名的锁不存在，则返回 
+              NULL。若该锁从未被对GET_LOCK()的调用获取，或锁已经被提前解开，则该锁不存在。</p>
+            <p> DO 
+              语句和RELEASE_LOCK()同时使用很方便。请参见<a href="" title="13.2.2. DO Syntax">13.2.2节，“DO语法”</a>。 </p>
+            <ul type="disc">
+              <li> SLEEP(<i>duration</i>) </li>
+            </ul>
+            <p> 睡眠(暂停)
+              时间为<i>duration</i> 参数给定的秒数，然后返回 0。若 
+              SLEEP() 被中断,它会返回 1。 
+              duration 或许或包括一个给定的以微秒为单位的分数部分。 </p>
+            <ul type="disc">
+              <li> UUID() </li>
+            </ul>
+            <p> 返回一个通用唯一标识符(UUID) ，其产生的根据是《DCE 
+              1.1: 
+              远程过程调用》 
+              (附录A) CAE (公共应用软件环境)
+              
+              
+              的说明，该作品于1997年10月由 
+              The Open Group 出版 (文件编号 
+              C706,  http://www.opengroup.org/public/pubs/catalog/c706.htm). </p>
+            <p> UUID被设计成一个在时间和空间上都独一无二的数字。2个对UUID()
+              的调用应产生2个不同的值，即使这些调用的执行是在两个互不相连的单独电脑上进行。 </p>
+            <p> UUID 
+              是一个由5位十六进制数的字符串表示的128比特数字 
+              ，其格式为&nbsp; aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee ：</p>
+            <ul type="disc">
+              <ul type="circle">
+                <li> 前3个数字从一个时间戳产生。&nbsp; </li>
+                <li> 第4
+                  个数字保持暂时唯一性，以防时间戳值失去单一性 (例如,
+                  由于经济时)。</li>
+                <li> 第5个数字是一个 
+                  IEEE 802 节点号，它提供空间唯一性。若后者不可用，则用一个随机数字替换。 
+                  (例如, 
+                  由于主机没有以太网卡，或我们不知道怎样在你的操作系统上找到界面的机器地址 )。假若这样，空间唯一性就不能得到保证。尽管如此，一个冲突的发生机率还是<i>非常</i>低的。 </li>
+              </ul>
+            </ul>
+            <p> 目前,一个界面的 
+              MAC 地址尽被FreeBSD 和 
+              Linux考虑到。在其它操作系统中, MySQL使用随机产生的 
+              48比特数字。</p>
+            <p> mysql&gt; SELECT UUID();</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; &#39;6ccd780c-baba-1026-9564-0040f4311e29&#39;</p>
+            <p> 注意， 
+              UUID() 不支持复制功能。 </p>
+            <ul type="disc">
+              <li> VALUES(<i>col_name</i>) </li>
+            </ul>
+            <p> 在一个INSERT
+              … ON DUPLICATE KEY UPDATE …语句中，你可以在UPDATE
+              子句中使用 VALUES(<i>col_name</i>)函数，用来访问来自该语句的INSERT
+              部分的列值。换言之，UPDATE 子句中的 
+              VALUES(<i>col_name</i>) 访问需要被插入的<i>col_name </i>的值,并不会发生重复键冲突。这个函数在多行插入中特别有用。&nbsp; 
+              VALUES()函数只在INSERT ... UPDATE 
+              语句中有意义，而在其它情况下只会返回 NULL。请参见<a href="" title="13.2.4. INSERT Syntax">13.2.4节，“INSERT语法”</a>. </p>
+            <p> mysql&gt; INSERT INTO table (a,b,c) VALUES (1,2,3),(4,5,6)</p>
+            <p> &nbsp;&nbsp;&nbsp; -&gt; ON DUPLICATE KEY UPDATE c=VALUES(a)+VALUES(b);
+          
+        
+      
+    
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,432 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.2.10.&nbsp;MySQL如何优化嵌套Join</h1>
+
+          
+        
+      
+      <p> 表示联接的语法允许嵌套联接。下面的讨论引用了<a href="" title="13.2.7.1. JOIN Syntax">13.2.7.1节，“JOIN语法”</a>中描述的联接语法。</p>
+      <p> 同SQL标准比较，<i>table_factor</i>语法已经扩展了。后者只接受<i>table_reference</i>，而不是括号内所列的。</p>
+      <p> <i> table_reference</i>项列表内的每个逗号等价于内部联接，这是一个保留扩展名。例如：</p>
+      <pre>SELECT * FROM t1 LEFT JOIN (t2, t3, t4)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON (t2.a=t1.a AND t3.b=t1.b AND t4.c=t1.c)</pre>
+      <p> 等价于：</p>
+      <pre>SELECT * FROM t1 LEFT JOIN (t2 CROSS JOIN t3 CROSS JOIN t4)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON (t2.a=t1.a AND t3.b=t1.b AND t4.c=t1.c)</pre>
+      <p> 在MySQL中，CROSS 
+        JOIN语法上等价于INNER 
+        JOIN (它们可以彼此代替。在标准SQL中，它们不等价。INNER 
+        JOIN结合ON子句使用；CROSS 
+        JOIN 用于其它地方。</p>
+      <p> 总的来说，在只包含内部联接操作的联接表达式中可以忽略括号。删除括号并将操作组合到左侧后，联接表达式：</p>
+      <pre>t1 LEFT JOIN (t2 LEFT JOIN t3 ON t2.b=t3.b OR t2.b IS NULL)
+&nbsp;&nbsp; ON t1.a=t2.a</pre>
+      <p> 转换为表达式：</p>
+      <pre>(t1 LEFT JOIN t2 ON t1.a=t2.a) LEFT JOIN t3
+&nbsp;&nbsp;&nbsp; ON t2.b=t3.b OR t2.b IS NULL</pre>
+      <p> 但是这两个表达式不等效。要说明这点，假定表t1、t2和t3有下面的状态：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        表t1包含行{1}、{2}</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        表t2包含行{1,101}</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        表t3包含行{101}</p>
+      <p> 在这种情况下，第1个表达式返回包括行{1,1,101,101}、{2,NULL,NULL,NULL}的结果，第2个表达式返回行{1,1,101,101}、{2,NULL,NULL,101}：</p>
+      <pre>mysql&gt; SELECT *
+&nbsp;&nbsp;&nbsp; -&gt; FROM t1
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (t2 LEFT JOIN t3 ON t2.b=t3.b OR t2.b IS NULL)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON t1.a=t2.a;
++------+------+------+------+
+| a&nbsp;&nbsp;&nbsp; | a&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp; 101 |&nbsp; 101 |
+|&nbsp;&nbsp;&nbsp; 2 | NULL | NULL | NULL |
++------+------+------+------+
+&nbsp;
+mysql&gt; SELECT *
+&nbsp;&nbsp;&nbsp; -&gt; FROM (t1 LEFT JOIN t2 ON t1.a=t2.a)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN t3
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON t2.b=t3.b OR t2.b IS NULL;
++------+------+------+------+
+| a&nbsp;&nbsp;&nbsp; | a&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp; 101 |&nbsp; 101 |
+|&nbsp;&nbsp;&nbsp; 2 | NULL | NULL |&nbsp; 101 |
++------+------+------+------+</pre>
+      <p> 在下面的例子中，外面的联接操作结合内部联接操作使用：</p>
+      <pre>t1 LEFT JOIN (t2，t3) ON t1.a=t2.a</pre>
+      <p> 该表达式不能转换为下面的表达式：</p>
+      <pre>t1 LEFT JOIN t2 ON t1.a=t2.a，t3.</pre>
+      <p> 对于给定的表状态，第1个表达式返回行{1,1,101,101}、{2,NULL,NULL,NULL}，第2个表达式返回行{1,1,101,101}、{2,NULL,NULL,101}：</p>
+      <pre>mysql&gt; SELECT *
+&nbsp;&nbsp;&nbsp; -&gt; FROM t1 LEFT JOIN (t2, t3) ON t1.a=t2.a;
++------+------+------+------+
+| a &nbsp;&nbsp;&nbsp;| a&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp; 101 |&nbsp; 101 |
+|&nbsp;&nbsp;&nbsp; 2 | NULL | NULL | NULL |
++------+------+------+------+
+&nbsp;
+mysql&gt; SELECT *
+&nbsp;&nbsp;&nbsp; -&gt; FROM t1 LEFT JOIN t2 ON t1.a=t2.a, t3;
++------+------+------+------+
+| a&nbsp;&nbsp;&nbsp; | a&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; | b&nbsp;&nbsp;&nbsp; |
++------+------+------+------+
+|&nbsp;&nbsp;&nbsp; 1 |&nbsp;&nbsp;&nbsp; 1 |&nbsp; 101 |&nbsp; 101 |
+|&nbsp;&nbsp;&nbsp; 2 | NULL | NULL |&nbsp; 101 |
++------+------+------+------+</pre>
+      <p> 因此，如果我们忽略联接表达式中的括号连同外面的联接操作符，我们会改变原表达式的结果。</p>
+      <p> 更确切地说，我们不能忽视左外联接操作的右操作数和右联接操作的左操作数中的括号。换句话说，我们不能忽视外联接操作中的内表达式中的括号。可以忽视其它操作数中的括号(外部表的操作数)。</p>
+      <p> 对于任何表t1、t2、t3和属性t2.b和t3.b的任何条件P，下面的表达式：</p>
+      <pre>(t1,t2) LEFT JOIN t3 ON P(t2.b,t3.b)</pre>
+      <p> 等价于表达式 </p>
+      <pre>t1，t2 LEFT JOIN t3 ON P(t2.b,t3.b)</pre>
+      <p> 如果联接表达式(<i>join_table</i>)中的联接操作的执行顺序不是从左到右，我们则应讨论嵌套的联接。这样，下面的查询：</p>
+      <pre>SELECT * FROM t1 LEFT JOIN (t2 LEFT JOIN t3 ON t2.b=t3.b) ON t1.a=t2.a
+&nbsp; WHERE t1.a &gt; 1
+&nbsp;
+SELECT * FROM t1 LEFT JOIN (t2, t3) ON t1.a=t2.a
+&nbsp; WHERE (t2.b=t3.b OR t2.b IS NULL) AND t1.a &gt; 1</pre>
+      <p> 联接表：</p>
+      <pre>t2 LEFT JOIN t3 ON t2.b=t3.b
+t2, t3</pre>
+      <p> 认为是嵌套的。第1个查询结合左联接操作则形成嵌套的联接，而在第二个查询中结合内联接操作形成嵌套联接。</p>
+      <p> 在第1个查询中，括号可以忽略：联接表达式的语法结构与联接操作的执行顺序相同。但对于第2个查询，括号不能省略，尽管如果没有括号，这里的联接表达式解释不清楚。(在外部扩展语法中，需要第2个查询的(t2，t3)的括号，尽管从理论上对查询分析时不需要括号：这些查询的语法结构将仍然不清楚，因为LEFT 
+        JOIN和ON将充当表达式(t2,t3)的左、右界定符的角色)。</p>
+      <p> 前面的例子说明了这些点：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对于只包含内联接(而非外联接)的联接表达式，可以删除括号。你可以移除括号并从左到右评估(或实际上，你可以按任何顺序评估表)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        总的来说，对外联接却不是这样。去除括号可能会更改结果。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        总的来说，对外联接和内联接的结合，也不是这样。去除括号可能会更改结果。</p>
+      <p> 含嵌套外联接的查询按含内联接的查询的相同的管道方式执行。更确切地说，利用了嵌套环联接算法。让我们回忆嵌套环联接执行查询时采用什么算法。</p>
+      <p> 假定我们有一个如下形式的表T1、T2、T3的联接查询：</p>
+      <pre>SELECT * FROM T1 INNER JOIN T2 ON P1(T1,T2)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INNER JOIN T3 ON P2(T2,T3)
+&nbsp; WHERE P(T1,T2,T3).</pre>
+      <p> 这里，P1(T1,T2)和P2(T3,T3)是一些联接条件(表达式)，其中P(t1,t2,t3)是表T1、T2、T3的列的一个条件。</p>
+      <p> 嵌套环联接算法将按下面的方式执行该查询：</p>
+      <p>&nbsp; </p>
+      <pre>FOR each row t1 in T1 {
+&nbsp; FOR each row t2 in T2 such that P1(t1,t2) {
+&nbsp;&nbsp;&nbsp; FOR each row t3 in T3 such that P2(t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}</pre>
+      <p > 符号t1||t2||t3表示“连接行t1、t2和t3的列组成的行”。在下面的一些例子中，出现行名的NULL表示NULL用于行的每个列。例如，t1||t2||NULL表示“连接行t1和t2的列以及t3的每个列的NULL组成的行”。</p>
+      <p> 现在让我们考虑带嵌套的外联接的查询：</p>
+      <pre>SELECT * FROM T1 LEFT JOIN
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2 LEFT JOIN T3 ON P2(T2,T3))
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON P1(T1,T2)
+&nbsp; WHERE P(T1,T2,T3)。</pre>
+      <p> 对于该查询我们修改嵌套环模式可以得到：</p>
+      <pre>FOR each row t1 in T1 {
+&nbsp; BOOL f1:=FALSE;
+&nbsp; FOR each row t2 in T2 such that P1(t1,t2) {
+&nbsp;&nbsp;&nbsp; BOOL f2:=FALSE;
+&nbsp;&nbsp;&nbsp; FOR each row t3 in T3 such that P2(t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2=TRUE;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1=TRUE;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; IF (!f2) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||NULL; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1=TRUE;
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+&nbsp; IF (!f1) {
+&nbsp;&nbsp;&nbsp; IF P(t1,NULL,NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||NULL||NULL; OUTPUT t;
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}
+&nbsp;</pre>
+      <p> 总的来说，对于外联接操作中的第一个内表的嵌套环，引入了一个标志，在环之前关闭并且在环之后打开。如果对于外部表的当前行，如果匹配表示内操作数的表，则标志打开。如果在循环结尾处标志仍然关闭，则对于外部表的当前行，没有发现匹配。在这种情况下，对于内表的列，应使用NULL值补充行。结果行被传递到输出进行最终检查或传递到下一个嵌套环，但只能在行满足所有嵌入式外联接的联接条件时。</p>
+      <p> 在我们的例子中，嵌入了下面表达式表示的外联接表：</p>
+      <pre>(T2 LEFT JOIN T3 ON P2(T2,T3))</pre>
+      <p> 请注意对于有内联接的查询，优化器可以选择不同的嵌套环顺序，例如：</p>
+      <pre>FOR each row t3 in T3 {
+&nbsp; FOR each row t2 in T2 such that P2(t2,t3) {
+&nbsp;&nbsp;&nbsp; FOR each row t1 in T1 such that P1(t1,t2) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}</pre>
+      <p> 对于有外联接的查询，优化器可以只选择这样的顺序：外表的环优先于内表的环。这样，对于有外联接的查询，只可能有一种嵌套顺序。在下面的查询中，优化器将评估两个不同的嵌套：</p>
+      <pre>SELECT * T1 LEFT JOIN (T2,T3) ON P1(T1,T2) AND P2(T1,T3)
+&nbsp; WHERE P(T1,T2,T3)</pre>
+      <p> 嵌套为：</p>
+      <pre>FOR each row t1 in T1 {
+&nbsp; BOOL f1:=FALSE;
+&nbsp; FOR each row t2 in T2 such that P1(t1,t2) {
+&nbsp;&nbsp;&nbsp; FOR each row t3 in T3 such that P2(t1,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1:=TRUE
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+&nbsp; IF (!f1) {
+&nbsp;&nbsp;&nbsp; IF P(t1,NULL,NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||NULL||NULL; OUTPUT t;
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}</pre>
+      <p> 和</p>
+      <pre>FOR each row t1 in T1 {
+&nbsp; BOOL f1:=FALSE;
+&nbsp; FOR each row t3 in T3 such that P2(t1,t3) {
+&nbsp;&nbsp;&nbsp; FOR each row t2 in T2 such that P1(t1,t2) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1:=TRUE
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+&nbsp; IF (!f1) {
+&nbsp;&nbsp;&nbsp; IF P(t1,NULL,NULL) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||NULL||NULL; OUTPUT t;
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}</pre>
+      <p> 在两个嵌套中，必须在外环中处理T1，因为它用于外联接中。T2和T3用于内联接中，因此联接必须在内环中处理。但是，因为该联接是一个内联接，T2和T3可以以任何顺序处理。</p>
+      <p> 当讨论内联接嵌套环的算法时，我们忽略了部分详情，可能对查询执行的性能的影响会很大。我们没有提及所谓的“下推”条件。假定可以用连接公式表示我们的WHERE条件P(T1,T2,T3)：</p>
+      <pre>P(T1,T2,T2) = C1(T1) AND C2(T2) AND C3(T3)。</pre>
+      <p> 在这种情况下，MySQL实际使用了下面的嵌套环方案来执行带内联接得到查询：</p>
+      <pre>FOR each row t1 in T1 such that C1(t1) {
+&nbsp; FOR each row t2 in T2 such that P1(t1,t2) AND C2(t2)&nbsp; {
+&nbsp;&nbsp;&nbsp; FOR each row t3 in T3 such that P2(t2,t3) AND C3(t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF P(t1,t2,t3) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+}</pre>
+      <p> 你会看见每个连接 
+        C1(T1)，C2(T2)，C3(T3)被从最内部的环内推出到可以对它进行评估的最外的环中。如果C1(T1)是一个限制性很强的条件，下推条件可以大大降低从表T1传递到内环的行数。结果是查询大大加速。</p>
+      <p> 对于有外联接的查询，只有查出外表的当前的行可以匹配内表后，才可以检查WHERE条件。这样，对内嵌套环下推的条件不能直接用于带外联接的查询。这里我们必须引入有条件下推前提，由遇到匹配后打开的标志保护。</p>
+      <p> 对于带下面的外联接的例子</p>
+      <pre>P(T1,T2,T3)=C1(T1) AND C(T2) AND C3(T3)</pre>
+      <p> 使用受保护的下推条件的嵌套环方案看起来应为：</p>
+      <pre>FOR each row t1 in T1 such that C1(t1) {
+&nbsp; BOOL f1:=FALSE;
+&nbsp; FOR each row t2 in T2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; such that P1(t1,t2) AND (f1?C2(t2):TRUE) {
+&nbsp;&nbsp;&nbsp; BOOL f2:=FALSE;
+&nbsp;&nbsp;&nbsp; FOR each row t3 in T3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; such that P2(t2,t3) AND (f1&amp;&amp;f2?C3(t3):TRUE) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF (f1&amp;&amp;f2?TRUE:(C2(t2) AND C3(t3))) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;t:=t1||t2||t3; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f2=TRUE;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1=TRUE;
+&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp; IF (!f2) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IF (f1?TRUE:C2(t2) &amp;&amp; P(t1,t2,NULL)) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||t2||NULL; OUTPUT t;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; f1=TRUE;
+&nbsp;&nbsp;&nbsp; }
+&nbsp; }
+&nbsp; IF (!f1 &amp;&amp; P(t1,NULL,NULL)) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; t:=t1||NULL||NULL; OUTPUT t;
+&nbsp; }
+}</pre>
+      <p> 总的来说，可以从联接条件（例如P1(T1,T2)和P(T2,T3)）提取下推前提。在这种情况下，下推前提也受一个标志保护，防止检查由相应外联接操作所产生的NULL-补充的行的断言。</p>
+      <p>请注意如果从判断式的WHERE条件推导出，根据从一个内表到相同嵌套联接的另一个表的关键字进行的访问被禁止。(在这种情况下，我们可以使用有条件关键字访问，但是该技术还未用于MySQL 
+        5.1中）。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

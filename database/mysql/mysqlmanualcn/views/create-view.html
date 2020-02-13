@@ -1,0 +1,385 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>22.2. CREATE VIEW语法</h1>
+
+        
+      
+    
+    
+    <pre>CREATE [OR REPLACE] [ALGORITHM = {UNDEFINED | MERGE | TEMPTABLE}]
+&nbsp;&nbsp; &nbsp;VIEW <i>view_name</i> [(<i>column_list</i>)]
+&nbsp;&nbsp;&nbsp; AS <i>select_statement</i>
+&nbsp;&nbsp;&nbsp; [WITH [CASCADED | LOCAL] CHECK OPTION]</pre>
+    <p>该语句能创建新的视图，如果给定了OR 
+      REPLACE子句，该语句还能替换已有的视图。<i>select_statement</i>是一种SELECT语句，它给出了视图的定义。该语句可从基表或其他视图进行选择。</p>
+    <p>该语句要求具有针对视图的CREATE VIEW权限，以及针对由SELECT语句选择的每一列上的某些权限。对于在SELECT语句中其他地方使用的列，必须具有SELECT权限。如果还有OR 
+      REPLACE子句，必须在视图上具有DROP权限。</p>
+    <p>视图属于数据库。在默认情况下，将在当前数据库创建新视图。要想在给定数据库中明确创建视图，创建时，应将名称指定为<i>db_name.view_name</i>。</p>
+    <pre>mysql&gt; CREATE VIEW test.v AS SELECT * FROM t;</pre>
+    <p>表和视图共享数据库中相同的名称空间，因此，数据库不能包含具有相同名称的表和视图。</p>
+    <p>视图必须具有唯一的列名，不得有重复，就像基表那样。默认情况下，由SELECT语句检索的列名将用作视图列名。要想为视图列定义明确的名称，可使用可选的<i>column_list</i>子句，列出由逗号隔开的ID。<i>column_list</i>中的名称数目必须等于SELECT语句检索的列数。</p>
+    <p>SELECT语句检索的列可以是对表列的简单引用。也可以是使用函数、常量值、操作符等的表达式。</p>
+    <p>对于SELECT语句中不合格的表或视图，将根据默认的数据库进行解释。通过用恰当的数据库名称限定表或视图名，视图能够引用表或其他数据库中的视图。</p>
+    <p>能够使用多种SELECT语句创建视图。视图能够引用基表或其他视图。它能使用联合、UNION和子查询。SELECT甚至不需引用任何表。在下面的示例中，定义了从另一表选择两列的视图，并给出了根据这些列计算的表达式：</p>
+    <pre>mysql&gt; CREATE TABLE t (qty INT, price INT);
+mysql&gt; INSERT INTO t VALUES(3, 50);
+mysql&gt; CREATE VIEW v AS SELECT qty, price, qty*price AS value FROM t;
+mysql&gt; SELECT * FROM v;
++------+-------+-------+
+| qty&nbsp; | price | value |
++------+-------+-------+
+|&nbsp;&nbsp;&nbsp; 3 |&nbsp;&nbsp;&nbsp; 50 |&nbsp;&nbsp; 150 |
++------+-------+-------+</pre>
+    <p>视图定义服从下述限制：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      SELECT语句不能包含FROM子句中的子查询。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      SELECT语句不能引用系统或用户变量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      SELECT语句不能引用预处理语句参数。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在存储子程序内，定义不能引用子程序参数或局部变量。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      在定义中引用的表或视图必须存在。但是，创建了视图后，能够舍弃定义引用的表或视图。要想检查视图定义是否存在这类问题，可使用CHECK 
+      TABLE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在定义中不能引用TEMPORARY表，不能创建TEMPORARY视图。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在视图定义中命名的表必须已存在。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不能将触发程序与视图关联在一起。</p>
+    <p>在视图定义中允许使用ORDER BY，但是，如果从特定视图进行了选择，而该视图使用了具有自己ORDER 
+      BY的语句，它将被忽略。</p>
+    <p>对于定义中的其他选项或子句，它们将被增加到引用视图的语句的选项或子句中，但效果未定义。例如，如果在视图定义中包含LIMIT子句，而且从特定视图进行了选择，而该视图使用了具有自己LIMIT子句的语句，那么对使用哪个LIMIT未作定义。相同的原理也适用于其他选项，如跟在SELECT关键字后的ALL、DISTINCT或SQL_SMALL_RESULT，并适用于其他子句，如INTO、FOR 
+      UPDATE、LOCK 
+      IN SHARE MODE、以及PROCEDURE。</p>
+    <p>如果创建了视图，并通过更改系统变量更改了查询处理环境，会影响从视图获得的结果：</p>
+    <pre>mysql&gt; CREATE VIEW v AS SELECT CHARSET(CHAR(65)), COLLATION(CHAR(65));
+Query OK, 0 rows affected (0.00 sec)
+&nbsp;
+mysql&gt; SET NAMES &#39;latin1&#39;;
+Query OK, 0 rows affected (0.00 sec)
+&nbsp;
+mysql&gt; SELECT * FROM v;
++-------------------+---------------------+
+| CHARSET(CHAR(65)) | COLLATION(CHAR(65)) |
++-------------------+---------------------+
+| latin1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | latin1_swedish_ci&nbsp;&nbsp; |
++-------------------+---------------------+
+1 row in set (0.00 sec)
+&nbsp;
+mysql&gt; SET NAMES &#39;utf8&#39;;
+Query OK, 0 rows affected (0.00 sec)
+&nbsp;
+mysql&gt; SELECT * FROM v;
++-------------------+---------------------+
+| CHARSET(CHAR(65)) | COLLATION(CHAR(65)) |
++-------------------+---------------------+
+| utf8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | utf8_general_ci&nbsp;&nbsp;&nbsp;&nbsp; |
++-------------------+---------------------+
+1 row in set (0.00 sec)</pre>
+    <p>可选的ALGORITHM子句是对标准SQL的MySQL扩展。ALGORITHM可取三个值：MERGE、TEMPTABLE或UNDEFINED。如果没有ALGORITHM子句，默认算法是UNDEFINED（未定义的）。算法会影响MySQL处理视图的方式。</p>
+    <p>对于MERGE，会将引用视图的语句的文本与视图定义合并起来，使得视图定义的某一部分取代语句的对应部分。</p>
+    <p>对于TEMPTABLE，视图的结果将被置于临时表中，然后使用它执行语句。</p>
+    <p>对于UNDEFINED，MySQL将选择所要使用的算法。如果可能，它倾向于MERGE而不是TEMPTABLE，这是因为MERGE通常更有效，而且如果使用了临时表，视图是不可更新的。</p>
+    <p>明确选择TEMPTABLE的1个原因在于，创建临时表之后、并在完成语句处理之前，能够释放基表上的锁定。与MERGE算法相比，锁定释放的速度更快，这样，使用视图的其他客户端不会被屏蔽过长时间。</p>
+    <p>视图算法可以是UNDEFINED，有三种方式：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      在CREATE VIEW语句中没有ALGORITHM子句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      CREATE VIEW语句有1个显式ALGORITHM 
+      = UNDEFINED子句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      为仅能用临时表处理的视图指定ALGORITHM 
+      = MERGE。在这种情况下，MySQL将生成告警，并将算法设置为UNDEFINED。</p>
+    <p>正如前面所介绍的那样，通过将视图定义中的对应部分合并到引用视图的语句中，对MERGE进行处理。在下面的示例中，简要介绍了MERGE的工作方式。在该示例中，假定有1个具有下述定义的视图v_merge：</p>
+    <pre>CREATE ALGORITHM = MERGE VIEW v_merge (vc1, vc2) AS
+SELECT c1, c2 FROM t WHERE c3 &gt; 100;</pre>
+    <p>示例1：假定发出了下述语句：</p>
+    <pre>SELECT * FROM v_merge;</pre>
+    <p>MySQL以下述方式处理语句：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      v_merge成为t</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      *成为vc1、vc2，与c1、c2对应</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      增加视图WHERE子句</p>
+    <p>所产生的将执行的语句为：</p>
+    <pre>SELECT c1, c2 FROM t WHERE c3 &gt; 100;</pre>
+    <p>示例2：假定发出了下述语句：</p>
+    <pre>SELECT * FROM v_merge WHERE vc1 &lt; 100;</pre>
+    <p>该语句的处理方式与前面介绍的类似，但vc1 &lt; 
+      100变为c1 &lt; 100，并使用AND连接词将视图的WHERE子句添加到语句的WHERE子句中（增加了圆括号以确保以正确的优先顺序执行子句部分）。所得的将要执行的语句变为：</p>
+    <pre>SELECT c1, c2 FROM t WHERE (c3 &gt; 100) AND (c1 &lt; 100);</pre>
+    <p>事实上，将要执行的语句是具有下述形式的WHERE子句：</p>
+    <pre>WHERE (select WHERE) AND (view WHERE)</pre>
+    <p>MERGE算法要求视图中的行和基表中的行具有一对一的关系。如果不具有该关系。必须使用临时表取而代之。如果视图包含下述结构中的任何一种，将失去一对一的关系：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      聚合函数（SUM(),
+      MIN(),
+      MAX(),
+      COUNT()等）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DISTINCT </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      GROUP BY </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      HAVING </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      UNION或UNION 
+      ALL </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      仅引用文字值（在该情况下，没有基本表）。</p>
+    <p>某些视图是可更新的。也就是说，可以在诸如UPDATE、DELETE或INSERT等语句中使用它们，以更新基表的内容。对于可更新的视图，在视图中的行和基表中的行之间必须具有一对一的关系。还有一些特定的其他结构，这类结构会使得视图不可更新。更具体地讲，如果视图包含下述结构中的任何一种，那么它就是不可更新的：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      聚合函数（SUM(),
+      MIN(),
+      MAX(),
+      COUNT()等）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DISTINCT </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      GROUP BY </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      HAVING </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      UNION或UNION 
+      ALL </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      位于选择列表中的子查询</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Join </p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      FROM子句中的不可更新视图</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      WHERE子句中的子查询，引用FROM子句中的表。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      仅引用文字值（在该情况下，没有要更新的基本表）。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ALGORITHM = 
+      TEMPTABLE（使用临时表总会使视图成为不可更新的）。</p>
+    <p>关于可插入性（可用INSERT语句更新），如果它也满足关于视图列的下述额外要求，可更新的视图也是可插入的：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      不得有重复的视图列名称。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      视图必须包含没有默认值的基表中的所有列。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      视图列必须是简单的列引用而不是导出列。导出列不是简单的列引用，而是从表达式导出的。下面给出了一些导出列示例：</p>
+    <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.14159
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; col1 + 3
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UPPER(col2)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; col3 / col4
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (<i>subquery</i>)</pre>
+    <p>混合了简单列引用和导出列的视图是不可插入的，但是，如果仅更新非导出列，视图是可更新的。考虑下述视图：</p>
+    <pre>CREATE VIEW v AS SELECT col1, 1 AS col2 FROM t;</pre>
+    <p>该视图是不可插入的，这是因为col2是从表达式导出的。但是，如果更新时不更新col2，它是可更新的。这类更新是允许的：</p>
+    <pre>UPDATE v SET col1 = 0;</pre>
+    <p>下述更新是不允许的，原因在于，它试图更新导出列：</p>
+    <pre>UPDATE v SET col2 = 0;</pre>
+    <p>在某些情况下，能够更新多表视图，假定它能使用MERGE算法进行处理。为此，视图必须使用内部联合（而不是外部联合或UNION）。此外，仅能更新视图定义中的单个表，因此，SET子句必须仅命名视图中某一表的列。即使从理论上讲也是可更新的，不允许使用UNION 
+      ALL的视图，这是因为，在实施中将使用临时表来处理它们。</p>
+    <p>对于多表可更新视图，如果是将其插入单个表中，INSERT能够工作。不支持DELETE。</p>
+    <p>对于可更新视图，可给定WITH CHECK 
+      OPTION子句来防止插入或更新行，除非作用在行上的<i>select_statement</i>中的WHERE子句为“真”。</p>
+    <p>在关于可更新视图的WITH CHECK 
+      OPTION子句中，当视图是根据另一个视图定义的时，LOCAL和CASCADED关键字决定了检查测试的范围。LOCAL关键字对CHECK 
+      OPTION进行了限制，使其仅作用在定义的视图上，CASCADED会对将进行评估的基表进行检查。如果未给定任一关键字，默认值为CASCADED。请考虑下述表和视图集合的定义：</p>
+    <pre>mysql&gt; CREATE TABLE t1 (a INT);
+mysql&gt; CREATE VIEW v1 AS SELECT * FROM t1 WHERE a &lt; 2
+&nbsp;&nbsp;&nbsp; -&gt; WITH CHECK OPTION;
+mysql&gt; CREATE VIEW v2 AS SELECT * FROM v1 WHERE a &gt; 0
+&nbsp;&nbsp;&nbsp; -&gt; WITH LOCAL CHECK OPTION;
+mysql&gt; CREATE VIEW v3 AS SELECT * FROM v1 WHERE a &gt; 0
+&nbsp;&nbsp;&nbsp; -&gt; WITH CASCADED CHECK OPTION;</pre>
+    <p>这里，视图v2和v3是根据另一视图v1定义的。v2具有LOCAL检查选项，因此，仅会针对v2检查对插入项进行测试。v3具有CASCADED检查选项，因此，不仅会针对它自己的检查对插入项进行测试，也会针对基本视图的检查对插入项进行测试。在下面的语句中，介绍了这些差异：</p>
+    <pre>ql&gt; INSERT INTO v2 VALUES (2);
+Query OK, 1 row affected (0.00 sec)
+mysql&gt; INSERT INTO v3 VALUES (2);
+ERROR 1369 (HY000): CHECK OPTION failed &#39;test.v3&#39;</pre>
+    <p>视图的可更新性可能会受到系统变量updatable_views_with_limit的值的影响。请参见<a href="" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。</p>
+    <p>INFORMATION_SCHEMA包含1个VIEWS表，从该表可获取关于视图对象的信息。请参见<a href="" title="23.1.15. The INFORMATION_SCHEMA VIEWS Table">23.1.15节，“INFORMATION_SCHEMA VIEWS表”</a>。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

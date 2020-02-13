@@ -1,0 +1,593 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<div class="g-unit" id="gc-pagecontent">
+
+
+<div id="jd-content">
+
+<div class="jd-descr">
+<h1>教程：记事本应用程序开发练习2</h1>
+
+<p><em>在本练习中，你将学习如何添加第二个Activity至你的记事本应用程序中，该Activity可以让用户创建、编辑以及删除便笺。这个Activity假定通过用户的输入响应创建新便笺，并将其自身打包至一个由intent提供的Bundle返回值中。这个练习的目标是：</em></p>
+<ul>
+<li>构建一个新Activity并将其添加至Android manifest中</li>
+<li>通过异步调用方法startActivityForResult()来调用另一Activity</li>
+<li>用诸多Bundle对象在Activity之间传递数据</li>
+<li>如何使用一个更高级的屏幕布局</li>
+</ul>
+
+<div style="float:right;white-space:nowrap">
+	[<a href="tutorial-ex1.html">练习 1</a>]
+	<span style="color:#BBB;">
+		[<a href="tutorial-ex2.html" style="color:#DDD;">练习 2</a>]	</span>
+	[<a href="tutorial-ex3.html">练习 3</a>]
+	[<a href="tutorial-extra-credit.html">额外 练习</a>]</div>
+
+<h2>第一步</h2>
+
+<p>用NotepadCodeLab文件夹下Notepadv2目录里的资源创建一个新Android 工程，正如与练习一中做过类似的一样。如果你看到一个有关AndroidManifest.xml，或有关android.zip文件的错误信息，请右击工程选择<strong>Android
+Tools</strong> &gt; <strong>Fix Project Properties</strong>，即可修正错误。</p>
+
+<p>打开Notepadv2工程并查看如下内容：</p>
+<ul>
+    <li>打开并查看res/values路径下的strings.xml文件——里面有若干我们将要用于新功能的新字符串</li>
+    <li>同时，打开并查看Notepadv2这个类的顶部，你将会注意到一个用于存放我们即将用到的新字段，指针mNotesCursor，其下已定义了几个新常量。</li>
+    <li>还需注意的是方法fillData()已多了一些注释，并且现在用新定义的字段存储便笺指针。本练习中的方法onCreate()与练习一中的声明和实现相比并无变化。另需留意的是用于存储便笺指针的类成员变量叫做mNotesCursor。首字母m已表明该变量为一成员变量并符合Android编码风格标准。</li>
+    <li>接下来还有几个我们将要实现的新覆写接口(onListItemClick()和onActivityResult())。</li>
+</ul>
+
+
+<h2>第二步</h2>
+
+	<p>添加一个删除一条便笺的菜单项：</p>
+<ol>
+    <li>在接口onCreateOptionsMenu()中，添加如下一行代码：
+      <pre>menu.add(0, DELETE_ID, 0, R.string.menu_delete);</pre>
+    </li>
+    <li>该接口的完整定义如下：
+      <pre>
+&#64;Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    super.onCreateOptionsMenu(menu);
+    menu.add(0, INSERT_ID, 0, R.string.menu_insert);
+    menu.add(0, DELETE_ID, 0, R.string.menu_delete);
+    return true;
+}</pre>
+    </li>
+</ol>
+
+<h2>第三步</h2>
+    <p>在接口onMenuItemSelected()中，为参数DELETE_ID添加一个新分支语句：</p>
+    <pre>
+mDbHelper.deleteNote(getListView().getSelectedItemId());
+fillData();
+return true;</pre>
+
+  <ol>
+    <li>
+      这里，我们通过接口deleteNote()删除指定ID的便笺。为了得到指定便笺的ID，我们调用接口 <code>getListView().getSelectedItemId()</code>.    </li>
+    <li>
+      接下来，我们会调用接口fillData()以保持数据的更新.    </li>
+   </ol>
+    <p>
+      接口onMenuItemSelected()的完整定义如下:</p>
+      <pre>
+&#64;Override
+public boolean onMenuItemSelected(int featureId, MenuItem item) {
+    switch(item.getItemId()) {
+    case INSERT_ID:
+        createNote();
+        return true;
+    case DELETE_ID:
+        mDbHelper.deleteNote(getListView().getSelectedItemId());
+        fillData();
+        return true;
+    }
+       
+    return super.onMenuItemSelected(featureId, item);
+}</pre>
+
+<h2 style="clear:right;">第四步</h2>
+<div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+     background-color:#FFFFEE;margin-right:0px;
+     margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">开始其它Activities</h2>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">    在本例中，我们的intent用了一个特定名称的类。我们也可以创建Intents而不必清楚地知道控制此Intent的应用程序究竟是哪个，因为正如我们对类中的starting intents所了解的那样，该类既可以在我们自己的应用程序中也可以在另一应用程序中。</p>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">例如，我们可能想打开一个浏览器中的一个页面，这里我们仍将用到一个Intent。但是我们用一个预先定义好的Intent常量和一个用于描述我们目的的URI内容，而非某一特定的类，来控制此Intent。更多信息请参看android.content.Intent一节。</p>
+</div>
+
+	<p>实现接口 <code>createNote()</code>:
+    <p>为创建一个便笺(ACTIVITY_CREATE)而用一个名为NoteEdit的类创建一个新Intent。紧接着调用接口startActivityForResult()来启动该Intent。:</p>
+    <pre style="overflow:auto">
+Intent i = new Intent(this, NoteEdit.class);
+startActivityForResult(i, ACTIVITY_CREATE);</pre>
+      <p>这种形式的Intent调用是面向我们Activity中特定类的，本例中该特定类即为NoteEdit。由于Intent类需要通过Android 操作系统来发送请求信息，我们还得提供一个Context(this)。</p>
+      <p>触发该Intent的接口startActivityForResult()是在一个新Activity完成后，才在我们的Activity中被调用的。 在我们的Activity中用于接收回调的接口名为onActivityResult()，我们将在稍后的步骤中实现它。另一调用Activity的接口名为startActivity()，但这是一种一劳永逸的调用方式(fire-and-forget)——在该调用方式下，当前的Activity并不会收到另一Activity已完成的通知，同时我们无法从被调Activity的接口startActivity()返回有关该Activity的任何结果信息。
+      <p>不必担心NoteEdit目前还不存在这一事实，我们很快就将完善之。</p>
+  </li>
+  
+
+<h2>第五步</h2>
+
+	<p>实现覆写接口onListItemClick()：</p>
+    <p>onListItemClick()是一个我们将要覆写的回调函数。它在用户点击便笺列表中的某一项时调用。它一共有四个参数，分别是：调用该接口的ListView对象，所点击的View(存在于ListView中)，所点击的position(该项在列表中的位置)，所点击的某一项的行索引(mRowId)。在本例中我们先忽略前两个参数(当前我们只可能有一个ListView)，以及参数行索引。我们的着眼点全在用户所选中的某一项在列表中所在的位置position。通过这个参数，我们可以从相应的行得到想要的数据，并将此数据打包发送至NoteEdit Activity。</p>
+   <p>在该回调函数接口的实现中，我们用类NoteEdit创建一个Intent来修改便笺内容，接着添加数据至一个作为参数传递给被调用Activity的Intent的附加包中。我们用其传递当前正在编辑的便笺的标题、正文以及行索引。最后，它将调用接口startActivityForResult()来启动该Intent。以下是接口onListItemClick()实现的完整代码：</p>
+    <pre>
+super.onListItemClick(l, v, position, id);
+Cursor c = mNotesCursor;
+c.moveToPosition(position);
+Intent i = new Intent(this, NoteEdit.class);
+i.putExtra(NotesDbAdapter.KEY_ROWID, id);
+i.putExtra(NotesDbAdapter.KEY_TITLE, c.getString(
+        c.getColumnIndexOrThrow(NotesDbAdapter.KEY_TITLE)));
+i.putExtra(NotesDbAdapter.KEY_BODY, c.getString(
+        c.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
+startActivityForResult(i, ACTIVITY_EDIT);</pre>
+  <ul>
+    <li>putExtra()是一个为触发Intent而添加数据至附加包中的接口。这里，我们用包传递我们想编辑的便笺内容的标题、正文以及行索引。</li>
+    <li>当我们定位到所选择的对象所在列表中的相应位置时，通过接口moveToPosition()，有关该便笺的细节信息尽在查询指针中。</li>
+    <li>通过添加到Intent的附加信息，及接口startActivityForResult()，我们在类NoteEdit中触发该Intent及请求类型码(请求类型码将作为参数requestCode返回给接口onActivityResult())。</li>
+  </ul>
+    <p class="note"><b>注意:</b> 我们在接口定义的开始处就将类成员变量mNotesCursor赋给一个局部变量。这可视为对Android 应用程序代码的优化。因为访问一个局部变量其效率远高于访问Dalvik 虚拟机中的一个类成员变量。所以通过这种方式处理，我们只需访问类成员变量一次，而访问局部变量五次，就可使得常规处理更高效。所以极力推荐尽可能用此方法优化你的Android应用程序代码。</p>
+    
+
+<h2>第六步</h2>
+
+<p>上述接口createNote()和onListItemClick()采用的是异步触发Intent的方式。我们得靠一个句柄来回调，所以以下是接口onActivityResult()的实现部分：</p>
+<p>onActivityResult()是一个只在一个Activity有返回结果时才被调用的覆写接口(记住！一个Activity只有在用接口startActivityForResult() 启动时才有一个返回结果)。用于回调的一些参数如下：</p>
+  <ul>
+    <li><code>requestCode</code> &mdash; 是Intent触发时确定的初始请求类型码(对我们而言，请求类型码无非就是ACTIVITY_CREATE或者ACTIVITY_EDIT这两者之一)。    </li>
+    <li><code>resultCode</code> &mdash; 调用返回的结果(或错误)类型，如果一切正常则该类型值为零，但若有失败的异常情况则有对应的非零错误类型码表示。有标准的结果类型码可用，同时你也可以自定义一些结果类型码常量，以满足自己特定的问题。</li>
+    <li><code>intent</code> &mdash; 这是一个由Activity返回的结果创建的Intent。它用于在Intent中的’Extras’返回数据。    </li>
+  </ul> 
+  <p>接口startActivityForResult()和onActivityResult()的结合可视为一种异步的远程进程调用(RPC: Remote Procedure Call)，形成了一个Activity启动另一个Activity并彼此共享服务的推荐方式。</p>
+  <p>以下为方法 <code>onActivityResult()完整的定义</code>:</p>
+    <pre>
+super.onActivityResult(requestCode, resultCode, intent);
+Bundle extras = intent.getExtras();
+
+switch(requestCode) {
+case ACTIVITY_CREATE:
+    String title = extras.getString(NotesDbAdapter.KEY_TITLE);
+    String body = extras.getString(NotesDbAdapter.KEY_BODY);
+    mDbHelper.createNote(title, body);
+    fillData();
+    break;
+case ACTIVITY_EDIT:
+    Long mRowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
+    if (mRowId != null) {
+        String editTitle = extras.getString(NotesDbAdapter.KEY_TITLE);
+        String editBody = extras.getString(NotesDbAdapter.KEY_BODY);
+        mDbHelper.updateNote(mRowId, editTitle, editBody);
+    }
+    fillData();
+    break;
+}</pre>
+
+  <ul>
+    <li>
+      在本方法中我们既控制 <code>ACTIVITY_CREATE</code> 也控制
+      <code>ACTIVITY_EDIT</code> 的Activity结果。
+    </li>
+    <li>
+      在请求类型码为创建的情况下，我们从extras(源于返回的Intent)得到便笺的标题和正文，并用这些创建一条新便笺。
+    </li>
+    <li>
+	  在请求类型码为编辑的情况下，我们除了从extras得到上述字段外，还有行索引，并用这些编辑并更新数据库中的便笺。
+    </li>
+    <li>
+      <code>fillData()</code> 最后的接口确保每一个都更新完毕。
+    </li>
+  </ul>
+  
+
+<h2>第七步</h2>
+
+  <div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+      background-color:#FFFFEE;margin-right:0px;
+      margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">布局的艺术</h2>
+    <p style="padding-left:.5em;font-size:12px;margin:0; padding:.0em .5em .5em 1em;">练习提供的屏幕布局文件note_edit.xml是我们将要建立的应用中最复杂的一个了，但这并不意味着你若想在真正的Android应用中用到一个布局，非得和这个有多接近才行。</p>
+    <p style="padding-left:.5em;font-size:12px;margin:0; padding:.0em .5em .5em 1em;">创建一个良好的界面是部分艺术、部分科学，剩余的就是孜孜以求了。掌握<a
+    href="../devel/implementing-ui.html">Android layout</a> 是创建一个赏心悦目的Android应用程序的核心部分。</p>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">不妨看看 
+    <a href="../reference/view-gallery.html">View Gallery</a>
+    中的一些例子，了解如何运用它们。范例工程ApiDemos是学习如何创建千姿百态的屏幕布局的极好资源。</p>
+  </div>
+
+<p>打开文件note_edit.xml并浏览一二，这是有关便笺编辑界面方面的代码。</p>
+    <p>这是目前我们处理过的最复杂的界面布局了，这里给出的文件是为了避免在代码排版中出现淡入淡出的问题。(XML对大小写及结构有非常严格的限制，而这些错误往往又都是屏幕布局问题的根源所在。)</p>
+    <p>这里用到了一个之前我们从未见过的新参数: <code>android:layout_weight</code> (在本例中该参数每种情况下都赋值为1)</p>
+    <p>layout_weight用于给一个线性布局中的诸多视图的重要度赋值。所有的视图都有一个layout_weight值，默认为零，意思是需要显示多大的视图就占据多大的屏幕空间。若赋一个高于零的值，则将父视图中的可用空间分割，分割大小具体取决于每一个视图的layout_weight值以及该值在当前屏幕布局的整体layout_weight值和在其它视图屏幕布局的layout_weight值中所占的比率而定。</p>
+    <p>举个例子：比如说我们在水平方向上有一个文本标签和两个文本编辑元素。该文本标签并无指定layout_weight值，所以它将占据需要提供的最少空间。 如果两个文本编辑元素每一个的layout_weight值都设置为1，则两者平分在父视图布局剩余的宽度(因为我们声明这两者的重要度相等)。如果两个文本编辑元素其中第一个的layout_weight值设置为1，而第二个的设置为2，则剩余空间的三分之一分给第一个，三分之二分给第二个(因为我们声明第二个有较之第一个更高的重要度)。</p>
+    <p>这个布局也演示了如何在其它布局中嵌套多个布局以实现更复杂更漂亮的布局。在本例中，一个水平方向上的线性布局嵌套在另一垂直方向上的布局中，以使标题标签和文本字段在水平方向上挨个对齐。</p>
+
+
+<h2 style="clear:right;">第八步</h2>
+
+	<p>创建一个NoteEdit类以扩展android.app.Activity。</p>
+    <p>这是我们第一次不用Android Eclipse插件的帮助来创建一个Activity。当按这种方式创建时，方法onCreate()并未自动覆写。很难想象一个没有覆写其onCreate()方法的Activity会是什么样子，所以这是接下来你先得完成的首要任务。</p>
+  <ol>
+    <li>右击Eclipse文件夹树形目录中的com.android.demo.notepad2文件夹，在弹出的右键菜单中选择New &gt; Class。</li>
+    <li>为类NoteEdit命一个名：对话框中的字段(field in the dialog)。</li>
+    <li>在类Superclass中，输入android.app.Activity，也可以通过组合键(在Window和Linux环境下是Ctrl+Space,在Mac环境下则是Cmd+Space)来触发IDE中的代码提示以找到对应的文件夹和类。</li>
+    <li>单击Finish。</li>
+    <li>在生成的类中，在编辑窗口中单击右键，选择Source &gt; Override/Implement Methods...。</li>
+    <li>滑动对话框复选列表的滚动条定位到onCreate(Bundle)——并选择紧邻的复选框。</li>
+    <li>单击 <strong>OK</strong>.<p>这样方法就出现在你的类中了。</p></li>
+  </ol>
+  
+<h2>第九步</h2>
+
+<p>为类NoteEdit的方法onCreate()实现其定义：</p>
+
+<p>该方法将为我们的新Activity设置一个名为”编辑便签”的标题(这是一个在文件strings.xml中定义的字符串)，同时通过布局文件note_edit.xml设置便笺内容视图。我们可以得到便笺标题和文本正文视图，以及确认按钮的句柄。如此一来，我们就可以通过这些句柄设置得到便签的标题和正文，并将确认按钮绑定至响应用户按下该按钮的事件。</p>
+    <p>然后，我们可以解开因传入于所调用的Intent中的附加包中，而已传到Activity里的参数值，并用这些值预填充标题和便签文本正文及视图，这样用户就可以编辑它们了。接下来，我们可以获取和存储便笺行索引(mRowId)这一值，从而可以知道用户当前正在编辑哪一条便签。</p>
+
+  <ol>
+    <li>
+      在方法onCreate()中，建立布局：<br>
+      <pre>setContentView(R.layout.note_edit);</pre>
+    </li>
+    <li>找到我们需要的编辑和按钮组件
+      <p>可以通过在R类中声明的与之关联的ID找到这些资源，然后需要将它转换为正确的视图类型 (两个文本视图为EditText 类, 确认按钮为Button类)</p>
+      <pre>
+mTitleText = (EditText) findViewById(R.id.title);
+mBodyText = (EditText) findViewById(R.id.body);
+Button confirmButton = (Button) findViewById(R.id.confirm);</pre>
+      <p>需要注意的是mTitleText和mBodyText这两个是类成员变量(你得先在类中声明才能在此使用)</p>
+    </li>
+    <li>在类中声明一个私有类成员变量Long mRowId，用于存储当前的行索引值mRowId(如果有的话)</li>
+    <li>在方法onCreate()中继续添加代码，用Intent附加数据包(如果出现的话)中的值初始化便笺标题、正文及行索引ID这些变量
+      <pre>
+mRowId = null;
+Bundle extras = getIntent().getExtras();
+if (extras != null) {
+    String title = extras.getString(NotesDbAdapter.KEY_TITLE);
+    String body = extras.getString(NotesDbAdapter.KEY_BODY);
+    mRowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
+           
+    if (title != null) {
+        mTitleText.setText(title);
+    }
+    if (body != null) {
+        mBodyText.setText(body);
+    }
+}</pre>
+     <ul>
+      <li>我们将因触发Intent而设置到附加数据包中的标题和正文两个值从中抽取出来。</li><li>我们也对文本的字段赋值实行非空保护(防止出现空字符串赋给文本字段的意外情况出现)。</li>
+     </ul>
+    </li>
+    <li>
+      为按钮创建一个方法onClickListener():
+      <p> Listener也许是UI实现中让人倍感困惑的方面之一，但在本例中我们要实现的效果却很简单，就是在用户点确定按钮时调用onClick()方法。用其做一些事，并将便签被编辑后的一些值返回给Intent这一调用者。我们通过名为匿名的内部类来实现这一目的，这个类除非你之前见过，否则第一次看到确实会让人觉得有点晕。但是你确实需要将困惑的心态暂且抛开，因为将来有机会可以参看这一段代码，并将了解到如何创建一个Listener并将其关联至一个按钮(Listener是Java开发中一个常见的术语，尤其是在UI的设计实现中)。下面代码是一个空的Listener：
+      <pre>
+confirmButton.setOnClickListener(new View.OnClickListener() {
+
+    public void onClick(View view) {
+               
+    }
+           
+});</pre>
+    </li>
+  </ol>
+<h2>第十步</h2>
+
+<p>在我们的Listener中完成方法onClick()的实现部分：</p>
+    
+    <p>当用户按下确定按钮，这个接口就会运行。我们希望该方法能获取被编辑的便签文本中的标题和文本字段，并且将这些数据放到一个作为返回值的包中，这样这些数据就可以被传递回最初触发这个NoteEdit Activity的Activity中，如果该接口响应的是一个编辑而不是创建操作的话，我们还需将行行索引ID(rowed)也放至作为返回值的包中，这样Notepadv2 类就可以保存对便签所做的编辑。</p>
+  <ol>
+    <li>创建一个作为返回值的数据包(Bundle)。并将便笺标题和正文这两个值，在Notepadv2中定义的关键字常量，传递给它
+      <pre>
+Bundle bundle = new Bundle();
+      
+bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
+bundle.putString(NotesDbAdapter.KEY_BODY, mBodyText.getText().toString());
+if (mRowId != null) {
+    bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
+}</pre>
+    </li>
+    <li>将此数据包传入一个新的Intent中并结束Activity
+      <pre>
+Intent mIntent = new Intent();
+mIntent.putExtras(bundle);
+setResult(RESULT_OK, mIntent);
+finish();</pre>
+      <ul>
+      <li>这里的这个新Intent只是扮演一个简单的数据包传递者的角色(里面包括我们要传递的便笺标题、正文及行索引ID)</li>
+      <li> 方法setResult()是设置结果类型码并将Intent传递回此Intent的调用者。在本例中，每个都奏效了，所以我们返回的结果编码为RESULT_OK。</li>
+      <li> 调用方法finish()是标识该Activity已完成的信号(相当于一个返回调用)。任何设置到结果中的接口都和执行控制信息一并返回至结果调用者。</li>
+      </ul>
+    </li>
+   </ol>
+   <p>方法onCreate() (另加支持该类的一些字段) 的完整实现如下：</p>
+      <pre>
+private EditText mTitleText;
+private EditText mBodyText;
+private Long mRowId;
+
+&#64;Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.note_edit);
+   
+    mTitleText = (EditText) findViewById(R.id.title);
+    mBodyText = (EditText) findViewById(R.id.body);
+  
+    Button confirmButton = (Button) findViewById(R.id.confirm);
+   
+    mRowId = null;
+    Bundle extras = getIntent().getExtras();
+    if (extras != null) {
+        String title = extras.getString(NotesDbAdapter.KEY_TITLE);
+        String body = extras.getString(NotesDbAdapter.KEY_BODY);
+        mRowId = extras.getLong(NotesDbAdapter.KEY_ROWID);
+      
+        if (title != null) {
+            mTitleText.setText(title);
+        }
+        if (body != null) {
+            mBodyText.setText(body);
+        }
+    }
+   
+    confirmButton.setOnClickListener(new View.OnClickListener() {
+
+        public void onClick(View view) {
+            Bundle bundle = new Bundle();
+           
+            bundle.putString(NotesDbAdapter.KEY_TITLE, mTitleText.getText().toString());
+            bundle.putString(NotesDbAdapter.KEY_BODY, mBodyText.getText().toString());
+            if (mRowId != null) {
+                bundle.putLong(NotesDbAdapter.KEY_ROWID, mRowId);
+            }
+
+            Intent mIntent = new Intent();
+            mIntent.putExtras(bundle);
+            setResult(RESULT_OK, mIntent);
+            finish();
+        }
+    });
+}</pre>
+    </li>
+  </ol>
+  
+<h2>第十一步</h2>
+
+<div class="sidebox" style="border:2px solid #FFFFDD;float:right;
+      background-color:#FFFFEE;margin-right:0px;
+      margin-bottom:.5em;margin-top:1em;padding:0em;width:240px;">
+    <h2 style="border:0;font-size:12px;padding:.5em .5em .5em 1em;margin:0;
+      background-color:#FFFFDD;">至关重要的Android Manifest文件</h2>
+  <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">AndroidManifest.xml文件是Android操作系统理解你应用程序的方式。此文件定义了在启动和设置时在何处（或者是否）显示应用程序、该应用程序定义了哪些活动(acivities)、服务(services)和内容提供者(Content Providers)、以及该应用程序能接收哪些Intent 等等诸如此类的应用程序分类目录。</p>
+    <p style="padding-left:.5em;font-size:12px;margin:0; 
+     padding:.0em .5em .5em 1em;">欲知有关该文件的更多信息，请参考文档 
+    <a href="../devel/bblocks-manifest.html">AndroidManifest.xml</a></p>
+  </div>  
+
+<p>最后，在manifest文件中定义了新的Activity：</p>
+    <p>在新Activity被Android操作系统识别之前，它需要在AndroidManifest.xml文件中有自己的Activity 入口(Activity Entry)。这样Android操作系统就知道该Activity在AndroidManifest.xml文件中并可以被其调用。我们也可以确定该Activity在此处实现了哪些IntentFilter，但是我们现在先略过此部分，暂且只让Android操作系统知道该Activity已定义了。</p>
+    <p>在Eclipse 插件中包括一个可以很方便地编辑AndroidManifest文件的Manifest编辑器，我们即将用到该插件。若你更愿意直接编辑文件或不用Eclipse插件的话，请看下面框中有关如何不用新的Manifest编辑器实现编辑Manifest文件的信息。
+    <p>
+    <ol>
+    <li>双击文件夹树形目录中的AndroidManifest.xml文件，打开。</li>
+    <li>点击Manifest 编辑器底部的Application选项卡。</li>
+    <li>在应用程序部分点击 Add...。
+      <p>如果在对话框顶部你若看到一个单选框(radiobutton)的话，选择顶部为”在应用程序顶层创建一个新元素”的单选框。</p></li>
+    <li>在点击” OK”前，确定已选中了对话框选项卡中的”(A)Activity”.</li>
+    <li>在应用程序Node部分，点击该新”Activity”，在Name*字段中输入.NoteEdit，然后回车</li>
+    </ol>
+    <p>Android Manifest编辑器可以让你在文件中添加更复杂的Activity入口，同时也看看其它一些可用的选项(但千万别选择，否则这些选项将添加到你的Manifest文件中)。当你迈向更高级的Android应用时，该编辑器帮助你明白及如何改变AndroidManifest.xml文件。</p>
+    
+    <p class="note">如果你更愿意直接编辑AndroidManifest.xml文件，只需简单打开该文件并查看其资源(用Eclipse 编辑器中的AndroidManifest.xml选项卡直接查看资源代码)，然后按如下方式修改代码:<br>
+    <code>&lt;activity android:name=".NoteEdit"&gt;&lt;/activity&gt;</code><br><br>
+    这一句应放在下面这句的后面<br>
+    <code>&lt;/activity&gt;</code> for the <code>.Notepadv2</code> activity.</p>
+
+<h2 style="clear:right;">第十二步</h2>
+
+<p>现在开始运行它吧!</p>
+<p>你现在应该已可以从菜单添加真正的便签了，也可以删除一个已存在的便签了。但需要注意的是为了按顺序删除某条便签，你必须首先用设备上的方向控制来高亮显示它。还有就是，若从列表中选择一条便签应该同时引出可以让用户编辑的便签编辑器。当结束编辑按确定按钮后，则将编辑后的效果保存至数据库中。
+<h2>答案和下一步的学习计划</h2>
+
+<p>你可以从压缩文件Notepadv2Solution中得到有关本练习的答案并与你自己的实验代码进行对比。</p>
+<p>现在试着编辑一条便签，然后点击模拟器上的后退按钮而非确定按钮(后退按钮就在菜单按钮下面)。你将发现突然蹦出一个错误。显然我们的应用程序还有些问题。更糟糕的是，如果你在对便签做了一些编辑操作后点击后退按钮，你再返回到记事本中查看你修改过的便签时，你将发现你所做的所有编辑操作的效果全部丢失了。在下一阶段练习中，我们将修复这些问题。</p>
+
+<p>
+一旦你准备好了，就继续进行下一个练习——<a href="tutorial-ex3.html">Tutorial
+Exercise 3</a> ——你将从中学习通过在便签编辑Activity中引入一个合理的生命周期来解决后退按钮和编辑信息丢失的问题。</p>
+
+<p><a href="tutorial.html">返回至本教程主页...</a>.</p>
+
+<p>Gerald06@163.com Reviewed on 20.Oct.08 1:20 AM. </p>
+<p>Thanks for one of the Android@googlegroups.com Localization Translation teammate TOMCai~ 's generous &amp; enthusiastic help to take me out from the mental torture.</p> 
+
+
+</div>
+
+</div>
+</div><!-- end gc-pagecontent -->
+
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

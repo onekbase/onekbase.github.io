@@ -1,0 +1,442 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.1.2. ALTER TABLE语法</h1>
+
+          
+        
+      
+      
+      <pre >ALTER [IGNORE] TABLE <em >tbl_name</em>
+    <em >alter_specification</em> [, <em >alter_specification</em>] ...
+
+<em >alter_specification</em>:
+    ADD [COLUMN] <em >column_definition</em> [FIRST | AFTER <em >col_name</em> ]
+  | ADD [COLUMN] (<em >column_definition</em>,...)
+  | ADD INDEX [<em >index_name</em>] [<em >index_type</em>] (<em >index_col_name</em>,...)
+  | ADD [CONSTRAINT [<em >symbol</em>]]
+        PRIMARY KEY [<em >index_type</em>] (<em >index_col_name</em>,...)
+  | ADD [CONSTRAINT [<em >symbol</em>]]
+        UNIQUE [<em >index_name</em>] [<em >index_type</em>] (<em >index_col_name</em>,...)
+  | ADD [FULLTEXT|SPATIAL] [<em >index_name</em>] (<em >index_col_name</em>,...)
+  | ADD [CONSTRAINT [<em >symbol</em>]]
+        FOREIGN KEY [<em >index_name</em>] (<em >index_col_name</em>,...)
+        [<em >reference_definition</em>]
+  | ALTER [COLUMN] <em >col_name</em> {SET DEFAULT <em >literal</em> | DROP DEFAULT}
+  | CHANGE [COLUMN] <em >old_col_name</em> <em >column_definition</em>
+        [FIRST|AFTER <em >col_name</em>]
+  | MODIFY [COLUMN] <em >column_definition</em> [FIRST | AFTER <em >col_name</em>]
+  | DROP [COLUMN] <em >col_name</em>
+  | DROP PRIMARY KEY
+  | DROP INDEX <em >index_name</em>
+  | DROP FOREIGN KEY <em >fk_symbol</em>
+  | DISABLE KEYS
+  | ENABLE KEYS
+  | RENAME [TO] <em >new_tbl_name</em>
+  | ORDER BY <em >col_name</em>
+  | CONVERT TO CHARACTER SET <em >charset_name</em> [COLLATE <em >collation_name</em>]
+  | [DEFAULT] CHARACTER SET <em >charset_name</em> [COLLATE <em >collation_name</em>]
+  | DISCARD TABLESPACE
+  | IMPORT TABLESPACE
+  | <em >table_options</em>
+  | <em >partition_options</em>
+  | ADD PARTITION <em >partition_definition</em>
+  | DROP PARTITION <em >partition_names</em>
+  | COALESCE PARTITION <em >number</em>
+  | REORGANIZE PARTITION <em >partition_names</em> INTO (<em >partition_definitions</em>)
+  | ANALYZE PARTITION <em >partition_names</em>
+  | CHECK PARTITION <em >partition_names</em>
+  | OPTIMIZE PARTITION <em >partition_names</em>
+  | REBUILD PARTITION <em >partition_names</em>
+  | REPAIR PARTITION <em >partition_names</em>
+</pre>
+      <p>ALTER TABLE用于更改原有表的结构。例如，您可以增加或删减列，创建或取消索引，更改原有列的类型，或重新命名列或表。您还可以更改表的评注和表的类型。</p>
+      <p>允许进行的变更中，许多子句的语法与CREATE TABLE中的子句的语法相近。其中包括<i>table_options</i>修改，选项有ENGINE, 
+        AUTO_INCREMENT和AVG_ROW_LENGTH等。请见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。</p>
+      <p>存储引擎不支持有些操作，如果进行这些操作，会出现警告。使用SHOW WARNINGS可以显示出这些警告。请参见<a href="show-warnings.html" title="13.5.4.22. SHOW WARNINGS Syntax">13.5.4.22节，“SHOW 
+        WARNINGS语法”</a>。</p>
+      <p>如果您使用ALTER TABLE更改列规约，但是DESCRIBE <i>tbl_name</i>提示您列规约并没有改变，则可能是因为MySQL忽略了您所做的更改。忽略更改的原因见<a href="silent-column-changes.html" title="13.1.5.1. Silent Column Specification Changes">13.1.5.1节，“沉寂的列规格变更”</a>。例如，如果您试图把VARCHAR列更改为CHAR列，此时，如果表包含其它长度可变的列，则MySQL仍会使用VARCHAR。</p>
+      <p>ALTER TABLE运行时会对原表进行临时复制，在副本上进行更改，然后删除原表，再对新表进行重命名。在执行ALTER 
+        TABLE时，其它用户可以阅读原表，但是对表的更新和修改的操作将被延迟，直到新表生成为止。新表生成后，这些更新和修改信息会自动转移到新表上。</p>
+      <p>注意，如果您在执行ALTER TABLE时使用除了RENAME以外的选项，则MySQL会创建一个临时表。即使数据并不需要进行复制（例如当您更改列的名称时），MySQL也会这么操作。对于MyISAM表，您可以通过把myisam_sort_buffer_size系统变量设置到一个较高的值，来加快重新创建索引（该操作是变更过程中速度最慢的一部分）的速度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        要使用ALTER TABLE，您需要获得表的ALTER, 
+        INSERT和CREATE权限。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        IGNORE是MySQL相对于标准SQL的扩展。如果在新表中有重复关键字，或者当STRICT模式启动后出现警告，则使用IGNORE控制ALTER 
+        TABLE的运行。如果没有指定IGNORE，当重复关键字错误发生时，复制操作被放弃，返回前一步骤。如果指定了IGNORE，则对于有重复关键字的行，只使用第一行，其它有冲突的行被删除。并且，对错误值进行修正，使之尽量接近正确值。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以在一个ALTER TABLE语句里写入多个ADD, 
+        ALTER, DROP和CHANGE子句，中间用逗号分开。这是MySQL相对于标准SQL的扩展。在标准SQL中，每个ALTER 
+        TABLE语句中每个子句只允许使用一次。例如，在一个语句中取消多个列：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; ALTER TABLE t2 DROP COLUMN c, DROP COLUMN d;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        CHANGE <i>col_name</i>,
+        DROP <i>col_name</i>和DROP 
+        INDEX是MySQL相对于标准SQL的扩展。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        MODIFY是Oracle对ALTER 
+        TABLE的扩展。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        COLUMN只是自选项目，可以忽略。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您使用ALTER 
+        TABLE <i>tbl_name</i> RENAME TO <i>new_tbl_name</i>并且没有其它选项，则MySQL只对与table <i>tbl_name</i>相对应的文件进行重命名。不需要创建一个临时表。（您也可以使用RENAME 
+        TABLE语句对表进行重命名。请参见<a href="rename-table.html" title="13.1.9. RENAME TABLE Syntax">13.1.9节，“RENAME 
+        TABLE语法”</a>。）</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> column_definition</i>子句使用与CREATE TABLE中的ADD和CHANGE子句相同的语法。注意，此语法包括列名称，而不只是列类型。请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以使用CHANGE <i>old_col_name</i> <i>column_definition</i>子句对列进行重命名。重命名时，需给定旧的和新的列名称和列当前的类型。例如：要把一个INTEGER列的名称从a变更到b，您需要如下操作：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; ALTER TABLE t1 CHANGE a b INTEGER;</pre>
+      <p>如果您想要更改列的类型而不是名称， 
+        CHANGE语法仍然要求旧的和新的列名称，即使旧的和新的列名称是一样的。例如：</p>
+      <pre>mysql&gt; ALTER TABLE t1 CHANGE b b BIGINT NOT NULL;</pre>
+      <p>您也可以使用MODIFY来改变列的类型，此时不需要重命名：</p>
+      <pre>mysql&gt; ALTER TABLE t1 MODIFY b BIGINT NOT NULL;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您使用CHANGE或MODITY缩短列长时，列中存在有索引，并且缩短后的列长小于索引长度，则MySQL会自动缩短索引的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当您使用CHANGE或MODIFY更改列的类型时，MySQL会尽量把原有的列值转化为新的类型。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        您可以使用FIRST或AFTER <i>col_name</i>在一个表行中的某个特定位置添加列。默认把列添加到最后。您也可以在CHANGE或MODIFY语句中使用FIRST和AFTER。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        AFTER COLUMN用于指定列的新默认值，或删除旧的默认值。如果旧的默认值被删除同时列值为NULL，则新的默认值为NULL。如果列值不能为NULL，MySQL会指定一个默认值，请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        DROP INDEX用于取消索引。这是MySQL相对于标准SQL的扩展。请参见<a href="drop-index.html" title="13.1.7. DROP INDEX Syntax">13.1.7节，“DROP 
+        INDEX语法”</a>。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果列从表中被取消了，则这些列也从相应的索引中被取消。如果组成一个索引的所有列均被取消，则该索引也被取消。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果一个表只包含一列，则此列不能被取消。如果您想要取消表，应使用DROP 
+        TABLE。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        DROP PRIMAY DEY用于取消主索引。注释：在MySQL较早的版本中，如果没有主索引，则DROP 
+        PRIMARY KEY会取消表中的第一个UNIQUE索引。在MySQL 
+        5.1中不会出现这种情况。如果在MySQL 5.1中对没有主键的表使用DROP 
+        PRIMARY KEY，则会出现错误信息。</p>
+      <p>如果您向表中添加UNIQUE KEY或PRIMARY 
+        KEY，则UNIQUE KEY或PRIMARY 
+        KEY会被储存在非唯一索引之前，这样MySQL就可以尽早地检查出重复关键字。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ORDER BY用于在创建新表时，让各行按一定的顺序排列。注意，在插入和删除后，表不会仍保持此顺序。当您知道多数情况下您会按照特定的顺序查询各行时，可以使用这个选项；在对表进行了大的改动后，通过使用此选项，您可以提高查询效率。在有些情况下，如果表按列排序，对于MySQL来说，排序可能会更简单。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您对一个MyISAM表使用ALTER 
+        TABLE，则所有非唯一索引会被创建到一个单独的批里（和REPAIR TABLE相同）。当您有许多索引时，这样做可以使ALTER 
+        TABLE的速度更快。</p>
+      <p>这项功能可以明确激活。ALTER 
+        TABLE...DISABLE KEYS让MySQL停止更新MyISAM表中的非唯一索引。然后使用ALTER 
+        TABLE ... ENABLE KEYS重新创建丢失的索引。进行此操作时，MySQL采用一种特殊的算法，比一个接一个地插入关键字要快很多。因此，在进行成批插入操作前先使关键字禁用可以大大地加快速度。使用ALTER 
+        TABLE ... DISABLE KEYS除了需要获得以前提到的权限以外，还需要获得INDEX权限。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Innodb存储引擎支持FOREIGN 
+        KEY和REFERENCES子句。Innodb存储引擎执行ADD 
+        [CONSTRAINT [<i>symbol</i>]] FOREIGN KEY (...) REFERENCES ... (...)。请参见<a href="update.html" title="15.2.6.4. FOREIGN KEY Constraints">15.2.6.4节，“FOREIGN 
+        KEY约束”</a>。对于其它存储引擎，这些子句会被分析，但是会被忽略。对于所有的存储引擎，CHECK子句会被分析，但是会被忽略。请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。接受这些子句但又忽略子句的原因是为了提高兼容性，以便更容易地从其它SQL服务器中导入代码，并运行应用程序，创建带参考数据的表。请参见<a href="" title="1.8.5. MySQL Differences from Standard SQL">1.8.5节，“MySQL与标准SQL的差别”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        InnoDB支持使用ALTER 
+        TABLE来取消外键：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALTER TABLE <i>yourtablename</i> DROP FOREIGN KEY <i>fk_symbol</i>;</pre>
+      <p>要了解更多信息，请参见<a href="update.html" title="15.2.6.4. FOREIGN KEY Constraints">15.2.6.4节，“FOREIGN 
+        KEY约束”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ALTER TABLE忽略DATA 
+        DIRECTORY和INDEX DIRECTORY表选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您想要把表默认的字符集和所有字符列（CHAR, VARCHAR, 
+        TEXT）改为新的字符集，应使用如下语句：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALTER TABLE <i>tbl_name</i> CONVERT TO CHARACTER SET <i>charset_name</i>;</pre>
+      <p>警告：前面的操作转换了字符集之间的列类型。如果您有一列使用一种字符集（如latin1），但是存储的值实际上使用了其它的字符集（如utf8），这种情况不是您想要的。此时，您必须对这样的列进行以下操作。</p>
+      <pre>ALTER TABLE t1 CHANGE c1 c1 BLOB;
+ALTER TABLE t1 CHANGE c1 c1 TEXT CHARACTER SET utf8;</pre>
+      <p>这种方法能够实现此功能的原因是，当您转换到BLOB列或从BLOB列转换过来时，并没有发生转换。</p>
+      <p>如果您指定CONVERT TO 
+        CHARACTER SET为二进制，则TEXT列被转换到相应的二进制字符串类型（BINARY, 
+        VARBINARY, BLOB）。这意味着这些列将不再有字符集，接下来的CONVERT 
+        TO操作也将不适用于这些列。</p>
+      <p>要仅仅改变一个表的默认字符集，应使用此语句：</p>
+      <pre>ALTER TABLE <i>tbl_name</i> DEFAULT CHARACTER SET <i>charset_name</i>;</pre>
+      <p>词语DEFAULT为自选项。如果您在向表中添加一个新列时（例如，使用ALTER 
+        TABLE...ADD column）没有指定字符集，则此时使用的字符集为默认字符集。</p>
+      <p>警告：ALTER 
+        TABLE...DEFAULT CHARACTER SET和ALTER 
+        TABLE...CHARACTER SET是等价的，只用于更改默认的表字符集。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果InnoDB表在创建时，使用了.ibd文件中的自己的表空间，则这样的文件可以被删除和导入。使用此语句删除.ibd文件：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALTER TABLE <i>tbl_name</i> DISCARD TABLESPACE;</pre>
+      <p>此语句用于删除当前的.ibd文件，所以应首先确认您有一个备份。如果在表空间被删除后尝试打开表格，则会出现错误。</p>
+      <p>要把备份的.ibd文件还原到表中，需把此文件复制到数据库目录中，然后书写此语句：</p>
+      <pre>ALTER TABLE <i>tbl_name</i> IMPORT TABLESPACE;</pre>
+      <p>见<a href="" title="15.2.6.6. Using Per-Table Tablespaces">15.2.6.6节，“使用按表的表空间”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用mysql_info() 
+        C API函数，您可以了解有多少记录已被复制，以及（当使用IGNORE时）有多少记录由于重复关键字的原因已被删除。请参见<a href="load-data.html" title="25.2.3.34. mysql_info()">25.2.3.34节，“mysql_info()”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ALTER TABLE也可以用于对带分区的表进行重新分区，功能包括添加、取消、合并和拆分各分区，还可以用于进行分区维护。</p>
+      <p>对带分区的表使用<i>partition_options</i>子句和ALTER 
+        TABLE可以对表进行重新分区，使用时依据<i>partition_options</i>定义的分区方法。本子句以PARTITION 
+        BY为开头，然后使用与用于CREATE TABLE的<i>partition_options</i>子句一样的语法和规则（要了解详细信息，请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>）。注释：MySQL 5.1服务器目前接受此语法，但是不实际执行；等MySQL 
+        5.1开发出来后，将执行此语法。</p>
+      <p>用于ALTER TABLE ADD 
+        PARTITION的<i>partition_definition</i>子句支持用于CREATE 
+        TABLE语句的<i>partition_definition</i>子句的同样名称的选项。（要了解语法和介绍，请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。）例如，假设您有一个按照以下方式创建的带分区的表：</p>
+      <pre>CREATE TABLE t1 (
+&nbsp;&nbsp;&nbsp; id INT,
+&nbsp;&nbsp;&nbsp; year_col INT
+)
+PARTITION BY RANGE (year_col) (
+&nbsp;&nbsp;&nbsp; PARTITION p0 VALUES LESS THAN (1991),
+&nbsp;&nbsp;&nbsp; PARTITION p1 VALUES LESS THAN (1995),
+&nbsp;&nbsp;&nbsp; PARTITION p2 VALUES LESS THAN (1999)
+);&nbsp;&nbsp;&nbsp; </pre>
+      <p>您可以在表中增加一个新的分区p3，该分区用于储存小于2002的值。添加方法如下：</p>
+      <pre>ALTER TABLE t1 ADD PARTITION p3 VALUES LESS THAN (2002);</pre>
+      <p>注释：您不能使用ALTER TABLE向一个没有进行分区的表添加分区。</p>
+      <p>DROP PARTITION用于取消一个或多个RANGE或LIST分区。此命令不能用于HASH或KEY
+        分区；用于这两个分区时，应使用COALESCE PARTITION（见后）。如果被取消的分区其名称列于<i>partition_names</i>清单中，则储存在此分区中的数据也被取消。例如，如果以前已定义的表t1，您可以采用如下方法取消名称为p0和p1的分区：</p>
+      <pre>ALTER TABLE DROP PARTITION p0, p1;</pre>
+      <p>ADD PARTITION和DROP 
+        PARTITION目前不支持IF [NOT] EXISTS。也不可能对一个分区或一个已分区的表进行重命名。如果您希望对一个分区进行重命名，您必须取消分区，再重新建立；如果您希望对一个已分区的表进行重新命名，您必须取消所有分区，然后对表进行重命名，再添加被取消的分区。</p>
+      <p>COALESCE PARTITION可以用于使用HASH或KEY进行分区的表，以便使用<i>number</i>来减少分区的数目。例如，假设您使用下列方法创建了表t2：</p>
+      <pre>CREATE TABLE t2 (
+&nbsp;&nbsp;&nbsp; name VARCHAR (30),
+&nbsp;&nbsp;&nbsp; started DATE
+)
+PARTITION BY HASH(YEAR(started))
+PARTITIONS (6);</pre>
+      <p>您可以使用以下命令，把t2使用的分区的数目由6个减少到4个：</p>
+      <pre>ALTER TABLE t2 COALESCE PARTITION 2;</pre>
+      <p>包含在最后一个<i>number</i>分区中的数据将被合并到其余的分区中。在此情况下，分区4和分区5将被合并到前4个分区中（编号为0、1、2和3的分区）。</p>
+      <p>如果要更改部分分区，但不更改所有的分区，您可以使用REORGANIZE 
+        PARTITION。这个命令有多种使用方法：</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        把多个分区合并为一个分区。通过把多个分区的名称列入<i>partition_names</i>清单，并为<i>partition_definition</i>提供一个单一的定义，可以实现这个功能。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        把一个原有的分区拆分为多个分区。通过为<i>partition_names</i>命名一个分区，并提供多个<i>partition_definitions</i>，可以实现这个功能。</p>
+      <p> o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        更改使用VALUES LESS THAN定义的分区子集的范围或更改使用VALUES 
+        IN定义的分区子集的值清单。</p>
+      <p>注释：对于没有明确命名的分区，MySQL会自动提供默认名称p0, 
+        p1, p2等。</p>
+      <p>要了解有关ALTER TALBE...REORANIZE 
+        PARTITION命令的详细信息，请参见<a href="alter-table.html" title="18.3. Partition Management">18.3节，“分区管理”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        多个附加子句用于提供分区维护和修补功能。这些功能与用于非分区表的功能类似。这些功能由CHECK 
+        TABLE和REPAIR TABLE等命令（这些命令不支持用于分区表）执行。这些子句包括ANALYZE 
+        PARTITION,
+        CHECK PARTITION,
+        OPTIMIZE PARTITION,
+        REBUILD PARTITION和REPAIR 
+        PARTITION.每个选项均为一个<i>partition_names</i>子句，包括一个或多个分区名称。需要更改的表中必须已存在这些分区。多个分区名称用逗号分隔。要了解更多信息，或要了解举例说明，请参见<a href="" title="18.3.3. Maintenance of Partitions">18.3.3节，“分区维护”</a>。</p>
+      <p>以下例子展示了ALTER TABLE的使用。首先展示表t1。表t1采用如下方法创建：</p>
+      <pre>mysql&gt; CREATE TABLE t1 (a INTEGER,b CHAR(10));</pre>
+      <p>把表t1重新命名为t2：</p>
+      <pre>mysql&gt; ALTER TABLE t1 RENAME t2;</pre>
+      <p>把列a从INTERGER更改为TINYINT 
+        NOT NULL（名称保持不变），并把列b从CHAR(10)更改为CHAR(20)，同时把列b重新命名为列c：</p>
+      <pre>mysql&gt; ALTER TABLE t2 MODIFY a TINYINT NOT NULL, CHANGE b c CHAR(20);</pre>
+      <p>添加一个新的TIMESTAMP列，名称为d：</p>
+      <pre>mysql&gt; ALTER TABLE t2 ADD d TIMESTAMP;</pre>
+      <p>在列d和列a中添加索引：</p>
+      <pre>mysql&gt; ALTER TABLE t2 ADD INDEX (d), ADD INDEX (a);</pre>
+      <p>删除列c：</p>
+      <pre>mysql&gt; ALTER TABLE t2 DROP COLUMN c;</pre>
+      <p>添加一个新的AUTO_INCREMENT整数列，名称为c：</p>
+      <pre>mysql&gt; ALTER TABLE t2 ADD c INT UNSIGNED NOT NULL AUTO_INCREMENT,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; ADD PRIMARY KEY (c);</pre>
+      <p>注意我们为c编制了索引（作为PRIMARY KEY），因为AUTO_INCREMENT列必须编制索引。同时我们定义c为NOT 
+        NULL，因为主键列不能为NULL。</p>
+      <p>当您添加一个AUTO_INCREMENT列时，列值被自动地按序号填入。对于MyISAM表，您可以在ALTER 
+        TABLE之前执行SET INSERT_ID=<i>value</i>来设置第一个序号，也可以使用AUTO_INCREMENT=<i>value</i>表选项来设置。请参见<a href="set-option.html" title="13.5.3. SET Syntax">13.5.3节，“SET语法”</a>。</p>
+      <p>如果值大于AUTO_INCREMENT列中的最大值，则您可以使用用于InnoDB表的ALTER 
+        TALBE...AUTO_INCREMENT=<i>value</i>表选项，来为新行设置序号。如果值小于列中当前的最大值，不会出现错误信息，当前的序列值也不改变。</p>
+      <p>使用MyISAM表时，如果您不更改AUTO_INCREMENT列，则序列号不受影响。如果您取消一个AUTO_INCREMENT列，然后添加另一个AUTO_INCREMENT列，则序号重新排列，从1开始。</p>
+      <p>见<a href="alter-table.html" title="A.7.1. Problems with ALTER TABLE">A.7.1节，“与ALTER TABLE有关的问题”</a>。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

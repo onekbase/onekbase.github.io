@@ -1,0 +1,328 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.1.3.&nbsp;mysqld_safe：MySQL服务器启动脚本</h1>
+
+          
+        
+      
+      <p>在Unix和NetWare中推荐使用mysqld_safe来启动mysqld服务器。mysqld_safe增加了一些安全特性，例如当出现错误时重启服务器并向错误日志文件写入运行时间信息。本节后面列出了NetWare的特定行为。</p>
+      <p>注释：为了保持同旧版本MySQL的向后兼容性，MySQL二进制分发版仍然包括safe_mysqld作为mysqld_safe的符号链接。但是，你不应再依赖它，因为再将来将删掉它。</p>
+      <p>默认情况下，mysqld_safe尝试启动可执行mysqld-max（如果存在），否则启动mysqld。该行为的含义是：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在Linux中，MySQL-Max 
+        RPM依赖该mysqld_safe的行为。RPM安装可执行mysqld-max，使mysqld_safe从该点起自动使用可执行命令。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果你安装包括mysqld-max服务器的MySQL-Max分发版，后面升级到非-Max的MySQL版本，mysqld_safe仍然试图运行旧的 
+        mysqld-max服务器。升级时，你应手动删除旧的mysqld-max服务器以确保mysqld_safe运行新的mysqld服务器。</p>
+      <p>要想越过默认行为并显式指定你想要运行哪个服务器，为mysqld_safe指定--mysqld或--mysqld-version选项。</p>
+      <p>mysqld_safe的许多选项与mysqld的相同的。参见<a href="server-options.html" title="5.3.1. mysqld Command-Line Options">5.3.1节，“mysqld命令行选项”</a>。</p>
+      <p>所有在命令行中为mysqld_safe指定的选项被传递给mysqld。如果你想要使用mysqld不支持的mysqld_safe的选项，不要在命令行中指定。相反，在选项文件的[mysqld_safe]组内将它们列出来。参见<a href="connecting.html" title="4.3.2. Using Option Files">4.3.2节，“使用选项文件”</a>。</p>
+      <p>mysqld_safe从选项文件的[mysqld]、[server]和[mysqld_safe]部分读取所有选项。为了保证向后兼容性，它还读取 
+        [safe_mysqld]部分，尽管在MySQL 
+        5.1安装中你应将这部分重新命名为[mysqld_safe]。</p>
+      <p>mysqld_safe支持下面的选项：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --help</p>
+      <p>显示帮助消息并退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --autoclose</p>
+      <p>(只在NetWare中)在NetWare中，mysqld_safe可以保持窗口。当你关掉mysqld_safe 
+        NLM时，窗口不按默认设置消失。相反，它提示用户输入：</p>
+      <pre >*&lt;NLM has terminated; Press any key to close the screen&gt;*</pre>
+      <p>如果你想让NetWare自动关闭窗口，在mysqld_safe中使用--autoclose选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --basedir=<i>path</i></p>
+      <p>MySQL安装目录的路径。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --core-file-size=<i>size</i></p>
+      <p> mysqld能够创建的内核文件的大小。选项值传递给ulimit 
+        -c。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --datadir=<i>path</i></p>
+      <p>数据目录的路径。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        &nbsp; 
+        --defaults-extra-file=<i>path</i></p>
+      <p>除了通用选项文件所读取的选项文件名。如果给出，必须首选该选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --defaults-file=<i>path</i></p>
+      <p>读取的代替通用选项文件的选项文件名。如果给出，必须首选该选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --ledir=<i>path</i></p>
+      <p>包含mysqld程序的目录的路径。使用该选项来显式表示服务器位置。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --log-error=<i>path</i></p>
+      <p>将错误日志写入给定的文件。参见<a href="error-log.html" title="5.11.1. The Error Log">5.11.1节，“错误日志”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --mysqld=<i>prog_</i><i>name</i></p>
+      <p>想要启动的服务器程序名(在ledir目录)。如果你使用MySQL二进制分发版但有二进制分发版之外的数据目录需要该选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --mysqld-version =<i>suffix</i></p>
+      <p>该选项类似--mysqld选项，但你只指定服务器程序名的后缀。基本名假定为mysqld。例如，如果你使用--mysqld-version 
+        =max，mysqld_safe启动ledir目录中的mysqld-max程序。如果--mysqld-version的参数为空，mysqld_safe使用目录中的mysqld。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --nice=<i>priority</i></p>
+      <p>使用nice程序根据给定值来设置服务器的调度优先级。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --no-defaults</p>
+      <p>不要读任何选项文件。如果给出，必须首选该选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --open-files-limit=<i>count</i></p>
+      <p> mysqld能够打开的文件的数量。选项值传递给 
+        ulimit -n。请注意你需要用root启动mysqld_safe来保证正确工作！</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --pid-file=path</p>
+      <p>进程ID文件的路径。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --port=<i>port_num</i></p>
+      <p>&nbsp;用来帧听TCP/IP连接的端口号。端口号必须为1024或更大值，除非MySQL以root系统用户运行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        --skip-character-set-client-handshake</p>
+      <p>忽略客户端发送的字符集信息，使用服务器的默认字符集。(选择该选项，MySQL的动作与MySQL 
+        4.0相同）。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --socket=path</p>
+      <p>用于本地连接的Unix套接字文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --timezone=<i>zone</i></p>
+      <p>为给定的选项值设置TZ时区环境变量。从操作系统文档查阅合法的时区规定格式。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --user={<i>user_name</i> | <i>user_id</i>}</p>
+      <p>以用户名<i>user_name</i>或数字用户ID<i> user_id</i>运行mysqld服务器。(本文中的“用户”指系统登录账户，而不是
+        授权表中的MySQL用户）。 </p>
+      <p>执行mysqld_safe时，必须先给出--defaults-file或--defaults-extra-option，或不使用选项文件。例如，该命令将不使用选项文件：</p>
+      <pre>mysqld_safe --port=<i>port_num</i> --defaults-file=<i>file_name</i></pre>
+      <p>相反，使用下面的命令：</p>
+      <pre>mysqld_safe --defaults-file=<i>file_name</i> --port=<i>port_num</i></pre>
+      <p>一般情况mysqld_safe脚本可以启动从源码或二进制MySQL分发版安装的服务器，即使这些分发版将服务器安装到稍微不同的位置。(参见<a href="mysqld-safe.html" title="2.1.5. Installation Layouts">2.1.5节，“安装布局”</a>）。 
+        mysqld_safe期望下面的其中一个条件是真的：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        可以根据调用mysqld_safe的目录找到服务器和数据库。在二进制分发版中，mysqld_safe看上去在bin和data目录的工作目录下。对于源码分发版，为libexec和var目录。如果你从MySQL安装目录执行mysqld_safe应满足该条件(例如，二进制分发版为/usr/local/mysql)。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果不能根据工作目录找到服务器和数据库，mysqld_safe试图通过绝对路径对它们定位。典型位置为/usr/local/libexec和/usr/local/var。实际位置由构建分发版时配置的值确定如果MySQL安装到配置时指定的位置，它们应该是正确的。</p>
+      <p>因为mysqld_safe试图通过工作目录找到服务器和数据库，只要你从MySQL安装目录运行mysqld_safe，可以将MySQL二进制分发版安装到其它位置：</p>
+      <pre>shell&gt; cd mysql_installation_directory
+shell&gt; bin/mysqld_safe &amp;</pre>
+      <p>如果mysqld_safe失败，即使从MySQL安装目录调用仍然失败，你可以指定--ledir和--datadir选项来指示服务器和数据库在你的系统中的安装目录。</p>
+      <p>一般情况，你不应编辑mysqld_safe脚本。相反，应使用命令行选项或my.cnf选项文件的[mysqld_safe]部分的选项来配置mysqld_safe。一般不需要编辑mysqld_safe来正确启动服务器。但是，如果你编辑，将来升级MySQL后会覆盖你修改的mysqld_safe版本，因此你应对你修改的版本进行备份以便将来重装。</p>
+      <p>在NetWare中，mysqld_safe是一个NetWare 
+        Loadable Module (NLM)，从原Unix shell脚本移植。它执行：</p>
+      <p> 1.&nbsp;&nbsp;&nbsp;
+        检查系统和选项。</p>
+      <p> 2.&nbsp;&nbsp;&nbsp;
+        检查MyISAM表。</p>
+      <p> 3.&nbsp;&nbsp;&nbsp;
+        保持MySQL服务器窗口。</p>
+      <p> 4.&nbsp;&nbsp;&nbsp;
+        启动并监视mysqld，如果因错误终止则重启。</p>
+      <p> 5.&nbsp;&nbsp;&nbsp;
+        
+        将mysqld的错误消息发送到数据目录中的<i>host_name.err </i>文件。</p>
+      <p> 6.&nbsp;&nbsp;&nbsp;
+        将mysqld_safe的屏幕输出发送到数据目录中的<i>host_name.safe</i>文件。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,236 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.2.13.1.&nbsp;松散索引扫描</h1>
+
+            
+          
+        
+        <p> 使用索引时最有效的途径是直接搜索组域。通过该访问方法，MySQL使用某些关键字排序的索引类型(例如，B-树)的属性。该属性允许使用 
+          索引中的查找组而不需要考虑满足所有WHERE条件的索引中的所有关键字。既然该访问方法只考虑索引中的关键字的一小部分，它被称为<em>松散索引扫描</em>。如果没有WHERE子句，
+          松散索引扫描读取的关键字数量与组数量一样多，可以比所有关键字数小得多。如果WHERE子句包含范围判断式(关于range联接类型的讨论参见<a href="explain.html" title="7.2.1. EXPLAIN Syntax (Get Information About a SELECT)">7.2.1节，“EXPLAIN语法（获取关于SELECT的信息）”</a>)，
+          松散索引扫描查找满足范围条件的每个组的第1个关键字，并且再次读取尽可能最少数量的关键字。在下面的条件下是可以的：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          查询针对一个单表。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          GROUP BY包括索引的第1个连续部分(如果对于GROUP 
+          BY，查询有一个DISTINCT子句，则所有显式属性指向索引开头)。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          只使用累积函数(如果有)MIN()和MAX()，并且它们均指向相同的列。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          索引的任何其它部分（除了那些来自查询中引用的GROUP 
+          BY）必须为常数(也就是说，必须按常量数量来引用它们)，但MIN()或MAX()
+          函数的参数例外。</p>
+        <p> 此类查询的EXPLAIN输出显示Extra列的Using 
+          indexforgroup-by。</p>
+        <p> 下面的查询提供该类的几个例子，假定表t1(c1,c2,c3,c4)有一个索引idx(c1，c2，c3)：</p>
+        <p>SELECT c1, c2 FROM t1 GROUP 
+          BY c1, c2;</p>
+        <p>SELECT DISTINCT c1, c2 FROM 
+          t1;</p>
+        <p>SELECT c1, MIN(c2) FROM t1 
+          GROUP BY c1;</p>
+        <p>SELECT c1, c2 FROM t1 WHERE 
+          c1 &lt; <i>const</i> GROUP BY c1, c2;</p>
+        <p>SELECT MAX(c3), MIN(c3), 
+          c1, c2 FROM t1 WHERE c2 &gt; <i>const</i> GROUP BY c1, c2;</p>
+        <p>SELECT c2 FROM t1 WHERE c1 
+          &lt; <i>const</i> GROUP BY c1, c2;</p>
+        <p>SELECT c1, c2 FROM t1 WHERE 
+          c3 = <i>const</i> GROUP BY c1, c2；</p>
+        <p> 由于上述原因，不能用该快速选择方法执行下面的查询：</p>
+        <p> 1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          除了MIN()或MAX()，还有其它累积函数，例如：</p>
+        <pre>&nbsp;&nbsp;&nbsp;&nbsp; SELECT c1, SUM(c2) FROM t1 GROUP BY c1;</pre>
+        <p> 2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          GROUP BY子句中的域不引用索引开头，如下所示：</p>
+        <pre>&nbsp;&nbsp;&nbsp;&nbsp; SELECT c1,c2 FROM t1 GROUP BY c2, c3;</pre>
+        <p> 3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          查询引用了GROUP 
+          BY部分后面的关键字的一部分，并且没有等于常量的等式，例如：</p>
+        <pre>&nbsp;&nbsp;&nbsp;&nbsp; SELECT c1,c3 FROM t1 GROUP BY c1, c2；</pre>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

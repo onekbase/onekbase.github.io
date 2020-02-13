@@ -1,0 +1,486 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 25.2.1.&nbsp;C API数据类型</h1>
+
+          
+        
+      
+      
+        <ul type="disc">
+          <li>
+            <p>  MYSQL </p>
+            <p> 该结构代表1个数据库连接的句柄。几乎所有的MySQL函数均使用它。不应尝试拷贝MYSQL结构。不保证这类拷贝结果会有用。 </p>
+          </li>
+          <li>
+            <p>  MYSQL_RES </p>
+            <p> 该结构代表返回行的查询结果（SELECT,
+              SHOW,
+              DESCRIBE,
+              EXPLAIN）。在本节的剩余部分，将查询返回的信息称为“结果集”。 </p>
+          </li>
+          <li>
+            <p>  MYSQL_ROW </p>
+            <p> 这是1行数据的“类型安全”表示。它目前是按照计数字节字符串的数组实施的。（如果字段值可能包含二进制数据，不能将其当作由Null终结的字符串对待，这是因为这类值可能会包含Null字节）。行是通过调用mysql_fetch_row()获得的。 </p>
+          </li>
+          <li>
+            <p>  MYSQL_FIELD </p>
+            <p> 该结构包含关于字段的信息，如字段名、类型和大小。这里详细介绍了其成员。通过重复调用mysql_fetch_field()，可为每个字段获得MYSQL_FIELD结构。字段值不是该结构的组成部份，它们包含在MYSQL_ROW结构中。 </p>
+          </li>
+          <li>
+            <p>  MYSQL_FIELD_OFFSET </p>
+            <p> 这是MySQL字段列表偏移量的“类型安全”表示（由mysql_field_seek()使用）。偏移量是行内的字段编号，从0开始。 </p>
+          </li>
+          <li>
+            <p>   my_ulonglong </p>
+            <p> 用于行数以及mysql_affected_rows()、mysql_num_rows()和mysql_insert_id()的类型。该类型提供的范围为0～1.84e19。 </p>
+            <p> 在某些系统上，不能打印类型my_ulonglong的值。要想打印这类值，请将其转换为无符号长整数类型并使用%lu打印格式，例如：</p>
+            <pre >printf ("Number of rows: %lu\n", (unsigned long) mysql_num_rows(result));
+</pre>
+          </li>
+        </ul>
+      
+      <p>下面列出了MYSQL_FIELD结构包含的成员：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        name </p>
+      <p>字段名称，由Null终结的字符串。如果用AS子句为该字段指定了别名，名称的值也是别名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        org_name </p>
+      <p>段名称，由Null终结的字符串。忽略别名。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        table </p>
+      <p> 包含该字段的表的名称，如果该字段不是计算出的字段的话。对于计算出的字段，表值为空的字符串。如果用AS子句为该表指定了别名，表的值也是别名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        org_table </p>
+      <p>表的名称，由Null终结的字符串。忽略别名。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        db </p>
+      <p>字段源自的数据的名称，由Null终结的字符串。如果该字段是计算出的字段，db为空的字符串。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        catalog </p>
+      <p>catalog名称。该值总是&quot;def&quot;。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        char * 
+        def </p>
+      <p>该字段的默认值，由Null终结的字符串。仅当使用mysql_list_fields()时才设置它。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        long length </p>
+      <p>字段的宽度，如表定义中所指定的那样。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        long max_length </p>
+      <p> 用于结果集的字段的最大宽度（对于实际位于结果集中的行，最长字段值的长度）。如果使用mysql_store_result()或mysql_list_fields()，它将包含字段的最大长度。如果使用mysql_use_result()，该变量的值为0。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int name_length </p>
+      <p>名称的长度。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int org_name_length </p>
+      <p> org_name的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int table_length </p>
+      <p>表的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int org_table_length </p>
+      <p> org_table的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int db_length </p>
+      <p> db的长度。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int catalog_length </p>
+      <p> catalog的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int def_length </p>
+      <p> def的长度。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int flags </p>
+      <p>用于字段的不同“位标志”。标志的值可以有0个或多个下述位集合：</p>
+      <table border="1" cellpadding="0" id="table2">
+        <tr>
+          <td><p> 标志值</td>
+          <td><p> 标志描述</td>
+        </tr>
+        <tr>
+          <td><p> NOT_NULL_FLAG</td>
+          <td><p>字段不能为NULL</td>
+        </tr>
+        <tr>
+          <td><p> PRI_KEY_FLAG</td>
+          <td><p>字段是主键的组成部分</td>
+        </tr>
+        <tr>
+          <td><p> UNIQUE_KEY_FLAG</td>
+          <td><p>字段是唯一键的组成部分</td>
+        </tr>
+        <tr>
+          <td><p> MULTIPLE_KEY_FLAG</td>
+          <td><p>字段是非唯一键的组成部分</td>
+        </tr>
+        <tr>
+          <td><p> UNSIGNED_FLAG</td>
+          <td><p>字段具有UNSIGNED属性</td>
+        </tr>
+        <tr>
+          <td><p> ZEROFILL_FLAG</td>
+          <td><p>字段具有ZEROFILL属性</td>
+        </tr>
+        <tr>
+          <td><p> BINARY_FLAG</td>
+          <td><p>字段具有BINARY属性</td>
+        </tr>
+        <tr>
+          <td><p> AUTO_INCREMENT_FLAG</td>
+          <td><p>字段具有AUTO_INCREMENT属性</td>
+        </tr>
+        <tr>
+          <td><p> ENUM_FLAG</td>
+          <td><p>字段是ENUM（不再重视）</td>
+        </tr>
+        <tr>
+          <td><p> SET_FLAG</td>
+          <td><p>字段是 
+              SET（不再重视）</td>
+        </tr>
+        <tr>
+          <td><p> BLOB_FLAG</td>
+          <td><p>字段是BLOB或TEXT（不再重视）</td>
+        </tr>
+        <tr>
+          <td><p> TIMESTAMP_FLAG</td>
+          <td><p>字段是TIMESTAMP（不再重视）</td>
+        </tr>
+      </table>
+      <p>不再重视BLOB_FLAG、ENUM_FLAG、SET_FLAG和TIMESTAMP_FLAG标志，原因在于，它们指出了字段的类型，而不是类型的属性。更可取的方式是使用MYSQL_TYPE_BLOB、MYSQL_TYPE_ENUM、MYSQL_TYPE_SET或MYSQL_TYPE_TIMESTAMP测试field-&gt;type。</p>
+      <p>在下面的示例中，介绍了标志值的典型用法：</p>
+      <pre>if (field-&gt;flags &amp; NOT_NULL_FLAG)
+&nbsp;&nbsp;&nbsp; printf(&quot;Field can&#39;t be null\n&quot;);</pre>
+      <p>可以使用下述方面的宏来定义标志值的布尔状态：</p>
+      <table border="1" cellpadding="0" id="table3">
+        <tr>
+          <td><p> 标志状态</td>
+          <td><p> 描述</td>
+        </tr>
+        <tr>
+          <td><p> IS_NOT_NULL(flags)</td>
+          <td><p>如果该字段定义为NOT 
+              NULL，为“真”。</td>
+        </tr>
+        <tr>
+          <td><p> IS_PRI_KEY(flags)</td>
+          <td><p>如果该字段是主键，为“真”。</td>
+        </tr>
+        <tr>
+          <td><p> IS_BLOB(flags)</td>
+          <td><p>如果该字段是BLOB或TEXT，为“真”（不再重视，用测试field-&gt;type取而代之）。</td>
+        </tr>
+      </table>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int decimals </p>
+      <p>用于数值字段的十进制数数目。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        unsigned 
+        int charset_nr </p>
+      <p>用于字段的字符集编号。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        enum 
+        enum_field_types type </p>
+      <p>字段的类型。类型值可以是下标所列的MYSQL_TYPE_符号之一：</p>
+      <table border="1" cellpadding="0" id="table4">
+        <tr>
+          <td><p> 类型值</td>
+          <td><p> 类型描述</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_TINY</td>
+          <td><p> TINYINT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_SHORT</td>
+          <td><p> SMALLINT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_LONG</td>
+          <td><p> INTEGER字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_INT24</td>
+          <td><p> MEDIUMINT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_LONGLONG</td>
+          <td><p> BIGINT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_DECIMAL</td>
+          <td><p> DECIMAL或NUMERIC字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_NEWDECIMAL</td>
+          <td><p>精度数学DECIMAL或NUMERIC</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_FLOAT</td>
+          <td><p> FLOAT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_DOUBLE</td>
+          <td><p> DOUBLE或REAL字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_BIT</td>
+          <td><p> BIT字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_TIMESTAMP</td>
+          <td><p> TIMESTAMP字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_DATE</td>
+          <td><p> DATE字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_TIME</td>
+          <td><p> TIME字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_DATETIME</td>
+          <td><p> DATETIME字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_YEAR</td>
+          <td><p> YEAR字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_STRING</td>
+          <td><p> CHAR字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_VAR_STRING</td>
+          <td><p> VARCHAR字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_BLOB</td>
+          <td><p> BLOB或TEXT字段（使用max_length来确定最大长度）</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_SET</td>
+          <td><p> SET字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_ENUM</td>
+          <td><p> ENUM字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_GEOMETRY</td>
+          <td><p>Spatial字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_NULL</td>
+          <td><p> NULL-type字段</td>
+        </tr>
+        <tr>
+          <td><p> MYSQL_TYPE_CHAR</td>
+          <td><p>不再重视，用MYSQL_TYPE_TINY取代</td>
+        </tr>
+      </table>
+      <p>可以使用IS_NUM()宏来测试字段是否具有数值类型。将类型值传递给IS_NUM()，如果字段为数值类型，会将其评估为“真”：</p>
+      <pre>if (IS_NUM(field-&gt;type))
+&nbsp;&nbsp;&nbsp; printf(&quot;Field is numeric\n&quot;);</pre>
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

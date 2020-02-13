@@ -1,0 +1,283 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 10.10.1.&nbsp;Unicode字符集</h1>
+
+          
+        
+      
+      <p>MySQL有两种Unicode字符集。你能够使用这些字符集保存大约650种语言的文本。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ucs2 
+        (UCS-2 Unicode)校对规则: </p>
+      
+        <ul type="disc">
+          <li>
+            <pre >mysql&gt; SHOW COLLATION LIKE 'ucs2%';
++--------------------+---------+-----+---------+----------+---------+
+| Collation          | Charset | Id  | Default | Compiled | Sortlen |
++--------------------+---------+-----+---------+----------+---------+
+| ucs2_general_ci    | ucs2    |  35 | Yes     | Yes      |       1 |
+| ucs2_bin           | ucs2    |  90 |         | Yes      |       1 |
+| ucs2_unicode_ci    | ucs2    | 128 |         | Yes      |       8 |
+| ucs2_icelandic_ci  | ucs2    | 129 |         | Yes      |       8 |
+| ucs2_latvian_ci    | ucs2    | 130 |         | Yes      |       8 |
+| ucs2_romanian_ci   | ucs2    | 131 |         | Yes      |       8 |
+| ucs2_slovenian_ci  | ucs2    | 132 |         | Yes      |       8 |
+| ucs2_polish_ci     | ucs2    | 133 |         | Yes      |       8 |
+| ucs2_estonian_ci   | ucs2    | 134 |         | Yes      |       8 |
+| ucs2_spanish_ci    | ucs2    | 135 |         | Yes      |       8 |
+| ucs2_swedish_ci    | ucs2    | 136 |         | Yes      |       8 |
+| ucs2_turkish_ci    | ucs2    | 137 |         | Yes      |       8 |
+| ucs2_czech_ci      | ucs2    | 138 |         | Yes      |       8 |
+| ucs2_danish_ci     | ucs2    | 139 |         | Yes      |       8 |
+| ucs2_lithuanian_ci | ucs2    | 140 |         | Yes      |       8 |
+| ucs2_slovak_ci     | ucs2    | 141 |         | Yes      |       8 |
+| ucs2_spanish2_ci   | ucs2    | 142 |         | Yes      |       8 |
+| ucs2_roman_ci      | ucs2    | 143 |         | Yes      |       8 |
+| ucs2_persian_ci    | ucs2    | 144 |         | Yes      |       8 |
+| ucs2_esperanto_ci  | ucs2    | 145 |         | Yes      |       8 |
++--------------------+---------+-----+---------+----------+---------+
+</pre>
+          </li>
+          <li>
+            <p> utf8 
+              (UTF-8 Unicode)校对规则:</p>
+            <pre >mysql&gt; SHOW COLLATION LIKE 'utf8%';
++--------------------+---------+-----+---------+----------+---------+
+| Collation          | Charset | Id  | Default | Compiled | Sortlen |
++--------------------+---------+-----+---------+----------+---------+
+| utf8_general_ci    | utf8    |  33 | Yes     | Yes      |       1 |
+| utf8_bin           | utf8    |  83 |         | Yes      |       1 |
+| utf8_unicode_ci    | utf8    | 192 |         | Yes      |       8 |
+| utf8_icelandic_ci  | utf8    | 193 |         | Yes      |       8 |
+| utf8_latvian_ci    | utf8    | 194 |         | Yes      |       8 |
+| utf8_romanian_ci   | utf8    | 195 |         | Yes      |       8 |
+| utf8_slovenian_ci  | utf8    | 196 |         | Yes      |       8 |
+| utf8_polish_ci     | utf8    | 197 |         | Yes      |       8 |
+| utf8_estonian_ci   | utf8    | 198 |         | Yes      |       8 |
+| utf8_spanish_ci    | utf8    | 199 |         | Yes      |       8 |
+| utf8_swedish_ci    | utf8    | 200 |         | Yes      |       8 |
+| utf8_turkish_ci    | utf8    | 201 |         | Yes      |       8 |
+| utf8_czech_ci      | utf8    | 202 |         | Yes      |       8 |
+| utf8_danish_ci     | utf8    | 203 |         | Yes      |       8 |
+| utf8_lithuanian_ci | utf8    | 204 |         | Yes      |       8 |
+| utf8_slovak_ci     | utf8    | 205 |         | Yes      |       8 |
+| utf8_spanish2_ci   | utf8    | 206 |         | Yes      |       8 |
+| utf8_roman_ci      | utf8    | 207 |         | Yes      |       8 |
+| utf8_persian_ci    | utf8    | 208 |         | Yes      |       8 |
+| utf8_esperanto_ci  | utf8    | 209 |         | Yes      |       8 |
++--------------------+---------+-----+---------+----------+---------+
+</pre>
+          </li>
+        </ul>
+      
+      
+      <p> utf8_unicode_ci校对规则是根据Unicode校对规则算法（UCA）执行的，
+        校对规则描述见  http://www.unicode.org/reports/tr10/。此校对规则使用UCA 
+        4.0.0版本砝码键：http://www.unicode.org/Public/UC一个/4.0.0/一个llkeys-4.0.0.txt。（以下讨论使用utf8_unicode_ci，但同样适合ucs2_unicode_ci。）</p>
+      <p>当前，utf8_unicode_ci校对规则仅部分支持Unicode校对规则算法。一些字符还是不能支持。并且，不能完全支持组合的记号。这主要影响越南和俄罗斯的一些少数民族语言，如：Udmurt
+        、Tatar、Bashkir和Mari。</p>
+      <p> utf8_unicode_ci的最主要的特色是支持扩展，即当把一个字母看作与其它字母组合相等时。例如，在德语和一些其它语言中‘ß’等于‘ss’。</p>
+      <p>utf8_general_ci是一个遗留的
+        校对规则，不支持扩展。它仅能够在字符之间进行逐个比较。这意味着utf8_general_ci校对规则进行的比较速度很快，但是与使用utf8_unicode_ci的
+        校对规则相比，比较正确性较差）。</p>
+      <p>例如，使用utf8_general_ci和utf8_unicode_ci两种
+        校对规则下面的比较相等：</p>
+      <pre>Ä = A
+Ö = O
+Ü = U</pre>
+      <p>两种校对规则之间的区别是，对于utf8_general_ci下面的等式成立：</p>
+      <pre>ß = s</pre>
+      <p>但是，对于utf8_unicode_ci下面等式成立：</p>
+      <pre>ß = ss</pre>
+      <p>对于一种语言仅当使用utf8_unicode_ci排序做的不好时，才执行与具体语言相关的utf8字符集
+        校对规则。例如，对于德语和法语，utf8_unicode_ci工作的很好，因此不再需要为这两种语言创建特殊的utf8校对规则。</p>
+      <p>utf8_general_ci也适用与德语和法语，除了‘ß’等于‘s’，而不是‘ss’之外。如果你的应用能够接受这些，那么应该使用utf8_general_ci，因为它速度快。否则，使用utf8_unicode_ci，因为它比较准确。</p>
+      <p> utf8_swedish_ci，与其它语言相关的utf8的校对规则相似，来源于utf8_unicode_ci，使用额外的语言规则。例如，在瑞典语中，以下的关系式成立，它在德语和法语中不成立：</p>
+      <pre>Ü = Y &lt; Ö</pre>
+      <p> utf8_spanish_ci和utf8_spanish2_ci校对规则分别适用于现代和古典西班牙语。在两种
+        校对规则中，ñ’（n-发音符）是‘n’和‘o’之间的间隔字母。另外，对于古典西班牙语，‘ch’是‘c’和d之间的间隔字母，并且‘ll’是‘l’和‘m’之间的间隔字母。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

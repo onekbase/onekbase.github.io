@@ -1,0 +1,280 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.3.5.&nbsp;使用SSL进行安全连接</h1>
+
+            
+          
+        
+      
+      
+        
+          
+             MySQL 
+              Connector/J中的SSL能够对JDBC驱动程序和服务器之间传输的所有数据进行加密（除了初始握手数据）。启用SSL会导致性能损失，体现在查询时间将增加35～50％，具体情况取决于查询的大小以及返回的数据量。
+              <p> 要想使SSL支持能够工作，必须满足下述要求：</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                包含JSSE（Java安全套接字扩展）的JDK，如JDK-1.4.1或更高版本。SSL目前不能与能够为其添加JSSE的JDK一起工作，如JDK-1.2.x或JDK-1.3.x，原因在于下述JSSE缺陷：http://developer.java.sun.com/developer/bugParade/bugs/4273544.html </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                支持SSL并已编译和配置了该功能的MySQL服务器，如MySQL-4.0.4和更高版本，请参见：http://www.mysql.com/doc/en/Secure_connections.html </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                客户端证书（在本节稍后介绍）。</p>
+              <p>首先，需要将MySQL服务器CA证书导入到Java 
+                truststore。在MySQL源码分发版的“SSL”子目录下给出了1个示例MySQL服务器CA证书。SSL将使用它来确定是否与安全MySQL服务器进行通信。</p>
+              <p> 要想使用Java的“keytool”在当前目录下创建truststore，并导入服务器的CA证书（“cacert.pem”），可采取下述方式（假定“keytool”位于路径中。它位于JDK或JRE的“bin”子目录下）：</p>
+              <pre>shell&gt; keytool -import -alias mysqlServerCACert -file cacert.pem -keystore truststore
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </pre>
+              <p>Keytool将给出下述响应信息：</p>
+              <pre>Enter keystore password:&nbsp; *********
+Owner: EMAILADDRESS=walrus@example.com, CN=Walrus, O=MySQL AB, L=Orenburg, ST=Some
+-State, C=RU
+Issuer: EMAILADDRESS=walrus@example.com, CN=Walrus, O=MySQL AB, L=Orenburg, ST=Som
+e-State, C=RU
+Serial number: 0
+Valid from: Fri Aug 02 16:55:53 CDT 2002 until: Sat Aug 02 16:55:53 CDT 2003
+Certificate fingerprints:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MD5:&nbsp; 61:91:A0:F2:03:07:61:7A:81:38:66:DA:19:C4:8D:AB
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SHA1: 25:77:41:05:D5:AD:99:8C:14:8C:CA:68:9C:2F:B8:89:C3:34:4D:6C
+Trust this certificate? [no]:&nbsp; yes
+Certificate was added to keystore</pre>
+              <p>随后，需要生成客户端证书，以便MySQL服务器知道它正与安全客户端进行通信：</p>
+              <pre>&nbsp;shell&gt; keytool -genkey -keyalg rsa -alias mysqlClientCertificate -keystore keystore </pre>
+              <p>Keytool将给出下述提示信息，并在当目录下创建名为“keystore”的密钥存储器。</p>
+              <p>你应使用与具体情况相适应的新作出响应：</p>
+              <pre>Enter keystore password:&nbsp; *********
+What is your first and last name?
+&nbsp; [Unknown]:&nbsp; Matthews
+What is the name of your organizational unit?
+&nbsp; [Unknown]:&nbsp; Software Development
+What is the name of your organization?
+&nbsp; [Unknown]:&nbsp; MySQL AB
+What is the name of your City or Locality?
+&nbsp; [<a name="id3063314">Unknown]:&nbsp; Flossmoor</a>
+What is the name of your State or Province?
+&nbsp; [Unknown]:&nbsp; IL
+What is the two-letter country code for this unit?
+&nbsp; [Unknown]:&nbsp; US
+Is &lt;CN=Matthews, OU=Software Development, O=MySQL AB,
+ L=Flossmoor, ST=IL, C=US&gt; correct?
+&nbsp; [no]:&nbsp; y
+&nbsp;
+输入&lt;mysqlClientCertificate&gt;的密码
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果与keystore的密码相同，按回车）：</pre>
+              <p> 最后，要想使JSSE能够使用你生成的keystore和truststore，启动JVM时，需要设置下述系统属性，用你所创建的keystore文件完整路径替换“path_to_keystore_file”，用你所创建的truststore文件完整路径替换“path_to_truststore_file”，并为每个属性使用恰当的密码值。</p>
+              <pre>-Djavax.net.ssl.keyStore=path_to_keystore_file
+-Djavax.net.ssl.keyStorePassword=*********
+-Djavax.net.ssl.trustStore=path_to_truststore_file
+-Djavax.net.ssl.trustStorePassword=********* </pre>
+              <p>此外，还需要在用于MySQL 
+                Connector/J的连接参数中将“useSSL”设置为“真”，方法是，在URL中添加“useSSL=true”，或在准备传递给DriverManager.getConnection()的java.util.Properties实例中将“useSSL”设置为“真”。</p>
+              <p>你可以打开JSSE调试功能能够，测试SSL是否工作（详情如下），并查找下述关键事件：</p>
+              <pre>...
+ *** ClientHello, v3.1
+ RandomCookie:&nbsp; GMT: 1018531834 bytes = { 199, 148, 180, 215, 74, 12, 54, 244, 0, 168, 55, 103, 215, 64, 16, 138, 225, 190, 132, 153, 2, 217, 219, 239, 202, 19, 121, 78 }
+ Session ID:&nbsp; {}
+ Cipher Suites:&nbsp; { 0, 5, 0, 4, 0, 9, 0, 10, 0, 18, 0, 19, 0, 3, 0, 17 }
+ Compression Methods:&nbsp; { 0 }
+ ***
+ [write] MD5 and SHA1 hashes:&nbsp; len = 59
+ 0000: 01 00 00 37 03 01 3D B6&nbsp;&nbsp; 90 FA C7 94 B4 D7 4A 0C&nbsp; ...7..=.......J.
+ 0010: 36 F4 00 A8 37 67 D7 40&nbsp;&nbsp; 10 8A E1 BE 84 99 02 D9&nbsp; 6...7g.@........
+ 0020: DB EF CA 13 79 4E 00 00&nbsp;&nbsp; 10 00 05 00 04 00 09 00&nbsp; ....yN..........
+ 0030: 0A 00 12 00 13 00 03 00&nbsp;&nbsp; 11 01 00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...........
+ main, WRITE:&nbsp; SSL v3.1 Handshake, length = 59
+ main, READ:&nbsp; SSL v3.1 Handshake, length = 74
+ *** ServerHello, v3.1
+ RandomCookie:&nbsp; GMT: 1018577560 bytes = { 116, 50, 4, 103, 25, 100, 58, 202, 79, 185, 178, 100, 215, 66, 254, 21, 83, 187, 190, 42, 170, 3, 132, 110, 82, 148, 160, 92 }
+ Session ID:&nbsp; {163, 227, 84, 53, 81, 127, 252, 254, 178, 179, 68, 63, 182, 158, 30, 11, 150, 79, 170, 76, 255, 92, 15, 226, 24, 17, 177, 219, 158, 177, 187, 143}
+ Cipher Suite:&nbsp; { 0, 5 }
+ Compression Method: 0
+ ***
+ %% Created:&nbsp; [Session-1, SSL_RSA_WITH_RC4_128_SHA]
+ ** SSL_RSA_WITH_RC4_128_SHA
+ [read] MD5 and SHA1 hashes:&nbsp; len = 74
+ 0000: 02 00 00 46 03 01 3D B6&nbsp;&nbsp; 43 98 74 32 04 67 19 64&nbsp; ...F..=.C.t2.g.d
+ 0010: 3A CA 4F B9 B2 64 D7 42&nbsp;&nbsp; FE 15 53 BB BE 2A AA 03&nbsp; :.O..d.B..S..*..
+ 0020: 84 6E 52 94 A0 5C 20 A3&nbsp;&nbsp; E3 54 35 51 7F FC FE B2&nbsp; .nR..\ ..T5Q....
+ 0030: B3 44 3F B6 9E 1E 0B 96&nbsp;&nbsp; 4F AA 4C FF 5C 0F E2 18&nbsp; .D?.....O.L.\...
+ 0040: 11 B1 DB 9E B1 BB 8F 00&nbsp;&nbsp; 05 00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ..........
+ main, READ:&nbsp; SSL v3.1 Handshake, length = 1712
+ ...</pre>
+              <p>设置了下述系统属性时，JSSE可提供调试功能（为STDOUT）：-Djavax.net.debug=all。它用于设定要使用的keystores和truststores，以及在SSL握手和证书交换过程中将出现什么。当你尝试进行SSL连接时，如果打算确定不能工作的部分，该设置十分有用。</p>
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,225 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>17.5.2. ndbd，存储引擎节点进程</h1>
+
+          
+        
+      
+      <p>ndbd是使用NDB簇存储引擎处理表中所有数据的进程。通过该进程，存储节点能够实现分布式事务处理，节点恢复，对磁盘的检查点操作，在线备份，以及相关的任务。</p>
+      <p>在MySQL簇中，一组ndbd进程能够共同处理数据。这些进程可以在相同的计算机（主机）上执行，也能在不同的计算机上执行。数据节点和簇主机之间的通信是完全可配置的。</p>
+      <p>Ndbd将生成一组日志文件，这些文件位于由配置文件中DataDir指定的目录下。下面列出了这些日志文件。注意，<i>node_id</i>代表节点的唯一ID。例如，ndb_2_error.log是由节点ID为2的存储节点生成的错误日志。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>_error.log是包含所引用ndbd进程所遇到的所有崩溃记录的文件。该文件中的每条记录均包含1个简要的错误字符串，以及对该崩溃跟踪文件的引用。该文件的典型条目与下面给出的类似：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date/Time: Saturday 30 July 2004 - 00:20:01
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Type of error: error
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message: Internal program error (failed ndbrequire)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fault ID: 2341
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Problem data: DbtupFixAlloc.cpp
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Object of reference: DBTUP (Line: 173)
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ProgramName: NDB Kernel
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ProcessID: 14909
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TraceFile: ndb_2_trace.log.2
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ***EOM***</pre>
+      <p> 注释：<em>请记住，错误日志文件中的最后1个条目并不必然是最新的（也不太可能），这点很重要。</em>错误日志中的条目不是按时间顺序排列的，而是与ndb_<i>node_id</i>_trace.log.next（请参见下面的介绍）中定义的跟踪文件的顺序对应。因此，错误日志条目是按循环方式而不是顺序方式覆盖的。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>_trace.log.<i>trace_id</i>是准确描述了错误出现之时所发生情况的跟踪文件。该信息在MySQL簇开发团队进行分析时很有帮助。</p>
+      <p>能够对覆盖旧文件之前创建的跟踪文件的数目进行配置。<i>trace_id</i>是为每个连续的跟踪文件增加的编号。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>_trace.log.next是记录了要指定的下一个跟踪文件编号的文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>_out.log是包含ndbd进程的任何数据输出的文件。仅当将ndbd启动为端口监督程序时才会创建该文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>.pid是包含启动时作为端口监督程序的ndbd进程的进程ID的文件。它还能起到锁定文件的作用，以防止启动具有相同ID的节点。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ndb_<i>node_id</i>_signal.log是仅在ndbd调试版下使用的文件，它能跟踪ndbd进程中所有的入站、出站和内部消息。以及它们的数据。</p>
+      <p>建议不要使用通过NFS安装的目录，这是因为在某些情况下，如果pid-file上的锁定依旧有效，即使当进程中止后也会产生问题。</p>
+      <p>启动ndbd时，或许需要指定管理服务器的主机名以及监听的端口号。作为可选方式，也可以指定进程将使用的节点ID。</p>
+      <pre>shell&gt; ndbd --connect-string=&quot;nodeid=2;host=ndb_mgmd.mysql.com:1186&quot;</pre>
+      <p>关于这方面的额外信息，请参见<a href="mysql-cluster-connectstring.html" title="17.4.4.2. The MySQL Cluster connectstring">17.4.4.2节，“MySQL簇连接字符串”</a>。</p>
+      <p>启动ndbd时，它实际上将启动两种进程。第1种进程称为“angel 
+        process”（天使进程），它的唯一任务是发现执行进程在何时完成，然后重启ndbd进程（如果作了该配置的话）。因此，如果你打算使用Unix的kill命令杀死ndbd进程，就需要杀死这两个进程。中止ndbd进程的更恰当方法是使用管理客户端，并通过该管理客户端停止进程。</p>
+      <p>执行进程采用了1个线程，用于读取、写入和扫描数据，以及所有其他任务。该线程是异步实施的，以便能方便地处理数以千计的并发活动。此外，看门狗线程负责监督执行线程，以确保执行线程不会陷入无限循环。线程池负责处理文件I/O，每个线程均能处理一个打开的文件。这些线程也能被ndbd进程中的传输器用作传输器连接。在执行包含更新在内的大量操作的系统中，如果允许，ndbd进程能占用2个CPU。对于拥有多CPU的机器，建议使用属于不同节点组的数个ndbd进程。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

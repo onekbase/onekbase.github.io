@@ -1,0 +1,289 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.2.11.&nbsp;MySQL如何简化外部联合</h1>
+
+          
+        
+      
+    
+    
+      
+        
+          
+            <p> 在许多情况下，一个查询的FROM子句的表的表达式可以简化。</p>
+            <p> 在分析阶段，带右外联接操作的查询被转换为只包含左联接操作的等效查询。总的来说，根据以下原则进行转换：</p>
+            <pre>(T1, ...) RIGHT JOIN (T2,...) ON P(T1,...,T2,...) =
+(T2, ...) LEFT JOIN (T1,...) ON P(T1,...,T2,...)</pre>
+            <p> 所有T1 INNER JOIN T2 ON 
+              P(T1,T2)形式的内联接表达式被替换为T1,T2、P(T1,T2)，并根据WHERE条件(或嵌入连接的联接条件，如果有)联接为一个连接。</p>
+            <p> 当优化器为用外联接操作的联接查询评估方案时，它只考虑在访问内表之前访问外表的操作的方案。优化器选项受到限制，因为只有这样的方案允许我们用嵌套环机制执行带外联接操作的查询。</p>
+            <p> 假定我们有一个下列形式的查询：</p>
+            <p>SELECT * T1 LEFT JOIN T2 ON 
+              P1(T1,T2)</p>
+            <p>&nbsp; WHERE P(T1,T2) AND R(T2)</p>
+            <p> R(T2)大大减少了表T2中匹配的行数。如果我们这样执行查询，优化器将不会有其它选择，只能在访问表T2之前访问表T1，从而导致执行方案非常低。</p>
+            <p> 幸运的是，如果WHERE条件拒绝null，MySQL可以将此类查询转换为没有外联接操作的查询。如果为该操作构建的NULL补充的行评估为FALSE或UNKNOWN，则该条件称为对于某个外联接操作拒绝null。</p>
+            <p> 因此，对于该外联接：</p>
+            <pre>T1 LEFT JOIN T2 ON T1.A=T2.A</pre>
+            <p> 类似下面的条件为拒绝null：</p>
+            <pre>T2.B IS NOT NULL,
+T2.B &gt; 3,
+T2.C &lt;= T1.C,
+T2.B &lt; 2 OR T2.C &gt; 1</pre>
+            <p> 类似下面的条件不为拒绝null：</p>
+            <pre>T2.B IS NULL,
+T1.B &lt; 3 OR T2.B IS NOT NULL,
+T1.B &lt; 3 OR T2.B &gt; 3</pre>
+            <p> 检查一个外联接操作的条件是否拒绝null的总原则很简单。以下情况下为拒绝null的条件：</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              形式为A 
+              IS NOT NULL，其中A是任何内表的一个属性</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              包含内表引用的判断式，当某个参量为NULL时评估为UNKNOWN</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              包含用于连接的拒绝null的条件的联合</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              拒绝null的条件的逻辑和</p>
+            <p> 一个条件可以对于一个查询中的一个外联接操作为拒绝null的而对于另一个不为拒绝null的。在下面的查询中：</p>
+            <p>SELECT * FROM T1 LEFT JOIN T2 
+              ON T2.A=T1.A</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN T3 
+              ON T3.B=T1.B</p>
+            <p>&nbsp; WHERE T3.C &gt; 0</p>
+            <p> WHERE条件对于第2个外联接操作为拒绝null的但对于第1个不为拒绝null的。</p>
+            <p> 如果WHERE条件对于一个查询中的一个外联接操作为拒绝null的，外联接操作被一个内联接操作代替。</p>
+            <p> 例如，前面的查询被下面的查询代替：</p>
+            <p>SELECT * FROM T1 LEFT JOIN T2 
+              ON T2.A=T1.A</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INNER JOIN T3 
+              ON T3.B=T1.B</p>
+            <p>&nbsp; WHERE T3.C &gt; 0</p>
+            <p> 对于原来的查询，优化器将评估只与一个访问顺序T1、T2、T3兼容的方案。在替换的查询中，还考虑了访问顺序T3、T1、T2。</p>
+            <p> 一个外联接操作的转化可以触发另一个的转化。这样，查询：</p>
+            <p>SELECT * FROM T1 LEFT JOIN T2 
+              ON T2.A=T1.A</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEFT JOIN T3 
+              ON T3.B=T2.B</p>
+            <p>&nbsp; WHERE T3.C &gt; 0</p>
+            <p> 将首先转换为查询：</p>
+            <p>SELECT * FROM T1 LEFT JOIN T2 
+              ON T2.A=T1.A</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INNER JOIN T3 
+              ON T3.B=T2.B</p>
+            <p>&nbsp; WHERE T3.C &gt; 0</p>
+            <p> 该查询等效于查询：</p>
+            <p>SELECT * FROM (T1 LEFT JOIN T2 
+              ON T2.A=T1.A), T3</p>
+            <p>&nbsp; WHERE T3.C &gt; 0 AND T3.B=T2.B</p>
+            <p> 现在剩余的外联接操作也可以被一个内联接替换，因为条件T3.B=T2.B为拒绝null的，我们可以得到一个根本没有外联接的查询：</p>
+            <p>SELECT * FROM (T1 INNER JOIN T2 
+              ON T2.A=T1.A), T3</p>
+            <p>&nbsp; WHERE T3.C &gt; 0 AND T3.B=T2.B</p>
+            <p> 有时我们可以成功替换嵌入的外联接操作，但不能转换嵌入的外联接。下面的查询：</p>
+            <p>SELECT * FROM T1 LEFT JOIN</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2 LEFT JOIN T3 
+              ON T3.B=T2.B)</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON T2.A=T1.A</p>
+            <p>&nbsp; WHERE T3.C &gt; 0</p>
+            <p> 被转换为：</p>
+            <p>SELECT * FROM T1 LEFT JOIN</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2 INNER JOIN T3 
+              ON T3.B=T2.B)</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON T2.A=T1.A</p>
+            <p>&nbsp; WHERE T3.C &gt; 0，</p>
+            <p> 只能重新写为仍然包含嵌入式外联接操作的形式：</p>
+            <p>SELECT * FROM T1 LEFT JOIN</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2,T3)</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON (T2.A=T1.A AND 
+              T3.B=T2.B)</p>
+            <p>&nbsp; WHERE T3.C &gt; 0。</p>
+            <p> 如果试图转换一个查询中的嵌入式外联接操作，我们必须考虑嵌入式外联接的联接条件和WHERE条件。在下面的查询中：</p>
+            <pre>SELECT * FROM T1 LEFT JOIN
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2 LEFT JOIN T3 ON T3.B=T2.B)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON T2.A=T1.A AND T3.C=T1.C
+&nbsp; WHERE T3.D &gt; 0 OR T1.D &gt; 0
+WHERE条件对于嵌入式外联接不为拒绝null的，但嵌入式外联接T2.A=T1.A AND T3.C=T1.C的联接条件为拒绝null的。因此该查询可以转换为：</pre>
+            <p>SELECT * FROM T1 LEFT JOIN</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (T2, T3)</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ON T2.A=T1.A AND 
+              T3.C=T1.C AND T3.B=T2.B</p>
+            <p>&nbsp; WHERE T3.D &gt; 0 OR T1.D &gt; 0</p>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

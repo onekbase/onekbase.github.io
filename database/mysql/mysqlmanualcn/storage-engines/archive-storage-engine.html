@@ -1,0 +1,230 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>15.8.&nbsp;ARCHIVE存储引擎</h1>
+
+          
+        
+      
+      <p><a name="id2952541"></a><a name="id2952550"></a><a name="id2952559"></a><a name="id2952569"></a>ARCHIVE存储引擎被用来以非常小的覆盖区存储大量无索引数据。&nbsp;
+        
+      </p>
+      <p>要允许这个存储引擎，在建立MySQL之时使用--with-archive-storage-engine选项来configure。如果这个存储引擎可带这个语句使用，你可以看见：
+        
+      </p>
+      <pre>mysql&gt; SHOW VARIABLES LIKE 'have_archive';
+</pre>
+      <p>当年创建一个ARCHIVE表，服务器在数据库目录创建一个表定义文件。文件由表的名字开始，并由一个.frm的扩展名。存储引擎创建其它文件，所有都有由表名字开头的名字。数据和元数据文件有扩展名.ARZ和.ARM。一个.ARN文件可能在优化操作中出现。
+        
+      </p>
+      <p>ARCHIVE引擎仅支持INSERT和SELEC（无删除，替换或更新）。它支持ORDER BY操作，BLOB               域，以及基本地所有数据类型，除了几何数据类型（请参阅<a href="" title="19.4.1.&nbsp;MySQL Spatial Data Types">19.4.1节，“MySQL               空间数据类型&rdquo;</a>）。ARCHIVE引擎使用行级锁定。
+        
+      </p>
+      <p>存储: 当记录被插入时，它们被压缩。ARCHIVE引擎使用zlib无损数据压缩。OPTIMIZE TABLE的使用可以分析表，并把它打包为更小的格式（ 使用OPTIMIZE TABLE的原因，往下看）。引擎页支持CHECK TABLE。有数种被使用的插入类型：
+        
+      </p>
+      
+        <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          直接插入INSERT之时把一行推仅压缩缓冲，并且缓冲在它需要的时候刷新。到缓冲的插入被锁定保护。一个SELECT强制一个
+          刷新发生，除非进来的唯一插入是INSERT DELAYED（那些刷新如同需要一样）。请参阅<a href="archive-storage-engine.html" title="13.2.4.2.&nbsp;INSERT DELAYED Syntax">13.2.4.2节，“INSERT               
+          DELAYED 语法&rdquo;</a>。
+          
+        </p>
+        <p> &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          块插入旨在它完成后可见，除非其它插入在同一时间发生，在这种情况下，块插入可以被部分看见。一个SELECT不会导致一个块插入的
+          刷新，除非SELECT在被装载时发生一个正常插入。
+          
+        </p>
+      
+      <p>取回： 在取回时，记录根据需要被解压缩，没有行缓存。一个SELECT操作执行完全表格扫描：当一个SELECT发生之时，它找出当前有多少行可用，并读行的数量。SELECT被当作持续读来执行。注意，许多SELECT语句在插入过程中会损坏压缩，除非块插入或者延迟的插入被使用。要修复任何已发生压缩问题，你可以总是做OPTIMIZE TABLE（也支持REPAIR TABLE）。被SHOW TABLE STATUS报告的行数总是正确的。请参阅<a href="archive-storage-engine.html" title="13.5.2.6.&nbsp;REPAIR TABLE Syntax">13.5.2.6节，“REPAIR TABLE语法&rdquo;</a>，<a href="bdb-characteristics.html" title="13.5.2.5.&nbsp;OPTIMIZE TABLE Syntax">13.5.2.5节，“OPTIMIZE               
+        TABLE语法&rdquo;</a>，<a href="" title="13.5.4.18.&nbsp;SHOW TABLE STATUS Syntax">13.5.4.18节
+        ，&ldquo;SHOW               
+        TABLE STATUS 语法&rdquo;</a>。
+        
+      </p>
+      <p>对于ARCHIVE存储引擎，在 http://forums.mysql.com/list.html?112 上有专门论坛。
+        
+      </p>
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

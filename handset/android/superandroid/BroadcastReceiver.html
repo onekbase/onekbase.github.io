@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<h1>android有序广播和无序广播的区别</h1>
+<p>BroadcastReceiver所对应的广播分两类：普通广播和有序广播。</p>
+<p> 普通广播通过Context.sendBroadcast()方法来发送。它是完全异步的。</p>
+<p> 所有的receivers接收器的执行顺序不确定。    因此，所有的receivers接收器接收broadcast的顺序不确定。</p>
+<p> 这种方式效率更高。但是BroadcastReceiver无法使用setResult系列，getResult系列及abort系列API。</p>
+<p> 有序广播是通过Context.sendOrderedBroadcast来发送。所有的receiver依次执行。</p>
+<p> BroadcastReceiver可以使用setResult系列函数来结果传给下一个BroadcastReceiver，通过getResult系列函数来取得上个BroadcastReceiver返回的结果，并可以abort系列函数来让系统丢弃该广播让，使用该广播不再传送到别的BroadcastReceiver。</p>
+<p> 可以通过在intent-filter中设置android:priority属性来设置receiver的优先级。优先级相同的receiver其执行顺序不确定。</p>
+<p> 如果BroadcastReceiver是代码中注册的话，且其intent-filter拥有相同android:priority属性的话，先注册的将先收到广播。</p>
+<p> 有序广播，即从优先级别最高的广播接收器开始接收，接收完了如果没有丢弃，就下传给下一个次高优先级别的广播接收器进行处理，依次类推，直到最后。</p>
+<p> 这里接收短信的广播是有序广播，因此可以设置你自己的广播接收器的级别高于系统原来的级别，就可以拦截短信，并且不存收件箱，也不会有来信提示音。</p>
+<p>示例：</p>
+<pre class="code">&lt;receiver android:name=".SmsReceiver" &gt;
+
+   &lt;intent-filter android:priority="100"&gt;
+
+    &lt;action android:name="android.provider.Telephony.SMS_RECEIVED" /&gt;                    
+
+   &lt;/intent-filter&gt;
+
+&lt;/receiver&gt;
+</pre>
+<p>里面的android:priority=&quot;100&quot;就是设定广播接收器的级别。</p>
+</body>
+</html>

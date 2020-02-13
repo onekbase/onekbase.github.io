@@ -1,0 +1,229 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+
+
+
+<h1>调整现有组件（Tweaking an Existing Component） </h1>
+<p>在某些情况下，你可能有更简单的方法去创建你的组件。如果你应经有了一个非常类似的组件，你所要做的只是简单的从这个组件派生出你的组件，重在其中一些有必要修改的方法。通过完全自定义组件的方法你也可以同样的实现，但通过冲View派生产生新的组件，你可以简单获取一些已经存在的处理机制，这些很可能是你所想要的，而没有必要从头开始。</p>
+<p>例如，在SDK中有一个NotePad的例子（NotePad application ）。该例子演示了很多Android平台实用的细节，例如你会学到从EditView派生出能够自动换行的记事本。这还不是一个完美的例子，因为相比早期的版本来说，这些API已经感变了很多，但它确实说明了一些问题。</p>
+<p>如果你还未查看该程序，现在你就可以在Eclipse中导入记事本例程（或仅通过提供的链接查看相应的源代码）。特别是查看NoteEditor.java
+  中的<code>MyEditText</code>的定义。</p>
+<p>下面有几点要注意的地方：</p>
+<ol>
+  <li> <strong>声明（The Definition）</strong>
+    <p>这个类是通过下面一行代码来定义的：</p>
+    <code>public static class MyEditText extends EditText</code><br />
+    <br />
+    <ul>
+      <li> 它是定义在<code>NoteEditor activity</code>类里面的，但是它是共有的（public），因此如果有必要，它可以通过<code>NoteEditor.MyEditText</code>从<code>NoteEditor</code>外面来调用。 </li>
+      <li> 它是<code>static</code>类（静态类），意味着不会出现所谓的通过父类访问数据的“虚态方法”， 这样就使该类成为一个可以不严重依赖<code>NoteEditor</code>的单独类。对于不需要从外部类访问的内联类的创建，这是一个很清晰地思路，保证所产生的类很小，并且允许它可以被其他的类方便的调用。 </li>
+      <li> 它是<code>EditText</code>类的扩展，它是我们选择的用来自定义的父类。当我们完成以后，新的类就可以作为一个普通的<code>EditText</code>来使用。<br />
+        <br />
+      </li>
+    </ul>
+  </li>
+  <li> <strong>类的初始化</strong>
+    <p>一般来说，父类是首先调用的。进一步来说，这不是一个默认的构造函数，而是一个带参数的构造函数。因为<code>EditText</code>是使用从XML布局文件提取出来的参数进行创建，因此我们的构造函数也要取出参数并且将这些参数传递给父类。</p>
+  </li>
+  <li> <strong>方法重载</strong>
+    <p>在本例中，仅对<code>onDraw()</code>一个方法进行重载。但你可以很容易地为你的定制组件重载其他需要的方法。</p>
+    <p>对于记事本例子来说，通过重载<code>onDraw()</code>方法我们可以在<code>EidtView</code>的画布（<code>canvas</code>）上绘制蓝色的线条（<code>canvas</code>类是通过重写的<code>onDraw()</code>方法传递）。该函数快要结束时要调用<code>super.onDraw()</code>函数。父类的方法是应该调用，但是在这个例子里面，我们是在我们划好了蓝线之后调用的。</p>
+  </li>
+  <li> <strong>使用定制组件</strong>
+    <p>现在，我们已经有自己定制的组件了，但是应该怎样使用它呢？在记事本例子中，定制的组件直接在预定义的布局文件中使用，让我们看一看<code>res/layout</code>目录中的<code>note_editor.xml文件。</code></p>
+    <pre>
+&lt;view xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; 
+  class=&quot;com.android.notepad.NoteEditor$MyEditText&quot; 
+  id=&quot;&#64;+id/note&quot;
+  android:layout_width=&quot;fill_parent&quot;
+  android:layout_height=&quot;fill_parent&quot;
+  android:background=&quot;&#64;android:drawable/empty&quot;
+  android:padding=&quot;10dip&quot;
+  android:scrollbars=&quot;vertical&quot;
+  android:fadingEdge=&quot;vertical&quot; /&gt; </pre>
+    <ul>
+      <li> 该自定义组件在XML中是作为一个一般的View类来创建的，并且是通过全路径包来描述的。注意这里内联类是通过<code>NoteEditor$MyEditText</code>来表示的，这是Java编程中引用内联类的标准方法。</li>
+      <li> 在定义中的其他属性和参数将传递给定制组件的构造函数，然后才传到EditText构造函数中，因此这些参数也是你使用EditText组件的参数。注意，这里你也可以增加你自己的参数，我们将在下面讨论这个问题。 </li>
+    </ul>
+  </li>
+</ol>
+<p>这就是你全部需要做的，诚然这是一个简单的例子。但问题的关键是：你的需求有多复杂，那么你的自定义组件就有多么复杂。</p>
+<p>一个更为复杂的组件可能需要重载更多的<code>on</code>系列函数，并且还要很多特有的函数来充分实现自定义组件的功能。唯一的限制就是你的想象力和你需要组件去执行什么工作。</p>
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

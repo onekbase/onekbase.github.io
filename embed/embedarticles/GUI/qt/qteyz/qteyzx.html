@@ -1,0 +1,255 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+  <h1>Qt/Embedded环境搭建及移植(2)</h1>
+  <p>make <br>
+    通过该步骤，我们在/$QTEDIR/lib/下生成了libqte.so、libqte.so.2、libqte.so.2.3和libqte.so.2.3.10这四个文件，我们可以使用file来查看这四个文件是不是我们开发板上要跑的库。  <br>
+    file   libqte.so.2.3.10 <br>
+    libqte.so.2.3.10: ELF 32-bit LSB shared object,  ARM, version 1 (ARM), stripped<br>
+    如果出现了上述结果，则说明正确，将这四个文件通过NFS拷贝到开发板中。 <br>
+    在移植之前需要做一个修改： <br>
+    将tmake中的…/lib/qws/linux-arm-g++/tmake.conf中的 <br>
+    TMAKE_LINK= arm-linux-gcc  <br>
+    TMAKE_LINK_SHLIB= arm-linux-gcc <br>
+    修改为 <br>
+    TMAKE_LINK= arm-linux-g++  <br>
+    TMAKE_LINK_SHLIB= arm-linux-g++<br>
+    这下子，我们可以在开发板上移植一下子Qt程序了。 <br>
+    编写一个Qt程序：hello.cpp。 <br>
+    progen  -t  app.t  -o  hello.pro。 <br>
+    tmake  -o  makefile   hello.pro<br>
+    make<br>
+    在开发板中相应的位置处，运行./hello  –qws。 <br>
+    注意在编译之前得确保TMAKEPATH的环境变量是：TMAKEPATH=…（tmake的路径）/lib/qws/linux-arm-g++；同时还要使用Qt/Embedded的路径令QTDIR=/……/qt-2.3.10。 </p>
+  <h2>5.问题总结 </h2>
+  <p>（1）在qvfs中显示，每次都必须重新export好些环境变量设置，好麻烦！ <br>
+    export QT2DIR=/home/rock/pxa270Qt/qt-2.3.2<br>
+    export QTEDIR=/home/rock/pxa270Qt/qt-2.3.10<br>
+    export QTDIR=$QTEDIR<br>
+    export PATH=$QTEDIR/bin:$PATH<br>
+    export  LD_LIBRARY_PATH=$QTEDIR/lib:$QT2DIR/lib:$LD_LIBRARY<br>
+    #export  TMAKEPATH=/usr/local/tmake-1.13/lib/qws/linux-x86-g++<br>
+    解决方案： <br>
+    方案一：重新在用户所在目录下，建立.bash_profile文件，将上述环境变量设置放在其中。该法案的缺点：每次重新启动shell时，都需要source .bash_profile。 <br>
+    方案二：将上述环境变量放在用户目录下的.profile文件中，修改完毕之后，利用source执行一下子，以后就可以不需要source命令，而生效。法案二为最终解决方案。 <br>
+    （2）如何在本地qt-creator上开发好了程序之后，然后在qvfb中显示呢？<br>
+    解决方案：简单的程序，重新利用tmake生成.pro文件；再生成Makefile，然后make；最后在qvfb中显示。<br>
+    但是，较为复杂的程序（由多个文件组成），如何在利用tmake来生成可以在qvfb中显示的二进制文件呢？<br>
+    后者比较复杂：前提是必须将环境搭建好；采用批处理将所有文件中所包含的头文件用批处理来替换掉（统一小写，且后边带.h）；用tmake先后生成.pro和Makefile文件，最后make。<br>
+    需要注意的是：本地linux下边头文件后边不带.h，且大小写兼有，例如#include&lt;QApplication&gt;，利用qt-creator的qmake等编译工具可以顺利通过；而要在qvfb中显示时，用tmake，则make不能通过，会报错,其要求程序中头文件需要带.h，且全部为小写。<br>
+    （3）在本机上运行的时候，总是出错？<br>
+    如果想在本机的frame buffer上运行，本机系统需要支持framebuffer，如果系统用的是Xwindow，没有启动frame buffer，那么就又可能出错。 <br>
+    （4）编译完毕Qt/Embedded之后，在编译qt应用程序的时候，常常会出错。纵观起来，大多数是环境变量设置的问题。 </p>
+  <h2>6.杂谈—framebuffer</h2>
+  <p>帧缓冲设备提供了显卡的抽象描述。他同时代表了显卡上的显存，应用程序通过定义好的接口可以访问显卡，而不需要知道底层的任何操作。该设备使用特殊的设备节点，通常位于/dev目录，如/dev/fb*。<br>
+    framebuffer相当于一个中间层，对驱动和硬件进行一个封装和管理，便于用户开发图形界面或进行视频输出操作。<br>
+    （1）用户角度的/dev/fb*。从用户的角度看，帧缓冲设备和其他位于/dev下面的设备类似。他是一个字符设备，通常主设备号是29，次设备号定义帧缓冲的个数。<br>
+    通常，使用如下方式（前面的数字代码次设备号）<br>
+  &nbsp; 0 = /dev/fb0 First frame buffer<br>
+  &nbsp; 1 = /dev/fb1 Second frame buffer<br>
+  &nbsp; ...<br>
+  &nbsp; 31 = /dev/fb31 32nd frame buffer  &nbsp; <br>
+    考虑到向下兼容，你可以创建符号链接：<br>
+  &nbsp; /dev/fb0current -&gt; fb0<br>
+  &nbsp; /dev/fb1current -&gt; fb1<br>
+    and so on...<br>
+    帧缓冲设备也是一种普通的内存设备，你可以读写其内容。例如，对屏幕抓屏：<br>
+  &nbsp; cp /dev/fb0 myfile<br>
+    你也可以同时有多个显示设备，例如你的主板上出了内置的显卡还有另一独立的显卡。对应的帧缓冲设备(/dev/fb0 and /dev/fb1 etc.)可以独立工作。<br>
+    应用程序如 X server一般使用/dev/fb0作为默认的显示帧缓冲区。你可以自定把某个设备作为默认的帧缓冲设备，设置$FRAMEBUFFER环境变量即可。在sh/bash：<br>
+  &nbsp; export FRAMEBUFFER=/dev/fb1<br>
+    在csh中：<br>
+  &nbsp; setenv FRAMEBUFFER /dev/fb1<br>
+    设定后，X server将使用第二个帧缓冲区设备。<br>
+    （2）程序员角度看/dev/fb*。正如你所知，一个帧缓冲设备和内存设备类似/dev/mem，并且有许多共性。你可以read,write,seek以及mmap()。不同仅仅是帧缓冲的内存不是所有的内存区，而是显卡专用的那部分内存。<br>
+    /dev/fb*也允许尽行ioctl操作，通过ioctl可以读取或设定设备参数。颜色映射表也是通过Ioctl设定。查看&lt;linux/fb.h&gt;就知道有多少ioctl应用以及相关数据结构。<br>
+    这里给出摘要：<br>
+    ① 你可以获取设备一些不变的信息，如设备名，屏幕的组织（平面，象素,...)对应内存区 的长度和起始地址。 <br>
+    ②也可以获取能够发生变化的信息，例如位深，颜色格式，时序等。如果你改变这些值， 驱动程序将对值进行优化，以满足设备特性（返回EINVAL，如果你的设定，设备不支持）<br>
+    ③你也可以获取或设定部分颜色表。 &nbsp; <br>
+    所有这些特性让应用程序十分容易的使用设备。X server可以使用/dev/fb*而不需知道硬件的寄存器是如何组织的。 XF68_FBDev是一个用于位映射（单色）X server，唯一要做的就是在应用程序在相应的位置设定是否显示。<br>
+    在新内核中，帧缓冲设备可以工作于模块中，允许动态加载。这类驱动必须调用register_framebuffer()在系统中注册。使用模块更方便！ <br>
+    (3)简单的说就是 你写到fb里面的数据会立刻以像素的方式显示到屏幕上，<br>
+    你可以把一个位图文件copy到fb里面然后这个图像就会立刻显示到屏幕上。<br>
+    很多图像库就是基于framebuffer的。<br>
+    除了framebuffer还有xwindow 也可以做gui。 <br>
+    (4)Linux下的显卡驱动有两层, 一个是kernel层的也就是framebuffer驱动, 另一个是Xserver层驱动, 在进入X-windows之前是由framebuffer来驱动, 进入X-windows之后由XSERVER层的驱动作用(/etc/X11/xorg.conf中可以设置显卡等驱动), 当然如果你想要在X-WINDOWS上用framebuffer驱动也可以, 可以使用Xserver中的fbdev驱动, 这个驱动可以指定你要使用kernel层的framebuffer, 比如在xorg.conf中这样写<br>
+    Section &quot;Device&quot;<br>
+    Identifier &quot;Videocard0&quot;<br>
+    Driver &quot;fbdev&quot;<br>
+    VendorName &quot;Videocard vendor&quot;<br>
+    BoardName &quot;VESA driver (generic)&quot;<br>
+    BusID &quot;PCI:0:14:0&quot;<br>
+    Option &quot;fbdev&quot;  &quot;/dev/fb1&quot; #使用/dev/fb1这个framebuffer驱动<br>
+    EndSection <br>
+    (5) Framebuffer是在内核中，而Xwindows只不过是一个用户进程而已。我们的Gui如果想高效和移植性好那就直接和Framebuffer打交道就可以了。要是想简单点那就在XWindows上搭建自己的Gui。但是Xwindows也封装了外设的处理，如鼠标和键盘等。</p>
+  <h2>7.杂谈—在本地建立Qt/embedded总结 </h2>
+  <p>如果读者先阅读完毕bufferframe杂谈，相信君会明白我们为什么要那么麻烦地去建立qvfb  bufferframe模拟环境了。但是，一直笔者却甚感不爽。原因笔者以前一直是在xwindows下边进行的：qt-creator、Qdevelop以及eclipse中进行开发qt gui程序的，现在突然要脱离这些工具，而手工的在vim、gedit、emacs等编辑器下编写，众多不便，已经无法言谈。所以笔者还是在继续探索：能否在xwindows下的集成开发环境中做好程序，然后建立一个兼容集合开发环境代码（不需要改动，或做少许改动即可通过编译）的交叉编译环境，最后编译顺利通过，移植到开发板中……  呵呵。 </p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,295 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 17.7.1.&nbsp;配置MySQL簇以使用SCI套接字</h1>
+
+          
+        
+      
+      <p>在本节中，我们将介绍如何改编为常规TCP/IP通信配置的簇，以使用SCI套接字。本文档基于2004年10月1日发布的SCI套接字2.3.0版。</p>
+      <p>前提条件</p>
+      <p>对于任何打算使用SCI套接字的机器，都必须配备SCI卡。</p>
+      <p>能够与任何版本的MySQL簇一起使用SCI套接字。不需要特殊创建，这是因为它采用了MySQL簇中已提供的正常套接字调用。但是，目前仅在Linux 
+        2.4和2.6内核上才支持SCI套接字。尽管到目前为止我们仅在Linux 
+        2.4上核实了这点，在一些其他操作系统上也成功测试了SCI传输器。</p>
+      <p>对于SCI套接字，有四种基本要求：</p>
+      <p> 1.&nbsp;&nbsp;&nbsp;
+        创建SCI套接字库。</p>
+      <p> 2.&nbsp;&nbsp;&nbsp;
+        安装SCI套接字内核库。</p>
+      <p> 3.&nbsp;&nbsp;&nbsp;
+        安装1个或2个配置文件。</p>
+      <p> 4.&nbsp;&nbsp;&nbsp;
+        必须为整个机器或启动MySQL簇进程的shell启用SCI套接字库。</p>
+      <p>对于打算将SCI套接字用于节点间的通信的簇，需要为簇中的每台机器重复该进程。</p>
+      <p>要想使SCI套接字工作，需要获得两个软件包：</p>
+      <p> 1.&nbsp;&nbsp;&nbsp;
+        包含用于SCI套接字库的DIS支持库的源码软件包。</p>
+      <p> 2.&nbsp;&nbsp;&nbsp;
+        用于SCI套接字库本身的源码软件包。</p>
+      <p>目前，仅以源码格式提供了它们。编写本文档时可用的最新版本的软件包分别是DIS_GPL_2_5_0_SEP_10_2004.tar.gz和SCI_SOCKET_2_3_0_OKT_01_2004.tar.gz。在下述站点，可找到它们（也可能找到更新的版本）：http://www.dolphinics.no/support/downloads.html。</p>
+      <p>软件包安装</p>
+      <p>获得库软件包后，接下来应将它们解包到恰当的目录下，将SCI套接字库解包到DIS代码下的目录中。然后，需要创建库。在下面的示例中，给出了在Linux/x86平台上执行该任务所需的命令：</p>
+      <pre>shell&gt; tar xzf DIS_GPL_2_5_0_SEP_10_2004.tar.gz
+shell&gt; cd DIS_GPL_2_5_0_SEP_10_2004/src/
+shell&gt; tar xzf ../../SCI_SOCKET_2_3_0_OKT_01_2004.tar.gz
+shell&gt; cd ../adm/bin/Linux_pkgs
+shell&gt; ./make_PSB_66_release</pre>
+      <p>能够为64位处理器创建这些库。要想为使用64位扩展的Opteron 
+        CPU创建这些库，请运行make_PSB_66_X86_64_release而不是make_PSB_66_release。如果创建工作是在Itanium机器上进行的，应使用make_PSB_66_IA64_release。X86-64变体应能与Intel 
+        EM64T体系结构一起工作，但这点尚未测试（就我们所知）。</p>
+      <p>完成创建进程后，在zipped tar文件中可发现已编译好的库，文件的名称符合DIS-<i>&lt;operating-system&gt;</i>-<i>time</i>-<i>date</i>。现在，可将软件包安装到恰当位置。在本例中，我们使用的安装目录是/opt/DIS（注释：你很可能需要以系统根用户的身份运行下述命令）：</p>
+      <pre>shell&gt; cp DIS_Linux_2.4.20-8_181004.tar.gz /opt/
+shell&gt; cd /opt
+shell&gt; tar xzf DIS_Linux_2.4.20-8_181004.tar.gz
+shell&gt; mv DIS_Linux_2.4.20-8_181004 DIS</pre>
+      <p>网络配置</p>
+      <p>至此，所有的库和二进制文件均已安装到了恰当的位置，还需确保SCI卡在SCI的地址空间范围内拥有恰当的节点ID。</p>
+      <p>进行后面的操作前，还需确定网络结构。对于该情形，有三种可使用的网络结构：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        一维单环网络。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1个或多个SCI交换器，每个交换器端口有1个环形网。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        2维或3维环面网。</p>
+      <p>每类拓扑结构均有自己的、用于提供节点ID的方法。下面给出了简要讨论。</p>
+      <p>单环网采用的节点ID是4的非0倍数，4，8，12…。</p>
+      <p>下一个可行的选择是SCI交换器。1个SCI交换器有8个端口，每个端口都能支持1个环形网。有必要确保不同的环形网使用了不同的节点ID空间。对于典型的配置，第1个端口使用的节点ID低于64（4～60），接下来的64个节点ID（68～124）指定给下一个端口，依此类推，节点ID 
+        452～508将被指定给第8个端口。</p>
+      <p>对于2维或3维环面网结构，每个节点位于各维中，在第1维中，各节点的增量为4，在第2维中，增量为64，在第3维中（如果适用的话），增量为1024。关于更详尽的文档，请参见Dolphin的网站。</p>
+      <p>在我们的测试中，采用了交换器方式，但大多数大型簇安装应用使用的是2维或3维环面网结构。采用交换器方式具有的优点是：使用双SCI卡和双交换器，能够相对容易地创建冗余网络，SCI网络上的平均故障切换时间在100毫秒量级。对于SCI套接字实施，MySQl簇中的SCI传输器支持该结构，而且它也处于发展当中。</p>
+      <p>对于2D/3D环面网，故障切换也是可能的，但需要向所有节点发送发出新的路由索引。然而，这仅需要100毫秒左右就能完成，对于大多数高可用性情形，这是可接受的。</p>
+      <p>通过将簇数据节点恰当地置于交换式体系结构中，能够使用2个交换器来构建结构，将16台计算机互联在一起，任何单点故障均不会妨碍1台以上的计算机。对于32台计算机和2台交换器，也能以这样的方式配置簇，任何单点故障均不会导致2个以上的节点丢失，在此情况下，也能知道那一对节点收到影响。因此，通过将两个节点置于不同的节点组，就能创建“安全的”MySQL簇。</p>
+      <p>要想为SCI卡设置节点ID，可使用/opt/DIS/sbin目录中的下述命令。在本例中，“-c 
+        1”指的是SCI卡的编号（如果在机器上只有1块卡，它总为1），“-a 
+        0”指的是适配器0，“68”是节点ID：</p>
+      <pre>shell&gt; ./sciconfig -c 1 -a 0 -n 68</pre>
+      <p>如果在同一台机器上有多块SCI卡，使用下述命令（假定当前的工作目录是/opt/DIS/sbin），可确定哪块卡使用哪个插槽：</p>
+      <pre>shell&gt; ./sciconfig -c 1 -gsn</pre>
+      <p>它将给出SCI卡的序列号。然后用“-c 
+        2”重复该步骤，依此类推（对机器上的每块卡）。一旦将每块卡与1个插槽匹配后，可为所有卡设置节点ID。</p>
+      <p>安装了必要的库和二进制文件，并设置了SCI节点ID后，下一步是设置从主机名（或IP地址）到SCI节点ID的映射。该任务可在SCI套接字配置文件中完成，该文件应被保存为/etc/sci/scisock.conf。在该文件中，通过恰当的SCI卡将SCI节点映射到与之通信的主机名或IP地址。这里给出了一个很简单的配置文件示例：</p>
+      <pre>#host&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #nodeId
+alpha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8
+beta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12
+192.168.10.20&nbsp;&nbsp; 16</pre>
+      <p>也能对配置进行限制，使其仅应用在这些主机的可用端口子集上。也能使用额外的配置文件/etc/sci/scisock_opt.conf完成该设置，如下所示：</p>
+      <pre>#-key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -values
+EnablePortsByDefault&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; yes
+EnablePort&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2200
+DisablePort&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2201
+EnablePortRange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2202 2219
+DisablePortRange&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2220 2231</pre>
+      <p>驱动程序安装</p>
+      <p>创建好了配置文件后，可安装驱动程序。</p>
+      <p>首先应安装底层驱动，然后安装SCI套接字驱动：</p>
+      <pre>shell&gt; cd DIS/sbin/
+shell&gt; ./drv-install add PSB66
+shell&gt; ./scisocket-install add</pre>
+      <p>如果愿意，可调用脚本来核实SCI套接字配置文件中的所有节点是否均能访问，通过该方式检查安装：</p>
+      <pre>shell&gt; cd /opt/DIS/sbin/
+shell&gt; ./status.sh</pre>
+      <p>如果发现错误并需要更改SCI套接字配置，需要使用ksocketconfig来完成该任务：</p>
+      <pre>shell&gt; cd /opt/DIS/util
+shell&gt; ./ksocketconfig -f</pre>
+      <p>测试设置</p>
+      <p>为了确保SCI套接字已实际使用，可使用latency_bench测试程序。使用该实用工具的服务器组件，客户端能够连接服务器以测试连接的等待时间，通过观察等待时间，可方便地判定是否启用了SCI。（注释：使用latency_bench之前，需要设置环境变量LD_PRELOAD，请参见本节后面的介绍）。</p>
+      <p>要想设置服务器，可使用下述命令：</p>
+      <pre>shell&gt; cd /opt/DIS/bin/socket
+shell&gt; ./latency_bench -server</pre>
+      <p>要想运行客户端，再次使用latency_bench，但此时采用“-client”选项：</p>
+      <pre>shell&gt; cd /opt/DIS/bin/socket
+shell&gt; ./latency_bench -client <i>server_hostname</i></pre>
+      <p>到目前为止，应完成了SCI套接字配置，而且MySQL簇已做好了使用SCI套接字和SCI传输器的准备（请参见<a href="mysql-cluster-sci-definition.html" title="17.4.4.10. MySQL Cluster SCI Transport Connections">17.4.4.10节，“MySQL簇SCI传输连接”</a>）。</p>
+      <p>启动簇</p>
+      <p>该进程接下来的步骤是启动MySQL簇。要想启用SCI套接字，在启动ndbd、mysqld和ndb_mgmd之前，需要设置环境变量LD_PRELOAD。该变量应指向用于SCI套接字的内核库。</p>
+      <p>要想在bash shell下启动ndbd，可执行下述命令：</p>
+      <pre>bash-shell&gt; export LD_PRELOAD=/opt/DIS/lib/libkscisock.so
+bash-shell&gt; ndbd</pre>
+      <p>在tcsh环境下，可使用下述命令完成相同的任务：</p>
+      <pre>tcsh-shell&gt; setenv LD_PRELOAD=/opt/DIS/lib/libkscisock.so
+tcsh-shell&gt; ndbd</pre>
+      <p>注释：MySQL簇可以仅使用SCI套接字的内核变体。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

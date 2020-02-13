@@ -1,0 +1,1838 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>26.3.6. Changelog</h1>
+
+          
+        
+      
+      <pre># Changelog
+# $Id: CHANGES,v 1.38.4.206 2005/05/12 15:25:54 mmatthews Exp $
+&nbsp;
+05-17-05：版本3.2.1-alpha
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 现已不再重视Autoreconnect功能（即autoReconnect=true）。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 如果尝试并使用它将抛出异常，使用“enableDeprecatedAutoreconnect=true”可继续使用autoReconnect。但是，在Connector/J 3.3中将删除该项特性，请参见手册中关于不需要使用autoReconnect的相应解决方案。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 现在，驱动程序将检查是否设置了服务器变量“init_connect”，如果设置了该变量，将检查autocommit（自动提交）设置，并应用它。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- 如果连接的服务器版本在5.0.x以上，而且Statement.setFetchSize( &gt; 0)，驱动程序将尝试使用服务器预处理语句，并使用结果集“cursors”获取语句。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- ServerPreparedStatements现在能正确地将BLOB/CLOB数据以“流方式”发送至服务器。你可以使用属性“blobSendChunkSize”配置程序块大小的阈值（默认值为1MB）。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- 支持sql模式NO_BACKSLASH_ESCAPES以及非服务器端预处理语句。
+&nbsp;
+12-23-04：版本3.2.0-alpha
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了DatabaseMetaData.supportsCatalogIn*()错误的返回值。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-使用ServerPreparedStatements以及MySQL 5.0或更高版本时，支持基于“cursor”的结果集。结果集需为“仅正向”结果集，并需启用针对该项特性的非零获取大小。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- 重新分解了预处理语句的where逻辑，服务器端预处理语句保持有效。
+&nbsp;
+10-07-05：版本3.1.11-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 更正了BUG#11629：当字符编码是“utf8”时控制台上的伪“!”。
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了为丢失“;”（用于“plain”语句）的测试案例生成的语句。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- 更正了BUG#11663：为服务器端预处理语句生成的不正确的testcase脚本。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了因修补BUG#11552而导致的回归，对于BUG#11552，当整数处于正号类型的范围内时，对于无符号整数，该缺陷将导致驱动程序返回错误值。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-将源代码移到了svn repo。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11797：转义标志不考虑用于转义用途的层套式单引号。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-使用服务器端预处理语句时，不识别GEOMETRY类型。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11879：ReplicationConnection不会切换至从连接，抛出“目录不能为空”异常。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#12218，主连接和具有复制连接的从连接之间共享的属性。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- 更正了BUG#10630。如果语句已关闭，Statement.getWarnings()无法与NPE一起工作。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-需要时，在PreparedStatement.ParseInfo()中，即能从SQL获取char[]。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#12104，服务器端预处理语句不能处理Geometry类型。
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11614，使用多字节字符编码时，StringUtils.getBytes()不工作，在“_characters_”中指定了长度。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11798，Pstmt.setObject(...., Types.BOOLEAN)抛出异常。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11976，maxPerformance.properties拼错“elideSetAutoCommits”。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11575，对于在Window平台上的服务器，DBMD.storesLower/Mixed/UpperIdentifiers()通报不正确的值。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11190，在ResultSet.moveToCurrentRow()之前调用了ResultSet.moveToInsertRow()时，ResultSet.moveToCurrentRow()不起作用。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11115，使用服务器端预处理语句和.setBytes()时，VARBINARY数据发生崩溃。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#12229，服务器端预处理语句挂起explainSlowQueries。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11498，转义处理器不考虑用双引号分隔的字符串。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-对于服务器端预处理语句，增加了对更改流参数的限制。只要在执行前设置了“_all_”流参数，可不必调用.clearParameters()。（由于客户端／服务器协议的限制，预处理语句不能复位服务器端的“_individual_ stream”数据）。
+&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-修改了Field类，*Buffer和MysqlIO，能够识别大于Integer.MAX_VALUE的字段长度。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更新了DBMD.supportsCorrelatedQueries()，当版本高于4.1时返回“真”，更新了supportsGroupByUnrelated()使之返回“真”，并更新了getResultSetHoldability()使之返回HOLD_CURSORS_OVER_COMMIT。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#12541，DatabaseMetaData.getIndexInfo()中的catalog（目录）参量处理，它也意味着对DatabaseMetaData中下述方法的更改：
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- getBestRowIdentifier()
+&nbsp;&nbsp;&nbsp; - getColumns()
+&nbsp;&nbsp;&nbsp; - getCrossReference()
+&nbsp;&nbsp;&nbsp; - getExportedKeys()
+&nbsp;&nbsp;&nbsp; - getImportedKeys()
+&nbsp;&nbsp;&nbsp; - getIndexInfo()
+&nbsp;&nbsp;&nbsp; - getPrimaryKeys()
+&nbsp;&nbsp;&nbsp; - getProcedures() (and thus indirectly getProcedureColumns())
+&nbsp;&nbsp;&nbsp; - getTables()
+&nbsp; 
+上述所有方法中的“catalog”参量现具有下述行为特征：
+&nbsp; 
+&nbsp;&nbsp;-如果指定为Null，表示不会使用catalog来过滤结果（因此将搜索所有数据库），除非在JDBC URL属性中设置了“nullCatalogMeansCurrent=true”。
+&nbsp;
+&nbsp; -指定为“”表示当前catalog，尽管它不是十分兼容JDBC规范，但它是为传统用户保留的。
+&nbsp;
+&nbsp; -指定catalog，使之按API文档中阐明的方式工作。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;-使得jdbc2.optional软件包中的“封装”连接能够使用Connection.clientPrepare()（使用ConnectionPoolDataSource实例创建连接）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为客户端增加了Connection.isMasterConnection()，以确定多主机主／从连接是否连接至列表中的第1个主机。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#12753，URL属性用于“=”的标志会导致“sessionVariables=....”无法正确地参数化。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#11781，当DatabaseMetaData方法使用该信息时，所引用的外键信息不能被正确解析。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -考虑到流缓冲区大小和信息包报头，“sendBlobChunkSize”属性现在与“max_allowed_packet”密切结合在一起，当max_allowed_packet的大小类似于默认的“sendBlobChunkSize”时（为1MB），能避免PacketTooBigExceptions。
+&nbsp;
+&nbsp;&nbsp; &nbsp;-CallableStatement.clearParameters()现能清除与INOUT/OUTPUT参数和INPUT参数相关的属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#12417，Connection.prepareCall()是区分大小写的数据库名称（在Windows系统上）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#12752，对于版本高于4.0.x的服务器，Cp1251不正确地映射至win1251。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#12970，使用DatabaseMetaData.getColumns()时，java.sql.Types.OTHER返回BINARY和VARBINARY列。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-引用参数约束列表前，ServerPreparedStatement.getBinding()现在将检查语句是否已关闭，以避免抛出NullPointerException。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#13277，无论何时，当调用需要连接引用的方法时，来自Statement.getGeneratedKeys()的ResultSetMetaData将导致NullPointerExceptions的抛出。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自5.0起，Field类ResultSetMetaData.getColumnClassName()和ResultSet.getObject(int)的反向移植出现了变化，更正了VARCHAR BINARY/VARBINARY和相关类型有关的行为。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了NullPointerException，当参数为NULL时，在很多DatabaseMetaDataMethods中将“catalog”参数转换为byte[]时出现的异常（对于结果集）。（根据JDBC规范，从技术角度上不允许“null”，但从历史观点上，我们允许使用它）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从5.0起，VAR[BINARY|CHAR] [BINARY]类型检测的反向移植。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-即使无法打开本地文件，也能读取MysqlIO.sendFileToServer()中响应，否则，下一个发出的查询将失败，这是因为，它正在读取对发送至服务器的空LOAD DATA INFILE信息包的响应。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -避开了BUG#13374，已关闭结果集上的ResultSet.getStatement()返回NULL（按照JDBC 4.0规范，但不具有向后兼容性）。将连接属性“retainStatementAfterResultSetClose”设为“真”，以便能够在通过.getStatement()关闭了结果集后检索结果集的语句（默认为“假”以便与JDBC兼容，并降低使用JDBC的代码名泄漏语句实例的机会）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#13453，URL配置参数不允许在它们的值中使用“&amp;”或“=”。现在JDBC驱动程序能够对配置参数进行相应地解析，就像它们是使用application/x-www-form-urlencoded格式（在java.net.URLDecoder中指定，http://java.sun.com/j2se/1.5.0/docs/api/java/net/URLDecoder.html）进行编码那样。
+&nbsp;
+如果在配置属性中出现字符“%”，现在必须用“%25”表示，它是使用“application/x-www-form-urlencoded”编码使“%”的已编码形式。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -配置属性“sessionVariables”现在允许你指定以“@”符号开始的变量。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#13043，为低于4.1.0版的服务器允许了“gatherPerfMetrics”时，如果查询未使用任何表，结果集的构造函数将抛出NullPointerException。
+&nbsp;
+06-23-05：版本3.1.10-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了因无指定数据库而导致的MysqlIO.changeDatabaseTo()中的异常。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-首次实现了用于PreparedStatement.getParameterMetadata()的ParameterMetadata。仅能与CallableStatements一起完全发挥作用，这是因为当前的服务器端预处理语句会将所有参数返回为VARCHAR类型。
+&nbsp;&nbsp;&nbsp; 
+06-22-05：版本3.1.9-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -彻底检查了字符集配置，现在所有相关项均能位于属性文件中。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-如果在用于Windows-31J的服务器上可用，驱动程序能正确使用CP932，以及CP932和MS932 java编码名称，否则将求助于仅为近似的SJIS。目前，仅在MySQL-5.0.3和更高版本上（以及MySQL-4.1.12/13，取决于何时反向移植字符集），才能可靠地支持任何CP932变体。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9064，com.mysql.jdbc.PreparedStatement.ParseInfo对toCharArray()的不必要调用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Bug#10144，如果serverPrepare()失败，ServerPreparedStatement中的内存泄漏。
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;-将清单文件实际写入正确位置，以便其终止于二进制jar文件。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“createDatabaseIfNotExist”属性（默认为“假”），该属性会使驱动程序请求服务器创建在URL中指定的数据库（如果该数据库不存在的话）。必须拥有恰当的数据库创建权限才能执行该任务。
+&nbsp;
+&nbsp;&nbsp; &nbsp;-更正了BUG#10156，对于ResultSet.getInt()，无符号SMALLINT被当作带符号类型，更正了所有的UNSIGNED整数和服务器端预处理语句，以及用于UNSIGNED TINYINT的ResultSet.getObject()。
+ 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#10155，解析客户端预处理语句时不能识别双引号。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-使得enableStreamingResults()在com.mysql.jdbc.jdbc2.optional.StatementWrapper上可见。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-使得ServerPreparedStatement.asSql()能正确工作，自动解释功能可以与服务器端预处理语句一起工作。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-使得兼容JDBC2的软件包成为公共包，以便允许访问厂家扩展。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-整理了剖析工具事件的记录功能，移动了代码以将剖析工具事件转储为com.mysql.jdbc.log.LogUtils的字符串，以便第三方能够使用它。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;- DatabaseMetaData.supportsMultipleOpenResults()现在返回“真”。DBMD刚刚丢失某一内容时，驱动程序在一段时间内支持它。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#10310，驱动程序不支持用来调用存储程序的{?=CALL(...)}。其中包括，为DatabaseMetaData.getProcedures()和getProcedureColumns()增加了函数检索支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#10485，用ResultSet.getString()检索YEAR(2)时抛出SQLException。现在，驱动程序总是将YEAR类型当作java.sql.Dates对待，并为getString()返回正确值。
+另外，可以将“yearIsDateType”连接属性设置为“假”，并将值作为SHORT进行处理。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-当“tinyInt1isBit=true”时（默认），使用新的配置属性“transformedBitIsBoolean”（默认为“假”），对于TINYINT(1)列，返回的数据类型可在Types.BOOLEAN和Types.BIT之间切换。如果设为“假”（默认），对于TINYINT(1)列，DatabaseMetaData.getColumns()和ResultSetMetaData.getColumnType()将返回Types.BOOLEAN。如果为“真”，将返回Types.BOOLEAN。无论该配置属性是如何设置的，如果允许了“tinyInt1isBit”，具有TINYINT(1)类型的列将作为ResultSet.getObject(..)的java.lang.Boolean实例返回，而且ResultSetMetaData.getColumnClassName()将返回“java.lang.Boolean”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#10496，与cp932或eucjpms一起使用“characterSetResults”属性时将抛出SQLException。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -重组了目录格局，源码现位于“src”文件夹下，创建时不填充父目录，输出位于“./build”下，分发版位于“./dist”下。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -这类支持/缺陷跟踪特性，将“autoGenerateTestcaseScript”设置为“真”时，该特性能够为STDERR生成.sql测试脚本。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#10850，使用服务器端预处理语句时，不会将“0长度”流发送给服务器。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-现在，如果设置了“cachePrepStmts=true”，也会使连接进行高速缓冲操作，检查驱动程序的执行情况，以判断预处理语句是否能够在服务器端工作，并能在连接的生命期内对服务器端预处理语句进行高速缓冲处理。与以往一样，参数“prepStmtCacheSize”负责控制这些高速缓冲区的大小。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -进行了尝试，以更为优美的方式处理OutOfMemoryErrors。尽管所能作的事情不是很多，但在大多数情况下它们能关闭所遇到的连接，这样，进一步的操作不会进入状态不明的连接。出现OOM时，连接上的任何进一步操作均将失败，同时抛出“连接已关闭”异常，还将列出作为隐式连接关闭事件原因的OOM异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果未要求，执行服务器端预处理语句时不发送COM_RESET_STMT。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -驱动程序将检测是否正在运行MySQL-5.0.7或更高版本，而且不扫描正在处理的语句中的“LIMIT ?[,?]”，这是因为目前服务器支持这类查询。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#11115，使用服务器端预处理语句和ResultSet.getBytes()时，VARBINARY数据发生崩溃
+&nbsp;
+&nbsp;&nbsp;&nbsp; -Connection.setCatalog()想在能够识别“useLocalSessionState”配置属性，将该属性设为“真”时，如果所请求的catalog与当前catalog相同，会阻止驱动程序将“USE ...”发送给服务器。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了下述配置捆包，通过“useConfigs”配置属性使用1个或多个：
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;* maxPerformance：考虑后果时的最大性能
+&nbsp; * solarisMaxPerformance：Solaris的需性能，在可能的情况下避免系统调用。
+&nbsp; * 3-0-Compat：与Connector/J 3.0.x功能兼容。
+&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-增加了“&quot;maintainTimeStats”配置属性（默认为“真”），用于通知驱动程序是否应跟踪上次查询时间，以及上次成功将信息包发送到服务器的时间。如果将其设置为“假”，将删除每查询的两次系统调用。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11259，autoReconnect的ping操作会导致连接启动时的异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#11360，Connector/J将查询两次转储到SQLException。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了PreparedStatement.setClob()，不接受Null作为参数。
+&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;-更正了BUG#11411，生产包不包括JBoss集成类。
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了使用“usage advisor”时无意义的“开销昂贵的类型转换”告警。
+&nbsp;
+&nbsp;
+04-14-05：版本3.1.8-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了DatabaseMetaData.getTables()，未要求时，以请求表的类型之一返回视图。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在5.0.3和更高版本的MySQL中，增加了对新精度数学DECIMAL类型的支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.getTime()，作用于服务器端预处理语句的Null值上时抛出NPE。&nbsp;&nbsp; -使Connection.ping()成为public方法。&nbsp;&nbsp; -更正了Bug#8868，DATE_FORMAT()查询从getObject()返回BLOB。&nbsp;&nbsp; - ServerPreparedStatements现在能正确地将BLOB/CLOB数据以“流方式”发送至服务器。你可以使用属性“blobSendChunkSize”配置程序块大小的阈值（默认值为1MB）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -生成预处理语句时，BlobFromLocator现在能使用正确的ID引用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用连接属性“sessionVariables”的逗号分隔列表方式传递它们，能够在连接时预先设置服务器端会话变量。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为使用“autoReconnect=true”的用户更正了ping()中的回归问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9040，PreparedStatement.addBatch()不能与服务器端预处理语句和流式BINARY数据一起工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8800，对于运行于区分大小写的文件系统上的服务器，DBMD.supportsMixedCase*Identifiers()返回错误值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9206，对于characterSetResults配置属性，不能使用“UTF-8”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9236，连续BUG#8868，在查询中使用了多个函数，查询本应返回非字符串类型，但当临时表解析它们时，返回类型突然变为难以理解的二进制字符串（针对服务器限制采取了相应的避规措施）。此外，还更正了类型为CHAR(n) CHARACTER SET BINARY的字段，使其能够为RSMD.getColumnClassName()和ResultSet.getObject()返回正确／匹配的类。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8792，对于“仅正向/只读”结果集（我们支持该方式），DBMD.supportsResultSetConcurrency()未返回“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8803，访问时，DBMD.getBestRowIdentifier()的“DATA_TYPE”列导致ArrayIndexOutOfBoundsException（事实上，未返回任何值）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -检查了将char/varchar列数据转换为数值时的空字符串(&#39;&#39;)，如果配置属性“emptyStringsConvertToZero”被设为“假”，抛出异常（为了与3.0版的向后兼容，默认情况下，将其设为“真”，但在3.2版中，最可能的默认设置为“假”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9320，在特定条件下，当未使用服务器端预处理语句时，PreparedStatement.getMetaData()在数据库中插入了空白行。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -Connection.canHandleAsPreparedStatement()现在将尽“最大努力”来识别带有占位符的LIMIT子句，目的在于，对于服务器目前不能将其当作服务器端预处理语句予以处理的语句，为其生成处理措施时，获得较少的错误肯定结果。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了build.xml，如果log4j不可用，不编译log4j日志功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对c3p0连接池的（http://c3p0.sf.net/）验证/连接检验器接口的支持，如果服务器可用，该检验器接口将使用轻型“COM_PING”调用。要想使用它，请配置c3p0连接持的“connectionTesterClassName”属性，以使用“com.mysql.jdbc.integration.c3p0.MysqlConnectionTester”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更好的检测引用字符串的内外LIMIT，以便驱动程序能更加正确地判断是否可以在服务器上处理预处理语句。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9319，当驱动程序试图确定参数计数/类型时，分不清不同数据库中具有相同名称的存储程序。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ResultSet和Statement实施增加了最终确定器，以便与JDBC规范兼容，该规范要求，如果它们未明确关闭，在无用单元收集阶段应关闭这些资源。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9682，对于具有DECIMAL参数和存储要求的存储程序，如果包含“,”，将失败。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - PreparedStatement.setObject(int, Object, int type, int scale)现在能使用针对BigDecimal实例的标度值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9704，当已有结果集是.close()d时，Statement.getMoreResults()可能抛出NPE。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -性能度量特性现能收集关于SELECT中引用的表数量的信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -现在能够自动配置日志系统。如果用户通过URL属性“logger”或系统属性“com.mysql.jdbc.logger”设置了值，那么将使用用户的设置，否则将采用下述步骤自动检测设置：
+&nbsp;
+&nbsp;&nbsp; 如果Log4j可用，将使用它，接下来是JDK1.4日志功能，再接下来是STDERR日志功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9778，即使数据库版本不支持视图，如果请求了视图，DBMD.getTables()不应返回表。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了驱动程序，当在服务器端预处理语句返回的结果集上调用了ResultSet.getBoolean()时，对于“-1”不返回“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为.jar文件增加了Manifest.MF文件以及实施信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在Field.isOpaqueBinary()中提供了更多测试，以识别晦涩的二进制字段（即具有CHAR(n)和CHARACTER SET BINARY类型的字段），这类字段来自各种标量函数和聚合函数（返回字符串）的输出。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9917，出于传统方面的考虑，即使它与JDBC不兼容，也应接受DBMD方法中用于catalog（使用当前值）的Null。将连接属性“nullCatalogMeansCurrent”设置为“假”可禁止它（在C/J 3.2.x中，它是默认设置）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#9769，出于传统方面的考虑，即使它与JDBC不兼容，也应接受DBMD中用于名称（“%”）的Null。将连接属性“nullNamePatternMatchesAll”设置为“假”可禁止它（在C/J 3.2.x中，它是默认设置）。
+&nbsp;
+02-18-05：版本3.1.7-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7686，Timestamp关键字列数据需要分离的“_binary”，用于UpdatableResultSet.refreshRow()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7715，对于服务器端预处理语句和可更新结果集，Timestamps错误地转换为字符串。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -检测字符串表单（以前为整数）中的sql_mode变量，并恰当调整字符串的引用方法。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“holdResultsOpenOverStatementClose”属性（默认为“假”），它能将statement.close()的结果集保持打开状态，或执行相同语句（由Kevin Burton推荐）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7952，在故障切换配置下回退至主连接时的无限递归。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果允许了高速缓冲，将禁止4.1.10版之前MySQL-4.1版本的多语句功能（如果以允许的话），这是因为在该配置下，服务器会返回错误的结果。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了configureClientCharset()中的重复代码，该类代码将阻止useOldUTF8Behavior=true的恰当运行。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了“dontUnpackBinaryResults”功能，现在，驱动程序将按原样保存来自服务器端预处理语句的结果（与服务器提供的相同，并在需要时展开）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8096，使用服务器端预处理语句时，模拟定位器破坏了二进制数据。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ServerPreparedStatement.serverPrepare()的同步事宜，如果在多个线程间共享连接，可能会导致死锁/崩溃。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -默认情况下，驱动程序能通过各种Connection.prepareStatement()的各种变体扫描SQL，以判断它是否是能够在服务器端支持的语句类型，如果不被服务器端支持，会将其作为客户端模拟预处理语句进行处理（BUG#4718)）。也可以通过在JDBC URL中传递“emulateUnsupportedPstmts=false”禁止该特性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从CallableStatement中删除了用作输入／输出参数的“_binary”引介词。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于注册为*BINARY的输出参数，总返回byte[]。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于PreparedStatement.setObject(n, &quot;true&quot;, Types.BIT)，将布尔“True”的正确值发送给服务器。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了与连接有关的缺陷，当语句不是服务器端预处理语句时，无法对来自prepareStatement()的语句进行高速缓冲处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用ResultSet.get(..., cal)和PreparedStatement.set(...., cal)时，如果客户端和服务器均位于GMT（格林威治标准时间）时区，选择进行时间调整的正确方向。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“dontTrackOpenResources”选项（默认为“假”以便兼容JDBC），对于具有不良特性的应用程序（例如应关闭语句时，却未关闭语句的应用程序），它有助于改善内存的使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8428，ResultSet.getString()不能保持存储在服务器上的格式，仅当将“noDatetimeStringSync”属性设置为“真”（默认为“假”）时，才能允许缺陷更正。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了使用“usage advisor”而且结果集已关闭时ResultSet.realClose()中的NPE。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8487，不创建流式结果集的PreparedStatements。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -不将NULL传给给ResultSet.getNativeConvertToString()中的String.valueOf()，原因在于String.valueOf()会对其进行字符串处理（即返回“null”）,对于所述方法，这是错误的。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8484，当需要舍入操作以设定标度时，ResultSet.getBigDecimal()抛出异常。如果非舍入性BigDecimal.setScale()失败，驱动程序现在将选择“半向上”舍入模式。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“useLocalSessionState”配置属性，将其设置为“真”时，JDBC驱动程序将认为应用程序行为良好，并会使用java.sql.Connection提供的方法仅设置autocommit和事务隔离级别，因此，能够在大多数情况下处理这些值，而不引发数据库服务器循环。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为连接池实施实例的语句增加了enableStreamingResults()，可检查Statement.setFetchSize()是否存在兼容规范的值。调用“Statement.setFetchSize(&gt;=0)”可禁止关于该语句的流式结果。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对MySQL-5.0.3中BIT类型的支持。驱动程序会将BIT(1-8)当作JDBC的BIT类型对待（映射至java.lang.Boolean），这是因为当声明了“&lt; 9 bits”)时，服务器目前不会发送能确定比特字段（bitfield）大小的足够信息。BIT(&gt;9)将被当作VARBINARY对待，并当调用getObject()时返回byte[]。
+&nbsp;
+12-23-04：版本3.1.6-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了SocketInputStream.read()的挂起问题，当驱动程序必须直接截取结果集，而不是跟踪结果集末尾的“LIMIT n”时，与Statement.setMaxRows()和多个结果集一起使用时SocketInputStream.read()挂起。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7026，DBMD.getProcedures()不考虑catalog参数。
+&nbsp;
+12-02-04：版本3.1.5-gamma
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了字符串常数和动态字符串之间的比较事宜，或是toUpperCase()d或是toLowerCase()d，以使用Locale.ENGLISH，将其用作英语的覆盖规则。此外，还使用StringUtils.indexOfIgnoreCase()替代了.toUpperCase().indexOf()，以避免创建很短的过渡性字符串实例。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5235，服务器端预处理语句不考虑“zeroDateTimeBehavior”属性，而且当使用ResultSet.getObject()时会导致类抛弃异常，这是因为总返回全0字符串。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了批更新和服务器预处理语句有关的问题，与以前的集合相比，如果在给定的批参数集合中发生了类型变更，服务器预处理语句不会检测这类变化，从而导致服务器返回错误“Wrong arguments to mysql_stmt_execute()”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -解决了当时间戳的字符串表示包含后缀“.”但其后没有数字时的情况。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5706，对ResultSet.getNativeString()中以前存在字符串实例的低效检测。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -不抛出针对Connection.releaseSavepoint()的异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -解码来自ServerPreparedStatements的日期时，默认情况下使用按会话进行的日历实例（通过设置“dynamicCalendars=true”，设置为早期的性能较低的方式）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了实验性配置属性“dontUnpackBinaryResults”，它延迟了解包二进制结果集取值的功能，直至请求了它们为止（默认情况下设为“假”）。对于某些usecase/jvm组合，它对无用信息收集器更友好。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5729，对来自服务器端预处理语句结果集的UNSIGNED BIGINT，未能正确解包。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6225，ServerSidePreparedStatement，分配了不必要的具有短生存时间的对象。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了ResultSet构造函数中有害的新Throwable()，原因在于不良合并（导致任何所创建结果集永远不会使用的新对象），分析BUG#6359时发现。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在EscapeProcessor.escapeSQL()中过早创建StringBuffer的问题，而且在不需要转义功能时仍返回字符串（防止不必要的对象分配）。分析BUG#6359时发现。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为可更新结果集中的键比较使用“null-safe-equals”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6537，如果需要0填充，作用在Decimal上的SUM()以及服务器端预处理语句均将忽略标度（由于服务器将其转换为DOUBLE，0填充将结束，将其转换为BigDecimal类型的字符串进行解析时，丢失所有的填充“0”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -创建DBMD查询时使用DatabaseMetaData.getIdentifierQuoteString()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果在服务器上LOAD DATA LOCAL INFILE小于“max_allowed_packet”，使用1MB的信息包发送文件。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6399，对于多字节字符集，ResultSetMetaData.getColumnDisplaySize()返回错误值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过“autoDeserialize”属性（默认为“假”），能够对保存在BLOB中的java.lang.Objects的自动串并转换功能进行配置。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -修改了Field.isOpaqueBinary()以检测“CHAR(n) CHARACTER SET BINARY”，从而能够支持用于ResultSet.getObject()的固定长度二进制字段。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用我们自己的缓冲输入流实施方式来处理java.io.BufferedInputStream的封闭行为。使用“useReadAheadInput=false”可禁止它。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6348，当给定主机名的某一地址是IPV6时无法连接到服务器（服务器尚未与IPV6捆绑） 驱动程序现在能够查找给定主机的所有IP地址，并停在接受socket.connect()的第1个地址上。
+&nbsp;
+09-04-04：版本3.1.4-beta
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4510，Connector/j 3.1.3 beta不能正确处理整数（由为了支持Buffer.readInt() -&gt; Buffer.readShort()中的无符号读取操作所作的更改而导致）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在DatabaseMetaData.getTables()和getTableTypes()中增加了对VIEW的支持，该类特性现已在MySQL服务器5.0.x版中提供。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4642，解包字段元数据时，ServerPreparedStatement.execute*()有时会抛出ArrayIndexOutOfBoundsException。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -优化了整数解析功能，通过“useFastIntParsing=false”属性，允许使用JDK类较慢的解析功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“useOnlyServerErrorMessages”属性，它会使服务器生成的异常中的消息文本仅包含由服务器发送的文本（与SQLState“标准”介绍中给出的相反，此时文本后面还包括服务器的错误消息）。默认情况下，该属性被设置为“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4689，如果前面的Null已被返回，对于原语，ResultSet.wasNull()不工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果“enablePacketDebug=true”，跟踪信息包的序列号，如果收到的信息包次序混乱，抛出异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4482，使用预处理语句时，对于字符串，ResultSet.getObject()返回错误类型。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -两次调用MysqlPooledConnection.close()（虽然也是应用程序错误）会导致NPE。已更正。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5012，处理DECIMAL类型的返回值的ServerPreparedStatements不工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5032，对于来自4.1.x版预处理语句的伪位类型，ResultSet.getObject()不返回布尔类型（在针对伪位类型的getObject()中使用二进制编码的结果集模糊测试时，它提供了避免额外类型转换的快捷方式）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -现在能够在“LOAD DATA LOCAL INFILE”语句中使用URL，而且驱动程序将使用Java的内置处理程序来检索数据，并将其发送到服务器。默认情况下不允许该特性，要想使用它，必须将“allowUrlInLocalInfile”连接属性设置为“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于在ResultSet.get*()的数值上执行的截取操作，驱动程序将更加严格，而且当检测到截取操作时将抛出SQLException。将“jdbcCompliantTruncation”设置为“假”，可以禁止该功能（在默认情况下允许该功能，这是因为该功能是兼容JDBC所需的）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从结果集读取“全零”日期时间值时，增加了三种处理它们的方法，“exception”，（默认值），用代码为“S1009”的SQLState抛出SQLException；“convertToNull”，返回NULL而不是数据；以及“round”，对日期进行舍入处理，使之成为最接近的值，即“0001-01-01”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ServerPreparedStatement，使之能够“以脱线”方式读取预处理语句元数据，尽管在目前它是取代在任何时侯均不工作的MysqlIO.clearInputStream()的占位符，之所以如此，是因为目前尚未从服务器读取数据。通过抛出ArrayIndexOutOfBoundExceptions的erverPreparedStatements，它修正了用户遇到的偶发性错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -加载资源捆包时使用com.mysql.jdbc.Message的类加载器，应能更正调用器的类加载器不能确定资源捆包位置时出现的偶发性错误。
+&nbsp;
+07-07-04：版本3.1.3-beta
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对CallableStatements的输出参数名进行Mangle处理，使得在与用户变量名一起使用时，这类名称不会崩溃。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对CallableStatements中INPUT参数的支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4119，为服务器端预处理语句发送的null比特掩码不正确。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -默认情况下使用SQL的标准SQL状态，除非将“useSqlStateCodes”属性设置为“假”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了信息包调试代码（请参见“enablePacketDebug”属性文档）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为MySQL错误编号增加了常量（可公共访问，请参见com.mysql.jdbc.MysqlErrorNumbers），并增加了生成映射的能力，能够将厂家代码映射为驱动程序使用的SQLStates（出于文档编制目的）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使更多消息更为具体（正在努力）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4311，在检索具有预处理语句和二进制协议特性的mediumint列时发生错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -当“useTimezone=true”时，在MySQL-4.1.3中支持新的时区变量。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持无符号数值作为预处理语句返回的类型。对于“bigint unsigned”类型，这也会导致ResultSet.getObject()中的内容发生变化，“bigint unsigned”类型用于返回BigDecimal实例，现在它将返回java.lang.BigInteger实例。
+&nbsp;
+06-09-04：版本3.1.2-alpha
+&nbsp;
+&nbsp;&nbsp;&nbsp; 更正了为参数（如char(), varchar()）指定大小时存储程序参数的解析信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过“cacheCallableStmts”属性，允许对可调用语句进行高速缓冲处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了下述问题：未为存储程序指定输出参数时，发出虚假查询来检索输出参数，从而导致服务器语法错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在CallableStatement.setOutputParameters()中没有任何参数会导致NullPointerException的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了MysqlIO.changeUser()中的异常捆包。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了关于发送大型查询分离信息包方面的问题，也允许发送大信息包的nio功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ServerPreparedStatement增加了.toString()功能，如果你正在调试作为预处理语句（显示为服务器应处理的SQL）的查询，它应有所帮助。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“gatherPerformanceMetrics”属性，以及用于控制在何时/何处记录这类信息的多种属性（更多信息请参见相关文档）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -调用.close()时，ServerPreparedStatements实际上不能取消对服务器端资源的分配。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“logSlowQueries”属性，以及“slowQueriesThresholdMillis”属性，以控制应在何时将查询视为“缓慢”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -相对于registerOutParameter()中隐含的顺序，正确地将输出参数映射到prepareCall()中给定的位置，；更正了BUG#3146。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于版本等于高于4.1.0的服务器，能正确地检测字符集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -整理了服务器属性的检测功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于版本等于高于4.1.2的服务器，支持用于参数元数据的占位符。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3539，getProcedures()未返回结果集中的任何进程。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3540，getProcedureColumns()不能与程序名的通配符一起使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3520，DBMD.getSQLStateType()返回不正确的值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“connectionCollation”属性，如果给定字符集的默认校对不恰当，驱动程序将在连接初始过程中发出“set collation_connection=...”查询。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在MySQL-5.0.0上运行时的DatabaseMetaData.getProcedures()问题（在5.0.1和5.0.0间，“show procedure status”的输出有所不同）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3804，getWarnings()返回SQLWarning而不是DataTruncation。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于版本为5.0.0或5.0.1的服务器，不要启用服务器端预处理语句，这是因为，它们与驱动程序使用的“4.1.2+”风格不兼容（驱动程序预计返回的信息并不存在，因而挂起）。
+&nbsp;
+02-14-04：版本3.1.1-alpha
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了与不使用客户端预处理语句的UpdatableResultSets有关的缺陷。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -当MySQL不提供字符集并将JVM设置为多字节编码时，更正了将字节转换为ASCII时的字符编码事宜（通常会影响数值检索）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将服务器预处理语句的“未知”数据类型解包为字符串。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为服务器预处理语句实现了长数据类型（Blob、Clob、InputStreams、Readers）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为MySQL-4.1和更高版本实现了Statement.getWarnings()（使用“SHOW WARNINGS”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -默认结果集类型更改为TYPE_FORWARD_ONLY（兼容JDBC）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 结果集类型和并发性的集中设置。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -再次确定了连接属性的设置方式和显示为DriverPropertyInfo的方式，以及Connection和DataSource属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持NIO。在支持NIO的平台上使用“useNIO=true”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持SAVEPOINTs（MySQL &gt;= 4.0.14或4.1.1）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持“mysql_change_user()...”，请参见“com.mysql.jdbc.Connection”中的changeUser()方法。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -减少了平均查询中调用的方法数目，使之更有效率。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自动再连接时重新处理预处理语句。任何遇到的错误均被延迟，直至首次尝试再执行经过重新处理的语句为止。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -按照JDBC规范，确保在预处理语句上执行查询前给出的警告是明确的（目前，我们支持警告功能）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在ConnectionProperties中，支持“旧的”profileSql大写特性。该属性已受到冷落，应尽量使用“profileSQL”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -优化了Buffer.readLenByteArray()，以便当长度为0时返回共享的空字节数组。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在对.execute*()的多次调用之间，允许保留PreparedStatement.setBlob()的内容。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -处理了EscapeProcessor中的0长度令牌（由可调用语句转义语法导致）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在UpdatableResultSet中的删除／更新／插入行操作上，检查关闭的连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了检查UpdatableResultSet中的所有主键时对表别名的支持事宜。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了useFastDates连接属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对来自JNDI Refs的数据源属性进行了正确的初始化，包括明确指定的URL。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于版本为5.0.0或更高的MySQL，DatabaseMetaData现在能通报supportsStoredProcedures()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Connection.prepareCall()中的堆栈溢出问题（不良合并）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对低于1.4版的JDK，更正了对DateTimeValue中Calendar.getTimeInMillis()的IllegalAccessError（非法访问错误）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1673，对于非“%”列名，DatabaseMetaData.getColumns()未返回正确的列顺序信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -合并了数据类型映射的更正事项，从MySQL类型“FLOAT”到java.sql.Types.REAL（自3.0版起）的数据类型映射。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -检测用于RSMD.isCaseSensitive()的列校对。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了与发送大于16M查询有关的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为CallableStatement增加了命名和索引式输入／输出参数支持。
+MySQL-5.0.x或更高版本。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ServerPreparedStatement.setTimestamp()中的NullPointerException，以及ServerPreparedStatement.setTimestamp()、setDate()中的年月差异。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为build.xml中的一致性和递归/单元测试增加了拥有多个数据库/JVM目标的能力。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了访问ServerPreparedStatements和其结果集中某些日期时间功能时的NPE和不良年月转换问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -显示关闭连接的位置和原因（用于帮助调试）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了CommunicationsException，它能尝试判断与服务器失去通信的原因，并能在调用.getMessage()时显示可能的原因。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2359，二进制编码结果集中数值类型的NULL值会导致NullPointerExceptions。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Connection.prepareCall()，DatabaseMetaData.getProcedures()，以及getProcedureColumns()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -调用clearParameters()时，通过发送COM_RESET_STMT至服务器，复位了ServerPreparedStatement中的“long binary”参数。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自3.0版起，合并了预处理语句高速缓冲和.getMetaData()支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -解包来自服务器端预处理语句的结果时，在某些情况下，对于TimeUtil.fastDate/TimeCreate()的年份，会出现off-by-1900错误，更正了该错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2502，getTables()中的字符集转换事宜。
+&nbsp;
+&nbsp; &nbsp;&nbsp;-实现了由语句或存储程序返回的多个结果集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2606，服务器端预处理语句未正确返回数据类型“YEAR”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许对来自服务器端预处理语句的结果集进行流处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2623，使用滚动结果集和服务器端预处理语句时出现类舍弃异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自3.0版起，合并了无缓冲输入代码。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了不能通过存取器恰当显示的ConnectionProperties，并整理了ConnectionProperties代码。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2671，在服务器端预处理语句中，在任何情况下均不能正确编码NULL字段。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了将数字写入缓冲以发送预处理语句执行请求时出现的罕见缓冲区下溢问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于交付的驱动程序，使用了文档的DocBook版。
+&nbsp;
+02-18-03：版本3.1.0-alpha
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“requireSSL”属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“useServerPrepStmts”属性（默认为“假”）。当服务器版本支持并将该属性设置为“真”时（4.1和更高版本），驱动程序将使用服务器端预处理语句。目前其默认设置为“假”，除非所有的捆绑／获取功能均已实施。目前，仅为4.1版的服务器端预处理语句实现了DML预处理语句。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -跟踪打开的语句，并在调用Connection.close()时关闭所有打开的语句（JDBC兼容）。
+&nbsp;
+06-23-05：版本3.0.17-ga
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5874，当useTimeZone=&#39;true&#39;而且服务器时区不同于客户端时区时，Timestamp/Time转换出现方向错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7081，DatabaseMetaData.getIndexInfo()忽略“唯一”参数。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持新的协议类型“MYSQL_TYPE_VARCHAR”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“useOldUTF8Behavoior”配置属性，连接到MySQL-4.1或更高版本且字符编码为“utf-8”时，该属性能使JDBC驱动程序的行为方式类似于在MySQL-4.0.x和更早版本下的行为方式。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7316，调用getConnection()时，从连接池创建的语句返回实际连接而不是逻辑连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7033，在静态SQL字符串中，PreparedStatements不能正确编码Big5（以及其他多字节）字符集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6966，启动了故障切换的连接（由于主连接失败）从不再次尝试主连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7061，PreparedStatement.fixDecimalExponent()增加额外“+”，使得MySQL服务器无法解析数值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7686，Timestamp关键字列数据需要分离的“_binary”，用于UpdatableResultSet.refreshRow()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -反向移植了来自Connector/J 3.1的SQLState代码映射，使用连接属性“useSqlStateCodes=true”可启用它，在本版本中默认为“假”，以免破坏传统应用程序（对于Connector/J 3.1，默认为“真”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7061，PreparedStatement.fixDecimalExponent()增加额外“+”，使得MySQL服务器无法解析数值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -转义序列{fn convert(..., type)}现在支持由SQL预先设定的ODBC类型。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了configureClientCharset()中的重复代码，该类代码将阻止useOldUTF8Behavior=true的恰当运行。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过更正行数计数器的环绕式处理程序，能正确处理大于20亿行的流式结果集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#7607，MS932、SHIFT_JIS和Windows_31J不接受针对sjis的别名。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6549（更正#7607的同时），为sjis增加了CP943别名。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8064，与预处理语句一起使用多字节字符集时，要求对二进制数据进行十六进制转义处理。
+&nbsp;
+ &nbsp;&nbsp;&nbsp;-更正了BUG#8812，DBMD.getIndexInfo()的NON_UNIQUE列返回倒置值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -解决了服务器BUG#9098，无法将DATE/TIME/TIMESTAMP/TIMESTAMP列CURRENT_*的默认值与“字符串”值区别开，因此，插入默认值时，UpdatableResultSet.moveToInsertRow()会生成不良的SQL。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#8629，将“EUCKR”作为“SET NAMES euc_kr”发送，MySQL-4.1以及更高版本不能理解该特性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -根据服务器的版本，DatabaseMetaData.supportsSelectForUpdate()返回正确值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于含别名Windows-31J、CP934、MS932的双字节字符集，对于PreparedStatement.setBytes()，采用十六进制转义特性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对“EUC_JP_Solaris”字符编码的支持，映射到“eucjpms”的MySQL编码（从3.1版开始的反向移植）。它只能在支持eucjpms的服务器山工作，也就是说5.0.3或更高版本。
+&nbsp;
+11-15-04：版本3.0.16-ga
+&nbsp;
+&nbsp;&nbsp;&nbsp; -连接至MySQL-4.1或更高版本且再次使用连接池和／或Connection.changeUser()时，将再次发出字符集配置命令。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.isReadOnly()，以便在连接至MySQL-4.1或更高版本时，能根据“原始的”表名和列名，检测不可写的列。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5664，当ResultSet.updateByte()位于插入行上时抛出ArrayOutOfBoundsException。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了DatabaseMetaData.getTypes()，对于NUMERIC类型，它返回不正确的（非负）标度。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6198，Buffer.readString(string)中的“off-by-one”问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过“tinyInt1isBit”属性，使得能够对TINYINT(1) -&gt; BIT/Boolean转换进行配置（为了与JDBC兼容，默认为“真”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果服务器版本大于等于4.1.1，在连接建立过程中仅设置“character_set_results”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了回归问题，其中，useUnbufferedInput默认为“假”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#6231，ResultSet.getTimestamp()作用在具有TIME的列上时失败。
+&nbsp;
+09-04-04：版本3.0.15-production
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4010，对于GBK，StringUtils.escapeEasternUnicodeByteStream仍被破坏。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4334，对于autoReconnect的故障切换，对任何主机均不使用端口“#”，而且不重试所有主机。（警告：需要更改SocketFactory connect()方法的特征，它目前是公共套接字连接（String host，int portNumber，Properties props）。也能次，必须更改任何第三方套接字实施方式以支持该特征。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -当它们已被关闭并被返回到连接池时，由MysqlConnectionPoolDataSource创建的逻辑连接将发出rollback()。如果你的应用服务器/连接池已帮助你完成了该任务，可以将“rollbackOnPooledClose”属性设置为“假”以避免额外的rollback()开销。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了结果集中对checkRowPos()的多余调用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4742，在DBMD.getTypeInfo()中，“DOUBLE”映射了两次。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了FLOSS许可豁免。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4808，在PooledConnection上调用两次.close()将导致NPE。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4138和BUG#4860，对于无符号列，DBMD.getColumns()返回错误的JDBC类型。这也会影响对RSMD.getColumnType()和RSMD.getColumnTypeNames()方法中所有数值类型的类型映射，以确保DBMD.getColumns()的类似类型与RSMD.getColumnType()和RSMD.getColumnTypeNames()返回的类型匹配。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -分发版命名方案中的“Production”-“GA”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#4880，对于非数值类型，RSMD.getPrecision()返回0（对于非二进制类型，应返回字符的最大长度，对于二进制类型，应返回最大字节长度）。根据服务器发回的长度（在网络协议层，服务器不区分TINYBLOB、BLOB、MEDIUMBLOB或LONGBLOB），它还更正了针对BLOB类型的RSMD.getColumnType()和RSMD.getColumnTypeName()映射。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5022，结果集应在“.close()”中释放Field[]实例。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#5069，如果结果集已关闭，ResultSet.getMetaData()不应返回未正确初始化的元数据，而是应抛出SQLException。此外，在对实例级别的字段（.close()过程中取消的字段）进行操作之前，通过调用checkClosed()，它还更正了getRow()、getWarnings()和遍历方法。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从4.1.x版服务器开始，能解析新的时区变量。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -与MySQL-4.1.x或更高版本连接时，为PreparedStatement.setBytes()和set*Stream()使用“_binary”引介词，以防止在字符集转换过程中出现错误判断。
+&nbsp;
+05-28-04：版本3.0.14-production
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了URL解析错误。
+&nbsp;
+05-27-04：版本3.0.13-production
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3848，无服务器名称时，不能使用MySQLDatasource。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3920，使用MysqlConnectionPoolDataSource时出现“No Database Selected”（未选择数据库）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3873，对于批插入，PreparedStatement.getGeneratedKeys()方法仅返回1个结果。
+&nbsp;
+05-18-04：版本3.0.12-production
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为TYPE_NAME列中的DatabaseMetaData.getColumns()输出增加了无符号属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“failOverReadOnly”属性，允许最终用户配置出现故障切换时的连接状态（只读／可写）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自3.1开始，反向移植了“change user”和“reset server state”功能，允许MysqlConnectionPoolDataSource的客户端复位连接池上getConnection()的服务器状态。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用MySQL-4.1或更高版本时，不对SJIS/GBK/BIG5进行转义处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许MysqlDataSource和MysqlConnectionPool数据源使用“url”参数，以便能够从内部应用服务器传递其他属性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将复制键和外键错误映射到“23000”的SQLState。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -自3.1开始，反向移植了文档编制工具。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -返回用于结果集的创建语句，该结果集由getGeneratedKeys()创建（BUG#2957）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许作为参数将java.util.Date发送到PreparedStatement.setObject()，将其转换为Timestamp类型以保持完整精度（BUG#3103）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用setBytes()和/或setBinary/CharacterStream()时，不截取BLOB/CLOB（BUG#2670）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -连接时，在使用“SHOW COLLATION”的MySQL-4.1.0和更高版本上，为字段级字符集动态配置字符集映射。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将“binary”字符集映射到“US-ASCII”，以支持4.1.2和更高版本服务器的DATETIME字符集识别功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在初始化过程中使用“SET character_set_results”，允许将结果集的任何字符集返回到驱动程序。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在&gt;= 4.1.0的MySQL上发出“SET NAMES”之前，在连接至编码查询的过程中，使用返回的charsetnr。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ResultSetMetaData（getColumnCharacterEncoding()和getColumnCharacterSet()）增加了Helper（助手）方法，允许最终用户查看驱动程序认为应在列上使用的字符集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在&gt;= 4.1.0的MySQL上仅设置character_set_results。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3511，StringUtils.escapeSJISByteStream()不能正确处理所有的东方双字节字符集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将StringUtils.escapeSJISByteStream()重新命名为更贴切的escapeEasternUnicodeByteStream()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3554，在URL中未指定数据库将导致MalformedURL exception。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果使用了characterEncoding属性，自动将MySQL编码名称转换为Java编码名称。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了在某些JVM上能识别的编码名称，以更正错误地将其逆向映射为MySQL编码名称的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为所有单元测试使用junit.textui.TestRunner（允许在Ant或Eclipse以外的命令行上运行它们）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3557，UpdatableResultSet不能获取moveToInsertRow()的默认值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3570，不一致的列类型通报。服务器仍不能正确返回*BLOBs *TEXT的所有类型，因此驱动程序也不能正确返回它们。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#3520，DBMD.getSQLStateType()返回不正确的值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.setString()和东方字符编码中的递归问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 增加了对StringRegressionTest 4.1-unicode的识别。
+&nbsp;
+02-19-04：版本3.0.11-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过“characterEncoding”属性将编码方式强制设为“utf8”或“utf-8”时，触发“SET NAMES utf8”。以前，只能用Java风格的“utf-8”编码名称才能触发该操作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -AutoReconnect时间的增长速度快于指数速度（BUG#2447）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了故障切换总跳至列表中最后1个主机的问题（BUG#2578）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“useUnbufferedInput”参数，它也是目前的默认参数（因JVM事宜，http://developer.java.sun.com/developer/bugParade/bugs/4401235.html）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -检测服务器上lower_case_table_names的“on/off”，或“1”、“2”、“3”形式。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ResultSetMetaData.getColumnClassName()的TINYINT和SMALLINT类型返回“java.lang.Integer”（更正了BUG#2852）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ResultSetMetaData.getColumnClassName()的FLOAT类型返回“java.lang.Double”（更正了BUG#2855）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为ResultSetMetaData.getColumnClassName()的BINARY、VARBINARY和LONGVARBINARY类型返回“[B”而不是“java.lang.Object”（兼容JDBC）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在由ConnectionPoolDataSource创建的所有实例上发出连接事件。
+&nbsp;
+01-13-04：版本3.0.10-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在PreparedStatement解析中，当位于“字符串”内时，不对引用的ID进行计数（更正了BUG#1511）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -关于PacketTooLargeException的“Friendlier”异常消息（BUG#1534）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从3.1版开始，反向移植了对checkUpdatability()方法中别名表和UpdatableResultSets的补丁。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了使用Statement.setMaxRows()时出现的ArrayIndexOutOfBounds异常（BUG#1695）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1576，处理未正确读取的大BLOB和分离信息包。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Statement.getGeneratedKeys()和REPLACE语句的递归问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1630，如果结果集是不可更新的，对ResultSet.updateFoo()的后续调用将导致NPE。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -确定了4.1.1风格的auth，无密码。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1731，外键列的顺序与DatabaseMetaData.getImported/Exported/CrossReference()不一致。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1775，DatabaseMetaData.getSystemFunction()返回错误函数“VResultsSion”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1592，未正确检查交叉数据库可更新结果集的可更新性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于MySQL LONGTEXT类型，DatabaseMetaData.getColumns()应返回Types.LONGVARCHAR。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -作用在TINYINT和SMALLINT列上的ResultSet.getObject()应返回Java类型“Integer”（BUG#1913）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“alwaysClearStream”连接属性，它会使驱动程序在每次查询前清空输入流上任何余留的数据。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了更具描述性的错误消息“Server Configuration Denies Access to DataSource”（服务器配置拒绝对数据源的访问），并能从服务器上检索消息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果已发生变化，Autoreconnect代码在红心连接时不设置catalog。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了ResultSet.updateClob()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于CHAR/VARCHAR列，ResultSetMetaData.isCaseSensitive()返回错误值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1933，不尊重连接属性“maxRows”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1925，在DBMD.extractForeignKeyFromCreateTable()中，创建语句的次数太多。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1914，支持转义序列{fn convert ... }
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1958，当参数编号等于参数数目＋1时，ArrayIndexOutOfBounds。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#2006，当SELECT查询中有多个重复列名时，ResultSet.findColumn()应使用第1个匹配的列名（兼容JDBC）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从PreparedStatement.setTimestamp()中删除了静态同步瓶颈。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从SingleByteCharsetConverter的实例方法中删除了静态同步瓶颈。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许通过“cachePrepStmts”、“prepStmtCacheSize”和“prepStmtCacheSqlLimit”属性，对预处理语句的解析步骤进行高速缓冲处理（默认情况下禁止）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -加快了PreparedStatements的解析操作，只要可能，尽量采用一次性方式。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在小应用程序中使用时的安全异常问题（小应用程序不能读取LOAD DATA LOCAL INFILE所需的系统属性“file.encoding”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为SQLStates使用常数。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -连接至MySQL-4.1.0或更高版本时，将字符集“ko18_ru”映射到“ko18r”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -确保Buffer.writeString()保存在“\0”之外的空间内。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了“connect w/ JDK-1.4.0”上的异常“未知字符集danish”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了SQLError中的映射功能，用“41000”SQLStates通报死锁状态。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -“maxRows”属性会影响内部语句，因此，应检查为驱动程序创建的所有内部语句，并在不是内部语句的情况下将其设为0。
+&nbsp;
+10-07-03：版本3.0.9-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -ResultSet和PreparedStatement中更快的日期处理代码（不再使用用来同步静态日历的Date方法）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了对Buffer.readString()中缓冲区末端的测试。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.previous()行为方式，当位于结果集的第1行上时，将当前位置移到结果集之前（bugs.mysql.com BUG#496）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了当已使用setMaxRows()而且在查询中包含LIMIT子句时发出伪查询的语句和PreparedStatement。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#661，当主键值包含需要转义的值时refreshRow不工作（以双倍转义结束）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -提取DatabaseMetaData中的外键信息时，支持InnoDB约束名，BUG#517和BUG#664（由Parwinder Sekhon提出）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从3.1版开始，反向移植了4.1协议变化（服务器端SQL状态，新字段信息，较大的客户端能力标志，与数据库的连接等）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了UpdatableResultSet，作用在插入行上时，为getXXX()返回值（BUG#675）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -调用moveToInsertRow()时，能够用默认的列值加载UpdatableResultSet中的insertRow（BUG#688）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于指定为NULL的默认值，DatabaseMetaData.getColumns()未返回NULL。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将默认的语句类型／并发行更改为TYPE_FORWARD_ONLY和CONCUR_READ_ONLY（兼容规范）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果MySQL不支持，不要尝试或复位再连接上的隔离级别。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -不将SQLExceptions封在RowDataDynamic内。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果useTimezone==true，不更改时间戳TZ两次（BUG#774）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了大的分离信息包处理中存在的回归问题（BUG#848）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更好地诊断“流式”结果集异常中的错误消息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在空结果集上抛出关于ResultSet.getXXX()的异常（在某些情况未被俘获）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -不隐藏关于在I/O层中抛出异常的消息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -关闭连接池时或在具有已打开连接的PooledConnection.getConnection()上，不触发连接关闭时间（BUG#884）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -截短+/- INF（最小和最大代表值，对于MySQL中的类型），以及NaN（至0，对于setDouble/setFloat()），当服务器不支持+/- INF或NaN时，就语句发出警告。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#879，当字符集为SJIS或GBK时，以及“\”出现在非转义输入中时对“\”的双转义处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -清空“流式”结果集未使用行的输入流时，每100行均有当前线程yield()，以免独占CPU时间。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了BUG#1099，DatabaseMetaData.getColumns()弄不清字符列中的关键字“set”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了与Statement.setMaxRows()相关的死锁事宜。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了CLOB.truncate()，BUG#1130。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -优化了CLOB.setChracterStream(), BUG#1131。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使databaseName、portNumber以及serverName成为MysqlDataSourceFactory的可选参数（BUG#1246）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -修订了BUG#1247，导致字符127损坏的ResultSet.get/setString。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从3.1版开始，反向移植了针对4.11和更高版本的auth.更改。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了com.mysql.jdbc.util.BaseBugReport，以帮助创建缺陷报告的测试范例。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过将“clobberStreamingResults”属性设置为“真”（默认为“假”），为“clobber”流式结果增加了属性。这会使“流式”结果集被自动关闭，如果在所有数据尚未从服务器中读取完之前，执行了另一查询，正在从服务器流出的任何未完成数据均将被舍弃。
+&nbsp;
+05-23-03：版本3.0.8-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许在Driver.getPropertyInfo()中使用伪URL。
+&nbsp;
+&nbsp;&nbsp; &nbsp;-与Statement.getGeneratedKeys()一起使用多值INSERTS时，返回所生成键的列表。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -与文件名和“LOAD DATA [LOCAL] INFILE”一起使用JVM字符集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了与Connection.cleanup()有关的无限循环。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将Ant目标“compile-core”更改为“compile-driver”，并使测试套件编译成为单独的目标。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了未获得关于Statement.executeUpdate()的集合的结果集，在某些情况下，它会影响getGeneratedKeys()和getUpdateCount()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -字符串中的Unicode字符0xFFFF会导致驱动程序抛出ArrayOutOfBoundsException（Bug #378）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用“REPLACE”语句时返回所生成键的正确数目。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在某些情况下检测服务器字符集的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了使用极大信息包时的行数据解码错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -优化了行数据解码。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在已关闭预处理语句上执行操作使抛出异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了SJIS编码缺陷，感谢Naoto Sato。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -优化了EscapeProcessor的使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许对Statement.close()的多次调用。
+&nbsp;
+04-08-03：版本3.0.7-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了调用错误事件类型的MysqlPooledConnection.close()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.setClob()中的StringIndexOutOfBoundsException。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 4.1版列元数据更正。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从Driver.connect()和Driver.acceptsUrl()中删除了同步功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -事务过程中的IOExceptions现在会导致关闭连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.getColumnTypeName()中丢失的“YEAR”类型转换。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于DBMD.getPrimaryKeys()，不提取以“pri”作为主键起始的索引。
+&nbsp;
+ &nbsp;&nbsp;&nbsp;-试图在强制关闭的连接上执行操作时抛出SQLExceptions（即，通信链路失败时）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -现在，可以使用Connection.setProfileSql(boolean)来打开或关闭仿型功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; 更正了与数据库元数据有关的字符集事宜（字符集不能正确获取集合）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -与MySQL-4.1或更高版本连接时，现在能够为别名表/列创建可更新结果集。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了文件大于“max_allowed_packet”时的“LOAD DATA LOCAL INFILE”缺陷。
+&nbsp;
+&nbsp;&nbsp; &nbsp;-对于GBK和Big5字符集，更正了0x5c (&#39;\&#39;)字符的转义功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了基础字段为DATE类型时的ResultSet.getTimestamp()问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -保证了来自alignPacketSize()的信息包大小不超过MAX_ALLOWED_PACKET（JVM缺陷）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -autoReconnecting（自动再连接）时不复位Connection.isReadOnly()。
+&nbsp;
+02-18-03：版本3.0.6-stable
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData，当catalog未知时返回&quot;&quot;。更正了与Sun CachedRowSet有关的NullPointerExceptions。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了DBMD.getTypeInfo()和DBMD.getColumns()为TEXT/BLOB类型中的精度返回不同值的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过将“ignoreNonTxTables”设置为“真”，在回退期间（兼容性／可用性），允许忽略“non transactional tables”（非事务表）告警。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了在初始连接上SQLExceptions耗尽的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Statement.setMaxRows()，当其不需要时，停止发送“LIMIT”类型的查询（性能）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -整理了语句查询/方法失配测试（即，不允许与.executeQuery()一起使用INSERT）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在ResultSet遍历方法中增加了更多检查，以获取何时处于关闭状态的信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.isWritable()以返回正确值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为DBMD.nullsAreSortedAtStart增加了不同NULL分类行为的“窗口”（4.0.2至4.0.10，真，其他为“否”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Blob.setBytes()。仍需要将所得的Blob传回到可更新ResultSet（结果集）或PreparedStatement以保持变更，这是因为MySQL不支持“定位器”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -从Connector/J 3.1反向移植了4.1字符集字段。
+&nbsp;
+01-22-03：版本3.0.5-gamma
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了解包字段时对某些查询Buffer.fastSkipLenString()导致ArrayIndexOutOfBounds异常的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为Connection.getTypeMap()实现了空的TypeMap，以便某些第三方应用程序能与MySQL一起工作（IBM WebSphere 5.0连接池）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为DBMD.getColumns()增加了丢失的LONGTEXT类型。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -当MySQL版本支持时，Connection.getTransactionIsolation()能从数据库检索TX_ISOLATION，而不是实例变量。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -引用DatabaseMetaData.getColumns()、getPrimaryKeys()、getIndexInfo()、getBestRowIdentifier()中的表名。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -大幅度降低了PreparedStatements中setBinaryStream()所需的内存。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.isBeforeFirst()处理空结果集方面的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为外键元数据增加了“更新”选项。
+&nbsp;
+&nbsp;
+01-06-03：版本3.0.4-gamma
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为Connection.setCatalog增加了对数据库名的引用ID。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在PreparedStatement分析程序中增加了对引用ID的支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于setByte()，在PreparedStatements中，流线式字符转换和byte[]处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -通过与MysqlIO共享出站信息包，降低了PreparedStatements的内存占用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“strictUpdates”属性，能够对可更新结果集的大量“正确性”检查进行控制。如果希望获得更快的可更新结果集，并使用主键通过作用在表上的SELECT创建了结果集，而且在查询中选择了所有的主键，应将其设置为“假”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对4.0.8风格大信息包的支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.executeBatch()参数重写的问题。
+&nbsp;
+12-17-02：版本3.0.3-dev
+&nbsp;
+&nbsp;&nbsp;&nbsp; -将SingleByteCharConverter中的charsToByte更改为非静态类型。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更改了SingleByteCharConverter，以使用各转换器的空闲初始化特性。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Fields.java中的字符集处理功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Connection.nativeSQL()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更可靠的转义标志“-- recognize &#39;--&#39;”注释，并允许嵌套式转义序列（请参见testsuite.EscapeProcessingTest）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -DBMD.getImported/ExportedKeys()现在能处理每个表上的多个外键。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了对某些浮点类型ResultSetMetaData.getPrecision()返回错误值的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.getColumnTypeName()对TEXT类型返回BLOB，对BLOB类型返回TEXT的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于4.1和更高版本服务器，更正了Buffer.isLastDataPacket()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了CLIENT_LONG_FLAG，以便能获得更多的列标志（isAutoIncrement()最重要）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -由于上述原因，实现了ResultSetMetaData.isAutoIncrement()以使用Field.isAutoIncrement()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在DatabaseMetaData方法中比较表名且在服务器中允许时，优先考虑“lower_case_table_names”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -一些MySQL-4.1协议支持（扩展字段信息）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -使用非别名表/列名和数据库名，以完全限定UpdatableResultSet中的表和列（需要MySQL-4.1或更高版本）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -允许用户通过“continueBatchOnError”属性（默认为“真”）更改Statement/PreparedStatement.executeBatch()的行为。
+&nbsp;
+ &nbsp;&nbsp;&nbsp;-在更多连接方法（createStatement、prepareStatement、setTransactionIsolation、setAutoCommit）中检查关闭的连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更可靠地实现了可更新结果集。检查表的所有主键是否已被选择。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果在服务器的配置允许，“LOAD DATA LOCAL INFILE ...”现在能正常工作。不能使用“allowLoadLocalInfile”属性关闭它（请参见README）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -在单字节字符集中，对于未知的字符转换，用“?”替代“\0”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - NamedPipeSocketFactory现能正常工作（仅对Windows平台）。具体说明请参见README。
+&nbsp;
+11-08-02：版本3.0.2-dev
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了可更新结果集和PreparedStatements不工作的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.setFetchDirection(FETCH_UNKNOWN)。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了使用任意值并调用Statement.setFetchSize()时的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.getLong()中的不正确转换。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了ResultSet.updateBlob()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了UpdatableResultSet中的重复代码（能从ResultSet继承而来，不需要各方法处理可更新性的额外代码，但我认为在将来可能需要）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了通过属性“强制”字符编码时抛出的“UnsupportedEncodingException”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了各种非ASCII字符编码问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了驱动程序属性“useHostsInPrivileges”。默认值为“真”。它将影响是否在“DBMD.getColumn/TablePrivileges”中使用“@hostname”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -描述方案的所有DBMD结果集列现返回NULL，以便能与用于其他数据库的其他JDBC驱动程序的行为更兼容（MySQL不支持方案）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了SSL支持。关于如何使用它的更多信息，请参见README。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -执行自动再连接或故障切换时，恰当恢复连接属性，包括autoCommit状态以及隔离级别。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -可能时，使用“SHOW CREATE TABLE”，以确定用于DatabaseMetaData的外键信息，对于返回的DELETE信息还允许级联选项。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -对于SJIS字符集，转义了字符串中的“0x5c”字符。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了Clob.getSubString()中起始位置偏离1的错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Clob.truncate()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Clob.setString()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Clob.setAsciiStream()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了Clob.setCharacterStream()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了com.mysql.jdbc.MiniAdmin类，该类允许你将“shutdown”命令发送至MySQL服务器。在最终用户应用中嵌入Java和MySQL服务器时使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“connectTimeout”参数，允许JDK-1.4和更高版本的用户指定建立连接所需等候的最长时间。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -仅当连接处于autoCommit(false)状态时，故障切换和autoReconnect才能工作，目的在于保持事务的安全。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“queriesBeforeRetryMaster”属性，出现故障切换时而且在重新连接到主服务器之前，该属性指定了能够发出的查询数目（默认为50）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了DBMD.supportsResultSetConcurrency()，以便为ResultSet.TYPE_SCROLL_INSENSITIVE和ResultSet.CONCUR_READ_ONLY或ResultSet.CONCUR_UPDATABLE返回“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.isLast()处理空结果集方面的问题（应返回“假”）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - PreparedStatement现在将优先考虑setBinary/Ascii/Character Stream()中的流长度，除非将连接属性“useStreamLengthsInPrepStmts”设置为“假”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -删除了一些使用EscapeProcessor、Connection和DatabaseMetaData类中的“Strings smarter”创建的不需要的临时对象。
+&nbsp;
+09-21-02：版本3.0.1-dev
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet.getRow()偏差1的缺陷。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了RowDataStatic.getAt()偏差1的缺陷。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了有限Clob功能（ResultSet.getClob()、PreparedStatemtent.setClob()、PreparedStatement.setObject(Clob)）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为URL增加了socketTimeout参数。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - Connection.isClosed()不再对服务器执行“Ping”操作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -当“getAutoCommit() == false”时Connection.close()发出rollback()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了“妄想”参数，通过删除其中的“敏感”信息清理了错误消息（即，主机名、端口、用户名等），并在可能的情况下，清理了“敏感”的数据结构。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.isSigned()在处理TINYINT和BIGINT方面的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 现在将自动检测字符集。优化了单字节字符集转换的代码。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了ResultSet.getCharacterStream()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为DatabaseMetaData.getTableTypes()中的表类型增加了“LOCAL TEMPORARY”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 整理了大块代码，以遵循Java编码惯例（时机成熟）。
+&nbsp;
+&nbsp;
+07-31-02：版本3.0.0-dev
+&nbsp;
+&nbsp;&nbsp;&nbsp; - !!! 许可变化!!! 驱动现在是GPL。如果需要非GPL许可，请与我们联系（<a  href="mailto:mark@mysql.com">mark@mysql.com</a>）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - JDBC-3.0功能包括Statement/PreparedStatement.getGeneratedKeys()和ResultSet.getURL()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -性能增强，在大多数情况下，驱动程序快了50-100％，而且创建的临时对象更少。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -重新封装...新的驱动程序名是“com.mysql.jdbc.Driver”，但旧名称依然有效（驱动程序现由MySQL-AB提供）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更好地在语句和PreparedStatement中检查已关闭的连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持流式结果集（按行），请参见README，感谢Doron。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -支持大信息包（MySQL-4.0协议的新增内容），更多信息请参见README。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - JDBC兼容，除了存储程序测试外，提供了所有测试。
+&nbsp;
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正并分类了DBMetaData中的主键名称（SF缺陷582086和582086）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -浮点类型现为java.sql.Types.FLOAT（SF缺陷579573）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - ResultSet.getTimestamp()现在能处理DATE类型（SF缺陷559134）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - ResultSet.getDate/Time/Timestamp现在能识别由MySQL设置为全零的所有形式的无效值（SF缺陷586058）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - Testsuite现在将使用Junit（可从www.junit.org获得）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -驱动程序现在仅能与JDK-1.2或更高版本一起工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了多主机故障切换支持（请参见README）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -进行了一般性的源码清理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -读取信息包时，通过控制MysqlIO类创建的过渡对象，改善了总的速度。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -改善了字符串处理和字段元数据创建的性能（例示），由Alex Twisleton-Wykeham-Fiennes提供。
+&nbsp;
+&nbsp;
+05-16-02：版本2.0.14
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更多代码整理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - PreparedStatement现在能释放.close()上的资源（SF缺陷553268）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -如果服务器版本不支持，不使用引用ID。此外，如果服务器是以“—ansi”或“--sql-mode=ANSI_QUOTES”开始，那么“&quot;”将用作ID引用，否则将使用“`”。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - ResultSet.getDouble()现在能更准确地使用JDK内置的代码（但较慢）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - LogicalHandle.isClosed()调用，直至物理连接。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了SQL仿型功能（到STDERR）。在JDBC url中设置“profileSql=true”。更多信息请参见README。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了relaxAutoCommit参数的类型。
+&nbsp;
+04-24-02：版本2.0.13
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更多代码整理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了未能正确读取的unicode字符（SF缺陷541088）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为PrepStmt提供了更快的Blob转义功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为DataSource(s)增加了set/getPortNumber()（SF缺陷548167）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为MySQLXADataSource增加了setURL()（SF缺陷546019）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.toString()（SF缺陷534026）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了ResultSetMetaData.getColumnClassName()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - 现在实施了来自JDBC-3.0的Statement.getGeneratedKeys()的初级版本（要想使之工作，需要使用JDK-1.4，我个人认为）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - DBMetaData.getIndexInfo()，更正了不良的PAGES（SF缺陷542201）。
+&nbsp;
+04-07-02：版本2.0.12
+&nbsp;
+&nbsp;&nbsp;&nbsp; -一般性代码整理。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为Connection和MysqlLogicalHandle增加了getIdleFor()方法。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -放松了所有类中的功能，应更正520615和520393。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为DBMD增加了getTable/ColumnPrivileges()（更正484502）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为getTypeInfo()增加了新类型，更正了已有类型，感谢Al Davis和Kid Kalanon。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为PreparedStatement增加了BIT类型支持（51870）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了ResultSet中的getRow()缺陷（527165）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement中的ResultSet可更新性。
+&nbsp;&nbsp;&nbsp; -更正了PreparedStatement中时区偏差1小时的缺陷（538286、528785）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - ResultSet: 更正了可更新性（如果不可更新，将值设为NULL）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - DataSources，更正了setUrl缺陷（511614、525565），错误的数据源类名（532816、528767）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -为需要它们的所有DatabaseMetaData方法增加了ID引用（应更正518108）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -增加了对YEAR类型的支持（533556）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; - ResultSet.insertRow()目前能够在大多数情况下检测auto_increment字段，并在新行中使用该值。但是，该检测不适用于多值键，原因在于MySQL协议不返回该类信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -实现了ResultSet.refreshRow()。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -更正了testsuite.Traversal afterLast()缺陷，感谢Igor Lastric。
+&nbsp;
+01-27-02：版本2.0.11
+&nbsp;
+&nbsp;&nbsp;&nbsp; 
+-更正了DBMD.getImported/ExportedKeys()和getCrossReference()中丢失的DELETE_RULE值。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -Statement.java的完全同步。
+&nbsp;
+&nbsp;&nbsp;&nbsp; -多处修改，更正了读取BLOB时的“Unexpected end of input stream”（输入流意外结束）错误。这应是最后更正。
+&nbsp;
+01-24-02：版本2.0.10
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了MysqlIO中的虚假“Unexpected end of input stream”（输入流意外结束）错误（缺陷507456）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了与Websphere 4一起使用MysqlConnectionPoolDataSource时的“null-pointer-exceptions”（缺陷505839）。
+&nbsp;
+01-13-02：版本2.0.9
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - Ant创建失败，包括jar文件，已更正（缺陷487669）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了MysqlIO.readPacket()中额外的内存分配（缺陷488663）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -实现了DatabaseMetaData.getExported/ImportedKeys()和getCrossReference()。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -在更改实例和类共享引用的方法上，实现了完全同步，驱动程序现在是完全线程安全的（如果遇到问题，请告诉我）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -将DataSource实施移至org.gjt.mm.mysql.jdbc2.optional软件包，PooledConnectionDataSource和XADataSource的原始实施仍保留在原处（感谢Todd Wolff给出了PooledConnectionDataSource与IBM WebSphere 4一起的实施方案和测试结果）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了读取信息包时对关闭网络连接的检测（感谢Todd Lizambri）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了与转义处理其有关的错误（缺陷486265）。
+&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;-通过DatabaseMetaData，支持批更新（缺陷495101）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.setTimestamp()中偏差1小时的错误（缺陷491577）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -从驱动程序中删除了级连支持（“||”操作符），较早的VisualAge版本似乎是使用它的唯一软件，它与逻辑“||”操作符冲突。要想使用“||”操作符作为级联，需要用“--ansi”标志启动mysqld（缺陷491680）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement中的舍弃缺陷（488663）。
+&nbsp;
+11-25-01：版本2.0.8
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -现在支持批更新（感谢Daniel Rall的鼓励）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - XADataSource/ConnectionPoolDataSource代码（实验性）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - PreparedStatement.setAnyNumericType()现在能正确处理正指数（增加了“+”，因此MySQL能理解它）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - DatabaseMetaData.getPrimaryKeys()和getBestRowIdentifier()目前在识别主键方面更加可靠（匹配，不管主键在Key_type列中的大小写、或缩写／全名）。
+&nbsp;
+10-24-01：版本2.0.7
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - PreparedStatement.setCharacterStream()现已实现。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了处于高利用率模式（autoReconnect=true）下时的悬挂套接字问题，连接的finalizer将关闭任何在GC上悬挂的套接字。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了在较新版本的MySQL上ResultSetMetaData.getPrecision()返回的值比实际值小1的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果列值为NULL，ResultSet.getBlob()现在将返回NULL。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果useUnicode=true而且未设置characterEncoding，将从数据库读取字符集。（感谢Dmitry Vereshchagin）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -从数据库读取初始事务隔离级别（如果可用的话）（感谢Dmitry Vereshchagin）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了DatabaseMetaData.supportsTransactions()，supportsTransactionIsolationLevel()，getTypeInfo() SQL_DATETIME_SUB，以及不可读取的SQL_DATA_TYPE字段。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了用于生成SQL并回在某些查询中以语法错误结束的PreparedStatement。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSet.isAfterLast()总返回“假”的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.setTimestamp()中的时区问题（感谢Erik Olofsson）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -在URL或属性中传递了“captializeTypeNames=true”时，将类型名转换为大写（对于WebObjects，感谢Anjo Krank）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -可更新结果集现在能正确处理字段中的NULL值。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - PreparedStatement.setDouble()现在能使用双精度值（撤销了以前所作的截取更正）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果MySQL的版本高于或等于3.21.23，PreparedStatement.setBoolean()将使用1/0值。
+&nbsp;
+06-16-01：版本2.0.6
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement参数检查功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSet.java中区分大小写的列名。
+&nbsp;
+06-13-01：版本2.0.5
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了ResultSet.getBlob() ArrayIndex超出范围的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSetMetaData.getColumnTypeName关于TEXT/BLOB的问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了发送大BLOB查询时的ArrayIndexOutOfBounds问题（未设置最大信息包大小）。
+&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;-为Connection.setIsolationLevel()增加了ISOLATION级别支持。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了所有列均未设置时在PreparedStatement.executeUpdate()上的NPE问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了采用两位数字年份的TIMESTAMP的数据解析问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -为PreparedStatement.setObject()增加了Byte。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - ResultSet.getBoolean()现在能将“-1”识别为“真”。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - ResultSet具有+/-Inf/inf支持特性。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -即使并非所有列均已被设置（设为NULL），ResultSet.insertRow()现在也能工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - DataBaseMetaData.getCrossReference()不再使用ArrayIndexOOB。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -作用在结果集上的getObject()能正确执行TINYINT-&gt;Byte和SMALLINT-&gt;Short操作。
+&nbsp;
+12-03-00：版本2.0.3
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -为JDBC2实现了不带标度组分的getBigDecimal()。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了与可更新结果集有关的复合键问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了-/+INF对双精度的检测。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更快的ASCII字符串操作。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了MAX_ALLOWED_PACKET的不正确检测，因此，现在能发送大的Blob。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了java.sql.Blob实施代码中的“偏差1”错误。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了“ultraDevHack”URL参数，将其设置为“真”，可允许Macromedia UltraDev使用该驱动程序。
+&nbsp;
+04-06-00：版本2.0.1
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了RSMD.isWritable()返回错误值的问题。感谢Moritz Maass。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -整理了连接确定时的异常处理功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -使用getObject()，具有TEXT类型的列现在会作为字符串返回。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - DatabaseMetaData.getPrimaryKeys()现在能正确工作（写入到key_seq）。感谢Brian Slesinsky。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -按照JDBC规范，在PreparedStatements上，不再进行转义处理。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了很多JDBC-2.0遍历、定位错误，尤其是写入空结果集的问题。感谢Ron Smits、Nick Brook、Cessar Garcia和Carlos Martinez。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了使用多个主键时，与结果集中可更新性支持有关的一些问题。
+&nbsp;
+02-21-00：版本2.0pre5
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了不良的握手问题。
+&nbsp;
+01-10-00：版本2.0pre4
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了针对insertRow()的结果集，感谢Cesar Garcia。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对驱动程序进行了修改，使之能够通过加载JDBC-2.0类来识别JDBC-2.0，而不是依靠JDK版本号。感谢John Baker。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了结果集，以返回正确的行号。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - Statement.getUpdateCount()现在能返回匹配的行，而不是实际更新的行，它更像SQL-92。
+&nbsp;
+10-29-99
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了Statement/PreparedStatement.getMoreResults()缺陷。感谢Noel J. Bergman。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -为PreparedStatement.setObject()增加了Short类型。感谢Jeff Crowder。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -驱动程序现在能通过查询服务器自动配置最大/首选的信息包大小。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果服务器支持，Autoreconnect代码将使用更快的ping命令。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了从服务器读取信息包、以及为写入到服务器而分配信息包时与信息包大小有关的多种缺陷。
+&nbsp;
+08-17-99：版本2.0pre
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -目前是在JDK-1.2下编译的。通过核心类集合，驱动程序同时支持JDK-1.1和JDK-1.2。在运行时，通过判断你所使用的JVM版本，驱动程序将加载恰当的接口类。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了在首行中全为NULL的结果集。（由Tim Endres指出）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了结果集内SQLExceptions的列编号（感谢Blas Rodriguez Somoza）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -不再需要将数据库指定给连接。（感谢Christian Motschke）。
+&nbsp;
+07-04-99：版本1.2b
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更好的文档（不断改善），doc/mm.doc/book1.html。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对于列名模式，DBMD现在允许null（未在规范中定义），它将被更改为“%”。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - DBMD现在提供了针对getXXX()的正确类型／长度。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修改了ResultSet.getDate()、getTime()和getTimestamp()。（由Alan Wilken提供）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - EscapeProcessor现在能正确处理引号内的“\{ \}”和“{ or }”。（感谢Alik就如何修正它给出的观点）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对连接中的属性处理功能进行了修正。（由Juho Tikkala提供）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对于表中的NULL列，ResultSet.getObject()现在能返回NULL，而不是销毁。（感谢Ben Grosman）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对于MySQL不了解的类型，ResultSet.getObject()现在能返回字符串。（由Chris Perdue建议）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -删除了不需要的DataInput/Output流，对于每次IO操作，1／2的方法调用都是不需要的。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果未指定字符编码，使用默认的字符编码。这是对已损坏JVM的一种避规措施，这是因为，按照规范，所有的JVM都必须支持“ISO8859_1”，但并非如此。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了连接事宜，如果未明确设置字符编码，将使用平台的字符编码，而不是“ISO8859_1”。它修正了加载并不总存在的字符转换器类时存在的问题（JVM缺陷）。（感谢Fritz Elfert指出了该问题）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修改了MysqlIO，使之在可能的情况下再次使用信息包，而不是降低内存使用率。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了与引号内“{}”有关的转义处理器缺陷。
+&nbsp;
+04-14-99：版本1.2a
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了对非Javasoft JVM的字符集支持（感谢很多指出该问题的人员）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSet.getBoolean()，使之能够识别作为布尔标志的“y”和“n”，以及“1”和“0”。（感谢Tim Pizey）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSet.getTimestamp()，以提供更好的性能。（感谢Richard Swift）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了getByte()在处理数值类型方面的问题。（感谢Ray Bellis）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了DatabaseMetaData.getTypeInfo()在处理DATE类型时存在的问题。（感谢Paul Johnston）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了用于“fn”调用的EscapeProcessor。（感谢locomotive.org的Piyush Shah）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了EscapeProcessor，如果没有转义代码，不执行额外操作。（感谢Ryan Gustafson）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了驱动程序，使之能解析“jdbc:mysql://host:port”形式的URL（感谢Richard Lobb）。
+&nbsp;
+03-24-99：版本1.1i
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了关于PreparedStatements的Timestamps问题。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了RSMD和RS中的Null指针异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对于有效的类文件，与jikes一起进行了再编译（感谢ms!）。
+&nbsp;
+03-08-99：版本1.1h
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了转义处理器，以处理不匹配的“{”和“}”（感谢Craig Coles）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了转义处理器，以创建移植性更好的（在DATETIME和TIMESTAMP类型间）表达式，以便能与BETWEEN子句一起使用。（感谢Craig Longman。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - MysqlIO.quit()现在能关闭套接字连接。在此之前，多次连接失败后，某些操作系统将耗尽文件描述符。（感谢Michael Brinkman）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了Driver.getPropertyInfo中的NullPointerException（感谢Dave Potts）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了MysqlDefs，允许字字符串形式检索所有的*text字段。（感谢Chris at Leverage）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement中的setDouble，使之能用于处理大数字，防止将科学记数法发送到数据库。（感谢J.S. Ferguson）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了RSMD中的getScale()和getPrecision()。（由James Klicman贡献）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了字段为DECIMAL或NUMERIC时的getObject()（感谢Bert Hobbs）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -传递Null表名时，DBMD.getTables()出现严重故障。已更正（感谢Richard Lobb）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了在连接过程中对“client not authorized”（客户端未被授权）错误的检查。（感谢Hannes Wallnoefer）。
+&nbsp;
+02-19-99：版本1.1g
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -结果集行现在是字节数组。Blob和Unicode现在能双向工作。目前实施了useUnicode和编码选项。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了PreparedStatement，使用setXXXStream（不改变地发送）将二进制集合发送到MySQL服务器。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了getDriverPropertyInfo()。
+&nbsp;
+12-31-98：版本1.1f
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -将所有的结果集字段更改为字符串，这样，应能使Unicode工作，但你的JVM必须能够在字符集间进行转换。它还能使对服务器的数据读取更快，原因在于，现在不存在从StringBuffer到String（字符串）的转换。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更改了PreparedStatement.streamToString()，使之更有效（代码由Uwe Schaefer提供）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - URL解析功能更可靠（对于错误，抛出SQL异常，而不是NullPointerExceptions）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - PreparedStatement现在能通过setObject()将String转换为Time/Date值（代码由Robert Currey提供）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -在Buffer.readInt()中，IO进程不再被挂起，该缺陷是在1.1d中当将结果集更改为全字节数组时引入的。（由Samo Login指出）。
+&nbsp;
+11-03-98：版本1.1b
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了DatabaseMetaData，允许IBM VA和J-Builder同时工作。请告诉我它的工作机制。（感谢Jac Kersing）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -修正了ResultSet.getBoolean()在处理NULL字符串方面的问题（感谢Barry Lagerweij）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -开始代码整理，并进行了格式处理。开始将其分出为并行的JDBC-2.0源树。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -为MysqlIO和Buffer内的关键部分增加了“最终”限定符，允许编译器采用内联方法以提高速度。
+&nbsp;
+9-29-98
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -如果传递给PreparedStatement中setXXX()的对象引用是空的，将自动调用setNull()。（感谢Erik Ostrom给出的提议）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对于Types.OTHER对象和未知类型对象，PreparedStatement中的setObject()现在会尝试将对象的串行化表示写入到数据库。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - Util现在有了1个静态方法readObject()，结果集和列索引将以上述方式在此例示序列化的对象。
+&nbsp;
+9-02-98 – 版本1.1
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -消除了MysqlIO.nextRow()中的“丑陋缺陷”。更正了Buffer.isLastDataPacket()，而不是获取异常。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - Connection.getCatalog()和Connection.setCatalog()现在能够工作。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - Statement.setMaxRows()能够正常工作，也能使用属性maxRows进行设置。通过属性或URL参数，Statement.setMaxRows()能覆盖maxRows设置。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -提供了自动再连接功能。由于在每次查询前不得不Ping数据库，在默认情况下，它将被关闭。要想使用该功能，请在连接URL中传递“autoReconnect=true”。通过“maxReconnects=n”（默认为3）和“initialTimeout=n”（默认为2秒）参数，你也可以更改再连接尝试的次数和初始超时值。Timeout是超时的指数补偿类型。例如，如果初始超时设置为2秒，maxReconnects为3，那么再连接尝试之间的间隔分别是2秒，4秒和16秒。
+&nbsp;
+8-24-98：版本1.0
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了Buffer.java中Blob数据的处理功能。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了与尺寸过小的鉴定信息包有关的缺陷。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -JDBC驱动程序现在采用LPGL。
+&nbsp;
+8-14-98 -
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了 Buffer.readLenString()，使之能正确读取BLOB数据。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.stringToStream，使之能正确读取BLOB数据。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了PreparedStatement.setDate()，使之不增加1天。（感谢Vincent Partington在上述修正项方面的贡献）。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了URL参数解析功能（?user=...等等）。
+&nbsp;
+&nbsp;
+8-04-98：版本0.9d
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 重大新闻！ 新的软件包名。ICE工程公司的Tim Endres着手为GNU GPL的Java软件建立新的源树。他友好地将org.gjt.mm软件包目录提供给我，因此，现在驱动程序在org.gjt.mm.mysql软件包中。目前我是合法用户。期待Tim项目的更多信息。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -现在采用了动态确定大小的信息包，向数据库发送命令时，能够减少内存使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -对getTypeInfo()的参数等方面进行了小的修正。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - DatabaseMetaData现已完全实现。如果这些驱动程序能与各种IDE一起工作，请告知。我已听说它们正与Jbuilder一起使用。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -在软件包中增加了JavaDoc文档。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -软件包采用.zip或.tar.gz格式提供。
+&nbsp;
+7-28-98：版本0.9
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -实现了getTypeInfo()。根据JDBC规范，Connection.rollback()现在能抛出SQLException。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了PreparedStatement，它支持预处理语句的所有JDBC API方法，包括InputStreams。请检查该点，如有问题，请告知。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了ResultSet中的1个缺陷，该缺陷会破坏仅返回1行的某些查询。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 更正了DatabaseMetaData.getTables()、DatabaseMetaData.getColumns()和DatabaseMetaData.getCatalogs()中存在的缺陷。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -增加了语句的功能，允许executeUpdate()保存由AUTO_INCREMENT字段自动生成的ID值。一般而言，执行executeUpdate()后，将查找SQLWarnings以了解警告信息，如LAST_INSERTED_ID = &#39;some number&#39;，COMMAND = &#39;your SQL query&#39;。
+&nbsp;
+ 如果在表中正使用AUTO_INCREMENT字段，并在一条语句上执行了多个executeUpdate()，务必每次都执行clearWarnings()以节省内存。
+&nbsp;
+7-06-98：版本0.8
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -将MysqlIO和Buffer分离为单独类。对于这两个类中的某些字段，一些ClassLoader（类加载器）会给出IllegalAccess（非法访问）错误。现在，mm.mysql能够在小应用程序和所有类加载器中正常工作。
+&nbsp;
+ 感谢Joe Ennis <a  href="mailto:jce@mail.boone.com">jce@mail.boone.com</a>指出该问题，并与我一起进行了修正。
+&nbsp;
+7-01-98：版本0.7
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -更正了getColumns()中的DatabaseMetadata problems，并更正了字段构造函数内开关语句中存在的缺陷。
+&nbsp;
+ 感谢Costin Manolache <a  href="mailto:costin@tdiinc.com">costin@tdiinc.com</a>指出了它们。
+&nbsp;
+5-21-98：版本0.6
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -在MysqlIO.java和ResultSet.java中，结合Richard Swift <a  href="mailto:Richard.Swift@kanatek.ca">Richard.Swift@kanatek.ca</a>给出的有效变更内容。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; -现在，我们的驱动程序比GWE的驱动程序快15％。
+&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; - 开始着手处理DatabaseMetaData。
+&nbsp;
+ 实现了下述方法：
+&nbsp; * getTables()
+&nbsp; * getTableTypes()
+&nbsp; * getColumns
+&nbsp; * getCatalogs()</pre>
+    
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

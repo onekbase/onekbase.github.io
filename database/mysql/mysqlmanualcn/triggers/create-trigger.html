@@ -1,0 +1,315 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>21.1. CREATE TRIGGER语法</h1>
+
+        
+      
+    
+    <pre>CREATE TRIGGER <i>trigger_name</i> <i>trigger_time</i> <i>trigger_event</i>
+ &nbsp;&nbsp;&nbsp;ON <i>tbl_name</i> FOR EACH ROW <i>trigger_stmt</i></pre>
+    <p>触发程序是与表有关的命名数据库对象，当表上出现特定事件时，将激活该对象。</p>
+    <p>触发程序与命名为<i>tbl_name</i>的表相关。<i>tbl_name</i>必须引用永久性表。不能将触发程序与TEMPORARY表或视图关联起来。</p>
+    <p><i>trigger_time</i>是触发程序的动作时间。它可以是BEFORE或AFTER，以指明触发程序是在激活它的语句之前或之后触发。</p>
+    <p><i>trigger_event</i>指明了激活触发程序的语句的类型。<i>trigger_event</i>可以是下述值之一：</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      INSERT：将新行插入表时激活触发程序，例如，通过INSERT、LOAD 
+      DATA和REPLACE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      UPDATE：更改某一行时激活触发程序，例如，通过UPDATE语句。</p>
+    <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      DELETE：从表中删除某一行时激活触发程序，例如，通过DELETE和REPLACE语句。</p>
+    <p>请注意，<i>trigger_event</i>与以表操作方式激活触发程序的SQL语句并不很类似，这点很重要。例如，关于INSERT的BEFORE触发程序不仅能被INSERT语句激活，也能被LOAD 
+      DATA语句激活。</p>
+    <p>可能会造成混淆的例子之一是INSERT 
+      INTO .. ON DUPLICATE UPDATE ...语法：BEFORE 
+      INSERT触发程序对于每一行将激活，后跟AFTER 
+      INSERT触发程序，或BEFORE 
+      UPDATE和AFTER 
+      UPDATE触发程序，具体情况取决于行上是否有重复键。</p>
+    <p>对于具有相同触发程序动作时间和事件的给定表，不能有两个触发程序。例如，对于某一表，不能有两个BEFORE 
+      UPDATE触发程序。但可以有1个BEFORE 
+      UPDATE触发程序和1个BEFORE INSERT触发程序，或1个BEFORE 
+      UPDATE触发程序和1个AFTER UPDATE触发程序。</p>
+    <p><i>trigger_stmt</i>是当触发程序激活时执行的语句。如果你打算执行多个语句，可使用BEGIN 
+      ... END复合语句结构。这样，就能使用存储子程序中允许的相同语句。请参见<a href="" title="20.2.7. BEGIN ... END Compound Statement">20.2.7节，“BEGIN 
+      ... END复合语句”</a>。</p>
+    <p>在MySQL 5.1中，可以编写包含按名称对表进行直接引用的触发程序，如下例中所示的名为testref的触发程序：</p>
+    <pre>CREATE TABLE test1(a1 INT);
+CREATE TABLE test2(a2 INT);
+CREATE TABLE test3(a3 INT NOT NULL AUTO_INCREMENT PRIMARY KEY);
+CREATE TABLE test4(
+&nbsp; a4 INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+&nbsp;&nbsp;b4 INT DEFAULT 0
+);
+&nbsp;
+DELIMITER |
+&nbsp;
+CREATE TRIGGER testref BEFORE INSERT ON test1
+&nbsp; FOR EACH ROW BEGIN
+&nbsp;&nbsp;&nbsp; INSERT INTO test2 SET a2 = NEW.a1;
+&nbsp;&nbsp;&nbsp; DELETE FROM test3 WHERE a3 = NEW.a1;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;UPDATE test4 SET b4 = b4 + 1 WHERE a4 = NEW.a1;
+&nbsp; END
+|
+&nbsp;
+DELIMITER ;
+&nbsp;
+INSERT INTO test3 (a3) VALUES 
+&nbsp;&nbsp;(NULL), (NULL), (NULL), (NULL), (NULL), 
+&nbsp;&nbsp;(NULL), (NULL), (NULL), (NULL), (NULL);
+&nbsp;
+INSERT INTO test4 (a4) VALUES 
+&nbsp;&nbsp;(0), (0), (0), (0), (0), (0), (0), (0), (0), (0);</pre>
+    <p>如果将下述值插入表test1，如下所示：</p>
+    <pre>mysql&gt; INSERT INTO test1 VALUES 
+&nbsp;&nbsp;&nbsp;&nbsp;-&gt; (1), (3), (1), (7), (1), (8), (4), (4);
+Query OK, 8 rows affected (0.01 sec)
+Records: 8&nbsp; Duplicates: 0&nbsp; Warnings: 0</pre>
+    <p>那么4个表中的数据如下：</p>
+    <pre>mysql&gt; SELECT * FROM test1;
++------+
+| a1&nbsp;&nbsp; |
++------+
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 3 |
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 7 |
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 8 |
+|&nbsp;&nbsp;&nbsp; 4 |
+|&nbsp;&nbsp;&nbsp; 4 |
++------+
+8 rows in set (0.00 sec)
+&nbsp;
+mysql&gt; SELECT * FROM test2;
++------+
+| a2&nbsp;&nbsp; |
++------+
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 3 |
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 7 |
+|&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp;&nbsp;&nbsp; 8 |
+|&nbsp;&nbsp;&nbsp; 4 |
+|&nbsp;&nbsp;&nbsp; 4 |
++------+
+8 rows in set (0.00 sec)
+&nbsp;
+mysql&gt; SELECT * FROM test3;
++----+
+| a3 |
++----+
+|&nbsp; 2 |
+|&nbsp; 5 |
+|&nbsp; 6 |
+|&nbsp; 9 |
+| 10 |
++----+
+5 rows in set (0.00 sec)
+&nbsp;
+mysql&gt; SELECT * FROM test4;
++----+------+
+| a4 | b4&nbsp;&nbsp; |
++----+------+
+|&nbsp; 1 |&nbsp;&nbsp;&nbsp; 3 |
+|&nbsp; 2 |&nbsp;&nbsp;&nbsp; 0 |
+|&nbsp; 3 |&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp; 4 |&nbsp;&nbsp;&nbsp; 2 |
+|&nbsp; 5 |&nbsp;&nbsp;&nbsp; 0 |
+|&nbsp; 6 |&nbsp;&nbsp;&nbsp; 0 |
+|&nbsp; 7 |&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp; 8 |&nbsp;&nbsp;&nbsp; 1 |
+|&nbsp; 9 |&nbsp;&nbsp;&nbsp; 0 |
+| 10 |&nbsp;&nbsp;&nbsp; 0 |
++----+------+
+10 rows in set (0.00 sec)</pre>
+    <p>使用别名OLD和NEW，能够引用与触发程序相关的表中的列。OLD.<i>col_name</i>在更新或删除它之前，引用已有行中的1列。NEW.<i>col_name</i>在更新它之后引用将要插入的新行的1列或已有行的1列。</p>
+    <p>激活触发程序时，对于触发程序引用的所有OLD和NEW列，需要具有SELECT权限，对于作为SET赋值目标的所有NEW列，需要具有UPDATE权限。</p>
+    <p>注释：目前，触发程序不会被级联的
+      外键动作激活。该限制将会被尽早放宽。</p>
+    <p>CREATE TRIGGER语句需要SUPER权限。
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

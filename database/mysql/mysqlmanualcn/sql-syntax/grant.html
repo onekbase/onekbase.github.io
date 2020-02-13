@@ -1,0 +1,558 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.5.1.3. GRANT和REVOKE语法</h1>
+
+            
+          
+        
+        
+        <pre >GRANT <em >priv_type</em> [(<em >column_list</em>)] [, <em >priv_type</em> [(<em >column_list</em>)]] ...
+    ON [<em >object_type</em>] {<em >tbl_name</em> | * | *.* | <em >db_name</em>.*}
+    TO <em >user</em> [IDENTIFIED BY [PASSWORD] '<em >password</em>']
+        [, <em >user</em> [IDENTIFIED BY [PASSWORD] '<em >password</em>']] ...
+    [REQUIRE
+        NONE |
+        [{SSL| X509}]
+        [CIPHER '<em >cipher</em>' [AND]]
+        [ISSUER '<em >issuer</em>' [AND]]
+        [SUBJECT '<em >subject</em>']]
+    [WITH <em >with_option</em> [<em >with_option</em>] ...]
+
+<em >object_type</em> =
+    TABLE
+  | FUNCTION
+  | PROCEDURE
+
+<em >with_option</em> =
+    GRANT OPTION
+  | MAX_QUERIES_PER_HOUR <em >count</em>
+  | MAX_UPDATES_PER_HOUR <em >count</em>
+  | MAX_CONNECTIONS_PER_HOUR <em >count</em>
+  | MAX_USER_CONNECTIONS <em >count</em>
+
+REVOKE <em >priv_type</em> [(<em >column_list</em>)] [, <em >priv_type</em> [(<em >column_list</em>)]] ...
+    ON [<em >object_type</em>] {<em >tbl_name</em> | * | *.* | <em >db_name</em>.*}
+    FROM <em >user</em> [, <em >user</em>] ...
+
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM <em >user</em> [, <em >user</em>] ...
+</pre>
+        <p>GRANT和REVOKE语句允许系统管理员创建MySQL用户
+          账户，授予权限和撤销权限。</p>
+        <p>MySQL账户信息存储在mysql数据库的表中。在<a href="../database-administration/index.html">第5章：</a><a href="../database-administration/index.html" title="Chapter 5. Database Administration"><i>数据库管理</i></a>中对本数据库和访问控制系统进行了详尽的讨论。要了解更多详细信息，您应该查询此章。</p>
+        <p>如果授权表拥有含有mixed-case数据库或表名称的权限记录，并且lower_case_table_names系统变量已设置，则不能使用REVOKE撤销权限，必须直接操纵授权表。（当lower_case_table_names已设置时，GRANT将不会创建此类记录，但是此类记录可能已经在设置变量之前被创建了。）</p>
+        <p>授予的权限可以分为多个层级：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          全局层级</p>
+        <p>全局权限适用于一个给定服务器中的所有数据库。这些权限存储在mysql.user表中。GRANT 
+          ALL ON *.*和REVOKE 
+          ALL ON *.*只授予和撤销全局权限。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          数据库层级 </p>
+        <p>数据库权限适用于一个给定数据库中的所有目标。这些权限存储在mysql.db和mysql.host表中。GRANT 
+          ALL ON <i>db_name</i>.*和REVOKE 
+          ALL ON <i>db_name</i>.*只授予和撤销数据库权限。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          表层级</p>
+        <p>表权限适用于一个给定表中的所有列。这些权限存储在mysql.talbes_priv表中。GRANT 
+          ALL ON <i>db_name.tbl_name</i>和REVOKE 
+          ALL ON <i>db_name.tbl_name</i>只授予和撤销表权限。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          列层级</p>
+        <p>列权限适用于一个给定表中的单一列。这些权限存储在mysql.columns_priv表中。当使用REVOKE时，您必须指定与被授权列相同的列。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          子程序层级</p>
+        <p>CREATE ROUTINE, 
+          ALTER ROUTINE, EXECUTE和GRANT权限适用于已存储的子程序。这些权限可以被授予为全局层级和数据库层级。而且，除了CREATE 
+          ROUTINE外，这些权限可以被授予为子程序层级，并存储在mysql.procs_priv表中。</p>
+        <p>当后续目标是一个表、一个已存储的函数或一个已存储的过程时，<i>object_type</i>子句应被指定为TABLE、FUNCTION或PROCEDURE。当从旧版本的MySQL升级时，要使用本子句，您必须升级您的授权表。请参见<a href="grant.html" title="2.10.2. Upgrading the Grant Tables">2.10.2节，“升级授权表”</a>。</p>
+        <p>要使用GRANT或REVOKE，您必须拥有GRANT 
+          OPTION权限，并且您必须用于您正在授予或撤销的权限。</p>
+        <p>要撤销所有权限，需使用以下语法。此语法用于取消对于已命名的用户的所有全局层级、数据库层级、表层级和列层级的权限。</p>
+        <pre>REVOKE ALL PRIVILEGES, GRANT OPTION FROM <i>user</i> [, <i>user</i>] ...</pre>
+        <p>要使用本REVOKE语法，您必须拥有mysql数据库的全局CREATE 
+          USER权限或UPDATE权限。</p>
+        <p>对于GRANT和REVOKE语句，priv_type可以被指定为以下任何一种：</p>
+        <table border="1" cellpadding="0" id="table7">
+          <tr>
+            <td><p> 权限</td>
+            <td><p> 意义</td>
+          </tr>
+          <tr>
+            <td><p> ALL [PRIVILEGES]</td>
+            <td><p>设置除GRANT 
+                OPTION之外的所有简单权限</td>
+          </tr>
+          <tr>
+            <td><p> ALTER</td>
+            <td><p>允许使用ALTER 
+                TABLE</td>
+          </tr>
+          <tr>
+            <td><p> ALTER ROUTINE</td>
+            <td><p>更改或取消已存储的子程序</td>
+          </tr>
+          <tr>
+            <td><p> CREATE</td>
+            <td><p>允许使用CREATE 
+                TABLE</td>
+          </tr>
+          <tr>
+            <td><p> CREATE ROUTINE</td>
+            <td><p>创建已存储的子程序</td>
+          </tr>
+          <tr>
+            <td><p> CREATE TEMPORARY TABLES</td>
+            <td><p>允许使用CREATE 
+                TEMPORARY TABLE</td>
+          </tr>
+          <tr>
+            <td><p> CREATE USER</td>
+            <td><p>允许使用CREATE USER, 
+                DROP USER, RENAME USER和REVOKE 
+                ALL PRIVILEGES。</td>
+          </tr>
+          <tr>
+            <td><p> CREATE VIEW</td>
+            <td><p>允许使用CREATE 
+                VIEW</td>
+          </tr>
+          <tr>
+            <td><p> DELETE</td>
+            <td><p>允许使用DELETE</td>
+          </tr>
+          <tr>
+            <td><p> DROP</td>
+            <td><p>允许使用DROP 
+                TABLE</td>
+          </tr>
+          <tr>
+            <td><p> EXECUTE</td>
+            <td><p>允许用户运行已存储的子程序</td>
+          </tr>
+          <tr>
+            <td><p> FILE</td>
+            <td><p>允许使用SELECT...INTO 
+                OUTFILE和LOAD DATA INFILE</td>
+          </tr>
+          <tr>
+            <td><p> INDEX</td>
+            <td><p>允许使用CREATE 
+                INDEX和DROP INDEX</td>
+          </tr>
+          <tr>
+            <td><p> INSERT</td>
+            <td><p>允许使用INSERT</td>
+          </tr>
+          <tr>
+            <td><p> LOCK TABLES</td>
+            <td><p>允许对您拥有SELECT权限的表使用LOCK 
+                TABLES</td>
+          </tr>
+          <tr>
+            <td><p> PROCESS</td>
+            <td><p>允许使用SHOW 
+                FULL PROCESSLIST</td>
+          </tr>
+          <tr>
+            <td><p> REFERENCES</td>
+            <td><p>未被实施</td>
+          </tr>
+          <tr>
+            <td><p> RELOAD</td>
+            <td><p>允许使用FLUSH</td>
+          </tr>
+          <tr>
+            <td><p> REPLICATION CLIENT</td>
+            <td><p>允许用户询问从属服务器或主服务器的地址</td>
+          </tr>
+          <tr>
+            <td><p> REPLICATION SLAVE</td>
+            <td><p>用于复制型从属服务器（从主服务器中读取二进制日志事件）</td>
+          </tr>
+          <tr>
+            <td><p> SELECT</td>
+            <td><p>允许使用SELECT</td>
+          </tr>
+          <tr>
+            <td><p> SHOW DATABASES</td>
+            <td><p>SHOW DATABASES显示所有数据库</td>
+          </tr>
+          <tr>
+            <td><p> SHOW VIEW</td>
+            <td><p>允许使用SHOW 
+                CREATE VIEW</td>
+          </tr>
+          <tr>
+            <td><p> SHUTDOWN</td>
+            <td><p>允许使用mysqladmin 
+                shutdown</td>
+          </tr>
+          <tr>
+            <td><p> SUPER</td>
+            <td><p>允许使用CHANGE 
+                MASTER, KILL, PURGE MASTER LOGS和SET 
+                GLOBAL语句，mysqladmin 
+                debug命令；允许您连接（一次），即使已达到max_connections。</td>
+          </tr>
+          <tr>
+            <td><p> UPDATE</td>
+            <td><p>允许使用UPDATE</td>
+          </tr>
+          <tr>
+            <td><p> USAGE</td>
+            <td><p>“无权限”的同义词</td>
+          </tr>
+          <tr>
+            <td><p> GRANT OPTION</td>
+            <td><p>允许授予权限</td>
+          </tr>
+        </table>
+        <p>当从旧版本的MySQL升级时，要使用EXECUTE, 
+          CREATE VIEW, SHOW VIEW, CREATE USER, CREATE ROUTINE和ALTER 
+          ROUTINE权限，您必须首先升级您的授权表。请参见<a href="grant.html" title="2.10.2. Upgrading the Grant Tables">2.10.2节，“升级授权表”</a>。</p>
+        <p>REFERENCES权限目前未被使用。</p>
+        <p>当您想要创建一个没有权限的用户时，可以指定USAGE。</p>
+        <p>使用SHOW GRANTS来确定帐户拥有什么权限。请参见<a href="show-grants.html" title="13.5.4.10. SHOW GRANTS Syntax">13.5.4.10节，“SHOW 
+          GRANTS语法”</a>。</p>
+        <p>您可以通过使用ON *.*语法赋予全局权限，或通过使用ON <i>db_name</i>.*语法赋予数据库层级权限。如果您指定了ON 
+          *并且您已经选择了一个默认数据库，则权限被赋予到这个数据库中。（警告：如果您指定了ON 
+          *同时您没有选择一个默认数据库，则权限是全局的。）</p>
+        <p>FILE, PROCESS, RELOAD, REPLICATION CLIENT, 
+          REPLICATION SLAVE, SHOW DATABASES, SHUTDOWN和SUPER权限是管理性权限，只能进行全局授权（使用ON 
+          *.*语法）。</p>
+        <p>其它权限可以被全局授权，或被赋予为其它层级。</p>
+        <p>对于一个表，您可以指定的priv_type值只能是SELECT, 
+          INSERT, UPDATE, DELETE, CREATE, DROP, GRANT OPTION, INDEX和ALTER。</p>
+        <p>对于一个列（也就是，当您使用一个column_list子句时），您可以指定的priv_type值只能是SELECT, 
+          INSERT和UPDATE。</p>
+        <p>在子程序层级，您可以指定的priv_type值只能是ALTER 
+          ROUTINE, EXECUTE和GRANT OPTION。CREATE 
+          ROUTINE不是一个子程序层级的权限，因为您必须拥有此权限，才能创建一个子程序。</p>
+        <p>对于全局、数据库、表和子程序层级，GRANT ALL只能赋予在您正在授权的层级中存在的权限。例如，如果您使用GRANT 
+          ALL ON <i>db_name</i>.*，这是一个数据库层级语句，因此不会授予全局权限，如FILE等。</p>
+        <p>MySQL允许您对不存在的数据库目标授予权限。在此情况下，将被授予的权限必须包括CREATE权限。这个性质是有意设计的，目的是允许数据库管理员为将在此后被创建的数据库目标预备用户
+          账户和权限。</p>
+        <p>要点：当您取消一个表或数据库时，MySQL不会自动撤销任何权限。但是，如果您取消一个子程序，则被赋予该子程序的所有子程序层级的权限都被撤销。</p>
+        <p>注意：GRANT语句用于在全局层级或数据库层级赋予权限。当在GRANT语句中指定数据库名称时，允许使用‘_’和‘%’通配符。这意味着，如果您想要使用‘_’字符作为一个数据库名称的一部分，您应该在GRANT语句中指定它为‘\_’，以防止用户可以访问其它符合此通配符格式的数据库；例如，GRANT 
+          ... ON `foo\_bar`.* TO ...。</p>
+        <p>为了接纳对来自任意主机的用户授权的权利，MySQL支持以<i>user_name</i>@<i>host_name</i>的形式指定user值。如果一个user_name或host_name与一个不加引号的标识符一样是合法的，那么您不需要对它加引号。不过，要指定一个包含特殊字符（如‘-’）的user_name字符串，或一个包含特殊字符或通配字符（如‘%’），则引号是必要的；例如，&#39;test-user&#39;@&#39;test-hostname&#39;。分别对username和hostname加引号。</p>
+        <p>您可以在hostname中指定通配符。例如<i>user_name</i>@&#39;%.loc.gov&#39;适用于在loc.gov域中的任何主机的user_name。同时<i>user_name</i>@&#39;144.155.166.%&#39;适用于144.155.166 
+          C级子网中的任何主机的user_name。</p>
+        <p>简单形式user_name是<i>user_name</i>@&#39;%&#39;的同义词。</p>
+        <p>MySQL不支持usernames中的通配符。通过把带有User=&#39;&#39;的登录项插入到mysql.user表中，或通过使用GRANT语句创建一个带有空名称的用户，可以定义匿名用户：</p>
+        <pre>mysql&gt; GRANT ALL ON test.* TO &#39;&#39;@&#39;localhost&#39; ...</pre>
+        <p>当把带引号的值是，需使用反勾号(‘`’)为数据库、表、列和子程序名称加引号。使用单引号(‘&#39;’)为hostnames、usernames和
+          密码加引号。</p>
+        <p>警告：如果您允许匿名用户连接到MySQL服务器，则您应该同时向所有本地用户授予<i>user_name</i>@localhost权限。否则，当有名称的用户试图从本地机器登录MySQL服务器时，mysql.user表中的用于localhost的匿名用户帐户会被使用。</p>
+        <p>您可以通过执行以下查询来确定是否这适合于您。以下查询列举了所有匿名用户：</p>
+        <pre>mysql&gt; SELECT Host, User FROM mysql.user WHERE User=&#39;&#39;;</pre>
+        <p>如果您想要删除本地匿名用户账户，以避免出现刚才谈到的问题，则需使用以下语句：</p>
+        <pre>mysql&gt; DELETE FROM mysql.user WHERE Host=&#39;localhost&#39; AND User=&#39;&#39;;
+mysql&gt; FLUSH PRIVILEGES;</pre>
+        <p>GRANT支持最长为60个字符的hostnames。数据库、表、列和子程序名称最长可为64个字符。Usernames最长可为16个字符。
+          注释：不能通过更改mysql.user表来改变usernames的允许长度。如果试图这么做，会导致出现不可预见的问题，可能会造成用户无法登录MySQL服务器。除了采用由MySQL公司提供的用于升级MySQL服务器的mysql_fix_privilege_tables原稿之外，请您不要以任何方式变更授权表。</p>
+        <p>对于表或列的权限是作为各个权限层级的逻辑OR权限被附加形成的。例如，如果mysql.user表指定一个用户拥有全局SELECT权限，则该权限不能被数据库、表或列层级的登录项定义。</p>
+        <p>可以按下列方法计算列权限：</p>
+        <pre>global privileges
+OR (database privileges AND host privileges)
+OR table privileges
+OR column privileges</pre>
+        <p>在多数情况下，您只在一个权限层级下向用户授予权利，所以寿命通常不是那么复杂。有关权限检查规程的细节，请参见<a href="" title="5.7. The MySQL Access Privilege System">5.7节，“MySQL访问权限系统”</a>。</p>
+        <p>如果您对一个在mysql.user表中不存在的username/hostname组合授予权限，则增加一个登录项并保持在此处，直到使用DELETE语句删除为止。换句话说，GRANT可以创建用户表登录项，但是REVOKE不会取消它们；您必须使用DROP 
+          USER或DELETE明确地操作。</p>
+        <p>如果创建了一个新的用户，或者如果您拥有全局授权权限，则用户密码被设置为由IDENTIFIED 
+          BY子句指定的密码（如果给定了一个）。如果用户已拥有了一个密码，则此密码被新密码替代。</p>
+        <p>警告：如果您创建了一个新用户，但是不指定IDENTIFIED BY子句，则用户没有
+          密码。这是很不安全的。不过，您可以启用NO_AUTO_CREATE_USER 
+          SQL模式，来防止GRANT创建一个新用户（否则GRANT会这么做），除非给定了IDENTIFIED 
+          BY来为新用户提供一个密码。</p>
+        <p>使用SET PASSWORD语句也可以设置密码。请参见<a href="set-password.html" title="13.5.1.5. SET PASSWORD Syntax">13.5.1.5节，“SET 
+          PASSWORD语法”</a>。</p>
+        <p>在IDENTIFIED BY子句中，密码应被作为文字密码只被给定。没有必要使用PASSWORD()函数，因为该函数用于SET 
+          PASSWORD语句。例如：</p>
+        <pre>GRANT ... IDENTIFIED BY &#39;mypass&#39;;</pre>
+        <p>如果您不想以明白的文字发送密码，并且您知道PASSWORD()返回给密码的混编值，则您可以指定混编值，前面加入关键词PASSWORD：</p>
+        <pre>GRANT ...
+IDENTIFIED BY PASSWORD &#39;*6C8989366EAF75BB670AD8EA7A7FC1176A95CEF4&#39;;</pre>
+        <p>在一个C程序中，您可以通过使用make_scrambled_password() 
+          C API函数得到混编值。</p>
+        <p>如果您为一个数据库授予权限，则在mysql.db表中，会根据需要创建登录项。如果使用REVOKE删除了所有的数据库权限，则本登录项被删除。</p>
+        <p>如果一个用户不拥有表权限，则当用户申请表清单时（例如，使用SHOW TABLES语句），表名称不显示。</p>
+        <p>SHOW DATABASES权限允许账户通过发布SHOW 
+          DATABASE语句来观看数据名称。不拥有此权限的账户只能看到他们拥有部分权限的数据库，并且如果使用--skip-show-database选项启动服务器，则根本不能使用本语句。</p>
+        <p>WITH GRANT OPTION子句给予用户能力，可以在指定的权限层级，向其它用户给定其拥有的任何权限。您应该留心您给予了谁GRANT 
+          OPTION权限，因为拥有不同权限的两个用户可以联合使用权限！</p>
+        <p>您不能向其它用户授予您自己没有的权限；GRANT OPTION权限只允许您赋予您自己拥有的权限。</p>
+        <p>要注意，当您在某个特定权限层级向一个用户授予GRANT OPTION权限时，用户拥有的该层级的任何权限（或未来将被给定的权限）也可以由该用户授予。假设您向一个用户赋予了数据库INSERT权限。如果您然后赋予数据库SELECT权限，并指定了WITH 
+          GRANT OPTION，则该用户不仅可以向其它用户给予SELECT权限，还可以给予INSERT。如果您然后向用户授予数据库UPDATE权限，则用户可以授予INSERT, 
+          SELECT和UPDATE。</p>
+        <p>您不应该向一个常规用户授予ALTER权限。如果您这么做，则该用户可以尝试通过对表重新命名来破坏授权系统！</p>
+        <p>The 
+          MAX_QUERIES_PER_HOUR <i>count</i>,
+          MAX_UPDATES_PER_HOUR <i>count</i>, 
+          and MAX_CONNECTIONS_PER_HOUR <i> count</i> options limit the number of queries, updates, 
+          and logins a user can perform during any given one-hour period. 
+          If <i>count</i> is
+          0 (the default), this means 
+          that there is no limitation for that user.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          MAX_QUERIES_PER_HOUR <i>count</i>,
+          MAX_UPDATES_PER_HOUR <i>count</i>和MAX_CONNECTIONS_PER_HOUR <i>count</i>选项限制了在任何给定的一小时期间，用户可以执行的查询、更新和登录的数目。如果count是0（默认值），这意味着，对该用户没有限制。</p>
+        <p> MAX_USER_CONNECTIONS <i>count</i>选项限制了账户可以同时进行的连接的最大数目。如果count是0（默认值），则max_user_connections系统可以决定该
+          账户同时连接的数目。</p>
+        <p>注释：要对一个原有的用户指定任何这类资源限制型选项，同时又不影响原有的权限，需使用GRANT 
+          USAGE ON *.* ... WITH MAX_...。</p>
+        <p>见<a href="" title="5.8.4. Limiting Account Resources">5.8.4节，“限制账户资源”</a>。</p>
+        <p>除了根据username和密码进行常规鉴定外，MySQL还可以检查X509证明属性。要为MySQL账户指定与SSL有关的选项，需使用GRANT语句的REQUIRE子句。（要了解有关在MySQL中使用SSL的背景信息，请参见<a href="" title="5.8.7. Using Secure Connections">5.8.7节，“使用安全连接”</a>。）</p>
+        <p>对于一个给定的账户，有多种可能性可以限制连接类型：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          如果账户没有SSL或X509要求，并且如果username和
+          密码是有效的，则允许不加密连接。但是，如果客户端有正确的证明和关键文件，则根据客户端的选择，也可以使用加密连接。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          REQUIRE SSL选项用于告知服务器，对于该账户只允许SSL加密连接。注意，如果有允许任何非SSL连接的访问控制记录，则本选项可以被忽略。</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; IDENTIFIED BY &#39;goodsecret&#39; REQUIRE SSL;</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          REQUIRE X509意味着客户端必须拥有一个有效证明，除非不需要确切的证明、发布者和主题。唯一的要求是，应可以使用CA证明其中之一来验证签名。</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; IDENTIFIED BY &#39;goodsecret&#39; REQUIRE X509;</pre>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          REQUIRE ISSUER &#39;<i>issuer</i>&#39;用于对连接尝试进行限定，客户端必须出示一个由CA’issuer’发布的有效的X509证明。如果客户端出示的证明是有效的，但是有一个不同的发布者，则服务器会拒绝连接。使用X509证明就意味着要加密，所以在这种情况下，SSL选项是不必要的。</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; IDENTIFIED BY &#39;goodsecret&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; REQUIRE ISSUER &#39;/C=FI/ST=Some-State/L=Helsinki/
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O=MySQL Finland AB/CN=Tonu Samuel/Email=tonu@example.com&#39;;</pre>
+        <p>注意，ISSUER值应被作为一个单一字符串输入。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          REQUIRE SUBJECT &#39;<i>subject</i>&#39;用于对连接尝试进行限定，客户端必须出示一个包含主题subject的有效的X509证明。如果客户端出示的证明是有效的，但是有一个不同的主题，则服务器会拒绝连接。</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; IDENTIFIED BY &#39;goodsecret&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; REQUIRE SUBJECT &#39;/C=EE/ST=Some-State/L=Tallinn/
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O=MySQL demo client certificate/
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CN=Tonu Samuel/Email=tonu@example.com&#39;;</pre>
+        <p>注意，SUBJECT值应被作为一个单一字符串输入。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          需要REQUIRE 
+          CIPHER &#39;<i>cipher</i>&#39;来确认使用了密码和足够长度的关键字。如果使用了采用短型加密关键字的旧算法，SSL本身会比较脆弱。使用本选项，您可以要求使用特定的密码方法来许可一个连接。</p>
+        <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; IDENTIFIED BY &#39;goodsecret&#39;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt; REQUIRE CIPHER &#39;EDH-RSA-DES-CBC3-SHA&#39;;</pre>
+        <p>SUBJECT, ISSUER和CIPHER选项可以在REQUIRE子句中结合，如下：</p>
+        <pre>mysql&gt; GRANT ALL PRIVILEGES ON test.* TO &#39;root&#39;@&#39;localhost&#39;
+&nbsp;&nbsp;&nbsp; -&gt; IDENTIFIED BY &#39;goodsecret&#39;
+&nbsp;&nbsp;&nbsp; -&gt; REQUIRE SUBJECT &#39;/C=EE/ST=Some-State/L=Tallinn/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O=MySQL demo client certificate/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CN=Tonu Samuel/Email=tonu@example.com&#39;
+&nbsp;&nbsp;&nbsp; -&gt; AND ISSUER &#39;/C=FI/ST=Some-State/L=Helsinki/
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O=MySQL Finland AB/CN=Tonu Samuel/Email=tonu@example.com&#39;
+&nbsp;&nbsp;&nbsp; -&gt; AND CIPHER &#39;EDH-RSA-DES-CBC3-SHA&#39;;</pre>
+        <p>注意，SUBJECT和ISSUER值各自应被作为一个单一字符串输入。</p>
+        <p>在REQUIRE各选项之间，AND关键词是自选的。</p>
+        <p>选项的顺序无所谓，但是选项不能被指定两次。</p>
+        <p>当mysqld启动后，所有的权限被读入存储器中。要了解详细说明，请参见<a href="" title="5.7.7. When Privilege Changes Take Effect">5.7.7节，“权限更改何时生效”</a>。</p>
+        <p>注意，如果您正在使用表权限或列权限，即使只对一个用户使用，服务器也会对所有用户检查表权限和列权限，这会略微降低MySQL的速度。与此类似，如果您对某些用户限制查询、更新或连接的数目，则服务器必须监测这些值。</p>
+        <p>标准SQL版本和MySQL版本的GRANT之间的最大区别是：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在MySQL中，权限与hostname和username的组合有关，与 
+          单一的username无关。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          标准SQL不拥有全局层级或数据库层级权限，也不支持MySQL支持的所有权限类型。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          MySQL不支持标准SQL 
+          TRIGGER或UNDER权限。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          标准SQL权限以一种分等级的方式进行组织。如果您取消一个用户，则用户被授予的所有权限都被撤销。在MySQL中，如果您使用DROP 
+          USER，也会如此。请参见<a href="drop-user.html" title="13.5.1.2. DROP USER Syntax">13.5.1.2节，“DROP 
+          USER语法”</a>。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在标准SQL中，当您取消一个表时，对一个表的所有权限会被撤销。在标准SQL中，当您撤销一个权限时，根据该权限被授予的所有权限也会被撤销。在MySQL中，只有使用明确的REVOKE语句，或通过操作存储在MySQL授权表中的值，才能取消权限。</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          在MySQL中，可以只对一个表中的部分列拥有INSERT权限。在此情况下，如果您忽略您不拥有INSERT权限的那些列，，您仍然可以对表执行INSERT语句。如果没有启用严格的SQL模式，则被忽略的列被设置为各自隐含的默认值。在严格模式下，如果某个被忽略的列没有默认值，则该语句被拒绝。<a href="create-table.html" title="5.3.2. The Server SQL Mode">5.3.2节，“SQL服务器模式”</a>对严格模式进行了讨论。<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+          TABLE语法”</a>对隐含默认值进行了讨论。</p>
+        <p>您不拥有INSERT权限的列被设置为各自的默认值。标准SQL要求您拥有所有列的INSERT权限。</p>
+        <p>在MySQL中，如果您只拥有一个表中的部分列的INSERT权限，同时，如果您从INSERT语句中忽略您不拥有权限的列，则您仍然可以对表执行INSERT语句；那些列将被设置为各自的默认值。在严格模式下（即当sql_mode=&#39;traditional&#39;时，如果某些被忽略的列没有默认值，则INSERT语句将被拒绝。
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

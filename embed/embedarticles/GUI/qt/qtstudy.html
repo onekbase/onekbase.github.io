@@ -1,0 +1,219 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+    <h1>Qt的学习心得——连载</h1>
+  <p><strong>站长原创，版权所有<a href="http://www.iteedu.com/index.html">ITEEDU</a>，2011-04-06</strong></p>
+  <blockquote>
+    <p>花了1~2个月的时间在linux下边学习Qt ，从头到尾系统地学习了一下子，感觉Qt真是个好东东呢…… </p>
+<p>原来仅仅是做界面的，后来添加了好多和界面无关的东西：QXml、QNetwork、QSql等模块，而且已经将界面部分独立起来了。成了C++的一个跨平台的应用库，功能越来越强大。</p>
+    <p>如果在Linux下感觉不太熟悉，转移到Windows下边，其环境也是没得说的。相当好使了！以前还在犹豫是学习GTK呢，还是学习Qt,现在看来那些犹豫就是多余的，学习Qt挺好的，资料多，做的人多，工具也比较全。</p>
+    <p>有句话叫做：“大家做，才是真的做！大家学才是真的学！人多力量大”，比较有前途。呵呵</p>
+    <p>目前，我已经转移到Windows环境下边，进一步学习Qt，搭建了环境，并找了一些资料系统地了解了一下子Windows下边Qt开发的过程，以及Qt creator工具的使用。</p>
+    <p>下边先引导大家了解一下Qt的发展历史：</p>
+    <p>Qt仅仅一套就代码可以跨越Linux、Win32、MacOSX和各种Unix平台，几乎涵盖了所有主流的操作系统。而且还提供了构建（qmake）、可视化设计（uic和qdesigner）、国际化(linguist）、文档系统（assistant）等一系列非常好用的工具。尤其是文档系统，绝对可以称得上是出色。<br />
+      <br />
+      然而，在学习过程中，我遇到的一个困扰就是Qt家族复杂的版本（对于初次接触的人来说，甚至可能有点混乱）。到Trolltech的ftp上看看，有一大堆由这些单词的不同组合命名的包：qt、qtopia、win、x11、   mac、free、opensource、commerical、embedded……，让人无所适从，现在总结如下。</p>
+    <h2> 版本详述</h2>
+    <h3> Qt</h3>
+    <p> Qt是   Trolltech的最早也是最有名的产品，它最初是作为一个跨平台(Win32、Mac、Unix）的C++GUI库开发的，但随着它的发展，其中增加了一系列与GUI无关的库，如Xml、Socket、Thread等等，现在Qt已经成为了一个通用的C++跨平台类库。到了4.0版，更是将GUI部分从核心库分离出来，以利于开发无GUI的服务程序。<br />
+      <br />
+      Qt的版本号分为三部分，例如4.1.2。大版本号之间会有很大的不同，通常类库的结构会进行很大的调整，因此在大版本号发生变化时，新的Qt库无法与原来的程序保持源码级兼容。中间的版本变化通常会引入新的类库和组件，但现有类库的结构一般不会改变。小版本号的变化通常是错误修正，一般会保证二进制兼容。<br />
+      <br />
+      Qt的授权是分为两条线，商业版和开源版。如果使用商业版的Qt，那么开发出的程序可以是私有的和商业的；如果使用的是开源版的Qt，由于其使用的是GPL协议（不是LGPL），那么可发出的程序也必须是GPL的。<br />
+      <br />
+      Qt   的版本是按照不同的图形系统来划分的，目前分为四个版本：Win32版，适用于Windows平台；X11版，适合于使用了X系统的各种Linux和   Unix平台；Mac版，适合与苹果MacOSX；embedded版，适合于具有帧缓冲（frame   buffer）的Linux平台。</p>
+    <h3> Qt-embedded和Qtopia</h3>
+    <p> Qt   在刚出现的时候，对于Linux和Unix系统，只有构建于Xlib之上的X11版。但随着Linux操作系统在嵌入式领域的应用日渐广泛，Qt推出了嵌入式的版本Qt-embedded（Qte）。由于嵌入式受限的硬件环境往往难以运行庞大的X服务器，Qt的嵌入式版跳过了Xlib和XServer直接操作帧缓冲，可以在速度和体积上有很大的提高。<br />
+      <br />
+      Qtopia最初是sourceforge.net上的一个开源项目，全称是Qt   Palmtop Environment，是构建于Qte之上一个类似桌面系统的应用环境，包括了PDA和手机等掌上系统常见的功能如电话簿、日程表等。现在Qtopia   已经成为了Trolltech的又一个主打产品，为基于Linux操作系统的PDA和手机提供了一个完整的图形环境。<br />
+      <br />
+      值得特别注意的是   Qte和Qtopia之间的关系。在版本4之前，Qte和Qtopia是不同的两套程序，Qte是基础类库，Qtopia是构建于Qte之上的一系列应用程序。但从版本4开始，Trolltech将Qte并入了Qtopia，并推出了新的Qtopia4。在该版中，原来的Qte被称为Qtopia   Core，作为嵌入式版本的核心，既可以与Qtopia配合，也可以独立使用。原来的Qtopia则被分成几层，核心的应用框架和插件系统被称为 Qtopia   Platform，上层的应用程序则按照不同的目标用户分为不同的包，如Qtopai PDA，Qtopia   Phone。<br />
+      <br />
+      还有一个需要注意的就是Qtopia没有出过3.x版，直接从2.20版跳到了4.x版，我想这主要是为了整合Qte，并与Qt的版本保持同步。<br />
+    </p>
+    <h3>Qt版本问题</h3>
+    <p>大家都觉着Qt的版本问题很乱，其实在了解Qt的时候不要明白它的每一版本，我们只要在开发的时候选择自己需要的就行。<br />
+      大的方向：开源的 or 商业版的。</p>
+    <p>中的方向：linux or windows or其他；还有32位的，or 64位的。</p>
+    <p>小的方向：最新的版本。</p>
+    <p>目前最新的版本：Qt库为4.7.2。</p>
+    <p>安装了Qt库之后，需要安装开发工具，是Qt creator or eclipse or Qdevelop or kdevelop等，再根据个人爱好。如果不知道就，我个人建议选择Qt creator 和eclipse。</p>
+    <p>如果选择了creator，目前最新版本是2.2的，做的挺好的。</p>
+    <p>Qt 在windows的开发环境的搭建过程</p>
+    <p>首先到Qt的官方网站上http://developer.qt.nokia.com/resources下载Qt库和Qt creator工具(下载.exe的)。</p>
+    <p>安装Qt库，安装完毕后，里边自带的有Assistant、Designer、Qt 4.7.2 Command Prompt、Qt 4.7.2 (Build Debug Libraries)。</p>
+    <p>设置Qt库路径，在“我的电脑”环境变量中设置PATH，其后边添加;C:\Qt\4.7.2\bin。</p>
+    <p>在安装Qt creator,按照步骤点击即可。</p>
+    <p>打开Qt creator,在“工具”-&gt;&quot;选项&quot;中的Qt中自动检测的Qt库路径中单击，在下边设置在安装Qt时的MinGw的路径：C:\Qt\qtcreator-2.1.0\mingw。</p>
+    <p>如果你的电脑中没有安装其他g++ 编译器就没问题了，否则可能在编译Qt应用程序时会出现问题。我以前安装了Dev-C++，就出现了错误。</p>
+    <p>如果想学习更多的有关qt creator开发的基础知识，请见Qt creator-win32 入门。</p>
+  </blockquote>
+<p>&nbsp;</p>
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

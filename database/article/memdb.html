@@ -1,0 +1,311 @@
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end -->
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><h1>主流内存数据库介绍</h1>
+<p><strong>什么是内存数据库</strong> </p>
+<p> 传统的数据库管理系统把所有数据都放在磁盘上进行管理，所以称做磁盘数据库（DRDB:Disk-Resident Database）。磁盘数据库需要频繁地访问磁盘来进行数据的操作，由于对磁盘读写数据的操作一方面要进行磁头的机械移动，另一方面受到系统调用（通常通过CPU中断完成，受到CPU时钟周期的制约）时间的影响，当数据量很大，操作频繁且复杂时，就会暴露出很多问题。 </p>
+<p> 近年来，内存容量不断提高，价格不断下跌，操作系统已经可以支持更大的地址空间（计算机进入了64位时代），同时对数据库系统实时响应能力要求日益提高，充分利用内存技术提升数据库性能成为一个热点。 </p>
+<p> 在数据库技术中，目前主要有两种方法来使用大量的内存。一种是在传统的数据库中，增大缓冲池，将一个事务所涉及的数据都放在缓冲池中，组织成相应的数据结构来进行查询和更新处理，也就是常说的共享内存技术，这种方法优化的主要目标是最小化磁盘访问。另一种就是内存数据库(MMDB:Main Memory Database，也叫主存数据库)技术，就是干脆重新设计一种数据库管理系统，对查询处理、并发控制与恢复的算法和数据结构进行重新设计，以更有效地使用CPU周期和内存，这种技术近乎把整个数据库放进内存中，因而会产生一些根本性的变化。  </p>
+<p>内存数据库系统带来的优越性能不仅仅在于对内存读写比对磁盘读写快上，更重要的是，从根本上抛弃了磁盘数据管理的许多传统方式，基于全部数据都在内存中管理进行了新的体系结构的设计，并且在数据缓存、快速算法、并行操作方面也进行了相应的改进，从而使数据处理速度一般比传统数据库的数据处理速度快很多，一般都在10倍以上，理想情况甚至可以达到1000倍。 </p>
+<table border="1" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top"><strong>名称</strong></td>
+      <td valign="top"><strong>开源或商业</strong></td>
+      <td valign="top"><strong>主要特点</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="7">Oracle TimesTen</td>
+      <td rowspan="7">不开源，商业使用付费</td>
+      <td>1. 符合RDBMS标准的独立内存数据库服务。</td>
+    </tr>
+    <tr>
+      <td>2.支持SQL访问，支持ODBC&amp;JDBC。</td>
+    </tr>
+    <tr>
+      <td>3.本身不支持与非Oracle数据库的互操作。</td>
+    </tr>
+    <tr>
+      <td>4.高可靠性，支持完整日志，支持镜像复制功能。</td>
+    </tr>
+    <tr>
+      <td>5.目前不支持存储过程和触发器。</td>
+    </tr>
+    <tr>
+      <td>6.内存结构简单，并没有数据库缓冲区、保存池或丢弃池的概念。</td>
+    </tr>
+    <tr>
+      <td>7.目前支持散列索引和T树索引，前者仅支持余键-值查找，速度非常快，执行过程与底层表的数量无关，具有较高的读取扩展性和很好的并发性；T树索引读取效率很高，但是，在繁重写操作时，并发性较差。</td>
+    </tr>
+    <tr>
+      <td rowspan="4">ASE-IMDB</td>
+      <td rowspan="4">不开源、商业使用付费</td>
+      <td>1.被整合到Sysbase ASE平台中（TimesTen则为一个独立的数据库）。</td>
+    </tr>
+    <tr>
+      <td>2. 基于经典ASE数据库模板创建。</td>
+    </tr>
+    <tr>
+      <td>3. 采用复制技术实现读取其他数据源的数据。</td>
+    </tr>
+    <tr>
+      <td>4. 完全支持ASE本身的SQL语法、安全性和加密。</td>
+    </tr>
+    <tr>
+      <td rowspan="5">IBM SolidDB</td>
+      <td rowspan="5">不开源、商业使用付费</td>
+      <td>1.可以提供超快的速度和超高的可用性，可以提供每秒数万至数十万事务的吞吐率，并且始终可以获得微秒级的响应时间。</td>
+    </tr>
+    <tr>
+      <td>2.抛弃大数据块结构，表行和索引节点独立地存储在内存中，可以直接添加索引，而不必重新组织大块结构。</td>
+    </tr>
+    <tr>
+      <td>3.放弃使用大块索引，以精简结构、增加索引层数、将索引节点最小化，从而避免节点内处理的成本。</td>
+    </tr>
+    <tr>
+      <td>4.使用一种称作trie（前缀树）的索引方式，更适合现代处理器缓存，通过有效促进缓存的使用来提高处理器的效率，从而实现性能的最大化。</td>
+    </tr>
+    <tr>
+      <td>5.使用一种获得专利的检查点方法来加快数据处理，查询事务的延时通常是10到20微秒，更新事务的延时通常小于100微秒。</td>
+    </tr>
+    <tr>
+      <td rowspan="4">VoltDB</td>
+      <td rowspan="4">开源版本免费
+        商业版本需付费</td>
+      <td>1.基于存储过程的事务提交方式：用户通过写存储过程完成应用程序的逻辑，作为一个先置条件将存储过程提交到VoltDB，运行时，用户程序调用存储过程完成事务操作，所有事务的运行逻辑是由VoltDB在服务器进程中完成。</td>
+    </tr>
+    <tr>
+      <td>2．基于Shared Nothing结构的数据分布，整个数据库的数据分散到集群的多台机器上。</td>
+    </tr>
+    <tr>
+      <td>3.基于哈希的数据分布策略，好处是数据分散的均匀，没有动态数据调整的烦恼；缺点是新增的机器需要停止服务后重新分布数据。哈希方法打乱了数据的连续性，使得VoltDB对于范围查询的处理能力显著下降。</td>
+    </tr>
+    <tr>
+      <td>4.其事务并发控制需要依赖于集群内所有机器的时间一致，其数据分片规模是按照集群核数来划分，当整个系统压力比较大时，可以使事务的时延有效降低。</td>
+    </tr>
+    <tr>
+      <td rowspan="5">eXtremeDB</td>
+      <td rowspan="5">不开源的商业数据库，
+        测试版本在功能上与正式版没有区别，但是，对连接次数做了限制</td>
+      <td>1.高性能和高效的存储效率，为了提高性能方便程序使用，eXtremeDB中的数据未做任何压缩。</td>
+    </tr>
+    <tr>
+      <td>2.不仅开源建立完全运行在主内存的内存数据库，更可以建立磁盘/内存混合介质的数据库。</td>
+    </tr>
+    <tr>
+      <td>3.嵌入式数据库：其内核以链接库的形式包含在应用程序之中，开销只有50KB-130KB；避免了进程间的通信，从而剔除了进程间通信的开销和不确定性；其独特的数据格式方便程序直接使用，剔除了数据复制及数据翻译的开销，缩短了应用程序的代码执行路径。</td>
+    </tr>
+    <tr>
+      <td>4.由应用定制的API，应用程序对eXtremeDB数据库的操作接口是根据应用数据库设计而自动产生，剔除了通用接口所必不可少的动态内存分配。</td>
+    </tr>
+    <tr>
+      <td>5.其独特的体系结构，保证了数据管理的可预测性。</td>
+    </tr>
+    <tr>
+      <td rowspan="5">SQLite</td>
+      <td rowspan="5">开源，免费使用
+        商业目的的分发版免费</td>
+      <td>1.需要专业支持则需要购买。</td>
+    </tr>
+    <tr>
+      <td>2. 在并发（包括多进程和多线程）读写方面的性能一直不太理想。数据库可能会被写操作独占，从而导致其它读写操作阻塞或出错。</td>
+    </tr>
+    <tr>
+      <td>3.32\64位主流操作系统均支持。</td>
+    </tr>
+    <tr>
+      <td>4.不支持ODBC连接，需通过第三方驱动支持JDBC连接。</td>
+    </tr>
+    <tr>
+      <td>5.支持SQL</td>
+    </tr>
+    <tr>
+      <td rowspan="5">H2</td>
+      <td rowspan="5">开源，免费使用
+        商业目的的分发版免费</td>
+      <td>1.需要专业支持则需要购买。</td>
+    </tr>
+    <tr>
+      <td>2. 并发性较好（在模拟器中有使用，支持50个并发查询没问题），数据量少的情况，查询速度很好。</td>
+    </tr>
+    <tr>
+      <td>3.32\64位主流操作系统均支持，但需Java平台支持。</td>
+    </tr>
+    <tr>
+      <td>4.支持ODBC&amp;JDBC</td>
+    </tr>
+    <tr>
+      <td>5.支持SQL</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+
+
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,388 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>8.3.2. mysql命令</h1>
+
+          
+        
+      
+      
+      <p>mysql将发出的SQL语句发送到待执行的服务器。还有一系列命令mysql可以自己解释。要查看这些命令，在mysql&gt;提示下输入help或\h：</p>
+      <pre >mysql&gt; help
+
+List of all MySQL commands:
+Note that all text commands must be first on line and end with ';'
+?         (\?) Synonym for `help'.
+clear     (\c) Clear command.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter. NOTE: Takes the rest of the line as new delimiter.
+edit      (\e) Edit command with $EDITOR.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+nopager   (\n) Disable pager, print to stdout.
+notee     (\t) Don't write into outfile.
+pager     (\P) Set PAGER [to_pager]. Print the query results via PAGER.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute a SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+system    (\!) Execute a system shell command.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don't show warnings after every statement.
+</pre>
+      <p> 每个命令有长形式和短形式。长形式对大小写不敏感；短形式敏感。长形式后面可以加一个分号结束符，但短形式不可以。</p>
+      <p> 在delimiter命令中，应避免使用反斜线(‘\’)，因为这是MySQL的转义符。</p>
+      <p> Edit、nopager、pager和system命令只在Unix中工作。</p>
+      <p> status命令提供连接和使用的服务器相关的部分信息。如果用--safe-updates模式运行，status也打印影响查询的MySQL变量的值。</p>
+      <p> 要想记录查询及其输出，应使用tee命令。屏幕上显示的所有数据被追加到给定的文件后面。这对于调试也很有用。可以用--tee选项在命令行中启用该特性，或者用tee命令交互式启用。可以用notee命令交互式禁用tee文件。再次执行tee可以重新启用日志。前面的文件使用时不带任何参数。请注意执行完每个语句后tee可以将查询结果刷新到一个文件中，并且在mysql打印下一个提示前刷新。</p>
+      <p> 用--pager选项，可以用交互式模式使用Unix程序，例如less、more或者其它类似的程序，来浏览或搜索查询结果。如果未指定该选项的值，mysql检查PAGER环境变量的值并将PAGER设为该值。可以用pager命令交互式启用输出分页，并用nopager禁用。该命令采用可选参量；如果给出，分页程序设置为该值。如果没有给出参量，分页器被设置为在命令行中设置的分页器的值，如果未指定分页器，则设置为stdout。</p>
+      <p> 输出分页只适合Unix，因为它使用popen()函数，该函数在Windows中不存在。在Windows中，可以使用tee选项来保存查询输出，尽管在某些情况下浏览输出时不如pager方便。</p>
+      <p> 关于pager命令的一些技巧：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        可以使用它写入一个文件，将结果只输出到该文件中：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; pager cat &gt; /tmp/log.txt</pre>
+      <p> 也可以为将用作分页器的程序传递选项：</p>
+      <pre >mysql&gt; pager less -n -i -S</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        注意前面例子中的-S选项。它可以帮助浏览广范围的查询结果。有时太广的结果很难在屏幕上读出来。less的-S选项可以使结果更易于读，因为可以用左、右箭头水平滚动它。还可以在less中交互式使用-S，以关闭或打开水平浏览模式。详细信息请阅读手册中的less页：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; shell&gt; man less</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        可以指定很复杂的pager命令来处理查询输出：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; PAGER cat | tee /dr1/tmp/res.txt \
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| tee /dr2/tmp/res2.txt | less -n -i -S</pre>
+      <p> 在该例子中，该命令将查询结果发送到位于/dr1和/dr2上安装的两个不同的文件系统中的两个不同目录中的两个文件中，但仍然可以通过less将结果显示在屏幕上。</p>
+      <p> 还可以结合使用tee和pager函数。启用一个tee文件并将pager设置为less，能够使用less
+        程序浏览结果，并且仍然可以同时将内容添加到一个文件中。结合pager命令使用的Unix
+        tee和 
+        mysql嵌入式tee命令的差别是即使没有可用的Unix
+        tee，嵌入式tee仍然可以工作。嵌入式tee还可以记录在屏幕上输出的内容，而结合pager命令使用的Unix
+        tee不能记录那么多的内容。并且，可以从MySQL中交互式打开或关闭tee文件日志。当你想要将部分查询记录到一个文件中时很有用，但其它不适合。</p>
+      <p> 默认mysql&gt;提示符可以重新配置。定义提示符的字符串可以包含下面的特殊序列：</p>
+      <table border="1" cellpadding="0" id="table2">
+        <tr>
+          <td><p>选项</td>
+          <td><p>描述</td>
+        </tr>
+        <tr>
+          <td><p> \v</td>
+          <td><p>服务器版本</td>
+        </tr>
+        <tr>
+          <td><p> \d</td>
+          <td><p>当前的数据库</td>
+        </tr>
+        <tr>
+          <td><p> \h</td>
+          <td><p>服务器主机</td>
+        </tr>
+        <tr>
+          <td><p> \p</td>
+          <td><p>当前的TCP/IP端口或套接字文件</td>
+        </tr>
+        <tr>
+          <td><p> \u</td>
+          <td><p>你的用户名</td>
+        </tr>
+        <tr>
+          <td><p> \U</td>
+          <td><p>你的全<i>user_name</i>@<i>host_name</i>账户名</td>
+        </tr>
+        <tr>
+          <td><p> \\</td>
+          <td><p>‘\’反斜线字符</td>
+        </tr>
+        <tr>
+          <td><p> \n</td>
+          <td><p>新行字符</td>
+        </tr>
+        <tr>
+          <td><p> \t</td>
+          <td><p>Tab字符</td>
+        </tr>
+        <tr>
+          <td><p> \ </td>
+          <td><p>空格(反斜线后面的空格)</td>
+        </tr>
+        <tr>
+          <td><p> \_</td>
+          <td><p>空格</td>
+        </tr>
+        <tr>
+          <td><p> \R</td>
+          <td><p>当前的时间，24-小时军用时间(0-23)</td>
+        </tr>
+        <tr>
+          <td><p> \r</td>
+          <td><p>当前的时间，标准12-小时(1-12)</td>
+        </tr>
+        <tr>
+          <td><p> \m</td>
+          <td><p>当前时间的分钟</td>
+        </tr>
+        <tr>
+          <td><p> \y</td>
+          <td><p>当前的年，两位</td>
+        </tr>
+        <tr>
+          <td><p> \Y</td>
+          <td><p>当前的年，四位</td>
+        </tr>
+        <tr>
+          <td><p> \D</td>
+          <td><p>当前的日期</td>
+        </tr>
+        <tr>
+          <td><p> \s</td>
+          <td><p>当前时间的秒</td>
+        </tr>
+        <tr>
+          <td><p> \w</td>
+          <td><p>当前周的天，3字符格式(Mon，Tue，...)</td>
+        </tr>
+        <tr>
+          <td><p> \P</td>
+          <td><p>am/pm</td>
+        </tr>
+        <tr>
+          <td><p> \o</td>
+          <td><p>当前的月，数字格式</td>
+        </tr>
+        <tr>
+          <td><p> \O</td>
+          <td><p>当前的月，3字符格式(Jan，Feb，...)</td>
+        </tr>
+        <tr>
+          <td><p> \c</td>
+          <td><p>随发出的每个语句递增的计数</td>
+        </tr>
+        <tr>
+          <td><p> \S</td>
+          <td><p>分号</td>
+        </tr>
+        <tr>
+          <td><p> \&#39;</td>
+          <td><p>单引号</td>
+        </tr>
+        <tr>
+          <td><p> \&quot;</td>
+          <td><p>双引号</td>
+        </tr>
+      </table>
+      <p> ‘\’后面跟随的其它字母则变为该字母。</p>
+      <p> 如果不用任何参量指定提示命令，mysql将提示重新设置位默认mysql&gt;。</p>
+      <p> 可以用几种方式设置提示：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用环境变量 </p>
+      <p> 可以用MYSQL_PS1环境变量来设置提示字符串。例如：</p>
+      <pre >shell&gt; export MYSQL_PS1=&quot;(\u@\h) [\d]&gt; &quot;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用选项文件</p>
+      <p> 可以在MySQL选项文件中的[mysql]组设置提示，例如根目录中的/etc/my.cnf或.my.cnf文件。例如：</p>
+      <pre >[mysql]
+prompt=(\\u@\\h) [\\d]&gt;\\_</pre>
+      <p> 在该例子中，请注意反斜线是双线。如果使用选项文件中的prompt选项来设置提示，当使用特殊提示选项时，建议使用双反斜线。在允许的提示选项和选项文件中可识别的特殊转义序列中有部分重叠。(这些序列列于<a href="" title="4.3.2. Using Option Files">4.3.2节，“使用选项文件”</a>）。如果使用单反斜线，会遇到问题。例如，\s被解释为空格而不是当前的秒值。下面的例子显示了如何在选项文件中定义提示以包括当前的时间，格式为HH:MM:SS&gt;：</p>
+      <pre >[mysql]
+prompt=&quot;\\r:\\m:\\s&gt; &quot;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用命令行选项</p>
+      <p> 可以在mysql的命令行中设置--prompt选项。例如：</p>
+      <pre >shell&gt; mysql --prompt=&quot;(\u@\h) [\d]&gt; &quot;
+(user@host) [database]&gt;</pre>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        交互式</p>
+      <p> 你可以使用prompt(或\R)命令交互地更改提示。例如：</p>
+      <pre >mysql&gt; prompt (\u@\h) [\d]&gt;\_
+PROMPT set to &#39;(\u@\h) [\d]&gt;\_&#39;
+(<i>user</i>@<i>host</i>) [<i>database</i>]&gt;
+(<i>user</i>@<i>host</i>) [<i>database</i>]&gt; prompt
+Returning to default PROMPT of mysql&gt;
+mysql&gt;</pre>
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

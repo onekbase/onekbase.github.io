@@ -1,0 +1,219 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1 >AsyncTask使用方法</h1>
+<pre class="code">java.lang.Object
+		android.os.AsyncTask&lt;Params, Progress, Result&gt;
+</pre>
+<p >AsyncTask是抽象类，子类必须实现抽象方法doInBackground(Params...&nbsp;p)&nbsp;，在此方法中实现任务的执行工作，比如连接网络获取数据等。</p>
+<p >通常还应该实现onPostExecute(Result&nbsp;r)&nbsp;方法，因为应用程序关心的结果在此方法中返回。需要注意的是AsyncTask一定要在主线程中创建实例。</p>
+<p >doInBackground方法和onPostExecute的参数必须对应，这两个参数在AsyncTask声明的泛型参数列表中指定，第一个为doInBackground接受的参数，第二个为显示进度的参数，第三个为doInBackground返回和onPostExecute传入的参数。</p>
+<p >AsyncTask定义了三种泛型类型&nbsp;Params，Progress和Result。</p>
+<ol>
+  <li>Params&nbsp;启动任务执行的输入参数，比如HTTP请求的URL。</li>
+  <li>Progress&nbsp;后台任务执行的百分比。</li>
+  <li>Result&nbsp;后台执行任务最终返回的结果，比如String。</li>
+</ol>
+<h2 >四个方法</h2>
+<p >AsyncTask&nbsp;的执行分为四个步骤，每一步都对应一个回调方法，需要注意的是这些方法不应该由应用程序调用，开发者需要做的就是实现这些方法。在任务的执行过程中，这些方法被自动调用。&nbsp;</p>
+<h3 >&nbsp;onPreExecute()&nbsp;</h3>
+<p >该方法将在执行实际的后台操作前被UI&nbsp;thread调用。可以在该方法中做一些准备工作，如在界面上显示一个进度条。&nbsp;</p>
+<h3 >&nbsp;doInBackground(Params...)&nbsp;</h3>
+<p >&nbsp;将在onPreExecute&nbsp;方法执行后马上执行，该方法运行在后台线程中。这里将主要负责执行那些很耗时的后台计算工作。可以调用publicProgress(Progress...)方法来更新实时的任务进度。该方法是抽象方法，子类必须实现。&nbsp;</p>
+<p >Params...为一个可变参数，可以理解为一个数组。是由UI线程中创建的任务对象调用execute(Params... params)传送过来的。Params是由&lt;Params, Progress, Result&gt;参数列表定义的。</p>
+<h3 >onProgressUpdate(Progress...)</h3>
+<p >此方法在主线程&nbsp;执行，用于显示任务执行的进度。&nbsp;</p>
+<p >在publishProgress方法被调用后，UI&nbsp;thread将调用这个方法从而在界面上展示任务的进展情况，例如通过一个进度条进行展示。&nbsp;</p>
+<h3 >onPostExecute(Result)&nbsp;</h3>
+<p >此方法在主线程&nbsp;执行，任务执行的结果作为此方法的参数返回。</p>
+<p >&nbsp;在doInBackground&nbsp;执行完成后，onPostExecute&nbsp;方法将被UI&nbsp;thread调用，后台的计算结果将通过该方法传递到UI&nbsp;thread.&nbsp;</p>
+<h2 >原则</h2>
+<p >在开发Android应用时必须遵守单线程模型的原则：&nbsp;Android&nbsp;UI操作并不是线程安全的并且这些操作必须在UI线程中执行。在单线程模型中始终要记住两条法则：&nbsp;</p>
+<ol>
+  <li>&nbsp;不要阻塞UI线程&nbsp;</li>
+  <li>&nbsp;确保只在UI线程中访问Android&nbsp;UI工具包&nbsp;</li>
+</ol>
+<p >为了正确的使用AsyncTask类，以下是几条必须遵守的准则：&nbsp;</p>
+<ol>
+  <li>Task的实例必须在UI&nbsp;thread中创建&nbsp;</li>
+  <li>execute方法必须在UI&nbsp;thread中调用&nbsp;</li>
+  <li>不要手动的调用onPreExecute(),&nbsp;onPostExecute(Result)，doInBackground(Params...),&nbsp;onProgressUpdate(Progress...)这几个方法&nbsp;</li>
+  <li>该task只能被执行一次，否则多次调用时将会出现异常&nbsp;</li>
+</ol>
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

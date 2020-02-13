@@ -1,0 +1,289 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->5.11.3.&nbsp;二进制日志
+
+          
+        
+      
+      
+      <p>二进制日志以一种更有效的格式，并且是事务安全的方式包含更新日志中可用的所有信息。</p>
+      <p>二进制日志包含了所有更新了数据或者已经潜在更新了数据（例如，没有匹配任何行的一个DELETE）的所有语句。语句以“事件”的形式保存，它描述数据更改。</p>
+      <p>注释：二进制日志已经代替了老的更新日志，更新日志在MySQL 
+        5.1中不再使用。</p>
+      <p> 二进制日志还包含关于每个更新数据库的语句的执行时间信息。它不包含没有修改任何数据的语句。如果你想要记录所有语句（例如，为了识别有问题的查询），你应使用一般查询日志。参见<a href="query-log.html" title="5.11.2. The General Query Log">5.11.2节，“通用查询日志”</a>。</p>
+      <p>二进制日志的主要目的是在恢复使能够最大可能地更新数据库，因为二进制日志包含备份后进行的所有更新。</p>
+      <p>二进制日志还用于在主复制服务器上记录所有将发送给从服务器的语句。参见<a href="../replication/index.html">第6章：</a><a href="../replication/index.html" title="Chapter 6. Replication in MySQL"><i>MySQL中的复制</i></a>。</p>
+      <p>运行服务器时若启用二进制日志则性能大约慢1%。但是，二进制日志的好处，即用于恢复并允许设置复制超过了这个小小的性能损失。</p>
+      <p>当用--log-bin[=<i>file_name</i>]选项启动时，mysqld写入包含所有更新数据的SQL命令的日志文件。如果未给出<i>file_name</i>值，
+        默认名为-bin后面所跟的主机名。如果给出了文件名，但没有包含路径，则文件被写入数据目录。建议指定一个文件名，原因参见<a href="binary-log.html" title="A.8.1. Open Issues in MySQL">A.8.1节，“MySQL中的打开事宜”</a>。</p>
+      <p>如果你在日志名中提供了扩展名(例如，--log-bin=<i>file_name.extension</i>)，则扩展名被悄悄除掉并忽略。</p>
+      <p>mysqld在每个二进制日志名后面添加一个数字扩展名。每次你启动服务器或刷新日志时该数字则增加。如果当前的日志大小达到max_binlog_size，还会自动创建新的二进制日志。如果你正使用大的事务，二进制日志还会超过max_binlog_size：事务全写入一个二进制日志中，绝对不要写入不同的二进制日志中。</p>
+      <p>为了能够知道还使用了哪个不同的二进制日志文件，mysqld还创建一个二进制日志索引文件，包含所有使用的二进制日志文件的文件名。默认情况下与二进制日志文件的文件名相同，扩展名为&#39;.index&#39;。你可以用--log-bin-index[=<i>file_name</i>]选项更改二进制日志索引文件的文件名。当mysqld在运行时，不应手动编辑该文件；如果这样做将会使mysqld变得混乱。</p>
+      <p>可以用RESET 
+        MASTER语句删除所有二进制日志文件，或用PURGE 
+        MASTER LOGS只删除部分二进制文件。参见<a href="" title="13.5.5.5. RESET Syntax">13.5.5.5节，“RESET语法”</a>和<a href="binary-log.html" title="13.6.1. SQL Statements for Controlling Master Servers">13.6.1节，“用于控制主服务器的SQL语句”</a>。</p>
+      <p>二进制日志格式有一些已知限制，会影响从备份恢复。参见<a href="time-zone-support.html" title="6.7. Replication Features and Known Problems">6.7节，“复制特性和已知问题”</a>。</p>
+      <p>保存程序和触发器的二进制日志的描述参见<a href="server-system-variables.html" title="20.4. Binary Logging of Stored Routines and Triggers">20.4节，“存储子程序和触发程序的二进制日志功能”</a>。</p>
+      <p>可以使用下面的mysqld选项来影响记录到二进制日志知的内容。又见选项后面的讨论。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --binlog-do-db=<i>db_name</i></p>
+      <p>告诉主服务器，如果当前的数据库(即USE选定的数据库)是<i>db_name</i>，应将更新记录到二进制日志中。其它所有没有明显指定的数据库&nbsp;
+        被忽略。如果使用该选项，你应确保只对当前的数据库进行更新。</p>
+      <p>对于CREATE 
+        DATABASE、ALTER 
+        DATABASE和DROP 
+        DATABASE语句，有一个例外，即通过操作的数据库来决定是否应记录语句，而不是用当前的数据库。</p>
+      <p>一个不能按照期望执行的例子：如果用binlog-do-db=sales启动服务器，并且执行USE 
+        prices; UPDATE sales.january SET amount=amount+1000；，该语句不写入二进制日志。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --binlog-ignore-db=<i>db_name</i></p>
+      <p>告诉主服务器，如果当前的数据库(即USE选定的数据库)是<i>db_name</i>，不应将更新保存到二进制日志中。如果你使用该选项，你应确保只对当前的数据库进行更新。</p>
+      <p>一个不能按照你期望的执行的例子：如果服务器用binlog-ignore-db=sales启动，并且执行USE 
+        prices; UPDATE sales.january SET amount=amount+1000；，该语句不写入二进制日志。</p>
+      <p>类似于--binlog-do-db，对于CREATE 
+        DATABASE、ALTER 
+        DATABASE和DROP 
+        DATABASE语句，有一个例外，即通过操作的数据库来决定是否应记录语句，而不是用当前的数据库。</p>
+      <p>要想记录或忽视多个数据库，使用多个选项，为每个数据库指定相应的选项。</p>
+      <p>服务器根据下面的规则对选项进行评估，以便将更新记录到二进制日志中或忽视。请注意对于CREATE/ALTER/DROP 
+        DATABASE语句有一个例外。在这些情况下，根据以下规则，所<i>创建、<em>修改或删除的</em></i>数据库将代替当前的数据库。</p>
+      <p> 1.&nbsp;&nbsp;&nbsp;
+        是否有binlog-do-db或binlog-ignore-db规则? </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        没有：将语句写入二进制日志并退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        有：执行下一步。</p>
+      <p> 2.&nbsp;&nbsp;&nbsp;
+        有一些规则(binlog-do-db或binlog-ignore-db或二者都有)。当前有一个数据库(USE是否选择了数据库?)? </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        没有：<i>不要</i>写入语句，并退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        有：执行下一步。</p>
+      <p> 3.&nbsp;&nbsp;&nbsp;
+        有当前的数据库。是否有binlog-do-db规则? </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        有：当前的数据库是否匹配binlog-do-db规则? </p>
+      <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        有：写入语句并退出。</p>
+      <p > o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        没有：不要写入语句，退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        No：执行下一步。</p>
+      <p> 4.&nbsp;&nbsp;&nbsp;
+        有一些binlog-ignore-db规则。当前的数据库是否匹配binlog-ignore-db规则? </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        有：不要写入语句，并退出。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        没有：写入查询并退出。</p>
+      <p>例如，只用binlog-do-db=sales运行的服务器不将当前数据库不为sales的语句写入二进制日志(换句话说，binlog-do-db有时可以表示“忽视其它数据库”)。</p>
+      <p>如果你正进行复制，应确保没有从服务器在使用旧的二进制日志文件，方可删除它们。一种方法是每天一次执行mysqladmin 
+        flush-logs并删除三天前的所有日志。可以手动删除，或最好使用PURGE 
+        MASTER LOGS(参见<a href="binary-log.html" title="13.6.1. SQL Statements for Controlling Master Servers">13.6.1节，“用于控制主服务器的SQL语句”</a>)，该语句还会安全地更新二进制日志索引文件(可以采用日期参数)。</p>
+      <p>具有SUPER权限的客户端可以通过SET 
+        SQL_LOG_BIN=0语句禁止将自己的语句记入二进制记录。参见<a href="server-system-variables.html" title="13.5.3. SET Syntax">13.5.3节，“SET语法”</a>。</p>
+      <p>你可以用mysqlbinlog实用工具检查二进制日志文件。如果你想要重新处理日志止的语句，这很有用。例如，可以从二进制日志更新MySQL服务器，方法如下：</p>
+      <pre>shell&gt; mysqlbinlog log-file | mysql -h server_name</pre>
+      <p>关于mysqlbinlog实用工具的详细信息以及如何使用它，参见<a href="backup.html" title="8.6. mysqlbinlog — Utility for Processing Binary Log Files">8.6节，“mysqlbinlog：用于处理二进制日志文件的实用工具”</a>。</p>
+      <p>如果你正使用事务，必须使用MySQL二进制日志进行备份，而不能使用旧的更新日志。</p>
+      <p>查询结束后、锁定被释放前或提交完成后则立即记入二进制日志。这样可以确保按执行顺序记入日志。</p>
+      <p>对非事务表的更新执行完毕后立即保存到二进制日志中。对于事务表，例如BDB或InnoDB表，所有更改表的更新(UPDATE、DELETE或INSERT)
+        被缓存起来，直到服务器接收到COMMIT语句。在该点，执行完COMMIT之前，mysqld将整个事务写入二进制日志。当处理事务的线程启动时，它为缓冲查询分配binlog_cache_size大小的内存。如果语句大于该值，线程则打开临时文件来保存事务。线程结束后临时文件被删除。</p>
+      <p> Binlog_cache_use状态变量显示了使用该缓冲区(也可能是临时文件)保存语句的事务的数量。Binlog_cache_disk_use状态变量显示了这些事务中实际上有多少必须使用临时文件。这两个变量可以用于将binlog_cache_size调节到足够大的值，以避免使用临时文件。</p>
+      <p>max_binlog_cache_size(默认4GB)可以用来限制用来缓存多语句事务的缓冲区总大小。如果某个事务大于该值，将会失败并
+        回滚。</p>
+      <p>如果你正使用更新日志或二进制日志，当使用CREATE 
+        ... SELECT or 
+        INSERT ... SELECT时，并行插入被转换为普通插入。这样通过在备份时使用日志可以确保重新创建表的备份。</p>
+      <p>请注意MySQL 5.1值的二进制日志格式与以前版本的MySQL不同，因为复制改进了。参见<a href="" title="6.5. Replication Compatibility Between MySQL Versions">6.5节，“不同MySQL版本之间的复制兼容性”</a>。</p>
+      <p>默认情况下，并不是每次写入时都将二进制日志与硬盘同步。因此如果操作系统或机器(不仅仅是MySQL服务器)崩溃，有可能二进制日志中最后的语句丢失了。要想防止这种情况，你可以使用sync_binlog全局变量(1是最安全的值，但也是最慢的)，使二进制日志在每<i>N</i>次二进制日志写入后与硬盘同步。参见<a href="server-system-variables.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。即使sync_binlog设置为1,出现崩溃时，也有可能表内容和二进制日志内容之间存在不一致性。例如，如果使用InnoDB表，MySQL服务器处理COMMIT语句，它将整个事务写入二进制日志并将事务提交到InnoDB中。如果在两次操作之间出现崩溃，重启时，事务被InnoDB回滚，但仍然存在二进制日志中。可以用--innodb-safe-binlog选项解决该问题，可以增加InnoDB表内容和二进制日志之间的一致性。(注释：在MySQL 
+        5.1中不需要--innodb-safe-binlog；由于引入了XA事务支持，该选项作废了）。 </p>
+      <p>该选项可以提供更大程度的安全，还应对MySQL服务器进行配置，使每个事务的二进制日志(sync_binlog 
+        =1)和(默认情况为真)InnoDB日志与硬盘同步。该选项的效果是崩溃后重启时，在滚回事务后，MySQL服务器从二进制日志剪切
+        回滚的InnoDB事务。这样可以确保二进制日志反馈InnoDB表的确切数据等，并使从服务器保持与主服务器保持同步(不接收
+        回滚的语句)。</p>
+      <p>请注意即使MySQL服务器更新其它存储引擎而不是InnoDB，也可以使用--innodb-safe-binlog。在InnoDB崩溃恢复时，只从二进制日志中删除影响InnoDB表的语句/事务。如果崩溃恢复时MySQL服务器发现二进制日志变短了(即至少缺少一个成功提交的InnoDB事务)，如果sync_binlog 
+        =1并且硬盘/文件系统的确能根据需要进行同步(有些不需要)则不会发生，则输出错误消息 
+        (&quot;二进制日志&lt;名&gt;比期望的要小&quot;)。在这种情况下，二进制日志不准确，复制应从主服务器的数据快照开始。</p>
+      <p>写入二进制日志文件和二进制日志索引文件的方法与写入MyISAM表相同。参见<a href="" title="A.4.3. How MySQL Handles a Full Disk">A.4.3节，“MySQL处理磁盘满的方式”</a>。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

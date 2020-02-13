@@ -1,0 +1,602 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 17.6.3.2.&nbsp;日志事件</h1>
+
+            
+          
+        
+        <p>事件日志中记录的事件报告采用下述格式：<i>datetime</i> [<i>string</i>] <i>severity</i> – <i>message</i>。例如：</p>
+        <pre>09:19:30 2005-07-24 [NDB] INFO -- Node 4 Start phase 4 completed</pre>
+        <p>本节讨论了所有值得通报的事件，按类别以及每一类别中的严重级别排序。</p>
+        <p>CONNECTION事件</p>
+        <p>这类事件与簇节点之间的连接有关。</p>
+        <table border="1" cellpadding="0" id="table4">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>DB节点已连接</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>数据节点已连接</td>
+          </tr>
+          <tr>
+            <td><p>DB节点断开连接</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>数据节点断开连接</td>
+          </tr>
+          <tr>
+            <td><p>通信关闭</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>SQL节点或数据节点的连接已关闭</td>
+          </tr>
+          <tr>
+            <td><p>通信打开</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>SQL节点或数据节点的连接已打开</td>
+          </tr>
+        </table>
+        <p>CHECKPOINT事件</p>
+        <p>下面给出的日志消息与检查点有关。</p>
+        <p>（注释：GCP =全局检查点，LCP =本地检查点）。</p>
+        <table border="1" cellpadding="0" id="table5">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>在calc keep GCI中，LCP已停止</td>
+            <td><p>0</td>
+            <td><p>ALERT</td>
+            <td><p>LCP已停止</td>
+          </tr>
+          <tr>
+            <td><p>本地检查点片段完成</td>
+            <td><p>11</td>
+            <td><p>INFO</td>
+            <td><p>片段上的LCP已完成</td>
+          </tr>
+          <tr>
+            <td><p>全局检查点完成</td>
+            <td><p>10</td>
+            <td><p>INFO</td>
+            <td><p>GCP完成</td>
+          </tr>
+          <tr>
+            <td><p>全局检查点启动</td>
+            <td><p>9</td>
+            <td><p>INFO</td>
+            <td><p>启动GCP：将REDO日志写入磁盘</td>
+          </tr>
+          <tr>
+            <td><p>本地检查点完成</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>LCP已正常完成</td>
+          </tr>
+          <tr>
+            <td><p>本地检查点启动</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>启动LCP：将数据写入磁盘</td>
+          </tr>
+          <tr>
+            <td><p>报告undo日志已封闭</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>UNDO日志已封闭：缓冲快要溢出</td>
+          </tr>
+        </table>
+        <p>STARTUP事件</p>
+        <p>下述事件是在成功或失败的节点启动或簇启动时生成的。它们还提供了与启动进程进展状况有关的信息，包括与日志活动有关的信息。</p>
+        <table border="1" cellpadding="0" id="table6">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>收到内部启动信号STTORRY</td>
+            <td><p>15</td>
+            <td><p>INFO</td>
+            <td><p>重启完成后收到的信息块</td>
+          </tr>
+          <tr>
+            <td><p>Undo记录已执行</td>
+            <td><p>15</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>新的REDO日志已启动</td>
+            <td><p>10</td>
+            <td><p>INFO</td>
+            <td><p>GCI保持<i>X</i>，最新的可恢复GCI <i>Y</i></td>
+          </tr>
+          <tr>
+            <td><p>新日志已启动</td>
+            <td><p>10</td>
+            <td><p>INFO</td>
+            <td><p>日志部分<i>X</i>，启动MB <i>Y</i>，停止MB <i>Z</i></td>
+          </tr>
+          <tr>
+            <td><p>拒绝将节点纳入簇中</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>由于配置错误、无法建立通信、或其他问题，不能将节点包含在簇中。</td>
+          </tr>
+          <tr>
+            <td><p>DB节点邻居</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>显示附近的数据节点。</td>
+          </tr>
+          <tr>
+            <td><p>DB节点启动阶段X完成</td>
+            <td><p>4</td>
+            <td><p>INFO</td>
+            <td><p>数据节点启动阶段已完成。</td>
+          </tr>
+          <tr>
+            <td><p>节点已被簇成功接纳</td>
+            <td><p>3</td>
+            <td><p>INFO</td>
+            <td><p>显示节点，管理节点，以及动态ID。</td>
+          </tr>
+          <tr>
+            <td><p>DB节点启动阶段已开始</td>
+            <td><p>1</td>
+            <td><p>INFO</td>
+            <td><p>NDB簇节点正在启动。</td>
+          </tr>
+          <tr>
+            <td><p>DB节点的所有启动阶段已完成</td>
+            <td><p>1</td>
+            <td><p>INFO</td>
+            <td><p>NDB簇节点已启动。</td>
+          </tr>
+          <tr>
+            <td><p>DB节点关闭操作已启动</td>
+            <td><p>1</td>
+            <td><p>INFO</td>
+            <td><p>数据节点的关闭操作已开始</td>
+          </tr>
+          <tr>
+            <td><p>DB节点关闭操作失败</td>
+            <td><p>1</td>
+            <td><p>INFO</td>
+            <td><p>无法正常关闭数据节点。</td>
+          </tr>
+        </table>
+        <p>NODERESTART事件</p>
+        <p>下述事件是在重启节点时产生的，并与节点重启进程的成功或失败相关。</p>
+        <table border="1" cellpadding="0" id="table7">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>节点失败阶段完成</td>
+            <td><p>8</td>
+            <td><p>ALERT</td>
+            <td><p>通报节点失败阶段的完成</td>
+          </tr>
+          <tr>
+            <td><p>节点失败，节点状态为<i>X</i></td>
+            <td><p>8</td>
+            <td><p>ALERT</td>
+            <td><p>通报节点已失败</td>
+          </tr>
+          <tr>
+            <td><p>通报仲裁程序结果</td>
+            <td><p>2</td>
+            <td><p>ALERT</td>
+            <td><p>对于仲裁尝试，有8种不同的可能结果：</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                仲裁检查失败，剩余节点少于1/2。</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                仲裁检查成功，节点组多数</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                仲裁检查失败，丢失节点组</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                网络分区，要求仲裁</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                仲裁成功，来自节点<i>X</i>的正面回应</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                仲裁失败，来自节点<i>X</i>的负面回应</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                网络分区，无可用的仲裁程序</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                网络分区，未配置仲裁程序</td>
+          </tr>
+          <tr>
+            <td><p>完成了片段复制</td>
+            <td><p>10</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>完成了目录信息复制</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>完成了分配信息复制</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>开始复制片段</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>完成了所有片段的复制</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>GCP接收已启动</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>GCP接收已完成</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>LCP接收已启动</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>LCP接收已完成（状态= <i>X</i>）</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>通报是否发现了仲裁程序</td>
+            <td><p>6</td>
+            <td><p>INFO</td>
+            <td><p>搜索仲裁程序时，有7种可能的结果：</p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                管理服务器重启仲裁线程[state=<i>X</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                准备仲裁程序节点<i>X</i> [ticket=<i>Y</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                接收仲裁程序节点<i>X</i> [ticket=<i>Y</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                启动仲裁程序节点<i>X</i> [ticket=<i>Y</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                丢失了仲裁程序节点<i>X</i> – 进程失败 [state=<i>Y</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                丢失了仲裁程序节点<i>X</i> – 进程退出 [state=<i>Y</i>] </p>
+              <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                丢失了仲裁程序节点<i>X</i> &lt;error msg&gt; [state=<i>Y</i>] </td>
+          </tr>
+        </table>
+        <p>STATISTICS事件</p>
+        <p>下述事件具有统计特性。它们提供了相应的信息，如事务和其他操作的数目，低浓度节点发送或接收的数据量，以及内存使用率等。</p>
+        <table border="1" cellpadding="0" id="table8">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>通报作业日程统计</td>
+            <td><p>9</td>
+            <td><p>INFO</td>
+            <td><p>平均的内部作业日程统计</td>
+          </tr>
+          <tr>
+            <td><p>发送的字节数</td>
+            <td><p>9</td>
+            <td><p>INFO</td>
+            <td><p>发送至节点<i>X</i>的平均字节数</td>
+          </tr>
+          <tr>
+            <td><p>接收的自己#</td>
+            <td><p>9</td>
+            <td><p>INFO</td>
+            <td><p>从节点<i>X</i>接收的平均字节数</td>
+          </tr>
+          <tr>
+            <td><p>通报事务统计</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p> 事务数目，提交次数，读取次数，简单读取次数，写入次数，并发操作数目。属性信息，以及放弃次数</td>
+          </tr>
+          <tr>
+            <td><p>通报操作</td>
+            <td><p>8</td>
+            <td><p>INFO</td>
+            <td><p>操作数目</td>
+          </tr>
+          <tr>
+            <td><p>通报表创建</td>
+            <td><p>7</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>内存使用</td>
+            <td><p>5</td>
+            <td><p>INFO</td>
+            <td><p>数据内存和索引内存的使用率（80%、90%和100%）</td>
+          </tr>
+        </table>
+        <p>ERROR事件</p>
+        <p>这些事件与簇错误和告警有关，如果出现1个或多个这类事件，表明出现了重大故障或失败。</p>
+        <table border="1" cellpadding="0" id="table9">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>因失去心跳而死亡</td>
+            <td><p>8</td>
+            <td><p>ALERT</td>
+            <td><p>因失去心跳而声明节点<i>X</i>死亡。</td>
+          </tr>
+          <tr>
+            <td><p>传输器错误</td>
+            <td><p>2</td>
+            <td><p>ERROR</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>传输器告警</td>
+            <td><p>8</td>
+            <td><p>WARNING</td>
+            <td><p>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><p>失去心跳</td>
+            <td><p>8</td>
+            <td><p>WARNING</td>
+            <td><p>节点<i>X</i>失去心跳#<i>Y</i></td>
+          </tr>
+          <tr>
+            <td><p>一般性告警事件</td>
+            <td><p>2</td>
+            <td><p>WARNING</td>
+            <td><p>&nbsp;</td>
+          </tr>
+        </table>
+        <p>INFO事件</p>
+        <p>这些事件给出了关于簇状态和簇维护活动的一般信息，如日志和心跳传输等。</p>
+        <table border="1" cellpadding="0" id="table10">
+          <tr>
+            <td><p> 事件</td>
+            <td><p> 优先级</td>
+            <td><p> 严重级别</td>
+            <td><p> 描述</td>
+          </tr>
+          <tr>
+            <td><p>发出心跳</td>
+            <td><p>12</td>
+            <td><p>INFO</td>
+            <td><p>将心跳发送至节点<i>X</i></td>
+          </tr>
+          <tr>
+            <td><p>创建日志字节</td>
+            <td><p>11</td>
+            <td><p>INFO</td>
+            <td><p>日志部分，日志文件，MB</td>
+          </tr>
+          <tr>
+            <td><p>一般信息事件</td>
+            <td><p>2</td>
+            <td><p>INFO</td>
+            <td><p>&nbsp;</td>
+          </tr>
+        </table>
+      
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,267 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.5.2.3. CHECK 
+                TABLE语法</h1>
+
+            
+          
+        
+        
+        <pre>CHECK TABLE <i>tbl_name</i> [, <i>tbl_name</i>] ... [<i>option</i>] ...
+&nbsp;
+<i>option</i> = {QUICK | FAST | MEDIUM | EXTENDED | CHANGED}</pre>
+        <p>检查一个或多个表是否有错误。CHECK TABLE对MyISAM和InnoDB表有作用。对于MyISAM表，关键字统计数据被更新。</p>
+        <p>CHECK TABLE也可以检查视图是否有错误，比如在视图定义中被引用的表已不存在。</p>
+        <p>CHECK TABLE语句会返回一个含有以下列的表：</p>
+        <table border="1" cellpadding="0" id="table10">
+          <tr>
+            <td><p> 列</td>
+            <td><p> 值</td>
+          </tr>
+          <tr>
+            <td><p> Table</td>
+            <td><p>表名称</td>
+          </tr>
+          <tr>
+            <td><p> Op</td>
+            <td><p>进行检查</td>
+          </tr>
+          <tr>
+            <td><p> Msg_type</td>
+            <td><p> 状态、错误、信息或错误之一</td>
+          </tr>
+          <tr>
+            <td><p> Msg_text</td>
+            <td><p>消息</td>
+          </tr>
+        </table>
+        <p>注意，该语句可能会为每个被检查的表产生多行信息。最后一行有一个Msg_type状态值。Msg_text通常应为OK。如果您没有得到OK，或表已经更新了，则您通常应该运行修复后的表。请参见<a href="" title="5.9.4. Table Maintenance and Crash Recovery">5.9.4节，“表维护和崩溃恢复”</a>。表已经更新了，这意味着表的存储引擎指示没有必要检查表。</p>
+        <p>可以给予的不同的检查选项列于下表中。这些选项只适用于检查MyISAM表。对于InnoDB表和视图，这些选项被忽略。</p>
+        <table border="1" cellpadding="0" id="table11">
+          <tr>
+            <td><p> 类型</td>
+            <td><p> 意义</td>
+          </tr>
+          <tr>
+            <td><p> QUICK</td>
+            <td><p>不扫描行，不检查错误的链接。</td>
+          </tr>
+          <tr>
+            <td><p> FAST</td>
+            <td><p>只检查没有被正确关闭的表。</td>
+          </tr>
+          <tr>
+            <td><p> CHANGED</td>
+            <td><p>只检查上次检查后被更改的表，和没有被正确关闭的表。</td>
+          </tr>
+          <tr>
+            <td><p> MEDIUM</td>
+            <td><p> 扫描行，以验证被删除的链接是有效的。也可以计算各行的关键字校验和，并使用计算出的校验和验证这一点。</td>
+          </tr>
+          <tr>
+            <td><p> EXTENDED</td>
+            <td><p>对每行的所有关键字进行一个全面的关键字查找。这可以确保表是100％一致的，但是花的时间较长。</td>
+          </tr>
+        </table>
+        <p>如果没有指定QUICK, MEDIUM或EXTENDED选项，则对于动态格式MyISAM表，默认检查类型是MEDIUM。这与对表运行myisamchk 
+          --medium-check  <i>tbl_name</i>的结果相同。对于静态格式MyISAM表，默认检查类型也是MEDIUM，除非CHANGED或FAST已被指定。在此情况下，默认值为QUICK。对于CHANGED和FAST，行扫描被跳过，因为行极少被破坏。</p>
+        <p>您可以组合检查选项，如下面的例子所示。该例子对表进行了一个快速检查，来查看该表是否被正确关闭：</p>
+        <pre>CHECK TABLE test_table FAST QUICK;</pre>
+        <p>注释：在有些情况下，CHECK TABLE会更改表。如果表被标记为“corrupted”或“not 
+          closed properly”，则出现这种情况。但是CHECK TABLE不会找出表中的问题。在这种情况下，CHECK 
+          TABLE会把表标记为良好。</p>
+        <p> 如果一个表被破坏，很有可能问题在索引中，而不在数据部分中。所有前述的检查类型都可以彻底地检查索引，因此，可以找出多数的错误。</p>
+        <p>如果您只想要检查您假定的表是良好的，您应该不使用检查选项或QUICK选项。当您时间匆忙时，应使用QUICK。QUICK无法找出数据文件中的错误的风险非常小。（在多数情况下，在正常使用中，MySQL应能在数据文件中找出错误。如果找出了错误，表被标记为“corrupted”，并不能被使用，直到修复为止。）</p>
+        <p>如果您想要时常检查表，FAST和CHANGED多数情况下从原本中被使用（例如，从cron中被执行）。在多数情况下，FAST优先于CHANGED。（只有一种情况FAST不优先于CHANGED，那就是当您怀疑您在MyISAM代码中发现了错误。）</p>
+        <p>当MySQL试图通过关键字更新一行或查找一行时，如果您已经运行了一个常规检查后但仍得到来自表的奇怪的错误，此时使用EXTENDED。（如果常规的检查运行成功，则基本用不着EXTENDED。）</p>
+        <p>被CHECK TABLE报告的部分问题不会被自动修正：</p>
+        <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          发现行。此行中，auto_increment列有0值。</p>
+        <p>这意味着，您在表中有一行，该行的AUTO_INCREMENT索引列包含0值。（可以通过使用UPDATE语句，明确地把列设置为0，以创建一个AUTO_INCREMENT列为0的行。）</p>
+        <p>这本身不是一个错误，但是如果您决定转储表并恢复表，或对表进行ALTER 
+          TABLE，那么会导致出现麻烦。在此情况下，AUTO_INCREMENT列会根据AUTO_INCREMENT列的结果更改值，这会导致出现问题，如重复关键字错误等。</p>
+        <p>要消除警告，只需执行一个UPDATE语句，把列设置为除0以外的值。
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

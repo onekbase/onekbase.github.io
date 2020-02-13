@@ -1,0 +1,274 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.4.5. LOCK TABLES和UNLOCK TABLES语法</h1>
+
+          
+        
+      
+      
+      <pre>LOCK TABLES
+&nbsp;&nbsp;&nbsp; <i>tbl_name</i> [AS <i>alias</i>] {READ [LOCAL] | [LOW_PRIORITY] WRITE}
+&nbsp;&nbsp;&nbsp; [, <i>tbl_name</i> [AS <i>alias</i>] {READ [LOCAL] | [LOW_PRIORITY] WRITE}] ...
+UNLOCK TABLES</pre>
+      <p>LOCK TABLES可以锁定用于当前线程的表。如果表被其它线程锁定，则造成堵塞，直到可以获取所有锁定为止。UNLOCK 
+        TABLES可以释放被当前线程保持的任何锁定。当线程发布另一个LOCK TABLES时，或当与服务器的连接被关闭时，所有由当前线程锁定的表被隐含地解锁。</p>
+      <p>&nbsp; 
+        表锁定只用于防止其它客户端进行不正当地读取和写入。保持锁定（即使是读取锁定）的客户端可以进行表层级的操作，比如DROP 
+        TABLE。</p>
+      <p>注意，下面是对事务表使用LOCK TABLES的说明：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        在尝试锁定表之前，LOCK TABLES不是事务安全型的，会隐含地提交所有活性事务。同时，开始一项事务（例如，使用START 
+        TRANSACTION），会隐含地执行UNLOCK TABLES。（见<a href="implicit-commit.html" title="13.4.3. Statements That Cause an Implicit Commit">13.4.3节，“会造成隐式提交的语句”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        对事务表（如InnoDB）使用LOCK 
+        TABLES的正确方法是，设置AUTOCOMMIT=0并且不能调用UNLOCK 
+        TABLES，直到您明确地提交事务为止。当您调用LOCK TABLES时，InnoDB会内部地取其自己的表锁定，MySQL取其自己的表锁定。InnoDB在下一个提交时释放其表锁定，但是，对于MySQL，要释放表锁定，您必须调用UNLOCK 
+        TABLES。您不应该让AUTOCOMMIT=1，因为那样的话，InnoDB会在调用LOCK 
+        TABLES之后立刻释放表锁定，并且很容易形成死锁定。注意，如果AUTOCOMMIT=1，我们根本不能获取InnoDB表锁定，这样就可以帮助旧的应用软件避免不必要的死锁定。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ROLLBACK不会释放MySQL的非事务表锁定。</p>
+      <p>要使用LOCK TABLES，您必须拥有相关表的LOCK 
+        TABLES权限和SELECT权限。</p>
+      <p>使用LOCK TABLES的主要原因是仿效事务，或在更新表时加快速度。这将在后面进行更详细的解释。</p>
+      <p>如果一个线程获得对一个表地READ锁定，该线程（和所有其它线程）只能从该表中读取。如果一个线程获得对一个表的WRITE锁定，只有保持锁定的线程可以对表进行写入。其它的线程被阻止，直到锁定被释放时为止。</p>
+      <p>READ LOCAL和READ之间的区别是，READ 
+        LOCAL允许在锁定被保持时，执行非冲突性INSERT语句（同时插入）。但是，如果您正打算在MySQL外面操作数据库文件，同时您保持锁定，则不能使用READ 
+        LOCAL。对于InnoDB表，READ 
+        LOCAL与READ相同。</p>
+      <p>当您使用LOCK TABLES时，您必须锁定您打算在查询中使用的所有的表。虽然使用LOCK 
+        TABLES语句获得的锁定仍然有效，但是您不能访问没有被此语句锁定的任何的表。同时，您不能在一次查询中多次使用一个已锁定的表——使用别名代替，在此情况下，您必须分别获得对每个别名的锁定。</p>
+      <pre>mysql&gt; LOCK TABLE t WRITE, t AS t1 WRITE;
+mysql&gt; INSERT INTO t SELECT * FROM t;
+ERROR 1100: Table &#39;t&#39; was not locked with LOCK TABLES
+mysql&gt; INSERT INTO t SELECT * FROM t AS t1;</pre>
+      <p>如果您的查询使用一个别名引用一个表，那么您必须使用同样的别名锁定该表。如果没有指定别名，则不会锁定该表。</p>
+      <pre>mysql&gt; LOCK TABLE t READ;
+mysql&gt; SELECT * FROM t AS myalias;
+ERROR 1100: Table &#39;myalias&#39; was not locked with LOCK TABLES</pre>
+      <p>相反的，如果您使用一个别名锁定一个表，您必须使用该别名在您的查询中引用该表。</p>
+      <pre>mysql&gt; LOCK TABLE t AS myalias READ;
+mysql&gt; SELECT * FROM t;
+ERROR 1100: Table &#39;t&#39; was not locked with LOCK TABLES
+mysql&gt; SELECT * FROM t AS myalias;</pre>
+      <p>WRITE锁定通常比READ锁定拥有更高的优先权，以确保更新被尽快地处理。这意味着，如果一个线程获得了一个READ锁定，则另一个线程会申请一个WRITE锁定，后续的READ锁定申请会等待，直到WRITE线程获得锁定并释放锁定。您可以使用LOW_PRIORITY 
+        WRITE锁定来允许其它线程在该线程正在等待WRITE锁定时获得READ锁定。只有当您确定最终将有一个时机，此时没有线程拥有READ锁定时，您才应该使用LOW_PRIORITY 
+        WRITE锁定。</p>
+      <p>LOCK TABLES按照如下方式执行：</p>
+      <p> 1.&nbsp;&nbsp;&nbsp;
+        按照内部定义的顺序，对所有要被锁定的表进行分类。从用户的角度，此顺序是未经定义的。</p>
+      <p> 2.&nbsp;&nbsp;&nbsp;
+        如果使用一个读取和一个写入锁定对一个表进行锁定，则把写入锁定放在读取锁定之前。</p>
+      <p> 3.&nbsp;&nbsp;&nbsp;
+        一次锁定一个表，直到线程得到所有锁定为止。</p>
+      <p>该规则确保表锁定不会出现死锁定。但是，对于该规则，您需要注意其它的事情：</p>
+      <p>如果您正在对一个表使用一个LOW_PRIORITY WRITE锁定，这只意味着，MySQL等待特定的锁定，直到没有申请READ锁定的线程时为止。当线程已经获得WRITE锁定，并正在等待得到锁定表清单中的用于下一个表的锁定时，所有其它线程会等待WRITE锁定被释放。如果这成为对于应用程序的严重的问题，则您应该考虑把部分表转化为事务安全型表。</p>
+      <p>您可以安全地使用KILL来结束一个正在等待表锁定的线程。请参见<a href="kill.html" title="13.5.5.3. KILL Syntax">13.5.5.3节，“KILL语法”</a>。</p>
+      <p>注意，您不能使用INSERT DELAYED锁定任何您正在使用的表，因为，在这种情况下，INSERT由另一个线程执行。</p>
+      <p>通常，您不需要锁定表，因为所有的单个UPDATE语句都是原子性的；没有其它的线程可以干扰任何其它当前正在执行的SQL语句。但是，在几种情况下，锁定表会有好处：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您正在对一组MyISAM表运行许多操作，锁定您正在使用的表，可以快很多。锁定MyISAM表可以加快插入、更新或删除的速度。不利方面是，没有线程可以更新一个用READ锁定的表（包括保持锁定的表），也没有线程可以访问用WRITE锁定的表（除了保持锁定的表以外）。</p>
+      <p>有些MyISAM操作在LOCK 
+        TABLES之下更快的原因是，MySQL不会清空用于已锁定表的关键缓存，直到UNLOCK 
+        TABLE被调用为止。通常，关键缓存在每个SQL语句之后被清空。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果您正在使用MySQL中的一个不支持事务的存储引擎，则如果您想要确定在SELECT和UPDATE之间没有其它线程，您必须使用LOCK 
+        TABLES。本处所示的例子要求LOCK TABLES，以便安全地执行：</p>
+      <pre>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; LOCK TABLES trans READ, customer WRITE;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; SELECT SUM(value) FROM trans WHERE customer_id=<i>some_id</i>;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; UPDATE customer
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp; SET total_value=<i>sum_from_previous_statement</i>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;&nbsp;&nbsp;&nbsp; WHERE customer_id=<i>some_id</i>;
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mysql&gt; UNLOCK TABLES;</pre>
+      <p>如果没有LOCK TABLES，有可能另一个线程会在执行SELECT和UPDATE语句之间在trans表中插入一个新行。</p>
+      <p>通过使用相对更新（UPDATE 
+        customer SET <i>value</i>=<i>value</i>+<i>new_value</i>）或LAST_INSERT_ID()函数，您可以在许多情况下避免使用LOCK 
+        TABLES。请参见<a href="" title="1.8.5.3. Transactions and Atomic Operations">1.8.5.3节，“事务和原子操作”</a>。</p>
+      <p>通过使用用户层级的顾问式锁定函数GET_LOCK()和RELEASE_LOCK()，您也可以在有些情况下避免锁定表。这些锁定被保存在服务器中的一个混编表中，使用pthread_mutex_lock()
+        和pthread_mutex_unlock()，以加快速度。请参见<a href="lock-tables.html" title="12.9.4. Miscellaneous Functions">12.9.4节，“其他函数”</a>。</p>
+      <p>要了解更多有关锁定规则的说明，请参见<a href="" title="7.3.1. Locking Methods">7.3.1节，“锁定方法”</a>。</p>
+      <p>您可以使用FLUSH TABLES WITH READ LOCK语句锁定位于所有带有读取锁定的数据库中的所有表。请参见<a href="flush.html" title="13.5.5.2. FLUSH Syntax">13.5.5.2节，“FLUSH语法”</a>。如果您有一个可以及时拍摄快照的文件系统，比如Veritas，这是获得备份的一个非常方便的方式。</p>
+      <p>注释：如果您对一个已锁定的表使用ALTER TABLE，该表可能会解锁。请参见<a href="alter-table.html" title="A.7.1. Problems with ALTER TABLE">A.7.1节，“与ALTER TABLE有关的问题”</a>。 
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

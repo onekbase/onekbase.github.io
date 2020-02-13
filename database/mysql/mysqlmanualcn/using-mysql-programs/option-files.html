@@ -1,0 +1,340 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 4.3.2.&nbsp;使用选项文件</h1>
+
+          
+        
+      
+      
+      <p>MySQL程序可以从选项文件(有时也称为配置文件)读取启动选项。选项文件提供了一种很方便的方式来指定常用的选项，因此不需要每次运行程序时从命令行输入。</p>
+      <p>下面的程序支持选项文件：myisamchk、myisampack、mysql、mysql.server、mysqladmin、mysqlbinlog、mysqlcc、mysqlcheck、mysqld_safe、mysqldump、mysqld、mysqlhotcopy、mysqlimport和mysqlshow。</p>
+      <p>注释：MySQL簇程序使用的选项文件参见<a href="" title="17.4. MySQL Cluster Configuration">17.4节，“MySQL簇的配置”</a>。</p>
+      <p>在Windows中，MySQL程序从以下文件读取启动选项：</p>
+      <table border="1" cellpadding="0" id="table1">
+        <tr>
+          <td><p> 文件名</td>
+          <td width="349"><p>目的</td>
+        </tr>
+        <tr>
+          <td><p><i> WINDIR</i>\my.ini</td>
+          <td width="349"><p>全局选项</td>
+        </tr>
+        <tr>
+          <td><p> C:\my.cnf</td>
+          <td width="349"><p>全局选项</td>
+        </tr>
+        <tr>
+          <td><p><i> INSTALLDIR</i>\my.ini</td>
+          <td width="349"><p>全局选项</td>
+        </tr>
+        <tr>
+          <td><p> defaults-extra-file</td>
+          <td width="349"><p>用--defaults-extra-file=<i>path</i>指定的文件，如果有</td>
+        </tr>
+      </table>
+      <p><i> WINDIR</i>表示Windows目录的位置。通常为C:\WINDOWS或C:\WINNT。你可以使用下面的命令通过环境变量WINDIR的值确定其确切位置：</p>
+      <pre>C:\&gt; echo %WINDIR%</pre>
+      <p><i> INSTALLDIR</i>表示MySQL的安装目录。一般为C:\<i>PROGRAMDIR</i>\MySQL\MySQL 
+        5.1 Server，其中<i>PROGRAMDIR</i>表示程序目录(通常为Windows英文版的Program 
+        Files)，MySQL 
+        5.1的安装是根据安装和配置向导完成的。参见<a href="" title="2.3.5.14. The Location of the my.ini File">2.3.5.14节，“my.ini文件的位置”</a>。</p>
+      <p>在Unix中，MySQL程序从下面的文件读取启动选项：</p>
+      <table border="1" cellpadding="0" id="table2">
+        <tr>
+          <td><p> 文件名</td>
+          <td><p>目的</td>
+        </tr>
+        <tr>
+          <td><p> /etc/my.cnf</td>
+          <td><p>全局选项</td>
+        </tr>
+        <tr>
+          <td><p> $MYSQL_HOME/my.cnf</td>
+          <td><p>服务器相关选项</td>
+        </tr>
+        <tr>
+          <td><p> defaults-extra-file</td>
+          <td><p>用--defaults-extra-file=<i>path</i>指定的文件，如果有</td>
+        </tr>
+        <tr>
+          <td><p> ~/.my.cnf</td>
+          <td><p>用户相关选项</td>
+        </tr>
+      </table>
+      <p> MYSQL_HOME是一个环境变量，包含服务器相关的my.cnf文件驻留的目录路径。</p>
+      <p>如果未设置MYSQL_HOME，并且<i>DATADIR</i>中有一个my.cnf文件，<i>BASEDIR</i>中没有my.cnf文件，mysqld_safe将MYSQL_HOME设置为<i>DATADIR</i>。否则，如果未设置MYSQL_HOME并且在<i>DATADIR</i>中没有my.cnf，则mysqld_safe将MYSQL_HOME设置为<i>BASEDIR</i>。</p>
+      <p>典型情况二进制安装的目录为/usr/local/mysql/data或源代码安装的目录为/usr/local/var。请注意这是配置时指定的数据目录的位置，而不是 
+        mysqld启动时用--datadir指定的。运行时使用--datadir对寻找选项文件的服务器没有效果，因为服务器在处理命令行参量之前寻找这些选项。</p>
+      <p>MySQL按照上述顺序寻找选项文件，并读存在的选项文件。如果你想要使用的某个选项文件不存在，则用明文文本编辑器创建。如果存在多个选项文件，文件中指定的后读取的选项要优先文件中指定的先读取的选项。</p>
+      <p>注释：在Unix平台上，MySQL忽略人人可写的配置文件。这是故意的，是一个安全措施。</p>
+      <p>任何可以在运行MySQL程序时在命令行给出的长选项也可以在选项文件中给出。要想列出程序的适用选项，用--help选项运行程序。</p>
+      <p>在选项文件中指定选项的语法类似于命令行语法，例外的是要忽略掉两个破折号。例如，命令行中的--quick或--host=localhost在选项文件中应指定为quick或host=localhost。要想在选项文件中指定--loose-<i>opt_name</i>形式的选项，应写为loose-<i>opt_name</i>。</p>
+      <p>选项文件中的空行被忽略掉。非空行可以采用下面任何形式：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        #<i>注释</i>，；<i>注释</i></p>
+      <p>注释行以‘#’或‘；’开头。‘#’注释也可以从行的中部开始。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        [<i>group</i>]</p>
+      <p><i> group</i>是你想要设置选项的程序名或组名。在组行后面，任何<i>opt_name</i>或set-variable行适用于组名，直到选项文件结尾或给出其它组行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> opt_name</i></p>
+      <p>等价于命令行中的--<i>opt_name</i>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> opt_name</i>=<i>value</i></p>
+      <p>等价于命令行中的--<i>opt_name</i>=<i>value</i>。在选项文件中，‘=’字符附近可以有空格，而在命令行中是不允许的。你可以用单引号或双引号来引用值。如果值包含一个‘#’注释字符或空格时很有用。</p>
+      <p>选项名和值前后的空白将自动删除掉。你可以在选项值中使用转义序列‘\b’、‘\t’、‘\n’、‘\r’、‘\\’以及‘\s’来表示退格、tab、换行符、回车以及空格字符。</p>
+      <p>在Windows中，如果某个选项值表示一个路径名，应使用‘/’而不是‘\’作为路径名间隔符来指定值。如果使用‘\’，必须用双斜线‘\\’，因为‘\’在MySQL中为转义字符。</p>
+      <p>如果选项组名与程序名相同，则组内的选项专用于该程序。</p>
+      <p>所有客户程序(但<em>不能</em>被mysqld)读取[client]选项组。这样允许你指定适用于所有客户端的选项。例如，[client]是用于指定连接服务器的
+        密码的理想的组。(但应确保该选项文件只能由你自己读写，以便其他人不能发现你的密码）。一定不要随意在[client]组内放置选项，除非它可以被你使用的所有客户程序识别。如果你试图运行程序，如果程序不理解选项则会显示一条错误消息后退出。</p>
+      <p>从5.0系列的MySQL 5.0.4开始，可以在选项文件中使用!include指令来包括具体文件和!includedir来搜索选项文件的具体目录。例如，要包括文件/home/mydir/myopt.cnf，可以使用：</p>
+      <pre>!include /home/me/myopt.cnf</pre>
+      <p>要搜索所有以.cnf结尾的文件的目录/home/mydir并作为选项文件读取，应使用：</p>
+      <pre>!includedir /home/mydir</pre>
+      <p>请注意这些选项与节有关。例如，假定你想要使用my.cnf中的某些内容，如下所示：</p>
+      <pre>[mysqld]
+!include /home/mydir/myopt.cnf</pre>
+      <p>在这种情况下，只为该服务器处理文件myopt.cnf，并且!include指令将被客户应用程序忽略。然而，如果你使用下面的部分：</p>
+      <pre>[mysqldump]
+!includedir /home/mydir/my-dump-option</pre>
+      <p>则只有mysqldump为以.cnf结尾的文件检查目录/home/mydir/my-dump-option，服务器或其它客户应用程序均不检查。</p>
+      <p>注释：目前，在Unix操作系统中，所发现的使用!includedir指令包括的文件的文件名<em>必须</em>以.cnf为扩展名。在Windows中，该指令也为有.ini扩展名(包括.cnf)的文件做检查。</p>
+      <p>如果你想要创建只由一个具体mysqld服务器发布系列读取的选项组，选项组可以用[mysqld-5.0]、[mysqld-5.1]等名称。下面的组表示--new选项只能用于5.1.x
+        版本的MySQL服务器：</p>
+      <pre>[mysqld-5.1]
+new</pre>
+      <p>下面是一个典型的全局选项文件：</p>
+      <pre>[client]
+port=3306
+socket=/tmp/mysql.sock
+&nbsp;
+[mysqld]
+port=3306
+socket=/tmp/mysql.sock
+key_buffer_size=16M
+max_allowed_packet=8M
+&nbsp;
+[mysqldump]
+quick</pre>
+      <p>在上述的选项文件中，设置key_buffer_size和max_allowed_packet变量的行使用了<i>var_name</i>=<i>value</i>语法。</p>
+      <p>下面是一个典型的用户选项文件：</p>
+      <pre>[client]
+# The following password will be sent to all standard MySQL clients
+password=&quot;my_password&quot;
+&nbsp;
+[mysql]
+no-auto-rehash
+connect_timeout=2
+&nbsp;
+[mysqlhotcopy]
+interactive-timeout
+&nbsp;</pre>
+      <p>如果你有一个源代码分发，可以从support-file目录中找到名为my-<i>xxxx</i>.cnf的示例选项文件。如果你有一个二进制分发，在MySQL安装目录的support-file目录中查找。在Windows中，示例选项文件也可以位于MySQL的安装目录(如果你不知道在哪里，查阅本节前面或<a href="../installing/index.html" title="Chapter 2. Installing MySQL">第2章：安装MySQL</a>)。目前有小、中等、大以及非常大的系统的示例选项文件。要想练习这些文件，在Windows中复制到C:\my.cnf或在Unix中复制到根目录的.my.cnf。</p>
+      <p>注释：在Windows中，可以不显示.cnf选项文件的扩展名。</p>
+      <p>所有支持选项文件的MySQL程序可以处理下面的命令行选项：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --no-defaults</p>
+      <p>不读取任何选项文件。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --print-defaults</p>
+      <p>打印从选项文件中获得的程序名和所有选项。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --defaults-file=<i>path_name</i></p>
+      <p>只使用给出的选项文件。<i>path_name</i>是文件的全路径名。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        --defaults-extra-file=<i>path_name</i></p>
+      <p>在全局选项文件后但在用户选项文件前读该选项文件。<i>path_name</i>是文件的全路径名。</p>
+      <p>为了正确工作，每个选项必须紧随命令行中的命令名后，例外情况是--print-defaults可以紧随--defaults-file或--defaults-extra-file。</p>
+      <p>在shell脚本中，可以使用my_print_defaults程序来分析选项文件。下面的例子显示了当要求显示[client]和[mysql]组内发现的选项时my_print_defaults产生的输出：</p>
+      <pre>shell&gt; my_print_defaults client mysql
+--port=3306
+--socket=/tmp/mysql.sock
+--no-auto-rehash</pre>
+      <p>开发人员请注意：在C客户程序库中，只是通过处理命令行参量前面的所有匹配选项(即相应组内的选项)来处理选项文件。对于使用多次指定的最后的选项实例的程序，可以很好地工作。如果你有一个C或C++程序按这种方式处理多次指定的选项，但不读取选项文件，只需要添加两行来实现该功能。检查标准MySQL客户程序的源代码来看看如何做。</p>
+      <p>其它几个MySQL语言接口基于C客户库，它们中的一部分提供了访问选项文件的一种方式。包括Perl和Python。关于接口的详细信息参见相关文档。</p>
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

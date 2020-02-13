@@ -1,0 +1,314 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.8.2.&nbsp;向MySQL增加新用户账户</h1>
+
+          
+        
+      
+      
+      <p>可以用两种方式创建MySQL账户：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        使用GRANT语句</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        直接操作MySQL授权表</p>
+      <p>最好的方法是使用GRANT语句，因为这样更精确，错误少。从MySQL 
+        3.22.11起提供了GRANT；其语法见<a href="adding-users.html" title="13.5.1.3. GRANT and REVOKE Syntax">13.5.1.3节，“GRANT和REVOKE语法”</a>。</p>
+      <p>创建账户的其它方法是使用MySQL账户管理功能的第三方程序。phpMyAdmin即是一个程序。</p>
+      <p>下面的示例说明如何使用MySQL客户端程序来设置新用户。假定按照<a href="user-names.html" title="2.9.3. Securing the Initial MySQL Accounts">2.9.3节，“使初始MySQL账户安全”</a>描述的
+        默认值来设置权限。这说明为了更改，你必须以MySQL
+        
+        root用户连接MySQL服务器，并且root账户必须有mysql数据库的INSERT权限和RELOAD管理权限。</p>
+      <p>首先，使用MySQL程序以MySQL 
+        root用户来连接服务器：</p>
+      <pre>shell&gt; MySQL --user=root MySQL</pre>
+      <p>如果你为root账户指定了密码，还需要为该MySQL命令和本节中的其它命令提供--password或-p选项。</p>
+      <p>以root连接到服务器上后，可以添加新账户。下面的语句使用GRANT来设置四个新账户：</p>
+      <pre>mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;monty&#39;@&#39;localhost&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;some_pass&#39; WITH GRANT OPTION;
+mysql&gt; GRANT ALL PRIVILEGES ON *.* TO &#39;monty&#39;@&#39;%&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;some_pass&#39; WITH GRANT OPTION;
+mysql&gt; GRANT RELOAD,PROCESS ON *.* TO &#39;admin&#39;@&#39;localhost&#39;;
+mysql&gt; GRANT USAGE ON *.* TO &#39;dummy&#39;@&#39;localhost&#39;;</pre>
+      <p>用GRANT语句创建的账户有下面的属性：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        其中两个账户有相同的用户名monty和密码some_pass。两个账户均为超级用户账户，具有完全的权限可以做任何事情。一个账户 
+        (&#39;monty&#39;@&#39;localhost&#39;)只用于从本机连接时。另一个账户(&#39;monty&#39;@&#39;%&#39;)可用于从其它主机连接。请注意monty的两个账户必须能从任何主机以monty连接。没有localhost账户，当monty从本机连接时，mysql_install_db创建的localhost的匿名用户账户将占先。结果是，monty将被视为匿名用户。原因是匿名用户账户的Host列值比&#39;monty&#39;@&#39;%&#39;账户更具体，这样在user表排序顺序中排在前面。(user表排序的讨论参见<a href="connection-access.html" title="5.7.5. Access Control, Stage 1: Connection Verification">5.7.5节，“访问控制, 阶段1：连接核实”</a>）。 </p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        一个账户有用户名admin，没有密码。该账户只用于从本机连接。授予了RELOAD和PROCESS管理权限。这些权限允许admin用户执行mysqladmin 
+        reload、mysqladmin 
+        refresh和mysqladmin 
+        flush-<i>xxx</i>命令，以及mysqladmin 
+        processlist。未授予访问数据库的权限。你可以通过GRANT语句添加此类权限。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        一个账户有用户名dummy，没有密码。该账户只用于从本机连接。未授予权限。通过GRANT语句中的USAGE权限，你可以创建账户而不授予任何权限。它可以将所有全局权限设为&#39;N&#39;。假定你将在以后将具体权限授予该账户。</p>
+      <p>除了GRANT，你可以直接用INSERT语句创建相同的账户，然后使用FLUSH 
+        PRIVILEGES告诉服务器重载授权表：</p>
+      <pre>shell&gt; mysql --user=root mysql
+mysql&gt; INSERT INTO user
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;localhost&#39;,&#39;monty&#39;,PASSWORD(&#39;some_pass&#39;),
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;);
+mysql&gt; INSERT INTO user
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;%&#39;,&#39;monty&#39;,PASSWORD(&#39;some_pass&#39;),
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;);
+mysql&gt; INSERT INTO user SET Host=&#39;localhost&#39;,User=&#39;admin&#39;,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; Reload_priv=&#39;Y&#39;, Process_priv=&#39;Y&#39;;
+mysql&gt; INSERT INTO user (Host,User,Password)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;localhost&#39;,&#39;dummy&#39;,&#39;&#39;);
+mysql&gt; FLUSH PRIVILEGES;</pre>
+      <p>当你用INSERT创建账户时使用FLUSH 
+        PRIVILEGES的原因是告诉服务器重读授权表。否则，只有重启服务器后更改方会被注意到。使用 
+        GRANT，则不需要使用FLUSH 
+        PRIVILEGES。</p>
+      <p>用INSERT使用PASSWORD()函数是为了加密密码。GRANT语句为你加密密码，因此不需要PASSWORD()。</p>
+      <p> &#39;Y&#39;值启用账户权限。对于admin账户，还可以使用更加可读的INSERT扩充的语法（使用SET）。</p>
+      <p>在为dummy账户的INSERT语句中，只有user表中的Host、User和Password列记录为指定的值。没有一个权限列为显式设置，因此MySQL将它们均指定为
+        默认值&#39;N&#39;。这样等同于GRANT 
+        USAGE的操作。</p>
+      <p>请注意要设置超级用户账户，只需要创建一个权限列设置为&#39;Y&#39;的user表条目。user表权限为全局权限，因此其它
+        授权表不再需要条目。</p>
+      <p>下面的例子创建3个账户，允许它们访问专用数据库。每个账户的用户名为custom，密码为obscure。</p>
+      <p>要想用GRANT创建账户，使用下面的语句：</p>
+      <pre>shell&gt; MySQL --user=root MySQL
+shell&gt; mysql --user=root mysql
+mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; ON bankaccount.*
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; TO &#39;custom&#39;@&#39;localhost&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;obscure&#39;;
+mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; ON expenses.*
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; TO &#39;custom&#39;@&#39;whitehouse.gov&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;obscure&#39;;
+mysql&gt; GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; ON customer.*
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; TO &#39;custom&#39;@&#39;server.domain&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;obscure&#39;;</pre>
+      <p>这3个账户可以用于：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        第1个账户可以访问bankaccount数据库，但只能从本机访问。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        第2个账户可以访问expenses数据库，但只能从主机whitehouse.gov访问。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        第3个账户可以访问customer数据库，但只能从主机server.domain访问。</p>
+      <p>要想不用GRANT设置custom账户，使用INSERT语句直接修改
+        授权表：</p>
+      <pre>shell&gt; mysql --user=root mysql
+mysql&gt; INSERT INTO user (Host,User,Password)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;localhost&#39;,&#39;custom&#39;,PASSWORD(&#39;obscure&#39;));
+mysql&gt; INSERT INTO user (Host,User,Password)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;whitehouse.gov&#39;,&#39;custom&#39;,PASSWORD(&#39;obscure&#39;));
+mysql&gt; INSERT INTO user (Host,User,Password)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;server.domain&#39;,&#39;custom&#39;,PASSWORD(&#39;obscure&#39;));
+mysql&gt; INSERT INTO db
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; (Host,Db,User,Select_priv,Insert_priv,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; Update_priv,Delete_priv,Create_priv,Drop_priv)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;localhost&#39;,&#39;bankaccount&#39;,&#39;custom&#39;,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;);
+mysql&gt; INSERT INTO db
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; (Host,Db,User,Select_priv,Insert_priv,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; Update_priv,Delete_priv,Create_priv,Drop_priv)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;whitehouse.gov&#39;,&#39;expenses&#39;,&#39;custom&#39;,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;);
+mysql&gt; INSERT INTO db
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; (Host,Db,User,Select_priv,Insert_priv,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; Update_priv,Delete_priv,Create_priv,Drop_priv)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;server.domain&#39;,&#39;customer&#39;,&#39;custom&#39;,
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; &#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;,&#39;Y&#39;);
+mysql&gt; FLUSH PRIVILEGES;
+&nbsp;</pre>
+      <p>前3个INSERT语句在user表中加入条目，允许用户custom从各种主机用给定的密码进行连接，但不授予全局权限(所有权限设置为
+        默认值&#39;N&#39;)。后面3个INSERT语句在user表中加入条目，为custom授予bankaccount、expenses和customer数据库权限，但只能从合适的主机访问。通常若直接修改
+        授权表，则应告诉服务器用FLUSH 
+        PRIVILEGES重载授权表，使权限更改生效。</p>
+      <p>如果你想要让某个用户从给定域的所有机器访问(例如，mydomain.com)，你可以在账户名的主机部分使用含‘%’通配符的GRANT语句：</p>
+      <pre>mysql&gt; GRANT ...
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; ON *.*
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; TO &#39;myname&#39;@&#39;%.mydomain.com&#39;
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; IDENTIFIED BY &#39;mypass&#39;;</pre>
+      <p>要想通过直接修改授权表来实现：</p>
+      <pre>mysql&gt; INSERT INTO user (Host,User,Password,...)
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp;&nbsp;&nbsp; VALUES(&#39;%.mydomain.com&#39;,&#39;myname&#39;,PASSWORD(&#39;mypass&#39;),...);</pre>
+      <p>mysql&gt; FLUSH PRIVILEGES;
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

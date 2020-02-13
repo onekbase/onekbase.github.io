@@ -1,0 +1,311 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 26.3.4.1.1.&nbsp;理解连接池</h1>
+
+              
+            
+          
+          <a name="id3062691"></a> 连接池是创建和管理多个连接的一种技术，这些连接可被需要使用它们的任何线程使用。连接池技术基于下述事实：对于大多数应用程序，当它们正在处理通常需要数毫秒完成的事务时，仅需要能够访问JDBC连接的1个线程。未处理事务时，连接处于闲置状态。使用连接池，允许其他线程使用闲置连接来执行有用的任务。
+            <p> 事实上，当某一线程需要用JDBC在MySQL或其他数据库上执行操作时，需要用到由连接池提供的连接。使用连接完成线程后，线程会将连接返回给连接池，以便该连接能够被其他需要使用连接的线程使用。</p>
+            <p> 从连接池“借出”连接时，该连接仅供请求它的线程使用。从编程观点看，其效果等同于每次需要JDBC连接时调用DriverManager.getConnection()，但是，采用连接池技术，可通过使用新的或已有的连接结束线程。</p>
+            <p>连接池技术能显著增加Java应用程序的性能，同时还能降低资源使用率。连接池技术的主要优点包括：</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              缩短了连接创建时间</p>
+            <p> 与其他数据库相比，MySQL提供了快速的连接设置功能，连接时间通常不是问题，但创建新的JDBC连接仍会导致联网操作和一定的IDBC驱动开销，如果这类连接是“循环”使用的，使用该方式，可避免这类不利因素。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              简化的编程模型</p>
+            <p>使用连接池技术时，每个单独线程能够像创建了自己的JDBC连接那样进行操作，从而允许使用直接的JDBC编程技术。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              受控的资源使用</p>
+            <p> 如果不使用连接池技术，而是在每次需要时为线程创建新的连接，那么应用程序的资源使用将十分浪费，而且在负载较重的情况下会导致无法预期的结果。</p>
+            <p> 注意，与MySQL的每个连接均会在客户端和服务器端造成一定的开销（每寸、CPU、关联转换等）。每个连接均会对应用程序和MySQL服务器的可用资源带来一定的限制。无论连接是否执行任何有用的任务，仍将使用这些资源中的相当一部分。</p>
+            <p> 连接池能够使性能最大化，同时还能将资源利用控制在一定的水平之下，如果超过该水平，应用程序将崩溃而不仅仅是变慢。</p>
+            <p>幸运的是，Sun公司通过JDBC-2.0“可选”接口，完成了JDBC中连接池概念的标准化实施，所有主要应用服务器均实施了能够与MySQL 
+              Connector/J一起良好工作的这类API。</p>
+            <p> 通常，你可以在应用服务器的配置文件中配置连接池，并通过Java命名和目录接口（JNDI）访问它。在下面的代码中，介绍了在J2E应用服务器上运行的应用程序中使用连接池的方法：</p>
+            <p > 示例26.12.&nbsp;与J2EE应用服务器一起使用连接池</p>
+            <pre >import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+
+public class MyServletJspOrEjb {
+
+    public void doSomething() throws Exception {
+        /*
+         * Create a JNDI Initial context to be able to
+         *  lookup  the DataSource
+         *
+         * In production-level code, this should be cached as
+         * an instance or static variable, as it can
+         * be quite expensive to create a JNDI context.
+         *
+         * Note: This code only works when you are using servlets
+         * or EJBs in a J2EE application server. If you are
+         * using connection pooling in standalone Java code, you
+         * will have to create/configure datasources using whatever
+         * mechanisms your particular connection pooling library
+         * provides.
+         */
+
+        InitialContext ctx = new InitialContext();
+
+         /*
+          * Lookup the DataSource, which will be backed by a pool
+          * that the application server provides. DataSource instances
+          * are also a good candidate for caching as an instance
+          * variable, as JNDI lookups can be expensive as well.
+          */
+
+        DataSource ds = (DataSource)ctx.lookup("java:comp/env/jdbc/MySQLDB");
+
+        /*
+         * The following code is what would actually be in your
+         * Servlet, JSP or EJB 'service' method...where you need
+         * to work with a JDBC connection.
+         */
+
+        Connection conn = null;
+        Statement stmt = null;
+
+        try {
+            conn = ds.getConnection();
+
+            /*
+             * Now, use normal JDBC programming to work with
+             * MySQL, making sure to close each resource when you're
+             * finished with it, which allows the connection pool
+             * resources to be recovered as quickly as possible
+             */
+
+            stmt = conn.createStatement();
+            stmt.execute("SOME SQL QUERY");
+
+            stmt.close();
+            stmt = null;
+
+            conn.close();
+            conn = null;
+        } finally {
+            /*
+             * close any jdbc instances here that weren't
+             * explicitly closed during normal code path, so
+             * that we don't 'leak' resources...
+             */
+
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (sqlexception sqlex) {
+                    // ignore -- as we can't do anything about it here
+                }
+
+                stmt = null;
+            }
+
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (sqlexception sqlex) {
+                    // ignore -- as we can't do anything about it here
+                }
+
+                conn = null;
+            }
+        }
+    }
+}</pre>
+          
+          <p>如上例所示，获得JNDI InitialContext并查找到数据库后，其余代码与过去在JDBC编程中使用的类似。</p>
+          <p> 使用连接池时需要牢记的最重要事项是，无论在代码中出现了什么（异常、控制流等），连接以及由连接创建的任何部分（语句、结果集等）均应被关闭，以便能再次使用它们。如不然，它们将纠缠在一起，在最好的情况下，意味着它们所代表的MySQL服务器资源（缓冲区、锁定、套接字等）可能会捆绑一段时间，在最坏的情况下，可能会导致永久捆绑。</p>
+          <p>连接池的最佳大小是什么？ </p>
+          <p> 与所有其他配置经验规则一样，回答是“它取决于具体情况”。尽管最佳大小取决与预期的负载和平均的数据库事务时间，最佳的连接池大小小于你的预期。例如，如果使用的是Sun公司的Java 
+            Petstore 
+            Blueprint应用程序，对于包含15～20个连接的连接池，使用MySQL和Tomcat，在可接受的相应时间下，可服务于中等程度的负载（600个并发用户）。</p>
+          <p>要想确定用于应用程序的连接池大小，应使用诸如Apache Jmeter或The 
+            Grinder等工具创建负载测试脚本，并对应用程序进行负载测试。</p>
+          <p> 确定出发点的一种简单方法是，将连接池的最大连接数配置为“无限”，运行负载测试，并测量最大的并发连接数。随后，应进行反向操作，确定出使应用程序具有最佳性能的连接池的最小和最大值。</p>
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

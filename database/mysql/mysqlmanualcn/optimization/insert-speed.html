@@ -1,0 +1,271 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.2.16.&nbsp;INSERT语句的速度</h1>
+
+          
+        
+      
+      
+      <p> 插入一个记录需要的时间由下列因素组成，其中的数字表示大约比例：</p>
+      <ul type="disc">
+        <li> 连接：(3)</li>
+        <li> 发送查询给服务器：(2)</li>
+        <li> 分析查询：(2)</li>
+        <li> 插入记录：（1x记录大小）</li>
+        <li> 插入索引：（1x索引）</li>
+        <li> 关闭：(1)</li>
+      </ul>
+      <p> 这不考虑打开表的初始开销，每个并发运行的查询打开。</p>
+      <p> 表的大小以log<i>N</i> (B树)的速度减慢索引的插入。</p>
+      <p> 加快插入的一些方法：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果同时从同一个客户端插入很多行，使用含多个VALUE的INSERT语句同时插入几行。这比使用单行INSERT语句快(在某些情况下快几倍)。如果你正向一个非空表添加数据，可以调节bulk_insert_buffer_size变量，使数据插入更快。参见<a href="insert-speed.html" title="5.3.3. Server System Variables">5.3.3节，“服务器系统变量”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        如果你从不同的客户端插入很多行，能通过INSERT 
+        DELAYED语句加快速度。参见<a href="insert-speed.html" title="13.2.4. INSERT Syntax">13.2.4节，“INSERT语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        用MyISAM，如果在表中没有删除的行，能在SELECT语句正在运行的同时插入行。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当从一个文本文件装载一个表时，使用LOAD 
+        DATA INFILE。这通常比使用很多INSERT语句快20倍。参见<a href="" title="13.2.5. LOAD DATA INFILE Syntax">13.2.5节，“LOAD 
+        DATA INFILE语法”</a>。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        当表有很多索引时，有可能要多做些工作使得LOAD 
+        DATA INFILE更快些。使用下列过程：</p>
+      <ul type="disc">
+        <ol start="1" type="1">
+          <li> 有选择地用CREATE 
+            TABLE创建表。</li>
+          <li> 执行FLUSH 
+            TABLES语句或命令mysqladmin 
+            flush-tables。</li>
+          <li> 使用myisamchk --keys-used=0 -rq <i> /path/to/db/tbl_name</i>。这将从表中取消所有索引的使用。</li>
+          <li> 用LOAD DATA 
+            INFILE把数据插入到表中，因为不更新任何索引，因此很快。</li>
+          <li> 如果只想在以后读取表，使用myisampack压缩它。参见<a href="" title="15.1.3.3. Compressed Table Characteristics">15.1.3.3节，“压缩表特性”</a>。</li>
+          <li> 用myisamchk -r 
+            -q <i> /path/to/db/tbl_name</i>重新创建索引。这将在写入磁盘前在内存中创建索引树，并且它更快，因为避免了大量磁盘搜索。结果索引树也被完美地平衡。</li>
+          <li> 执行FLUSH TABLES语句或mysqladmin 
+            flush-tables命令。</li>
+        </ol>
+      </ul>
+      <p> 请注意如果插入一个空MyISAM表，LOAD 
+        DATA INFILE也可以执行前面的优化；主要不同处是可以让myisamchk为创建索引分配更多的临时内存，比执行LOAD 
+        DATA INFILE语句时为服务器重新创建索引分配得要多。</p>
+      <p> 也可以使用ALTER TABLE <i>tbl_name</i> DISABLE KEYS代替myisamchk 
+        --keys-used=0 -rq <i>/path/to/db/tbl_name</i>，使用ALTER 
+        TABLE <i>tbl_name</i> ENABLE KEYS代替myisamchk 
+        -r -q <i> /path/to/db/tbl_name</i>。使用这种方式，还可以跳过FLUSH 
+        TABLES。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        锁定表可以加速用多个语句执行的INSERT操作：</p>
+      <ul style=" margin-bottom: 0cm" type="disc">
+        <li>LOCK TABLES a WRITE;</li>
+        <li>INSERT INTO a VALUES 
+          (1,23),(2,34),(4,33);</li>
+        <li>INSERT INTO a VALUES 
+          (8,26),(6,29);</li>
+        <li>UNLOCK TABLES;</li>
+      </ul>
+      <p> 这样性能会提高，因为索引缓存区仅在所有INSERT语句完成后刷新到磁盘上一次。一般有多少INSERT语句即有多少索引缓存区刷新。如果能用一个语句插入所有的行，就不需要锁定。</p>
+      <p> 对于事务表，应使用BEGIN和COMMIT代替LOCK 
+        TABLES来加快插入。</p>
+      <p> 锁定也将降低多连接测试的整体时间，尽管因为它们等候锁定最大等待时间将上升。例如：</p>
+      <p> Connection 1 does 1000 inserts</p>
+      <p> Connections 2, 3, and 4 do 1 insert</p>
+      <p> Connection 5 does 1000 inserts</p>
+      <p> 如果不使用锁定，2、3和4将在1和5前完成。如果使用锁定，2、3和4将可能不在1或5前完成，但是整体时间应该快大约40%。</p>
+      <p> INSERT、UPDATE和DELETE操作在MySQL中是很快的，通过为在一行中多于大约5次连续不断地插入或更新的操作加锁，可以获得更好的整体性能。如果在一行中进行多次插入，可以执行LOCK 
+        TABLES，随后立即执行UNLOCK 
+        TABLES(大约每1000行)以允许其它的线程访问表。这也会获得好的性能。</p>
+      <p> INSERT装载数据比LOAD 
+        DATA INFILE要慢得多，即使是使用上述的策略。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        为了对LOAD 
+        DATA INFILE和INSERT在MyISAM表得到更快的速度，通过增加key_buffer_size系统变量来扩大
+        键高速缓冲区。参见<a href="server-parameters.html" title="7.5.2. Tuning Server Parameters">7.5.2节，“调节服务器参数”</a>。</p>
+      &nbsp;
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

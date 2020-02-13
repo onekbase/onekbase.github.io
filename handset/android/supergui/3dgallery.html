@@ -1,0 +1,467 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end --><!--end of htmlmiddle-->
+
+
+
+<h1 >Android控件Gallery3D效果</h1>
+<p >实现view切换时的3D效果原理：</p>
+<p >protected&nbsp;boolean&nbsp;getChildStaticTransformation(View&nbsp;child,&nbsp;Transformation&nbsp;t)</p>
+<p >每当gallery中的view移动时，会自动调用getChildStaticTransformation方法。其中的Transformation负责view对象如何变换。</p>
+<p >要用Matrix进行变换可以用以下方法：</p>
+<p >t.setTransformationType(Transformation.TYPE_MATRIX);</p>
+<p >&nbsp;Matrix&nbsp;imageMatrix&nbsp;=&nbsp;t.getMatrix();</p>
+<p >对imageMatrix&nbsp;进行变换就可以了。</p>
+
+<p ><img src="2.png" width="407" height="284" /></p>
+<p ><strong>GalleryFlow</strong></p>
+<pre class="code">package com.iteedu.gallery3d;
+
+import android.content.Context;
+import android.graphics.Camera;
+import android.graphics.Matrix;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.animation.Transformation;
+import android.widget.Gallery;
+import android.widget.ImageView;
+
+public class GalleryFlow extends Gallery {
+    private Camera mCamera = new Camera();//相机类
+    private int mMaxRotationAngle = 60;//最大转动角度
+    private int mMaxZoom = -300;////最大缩放值
+    private int mCoveflowCenter;//半径值
+    public GalleryFlow(Context context) {
+        super(context);
+        //支持转换 ,执行getChildStaticTransformation方法
+        this.setStaticTransformationsEnabled(true);
+    }
+    public GalleryFlow(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.setStaticTransformationsEnabled(true);
+    }
+    public GalleryFlow(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        this.setStaticTransformationsEnabled(true);
+    }
+    public int getMaxRotationAngle() {
+        return mMaxRotationAngle;
+    }
+    public void setMaxRotationAngle(int maxRotationAngle) {
+        mMaxRotationAngle = maxRotationAngle;
+    }
+    public int getMaxZoom() {
+        return mMaxZoom;
+    }
+    public void setMaxZoom(int maxZoom) {
+        mMaxZoom = maxZoom;
+    }
+    private int getCenterOfCoverflow() {
+        return (getWidth() - getPaddingLeft() - getPaddingRight()) / 2
+                        + getPaddingLeft();
+    }
+    private static int getCenterOfView(View view) {
+        System.out.println("view left :"+view.getLeft());
+        System.out.println("view width :"+view.getWidth());
+        return view.getLeft() + view.getWidth() / 2;
+    }
+    
+    
+   //控制gallery中每个图片的旋转(重写的gallery中方法)
+    protected boolean getChildStaticTransformation(View child, Transformation t) {  
+        //取得当前子view的半径值
+        final int childCenter = getCenterOfView(child);
+        System.out.println("childCenter："+childCenter);
+        final int childWidth = child.getWidth();
+        //旋转角度
+        int rotationAngle = 0;
+        //重置转换状态
+        t.clear();
+        //设置转换类型
+        t.setTransformationType(Transformation.TYPE_MATRIX);
+        //如果图片位于中心位置不需要进行旋转
+        if (childCenter == mCoveflowCenter) {
+            transformImageBitmap((ImageView) child, t, 0);
+        } else {
+            //根据图片在gallery中的位置来计算图片的旋转角度
+            rotationAngle = (int) (((float) 
+				(mCoveflowCenter - childCenter) / childWidth) * mMaxRotationAngle);
+            System.out.println("rotationAngle:" +rotationAngle);
+            //如果旋转角度绝对值大于最大旋转角度返回（-mMaxRotationAngle或mMaxRotationAngle;）
+            if (Math.abs(rotationAngle) > mMaxRotationAngle) {
+                rotationAngle = 
+				(rotationAngle < 0) ? -mMaxRotationAngle : mMaxRotationAngle;
+            }
+            transformImageBitmap((ImageView) child, t, rotationAngle);
+        }
+        return true;
+    }
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        mCoveflowCenter = getCenterOfCoverflow();
+        super.onSizeChanged(w, h, oldw, oldh);
+    }
+    private void transformImageBitmap(ImageView child, Transformation t,
+                    int rotationAngle) {
+        //对效果进行保存
+        mCamera.save();
+        final Matrix imageMatrix = t.getMatrix();
+        //图片高度
+        final int imageHeight = child.getLayoutParams().height;
+        //图片宽度
+        final int imageWidth = child.getLayoutParams().width;
+        
+        //返回旋转角度的绝对值
+        final int rotation = Math.abs(rotationAngle);
+        
+        // 在Z轴上正向移动camera的视角，实际效果为放大图片。
+        // 如果在Y轴上移动，则图片上下移动；X轴上对应图片左右移动。
+        mCamera.translate(0.0f, 0.0f, 100.0f);
+        // As the angle of the view gets less, zoom in
+        if (rotation < mMaxRotationAngle) {
+            float zoomAmount = (float) (mMaxZoom + (rotation * 1.5));
+            mCamera.translate(0.0f, 0.0f, zoomAmount);
+        }
+        // 在Y轴上旋转，对应图片竖向向里翻转。
+        // 如果在X轴上旋转，则对应图片横向向里翻转。
+        mCamera.rotateY(rotationAngle);
+        mCamera.getMatrix(imageMatrix);
+        imageMatrix.preTranslate(-(imageWidth / 2), -(imageHeight / 2));
+        imageMatrix.postTranslate((imageWidth / 2), (imageHeight / 2));
+        mCamera.restore();
+    }
+}
+</pre>
+<p><strong>ImageAdapter</strong></p>
+<pre class="code">package com.iteedu.gallery3d;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.Config;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.LinearGradient;
+import android.graphics.Matrix;
+import android.graphics.Paint;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Shader.TileMode;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+
+public class ImageAdapter extends BaseAdapter {
+    int mGalleryItemBackground;
+    private Context mContext;
+    private Integer[] mImageIds;
+    private ImageView[] mImages;
+    
+    public ImageAdapter(Context c, Integer[] ImageIds) {
+     mContext = c;
+     mImageIds = ImageIds;
+     mImages = new ImageView[mImageIds.length];
+    }
+    /**
+     * 创建倒影效果
+     * @return
+     */
+    public boolean createReflectedImages() {
+     //倒影图和原图之间的距离
+     final int reflectionGap = 4;
+     int index = 0;
+     for (int imageId : mImageIds) {
+      //返回原图解码之后的bitmap对象
+      Bitmap originalImage = BitmapFactory.decodeResource(mContext.getResources(), imageId);
+      int width = originalImage.getWidth();
+      int height = originalImage.getHeight();
+      //创建矩阵对象
+      Matrix matrix = new Matrix();
+      
+      //指定一个角度以0,0为坐标进行旋转
+      // matrix.setRotate(30);
+      
+      //指定矩阵(x轴不变，y轴相反)
+      matrix.preScale(1, -1);
+      
+      //将矩阵应用到该原图之中，返回一个宽度不变，高度为原图1/2的倒影位图
+      Bitmap reflectionImage = Bitmap.createBitmap(originalImage, 0,
+        height/2, width, height/2, matrix, false);
+      
+      //创建一个宽度不变，高度为原图+倒影图高度的位图
+      Bitmap bitmapWithReflection = Bitmap.createBitmap(width,
+        (height + height / 2), Config.ARGB_8888);
+      
+      //将上面创建的位图初始化到画布
+      Canvas canvas = new Canvas(bitmapWithReflection);
+      canvas.drawBitmap(originalImage, 0, 0, null);
+      
+      Paint deafaultPaint = new Paint(); 
+      deafaultPaint.setAntiAlias(false);
+//    canvas.drawRect(0, height, width, height + reflectionGap,deafaultPaint);
+      canvas.drawBitmap(reflectionImage, 0, height + reflectionGap, null);
+      Paint paint = new Paint();
+      paint.setAntiAlias(false);
+       
+      /**
+       * 参数一:为渐变起初点坐标x位置，
+       * 参数二:为y轴位置，
+       * 参数三和四:分辨对应渐变终点，
+       * 最后参数为平铺方式，
+       * 这里设置为镜像Gradient是基于Shader类，所以我们通过Paint的setShader方法来设置这个渐变
+       */
+      LinearGradient shader = new LinearGradient(0,originalImage.getHeight(), 0,
+              bitmapWithReflection.getHeight() 
+				+ reflectionGap,0x70ffffff, 0x00ffffff, TileMode.MIRROR);
+      //设置阴影
+      paint.setShader(shader);
+      paint.setXfermode(new PorterDuffXfermode(
+		android.graphics.PorterDuff.Mode.DST_IN));
+      //用已经定义好的画笔构建一个矩形阴影渐变效果
+      canvas.drawRect(0, height, width, 
+		bitmapWithReflection.getHeight()+ reflectionGap, paint);
+      
+      //创建一个ImageView用来显示已经画好的bitmapWithReflection
+      ImageView imageView = new ImageView(mContext);
+      imageView.setImageBitmap(bitmapWithReflection);
+      //设置imageView大小 ，也就是最终显示的图片大小
+      imageView.setLayoutParams(new GalleryFlow.LayoutParams(300, 400));
+      //imageView.setScaleType(ScaleType.MATRIX);
+      mImages[index++] = imageView;
+     }
+     return true;
+    }
+    @SuppressWarnings("unused")
+    private Resources getResources() {
+        return null;
+    }
+    public int getCount() {
+        return mImageIds.length;
+    }
+    public Object getItem(int position) {
+        return position;
+    }
+    public long getItemId(int position) {
+        return position;
+    }
+    public View getView(int position, View convertView, ViewGroup parent) {
+        return mImages[position];
+    }
+    public float getScale(boolean focused, int offset) {
+        return Math.max(0, 1.0f / (float) Math.pow(2, Math.abs(offset)));
+    }
+   }</pre>
+<p><strong>Gallery3DActivity</strong></p>
+<pre class="code">package com.iteedu.gallery3d;
+
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
+
+public class Gallery3DActivity extends Activity {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        
+        
+        setContentView(R.layout.main);
+        
+        Integer[] images = {  R.drawable.sample_2, R.drawable.sample_3,
+				R.drawable.sample_4, R.drawable.sample_6 };
+        
+        ImageAdapter adapter = new ImageAdapter(this, images);
+        adapter.createReflectedImages();//创建倒影效果
+        GalleryFlow galleryFlow = (GalleryFlow) this.findViewById(R.id.gy);
+        galleryFlow.setFadingEdgeLength(0);
+        galleryFlow.setSpacing(-100); //图片之间的间距
+        galleryFlow.setAdapter(adapter);
+        
+        galleryFlow.setOnItemClickListener(new OnItemClickListener() {
+        	@Override
+            public void onItemClick(AdapterView&lt;?&gt; parent, View view,
+                    int position, long id) {
+                Toast.makeText(getApplicationContext(), 
+				String.valueOf(position), Toast.LENGTH_SHORT).show();
+            }
+
+		
+            
+        });
+        galleryFlow.setSelection(2);
+    }
+}</pre>
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

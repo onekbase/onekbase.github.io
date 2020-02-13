@@ -1,0 +1,244 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1>13.1.4. CREATE INDEX语法</h1>
+
+          
+        
+      
+      
+      <pre>CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX <i>index_name</i>
+&nbsp;&nbsp;&nbsp; [USING <i>index_type</i>]
+&nbsp;&nbsp;&nbsp; ON <i>tbl_name</i> (<i>index_col_name</i>,...)
+&nbsp;
+<i>index_col_name</i>:
+&nbsp;&nbsp;&nbsp; <i>col_name</i> [(<i>length</i>)] [ASC | DESC]</pre>
+      <p>CREATE INDEX被映射到一个ALTER 
+        TABLE语句上，用于创建索引。请参见<a href="alter-table.html" title="13.1.2. ALTER TABLE Syntax">13.1.2节，“ALTER 
+        TABLE语法”</a>。</p>
+      <p>通常，当使用CREATE TABLE创建表时，也同时在表中创建了所有的索引。请参见<a href="create-table.html" title="13.1.5. CREATE TABLE Syntax">13.1.5节，“CREATE 
+        TABLE语法”</a>。CREATE INDEX允许您向已有的表中添加索引。</p>
+      <p>格式为（col1, col2,...）的一个列清单创建出一个多列索引。通过串接给定列中的值，确定索引值的格式。</p>
+      <p>对于CHAR和VARCHAR列，只用一列的一部分就可创建索引。创建索引时，使用<i>col_name</i>(<i>length</i>)语法，对前缀编制索引。前缀包括每列值的前<i>length</i>个字符。BLOB和TEXT列也可以编制索引，但是必须给出前缀长度。</p>
+      <p>此处展示的语句用于创建一个索引，索引使用列名称的前10个字符。</p>
+      <pre>CREATE INDEX part_of_name ON customer (name(10));</pre>
+      <p>因为多数名称的前10个字符通常不同，所以此索引不会比使用列的全名创建的索引速度慢很多。另外，使用列的一部分创建索引可以使索引文件大大减小，从而节省了大量的磁盘空间，有可能提高INSERT操作的速度。</p>
+      <p>前缀最长为255字节。对于MyISAM和InnoDB表，前缀最长为1000字节。注意前缀的限长以字节计，而CREATE 
+        INDEX语句中的前缀长度指的是字符的数目。对于使用多字节字符集的列，在指定列的前缀长度时，要考虑这一点。</p>
+      <p>在MySQL 5.1中：</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        只有当您正在使用MyISAM, InnoDB或BDB表类型时，您可以向有NULL值的列中添加索引。</p>
+      <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        只有当您正在使用MyISAM, BDB或InnoDB表类型时，您可以向BLOB或TEXT列中添加索引。</p>
+      <p>一个<i>index_col_name</i>规约可以以ASC或DESC为结尾。这些关键词将来可以扩展，用于指定递增或递减索引值存储。目前，这些关键词被分析，但是被忽略；索引值均以递增顺序存储。</p>
+      <p>部分储存引擎允许在创建索引时指定索引类型。<i>index_type</i>指定语句的语法是USING <i>type_name</i>。不同的储存引擎所支持的<i>type_name</i>值已显示在下表中。如果列有多个索引类型，当没有指定<i>index_type</i>时，第一个类型是默认值。</p>
+      <table border="1" cellpadding="0" id="table1">
+        <tr>
+          <td><p> 存储引擎</td>
+          <td><p> 允许的索引类型</td>
+        </tr>
+        <tr>
+          <td><p> MyISAM</td>
+          <td><p> BTREE</td>
+        </tr>
+        <tr>
+          <td><p> InnoDB</td>
+          <td><p> BTREE</td>
+        </tr>
+        <tr>
+          <td><p> MEMORY/HEAP</td>
+          <td><p> HASH,
+              BTREE</td>
+        </tr>
+      </table>
+      <p>示例：</p>
+      <pre>CREATE TABLE lookup (id INT) ENGINE = MEMORY;
+CREATE INDEX id_index USING BTREE ON lookup (id);</pre>
+      <p>TYPE <i>type_name</i>可以作为USING <i>type_name</i>的同义词，用于指定索引类型。但是，USING是首选的格式。另外，在索引规约语法中，位于索引类型前面的索引名称不能使用TYPE。这是因为，与USING不同，TYPE不是保留词，因此会被认为是一个索引名称。</p>
+      <p>如果您指定的索引类型在给定的储存引擎中不合法，但是有其它的索引类型适合引擎使用，并且不会影响查询功能，则引擎应使用此类型。</p>
+      <p>要了解更多有关MySQL如何使用索引的信息，请参见<a href="create-index.html" title="7.4.5. How MySQL Uses Indexes">7.4.5节，“MySQL如何使用索引”</a>。</p>
+      <p>FULLTEXT索引只能对CHAR, VARCHAR和TEXT列编制索引，并且只能在MyISAM表中编制。请参见<a href="create-table.html" title="12.7. Full-Text Search Functions">12.7节，“全文搜索功能”</a>。</p>
+      <p>SPATIAL索引只能对空间列编制索引，并且只能在MyISAM表中编制。空间列类型在<a href="../spatial-extensions-in-mysql/index.html">第19章：</a><a href="../spatial-extensions-in-mysql/index.html" title="Chapter 19. Spatial Extensions in MySQL"><i>MySQL中的空间扩展</i></a>中进行了描述。
+    
+    
+      
+        
+          
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

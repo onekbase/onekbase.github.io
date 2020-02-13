@@ -1,0 +1,236 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 5.5.&nbsp;MySQL服务器关机进程</h1>
+
+        
+      
+    
+    
+      <ol type="1">
+        <li>&nbsp;服务器关闭进程可以概括为：
+          <p> 1.&nbsp;&nbsp;&nbsp;
+            启动关闭进程</p>
+          <p> 2.&nbsp;&nbsp;&nbsp;
+            服务器根据需要创建关闭线程</p>
+          <p> 3.&nbsp;&nbsp;&nbsp;
+            服务器停止接收新连接</p>
+          <p> 4.&nbsp;&nbsp;&nbsp;
+            服务器终止当前的活动</p>
+          <p> 5.&nbsp;&nbsp;&nbsp;
+            存储引擎被停掉或关闭</p>
+          <p> 6.&nbsp;&nbsp;&nbsp;
+            服务器退出</p>
+          <p>下面是更详细的描述：</p>
+          <p> 1.&nbsp;&nbsp;&nbsp;
+            启动关闭进程。</p>
+          <p>可以用多种方法启动服务器的关闭。例如，拥有SHUTDOWN权限的用户可以执行mysqladmin 
+            shutdown命令。mysqladmin可以用于所有支持MySQL的平台上。其它操作系统相关的关闭开始方法还可能有：在Unix中，当接收到SIGTERM信号后，服务器关闭。对于在Windows中作为服务运行的服务器，当服务管理器让它关闭时，则关闭。</p>
+          <p> 2.&nbsp;&nbsp;&nbsp;
+            服务器根据需要创建关闭线程。</p>
+          <p> 根据开始关闭的方式，服务器可以创建线程来处理关闭进程。如果客户端需要关闭，则创建关闭线程。如果收到SIGTERM信号后关闭，信号线程可以自己关闭，或者创建单独的线程来完成。如果服务器尝试创建关闭线程而不能创建(例如，如果内存被耗尽)，它在错误日志中给出诊断消息：</p>
+          <pre >Error: Can&#39;t create thread to kill server</pre>
+          <p> 3.&nbsp;&nbsp;&nbsp;
+            服务器停止接收新连接。</p>
+          <p> 在关闭过程中要想防止启动新活动，服务器停止接收新的客户端连接。它将关闭它帧听的网络连接：TCP/IP端口、Unix套接字文件、Windows命名管道和在Windows中的共享内存。</p>
+          <p> 4.&nbsp;&nbsp;&nbsp;
+            服务器终止当前的活动。</p>
+          <p> 对于每个与客户端连接相关的线程，与客户端的连接被中断，线程被标记为“杀掉的”。当线程注意到此类标记后则线程终止。空闲连接的线程很快终止。当前正处理查询的线程定期检查它们的状态，终止的时间较长。关于线程终止的详细信息，参见<a href="server-shutdown.html" title="13.5.5.3. KILL Syntax">13.5.5.3节，“KILL语法”</a>，特别是关于对MyISAM表的杀掉的REPAIR 
+            TABLE或OPTIMIZE 
+            TABLE操作。</p>
+          <p> 对于有打开事务的线程，事务被回滚。请注意如果某个线程正在更新非事务表，多行UPDATE或INSERT等操作会使表部分更新，因为操作在完成前会终止。</p>
+          <p> 如果服务器是主复制服务器，与当前连接的从服务器相关的线程的处理方式同其它客户端线程。即每个线程被标记为杀掉的，在下次检查他的状态后会退出。</p>
+          <p>如果服务器是从复制服务器，在客户端线程标记为杀掉的之前，激活的I/O和SQL线程被停止。SQL线程允许先结束它当前的语句(以避免造成复制问题)然后停止。如果此时SQL线程正位于事务中部，事务则
+            回滚。</p>
+          <p> 5.&nbsp;&nbsp;&nbsp;
+            存储引擎被停掉或关闭。</p>
+          <p>在该阶段，表缓存被清空，所有打开的表被关闭。</p>
+          <p>每个存储引擎执行它管理的表需要的任何动作。例如，MyISAM清空任何挂起的表索引写操作。InnoDB将它的缓冲池清空到硬盘上（除非innodb_fast_shutdown为2），将当前的LSN写入表内，并终止自己的内部线程。</p>
+          <p> 6.&nbsp;&nbsp;&nbsp;
+            服务器退出。
+        </li>
+      </ol>
+    
+  
+  
+    
+      
+        
+          
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

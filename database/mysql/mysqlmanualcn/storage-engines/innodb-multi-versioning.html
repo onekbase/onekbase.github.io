@@ -1,0 +1,218 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 15.2.12 . 多版本的实施</h1>
+
+            
+          
+        
+        <p>因为InnoDB是多版本化的数据库, 它必须保持关于表空间中旧版本行的信息。这个信息被存在名为<em>rollback segment</em>（在Oracle中模拟数据结构之后）的数据结构中。
+          
+        </p>
+        <p>内部地，InnoDB往存在数据库中的每一行中添加两个域。一个6字节的域说明插入或更新该行的最后一个事务的事务识别符。同时，一个删除也被内部处理为一个更新，其中行中一个特殊的位被设置来标注该行为已删除。每一行也包含一个称为滚动指针的7字节域。滚动指针指向一个被写到回滚片断的撤销日志记录。如果该行被更新，撤销日志记录包含在该行被更新之前重建该行的内容必需的的信息。
+          
+        </p>
+        <p>InnoDB使用在回滚片断中的信息来执行在事务回滚中需要的撤销操作。它也使用这个信息来为一个持续读构建更早版本的行。
+          
+        </p>
+        <p>在回滚片断中的撤销日志被分为插入和更新撤销日志。插入撤销日志仅在事务回滚中需要，且只要事务一提交就可以被丢弃。更新撤销日志也被用在持续读中，而且它们仅在
+          当前没有被InnoDB分配给一个快照的事务之后被丢弃，这个快照在持续读中可能会需要更新撤销日志的信息来建立一个数据库行的早期版本。
+          
+        </p>
+        <p>你必须记得规律地提交你的事务，包括那些只发布持续读的事务。否则, InnoDB不能从更新撤销日志丢弃数据，并且回滚片断可能变得太大，填满你的表空间。
+          
+        </p>
+        <p>在一个回滚片断里，一个撤销日志记录的物理尺寸典型地小于相应的已插入行或已更新行。你可以用这个信息来计算回滚片断需要的空间。
+          
+        </p>
+        <p>在InnoDB多版本化方案中，当你用SQL语句删除一行之时，该行没有被从数据库立即物理删除掉。
+          只有当InnoDB可以丢弃为删除而被写的更新撤销日志记录时，InnoDB也物理地从数据库删除相应行和它的索引记录。这个删除操作被成为精华，它运行得很快，通常与做删除的SQL语句花的时间在一个数量级。
+          
+        </p>
+        <p>在某一情景下，在那里，用户以几乎相同的比率，小批次地在表中插入和删除行，净化线程开始滞后
+          是可能的，并且表变得越来越大，使得每样事都是磁盘绑定的而且非常慢。即使表仅载有10MB有用的数据，它可能变得用所有的死行占据10GB空间。在这种情况下，节流新操作，并分配更多的资源来净化线程可能是比较好的。启动选项和可设置全球变量innodb_max_purge_lag就是为这个目的而存在的。请参阅<a href="innodb-start.html" title="15.2.4.&nbsp;InnoDB Startup Options">15.2.4节，“InnoDB               启动选项&rdquo;</a> 以获得更多信息。
+          
+        </p>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

@@ -1,0 +1,404 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 20.2.1 .&nbsp;CREATE PROCEDURE和CREATE FUNCTION </h1>
+
+            
+          
+        
+        <pre><a name="id2992284"></a><a name="id2992293"></a>CREATE PROCEDURE <i>sp_name</i> ([<i>proc_parameter</i>[,...]])
+
+&nbsp;&nbsp;&nbsp; [<i>characteristic</i> ...] <i>routine_body</i>
+
+&nbsp;
+
+CREATE FUNCTION <i>sp_name</i> ([<i>func_parameter</i>[,...]])
+
+&nbsp;&nbsp;&nbsp; RETURNS <i>type</i>
+
+&nbsp;&nbsp;&nbsp; [<i>characteristic</i> ...] <i>routine_body</i>
+
+&nbsp;&nbsp;&nbsp; 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<i>proc_parameter</i>:
+
+&nbsp;&nbsp;&nbsp; [ IN | OUT | INOUT ] <i>param_name</i> <i>type</i>
+
+&nbsp;&nbsp;&nbsp; 
+
+&nbsp;&nbsp;&nbsp;&nbsp;<i>func_parameter</i>:
+
+&nbsp;&nbsp;&nbsp; <i>param_name</i> <i>type</i>
+
+&nbsp;
+
+<i>type</i>:
+
+&nbsp;&nbsp;&nbsp; <i>Any valid MySQL data type</i>
+
+&nbsp;
+
+<i>characteristic</i>:
+
+&nbsp;&nbsp;&nbsp; LANGUAGE SQL
+
+&nbsp; | [NOT] DETERMINISTIC
+
+&nbsp; | { CONTAINS SQL | NO SQL | READS SQL DATA | MODIFIES SQL DATA }
+
+&nbsp; | SQL SECURITY { DEFINER | INVOKER }
+
+&nbsp; | COMMENT '<i>string</i>'
+
+&nbsp;
+
+<i>routine_body</i>:
+
+&nbsp;&nbsp;&nbsp; <i>Valid SQL procedure statement or statements</i>
+</pre>
+        <p>这些语句创建存储子程序。要在MySQL    
+          5.1中创建子程序，必须具有CREATE   
+          ROUTINE权限，并且ALTER ROUTINE和EXECUTE权限被自动授予它的创建者。如果二进制日志功能被允许，你也可能需要SUPER权限，请参阅<a href="stored-procedure-logging.html" title="20.4.&nbsp;Binary Logging of Stored Routines and Triggers">20.4节，“存储子程序和触发程序的二进制日志功能&rdquo;</a>。
+          
+        </p>
+        <p> 默认地，子程序与当前数据库关联。要明确地把子程序与一个给定数据库关联起来，可以在创建子程序的时候指定其名字为<i>db_name.sp_name</i>。</p>
+        <p>如果子程序名和内建的SQL函数名一样，定义子程序时，你需要在这个名字和随后括号中间插入一个空格，否则发生语法错误。当你随后调用子程序的时候也要插入。为此，即使有可能出现这种情况，我们还是建议最好避免给你自己的
+          存储子程序取与存在的SQL函数一样的名字。</p>
+        <p>由括号包围的参数列必须总是存在。如果没有参数，也该使用一个空参数列()。每个参数
+          默认都是一个IN参数。要指定为其它参数，可在参数名之前使用关键词 OUT或INOUT</p>
+        <p>注意: 指定参数为IN,   
+          OUT, 或INOUT 只对PROCEDURE是合法的。（FUNCTION参数总是被认为是IN参数）
+          
+        </p>
+        <p> RETURNS字句只能对FUNCTION做指定，对函数而言这是强制的。它用来指定函数的返回类型，而且函数体必须包含一个RETURN value语句。
+          
+        </p>
+        <p> <i>routine_body</i> 包含合法的SQL过程语句。可以使用复合语句语法，请参阅<a href="begin-end.html" title="20.2.7.&nbsp;BEGIN ... END Compound Statement">20.2.7节，“BEGIN ... END复合语句&rdquo;</a>。复合语句可以包含
+          声明，循环和其它控制结构语句。这些语句的语法在本章后免介绍，举例，请参阅<a href="declare.html" title="20.2.8.&nbsp;DECLARE Statement">20.2.8节，“DECLARE语句&rdquo;</a>和<a href="flow-control-constructs.html" title="20.2.12.&nbsp;Flow Control Constructs">20.2.12节，“流程控制构造”</a>。
+          
+        </p>
+        <p> CREATE FUNCTION语句被用在更早的MySQL版本上以支持UDF （自定义函数）。请参阅<a href="" title="27.2.&nbsp;Adding New Functions to MySQL">27.2节，“给MySQL添加新函数&rdquo;</a>。 UDF继续被支持，即使现在
+          有了存储函数。UDF会被认为一个外部存储函数。然而，不要让存储函数与UDF函数共享名字空间。
+          
+        </p>
+        <p> 外部存储程序的框架将在不久的将来引入。这将允许你用SQL之外的语言编写存储程序。最可能的是，第一个被支持语言是PHP，因为核心PHP引擎很小，线程安全，且可以被方便地嵌入。因为框架是公开的，它希望许多其它语言也能被支持。</p>
+        <p> 如果程序或线程总是对同样的输入参数产生同样的结果，则被认为它是&ldquo;确定的&rdquo;，否则就是&ldquo;非确定&rdquo;的。如果既没有给定DETERMINISTIC也没有给定NOT
+          DETERMINISTIC，默认的就是NOT DETERMINISTIC。
+          
+        </p>
+        <p>为进行复制，使用NOW()函数（或它的同义词）或
+          RAND
+          ()函数会不必要地使得一个子程序非确定。对NOW()而言，二进制日志包括时间戳并被正确复制。
+          RAND
+          () 
+          只要在一个子程序被内应用一次也会被正确复制。（你可以把子程序执行时间戳和随机数种子认为强制输入，它们在主从上是同样的。）
+          
+        </p>
+        <p>当前来讲，DETERMINISTIC特征被接受，但还没有被优化程序所使用。然而如果二进制日志功能被允许了，这个特征影响到MySQL是否会接受子程序定义。请参阅<a href="stored-procedure-logging.html" title="20.4.&nbsp;Binary Logging of Stored Routines and Triggers">20.4</a><a href="stored-procedure-logging.html" title="20.4.&nbsp;Binary Logging of Stored Routines and Triggers">节，“存储子程序和触发程序的二进制日志功能&rdquo;</a>。
+          
+        </p>
+        <p>一些特征提供子程序使用数据的内在信息。CONTAINS SQL表示子程序不包含读或写数据的语句。NO SQL表示子程序不包含SQL语句。READS
+          SQL DATA表示子程序包含读数据的语句，但不包含写数据的语句。MODIFIES SQL DATA表示子程序包含写数据的语句。如果这些特征没有明确给定，默认的是CONTAINS SQL。
+          
+        </p>
+        <p> SQL SECURITY特征可以用来指定
+          子程序该用创建子程序者的许可来执行，还是使用调用者的许可来执行。默认值是DEFINER。在SQL:2003中者是一个新特性。创建者或调用者必须由访问
+          子程序关联的数据库的许可。在MySQL 5.1中，必须有EXECUTE权限才能执行子程序。必须拥有这个权限的用户要么是定义者，要么是调用者，这取决于SQL SECURITY特征是如何设置的。
+          
+        </p>
+        <p>MySQL存储sql_mode系统变量设置，这个设置在子程序被创建的时候起作用，MySQL总是强制使用这个设置来执行
+          子程序。
+          
+        </p>
+        <p>COMMENT子句是一个MySQL的扩展，它可以被用来描述
+          存储程序。这个信息被SHOW CREATE PROCEDURE和 SHOW CREATE   
+          FUNCTION语句来显示。
+          
+        </p>
+        <p>MySQL允许子程序包含DDL语句，如CREATE和DROP。MySQL也允许存储程序（但不是
+          存储函数）包含SQL 交互语句，如COMMIT。存储函数不可以包含那些做明确的和绝对的提交或者做回滚的语。SQL标准不要求对这些语句的支持，SQL标准声明每个DBMS提供商可以决定是否允许支持这些语句。
+          
+        </p>
+        <p>存储子程序不能使用LOAD DATA   
+          INFILE。
+          
+        </p>
+        <p>返回结果包的语句不能被用在存储函数种。这包括不使用INTO给变量读取
+          列值的SELECT语句，SHOW
+          语句，及其它诸如EXPLAIN这样的语句。对于可在函数定义时间被决定要返回一个结果包的语句，发生一个允许从函数错误返回结果包的Not（ER_SP_NO_RETSET_IN_FUNC）。对于只可在运行时决定要返回一个结果包的语句，  
+          发生一个不能在给定上下文错误返回结果包的PROCEDURE %s 
+          （ER_SP_BADSELECT)。
+          
+        </p>
+        <p>下面是一个使用OUT参数的简单的存储程序的例子。例子为，在
+          程序被定义的时候，用mysql客户端delimiter命令来把语句定界符从 ;变为//。这就允许用在
+          程序体中的;定界符被传递到服务器而不是被mysql自己来解释。
+          
+        </p>
+        <pre>mysql&gt; delimiter //
+
+&nbsp;
+
+mysql&gt; CREATE PROCEDURE simpleproc (OUT param1 INT)
+
+&nbsp;&nbsp;&nbsp; -&gt; BEGIN
+
+&nbsp;&nbsp;&nbsp; -&gt;&nbsp;&nbsp; SELECT COUNT(*) INTO param1 FROM t;
+
+&nbsp;&nbsp;&nbsp; -&gt; END
+
+&nbsp;&nbsp;&nbsp; -&gt; //
+
+Query OK, 0 rows affected (0.00 sec)
+
+&nbsp;
+
+mysql&gt; delimiter ;
+
+&nbsp;
+
+mysql&gt; CALL simpleproc(@a);
+
+Query OK, 0 rows affected (0.00 sec)
+
+&nbsp;
+
+mysql&gt; SELECT @a;
+
++------+
+
+| @a&nbsp;&nbsp; |
+
++------+
+
+| 3&nbsp;&nbsp;&nbsp; |
+
++------+
+
+1 row in set (0.00 sec)
+</pre>
+        <p>当使用delimiter命令时，你应该避免使用反斜杠(&lsquo;\&rsquo;)字符，因为那是MySQL的
+          转义字符。
+          
+        </p>
+        <p>下列是一个例子，一个采用参数的函数使用一个SQL函数执行一个操作，并返回结果：
+          
+        </p>
+        <pre>mysql&gt; delimiter //
+
+&nbsp;
+
+mysql&gt; CREATE FUNCTION hello (s CHAR(20)) RETURNS CHAR(50)
+
+&nbsp;&nbsp;&nbsp; -&gt; RETURN CONCAT('Hello, ',s,'!');
+
+&nbsp;&nbsp;&nbsp; -&gt; //
+
+Query OK, 0 rows affected (0.00 sec)
+
+&nbsp;
+
+mysql&gt; delimiter ;
+
+&nbsp;
+
+mysql&gt; SELECT hello('world');
+
++----------------+
+
+| hello('world') |
+
++----------------+
+
+| Hello, world!&nbsp; |
+
++----------------+
+
+1 row in set (0.00 sec)
+</pre>
+        <p>如果在存储函数中的RETURN语句返回一个类型不同于在函数的RETURNS子句中指定类型的值，返回值被强制为恰当的类型。比如，如果一个函数返回一个ENUM或SET值，但是RETURN语句返回一个整数，对于SET成员集的相应的ENUM成员，从函数返回的值是字符串。
+          
+        </p>
+      
+      
+        
+          
+            
+              
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

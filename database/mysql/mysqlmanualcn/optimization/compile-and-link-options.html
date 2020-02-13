@@ -1,0 +1,233 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+
+<!--end of htmlmiddle-->
+
+
+
+<h1> 7.5.4.&nbsp;编译和链接怎样影响MySQL的速度</h1>
+
+          
+        
+      
+      
+    
+      
+        
+          
+            <p> 下列大多数测试是在Linux上并用MySQL基准进行的，但是它们能对其它操作系统和工作负载给出一些指示。</p>
+            <p> 当你用-static链接时，可以得到最快的可执行文件。</p>
+            <p> 在Linux上，最好用pgcc和-O3编译服务器。为了用这些选项编译<tt >“sql_yacc.cc”</tt>，需要大约200M内存，因为gcc或pgcc需要大量的内存使所有函数嵌入（inline）。在配置MySQL时，也应该设定CXX=gcc以避免包括libstdc++库(它不需要)。请注意对于某些版本的pgcc，生成的二进制只能运行在真Pentium处理器上，即使你使用编译器选项说明你想让最终的代码在所有x586-类处理器上工作(例如AMD)。</p>
+            <p> 只通过使用一个较好的编译器或较好的编译器选项，在应用中能得到10-30%的加速。如果你自己编译SQL服务器，这特别重要！</p>
+            <p> 当我们测试Cygnus CodeFusion或Fujitsu编译器时，二者均还没足够不出错来让MySQL启用优化进行编译。</p>
+            <p> 标准MySQL二进制分发编译为支持所有字符集。当你自己编译MySQL时，应只包括将使用的字符集的支持。通过configure的--with-charset选项来控制。</p>
+            <p> 这里是我们做过的一些测量表：</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              如果你使用pgcc并用-O6编译，mysqld服务器比用gcc 
+              2.95.2快11%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              如果你动态地链接(没有-static)，在Linux中结果慢了13%。注意你仍能在客户应用程序中使用动态链接MySQL库。只有服务器对性能是关键的。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              如果你用strip 
+              mysqld剥离mysqld二进制，生成的二进制可以快4%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              对于在同一主机上运行的客户与服务器之间的连接，如果你使用TCP/IP而非Unix套接字文件进行连接，结果慢7.5%。(在Unix中，如果你连接localhost主机，MySQL默认使用一个套接字文件）。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              对于从客户到服务器的TCP/IP连接，从另一台主机连接一台远程服务器要比连接同一主机上的服务器慢8-11%，即使通过100Mb/s以太网进行连接。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              当使用安全连接运行我们的基准测试时(所有数据用内部SSL支持进行加密)，性能比未加密连接慢55%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              如果你用--with-debug=full编译，大多数查询慢20%。部分查询时间会很长；例如，MySQL基准的运行要慢35%。如果你使用--with-debug(没有=full)，速度只下降15%。对于用--with-debug=full编译的mysqld版本，可以用--skip-safemalloc选项启动以便在运行时禁用内存检查。执行速度则接近用--with-debug配置的时候。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在Sun UltraSPARC-Iie上，用Forte 
+              5.0编译的服务器比用gcc 
+              3.2编译的要快4%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在Sun UltraSPARC-Iie上，用Forte 
+              5.0编译的32位模式服务器比64位模式服务器要快4%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              用gcc 
+              2.95.2编译带-mcpu=v8 
+              -Wa的UltraSPARC，使用-xarch=v8plusa选项性能会提高4%。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在Solaris 2.5.1上，在单个处理器上MIT-pthreads比带原生线程的Solaris慢8-12%。如果有更大的负载/cpus，差别应该更大。</p>
+            <p> ·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              在Linux-x86上使用gcc编译而不用帧指针(-fomit-frame-pointer 
+              or -fomit-frame-pointer 
+              -ffixed-ebp)，可以使mysqld快1-4%。</p>
+            <p>MySQL AB提供的Linux上的二进制MySQL分发一般用pgcc编译。我们必须返回到常规gcc，因为pgcc中有一个bug，使生成的二进制不能在AMD上运行。我们将继续使用gcc直到该bug被解决。同时，如果你有一个非AMD机，你可以用pgcc编译构建一个更快的二进制。标准MySQL 
+              Linux二进制是通过静态链接，以使它更快并且更加易于移植。</p>
+            
+
+
+<!--start of htmlend-->
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
