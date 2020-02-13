@@ -1,0 +1,898 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="58.5. Validation Messages">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.validate.messages"></a>58.5. Validation Messages</h2></div></div></div>
+<p>
+        Each validator which is based on <code class="classname">Zend_Validate</code> provides
+        one or multiple messages in the case of a failed validation. You can use
+        this information for setting own messages or when you have to translate
+        the messages a validator can return. The following table lists all
+        available messages which are returned by each validator.
+    </p>
+<div class="table">
+<a name="zend.validate.messages.table"></a><p class="title"><b>表 58.1. Available Validation Messages</b></p>
+<div class="table-contents"><table summary="Available Validation Messages" border="1">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>Validator</th>
+<th>Constant</th>
+<th>Message</th>
+<td class="auto-generated"> </td>
+</tr></thead>
+<tbody>
+<tr>
+<td rowspan="2" valign="middle">Alnum</td>
+<td>NOT_ALNUM</td>
+<td>'%value%' has not only alphabetic and digit characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>STRING_EMPTY</td>
+<td>'%value%' is an empty string</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Alpha</td>
+<td>NOT_ALPHA</td>
+<td>'%value%' has not only alphabetic characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>STRING_EMPTY</td>
+<td>'%value%' is an empty string</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Barcode</td>
+<td>---</td>
+<td>messages are thrown by a subclass</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">Barcode_Ean13</td>
+<td>INVALID</td>
+<td>'%value%' is an invalid EAN-13 barcode</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_LENGTH</td>
+<td>'%value%' should be 13 characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_NUMERIC</td>
+<td>'%value%' should contain only numeric characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Barcode_UpcA</td>
+<td>INVALID</td>
+<td>'%value%' is an invalid UPC-A barcode</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_LENGTH</td>
+<td>'%value%' should be 12 characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Between</td>
+<td>NOT_BETWEEN</td>
+<td>'%value%' is not between '%min%' and '%max%', inclusively</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_BETWEEN_STRICT</td>
+<td>'%value%' is not strictly between '%min%' and '%max%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Ccnum</td>
+<td>LENGTH</td>
+<td>'%value%' must contain between 13 and 19 digits</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>CHECKSUM</td>
+<td>Luhn algorithm (mod-10 checksum) failed on '%value%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">Date</td>
+<td>FALSEFORMAT</td>
+<td>'%value%' does not fit given date format</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID</td>
+<td>'%value%' does not appear to be a valid date</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_YYYY_MM_DD</td>
+<td>'%value%' is not of the format YYYY-MM-DD</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Db_Abstract</td>
+<td>ERROR_NO_RECORD_FOUND</td>
+<td>No record matching %value% was found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>ERROR_RECORD_FOUND</td>
+<td>A record matching %value% was found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Digits</td>
+<td>NOT_DIGITS</td>
+<td>'%value%' contains not only digit characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>STRING_EMPTY</td>
+<td>'%value%' is an empty string</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="7" valign="middle">EmailAddress</td>
+<td>INVALID</td>
+<td>
+                        '%value%' is not a valid email address in the basic format
+                        local-part@hostname
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_HOSTNAME</td>
+<td>'%hostname%' is not a valid hostname for email address '%value%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_MX_RECORD</td>
+<td>
+                        '%hostname%' does not appear to have a valid MX record for the email address
+                        '%value%'
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>DOT_ATOM</td>
+<td>'%localPart%' not matched against dot-atom format</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>QUOTED_STRING</td>
+<td>'%localPart%' not matched against quoted-string format</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_LOCAL_PART</td>
+<td>
+                        '%localPart%' is not a valid local part for email address '%value%'
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>LENGTH_EXCEEDED</td>
+<td>'%value%' exceeds the allowed length</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">File_Count</td>
+<td>TOO_MUCH</td>
+<td>
+                        Too much files, maximum '%max%' are allowed but '%count%' are given
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>TOO_LESS</td>
+<td>
+                        Too less files, minimum '%min%' are expected but '%count%' are given
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Crc32</td>
+<td>DOES_NOT_MATCH</td>
+<td>The file '%value%' does not match the given crc32 hashes</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>There was no crc32 hash detected for the given file</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">File_ExcludeExtension</td>
+<td>FALSE_EXTENSION</td>
+<td>The file '%value%' has a false extension</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' was not found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_ExcludeMimeType</td>
+<td>FALSE_TYPE</td>
+<td>The file '%value%' has a false mimetype of '%type%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>The mimetype of file '%value%' could not been detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>The file '%value%' can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Exists</td>
+<td>DOES_NOT_EXIST</td>
+<td>The file '%value%' does not exist</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">File_Extension</td>
+<td>FALSE_EXTENSION</td>
+<td>The file '%value%' has a false extension</td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' was not found</td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_FilesSize</td>
+<td>TOO_BIG</td>
+<td>
+                        All files in sum should have a maximum size of '%max%' but '%size%' were
+                        detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>TOO_SMALL</td>
+<td>
+                        All files in sum should have a minimum size of '%min%' but '%size%' were
+                        detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>One or more files can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Hash</td>
+<td>DOES_NOT_MATCH</td>
+<td>The file '%value%' does not match the given hashes</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>There was no hash detected for the given file</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="6" valign="middle">File_ImageSize</td>
+<td>WIDTH_TOO_BIG</td>
+<td>
+                        Maximum allowed width for image '%value%' should be '%maxwidth%' but
+                        '%width%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>WIDTH_TOO_SMALL</td>
+<td>
+                        Minimum expected width for image '%value%' should be '%minwidth%' but
+                        '%width%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>HEIGHT_TOO_BIG</td>
+<td>
+                        Maximum allowed height for image '%value%' should be '%maxheight%' but
+                        '%height%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>HEIGHT_TOO_SMALL</td>
+<td>
+                        Minimum expected height for image '%value%' should be '%minheight%' but
+                        '%height%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>The size of image '%value%' could not be detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>The image '%value%' can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_IsCompressed</td>
+<td>FALSE_TYPE</td>
+<td>The file '%value%' is not compressed, '%type%' detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>The mimetype of file '%value%' could not been detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>The file '%value%' can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_IsImage</td>
+<td>FALSE_TYPE</td>
+<td>The file '%value%' is no image, '%type%' detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>The mimetype of file '%value%' could not been detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>The file '%value%' can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Md5</td>
+<td>DOES_NOT_MATCH</td>
+<td>The file '%value%' does not match the given md5 hashes</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>There was no md5 hash detected for the given file</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_MimeType</td>
+<td>FALSE_TYPE</td>
+<td>The file '%value%' has a false mimetype of '%type%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>The mimetype of file '%value%' could not been detected</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_READABLE</td>
+<td>The file '%value%' can not be read</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>File_NotExists</td>
+<td>DOES_EXIST</td>
+<td>The file '%value%' does exist</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Sha1</td>
+<td>DOES_NOT_MATCH</td>
+<td>The file '%value%' does not match the given sha1 hashes</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_DETECTED</td>
+<td>There was no sha1 hash detected for the given file</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_Size</td>
+<td>TOO_BIG</td>
+<td>
+                        Maximum allowed size for file '%value%' is '%max%' but '%size%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>TOO_SMALL</td>
+<td>
+                        Minimum expected size for file '%value%' is '%min%' but '%size%' detected
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="10" valign="middle">File_Upload</td>
+<td>INI_SIZE</td>
+<td>The file '%value%' exceeds the defined ini size</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>FORM_SIZE</td>
+<td>The file '%value%' exceeds the defined form size</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>PARTIAL</td>
+<td>The file '%value%' was only partially uploaded</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NO_FILE</td>
+<td>The file '%value%' was not uploaded</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NO_TMP_DIR</td>
+<td>No temporary directory was found for the file '%value%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>CANT_WRITE</td>
+<td>The file '%value%' can't be written</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>EXTENSION</td>
+<td>
+                        The extension returned an error while uploading the file '%value%'
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>ATTACK</td>
+<td>The file '%value%' was illegal uploaded, possible attack</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>FILE_NOT_FOUND</td>
+<td>The file '%value%' was not found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>UNKNOWN</td>
+<td>Unknown error while uploading the file '%value%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">File_WordCount</td>
+<td>TOO_MUCH</td>
+<td>
+                        Too much words, maximum '%max%' are allowed but '%count%' were counted
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>TOO_LESS</td>
+<td>
+                        Too less words, minimum '%min%' are expected but '%count%' were counted
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NOT_FOUND</td>
+<td>The file '%value%' could not be found</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Float</td>
+<td>NOT_FLOAT</td>
+<td>'%value%' does not appear to be a float</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>GreaterThan</td>
+<td>NOT_GREATER</td>
+<td>'%value%' is not greater than '%min%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Hex</td>
+<td>NOT_HEX</td>
+<td>'%value%' has not only hexadecimal digit characters</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="8" valign="middle">Hostname</td>
+<td>IP_ADDRESS_NOT_ALLOWED</td>
+<td>
+                        '%value%' appears to be an IP address, but IP addresses are not allowed
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>UNKNOWN_TLD</td>
+<td>
+                        '%value%' appears to be a DNS hostname but cannot match TLD against known
+                        list
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_DASH</td>
+<td>
+                        '%value%' appears to be a DNS hostname but contains a dash (-) in an invalid
+                        position
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_HOSTNAME_SCHEMA</td>
+<td>
+                        '%value%' appears to be a DNS hostname but cannot match against hostname
+                        schema for TLD '%tld%'
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>UNDECIPHERABLE_TLD</td>
+<td>
+                        '%value%' appears to be a DNS hostname but cannot extract TLD part
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_HOSTNAME</td>
+<td>
+                        '%value%' does not match the expected structure for a DNS hostname
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>INVALID_LOCAL_NAME</td>
+<td>'%value%' does not appear to be a valid local network name</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>LOCAL_NAME_NOT_ALLOWED</td>
+<td>
+                        '%value%' appears to be a local network name but local network names are not
+                        allowed
+                    </td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="3" valign="middle">Iban</td>
+<td>NOTSUPPORTED</td>
+<td>'%value%' does not have IBAN</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>FALSEFORMAT</td>
+<td>'%value%' has a false format</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>CHECKFAILED</td>
+<td>'%value%' has failed the IBAN check</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">Identical</td>
+<td>NOT_SAME</td>
+<td>The token '%token%' does not match the given token '%value%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>MISSING_TOKEN</td>
+<td>No token was provided to match against</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>InArray</td>
+<td>NOT_IN_ARRAY</td>
+<td>'%value%' was not found in the haystack</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Int</td>
+<td>NOT_INT</td>
+<td>'%value%' does not appear to be an integer</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Ip</td>
+<td>NOT_IP_ADDRESS</td>
+<td>'%value%' does not appear to be a valid IP address</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>LessThan</td>
+<td>NOT_LESS</td>
+<td>'%value%' is not less than '%max%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>NotEmpty</td>
+<td>IS_EMPTY</td>
+<td>Value is required and can't be empty</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>Regex</td>
+<td>NOT_MATCH</td>
+<td>'%value%' does not match against pattern '%pattern%'</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td rowspan="2" valign="middle">StringLength</td>
+<td>TOO_SHORT</td>
+<td>'%value%' is less than %min% characters long</td>
+<td class="auto-generated"> </td>
+</tr>
+<tr>
+<td>TOO_LONG</td>
+<td>'%value%' is greater than %max% characters long</td>
+<td class="auto-generated"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><p>
+        Additionally you can retrieve all message templates of a validator with
+        the method <code>getMessageTemplates()</code>. It returns you an array
+        with the messages a validator could return in the case of a failed validation.
+    </p>
+<pre class="code">
+$validator = new Zend_Validate_Alnum();
+$messages  = $validator-&gt;getMessageTemplates();
+</pre>
+<div class="sect2" title="58.5.1. Limit the size of a validation message">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.validate.messages.limitation"></a>58.5.1. Limit the size of a validation message</h3></div></div></div>
+<p>
+            Sometimes it is necessary to limit the maximum size a validation message can have.
+            For example when your view allows a maximum size of 100 chars to be rendered on one
+            line. To simplify the usage, <code class="classname">Zend_Validate</code> is able to
+            automatically limit the maximum returned size of a validation message.
+        </p>
+<p>
+            To get the actual set size use
+            <code class="methodname">Zend_Validate::getMessageLength()</code>. If it is -1, then the
+            returned message will not be truncated. This is default behaviour.
+        </p>
+<p>
+            To limit the returned message size use
+            <code class="methodname">Zend_Validate::setMessageLength()</code>. Set it to any integer size
+            you need. When the returned message exceeds the set size, then the message
+            will be truncated and the string '<span class="emphasis"><em>...</em></span>' will be added instead of
+            the rest of the message.
+        </p>
+<pre class="code">
+Zend_Validate::setMessageLength(100);
+</pre>
+<div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                Note that the set message length is used for all validators, even for self defined ones
+                as long as they extend <code class="classname">Zend_Validate_Abstract</code>.
+            </p></td></tr>
+</table></div>
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

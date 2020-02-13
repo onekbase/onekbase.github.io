@@ -1,0 +1,590 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="13.2.  如何使用货币">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.currency.usage"></a>13.2.  如何使用货币 </h2></div></div></div>
+<p>
+        在自己的程序中使用 <code>Zend_Currency</code>，就是创建一个它的实例，不需要任何参数。它将创建一个带有实际地方、并定义了在这个地方使用的货币的 <code>Zend_Currency</code> 的一个实例。
+    </p>
+<div class="example">
+<a name="zend.currency.usage.example1"></a><p class="title"><b>例 13.1.  从实际地方创建 Zend_Currency 的实例 </b></p>
+<div class="example-contents">
+<p>
+            期望通过用户（的输入）或环境，你有 'en_US' 设置作为实际地方，通过使用不带参数创建<code>Zend_Currency</code>的实例从地方 'en_US' 来使用实际货币，这导致带美元实例作为带有'en_US'格式规则的实际货币。
+        </p>
+<pre class="code">
+$currency = new Zend_Currency();
+
+        </pre>
+</div>
+</div>
+<br class="example-break"><p>
+        从 Zend Framework 1.7.0 开始，<code>Zend_Currency</code> 也支持程序范围的地方的用法。你可以简单地如下设置 <code>Zend_Locale</code> 实例到注册表。
+        如果你想多次使用同一地方，用这个符号你不需要记住对每个实例手工设置地方。
+     </p>
+<pre class="code">
+// in your bootstrap file
+$locale = new Zend_Locale('de_AT');
+Zend_Registry::set('Zend_Locale', $locale);
+
+// somewhere in your application
+$currency = new Zend_Currency();
+
+    </pre>
+<div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                要知道，如果你的系统没有缺省地方，或者如果你系统的地方不能自动检测到， <code>Zend_Currency</code>  将抛出一个异常。如果这样，你应当手动设置地方。
+            </p></td></tr>
+</table></div>
+<p>
+        当然，根据需要，若干参数可以在创建时给出，每个参数都是可选的和被禁止，甚至参数的顺序也可以交换。每个参数的意思描述如下：
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="opencircle">
+<li class="listitem" style="list-style-type: circle">
+<p>
+                <span class="strong"><strong>currency</strong></span>:
+            </p>
+<p>
+                一个地方可以有多种货币，因此第一个参数 <span class="strong"><strong>'currency'</strong></span> 可通过给出短名称或全名称来定义哪个货币应当被使用。 如果某货币不被任何地方认识，那么就抛出一个异常。货币短名总是三个字母并且是大写。众所周知的货币短名有<code>USD</code> 或 <code>EUR</code> 。想知道所有货币请参考 <code>Zend_Currency</code> 的信息方法。
+            </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                <span class="strong"><strong>locale</strong></span>:
+            </p>
+<p>
+                第三个参数 <span class="strong"><strong>'locale'</strong></span>  定义了哪个地方用来格式化货币，给出的地方也将用来获得标准脚本和货币（如果这些参数没有给出时的货币）。
+            </p>
+<div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                    注意 Zend_Currency 只接受包括地区的地方，这意味着所有给定的只包括语言地方将抛出一个异常。例如地方 <span class="strong"><strong>en</strong></span> 将抛出异常而地方 <span class="strong"><strong>en_US</strong></span>  将返回 <span class="strong"><strong>USD</strong></span>  作为货币。
+                </p></td></tr>
+</table></div>
+</li>
+</ul></div>
+<div class="example">
+<a name="zend.currency.usage.example2"></a><p class="title"><b>例 13.2.  创建 Zend_Currency 实例的其它例子 </b></p>
+<div class="example-contents"><pre class="code">
+// expect standard locale 'de_AT'
+
+// creates an instance from 'en_US' using 'USD' which is default
+// currency for 'en_US'
+$currency = new Zend_Currency('en_US');
+
+// creates an instance from the actual locale ('de_AT') using 'EUR' as
+// currency
+$currency = new Zend_Currency();
+
+// creates an instance using 'EUR' as currency, 'en_US' for number
+// formating
+$currency = new Zend_Currency('en_US', 'EUR');
+
+        </pre></div>
+</div>
+<br class="example-break"><p>
+        如果想使用缺省值，你可以禁止任何参数，在处理货币方面没有副作用，例如这在当你不知道某地区的缺省货币很有用。
+    </p>
+<div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            许多国家有多种货币，一种正在使用的和一些古老的。如果 '<span class="strong"><strong>currency</strong></span>' 参数被禁止，那么使用当前货币。例如在地区 '<span class="strong"><strong>de</strong></span>' 有  '<span class="strong"><strong>EUR</strong></span>' 和 '<span class="strong"><strong>DEM</strong></span>'...'<span class="strong"><strong>EUR</strong></span>' 是当前使用的货币，如果这参数被禁止它将被使用。
+        </p></td></tr>
+</table></div>
+<div class="sect2" title="13.2.1.  从货币创建输出">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.currency.usage.tocurrency"></a>13.2.1.  从货币创建输出 </h3></div></div></div>
+<p>
+            可以用方法 <span class="strong"><strong>toCurrency()</strong></span> 把存在的数值转换成格式化的货币输出，它带有一个可以被转换的数值，这个数值可以是任何标准化的数字。
+        </p>
+<p>
+            如果有个需要转换的本地化的数字，首先用 <a class="link" href="zend.locale.parsing.html#zend.locale.number.normalize" title="31.3.1. Number normalization: getNumber($input, Array $options)">Zend_Locale_Format::getNumber()</a> 来标准化，然后用 <code>toCurrency()</code> 创建一个货币输出。
+        </p>
+<p>
+            <code>toCurrency(array $options)</code> 接受带有选项的数组，这个选项可用来临时设置成另外的格式或货币表示，关于选项的细节参见 <a class="link" href="zend.currency.usage.html#zend.currency.usage.setformat" title="13.2.2.  修改货币格式">Changing the format of a currency</a>。
+        </p>
+<div class="example">
+<a name="zend.currency.usage.tocurrency.example"></a><p class="title"><b>例 13.3.  为货币创建输出 </b></p>
+<div class="example-contents"><pre class="code">
+// creates an instance with 'en_US' using 'USD' which is the default
+// values for 'en_US'
+$currency = new Zend_Currency('en_US');
+
+// prints '$ 1,000.00'
+echo $currency-&gt;toCurrency(1000);
+
+// prints '$ 1.000,00'
+echo $currency-&gt;toCurrency(1000, array('format' =&gt; 'de_AT'));
+
+// prints '$ ١٬٠٠٠٫٠٠'
+echo $currency-&gt;toCurrency(1000, array('script' =&gt; 'Arab'));
+
+            </pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="13.2.2.  修改货币格式">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.currency.usage.setformat"></a>13.2.2.  修改货币格式 </h3></div></div></div>
+<p>
+            用来创建 <code>Zend_Currency</code> 实例的格式当然是标准格式，但有时候也需要为自己的意图需要这个格式。
+        </p>
+<p>
+            货币输出的格式包括下面部分：
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="opencircle">
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong> 货币符号，短名或名字 </strong></span>:
+                </p>
+<p>
+                    或不符号一般显示在货币输出之内，如果需要或重写，它可以被禁止。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong> 货币位置 </strong></span>:
+                </p>
+<p>
+                    货币符号的位置一般由地方来自动定义，如果需要，它可以被修改。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>Script</strong></span>:
+                </p>
+<p>
+                    Script 用来显示数字，它的详细用法可以从 <code>Zend_Locale</code> 的文档 <a class="link" href=""> 被支持的数字 scripts</a>找到。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong> 数字格式 </strong></span>:
+                </p>
+<p>
+                    货币的数量 （ 就是钱的数量 ）用在地方( locale )里的格式化规则来格式化，例如在英语中 ',' 用来分离每一千，在德国就用 '.'符号（例如一百万，在英语中就是1,000,000 而在德语中就是1.000.000 好像在德语中容易和小数点混淆 by Jason Qi）。
+                </p>
+</li>
+</ul></div>
+<p>
+            如果确实需要修改格式，你可以用 <span class="strong"><strong>setFormat()</strong></span> 方法。它带有一个数组，包括所有你向修改的选项。<code>options</code> 数组支持下列设置：
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="opencircle">
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>position</strong></span>: 定义货币显示位置，从 <a class="link" href="zend.currency.usage.html#zend.currency.usage.setformat.constantsposition" title="表 13.2.  选择货币位置的常量">this table</a> 可以找到被支持的位置。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>script</strong></span>: 定义哪个 script 被用来显示数字，大部分地方的缺省的 script 是 <span class="strong"><strong>'Latn'</strong></span> ，它包括数字 0 到 9 。并且其它的 scripts 如 'Arab'(Arabian) 也可以用。所有被支持的 scipts 可以从 <a class="link" href="">this table</a> 找到。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>format</strong></span>: 定义哪个地方（locale）用来显示数字，数字格式包括千为分隔符。如果没有指定格式，就使用 <code>Zend_Currency</code> 对象中的地方（ locale ）。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>display</strong></span>: 定义货币中的哪个部分用来显示货币表示，有四中表示法可用，都在 <a class="link" href="zend.currency.usage.html#zend.currency.usage.setformat.constantsdescription" title="表 13.1.  选择货币描述的常量">this table</a> 中描述。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>precision</strong></span>: 定义用于货币表示的精确位数，它的缺省值是<span class="strong"><strong>2</strong></span>。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>name</strong></span>: 定义被显示的货币名称，它重写通过创建 <code>Zend_Currency</code> 产生的任何货币名称。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>currency</strong></span>: 定义被显示的国际缩写，它重写通过创建 <code>Zend_Currency</code> 产生的任何缩写。
+                </p></li>
+<li class="listitem" style="list-style-type: circle"><p>
+                    <span class="strong"><strong>symbol</strong></span>: 定义被显示的货币符号，它重写通过创建 <code>Zend_Currency</code> 产生的任何符号。
+                </p></li>
+</ul></div>
+<div class="table">
+<a name="zend.currency.usage.setformat.constantsdescription"></a><p class="title"><b>表 13.1.  选择货币描述的常量 </b></p>
+<div class="table-contents"><table summary=" 选择货币描述的常量 " border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th align="left"> 常量 </th>
+<th align="left"> 描述 </th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">NO_SYMBOL</td>
+<td align="left"> 不显示任何货币表示 </td>
+</tr>
+<tr>
+<td align="left">USE_SYMBOL</td>
+<td align="left"> 显示货币符号 </td>
+</tr>
+<tr>
+<td align="left">USE_SHORTNAME</td>
+<td align="left"> 显示三个字母的国际货币缩写 </td>
+</tr>
+<tr>
+<td align="left">USE_NAME</td>
+<td align="left"> 显示货币全名 </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><div class="table">
+<a name="zend.currency.usage.setformat.constantsposition"></a><p class="title"><b>表 13.2.  选择货币位置的常量 </b></p>
+<div class="table-contents"><table summary=" 选择货币位置的常量 " border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th align="left"> 常量 </th>
+<th align="left"> 描述 </th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">STANDARD</td>
+<td align="left"> 设置在地方里定义标准位置 </td>
+</tr>
+<tr>
+<td align="left">RIGHT</td>
+<td align="left"> 在数的右面显示货币表示符 </td>
+</tr>
+<tr>
+<td align="left">LEFT</td>
+<td align="left"> 在数值的左面显示货币表示符 </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break"><div class="example">
+<a name="zend.currency.usage.setformat.example"></a><p class="title"><b>例 13.4.  修改货币的显示格式 </b></p>
+<div class="example-contents"><pre class="code">
+// creates an instance with 'en_US' using 'USD', 'Latin' and 'en_US' as
+// these are the default values from 'en_US'
+$currency = new Zend_Currency('en_US');
+
+// prints 'US$ 1,000.00'
+echo $currency-&gt;toCurrency(1000);
+
+$currency-&gt;setFormat('display' =&gt; Zend_Currency::USE_NAME,
+                     'position' =&gt; Zend_Currency::RIGHT);
+// prints '1.000,00 US Dollar'
+echo $currency-&gt;toCurrency(1000);
+
+$currency-&gt;setFormat('name' =&gt; 'American Dollar');
+// prints '1.000,00 American Dollar'
+echo $currency-&gt;toCurrency(1000);
+
+            </pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="13.2.3.  Zend_Currency 的信息方法">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.currency.usage.informational"></a>13.2.3.  Zend_Currency 的信息方法 </h3></div></div></div>
+<p>
+            当然，<code>Zend_Currency</code> 也支持从 <code>Zend_Locale</code>  获得任何存在的和许多古老货币的信息。支持的方法是：
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="opencircle">
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>getSymbol()</strong></span>:
+                </p>
+<p>
+                    返回实际货币或给定货币的已知符号。例如 <span class="strong"><strong>$</strong></span>  在 <span class="strong"><strong>en_US</strong></span> 地方表示美元。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>getShortName()</strong></span>:
+                </p>
+<p>
+                    返回实际货币或给定货币的缩写。例如 <span class="strong"><strong>USD</strong></span> 在 <span class="strong"><strong>en_US</strong></span>  地方表示美元。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>getName()</strong></span>:
+                </p>
+<p>
+                    返回实际货币或给定货币的全名。例如 <span class="strong"><strong>US Dollar</strong></span>  在 <span class="strong"><strong>en_US</strong></span> 地方表示美元。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>getRegionList()</strong></span>:
+                </p>
+<p>
+                    返回实际货币或给定被使用货币的地区列表。因为某种货币可能被用于多个地区，所以返回值总是一个数组。
+                </p>
+</li>
+<li class="listitem" style="list-style-type: circle">
+<p>
+                    <span class="strong"><strong>getCurrencyList()</strong></span>:
+                </p>
+<p>
+                    返回用于给定地区的已知货币的列表。
+                </p>
+</li>
+</ul></div>
+<p>
+            函数 <code>getSymbol()</code>、 <code>getShortName()</code> 和 <code>getName()</code> 带两个可选的参数。如果没有给出参数，期望的数据将从当前设置货币返回。第一个参数是货币的短名，短名总是三个字母，例如 EUR 是欧元，USD 是美元。第二个参数定义从哪个地方（ locale ）读数据。如果没有给出地方，就使用当前使用的地方设置。
+        </p>
+<div class="example">
+<a name="zend.currency.usage.informational.example"></a><p class="title"><b>例 13.5.  从货币中获取信息 </b></p>
+<div class="example-contents"><pre class="code">
+// creates an instance with 'en_US' using 'USD', 'Latin' and 'en_US'
+// as these are the default values from 'en_US'
+$currency = new Zend_Currency('en_US');
+
+// prints '$'
+echo $currency-&gt;getSymbol();
+
+// prints 'EUR'
+echo $currency-&gt;getShortName('EUR');
+
+// prints 'Österreichische Schilling'
+echo $currency-&gt;getName('ATS', 'de_AT');
+
+// returns an array with all regions where USD is used
+print_r($currency-&gt;getRegionList();
+
+// returns an array with all currencies which were ever used in this
+// region
+print_r($currency-&gt;getCurrencyList('de_AT');
+
+            </pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="13.2.4.  设置新缺省值">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.currency.usage.setlocale"></a>13.2.4.  设置新缺省值 </h3></div></div></div>
+<p>
+            <code>setLocale</code> 方法允许设置新的地方给 <code>Zend_Currency</code> 。当调用这个函数所有的货币的缺省值就被重写，包括货币名、缩写和符号。
+        </p>
+<div class="example">
+<a name="zend.currency.usage.setlocale.example"></a><p class="title"><b>例 13.6.  设置新地方 </b></p>
+<div class="example-contents"><pre class="code">
+// 获得 US 货币
+$currency = new Zend_Currency('en_US');
+print $currency-&gt;toCurrency(1000);
+
+// 获得 AT 货币
+$currency-&gt;setLocale('de_AT');
+print $currency-&gt;toCurrency(1000);
+
+            </pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="13.2.5.  加速 Zend_Currency">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.currency.usage.cache"></a>13.2.5.  加速 Zend_Currency </h3></div></div></div>
+<p>
+            通过 <code>Zend_Cache</code>  的使用可以加速 <code>Zend_Currency</code> 的工作。通过使用静态方法 <code>Zend_Currency::setCache($cache)</code> ，它接受一个选项，<code>Zend_Cache</code> 适配器，当设置它，Zend_Currency 方法的本地化数据就被缓存。
+            也有个静态方法 <code>Zend_Currency::getCache()</code> 方便你的使用。
+         </p>
+<div class="example">
+<a name="zend.currency.usage.cache.example"></a><p class="title"><b>例 13.7.  缓存货币 </b></p>
+<div class="example-contents"><pre class="code">
+// 创建一个缓存对象
+$cache = Zend_Cache::factory('Core',
+                             'File',
+                             array('lifetime' =&gt; 120,
+                                   'automatic_serialization' =&gt; true),
+                             array('cache_dir'
+                                       =&gt; dirname(__FILE__) . '/_files/'));
+Zend_Currency::setCache($cache);
+
+            </pre></div>
+</div>
+<br class="example-break">
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

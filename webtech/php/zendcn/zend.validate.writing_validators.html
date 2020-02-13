@@ -1,0 +1,380 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="58.4. 编写校验器">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.validate.writing_validators"></a>58.4. 编写校验器</h2></div></div></div>
+<p>
+        尽管提供了一组通用的校验器，但不可避免地，开发者还将为他们特定的需求来编写定制的校验器。编写定制的校验器的任务将在本节描述。
+    </p>
+<p>
+        <code>Zend_Validate_Interface</code> 定义了三个方法，<code>isValid()</code>，<code>getMessages()</code> 和 <code>getErrors()</code>, 为了创建校验对象，它们可以在用户的类里被实现。实现<code>Zend_Validate_Interface</code>接口的对象可以用<code>Zend_Validate::addValidator()</code> 添加到校验链里。这样的对象也可以和<a class="link" href="zend.filter.input.html" title="22.5. Zend_Filter_Input"><code>Zend_Filter_Input</code></a>一起使用。
+    </p>
+<p>
+        也许你已经从上面关于 的描述中推断出，不论一个值是否被校验成功，校验类为Zend Framework返回一个布尔值。它们也提供关于<span class="bold"><strong>why</strong></span>一个值校验失败的信息。校验失败原因的有效性对于不同用途的应用程序可能很有价值，象为可用性分析提供的统计量。
+    </p>
+<p>
+       基本校验失败消息的功能在<code>Zend_Validate_Abstract</code>中实现。当创建一个校验类，简单地扩展<code>Zend_Validate_Abstract</code>来包括这个功能。在扩展类里你将实现<code>isValid()</code> 方法逻辑和定义消息变量和消息模板，它和可能发生的校验失败类型相对应。如果校验测试一个值失败，<code>isValid()</code> 应该返回 <code>false</code>。如果这个值通过校验测试，<code>isValid()</code> 应该返回 <code>true</code>。
+    </p>
+<p>
+       一般地，<code>isValid()</code>方法不应该抛出任何异常，除了不可能决定输入值是否有效。一些抛出异常的合情合理的例子可能是如果文件不能被打开，LDAP服务器不能被联系，或者数据库连接无效，并且有些事情必须由校验成功或失败来决定。
+    </p>
+<div class="example">
+<a name="zend.validate.writing_validators.example.simple"></a><p class="title"><b>例 58.1. 创建简单校验类</b></p>
+<div class="example-contents">
+<p>
+            下面的例子演示如何编写一个非常简单的定制的校验器。在这个例子中，校验规则简单，输入值必须是浮点数值。
+            </p>
+<pre class="code">
+class MyValid_Float extends Zend_Validate_Abstract
+{
+    const FLOAT = 'float';
+
+    protected $_messageTemplates = array(
+        self::FLOAT =&gt; "'%value%' is not a floating point value"
+    );
+
+    public function isValid($value)
+    {
+        $this-&gt;_setValue($value);
+
+        if (!is_float($value)) {
+            $this-&gt;_error();
+            return false;
+        }
+
+        return true;
+    }
+}
+
+            </pre>
+<p>
+
+            这个类为它的单个校验失败消息定义了一个模板，它包括内置的魔术参数，<code>%value%</code>。如果校验失败，对<code>_setValue()</code>的调用准备了自动插入被测试的值到失败消息的对象。对<code>_error()</code>的调用跟踪校验失败的原因。因为这个类只定义了一个失败消息，没有必要为<code>_error()</code>提供带有失败消息名字的模板。
+        </p>
+</div>
+</div>
+<br class="example-break"><div class="example">
+<a name="zend.validate.writing_validators.example.conditions.dependent"></a><p class="title"><b>例 58.2. 编写有独立条件的校验类</b></p>
+<div class="example-contents">
+<p>
+            下面的例子演示一组稍微复杂的校验规则，要求输入值是数字并有最小值和最大值的范围。由于下面确切的原因之一，输入值校验失败：
+
+            </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>输入值不是数字。</p></li>
+<li class="listitem"><p>输入值小于允许的最小值。</p></li>
+<li class="listitem"><p>输入值大于允许的最大值。</p></li>
+</ul></div>
+<p>
+        </p>
+<p>
+            这些校验失败的原因被翻译为在类中的定义：
+
+            </p>
+<pre class="code">
+class MyValid_NumericBetween extends Zend_Validate_Abstract
+{
+    const MSG_NUMERIC = 'msgNumeric';
+    const MSG_MINIMUM = 'msgMinimum';
+    const MSG_MAXIMUM = 'msgMaximum';
+
+    public $minimum = 0;
+    public $maximum = 100;
+
+    protected $_messageVariables = array(
+        'min' =&gt; 'minimum',
+        'max' =&gt; 'maximum'
+    );
+
+    protected $_messageTemplates = array(
+        self::MSG_NUMERIC =&gt; "'%value%' is not numeric",
+        self::MSG_MINIMUM =&gt; "'%value%' must be at least '%min%'",
+        self::MSG_MAXIMUM =&gt; "'%value%' must be no more than '%max%'"
+    );
+
+    public function isValid($value)
+    {
+        $this-&gt;_setValue($value);
+
+        if (!is_numeric($value)) {
+            $this-&gt;_error(self::MSG_NUMERIC);
+            return false;
+        }
+
+        if ($value &lt; $this-&gt;minimum) {
+            $this-&gt;_error(self::MSG_MINIMUM);
+            return false;
+        }
+
+        if ($value &gt; $this-&gt;maximum) {
+            $this-&gt;_error(self::MSG_MAXIMUM);
+            return false;
+        }
+
+        return true;
+    }
+}
+
+            </pre>
+<p>
+
+            Public 属性<code>$minimum</code> 和 <code>$maximum</code> 分别为成功校验一个值被建立用来提供最小和最大值边界。这个类也定义了两个消息变量和public属性相对应并允许<code>min</code> 和 <code>max</code> 与 <code>value</code> 一起被用在作为魔术参数的消息模板，
+        </p>
+<p>
+            注意如果任何在<code>isValid()</code>中的校验检查失败，一个恰当的失败消息被准备，并且方法立即返回<code>false</code>。这些校验规则因此继续独立。换句话说，如果一个测试失败，不需要测试任何后来的校验规则。然而这本来不是个案例。下面的例子示例如何编写带有独立校验规则的类，校验对象返回什么校验企图失败的。
+
+        </p>
+</div>
+</div>
+<br class="example-break"><div class="example">
+<a name="zend.validate.writing_validators.example.conditions.independent"></a><p class="title"><b>例 58.3. 带有独立条件、多重失败原因的校验</b></p>
+<div class="example-contents">
+<p>
+           考虑编写一个为密码加强强度的校验类－当用户被要求为帮助使用户账户安全而选择符合一定条件的密码。让我们假设口令安全条件加强那个密码：
+
+            </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>至少8个字符长，</p></li>
+<li class="listitem"><p>包括至少一个大写字母，</p></li>
+<li class="listitem"><p>包括至少一个小写字母，</p></li>
+<li class="listitem"><p>并至少包括一个数字字符。</p></li>
+</ul></div>
+<p>
+        </p>
+<p>
+            下面的类实现这些校验条件：
+
+            </p>
+<pre class="code">
+class MyValid_PasswordStrength extends Zend_Validate_Abstract
+{
+    const LENGTH = 'length';
+    const UPPER  = 'upper';
+    const LOWER  = 'lower';
+    const DIGIT  = 'digit';
+
+    protected $_messageTemplates = array(
+        self::LENGTH =&gt; "'%value%' must be at least 8 characters in length",
+        self::UPPER  =&gt; "'%value%' must contain at least one uppercase letter",
+        self::LOWER  =&gt; "'%value%' must contain at least one lowercase letter",
+        self::DIGIT  =&gt; "'%value%' must contain at least one digit character"
+    );
+
+    public function isValid($value)
+    {
+        $this-&gt;_setValue($value);
+
+        $isValid = true;
+
+        if (strlen($value) &lt; 8) {
+            $this-&gt;_error(self::LENGTH);
+            $isValid = false;
+        }
+
+        if (!preg_match('/[A-Z]/', $value)) {
+            $this-&gt;_error(self::UPPER);
+            $isValid = false;
+        }
+
+        if (!preg_match('/[a-z]/', $value)) {
+            $this-&gt;_error(self::LOWER);
+            $isValid = false;
+        }
+
+        if (!preg_match('/\d/', $value)) {
+            $this-&gt;_error(self::DIGIT);
+            $isValid = false;
+        }
+
+        return $isValid;
+    }
+}
+
+            </pre>
+<p>
+
+            注意在<code>isValid()</code>中的四个条件测试不立即返回<code>false</code>。这允许校验类提供<span class="bold"><strong>所有的</strong></span>输入的密码不符合要求的原因。如果例如一个用户打算输入"<code>#$%</code>"字符串作为密码，<code>isValid()</code>将导致所有四个校验失败消息被后来的<code>getMessages()</code>调用返回。
+        </p>
+</div>
+</div>
+<br class="example-break">
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

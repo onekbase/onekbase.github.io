@@ -1,0 +1,520 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="42.3. Zend_Reflection Reference">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.reflection.reference"></a>42.3. Zend_Reflection Reference</h2></div></div></div>
+<p>
+        The various classes in <code>Zend_Reflection</code> mimic the API of
+        PHP's <a class="ulink" href="zend.reflection.html" target="_top">Reflection API</a> -
+        with one important difference. PHP's Reflection API does not provide
+        introspection into docblock annotation tags, nor into parameter variable
+        types or return types.
+    </p>
+<p>
+        <code>Zend_Reflection</code> analyzes method docblock annotations to
+        determine parameter variable types and the return type. Specifically,
+        the <code>@param</code> and <code>@return</code> annotations are used.
+        However, you can also check for any other annotation tags, as well as
+        the standard "short" and "long" descriptions.
+    </p>
+<p>
+        Each reflection object in <code>Zend_Reflection</code> overrides the
+        <code>getDocblock()</code> method to return an instance of
+        <code>Zend_Reflection_Docblock</code>. This class provides introspection
+        into the docblocks and annotation tags.
+    </p>
+<p>
+        <code>Zend_Reflection_File</code> is a new reflection class that allows
+        introspection of PHP files. With it, you can retrieve the classes,
+        functions, and global PHP code contained in the file.
+    </p>
+<p>
+        Finally, the various methods that return other reflection objects
+        allow a second parameter, the name of the reflection class to use for
+        the returned reflection object.
+    </p>
+<div class="sect2" title="42.3.1. Zend_Reflection_Docblock">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.docblock"></a>42.3.1. Zend_Reflection_Docblock</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Docblock</code> is the heart of
+            <code>Zend_Reflection</code>'s value-add over PHP's Reflection API.
+            It provides the following methods:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getContents()</code>: returns the full contents of the
+                docblock.
+            </p></li>
+<li class="listitem"><p>
+                <code>getStartLine()</code>: returns the starting position of
+                the docblock within the defining file.
+            </p></li>
+<li class="listitem"><p>
+                <code>getEndLine()</code>: get last line of docblock within the
+                defining file.
+            </p></li>
+<li class="listitem"><p>
+                <code>getShortDescription()</code>: get the short, one-line
+                description (usually the first line of the docblock).
+            </p></li>
+<li class="listitem"><p>
+                <code>getLongDescription()</code>: get the long description from
+                the docblock.
+            </p></li>
+<li class="listitem"><p>
+                <code>hasTag($name)</code>: determine if the docblock has the
+                given annotation tag.
+            </p></li>
+<li class="listitem"><p>
+                <code>getTag($name)</code>: Retrieve the given annotation tag
+                reflection object, or a boolean <code class="constant">FALSE</code> if it's not
+                present.
+            </p></li>
+<li class="listitem"><p>
+                <code>getTags($filter)</code>: Retrieve all tags, or all tags
+                matching the given <code>$filter</code> string. The tags
+                returned will be an array of
+                <code>Zend_Reflection_Docblock_Tag</code> objects.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.2. Zend_Reflection_Docblock_Tag">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.docblock-tag"></a>42.3.2. Zend_Reflection_Docblock_Tag</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Docblock_Tag</code> provides reflection for
+            individual annotation tags. Most tags consist of only a name and a
+            description. In the case of some special tags, the class provides a
+            factory method for retrieving an instance of the appropriate class.
+        </p>
+<p>
+            The following methods are defined for
+            <code>Zend_Reflection_Docblock_Tag</code>:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>factory($tagDocblockLine)</code>: instantiate the
+                appropriate tag reflection class and return it.
+            </p></li>
+<li class="listitem"><p>
+                <code>getName()</code>: return the annotation tag name.
+            </p></li>
+<li class="listitem"><p>
+                <code>getDescription()</code>: return the annotation
+                description.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.3. Zend_Reflection_Docblock_Tag_Param">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.docblock-tag-param"></a>42.3.3. Zend_Reflection_Docblock_Tag_Param</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Docblock_Tag_Param</code> is a specialized
+            version of <code>Zend_Reflection_Docblock_Tag</code>. The
+            <code>@param</code> annotation tag description consists of the
+            parameter type, variable name, and variable description. It adds the
+            following methods to <code>Zend_Reflection_Docblock_Tag</code>:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getType()</code>: return the parameter variable type.
+            </p></li>
+<li class="listitem"><p>
+                <code>getVariableName()</code>: return the parameter variable
+                name.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.4. Zend_Reflection_Docblock_Tag_Return">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.docblock-tag-return"></a>42.3.4. Zend_Reflection_Docblock_Tag_Return</h3></div></div></div>
+<p>
+            Like <code>Zend_Reflection_Docblock_Tag_Param</code>,
+            <code>Zend_Reflection_Docblock_Tag_Return</code> is a specialized
+            version of <code>Zend_Reflection_Docblock_Tag</code>. The
+            <code>@return</code> annotation tag description consists of the
+            return type and variable description. It adds the following method
+            to <code>Zend_Reflection_Docblock_Tag</code>:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                <code>getType()</code>: return the return type.
+            </p></li></ul></div>
+</div>
+<div class="sect2" title="42.3.5. Zend_Reflection_File">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.file"></a>42.3.5. Zend_Reflection_File</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_File</code> provides introspection into PHP
+            files. With it, you can introspect the classes, functions, and bare
+            PHP code defined in a file. It defines the following methods:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getFileName()</code>: retrieve the filename of the file
+                being reflected.
+            </p></li>
+<li class="listitem"><p>
+                <code>getStartLine()</code>: retrieve the starting line of the
+                file (always "1").
+            </p></li>
+<li class="listitem"><p>
+                <code>getEndLine()</code> retrieve the last line / number of
+                lines in the file.
+            </p></li>
+<li class="listitem"><p>
+                <code>getDocComment($reflectionClass =
+                    'Zend_Reflection_Docblock')</code>: retrive the file-level
+                docblock reflection object.
+            </p></li>
+<li class="listitem"><p>
+                <code>getClasses($reflectionClass =
+                    'Zend_Reflection_Class')</code>: retrieve an array of
+                reflection objects, one for each class defined in the file.
+            </p></li>
+<li class="listitem"><p>
+                <code>getFunctions($reflectionClass =
+                    'Zend_Reflection_Function')</code>: retrieve an array of
+                reflection objects, one for each function defined in the file.
+            </p></li>
+<li class="listitem"><p>
+                <code>getClass($name = null, $reflectionClass =
+                    'Zend_Reflection_Class')</code>: retrieve the reflection
+                object for a single class.
+            </p></li>
+<li class="listitem"><p>
+                <code>getContents()</code>: retrieve the full contents of the
+                file.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.6. Zend_Reflection_Class">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.class"></a>42.3.6. Zend_Reflection_Class</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Class</code> extends
+            <code>ReflectionClass</code>, and follows its API. It adds one
+            additional method, <code>getDeclaringFile()</code>, which may be
+            used to retrieve the <code>Zend_Reflection_File</code> reflection
+            object for the defining file.
+        </p>
+<p>
+            Additionally, the following methods add an additional argument for
+            specifying the reflection class to use when fetching a reflection
+            object:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getDeclaringFile($reflectionClass = 'Zend_Reflection_File')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getDocblock($reflectionClass = 'Zend_Reflection_Docblock')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getInterfaces($reflectionClass = 'Zend_Reflection_Class')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getMethod($reflectionClass = 'Zend_Reflection_Method')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getMethods($filter = -1, $reflectionClass = 'Zend_Reflection_Method')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getParentClass($reflectionClass = 'Zend_Reflection_Class')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getProperty($name, $reflectionClass =
+                    'Zend_Reflection_Property')</code>
+            </p></li>
+<li class="listitem"><p>
+                <code>getProperties($filter = -1, $reflectionClass =
+                    'Zend_Reflection_Property')</code>
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.7. Zend_Reflection_Extension">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.extension"></a>42.3.7. Zend_Reflection_Extension</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Extension</code> extends
+            <code>ReflectionExtension</code>, and follows its API. It overrides
+            the following methods to add an additional argument for specifying
+            the reflection class to use when fetching a reflection object:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getFunctions($reflectionClass =
+                    'Zend_Reflection_Function')</code>: retrieve an array of
+                reflection objects representing the functions defined by the
+                extension.
+            </p></li>
+<li class="listitem"><p>
+                <code>getClasses($reflectionClass =
+                    'Zend_Reflection_Class')</code>: retrieve an array of
+                reflection objects representing the classes defined by the
+                extension.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.8. Zend_Reflection_Function">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.function"></a>42.3.8. Zend_Reflection_Function</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Function</code> adds a method for retrieving
+            the function return type, as well as overrides several methods to
+            allow specifying the reflection class to use for returned reflection
+            objects.
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getDocblock($reflectionClass =
+                    'Zend_Reflection_Docblock')</code>: retrieve the function
+                docblock reflection object.
+            </p></li>
+<li class="listitem"><p>
+                <code>getParameters($reflectionClass =
+                    'Zend_Reflection_Parameter')</code>: retrieve an array of
+                all function parameter reflection objects.
+            </p></li>
+<li class="listitem"><p>
+                <code>getReturn()</code>: retrieve the return type reflection
+                object.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.9. Zend_Reflection_Method">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.method"></a>42.3.9. Zend_Reflection_Method</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Method</code> mirrors
+            <code>Zend_Reflection_Function</code>, and only overrides one
+            additional method:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                <code>getParentClass($reflectionClass =
+                    'Zend_Reflection_Class')</code>: retrieve the parent class
+                reflection object.
+            </p></li></ul></div>
+</div>
+<div class="sect2" title="42.3.10. Zend_Reflection_Parameter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.parameter"></a>42.3.10. Zend_Reflection_Parameter</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Parameter</code> adds a method for retrieving
+            the parameter type, as well as overrides methods to allow specifying
+            the reflection class to use on returned reflection objects.
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>getDeclaringClass($reflectionClass =
+                    'Zend_Reflection_Class')</code>: get the declaring class of
+                the parameter as a reflection object (if available).
+            </p></li>
+<li class="listitem"><p>
+                <code>getClass($reflectionClass =
+                    'Zend_Reflection_Class')</code>: get the class of
+                the parameter as a reflection object (if available).
+            </p></li>
+<li class="listitem"><p>
+                <code>getDeclaringFunction($reflectionClass =
+                    'Zend_Reflection_Function')</code>: get the function of
+                the parameter as a reflection object (if available).
+            </p></li>
+<li class="listitem"><p>
+                <code>getType()</code>: get the parameter type.
+            </p></li>
+</ul></div>
+</div>
+<div class="sect2" title="42.3.11. Zend_Reflection_Property">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.reflection.reference.property"></a>42.3.11. Zend_Reflection_Property</h3></div></div></div>
+<p>
+            <code>Zend_Reflection_Property</code> overrides a single method in
+            order to allow specifying the returned reflection object class:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                <code>getDeclaringClass($reflectionClass =
+                    'Zend_Reflection_Class')</code>: retrieve the declaring
+                class of the property as a reflection object.
+            </p></li></ul></div>
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

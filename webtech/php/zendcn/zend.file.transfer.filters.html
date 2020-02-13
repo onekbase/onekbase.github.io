@@ -1,0 +1,615 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="21.3. Filters for Zend_File_Transfer">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.file.transfer.filters"></a>21.3. Filters for Zend_File_Transfer</h2></div></div></div>
+<p>
+        <code class="classname">Zend_File_Transfer</code> is delivered with several file related filters
+        which can be used to automate several tasks which are often done on files. Note that file
+        filters are applied after validation. Also file filters behave slightly different that other
+        filters. They will always return the file name and not the changed content (which would be a
+        bad idea when working on 1GB files). All filters which are provided with
+        <code class="classname">Zend_File_Transfer</code> can be found in the
+        <code class="classname">Zend_Filter</code> component and are named
+        <code class="classname">Zend_Filter_File_*</code>. The following filters are actually available:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                <code>Decrypt</code>: This filter can decrypt a encrypted file.
+            </p></li>
+<li class="listitem"><p>
+                <code>Encrypt</code>: This filter can encrypt a file.
+            </p></li>
+<li class="listitem"><p>
+                <code>LowerCase</code>: This filter can lowercase the content of a textfile.
+            </p></li>
+<li class="listitem"><p>
+                <code>Rename</code>: This filter can rename files, change the location and even
+                force overwriting of existing files.
+            </p></li>
+<li class="listitem"><p>
+                <code>UpperCase</code>: This filter can uppercase the content of a textfile.
+            </p></li>
+</ul></div>
+<div class="sect2" title="21.3.1. Using filters with Zend_File_Transfer">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.usage"></a>21.3.1. Using filters with Zend_File_Transfer</h3></div></div></div>
+<p>
+            The usage of filters is quite simple. There are several methods for adding and
+            manipulating filters.
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                    <code>addFilter($filter, $options = null, $files =
+                    null)</code>: Adds the given filter to the filter
+                    stack (optionally only to the file(s) specified).
+                    <code>$filter</code> may be either an actual filter
+                    instance, or a short name specifying the filter type
+                    (e.g., 'Rename').
+                </p></li>
+<li class="listitem"><p>
+                    <code>addFilters(array $filters, $files =
+                        null)</code>: Adds the given filters to the stack of
+                    filters. Each entry may be either a filter
+                    type/options pair, or an array with the key 'filter'
+                    specifying the filter (all other options will be
+                    considered filter options for instantiation).
+                </p></li>
+<li class="listitem"><p>
+                    <code>setFilters(array $filters, $files =
+                        null)</code>: Overwrites any existing filters with
+                    the filters specified. The filters should follow the
+                    syntax for <code>addFilters()</code>.
+                </p></li>
+<li class="listitem"><p>
+                    <code>hasFilter($name)</code>: Indicates if a
+                    filter has been registered.
+                </p></li>
+<li class="listitem"><p>
+                    <code>getFilter($name)</code>: Returns a previously
+                    registered filter.
+                </p></li>
+<li class="listitem"><p>
+                    <code>getFilters($files = null)</code>: Returns
+                    registered filters; if <code>$files</code> is passed,
+                    returns filters for that particular file or set of
+                    files.
+                </p></li>
+<li class="listitem"><p>
+                    <code>removeFilter($name)</code>: Removes a previously
+                    registered filter.
+                </p></li>
+<li class="listitem"><p>
+                    <code>clearFilters()</code>: Clears all
+                    registered filters.
+                </p></li>
+</ul></div>
+<div class="example">
+<a name="zend.file.transfer.filters.usage.example"></a><p class="title"><b>例 21.23. Add filters to a file transfer</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer();
+
+// Set a new destination path
+$upload-&gt;addFilter('Rename', 'C:\picture\uploads');
+
+// Set a new destination path and overwrites existing files
+$upload-&gt;addFilter('Rename',
+                   array('target' =&gt; 'C:\picture\uploads',
+                         'overwrite' =&gt; true));
+</pre></div>
+</div>
+<br class="example-break"><div class="example">
+<a name="zend.file.transfer.filters.usage.exampletwo"></a><p class="title"><b>例 21.24. Limit filters to single files</b></p>
+<div class="example-contents">
+<p>
+                <code>addFilter()</code>, <code>addFilters()</code>, and
+                <code>setFilters()</code> each accept a final
+                <code>$files</code> argument. This argument can be used to
+                specify a particular file or array of files on which to set the
+                given filter.
+            </p>
+<pre class="code">
+$upload = new Zend_File_Transfer();
+
+// Set a new destination path and limits it only to 'file2'
+$upload-&gt;addFilter('Rename', 'C:\picture\uploads', 'file2');
+</pre>
+</div>
+</div>
+<br class="example-break"><p>
+            Generally you should simply use the <code>addFilters()</code> method, which can be
+            called multiple times.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.usage.examplemultiple"></a><p class="title"><b>例 21.25. Add multiple filters</b></p>
+<div class="example-contents">
+<p>
+                Often it's simpler just to call <code>addFilter()</code> multiple times. One call
+                for each filter. This also increases the readability and makes your code more
+                maintainable. As all methods provide a fluent interface you can couple the calls as
+                shown below:
+            </p>
+<pre class="code">
+$upload = new Zend_File_Transfer();
+
+// Set a filesize with 20000 bytes
+$upload-&gt;addFilter('Rename', 'C:\picture\newjpg', 'file1')
+       -&gt;addFilter('Rename', 'C:\picture\newgif', 'file2');
+</pre>
+</div>
+</div>
+<br class="example-break"><div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                Note that even though setting the same filter
+                multiple times is allowed, doing so can lead to issues when using
+                different options for the same filter.
+            </p></td></tr>
+</table></div>
+</div>
+<div class="sect2" title="21.3.2. Decrypt filter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.decrypt"></a>21.3.2. Decrypt filter</h3></div></div></div>
+<p>
+            The <code>Decrypt</code> filter allows to decrypt a encrypted file.
+        </p>
+<p>
+            This filter makes use of <code class="classname">Zend_Filter_Decrypt</code>. It supports the
+            <code>Mcrypt</code> and <code>OpenSSL</code> extensions from PHP. Please read the
+            related section for details about how to set the options for decryption and which
+            options are supported.
+        </p>
+<p>
+            This filter supports one additional option which can be used to save the decrypted file
+            with another filename. Set the <code>filename</code> option to change the filename where
+            the decrypted file will be stored. If you suppress this option, the decrypted file will
+            overwrite the original encrypted file.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.decrypt.example1"></a><p class="title"><b>例 21.26. Using the Decrypt filter with Mcrypt</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+
+// Adds a filter to decrypt the uploaded encrypted file
+// with mcrypt and the key mykey
+$upload-&gt;addFilter('Decrypt',
+    array('adapter' =&gt; 'mcrypt', 'key' =&gt; 'mykey'));
+</pre></div>
+</div>
+<br class="example-break"><div class="example">
+<a name="zend.file.transfer.filters.decrypt.example2"></a><p class="title"><b>例 21.27. Using the Decrypt filter with OpenSSL</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+
+// Adds a filter to decrypt the uploaded encrypted file
+// with openssl and the provided keys
+$upload-&gt;addFilter('Decrypt',
+    array('adapter' =&gt; 'openssl',
+          'private' =&gt; '/path/to/privatekey.pem',
+          'envelope' =&gt; '/path/to/envelopekey.pem'));
+</pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="21.3.3. Encrypt filter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.encrypt"></a>21.3.3. Encrypt filter</h3></div></div></div>
+<p>
+            The <code>Encrypt</code> filter allows to encrypt a file.
+        </p>
+<p>
+            This filter makes use of <code class="classname">Zend_Filter_Encrypt</code>. It supports the
+            <code>Mcrypt</code> and <code>OpenSSL</code> extensions from PHP. Please read the
+            related section for details about how to set the options for encryption and which
+            options are supported.
+        </p>
+<p>
+            This filter supports one additional option which can be used to save the encrypted file
+            with another filename. Set the <code>filename</code> option to change the filename where
+            the encrypted file will be stored. If you suppress this option, the encrypted file will
+            overwrite the original file.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.encrypt.example1"></a><p class="title"><b>例 21.28. Using the Encrypt filter with Mcrypt</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+
+// Adds a filter to encrypt the uploaded file
+// with mcrypt and the key mykey
+$upload-&gt;addFilter('Encrypt',
+    array('adapter' =&gt; 'mcrypt', 'key' =&gt; 'mykey'));
+</pre></div>
+</div>
+<br class="example-break"><div class="example">
+<a name="zend.file.transfer.filters.encrypt.example2"></a><p class="title"><b>例 21.29. Using the Encrypt filter with OpenSSL</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+
+// Adds a filter to encrypt the uploaded file
+// with openssl and the provided keys
+$upload-&gt;addFilter('Encrypt',
+    array('adapter' =&gt; 'openssl',
+          'public' =&gt; '/path/to/publickey.pem'));
+</pre></div>
+</div>
+<br class="example-break">
+</div>
+<div class="sect2" title="21.3.4. LowerCase filter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.lowercase"></a>21.3.4. LowerCase filter</h3></div></div></div>
+<p>
+            The <code>LowerCase</code> filter allows to change the content of a file to lowercase.
+            You should use this filter only on textfiles.
+        </p>
+<p>
+            At initiation you can give a string which will then be used as encoding. Or you can use
+            the <code>setEncoding()</code> method to set it afterwards.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.lowercase.example"></a><p class="title"><b>例 21.30. Using the LowerCase filter</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+$upload-&gt;addValidator('MimeType', 'text');
+
+// Adds a filter to lowercase the uploaded textfile
+$upload-&gt;addFilter('LowerCase');
+
+// Adds a filter to lowercase the uploaded file but only for uploadfile1
+$upload-&gt;addFilter('LowerCase', null, 'uploadfile1');
+
+// Adds a filter to lowercase with encoding set to ISO-8859-1
+$upload-&gt;addFilter('LowerCase', 'ISO-8859-1');
+</pre></div>
+</div>
+<br class="example-break"><div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                Note that due to the fact that the options for the LowerCase filter are optional,
+                you must give a null as second parameter (the options) when you want to limit it to
+                a single file element.
+            </p></td></tr>
+</table></div>
+</div>
+<div class="sect2" title="21.3.5. Rename filter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.rename"></a>21.3.5. Rename filter</h3></div></div></div>
+<p>
+            The <code>Rename</code> filter allows to change the destination of the upload, the
+            filename and also to overwrite existing files. It supports the following options:
+        </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p>
+                    <code>source</code>: The name and destination of the old file which shall be
+                    renamed.
+                </p></li>
+<li class="listitem"><p>
+                    <code>target</code>: The new directory, or filename of the file.
+                </p></li>
+<li class="listitem"><p>
+                    <code>overwrite</code>: Sets if the old file overwrites the new one if it
+                    already exists. The default value is false.
+                </p></li>
+</ul></div>
+<p>
+            Additionally you can also use the method <code>setFile()</code> to set files, which
+            erases all previous set, <code>addFile()</code> to add a new file to existing ones, and
+            <code>getFile()</code> to get all actually set files. To simplify things, this filter
+            understands several notations and that methods and constructor understand the same
+            notations.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.rename.example"></a><p class="title"><b>例 21.31. Using the Rename filter</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+
+// Set a new destination path for all files
+$upload-&gt;addFilter('Rename', 'C:\mypics\new');
+
+// Set a new destination path only for uploadfile1
+$upload-&gt;addFilter('Rename', 'C:\mypics\newgifs', 'uploadfile1');
+</pre></div>
+</div>
+<br class="example-break"><p>
+            You can use different notations. Below is a table where you will find a description and
+            the intention for the supported notations. Note that when you use the Adapter or the
+            Form Element you will not be able to use all described notations.
+        </p>
+<div class="table">
+<a name="zend.file.transfer.filters.rename.notations"></a><p class="title"><b>表 21.1. Different notations of the rename filter and their meaning</b></p>
+<div class="table-contents"><table summary="Different notations of the rename filter and their meaning" border="1">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th align="left">
+                            notation
+                        </th>
+<th align="left">
+                            description
+                        </th>
+</tr></thead>
+<tbody>
+<tr>
+<td align="left">
+                            addFile('C:\uploads')
+                        </td>
+<td align="left">
+                            Specifies a new location for all files when the given string is a
+                            directory. Note that you will get an exception when the file already
+                            exists, see the overwriting parameter.
+                        </td>
+</tr>
+<tr>
+<td align="left">
+                            addFile('C:\uploads\file.ext')
+                        </td>
+<td align="left">
+                            Specifies a new location and filename for all files when the given
+                            string is not detected as directory. Note that you will get an exception
+                            when the file already exists, see the overwriting parameter.
+                        </td>
+</tr>
+<tr>
+<td align="left">
+                            addFile(array('C:\uploads\file.ext', 'overwrite' =&gt; true))
+                        </td>
+<td align="left">
+                            Specifies a new location and filename for all files when the given
+                            string is not detected as directory and overwrites an existing file with
+                            the same target name. Note, that you will get no notification that a
+                            file was overwritten.
+                        </td>
+</tr>
+<tr>
+<td align="left">
+                            addFile(array('source' =&gt; 'C:\temp\uploads', 'target' =&gt; 'C:\uploads'))
+                        </td>
+<td align="left">
+                            Specifies a new location for all files in the old location when the
+                            given strings are detected as directory. Note that you will get an
+                            exception when the file already exists, see the overwriting parameter.
+                        </td>
+</tr>
+<tr>
+<td align="left">
+                            addFile(array('source' =&gt; 'C:\temp\uploads', 'target' =&gt; 'C:\uploads',
+                            'overwrite' =&gt; true))
+                        </td>
+<td align="left">
+                            Specifies a new location for all files in the old location when the
+                            given strings are detected as directory and overwrites and existing file
+                            with the same target name. Note, that you will get no notification that
+                            a file was overwritten.
+                        </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<br class="table-break">
+</div>
+<div class="sect2" title="21.3.6. UpperCase filter">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.file.transfer.filters.uppercase"></a>21.3.6. UpperCase filter</h3></div></div></div>
+<p>
+            The <code>UpperCase</code> filter allows to change the content of a file to uppercase.
+            You should use this filter only on textfiles.
+        </p>
+<p>
+            At initiation you can give a string which will then be used as encoding. Or you can use
+            the <code>setEncoding()</code> method to set it afterwards.
+        </p>
+<div class="example">
+<a name="zend.file.transfer.filters.uppercase.example"></a><p class="title"><b>例 21.32. Using the UpperCase filter</b></p>
+<div class="example-contents"><pre class="code">
+$upload = new Zend_File_Transfer_Adapter_Http();
+$upload-&gt;addValidator('MimeType', 'text');
+
+// Adds a filter to uppercase the uploaded textfile
+$upload-&gt;addFilter('UpperCase');
+
+// Adds a filter to uppercase the uploaded file but only for uploadfile1
+$upload-&gt;addFilter('UpperCase', null, 'uploadfile1');
+
+// Adds a filter to uppercase with encoding set to ISO-8859-1
+$upload-&gt;addFilter('UpperCase', 'ISO-8859-1');
+</pre></div>
+</div>
+<br class="example-break"><div class="note" title="注意"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[注意]" src="images/note.png"></td>
+<th align="left">注意</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+                Note that due to the fact that the options for the UpperCase filter are optional,
+                you must give a null as second parameter (the options) when you want to limit it to
+                a single file element.
+            </p></td></tr>
+</table></div>
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

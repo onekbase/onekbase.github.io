@@ -1,0 +1,584 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="60.3. 视图脚本">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.view.scripts"></a>60.3. 视图脚本</h2></div></div></div>
+<p>
+        Controller完成变量赋值和调用render()之后，Zend_View就会调用视图脚本并在Zend_View的实例内部执行。因此，在你的视图脚本内，$this指向Zend_View的实例。
+    </p>
+<p>
+        从控制器传递到视图的变量以Zend_View实例属性的形式来调用。例如，控制器有一个变量"something" ，那么视图代码中就要用$this-&gt;something来调用。这样的作法可以让你分清哪些是来自Zend_View实例的变量，哪些是视图自身的变量。
+    </p>
+<p>
+        为了说明，这里有一个例子：
+    </p>
+<pre class="code">&lt;?php if ($this-&gt;books): ?&gt;
+
+    &lt;!-- A table of some books. --&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Author&lt;/th&gt;
+            &lt;th&gt;Title&lt;/th&gt;
+        &lt;/tr&gt;
+
+        &lt;?php foreach ($this-&gt;books as $key =&gt; $val): ?&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;?php echo $this-&gt;escape($val['author']) ?&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;?php echo $this-&gt;escape($val['title']) ?&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;?php endforeach; ?&gt;
+
+    &lt;/table&gt;
+
+&lt;?php else: ?&gt;
+
+    &lt;p&gt;There are no books to display.&lt;/p&gt;
+
+&lt;?php endif; 
+    </pre>
+<div class="sect2" title="60.3.1. 转义输出（Escaping Output）">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.view.scripts.escaping"></a>60.3.1. 转义输出（Escaping Output）</h3></div></div></div>
+<p>
+            View脚本的最重要的工作之一是保证输出的内容是合适的，比如需要避免跨站攻击漏洞(XSS)。除非你已经使用一个函数、类方法或助手类（helper）来转义内容，你需要在输出时对变量进行转义。
+        </p>
+<p>
+            Zend_View带有一个escape()方法来提供这个功能：
+        </p>
+<pre class="code">&lt;?php
+// 不好的做法：
+echo $this-&gt;variable;
+
+// 好的做法：
+echo $this-&gt;escape($this-&gt;variable);
+
+        </pre>
+<p>
+            默认地，escape()方法使用PHP函数htmlspecialchars()来过滤，但你也可以通过setEscape()方法来在Controller内告诉Zend_View需要怎么过滤。
+        </p>
+<pre class="code">&lt;?php
+//创建一个Zend_View实例
+$view = new Zend_View();
+
+//设定要使用的转义回调函数(callback)
+$view-&gt;setEscape('htmlentities');
+
+//或者使用一个静态类方法作为回调函数
+$view-&gt;setEscape(array('SomeClass', 'methodName'));
+
+//或者是一个对象实例的类方法
+$obj = new SomeClass();
+$view-&gt;setEscape(array($obj, 'methodName'));
+
+//最后输出你的视图
+echo $view-&gt;render(...);
+
+        </pre>
+<p>
+
+            设定的转义函数会将需要转义的变量作为其第一个参数，其它参数是可选的。
+        </p>
+</div>
+<div class="sect2" title="60.3.2. 使用模板系统">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.view.scripts.templates"></a>60.3.2. 使用模板系统</h3></div></div></div>
+<p>
+            尽管许多开发者觉得PHP本身就是一个强大的模板系统，但对模板设计师来说，使用PHP标签过于复杂。Zend_View提供了两套机制来同时满足这两种要求，一种是直接通过通过视图脚本，另一种是实现Zend_View_Interface接口。
+        </p>
+<div class="sect3" title="60.3.2.1. 使用View脚本的模板系统">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="zend.view.scripts.templates.scripts"></a>60.3.2.1. 使用View脚本的模板系统</h4></div></div></div>
+<p>
+                              View脚本可能要被用来初始化和操作一个其它模板对象的实例，例如PHPLIB风格的模板。这时View脚本可能是这样的：
+            </p>
+<pre class="code">&lt;?php
+include_once 'template.inc';
+$tpl = new Template();
+
+if ($this-&gt;books) {
+    $tpl-&gt;setFile(array(
+        "booklist" =&gt; "booklist.tpl",
+        "eachbook" =&gt; "eachbook.tpl",
+    ));
+
+    foreach ($this-&gt;books as $key =&gt; $val) {
+        $tpl-&gt;set_var('author', $this-&gt;escape($val['author']);
+        $tpl-&gt;set_var('title', $this-&gt;escape($val['title']);
+        $tpl-&gt;parse("books", "eachbook", true);
+    }
+
+    $tpl-&gt;pparse("output", "booklist");
+} else {
+    $tpl-&gt;setFile("nobooks", "nobooks.tpl")
+    $tpl-&gt;pparse("output", "nobooks");
+}
+</pre>
+<p>
+                下面是相关的模板文件：
+            </p>
+<pre class="code">
+&lt;!-- booklist.tpl --&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Author&lt;/th&gt;
+        &lt;th&gt;Title&lt;/th&gt;
+    &lt;/tr&gt;
+    {books}
+&lt;/table&gt;
+
+&lt;!-- eachbook.tpl --&gt;
+    &lt;tr&gt;
+        &lt;td&gt;{author}&lt;/td&gt;
+        &lt;td&gt;{title}&lt;/td&gt;
+    &lt;/tr&gt;
+
+&lt;!-- nobooks.tpl --&gt;
+&lt;p&gt;There are no books to display.&lt;/p&gt;&gt;
+           </pre>
+</div>
+<div class="sect3" title="60.3.2.2. 通过Zend_View_Interface接口使用模板系统">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="zend.view.scripts.templates.interface"></a>60.3.2.2. 通过Zend_View_Interface接口使用模板系统</h4></div></div></div>
+<p>
+
+                实现一个与Zend_View兼容的模板系统是很简单的。你只需要实现<code>Zend_View_Interface</code>接口即可，该接口定义了要实现兼容的最低要求。
+            </p>
+<pre class="code">
+/**
+ * Return the actual template engine object
+ * 返回实际模板系统的对象
+ */
+public function getEngine();
+
+/**
+ * Set the path to view scripts/templates
+ * 设置视图脚本/模板的路径
+ */
+public function setScriptPath($path);
+
+/**
+ * Set a base path to all view resources
+ * 给所有视图资源设置基本路径
+ */
+public function setBasePath($path, $prefix = 'Zend_View');
+
+/**
+ * Add an additional base path to view resources
+ * 给视图资源添加另外的基本路径
+ */
+public function addBasePath($path, $prefix = 'Zend_View');
+
+/**
+ * Retrieve the current script paths
+ * 获取当前脚本路径
+ */
+public function getScriptPaths();
+
+/**
+ * Overloading methods for assigning template variables as object properties
+ * 重载方法，用于将赋值给模板变量，以对象属性的形式
+ */
+public function __set($key, $value);
+public function __get($key);
+public function __isset($key);
+public function __unset($key);
+
+/**
+ * Manual assignment of template variables, or ability to assign multiple
+ * variables en masse.
+ * 手动设置模板变量，或者一次赋值多个变量的功能
+ */
+public function assign($spec, $value = null);
+
+/**
+ * Unset all assigned template variables
+ * 消除所有已赋值的变量
+ */
+public function clearVars();
+
+/**
+ * Render the template named $name
+ * 输出参数$name指定的某个模板
+ */
+public function render($name);
+            </pre>
+<p>
+               使用这个接口，把第三方的模板系统封装成Zend_View兼容的类是相当容易的。例如，下面是封装Smarty的示例代码：
+            </p>
+<pre class="code">
+require_once 'Zend/View/Interface.html';
+require_once 'Smarty.class.html';
+
+class Zend_View_Smarty implements Zend_View_Interface
+{
+    /**
+     * Smarty object
+     * @var Smarty
+     */
+    protected $_smarty;
+
+    /**
+     * Constructor
+     *
+     * @param string $tmplPath
+     * @param array $extraParams
+     * @return void
+     */
+    public function __construct($tmplPath = null, $extraParams = array())
+    {
+        $this-&gt;_smarty = new Smarty;
+
+        if (null !== $tmplPath) {
+            $this-&gt;setScriptPath($tmplPath);
+        }
+
+        foreach ($extraParams as $key =&gt; $value) {
+            $this-&gt;_smarty-&gt;$key = $value;
+        }
+    }
+
+    /**
+     * Return the template engine object
+     *
+     * @return Smarty
+     */
+    public function getEngine()
+    {
+        return $this-&gt;_smarty;
+    }
+
+    /**
+     * Set the path to the templates
+     *
+     * @param string $path The directory to set as the path.
+     * @return void
+     */
+    public function setScriptPath($path)
+    {
+        if (is_readable($path)) {
+            $this-&gt;_smarty-&gt;template_dir = $path;
+            return;
+        }
+
+        throw new Exception('Invalid path provided');
+    }
+
+    /**
+     * Retrieve the current template directory
+     *
+     * @return string
+     */
+    public function getScriptPaths()
+    {
+        return array($this-&gt;_smarty-&gt;template_dir);
+    }
+
+    /**
+     * Alias for setScriptPath
+     *
+     * @param string $path
+     * @param string $prefix Unused
+     * @return void
+     */
+    public function setBasePath($path, $prefix = 'Zend_View')
+    {
+        return $this-&gt;setScriptPath($path);
+    }
+
+    /**
+     * Alias for setScriptPath
+     *
+     * @param string $path
+     * @param string $prefix Unused
+     * @return void
+     */
+    public function addBasePath($path, $prefix = 'Zend_View')
+    {
+        return $this-&gt;setScriptPath($path);
+    }
+
+    /**
+     * Assign a variable to the template
+     *
+     * @param string $key The variable name.
+     * @param mixed $val The variable value.
+     * @return void
+     */
+    public function __set($key, $val)
+    {
+        $this-&gt;_smarty-&gt;assign($key, $val);
+    }
+
+    /**
+     * Retrieve an assigned variable
+     *
+     * @param string $key The variable name.
+     * @return mixed The variable value.
+     */
+    public function __get($key)
+    {
+        return $this-&gt;_smarty-&gt;get_template_vars($key);
+    }
+
+    /**
+     * Allows testing with empty() and isset() to work
+     *
+     * @param string $key
+     * @return boolean
+     */
+    public function __isset($key)
+    {
+         return (null !== $this-&gt;_smarty-&gt;get_template_vars($key));
+    }
+
+    /**
+     * Allows unset() on object properties to work
+     *
+     * @param string $key
+     * @return void
+     */
+    public function __unset($key)
+    {
+        $this-&gt;_smarty-&gt;clear_assign($key);
+    }
+
+    /**
+     * Assign variables to the template
+     *
+     * Allows setting a specific key to the specified value, OR passing an array
+     * of key =&gt; value pairs to set en masse.
+     *
+     * @see __set()
+     * @param string|array $spec The assignment strategy to use (key or array of key
+     * =&gt; value pairs)
+     * @param mixed $value (Optional) If assigning a named variable, use this
+     * as the value.
+     * @return void
+     */
+    public function assign($spec, $value = null)
+    {
+        if (is_array($spec)) {
+            $this-&gt;_smarty-&gt;assign($spec);
+            return;
+        }
+
+        $this-&gt;_smarty-&gt;assign($spec, $value);
+    }
+
+    /**
+     * Clear all assigned variables
+     *
+     * Clears all variables assigned to Zend_View either via {@link assign()} or
+     * property overloading ({@link __get()}/{@link __set()}).
+     *
+     * @return void
+     */
+    public function clearVars()
+    {
+        $this-&gt;_smarty-&gt;clear_all_assign();
+    }
+
+    /**
+     * Processes a template and returns the output.
+     *
+     * @param string $name The template to process.
+     * @return string The output.
+     */
+    public function render($name)
+    {
+        return $this-&gt;_smarty-&gt;fetch($name);
+    }
+}
+            </pre>
+<p>
+                在这个示例中，实例化<code>Zend_View_Smarty</code>而不是<code>Zend_View</code>，然后就像使用 <code>Zend_View</code>一样地使用它。
+            </p>
+<pre class="code">
+$view = new Zend_View_Smarty();
+$view-&gt;setScriptPath('/path/to/templates');
+$view-&gt;book = 'Zend PHP 5 Certification Study Guide';
+$view-&gt;author = 'Davey Shafik and Ben Ramsey'
+$rendered = $view-&gt;render('bookinfo.tpl');
+            </pre>
+</div>
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->

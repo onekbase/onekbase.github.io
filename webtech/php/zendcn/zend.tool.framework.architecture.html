@@ -1,0 +1,552 @@
+<!--hmt-->
+<!-- header-start -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/include/js/jquery.min.js" language="javascript"></script>
+<script src="/include/js/jquery-ui.min.js" language="javascript"></script>
+<link href="/include/css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/include/css/main.css" rel="stylesheet" type="text/css" />
+
+<SCRIPT>
+	$(document).ready(function() {
+		$( "#menu" ).menu({ position: { my: "left top", at: "right-100 top+35" } });
+	});
+</SCRIPT>
+
+<!-- header-end --><!--end of htmlheader-->
+
+<!-- middle-start -->
+﻿
+<base target="_blank" />
+</head>
+<body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- topmenu-start -->
+<header>
+    <section id="global-nav">
+        <nav>
+            <ul class="projects">
+                    <li><a href="/">ITeedu.com</a></li>
+            </ul>
+            <ul class="links">
+                    <li><a>快捷导航</a>
+                        <ul>
+                            <li><a href="/plang/">编程语言</a></li>
+                            <li><a href="/webtech/">WEB开发</a></li>
+                            <li><a href="/handset/">手机开发</a></li>
+                            <li><a href="/database/">数据库</a></li>
+                            <li><a href="/os/">操作系统</a></li>
+                            <li><a href="/embed/">嵌入式</a></li>
+                            <li><a href="/opensource/">开源软件</a></li>
+                            <li><a href="/works/">作品</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/plang/asm/">编辑语言</a>
+                        <ul>
+                                <li><a href="/plang/asm/">汇编</a></li>
+                                <li><a href="/plang/ccpp/">C/C++</a> </li>
+                                <li><a href="/plang/java/">JAVA</a> </li>
+                                <li><a href="/plang/python/">Python</a> </li>
+                                <li><a href="/plang/ruby/">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/webtech/">WEB开发</a>
+                        <ul>
+                            <li><a href="/webtech/javascript/">javascript</a> </li>
+                            <li><a href="/webtech/j2ee/">J2EE</a> </li>
+                            <li><a href="/webtech/php/">PHP</a> </li>
+                            <li><a href="/webtech/python/djangocn2/">Django</a> </li>
+                        </ul>
+                    </li>
+					<li><a href="/me/contactme.htm">关于</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+<!-- topmenu-end -->
+
+<div id="container" style="margin: 35px 120px 0px 120px;">
+	<div id="logo-wapper">
+		<div style="float:left;width:150px;" ><h1 class="logo">ITEEDU</h1></div>
+		<div style="float:right;width:760px">
+
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+<nav id="main-nav">
+<!-- menunav-start -->
+<div id="menu">
+    <li><a href="/plang/">编程语言</a>
+        <ul>
+            <LI><a href="/plang/asm/">汇编</a></LI>
+            <LI><a href="/plang/ccpp/">C/C++</a> </LI>
+            <LI><a href="/plang/java/">JAVA</a> </LI>
+            <LI><a href="/plang/python/">Python</a> </LI>
+            <LI><a href="/plang/ruby/">Ruby</a></LI>
+        </ul>
+    </li>
+    <li><a href="/webtech/index.php">WEB开发</a>
+        <ul>
+            <LI><a href="/webtech/j2ee/">J2EE</a></LI>
+            <LI><a href="/webtech/php/">PHP</a> </LI>
+            <LI><a href="/webtech/python/djangocn2/">djangocn2</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/handset/index.php">手机开发</a>
+        <ul>
+            <LI><a href="/handset/android/">android</a></LI>
+            <LI><a href="/handset/iphone/">iphone</a> </LI>
+        </ul>
+    </li>
+    <li><a href="/database/index.php">数据库</a>
+        <ul>
+            <LI><a href="/database/mysql/">MYSQL</a></LI>
+            <LI><a href="/database/sqlite/">sqlite</a></LI>
+    	</ul>
+    </li>
+    <li><a href="/os/">操作系统</a>
+        <ul>
+        	<LI><a href="/os/linux/">Linux</a></LI>
+        	<LI><a href="/os/grub/">GRUB</a></LI>
+    	</ul>
+     </li>
+     <li><a href="/embed/">嵌入式</a></li>
+     <li><a href="/opensource/">开源软件</a></li>
+</div>
+<!-- menunav-end -->
+</nav>
+<div id="content-wrapper">
+<div id="file-wrapper">
+
+
+<!-- middle-end -->
+<!--end of htmlmiddle-->
+
+
+
+<div class="sect1" title="54.3. Architecture">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="zend.tool.framework.architecture"></a>54.3. Architecture</h2></div></div></div>
+<div class="sect2" title="54.3.1. Registry">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.tool.framework.architecture.registry"></a>54.3.1. Registry</h3></div></div></div>
+<p>
+            Because providers and manifests may come from anywhere in the
+            <code>include_path</code>, a registry is provided to simplify access
+            to the various pieces of the toolchain. This registry is injected
+            into registry-aware components, which may then pull dependencies
+            from them as necessary. Most dependencies registered with the
+            registry will be sub-component-specific repositories.
+        </p>
+<p>
+            The interface for the registry consists of the following definition:
+        </p>
+<pre class="code">
+interface Zend_Tool_Framework_Registry_Interface
+{
+    public function setClient(Zend_Tool_Framework_Client_Abstract $client);
+    public function getClient();
+    public function setLoader(Zend_Tool_Framework_Loader_Abstract $loader);
+    public function getLoader();
+    public function setActionRepository(
+        Zend_Tool_Framework_Action_Repository $actionRepository
+    );
+    public function getActionRepository();
+    public function setProviderRepository(
+        Zend_Tool_Framework_Provider_Repository $providerRepository
+    );
+    public function getProviderRepository();
+    public function setManifestRepository(
+        Zend_Tool_Framework_Manifest_Repository $manifestRepository
+    );
+    public function getManifestRepository();
+    public function setRequest(Zend_Tool_Framework_Client_Request $request);
+    public function getRequest();
+    public function setResponse(Zend_Tool_Framework_Client_Response $response);
+    public function getResponse();
+}
+</pre>
+<p>
+            The various objects the registry manages will be discussed in their
+            appropriate sections.
+        </p>
+<p>
+            Classes that should be registry-aware should implement
+            <code class="classname">Zend_Tool_Framework_Registry_EnabledInterface</code>. This
+            interface merely allows initialization of the registry in the target
+            class.
+        </p>
+<pre class="code">
+interface Zend_Tool_Framework_Registry_EnabledInterface
+{
+    public function setRegistry(
+        Zend_Tool_Framework_Registry_Interface $registry
+    );
+}
+</pre>
+</div>
+<div class="sect2" title="54.3.2. Providers">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.tool.framework.architecture.providers"></a>54.3.2. Providers</h3></div></div></div>
+<p>
+            <code class="classname">Zend_Tool_Framework_Provider</code> represents the functional
+            or "capability" aspect of the framework. Fundamentally,
+            <code class="classname">Zend_Tool_Framework_Provider</code> will provide the
+            interfaces necessary to produce "providers", or bits of tooling
+            functionality that can be called and used inside the
+            <code class="classname">Zend_Tool_Framework</code> toolchain. The simplistic nature of
+            implementing this provider interface allows the developer a
+            "one-stop-shop" of adding functionality/capabilities to
+            <code class="classname">Zend_Tool_Framework</code>.
+        </p>
+<p>
+            The provider interface is an empty interface and enforces no methods
+            (this is the Marker Interface pattern):
+        </p>
+<pre class="code">
+interface Zend_Tool_Framework_Provider_Interface
+{}
+</pre>
+<p>
+            Or, if you wish, you can implement the base (or abstract) Provider
+            which will give you access to the
+            <code class="classname">Zend_Tool_Framework_Registry</code>:
+        </p>
+<pre class="code">
+abstract class Zend_Tool_Framework_Provider_Abstract
+    implements Zend_Tool_Framework_Provider_Interface,
+               Zend_Tool_Registry_EnabledInterface
+{
+    protected $_registry;
+    public function setRegistry(
+        Zend_Tool_Framework_Registry_Interface $registry
+    );
+}
+</pre>
+</div>
+<div class="sect2" title="54.3.3. Loaders">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.tool.framework.architecture.loaders"></a>54.3.3. Loaders</h3></div></div></div>
+<p>
+            The purpose of a Loader is to find Providers and Manifest files that
+            contain classes which implement either
+            <code>Zend_Tool_Framework_Provider_Interface</code> or
+            <code>Zend_Tool_Framework_Manifest_Interface</code>. Once these files are found
+            by a loader, providers are loaded into the Provider Repository and
+            manifest metadata is loaded into the Manifest Repository.
+        </p>
+<p>
+            To implement a loader, one must extend the following abstract class:
+        </p>
+<pre class="code">
+abstract class Zend_Tool_Framework_Loader_Abstract
+{
+
+    abstract protected function _getFiles();
+
+    public function load()
+    {
+        /** ... */
+    }
+}
+</pre>
+<p>
+            The <code>_getFiles()</code> method should return an array of files (absolute
+            paths). The built-in loader supplied with ZF is called the
+            IncludePath loader. By default, the Tooling framework will use an
+            include_path based loader to find files that might include Providers
+            or Manifest Metadata objects.
+            <code>Zend_Tool_Framework_Loader_IncludePathLoader</code>, without
+            any other options, will search for files inside the include path
+            that end in <code>Mainfest.html</code>, <code>Tool.html</code> or
+            <code>Provider.html</code>. Once found, they will be tested (by the
+            <code>load()</code> method of the
+            <code>Zend_Tool_Framework_Loader_Abstract</code>) to determine if
+            they implement any of the supported interfaces. If they do, an
+            instance of the found class is instantiated, and it is appended to
+            the proper repository.
+        </p>
+<pre class="code">
+class Zend_Tool_Framework_Loader_IncludePathLoader
+    extends Zend_Tool_Framework_Loader_Abstract
+{
+
+    protected $_filterDenyDirectoryPattern = '.*(/|\\\\).svn';
+    protected $_filterAcceptFilePattern = '.*(?:Manifest|Provider)\.html$';
+
+    protected function _getFiles()
+    {
+        /** ... */
+    }
+}
+</pre>
+<p>
+            As you can see, the IncludePath loader will search all include_paths
+            for the files that match the <code>$_filterAcceptFilePattern</code>
+            and NOT match the <code>$_filterDenyDirectoryPattern</code>.
+        </p>
+</div>
+<div class="sect2" title="54.3.4. Manifests">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.tool.framework.architecture.manifests"></a>54.3.4. Manifests</h3></div></div></div>
+<p>
+            In short, the Manifest shall contain specific or arbitrary metadata
+            that is useful to any provider or client, as well as be responsible
+            for loading any additional providers into the provider repository.
+        </p>
+<p>
+            To introduce metadata into the manifest repository, all one must do
+            is implement the empty <code>Zend_Tool_Framework_Manifest_Interface</code>, and
+            provide a <code>getMetadata()</code> method which shall return an array of
+            objects that implement <code>Zend_Tool_Framework_Manifest_Metadata</code>.
+        </p>
+<pre class="code">
+interface Zend_Tool_Framework_Manifest_Interface
+{
+    public function getMetadata();
+}
+</pre>
+<p>
+            Metadata objects are loaded (by a loader defined below) into the
+            Manfiest Repository (<code>Zend_Tool_Framework_Manifest_Repository</code>).
+            Manifests will be processed after all Providers have been found a
+            loaded into the provider repository. This shall allow Manifests to
+            created Metadata objects based on what is currently inside the
+            provider repository.
+        </p>
+<p>
+            There are a few different metadata classes that can be used to
+            describe metadata. The
+            <code>Zend_Tool_Framework_Manifest_Metadata</code> is the base
+            metadata object. As you can see by the following code
+            snippet, the base metadata class is fairly lightweight and
+            abstract in nature:
+        </p>
+<pre class="code">
+class Zend_Tool_Framework_Metadata_Basic
+{
+
+    protected $_type        = 'Global';
+    protected $_name        = null;
+    protected $_value       = null;
+    protected $_reference   = null;
+
+    public function getType();
+    public function getName();
+    public function getValue();
+    public function getReference();
+    /** ... */
+}
+</pre>
+<p>
+            There are other built in metadata classes as well for describing
+            more specialized metadata: <code>ActionMetadata</code> and
+            <code>ProviderMetadata</code>. These classes will help you describe
+            in more detail metadata that is specific to either actions or
+            providers, and the reference is expected to be a reference to an
+            action or a provider respectively. These classes are described in
+            the follow code snippet.
+        </p>
+<pre class="code">
+class Zend_Tool_Framework_Manifest_ActionMetadata
+    extends Zend_Tool_Framework_Manifest_Metadata
+{
+
+    protected $_type = 'Action';
+    protected $_actionName = null;
+
+    public function getActionName();
+    /** ... */
+}
+
+class Zend_Tool_Framework_Manifest_ProviderMetadata
+    extends Zend_Tool_Framework_Manifest_Metadata
+{
+
+    protected $_type = 'Provider';
+    protected $_providerName  = null;
+    protected $_actionName    = null;
+    protected $_specialtyName = null;
+
+    public function getProviderName();
+    public function getActionName();
+    public function getSpecialtyName();
+    /** ... */
+}
+</pre>
+<p>
+            'Type' in these classes is used to describe the type of metadata the
+            object is responsible for. In the cases of the
+            <code>ActionMetadat</code>a, the type would be 'Action', and
+            conversely in the case of the <code>ProviderMetadata</code> the type
+            is 'Provider'. These metadata types will also include additional
+            structured information about both the "thing" they are describing as
+            well as the object (the <code>-&gt;getReference()</code>) they are
+            referencing with this new metadata.
+        </p>
+<p>
+            In order to create your own metadata type, all one must do is extend
+            the base <code>Zend_Tool_Framework_Manifest_Metadata</code> class
+            and return these new metadata objects via a local Manifest
+            class/object. These user based classes will live in the Manifest
+            Repository
+        </p>
+<p>
+            Once these metadata objects are in the repository there are then two
+            different methods that can be used in order to search for them in
+            the repository.
+        </p>
+<pre class="code">
+class Zend_Tool_Framework_Manifest_Repository
+{
+    /**
+     * To use this method to search, $searchProperties should contain the names
+     * and values of the key/value pairs you would like to match within the
+     * manifest.
+     *
+     * For Example:
+     *     $manifestRepository-&gt;findMetadatas(array(
+     *         'action' =&gt; 'Foo',
+     *         'name'   =&gt; 'cliActionName'
+     *         ));
+     *
+     * Will find any metadata objects that have a key with name 'action' value
+     * of 'Foo', AND a key named 'name' value of 'cliActionName'
+     *
+     * Note: to either exclude or include name/value pairs that exist in the
+     * search critera but do not appear in the object, pass a bool value to
+     * $includeNonExistentProperties
+     */
+    public function findMetadatas(Array $searchProperties = array(),
+                                  $includeNonExistentProperties = true);
+
+    /**
+     * The following will return exactly one of the matching search criteria,
+     * regardless of how many have been returned. First one in the manifest is
+     * what will be returned.
+     */
+    public function findMetadata(Array $searchProperties = array(),
+                                 $includeNonExistentProperties = true)
+    {
+        $metadatas = $this-&gt;getMetadatas($searchProperties,
+                                         $includeNonExistentProperties);
+        return array_shift($metadatas);
+    }
+}
+</pre>
+<p>
+            Looking at the search methods above, the signatures allow for
+            extremely flexible searching. In order to find a metadata object,
+            simply pass in an array of matching constraints via an array. If
+            the data is accessible through the Property accessor (the
+            <code>getSomething()</code> methods implemented on the metadata
+            object), then it will be passed back to the user as a "found"
+            metadata object.
+        </p>
+</div>
+<div class="sect2" title="54.3.5. Clients">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="zend.tool.framework.architecture.clients"></a>54.3.5. Clients</h3></div></div></div>
+<p>
+            Clients are the interface which bridges a user or external tool into
+            the <code>Zend_Tool_Framework</code> system. Clients can come in all
+            shapes and sizes: RPC endpoints, Command Line Interface, or
+            even a web interface. Zend_Tool has implemented the command
+            line interface as the default interface for interacting with
+            the <code>Zend_Tool_Framework</code> system.
+        </p>
+<p>
+            To implement a client, one would need to extend the following
+            abstract class:
+        </p>
+<pre class="code">
+abstract class Zend_Tool_Framework_Client_Abstract
+{
+    /**
+     * This method should be implemented by the client implementation to
+     * construct and set custom loaders, request and response objects.
+     *
+     * (not required, but suggested)
+     */
+    protected function _preInit();
+
+    /**
+     * This method should be implemented by the client implementation to parse
+     * out and setup the request objects action, provider and parameter
+     * information.
+     */
+    abstract protected function _preDispatch();
+
+    /**
+     * This method should be implemented by the client implementation to take
+     * the output of the response object and return it (in an client specific
+     * way) back to the Tooling Client.
+     *
+     * (not required, but suggested)
+     */
+    abstract protected function _postDispatch();
+}
+</pre>
+<p>
+            As you can see, there 1 method required to fulfill the needs of a
+            client (two others suggested), the initialization, prehandling and post handling. For a
+            more in depth study of how the command line client works, please see
+            the source code.
+        </p>
+</div>
+</div>
+<div class="revinfo"></div>
+
+
+<!--start of htmlend-->
+
+<!-- tail-start -->
+﻿
+<div style="clear:both;"></div>
+
+</div>
+<!--end of file-wrpper-->
+</div>
+<!--end of content-wrapper-->
+</div>
+<!--end of container-->
+
+
+<footer>
+<p class="copyright">版权所有 2014 <a href="http://www.iteedu.com">ITEEDU</a>, 京ICP备16069454号</p>
+</footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<!--百度统计js-->
+<p style="display:none">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa5213b08a76d4fc6b8a80eb382490e0b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+
+</body>
+
+</html>
+
+
+<!-- tail-end -->
